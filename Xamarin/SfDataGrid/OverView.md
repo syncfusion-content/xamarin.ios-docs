@@ -130,7 +130,7 @@ The SfDataGrid control is available in **Xamarin.Forms**, **Xamarin.Android** an
 </table>
 
 Click [here](http://help.syncfusion.com/xamarin/sfdatagrid/overview) to checkout SfDataGrid for Xamarin.Forms
-Click [here](http://help.syncfusion.com/xamarin-android/sfdatagrid/overview) to checkout SfDataGrid for Xamarin.Android
+
 
 ![](SfDataGrid_images/Overview.png)
 
