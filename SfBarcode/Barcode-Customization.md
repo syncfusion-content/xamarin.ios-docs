@@ -11,7 +11,7 @@ documentation: ug
 
 ## Bar Customization
 
-The color of the Barcode can be customized by using the properties of darkBarColor and lightBarColor in the SfBarcode. 
+The color of the Barcode can be customized by using the properties of `DarkBarColor` and `LightBarColor` in the SfBarcode. 
 
 The darkBarColor represents the color of the dark bar (Black color by default) and the lightBarColor represents the color of the gap between two adjacent black bars (White color by default).
 
@@ -37,10 +37,10 @@ Barcode with bar color customization
 
 The text representing the Barcode can be customized by using the following properties.
 
-* The color of text can be altered by using the textColor property.
-* The horizontal alignment of text can be customized with the help of the textAlignment property.
-* The gap between Barcode and text can be adjusted by setting property of textGapHeight.
-* To change the location of text vertically, you can make use of the textLocation property with options of top and bottom location.
+* The color of text can be altered by using the `TextColor` property.
+* The horizontal alignment of text can be customized with the help of the `TextAlignment` property.
+* The gap between Barcode and text can be adjusted by setting property of `TextGapHeight`.
+* To change the location of text vertically, you can make use of the `TextLocation` property with options of top and bottom location.
 
 {% highlight c# %}
 
