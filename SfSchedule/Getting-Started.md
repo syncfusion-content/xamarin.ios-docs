@@ -162,7 +162,7 @@ You can also add recursive appointments to Schedule, refer Recurrence section to
 
 ## Enabling Appointments Inline
 
-When the schedule appointments are viewed in Month view, it will not display  much information about the appointments, you can view the appointments in inline  by setting `showAppointmentsInline` property of MonthViewSettings as `True`.
+When the schedule appointments are viewed in Month view, it will not display  much information about the appointments, you can view the appointments in inline  by setting `showAppointmentsInline` property of `MonthViewSettings` as `True`.
 
 {% highlight c# %}
 
@@ -218,7 +218,7 @@ When the schedule appointments are viewed in Month view, it will not display  mu
 
 ## Restricting Dates
 
-Certain dates can be restricted in schedule by setting `minDisplayDate` and `maxDisplayDate` properties of SfSchedule.  To know more about restricting dates within a particular range of dates refer [Min Max dates] <http://help.syncfusion.com/android/sfschedule/date-navigation-and-gesture#min-max-dates>.
+Certain dates can be restricted in schedule by setting `minDisplayDate` and `maxDisplayDate` properties of `SfSchedule`.  To know more about restricting dates within a particular range of dates refer [Min Max dates] <http://help.syncfusion.com/android/sfschedule/date-navigation-and-gesture#min-max-dates>.
 
 {% highlight c# %}
 
