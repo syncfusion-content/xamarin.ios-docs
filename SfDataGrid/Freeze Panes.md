@@ -25,11 +25,11 @@ dataGrid.FrozenRowsCount = 2;
 
 ### Limitation
 
-* FrozenRowsCount should be lesser than the number of rows that is displayed in View.
+* `FrozenRowsCount` should be lesser than the number of rows that is displayed in View.
 * For example: 
-If you have 10 rows in view, then you set FrozenRowsCount to a maximum value of 9.
+If you have 10 rows in view, then you set `FrozenRowsCount` to a maximum value of 9.
 
-N> Header row is frozen by default and works regardless of the FrozenRowsCount property.
+N> Header row is frozen by default and works regardless of the `FrozenRowsCount` property.
 
 
 ## Freeze Columns
@@ -45,8 +45,8 @@ dataGrid.FrozenColumnsCount = 2; 
 
 ### Limitation
 
-* FrozenColumnsCount should be lesser than number of columns displayed in View.
+* `FrozenColumnsCount` should be lesser than number of columns displayed in View.
 * For example: 
-If you have 5 columns in view, then you can set FrozenColumnsCount to a maximum value of 4.
+If you have 5 columns in view, then you can set `FrozenColumnsCount` to a maximum value of 4.
 
-N> RowHeader is frozen by default and works regardless of the FrozenColumnsCount property.
+N> RowHeader is frozen by default and works regardless of the `FrozenColumnsCount` property.

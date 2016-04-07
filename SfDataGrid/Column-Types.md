@@ -22,7 +22,7 @@ The below table describes you the types of column and its purpose of usage in Sf
 </tr>
 <tr>
 <td>GridColumn</td>
-<td>Abstract class. Base column type of all the columns in the {{ '**SfDataGrid**' | markdownify }}.</td>
+<td>Abstract class. Base column type of all the columns in the SfDataGrid.</td>
 </tr>
 <tr>
 <td>GridTextColumn</td>
@@ -37,11 +37,11 @@ The below table describes you the types of column and its purpose of usage in Sf
 
 ## GridColumn
 
-[GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) is the base column type of all the columns in the SfDataGrid, hence `GridColumn` properties are used by all the columns. The following sub-sections explains you about the properties in the `GridColumn` and the customizations that can be done using those properties.
+`GridColumn` is the base column type of all the columns in the SfDataGrid, hence `GridColumn` properties are used by all the columns. The following sub-sections explains you about the properties in the `GridColumn` and the customizations that can be done using those properties.
 
 ### MappingName
 
-[GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) associates the `GridColumn` with a property available in the underlying data source. While setting MappingName alone to the SfDataGrid, [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
+[GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) associates the `GridColumn` with a property available in the underlying data source. While setting `MappingName` alone to the SfDataGrid, [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) will be automatically generated based on the `MappingName`. Data Manipulation operations like sorting, filtering, grouping will be done based on the `MappingName` property.
 
 ### Header customizations
 
@@ -58,12 +58,12 @@ The FontFamily for the content of header cell in the `GridColumn` can be customi
 [GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) specifies the text displayed in the column header. If HeaderText is not defined, the `GridColumn.MappingName` will be assigned to the HeaderText and will be displayed as column header.
 
 #### HeaderTextAlignment
-You can get or set the TextAlignment of the header cell in the `GridColumn` by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is “Center”.
+You can get or set the TextAlignment of the header cell in the `GridColumn` by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is `Center`.
 
 
 ## GridTextColumn
 
-[GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html) is derived from `GridColumn` and hence it inherits all the properties of `GridColumn`. Each of the record cells in `GridTextColumn` displays text based on the MappingName which associates the column with a property in the data source.
+[GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html) is derived from `GridColumn` and hence it inherits all the properties of `GridColumn`. Each of the record cells in `GridTextColumn` displays text based on the `MappingName` which associates the column with a property in the data source.
 
 The following code example creates `GridTextColumn`.
 
@@ -140,7 +140,7 @@ The FontFamily for the content of header cell in the `GridColumn` can be customi
 
 #### TextAlignment
 
-You can get or set the TextAlignment of the header cell in the `GridColumn` by using the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment for the record cells in SfDataGrid is “Center”.
+You can get or set the TextAlignment of the header cell in the `GridColumn` by using the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment for the record cells in SfDataGrid is `Center`.
 
 
 ## TemplateColumn
@@ -157,7 +157,7 @@ customerIdColumn.HeaderText = "Customer ID";
 dataGrid.Columns.Add(customerIdColumn);
 {% endhighlight %}
 
-In order to create a template column in SfDataGrid, you need to specify the UserCellType of the column. UserCellType is the type of the view to be used in the `GridColumn` and it must be derived from the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html). (i.e. a custom `GridCelll` which hosts the view of your own requirement).
+In order to create a template column in SfDataGrid, you need to specify the UserCellType of the column. UserCellType is the type of the view to be used in the `GridColumn` and it must be derived from the `GridCell`. (i.e. a custom `GridCelll` which hosts the view of your own requirement).
  
 The following code example shows you how to create a custom `GridCelll` and use it in a template column.
 
