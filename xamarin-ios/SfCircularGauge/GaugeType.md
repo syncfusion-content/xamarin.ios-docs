@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | SfCircularGauge | iOS | Syncfusion
 description: GAUGE TYPE
-platform: ios
+platform: xamarin.ios
 control: SfCircularGauge
 documentation: ug
 ---

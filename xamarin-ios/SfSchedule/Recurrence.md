@@ -2,7 +2,7 @@
 layout: post
 title: Recursive patterns and appointments in Schedule.
 description: How to create an recurrence appointment in Schedule control.
-platform: ios
+platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---

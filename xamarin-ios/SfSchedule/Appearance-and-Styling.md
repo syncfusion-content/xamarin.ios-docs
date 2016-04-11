@@ -2,7 +2,7 @@
 layout: post
 title: Appearance & Stylings in Schedule
 description: How to Customize appointment and day cell.
-platform: ios
+platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---

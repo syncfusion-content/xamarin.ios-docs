@@ -2,7 +2,7 @@
 layout: post
 title: SfBarcode | SfBarcode | iOS | Syncfusion
 description: overview
-platform: ios
+platform: xamarin.iOS
 control: SfBarcode
 documentation: ug
 ---

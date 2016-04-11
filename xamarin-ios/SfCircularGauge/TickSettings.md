@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | SfCircularGauge | iOS | Syncfusion
 description: TICK SETTINGS
-platform: ios
+platform: xamarin.iOS
 control: SfCircularGauge
 documentation: ug
 ---

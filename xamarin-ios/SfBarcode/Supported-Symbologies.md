@@ -2,7 +2,7 @@
 layout: post
 title: Supported Symbologies | SfBarcode | iOS | Syncfusion
 description: supported symbologies
-platform: ios
+platform: xamarin.iOS
 control: SfBarcode
 documentation: ug
 ---

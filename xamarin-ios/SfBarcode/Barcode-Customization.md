@@ -2,7 +2,7 @@
 layout: post
 title: Barcode Customization | SfBarcode | iOS | Syncfusion
 description: barcode customization
-platform: ios
+platform: xamarin.iOS
 control: SfBarcode
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Localization & Globalization of Schedule
 description: How to Localize/Globalize the contents of Schedule control.
-platform: ios
+platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---

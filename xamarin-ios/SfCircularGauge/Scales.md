@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | SfCircularGauge | iOS | Syncfusion
 description: SCALES
-platform: ios
+platform: xamarin.iOS
 control: SfCircularGauge
 documentation: ug
 ---

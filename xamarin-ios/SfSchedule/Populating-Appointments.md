@@ -2,7 +2,7 @@
 layout: post
 title: Populating Appointments in Schedule using Collections and DataSource.
 description: How to Populate an appointment of Schedule control.
-platform: ios
+platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---

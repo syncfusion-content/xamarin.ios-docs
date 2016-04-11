@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | SfCircularGauge | iOS | Syncfusion
 description: POINTERS
-platform: ios
+platform: xamarin.iOS
 control: SfCircularGauge
 documentation: ug
 ---

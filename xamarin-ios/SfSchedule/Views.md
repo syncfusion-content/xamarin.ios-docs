@@ -2,7 +2,7 @@
 layout: post
 title: Types of Schedule Views.
 description: How to create Views in Schedule control.
-platform: ios
+platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---

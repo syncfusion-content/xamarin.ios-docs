@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | SfCircularGauge | iOS | Syncfusion
 description: LABELS
-platform: ios
+platform: xamarin.iOS
 control: SfCircularGauge
 documentation: ug
 ---

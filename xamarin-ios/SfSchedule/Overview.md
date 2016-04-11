@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Schedule iOS
 description: Overview of Schedule
-platform: ios
+platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---

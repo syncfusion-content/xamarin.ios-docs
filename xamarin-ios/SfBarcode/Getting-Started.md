@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started | SfBarcode | iOS | Syncfusion
 description: getting started
-platform: ios
+platform: xamarin.iOS
 control: SfBarcode
 documentation: ug
 ---
