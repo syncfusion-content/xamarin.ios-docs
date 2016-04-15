@@ -8,6 +8,7 @@ documentation: ug
 ---
 
 # Getting Started 
+
 ## Create your first Chart in Xamarin.iOS
 
 This section provides a quick overview for working with Essential Chart for Xamarin.iOS. It walks you through the entire process of creating a real-world Chart.
@@ -102,7 +103,7 @@ This is how the final output looks like on iOS devices.
 
 ![](Create-your-first-Chart-in-XamariniOS_images/img1.png)
 
-### Reference Essential Studio Components in your Solution
+## Reference Essential Studio Components in your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
@@ -115,7 +116,7 @@ You have to add the following assembly reference to the iOS unified project
 
 ios-unifed\Syncfusion.SfChart.iOS.dll
 
-### Add and Configure Chart
+## Add and Configure Chart
 
 The following steps explain how to create a Chart and configure its elements.
 
@@ -159,7 +160,7 @@ chart.SecondaryAxis           = secondaryAxis;
 chart.Title.Text = "Weather Analysis";
 {% endhighlight %}
 
-### Add a Chart series
+## Add a Chart series
 
 In this example is visualized the temperature over the months using a Spline Series. Before creating the series, you have to create the data source representing the climate details. 
 
@@ -263,7 +264,7 @@ chart.DataSource          = dataModel as SFChartDataSource;
 this.View.AddSubview (chart);
 {% endhighlight %}
 
-### Add Legend 
+## Add Legend 
 
 Legend can be enabled in SfChart by setting the Legend Visible property to True as follows.
 
@@ -274,7 +275,7 @@ Legend can be enabled in SfChart by setting the Legend Visible property to True 
 chart.Legend.Visible = true;
 {% endhighlight %}
 
-### Add Multiple Series to the Chart
+## Add Multiple Series to the Chart
 
 You can add two SfSplineSeries for displaying high and low temperatures and a SfColumnSeries for displaying the precipitation.
 
@@ -378,7 +379,7 @@ public override SFChartDataPoint GetDataPoint (SFChart chart, int index, int ser
 }
 {% endhighlight %}
 
-### Add Multiple Axes to the Chart
+## Add Multiple Axes to the Chart
 
 You can add a secondary axis, y-axis, to the chart by setting the yAxis property of SfSeries. In the above code example, you can add axis to the series as follows.
 
@@ -576,7 +577,7 @@ public partial class GettingStarted_iOSViewController : UIViewController
     } 
 {% endhighlight %}
 
-### Output:
+## Output:
 
 ![](Create-your-first-Chart-in-XamariniOS_images/img1.png)
 
