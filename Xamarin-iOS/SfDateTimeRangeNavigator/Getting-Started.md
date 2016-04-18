@@ -177,8 +177,6 @@ public class RangeNavigatorDelegate: SFRangeNavigatorDelegate
 }
 
 {% endhighlight %}
-{% endtabs %}
-
 
 ![](Getting-Started-images/finalview.png)
 
