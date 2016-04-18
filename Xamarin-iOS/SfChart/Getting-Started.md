@@ -101,7 +101,7 @@ December</td><td>
 
 This is how the final output looks like on iOS devices.
 
-![](Create-your-first-Chart-in-XamariniOS_images/img1.png)
+![](Getting-Started_images/img1.png)
 
 ## Reference Essential Studio Components in your Solution
 
@@ -577,9 +577,9 @@ public partial class GettingStarted_iOSViewController : UIViewController
     } 
 {% endhighlight %}
 
-## Output:
+### Output:
 
-![](Create-your-first-Chart-in-XamariniOS_images/img1.png)
+![](Getting-Started_images/img1.png)
 
 
 
