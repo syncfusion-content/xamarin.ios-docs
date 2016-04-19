@@ -687,6 +687,110 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ![](ChartTypes_images/Candle1.png)
 
+## Radar Chart
+
+To render a candle chart, create an instance of `SFRadarSeries` and return it in the `GetSeries` method.
+
+### Draw type
+
+`DrawType` property is used to specify the radar series rendering type. Following are the two options you can set to this property,
+
+* `Line` – data points are visualized as line.
+* `Area` – data points are visualized as area.
+
+{% highlight c# %}
+SFRadarSeries radarSeries   = new SFRadarSeries();
+radarSeries.DrawType        = SFChartPolarRadarSeriesDrawType.Line;
+
+{% endhighlight %}
+
+![](ChartTypes_images/Radar.png)
+
+### Customize the appearance
+
+You can use the following properties to customize the appearance.
+
+* `Color` – used to change the color of the series.
+* `BorderWidth` – used to change the stroke width of the series.
+* `BorderColor` – used to change the stroke color of the series when draw types is set to area
+* `Dashes` – used to render line with dashes when draw type is set to line.
+
+{% highlight c# %}
+SFRadarSeries radarSeries   = new SFRadarSeries();
+radarSeries.Color           = UIColor.Cyan;
+radarSeries.BorderWidth     = 3;
+radarSeries.BorderColor     = UIColor.Blue; 
+
+{% endhighlight %}
+
+
+![](ChartTypes_images/RadarCustomization.png)
+
+### Closed
+
+`Closed` property is used to determine, whether to connect the first and last data point of the series. By default, the property is set to `true`.
+
+{% highlight c# %}
+SFRadarSeries radarSeries   = new SFRadarSeries();
+radarSeries.Closed          = false;
+
+{% endhighlight %}
+
+![](ChartTypes_images/RadarClosed.png)
+
+## Polar Chart
+
+To render a polar chart, create an instance of `SFPolarSeries` and return it in the `GetSeries` method. 
+
+### Draw type
+
+`DrawType` property is used to specify the polar series rendering type. Following are the two options you can set to this property,
+
+* `Line` – data points are visualized as line.
+* `Area` – data points are visualized as area.
+
+{% highlight c# %}
+SFPolarSeries polarSeries        = new SFPolarSeries();
+polarSeries.DrawType             = SFChartPolarRadarSeriesDrawType.Line;
+
+{% endhighlight %}
+
+
+![](ChartTypes_images/Polar.png)
+
+### Customize the appearance
+
+You can use the following properties to customize the appearance.
+
+* `Color` – used to change the color of the series.
+* `BorderWidth` – used to change the stroke width of the series.
+* `BorderColor` – used to change the stroke color of the series when draw types is set to area
+* `Dashes` – used to render line with dashes when draw type is set to line.
+
+{% highlight c# %}
+SFPolarSeries polarSeries        = new SFPolarSeries();
+polarSeries.Color                = UIColor.Cyan;
+polarSeries.BorderWidth          = 3;
+polarSeries.BorderColor          = UIColor.Blue; 
+
+{% endhighlight %}
+
+
+![](ChartTypes_images/PolarCustomization.png)
+
+### Closed
+
+`Closed` property is used to determine, whether to connect the first and last data point of the series. By default, the property is set to `true`.
+
+{% highlight c# %}
+SFPolarSeries polarSeries      = new SFPolarSeries();
+polarSeries.Closed             = false;
+
+{% endhighlight %}
+
+
+![](ChartTypes_images/PolarClosed.png)
+
 ## Pie Chart
 
 To render a pie chart, create an instance of `SFPieSeries` and return it in the `GetSeries` method. You can use the following properties to customize the pie segment appearance.
