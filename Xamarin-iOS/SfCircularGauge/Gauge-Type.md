@@ -9,19 +9,7 @@ documentation: ug
 
 # GAUGE TYPE
 
-SfCircularGauge type is determined by positioning the control towards particular direction. `GaugeType` is an enum property that provides the option to select type of the `SfCircularGauge` type, which contains following options.
-
-•	SFCircularGaugeDefault,
-•	SFCircularGaugeEast,
-•	SFCircularGaugeWest,
-•	SFCircularGaugeNorth,
-•	SFCircularGaugeSouth,
-•	SFCircularGaugeNorthEast,
-•	SFCircularGaugeNorthWest,
-•	SFCircularGaugeSouthEast,
-•	SFCircularGaugeSouthWest
-
-Enum property for Xamrin.iOS contains following options.
+SfCircularGauge type is determined by positioning the control towards particular direction. `GaugeType` is an enum property that provides the option to select type of the `SfCircularGaugeType`, which contains following options. Enum property for Xamarin.iOS contains following options.
 
 •	SFCircularGaugeTypeDefault,
 •	SFCircularGaugeTypeEast,

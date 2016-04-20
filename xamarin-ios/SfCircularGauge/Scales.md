@@ -9,11 +9,11 @@ documentation: ug
 
 # SCALES
 
-The Scales contains a Collection of CircularScale which integrates labels, tick marks, and a rim to customize the basic look and feel of the SfCircularGauge.
+The Scales contains a Collection of Circular Scale which integrates labels, tick marks, and a rim to customize the basic look and feel of the `SfCircularGauge`.
 
 ## Scale
 
-CircularScale contains three sub elements such as Rim, Ticks, and Labels. It defines the Radius, start angle and sweep angle, overall minimum and maximum values, and frequency of labels and tick marks. It can have multiple ranges.
+Circular Scale contains three sub elements such as Rim, Ticks, and Labels. It defines the Radius, start angle and sweep angle, overall minimum and maximum values, and frequency of labels and tick marks. It can have multiple ranges.
 
 A range is a visual element which begins and ends at specified values within a scale. It can have one or more pointers to point out the values in the scale. It also has a Header that can be used to set a unique header for the circular gauge.
 

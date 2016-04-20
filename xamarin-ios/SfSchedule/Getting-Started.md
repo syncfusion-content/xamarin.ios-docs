@@ -11,13 +11,9 @@ documentation: ug
 
 This section explains you the steps required to render the Schedule control by populating  events(appointments), with inline support and min max dates support in the control. This section covers only the minimal features that you need to know to get started with the Schedule.
 
-## Adding control reference to the application
-
-Control reference can be added to the application through frameworks, to know more about adding and configuring the framework, refer [Syncfusion iOS components installation](http://help.syncfusion.com/ios/introduction/installation-and-deployment) 
-
 ## Initializing Schedule
 
-Initialize SfSchedule instance in viewDidLoad method and then add the schedule as a sub view of  self view.
+Initialize `SfSchedule` instance in viewDidLoad method and then add the schedule as a sub view of  self view.
 
 {% highlight c# %}
 
@@ -34,7 +30,7 @@ Initialize SfSchedule instance in viewDidLoad method and then add the schedule a
 
 ![](GettingStarted_images/GettingStarted_img1.jpeg)
 
-You can change the default UI of schedule using ScheduleView to display the dates in different layouts available in the control.
+You can change the default UI of schedule using `ScheduleView` to display the dates in different layouts available in the control.
 
 {% highlight c# %}
 
@@ -49,7 +45,7 @@ You can change the default UI of schedule using ScheduleView to display the date
 
 ## Populating Events
 
-You can add events to the schedule by creating collection of ScheduleAppointments  using  `ScheduleAppointmentCollection`. 
+You can add events to the schedule by creating collection of `ScheduleAppointments` using `ScheduleAppointmentCollection`. 
 
 {% highlight c# %}
 
@@ -162,7 +158,7 @@ You can also add recursive appointments to Schedule, refer Recurrence section to
 
 ## Enabling Appointments Inline
 
-When the schedule appointments are viewed in Month view, it will not display  much information about the appointments, you can view the appointments in inline  by setting `showAppointmentsInline` property of `MonthViewSettings` as `True`.
+When the schedule appointments are viewed in Month view, it will not display  much information about the appointments, you can view the appointments in inline  by setting `ShowAppointmentsInline` property of `MonthViewSettings` as `True`.
 
 {% highlight c# %}
 
@@ -218,7 +214,7 @@ When the schedule appointments are viewed in Month view, it will not display  mu
 
 ## Restricting Dates
 
-Certain dates can be restricted in schedule by setting `minDisplayDate` and `maxDisplayDate` properties of `SfSchedule`.  To know more about restricting dates within a particular range of dates refer [Min Max dates] <http://help.syncfusion.com/android/sfschedule/date-navigation-and-gesture#min-max-dates>.
+Certain dates can be restricted in schedule by setting `MinDisplayDate` and `MaxDisplayDate` properties of `SfSchedule`.  To know more about restricting dates within a particular range of dates refer [Min Max dates] <http://help.syncfusion.com/android/sfschedule/date-navigation-and-gesture#min-max-dates>.
 
 {% highlight c# %}
 

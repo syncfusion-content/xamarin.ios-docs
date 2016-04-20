@@ -9,7 +9,7 @@ documentation: ug
 
 # Recurrence
 
-Recursive appointments can be created by enabling `isRecursive` property in Schedule appointments, to know more about adding appointments in the control, refer ScheduleAppointment
+Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments, to know more about adding appointments in the control, refer `ScheduleAppointment`.
 
 And then need to set the RecurrenceRule to populate the required recursive appointment collection in a specific pattern.
 
@@ -26,7 +26,7 @@ Recursive appointment can be created in any recurrence patterns, for instance, s
 
 ## RRULE generator
 
-RecurrenceGenerator/ recurrence builder is available with the control to create RRULE. RRULE can be easily created through this engine by simple APIs available. The generated RRULE need to be assigned to the appointment’s recurrenceRule property.
+`RecurrenceGenerator`/ `RecurrenceBuilder` is available with the control to create RRULE. RRULE can be easily created through this engine by simple APIs available. The generated RRULE need to be assigned to the appointment’s `RecurrenceRule` property.
 
 {% highlight c# %}
 

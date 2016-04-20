@@ -27,7 +27,7 @@ One dimensional Barcodes can also have error detection settings.
 * The `EnableCheckDigit` property enables or disables the redundancy check by using a check digit that is the decimal equivalent of a binary parity bit.
 * With the help of `ShowCheckDigit` property, the check digit can be shown or hidden.
 
-The following code example shows how to change the settings of Code 39linear Barcode.
+The following code example shows how to change the settings of `Code39` linear Barcode.
 
 {% highlight c# %}
 
@@ -44,7 +44,7 @@ Similarly, you can specify the settings of other linear Barcodes corresponding t
 
 ## Two Dimensional Barcode Settings
 
-Two dimensional Barcodes are customized by using `xDimension` property that modifies its block size and it is commonly used for all kinds of supported two dimensional Barcodes.
+Two dimensional Barcodes are customized by using `XDimension` property that modifies its block size and it is commonly used for all kinds of supported two dimensional Barcodes.
 
 ### Data Matrix Settings
 
@@ -60,7 +60,7 @@ The Data Matrix symbology can be customized with the help of the following setti
 {% endhighlight %}
 
 * The `Encoding` property is used to specify the encoding technique from enumeration of `SfDataMatrixEncoding` that contains encoding techniques such as ASCII, ASCIINumeric, Auto and Base256.
-* The `Size` property allows the user to specify the size of the Barcode from a set of predefined sizes available in the `SFDataMatrixSize`io enumeration.
+* The `Size` property allows the user to specify the size of the Barcode from a set of predefined sizes available in the `SFDataMatrixSize` enumeration.
 
 <table>
 <tr>
@@ -406,7 +406,7 @@ High</td><td>
 </table>
 
 
-* The inputMode property allows you to select specific set of input characters. You may select the most suitable input mode. By default, its value is set as Binary Mode.
+* The `InputMode` property allows you to select specific set of input characters. You may select the most suitable input mode. By default, its value is set as Binary Mode.
 
 
 <table>

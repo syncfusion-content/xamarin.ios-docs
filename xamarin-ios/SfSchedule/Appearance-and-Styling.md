@@ -11,7 +11,7 @@ documentation: ug
 
 ## Cell Customization
 
-Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. Month view cell contains the date along with its appointments if available. There is an option available in Schedule control to change the default UI of Month View cell. By adopting <SFScheduleDelegate> protocol and using scheduleMonthCell to render custom UI for month view cell.
+Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. Month view cell contains the date along with its appointments if available. There is an option available in Schedule control to change the default UI of Month View cell. By adopting `<SFScheduleDelegate>` protocol and using `ScheduleMonthCell` to render custom UI for month view cell.
 
 
 {% highlight c# %}
@@ -167,7 +167,7 @@ Creating required custom UI to assign the month view cell.
 
 ## Appointment Customization.
 
-ScheduleAppointment created in schedule are arranged based on its duration, where the appointments viewed through day, week and work week view  are positioned in the timeslots. Default UI of the appointments in day, week and work week view can be changed by adopting <SFScheduleDelegate> protocol using scheduleDayAppointment to render custom UI for Appointments.
+`ScheduleAppointment` created in schedule are arranged based on its duration, where the appointments viewed through day, week and work week view are positioned in the timeslots. Default UI of the appointments in day, week and work week view can be changed by adopting `<SFScheduleDelegate>` protocol using `ScheduleDayAppointment` to render custom UI for Appointments.
 
 
 {% highlight c# %}

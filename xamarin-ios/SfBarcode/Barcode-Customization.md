@@ -13,7 +13,7 @@ documentation: ug
 
 The color of the Barcode can be customized by using the properties of `DarkBarColor` and `LightBarColor` in the SfBarcode. 
 
-The darkBarColor represents the color of the dark bar (Black color by default) and the lightBarColor represents the color of the gap between two adjacent black bars (White color by default).
+The `DarkBarColor` represents the color of the dark bar (Black color by default) and the `LightBarColor` represents the color of the gap between two adjacent black bars (White color by default).
 
 
 {% highlight c# %}
@@ -31,7 +31,7 @@ Barcode with bar color customization
 {:.caption}
 
 
->**NOTE** The darkBarColor and lightBarColor customizations are applicable only for one dimensional Barcodes. In order, to recognize a Barcode symbol by a scanner, there must be an adequate contrast between the dark bars and the light spaces. All the Barcode scanners do not have support for colored Barcodes.
+>**NOTE** The `DarkBarColor` and `LightBarColor` customizations are applicable only for one dimensional Barcodes. In order, to recognize a Barcode symbol by a scanner, there must be an adequate contrast between the dark bars and the light spaces. All the Barcode scanners do not have support for colored Barcodes.
 
 ## Text Customization
 
