@@ -9,13 +9,13 @@ documentation: ug
 
 # Populating Appointments 
 
-Schedule control has an inbuilt capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. ScheduleAppointment is a class, which holds the details about the appointment to be rendered in schedule. Schedule Appointments collection can be provided to schedule using the following method.
+Schedule control has an built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. `ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. Schedule Appointments collection can be provided to schedule using the following method.
 
 ## Adding appointments using Collection
 
-ScheduleAppointment has some basic properties such as StartTime, EndTime, Subject and some  additional information about the appointment can be added using Color, Notes, Location, All Day, Recursive properties.
+`ScheduleAppointment` has some basic properties such as StartTime, EndTime, Subject and some additional information about the appointment can be added using Color, Notes, Location, All Day, Recursive properties.
 
-Create the collection of the ScheduleAppointments by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `Appointment` property of `SfSchedule` as like in below code example.
+Create the collection of the `ScheduleAppointments` by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `Appointment` property of `SfSchedule` as like in below code example.
 
 {% highlight c# %}
 
@@ -57,9 +57,9 @@ Create the collection of the ScheduleAppointments by setting required details us
 
 ## Adding appointments by implementing data source protocol
 
-The appointment can also be added to schedule control on demand based on the visible dates. This can be achieved by implementing the SFScheduleDataSource protocol in your application.
+The appointment can also be added to schedule control on demand based on the visible dates. This can be achieved by implementing the `SFScheduleDataSource` protocol in your application.
 
-Before implementing the data source, you need to assign “dataSource” property of the schedule with the instance of an object where it is going to be implemented.
+Before implementing the data source, you need to assign `DataSource` property of the schedule with the instance of an object where it is going to be implemented.
 
 The data source protocol contains two methods as follows:
 
@@ -76,6 +76,7 @@ By implementing the above two methods the appointments can be set to based on vi
     NSMutableArray appCollection = new NSMutableArray ();
     NSCalendar calendar = NSCalendar.CurrentCalendar;
 
+    // Get the year, month, day from the date
     // Get the year, month, day from the date
     NSDateComponents components = calendar.Components (
     NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);

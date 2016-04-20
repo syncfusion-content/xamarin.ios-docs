@@ -9,15 +9,15 @@ documentation: ug
 
 # POINTERS
 
-You can add multiple pointers to the gauge to point at multiple values on the same scale. This can be useful for showing a low and a high value at the same time. The value of the pointer is set using the Value property. There are two types of pointers. You can choose a pointer using the PointerType property. Movement of the pointer can be animated by enabling the `EnableAnimation` property.
+You can add multiple pointers to the gauge to point at multiple values on the same scale. This can be useful for showing a low and a high value at the same time. The value of the pointer is set using the `Value` property. There are two types of pointers. You can choose a pointer using the `PointerType` property. Movement of the pointer can be animated by enabling the `EnableAnimation` property.
 
 ## Needle Pointer  
 
-A needle pointer contains two parts, the needle and the knob that can be placed on a gauge to mark values. The needle length is controlled by the `LengthFactor` property. The LengthFactor property’s minimum and maximum bounds are 0 and 1. The needle’s UI is customized by the `Color` and `Width` properties. The user can modify the Knob’s size by changing the `KnobRadius` property.
+A needle pointer contains two parts, the needle and the knob that can be placed on a gauge to mark values. The needle length is controlled by the `LengthFactor` property. The `LengthFactor` property’s minimum and maximum bounds are 0 and 1. The needle’s UI is customized by the `Color` and `Width` properties. The user can modify the Knob’s size by changing the `KnobRadius` property.
 
-### NeedlePointerType
+### Needle Pointer Type
 
-NeedlePointer appearance can be customized by using the `Type` property the default value of this property is Rectangle.
+`NeedlePointer` appearance can be customized by using the `PointerType` property the default value of this property is Rectangle.
 It is enum includes the following option.
 
 •	SFCiruclarGaugePointerTypeBar
@@ -51,9 +51,9 @@ It is enum includes the following option.
 
 A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark values. The range pointer’s UI is customized by the `Color` and `Width` properties.
 
-### RangePointerPosition
+### Range Pointer Position
 
-The RangePointer in the scale can be placed inside the scale or outside the scale by setting `Offset` property.
+The `RangePointer` in the scale can be placed inside the scale or outside the scale by setting `Offset` property.
 
 {% highlight c# %}
 

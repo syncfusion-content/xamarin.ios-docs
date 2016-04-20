@@ -13,7 +13,7 @@ Scale labels associate a numeric value with major scale tick marks.
 
 ## Label Customization  
 
-The label color can be changed using the `LabelColor` property. The labels can be positioned far away from the ticks by using the `LabelOffset` property.The size of the Labels can be changed by using the `LabelFontSize` property.
+The label color can be changed using the `LabelColor` property. The labels can be positioned far away from the ticks by using the `LabelOffset` property. The size of the Labels can be changed by using the `LabelFontSize` property.
 
 {% highlight c# %}
 
@@ -54,8 +54,8 @@ The `NumberOfDecimalDigits` property is used to set the number of decimal digits
 
 ##Label Postfix
 
-You can set the postfix/Prefix values to the scale labels using `LabelPostfix` and `LabelPrefix` Properties respectively.
-This property allows you to set the postfix values to the scale labels. 
+You can set the Postfix/Prefix values to the scale labels using `LabelPostfix` and `LabelPrefix` Properties respectively.
+This property allows you to set the `Postfix` values to the scale labels. 
 
 {% highlight c# %}
 
@@ -77,7 +77,7 @@ This property allows you to set the postfix values to the scale labels.
 ##Label Prefix
 
 You can set the postfix/Prefix values to the scale labels using `LabelPostfix` and `LabelPrefix` Properties respectively.
-This property allows you to set the prefix values to the scale labels. 
+This property allows you to set the `Prefix` values to the scale labels. 
 
 {% highlight c# %}
 

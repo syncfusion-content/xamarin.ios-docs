@@ -33,8 +33,8 @@ ios-unifed \ Syncfusion.SfGauge.iOS.dll
 
 ### Initialize the CircularGauge
 
-Create a CircularGauge object in the View Controller and add CircularGauge as subview.
-You can create a CircularGauge object by using the following code example.
+Create a Circular Gauge object in the View Controller and add Circular Gauge as subview.
+You can create a Circular Gauge object by using the following code example.
 
 {% highlight C# %}
 [C#]   

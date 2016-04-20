@@ -9,7 +9,7 @@ documentation: ug
 
 # Views
 
-Schedule control provides four different types of views to display dates. Day view, Week view, WorkWeek view and month view. It can be assigned to the schedule control by using `ScheduleView` property. Based on the user’s preference appointments can be viewed in any of the four type of view available. By default schedule control is assigned with day view.
+Schedule control provides four different types of views to display dates. Day view, Week view, WorkWeek view and Month view. It can be assigned to the schedule control by using `ScheduleView` property. Based on the user’s preference appointments can be viewed in any of the four type of view available. By default schedule control is assigned with day view.
 
 ## Day View
 
@@ -35,7 +35,7 @@ You can restrict/allocate certain timeslot as Non-accessible block using `NonAcc
 
 #### Working Hours
 
-You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and  `WorkEndHour`  properties of `DayViewSettings`.
+You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour` properties of `DayViewSettings`.
 
 #### All Day Appointments Panel
 
@@ -216,7 +216,7 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
 
 #### Week number
 
-You display the week number of the year in month view by setting `showWeekNumber` property of `MonthViewSettings` are true. By default it is false.
+You display the week number of the year in month view by setting `ShowWeekNumber` property of `MonthViewSettings` are true. By default it is false.
 
 #### Visible AppointmentCount
 

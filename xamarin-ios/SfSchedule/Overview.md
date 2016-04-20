@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-SfSchedule is used to provide common scheduling functionalities. The SfSchedule control allows user to create and manage appointments. It includes features such as viewing daily/all day/spanned appointments, complete customization of month cell and appointments, efficient performance.
+SfSchedule is used to provide common scheduling functionalities. The SfSchedule control allows user to create and manage appointments. It includes features such as viewing daily, all day, spanned appointments, complete customization of month cell and appointments, efficient performance.
 
 ## Key Features
 
