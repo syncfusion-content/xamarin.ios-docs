@@ -21,7 +21,7 @@ SfDataGrid also allows to perform grouping from the code by defining the [GroupC
 `GroupColumnDescription` object holds following two properties:
 
 * ColumnName: Name of the grouped column.
-* Converter: Get the IValueConverter as input that helps to apply the custom grouping.
+* Converter: Get the `IValueConverter` as input that helps to apply the custom grouping.
 
 The following code example illustrates how to apply grouping by a column in SfDataGrid.
 
