@@ -1,11 +1,11 @@
-﻿---
-layout: post
+---
 title: Number Formatting in Syncfusion NumericTextBox control for Xamarin.iOS
 description: Learn how to add format String, enable parser mode and percent display mode for NumericTextBox control.
 platform: Xamarin.iOS
 control: NumericTextBox
 documentation: ug
 ---
+
 # Number Formatting
 
 ## Format String
