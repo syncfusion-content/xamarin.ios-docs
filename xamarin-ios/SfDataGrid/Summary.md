@@ -146,7 +146,7 @@ SfDataGrid also supports setting custom GroupCaptionTextFormat for [CaptionSum
 You can customize this group caption text format by setting the [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCaptionTextFormat.html# “”) property. The following code example illustrates how to customize groupcaptiontext in SfDataGrid.
 
 {% highlight c# %}
-//Customized groupcaptiontext in German 
+//Customized group caption text in German 
 dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key} - {ItemsCount} Produkte";
 
 {% endhighlight %}
