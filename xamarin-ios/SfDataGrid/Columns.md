@@ -26,7 +26,7 @@ The SfDataGrid creates columns automatically based on the property [SfDataGrid.A
 * Reset: Retains the columns defined explicitly in application level and creates columns newly for all the other properties in a data source.
 * ResetAll: When changing the [ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html), the columns for previous data are cleared and it creates new columns. Even when columns are explicitly defined it does not consider the defined columns and creates column based on the underlying collection.
 * RetainOld: Creates columns for all fields in a data source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created.
-* SmartReset: Retains the columns defined explicitly in application level and the columns with `MappingName` identical to properties in a data source. Creates columns newly for all the other properties in the data source.
+* SmartReset: Retains the columns defined explicitly in application level and the columns with MappingName identical to properties in a data source. Creates columns newly for all the other properties in the data source.
 
 The default value of `SfDataGrid.AutoGenerateColumns` property is `true` and `SfDataGrid.AutoGenerateColumnsMode` is `Reset`. Hence by default SfDataGrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its `ItemsSource` property.
 
@@ -34,7 +34,7 @@ N> When you change items source for SfDataGrid during run time, then the columns
 
 ### Customize Automatically Generated Columns
 
-When `SfDataGrid.AutoGenerateColumns` is `true`, then [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each `GridColumn`. This event receives two arguments namely sender which is the SfDataGrid and [AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGeneratingColumnArgs.html).
+When `SfDataGrid.AutoGenerateColumns` is `true`, then [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each GridColumn. This event receives two arguments namely sender which is the SfDataGrid and [AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGeneratingColumnArgs.html).
 The `AutoGeneratingColumnArgs` object contains the following property:
 
 * Column: This property returns the created column using which you can customize the column.
@@ -70,7 +70,7 @@ You can also customize a column’s header text, sorting, alignment, padding, et
 
 ## Manually generate Columns
 
-SfDataGrid also allows you to define the columns manually by adding the `GridColumn` objects to the `SfDataGrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDataGrid.AutoGenerateColumns` property to false. There are different types of columns available in SfDataGrid and you can create any column based on your requirements through code.
+SfDataGrid also allows you to define the columns manually by adding the GridColumn objects to the `SfDataGrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDataGrid.AutoGenerateColumns` property to false. There are different types of columns available in SfDataGrid and you can create any column based on your requirements through code.
  
 The following code example illustrates about creating columns manually in SfDataGrid.
 
