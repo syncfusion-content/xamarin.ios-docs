@@ -53,9 +53,9 @@ The Data Matrix symbology can be customized with the help of the following setti
 {% highlight c# %}
 
     SFDataMatrixSettings settingss = new SFDataMatrixSettings();
-    settingss.XDimension = 8;
-    settingss.Size = SFBarcodeDataMatrixSize.SFBarcodeDataMatrixSizeAuto; 
-    settingss.Encoding = SFBarcodeDataMatrixEncoding.SFBarcodeDataMatrixEncodingAuto;
+    settings.XDimension = 8;
+    settings.Size = SFBarcodeDataMatrixSize.SFBarcodeDataMatrixSizeAuto; 
+    settings.Encoding = SFBarcodeDataMatrixEncoding.SFBarcodeDataMatrixEncodingAuto;
 
 {% endhighlight %}
 

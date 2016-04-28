@@ -24,12 +24,10 @@ CircularGauge
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio{version number}\lib
 
-NOTE
-Assemblies are available in unzipped package location in Mac.
-
 You have to add the following assembly reference to the iOS unified project
 ios-unifed \ Syncfusion.SfGauge.iOS.dll
 
+N> Assemblies are available in unzipped package location in Mac.
 
 ### Initialize the CircularGauge
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Create your first Barcode in Objective C
+## Create your first Barcode in Xamarin.iOS
 
 This section explains how to configure a Barcode for iOS application by using Xamarin.iOS. To get started with the Essential Barcode, refer to the following steps and in result, you get the output on iOS devices as follows.
 
@@ -23,8 +23,12 @@ The following steps explain you how to create and configure a Barcode.
 
 1. Add reference to the SfBarcode in view controller as follows.
 
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically: {Syncfusion Installed location}\Essential Studio{version number}\lib
+You have to add the following assembly reference to the iOS unified project ios-unifed \ Syncfusion.SfBarcode.iOS.dll
 
-2. Create an instance of SfBarcode in view controller and add it as sub view in viewDidLoad override method.
+N> Assemblies are available in unzipped package location in Mac.
+
+2.Create an instance of SfBarcode in view controller and add it as sub view in viewDidLoad override method.
    
 
 {% highlight c# %}
@@ -38,8 +42,7 @@ The following steps explain you how to create and configure a Barcode.
 
 {% endhighlight %}
 
-
-3. Then you can assign the text that you want to encode.     
+3.Then you can assign the text that you want to encode.     
    
 {% highlight c# %}
 
@@ -47,7 +50,7 @@ The following steps explain you how to create and configure a Barcode.
 
 {% endhighlight %}
 
-4. Specify the required symbology to encode the given text. By default, the given text is encoded by using the `Code39` symbology.    
+4.Specify the required symbology to encode the given text. By default, the given text is encoded by using the `Code39` symbology.    
 
 {% highlight c# %}
 
@@ -55,7 +58,7 @@ The following steps explain you how to create and configure a Barcode.
 
 {% endhighlight %}
 
-5. To customize the Barcode, initialize the settings of the corresponding Barcode symbology.       
+5.To customize the Barcode, initialize the settings of the corresponding Barcode symbology.       
    
 {% highlight c# %}
 
@@ -65,7 +68,7 @@ The following steps explain you how to create and configure a Barcode.
 
 {% endhighlight %}
 
-6. Finally, the Barcode is generated as displayed in the screenshot by using the following code example.
+6.Finally, the Barcode is generated as displayed in the screenshot by using the following code example.
 
 {% highlight c# %}
 
