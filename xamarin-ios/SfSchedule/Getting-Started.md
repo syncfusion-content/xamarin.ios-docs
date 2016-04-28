@@ -11,6 +11,17 @@ documentation: ug
 
 This section explains you the steps required to render the Schedule control by populating  events(appointments), with inline support and min max dates support in the control. This section covers only the minimal features that you need to know to get started with the Schedule.
 
+### Configure the Schedule control
+
+The following steps explain you how to create and configure a Schedule.
+
+1. Add reference to the SfSchedule in view controller as follows.
+
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically: {Syncfusion Installed location}\Essential Studio{version number}\lib
+You have to add the following assembly reference to the iOS unified project ios-unifed \ Syncfusion.SfSchedule.iOS.dll
+
+N> Assemblies are available in unzipped package location in Mac.
+
 ## Initializing Schedule
 
 Initialize `SfSchedule` instance in viewDidLoad method and then add the schedule as a sub view of  self view.
