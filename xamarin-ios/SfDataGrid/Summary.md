@@ -113,4 +113,20 @@ The following screenshot shows the final outcome for both values of `ShowSummary
 ![](SfDataGrid_images/Capturecolum.png)
 
 
+<<<<<<< HEAD
+=======
+SfDataGrid also supports setting custom GroupCaptionTextFormat for [CaptionSummaryRows](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.CaptionSummaryRowControl.html# “”). By default the group caption text will be in the format “{ColumnName} : {Key} - {ItemsCount} Items”.
+ 
+ * ColumnName : Displays the grouped column name.
+ * Key : Displays the group key value.
+ * ItemsCount : Displays the number of items in group.
+
+You can customize this group caption text format by setting the [SfDataGrid.GroupCaptionTextFormat](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCaptionTextFormat.html# “”) property. The following code example illustrates how to customize groupcaptiontext in SfDataGrid.
+
+{% highlight c# %}
+//Customized group caption text in German 
+dataGrid.GroupCaptionTextFormat = "{ColumnName} : {Key} - {ItemsCount} Produkte";
+
+{% endhighlight %}
+>>>>>>> ec3d2e879a815dad08eb152611126e3ee9d83a24
 
