@@ -9,12 +9,12 @@ documentation: ug
 
 # Grid Lines
 
-The MinorScaleStyle and MajorScaleStyle properties of SFDateTimeRangeNavigator used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
+The `MinorScaleStyle` and `MajorScaleStyle` properties of `SFDateTimeRangeNavigator` used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
 
-* ShowGridLines – used to set the visibility of grid lines
-* GridLineWidth – used to set the width for grid lines
-* GridLineColor – used to set the color for grid lines
-* GridLineDashes – used to set dashes for grid lines
+* `ShowGridLines` – used to set the visibility of grid lines
+* `GridLineWidth` – used to set the width for grid lines
+* `GridLineColor` – used to set the color for grid lines
+* `GridLineDashes` – used to set dashes for grid lines
 
 {% highlight c# %}
 
