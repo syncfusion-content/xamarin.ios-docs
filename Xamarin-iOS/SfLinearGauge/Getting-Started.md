@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Getting Started with Syncfusion LinearGauge control for Xamarin.iOS
@@ -28,7 +27,7 @@ ios-unifed\Syncfusion.SfLinearGauge.iOS.dll
 
 ### Add and Configure the LinearGauge
 
-The following steps explain on how to create a LinearGauge and configure its elements,
+The following steps explain on how to create a LinearGauge and configure its elements:
 
 * Adding reference to Autocomplete.
 
