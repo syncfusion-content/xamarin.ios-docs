@@ -38,7 +38,7 @@ This transition slides the Drawer and main content simultaneously.
 
 {% endhighlight %}
 
-![](images/Push.png)
+![](images/push.png)
 
 ## Reveal
 
@@ -50,4 +50,4 @@ The Drawer content is in fixed position and the main content will slide to revea
 
 {% endhighlight %}
 
-![](images/reveal.png)
+![](images/Reveal.png)

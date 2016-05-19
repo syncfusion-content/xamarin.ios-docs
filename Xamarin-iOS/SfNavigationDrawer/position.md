@@ -32,7 +32,7 @@ Sets the NavigationDrawer sliding position to the left.
 
 {% endhighlight %}
 
-![](images/Left.png)
+![](images/left.png)
 
 ## Right
 

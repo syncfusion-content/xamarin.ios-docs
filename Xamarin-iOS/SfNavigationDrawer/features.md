@@ -26,7 +26,7 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 	
 {% endhighlight %}
 	
-![](images/Content-View.png)
+![](images/content-view.png)
 
 ## DrawerContentView
 
@@ -56,7 +56,7 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 
 {% endhighlight %}
 
-![](images/DrawerContentView.png)
+![](images/Drawercontentview.png)
 
 ## DrawerFooterView
 
@@ -79,7 +79,7 @@ Gets or sets the footer for the DrawerView panel in the SfNavigationDrawer contr
 
 {% endhighlight %}
 
-![](images/DrawerFooterView.png)
+![](images/Drawerfooterview.png)
 
 ## DrawerHeaderView
 
@@ -107,7 +107,7 @@ Gets or sets the header of the DrawerView panel in the SfNavigationDrawer contro
  
 {% endhighlight %}
 
-![](images/DrawerHeaderView.png)
+![](images/Drawerheadview.png)
 
 ## Drawer Size
 
