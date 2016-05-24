@@ -210,7 +210,7 @@ The Data Matrix symbology can be customized by using the following settings.
 
 * The `Version` property allows you to set various types of version for QR code from SFQRVersion enumeration.  By default, its value is set as Auto.
 
- Table 2 : SFQRVersion enumeration details
+SFQRVersion enumeration details
 
 <table>
 <tr>

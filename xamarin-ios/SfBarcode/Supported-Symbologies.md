@@ -165,7 +165,9 @@ Code 128 A (or Chars Set A) includes all of the standard upper case U.S. alphanu
 {% endhighlight %}
 
 ![](Supported-Symbologies_images/Supported-Symbologies_img8.png)          
-Figure 17: Code 128A Barcode
+
+Code 128A Barcode
+{:.caption}
 
 ### Code128 B
 

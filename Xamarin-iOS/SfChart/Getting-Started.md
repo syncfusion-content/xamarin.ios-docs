@@ -15,7 +15,7 @@ This section provides a quick overview for working with Essential Chart for Xama
 
 This section is to help you visualize the weather data for Washington, DC, during the period 1961-1990. The raw sample data is given as follows.
 
-Table 3: Weather Data Sample
+Weather Data Sample
 
 <table>
 <tr>
