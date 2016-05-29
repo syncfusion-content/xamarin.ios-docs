@@ -143,7 +143,7 @@ You can get or set the TextAlignment of the header cell in the GridColumn by usi
 
 ## TemplateColumn
 
-TemplateColumn is actually the GridTextColumn with **UserCellType** specified and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumns with your own view by creating custom GridCell to render in the column.
+TemplateColumn is actually the GridTextColumn with `UserCellType` specified and hence it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumns with your own view by creating custom GridCell to render in the column.
 
 The following code example shows how to create a TemplateColumn.
 
@@ -155,7 +155,7 @@ customerIdColumn.HeaderText = "Customer ID";
 dataGrid.Columns.Add(customerIdColumn);
 {% endhighlight %}
 
-In order to create a template column in SfDataGrid, you need to specify the UserCellType of the column. UserCellType is the type of the view to be used in the GridColumn and it must be derived from the GridCell. (i.e. a custom GridCell which hosts the view of your own requirement).
+In order to create a template column in SfDataGrid, you need to specify the `UserCellType` of the column. `UserCellType` is the type of the view to be used in the GridColumn and it must be derived from the GridCell. (i.e. a custom GridCell which hosts the view of your own requirement).
  
 The following code example shows you how to create a custom GridCell and use it in a template column.
 
