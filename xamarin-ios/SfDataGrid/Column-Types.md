@@ -39,7 +39,7 @@ GridColumn is the base column type of all the columns in the SfDataGrid, hence G
 
 ### MappingName
 
-[GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) associates the GridColumn with a property available in the underlying data source. While setting MappingName alone to the SfDataGrid, [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) will be automatically generated based on the MappingName. Data Manipulation operations like sorting, filtering, grouping will be done based on the MappingName property.
+[GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) associates the GridColumn with a property available in the underlying data source. While setting `MappingName` alone to the SfDataGrid, [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) will be automatically generated based on the `MappingName`. Data Manipulation operations like sorting, filtering, grouping will be done based on the `MappingName` property.
 
 ### Header customizations
 
@@ -53,7 +53,7 @@ The FontFamily for the content of header cell in the GridColumn can be customize
 
 #### HeaderText
 
-[GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) specifies the text displayed in the column header. If header text is not defined, the `GridColumn.MappingName` will be assigned to the header text and will be displayed as column header.
+[GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) specifies the text displayed in the column header. If `HeaderText` is not defined, the `GridColumn.MappingName` will be assigned to the `HeaderText` and will be displayed as column header.
 
 #### HeaderTextAlignment
 You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is `Center`.
@@ -61,7 +61,7 @@ You can get or set the TextAlignment of the header cell in the GridColumn by usi
 
 ## GridTextColumn
 
-GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. Each of the record cells in GridTextColumn displays text based on the MappingName which associates the column with a property in the data source.
+GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. Each of the record cells in GridTextColumn displays text based on the `MappingName` which associates the column with a property in the data source.
 
 The following code example creates GridTextColumn.
 
