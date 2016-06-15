@@ -37,8 +37,8 @@ ios-unifed\Syncfusion.SfRangeSlider.iOS.dll
 
 {% highlight C# %}
 
-	SfRangeSlider sfRangeSlider = new SfRangeSlider(this);
-	SetContentView(sfRangeSlider);	
+	SfRangeSlider rangeSlider = new SfRangeSlider(this);
+	SetContentView(rangeSlider);	
 
 {% endhighlight %}
 
@@ -48,13 +48,13 @@ You can set the minimum value for the slider by using the `setMinimum()` and `se
 
 {% highlight c# %}
 
-	range.Minimum=0; 
-	range.Maximum=24; 
-	range.DirectionReversed=false; 
-	range.RangeEnd=20; 
-	range.RangeStart=4;
-	range.ShowRange=true; 
-	range.Orientation=Orientation.Horizontal;
+	rangeSlider.Minimum=0; 
+	rangeSlider.Maximum=24; 
+	rangeSlider.DirectionReversed=false; 
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	rangeSlider.Orientation=Orientation.Horizontal;
 
 {% endhighlight %}
 
@@ -66,10 +66,10 @@ The ticks can be set by setting the `TickFrequency` and `TickPlacement`. Likewis
 
 {% highlight c# %}
 
-	range.TickFrequency=4; 
-	range.ShowValueLabel=true; 
-	range.ValuePlacement=ValuePlacement.TopLeft; 
-	range.TickPlacement=TickPlacement.BottomRight;
+	rangeSlider.TickFrequency=4; 
+	rangeSlider.ShowValueLabel=true; 
+	rangeSlider.ValuePlacement=ValuePlacement.TopLeft; 
+	rangeSlider.TickPlacement=TickPlacement.BottomRight;
 
 {% endhighlight %}
 
@@ -81,8 +81,8 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% highlight c# %}
 
-	range.SnapsTo=SnapsTo.Ticks; 
-	range.StepFrequency=6;
+	rangeSlider.SnapsTo=SnapsTo.Ticks; 
+	rangeSlider.StepFrequency=6;
 
 {% endhighlight %}
 
@@ -90,13 +90,13 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% highlight C# %}
 	
-	sfRangeSlider.Minimum=0;
-	sfRangeSlider.Maximum=24;
-	sfRangeSlider.RangeStart=4;
-	sfRangeSlider.RangeEnd=20;
-	sfRangeSlider.TickFrequency=4;
-	sfRangeSlider.TickPlacement= TickPlacement.BottomRight;
-	sfRangeSlider.SnapsTo= SnapsTo.SnapsToTicks;
+	rangeSlider.Minimum=0;
+	rangeSlider.Maximum=24;
+	rangeSlider.RangeStart=4;
+	rangeSlider.RangeEnd=20;
+	rangeSlider.TickFrequency=4;
+	rangeSlider.TickPlacement= TickPlacement.BottomRight;
+	rangeSlider.SnapsTo= SnapsTo.SnapsToTicks;
 
 
 {% endhighlight %}

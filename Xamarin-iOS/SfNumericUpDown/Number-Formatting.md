@@ -20,7 +20,7 @@ It has three types,
 	
 {% highlight C# %}
 	
-	SfNumericUpDown.FormatString="c";
+	numericupdown.FormatString="c";
 	 
 {% endhighlight %}
 	
@@ -29,7 +29,7 @@ It has three types,
 	
 {% highlight C# %}
 	
-	SfNumericUpDown.FormatString="n";
+	numericupdown.FormatString="n";
 	 
 {% endhighlight %}
 	
@@ -38,7 +38,7 @@ It has three types,
 	
 {% highlight C# %}
 
-	SfNumericUpDown.FormatString="p";
+	numericupdown.FormatString="p";
 	 
 {% endhighlight %}
 	
@@ -54,7 +54,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight C# %}
 
-	sfNumericUpDown.ParserMode=ParserMode.Decimal;
+	numericupdown.ParserMode=ParserMode.Decimal;
 	  
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ It provides the following options:
 
 {% highlight C# %}
 
-	sfNumericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
+	numericupdown.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ It provides the following options:
 
 {% highlight C# %}
 
-	sfNumericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
+	numericupdown.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}
 

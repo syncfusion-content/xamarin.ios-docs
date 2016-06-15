@@ -21,7 +21,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	sfCalendar.ViewMode=ViewMode.MonthView;
+	calendar.ViewMode=ViewMode.MonthView;
 
 {% endhighlight %}
 

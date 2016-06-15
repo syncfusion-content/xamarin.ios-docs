@@ -39,8 +39,8 @@ android\Syncfusion.SfNavigationDrawer.ios.dll
 
 {% highlight c# %}
 
-	SfNavigationDrawer sfNavigationDrawer = new SfNavigationDrawer(this);
-	SetContentView(sfNavigationDrawer);
+	SfNavigationDrawer navigationDrawer = new SfNavigationDrawer(this);
+	SetContentView(navigationDrawer);
 	
 {% endhighlight %}
 
@@ -86,6 +86,6 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 	frame.SetBackgroundColor(Color.White);
 	frame.AddView (contentLayout);
 	//Add Drawer content view to Navigation
-	slideDrawer.DrawerContentView=frame;	
+	navigationDrawer.DrawerContentView=frame;	
 
 {% endhighlight %}
