@@ -13,7 +13,7 @@ The watermark text is used to display some information regarding the NumericEdit
 
 {% highlight c# %}
 
-	sfNumericUpDown.WaterMark = NumericUpDown;
+	numericupdown.WaterMark = NumericUpDown;
 
 {% endhighlight %}
 

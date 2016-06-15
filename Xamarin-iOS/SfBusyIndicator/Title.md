@@ -15,8 +15,9 @@ The `Title` property can be used to get or set the content that indicates the in
 
 {% highlight c# %}
 
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	sfBusyIndicator.Title="Loading...";
+	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
+	busyindicator.AnimationType=AnimationTypes.Battery;
+	busyindicator.Title="Loading...";
 	
 {% endhighlight %} 
 
@@ -32,9 +33,10 @@ BusyIndicator with title
 
 {% highlight c# %}
 
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	sfBusyIndicator.Title="Loading...";
-	sfBusyIndicator.Fontface=Typeface.create("Arial",Typeface.BOLD);
+	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
+	busyindicator.AnimationType=AnimationTypes.Battery;
+	busyindicator.Title="Loading...";
+	busyindicator.Fontface=Typeface.create("Arial",Typeface.NONE);
 
 {% endhighlight %}
 

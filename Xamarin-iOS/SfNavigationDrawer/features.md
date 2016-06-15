@@ -52,7 +52,7 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 	frame.SetBackgroundColor (Color.White);
 	frame.AddView (contentLayout);
 	//Add Drawer content view to Navigation
-	slideDrawer.DrawerContentView=frame;	
+	navigationDrawer.DrawerContentView=frame;	
 
 {% endhighlight %}
 
@@ -115,7 +115,7 @@ Gets or sets the height and width of the DrawerView panel in the NavigationDrawe
 
 {% highlight c# %}
 
-	sfNavigationDrawer.setDrawerHeight(300);
-        sfNavigationDrawer.DrawerWidth=300;
+	navigationDrawer.setDrawerHeight(300);
+    navigationDrawer.DrawerWidth=300;
 
 {% endhighlight %}

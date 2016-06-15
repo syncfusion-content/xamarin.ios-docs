@@ -42,8 +42,8 @@ ios-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
 {% highlight c# %}
 	
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	SetContentView(sfBusyIndicator);
+	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
+	SetContentView(busyindicator);
 	
 {% endhighlight %}
 
@@ -53,8 +53,8 @@ To set AnimationType for the BusyIndicator, use AnimationType property and choos
 
 {% highlight c# %}
 
-	SfBusyIndicator busyIndicator = new SfBusyIndicator (this); 
-	busyIndicator.AnimationType=AnimationTypes.Battery;
+	SfBusyIndicator busyindicator = new SfBusyIndicator (this); 
+	busyindicator.AnimationType=AnimationTypes.Battery;
 
 {% endhighlight %}
 	
@@ -62,11 +62,11 @@ To set AnimationType for the BusyIndicator, use AnimationType property and choos
       
 {% highlight c# %}
 	 
-	sfBusyIndicator.AnimationType=AnimationTypes.Ball;
-	sfBusyIndicator.TextColor=Color.RED;
-	sfBusyIndicator.ViewBoxHeight=20;
-	sfBusyIndicator.ViewBoxWidth=20;
-	sfBusyIndicator.IsBusy=True;
+	busyindicator.AnimationType=AnimationTypes.Ball;
+	busyindicator.TextColor=Color.RED;
+	busyindicator.ViewBoxHeight=20;
+	busyindicator.ViewBoxWidth=20;
+	busyindicator.IsBusy=True;
 	
 {% endhighlight %}
 

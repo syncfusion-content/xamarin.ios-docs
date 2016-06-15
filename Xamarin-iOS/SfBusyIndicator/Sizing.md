@@ -20,9 +20,10 @@ ViewBox is used for sizing an animation.It is achieved by,
 
 {% highlight c# %}
 
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	sfBusyIndicator.ViewBoxWidth=200;
-	sfBusyIndicator.ViewBoxHeight=200;
+	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
+	busyindicator.AnimationType=AnimationTypes.SlicedCircle;
+	busyindicator.ViewBoxWidth=200;
+	busyindicator.ViewBoxHeight=200;
 	
 {% endhighlight %}
 

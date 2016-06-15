@@ -13,8 +13,9 @@ The `IsBusy` property in the BusyIndicator control is used to determine whether 
 
 {% highlight c# %}
 
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	sfBusyIndicator.IsBusy=true;
+	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
+	busyindicator.AnimationType=AnimationTypes.SingleCircle;
+	busyindicator.IsBusy=true;
 
 {% endhighlight %}
 
