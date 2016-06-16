@@ -23,7 +23,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 N> Assemblies are available in unzipped package location in Mac
 
 and below assembly reference to the iOS unified project.
-ios-unifed\Syncfusion.SfNumericTextBox.iOS.dll
+iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 ### Initializing NumericTextBox
 

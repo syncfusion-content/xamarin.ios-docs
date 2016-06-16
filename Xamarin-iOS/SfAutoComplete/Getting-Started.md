@@ -23,7 +23,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfAutoComplete.iOS.dll
+iOS-unifed\Syncfusion.SfAutoComplete.iOS.dll
 
 ### Add and configure the AutoComplete control
 

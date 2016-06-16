@@ -26,7 +26,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfBusyIndicator.iOS.dll
+iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
 ### Add and Configure the BusyIndicator
 

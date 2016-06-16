@@ -23,7 +23,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 Add the following assembly references to the iOS project,
 
-android\Syncfusion.SfNavigationDrawer.ios.dll
+android\Syncfusion.SfNavigationDrawer.iOS.dll
 
 ### Initializing NavigationDrawer
 

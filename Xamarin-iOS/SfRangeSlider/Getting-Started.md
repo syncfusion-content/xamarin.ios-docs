@@ -21,7 +21,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 You have to add the following assembly reference to the iOS unified project
 
-ios-unifed\Syncfusion.SfRangeSlider.iOS.dll
+iOS-unifed\Syncfusion.SfRangeSlider.iOS.dll
 
 ### And and Configure the RangeSlider
 
