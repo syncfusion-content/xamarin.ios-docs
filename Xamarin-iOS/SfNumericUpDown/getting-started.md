@@ -23,7 +23,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 N> Assemblies are available in unzipped package location in Mac
 
 and below assembly reference to the iOS unified project.
-ios-unifed\Syncfusion.SfNumericUpDown.iOS.dll
+iOS-unifed\Syncfusion.SfNumericUpDown.iOS.dll
 
 ## Initializing NumericUpDown
 
@@ -42,8 +42,8 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 {% highlight c# %}
 
-	SfNumericUpDown sfnumericupdown=new SfNumericUpDown(this);
-	SetContentView(sfnumericupdown);
+	SfNumericUpDown numericupdown=new SfNumericUpDown(this);
+	SetContentView(numericupdown);
 
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ The NumericUpDown control display value can be set using `Value` property.
 
 {% highlight C# %}
 
-	sfnumericupdown.Value= 5;
+	numericupdown.Value= 5;
 
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
-	sfnumericupdown.ParsingMode=Parsers.Decimal;
+	numericupdown.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% highlight C# %}
 
-	sfnumericupdown.FormatString= “c”;
+	numericupdown.FormatString= “c”;
 
 {% endhighlight %}
 

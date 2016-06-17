@@ -23,7 +23,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 N> Assemblies are available in unzipped package location in Mac
 
 and below assembly reference to the iOS unified project.
-ios-unifed\Syncfusion.SfNumericTextBox.iOS.dll
+iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 ### Initializing NumericTextBox
 
@@ -39,8 +39,8 @@ ios-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 {% highlight c# %}
 
-	SfNumericTextBox SfNumericTextBox =new SfNumericTextBox();
-	SetContentView(SfNumericTextBox); 
+	SfNumericTextBox numericTextBox =new SfNumericTextBox();
+	SetContentView(numericTextBox); 
 
 {% endhighlight %}
 
@@ -50,7 +50,7 @@ Value of the NumericTextBox gets parsed based on the ParsingMode property. Parsi
 
 {% highlight c# %}
 
-	sfNumericTextBox.ParsingMode=Parsers.Decimal;
+	numericTextBox.ParsingMode=Parsers.Decimal;
 	
 {% endhighlight %}
 
@@ -58,13 +58,13 @@ Value of the NumericTextBox gets parsed based on the ParsingMode property. Parsi
 
 {% highlight c# %}
 
-	sfNumericTextBox.Value=1000;
-	sfNumericTextBox.Watermark="Principal Amount";
-	sfNumericTextBox.MaximumNumberDecimalDigits=2;
-	sfNumericTextBox.FormatString="c";
-	sfNumericTextBox.AllowNull= true;
-	sfNumericTextBox.CultureInfo= new NSLocale("en_us");
-	sfNumericTextBox.PercentDisplayMode = SFNumericTextBoxPercentDisplayMode.Compute;
+	numericTextBox.Value=1000;
+	numericTextBox.Watermark="Principal Amount";
+	numericTextBox.MaximumNumberDecimalDigits=2;
+	numericTextBox.FormatString="c";
+	numericTextBox.AllowNull= true;
+	numericTextBox.CultureInfo= new NSLocale("en_us");
+	numericTextBox.PercentDisplayMode = SFNumericTextBoxPercentDisplayMode.Compute;
 
 {% endhighlight %}
 

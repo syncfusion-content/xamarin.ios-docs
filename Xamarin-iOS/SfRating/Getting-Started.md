@@ -33,8 +33,8 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 
 {% highlight c# %}
 
-	SfRating sfRating = new SfRating ();
-	SetContentView(sfRating);
+	SfRating rating = new SfRating ();
+	SetContentView(rating);
 	
 {% endhighlight %}
 
@@ -42,13 +42,13 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 
 {% highlight c# %}
 
-    sfRating.ItemCount=5;
-	sfRating.Precision = SFRatingPrecision.Half;
-	sfRating.ToolTipPlacement= SFRatingToolTipPlacement.None;
-	sfRating.ItemSize=10;
-	sfRating.Readonly=true;
-	sfRating.Value=(nfloat)3.5;
-	sfRating.ItemSpacing = 5;
+    rating.ItemCount=5;
+	rating.Precision = SFRatingPrecision.Half;
+	rating.ToolTipPlacement= SFRatingToolTipPlacement.None;
+	rating.ItemSize=10;
+	rating.Readonly=true;
+	rating.Value=(nfloat)3.5;
+	rating.ItemSpacing = 5;
 
 {% endhighlight %}
 
@@ -60,7 +60,7 @@ N> By default, property value is 0.
 
 {% highlight c# %}
 
-    sfRating.Value=3;
+    rating.Value=3;
 
 {% endhighlight %}
 
@@ -70,7 +70,7 @@ N> By default, property value is 0.
 
 {% highlight c# %}
 
-    sfRating.Precision = Precision.Standard;
+    rating.Precision = Precision.Standard;
 
 {% endhighlight %}
 

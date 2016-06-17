@@ -22,7 +22,7 @@ This section provides a quick overview to work with the Calendar in Objective C.
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 And below assembly reference to the iOS unified project.
-ios-unifed\Syncfusion.SfCalendar.iOS.dll
+iOS-unifed\Syncfusion.SfCalendar.iOS.dll
 
 
 ### And and Configure the Calendar
@@ -41,8 +41,8 @@ The following steps explain on how to create an Calendar and configure its eleme
    
 {% highlight c# %}
 	
-	SfCalendar sfCalendar = new SfCalendar();
-	SetContentView(sfCalendar);
+	SfCalendar calendar = new SfCalendar();
+	SetContentView(calendar);
 	
 {% endhighlight %}
 

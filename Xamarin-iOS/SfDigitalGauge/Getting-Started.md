@@ -23,7 +23,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfDigitalGauge.iOS.dll 
+iOS-unifed\Syncfusion.SfDigitalGauge.iOS.dll 
 
 ### Add and Configure the DigitalGauge
 
