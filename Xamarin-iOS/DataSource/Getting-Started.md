@@ -42,6 +42,7 @@ This is how the final output will look like. You can also download the entire so
 
 * Create new **BlankApp** (Xamarin.iOS) application in **Xamarin Studio** or **Visual Studio**.
 * Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs** file.
+
 {% tabs %}
 {% highlight c# %}
 public class Contacts : INotifyPropertyChanged
@@ -79,7 +80,9 @@ public class Contacts : INotifyPropertyChanged
 
 {% endhighlight %}
 {% endtabs %}
+
 * Add the following code example in a newly created class file and save it as **ContactList.cs** file.
+
 {% tabs %}
 {% highlight c# %}
 
@@ -118,6 +121,7 @@ public class ContactsList : ObservableCollection<Contacts>, INotifyPropertyChang
 
 {% endhighlight %}
 {% endtabs %}
+
 * You can set the source of the DataSource by using the `DataSource.Source` property as follows. Now you can bind the `DataSource.DisplayItems` as ItemsSource for any data bound control.
 
 {% tabs %}
@@ -166,7 +170,9 @@ The following code example illustrates this without `KeySelector`.
 
 {% endhighlight %}
 {% endtabs %}
-The following code example illustrates this with Key Selector.
+
+The following code example illustrates this with `KeySelector`.
+
 {% tabs %}
 {% highlight c# %}
 [C#]
@@ -188,6 +194,7 @@ The following code example illustrates this with Key Selector.
 Please refer the below code example that illustrates binding the created DataSource to a UITableView control.
 
 * Add the following code example in a newly created class file and save it as **TableViewSource.cs** file.
+
 {% tabs %}
 {% highlight c# %}
 [C#]
@@ -246,7 +253,9 @@ Please refer the below code example that illustrates binding the created DataSou
 
 {% endhighlight %}
 {% endtabs %}
+
 Use below code in **SampleViewController.cs**.
+
 {% tabs %}
 {% highlight c# %}
 [C#]
