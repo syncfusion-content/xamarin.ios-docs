@@ -27,8 +27,6 @@ N> The selected dates can be retrieved through `calendarTapped` Delegate which i
 	
 {% endhighlight %}
 
-{% endtabs %}
-
 
 ![](images/multi_selection.png)                                        
 
