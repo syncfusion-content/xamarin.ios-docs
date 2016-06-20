@@ -140,6 +140,18 @@ The FontFamily for the content of header cell in the GridColumn can be customize
 
 You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment for the record cells in SfDataGrid is `Center`.
 
+#### LineBreakMode
+
+You can wrap the record cell velue when the text for the record cells exceeds the content area by setting [GridColumn.LineBreakMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LineBreakMode.html) as `LineBreakMode.WordWrap`
+
+The following code example shows how to use GridSwitchColumn.
+ 
+{% tabs %}
+{% highlight c# %}
+dataGrid.Columns[0].LineBreakMode = LineBreakMode.WordWrap; 
+{% endhighlight %}
+{% endtabs %} 
+
 
 ## TemplateColumn
 
