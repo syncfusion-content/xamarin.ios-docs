@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Pull To Refresh | SfDataGrid | Xamarin | Syncfusion
+title: Pull To Refresh | SfDataGrid | Xamarin.iOS | Syncfusion
 description: How to perform pull to refresh and it's properties and customizations in a SfDataGrid.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---
