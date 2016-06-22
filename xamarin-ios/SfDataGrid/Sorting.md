@@ -57,6 +57,18 @@ The following code example shows how to enable multi-sorting in SfDataGrid.
 dataGrid.AllowMultiSorting = true;
 {% endhighlight %}
 
+## Sort column in double click
+
+* By default, column gets sorted when column header clicked. You can change this behavior to sort the column in double click action by setting [SfDataGrid.SortTapAction](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SortTapAction.html) property as `DoubleTap`.
+
+The following code example shows how to set `SortTapAction` is `DoubleTap` in SfDataGrid.
+
+{% highlight c# %}
+
+dataGrid.SortTapAction=SortTapAction.DoubleTap;
+
+{% endhighlight %}
+
 ## Sorting Events
 
 The SfDataGrid provides you the following events for the sorting functionality:
