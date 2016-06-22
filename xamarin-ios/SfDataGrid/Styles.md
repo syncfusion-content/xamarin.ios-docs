@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Styles | SfDataGrid | Xamarin | Syncfusion
+title: Styles | SfDataGrid | Xamarin.iOS | Syncfusion
 description: How to apply styles for the elements in a SfDataGrid.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---
