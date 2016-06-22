@@ -23,7 +23,7 @@ N> The selected dates can be retrieved through `calendarTapped` Delegate which i
 
 {% highlight c# %}
 	
-	calendar.SelectionMode=SelectionMode.SingleSelection;
+	calendar.SelectionMode=SFCalendarSelectionMode.SFCalendarSelectionModeMultiple;
 	
 {% endhighlight %}
 

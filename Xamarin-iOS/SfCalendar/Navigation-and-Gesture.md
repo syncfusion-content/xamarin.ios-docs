@@ -39,7 +39,7 @@ N> By default, calendar views can be moved backwards and forwards using touch sw
 
 {% highlight c# %}
 
-    calendar.ViewMode=ViewMode.MonthView;
+    calendar.ViewMode = SFCalendarViewMode.SFCalendarViewModeMonth;
 	calendar.NavigationEnable=false;
 
 {% endhighlight %}
@@ -50,7 +50,7 @@ Dates can be navigated by using swipe gesture. By default those navigation are p
 
 {% highlight c# %}
 
-    calendar.TransitionMode=TransitionMode.Card;
+    calendar.TransitionMode=SFCalendarTransitionMode.SFCalendarTransitionModeCard;
 	
 {% endhighlight %}
 

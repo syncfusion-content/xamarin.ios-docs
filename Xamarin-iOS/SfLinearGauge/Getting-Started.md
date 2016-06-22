@@ -33,7 +33,7 @@ The following steps explain on how to create a LinearGauge and configure its ele
 
 {% highlight c# %}
 
-	using Syncfusion.SfLinearGauge.iOS; 
+	using Syncfusion.SFLinearGauge.iOS; 
 
 {% endhighlight %}
 
@@ -42,7 +42,7 @@ The following steps explain on how to create a LinearGauge and configure its ele
 {% highlight c# %}
 
 	SFLinearGauge  linearGauge = new SFLinearGauge ();
-	SetContentView(linearGauge);
+	this.AddSubview(linearGauge);
 
 {% endhighlight %}
 

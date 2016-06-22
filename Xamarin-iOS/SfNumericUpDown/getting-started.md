@@ -18,11 +18,13 @@ This section provides overview for working with Essential NumericUpDown for Xama
 ## Referencing Essential Studio Components in Your Solution	
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+
 {Syncfusion Installed location}\Essential Studio{version number}\lib
 
 N> Assemblies are available in unzipped package location in Mac
 
 and below assembly reference to the iOS unified project.
+
 iOS-unifed\Syncfusion.SfNumericUpDown.iOS.dll
 
 ## Initializing NumericUpDown
@@ -33,7 +35,7 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 {% highlight c# %}
 
-	Using Syncfusion.SfNumericUpDown.iOS; 
+	Using Syncfusion.SFNumericUpDown.iOS; 
 
 {% endhighlight %}
 
@@ -42,8 +44,8 @@ The NumericUpDown control configured entirely in C# code or by using XAML markup
 
 {% highlight c# %}
 
-	SfNumericUpDown numericupdown=new SfNumericUpDown(this);
-	SetContentView(numericupdown);
+	SFNumericUpDown numericupdown=new SFNumericUpDown();
+	this.AddSubview(numericupdown);
 
 {% endhighlight %}
 
@@ -65,7 +67,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
-	numericupdown.ParsingMode=Parsers.Decimal;
+	numericupdown.ParsingMode=SFNumericUpDownParsingMode.Decimal;
 	
 {% endhighlight %}
 

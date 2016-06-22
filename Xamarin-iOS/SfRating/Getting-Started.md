@@ -21,7 +21,7 @@ This section explains you the steps to configure a rating control in a real-ti
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+{Syncfusion Installed location}\Essential Studio {version number}\lib
 
 Add the following assembly references to the iOS unified project,
 
@@ -29,12 +29,20 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 
 ### Add and Configure the Rating Control
 
+* Adding reference to Autocomplete.
+
+{% highlight c# %}
+	
+	using Syncfusion.SFRating.iOS;
+	
+{% endhighlight %}
+
 * Create an instance of SfRating.
 
 {% highlight c# %}
 
-	SfRating rating = new SfRating ();
-	SetContentView(rating);
+	SFRating rating = new SFRating ();
+	this.AddSubview(rating);
 	
 {% endhighlight %}
 

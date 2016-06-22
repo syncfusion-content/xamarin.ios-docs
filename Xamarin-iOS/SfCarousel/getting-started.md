@@ -29,7 +29,7 @@ iOS-unifed\Syncfusion.SfCarousel.iOS.dll
 
 {% highlight C# %}
 
-	using Com.Syncfusion.Carousel; 
+	using Syncfusion.SFCarousel.iOS; 
 
 {% endhighlight %}
 
@@ -37,8 +37,8 @@ iOS-unifed\Syncfusion.SfCarousel.iOS.dll
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel(this);
-	SetContentView(carousel);
+	SFCarousel carousel = new SFCarousel();
+	this.AddSubview(carousel);
 
 {% endhighlight %}
 
@@ -48,7 +48,7 @@ Set the Offset property to specify the distance between the items in Carousel pa
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();
+	SFCarousel carousel = new SFCarousel();
 	carousel.SelectedIndex=2;
 	carousel.Offset=20;
 
@@ -61,7 +61,7 @@ Set the RotationAngle property to decide the angle in which items should be rota
 
 {% highlight C# %}
 
-	SfCarousel carousel = new SfCarousel();
+	SFCarousel carousel = new SFCarousel();
 	carousel.SelectedIndex=2;
 	carousel.Offset=20;
 	carousel.RotationAngle = 45;
@@ -74,13 +74,13 @@ SfCarousel items can be populated with a collection of image data. For example, 
 
 {% highlight c# %}
 
-	ArrayList temp=new ArrayList();
+	NSMutableArray<SFCarouselItem> carouselItemCollection = new NSMutableArray<SFCarouselItem> ();
 	For(int i=1;i<18;i++)
 	{
-	SfCarouselItem item =new SfCarouselItem();
+	SFCarouselItem item =new SFCarouselItem();
 	item.ImageName="image"+i;
-	temp.add(item);
+	carouselItemCollection.Add(item);
 	}
-	carousel.DataSource=temp;
+	carousel.DataSource=carouselItemCollection;
 
 {% endhighlight %}

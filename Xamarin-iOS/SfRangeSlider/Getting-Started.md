@@ -19,6 +19,8 @@ This section explains you the steps to configure a RangeSlider  control in a re
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
+{Syncfusion Installed location}\Essential Studio {version number}\lib
+
 You have to add the following assembly reference to the iOS unified project
 
 iOS-unifed\Syncfusion.SfRangeSlider.iOS.dll
@@ -29,7 +31,7 @@ iOS-unifed\Syncfusion.SfRangeSlider.iOS.dll
 
 {% highlight C# %}
 
-	using Syncfusion.SfRangeSlider.iOS; 
+	using Syncfusion.SFRangeSlider.iOS; 
 
 {% endhighlight %}
 
@@ -37,8 +39,8 @@ iOS-unifed\Syncfusion.SfRangeSlider.iOS.dll
 
 {% highlight C# %}
 
-	SfRangeSlider rangeSlider = new SfRangeSlider(this);
-	SetContentView(rangeSlider);	
+	SFRangeSlider rangeSlider = new SFRangeSlider();
+	this.AddSubview(rangeSlider);	
 
 {% endhighlight %}
 
@@ -68,8 +70,8 @@ The ticks can be set by setting the `TickFrequency` and `TickPlacement`. Likewis
 
 	rangeSlider.TickFrequency=4; 
 	rangeSlider.ShowValueLabel=true; 
-	rangeSlider.ValuePlacement=ValuePlacement.TopLeft; 
-	rangeSlider.TickPlacement=TickPlacement.BottomRight;
+	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementTopLeft; 
+	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementBottomRight;
 
 {% endhighlight %}
 
@@ -81,7 +83,7 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% highlight c# %}
 
-	rangeSlider.SnapsTo=SnapsTo.Ticks; 
+	rangeSlider.SnapsTo=SFSnapsTo.SFSnapsToTicks; 
 	rangeSlider.StepFrequency=6;
 
 {% endhighlight %}
@@ -95,8 +97,8 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 	rangeSlider.RangeStart=4;
 	rangeSlider.RangeEnd=20;
 	rangeSlider.TickFrequency=4;
-	rangeSlider.TickPlacement= TickPlacement.BottomRight;
-	rangeSlider.SnapsTo= SnapsTo.SnapsToTicks;
+	rangeSlider.TickPlacement= SFTickPlacement.SFTickPlacementBottomRight;
+	rangeSlider.SnapsTo= SFSnapsTo.SFSnapsToSnapsToTicks;
 
 
 {% endhighlight %}

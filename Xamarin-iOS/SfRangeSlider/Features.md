@@ -81,7 +81,7 @@ In this orientation, the values and the slider are set horizontally.
 
 {% highlight c# %}
 
-	rangeSlider.Orientation=Orientation.Horizontal
+	rangeSlider.Orientation=SFOrientation.SFOrientationHorizontal
 
 {% endhighlight %}
 
@@ -95,7 +95,7 @@ N> The default option is Horizontal.
 
 {% highlight c# %}
 
-	rangeSlider.Orientation=Orientation.Vertical
+	rangeSlider.Orientation=SFOrientation.SFOrientationVertical
 
 {% endhighlight %}
 
