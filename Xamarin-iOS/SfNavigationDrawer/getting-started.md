@@ -19,7 +19,7 @@ This section provides overview for working with Essential NavigationDrawer for X
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+{Syncfusion Installed location}\Essential Studio {version number}\lib
 
 Add the following assembly references to the iOS project,
 
@@ -31,8 +31,8 @@ android\Syncfusion.SfNavigationDrawer.iOS.dll
 
 {% highlight c# %}
 
-	using Com.Syncfusion.NavigationDrawer; 
-
+	using Syncfusion.SFNavigationDrawer.iOS;
+	
 {% endhighlight %}
 
 * Create an instance of SfNavigationDrawer.
@@ -40,6 +40,7 @@ android\Syncfusion.SfNavigationDrawer.iOS.dll
 {% highlight c# %}
 
 	SFNavigationDrawer navigationDrawer = new SFNavigationDrawer(this);
+	this.AddSubview(navigationDrawer);
 	
 {% endhighlight %}
 

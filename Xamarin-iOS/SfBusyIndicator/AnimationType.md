@@ -14,8 +14,8 @@ The `AnimationTypes` property for the SfBusyIndicator allows you to set one of t
 
 {% highlight c# %}
 
-	SfBusyIndicator busyindicator = new SfBusyIndicator(this);
-	busyindicator.AnimationType=AnimationTypes.Ball;
+	SFBusyIndicator busyindicator = new SFBusyIndicator();
+	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
 	
 {% endhighlight %} 
 

@@ -35,7 +35,7 @@ The Tooltip will be placed either below the Thumb in horizontal orientation or r
 
 {% highlight c# %}
 
-	rangeSlider.ToolTipPlacement = ToolTipPlacement.BottomRight;
+	rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementBottomRight;
 	
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ the Tooltip will be placed either above the Thumb in horizontal orientation or l
 
 {% highlight c# %}
 
-	rangeSlider.ToolTipPlacement = ToolTipPlacement.TopLeft;
+	rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementTopLeft;
 	
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ Tooltip will be collapsed.
 
 {% highlight c# %}
 
-	rangeSlider.ToolTipPlacement = ToolTipPlacement.None;
+	rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementNone;
 	
 {% endhighlight %}
 

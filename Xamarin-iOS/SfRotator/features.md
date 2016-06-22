@@ -63,7 +63,7 @@ The `NavigationDirection` property specifies the direction in which items should
 
 {% highlight C# %}
 
-	rotator.NavigationDirection = NavigationDirection.Horizontal;
+	rotator.NavigationDirection = SFRotatorNavigationDirection.Horizontal;
 
 {% endhighlight %}
 
@@ -71,6 +71,6 @@ The `NavigationDirection` property specifies the direction in which items should
 
 {% highlight C# %}
 
-	rotator.NavigationDirection = NavigationDirection.Vertical;
+	rotator.NavigationDirection = SFRotatorNavigationDirection.Vertical;
 
 {% endhighlight %}

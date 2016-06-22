@@ -41,8 +41,8 @@ The following steps explain on how to create an Calendar and configure its eleme
    
 {% highlight c# %}
 	
-	SfCalendar calendar = new SfCalendar();
-	SetContentView(calendar);
+	SFCalendar calendar = new SFCalendar();
+	this.AddSubview(calendar);
 	
 {% endhighlight %}
 
@@ -52,8 +52,8 @@ To enable multiple selection, Change the selection type using `SelectionMode` pr
 
 {% highlight c# %}
 
-	SfCalendar calendar = new SfCalendar (this);
-	calendar.SelectionMode=SelectionMode.MultiSelection;
+	SFCalendar calendar = new SFCalendar ();
+	calendar.SelectionMode = SFCalenderSelectionMode.SFCalenderSelectionModeMultiple;
 
 {% endhighlight %}
 
@@ -65,15 +65,14 @@ For instance add all the holiday dates to blackout dates property.
 
 {% highlight c# %}
 
-	SfCalendar  calendar = new SfCalendar (this);
-	List<DateTime> black_dates = new List<DateTime>();
-	for (int i = 0; i < 5; i++)
+	SFCalendar  calendar = new SFCalendar ();
+	calendar.BlackoutDates = new NSMutableArray ();
+	for (int i = 0; i < 5; i++) 
 	{
-		DateTime date = DateTime.Now.Date.AddDays(i+7);
-		black_dates.Add(date);
-    }
-	calendar.BlackoutDates = black_dates;
-
+		NSDate startDate = calendar.DateFromComponents (components);
+		components.Day += 1;
+		calendar.BlackoutDates.Add (startDate);
+	}
 
 {% endhighlight %}
 
@@ -83,7 +82,7 @@ Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Mi
 
 {% highlight c# %}
 
-	SfCalendar  calendar = new SfCalendar (this);
+	SFCalendar  calendar = new SFCalendar ();
 	calendar.MinDate = new DateTime(2014,4,1);
 	calendar.MaxDate = new DateTime(2018,4,1);
 

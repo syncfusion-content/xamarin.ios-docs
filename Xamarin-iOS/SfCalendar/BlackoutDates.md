@@ -28,9 +28,9 @@ N> Beyond the min max date range, following restrictions will be applied.
 {% highlight c# %}
 
 	DateTime d1=new DateTime(2015,1,1);
-	sfCalendar.MinDate=mindate;
+	calendar.MinDate=mindate;
 	DateTime d2=new DateTime(2040,12,12);
-	sfCalendar.MaxDate=d2;
+	calendar.MaxDate=d2;
 	
 {% endhighlight %}
 
@@ -46,14 +46,14 @@ The BlackoutDays can be achieved in two ways.
 
 {% highlight c# %}
 
-	List<DateTime> black_dates = new List<DateTime>();
-	black_dates.Add (new DateTime(2015,11,3));
-	black_dates.Add (new DateTime(2015,11,7));
-	black_dates.Add (new DateTime(2015,11,15));
-	black_dates.Add (new DateTime(2015,11,16));
-	black_dates.Add (new DateTime(2015,11,26));
-	black_dates.Add (new DateTime(2015,11,30));
-	sfCalendar.BlackoutDates= black_dates ;
+	SFCalendar  calendar = new SFCalendar ();
+	calendar.BlackoutDates = new NSMutableArray ();
+	for (int i = 0; i < 5; i++) 
+	{
+		NSDate startDate = calendar.DateFromComponents (components);
+		components.Day += 1;
+		calendar.BlackoutDates.Add (startDate);
+	}
 	
 {% endhighlight %}
 
