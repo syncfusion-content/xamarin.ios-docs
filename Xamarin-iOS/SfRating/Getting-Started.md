@@ -78,7 +78,7 @@ N> By default, property value is 0.
 
 {% highlight c# %}
 
-    rating.Precision = Precision.Standard;
+    rating.Precision =  SFRatingPrecision.Standard;
 
 {% endhighlight %}
 
