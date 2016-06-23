@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Row Height Customization | SfDataGrid | Xamarin | Syncfusion
+title: Row Height Customization | SfDataGrid | Xamarin.iOS | Syncfusion
 description: How to customize the height of rows in a SfDataGrid.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: ug
 ---
