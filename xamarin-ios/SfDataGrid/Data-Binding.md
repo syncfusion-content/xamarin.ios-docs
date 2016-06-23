@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data Binding | SfDataGrid | Xamarin | Syncfusion
+title: Data Binding | SfDataGrid | Xamarin.iOS | Syncfusion
 description: Data Binding and different sources that can be bound to a SfDataGrid.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---

@@ -54,7 +54,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight C# %}
 
-	numericupdown.ParserMode=ParserMode.Decimal;
+	numericupdown.ParserMode=SFNumericUpDownParsingMode.Decimal;
 	  
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ It provides the following options:
 
 {% highlight C# %}
 
-	numericupdown.PercentDisplayMode=PercentDisplayMode.Value;
+	numericupdown.PercentDisplayMode=SFNumericUpDownPercentDisplayMode.Value;
 
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ It provides the following options:
 
 {% highlight C# %}
 
-	numericupdown.PercentDisplayMode=PercentDisplayMode.Compute;
+	numericupdown.PercentDisplayMode=SFNumericUpDownPercentDisplayMode.Compute;
 
 {% endhighlight %}
 

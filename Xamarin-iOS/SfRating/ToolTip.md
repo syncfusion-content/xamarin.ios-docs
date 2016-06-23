@@ -24,7 +24,7 @@ The tooltip will display on top of the SfRating control.
 
 {% highlight c# %}
 
-	   rating.TooltipPlacement=TooltipPlacement.TopLeft;
+	   rating.TooltipPlacement=SFRatingTooltipPlacement.TopLeft;
 
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ The tooltip will display on bottom of the SfRating control.
 
 {% highlight c# %}
 
-	   rating.TooltipPlacement=TooltipPlacement.BottomRight;
+	   rating.TooltipPlacement=SFRatingTooltipPlacement.BottomRight;
 
 {% endhighlight %}
 
@@ -48,7 +48,7 @@ It is used to invisible the tool tip in the SfRating control.
 
 {% highlight c# %}
 
-	   rating.TooltipPlacement=TooltipPlacement.None;
+	   rating.TooltipPlacement=SFRatingTooltipPlacement.None;
 
 {% endhighlight %}
 

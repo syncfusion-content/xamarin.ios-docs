@@ -40,7 +40,8 @@ iOS-unifed\Syncfusion.SfDigitalGauge.iOS.dll
 {% highlight c# %}
 
 	SFDigitalGauge  digitalGauge = new SFDigitalGauge ();
-	SetContentView(digitalGauge);
+	this.AddSubview(digitalGauge);
+
 {% endhighlight %}
 
 ### Configure the properties of DigitalGauge

@@ -27,17 +27,17 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 
 {% highlight c# %}
 	
-	 SfRangeSlider rangeSlider; 
+	 SFRangeSlider rangeSlider; 
 	 ObservableCollection<Items>  customCollection;
 	 public RangeSliderPage ()
      {
        	customCollection = new ObservableCollection<Items> ();
            customCollection.Add(new Items(){Label = "Min", Value= 0});
            customCollection.Add(new Items() { Label = "Max", Value = 100 });
-		   rangeSlider = new SfRangeSlider ();
+		   rangeSlider = new SFRangeSlider ();
            rangeSlider.HeightRequest = 400;
            rangeSlider.ShowCustomLabel = true;
-           rangeSlider.CustomLabels = customCollection
+           rangeSlider.CustomLabels = customCollection;
 
 	 }
 
@@ -56,7 +56,7 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	rangeSlider.ValuePlacement=ValuePlacement.TopLeft;
+	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementTopLeft;
 
 {% endhighlight %}
 
@@ -64,7 +64,7 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	rangeSlider.ValuePlacement=ValuePlacement.BottomRight;
+	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementBottomRight;
 
 {% endhighlight %}
 
@@ -82,6 +82,6 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	rangeSlider.LabelPlacement=LabelPlacement.TopLeft;
+	rangeSlider.LabelPlacement=SFLabelPlacement.SFLabelPlacementTopLeft;
 
 {% endhighlight %}

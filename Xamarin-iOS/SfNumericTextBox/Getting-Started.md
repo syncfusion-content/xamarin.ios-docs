@@ -18,11 +18,13 @@ This section explains you the steps to configure a NumericTextBox control in a
 ### Reference Essential Studio Components in your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+
 {Syncfusion Installed location}\Essential Studio{version number}\lib
 
 N> Assemblies are available in unzipped package location in Mac
 
 and below assembly reference to the iOS unified project.
+
 iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 ### Initializing NumericTextBox
@@ -31,7 +33,7 @@ iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 {% highlight c# %}
 
-	Using Syncfusion.SfNumericTextBox.iOS; 
+	Using Syncfusion.SFNumericTextBox.iOS; 
 
 {% endhighlight %}
 
@@ -39,8 +41,8 @@ iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 {% highlight c# %}
 
-	SfNumericTextBox numericTextBox =new SfNumericTextBox();
-	SetContentView(numericTextBox); 
+	SFNumericTextBox numericTextBox =new SFNumericTextBox();
+	this.AddSubview(numericTextBox); 
 
 {% endhighlight %}
 
@@ -50,7 +52,7 @@ Value of the NumericTextBox gets parsed based on the ParsingMode property. Parsi
 
 {% highlight c# %}
 
-	numericTextBox.ParsingMode=Parsers.Decimal;
+	numericTextBox.ParsingMode=SFNumericTextBoxParsingMode.Decimal;
 	
 {% endhighlight %}
 
