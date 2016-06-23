@@ -26,7 +26,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfBusyIndicator.iOS.dll
+iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
 ### Add and Configure the BusyIndicator
 
@@ -34,7 +34,7 @@ ios-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
 {% highlight c# %}
 
-	using Com.Syncfusion.BusyIndicator; 
+	using Syncfusion.SFBusyIndicator.iOS;
 
 {% endhighlight %}
 
@@ -42,8 +42,8 @@ ios-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
 {% highlight c# %}
 	
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	SetContentView(sfBusyIndicator);
+	SFBusyIndicator busyindicator = new SFBusyIndicator();
+	this.AddSubview(busyindicator);
 	
 {% endhighlight %}
 
@@ -53,8 +53,7 @@ To set AnimationType for the BusyIndicator, use AnimationType property and choos
 
 {% highlight c# %}
 
-	SfBusyIndicator busyIndicator = new SfBusyIndicator (this); 
-	busyIndicator.AnimationType=AnimationTypes.Battery;
+	 busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
 
 {% endhighlight %}
 	
@@ -62,11 +61,11 @@ To set AnimationType for the BusyIndicator, use AnimationType property and choos
       
 {% highlight c# %}
 	 
-	sfBusyIndicator.AnimationType=AnimationTypes.Ball;
-	sfBusyIndicator.TextColor=Color.RED;
-	sfBusyIndicator.ViewBoxHeight=20;
-	sfBusyIndicator.ViewBoxWidth=20;
-	sfBusyIndicator.IsBusy=True;
+	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
+	busyindicator.TextColor=Color.RED;
+	busyindicator.ViewBoxHeight=20;
+	busyindicator.ViewBoxWidth=20;
+	busyindicator.IsBusy=True;
 	
 {% endhighlight %}
 

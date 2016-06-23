@@ -23,7 +23,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfLinearGauge.iOS.dll 
+iOS-unifed\Syncfusion.SfLinearGauge.iOS.dll 
 
 ### Add and Configure the LinearGauge
 
@@ -33,7 +33,7 @@ The following steps explain on how to create a LinearGauge and configure its ele
 
 {% highlight c# %}
 
-	using Syncfusion.SfLinearGauge.iOS; 
+	using Syncfusion.SFLinearGauge.iOS; 
 
 {% endhighlight %}
 
@@ -42,7 +42,7 @@ The following steps explain on how to create a LinearGauge and configure its ele
 {% highlight c# %}
 
 	SFLinearGauge  linearGauge = new SFLinearGauge ();
-	SetContentView(linearGauge);
+	this.AddSubview(linearGauge);
 
 {% endhighlight %}
 

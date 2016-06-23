@@ -15,14 +15,14 @@ SfCarousel items can be populated with a collection of business objects. For exa
 
 {% highlight c# %}
 
-	ArrayList temp=new ArrayList();
+	NSMutableArray<SFCarouselItem> carouselItemCollection = new NSMutableArray<SFCarouselItem> ();
 	For(int i=1;i<18;i++)
 	{
-	varitem: SFCarousel = SFCarousel (); 
-	item.ImageName="image";
-	temp.Add(item);
+	SFCarouselItem item =new SFCarouselItem();
+	item.ImageName="image"+i;
+	carouselItemCollection.Add(item);
 	}
-	carousel.DataSource=temp;
+	carousel.DataSource=carouselItemCollection;
 	
 {% endhighlight %}
 

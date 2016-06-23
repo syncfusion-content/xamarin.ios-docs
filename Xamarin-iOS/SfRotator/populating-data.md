@@ -11,17 +11,17 @@ documentation : ug
 
 ## DataSource
 
-SfRotator items can be populated with a collection of image datas. For example, a user may want to create a SfRotator control which will display a sequence of images.
+SfRotator items can be populated with a collection of image data. For example, a user may want to create a SfRotator control which will display a sequence of images.
 
 {% highlight C# %}
 
-	ArrayList temp=new ArrayList();
+	NSMutableArray<SFRotatorItem> rotatorItemCollection = new NSMutableArray<SFRotatorItem> ();
 	For(int i=1;i<18;i++)
 	{
-	SfRotatorItem item =new SfRotatorItem ();
+	SFRotatorItem item =new SFRotatorItem ();
 	item.ImageName="image"+i;
-	temp.add(item);
+	rotatorItemCollection.Add(item);
 	}
-	rotator.DataSource=temp;
-
+	rotator.DataSource=rotatorItemCollection;
+	
 {% endhighlight %}

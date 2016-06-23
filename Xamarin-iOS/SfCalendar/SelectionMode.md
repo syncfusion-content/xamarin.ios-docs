@@ -21,29 +21,11 @@ Dates can be selected by making a touch on month view cells. The default Selecti
 N> The selected dates can be retrieved through `calendarTapped` Delegate which is raised on selecting.
 
 
-{% tabs %}
-
-{% highlight objective-c %}
-
-	_calendar.selectionMode = SFCalenderSelectionModeMultiple;
-	[self.view addSubview: _calendar];
-
-{% endhighlight %}
-
-{% highlight swift %}
-
-	_calendar.selectionMode = SFCalenderSelectionModeMultiple;
-    self.view.addSubview(_calendar)
-
-{% endhighlight %}
-
 {% highlight c# %}
 	
-	sfCalendar.SelectionMode=SelectionMode.SingleSelection;
+	calendar.SelectionMode=SFCalendarSelectionMode.SFCalendarSelectionModeMultiple;
 	
 {% endhighlight %}
-
-{% endtabs %}
 
 
 ![](images/multi_selection.png)                                        

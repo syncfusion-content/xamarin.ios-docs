@@ -21,7 +21,7 @@ This section explains you the steps to configure a rating control in a real-ti
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+{Syncfusion Installed location}\Essential Studio {version number}\lib
 
 Add the following assembly references to the iOS unified project,
 
@@ -29,12 +29,20 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 
 ### Add and Configure the Rating Control
 
+* Adding reference to Autocomplete.
+
+{% highlight c# %}
+	
+	using Syncfusion.SFRating.iOS;
+	
+{% endhighlight %}
+
 * Create an instance of SfRating.
 
 {% highlight c# %}
 
-	SfRating sfRating = new SfRating ();
-	SetContentView(sfRating);
+	SFRating rating = new SFRating ();
+	this.AddSubview(rating);
 	
 {% endhighlight %}
 
@@ -42,13 +50,13 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 
 {% highlight c# %}
 
-    sfRating.ItemCount=5;
-	sfRating.Precision = SFRatingPrecision.Half;
-	sfRating.ToolTipPlacement= SFRatingToolTipPlacement.None;
-	sfRating.ItemSize=10;
-	sfRating.Readonly=true;
-	sfRating.Value=(nfloat)3.5;
-	sfRating.ItemSpacing = 5;
+    rating.ItemCount=5;
+	rating.Precision = SFRatingPrecision.Half;
+	rating.ToolTipPlacement= SFRatingToolTipPlacement.None;
+	rating.ItemSize=10;
+	rating.Readonly=true;
+	rating.Value=(nfloat)3.5;
+	rating.ItemSpacing = 5;
 
 {% endhighlight %}
 
@@ -60,7 +68,7 @@ N> By default, property value is 0.
 
 {% highlight c# %}
 
-    sfRating.Value=3;
+    rating.Value=3;
 
 {% endhighlight %}
 
@@ -70,7 +78,7 @@ N> By default, property value is 0.
 
 {% highlight c# %}
 
-    sfRating.Precision = Precision.Standard;
+    rating.Precision = Precision.Standard;
 
 {% endhighlight %}
 

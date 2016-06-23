@@ -20,7 +20,7 @@ Inline event support can be toggled on / off with `enableInLine` property.
 
 {% highlight c# %}
 
-	sfcalendar.showInLineEvent=True;
+	calendar.ShowInLineEvent=True;
 
 {% endhighlight %}
 

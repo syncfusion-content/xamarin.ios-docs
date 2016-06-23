@@ -21,7 +21,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	sfCalendar.ViewMode=ViewMode.MonthView;
+	calendar.ViewMode=SFCalendarViewMode.SFCalendarViewModeMonth;
 
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	MonthLabelSettings labelsettings = new MonthLabelSettings();
+	MonthLabelSettings labelSettings = new MonthLabelSettings();
 	labelSettings.DateFormat = “dd”;
 	labelSettings.DayLabelSize = 20;
 	labelSettings.DayFormat = "EEE";
@@ -47,7 +47,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 	monthViewSettings.InlineBackgroundColor=Color.ParseColor("#E4E8ED");
 	monthViewSettings.SetWeekDayBackGroundColor(Color.ParseColor("#F7F7F7"));
 	monthviewSettings.MonthLabelSettings = labelSettings;
-	sfCalendar.MonthViewSettings=monthViewSettings;
+	calendar.MonthViewSettings=monthViewSettings;
 	
 {% endhighlight %}
 
@@ -60,7 +60,7 @@ This displays entire dates/month of a particular year, by default current year w
 
 {% highlight c# %}
 
-	calendar.ViewMode=ViewMode.YearView;
+	calendar.ViewMode=SFCalendarViewMode.SFCalendarViewModeYear;
 	
 {% endhighlight %}
 
@@ -76,14 +76,14 @@ This displays entire dates/month of a particular year, by default current year w
 
 {% highlight c# %}
 
-	SfCalendar calendar = new SfCalendar(this);
+	SFCalendar calendar = new SFCalendar();
 	YearViewSettings yearViewSettings = new YearViewSettings();
 	yearViewSettings.YearHeaderTextColor=Color.parseColor("#1B79D6");
 	yearViewSettings.MonthHeaderBackground=Color.parseColor("#E4E8ED");
 	yearViewSettings.DateTextColor=Color.RED;
 	yearViewSettings.HeaderLabelAlignment=LabelAlignment.Center;
 	calendar.YearViewSettings=yearViewSettings;
-	SetContentView(calendar);
+	this.AddSubview(calendar);
 
 {% endhighlight %}
 

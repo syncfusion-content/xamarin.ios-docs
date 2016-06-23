@@ -19,9 +19,11 @@ This section explains you the steps to configure a RangeSlider  control in a re
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
+{Syncfusion Installed location}\Essential Studio {version number}\lib
+
 You have to add the following assembly reference to the iOS unified project
 
-ios-unifed\Syncfusion.SfRangeSlider.iOS.dll
+iOS-unifed\Syncfusion.SfRangeSlider.iOS.dll
 
 ### And and Configure the RangeSlider
 
@@ -29,7 +31,7 @@ ios-unifed\Syncfusion.SfRangeSlider.iOS.dll
 
 {% highlight C# %}
 
-	using Syncfusion.SfRangeSlider.iOS; 
+	using Syncfusion.SFRangeSlider.iOS; 
 
 {% endhighlight %}
 
@@ -37,8 +39,8 @@ ios-unifed\Syncfusion.SfRangeSlider.iOS.dll
 
 {% highlight C# %}
 
-	SfRangeSlider sfRangeSlider = new SfRangeSlider(this);
-	SetContentView(sfRangeSlider);	
+	SFRangeSlider rangeSlider = new SFRangeSlider();
+	this.AddSubview(rangeSlider);	
 
 {% endhighlight %}
 
@@ -48,13 +50,13 @@ You can set the minimum value for the slider by using the `setMinimum()` and `se
 
 {% highlight c# %}
 
-	range.Minimum=0; 
-	range.Maximum=24; 
-	range.DirectionReversed=false; 
-	range.RangeEnd=20; 
-	range.RangeStart=4;
-	range.ShowRange=true; 
-	range.Orientation=Orientation.Horizontal;
+	rangeSlider.Minimum=0; 
+	rangeSlider.Maximum=24; 
+	rangeSlider.DirectionReversed=false; 
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	rangeSlider.Orientation=Orientation.Horizontal;
 
 {% endhighlight %}
 
@@ -66,10 +68,10 @@ The ticks can be set by setting the `TickFrequency` and `TickPlacement`. Likewis
 
 {% highlight c# %}
 
-	range.TickFrequency=4; 
-	range.ShowValueLabel=true; 
-	range.ValuePlacement=ValuePlacement.TopLeft; 
-	range.TickPlacement=TickPlacement.BottomRight;
+	rangeSlider.TickFrequency=4; 
+	rangeSlider.ShowValueLabel=true; 
+	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementTopLeft; 
+	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementBottomRight;
 
 {% endhighlight %}
 
@@ -81,8 +83,8 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% highlight c# %}
 
-	range.SnapsTo=SnapsTo.Ticks; 
-	range.StepFrequency=6;
+	rangeSlider.SnapsTo=SFSnapsTo.SFSnapsToTicks; 
+	rangeSlider.StepFrequency=6;
 
 {% endhighlight %}
 
@@ -90,13 +92,13 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% highlight C# %}
 	
-	sfRangeSlider.Minimum=0;
-	sfRangeSlider.Maximum=24;
-	sfRangeSlider.RangeStart=4;
-	sfRangeSlider.RangeEnd=20;
-	sfRangeSlider.TickFrequency=4;
-	sfRangeSlider.TickPlacement= TickPlacement.BottomRight;
-	sfRangeSlider.SnapsTo= SnapsTo.SnapsToTicks;
+	rangeSlider.Minimum=0;
+	rangeSlider.Maximum=24;
+	rangeSlider.RangeStart=4;
+	rangeSlider.RangeEnd=20;
+	rangeSlider.TickFrequency=4;
+	rangeSlider.TickPlacement= SFTickPlacement.SFTickPlacementBottomRight;
+	rangeSlider.SnapsTo= SFSnapsTo.SFSnapsToSnapsToTicks;
 
 
 {% endhighlight %}

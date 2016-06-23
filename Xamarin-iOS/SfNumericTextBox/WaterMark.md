@@ -12,7 +12,7 @@ The watermark text is used to display some information regarding the NumericEdit
 
 {% highlight c# %}
 	
-	sfNumericTextBox.WaterMark = "Principal Amount";
+	numericTextBox.WaterMark = "Principal Amount";
 	 
 {% endhighlight %}
 	

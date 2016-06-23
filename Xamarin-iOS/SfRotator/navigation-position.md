@@ -17,7 +17,7 @@ There are four available positions,
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+	rotator.NavigationStripPosition = SFRotatorNavigationStripPosition.Bottom;
 
 {% endhighlight %}
 
@@ -25,7 +25,7 @@ There are four available positions,
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Left;
+	rotator.NavigationStripPosition = SFRotatorNavigationStripPosition.Left;
 
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ There are four available positions,
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Top;
+	rotator.NavigationStripPosition = SFRotatorNavigationStripPosition.Top;
 
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ There are four available positions,
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Right;
+	rotator.NavigationStripPosition = SFRotatorNavigationStripPosition.Right;
 
 {% endhighlight %}
 

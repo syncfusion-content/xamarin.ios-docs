@@ -19,9 +19,11 @@ This section explains you the steps to configure a Rotator control in a real-tim
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
+{Syncfusion Installed location}\Essential Studio {version number}\lib
+
 You have to add the following assembly reference to the iOS unified project
 
-ios-unifed\Syncfusion.SfRotator.iOS.dll
+iOS-unifed\Syncfusion.SfRotator.iOS.dll
 
 ## Add and Configure the Rotator 
 
@@ -29,7 +31,7 @@ ios-unifed\Syncfusion.SfRotator.iOS.dll
 
 {% highlight c# %}
 
-	using Com.Syncfusion.Rotator; 
+	using Syncfusion.SFRotator.iOS;
 
 {% endhighlight %}
 
@@ -39,8 +41,8 @@ ios-unifed\Syncfusion.SfRotator.iOS.dll
 
 {% highlight c# %}		
 
-	SfRotator  sfRotator  = new SfRotator();
-	SetContentView(sfRotator);
+	SFRotator  rotator  = new SFRotator();
+	this.AddSubview(rotator);
 
 {% endhighlight %}
 
@@ -50,7 +52,7 @@ The NavigationMode property decides the navigation mode for navigating items. Th
 
 {% highlight C# %}	
 
-	sfRotator.NavigationMode = NavigationMode.Dots;
+	rotator.NavigationStripMode = SFRotatorNavigationStripMode.Dots;
 
 {% endhighlight %}
 
@@ -60,7 +62,7 @@ The TabStripPosition property decides the position in which navigation strip ite
 
 {% highlight C# %}	
 
-	sfRotator.NavigationMode = NavigationMode.Dots;
-	sfRotator.TabStripPosition = TabStripPosition.Bottom;
+	rotator.NavigationStripMode = SFRotatorNavigationStripMode.Dots;
+	rotator.NavigationStripPosition = SFRotatorNavigationStripPosition.Bottom;
 	
 {% endhighlight %}
