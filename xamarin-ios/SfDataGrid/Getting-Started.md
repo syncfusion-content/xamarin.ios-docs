@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting started | SfDataGrid | Xamarin | Syncfusion
+title: Getting started | SfDataGrid | Xamarin.iOS | Syncfusion
 description: Getting started with SfDataGrid.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: ug
 ---

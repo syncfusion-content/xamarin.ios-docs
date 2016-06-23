@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Exporting | SfDataGrid | Xamarin | Syncfusion
+title: Exporting | SfDataGrid | Xamarin.iOS | Syncfusion
 description: How to export a SfDataGrid to excel and pdf and it's customizations.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: ug
 ---
