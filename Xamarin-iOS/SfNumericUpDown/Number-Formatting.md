@@ -20,7 +20,7 @@ It has three types,
 	
 {% highlight C# %}
 	
-	numericupdown.FormatString="c";
+	numericupdown.FormatString=@"c";
 	 
 {% endhighlight %}
 	
@@ -29,7 +29,7 @@ It has three types,
 	
 {% highlight C# %}
 	
-	numericupdown.FormatString="n";
+	numericupdown.FormatString=@"n";
 	 
 {% endhighlight %}
 	
@@ -38,7 +38,7 @@ It has three types,
 	
 {% highlight C# %}
 
-	numericupdown.FormatString="p";
+	numericupdown.FormatString=@"p";
 	 
 {% endhighlight %}
 	

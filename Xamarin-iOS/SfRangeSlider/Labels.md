@@ -31,13 +31,13 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 	 ObservableCollection<Items>  customCollection;
 	 public RangeSliderPage ()
      {
-       	customCollection = new ObservableCollection<Items> ();
-           customCollection.Add(new Items(){Label = "Min", Value= 0});
-           customCollection.Add(new Items() { Label = "Max", Value = 100 });
+           NSMutableArray<SFLabelItems> labels = new NSMutableArray<SFLabelItems>();
+		   labels.Add(new SFLabelItems() { Label = (NSString)"Min", Value = 0 });
+		   labels.Add(new SFLabelItems() { Label = (NSString)"Max", Value = 100 });
 		   rangeSlider = new SFRangeSlider ();
            rangeSlider.HeightRequest = 400;
            rangeSlider.ShowCustomLabel = true;
-           rangeSlider.CustomLabels = customCollection;
+           rangeSlider.CustomLabels = labels;
 
 	 }
 

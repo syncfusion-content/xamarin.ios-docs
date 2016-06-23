@@ -20,7 +20,7 @@ It has three types,
 	
 {% highlight c# %}
 	
-	numericTextBox.FormatString="c";
+	numericTextBox.FormatString=@"c";
 	 
 {% endhighlight %}
 	
@@ -29,7 +29,7 @@ It has three types,
 	
 {% highlight c# %}
 	
-	numericTextBox.FormatString="n";
+	numericTextBox.FormatString=@"n";
 	 
 {% endhighlight %}
 	
@@ -38,7 +38,7 @@ It has three types,
 	
 {% highlight c# %}
 
-	numericTextBox.FormatString="p";
+	numericTextBox.FormatString=@"p";
 	 
 {% endhighlight %}
 	

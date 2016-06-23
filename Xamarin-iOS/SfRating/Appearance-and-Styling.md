@@ -82,7 +82,7 @@ The RatedFill property fills the rated area with the specified solid color in th
 
 {% highlight c# %}
 
-	ratingSetting.RatedFill=Color.FromHex("#fbd10a");
+	ratingSetting.RatedFill=UIColor.FromRGB (251,209,10);
 
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ The RatedStroke property sets the stroke for the rated area with the specified s
 
 {% highlight c# %}
 
-	ratingSetting.RatedStroke=Color.GREEN;
+	ratingSetting.RatedStroke=UIColor.Green;
 
 {% endhighlight %}
 
@@ -118,7 +118,7 @@ The UnRatedFill property fills the unrated area with the specified solid color i
 
 {% highlight c# %}
 
-	ratingSetting.UnRatedFill=Color.GRAY;
+	ratingSetting.UnRatedFill=UIColor.Gray;
 
 {% endhighlight %}
 
@@ -130,7 +130,7 @@ The UnRatedStroke property sets the stroke for the unrated area with the specifi
 
 {% highlight c# %}
 
-	ratingSetting.UnRatedStroke=Color.BLACK;
+	ratingSetting.UnRatedStroke=UIColor.Black;
 
 {% endhighlight %}
 

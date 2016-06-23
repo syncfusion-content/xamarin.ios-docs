@@ -9,7 +9,7 @@ documentation: ug
 
 # WaterMark
 
-The watermark text is used to display some information regarding the NumericEditBox. This watermark is visible when EditText is empty or Null.
+The watermark text is used to display some information regarding the NumericEditBox. This watermark is visible when textbox is empty or Null.
 
 {% highlight c# %}
 

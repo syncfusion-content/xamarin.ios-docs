@@ -10,13 +10,13 @@ documentation: ug
 
 ## Culture
 
-The NumericTextBox value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
+The NumericTextBox value can be localized to any specific culture. It can be specified by setting the `Culture` property with `NSLocale` object instance.
 
 N> Default `Culture` property value is en-US.
 
 {% highlight c# %}
 
-	numericTextBox.Culture = new System.Globalization.CultureInfo("fr-FR");
+	numericTextBox.Culture = new NSLocale("zh-CN");
 	
 {% endhighlight %}
 

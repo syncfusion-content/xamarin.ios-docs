@@ -25,3 +25,7 @@ SfRotator items can be populated with a collection of image data. For example, a
 	rotator.DataSource=rotatorItemCollection;
 	
 {% endhighlight %}
+
+## RotatorItem
+
+RotatorItems consisting of three properties ImageName,View and Text using this user can set content for SFRotator.
