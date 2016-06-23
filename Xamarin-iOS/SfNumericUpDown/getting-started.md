@@ -15,7 +15,7 @@ This section provides overview for working with Essential NumericUpDown for Xama
 
 ## Create your first NumericUpDown control in Xamarin.iOS
 
-## Referencing Essential Studio Components in Your Solution	
+### Referencing Essential Studio Components in Your Solution	
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
@@ -29,7 +29,7 @@ iOS-unifed\Syncfusion.SfNumericUpDown.iOS.dll
 
 ## Initializing NumericUpDown
 
-The NumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explain on how to create a NumericUpDown and configure its elements,
+The NumericUpDown control configured entirely in C# code. The following steps explain on how to create a NumericUpDown and configure its elements,
 
 * Adding reference to NumericUpDown.
 
@@ -85,7 +85,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% highlight C# %}
 
-	numericupdown.FormatString= “c”;
+	numericupdown.FormatString= @“c”;
 
 {% endhighlight %}
 

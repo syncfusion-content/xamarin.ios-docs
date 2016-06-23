@@ -9,7 +9,6 @@ documentation: UG
 
 # Columns 
 
-This section explains you about how to create and add columns, different ways to create columns and about the customizations that can done to a column.
 SfDataGrid allows you to create and add Columns in two ways:
 
 * Automatic Columns generation based on the underlying collection.
@@ -52,6 +51,16 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
 }
 {% endhighlight %}
 
+Customizing the width for auto generated columns as shown below.
+
+{% highlight c# %}
+void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e){
+if (e.Column.MappingName == "OrderID") {
+    e.Column.Width = 100;
+    }
+}
+{% endhighlight %}
+
 You can also apply formatting for auto generated columns as shown below.
 
 {% highlight c# %}
@@ -70,7 +79,7 @@ You can also customize a column’s header text, sorting, alignment, padding, et
 
 ## Manually generate Columns
 
-SfDataGrid also allows you to define the columns manually by adding the GridColumn objects to the `SfDataGrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDataGrid.AutoGenerateColumns` property to false. There are different types of columns available in SfDataGrid and you can create any column based on your requirements through code.
+SfDataGrid also allows you to define the columns manually by adding the GridColumn objects to the `SfDataGrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDataGrid.AutoGenerateColumns` property to `false`. There are different types of columns available in SfDataGrid and you can create any column based on your requirements through code.
  
 The following code example illustrates about creating columns manually in SfDataGrid.
 

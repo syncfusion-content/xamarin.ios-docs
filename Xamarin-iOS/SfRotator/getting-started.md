@@ -15,7 +15,7 @@ This section explains you the steps to configure a Rotator control in a real-tim
 
 ## Creating your first Rotator in Xamarin.iOS
 
-## Referencing Essential Studio Components in Your Solution
+### Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 

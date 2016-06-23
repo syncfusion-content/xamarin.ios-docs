@@ -23,13 +23,13 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-iOS-unifed\Syncfusion.SfLinearGauge.iOS.dll 
+iOS-unifed\Syncfusion.SfGauge.iOS.dll 
 
 ### Add and Configure the LinearGauge
 
 The following steps explain on how to create a LinearGauge and configure its elements:
 
-* Adding reference to Autocomplete.
+* Adding reference to LinearGauge.
 
 {% highlight c# %}
 
