@@ -16,7 +16,7 @@ N> Default `Culture` property value is en-US.
 
 {% highlight c# %}
 
-	numericTextBox.Culture = new NSLocale("zh-CN");
+	numericTextBox.CultureInfo = new NSLocale("zh-CN");
 	
 {% endhighlight %}
 

@@ -13,18 +13,17 @@ Main Scale is the linear scale that integrates ticks, labels and scale bar to sp
 
 {% highlight c# %}
 
-	ObservableCollection<LinearScale> scales = new ObservableCollection<LinearScale> ();
-	LinearScale scale=new LinearScale();
+	SFLinearScale scale=new SFLinearScale();
 	scale.MinimumValue=0;
 	scale.MaximumValue=100;
 	scale.Interval=20;
 	scale.ScaleBarLength=100;
-	scale.ScaleBarColor= Color.FromRgb (250, 236, 236);
-	scale.LabelColor = Color.FromRgb (84, 84, 84); 
+	scale.ScaleBarColor= UIColor.FromRGB (250, 236, 236);
+	scale.LabelColor = UIColor.FromRGB (84, 84, 84); 
 	scale.MinorTicksPerInterval = 1;
 	scale.ScaleBarSize = 13;
-	scale.ScalePosition = ScalePosition.BackWard;	
-	sfLinearGauge.Scales=scale;
+	scale.ScalePosition = SFLinearGaugeScalePosition.SFLinearGaugeScalePositionBackWard;	
+	sfLinearGauge.Scales.Add(scale);
 	
 {% endhighlight %}
 

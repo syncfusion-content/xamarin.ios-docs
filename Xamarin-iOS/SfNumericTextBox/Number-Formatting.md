@@ -54,7 +54,7 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight c# %}
 
-	numericTextBox.ParserMode=ParserMode.Decimal;
+	numericTextBox.ParserMode=SFNumericTextBoxParserMode.Decimal;
 	  
 {% endhighlight %}
 
@@ -72,7 +72,7 @@ It provides the following options:
 
 {% highlight c# %}
 
-	numericTextBox.PercentDisplayMode=PercentDisplayMode.Value;
+	numericTextBox.PercentDisplayMode=SFNumericTextBoxPercentDisplayMode.Value;
 
 {% endhighlight %}
 
@@ -80,7 +80,7 @@ It provides the following options:
 
 {% highlight c# %}
 
-	numericTextBox.PercentDisplayMode=PercentDisplayMode.Compute;
+	numericTextBox.PercentDisplayMode=SFNumerictextBoxPercentDisplayMode.Compute;
 
 {% endhighlight %}
 

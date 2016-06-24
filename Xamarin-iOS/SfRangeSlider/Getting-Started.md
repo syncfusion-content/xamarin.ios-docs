@@ -56,7 +56,7 @@ You can set the minimum value for the slider by using the `setMinimum()` and `se
 	rangeSlider.RangeEnd=20; 
 	rangeSlider.RangeStart=4;
 	rangeSlider.ShowRange=true; 
-	rangeSlider.Orientation=Orientation.Horizontal;
+	rangeSlider.Orientation=SFOrientation.SFOrientationHorizontal;
 
 {% endhighlight %}
 

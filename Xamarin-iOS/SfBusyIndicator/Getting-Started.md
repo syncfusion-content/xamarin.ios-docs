@@ -62,7 +62,7 @@ To set AnimationType for the BusyIndicator, use AnimationType property and choos
 {% highlight c# %}
 	 
 	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
-	busyindicator.TextColor=Color.RED;
+	busyindicator.TextColor=UIColor.RED;
 	busyindicator.ViewBoxHeight=20;
 	busyindicator.ViewBoxWidth=20;
 	busyindicator.IsBusy=True;

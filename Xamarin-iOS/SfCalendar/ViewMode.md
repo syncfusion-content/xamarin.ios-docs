@@ -37,15 +37,15 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% highlight c# %}
 
-	MonthLabelSettings labelSettings = new MonthLabelSettings();
+	SFMonthLabelSettings labelSettings = new SFMonthLabelSettings();
 	labelSettings.DateFormat = “dd”;
 	labelSettings.DayLabelSize = 20;
 	labelSettings.DayFormat = "EEE";
 	labelSettings.DateLabelSize =  12;
-	MonthViewSettings monthViewSettings = new MonthViewSettings();
-	monthViewSettings.TodayTextColor=Color.ParseColor("#1B79D6");
-	monthViewSettings.InlineBackgroundColor=Color.ParseColor("#E4E8ED");
-	monthViewSettings.SetWeekDayBackGroundColor(Color.ParseColor("#F7F7F7"));
+	SFMonthViewSettings monthViewSettings = new SFMonthViewSettings();
+	monthViewSettings.TodayTextColor=UIColor.ParseColor("#1B79D6");
+	monthViewSettings.InlineBackgroundColor=UIColor.ParseColor("#E4E8ED");
+	monthViewSettings.WeekDayBackGroundColor=UIColor.ParseColor("#F7F7F7");
 	monthviewSettings.MonthLabelSettings = labelSettings;
 	calendar.MonthViewSettings=monthViewSettings;
 	
@@ -77,7 +77,7 @@ This displays entire dates/month of a particular year, by default current year w
 {% highlight c# %}
 
 	SFCalendar calendar = new SFCalendar();
-	YearViewSettings yearViewSettings = new YearViewSettings();
+	SFYearViewSettings yearViewSettings = new SFYearViewSettings();
 	yearViewSettings.YearHeaderTextColor=Color.parseColor("#1B79D6");
 	yearViewSettings.MonthHeaderBackground=Color.parseColor("#E4E8ED");
 	yearViewSettings.DateTextColor=Color.RED;
