@@ -61,7 +61,7 @@ Value of the NumericTextBox gets parsed based on the ParsingMode property. Parsi
 {% highlight c# %}
 
 	numericTextBox.Value=1000;
-	numericTextBox.Watermark="Principal Amount";
+	numericTextBox.Watermark=(NSString)"Principal Amount";
 	numericTextBox.MaximumNumberDecimalDigits=2;
 	numericTextBox.FormatString="c";
 	numericTextBox.AllowNull= true;
