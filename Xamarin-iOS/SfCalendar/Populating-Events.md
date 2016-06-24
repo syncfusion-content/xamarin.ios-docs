@@ -34,13 +34,13 @@ The Appointment class has some basic properties such as `startTime`, `endTime` a
 
 {% highlight C# %}
 		   
-		   CalendarInlineEvent event=new CalendarInlineEvent();
+		   SFCalendarInlineEvent event=new SFCalendarInlineEvent();
            DateTime d=new DateTime(2015,1,1);
            DateTime d1=new DateTime(2015,1,1);
            event.StartTime=d;
            event.EndTime=d1;
-           event.Subject=”Go to Meeting”;
-           event.Color=Color.RED;
+           event.Subject=(NSString)”Go to Meeting”;
+           event.Color=UIColor.RED;
 		   
 {% endhighlight %}
 
@@ -48,7 +48,7 @@ The Appointment class has some basic properties such as `startTime`, `endTime` a
 
 {% highlight c# %}
 
-	CalendarEventCollection eventsCollection = new CalendarEventCollection();
+	SFCalendarEventCollection eventsCollection = new SFCalendarEventCollection();
 	eventsCollection.Add(events);
 	
 {% endhighlight %}

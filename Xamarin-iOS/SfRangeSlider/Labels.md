@@ -17,7 +17,7 @@ N> The default value of the `ShowValueLabel` property is false.
 
 {% highlight c# %}
 
-	rangeSlider.ShowValueLabel= True;
+	rangeSlider.ShowValueLabel= true;
 
 {% endhighlight %}
 
