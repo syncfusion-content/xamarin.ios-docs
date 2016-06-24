@@ -15,7 +15,7 @@ The `Title` property can be used to get or set the content that indicates the in
 
 	SFBusyIndicator busyindicator = new SFBusyIndicator();
 	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
-	busyindicator.Title="Loading...";
+	busyindicator.Title=(NSString)"Loading...";
 	
 {% endhighlight %} 
 

@@ -51,6 +51,6 @@ iOS-unifed\Syncfusion.SfGauge.iOS.dll
 	digitalGauge.CharacterHeight = 36;
 	digitalGauge.CharacterWidth = 18;
 	digitalGauge.CharacterType = SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeSegmentSeven;
-	digitalGauge.Value = “Syncfusion”;
+	digitalGauge.Value = (NSString)“Syncfusion”;
 
 {% endhighlight %}

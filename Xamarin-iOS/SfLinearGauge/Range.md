@@ -12,22 +12,22 @@ Ranges of the linear scale are a collection of the linear range. A linear range 
 
 {% highlight c# %}
 
-	LinearRange symbolRange = new LinearRange ();
+	SFLinearRange symbolRange = new SFLinearRange ();
     symbolRange.StartValue = 0;
     symbolRange.EndValue = 50;
-    symbolRange.Color = Color.FromRgb (234, 248, 249);
+    symbolRange.Color = UIColor.FromRGB (234, 248, 249);
     symbolRange.StartWidth = 10;
     symbolRange.EndWidth = 10;
-    symbolRange.Offset = -0.17;
+    symbolRange.Offset =  nfloat.Parse("-0.17"); ;
     scale.Ranges.Add (symbolRange);
     //Range
-    LinearRange pointerRange = new LinearRange ();
+    SFLinearRange pointerRange = new SFLinearRange ();
     pointerRange.StartValue = 50;
     pointerRange.EndValue = 100;
-    pointerRange.Color = Color.FromRgb (50, 184, 198);
+    pointerRange.Color = UIColor.FromRGB (50, 184, 198);
     pointerRange.StartWidth = 10;
     pointerRange.EndWidth = 10; 
-    pointerRange.Offset = 0.07;                       
+    pointerRange.Offset =  nfloat.Parse("-0.17"); ;                       
     scale.Ranges.Add (pointerRange); 
 	
 {% endhighlight %}
