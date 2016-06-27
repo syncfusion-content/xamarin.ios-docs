@@ -98,6 +98,6 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 	sideMenuController.DrawerContentView = centerview;
 	sideMenuController.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
 
-	this.AddSubview (sideMenuController.View);
+	this.AddSubview (sideMenuController);
 
 {% endhighlight %}
