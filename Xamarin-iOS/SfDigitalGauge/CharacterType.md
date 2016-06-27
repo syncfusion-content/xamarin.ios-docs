@@ -25,7 +25,7 @@ N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
 
 {% highlight c# %}
 
-	 digitalGauge.CharacterType=CharacterTypes.SegmentSeven;
+	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeSegmentSeven;
 
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
 
 {% highlight c# %}
 
-	 digitalGauge.CharacterType=CharacterTypes.segmentFourteen;
+	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypesegmentFourteen;
 
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
 
 {% highlight c# %}
 
-	 digitalGauge.CharacterType=CharacterTypes.segmentSixteen;
+	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypesegmentSixteen;
 
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
 
 {% highlight c# %}
 
-	 digitalGauge.CharacterType=CharacterTypes.EightCrossEightDotMatrix;
+	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeEightCrossEightDotMatrix;
 
 {% endhighlight %}
 

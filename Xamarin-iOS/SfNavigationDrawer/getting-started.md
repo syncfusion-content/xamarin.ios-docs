@@ -83,7 +83,7 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 	centerview.Add (table);
 	usernameLabel = new UILabel ();
 	usernameLabel.Frame =new CGRect (0, 70, sideMenuController.DrawerWidth, 30);
-	usernameLabel.Text="James Pollock";
+	usernameLabel.Text=(NSString)"James Pollock";
 	usernameLabel.TextColor = UIColor.White;
 	usernameLabel.TextAlignment = UITextAlignment.Center;
 	HeaderView.AddSubview (usernameLabel);
@@ -98,6 +98,6 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 	sideMenuController.DrawerContentView = centerview;
 	sideMenuController.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
 
-	this.AddSubview (sideMenuController.View);
+	this.AddSubview (sideMenuController);
 
 {% endhighlight %}

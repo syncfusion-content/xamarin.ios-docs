@@ -67,7 +67,7 @@ N> The default option is Ticks.
 
 {% highlight c# %}
 
-	rangeSlider.SnapsTo=SnapsTo.Ticks;
+	rangeSlider.SnapsTo=SFSnapsTo.SFSnapsToTicks;
 
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ In this orientation, the values and the slider are set horizontally.
 
 {% highlight c# %}
 
-	rangeSlider.Orientation=SFOrientation.SFOrientationHorizontal
+	rangeSlider.Orientation=SFOrientation.SFOrientationHorizontal;
 
 {% endhighlight %}
 
@@ -95,7 +95,7 @@ N> The default option is Horizontal.
 
 {% highlight c# %}
 
-	rangeSlider.Orientation=SFOrientation.SFOrientationVertical
+	rangeSlider.Orientation=SFOrientation.SFOrientationVertical;
 
 {% endhighlight %}
 
