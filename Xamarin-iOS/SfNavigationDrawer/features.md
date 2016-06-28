@@ -22,6 +22,23 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 	UIImageView userImgLabel=new UIImageView();
 	userImgLabel.Frame =new CGRect ((this.Frame.Width/2)-100, 10, 80, 80);
 	userImgLabel.Image = new UIImage ("Images/User.png");
+	
+	UILabel headerContentLabel = new UILabel ();
+	headerContentLabel.Frame =new CGRect ((bounds.Width/2)-100, 10, 200, 30);
+	headerContentLabel.Text="Home";
+	headerContentLabel.TextColor = UIColor.White;
+	headerContentLabel.TextAlignment = UITextAlignment.Center;
+	this.AddSubview (headerContentLabel);
+	
+	UILabel textBlockLabel1 = new UILabel ();
+	textBlockLabel1.Frame = new CGRect (15, 10, content.Frame.Width-20, 300);
+	textBlockLabel1.Text = "Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.";
+	textBlockLabel1.LineBreakMode = UILineBreakMode.WordWrap;
+	textBlockLabel1.TextAlignment = UITextAlignment.Justified;
+	textBlockLabel1.Lines = 0;
+	textBlockLabel1.Font = UIFont.FromName ("Helvetica", 15f);
+	
+	content.AddSubview (textBlockLabel1);
 	content.Add (userImgLabel);
 	background.Add(content);
 	
@@ -64,7 +81,7 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 	sideMenuController.DrawerContentView = centerview;
 	sideMenuController.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
 
-	this.AddSubview (sideMenuController.View);
+	this.AddSubview (sideMenuController);
 
 
 {% endhighlight %}
@@ -82,13 +99,12 @@ Gets or sets the footer for the DrawerView panel in the SfNavigationDrawer contr
 	usernameLabel.Text="James Pollock";
 	usernameLabel.TextColor = UIColor.White;
 	usernameLabel.TextAlignment = UITextAlignment.Center;
-	LinearLayout footerLayout = new LinearLayout(this); 
+	LinearLayout footerLayout = new LinearLayout(); 
 	footerLayout.Orientation=LinearLayout.VERTICAL; 
- 	footerLayout.SetBackgroundColor(Color._parseColor_("#1aa1d6")); 
-	footerLayout.SetGravity(Gravity._Top_);
-	footerLayout.SetPadding(0, 20, 0, 0);
-	footerLayout.AddView(userName);
-	navigationDrawer.DrawerFooterView=footerLayout;
+ 	footerLayout.BackgroundColor=UIColor._parseColor_("#1aa1d6"); 
+	footerLayout.Gravity(Gravity._Top_);
+	footerLayout.AddSubview(userName);
+	navigationDrawer.DrawerFooterView.Add(footerLayout);
 
 {% endhighlight %}
 
@@ -110,12 +126,11 @@ Gets or sets the header of the DrawerView panel in the SfNavigationDrawer contro
 	usernameLabel.TextAlignment = UITextAlignment.Center;
 	LinearLayout headerLayout = new LinearLayout(this);
 	headerLayout.Orientation=LinearLayout.VERTICAL;
-	headerLayout.SetBackgroundColor(Color.parseColor("#1aa1d6"));
-	headerLayout.SetGravity(Gravity.CENTER);
-	headerLayout.SetPadding(0, 20, 0, 0);
-	headerLayout.addView(userImg);
-	headerLayout.AddView(userName);
-	navigationDrawer.DrawerHeaderView=headerLayout;
+	headerLayout.BackgroundColor=UIColor.parseColor("#1aa1d6");
+	headerLayout.Gravity(Gravity.CENTER);
+	headerLayout.AddSubview(userImg);
+	headerLayout.AddSubview(userName);
+	navigationDrawer.DrawerHeaderView.Add(headerLayout);
  
 {% endhighlight %}
 
