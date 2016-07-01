@@ -33,7 +33,32 @@ documentation : ug
 
 The `DataSource` property is used to set list of objects to the AutoComplete control. 
 
-* Creating Student collection with two properties Name and Age.
+* Create Student class with two properties Name and Age.
+
+{% highlight C# %}
+
+	public class Student
+	{
+		string Name;
+		string Age;
+		public Student(string name,string age)
+		{
+			this.Name = name;
+			this.Age = age;
+
+		}
+		public string getName()
+		{
+			return Name;
+		}
+		public string getAge()
+		{
+			return Age;
+		}
+	}
+{% endhighlight %}
+
+* Create Student collection using Student class and assign the collection to DataSource property of AutoComplete
 
 {% highlight C# %}
 
@@ -79,3 +104,5 @@ The `DataSource` property is used to set list of objects to the AutoComplete con
 {% endhighlight %}
 
 * `DisplayMemberPath` decides the suggestions to be shown in dropdown. `SelectedValuePath`  Setting this will make the property `SelectedValue` return the value of the property you have selected here. 
+
+![](images/datasource.png)
