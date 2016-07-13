@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Started | SfKanban | Xamarin.iOS | Syncfusion
+description: getting started
+platform: iOS
+control: SfKanban
+documentation: ug
+---
+
 #<a id="KanbaniOS"></a>Kanban for Xamarin.iOS
 
 **Create your first Kanban in Xamarin.iOS**
