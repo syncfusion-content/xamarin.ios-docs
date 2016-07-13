@@ -11,7 +11,7 @@ documentation: ug
 
 ## Min Max dates
 
-Visible dates can be restricted between certain range of dates using `minDate` and `maxDate` properties available in calendar control. It is applicable in all the calendar views.
+Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in SfCalendar control. It is applicable in all the Calendar views.
 
 The inline feature in month view will work only within the min max date range.
 
@@ -36,13 +36,13 @@ N> Beyond the min max date range, following restrictions will be applied.
 
 ## Blackout dates
 
-In Calendar, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes. 
+In SfCalendar, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes. 
 
 The BlackoutDays can be achieved in two ways. 
 
-*	A date collection can be provided to set the `blackoutDates`. This is useful where one wants to block dates where holidays or any other events occur. 
+*	A date collection can be provided to set the `BlackoutDates`. This is useful when one wants to block dates where holidays or any other events occur. 
 
-*	By invoking the `addDatesInPast` method, all past dates will be blacked out till current date.
+*	By invoking the `AddDatesInPast` method, all past dates will be blacked out till current date.
 
 {% highlight c# %}
 
