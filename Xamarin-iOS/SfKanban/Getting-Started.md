@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started | SfKanban | Xamarin.iOS | Syncfusion
+title:  Getting Started for Essential Xamarin.iOS Kanban
 description: getting started
-platform: iOS
+platform: Xamarin.iOS
 control: SfKanban
 documentation: ug
 ---
