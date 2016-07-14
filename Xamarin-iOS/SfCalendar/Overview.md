@@ -23,5 +23,5 @@ Essential Calendar can be used in various scenarios like ticket booking, events 
 
 * `Min Max dates` – Visible dates can be limited using the specified Minimum and Maximum dates.
 
-* `Blackout dates` – A collection of dates with cross mark representation that cannot be interacted.
+* `Blackout dates` – A collection of dates with cross mark representation which cannot be interacted.
 

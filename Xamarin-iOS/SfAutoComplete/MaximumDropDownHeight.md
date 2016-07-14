@@ -9,7 +9,7 @@ documentation : ug
 
 # MaximumDropDownHeight
 
-To set the maximum height of the drop-down portion of the Autocomplete Box control. The maximum drop down height value can be any integer value.
+`MaxDropDownHeight` property is used to set the maximum height of the drop-down portion of the SfAutocomplete control. The maximum drop down height value can be any integer value.
 
 {% highlight C# %}
 

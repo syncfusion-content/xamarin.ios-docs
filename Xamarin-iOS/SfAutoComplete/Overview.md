@@ -23,6 +23,6 @@ Essential AutoComplete can be use in any search box.
 
 * `Suggestion Mode` - The suggestions list can be displayed with 8 types of search pattern.
 
-* `AutoCompleteSource` - A list of strings that is loaded to the control for displaying suggestions.
+* `AutoCompleteSource` - A list of strings can be loaded to the control for displaying suggestions.
 
 

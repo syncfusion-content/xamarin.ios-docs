@@ -9,27 +9,28 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to render the Calendar control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the Calendar.
+This section explains you the steps required to render the SfCalendar control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the SfCalendar.
 
 ![](images/Calendar-iOS.png) 
 
-## Creating your first Calendar in Xamarin.iOS.
+## Creating your first SfCalendar in Xamarin.iOS.
 
-This section provides a quick overview to work with the Calendar in Objective C. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
+This section provides a quick overview to work with the SfCalendar in Objective C. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
 
 ### Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio {version number}\lib
+
 And below assembly reference to the iOS unified project.
 iOS-unifed\Syncfusion.SfCalendar.iOS.dll
 
 
-### And and Configure the Calendar
+### And and Configure the SfCalendar
 
-The following steps explain on how to create an Calendar and configure its elements,
+The following steps explain on how to create an SfCalendar and configure its elements,
 
-* Adding reference to Calendar.
+* Adding reference to SfCalendar.
 
 {% highlight c# %}
 
@@ -48,7 +49,7 @@ The following steps explain on how to create an Calendar and configure its eleme
 
 ### Enabling Multiple Selection 
 
-To enable multiple selection, Change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
+To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
 
 {% highlight c# %}
 

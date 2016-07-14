@@ -9,7 +9,7 @@ documentation : ug
 
 # AutoCompleteMode
 
-The `AutocompleteMode` property is used to customize the behavior of the suggestions that are filtered according to the text entered. By default there are three AutoComplete modes provided. They are:
+The `AutocompleteMode` property is used to customize the behavior of the suggestions that are filtered according to the text entered. By default three AutoComplete modes are supported in SfAutoComplete.
 
 * Append - Appends the first matching string with the entered character.
 

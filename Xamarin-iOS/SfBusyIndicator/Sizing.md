@@ -9,7 +9,7 @@ documentation: ug
 
 # Sizing
 
-ViewBox is used for sizing an animation.It is achieved by,
+ViewBox is used for sizing an animation. It is achieved by,
 
 * ViewBoxHeight
 * ViewBoxWidth

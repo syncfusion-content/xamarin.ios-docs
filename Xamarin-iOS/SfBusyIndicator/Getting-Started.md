@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a BusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in BusyIndicator control.
+This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
 ![](images/BusyIndicator-iOS.png)                 
 
 BusyIndicator
 {:.caption}
 
-## Creating your first BusyIndicator in Xamarin.iOS.
+## Creating your first SfBusyIndicator in Xamarin.iOS.
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -28,9 +28,9 @@ And below assembly reference to the iOS unified project.
 
 iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
-### Add and Configure the BusyIndicator
+### Add and Configure the SfBusyIndicator
 
-* Adding reference to busyindicator.
+* Adding reference to SFBusyIndicator.
 
 {% highlight c# %}
 
@@ -38,7 +38,7 @@ iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
 {% endhighlight %}
 
-* Create an instance of BusyIndicator.
+* Create an instance of SFBusyIndicator.
 
 {% highlight c# %}
 	
@@ -47,9 +47,9 @@ iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 	
 {% endhighlight %}
 
-### Set the AnimationType to BusyIndicator
+### Set the AnimationType to SFBusyIndicator
 
-To set AnimationType for the BusyIndicator, use AnimationType property and choose anyone of the 13 predefined animation types. 
+To set AnimationType for the SFBusyIndicator, use `AnimationType` property and choose anyone of the 13 predefined animation types. 
 
 {% highlight c# %}
 
@@ -57,7 +57,7 @@ To set AnimationType for the BusyIndicator, use AnimationType property and choos
 
 {% endhighlight %}
 	
-### Configure the properties for BusyIndicator. 
+### Configure the properties for SFBusyIndicator. 
       
 {% highlight c# %}
 	 
