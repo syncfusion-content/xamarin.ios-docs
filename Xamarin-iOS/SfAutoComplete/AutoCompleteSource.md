@@ -11,7 +11,7 @@ documentation : ug
 
 ## AutoCompleteSource 
 
-* The `AutoCompleteSource` property in the AutoComplete control is used to set the list of strings to the suggestions dropdown.
+* The `AutoCompleteSource` property in the SfAutoComplete control is used to set the list of strings to the suggestions dropdown.
 
 * To create a Text Box that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for Text Box controls in which URLs, addresses, file names, or commands will be frequently entered.
 
@@ -31,7 +31,7 @@ documentation : ug
 
 ## DataSource
 
-The `DataSource` property is used to set list of objects to the AutoComplete control. 
+The `DataSource` property is used to set list of objects to the SfAutoComplete control. 
 
 * Create Student class with two properties Name and Age.
 
@@ -58,7 +58,7 @@ The `DataSource` property is used to set list of objects to the AutoComplete con
 	}
 {% endhighlight %}
 
-* Create Student collection using Student class and assign the collection to DataSource property of AutoComplete
+* Create Student collection using Student class and assign the collection to DataSource property of SfAutoComplete
 
 {% highlight C# %}
 
@@ -103,6 +103,6 @@ The `DataSource` property is used to set list of objects to the AutoComplete con
 
 {% endhighlight %}
 
-* `DisplayMemberPath` decides the suggestions to be shown in dropdown. `SelectedValuePath`  Setting this will make the property `SelectedValue` return the value of the property you have selected here. 
+* `DisplayMemberPath` decides the suggestions to be shown in dropdown. Setting the `SelectedValuePath` property will make `SelectedValue` property to return the value you have selected here. 
 
 ![](images/datasource.png)

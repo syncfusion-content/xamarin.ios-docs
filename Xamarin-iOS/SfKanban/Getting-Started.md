@@ -1,3 +1,12 @@
+---
+layout: post
+title:  Getting Started for Essential Xamarin.iOS Kanban
+description: getting started
+platform: Xamarin.iOS
+control: SfKanban
+documentation: ug
+---
+
 #<a id="KanbaniOS"></a>Kanban for Xamarin.iOS
 
 **Create your first Kanban in Xamarin.iOS**

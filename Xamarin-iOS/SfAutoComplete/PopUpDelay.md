@@ -9,11 +9,10 @@ documentation : ug
 
 # PopUpDelay
 
-* It is used to delay the appearance of the dropdown in the suggestion list. 
+Time delay taken to display the dropdown with the list of possible matches after text is typed in the text box.
 
-* Gets or sets the minimum delay, in milliseconds, after text is typed in the text box before the Autocomplete Box control populates the list of possible matches in the drop-down. 
+N> The default value is 0. The property value should be in milliseconds.
 
-N> The default value is 0.
 
 {% highlight C# %}
 

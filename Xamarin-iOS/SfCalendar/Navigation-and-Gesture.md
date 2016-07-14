@@ -11,7 +11,7 @@ documentation: ug
 
 ## Move to Date 
 
-Visible dates can be moved to specific date using `moveToDate` property available in Calendar. It will move to any specific month if the `viewMode` is month view or move to year if it is a year view.
+Visible dates can be moved to specific date using `MoveToDate` property available in SfCalendar. It will move to any specific month if the `ViewMode` is month view or move to year if it is a year view.
 
 {% highlight c# %}
 
@@ -29,13 +29,13 @@ Visible dates can be moved to specific date using `moveToDate` property availabl
 
 {% endhighlight %}
 
-N>  The specified date should lie between minDate and maxDate, if  the specified date is greater than maxDate then the view will be moved to maxDate and if the specified date is lesser than the minDate then the view will be moved to minDate.
+N>  The specified date should lie between MinDate and MaxDate, if the specified date is greater than MaxDate then the view will be moved to MaxDate and if the specified date is lesser than the MinDate then the view will be moved to MinDate.
 
 ## Toggle  navigation
 
-This navigation, using touch gesture can be enabled and disabled using `navigationEnabled` property available in Calendar control. By default, `navigationEnabled` property is enabled.
+This navigation, using touch gesture can be enabled and disabled using `NavigationEnable` property available in SfCalendar control. By default, `NavigationEnable` property is enabled.
 
-N> By default, calendar views can be moved backwards and forwards using touch swipe gesture. 
+N> By default, SfCalendar views can be moved backwards and forwards using touch swipe gesture. 
 
 {% highlight c# %}
 
@@ -46,7 +46,7 @@ N> By default, calendar views can be moved backwards and forwards using touch sw
 
 ## Transition modes
 
-Dates can be navigated by using swipe gesture. By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using  transitionMode property of Calendar control.
+Dates can be navigated by using swipe gesture. By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using `TransitionMode` property of SfCalendar control.
 
 {% highlight c# %}
 
