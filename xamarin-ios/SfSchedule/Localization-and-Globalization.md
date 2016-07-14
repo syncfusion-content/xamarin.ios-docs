@@ -23,7 +23,7 @@ As the subject of the appointments are given in the application level, it can be
 
 {% endhighlight %}
 
-![](Localization&Globalization_images/Localization&Globalization_img1.jpeg)
+![](LocalizationGlobalization_images/LocalizationGlobalization1.jpeg)
 
 
 ## Schedule Custom String Localization
