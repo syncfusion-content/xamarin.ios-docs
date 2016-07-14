@@ -11,7 +11,7 @@ documentation : ug
 
 ## Rotation Angle
 
-The Rotation Angle property in the SfCarousel control is used to rotate all the items to a specified angle. If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
+The `RotationAngle` property in the SfCarousel control is used to rotate all the items to a specified angle. If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
 
 {% highlight C# %}
 
