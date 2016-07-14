@@ -60,7 +60,8 @@ Available options for this property are:
 
 {% endhighlight %}
 
-![](images/Value-TopLeft.png)
+![](images/Value-TopLeft .png)
+
 
 {% highlight c# %}
 
