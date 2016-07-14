@@ -10,7 +10,7 @@ documentation: ug
 
 # AnimationType
 
-The `AnimationTypes` property for the SfBusyIndicator allows you to set one of the animations from the built-in animations as the BusyIndicator.
+The `AnimationType` property for the SfBusyIndicator allows you to set any one of the built-in animations available in the SfBusyIndicator.
 
 {% highlight c# %}
 
