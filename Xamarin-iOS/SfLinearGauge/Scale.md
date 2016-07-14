@@ -9,7 +9,7 @@ documentation: ug
 
 # Scale
 
-Main Scale is the linear scale that integrates ticks, labels and scale bar to specify the basic look and feel of the Linear Gauge. It defines the overall minimum and maximum values, along with the frequency of labels and ticks through the interval of the scale. It can contain multiple ranges within a scale. It also contains one or more pointers to point out the measures of the linear scale.
+Main Scale is the linear scale that integrates ticks, labels and scale bar to specify the basic look and feel of the SfLinearGauge. It defines the overall minimum and maximum values, along with the frequency of labels and ticks through the interval of the scale. It can contain multiple ranges within a scale. It also contains one or more pointers to point out the measures of the linear scale.
 
 {% highlight c# %}
 

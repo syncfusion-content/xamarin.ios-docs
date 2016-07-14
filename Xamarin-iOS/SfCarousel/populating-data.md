@@ -11,7 +11,7 @@ documentation : ug
 
 ## Data Source
 
-SfCarousel items can be populated with a collection of business objects. For example, a user may want to create a SfCarousel control which will display a list of images.
+SfCarousel items can be populated with a collection of business objects. For example, a user may wants to create a SfCarousel control which will display a list of images.
 
 {% highlight c# %}
 
@@ -28,9 +28,9 @@ SfCarousel items can be populated with a collection of business objects. For exa
 
 ## SelectedIndex
 
-It gets or sets the Selected Item index value of carousel control to bring the particular item to center of the screen.
+It gets or sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen.
 
-N> The selectedIndex property will be 0 by default
+N> The `SelectedIndex` property will be 0 by default.
 
 {% highlight c# %}
 
