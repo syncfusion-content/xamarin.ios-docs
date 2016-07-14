@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The Digital Gauge control is used to display alphanumeric characters in digital (LED Display) mode. Digital Gauge is used to display a range of values that uses characters in combination with numbers. The Digital Gauge control for Android lets you visualize alpha and numeric values over a Digital Gauge frame. Digital Gauge is used to display a range of values that use character in combination with numbers.
+The SfDigitalGauge control is used to display alphanumeric characters in digital (LED Display) mode. SfDigitalGauge is used to display a range of values that uses characters in combination with numbers. The SfDigitalGauge control for iOS lets you visualize alpha and numeric values over a Digital Gauge frame.
 
 ![](images/Overview.png)
 

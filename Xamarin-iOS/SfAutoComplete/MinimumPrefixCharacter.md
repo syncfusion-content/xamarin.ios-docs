@@ -21,4 +21,4 @@ N> Population of the suggestion box does not occur until the conditions specifie
 
 {% endhighlight %}
 
-![](images/minprefixcharacter.png)
+![](images/minimumprefixcharacter.png)
