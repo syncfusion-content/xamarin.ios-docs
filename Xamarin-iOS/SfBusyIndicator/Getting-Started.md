@@ -11,10 +11,6 @@ documentation: ug
 
 This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
-![](images/BusyIndicator-iOS.png)                 
-
-BusyIndicator
-{:.caption}
 
 ## Creating your first SfBusyIndicator in Xamarin.iOS.
 
@@ -69,3 +65,8 @@ To set AnimationType for the SFBusyIndicator, use `AnimationType` property and c
 	
 {% endhighlight %}
 
+
+![](images/BusyIndicator-iOS.png)                 
+
+BusyIndicator
+{:.caption}

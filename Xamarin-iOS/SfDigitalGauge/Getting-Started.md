@@ -9,11 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a DigitalGauge control in a real-time scenario and also provides a walk-through on some of the customization features available in DigitalGauge control.
+This section explains you the steps to configure a SfDigitalGauge control in a real-time scenario and some of the customization features available in it.
 
-![](images/Objective.png)
-
-## Creating Your First DigitalGauge in Xamarin.iOS
+## Creating Your First SfDigitalGauge in Xamarin.iOS
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -25,9 +23,9 @@ And below assembly reference to the iOS unified project.
 
 iOS-unifed\Syncfusion.SfGauge.iOS.dll 
 
-### Add and Configure the DigitalGauge
+### Add and Configure the SfDigitalGauge
 
-* Adding reference to DigitalGauge.
+* Adding reference to SfDigitalGauge.
 
 {% highlight C# %}
 
@@ -44,7 +42,7 @@ iOS-unifed\Syncfusion.SfGauge.iOS.dll
 
 {% endhighlight %}
 
-### Configure the properties of DigitalGauge
+### Configure the properties of SfDigitalGauge
 
 {% highlight c# %}
 
@@ -54,3 +52,5 @@ iOS-unifed\Syncfusion.SfGauge.iOS.dll
 	digitalGauge.Value = (NSString)“Syncfusion”;
 
 {% endhighlight %}
+
+![](images/Objective.png)

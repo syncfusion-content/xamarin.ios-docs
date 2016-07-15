@@ -17,4 +17,4 @@ documentation : ug
 
 {% endhighlight %}
 
-![](images/maxdropdownheight.png)
+![](images/maximumdropdownheight.png)

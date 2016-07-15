@@ -11,7 +11,7 @@ documentation: ug
 
 ## BarPointer
 
-Barpointer is an accenting line or colored bar that is placed on the Linear Gauge to mark the values. 
+BarPointer is an accenting line or colored bar that is placed on the SfLinearGauge to mark the values. 
 
 {% highlight c# %}
 
@@ -28,7 +28,7 @@ Barpointer is an accenting line or colored bar that is placed on the Linear Gaug
 
 ## SymbolPointer
 
-In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Pointer class is derived from Pointer class. You can modify the symbol pointer’s size using the StrokeWidth property. The color of the symbol pointer is changed using the Color property.
+In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Pointer class is derived from Pointer class. You can modify the symbol pointer’s size using the `StrokeWidth` property. The color of the symbol pointer is changed using the `Color` property.
 
 {% highlight c# %}
 

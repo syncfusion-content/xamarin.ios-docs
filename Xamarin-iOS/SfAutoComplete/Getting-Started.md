@@ -11,7 +11,6 @@ documentation : ug
 
 This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
-![](images/gettingstarted.png)
 
 ## Creating your first SfAutoComplete in Xamarin.iOS.
 
@@ -69,3 +68,4 @@ iOS-unifed\Syncfusion.SfAutoComplete.iOS.dll
 
 {% endhighlight %}
 
+![](images/gettingstarted.png)
