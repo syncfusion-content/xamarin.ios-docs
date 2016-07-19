@@ -49,7 +49,7 @@ In this walk through, you will create a new application that contains the SfKanb
 3. Create an instance of `SfKanban` control and add as a SubView to a UIViewController.
 
 
-```csharp
+{% highlight C# %}
 public partial class ViewController : UIViewController
 
 {
@@ -70,13 +70,13 @@ public partial class ViewController : UIViewController
 	}
 
 }
-```
+{% endhighlight %}
 
 **Create KanbanModel for the SfKanban**
 
 Create a collection of `KanbanModel` objects for populating `SfKanban`.
 
-```csharp
+{% highlight C# %}
 using System.Collections.ObjectModel;
 using Syncfusion.SfKanban.iOS; 
 public partial class ViewController : UIViewController
@@ -150,14 +150,15 @@ public partial class ViewController : UIViewController
 		return cards; 
 	} 
 }     
-```
+{% endhighlight %}
+
 **Binding data to SfKanban**
 
 In order to bind the data source of the `SfKanban`, set `ItemsSource` property as shown below. The following code binds the collection created in previous step to `ItemsSource` property.
 
-```csharp
+{% highlight C# %}
 kanban.ItemsSource = this.Data;
-```
+{% endhighlight %}
 **Defining Columns**
 
 By default, we need to define the columns manually by adding the `KanbanColumn` object to the `Columns` collection property in `SfKanban`. 
@@ -170,7 +171,7 @@ In this example, data whose `Category` property’s value is set as `Open` will 
 
 The following code example illustrates how this can be done.
 
-```csharp
+{% highlight C# %}
 kanban.ColumnMappingPath = "Category"; 
  
 KanbanColumn todoColumn = new KanbanColumn();
@@ -192,7 +193,7 @@ KanbanColumn doneColumn = new KanbanColumn();
 doneColumn.Title = "Done"; 
 doneColumn.Categories = new List<object>() { "Done" };  
 kanban.Columns.Add(doneColumn); 
-```
+{% endhighlight %}
 
 You can also set `AutoGenerateColumns` property to true in which you don't need to define the columns as mentioned in the above example.  This will create columns depending on the `ColumnMappingPath` property for all the distinct values in `ItemsSource`.
 
@@ -210,7 +211,7 @@ A Kanban workflow is a set of `Category` and  `AllowedTransitions`, that an item
 
 Initialize `Workflows` property with a list of `KanbanWorkflow` instances. Each instance represents a workflow in Kanban. The following code example illustrates how this can be done.
 
-```csharp
+{% highlight C# %}
 var workflows = new List<KanbanWorkflow>();
 
 var openWorkflow = new KanbanWorkflow();
@@ -225,16 +226,16 @@ workflows.Add(openWorkflow);
 workflows.Add(progressWorkflow);    
 
 kanban.Workflows = workflows;  
-```
+{% endhighlight %}
 
 **Work In-Progress Limit**
 
 In column, you can set minimum and maximum items limit by using the `MinimumLimit` and `MaximumLimit` properties. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the color of the error bar. 
 
-```csharp
+{% highlight C# %}
 todoColumn.MinimumLimit = 5; 
 todoColumn.MaximumLimit = 10;   
-```
+{% endhighlight %}
 
 Following properties are used to customize its appearance.
 
@@ -243,9 +244,9 @@ Following properties are used to customize its appearance.
 * MinValidationColor – used to change the minimum validation color of the error bar
 * Height – used to change the height of the error bar
 
-```csharp
+{% highlight C# %}
 todoColumn.ErrorBarSettings.Color = UIColor.Green; 
 todoColumn.ErrorBarSettings.MinValidationColor = UIColor.Orange; 
 todoColumn.ErrorBarSettings.MaxValidationColor = UIColor.Red; 
 todoColumn.ErrorBarSettings.Height = 4;    
-```
+{% endhighlight %}
