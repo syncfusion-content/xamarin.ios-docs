@@ -2,7 +2,7 @@
 layout: post
 title: Getting started | Calculate | Xamarin | Syncfusion
 description: Getting started with Calculate.
-platform: xamarin
+platform: xamarin.iOS
 control: Calculate
 documentation: ug
 ---
