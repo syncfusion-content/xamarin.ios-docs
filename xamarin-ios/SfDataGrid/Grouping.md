@@ -36,34 +36,18 @@ The following screenshot shows the output rendered when grouping is applied.
  
 You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoExpandGroups.html) to `true`. So, when user group any column, then all groups will be in expanded state. 
 
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
-                        AutoExpandGroups="True"
-                        AllowGroupExpandCollapse="True"
-                        ItemsSource="{Binding Orders}"/>
-{% endhighlight %}
 {% highlight c# %}
 this.dataGrid.AutoExpandGroups = true;
 this.dataGrid.AllowGroupExpandCollapse = true;
 {% endhighlight %}
-{% endtabs %}
 
 ## Expand or collapse the groups
 
 By default, the groups will be in expanded state in a SfDataGrid. However, you can expand or collapse a group in runtime by setting the `SfDataGrid.AllowGroupExpandCollapse` as `true`.
-{% tabs %}
-{% highlight xaml %}
 
-<syncfusion:SfDataGrid  x:Name="dataGrid"
-                        AllowGroupExpandCollapse="True"
-                        ItemsSource="{Binding Orders}"/>
-                       
-{% endhighlight %}
 {% highlight c# %}
 this.dataGrid.AllowGroupExpandCollapse = true;
 {% endhighlight %}
-{% endtabs %}
 
 ### Programmatically expanding or collapsing the groups
 
@@ -84,14 +68,11 @@ this.dataGrid.CollapseAllGroup();
 
 You can expand or collapse specific group by using `SfDataGrid.ExpandGroup` and `SfDataGrid.CollapseGroup` methods.
 
-
-{% tabs %}
 {% highlight c# %}
 var group = (dataGrid.View.Groups[0] as Group);
 this.dataGrid.ExpandGroup(group);
 this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
-{% endtabs %}
 
 ![](SfDataGrid_images/GroupExpandCollapse.png)
 
@@ -152,17 +133,15 @@ The `GroupChangingEventArgs` of the `GroupExpanding` event provides the informat
  
 You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) to `true`.
 
-{% tabs %}
 {% highlight c# %}
 this.dataGrid.GroupExpanding += dataGrid_GroupExpanding;
 
-void dataGrid_GroupExpanding(object sender, Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs e)
+void dataGrid_GroupExpanding(object sender, Syncfusion.SfDataGrid.GroupChangingEventArgs e)
 {
     if (e.Group.Key.Equals(1001))    
         e.Cancel = true;    
 }       
 {% endhighlight %}
-{% endtabs %}
 
 ### GroupExpanded event
 
@@ -184,17 +163,15 @@ The `GroupChangingEventArgs` of the `GroupCollapsing` event provides the informa
 
 You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `GroupCollapsing` event.
 
-{% tabs %}
 {% highlight c# %}
 this.dataGrid.GroupCollapsing += dataGrid_GroupCollapsing;
 
-void dataGrid_GroupCollapsing(object sender, Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs e)
+void dataGrid_GroupCollapsing(object sender, Syncfusion.SfDataGrid.GroupChangingEventArgs e)
 {
     if (e.Group.Key.Equals(1001))    
         e.Cancel = true;    
 }
 {% endhighlight %}
-{% endtabs %}
 
 ### GroupCollapsed event
  
@@ -220,4 +197,3 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { 
     ColumnName = "ShippingDate"
 });
 {% endhighlight %}
-
