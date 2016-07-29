@@ -19,13 +19,13 @@ The Digital Characters can be drawn in 4 different segments as follows.
 
 4. EightCrossEightDotMatrix
 
-N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
+N> SegmentSeven is the default CharacterType in the SfDigitalGauge.
 
 ## Seven Segment
 
 {% highlight c# %}
 
-	 digitalGauge.CharacterType=CharacterTypes.SegmentSeven;
+	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeSegmentSeven;
 
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
 
 {% highlight c# %}
 
-	 digitalGauge.CharacterType=CharacterTypes.segmentFourteen;
+	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypesegmentFourteen;
 
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
 
 {% highlight c# %}
 
-	 digitalGauge.CharacterType=CharacterTypes.segmentSixteen;
+	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypesegmentSixteen;
 
 {% endhighlight %}
 
@@ -55,7 +55,7 @@ N> By default, SegmentSeven is the default CharacterType in the Digital Gauge.
 
 {% highlight c# %}
 
-	 digitalGauge.CharacterType=CharacterTypes.EightCrossEightDotMatrix;
+	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeEightCrossEightDotMatrix;
 
 {% endhighlight %}
 

@@ -8,11 +8,11 @@ documentation: ug
 ---
 # WaterMark
 
-The watermark text is used to display some information regarding the NumericEditBox. This watermark is visible when EditText is empty or null.
+The watermark text is used to display some information regarding the NumericEditBox. This watermark is visible when textbox is empty or null.
 
 {% highlight c# %}
 	
-	sfNumericTextBox.WaterMark = "Principal Amount";
+	numericTextBox.WaterMark = "Principal Amount";
 	 
 {% endhighlight %}
 	

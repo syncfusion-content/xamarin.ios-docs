@@ -74,7 +74,3 @@ dataGrid.ScrollToRowIndex(int rowIndex);
 dataGrid.ScrollToColumnIndex(int columnIndex);
 
 {% endhighlight %}
-
-
-
-

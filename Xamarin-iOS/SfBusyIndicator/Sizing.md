@@ -7,11 +7,9 @@ control: SfBusyIndicator
 documentation: ug
 ---
 
-
-
 # Sizing
 
-ViewBox is used for sizing an animation.It is achieved by,
+ViewBox is used for sizing an animation. It is achieved by,
 
 * ViewBoxHeight
 * ViewBoxWidth
@@ -20,9 +18,10 @@ ViewBox is used for sizing an animation.It is achieved by,
 
 {% highlight c# %}
 
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	sfBusyIndicator.ViewBoxWidth=200;
-	sfBusyIndicator.ViewBoxHeight=200;
+	SFBusyIndicator busyindicator = new SFBusyIndicator();
+	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSlicedCircle;
+	busyindicator.ViewBoxWidth=200;
+	busyindicator.ViewBoxHeight=200;
 	
 {% endhighlight %}
 

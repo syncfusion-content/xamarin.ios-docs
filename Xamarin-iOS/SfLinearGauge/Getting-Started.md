@@ -9,11 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the LinearGauge and configure its properties.This section provides overview for working with LinearGauge for Xamarin.iOS.
+This section explains how to create the SfLinearGauge and configure its properties.
 
-![](images/Xamarin.iOS.png)
-
-## Creating Your First LinearGauge in Xamarin.iOS
+## Creating Your First SfLinearGauge in Xamarin.iOS
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -23,17 +21,17 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfLinearGauge.iOS.dll 
+iOS-unifed\Syncfusion.SfGauge.iOS.dll 
 
-### Add and Configure the LinearGauge
+### Add and Configure the SfLinearGauge
 
-The following steps explain on how to create a LinearGauge and configure its elements:
+The following steps explain on how to create a SfLinearGauge and configure its elements:
 
-* Adding reference to Autocomplete.
+* Adding reference to SfLinearGauge.
 
 {% highlight c# %}
 
-	using Syncfusion.SfLinearGauge.iOS; 
+	using Syncfusion.SFLinearGauge.iOS; 
 
 {% endhighlight %}
 
@@ -42,11 +40,11 @@ The following steps explain on how to create a LinearGauge and configure its ele
 {% highlight c# %}
 
 	SFLinearGauge  linearGauge = new SFLinearGauge ();
-	SetContentView(linearGauge);
+	this.AddSubview(linearGauge);
 
 {% endhighlight %}
 
-* Configure the properties of LinearGauge
+* Configure the properties of SfLinearGauge
 
 {% highlight c# %}
 
@@ -56,7 +54,7 @@ The following steps explain on how to create a LinearGauge and configure its ele
 
 ### Add Scales
 
-We will add one or more scale value to linear gauge. Before adding that scales we have to set 
+We will add one or more scale value to SfLinearGauge. Before adding that scales we have to set 
 Maximum and Minimum value to this.
 
 {% highlight c# %}
@@ -76,7 +74,7 @@ Maximum and Minimum value to this.
 
 ### Add SymbolPointer
 
-We can point a value on scale in lineargauge by creating instance of SymbolPointer.
+We can point a value on scale in SfLinearGauge by creating instance of SymbolPointer.
 
 {% highlight c# %}
 
@@ -103,7 +101,7 @@ Before adding that symbol and bar pointer into Scale’s pointer add value of th
 
 ### Add a Range
 
-We can improve the readability of data by including ranges that quickly display when values fall within specific ranges
+We can improve the readability of data by including ranges that quickly display when values fall within specific range.
 
 {% highlight c# %}
 
@@ -128,7 +126,7 @@ We can improve the readability of data by including ranges that quickly display 
 
 {% endhighlight %}
 
-
+![](images/Xamarin.iOS.png)
 
 
 

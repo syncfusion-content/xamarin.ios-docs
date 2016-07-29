@@ -22,7 +22,7 @@ Slides the DrawerContent on top of the main content.
 
 {% highlight c# %} 
 
-	slideDrawer.Transition=Transition.SlideOnTop;
+	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnTop;
 
 {% endhighlight %}
 
@@ -34,7 +34,7 @@ This transition slides the Drawer and main content simultaneously.
 
 {% highlight c# %} 
 
-	slideDrawer.Transition=Transition.Push;
+	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnPush;
 
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ The Drawer content is in fixed position and the main content will slide to revea
 
 {% highlight c# %} 
 
-	slideDrawer.Transition=Transition.Reveal;
+	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnReveal;
 
 {% endhighlight %}
 

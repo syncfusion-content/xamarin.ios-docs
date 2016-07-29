@@ -9,11 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a DigitalGauge control in a real-time scenario and also provides a walk-through on some of the customization features available in DigitalGauge control.
+This section explains you the steps to configure a SfDigitalGauge control in a real-time scenario and some of the customization features available in it.
 
-![](images/Objective.png)
-
-## Creating Your First DigitalGauge in Xamarin.iOS
+## Creating Your First SfDigitalGauge in Xamarin.iOS
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -23,11 +21,11 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfDigitalGauge.iOS.dll 
+iOS-unifed\Syncfusion.SfGauge.iOS.dll 
 
-### Add and Configure the DigitalGauge
+### Add and Configure the SfDigitalGauge
 
-* Adding reference to DigitalGauge.
+* Adding reference to SfDigitalGauge.
 
 {% highlight C# %}
 
@@ -40,16 +38,19 @@ ios-unifed\Syncfusion.SfDigitalGauge.iOS.dll
 {% highlight c# %}
 
 	SFDigitalGauge  digitalGauge = new SFDigitalGauge ();
-	SetContentView(digitalGauge);
+	this.AddSubview(digitalGauge);
+
 {% endhighlight %}
 
-### Configure the properties of DigitalGauge
+### Configure the properties of SfDigitalGauge
 
 {% highlight c# %}
 
 	digitalGauge.CharacterHeight = 36;
 	digitalGauge.CharacterWidth = 18;
 	digitalGauge.CharacterType = SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeSegmentSeven;
-	digitalGauge.Value = “Syncfusion”;
+	digitalGauge.Value = (NSString)“Syncfusion”;
 
 {% endhighlight %}
+
+![](images/Objective.png)

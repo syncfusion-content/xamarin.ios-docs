@@ -9,11 +9,10 @@ documentation : ug
 
 # Getting Started
 
-This section explains you the steps to configure a AutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in AutoComplete control.
+This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
-![](images/gettingstarted.png)
 
-## Creating your first AutoComplete in Xamarin.iOS.
+## Creating your first SfAutoComplete in Xamarin.iOS.
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -23,11 +22,11 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfAutoComplete.iOS.dll
+iOS-unifed\Syncfusion.SfAutoComplete.iOS.dll
 
-### Add and configure the AutoComplete control
+### Add and configure the SfAutoComplete control
 
-* Adding reference to Autocomplete.
+* Adding reference to SfAutocomplete.
 
 {% highlight C# %}
 
@@ -35,7 +34,7 @@ ios-unifed\Syncfusion.SfAutoComplete.iOS.dll
 
 {% endhighlight %}
 
-* Create an instance of AutoComplete
+* Create an instance of SfAutoComplete
 
 {% highlight C# %}
 
@@ -45,7 +44,7 @@ ios-unifed\Syncfusion.SfAutoComplete.iOS.dll
 {% endhighlight %}
 
 
-### Add the AutoCompleteSource for the AutoComplete. 
+### Add the AutoCompleteSource for the SfAutoComplete. 
 
 {% highlight C# %}
 
@@ -69,3 +68,4 @@ ios-unifed\Syncfusion.SfAutoComplete.iOS.dll
 
 {% endhighlight %}
 
+![](images/gettingstarted.png)

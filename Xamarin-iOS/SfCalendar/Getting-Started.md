@@ -9,27 +9,27 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to render the Calendar control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the Calendar.
+This section explains you the steps required to render the SfCalendar control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the SfCalendar.
 
-![](images/Calendar-iOS.png) 
 
-## Creating your first Calendar in Xamarin.iOS.
+## Creating your first SfCalendar in Xamarin.iOS.
 
-This section provides a quick overview to work with the Calendar in Objective C. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
+This section provides a quick overview to work with the SfCalendar in Objective C. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
 
 ### Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio {version number}\lib
+
 And below assembly reference to the iOS unified project.
-ios-unifed\Syncfusion.SfCalendar.iOS.dll
+iOS-unifed\Syncfusion.SfCalendar.iOS.dll
 
 
-### And and Configure the Calendar
+### And and Configure the SfCalendar
 
-The following steps explain on how to create an Calendar and configure its elements,
+The following steps explain on how to create an SfCalendar and configure its elements,
 
-* Adding reference to Calendar.
+* Adding reference to SfCalendar.
 
 {% highlight c# %}
 
@@ -41,19 +41,19 @@ The following steps explain on how to create an Calendar and configure its eleme
    
 {% highlight c# %}
 	
-	SfCalendar sfCalendar = new SfCalendar();
-	SetContentView(sfCalendar);
+	SFCalendar calendar = new SFCalendar();
+	this.AddSubview(calendar);
 	
 {% endhighlight %}
 
 ### Enabling Multiple Selection 
 
-To enable multiple selection, Change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
+To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
 
 {% highlight c# %}
 
-	SfCalendar calendar = new SfCalendar (this);
-	calendar.SelectionMode=SelectionMode.MultiSelection;
+	SFCalendar calendar = new SFCalendar ();
+	calendar.SelectionMode = SFCalenderSelectionMode.SFCalenderSelectionModeMultiple;
 
 {% endhighlight %}
 
@@ -65,15 +65,14 @@ For instance add all the holiday dates to blackout dates property.
 
 {% highlight c# %}
 
-	SfCalendar  calendar = new SfCalendar (this);
-	List<DateTime> black_dates = new List<DateTime>();
-	for (int i = 0; i < 5; i++)
+	SFCalendar  calendar = new SFCalendar ();
+	calendar.BlackoutDates = new NSMutableArray ();
+	for (int i = 0; i < 5; i++) 
 	{
-		DateTime date = DateTime.Now.Date.AddDays(i+7);
-		black_dates.Add(date);
-    }
-	calendar.BlackoutDates = black_dates;
-
+		NSDate startDate = calendar.DateFromComponents (components);
+		components.Day += 1;
+		calendar.BlackoutDates.Add (startDate);
+	}
 
 {% endhighlight %}
 
@@ -83,9 +82,11 @@ Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Mi
 
 {% highlight c# %}
 
-	SfCalendar  calendar = new SfCalendar (this);
+	SFCalendar  calendar = new SFCalendar ();
 	calendar.MinDate = new DateTime(2014,4,1);
 	calendar.MaxDate = new DateTime(2018,4,1);
 
 
 {% endhighlight %}                                  
+
+![](images/Calendar-iOS.png) 

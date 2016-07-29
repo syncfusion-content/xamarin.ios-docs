@@ -9,14 +9,10 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a BusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in BusyIndicator control.
+This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
-![](images/BusyIndicator-iOS.png)                 
 
-BusyIndicator
-{:.caption}
-
-## Creating your first BusyIndicator in Xamarin.iOS.
+## Creating your first SfBusyIndicator in Xamarin.iOS.
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -26,47 +22,51 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfBusyIndicator.iOS.dll
+iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
-### Add and Configure the BusyIndicator
+### Add and Configure the SfBusyIndicator
 
-* Adding reference to busyindicator.
-
-{% highlight c# %}
-
-	using Com.Syncfusion.BusyIndicator; 
-
-{% endhighlight %}
-
-* Create an instance of BusyIndicator.
-
-{% highlight c# %}
-	
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	SetContentView(sfBusyIndicator);
-	
-{% endhighlight %}
-
-### Set the AnimationType to BusyIndicator
-
-To set AnimationType for the BusyIndicator, use AnimationType property and choose anyone of the 13 predefined animation types. 
+* Adding reference to SFBusyIndicator.
 
 {% highlight c# %}
 
-	SfBusyIndicator busyIndicator = new SfBusyIndicator (this); 
-	busyIndicator.AnimationType=AnimationTypes.Battery;
+	using Syncfusion.SFBusyIndicator.iOS;
+
+{% endhighlight %}
+
+* Create an instance of SFBusyIndicator.
+
+{% highlight c# %}
+	
+	SFBusyIndicator busyindicator = new SFBusyIndicator();
+	this.AddSubview(busyindicator);
+	
+{% endhighlight %}
+
+### Set the AnimationType to SFBusyIndicator
+
+To set AnimationType for the SFBusyIndicator, use `AnimationType` property and choose anyone of the 13 predefined animation types. 
+
+{% highlight c# %}
+
+	 busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
 
 {% endhighlight %}
 	
-### Configure the properties for BusyIndicator. 
+### Configure the properties for SFBusyIndicator. 
       
 {% highlight c# %}
 	 
-	sfBusyIndicator.AnimationType=AnimationTypes.Ball;
-	sfBusyIndicator.TextColor=Color.RED;
-	sfBusyIndicator.ViewBoxHeight=20;
-	sfBusyIndicator.ViewBoxWidth=20;
-	sfBusyIndicator.IsBusy=True;
+	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
+	busyindicator.TextColor=UIColor.RED;
+	busyindicator.ViewBoxHeight=20;
+	busyindicator.ViewBoxWidth=20;
+	busyindicator.IsBusy=True;
 	
 {% endhighlight %}
 
+
+![](images/BusyIndicator-iOS.png)                 
+
+BusyIndicator
+{:.caption}

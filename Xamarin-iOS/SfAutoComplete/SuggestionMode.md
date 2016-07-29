@@ -9,7 +9,7 @@ documentation : ug
 
 # Suggestion Mode
 
-It is used to display which type of filtered list is show in the dropdown. They are,
+`SuggestionMode` property provides various option to filter the data according to the text entered. They are,
 
 * StartsWith - It begins to search with the starting letter.
 
@@ -21,7 +21,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 
 ![](images/startswith.png)
 
-* StartsWithCaseSensitive - This mode is used to display the suggestions based on the starting letter with case sensitive in autocomplete.
+* StartsWithCaseSensitive - This mode is used to display the suggestions based on the starting letter with case sensitive in SfAutoComplete.
 
 {% highlight C# %}
 
@@ -31,7 +31,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 
 ![](images/startswithcasesensitive.png)
 
-* Contains - It displays Suggestion if AutoComplete contains that words.
+* Contains - It displays suggestions if SfAutoComplete contains that words.
 
 {% highlight C# %}
 
@@ -41,7 +41,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 
 ![](images/contains.png)
 
-* ContainsWithCaseSensitive - It displays the Suggestion if AutoComplete contains that Words with Case sensitive.
+* ContainsWithCaseSensitive - It displays the suggestions if SfAutoComplete contains that words with case sensitive.
 
 {% highlight C# %}
 
@@ -61,7 +61,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 
 ![](images/equals.png)
 
-* EqualsWithCaseSensitive - It displays the word that matches.
+* EqualsWithCaseSensitive - It displays the word that matches with case sensitive.
 
 {% highlight C# %}
 
@@ -71,7 +71,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 
 ![](images/equalswithcasesensitive.png)
 
-* EndsWith - It displays the suggestion based on ending word in AutoComplete control.
+* EndsWith - It displays the suggestion based on ending word in SfAutoComplete control.
 
 {% highlight C# %}
 
@@ -81,7 +81,7 @@ It is used to display which type of filtered list is show in the dropdown. They 
 
 ![](images/endswith.png)
 
-* EndsWithCaseSensitive - It Display the suggestion based on the ending words with case sensitive in AutoComplete Control.
+* EndsWithCaseSensitive - It displays the suggestion based on the ending words with case sensitive in SfAutoComplete Control.
 
 {% highlight C# %}
 
@@ -90,3 +90,13 @@ It is used to display which type of filtered list is show in the dropdown. They 
 {% endhighlight %}
 
 ![](images/endswithcasesensitive.png)
+
+* Custom - It displays the suggestion based on the custom words in SfAutoComplete Control.
+
+{% highlight C# %}
+
+	countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSuggestionModeCustom;
+
+{% endhighlight %}
+
+![](images/endswith.png)

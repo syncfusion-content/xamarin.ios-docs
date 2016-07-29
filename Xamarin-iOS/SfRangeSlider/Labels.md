@@ -17,7 +17,7 @@ N> The default value of the `ShowValueLabel` property is false.
 
 {% highlight c# %}
 
-	sfRangeSlider.ShowValueLabel= True;
+	rangeSlider.ShowValueLabel= true;
 
 {% endhighlight %}
 
@@ -27,17 +27,17 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 
 {% highlight c# %}
 	
-	 SfRangeSlider RangeSlider; 
+	 SFRangeSlider rangeSlider; 
 	 ObservableCollection<Items>  customCollection;
 	 public RangeSliderPage ()
      {
-       	customCollection = new ObservableCollection<Items> ();
-           customCollection.Add(new Items(){Label = "Min", Value= 0});
-           customCollection.Add(new Items() { Label = "Max", Value = 100 });
-		   RangeSlider = new SfRangeSlider ();
-           RangeSlider.HeightRequest = 400;
-           RangeSlider.ShowCustomLabel = true;
-           RangeSlider.CustomLabels = customCollection
+           NSMutableArray<SFLabelItems> labels = new NSMutableArray<SFLabelItems>();
+		   labels.Add(new SFLabelItems() { Label = (NSString)"Min", Value = 0 });
+		   labels.Add(new SFLabelItems() { Label = (NSString)"Max", Value = 100 });
+		   rangeSlider = new SFRangeSlider ();
+           rangeSlider.HeightRequest = 400;
+           rangeSlider.ShowCustomLabel = true;
+           rangeSlider.CustomLabels = labels;
 
 	 }
 
@@ -56,15 +56,16 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	sfRangeSlider.ValuePlacement=ValuePlacement.TopLeft;
+	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementTopLeft;
 
 {% endhighlight %}
 
-![](images/Value-TopLeft.png)
+![](images/Value-TopLeft .png)
+
 
 {% highlight c# %}
 
-	sfRangeSlider.ValuePlacement=ValuePlacement.BottomRight;
+	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementBottomRight;
 
 {% endhighlight %}
 
@@ -82,6 +83,6 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	sfRangeSlider.LabelPlacement=LabelPlacement.TopLeft;
+	rangeSlider.LabelPlacement=SFLabelPlacement.SFLabelPlacementTopLeft;
 
 {% endhighlight %}
