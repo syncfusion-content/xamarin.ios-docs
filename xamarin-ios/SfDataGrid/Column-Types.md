@@ -187,19 +187,19 @@ public class CustomCell : GridCell
     public CustomCell ()
     {
         label = new UILabel ();
-        this.Add (label);
+        this.AddSubview (label);
         this.CanRenderUnLoad = false;
     }
 
     protected override void UnLoad ()
     {
-        this.RemoveFromSuperview (this);
+        this.RemoveFromSuperview ();
     }
 
-    protected override void LayoutSubviews ()
+    public override void LayoutSubviews ()
     {
         base.LayoutSubviews ();
-        this.label.Frame (Bounds.Left, Bounds.Top, Bounds.Width, Bounds.Height);
+        this.label.Frame = new CGRect(Bounds.Left, Bounds.Top, Bounds.Width, Bounds.Height);
         this.label.Text = DataColumn.CellValue.ToString ();
     }
 }
