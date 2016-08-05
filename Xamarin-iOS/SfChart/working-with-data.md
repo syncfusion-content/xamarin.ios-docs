@@ -23,7 +23,7 @@ Following code snippet illustrates this,
 {% highlight c# %}
 public class ChartDataModel : SFChartDataSource
 {
-    NSMutableArray HightTemperature;
+    NSMutableArray HighTemperature;
 
     public ChartDataModel ()
     {
@@ -84,20 +84,26 @@ The `SFChartDataSource` protocol contains four required methods and an optional 
 
 * `GetDataPoints` - Returns an array of data points to be plotted in the series based on series index.
 
-The following code example is to implement the SFChartDataSource and setting datasource to chart.
+The following code example shows how to implement the SFChartDataSource and setting DataSource to chart.
 
 {% highlight c# %}
 public override void ViewDidLoad ()
 {
     base.ViewDidLoad ();
 
-    SFChart chart               = new SFChart ();
-
-    chart.Frame                 = this.View.Frame;
-
-    ChartDataModel dataModel    = new ChartDataModel ();
-
-    chart.DataSource            = dataModel as SFChartDataSource;
+    SFChart chart               	= new SFChart ();
+    chart.Frame                 	= this.View.Frame;
+	chart.Title.Text   				= new NSString( "Weather Analysis");
+	SFCategoryAxis primaryAxis 		= new SFCategoryAxis ();
+	primaryAxis.Title.Text     		= new NSString("Month");
+	chart.PrimaryAxis   			= primaryAxis;
+	SFNumericalAxis secondaryAxis 	= new SFNumericalAxis ();
+	secondaryAxis.Title.Text      	= new NSString("Temperature");
+	chart.SecondaryAxis           	= secondaryAxis;
+	
+	//Defining the data source for the Chart.
+    ChartDataModel dataModel    	= new ChartDataModel ();
+    chart.DataSource            	= dataModel as SFChartDataSource;
 
     this.View.AddSubview (chart);
 }
@@ -105,26 +111,45 @@ public override void ViewDidLoad ()
 public class ChartDataModel : SFChartDataSource
 {
 
-    public override int NumberOfSeriesInChart (SFChart chart)
+	NSMutableArray HighTemperature;
+
+    public ChartDataModel ()
+    {
+        HighTemperature = new NSMutableArray();
+
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Jan"),NSObject.FromObject(42)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Feb"),NSObject.FromObject(44)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Mar"),NSObject.FromObject(53)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Apr"),NSObject.FromObject(64)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("May"),NSObject.FromObject(75)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Jun"),NSObject.FromObject(83)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Jul"),NSObject.FromObject(87)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Aug"),NSObject.FromObject(84)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Sep"),NSObject.FromObject(78)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Oct"),NSObject.FromObject(67)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Nov"),NSObject.FromObject(55)));
+        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Dec"),NSObject.FromObject(45))); 
+
+    } 
+	
+    public override nint NumberOfSeriesInChart (SFChart chart)
     {
         return 1; 
     }
 
-    public override SFSeries GetSeries (SFChart chart, int index)
+    public override SFSeries GetSeries (SFChart chart, nint index)
     {
         SFSplineSeries series  = new SFSplineSeries ();
-
-        series.Label           = "High";
-
+        series.Label           = new NSString("High");
         return series;
     }
 
-    public override SFChartDataPoint GetDataPoint (SFChart chart, int index, int seriesIndex)
+    public override SFChartDataPoint GetDataPoint (SFChart chart, nint index, nint seriesIndex)
     {
-        return highTemperature.GetItem<SFChartDataPoint> (index);
+        return HighTemperature.GetItem<SFChartDataPoint> ((nuint)index);
     }
 
-    public override int GetNumberOfDataPoints (SFChart chart, int index)
+    public override nint GetNumberOfDataPoints (SFChart chart, nint index)
     {
         return 12;
     }
