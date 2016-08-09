@@ -11,11 +11,7 @@ documentation: ug
 
 This section provides overview for working with Essential NavigationDrawer for Xamarin.iOS. You can walk through the entire process of creating an NavigationDrawer.
 
-![](images/getting-started.png)
-
-## Create your first NavigationDrawer control in Xamarin.iOS
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
@@ -25,9 +21,11 @@ Add the following assembly references to the iOS project,
 
 android\Syncfusion.SfNavigationDrawer.iOS.dll
 
-### Initializing NavigationDrawer
+## Add SfNavigationDrawer
 
-* Adding reference to navigationDrawer.
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -35,19 +33,26 @@ android\Syncfusion.SfNavigationDrawer.iOS.dll
 	
 {% endhighlight %}
 
-* Create an instance of SfNavigationDrawer.
+{% endtabs %}
+
+* Now add the SfNavigationDrawer control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SFNavigationDrawer navigationDrawer = new SFNavigationDrawer(this);
-	this.AddSubview(navigationDrawer);
+SFNavigationDrawer navigationDrawer = new SFNavigationDrawer(this);
+this.AddSubview(navigationDrawer);
 	
 {% endhighlight %}
 
+{% endtabs %}
 
-### Setting Content View
+## Add Main Content 
 
 The main view of the NavigationDrawer can be set using `ContentView` property with desired views.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -80,9 +85,13 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 
 {% endhighlight %}
 
-### Setting DrawerContent View
+{% endtabs %}
+
+## Add Drawer Content
 
 The sliding main content of the NavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -118,3 +127,7 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 	this.AddSubview (sideMenuController);
 
 {% endhighlight %}
+
+{% endtabs %}
+
+![](images/getting-started.png)

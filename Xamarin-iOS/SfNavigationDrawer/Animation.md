@@ -6,7 +6,7 @@ platform: Xamarin.iOS
 control: NavigationDrawer
 documentation: ug
 ---
-# Transition
+# Drawer Opening Animation
 
 The `Transition` property specifies the sliding animations for the DrawerView panel. The `Transition` property has the following three options:
 
@@ -20,11 +20,15 @@ N> The default transition is SlideOnTop.
 
 Slides the DrawerContent on top of the main content.
 
+{% tabs %}
+
 {% highlight c# %} 
 
 	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnTop;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Slide-on-top.png)
 
@@ -32,11 +36,15 @@ Slides the DrawerContent on top of the main content.
 
 This transition slides the Drawer and main content simultaneously.
 
+{% tabs %}
+
 {% highlight c# %} 
 
 	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnPush;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/push.png)
 
@@ -44,10 +52,14 @@ This transition slides the Drawer and main content simultaneously.
 
 The Drawer content is in fixed position and the main content will slide to reveal the drawer content.
 
+{% tabs %}
+
 {% highlight c# %} 
 
 	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnReveal;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Reveal.png)

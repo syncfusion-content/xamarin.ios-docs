@@ -6,9 +6,9 @@ platform: Xamarin.iOS
 control: NavigationDrawer
 documentation: ug
 ---
-# Position
+# Configuring The Drawer In Different Sides
 
-The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options:
+The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options.
 
 * Left
 
@@ -24,12 +24,15 @@ N> The default option is Left.
 
 Sets the NavigationDrawer sliding position to the left.
 
+{% tabs %}
 
 {% highlight c# %}
 
-	navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
+navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/left.png)
 
@@ -37,11 +40,15 @@ Sets the NavigationDrawer sliding position to the left.
 
 Sets the NavigationDrawer sliding position to the right.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionRight;
+navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionRight;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Right.png)
 	
@@ -49,11 +56,15 @@ Sets the NavigationDrawer sliding position to the right.
 
 Sets the NavigationDrawer sliding position to the top.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionTop;
+navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionTop;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Top.png)
 
@@ -61,11 +72,15 @@ Sets the NavigationDrawer sliding position to the top.
 
 Sets the NavigationDrawer sliding position to the bottom.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionBottom;
+navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionBottom;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/bottom.png)
 
