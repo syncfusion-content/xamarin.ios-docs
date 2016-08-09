@@ -82,7 +82,6 @@ Size and color can be customized in SfBusyIndicator as follows.
 
 {% endtabs %}
 
-
 ![](images/BusyIndicator-iOS.png)                 
 
 BusyIndicator
