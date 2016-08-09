@@ -6,16 +6,20 @@ platform: Xamarin.iOS
 control: LinearGauge
 documentation: ug
 ---
-# Orientation
+# Change Orientation
 
-SfLinearGauge provides support for the Vertical orientation. By default SfLineargauge renders with horizontal orientation. You can the change the orientation by using `Orientation` property. 
+SfLinearGauge provides support for the vertical orientation. By default SfLinearGauge renders with horizontal orientation. You can the change the orientation by using the `Orientation` property. Orientation can be categorized as follows.
 
 * Horizontal
 * Vertical
+
+{% tabs %}
 
 {% highlight c# %}
 
   linearGauge.Orientation = Syncfusion.SfGauge.XForms.Orientation.OrientationVertical;
 
 {% endhighlight %}
+
+{% endtabs %}
 
