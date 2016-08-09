@@ -7,9 +7,11 @@ control: SfBusyIndicator
 documentation: ug
 ---
 
-# IsBusy
+# Make Busy Animation Idle
 
-The `IsBusy` property in the SFBusyIndicator control is used to determine whether an animation needs to be executed or not. 
+SfBusyIndicator control provides support to determine whether an animation needs to be executed or not. Setting the `IsBusy` property to false will stop the animation and removes the control from view. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -18,6 +20,8 @@ The `IsBusy` property in the SFBusyIndicator control is used to determine whethe
 	busyindicator.IsBusy=true;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/IsBusy_img1.png)                 
 
