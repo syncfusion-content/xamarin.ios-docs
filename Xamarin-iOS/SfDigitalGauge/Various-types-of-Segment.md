@@ -7,7 +7,7 @@ control: DigitalGauge
 documentation: ug
 ---
 
-# CharacterType
+# Various types of Segment
 
 The Digital Characters can be drawn in 4 different segments as follows.
  
@@ -23,15 +23,21 @@ N> SegmentSeven is the default CharacterType in the SfDigitalGauge.
 
 ## Seven Segment
 
+{% tabs %}
+
 {% highlight c# %}
 
 	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeSegmentSeven;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/SegmentSeven.png)
 
 ## Fourteen Segment
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -39,9 +45,13 @@ N> SegmentSeven is the default CharacterType in the SfDigitalGauge.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/SegmentFourteen.png)
 
 ## Sixteen Segment
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -49,15 +59,21 @@ N> SegmentSeven is the default CharacterType in the SfDigitalGauge.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/SegmentSixteen.png)
 
 ## EightCrossEightDotMatrix Segment
+
+{% tabs %}
 
 {% highlight c# %}
 
 	 digitalGauge.CharacterType=SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeEightCrossEightDotMatrix;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/SegmentMatrix.png)
 
