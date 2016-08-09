@@ -9,12 +9,15 @@ documentation : ug
 
 # Populating Items
 
-## AutoCompleteSource 
+SfAutoComplete control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source. 
+
+## Through AutoComplete Source Item 
 
 * The `AutoCompleteSource` property in the SfAutoComplete control is used to set the list of strings to the suggestions dropdown.
 
 * To create a Text Box that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for Text Box controls in which URLs, addresses, file names, or commands will be frequently entered.
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -26,14 +29,17 @@ documentation : ug
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](images/autocompletesource.png)
 
-## DataSource
+## Through Binding
 
-The `DataSource` property is used to set list of objects to the SfAutoComplete control. 
+DataSource is a collection of SfAutoComplete items which is capable of holding any objects and displays the items based on the provided `DisplayMemberPath` value.
 
-* Create Student class with two properties Name and Age.
+To populate items using data source, create a model class with the properties that to be bound.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -58,7 +64,11 @@ The `DataSource` property is used to set list of objects to the SfAutoComplete c
 	}
 {% endhighlight %}
 
+{% endtabs %}
+
 * Create Student collection using Student class and assign the collection to DataSource property of SfAutoComplete
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -92,7 +102,11 @@ The `DataSource` property is used to set list of objects to the SfAutoComplete c
 		
 {% endhighlight %}
 
+{% endtabs %}
+
 * Here student collection has two properties so we should tell the control, by which property, it has to provide suggestions. In this case, let us make the control to provide suggestions based on Name.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -102,6 +116,8 @@ The `DataSource` property is used to set list of objects to the SfAutoComplete c
 			studentAutoComplete.SelectedValuePath = "Age";
 
 {% endhighlight %}
+
+{% endtabs %}
 
 * `DisplayMemberPath` decides the suggestions to be shown in dropdown. Setting the `SelectedValuePath` property will make `SelectedValue` property to return the value you have selected here. 
 
