@@ -11,9 +11,6 @@ documentation : ug
 
 This section provides a quick overview for working with Essential Carousel for Xamarin.iOS. It guides you to the entire process of creating a SfCarousel in your Application.
 
-
-## Creating your first SfCarousel in Xamarin.iOS
-
 ## Referencing Essential Studio components in your solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
@@ -22,9 +19,11 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 And below assembly reference to the iOS unified project.
 iOS-unifed\Syncfusion.SfCarousel.iOS.dll
 
-## Add and Configure the SfCarousel
+## Add SfCarousel
 
-* Adding reference to SfCarousel.
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -32,44 +31,26 @@ iOS-unifed\Syncfusion.SfCarousel.iOS.dll
 
 {% endhighlight %}
 
-* Create an instance for SfCarousel.
+{% endtabs %}
+
+* Now add the SfCarousel control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight C# %}
 
-	SFCarousel carousel = new SFCarousel();
-	this.AddSubview(carousel);
+SFCarousel carousel = new SFCarousel();
+this.AddSubview(carousel);
 
 {% endhighlight %}
 
-## Setting Offset
+{% endtabs %}
 
-`Offset` property is used to specify the distance between the items in SfCarousel panel.
+## Add Carousel Items
 
-{% highlight C# %}
+SfCarousel items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. An example to populate image collection as carousel items as follows
 
-	SFCarousel carousel = new SFCarousel();
-	carousel.SelectedIndex=2;
-	carousel.Offset=20;
-
-{% endhighlight %}
-
-
-## Setting Rotation Angle
-
-`RotationAngle` property is used to decide the angle in which items should be rotated.
-
-{% highlight C# %}
-
-	SFCarousel carousel = new SFCarousel();
-	carousel.SelectedIndex=2;
-	carousel.Offset=20;
-	carousel.RotationAngle = 45;
-
-{% endhighlight %}
-
-## Setting DataSource
-
-SfCarousel items can be populated with a collection of image data. For example, user may wants to create SfCarousel control which will display a list of images.
+{% tabs %}
 
 {% highlight c# %}
 
@@ -83,5 +64,40 @@ SfCarousel items can be populated with a collection of image data. For example, 
 	carousel.DataSource=carouselItemCollection;
 
 {% endhighlight %}
+
+{% endtabs %}
+
+## Set Gap between Items
+
+SfCarousel provides option to set the distance between the items in the panel. This can be done by using the `Offset` property in SfCarousel control. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+SFCarousel carousel = new SFCarousel();
+carousel.SelectedIndex=2;
+carousel.Offset=20;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Tilt Non Selected Items
+
+Items in the SfCarousel control can be rotated in user defined angle. `RotationAngle` property is used to decide the angle in which items should be rotated
+
+{% tabs %}
+
+{% highlight C# %}
+
+SFCarousel carousel = new SFCarousel();
+carousel.SelectedIndex=2;
+carousel.Offset=20;
+carousel.RotationAngle = 45;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](images/carousel.png)
