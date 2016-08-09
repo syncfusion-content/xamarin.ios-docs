@@ -7,11 +7,15 @@ control : AutoComplete
 documentation : ug
 ---
 
-# Suggestion Mode
+# Various Filter options for Suggestion
 
-`SuggestionMode` property provides various option to filter the data according to the text entered. They are,
+By default, the items that matches with the starting letter will be displayed as suggestion. This phenomenon can be changed using  `SuggestionMode` property, which provides various option to filter the data according to the text entered. There are eight types of suggestion modes and are described as follows.
 
-* StartsWith - It begins to search with the starting letter.
+## Words that Starts with Input Text
+
+Displays the list of suggestions based on starting letter.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -19,9 +23,15 @@ documentation : ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/startswith.png)
 
-* StartsWithCaseSensitive - This mode is used to display the suggestions based on the starting letter with case sensitive in SfAutoComplete.
+### Filter with Character Casing
+
+Displays the list of suggestions based on starting letter with case sensitive.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -29,9 +39,15 @@ documentation : ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/startswithcasesensitive.png)
 
-* Contains - It displays suggestions if SfAutoComplete contains that words.
+## Words that Contains the Input Text
+
+Displays the list of suggestions, if autocomplete list contains that words.
+	
+{% tabs %}
 
 {% highlight C# %}
 
@@ -39,9 +55,15 @@ documentation : ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/contains.png)
 
-* ContainsWithCaseSensitive - It displays the suggestions if SfAutoComplete contains that words with case sensitive.
+### Filter with Character Casing
+
+Displays the list of suggestions, if autocomplete list contains that words with case sensitive.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -49,9 +71,15 @@ documentation : ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/containswithcasesensitive.png)
 
-* Equals - It displays the word that matches.
+## Words that Equals to the Input Text
+
+Displays the word that matches.
+	
+{% tabs %}
 
 {% highlight C# %}
 
@@ -59,9 +87,15 @@ documentation : ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/equals.png)
 
-* EqualsWithCaseSensitive - It displays the word that matches with case sensitive.
+### Filter with Character Casing
+
+Displays the word that matches with case sensitive.
+	
+{% tabs %}
 
 {% highlight C# %}
 
@@ -69,9 +103,15 @@ documentation : ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/equalswithcasesensitive.png)
 
-* EndsWith - It displays the suggestion based on ending word in SfAutoComplete control.
+## Words that Ends with Input Text
+
+Displays the list of suggestions based on ending word.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -79,9 +119,15 @@ documentation : ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/endswith.png)
 
-* EndsWithCaseSensitive - It displays the suggestion based on the ending words with case sensitive in SfAutoComplete Control.
+### Filter with Character Casing
+
+Displays the list of suggestions based on the ending word with case sensitive.
+	
+{% tabs %}
 
 {% highlight C# %}
 
@@ -89,14 +135,22 @@ documentation : ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/endswithcasesensitive.png)
 
-* Custom - It displays the suggestion based on the custom words in SfAutoComplete Control.
+## Custom Filtering
+
+Displays the suggestion based on the custom words in SfAutoComplete Control.
+
+{% tabs %}
 
 {% highlight C# %}
 
 	countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSuggestionModeCustom;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/endswith.png)
