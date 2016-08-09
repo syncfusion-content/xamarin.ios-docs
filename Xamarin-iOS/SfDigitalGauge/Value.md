@@ -11,10 +11,14 @@ documentation: ug
 
 The Digital Characters in the SfDigitalGauge is viewed in different types of segments. These digital characters are set to the SfDigitalGauge through the Value property of type string.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	digitalGauge.Value=”Syncfusion”;
+	digitalGauge.Value="Syncfusion";
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Value.png)
