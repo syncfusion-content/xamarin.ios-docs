@@ -9,9 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the SfLinearGauge and configure its properties.
-
-## Creating Your First SfLinearGauge in Xamarin.iOS
+This section explains you the steps to configure a SfLinearGauge control in a real-time scenario and also provides a walk-through on some of the customization features available in SfLinearGauge control.
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -23,11 +21,13 @@ And below assembly reference to the iOS unified project.
 
 iOS-unifed\Syncfusion.SfGauge.iOS.dll 
 
-### Add and Configure the SfLinearGauge
+### Add SfLinearGauge
 
-The following steps explain on how to create a SfLinearGauge and configure its elements:
+The following steps explain on how to create a SfLinearGauge and configure its elements
 
-* Adding reference to SfLinearGauge.
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -35,96 +35,121 @@ The following steps explain on how to create a SfLinearGauge and configure its e
 
 {% endhighlight %}
 
-* Create an instance of SfLinearGauge.
+{% endtabs %}
+
+* Now add the SfLinearGauge control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SFLinearGauge  linearGauge = new SFLinearGauge ();
-	this.AddSubview(linearGauge);
+SFLinearGauge  linearGauge = new SFLinearGauge ();
+this.AddSubview(linearGauge);
 
 {% endhighlight %}
+
+{% endtabs %}
 
 * Configure the properties of SfLinearGauge
 
+{% tabs %}
+
 {% highlight c# %}
 
-	linearGauge.Orientation = SFLinearGaugeOrientation.SFLinearGaugeOrientationVertical;
+linearGauge.Orientation = SFLinearGaugeOrientation.SFLinearGaugeOrientationVertical;
 
 {% endhighlight %}
 
-### Add Scales
+{% endtabs %}
 
-We will add one or more scale value to SfLinearGauge. Before adding that scales we have to set 
-Maximum and Minimum value to this.
+## Add Scales
+
+The scale that point out to the values can be added by instantiating LinearScale class and setting minimum values, maximum values, scale intervals and colors etc.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SFLinearScale scale = new SFLinearScale ();
-	scale.Minimum = 0;
-	scale.Maximum = 100;
-	scale.Interval = 20;
-	scale.ScaleBarLength = 100;
-	scale.ScaleBarColor =UIColor.FromRGB (250, 236, 236);
-	scale.LabelColor = UIColor.FromRGB (84, 84, 84); 
-	scale.MinorTicksPerInterval = 1;
-	scale.ScaleBarSize = 13;
-	scale.ScalePosition = SFLinearGaugeScalePosition.SFLinearGaugeScalePositionForward;
+SFLinearScale scale = new SFLinearScale ();
+scale.Minimum = 0;
+scale.Maximum = 100;
+scale.Interval = 20;
+scale.ScaleBarLength = 100;
+scale.ScaleBarColor =UIColor.FromRGB (250, 236, 236);
+scale.LabelColor = UIColor.FromRGB (84, 84, 84); 
+scale.MinorTicksPerInterval = 1;
+scale.ScaleBarSize = 13;
+scale.ScalePosition = SFLinearGaugeScalePosition.SFLinearGaugeScalePositionForward;
 	
 {% endhighlight %}
 
-### Add SymbolPointer
+{% endtabs %}
 
-We can point a value on scale in SfLinearGauge by creating instance of SymbolPointer.
+## Add a Symbol Pointer
+
+An arrow head that points to the value is called the Symbol Pointer which can be added by instantiating the SymbolPointer class and assigning it to the Pointers collection.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SFSymbolPointer symbolPointer = new SFSymbolPointer ();
-	symbolPointer.Value = 50;
-	symbolPointer.Offset = 0;
-	symbolPointer.Thickness = 3;
-	symbolPointer.Color = UIColor.FromRGB (65, 77, 79);        
+SFSymbolPointer symbolPointer = new SFSymbolPointer ();
+symbolPointer.Value = 50;
+symbolPointer.Offset = 0;
+symbolPointer.Thickness = 3;
+symbolPointer.Color = UIColor.FromRGB (65, 77, 79);        
 
-{% endhighlight %}		
+{% endhighlight %}	
+
+{% endtabs %}	
 	
-### Add a BarPointer
+## Add a Bar Pointer
 
-Before adding that symbol and bar pointer into Scale’s pointer add value of that pointers.
+A flat solid bar that points to the current value can be added by instantiating BarPointer and it can be added to pointers collection.
+
+{% tabs %}
 
 {% highlight c# %}
 
-    SFBarPointer rangePointer = new SFBarPointer ();
-	rangePointer.Value = 50;
-	rangePointer.Color = UIColor.FromRGB (206, 69, 69);
-	rangePointer.Thickness = 10;
+SFBarPointer rangePointer = new SFBarPointer ();
+rangePointer.Value = 50;
+rangePointer.Color = UIColor.FromRGB (206, 69, 69);
+rangePointer.Thickness = 10;
 			
 {% endhighlight %}
 
-### Add a Range
+{% endtabs %}
 
-We can improve the readability of data by including ranges that quickly display when values fall within specific range.
+## Add a Range
+
+We can improve the readability of data by including ranges that quickly displays when values fall within a specific ranges.
+
+{% tabs %}
 
 {% highlight c# %}
 
-    SFLinearRange range = new SFLinearRange ();
-	range.StartValue = 0;
-	range.EndValue = 50;
-	range.Color = UIColor.FromRGB (234, 248, 249);
-	range.StartWidth = 10;
-	range.EndWidth = 10;
-	range.Offset = nfloat.Parse("-0.17");
-	scale.Ranges.Add (range);
-	//Range
-	SFLinearRange range2 = new SFLinearRange ();
-	range2.StartValue = 50;
-	range2.EndValue = 100;
-	range2.Color = UIColor.FromRGB (50, 184, 198);
-	range2.StartWidth = 10;
-	range2.EndWidth = 10;
-	range2.Offset = nfloat.Parse("-0.17");
-	scale.Ranges.Add (range2);        
-	linearGauge.Scales.Add (scale);
+SFLinearRange range = new SFLinearRange ();
+range.StartValue = 0;
+range.EndValue = 50;
+range.Color = UIColor.FromRGB (234, 248, 249);
+range.StartWidth = 10;
+range.EndWidth = 10;
+range.Offset = nfloat.Parse("-0.17");
+scale.Ranges.Add (range);
+//Range
+SFLinearRange range2 = new SFLinearRange ();
+range2.StartValue = 50;
+range2.EndValue = 100;
+range2.Color = UIColor.FromRGB (50, 184, 198);
+range2.StartWidth = 10;
+range2.EndWidth = 10;
+range2.Offset = nfloat.Parse("-0.17");
+scale.Ranges.Add (range2);        
+linearGauge.Scales.Add (scale);
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Xamarin.iOS.png)
 

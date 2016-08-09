@@ -7,11 +7,15 @@ control: LinearGauge
 documentation: ug
 ---
 
-# Pointers
+# Types of Value Indicator
 
-## BarPointer
+SfLinearGauge provides support to mark the values using BarPointer and SymbolPointer.
 
-BarPointer is an accenting line or colored bar that is placed on the SfLinearGauge to mark the values. 
+## Through Bar Pointer
+
+`BarPointer` is an accenting line or colored bar that is placed on the SfLinearGauge to mark the values.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -23,12 +27,16 @@ BarPointer is an accenting line or colored bar that is placed on the SfLinearGau
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/BarPointer.png)
 
 
-## SymbolPointer
+## Through Symbol Pointer
 
-In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Pointer class is derived from Pointer class. You can modify the symbol pointer’s size using the `StrokeWidth` property. The color of the symbol pointer is changed using the `Color` property.
+In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Pointer class is derived from Pointer class. You can modify the symbol pointer size using the `StrokeWidth` property. The color of the symbol pointer is changed using the `Color` property.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -43,5 +51,6 @@ In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Poin
 	
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![](images/SymbolPointer.png)
