@@ -11,10 +11,7 @@ documentation: ug
 
 This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
-
-## Creating your first SfBusyIndicator in Xamarin.iOS.
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
@@ -24,9 +21,11 @@ And below assembly reference to the iOS unified project.
 
 iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
-### Add and Configure the SfBusyIndicator
+## Add BusyIndicator
 
-* Adding reference to SFBusyIndicator.
+* Adding namespace for the added assemblies.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -34,7 +33,11 @@ iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
 {% endhighlight %}
 
-* Create an instance of SFBusyIndicator.
+{% endtabs %}
+
+* Now add the SfBusyIndicator control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 	
@@ -43,17 +46,29 @@ iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 	
 {% endhighlight %}
 
-### Set the AnimationType to SFBusyIndicator
+{% endtabs %}
 
-To set AnimationType for the SFBusyIndicator, use `AnimationType` property and choose anyone of the 13 predefined animation types. 
+## Set Animation Type
+
+SfBusyIndicator provides 10 predefined animation types like Ball, Battery, Globe and so on. User can select any one of the animation types using `AnimationType`property.
+
+Following example depicts the battery type animation for SfBusyIndicator. 
+
+{% tabs %}
 
 {% highlight c# %}
 
 	 busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
 
 {% endhighlight %}
+
+{% endtabs %}
 	
-### Configure the properties for SFBusyIndicator. 
+## Configure the Properties for SFBusyIndicator
+
+Size and color can be customized in SfBusyIndicator as follows.
+
+{% tabs %}
       
 {% highlight c# %}
 	 
@@ -65,6 +80,7 @@ To set AnimationType for the SFBusyIndicator, use `AnimationType` property and c
 	
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](images/BusyIndicator-iOS.png)                 
 

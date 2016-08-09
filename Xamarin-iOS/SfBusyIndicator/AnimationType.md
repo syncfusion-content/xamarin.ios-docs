@@ -8,9 +8,11 @@ documentation: ug
 ---
 
 
-# AnimationType
+# Animation Type
 
 The `AnimationType` property for the SfBusyIndicator allows you to set any one of the built-in animations available in the SfBusyIndicator.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -18,6 +20,8 @@ The `AnimationType` property for the SfBusyIndicator allows you to set any one o
 	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
 	
 {% endhighlight %} 
+
+{% endtabs %}
 
 ![](images/Ball.png)                 
 
