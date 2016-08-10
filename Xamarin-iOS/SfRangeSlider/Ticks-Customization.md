@@ -7,7 +7,9 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Ticks
+# Ticks Customization
+
+Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
 
 ## TickPlacement
 
@@ -29,11 +31,15 @@ N> The default option is Inline.
 
 Tick marks can be placed either below the track in horizontal orientation or right of the track in vertical orientation.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementBottomRight;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/BottomRight.png)
 
@@ -41,11 +47,15 @@ Tick marks can be placed either below the track in horizontal orientation or rig
 
 Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementTopLeft;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/TopLeft.png)
 
@@ -53,11 +63,15 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 Ticks are placed along the track.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementInline;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Inline.png)
 
@@ -65,11 +79,15 @@ Ticks are placed along the track.
 
 Tick marks are placed on both sides of the track either in horizontal or vertical orientation.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementOutside;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Outside.png)
 
