@@ -10,12 +10,8 @@ documentation: ug
 # Getting Started
 
 This section explains you the steps to configure a NumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in NumericTextBox control.
-
-![](images/NumericTextBox-iOS.png) 
-
-## Creating your first NumericTextBox in Xamarin.iOS                                   
-
-### Reference Essential Studio Components in your Solution
+                        
+## Reference Essential Studio Components in your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
@@ -27,9 +23,11 @@ and below assembly reference to the iOS unified project.
 
 iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
-### Initializing NumericTextBox
+## Add SfNumericTextBox
 
-* Adding reference to NumericTextBox.
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -37,26 +35,40 @@ iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 {% endhighlight %}
 
-* Create an instance for NumericTextBox control and adding to application.
+{% endtabs %}
+
+* Now add the SfNumericTextBox control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SFNumericTextBox numericTextBox =new SFNumericTextBox();
-	this.AddSubview(numericTextBox); 
+SFNumericTextBox numericTextBox =new SFNumericTextBox();
+this.AddSubview(numericTextBox); 
 
 {% endhighlight %}
 
-### Add Parsing Mode
+{% endtabs %}
 
-Value of the NumericTextBox gets parsed based on the ParsingMode property. ParsingMode is of type Parsers, that is, enum of Double and Decimal.
+## Enable Parsing Mode
+
+SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	numericTextBox.ParsingMode=SFNumericTextBoxParsingMode.Decimal;
+numericTextBox.ParsingMode=SFNumericTextBoxParsingMode.Decimal;
 	
 {% endhighlight %}
 
-### Configure the properties for NumericTextBox.
+{% endtabs %}
+
+## Configuring properties
+
+Format string, value maximum number of decimal digits can be customized in SfNumericTextBox.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -70,3 +82,6 @@ Value of the NumericTextBox gets parsed based on the ParsingMode property. Parsi
 
 {% endhighlight %}
 
+{% endtabs %}
+
+![](images/NumericTextBox-iOS.png)
