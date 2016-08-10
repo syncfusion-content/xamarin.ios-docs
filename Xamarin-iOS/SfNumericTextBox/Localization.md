@@ -8,18 +8,19 @@ documentation: ug
 ---
 # Localization
 
-## Culture
-
-The NumericTextBox value can be localized to any specific culture. It can be specified by setting the `Culture` property with `NSLocale` object instance.
+The SFNumericTextBox value can be localized to any specific culture. It can be specified by setting the `Culture` property with `NSLocale` object instance.
 
 N> Default `Culture` property value is en-US.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	numericTextBox.CultureInfo = new NSLocale("zh-CN");
+numericTextBox.CultureInfo = new NSLocale("zh-CN");
 	
 {% endhighlight %}
 
+{% endtabs %}
 
 ![](images/Culture.png)
 

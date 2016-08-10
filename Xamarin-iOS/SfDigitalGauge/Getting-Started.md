@@ -11,9 +11,7 @@ documentation: ug
 
 This section explains you the steps to configure a SfDigitalGauge control in a real-time scenario and some of the customization features available in it.
 
-## Creating Your First SfDigitalGauge in Xamarin.iOS
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
@@ -23,9 +21,11 @@ And below assembly reference to the iOS unified project.
 
 iOS-unifed\Syncfusion.SfGauge.iOS.dll 
 
-### Add and Configure the SfDigitalGauge
+### Add SfDigitalGauge
 
-* Adding reference to SfDigitalGauge.
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -33,24 +33,36 @@ iOS-unifed\Syncfusion.SfGauge.iOS.dll
 
 {% endhighlight %}
 
-* Create an instance of SfDigitalGauge.
+{% endtabs %}
+
+* Now add the SfDigitalGauge control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SFDigitalGauge  digitalGauge = new SFDigitalGauge ();
-	this.AddSubview(digitalGauge);
+SFDigitalGauge  digitalGauge = new SFDigitalGauge ();
+this.AddSubview(digitalGauge);
 
 {% endhighlight %}
 
-### Configure the properties of SfDigitalGauge
+{% endtabs %}
+
+## Configuring properties
+
+Character Height, Width and segment  which is used to display the Characters can be customized as in the below code snippets.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	digitalGauge.CharacterHeight = 36;
-	digitalGauge.CharacterWidth = 18;
-	digitalGauge.CharacterType = SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeSegmentSeven;
-	digitalGauge.Value = (NSString)“Syncfusion”;
+digitalGauge.CharacterHeight = 36;
+digitalGauge.CharacterWidth = 18;
+digitalGauge.CharacterType = SFDigitalGaugeCharacterType.SFDigitalGaugeCharacterTypeSegmentSeven;
+digitalGauge.Value = (NSString)“Syncfusion”;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Objective.png)
