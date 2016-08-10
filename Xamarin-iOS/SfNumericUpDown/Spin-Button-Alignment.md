@@ -7,9 +7,7 @@ control: NumericUpDown
 documentation: ug
 ---
 
-# Appearance
-
-## SpinButton Alignment
+# Spin Button Alignment
 
 Spin Button position in the NumericUpDown control can be changed relative to the TextBox based on `SpinButtonAlignment` property. 
 
@@ -19,11 +17,15 @@ There are three built-in modes.
 
 Spin Buttons will get aligned to the right side of the control.
 
+{% tabs %}
+
 {% highlight C# %}
 
-	numericupdown.SpinButttonAlignment = SFNumericUpDownSpinButtonAlignment.Right;
+numericupdown.SpinButttonAlignment = SFNumericUpDownSpinButtonAlignment.Right;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/spinright.png)
 
@@ -31,11 +33,15 @@ Spin Buttons will get aligned to the right side of the control.
 
 Spin Buttons will get aligned to the left side of the control.
 
+{% tabs %}
+
 {% highlight C# %}
 
-	numericupdown.SpinButttonAlignment = SFNumericUpDownSpinButtonAlignment.Left;
+numericupdown.SpinButttonAlignment = SFNumericUpDownSpinButtonAlignment.Left;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/spinleft.png)
 
@@ -43,11 +49,15 @@ Spin Buttons will get aligned to the left side of the control.
 
 Spin Buttons will get aligned to the both side of the control.
 
+{% tabs %}
+
 {% highlight C# %}
 
-	numericupdown.SpinButttonAlignment = SFNumericUpDownSpinButtonAlignment.Both;
+numericupdown.SpinButttonAlignment = SFNumericUpDownSpinButtonAlignment.Both;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/spinboth.png)
 
