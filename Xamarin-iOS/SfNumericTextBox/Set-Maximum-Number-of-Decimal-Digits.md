@@ -6,19 +6,21 @@ platform: Xamarin.iOS
 control: NumericTextBox
 documentation: ug
 ---
-# Features
-
-## Maximum Number Decimal Digits
+# Set Maximum Number of Decimal Digits
 
 The maximum number of digits to be displayed after the decimal point can be specified by using `MaximumNumberDecimalDigits` property. 
 
 N> The `MaximumNumberDecimalDigits` property can be provided with positive value only.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	numericTextBox.MaximumNumberDecimalDigits=2;
+numericTextBox.MaximumNumberDecimalDigits=2;
   
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/MaximumNumberDecimalDigits.png)
 
@@ -30,7 +32,7 @@ N> By default, the property value is false.
 
 {% highlight c# %}
 
-	numericTextBox.AllowNull=true;
+numericTextBox.AllowNull=true;
 
 {% endhighlight %}
 
