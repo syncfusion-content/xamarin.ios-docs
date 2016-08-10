@@ -11,9 +11,11 @@ documentation: ug
 
 The tooltip shows the current value based on thumb position.
 
-## ToolTipPrecision
+## Set ToolTip Precision
 
-The `ToolTipPrecision` property is used to define the precision of the value displayed in the tooltip.
+The `ToolTipPrecision` property is used to define the precision of the value displayed in the ToolTip.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -21,9 +23,11 @@ The `ToolTipPrecision` property is used to define the precision of the value dis
 	
 {% endhighlight %}
 
-## ToolTipPlacement
+{% endtabs %}
 
-The position of the tooltip in relation to the thumb can be controlled by the `ToolTipPlacement` property. It has the following options.
+## Set ToolTip Placement
+
+The position of the ToolTip in relation to the thumb can be controlled by the `ToolTipPlacement` property. It has the following options.
 
 1. BottomRight
 2. TopLeft
@@ -31,33 +35,45 @@ The position of the tooltip in relation to the thumb can be controlled by the `T
 
 ### BottomRight
 
-The Tooltip will be placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation.
+The ToolTip will be placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementBottomRight;
+rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementBottomRight;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ### TopLeft
 
-the Tooltip will be placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation.
+the ToolTip will be placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementTopLeft;
+rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementTopLeft;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ### None
 
-Tooltip will be collapsed.
+ToolTip will be collapsed.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementNone;
+rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementNone;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 
 

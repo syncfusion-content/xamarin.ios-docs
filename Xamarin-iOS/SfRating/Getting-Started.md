@@ -13,11 +13,7 @@ documentation: ug
 
 This section explains you the steps to configure a rating control in a real-time scenario and also provides a walk-through on some of the customization features available in Rating control.
 
-![](images/gettingstarted.png)
-
-## Creating your First Rating in Xamarin.iOS
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
@@ -27,9 +23,11 @@ Add the following assembly references to the iOS unified project,
 
 iOS-unified\Syncfusion.SfRating.iOS.dll
 
-### Add and Configure the Rating Control
+## Add SfRating
 
-* Adding reference to Autocomplete.
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight c# %}
 	
@@ -37,7 +35,11 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 	
 {% endhighlight %}
 
-* Create an instance of SfRating.
+{% endtabs %}
+
+* Now add the SfRating control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -46,7 +48,11 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 	
 {% endhighlight %}
 
+{% endtabs %}
+
 * Configure the properties of Rating
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -60,11 +66,15 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 
 {% endhighlight %}
 
-### Setting Value
+{% endtabs %}
 
-* The `Value` property sets the display value of the rating. 
+## Set Value
+
+Display value can be set in SfRating control which is selected among the items. The following example shows the display value of 3 with 5 rating items. 
 
 N> By default, property value is 0.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -72,9 +82,13 @@ N> By default, property value is 0.
 
 {% endhighlight %}
 
-### Precision
+{% endtabs %}
 
-* To enable full, half and exact values of rating, set the `Precision` property.
+## Precision
+
+SfRating control provides option to rate the items in full, half and exact value. This can be set through `Precision` property.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -82,6 +96,7 @@ N> By default, property value is 0.
 
 {% endhighlight %}
 
-![](images/standard.jpg)
+{% endtabs %}
 
 
+![](images/gettingstarted.png)
