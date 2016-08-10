@@ -17,11 +17,15 @@ The precision mode defines the accuracy level of the rating control. It has Stan
 
 The rating item will be filled completely based on the rating value.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	   rating.Precision=SFRatingPrecision.Standard;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/standard.jpg)
 
@@ -29,11 +33,15 @@ The rating item will be filled completely based on the rating value.
 
 The rating item will be filled partially based on the rating value.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	   rating.Precision=SFRatingPrecision.Half;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/half.jpg) 
 
@@ -41,11 +49,15 @@ The rating item will be filled partially based on the rating value.
 
 The rating item will be filled exactly based on the rating value.
 
+{% tabs %}
+
 {% highlight c# %}
 
 	   rating.Precision=SFRatingPrecision.Exact;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/exact.jpg) 
 
