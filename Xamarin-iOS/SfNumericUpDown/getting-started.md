@@ -9,13 +9,9 @@ documentation : ug
 
 # Getting Started
 
-This section provides overview for working with Essential NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a NumericUpDown.
+This section provides overview for working with Essential NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
 
-![](images/gettingstarted.png)
-
-## Create your first NumericUpDown control in Xamarin.iOS
-
-### Referencing Essential Studio Components in Your Solution	
+## Referencing Essential Studio Components in Your Solution	
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
@@ -27,11 +23,13 @@ and below assembly reference to the iOS unified project.
 
 iOS-unifed\Syncfusion.SfNumericUpDown.iOS.dll
 
-## Initializing NumericUpDown
+## Add SfNumericUpDown
 
-The NumericUpDown control configured entirely in C# code. The following steps explain on how to create a NumericUpDown and configure its elements,
+The SfNumericUpDown control configured entirely in C# code. The following steps explain on how to create a SfNumericUpDown and configure its elements,
 
-* Adding reference to NumericUpDown.
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -39,37 +37,48 @@ The NumericUpDown control configured entirely in C# code. The following steps ex
 
 {% endhighlight %}
 
+{% endtabs %}
 
-* Create an instance of NumericUpDown.
+* Now add the SfNumericUpDown control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	SFNumericUpDown numericupdown=new SFNumericUpDown();
-	this.AddSubview(numericupdown);
+SFNumericUpDown numericupdown=new SFNumericUpDown();
+this.AddSubview(numericupdown);
 
 {% endhighlight %}
 
-## Setting Value
+{% endtabs %}
 
-The NumericUpDown control display value can be set using `Value` property. 
+## Set Value
+
+The SfNumericUpDown control display value can be set using `Value` property. 
+
+{% tabs %}
 
 {% highlight C# %}
 
-	numericupdown.Value= 5;
+numericupdown.Value= 5;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Enable Parsing Mode
 
-The value of the NumericUpDown can be parsed based on the `ParsingMode` property. 
+SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
 
-N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal.
+{% tabs %}
 
 {% highlight c# %}
 
-	numericupdown.ParsingMode=SFNumericUpDownParsingMode.Decimal;
+numericupdown.ParsingMode=SFNumericUpDownParsingMode.Decimal;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Add Format String
 
@@ -83,13 +92,17 @@ It has three types,
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
 
+{% tabs %}
+
 {% highlight C# %}
 
-	numericupdown.FormatString= @“c”;
+numericupdown.FormatString= @“c”;
 
 {% endhighlight %}
 
+{% endtabs %}
 
+![](images/gettingstarted.png)
 
 
 
