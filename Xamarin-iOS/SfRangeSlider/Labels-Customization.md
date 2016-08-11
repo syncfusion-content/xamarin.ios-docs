@@ -9,11 +9,15 @@ documentation: ug
 
 # Labels
 
-## ShowValueLabel
+SfRangeSlider provides option to show or hide the label and position customization.
+
+## Show Value Label
 
 This property allows us to display labels for the ticks. When it sets to true, it displays the label for all the ticks based on the `ValuePlacement` property.
 
 N> The default value of the `ShowValueLabel` property is false.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -21,9 +25,13 @@ N> The default value of the `ShowValueLabel` property is false.
 
 {% endhighlight %}
 
-## CustomLabel
+{% endtabs %}
+
+## Set Custom Label
 
 To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items by specifying the custom labels for corresponding values.
+
+{% tabs %}
 
 {% highlight c# %}
 	
@@ -43,8 +51,10 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 
 {% endhighlight %}
 
+{% endtabs %}
 
-## ValuePlacement
+
+## Value Placement
 
 The `ValuePlacement` property describes the position of the Value respective to ticks. 
 
@@ -54,14 +64,19 @@ Available options for this property are:
 
 * TopLeft
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementTopLeft;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/Value-TopLeft .png)
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -69,9 +84,11 @@ Available options for this property are:
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](images/Value-BottomRight.png)
 
-## LabelPlacement
+## Label Placement
 
 The `LabelPlacement` property describes the position of the labels respective to ticks. 
 
@@ -81,8 +98,12 @@ Available options for this property are:
 
 * TopLeft
 
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.LabelPlacement=SFLabelPlacement.SFLabelPlacementTopLeft;
 
 {% endhighlight %}
+
+{% endtabs %}
