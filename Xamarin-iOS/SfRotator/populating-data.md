@@ -9,9 +9,13 @@ documentation : ug
 
 # Populating Data
 
+SfRotator control supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
+
 ## DataSource
 
 SfRotator items can be populated with a collection of image data. For example, a user may want to create a SfRotator control which will display a sequence of images.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -25,6 +29,8 @@ SfRotator items can be populated with a collection of image data. For example, a
 	rotator.DataSource=rotatorItemCollection;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ## RotatorItem
 

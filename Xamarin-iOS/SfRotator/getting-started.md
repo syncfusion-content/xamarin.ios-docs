@@ -11,11 +11,7 @@ documentation: ug
 
 This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
 
-![](images/rotator.png)
-
-## Creating your first Rotator in Xamarin.iOS
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
@@ -25,9 +21,11 @@ You have to add the following assembly reference to the iOS unified project
 
 iOS-unifed\Syncfusion.SfRotator.iOS.dll
 
-## Add and Configure the Rotator 
+## Add SfRotator 
 
-* Adding reference to Rotator.
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -35,9 +33,11 @@ iOS-unifed\Syncfusion.SfRotator.iOS.dll
 
 {% endhighlight %}
 
+{% endtabs %}
 
-* Create an instance of SfRotator.
+* Now add the SfRotator control with a required optimal name by using the included namespace.
 
+{% tabs %}
 
 {% highlight c# %}		
 
@@ -46,9 +46,13 @@ iOS-unifed\Syncfusion.SfRotator.iOS.dll
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Setting Navigation Mode
 
-The NavigationMode property decides the navigation mode for navigating items. The items can be navigated using Thumbnail or Dots.
+SfRotator provides option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using `NavigationMode` property.
+
+{% tabs %}
 
 {% highlight C# %}	
 
@@ -56,9 +60,13 @@ The NavigationMode property decides the navigation mode for navigating items. Th
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## Customizing Position
 
-The TabStripPosition property decides the position in which navigation strip items such as Thumbnail or Dots should be rendered. 
+The placement position of navigation strip items such as Thumbnail or Dots can be customized in SfRotator. This can be specified using `NavigationStripPosition` property.  
+
+{% tabs %}
 
 {% highlight C# %}	
 
@@ -66,3 +74,7 @@ The TabStripPosition property decides the position in which navigation strip ite
 	rotator.NavigationStripPosition = SFRotatorNavigationStripPosition.Bottom;
 	
 {% endhighlight %}
+
+{% endtabs %}
+
+![](images/rotator.png)
