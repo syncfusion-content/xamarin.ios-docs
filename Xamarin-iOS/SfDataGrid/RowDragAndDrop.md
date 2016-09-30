@@ -116,12 +116,8 @@ public class RowDragDropTemplate : UIView
 
 {% endhighlight %}
 
-<table>
-<tr>
-<td>
-{{'![](SfDataGrid_images/DragAndDrop.png)'| markdownify }}
-<br/><br/></td></tr>
-</table>
+
+![](SfDataGrid_images/RowDragAndDrop.png)
 
 ## Row drag and drop event
 
