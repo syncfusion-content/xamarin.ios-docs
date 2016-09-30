@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Drag and Drop | SfDataGrid | Xamarin | Syncfusion
-description: How to perform column drag and drop and its customization.
+description: How to perform column drag and drop and its customizations and events.
 platform: xamarin.iOS
 control: SfDataGrid
 documentation: UG
@@ -11,7 +11,13 @@ documentation: UG
 
 SfDataGrid allows you to drag and drop a column header by setting the `SfDataGrid.AllowDraggingColumn` property to `true`. Drag view is displayed while dragging a column header. The drag and drop operation can be handled based on the requirement using `SfDataGrid QueryColumnDragging` event. 
 
-## Column Drag and Drop Event
+The following code example illustrates how to enable column drag and drop in SfDataGrid.
+
+{% highlight c# %}
+sfGrid.AllowDraggingRow = true;
+{% endhighlight %}
+
+## Column drag and drop event
 
 `QueryColumnDragging` event is fired upon starting to drag a column and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryColumnDragging ` event you can also cancel the dragging of a particular column header.
 

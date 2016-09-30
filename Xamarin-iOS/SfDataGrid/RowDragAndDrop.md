@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Drag and Drop | SfDataGrid | Xamarin | Syncfusion
-description: How to perform row drag and drop and its customization.
+description:  How to perform row drag and drop and its customizations, scenarios and events.
 platform: xamarin.iOS
 control: SfDataGrid
 documentation: UG
@@ -10,6 +10,13 @@ documentation: UG
 # Row Drag and Drop
 
 SfDataGrid allows you to drag and drop a row by setting the `SfDataGrid.AllowDraggingRow` property to `true`. A Customizable row drag and drop template is displayed  while dragging a row. The drag and drop operation can be handled based on the requirement using `SfDataGrid.QueryRowDragging` event. 
+
+The following code example illustrates how to enable row drag and drop in SfDataGrid.
+
+{% highlight c# %}
+sfGrid.AllowDraggingRow = true;
+{% endhighlight %}
+
 
 ## Dragging scenarios
 
@@ -21,22 +28,17 @@ SfDataGrid allows you to perform the drag and drop operation with both the data 
 
 N> Reordering changes are made only in `SfDataGrid.View` and not in the underlying data. Thus the changes will be reverted when performing sorting, grouping or any other operation that refreshes the view. Reordering underlying data can be achieved by handling `QueryRowDragging` event in the sample side as explained below in [Reordering underlying data](# Reordering underlying data ).
 
-## Row Drag and Drop Template
+## Row drag and drop template
 
 SfDataGrid allows you to load a desired content when performing row drag and drop operation using the `SfDataGrid.RowDragDropTemplate`. 
 
-## Default Template
+## Default template
 
 Default template will be loaded, if template is not explicitly assigned for row drag and drop operations. 
 
-<table>
-<tr>
-<td>
-{{'![](SfDataGrid_images/DefaultTemplate.png)'| markdownify }}
-<br/><br/></td></tr>
-</table>
+![](SfDataGrid_images/RowDragAndDropDefaultTemplate.png)
 
-## Customizing Row Drag and Drop Template
+## Customizing row drag and drop template
 
 You can load any type of custom view inside `SfDataGrid.RowDragDropTemplate` based on your application’s  requirement.
 
@@ -121,7 +123,7 @@ public class RowDragDropTemplate : UIView
 <br/><br/></td></tr>
 </table>
 
-## Row drag and drop Event
+## Row drag and drop event
 
 `QueryRowDragging` event is fired upon starting to drag a row and will be continuously fired till the dragging ends. By handing the `SfDataGrid.QueryRowDragging` event you can also cancel the dragging of a particular row.
 
