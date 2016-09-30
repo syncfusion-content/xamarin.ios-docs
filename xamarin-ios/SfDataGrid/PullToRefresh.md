@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Pull To Refresh | SfDataGrid | Xamarin | Syncfusion
+title: Pull To Refresh | SfDataGrid | Xamarin.iOS | Syncfusion
 description: How to perform pull to refresh and it's properties and customizations in a SfDataGrid.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---
@@ -42,6 +42,38 @@ internal void ItemsSourceRefresh()
         this.OrdersInfo.Insert (0, order.RefreshItemsSource (value));
     }
 } 
+
+//Command.cs
+public class Command : ICommand
+{
+    private Action execute;
+    private bool canExecute = true;
+
+    public event EventHandler CanExecuteChanged;
+
+    public Command(Action action)
+    {
+        execute = action;
+    }
+
+    public bool CanExecute(object parameter)
+    {
+        return canExecute;
+    }
+
+    public void Execute(object parameter)
+    {
+        changeCanExecute(true);
+        execute.Invoke();
+    }
+
+    private void changeCanExecute(bool canExecute)
+    {
+        this.canExecute = canExecute;
+        if (CanExecuteChanged != null)
+            CanExecuteChanged(this, new EventArgs());
+    }
+}
 {% endhighlight %}
 
 Running the application renders the following output.

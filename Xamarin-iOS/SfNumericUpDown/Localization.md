@@ -16,7 +16,7 @@ N> Default `Culture` property value is en-US.
 
 {% highlight C# %}
 
-	sfNumericUpDown.Culture = new System.Globalization.CultureInfo("en-IN");
+	numericupdown.Culture = new  new NSLocale("en-IN");
 	
 {% endhighlight %}
 

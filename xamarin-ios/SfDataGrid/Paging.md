@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Paging | SfDataGrid | Xamarin | Syncfusion
+title: Paging | SfDataGrid | Xamarin.iOS | Syncfusion
 description: How to enable paging and use its properties
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: ug
 ---
@@ -104,4 +104,42 @@ The following code example illustrates how to use ResetCache method:
 }
 
 {% endhighlight %}
+
+## Custom Appearence
+
+The following code example shows how to implement paging with custom appearenve in SfDataGrid for Xamarin.Android.
+
+{% highlight c# %}
+sfDataPager.AppearanceManager = new CustomAppearance();
+{% endhighlight %}
+
+{% highlight c# %}
+public class CustomAppearance : AppearanceManager
+{
+    public override Color GetNavigationButtonBackgroundColor()
+    {
+        return Color.Rgb(34, 34, 34);
+    }
+    public override Color GetNumericButtonBackgroundColor()
+    {
+        return Color.Rgb(0, 255, 0);
+    }
+    public override Color GetNumericButtonForegroundColor()
+    {
+        return Color.Rgb(82, 82, 82);
+    }
+    public override Color GetNumericButtonSelectionBackgroundColor()
+    {
+        return Color.Rgb(255, 0, 0);
+    }
+    public override Color GetNumericButtonSelectionForegroundColor()
+    {
+        return Color.Rgb(0, 0, 255);
+    }
+}
+{% endhighlight %}
+
+The following screenshot shows the final outcome upon execution of the above code 
+
+![](SfDataGrid_images/CustomPageAppearence.png)
 

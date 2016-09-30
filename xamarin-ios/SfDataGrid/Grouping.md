@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Grouping | SfDataGrid | Xamarin | Syncfusion
+title: Grouping | SfDataGrid | Xamarin.iOS | Syncfusion
 description: How to group a column in a SfDataGrid and about the properites and customizations in grouping.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---
@@ -14,7 +14,7 @@ A group represents a collection of records that belong to a particular category.
 
 ## Programmatic Grouping
 
-SfDataGrid also allows to perform grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html) object and adding it in the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupColumnDescriptions.html) collection. SfDataGrid groups the data based on the `GroupColumnDescription` object that is added to this collection.
+SfDataGrid also allows to perform grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GroupColumnDescription.html) object and adding it in the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GroupColumnDescriptions.html) collection. SfDataGrid groups the data based on the `GroupColumnDescription` object that is added to this collection.
 
 `GroupColumnDescription` object holds following two properties:
 
@@ -32,9 +32,53 @@ The following code example illustrates how to apply grouping by a column in SfDa
 The following screenshot shows the output rendered when grouping is applied.
 ![](SfDataGrid_images/Grouping.png)
 
+## Expand groups while grouping
+ 
+You can expand all the groups while grouping by setting `SfDataGrid.AutoExpandGroups` to `true`. So, when user group any column, then all groups will be in expanded state. 
+
+{% highlight c# %}
+this.dataGrid.AutoExpandGroups = true;
+this.dataGrid.AllowGroupExpandCollapse = true;
+{% endhighlight %}
+
+## Expand or collapse the groups
+
+By default, the groups will be in expanded state in a SfDataGrid. However, you can expand or collapse a group in runtime by setting the `SfDataGrid.AllowGroupExpandCollapse` as `true`.
+
+{% highlight c# %}
+this.dataGrid.AllowGroupExpandCollapse = true;
+{% endhighlight %}
+
+### Programmatically expanding or collapsing the groups
+
+You can allow end-user to expand or collapse the groups programmatically at runtime.
+
+#### Expand or collapse all the Groups
+
+You can expand or collapse all the groups at programmatically at runtime by using `SfDataGrid.ExpandAllGroup` and `SfDataGrid.CollpaseAllGroup` methods.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.ExpandAllGroup();
+this.dataGrid.CollapseAllGroup();
+{% endhighlight %}
+{% endtabs %}
+
+#### Expand or Collapse the specific Group
+
+You can expand or collapse specific group by using `SfDataGrid.ExpandGroup` and `SfDataGrid.CollapseGroup` methods.
+
+{% highlight c# %}
+var group = (dataGrid.View.Groups[0] as Group);
+this.dataGrid.ExpandGroup(group);
+this.dataGrid.CollapseGroup(group);
+{% endhighlight %}
+
+![](SfDataGrid_images/GroupExpandCollapse.png)
+
 ## Custom Grouping
 
-SfDataGrid allows you to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve the custom grouping, you need to write a converter that implements `IValueConverter` with your custom grouping logic and assign that converter to the [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription~Converter.html) property.
+SfDataGrid allows you to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve the custom grouping, you need to write a converter that implements `IValueConverter` with your custom grouping logic and assign that converter to the [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GroupColumnDescription~Converter.html) property.
 
 The following code example illustrates how to set the custom grouping converter for the group description that is added to group the Freight column.
 
@@ -75,6 +119,67 @@ public class GroupConverter : IValueConverter
 }
 {% endhighlight %}
 
+## Events
+
+### GroupExpanding event
+
+The `SfDataGrid.GroupExpanding` event occurs when the group is being expanded.
+ 
+The `GroupChangingEventArgs` of the `GroupExpanding` event provides the information about the expanding group and it has the following members.
+
+`Syncfusion.Data.Group` - Gets the group that’s being expanded.
+
+`Cancel` – Decides whether to cancel the group expansion.
+ 
+You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) to `true`.
+
+{% highlight c# %}
+this.dataGrid.GroupExpanding += dataGrid_GroupExpanding;
+
+void dataGrid_GroupExpanding(object sender, Syncfusion.SfDataGrid.GroupChangingEventArgs e)
+{
+    if (e.Group.Key.Equals(1001))    
+        e.Cancel = true;    
+}       
+{% endhighlight %}
+
+### GroupExpanded event
+
+The `SfDataGrid.GroupExpanded` event occurs after the group is expanded.
+
+The `GroupChangedEventArgs` of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
+
+`Syncfusion.Data.Group` - Gets the expanded group.
+
+### GroupCollapsing event 
+
+The `SfDataGrid.GroupCollapsing` event occurs when the group is being collapsed.
+
+The `GroupChangingEventArgs` of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
+
+`Syncfusion.Data.Group` - Gets the group that’s being collapsed.
+
+`Cancel` – Decides whether to cancel the group collapsing.
+
+You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `GroupCollapsing` event.
+
+{% highlight c# %}
+this.dataGrid.GroupCollapsing += dataGrid_GroupCollapsing;
+
+void dataGrid_GroupCollapsing(object sender, Syncfusion.SfDataGrid.GroupChangingEventArgs e)
+{
+    if (e.Group.Key.Equals(1001))    
+        e.Cancel = true;    
+}
+{% endhighlight %}
+
+### GroupCollapsed event
+ 
+The `SfDataGrid.GroupCollapsed` event occurs after the group is collapsed.
+ 
+`GroupChangedEventArgs` of the `GroupCollapsed` event  provides the information about collapsed group and it contains the following member.
+
+`Syncfusion.Data.Group` - Gets the collapsed group.
 
 ## How To
 
@@ -92,4 +197,3 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { 
     ColumnName = "ShippingDate"
 });
 {% endhighlight %}
-

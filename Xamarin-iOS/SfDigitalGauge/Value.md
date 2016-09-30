@@ -9,12 +9,16 @@ documentation: ug
 
 # Value
 
-The Digital Characters in the Digital Gauge is viewed in different types of segments. These digital characters are set to the Digital Gauge through the Value property of type string.
+The Digital Characters in the SfDigitalGauge is viewed in different types of segments. These digital characters are set to the SfDigitalGauge through the Value property of type string.
+
+{% tabs %}
 
 {% highlight c# %}
 
-	digitalGauge.Value=”Syncfusion”;
+	digitalGauge.Value="Syncfusion";
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Value.png)

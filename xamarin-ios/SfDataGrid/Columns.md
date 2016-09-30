@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Columns | SfDataGrid | Xamarin | Syncfusion
+title: Columns | SfDataGrid | Xamarin.iOS | Syncfusion
 description: How to create and add columns, different ways to create columns and its customizations in a SfDataGrid.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---

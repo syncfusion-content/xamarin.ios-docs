@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Column Types | SfDataGrid | Xamarin | Syncfusion
+title: Column Types | SfDataGrid | Xamarin.iOS | Syncfusion
 description: What are all the different types of column and it's properties and customizations in a SfDataGrid.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---
@@ -140,6 +140,18 @@ The FontFamily for the content of header cell in the GridColumn can be customize
 
 You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment for the record cells in SfDataGrid is `Center`.
 
+#### LineBreakMode
+
+You can wrap the record cell velue when the text for the record cells exceeds the content area by setting [GridColumn.LineBreakMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LineBreakMode.html) as `LineBreakMode.WordWrap`
+
+The following code example shows how to use GridSwitchColumn.
+ 
+{% tabs %}
+{% highlight c# %}
+dataGrid.Columns[0].LineBreakMode = LineBreakMode.WordWrap; 
+{% endhighlight %}
+{% endtabs %} 
+
 
 ## TemplateColumn
 
@@ -175,19 +187,19 @@ public class CustomCell : GridCell
     public CustomCell ()
     {
         label = new UILabel ();
-        this.Add (label);
+        this.AddSubview (label);
         this.CanRenderUnLoad = false;
     }
 
     protected override void UnLoad ()
     {
-        this.RemoveFromSuperview (this);
+        this.RemoveFromSuperview ();
     }
 
-    protected override void LayoutSubviews ()
+    public override void LayoutSubviews ()
     {
         base.LayoutSubviews ();
-        this.label.Frame (Bounds.Left, Bounds.Top, Bounds.Width, Bounds.Height);
+        this.label.Frame = new CGRect(Bounds.Left, Bounds.Top, Bounds.Width, Bounds.Height);
         this.label.Text = DataColumn.CellValue.ToString ();
     }
 }

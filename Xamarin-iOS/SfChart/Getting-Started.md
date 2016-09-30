@@ -99,7 +99,7 @@ December</td><td>
 </table>
 
 
-This is how the final output looks like on iOS devices.
+This is how the final output looks like on iOS devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
 
 ![](Getting-Started_images/img1.png)
 
@@ -120,7 +120,7 @@ ios-unifed\Syncfusion.SfChart.iOS.dll
 
 The following steps explain how to create a Chart and configure its elements.
 
-1. Create an instance of SfChart.
+1. Create an instance of SFChart.
 
 {% highlight C# %} 
 
@@ -141,12 +141,12 @@ public override void ViewDidLoad ()
 
 //Adding Primary Axis for the Chart.
 SFCategoryAxis primaryAxis = new SFCategoryAxis ();
-primaryAxis.Title.Text     = "Month";
+primaryAxis.Title.Text     = new NSString("Month");
 chart.PrimaryAxis          = primaryAxis;
 
 //Adding Secondary Axis for the Chart.
 SFNumericalAxis secondaryAxis = new SFNumericalAxis ();
-secondaryAxis.Title.Text      = "Temperature";
+secondaryAxis.Title.Text      = new NSString("Temperature");
 chart.SecondaryAxis           = secondaryAxis; 
 {% endhighlight %}
 
@@ -157,14 +157,14 @@ chart.SecondaryAxis           = secondaryAxis;
 
 //Define the title for the Chart.
 
-chart.Title.Text = "Weather Analysis";
+chart.Title.Text = new NSString( "Weather Analysis");
 {% endhighlight %}
 
 ## Add a Chart series
 
 In this example is visualized the temperature over the months using a Spline Series. Before creating the series, you have to create the data source representing the climate details. 
 
-In SFChart, series, the data source must be the collection of SfChartDataPoint__objects. Add the following class by inheriting from SfChartDataSource, for generating the data points.
+In SFChart, series, the data source must be the collection of SFChartDataPoint objects. Add the following class by inheriting from SFChartDataSource, for generating the data points.
 
 {% highlight C# %}
 
@@ -209,8 +209,8 @@ public class ChartDataModel : SFChartDataSource
 
 Then you need to override the following four methods to generate series for the Chart.
 
-* NumberOfSeriesInChart- Returns an integer that represents the number of series to be added to SfChart.
-* GetSeries- Returns a series object, like the SfSeries, for the Chart at a particular index.
+* NumberOfSeriesInChart- Returns an integer that represents the number of series to be added to SFChart.
+* GetSeries- Returns a series object, like the SFSeries, for the Chart at a particular index.
 * GetDataPoint- Returns each data point to be plotted in the series.
 * GetNumberOfDataPoints- Returns the number of data points required.
 
@@ -218,41 +218,41 @@ There is also an optional method.
 
 * GetDataPoints- Returns an array of data points to be plotted in the series based on series index.
 
-The following is the code example to implement the SfChartDataSource.
+The following is the code example to implement the SFChartDataSource.
 
 {% highlight C# %}
 
 [Export ("numberOfSeriesInChart:")]
-public override int NumberOfSeriesInChart (SFChart chart)
+public override nint NumberOfSeriesInChart (SFChart chart)
 {
     return 3; //returns no of series required for the chart.
 }
 
 [Export ("chart:seriesAtIndex:")]
-public override SFSeries GetSeries (SFChart chart, int index)
+public override SFSeries GetSeries (SFChart chart, nint index)
 {
     //returns the series for the chart.
     SFSplineSeries series  = new SFSplineSeries ();
-    series.Label           = "High";
+    series.Label           = new NSString("High");
     return series;
 }
 
 [Export ("chart:dataPointAtIndex:forSeriesAtIndex:")]
-public override SFChartDataPoint GetDataPoint (SFChart chart, int index, int seriesIndex)
+public override SFChartDataPoint GetDataPoint (SFChart chart, nint index, nint seriesIndex)
 {
     //returns the datapoint for each series.
-    return highTemperature.GetItem<SFChartDataPoint> (index);
+    return highTemperature.GetItem<SFChartDataPoint> ((nuint)index);
 }
 
 [Export ("chart:numberOfDataPointsForSeriesAtIndex:")]
-public override int GetNumberOfDataPoints (SFChart chart, int index)
+public override int GetNumberOfDataPoints (SFChart chart, nint index)
 {
     return 12;
     //No of datapoints needed for each series.
 }
 {% endhighlight %}
 
-Since the ChartDataModel class implements SfChartDataSource, you can create the new instance of ChartDataModel class and then set the instance of ChartDataModel to data source for SfChart. Also, SfChart can be added as sub-view of View Controller’s view as follows.
+Since the ChartDataModel class implements SFChartDataSource, you can create the new instance of ChartDataModel class and then set the instance of ChartDataModel to data source for SFChart. Also, SFChart can be added as sub-view of View Controller’s view as follows.
 
 {% highlight C# %}
 
@@ -266,7 +266,7 @@ this.View.AddSubview (chart);
 
 ## Add Legend 
 
-Legend can be enabled in SfChart by setting the Legend Visible property to True as follows.
+Legend can be enabled in SFChart by setting the Legend Visible property to True as follows.
 
 {% highlight C# %}
 
@@ -277,74 +277,46 @@ chart.Legend.Visible = true;
 
 ## Add Multiple Series to the Chart
 
-You can add two SfSplineSeries for displaying high and low temperatures and a SfColumnSeries for displaying the precipitation.
+You can add two SFSplineSeries for displaying high and low temperatures and a SFColumnSeries for displaying the precipitation.
 
 Visualized so far, is the high temperature data over time. You can visualize other data such as low temperature and precipitation.
 
-
-{% highlight C# %}
-
-[Export ("chart:seriesAtIndex:")]
-public override SFSeries GetSeries (SFChart chart, int index)
-{
-    //returns the series for the chart.
-    if (index == 1) 
-    {
-    	SFSplineSeries series   = new SFSplineSeries ();
-       	series.Label            = "High";
-        return series;
-    } 
-    else if (index == 2) 
-    {
-        SFSplineSeries series   = new SFSplineSeries ();
-        series.Label            = "Low";
-        return series;
-    } 
-    else 
-    {
-        SFColumnSeries series = new SFColumnSeries ();
-        series.Label          = "Precipitation";
-        return series;
-    }
-}
-{% endhighlight %}
-
-From the data source implementation methods you need to change the number of series to be added to SfChart as follows.
+From the data source implementation methods you need to change the number of series to be added to SFChart as follows.
 
 {% highlight C# %}
 
 [Export ("numberOfSeriesInChart:")]
 
-public override int NumberOfSeriesInChart (SFChart chart)
+public override nint NumberOfSeriesInChart (SFChart chart)
 {
     return 3; //returns no of series required for the chart.
 }
 {% endhighlight %}
 
-Then you need to add SfSeries objects for low temperature and precipitation to SfChart by using the chart:seriesAtIndex method as follows.
+Then you need to add SFSeries objects for low temperature and precipitation to SFChart by using the GetSeries method as follows.
 
 {% highlight C# %}
 
 [Export ("chart:seriesAtIndex:")]
-public override SFSeries GetSeries (SFChart chart, int index)
+public override SFSeries GetSeries (SFChart chart, nint index)
 {
     //returns the series for the chart.
     if (index == 1) 
     {
-        SFSplineSeries series    = new SFSplineSeries ();
-        series.Label             = "High";
+    	SFSplineSeries series   = new SFSplineSeries ();
+       	series.Label            = new NSString("High");
         return series;
     } 
     else if (index == 2) 
     {
-         SFSplineSeries series   = new SFSplineSeries ();
-         series.Label            = "Low";
-         return series;
+        SFSplineSeries series   = new SFSplineSeries ();
+        series.Label            = new NSString("Low");
+        return series;
     } 
     else 
     {
         SFColumnSeries series   = new SFColumnSeries ();
-        series.Label            = "Precipitation";
+        series.Label            = new NSString("Precipitation");
         SFNumericalAxis axis    = new SFNumericalAxis ();
         axis.OpposedPosition    = true;
         axis.ShowMajorGridLines = false;
@@ -360,35 +332,35 @@ Finally, you need to set low temperature data points and precipitation data poin
 {% highlight C# %}
 
 [Export ("chart:dataPointAtIndex:forSeriesAtIndex:")]
-public override SFChartDataPoint GetDataPoint (SFChart chart, int index, int seriesIndex)
+public override SFChartDataPoint GetDataPoint (SFChart chart, nint index, nint seriesIndex)
 {
     //returns the datapoint for each series.
     
     if (seriesIndex == 1) 
     {
-        return highTemperature.GetItem<SFChartDataPoint> (index);
+        return highTemperature.GetItem<SFChartDataPoint> ((nuint)index);
     } 
     else if (seriesIndex == 2) 
     {
-        return lowTemperature.GetItem<SFChartDataPoint> (index);
+        return lowTemperature.GetItem<SFChartDataPoint> ((nuint)index);
     } 
     else 
     {
-        return precipitation.GetItem<SFChartDataPoint> (index);
+        return precipitation.GetItem<SFChartDataPoint> ((nuint)index);
     }
 }
 {% endhighlight %}
 
 ## Add Multiple Axes to the Chart
 
-You can add a secondary axis, y-axis, to the chart by setting the yAxis property of SfSeries. In the above code example, you can add axis to the series as follows.
+You can add a secondary axis, y-axis, to the chart by setting the yAxis property of SFSeries. In the above code example, you can add axis to the series as follows.
 
 {% highlight C# %}
 
 // Adding the SFColumnSeries with different scale 
 
 SFColumnSeries series      = new SFColumnSeries ();
-series.Label               = "Precipitation";
+series.Label               = new NSString("Precipitation");
 SFNumericalAxis axis       = new SFNumericalAxis ();
 axis.OpposedPosition       = true;
 axis.ShowMajorGridLines    = false;
@@ -410,7 +382,6 @@ public partial class GettingStarted_iOSViewController : UIViewController
 
     public override void DidReceiveMemoryWarning ()
     {
-        // Releases the view if it doesn't have a superview.
         base.DidReceiveMemoryWarning ();
 
         // Release any cached data, images, etc that aren't in use.
@@ -422,25 +393,23 @@ public partial class GettingStarted_iOSViewController : UIViewController
     {
         base.ViewDidLoad ();
         //Initialize the Chart with required frame. This frame can be any rectangle, which bounds inside the view.
-        SFChart chart      = new SFChart ();
-        chart.Frame        = this.View.Frame;
+        SFChart chart                 = new SFChart ();
+        chart.Frame                   = this.View.Frame;
 
         //Define the title for the Chart.
-        chart.Title.Text   = "Weather Analysis";
+        chart.Title.Text              = new NSString( "Weather Analysis");
 
         //Adding legend to the Chart.
-        chart.Legend.Visible = true;
+        chart.Legend.Visible          = true;
 
         //Adding Primary Axis for the Chart.
-        SFCategoryAxis primaryAxis = new SFCategoryAxis ();
-        primaryAxis.Title.Text     = "Month";
-
-        chart.PrimaryAxis   = primaryAxis;
+        SFCategoryAxis primaryAxis    = new SFCategoryAxis ();
+        primaryAxis.Title.Text        = new NSString("Month");
+        chart.PrimaryAxis             = primaryAxis;
 
         //Adding Secondary Axis for the Chart.
         SFNumericalAxis secondaryAxis = new SFNumericalAxis ();
-        secondaryAxis.Title.Text      = "Temperature";
-
+        secondaryAxis.Title.Text      = new NSString("Temperature");
         chart.SecondaryAxis           = secondaryAxis;
 
         //Defining the data source for the Chart.
@@ -451,26 +420,6 @@ public partial class GettingStarted_iOSViewController : UIViewController
         this.View.AddSubview (chart);
 
         // Perform any additional setup after loading the view, typically from a nib.
-    }
-
-    public override void ViewWillAppear (bool animated)
-    {
-       base.ViewWillAppear (animated);
-    }
-
-    public override void ViewDidAppear (bool animated)
-    {
-       base.ViewDidAppear (animated);
-    }
-
-    public override void ViewWillDisappear (bool animated)
-    {
-       base.ViewWillDisappear (animated);
-    }
-
-    public override void ViewDidDisappear (bool animated)
-    {
-       base.ViewDidDisappear (animated);
     }
 
       #endregion
@@ -522,29 +471,29 @@ public partial class GettingStarted_iOSViewController : UIViewController
       }
 
       [Export ("numberOfSeriesInChart:")]
-       public override int NumberOfSeriesInChart (SFChart chart)
+       public override nint NumberOfSeriesInChart (SFChart chart)
        {
             return 3; 
             //returns no of series required for the chart.
        }
 
        [Export ("chart:seriesAtIndex:")]
-       public override SFSeries GetSeries (SFChart chart, int index)
+       public override SFSeries GetSeries (SFChart chart, nint index)
        {
             //returns the series for the chart.
             if (index == 1) {
                 SFSplineSeries series       = new SFSplineSeries ();
-                series.Label                = "High";
+                series.Label                = new NSString("High");
                 return series;
             } 
             else if (index == 2) {
                 SFSplineSeries series       = new SFSplineSeries ();
-                series.Label                = "Low";
+                series.Label                = new NSString("Low");
                 return series;
             } 
             else {
                 SFColumnSeries series       = new SFColumnSeries ();
-                series.Label                = "Precipitation";
+                series.Label                = new NSString("Precipitation");
 
                 SFNumericalAxis axis        = new SFNumericalAxis ();
                 axis.OpposedPosition        = true;
@@ -556,20 +505,20 @@ public partial class GettingStarted_iOSViewController : UIViewController
         }
 
         [Export ("chart:dataPointAtIndex:forSeriesAtIndex:")]
-        public override SFChartDataPoint GetDataPoint (SFChart chart, int index, int seriesIndex)
+        public override SFChartDataPoint GetDataPoint (SFChart chart, nint index, nint seriesIndex)
         {
             //returns the datapoint for each series.
             if (seriesIndex == 1) {
-                return highTemperature.GetItem<SFChartDataPoint> (index);
+                return highTemperature.GetItem<SFChartDataPoint> ((nuint)index);
             } else if (seriesIndex == 2) {
-                return lowTemperature.GetItem<SFChartDataPoint> (index);
+                return lowTemperature.GetItem<SFChartDataPoint> ((nuint)index);
             } else {
-                return precipitation.GetItem<SFChartDataPoint> (index);
+                return precipitation.GetItem<SFChartDataPoint> ((nuint)index);
             }
         }
 
         [Export ("chart:numberOfDataPointsForSeriesAtIndex:")]
-        public override int GetNumberOfDataPoints (SFChart chart, int index)
+        public override nint GetNumberOfDataPoints (SFChart chart, nint index)
         {
             return 12; 
             //No of datapoints needed for each series.

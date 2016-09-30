@@ -9,16 +9,9 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a BusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in BusyIndicator control.
+This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
-![](images/BusyIndicator-iOS.png)                 
-
-BusyIndicator
-{:.caption}
-
-## Creating your first BusyIndicator in Xamarin.iOS.
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
@@ -26,47 +19,70 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-ios-unifed\Syncfusion.SfBusyIndicator.iOS.dll
+iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
-### Add and Configure the BusyIndicator
+## Add BusyIndicator
 
-* Adding reference to busyindicator.
+* Adding namespace for the added assemblies.
 
-{% highlight c# %}
-
-	using Com.Syncfusion.BusyIndicator; 
-
-{% endhighlight %}
-
-* Create an instance of BusyIndicator.
-
-{% highlight c# %}
-	
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	SetContentView(sfBusyIndicator);
-	
-{% endhighlight %}
-
-### Set the AnimationType to BusyIndicator
-
-To set AnimationType for the BusyIndicator, use AnimationType property and choose anyone of the 13 predefined animation types. 
+{% tabs %}
 
 {% highlight c# %}
 
-	SfBusyIndicator busyIndicator = new SfBusyIndicator (this); 
-	busyIndicator.AnimationType=AnimationTypes.Battery;
+	using Syncfusion.SFBusyIndicator.iOS;
 
 {% endhighlight %}
+
+{% endtabs %}
+
+* Now add the SfBusyIndicator control with a required optimal name by using the included namespace.
+
+{% tabs %}
+
+{% highlight c# %}
 	
-### Configure the properties for BusyIndicator. 
+	SFBusyIndicator busyindicator = new SFBusyIndicator();
+	this.AddSubview(busyindicator);
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Set Animation Type
+
+SfBusyIndicator provides 10 predefined animation types like Ball, Battery, Globe and so on. User can select any one of the animation types using `AnimationType`property.
+
+Following example depicts the battery type animation for SfBusyIndicator. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+	 busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
+
+{% endhighlight %}
+
+{% endtabs %}
+	
+## Configure the Properties for SFBusyIndicator
+
+Size and color can be customized in SfBusyIndicator as follows.
+
+{% tabs %}
       
 {% highlight c# %}
 	 
-	sfBusyIndicator.AnimationType=AnimationTypes.Ball;
-	sfBusyIndicator.TextColor=Color.RED;
-	sfBusyIndicator.ViewBoxHeight=20;
-	sfBusyIndicator.ViewBoxWidth=20;
-	sfBusyIndicator.IsBusy=True;
+	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
+	busyindicator.TextColor=UIColor.RED;
+	busyindicator.ViewBoxHeight=20;
+	busyindicator.ViewBoxWidth=20;
+	busyindicator.IsBusy=True;
 	
 {% endhighlight %}
 
+{% endtabs %}
+
+![](images/BusyIndicator-iOS.png)                 
+
+BusyIndicator
+{:.caption}

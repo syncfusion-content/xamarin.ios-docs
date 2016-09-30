@@ -11,52 +11,62 @@ documentation: ug
 
 This section explains you the steps to configure a RangeSlider  control in a real-time scenario and also provides a walk-through on some of the customization features available in RangeSlider control.
 
-![](images/RangeSlider-iOS.png) 
-
-## Creating your first RangeSlider in Xamarin.iOS.
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
+{Syncfusion Installed location}\Essential Studio {version number}\lib
+
 You have to add the following assembly reference to the iOS unified project
 
-ios-unifed\Syncfusion.SfRangeSlider.iOS.dll
+iOS-unifed\Syncfusion.SfRangeSlider.iOS.dll
 
 ### And and Configure the RangeSlider
 
 * Adding reference to RangeSlider.
 
+{% tabs %}
+
 {% highlight C# %}
 
-	using Syncfusion.SfRangeSlider.iOS; 
+	using Syncfusion.SFRangeSlider.iOS; 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 * Create an instance of SfRangeSlider
 
+{% tabs %}
+
 {% highlight C# %}
 
-	SfRangeSlider sfRangeSlider = new SfRangeSlider(this);
-	SetContentView(sfRangeSlider);	
+	SFRangeSlider rangeSlider = new SFRangeSlider();
+	this.AddSubview(rangeSlider);	
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Add Values and Scale
 
 You can set the minimum value for the slider by using the `setMinimum()` and `setMaximum()` properties in the RangeSlider. It can be Numerical values.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	range.Minimum=0; 
-	range.Maximum=24; 
-	range.DirectionReversed=false; 
-	range.RangeEnd=20; 
-	range.RangeStart=4;
-	range.ShowRange=true; 
-	range.Orientation=Orientation.Horizontal;
+	rangeSlider.Minimum=0; 
+	rangeSlider.Maximum=24; 
+	rangeSlider.DirectionReversed=false; 
+	rangeSlider.RangeEnd=20; 
+	rangeSlider.RangeStart=4;
+	rangeSlider.ShowRange=true; 
+	rangeSlider.Orientation=SFOrientation.SFOrientationHorizontal;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 N> Likewise, `RangeStart` and `RangeEnd` can be set that denote the start range and end range values while dual thumb is used. The `ShowRange` property is used to switch between a single thumb and double thumb. The `Orientation` property sets the type of orientation.
 
@@ -64,14 +74,18 @@ N> Likewise, `RangeStart` and `RangeEnd` can be set that denote the start range 
 
 The ticks can be set by setting the `TickFrequency` and `TickPlacement`. Likewise, value labels can be set by setting the `ShowValueLabel` property to true. The position of label can be varied by the `LabelPlacement` property.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	range.TickFrequency=4; 
-	range.ShowValueLabel=true; 
-	range.ValuePlacement=ValuePlacement.TopLeft; 
-	range.TickPlacement=TickPlacement.BottomRight;
+	rangeSlider.TickFrequency=4; 
+	rangeSlider.ShowValueLabel=true; 
+	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementTopLeft; 
+	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementBottomRight;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 N> The TickFrequency determines the interval between the ticks.
 
@@ -79,27 +93,34 @@ N> The TickFrequency determines the interval between the ticks.
 
 The movement of the thumb can be varied in different ways. This is achieved by setting the SnapsTo property.
 
+{% tabs %}
+
 {% highlight c# %}
 
-	range.SnapsTo=SnapsTo.Ticks; 
-	range.StepFrequency=6;
+	rangeSlider.SnapsTo=SFSnapsTo.SFSnapsToTicks; 
+	rangeSlider.StepFrequency=6;
 
 {% endhighlight %}
 
-### Configure the properties for RangeSlider. 
+{% endtabs %}
+
+### Configure the properties for RangeSlider
+
+{% tabs %} 
 
 {% highlight C# %}
 	
-	sfRangeSlider.Minimum=0;
-	sfRangeSlider.Maximum=24;
-	sfRangeSlider.RangeStart=4;
-	sfRangeSlider.RangeEnd=20;
-	sfRangeSlider.TickFrequency=4;
-	sfRangeSlider.TickPlacement= TickPlacement.BottomRight;
-	sfRangeSlider.SnapsTo= SnapsTo.SnapsToTicks;
-
+	rangeSlider.Minimum=0;
+	rangeSlider.Maximum=24;
+	rangeSlider.RangeStart=4;
+	rangeSlider.RangeEnd=20;
+	rangeSlider.TickFrequency=4;
+	rangeSlider.TickPlacement= SFTickPlacement.SFTickPlacementBottomRight;
+	rangeSlider.SnapsTo= SFSnapsTo.SFSnapsToSnapsToTicks;
 
 {% endhighlight %}
 
+{% endtabs %}
 
+![](images/RangeSlider-iOS.png) 
 

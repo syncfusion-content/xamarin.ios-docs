@@ -9,7 +9,7 @@ documentation : ug
 
 # Watermark
 
-The `watermark` text is used to display some information regarding the autocomplete box. This watermark is visible when EditText is empty or null. The watermark text disappears when to begin type in the autocomplete box. 
+The `watermark` text is used to display some information regarding the SfAutoComplete. This watermark is visible when textbox is empty or null. The watermark text disappears when the user begin to type in the SfAutoComplete control. 
 
 {% highlight C# %}
 

@@ -13,67 +13,90 @@ documentation: ug
 
 This section explains you the steps to configure a rating control in a real-time scenario and also provides a walk-through on some of the customization features available in Rating control.
 
-![](images/gettingstarted.png)
-
-## Creating your First Rating in Xamarin.iOS
-
-### Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio Components in Your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-{Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
+{Syncfusion Installed location}\Essential Studio {version number}\lib
 
 Add the following assembly references to the iOS unified project,
 
 iOS-unified\Syncfusion.SfRating.iOS.dll
 
-### Add and Configure the Rating Control
+## Add SfRating
 
-* Create an instance of SfRating.
+* Adding namespace for the added assemblies. 
+
+{% tabs %}
 
 {% highlight c# %}
-
-	SfRating sfRating = new SfRating ();
-	SetContentView(sfRating);
+	
+	using Syncfusion.SFRating.iOS;
 	
 {% endhighlight %}
 
-* Configure the properties of Rating
+{% endtabs %}
+
+* Now add the SfRating control with a required optimal name by using the included namespace.
+
+{% tabs %}
 
 {% highlight c# %}
 
-    sfRating.ItemCount=5;
-	sfRating.Precision = SFRatingPrecision.Half;
-	sfRating.ToolTipPlacement= SFRatingToolTipPlacement.None;
-	sfRating.ItemSize=10;
-	sfRating.Readonly=true;
-	sfRating.Value=(nfloat)3.5;
-	sfRating.ItemSpacing = 5;
+	SFRating rating = new SFRating ();
+	this.AddSubview(rating);
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+* Configure the properties of Rating
+
+{% tabs %}
+
+{% highlight c# %}
+
+    rating.ItemCount=5;
+	rating.Precision = SFRatingPrecision.Half;
+	rating.ToolTipPlacement= SFRatingToolTipPlacement.None;
+	rating.ItemSize=10;
+	rating.Readonly=true;
+	rating.Value=(nfloat)3.5;
+	rating.ItemSpacing = 5;
 
 {% endhighlight %}
 
-### Setting Value
+{% endtabs %}
 
-* The `Value` property sets the display value of the rating. 
+## Set Value
+
+Display value can be set in SfRating control which is selected among the items. The following example shows the display value of 3 with 5 rating items. 
 
 N> By default, property value is 0.
 
-{% highlight c# %}
-
-    sfRating.Value=3;
-
-{% endhighlight %}
-
-### Precision
-
-* To enable full, half and exact values of rating, set the `Precision` property.
+{% tabs %}
 
 {% highlight c# %}
 
-    sfRating.Precision = Precision.Standard;
+    rating.Value=3;
 
 {% endhighlight %}
 
-![](images/standard.jpg)
+{% endtabs %}
+
+## Precision
+
+SfRating control provides option to rate the items in full, half and exact value. This can be set through `Precision` property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+    rating.Precision =  SFRatingPrecision.Standard;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
+![](images/gettingstarted.png)

@@ -7,24 +7,22 @@ control: SfBusyIndicator
 documentation: ug
 ---
 
-
-
 # Sizing
 
-ViewBox is used for sizing an animation.It is achieved by,
+Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxWidth` properties can be used to set height and width of the Indicator.
 
-* ViewBoxHeight
-* ViewBoxWidth
-
-`ViewBoxHeight` allows you to set the height of the animation and `ViewBoxWidth` allows to set the width of the animation.
+{% tabs %}
 
 {% highlight c# %}
 
-	SfBusyIndicator sfBusyIndicator = new SfBusyIndicator(this);
-	sfBusyIndicator.ViewBoxWidth=200;
-	sfBusyIndicator.ViewBoxHeight=200;
+SFBusyIndicator busyindicator = new SFBusyIndicator();
+busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSlicedCircle;
+busyindicator.ViewBoxWidth=200;
+busyindicator.ViewBoxHeight=200;
 	
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](images/Sizing_img1.png)                       
 
