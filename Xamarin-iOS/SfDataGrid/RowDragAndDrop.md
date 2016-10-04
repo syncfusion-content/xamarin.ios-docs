@@ -22,7 +22,7 @@ sfGrid.AllowDraggingRow = true;
 
 SfDataGrid allows you to perform the drag and drop operation with both the data rows and groups.
 
-* Records can be reordered to any positon with auto scrolling.
+* Records can be reordered to any position with auto scrolling.
 * Groups position can be reordered using drag and drop. But no groups can be added inside other groups. 
 * Data rows can be reordered within the same group or into the other groups as well. 
 
