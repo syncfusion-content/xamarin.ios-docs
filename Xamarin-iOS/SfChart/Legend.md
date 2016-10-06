@@ -118,6 +118,17 @@ You can control the visibility of the series by tapping on the legend item. You 
 chart.Legend.ToggleSeriesVisibility = true;
 {% endhighlight %}
 
+## Legend item visibility
+
+You can control the visibility of particular series legend item by using the `VisibleOnLegend` property of series. Default value of `VisibleOnLegend` is True.
+
+{% highlight c# %}
+
+SFColumnSeries series 	= new SFColumnSeries ();
+
+series.VisibleOnLegend 	= true;
+{% endhighlight %}
+
 ## Positioning the Legend
 
 You can position the legend anywhere inside the chart. Following properties are used to customize the legend positions.
