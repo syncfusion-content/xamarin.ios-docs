@@ -131,9 +131,7 @@ The `QueryRowDragging` event provides following properties in `QueryRowDragging
 * `RowData` – Returns the underlying data associated with the dragged row.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
-## How to 
-
-### Disable dragging for particular row 
+## How to disable dragging for particular row 
 
 Dragging can be disabled for a particular row by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to disable dragging for particular row.
 
@@ -149,7 +147,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-### Disable dropping when dragging over particular rows
+## How to disable dropping when dragging over particular rows
 
 Dropping can be disabled for particular rows while dragging a row.Refer following code sample to cancel dropping of particular row.
 
@@ -166,7 +164,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-### Disable dropping of particular row 
+## How to disable dropping of particular row 
 
 Dropping can be canceled for particular row by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping of particular row.
 
@@ -182,7 +180,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-### Disable dropping at a particular position 
+## How to disable dropping at a particular position 
 
 Dropping at a particular position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping at particular position.
 
@@ -198,7 +196,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-### Reordering underlying data 
+## How to reordering underlying data 
 
 Reordering changes directly on the underlying data can be done by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to make permanent reordering changes.
 
