@@ -32,7 +32,7 @@ The `QueryColumnDragging` event provide the following arguments through `QueryC
 ![](SfDataGrid_images/ColumnDragAndDrop.png)
 
 
-## How to disable dragging for particular column ?
+## How to disable dragging for particular column?
 
 Dragging can be canceled for particular column by handling `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer following code sample to disable dragging for particular column.
 
