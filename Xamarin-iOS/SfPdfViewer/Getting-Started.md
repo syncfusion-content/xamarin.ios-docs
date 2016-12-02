@@ -79,7 +79,7 @@ The SfPdfViewer control allows you to unload the PDF document from the viewer wh
 We need to call the Unload method of SfPdfViewer control as in the below code snippet to achieve the same.
 
 {% tabs %} 
-{% highlightc# %}
+{% highlight c# %}
 
 pdfViewerControl.Unload();
 
