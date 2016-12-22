@@ -196,12 +196,12 @@ filterText.PlaceHolder = "Search in All Columns";
 filterText.TextChanged += OnFilterTextChanged;
 filterText.CancelButtonClicked += CancelButtonClicked;
 
-void OnFilterTextChanged(object sender, SearchView.QueryTextChangeEventArgs e)
+private void OnFilterTextChanged(object sender, SearchView.QueryTextChangeEventArgs e)
 {
     viewmodel.FilterText = e.SearchText;
 }
 
-void CancelButtonClicked(object sender, EventArgs e)
+private void CancelButtonClicked(object sender, EventArgs e)
 {
     filterText.ResignFirstResponder();
     filterText.SetShowsCancelButton(false, true);
@@ -218,7 +218,7 @@ Once you create a `UISearchBar` and a view model, you can perform filtering by s
 
 viewModel.filtertextchanged = OnFilterChanged; //where ‘filtertextchanged’ is a delegate declared in ViewModel class.
 
-void OnFilterChanged()
+private void OnFilterChanged()
 {
     if (dataGrid.View != null)
     {
@@ -544,7 +544,7 @@ The below code example illustrates how to clear the applied filtering in SfDataG
 {% highlight c# %}
 // Code-Behind
 
-void OnFilterChanged()
+private void OnFilterChanged()
 {
     if (dataGrid.View != null)
     {
