@@ -29,35 +29,14 @@ Day view is used to display a single day; current day will be visible by default
 
 You can format the date and time string in the schedule control using `DayLabelSettings` of `DayViewSettings` and the size of those strings are also customizable.
 
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-#### Working Hours
-
-You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour` properties of `DayViewSettings`.
-
-#### All Day Appointments Panel
-
-You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of `DayViewSettings` as true. 
+You can differentiate the timeslot panel using `VerticaTimeSlotBorderColor` properties of `DayViewSettings`.To know more about customization of time slot panel refer [Panel Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Panel Customization")
 
 {% highlight c# %}
 
     SFSchedule schedule= new SFSchedule ();
     schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
-
-    DayViewSettings daySettings = new DayViewSettings ();
-
-    daySettings.WorkStartHour=8;
-    daySettings.WorkEndHour = 18; 
-
-    //Non-AccessbleBlocks
-    NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
-    lunch_hour.StartHour = 13;
-    lunch_hour.EndHour = 14;
-    lunch_hour.Text = (NSString)"LUNCH";
-    daySettings.NonAccessibleBlockCollection.Add (lunch_hour);
-
+    
+    DayViewSettings dayViewSettings = new DayViewSettings ();
     DayLabelSettings labelSettings= new DayLabelSettings();
     labelSettings.TimeLabelSize =  8;
     labelSettings.DateLabelSize = 25;
@@ -65,7 +44,72 @@ You can view All day appointments in separate panel and the panels visibility ca
     labelSettings.DayLabelFormat = (NSString)" - EEEE";
     labelSettings.TimeLabelFormat =(NSString) "hh a";
 
-    daySettings.LabelSettings= labelSettings;
+    dayViewSettings.LabelSettings= labelSettings;
+    schedule.DayViewSettings = dayViewSettings;
+
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
+#### Non-Accessible Blocks
+
+You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
+
+    DayViewSettings dayViewSettings = new DayViewSettings ();
+    //Non-AccessbleBlocks
+    NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
+    lunch_hour.StartHour = 13;
+    lunch_hour.EndHour = 14;
+    lunch_hour.Text = (NSString)"LUNCH";
+    dayViewSettings.NonAccessibleBlockCollection.Add (lunch_hour);
+    schedule.DayViewSettings = dayViewSettings;
+
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
+#### Working Hours
+
+You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour` properties of `DayViewSettings`.
+
+You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHourTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `DayViewSettings`.To know more about customization of working hours refer [Panel Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Panel Customization")
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
+
+    DayViewSettings dayViewSettings = new DayViewSettings ();
+
+    dayViewSettings.WorkStartHour=8;
+    dayViewSettings.WorkEndHour = 18;
+    schedule.DayViewSettings = dayViewSettings;
+
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
+#### All Day Appointments Panel
+
+You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of `DayViewSettings` as true. 
+
+Also you can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor`. To know more about customization of all day appointment panel refer [Panel Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Panel Customization")
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
+
+    DayViewSettings dayViewSettings = new DayViewSettings ();
+    dayViewSettings.ShowAllDay = true;
     schedule.DayViewSettings = daySettings;
 
     this.AddSubview (schedule);
@@ -74,6 +118,7 @@ You can view All day appointments in separate panel and the panels visibility ca
 {% endhighlight %}
 
 ![](Views_images/Views_img2.jpeg)
+
 
 ## Week View
 
@@ -93,13 +138,69 @@ To view all the seven days of a particular week, by default if will be current w
 
 You can format the date and time string in the schedule control using `WeekLabelSettings` of `WeekViewSettings` and the size of those strings are also customizable.
 
+Also you can differentiate the timeslot panel using `VerticaTimeSlotBorderColor` properties of `WeekViewSettings`.To know more about customization of time slot panel refer [Panel Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Panel Customization")
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+    WeekViewSettings weekSettings = new WeekViewSettings ();
+    
+    WeekLabelSettings labelSettings= new WeekLabelSettings();
+    labelSettings.TimeLabelSize =  8;
+    labelSettings.DateLabelSize = 20;
+    labelSettings.DateLabelFormat = (NSString)"dd";
+    labelSettings.DayLabelFormat = (NSString)"eee";
+    labelSettings.TimeLabelFormat =(NSString) "hh a";
+    weekSettings.LabelSettings= labelSettings;
+    schedule.WeekViewSettings = weekSettings;
+    
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
 #### Non-Accessible Blocks
 
 You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+    WeekViewSettings weekSettings = new WeekViewSettings ();
+   
+    //Non-AccessibleBlocks
+    NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
+    lunch_hour.StartHour = 13;
+    lunch_hour.EndHour = 14;
+    lunch_hour.Text = (NSString)"LUNCH";
+    weekSettings.NonAccessibleBlockCollection.Add (lunch_hour);
+
+    schedule.WeekViewSettings = weekSettings;
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
 #### Working Hours
 
 You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and  `WorkEndHour`  properties of `WeekViewSettings`.
+
+You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotColor`, `TimeSlotColor` and `TimeSlotBorderColor` properties of `WeekViewSettings`.To know more about customization of working hours refer [Panel Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Panel Customization")
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+    WeekViewSettings weekSettings = new WeekViewSettings ();
+    weekSettings.WorkStartHour=8;
+    weekSettings.WorkEndHour = 18; 
+    schedule.WeekViewSettings = weekSettings;
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
 
 #### All Day Appointments Panel
 
@@ -110,22 +211,7 @@ You can view All day appointments in separate panel and the panels visibility ca
     SFSchedule schedule= new SFSchedule ();
     schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
     WeekViewSettings weekSettings = new WeekViewSettings ();
-    weekSettings.WorkStartHour=8;
-    weekSettings.WorkEndHour = 18; 
-    //Non-AccessbleBlocks
-    NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
-    lunch_hour.StartHour = 13;
-    lunch_hour.EndHour = 14;
-    lunch_hour.Text = (NSString)"LUNCH";
-    weekSettings.NonAccessibleBlockCollection.Add (lunch_hour);
-
-    WeekLabelSettings labelSettings= new WeekLabelSettings();
-    labelSettings.TimeLabelSize =  8;
-    labelSettings.DateLabelSize = 20;
-    labelSettings.DateLabelFormat = (NSString)"dd";
-    labelSettings.DayLabelFormat = (NSString)"eee";
-    labelSettings.TimeLabelFormat =(NSString) "hh a";
-    weekSettings.LabelSettings= labelSettings;
+    weekSettings.ShowAllDay = true;
     schedule.WeekViewSettings = weekSettings;
     this.AddSubview (schedule);
     this.control = this;
@@ -152,31 +238,13 @@ To view working days of a particular week, by default current work week will be 
 
 You can format the date and time string in the schedule control using `WorkWeekLabelSettings` of  `WorkWeekViewSettings` and the size of those strings are also customizable.
 
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-#### Working Hours
-
-You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and  `WorkEndHour` properties of `WorkWeekViewSettings`.
-
-#### All Day Appointments Panel
-
-You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of `WorkWeekViewSettings` as true. 
+Also you can differentiate the timeslot panel using `VerticaTimeSlotBorderColor` properties of `WorkWeekViewSettings`.To know more about customization of time slot panel panel refer [Panel Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Panel Customization")
 
 {% highlight c# %}
 
     SFSchedule schedule= new SFSchedule ();
     schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
     WorkWeekViewSettings workWeekSettings = new WorkWeekViewSettings ();
-    workWeekSettings.WorkStartHour=8;
-    workWeekSettings.WorkEndHour = 18; 
-    //Non-AccessbleBlocks
-    NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
-    lunch_hour.StartHour = 13;
-    lunch_hour.EndHour = 14;
-    lunch_hour.Text = (NSString)"LUNCH";
-    workWeekSettings.NonAccessibleBlockCollection.Add (lunch_hour);
     WorkWeekLabelSettings labelSettings= new WorkWeekLabelSettings();
     labelSettings.TimeLabelSize =  8;
     labelSettings.DateLabelSize = 20;
@@ -185,6 +253,64 @@ You can view All day appointments in separate panel and the panels visibility ca
     labelSettings.DayLabelFormat = (NSString)"eee";
     labelSettings.TimeLabelFormat =(NSString) "hh a";
     workWeekSettings.LabelSettings= labelSettings;
+    schedule.WorkWeekViewSettings = workWeekSettings;
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
+#### Non-Accessible Blocks
+
+You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
+    WorkWeekViewSettings workWeekSettings = new WorkWeekViewSettings ();
+    //Non-AccessbleBlocks
+    NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
+    lunch_hour.StartHour = 13;
+    lunch_hour.EndHour = 14;
+    lunch_hour.Text = (NSString)"LUNCH";
+    workWeekSettings.NonAccessibleBlockCollection.Add (lunch_hour);
+    schedule.WorkWeekViewSettings = workWeekSettings;
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
+#### Working Hours
+
+You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and  `WorkEndHour` properties of `WorkWeekViewSettings`.
+
+You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotColor`, `TimeSlotColor` and `TimeSlotBorderColor` properties of `WorkWeekViewSettings`.To know more about customization of working hours refer [Panel Customization](/xamarin-android/sfschedule/Appearance-and-Styling "Panel Customization")
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
+    WorkWeekViewSettings workWeekSettings = new WorkWeekViewSettings ();
+    workWeekSettings.WorkStartHour=8;
+    workWeekSettings.WorkEndHour = 18; 
+    schedule.WorkWeekViewSettings = workWeekSettings;
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
+#### All Day Appointments Panel
+
+You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of `WorkWeekViewSettings` as true. 
+
+Also you can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor`.To know more about customization of All day appointment panel refer [Panel Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Panel Customization")
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
+    WorkWeekViewSettings workWeekSettings = new WorkWeekViewSettings ();
+    weekSettings.ShowAllDay = true;
     schedule.WorkWeekViewSettings = workWeekSettings;
     this.AddSubview (schedule);
     this.control = this;
@@ -210,38 +336,12 @@ To view entire dates of a particular month, by default current month will be dis
 
 You can format the date and time string in the schedule control using `MonthLabelSettings` of  `MonthViewSettings` and the size of those strings are also customizable.
 
-#### Blackout dates
-
-You can restrict/allocate certain month cell as blackout days using `BlackoutDates` of `MonthViewSettings`, so that we can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
-
-#### Week number
-
-You display the week number of the year in month view by setting `ShowWeekNumber` property of `MonthViewSettings` are true. By default it is false.
-
-#### Visible AppointmentCount
-
-You can customize the number of appointments to be rendered inside a month view cell using `VisibleCellAppointmentsCount` property of `MonthViewSettings`.
-
 {% highlight c# %}
 
     SFSchedule schedule= new SFSchedule ();
     schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
-    NSDate today = new NSDate ();
-    NSCalendar calendar = NSCalendar.CurrentCalendar;
-    // Get the year, month, day from the date
-    NSDateComponents components = calendar.Components (
-    NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+    
     MonthViewSettings monthViewSettings = new MonthViewSettings ();
-    monthViewSettings.ShowWeekNumber = true;
-    monthViewSettings.ShowAppointmentsInline = true;
-    monthViewSettings.BlackoutDates = new NSMutableArray ();
-    components.Day -= 3;
-    for (int i = 0; i < 3; i++) {
-    NSDate startDate = calendar.DateFromComponents (components);
-    components.Day += 1;
-    monthViewSettings.BlackoutDates.Add (startDate);
-    }
-
     MonthLabelSettings labelSettings =  new MonthLabelSettings();
     labelSettings.DayLabelSize = 10;
     labelSettings.DayLabelFormat = (NSString)"EEEE";
@@ -253,6 +353,81 @@ You can customize the number of appointments to be rendered inside a month view 
     this.AddSubview (schedule);
     this.control = this;
 
+{% endhighlight %}
+
+#### Blackout dates
+
+You can restrict/allocate certain month cell as blackout days using `BlackoutDates` of `MonthViewSettings`, so that we can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+    
+    NSDate today = new NSDate ();
+    NSCalendar calendar = NSCalendar.CurrentCalendar;
+    // Get the year, month, day from the date
+    NSDateComponents components = calendar.Components (
+    NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+    
+    MonthViewSettings monthViewSettings = new MonthViewSettings ();
+    monthViewSettings.BlackoutDates = new NSMutableArray ();
+    components.Day -= 3;
+    for (int i = 0; i < 3; i++) {
+    NSDate startDate = calendar.DateFromComponents (components);
+    components.Day += 1;
+    monthViewSettings.BlackoutDates.Add (startDate);
+    }
+    
+    schedule.MonthViewSettings = monthViewSettings;
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
+#### Week number
+
+You display the week number of the year in month view by setting `ShowWeekNumber` property of `MonthViewSettings` are true. By default it is false.
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+    MonthViewSettings monthViewSettings = new MonthViewSettings ();
+    monthViewSettings.ShowWeekNumber = true;
+    schedule.MonthViewSettings = monthViewSettings;
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
+#### Visible AppointmentCount
+
+You can customize the number of appointments to be rendered inside a month view cell using `VisibleCellAppointmentsCount` property of `MonthViewSettings`.
+
+{% highlight c# %}
+
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+    MonthViewSettings monthViewSettings = new MonthViewSettings ();
+    monthViewSettings.VisibleCellAppointmentsCount=10;
+    schedule.MonthViewSettings = monthViewSettings;
+    this.AddSubview (schedule);
+    this.control = this;
+
+{% endhighlight %}
+
+#### Month Navigation Direction
+
+`MonthView` of Schedule can be navigated horizontally and vertically.You can change the direction of navigation through `MonthNavigationDirection` property of `MonthViewSettings`.By default MonthNavigation value is `Horizontal`
+
+{% highlight C# %}
+
+    MonthViewSettings monthViewSettings = new MonthViewSettings();
+    //To navigate vertically
+    monthViewSettings.MonthNavigationDirection =  SFMonthNavigationDirections.Vertical;
+    sfschedule.MonthViewSettings = monthViewSettings;
+    
 {% endhighlight %}
 
 ![](Views_images/Views_img8.jpeg)
