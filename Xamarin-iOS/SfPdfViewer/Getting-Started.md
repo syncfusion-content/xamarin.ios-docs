@@ -24,6 +24,8 @@ Follow the below steps to create a simple application with the SfPdfViewer and l
 
 * Create a new iOS application for Xamarin.iOS in the Visual Studio and refer the required assembly to the project. 
 
+N>**Essential PDF Viewer for Xamarin.iOS project is compatible with operating system of iOS 9.0 or more.
+
 * Create an instance of SfPdfViewer in view controller and add it as sub view in viewDidLoad override method.
    
 {% tabs %}
