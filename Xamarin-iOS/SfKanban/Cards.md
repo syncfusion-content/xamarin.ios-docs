@@ -49,3 +49,17 @@ kanban.IndicatorColorPalette = colormodels;
 
 ![](Kanban_images/CardCustomization.png)
 
+## Template
+
+You can replace the entire card template with your own design using ['SfKanban.KanbanDelegate'](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanDelegate.html) 's [GetItemViewCell](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanDelegate~GetItemViewCell.html) override method . The following code snippet and screenshot illustrates this.
+
+
+{% highlight C# %}
+
+
+
+{% endhighlight %}
+
+![](SfKanban_images/CardTemplate.png)
+
+
