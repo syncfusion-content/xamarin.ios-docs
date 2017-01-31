@@ -11,7 +11,7 @@ documentation: ug
 
 Schedule control is available with complete localization support . 
 
-Localization can be specified by setting the `Locale` property of the control. In the format of `Language code`.  Based on the locale specified the strings in the control such as Date, time, days are localized accordingly.
+Localization can be specified by setting the `Locale` property of the control. In the format of `Language code` followed by `Country code`.  Based on the locale specified the strings in the control such as Date, time, days are localized accordingly.
 
 By default schedule control is available with `en-US` locale. 
 
@@ -19,13 +19,12 @@ As the subject of the appointments are given in the application level, it can be
 
 {% highlight c# %}
 
-    schedule.Locale =  new NSLocale("fr");
+    schedule.Locale =  new NSLocale("fr-FR");
 
 {% endhighlight %}
 
 ![](LocalizationGlobalization_images/LocalizationGlobalization1.jpeg)
 
->**NOTE**: AM/PM in the timeline will not be localized in the Schedule views.
 
 ## Schedule Custom String Localization
 
