@@ -111,8 +111,4 @@ By implementing the above two methods the appointments can be set to based on vi
 
 {% endhighlight %}
 
-### AppointmentStyle
-
-ScheduleAppointment can be customized using the `SFAppointmentStyle` property. To know more about customization of Schedule Appointment refer [Appointment Customization](/xamarin-ios/sfschedule/Appearance-and-StylingAppearance-and-Styling "Appointment Customization").
-
 ![](PopulatingAppointments_images/PopulatingAppointments_img1.jpeg)
