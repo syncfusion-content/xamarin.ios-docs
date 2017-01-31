@@ -15,7 +15,6 @@ By default the date can be navigated to next view using touch gesture, by swipin
 
 {% highlight c# %}
 
-    //using schedule Forward()
     schedule.Forward();
 
 {% endhighlight %}
@@ -28,7 +27,6 @@ By default the date can be navigated to previous view using touch gesture, by sw
 
 {% highlight c# %}
    
-    //using schedule Backward()
     schedule.Backward();
 
 {% endhighlight %}
@@ -41,7 +39,9 @@ Visible dates can be moved to specific date using `MoveToDate()` method availabl
 
 {% highlight c# %}
 
+    void MoveTo (object sender, EventArgs e) {
     NSDate date = new NSDate ();
+    NSMutableArray appCollection = new NSMutableArray ();
     NSCalendar calendar = NSCalendar.CurrentCalendar;
     // Get the year, month, day from the date
     NSDateComponents components = calendar.Components (
@@ -53,6 +53,7 @@ Visible dates can be moved to specific date using `MoveToDate()` method availabl
     components.Second = 0;
     NSDate moveToDate = calendar.DateFromComponents (components);
     schedule.MoveToDate (moveToDate);
+    }
 
 {% endhighlight %}
 
@@ -64,7 +65,6 @@ By default Schedule views can be moved backwards and forwards using touch swipe 
 
 {% highlight c# %}
 
-    //disabling navigation gesture
     schedule.EnableNavigation = false;
 
 {% endhighlight %}
@@ -115,12 +115,10 @@ So that beyond the min max date range, it will restrict date navigations feature
 
 ## Inline
 
-By enabling Inline feature in month view, while touch the month view cell, appointments available in a particular day will be listed in inline view.
+By enabling Inline feature in month view, while touch the month view cell, appointments available in a particular day will be listed in inline view. There are options available to customize the default UI of inline view while tap on the month cell using `InlineTapped` listener. `InlineAppointmentsTappedListener` is a listener available in month view to raise while tapped on the appointments in inline view.
 
 {% highlight c# %}
-
     schedule.MonthViewSettings.ShowAppointmentsInline = true;
-    
 {% endhighlight %}
 
 ![](DateNavigationandGesture_images/DateNavigationandGesture_img1.jpeg)
