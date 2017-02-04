@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to render the Schedule control by populating  events(appointments), with inline support and min max dates support in the control. This section covers only the minimal features that you need to know to get started with the Schedule.
+This section explains you the steps required to render the `Meeting Room Booking Scheduler` using Schedule control by populating events(appointments) in the control. This section covers only the minimal features that you need to know to get started with the Schedule
 
 ### Configure the Schedule control
 
@@ -30,11 +30,10 @@ Initialize `SfSchedule` instance in viewDidLoad method and then add the schedule
 
     public ScheduleViews ()
     {
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
-    schedule.Appointments = CreateAppointments ();
-    this.AddSubview (schedule);
-    this.control = this;
+        SFSchedule meetingRoomScheduler = new SFSchedule();
+        meetingRoomScheduler.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+        this.AddSubview (meetingRoomScheduler);
+        this.control = this;
     }
 
 {% endhighlight %}
@@ -46,8 +45,8 @@ You can change the default UI of schedule using `ScheduleView` to display the da
 {% highlight c# %}
 
     //setting schedule view.
-    schedule.ScheduleView = SFScheduleView. SFScheduleViewWeek;
-    this.AddSubview (schedule);
+    meetingRoomScheduler = SFScheduleView. SFScheduleViewWeek;
+    this.AddSubview (meetingRoomScheduler);
     this.control = this;
 
 {% endhighlight %}
@@ -56,213 +55,143 @@ You can change the default UI of schedule using `ScheduleView` to display the da
 
 ## Populating Events
 
-You can add events to the schedule by creating collection of `ScheduleAppointments` using `ScheduleAppointmentCollection`. 
+You can add events to the schedule by creating collection of `ScheduleAppointments` using `ScheduleAppointmentCollection`. You can schedule meetings for a particular day by setting `From` and `To` of `Meeting` class.Here meeting appointments are created for around 20 days before and after current day, with single appointment each day and with 3 appointments each day(from three days before current day to three days after the current day)
+
 
 {% highlight c# %}
 
     public ScheduleViews ()
     {
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+        SFSchedule meetingRoomScheduler = new SFSchedule();
+        meetingRoomScheduler.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+        meetingRoomScheduler.Appointments = CreateAppointments();
+        this.AddSubview (schedule);
+        this.control = this;
+    }
+    
+    NSMutableArray CreateAppointments()
+    {
+        NSDate today = new NSDate();
+        InitializeDataForBookings();
+        NSMutableArray appCollection = new NSMutableArray();
+        NSCalendar calendar = NSCalendar.CurrentCalendar;
 
-    NSDate today = new NSDate ();
+        NSDateComponents DateFrom = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);			
+        DateFrom.Day -= 10;
+        NSDate dateFrom = calendar.DateFromComponents(DateFrom);
 
-    NSMutableArray appCollection = new NSMutableArray ();
-    NSCalendar calendar = NSCalendar.CurrentCalendar;
-    // Get the year, month, day from the date
-    NSDateComponents components = calendar.Components (
-    NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-    // Set the hour, minute, second
-    components.Hour = 10;
-    components.Minute = 0;
-    components.Second = 0;
+        NSDateComponents DateTo = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+        DateTo.Day += 10;
 
-    // Get the year, month, day from the date
-    NSDateComponents endDateComponents = calendar.Components (NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-    // Set the hour, minute, second
-    endDateComponents.Hour = 12;
-    endDateComponents.Minute = 0;
-    endDateComponents.Second = 0;
+        NSDateComponents DateRangeStart = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+        DateRangeStart.Day -= 3;
+        NSDate dateRangeStart = calendar.DateFromComponents(DateRangeStart);
 
-    NSDate startDate = calendar.DateFromComponents (components);
-    NSDate endDate = calendar.DateFromComponents (endDateComponents);
+        NSDateComponents DateRangeEnd = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+        DateRangeEnd.Day += 3;
+        NSDate dateRangeEnd = calendar.DateFromComponents(DateRangeEnd);
 
-    ScheduleAppointment appointment = new ScheduleAppointment ();
-    appointment.StartTime = startDate;
-    appointment.EndTime = endDate;
-    components.Day = components.Day + 1;
-    endDateComponents.Day = endDateComponents.Day + 1;
-    appointment.Subject = (NSString)"Client Meeting";
-    appointment.AppointmentBackground = UIColor.Red;
+        Random randomTime = new Random();
+        List<CGPoint> randomTimeCollection = GettingTimeRanges();
 
-    appCollection.Add (appointment);
+        NSDateComponents startDate = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, dateFrom);
+        startDate.Calendar = calendar;
 
-    schedule.Appointments = appCollection;
-    this.AddSubview (schedule);
-    this.control = this;
+        NSDateComponents endDate = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, dateFrom);
 
+    for (int dateIndex = -10; dateIndex <= 11;dateIndex++)
+    {
+        if ((startDate.Date.Compare(dateRangeStart) > 0) && (startDate.Date.Compare(dateRangeEnd) < 0))
+        {
+        for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++)
+            {
+            
+            var hour = randomTime.Next((int)randomTimeCollection[AdditionalAppointmentIndex].X, (int)randomTimeCollection[AdditionalAppointmentIndex].Y);
+            startDate.Hour = hour;
+            endDate.Hour = (startDate.Hour) + 1;
+
+            NSDate startdate = calendar.DateFromComponents(startDate);
+            NSDate enddate = calendar.DateFromComponents(endDate);
+
+            ScheduleAppointment meeting = new ScheduleAppointment();
+            meeting.StartTime = startdate;
+            meeting.EndTime = enddate;
+            meeting.Subject = (NSString)subjectCollection[randomTime.Next(9)];
+            meeting.AppointmentBackground = colorCollection[randomTime.Next(9)];
+
+            appCollection.Add(meeting);
+            }
+        }
+        else {
+            var hour = randomTime.Next(9, 16);
+            startDate.Hour = hour;
+            endDate.Hour = (startDate.Hour) + 1;
+            
+            NSDate  startdate= calendar.DateFromComponents(startDate);
+NSDate enddate = calendar.DateFromComponents(endDate);
+
+            ScheduleAppointment meeting = new ScheduleAppointment();
+            meeting.StartTime = startdate;
+            meeting.EndTime = enddate;
+            meeting.Subject = (NSString)subjectCollection[randomTime.Next(9)];
+            meeting.AppointmentBackground = colorCollection[randomTime.Next(9)];
+
+            appCollection.Add(meeting);
+        }
+        startDate.Day++;
+        endDate.Day++;
+        }
+    return appCollection;
     }
     
 {% endhighlight %}
 
-![](GettingStarted_images/GettingStarted_img3.jpeg)
-
-## Populating Recursive Events
-
-You can also add recursive appointments to Schedule, refer Recurrence section to know more about creating the recursive appointments using RRULE generator in schedule.
+You can add `Subject` and `Color` to the appointments created by creating a collection for the same.
 
 {% highlight c# %}
+    
+    List<String> meetingCollection;
+    List<UIColor> colorCollection;
 
-    public ScheduleViews ()
-        {
-            SFSchedule schedule= new SFSchedule ();
-            schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
-
-            NSDate today = new NSDate ();
-
-            NSMutableArray appCollection = new NSMutableArray ();
-            NSCalendar calendar = NSCalendar.CurrentCalendar;
-
-            // Get the year, month, day from the date
-            NSDateComponents components = calendar.Components (
-                NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-
-            // Set the hour, minute, second
-            components.Hour = 10;
-            components.Minute = 0;
-            components.Second = 0;
-
-            // Get the year, month, day from the date
-            NSDateComponents endDateComponents = calendar.Components (NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-            // Set the hour, minute, second
-            endDateComponents.Hour = 12;
-            endDateComponents.Minute = 0;
-            endDateComponents.Second = 0;
-
-            NSDate startDate = calendar.DateFromComponents (components);
-            NSDate endDate = calendar.DateFromComponents (endDateComponents);
-
-            ScheduleAppointment appointment = new ScheduleAppointment ();
-            appointment.StartTime = startDate;
-            appointment.EndTime = endDate;
-            components.Day = components.Day + 1;
-            endDateComponents.Day = endDateComponents.Day + 1;
-            appointment.Subject = (NSString)"Client Meeting";
-            appointment.AppointmentBackground = UIColor.Red;
-
-    //Setting Recurrence Rule
-            appointment.RecurrenceRule = (NSString)@"FREQ=DAILY;INTERVAL=2;COUNT=25";
-            appointment.IsRecursive = true;
-
-    //Adding Appointment Collection 
-            appCollection.Add (appointment);
-            schedule.Appointments = appCollection;
-
-            this.AddSubview (schedule);
-            this.control = this;
-
-        }
-
-{% endhighlight %}
-
-![](GettingStarted_images/GettingStarted_img4.jpeg)
-
-## Enabling Appointments Inline
-
-When the schedule appointments are viewed in Month view, it will not display  much information about the appointments, you can view the appointments in inline  by setting `ShowAppointmentsInline` property of `MonthViewSettings` as `True`.
-
-{% highlight c# %}
-
-    public ScheduleViews ()
+    private void InitializeDataForBookings()
     {
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+    //adding subject collection
+    meetingCollection = new List<String>();
+    meetingCollection.Add("GoToMeeting");
+    meetingCollection.Add("Business Meeting");
+    meetingCollection.Add("Conference");
+    meetingCollection.Add("Project Status Discussion");
+    meetingCollection.Add("Auditing");
+    meetingCollection.Add("Client Meeting");
+    meetingCollection.Add("Generate Report");
+    meetingCollection.Add("Target Meeting");
+    meetingCollection.Add("General Meeting");
+    meetingCollection.Add("Pay House Rent");
+    meetingCollection.Add("Car Service");
+    meetingCollection.Add("Medical Check Up");
+    meetingCollection.Add("Wedding Anniversary");
+    meetingCollection.Add("Sam's Birthday");
+    meetingCollection.Add("Jenny's Birthday");
 
-    //Enabling Appointment inline in MonthView
-    schedule.MonthViewSettings.ShowAppointmentsInline = true;
-
-    NSDate today = new NSDate ();
-    NSMutableArray appCollection = new NSMutableArray ();
-    NSCalendar calendar = NSCalendar.CurrentCalendar;
-
-    // Get the year, month, day from the date
-    NSDateComponents components = calendar.Components (
-    NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-
-    // Set the hour, minute, second
-    components.Hour = 10;
-    components.Minute = 0;
-    components.Second = 0;
-
-    // Get the year, month, day from the date
-    NSDateComponents endDateComponents = calendar.Components (NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-    // Set the hour, minute, second
-    endDateComponents.Hour = 12;
-    endDateComponents.Minute = 0;
-    endDateComponents.Second = 0;
-
-    NSDate startDate = calendar.DateFromComponents (components);
-    NSDate endDate = calendar.DateFromComponents (endDateComponents);
-
-    ScheduleAppointment appointment = new ScheduleAppointment ();
-    appointment.StartTime = startDate;
-    appointment.EndTime = endDate;
-    components.Day = components.Day + 1;
-    endDateComponents.Day = endDateComponents.Day + 1;
-    appointment.Subject = (NSString)"Client Meeting";
-    appointment.AppointmentBackground = UIColor.Red;
-
-    appCollection.Add (appointment);
-
-    schedule.Appointments = appCollection;
-    this.AddSubview (schedule);
-    this.control = this;
+    // adding colors collection
+    colorCollection = new List<UIColor>();
+    colorCollection.Add(UIColor.FromRGB(0xA2, 0xC1, 0x39));
+    colorCollection.Add(UIColor.FromRGB(0xD8, 0x00, 0x73));
+    colorCollection.Add(UIColor.FromRGB(0x1B, 0xA1, 0xE2));
+    colorCollection.Add(UIColor.FromRGB(0xE6, 0x71, 0xB8));
+    colorCollection.Add(UIColor.FromRGB(0xF0, 0x96, 0x09));
+    colorCollection.Add(UIColor.FromRGB(0x33, 0x99, 0x33));
+    colorCollection.Add(UIColor.FromRGB(0x00, 0xAB, 0xA9));
+    colorCollection.Add(UIColor.FromRGB(0xE6, 0x71, 0xB8));
+    colorCollection.Add(UIColor.FromRGB(0x1B, 0xA1, 0xE2));
+    colorCollection.Add(UIColor.FromRGB(0xD8, 0x00, 0x73));
+    colorCollection.Add(UIColor.FromRGB(0xA2, 0xC1, 0x39));
+    colorCollection.Add(UIColor.FromRGB(0xD8, 0x00, 0x73));
+    colorCollection.Add(UIColor.FromRGB(0x33, 0x99, 0x33));
+    colorCollection.Add(UIColor.FromRGB(0xE6, 0x71, 0xB8));
+    colorCollection.Add(UIColor.FromRGB(0x00, 0xAB, 0xA9));
     }
 
 {% endhighlight %}
 
-![](GettingStarted_images/GettingStarted_img5.jpeg)
-
-## Restricting Dates
-
-Certain dates can be restricted in schedule by setting `MinDisplayDate` and `MaxDisplayDate` properties of `SfSchedule`.  To know more about restricting dates within a particular range of dates refer [Min Max dates] <http://help.syncfusion.com/android/sfschedule/date-navigation-and-gesture#min-max-dates>.
-
-{% highlight c# %}
-
-    public ScheduleViews ()
-    {
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
-    schedule.MonthViewSettings.ShowAppointmentsInline = true;
-    NSDate today = new NSDate ();
-
-    NSMutableArray appCollection = new NSMutableArray ();
-    NSCalendar calendar = NSCalendar.CurrentCalendar;
-    // Get the year, month, day from the date
-    NSDateComponents components = calendar.Components (
-    NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-    // Set the hour, minute, second
-    components.Month=3;
-    components.Hour = 10;
-    components.Minute = 0;
-    components.Second = 0;
-
-    // Get the year, month, day from the date
-    NSDateComponents endDateComponents = calendar.Components (NSCalendarUnit.Year | NSCalendarUnit.Month-1 | NSCalendarUnit.Day, today);
-    // Set the hour, minute, second
-    endDateComponents.Year=2015;
-    endDateComponents.Month = 11;
-    endDateComponents.Hour = 12;
-    endDateComponents.Minute = 0;
-    endDateComponents.Second = 0;
-
-    NSDate maxDate = calendar.DateFromComponents (components);
-    NSDate minDate = calendar.DateFromComponents (endDateComponents);
-
-    schedule.MinDisplayDate = minDate;
-    schedule.MaxDisplayDate = maxDate;
-
-    this.AddSubview (schedule);
-    this.control = this;
-
-{% endhighlight %}
+![](GettingStarted_images/GettingStarted_img3.jpeg)
