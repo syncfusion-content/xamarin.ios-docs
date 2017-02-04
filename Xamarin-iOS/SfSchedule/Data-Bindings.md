@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Populating Appointments in Schedule using Collections and DataSource.
-description: How to Populate an appointment of Schedule control.
+title: Binding Appointments in Schedule using Collections and DataSource.
+description: How to bind an appointment of Schedule control.
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---
 
-# Populating Appointments 
+# Data Bindings 
 
 Schedule control has an built-in capability to handle the appointment arrangement internally based on the `ScheduleAppointment` collections. `ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. Schedule Appointments collection can be provided to schedule using the following method.
 
-## Adding appointments using Collection
+## Adding ScheduleAppointments using Collection
 
 `ScheduleAppointment` has some basic properties such as StartTime, EndTime, Subject and some additional information about the appointment can be added using Color, Notes, Location, All Day, Recursive properties.
 
@@ -50,23 +50,13 @@ Create the collection of the `ScheduleAppointments` by setting required details 
     appointment.AppointmentBackground = UIColor.Red;
     appCollection.Add (appointment);
     schedule.Appointments = appCollection;
-    this.AddSubview (schedule);
-    this.control = this;
+    View.AddSubview(sfschedule);
 
 {% endhighlight %}
 
-## Adding appointments by implementing data source protocol
+### Adding AllDayAppointments 
 
-The appointment can also be added to schedule control on demand based on the visible dates. This can be achieved by implementing the `SFScheduleDataSource` protocol in your application.
-
-Before implementing the data source, you need to assign `DataSource` property of the schedule with the instance of an object where it is going to be implemented.
-
-The data source protocol contains two methods as follows:
-
-* schedule:appointmentsFromDate: Returns an appointments that is within the start and end visible date range.
-* schedule:appointmentsForDate: Returns a appointments that is in the specific date. There is also an optional method.
-
-By implementing the above two methods the appointments can be set to based on visible date range.
+AllDayAppointment is for setting appointmet for fullday by using `ShowAllDay` property in the `ScheduleAppointment`. Create the collection of the `ScheduleAppointments` by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `Appointment` property of `SfSchedule` as like in below code example.
 
 {% highlight c# %}
 
@@ -75,16 +65,14 @@ By implementing the above two methods the appointments can be set to based on vi
     NSDate today = new NSDate ();
     NSMutableArray appCollection = new NSMutableArray ();
     NSCalendar calendar = NSCalendar.CurrentCalendar;
-
-    // Get the year, month, day from the date
     // Get the year, month, day from the date
     NSDateComponents components = calendar.Components (
     NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-
     // Set the hour, minute, second
     components.Hour = 10;
     components.Minute = 0;
     components.Second = 0;
+
     // Get the year, month, day from the date
     NSDateComponents endDateComponents = calendar.Components (NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
     // Set the hour, minute, second
@@ -101,14 +89,32 @@ By implementing the above two methods the appointments can be set to based on vi
     endDateComponents.Day = endDateComponents.Day + 1;
     appointment.Subject = (NSString)"Client Meeting";
     appointment.AppointmentBackground = UIColor.Red;
-   
-    //Adding Appointment Collection 
     appCollection.Add (appointment);
     schedule.Appointments = appCollection;
-
-    this.AddSubview (schedule);
-    this.control = this;
+    View.AddSubview(sfschedule);
 
 {% endhighlight %}
 
-![](PopulatingAppointments_images/PopulatingAppointments_img1.jpeg)
+### Adding Recurrence Appointments  
+
+Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments, to know more about adding appointments in the control, refer `ScheduleAppointment`.
+
+And then need to set the RecurrenceRule to populate the required recursive appointment collection in a specific pattern.RRULE can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
+
+Recursive appointment can be created in any recurrence patterns, for instance, some events can be repeated every week such as “Server maintenance”, where as some on them may repeat every year like wedding anniversary. 
+
+To know more about customization of all day appointment panel refer [Recurrence Appointments](/xamarin-ios/sfschedule/Recurrence "Recurrence Pattern")
+
+### Appointment Editor
+
+Appointments can be edit using this Appointmenteditor by tapping the Appointment using `ScheduleCellTapped`event and set the required properties of `ScheduleAppointment` for editing, To know more about Appointment Editor please refer the KB (Knowledge Base).
+
+## Appointment Customization
+
+Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. You can customize the Schedule as per the requirement using Cutsomization support. 
+
+To know more about customization of all day appointment panel refer [View Customization](/xamarin-ios/sfschedule/appearance-and-styling "View Customization")
+
+
+
+

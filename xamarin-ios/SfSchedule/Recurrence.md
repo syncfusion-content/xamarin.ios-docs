@@ -11,7 +11,7 @@ documentation: ug
 
 Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments, to know more about adding appointments in the control, refer `ScheduleAppointment`.
 
-And then need to set the RecurrenceRule to populate the required recursive appointment collection in a specific pattern.
+And then need to set the RecurrenceRule to populate the required recursive appointment collection in a specific pattern.RRULE can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
 
 Recursive appointment can be created in any recurrence patterns, for instance, some events can be repeated every week such as “Server maintenance”, where as some on them may repeat every year like wedding anniversary. 
 
@@ -26,7 +26,7 @@ Recursive appointment can be created in any recurrence patterns, for instance, s
 
 ## RRULE generator
 
-`RecurrenceGenerator`/ `RecurrenceBuilder` is available with the control to create RRULE. RRULE can be easily created through this engine by simple APIs available. The generated RRULE need to be assigned to the appointment’s `RecurrenceRule` property.
+`RecurrenceGenerator`/ `RecurrenceBuilder` is available with the control to create RRULE. RRULE can be easily created through this engine by simple APIs available.The generated RRULE need to be assigned to the appointment’s `RecurrenceRule` property.
 
 {% highlight c# %}
 
@@ -60,6 +60,13 @@ Recursive appointment can be created in any recurrence patterns, for instance, s
     endDateComponents.Day = endDateComponents.Day + 1;
     appointment.Subject = (NSString)"Client Meeting";
     appointment.AppointmentBackground = UIColor.Red;
+    
+{% endhighlight %}
+
+The RRule is assigned to the created ScheduleAppointment as given below.
+
+{% highlight c# %}
+
     //Setting Recurrence Rule
     appointment.RecurrenceRule = (NSString)@"FREQ=DAILY;INTERVAL=2;COUNT=25";
     appointment.IsRecursive = true;
@@ -71,4 +78,5 @@ Recursive appointment can be created in any recurrence patterns, for instance, s
     this.control = this;
 
 {% endhighlight %}
+
 ![](Recurrence_images/Recurrence_img1.jpeg)
