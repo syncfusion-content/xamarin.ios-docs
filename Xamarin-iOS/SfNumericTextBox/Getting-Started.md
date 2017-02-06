@@ -31,7 +31,7 @@ iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 {% highlight c# %}
 
-	Using Syncfusion.SFNumericTextBox.iOS; 
+	Using Syncfusion.SfNumericTextBox.iOS; 
 
 {% endhighlight %}
 

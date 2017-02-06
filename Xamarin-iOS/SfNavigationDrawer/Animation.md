@@ -40,7 +40,7 @@ This transition slides the Drawer and main content simultaneously.
 
 {% highlight c# %} 
 
-	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnPush;
+	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionPush;
 
 {% endhighlight %}
 
@@ -56,7 +56,7 @@ The Drawer content is in fixed position and the main content will slide to revea
 
 {% highlight c# %} 
 
-	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnReveal;
+	navigationDrawer.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionReveal;
 
 {% endhighlight %}
 
