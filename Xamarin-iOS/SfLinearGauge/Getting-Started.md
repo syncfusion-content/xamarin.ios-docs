@@ -31,7 +31,7 @@ The following steps explain on how to create a SfLinearGauge and configure its e
 
 {% highlight c# %}
 
-	using Syncfusion.SFLinearGauge.iOS; 
+	using Syncfusion.SfGauge.iOS; 
 
 {% endhighlight %}
 

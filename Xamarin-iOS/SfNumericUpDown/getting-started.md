@@ -33,7 +33,7 @@ The SfNumericUpDown control configured entirely in C# code. The following steps 
 
 {% highlight c# %}
 
-	Using Syncfusion.SFNumericUpDown.iOS; 
+	Using Syncfusion.SfNumericUpDown.iOS; 
 
 {% endhighlight %}
 

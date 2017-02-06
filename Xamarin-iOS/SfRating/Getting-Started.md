@@ -31,7 +31,7 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 
 {% highlight c# %}
 	
-	using Syncfusion.SFRating.iOS;
+	using Syncfusion.SfRating.iOS;
 	
 {% endhighlight %}
 

@@ -29,7 +29,7 @@ iOS-unifed\Syncfusion.SfRangeSlider.iOS.dll
 
 {% highlight C# %}
 
-	using Syncfusion.SFRangeSlider.iOS; 
+	using Syncfusion.SfRangeSlider.iOS; 
 
 {% endhighlight %}
 
@@ -116,7 +116,7 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 	rangeSlider.RangeEnd=20;
 	rangeSlider.TickFrequency=4;
 	rangeSlider.TickPlacement= SFTickPlacement.SFTickPlacementBottomRight;
-	rangeSlider.SnapsTo= SFSnapsTo.SFSnapsToSnapsToTicks;
+	rangeSlider.SnapsTo= SFSnapsTo.SFSnapsToTicks;
 
 {% endhighlight %}
 

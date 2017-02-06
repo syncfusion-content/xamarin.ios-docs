@@ -36,7 +36,6 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 {% highlight c# %}
 	
 	 SFRangeSlider rangeSlider; 
-	 ObservableCollection<Items>  customCollection;
 	 public RangeSliderPage ()
      {
            NSMutableArray<SFLabelItems> labels = new NSMutableArray<SFLabelItems>();
@@ -45,7 +44,7 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 		   rangeSlider = new SFRangeSlider ();
            rangeSlider.HeightRequest = 400;
            rangeSlider.ShowCustomLabel = true;
-           rangeSlider.CustomLabels = labels;
+           rangeSlider.CustomLabel = labels;
 
 	 }
 

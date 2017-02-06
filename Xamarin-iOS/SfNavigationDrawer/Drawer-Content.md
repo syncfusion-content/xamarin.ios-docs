@@ -23,36 +23,86 @@ The sliding main content of the SfNavigationDrawer can be set with any view usin
 
 {% highlight c# %}
 
-	UITableView table = new UITableView(new CGRect(0, 0, sideMenuController.DrawerWidth, this.Frame.Height)); // defaults to Plain style
-	tableItems = new string[] {"Home","Profile","Inbox","Outbox","Sent Items","Trash"};
-	TableSource tablesource = new TableSource(tableItems);
-	tablesource.customise = false;
-	table.Source = tablesource;
-	this.BackgroundColor = UIColor.FromRGB(63,134,246);
-	HeaderView = new UIView ();
-	HeaderView.Frame = new CGRect (0, 0, sideMenuController.DrawerWidth, 100);
-	HeaderView.BackgroundColor = UIColor.FromRGB (49, 173, 225);
-	UIView centerview = new UIView ();
-	centerview.Frame = new CGRect (0, 100, sideMenuController.DrawerWidth, 500);
-	centerview.Add (table);
-	usernameLabel = new UILabel ();
-	usernameLabel.Frame =new CGRect (0, 70, sideMenuController.DrawerWidth, 30);
-	usernameLabel.Text=(NSString)"James Pollock";
-	usernameLabel.TextColor = UIColor.White;
-	usernameLabel.TextAlignment = UITextAlignment.Center;
-	HeaderView.AddSubview (usernameLabel);
+	//DrawerView
+	SFNavigationDrawer navigation = new SFNavigationDrawer();
+			UIView headerView = new UIView(new CGRect(0, 0, 100, 100));
 
-	userImg=new UIImageView();
-	userImg.Frame =new CGRect ((sideMenuController.DrawerWidth/2)-25, 15, 50, 50);
-	userImg.Image = new UIImage ("Images/User.png");
+			UIView HeaderView = new UIView();
+			HeaderView.Frame = new CGRect(0, 0, navigation.DrawerWidth, 100);
+			HeaderView.BackgroundColor = UIColor.FromRGB(49, 173, 225);
+			UILabel usernameLabel = new UILabel();
+			usernameLabel.Frame = new CGRect(0, 70, navigation.DrawerWidth, 30);
+			usernameLabel.Text = (NSString)"James Pollock";
+			usernameLabel.TextColor = UIColor.White;
+			usernameLabel.TextAlignment = UITextAlignment.Center;
+			HeaderView.AddSubview(usernameLabel);
+			UIImageView userImg = new UIImageView();
+			userImg.Frame = new CGRect((navigation.DrawerWidth / 2) - 25, 15, 50, 50);
+			userImg.Image = new UIImage("Images/User.png");
+			HeaderView.AddSubview(userImg);
+			headerView.AddSubview(HeaderView);
 
-	HeaderView.AddSubview (userImg);
+			UIView drawerContentView = new UIView(new CGRect(0, 0, navigation.DrawerWidth, 100));
 
-	sideMenuController.DrawerHeaderView = HeaderView;
-	sideMenuController.DrawerContentView = centerview;
-	sideMenuController.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
+			UIView centerview = new UIView();
+			centerview.Frame = new CGRect(0, 0, navigation.DrawerWidth, 500);
 
-	this.AddSubview (sideMenuController);
+			UIButton homeButton = new UIButton(new CGRect(0,0,navigation.DrawerWidth,50));
+			homeButton.SetTitle("Home", UIControlState.Normal);
+			homeButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+			homeButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+			homeButton.Layer.CornerRadius = 0;
+			homeButton.Layer.BorderWidth = 1;
+			homeButton.Layer.BorderColor=UIColor.FromRGB(0, 0, 0).CGColor;
+			centerview.AddSubview(homeButton);
+
+			UIButton profileButton = new UIButton(new CGRect(0, 50, navigation.DrawerWidth, 50));
+			profileButton.SetTitle("Profile", UIControlState.Normal);
+			profileButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+			profileButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+			profileButton.Layer.CornerRadius = 0;
+			profileButton.Layer.BorderWidth = 1;
+			profileButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
+			centerview.AddSubview(profileButton);
+
+			UIButton inboxButton = new UIButton(new CGRect(0, 100, navigation.DrawerWidth, 50));
+			inboxButton.SetTitle("Inbox", UIControlState.Normal);
+			inboxButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+			inboxButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+			inboxButton.Layer.CornerRadius = 0;
+			inboxButton.Layer.BorderWidth = 1;
+			inboxButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
+			centerview.AddSubview(inboxButton);
+
+			UIButton outboxButton = new UIButton(new CGRect(0, 150, navigation.DrawerWidth, 50));
+			outboxButton.SetTitle("Outbox", UIControlState.Normal);
+			outboxButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+			outboxButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+			outboxButton.Layer.CornerRadius = 0;
+			outboxButton.Layer.BorderWidth = 1;
+			outboxButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
+			centerview.AddSubview(outboxButton);
+
+			UIButton sentItemsButton = new UIButton(new CGRect(0, 200, navigation.DrawerWidth, 50));
+			sentItemsButton.SetTitle("SentItems", UIControlState.Normal);
+			sentItemsButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+			sentItemsButton.Layer.CornerRadius = 0;
+			sentItemsButton.Layer.BorderWidth = 1;
+			sentItemsButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
+			centerview.AddSubview(sentItemsButton);
+
+			UIButton trashButton = new UIButton(new CGRect(0, 250, navigation.DrawerWidth, 50));
+			trashButton.SetTitle("Trash", UIControlState.Normal);
+			trashButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+			trashButton.Layer.CornerRadius = 0;
+			trashButton.Layer.BorderWidth = 1;
+			trashButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
+			centerview.AddSubview(trashButton);
+			drawerContentView.AddSubview(centerview);
+
+			navigation.DrawerContentView =drawerContentView;
+			navigation.DrawerHeaderView =headerView;
+			this.AddSubview(navigation);
 
 {% endhighlight %}
 
@@ -68,21 +118,21 @@ Instead of providing everything in the drawer content view, `DrawerHeaderView` p
 
 {% highlight c# %}
 
+SFNavigationDrawer navigation = new SFNavigationDrawer();
 	UIImageView userImgLabel=new UIImageView();
 	userImgLabel.Frame =new CGRect ((this.Frame.Width/2)-100, 10, 80, 80);
 	userImgLabel.Image = new UIImage ("Images/User.png");
 	UILabel usernameLabel = new UILabel ();
-	usernameLabel.Frame =new CGRect (0, 70, sideMenuController.DrawerWidth, 30);
+	usernameLabel.Frame =new CGRect (0, 70, navigation.DrawerWidth, 30);
 	usernameLabel.Text="James Pollock";
 	usernameLabel.TextColor = UIColor.White;
 	usernameLabel.TextAlignment = UITextAlignment.Center;
-	LinearLayout headerLayout = new LinearLayout(this);
-	headerLayout.Orientation=LinearLayout.VERTICAL;
-	headerLayout.BackgroundColor=UIColor.parseColor("#1aa1d6");
-	headerLayout.Gravity(Gravity.CENTER);
-	headerLayout.AddSubview(userImg);
-	headerLayout.AddSubview(userName);
-	navigationDrawer.DrawerHeaderView.Add(headerLayout);
+	UIView headerLayout = new UIView();
+	headerLayout.AddSubview(userImgLabel);
+	headerLayout.AddSubview(usernameLabel);
+	navigation.DrawerHeaderHeight=100;
+	navigation.DrawerHeaderView =headerLayout;
+	this.AddSubview(navigation);
  
 {% endhighlight %}
 
@@ -99,17 +149,17 @@ Similar to drawer header view, the `DrawerFooterView` property can be used to se
 
 {% highlight c# %}
 
+SFNavigationDrawer navigation = new SFNavigationDrawer();
 	UILabel usernameLabel = new UILabel ();
-	usernameLabel.Frame =new CGRect (0, 70, sideMenuController.DrawerWidth, 30);
+	usernameLabel.Frame =new CGRect (0, 70, navigation.DrawerWidth, 30);
 	usernameLabel.Text="James Pollock";
 	usernameLabel.TextColor = UIColor.White;
 	usernameLabel.TextAlignment = UITextAlignment.Center;
-	LinearLayout footerLayout = new LinearLayout(); 
-	footerLayout.Orientation=LinearLayout.VERTICAL; 
- 	footerLayout.BackgroundColor=UIColor._parseColor_("#1aa1d6"); 
-	footerLayout.Gravity(Gravity._Top_);
-	footerLayout.AddSubview(userName);
-	navigationDrawer.DrawerFooterView.Add(footerLayout);
+	UIView footerLayout = new UIView(); 
+	footerLayout.AddSubview(usernameLabel);
+	navigation.DrawerFooterHeight=100;
+	navigation.DrawerFooterView =footerLayout;
+	this.AddSubview(navigation);
 
 {% endhighlight %}
 
@@ -125,8 +175,8 @@ Gets or sets the height and width of the DrawerView panel in the NavigationDrawe
 
 {% highlight c# %}
 
-	navigationDrawer.DrawerHeight=300;
-    navigationDrawer.DrawerWidth=300;
+	navigation.DrawerHeight=300;
+    navigation.DrawerWidth=300;
 
 {% endhighlight %}
 

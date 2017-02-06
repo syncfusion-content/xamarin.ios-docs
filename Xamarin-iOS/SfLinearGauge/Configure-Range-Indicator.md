@@ -20,7 +20,7 @@ symbolRange.EndValue = 50;
 symbolRange.Color = UIColor.FromRGB (234, 248, 249);
 symbolRange.StartWidth = 10;
 symbolRange.EndWidth = 10;
-symbolRange.Offset =  nfloat.Parse("-0.17"); ;
+symbolRange.Offset =  nfloat.Parse("-0.17");
 scale.Ranges.Add (symbolRange);
 //Range
 SFLinearRange pointerRange = new SFLinearRange ();
@@ -29,7 +29,7 @@ pointerRange.EndValue = 100;
 pointerRange.Color = UIColor.FromRGB (50, 184, 198);
 pointerRange.StartWidth = 10;
 pointerRange.EndWidth = 10; 
-pointerRange.Offset =  nfloat.Parse("-0.17"); ;                       
+pointerRange.Offset =  nfloat.Parse("-0.17");                      
 scale.Ranges.Add (pointerRange); 
 	
 {% endhighlight %}
