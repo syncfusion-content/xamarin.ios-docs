@@ -76,8 +76,6 @@ You can also add an object in the appointment view using `view` property passed 
 
 ![](ViewCustomization_images/AppointmentStyle_iOS.png)
 
-![](Appearance/appointCust.png)
-
 ## MonthCell Customization
 
 Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. Month view cell contains the date along with its appointments if available. 
@@ -201,4 +199,4 @@ Also custom view can be passed using the `SelectionView` in Schedule.
 
 {% endhighlight %}
 
-![](Appearance/Selection_iOS.png)
+![](ViewCustomization_images/Selection_iOS.png)

@@ -402,8 +402,8 @@ You can change the time interval and time interval height using `TimeInterval` a
 
 {% highlight c# %}
 
-	sfSchedule.TimeInterval = 5;
-	sfSchedule.TimeIntervalHeight = 10;
+	sfSchedule.TimeInterval = 120;
+	sfSchedule.TimeIntervalHeight = 100;
 
 {% endhighlight %}
 
