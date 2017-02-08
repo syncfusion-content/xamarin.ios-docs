@@ -79,4 +79,4 @@ The RRule is assigned to the created ScheduleAppointment as given below.
 
 {% endhighlight %}
 
-![](Recurrence_images/Recurrence_img1.jpeg)
+![](Recurrence_images/Recurrence_iOS.png)

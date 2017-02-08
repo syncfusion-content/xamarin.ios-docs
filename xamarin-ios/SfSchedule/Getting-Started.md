@@ -38,8 +38,6 @@ Initialize `SfSchedule` instance in viewDidLoad method and then add the schedule
 
 {% endhighlight %}
 
-![](GettingStarted_images/GettingStarted_img1.jpeg)
-
 You can change the default UI of schedule using `ScheduleView` to display the dates in different layouts available in the control.
 
 {% highlight c# %}
@@ -50,8 +48,6 @@ You can change the default UI of schedule using `ScheduleView` to display the da
     this.control = this;
 
 {% endhighlight %}
-
-![](GettingStarted_images/GettingStarted_img2.jpeg)
 
 ## Populating Events
 
@@ -194,4 +190,4 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 
 {% endhighlight %}
 
-![](GettingStarted_images/GettingStarted_img3.jpeg)
+![](GettingStarted_images/GettingStarted_iOS.jpeg)

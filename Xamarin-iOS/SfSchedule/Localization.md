@@ -21,7 +21,7 @@ Schedule control is available with complete localization support . Localization 
 
 {% endhighlight %}
 
-![](LocalizationGlobalization_images/LocalizationGlobalization1.jpeg)
+![](LocalizationGlobalization_images/Locale_iOS.png)
 
 ## Schedule Custom String Localization
 

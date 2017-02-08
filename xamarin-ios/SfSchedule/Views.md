@@ -21,8 +21,6 @@ Day view is used to display a single day; current day will be visible by default
 
 {% endhighlight %}
 
-![](Views_images/Views_img1.jpeg)
-
 ### Settings
 
 #### Date Time Formating
@@ -45,28 +43,6 @@ You can differentiate the timeslot panel using `VerticaTimeSlotBorderColor` prop
     labelSettings.TimeLabelFormat =(NSString) "hh a";
 
     dayViewSettings.LabelSettings= labelSettings;
-    schedule.DayViewSettings = dayViewSettings;
-
-    View.AddSubview(schedule);
-
-{% endhighlight %}
-
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-{% highlight c# %}
-
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
-
-    DayViewSettings dayViewSettings = new DayViewSettings ();
-    //Non-AccessbleBlocks
-    NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
-    lunch_hour.StartHour = 13;
-    lunch_hour.EndHour = 14;
-    lunch_hour.Text = (NSString)"LUNCH";
-    dayViewSettings.NonAccessibleBlockCollection.Add (lunch_hour);
     schedule.DayViewSettings = dayViewSettings;
 
     View.AddSubview(schedule);
@@ -113,8 +89,7 @@ Also you can change the all day appointment panel color using the property `AllD
 
 {% endhighlight %}
 
-![](Views_images/Views_img2.jpeg)
-
+![](Views_images/DayView_iOS.png)
 
 ## Week View
 
@@ -125,8 +100,6 @@ To view all the seven days of a particular week, by default if will be current w
     schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
 
 {% endhighlight %}
-
-![](Views_images/Views_img3.jpeg)
 
 ### Settings
 
@@ -151,28 +124,6 @@ Also you can differentiate the timeslot panel using `VerticaTimeSlotBorderColor`
     weekSettings.LabelSettings= labelSettings;
     schedule.WeekViewSettings = weekSettings;
     
-    View.AddSubview(schedule);
-
-{% endhighlight %}
-
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-{% highlight c# %}
-
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
-    WeekViewSettings weekSettings = new WeekViewSettings ();
-   
-    //Non-AccessibleBlocks
-    NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
-    lunch_hour.StartHour = 13;
-    lunch_hour.EndHour = 14;
-    lunch_hour.Text = (NSString)"LUNCH";
-    weekSettings.NonAccessibleBlockCollection.Add (lunch_hour);
-
-    schedule.WeekViewSettings = weekSettings;
     View.AddSubview(schedule);
 
 {% endhighlight %}
@@ -210,7 +161,7 @@ You can view All day appointments in separate panel and the panels visibility ca
 
 {% endhighlight %}
 
-![](Views_images/Views_img4.jpeg)
+![](Views_images/WeekView_iOS.png)
 
 ## Work Week View
 
@@ -222,15 +173,13 @@ To view working days of a particular week, by default current work week will be 
 
 {% endhighlight %}
 
-![](Views_images/Views_img5.jpeg)
-
 ### Settings
 
 #### Date Time Formating
 
 You can format the date and time string in the schedule control using `WorkWeekLabelSettings` of  `WorkWeekViewSettings` and the size of those strings are also customizable.
 
-Also you can differentiate the timeslot panel using `VerticaTimeSlotBorderColor` properties of `WorkWeekViewSettings`.To know more about customization of time slot panel panel refer [Timeslots Customization](/xamarin-ios/sfschedule/appearance-and-styling "Timeslots Customization")
+Also you can differentiate the timeslot panel using `VerticaTimeSlotBorderColor` properties of `WorkWeekViewSettings`.To know more about customization of time slot panel refer [Timeslots Customization](/xamarin-ios/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -245,26 +194,6 @@ Also you can differentiate the timeslot panel using `VerticaTimeSlotBorderColor`
     labelSettings.DayLabelFormat = (NSString)"eee";
     labelSettings.TimeLabelFormat =(NSString) "hh a";
     workWeekSettings.LabelSettings= labelSettings;
-    schedule.WorkWeekViewSettings = workWeekSettings;
-    View.AddSubview(schedule);
-
-{% endhighlight %}
-
-#### Non-Accessible Blocks
-
-You can restrict/allocate certain timeslot as Non-accessible block using `NonAccessibleBlocks` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
-
-{% highlight c# %}
-
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
-    WorkWeekViewSettings workWeekSettings = new WorkWeekViewSettings ();
-    //Non-AccessbleBlocks
-    NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
-    lunch_hour.StartHour = 13;
-    lunch_hour.EndHour = 14;
-    lunch_hour.Text = (NSString)"LUNCH";
-    workWeekSettings.NonAccessibleBlockCollection.Add (lunch_hour);
     schedule.WorkWeekViewSettings = workWeekSettings;
     View.AddSubview(schedule);
 
@@ -305,13 +234,11 @@ Also you can change the all day appointment panel color using the property `AllD
 
 {% endhighlight %}
 
-![](Views_images/Views_img6.jpeg)
-
 ### Non-Working Days
 
 By using this non working days support, you can set the Schedule WeekView as only with Working days. You can hide the non working days using `NonWorkingDays` property in `WorkWeekViewSettings` of `Schedule`.
 
-![](Views_images/Views_img6.jpeg)
+![](Views_images/WorkWeekView_iOS.png)
 
 ## Month View
 
@@ -322,7 +249,6 @@ To view entire dates of a particular month, by default current month will be dis
     schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
 
 {% endhighlight %}
-![](Views_images/Views_img7.jpeg)
 
 ### MonthInlineView
 
@@ -334,8 +260,8 @@ By setting `ShowAppointmentsInline` property in the MonthViewSettings, you enabl
 
 {% highlight c# %}
 
-  SFSchedule schedule= new SFSchedule ();
-  schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+    SFSchedule schedule= new SFSchedule ();
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
 
     //setting Show inline 
     schedule.MonthViewSettings.ShowAppointmentsInline = true;
@@ -394,35 +320,6 @@ You can format the date and time string in the schedule control using `MonthLabe
 
 {% endhighlight %}
 
-#### Blackout dates
-
-You can restrict/allocate certain month cell as blackout days using `BlackoutDates` of `MonthViewSettings`, so that we can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
-
-{% highlight c# %}
-
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
-    
-    NSDate today = new NSDate ();
-    NSCalendar calendar = NSCalendar.CurrentCalendar;
-    // Get the year, month, day from the date
-    NSDateComponents components = calendar.Components (
-    NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-    
-    MonthViewSettings monthViewSettings = new MonthViewSettings ();
-    monthViewSettings.BlackoutDates = new NSMutableArray ();
-    components.Day -= 3;
-    for (int i = 0; i < 3; i++) {
-    NSDate startDate = calendar.DateFromComponents (components);
-    components.Day += 1;
-    monthViewSettings.BlackoutDates.Add (startDate);
-    }
-    
-    schedule.MonthViewSettings = monthViewSettings;
-    View.AddSubview(schedule);
-
-{% endhighlight %}
-
 #### Week number
 
 You display the week number of the year in month view by setting `ShowWeekNumber` property of `MonthViewSettings` are true. By default it is false.
@@ -466,4 +363,4 @@ You can customize the number of appointments to be rendered inside a month view 
     
 {% endhighlight %}
 
-![](Views_images/Views_img8.jpeg)
+![](Views_images/MonthVew_iOS.png)

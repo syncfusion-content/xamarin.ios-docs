@@ -115,6 +115,6 @@ Schedule views are designed as per the native calendar control with some enriche
 
 To know more about customization of all day appointment panel refer [View Customization](/xamarin-ios/sfschedule/appearance-and-styling "View Customization")
 
-
+![](PopulatingAppointments_images/GettingStarted_iOS.png)
 
 
