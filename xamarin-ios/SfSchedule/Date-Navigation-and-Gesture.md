@@ -101,11 +101,9 @@ By default schedule control will be rendered with Sunday as the first day of the
     
 {% endhighlight %}
 
-![](DateNavigationandGesture_images/DateNavigationandGesture_img3.jpeg)
-
 ## VisibleDates event
 
-By using the VisibleDates changed event you can get the VisibleDates DateTime and ScheduleAppointment details in the Schedule. To know more about VisibleDates changed event, please refer the KB (Knowledge Base).
+By using the VisibleDates changed event you can get the VisibleDates DateTime and ScheduleAppointment details in the Schedule.
 
 ## Forward
 
@@ -185,3 +183,4 @@ Using `didSelectDate` event , you can get the details of Schedule cell as well a
 
 Using Schedule Selection Customization support, you can customize the Schedule Selection by the selection style properties as well as custom view. To know more about Selection Customization, please refer [View Customization ](/xamarin-iOS/sfschedule/appearance-and-styling "View Customization")
 
+![](DateNavigationandGesture_images/WeekView_iOS.png)

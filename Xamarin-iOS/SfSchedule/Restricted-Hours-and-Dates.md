@@ -13,7 +13,7 @@ documentation: ug
 
 ### Day View
 
-You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlocks` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlockCollection` of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 {% highlight c# %}
 
@@ -29,14 +29,13 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
     dayViewSettings.NonAccessibleBlockCollection.Add (lunch_hour);
     schedule.DayViewSettings = dayViewSettings;
 
-    this.AddSubview (schedule);
-    this.control = this;
+    View.AddSubview(schedule);
 
 {% endhighlight %}
 
 ### Week View
 
-You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlocks` of `WeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlockCollection` of `WeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 {% highlight c# %}
 
@@ -52,14 +51,13 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
     weekSettings.NonAccessibleBlockCollection.Add (lunch_hour);
 
     schedule.WeekViewSettings = weekSettings;
-    this.AddSubview (schedule);
-    this.control = this;
+    View.AddSubview(schedule);
 
 {% endhighlight %}
 
 ### WorkWeek View
 
-You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlocks` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict/allocate certain timeslot as non-accessible block using `NonAccessibleBlockCollection` of `WorkWeekViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 {% highlight c# %}
 
@@ -77,6 +75,8 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
     this.control = this;
 
 {% endhighlight %}
+
+![](RestrictedHoursandDates_images/WeekView_iOS.png)
 
 ## Blackout Dates
 
@@ -108,4 +108,4 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
 
 {% endhighlight %}
 
-![](Localization_images/Localization_img2.jpeg)
+![](RestrictedHoursandDates_images/BlackOutDates_iOS.png)

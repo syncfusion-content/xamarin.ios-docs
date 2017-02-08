@@ -59,7 +59,7 @@ You can change the backgroundcolor,text style and text size using properties suc
 
 #### Fonts and Colors
 
-You can change the backgroundcolor,text style and text size using properties such as `BackgroundColor`,`DateTextStyle`, `DayTextStyle`, `DayTextColor`, `DateTextColor`,`DateTextSize`, `DayTextSize` of ViewHeader using `ViewHeaderStyle` property in schedule.
+You can change the backgroundcolor,text style and text size using properties such as `BackgroundColor`,`DateTextStyle`, `DayTextStyle`, `DayTextColor`, `DateTextColor`,`DateTextSize`, `DayTextSize` of ViewHeader using `DayHeaderStyle` property in schedule.
 
 {% highlight c# %}
 
@@ -69,7 +69,7 @@ You can change the backgroundcolor,text style and text size using properties suc
 	viewHeaderStyle.DateTextSyle = UIFont.SystemFontOfSize(20, UIFontWeight.Bold);
 	viewHeaderStyle.DayTextColor = UIColor.Blue;
 	viewHeaderStyle.DateTextColor = UIColor.Blue;
-	sfSchedule.ViewHeaderStyle = viewHeaderStyle;
+	sfSchedule.DayHeaderStyle = viewHeaderStyle;
 
 {% endhighlight %}
 
@@ -82,6 +82,8 @@ You can customize the height for the Header in Schedule using `HeaderHeight` in 
 	sfSchedule.ViewHeaderHeight = 30;
 
 {% endhighlight %}
+
+![](AppearanceandStyling_images/Header_iOS.png)
 
 ## Timeslots customization
 
@@ -182,6 +184,8 @@ You can change the all day appointment panel color using the property `AllDayApp
 	View.AddSubview(sfschedule);
 
 {% endhighlight %}
+
+![](AppearanceandStyling_images/NonWorkingHours_Day_iOS.png)
 
 ### Custom Week View
 
@@ -288,6 +292,8 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
+![](AppearanceandStyling_images/NonWorkingHours_Week_iOS.png)
+
 ### Custom Work Week View
 
 #### Non-Working Hours 
@@ -388,6 +394,8 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
+![](AppearanceandStyling_images/NonWorkingHours_WorkWeek_iOS.png)
+
 ### Interval
 
 You can change the time interval and time interval height using `TimeInterval` and `TimeIntervalHeight` in schedule.
@@ -399,4 +407,4 @@ You can change the time interval and time interval height using `TimeInterval` a
 
 {% endhighlight %}
 
-![](AppearanceandStyling_images/AppearanceandStyling_img1.jpeg)
+![](AppearanceandStyling_images/TimeInterval_iOS.png)
