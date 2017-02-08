@@ -15,7 +15,7 @@ Schedule control has an built-in capability to handle the appointment arrangemen
 
 `ScheduleAppointment` has some basic properties such as StartTime, EndTime, Subject and some additional information about the appointment can be added using Color, Notes, Location, All Day, Recursive properties.
 
-Create the collection of the `ScheduleAppointments` by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `Appointment` property of `SfSchedule` as like in below code example.
+Create the collection of the `ScheduleAppointment` by setting required details using above mentioned properties for each appointment. And then assign the created collection to the `Appointment` property of `SfSchedule` as like in below code example.
 
 {% highlight c# %}
 
@@ -107,7 +107,7 @@ To know more about customization of all day appointment panel refer [Recurrence 
 
 ### Appointment Editor
 
-Appointments can be edit using this Appointmenteditor by tapping the Appointment using `ScheduleCellTapped`event and set the required properties of `ScheduleAppointment` for editing, To know more about Appointment Editor please refer the KB (Knowledge Base).
+Appointments can be edit using this Appointmenteditor by tapping the Appointment using `ScheduleCellTapped`event and set the required properties of `ScheduleAppointment` for editing.
 
 ## Appointment Customization
 

@@ -190,4 +190,4 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 
 {% endhighlight %}
 
-![](GettingStarted_images/GettingStarted_iOS.jpeg)
+![](GettingStarted_images/GettingStarted_iOS.png)
