@@ -29,7 +29,7 @@ iOS-unifed\Syncfusion.SfBusyIndicator.iOS.dll
 
 {% highlight c# %}
 
-	using Syncfusion.SFBusyIndicator.iOS;
+	using Syncfusion.SfBusyIndicator.iOS;
 
 {% endhighlight %}
 

@@ -19,6 +19,8 @@ SfLinearGauge provides support to mark the values using BarPointer and SymbolPoi
 
 {% highlight c# %}
 
+    List<LinearPointer> pointers = new List<LinearPointer> ();
+    //BarPointer
     SFBarPointer rangePointer = new SFBarPointer ();
     rangePointer.Value = 50;
     rangePointer.Color = UIColor.FromRGB (206, 69, 69);
@@ -40,8 +42,7 @@ In SymbolPointer, the value is pointed by a symbol on the scale. The Symbol Poin
 
 {% highlight c# %}
 
-	List<LinearPointer> pointers = new List<LinearPointer> ();
-     //SymbolPointer
+    //SymbolPointer
     SFSymbolPointer symbolPointer = new SFSymbolPointer ();
     symbolPointer.Value = 50;
     symbolPointer.Offset = 0.0;

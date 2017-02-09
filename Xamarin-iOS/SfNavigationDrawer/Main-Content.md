@@ -19,32 +19,31 @@ The main display view that displays our various content of the app can be set us
 
 {% highlight c# %}
 
-	UIView background=new UIView(new CGRect(0,50,this.Frame.Width,this.Frame.Height+72));
-	background.BackgroundColor = UIColor.White;
-	setvalue1 (0);
-	this.Add(background);
-	UIImageView userImgLabel=new UIImageView();
-	userImgLabel.Frame =new CGRect ((this.Frame.Width/2)-100, 10, 80, 80);
-	userImgLabel.Image = new UIImage ("Images/User.png");
-	
-	UILabel headerContentLabel = new UILabel ();
-	headerContentLabel.Frame =new CGRect ((bounds.Width/2)-100, 10, 200, 30);
-	headerContentLabel.Text="Home";
-	headerContentLabel.TextColor = UIColor.White;
-	headerContentLabel.TextAlignment = UITextAlignment.Center;
-	this.AddSubview (headerContentLabel);
-	
-	UILabel textBlockLabel1 = new UILabel ();
-	textBlockLabel1.Frame = new CGRect (15, 10, content.Frame.Width-20, 300);
-	textBlockLabel1.Text = "Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.";
-	textBlockLabel1.LineBreakMode = UILineBreakMode.WordWrap;
-	textBlockLabel1.TextAlignment = UITextAlignment.Justified;
-	textBlockLabel1.Lines = 0;
-	textBlockLabel1.Font = UIFont.FromName ("Helvetica", 15f);
-	
-	content.AddSubview (textBlockLabel1);
-	content.Add (userImgLabel);
-	background.Add(content);
+	SFNavigationDrawer navigation = new SFNavigationDrawer();
+			navigation.Frame = new CGRect(0, 0, this.Frame.Width, this.Frame.Height);
+			navigation.DrawerHeaderHeight = 100;
+			navigation.DrawerWidth = 200;
+
+			UIView contentView = new UIView(new CGRect(0, 0, this.Frame.Width, this.Frame.Height));
+
+			UILabel homeLabel = new UILabel();
+			homeLabel.Frame = new CGRect(15, 2, contentView.Frame.Width - 20, 30);
+			homeLabel.Text = "Home";
+			homeLabel.TextColor = UIColor.White;
+			homeLabel.BackgroundColor = UIColor.FromRGB(49, 173, 225);
+			homeLabel.TextAlignment = UITextAlignment.Center;
+			contentView.AddSubview(homeLabel);
+
+			UILabel textBlockLabel1 = new UILabel();
+			textBlockLabel1.Frame = new CGRect(15, 20, contentView.Frame.Width - 10, 300);
+			textBlockLabel1.Text = "Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.";
+			textBlockLabel1.LineBreakMode = UILineBreakMode.WordWrap;
+			textBlockLabel1.TextAlignment = UITextAlignment.Justified;
+			textBlockLabel1.Lines = 0;
+			textBlockLabel1.Font = UIFont.FromName("Helvetica", 15f);
+			contentView.AddSubview(textBlockLabel1);
+
+			navigation.ContentView = contentView;
 	
 {% endhighlight %}
 

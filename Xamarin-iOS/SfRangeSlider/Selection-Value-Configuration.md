@@ -63,7 +63,7 @@ The `StepFrequency` property is used to specify the interval between snap points
 
 {% highlight c# %}
 
-rangeSlider.TickFrequency=4;
+rangeSlider.StepFrequency=4;
 
 {% endhighlight %}
 

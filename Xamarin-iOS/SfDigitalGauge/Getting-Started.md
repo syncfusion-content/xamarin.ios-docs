@@ -29,7 +29,7 @@ iOS-unifed\Syncfusion.SfGauge.iOS.dll
 
 {% highlight C# %}
 
-	using Syncfusion.SfDigitalGauge.iOS; 
+	using Syncfusion.SfGauge.iOS; 
 
 {% endhighlight %}
 
