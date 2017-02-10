@@ -53,7 +53,7 @@ You can change the backgroundcolor,text style and text size using properties suc
 
 ## View Header Customization
 
-	You can customize the view header of the Schedule using `ViewHeaderStyle` and `ViewHeaderHeight` property in schedule.
+	You can customize the `ViewHeader` of the Schedule using `ViewHeaderStyle` and `ViewHeaderHeight` property in schedule.
 
 ### Labels
 
