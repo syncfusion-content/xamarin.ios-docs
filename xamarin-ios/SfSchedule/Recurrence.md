@@ -58,7 +58,7 @@ Recursive appointment can be created in any recurrence patterns, for instance, s
     appointment.EndTime = endDate;
     components.Day = components.Day + 1;
     endDateComponents.Day = endDateComponents.Day + 1;
-    appointment.Subject = (NSString)"Client Meeting";
+    appointment.Subject = (NSString)"Occurs every alternate day";
     appointment.AppointmentBackground = UIColor.Red;
     
 {% endhighlight %}
@@ -74,9 +74,8 @@ The RRule is assigned to the created ScheduleAppointment as given below.
     appCollection.Add (appointment);
     schedule.Appointments = appCollection;
 
-    this.AddSubview (schedule);
-    this.control = this;
+    View.AddSubview(schedule);
 
 {% endhighlight %}
 
-![](Recurrence_images/Recurrence_iOS.png)
+![](Recurrence_images/Recurrence.png)

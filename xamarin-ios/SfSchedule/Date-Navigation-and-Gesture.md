@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date Navigation and Gestures in Schedule
+title: Dates, Navigations and Gestures in Schedule
 description: How to Navigate date, enable or disable navigation and other functionalities of Schedule control.
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---
 
-# Date Navigation and Gesture
+# Dates, Navigations and Gestures
 
 ## Mininum Display date. 
 
@@ -45,8 +45,7 @@ So that beyond the min date range, it will restrict date navigations features of
 
     schedule.MinDisplayDate = minDate;
 
-    this.AddSubview (schedule);
-    this.control = this;
+    View.AddSubview(schedule);
 
 {% endhighlight %}
 
@@ -85,14 +84,13 @@ So that beyond the max date range, it will restrict date navigations features of
   
     schedule.MaxDisplayDate = maxDate;
 
-    this.AddSubview (schedule);
-    this.control = this;
+    View.AddSubview(schedule);
 
 {% endhighlight %}
 
 ## FirstDay of the Week
 
-By default schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by `FirstDayOfWeek` property of `SfSchedule`.
+By default schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by `FirstWeekDay` property of `SfSchedule`.
 
 {% highlight c# %}
 
@@ -100,6 +98,8 @@ By default schedule control will be rendered with Sunday as the first day of the
     schedule.Calendar.FirstWeekDay =3;
     
 {% endhighlight %}
+
+![](DateNavigationandGesture_images/FirstDay.png)
 
 ## VisibleDates event
 
@@ -181,6 +181,6 @@ Using `didSelectDate` event , you can get the details of Schedule cell as well a
 
 ##	Selection Customization
 
-Using Schedule Selection Customization support, you can customize the Schedule Selection by the selection style properties as well as custom view. To know more about Selection Customization, please refer [View Customization ](/xamarin-iOS/sfschedule/appearance-and-styling "View Customization")
+Using Schedule Selection Customization support, you can customize the Schedule Selection by the selection style properties as well as custom view. To know more about Selection Customization, please refer [View Customization ](/xamarin-iOS/sfschedule/view-customization "View Customization")
 
 ![](DateNavigationandGesture_images/WeekView_iOS.png)

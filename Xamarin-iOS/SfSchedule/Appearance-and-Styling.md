@@ -53,7 +53,7 @@ You can change the backgroundcolor,text style and text size using properties suc
 
 ## View Header Customization
 
-	You can customize the header of the Schedule using `ViewHeaderStyle` and `ViewHeaderHeight` property in schedule.
+	You can customize the view header of the Schedule using `ViewHeaderStyle` and `ViewHeaderHeight` property in schedule.
 
 ### Labels
 
@@ -75,7 +75,7 @@ You can change the backgroundcolor,text style and text size using properties suc
 
 ### ViewHeader Height
 
-You can customize the height for the Header in Schedule using `HeaderHeight` in schedule.
+You can customize the height for the `ViewHeader` in Schedule using `ViewHeaderHeight ` in schedule.
 
 {% highlight c# %}
 
@@ -96,7 +96,7 @@ You can differentiate working hours with non-working hour timeslots by its color
 {% highlight c# %}
 
 	//creating new instance for schedule
-	sfschedule = new SfSchedule(this);
+	SFSchedule sfSchedule = new SFSchedule();
 
 	//setting schedule view
 	sfSchedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
@@ -185,7 +185,7 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
-![](AppearanceandStyling_images/NonWorkingHours_Day_iOS.png)
+![](AppearanceandStyling_images/DayNonWorking.png)
 
 ### Custom Week View
 
@@ -206,7 +206,6 @@ You can differentiate working hours with non-working hour timeslots by its color
 	sfSchedule.WeekViewSettings = weekViewSettings;
 
 	View.AddSubview(sfSchedule);
-	SetContentView(sfschedule);
 
 {% endhighlight %}
 
@@ -255,7 +254,7 @@ You can change the format , colors, size, style of text using `DateFormat` and `
 {% highlight c# %}
 
 	SFSchedule sfSchedule = new SFSchedule();
-	sfSchedule.ScheduleView = SFScheduleViewWeek;
+	sfSchedule.ScheduleView =SFScheduleView.SFScheduleViewWeek;
 
 	WeekViewSettings weekViewSettings = new WeekViewSettings();
 	WeekLabelSettings labelSettings = new WeekLabelSettings();
@@ -292,7 +291,7 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
-![](AppearanceandStyling_images/NonWorkingHours_Week_iOS.png)
+![](AppearanceandStyling_images/WeekNonworking.png)
 
 ### Custom Work Week View
 
@@ -329,6 +328,7 @@ You can also differentiate working hours with non-working hour timeslots by its 
 	workWeekViewSettings.TimeSlotColor = UIColor.LightGray;
 	workWeekViewSettings.TimeSlotBorderColor = UIColor.Blue;
 	sfSchedule.WorkWeekViewSettings = workWeekViewSettings;
+    View.AddSubview(sfSchedule)
 
 {% endhighlight %}
 
@@ -394,7 +394,7 @@ You can change the all day appointment panel color using the property `AllDayApp
 
 {% endhighlight %}
 
-![](AppearanceandStyling_images/NonWorkingHours_WorkWeek_iOS.png)
+![](AppearanceandStyling_images/WorkWeeknonworking.png)
 
 ### Interval
 
@@ -406,5 +406,7 @@ You can change the time interval and time interval height using `TimeInterval` a
 	sfSchedule.TimeIntervalHeight = 100;
 
 {% endhighlight %}
+
+>**NOTE** : `TimeInterval` value should be given in minutes.
 
 ![](AppearanceandStyling_images/TimeInterval_iOS.png)
