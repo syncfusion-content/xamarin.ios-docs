@@ -21,17 +21,7 @@ Schedule control is available with complete localization support . Localization 
 
 {% endhighlight %}
 
-![](LocalizationGlobalization_images/Locale_iOS.png)
-
-## Schedule Custom String Localization
-
-Schedule has a built-in support for localizing the Custom Strings in it by specifying the corresponding string’s key and value in the `Localizable.strings` in the application.
-
-### AllDay and No events Text
-For an example in schedule there is a string `No Events` in Schedule Month View Inline. To localize the string, specify the key (“No Events”) and assign the corresponding localized string to it in `Localizable.strings` file. 
-
-### Appointment Localization
-Schedule search for the key in corresponding language `Localizable.strings` file and displays the corresponding string in the schedule.
-
 >**NOTE**: AM/PM in the timeline will not be localized in the Schedule views.
+
+![](LocalizationGlobalization_images/Localization.png)
 

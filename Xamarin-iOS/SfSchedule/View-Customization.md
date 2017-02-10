@@ -191,10 +191,9 @@ Also custom view can be passed using the `SelectionView` in Schedule.
 {% highlight C# %}
 
 	UIButton button = new UIButton();
-	button.Text = "+ New event";
-	button.SetTextColor(Color.White);
-	button.Gravity = GravityFlags.Left;
-	button.SetBackgroundColor(Color.ForestGreen);
+    button.SetTitle( "+ New event",UIControlState.Normal);
+    button.SetTitleColor(UIColor.White,UIControlState.Normal);
+    button.BackgroundColor = UIColor.FromRGB(0, 128, 0);
 	sfSchedule.SelectionView = button;
 
 {% endhighlight %}

@@ -71,8 +71,7 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
     lunch_hour.Text = (NSString)"LUNCH";
     workWeekSettings.NonAccessibleBlockCollection.Add (lunch_hour);
     schedule.WorkWeekViewSettings = workWeekSettings;
-    this.AddSubview (schedule);
-    this.control = this;
+    View.AddSubview(schedule);
 
 {% endhighlight %}
 
@@ -103,8 +102,7 @@ You can restrict/allocate certain month cell as blackout days using `BlackoutDat
     }
     
     schedule.MonthViewSettings = monthViewSettings;
-    this.AddSubview (schedule);
-    this.control = this;
+    View.AddSubview(schedule);
 
 {% endhighlight %}
 

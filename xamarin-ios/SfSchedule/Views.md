@@ -27,7 +27,7 @@ Day view is used to display a single day; current day will be visible by default
 
 You can format the date and time string in the schedule control using `DayLabelSettings` of `DayViewSettings` and the size of those strings are also customizable.
 
-You can differentiate the timeslot panel using `VerticaTimeSlotBorderColor` properties of `DayViewSettings`.To know more about customization of time slot panel refer [Panel Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Panel Customization")
+You can differentiate the timeslot panel using `VerticaTimeSlotBorderColor` properties of `DayViewSettings`.To know more about customization of time slot panel refer [Timeslots Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -53,7 +53,7 @@ You can differentiate the timeslot panel using `VerticaTimeSlotBorderColor` prop
 
 You can differentiate working hours with non-working hour timeslots by its color using `WorkStartHour` and `WorkEndHour` properties of `DayViewSettings`.
 
-You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHourTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `DayViewSettings`.To know more about customization of working hours refer [Panel Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Panel Customization")
+You can also differentiate working hours with non-working hour timeslots by its color using `NonWorkingHoursTimeSlotBorderColor`, `NonWorkingHourTimeSlotColor`, `TimeSlotColor`,`TimeSlotBorderColor` and `TimeSlotBorderStrokeWidth` properties of `DayViewSettings`.To know more about customization of working hours refer [Timeslots Customization](/xamarin-ios/sfschedule/Appearance-and-Styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -83,7 +83,7 @@ Also you can change the all day appointment panel color using the property `AllD
 
     DayViewSettings dayViewSettings = new DayViewSettings ();
     dayViewSettings.ShowAllDay = true;
-    schedule.DayViewSettings = daySettings;
+    schedule.DayViewSettings = dayViewSettings;
 
    View.AddSubview(schedule);
 
@@ -149,6 +149,8 @@ You can also differentiate working hours with non-working hour timeslots by its 
 #### All Day Appointments Color
 
 You can view All day appointments in separate panel and the panels visibility can be enabled by setting `ShowAllDay` property of `WeekViewSettings` as true.
+
+Also you can change the all day appointment panel color using the property `AllDayAppointmentBackgroundColor`.To know more about customization of All day appointment panel refer [Timeslots Customization](/xamarin-ios/sfschedule/appearance-and-styling "Timeslots Customization")
 
 {% highlight c# %}
 
@@ -228,7 +230,7 @@ Also you can change the all day appointment panel color using the property `AllD
     SFSchedule schedule= new SFSchedule ();
     schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
     WorkWeekViewSettings workWeekSettings = new WorkWeekViewSettings ();
-    weekSettings.ShowAllDay = true;
+    workWeekSettings.ShowAllDay = true;
     schedule.WorkWeekViewSettings = workWeekSettings;
     View.AddSubview(schedule);
 
@@ -274,7 +276,7 @@ Using the Inline View Customization support you can customize the Schedule month
 
 #### Inline Appointment Customization
 
-Using the Inline Appointment Customization support you can customize the Schedule month Inline view Appointments by properties as well as CustomView. To know more about Inline appointment customization of Month cell refer [View Customization](/xamarin-ios/sfschedule/appearance-and-styling "View Customization").
+Using the Inline Appointment Customization support you can customize the Schedule month Inline view Appointments by properties as well as CustomView. To know more about Inline appointment customization of Month cell refer [View Customization](/xamarin-ios/sfschedule/view-customization "View Customization").
 
 #### InlineAppointmentTapped Event
 Using the  `InlineAppointmentTapped` Event you can get the details of appointments in inline using `InlineAppointmentTapped` event in `Schedule`. Details of the selected  appointment and the corresponding date is passed through `InlineAppointmentTappedEventArgs` as `selectedAppointment` and `selectedDate` respectively. To know more about Inline view customization of Month cell refer [View Customization](/xamarin-ios/sfschedule/view-customization "View Customization").
@@ -287,7 +289,7 @@ Using the  `InlineAppointmentTapped` Event you can get the details of appointmen
 
 	MonthViewSettings monthViewSettings = new MonthViewSettings();
 	//To navigate vertically
-	monthViewSettings.MonthNavigationDirection =  MonthNavigationDirections.Vertical;
+	monthViewSettings.MonthNavigationDirection =  SFMonthNavigationDirections.Vertical;
 	sfschedule.MonthViewSettings = monthViewSettings;
 
 {% endhighlight %}
@@ -348,19 +350,6 @@ You can customize the number of appointments to be rendered inside a month view 
     schedule.MonthViewSettings = monthViewSettings;
 	View.AddSubview(schedule);
 
-{% endhighlight %}
-
-#### Month Navigation Direction
-
-`MonthView` of Schedule can be navigated horizontally and vertically.You can change the direction of navigation through `MonthNavigationDirection` property of `MonthViewSettings`.By default MonthNavigation value is `Horizontal`
-
-{% highlight C# %}
-
-    MonthViewSettings monthViewSettings = new MonthViewSettings();
-    //To navigate vertically
-    monthViewSettings.MonthNavigationDirection =  SFMonthNavigationDirections.Vertical;
-    sfschedule.MonthViewSettings = monthViewSettings;
-    
 {% endhighlight %}
 
 ![](Views_images/MonthVew_iOS.png)
