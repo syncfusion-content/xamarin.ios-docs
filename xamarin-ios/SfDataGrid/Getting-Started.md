@@ -114,10 +114,10 @@ Run the application to render the following output.
 
 ![](SfDataGrid_images/SfDataGridWithoutTopPadding.png)
 
-The [Frame.ios](https://developer.xamarin.com/api/property/UIKit.UIView.Frame/) is used to layout the View in Xamarin.iOS. In the previous output, SfDataGrid header is hides behind the views title bar. To display the SfDataGrid header, layout the view accordingly. 
-In the below code example, SfDataGrid header is vissible by set the Top padding to 30.
+The [Frame](https://developer.xamarin.com/api/property/UIKit.UIView.Frame/) is used to arrange a view in Xamarin.iOS. By default a view in Xamarin.iOS will be arranged without any padding from the title bar. Hence the content of the arranged view will overlap with the title bar if the top position of its `Frame` is set as `0`. 
 
-{% highlight c# %}
+To overcome the above problem, the top position of the view's `Frame` has to be customized accordingly to position the view below the title bar in iOS. Refer the below code example in which the top position of the SfDataGrid's `Frame` is set to 30 to overcome the problem.
+
 public override void ViewDidLoad ()
 {
       base.ViewDidLoad ();
