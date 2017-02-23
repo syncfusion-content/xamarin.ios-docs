@@ -126,7 +126,7 @@ public override void ViewDidLoad ()
  }
  {% endhighlight %}
 
- Run the application to render the following output. 
+ Run the application with the above code to render the following output. 
 
 ![](SfDataGrid_images/SfDataGridWithTopPadding.png)
 
