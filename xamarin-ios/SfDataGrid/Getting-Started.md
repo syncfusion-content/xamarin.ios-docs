@@ -104,11 +104,31 @@ public partial class GettingStartedViewController : UIViewController
     public override void ViewDidLoad ()
     {
         base.ViewDidLoad ();
-        dataGrid.Frame = new CGRect (0, 30, View.Frame.Width, View.Frame.Height);
+        dataGrid.Frame = new CGRect (0, 0, View.Frame.Width, View.Frame.Height);
         View.AddSubview (dataGrid);
     }
 }
 {% endhighlight %}
+
+Run the application to render the following output. 
+
+![](SfDataGrid_images/SfDataGridWithoutTopPadding.png)
+
+The [Frame.ios](https://developer.xamarin.com/api/property/UIKit.UIView.Frame/) is used to layout the View in Xamarin.iOS. In the previous output, SfDataGrid header is hides behind the views title bar. To display the SfDataGrid header, layout the view accordingly. 
+In the below code example, SfDataGrid header is vissible by set the Top padding to 30.
+
+{% highlight c# %}
+public override void ViewDidLoad ()
+{
+      base.ViewDidLoad ();
+      dataGrid.Frame = new CGRect (0, 30, View.Frame.Width, View.Frame.Height);
+      View.AddSubview (dataGrid);
+ }
+ {% endhighlight %}
+
+ Run the application to render the following output. 
+
+![](SfDataGrid_images/SfDataGridWithTopPadding.png)
 
 ## Create DataModel for the SfDataGrid
 
