@@ -118,13 +118,16 @@ The [Frame](https://developer.xamarin.com/api/property/UIKit.UIView.Frame/) is u
 
 To overcome the above problem, the top position of the view's `Frame` has to be customized accordingly to position the view below the title bar in iOS. Refer the below code example in which the top position of the SfDataGrid's `Frame` is set to 30 to overcome the problem.
 
+{% highlight c# %}
+
 public override void ViewDidLoad ()
 {
       base.ViewDidLoad ();
       dataGrid.Frame = new CGRect (0, 30, View.Frame.Width, View.Frame.Height);
       View.AddSubview (dataGrid);
  }
- {% endhighlight %}
+ 
+{% endhighlight %}
 
  Run the application with the above code to render the following output. 
 
