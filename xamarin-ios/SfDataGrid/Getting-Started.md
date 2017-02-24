@@ -104,35 +104,7 @@ public partial class GettingStartedViewController : UIViewController
     public override void ViewDidLoad ()
     {
         base.ViewDidLoad ();
-        dataGrid.Frame = new CGRect (0, 0, View.Frame.Width, View.Frame.Height);
-        View.AddSubview (dataGrid);
-    }
-}
-{% endhighlight %}
-
-Run the application to render the following output. 
-
-![](SfDataGrid_images/SfDataGridWithoutTopPadding.png)
-
-The [Frame](https://developer.xamarin.com/api/property/UIKit.UIView.Frame/) is used to arrange a view in Xamarin.iOS. By default a view in Xamarin.iOS will be arranged without any padding from the title bar. Hence the content of the arranged view will overlap with the title bar if the top position of its `Frame` is set as `0`. 
-
-To overcome the above problem, the top position of the view's `Frame` has to be customized accordingly to position the view below the title bar in iOS. Refer the below code example in which the top position of the SfDataGrid's `Frame` is set to 30 to overcome the problem.
-
-{% highlight c# %}
-
-public override void ViewDidLoad ()
-{
-      base.ViewDidLoad ();
-      dataGrid.Frame = new CGRect (0, 30, View.Frame.Width, View.Frame.Height);
-      View.AddSubview (dataGrid);
- }
- 
-{% endhighlight %}
-
- Run the application with the above code to render the following output. 
-
-![](SfDataGrid_images/SfDataGridWithTopPadding.png)
-
+        
 ## Create DataModel for the SfDataGrid
 
 SfDataGrid is a data-bound control. Hence you must create a data model to bind it to the control. 
