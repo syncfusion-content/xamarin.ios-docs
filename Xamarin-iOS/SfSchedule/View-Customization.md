@@ -27,9 +27,9 @@ Schedule Appointment can be customized in two ways,
 {% highlight C# %}
 
 	SFAppointmentStyle appointmentStyle = new SFAppointmentStyle();
-	appointmentStyle.TextColor = UIColor.Red;
+	appointmentStyle.TextColor = UIColor.White;
 	appointmentStyle.TextStyle = UIFont.SystemFontOfSize(15, UIFontWeight.Bold);
-	appointmentStyle.BorderColor = UIColor.Blue;
+	appointmentStyle.BorderColor = UIColor.White;
 	appointmentStyle.BorderCornerRadius = 12;
 	appointmentStyle.BorderWidth = 10;
 	appointmentStyle.SelectionBorderColor = UIColor.Yellow;
@@ -48,12 +48,12 @@ ScheduleAppointment can be customized using the `appointmentStyle` property as f
 
 		public override void didAppointmentLoaded(SFAppointmentLoaded appointmentLoaded)
 		{
-			appointmentLoaded.AppointmentStyle.BorderColor = UIColor.Blue;
+			appointmentLoaded.AppointmentStyle.BorderColor = UIColor.White;
 			appointmentLoaded.AppointmentStyle.BorderCornerRadius = 5;
 			appointmentLoaded.AppointmentStyle.BorderWidth = 10;
-			appointmentLoaded.AppointmentStyle.SelectionBorderColor = UIColor.Blue;
+			appointmentLoaded.AppointmentStyle.SelectionBorderColor = UIColor.Yellow;
 			appointmentLoaded.AppointmentStyle.SelectionTextColor = UIColor.Yellow;
-			appointmentLoaded.AppointmentStyle.TextColor = UIColor.Brown;
+			appointmentLoaded.AppointmentStyle.TextColor = UIColor.White;
 			appointmentLoaded.AppointmentStyle.TextStyle = UIFont.SystemFontOfSize(15, UIFontWeight.Bold);
 		}
 
@@ -109,12 +109,28 @@ Month cells can be customized using the `CellStyle` property as follows,
 
 {% highlight C# %}
 
-	public override void didMonthcellLoaded(SFMonthCellLoaded monthCellLoaded)
-	{
-		monthCellLoaded.CellStyle.BackgroundColor = UIColor.Gray;
-		monthCellLoaded.CellStyle.TextColor = UIColor.Blue;
-		monthCellLoaded.CellStyle.TextStyle = UIFont.SystemFontOfSize(15, UIFontWeight.Bold);
-	}
+    public override void didMonthcellLoaded(SFMonthCellLoaded monthCellLoaded)
+    {
+    if (monthCellLoaded.IsToday)
+    {
+        monthCellLoaded.CellStyle.BackgroundColor = UIColor.FromRGB(23, 132, 243);
+        monthCellLoaded.CellStyle.TextColor = UIColor.White;
+        monthCellLoaded.CellStyle.TextStyle = UIFont.SystemFontOfSize(15, UIFontWeight.Bold);
+    }
+    if (monthCellLoaded.IsNextMonthDate)
+    {
+        monthCellLoaded.CellStyle.BackgroundColor = UIColor.FromRGB(251, 211, 201);
+        monthCellLoaded.CellStyle.TextColor = UIColor.White;
+        monthCellLoaded.CellStyle.TextStyle = UIFont.SystemFontOfSize(15, UIFontWeight.Bold);
+    }
+    if (monthCellLoaded.IsPreviousMonthDate)
+    {
+        monthCellLoaded.CellStyle.BackgroundColor = UIColor.FromRGB(251, 211, 201);
+        monthCellLoaded.CellStyle.TextColor = UIColor.White;
+        monthCellLoaded.CellStyle.TextStyle = UIFont.SystemFontOfSize(15, UIFontWeight.Bold);
+    }
+
+    }
 
 {% endhighlight %}
 

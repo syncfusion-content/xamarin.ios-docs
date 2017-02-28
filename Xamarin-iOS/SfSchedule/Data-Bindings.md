@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding Appointments in Schedule using Collections and DataSource.
+title: Binding Appointments in Schedule using Collections.
 description: How to bind an appointment of Schedule control.
 platform: xamarin.iOS
 control: SfSchedule

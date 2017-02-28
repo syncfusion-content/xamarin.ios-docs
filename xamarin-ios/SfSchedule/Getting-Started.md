@@ -24,12 +24,15 @@ N> Assemblies are available in unzipped package location in Mac.
 
 ## Initializing Schedule
 
-Initialize `SfSchedule` instance in viewDidLoad method and then add the schedule as a sub view of  self view.
+Initialize `SfSchedule` instance in ViewDidLoad method and then add the schedule as a sub view of  self view.
 
 {% highlight c# %}
 
-    public ScheduleViews ()
+    public override void ViewDidLoad()
     {
+		base.ViewDidLoad();
+		
+		//Initialize Schedule control
         SFSchedule meetingRoomScheduler = new SFSchedule();
         meetingRoomScheduler.ScheduleView = SFScheduleView.SFScheduleViewWeek;
         View.AddSubview(meetingRoomScheduler);
@@ -54,13 +57,8 @@ You can add events to the schedule by creating collection of `ScheduleAppointmen
 
 {% highlight c# %}
 
-    public ScheduleViews ()
-    {
-        SFSchedule meetingRoomScheduler = new SFSchedule();
-        meetingRoomScheduler.ScheduleView = SFScheduleView.SFScheduleViewWeek;
-        meetingRoomScheduler.Appointments = CreateAppointments();
-        View.AddSubview(meetingRoomScheduler);
-    }
+    meetingRoomScheduler.Appointments = CreateAppointments();
+    View.AddSubview(meetingRoomScheduler);
     
     NSMutableArray CreateAppointments()
     {
@@ -69,13 +67,13 @@ You can add events to the schedule by creating collection of `ScheduleAppointmen
         NSMutableArray appCollection = new NSMutableArray();
         NSCalendar calendar = NSCalendar.CurrentCalendar;
 
-        NSDateComponents DateFrom = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);			
+        NSDateComponents DateFrom = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
         DateFrom.Day -= 10;
         NSDate dateFrom = calendar.DateFromComponents(DateFrom);
 
         NSDateComponents DateTo = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
         DateTo.Day += 10;
-
+    
         NSDateComponents DateRangeStart = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
         DateRangeStart.Day -= 3;
         NSDate dateRangeStart = calendar.DateFromComponents(DateRangeStart);
@@ -92,13 +90,13 @@ You can add events to the schedule by creating collection of `ScheduleAppointmen
 
         NSDateComponents endDate = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, dateFrom);
 
-    for (int dateIndex = -10; dateIndex <= 11;dateIndex++)
-    {
+        for (int dateIndex = -10; dateIndex <= 11; dateIndex++)
+        {
         if ((startDate.Date.Compare(dateRangeStart) > 0) && (startDate.Date.Compare(dateRangeEnd) < 0))
         {
         for (int AdditionalAppointmentIndex = 0; AdditionalAppointmentIndex < 3; AdditionalAppointmentIndex++)
-            {
-            
+        {
+
             var hour = randomTime.Next((int)randomTimeCollection[AdditionalAppointmentIndex].X, (int)randomTimeCollection[AdditionalAppointmentIndex].Y);
             startDate.Hour = hour;
             endDate.Hour = (startDate.Hour) + 1;
@@ -109,24 +107,24 @@ You can add events to the schedule by creating collection of `ScheduleAppointmen
             ScheduleAppointment meeting = new ScheduleAppointment();
             meeting.StartTime = startdate;
             meeting.EndTime = enddate;
-            meeting.Subject = (NSString)subjectCollection[randomTime.Next(9)];
+            meeting.Subject = (NSString)meetingCollection[randomTime.Next(9)];
             meeting.AppointmentBackground = colorCollection[randomTime.Next(9)];
 
             appCollection.Add(meeting);
-            }
+        }
         }
         else {
             var hour = randomTime.Next(9, 16);
             startDate.Hour = hour;
             endDate.Hour = (startDate.Hour) + 1;
-            
-            NSDate  startdate= calendar.DateFromComponents(startDate);
-NSDate enddate = calendar.DateFromComponents(endDate);
+
+            NSDate startdate = calendar.DateFromComponents(startDate);
+            NSDate enddate = calendar.DateFromComponents(endDate);
 
             ScheduleAppointment meeting = new ScheduleAppointment();
             meeting.StartTime = startdate;
             meeting.EndTime = enddate;
-            meeting.Subject = (NSString)subjectCollection[randomTime.Next(9)];
+            meeting.Subject = (NSString)meetingCollection[randomTime.Next(9)];
             meeting.AppointmentBackground = colorCollection[randomTime.Next(9)];
 
             appCollection.Add(meeting);
@@ -136,7 +134,23 @@ NSDate enddate = calendar.DateFromComponents(endDate);
         }
     return appCollection;
     }
-    
+
+{% endhighlight %}
+
+You can set Time Ranges by creating a collection as List for the same.
+
+{% highlight c# %}
+
+    private List<CGPoint> GettingTimeRanges()
+    {
+        List<CGPoint> randomTimeCollection = new List<CGPoint>();
+        randomTimeCollection.Add(new CGPoint(9, 11));
+        randomTimeCollection.Add(new CGPoint(12, 14));
+        randomTimeCollection.Add(new CGPoint(15, 17));
+
+        return randomTimeCollection;
+    }
+
 {% endhighlight %}
 
 You can add `Subject` and `Color` to the appointments created by creating a collection for the same.
@@ -188,3 +202,5 @@ You can add `Subject` and `Color` to the appointments created by creating a coll
 {% endhighlight %}
 
 ![](GettingStarted_images/GettingStarted_iOS.png)
+
+You can find the complete getting started sample from this link [ScheduleGettingStarted](http://files2.syncfusion.com/dtsupport/directtrac/general/ze/ScheduleGettingStarted1758881126.zip) 
