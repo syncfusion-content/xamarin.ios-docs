@@ -54,6 +54,15 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [4]);
 dataGrid.SelectedItems.Add (viewModel.OrdersInfo [5]);
 {% endhighlight %}
 
+## Row Header Selection
+SfDataGrid, lets you select a specific row by touch the RowHeader. To enable the RowHeader in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` is `true`. Also, you can set the row header width using `SfDataGrid.RowHeaderWidth property`. Hence, by default SfDataGrid RowHeaderWidth is 20.
+
+{% highlight c# %}
+
+ dataGrid.ShowRowHeader = true;
+ 
+{% endhighlight %}
+
 ## Selection Events
 
 The SfDataGrid provides you the following events for Selection:
