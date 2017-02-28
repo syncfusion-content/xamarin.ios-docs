@@ -318,7 +318,7 @@ You can format the date and time string in the schedule control using `MonthLabe
 
     monthViewSettings.LabelSettings = labelSettings;
     schedule.MonthViewSettings = monthViewSettings;
-	View.AddSubview(schedule);
+    View.AddSubview(schedule);
 
 {% endhighlight %}
 
@@ -348,7 +348,7 @@ You can customize the number of appointments to be rendered inside a month view 
     MonthViewSettings monthViewSettings = new MonthViewSettings ();
     monthViewSettings.VisibleCellAppointmentsCount=10;
     schedule.MonthViewSettings = monthViewSettings;
-	View.AddSubview(schedule);
+    View.AddSubview(schedule);
 
 {% endhighlight %}
 
