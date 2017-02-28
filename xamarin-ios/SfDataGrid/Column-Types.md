@@ -58,6 +58,21 @@ The FontFamily for the content of header cell in the GridColumn can be customize
 #### HeaderTextAlignment
 You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is `Center`.
 
+#### HeaderTemplate
+
+SfDataGrid allows you to customize the header cell based on your requirement by using the [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplate.html) property.The following code example shows you how to customize the header cell by loading a template in the header cell.
+
+{% highlight %}
+UILabel label = new UILabel();
+label.Text = "Order ID";
+label.TextAlignment = UITextAlignment.Center;
+
+GridTextColumn column = new GridTextColumn()
+{
+    MappingName = "OrderID",
+    HeaderTemplate = label
+};
+{% endhighlight %}
 
 ## GridTextColumn
 
