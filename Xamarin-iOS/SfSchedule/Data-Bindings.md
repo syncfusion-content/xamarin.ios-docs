@@ -19,8 +19,8 @@ Create the collection of the `ScheduleAppointment` by setting required details u
 
 {% highlight c# %}
 
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+    SFSchedule sfschedule= new SFSchedule ();
+    sfschedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
     NSDate today = new NSDate ();
     NSMutableArray appCollection = new NSMutableArray ();
     NSCalendar calendar = NSCalendar.CurrentCalendar;
@@ -49,10 +49,12 @@ Create the collection of the `ScheduleAppointment` by setting required details u
     appointment.Subject = (NSString)"Client Meeting";
     appointment.AppointmentBackground = UIColor.Red;
     appCollection.Add (appointment);
-    schedule.Appointments = appCollection;
+    sfschedule.Appointments = appCollection;
     View.AddSubview(sfschedule);
 
 {% endhighlight %}
+
+![](PopulatingAppointments_images/GettingStarted_iOS.png)
 
 ### Adding AllDayAppointments 
 
@@ -60,8 +62,11 @@ AllDayAppointment is for setting appointmet for fullday by using `ShowAllDay` pr
 
 {% highlight c# %}
 
-    SFSchedule schedule= new SFSchedule ();
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+    SFSchedule sfschedule= new SFSchedule ();
+    sfschedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+    WeekViewSettings weekViewSettings = new WeekViewSettings();
+    weekViewSettings.ShowAllDay = true;
+    sfschedule.WeekViewSettings = weekViewSettings;
     NSDate today = new NSDate ();
     NSMutableArray appCollection = new NSMutableArray ();
     NSCalendar calendar = NSCalendar.CurrentCalendar;
@@ -89,8 +94,9 @@ AllDayAppointment is for setting appointmet for fullday by using `ShowAllDay` pr
     endDateComponents.Day = endDateComponents.Day + 1;
     appointment.Subject = (NSString)"Client Meeting";
     appointment.AppointmentBackground = UIColor.Red;
+    appointment.IsAllDay = true;
     appCollection.Add (appointment);
-    schedule.Appointments = appCollection;
+    sfschedule.Appointments = appCollection;
     View.AddSubview(sfschedule);
 
 {% endhighlight %}
@@ -113,8 +119,7 @@ Appointments can be edit using this Appointmenteditor by tapping the Appointment
 
 Schedule views are designed as per the native calendar control with some enriched user interface for the control interaction and usability. You can customize the Schedule as per the requirement using Cutsomization support. 
 
-To know more about customization of all day appointment panel refer [View Customization](/xamarin-ios/sfschedule/appearance-and-styling "View Customization")
+To know more about customization of all day appointment panel refer [View Customization](/xamarin-ios/sfschedule/view-customization "View Customization")
 
-![](PopulatingAppointments_images/GettingStarted_iOS.png)
 
 

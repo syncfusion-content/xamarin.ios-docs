@@ -32,8 +32,7 @@ Initialize `SfSchedule` instance in viewDidLoad method and then add the schedule
     {
         SFSchedule meetingRoomScheduler = new SFSchedule();
         meetingRoomScheduler.ScheduleView = SFScheduleView.SFScheduleViewWeek;
-        this.AddSubview (meetingRoomScheduler);
-        this.control = this;
+        View.AddSubview(meetingRoomScheduler);
     }
 
 {% endhighlight %}
@@ -43,9 +42,8 @@ You can change the default UI of schedule using `ScheduleView` to display the da
 {% highlight c# %}
 
     //setting schedule view.
-    meetingRoomScheduler = SFScheduleView. SFScheduleViewWeek;
-    this.AddSubview (meetingRoomScheduler);
-    this.control = this;
+    meetingRoomScheduler.ScheduleView = SFScheduleView. SFScheduleViewWeek;
+    View.AddSubview(meetingRoomScheduler);
 
 {% endhighlight %}
 
@@ -61,8 +59,7 @@ You can add events to the schedule by creating collection of `ScheduleAppointmen
         SFSchedule meetingRoomScheduler = new SFSchedule();
         meetingRoomScheduler.ScheduleView = SFScheduleView.SFScheduleViewWeek;
         meetingRoomScheduler.Appointments = CreateAppointments();
-        this.AddSubview (schedule);
-        this.control = this;
+        View.AddSubview(meetingRoomScheduler);
     }
     
     NSMutableArray CreateAppointments()
