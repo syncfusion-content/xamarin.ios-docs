@@ -72,50 +72,6 @@ dataGrid.ItemsSource = viewModel.DataTable;
 this.View.Add(dataGrid);
 {% endhighlight %}
 
-## Binding with dynamic data object
-
-SfDataGrid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). The following code illustrates how to create and bind dynamic objects as `ItemsSource` to SfDataGrid.
-
-{% highlight c# %}
-// In ViewModel
-
-public class ViewModel
-{        
-    public ViewModel()
-    {
-        SetRowstoGenerate(50);
-    }
-        
-    private ObservableCollection<ExpandoObject> collection;
-
-    public ObservableCollection<ExpandoObject> Collection
-    {
-        get { return collection; }
-        set { this.collection = value; }
-    }
-
-    public void SetRowstoGenerate (int count)
-    {
-        collection = new ObservableCollection<ExpandoObject>();
-        for (int i = 1; i < count; i++)
-        {
-            dynamic obj = new ExpandoObject();
-            obj.Name = "Name" + i.ToString();
-            obj.ID = 10000 + i;
-            collection.Add(obj);
-        }
-    }
-}
-
-// In MyViewController.cs
-
-SfDataGrid dataGrid = new SfDataGrid();
-ViewModel viewModel = new ViewModel();
-dataGrid.ItemsSource = viewModel.Collection;
-
-this.View.Add(dataGrid);
-{% endhighlight %}
-
 ## Binding Complex properties
 
 SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
