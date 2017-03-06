@@ -60,8 +60,9 @@ You can get or set the TextAlignment of the header cell in the GridColumn by usi
 
 #### HeaderTemplate
 
-SfDataGrid allows you to customize the header cell based on your requirement by using the [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplate.html) property.The following code example shows you how to customize the header cell by loading a template in the header cell.
+SfDataGrid allows you to customize the header cell based on your requirement by using the [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTemplate.html) property.
 
+The following code example shows you how to customize the header cell by loading a template in the header cell.
 {% highlight %}
 
 UILabel label = new UILabel();
