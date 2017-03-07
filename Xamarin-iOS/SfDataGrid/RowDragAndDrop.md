@@ -132,7 +132,7 @@ The `QueryRowDragging` event provides following properties in `QueryRowDragging
 * `CurrentRowData`  – Returns the corresponding row data, over which the row drag view is currently placed.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
-## How to disable dragging for particular row?
+## Disable dragging for particular row
 
 Dragging can be disabled for a particular row by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to disable dragging for particular row.
 
@@ -148,7 +148,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-## How to disable dropping when dragging over particular rows?
+## Disable dropping when dragging over particular rows
 
 Dropping can be disabled for particular rows while dragging a row.Refer following code sample to cancel dropping of particular row.
 
@@ -165,7 +165,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-## How to disable dropping of particular row? 
+## Disable dropping of particular row 
 
 Dropping can be canceled for particular row by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping of particular row.
 
@@ -181,7 +181,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-## How to disable dropping at a particular position? 
+## Disable dropping at a particular position
 
 Dropping at a particular position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to cancel dropping at particular position.
 
@@ -197,7 +197,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-## How to reorder the underlying data? 
+## Reorder the underlying data
 
 Reordering changes directly on the underlying data can be done by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to make permanent reordering changes.
 
@@ -217,3 +217,23 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
+## Get the position of the RowDragView
+
+The position of the RowDragView can be obtained in the code-behind, by handling the `QueryRowDragging` event. Refer the following code example in which the "Position" enum is used to determine whether the RowDragView is dropped below the last row of the collection.
+
+{% highlight c# %}
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+    var totalHeight = dataGrid.RowColumnIndexToPoint(new RowColumnIndex(viewModel.OrdersInfo.Count,0)).Y + this.dataGrid.RowHeight;
+    if (e.Reason == QueryRowDraggingReason.DragEnded)
+    {
+        if (Math.Ceiling(e.Position.Y + (dataGrid.RowHeight)) > totalHeight && e.To == viewModel.OrdersInfo.Count)
+        {
+            //Will hit if the RowDragView is dropped below the last row of the collection.                 
+            DisplayAlert("RowDragAndDrop info", "The RowDragView is droppped below the last row of the collection", "OK");
+        }
+    }
+}
+
+{% endhighlight %}
