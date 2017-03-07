@@ -19,6 +19,14 @@ SfDataGrid allows you to create and add Columns in two ways:
 
 The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html). It is a bindable property and it decides columns generation for SfDataGrid based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsMode.html) property. 
 
+`SfDataGrid.AutoGenerateColumnsMode` decides a way to create columns when `SfDataGrid.AutoGenerateColumns` is set to `true`. And, handle the grouping and sorting when ItemsSource is change. This enum type has the following four options.
+
+* None: Stores only the columns that are defined in [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection. Grouping and Sorting for explicitly defined columns have been retained when changing the ItemsSource.
+* Reset: Retains the columns defined explicitly in application level and creates columns newly for all the other properties in a data source. On changing ItemsSource, Grouping and Sorting for explicitly defined columns have been retained.
+* ResetAll: When changing the [ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html), the columns for previous data are cleared and it creates new columns. Even when columns are explicitly defined it does not consider the defined columns and creates column based on the underlying collection. On changing the ItemsSource, grouping and sorting does not retain.
+* RetainOld: Creates columns for all fields in a data source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created. Grouping and Sorting for explicitly defined columns have been retained when changing the ItemsSource.
+* SmartReset: Retains the columns defined explicitly in application level and the columns with MappingName identical to properties in a data source. Creates columns newly for all the other properties in the data source. On changing ItemsSource, Grouping and Sorting for explicitly defined columns have been retained while having property same as in the previous ItemsSource.
+
 
 The default value of `SfDataGrid.AutoGenerateColumns` property is `true` and `SfDataGrid.AutoGenerateColumnsMode` is `Reset`. Hence by default SfDataGrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its `ItemsSource` property.
 
