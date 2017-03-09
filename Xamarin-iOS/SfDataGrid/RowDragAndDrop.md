@@ -217,9 +217,11 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 
-## Get the position of the RowDragView
+## Drop a grid row in the last position
 
-The position of the RowDragView can be obtained in the code-behind, by handling the `QueryRowDragging` event. Refer the following code example in which the "Position" enum is used to determine whether the RowDragView is dropped below the last row of the collection.
+The `To` enum of the `QueryRowDraggingEventArgs` returns the dragging index where you try to drop the row, it returns the same index when you drop a row at last position or last but one. In order to track the row programmatically whether it is dropped at the last position, SfDataGrid provides the `Position` enum which returns the position of the RowDragView.
+
+Refer the following code example in which the `Position` enum is used to determine whether the row is dropped in the last position.
 
 {% highlight c# %}
 
@@ -230,8 +232,9 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
     {
         if (Math.Ceiling(e.Position.Y + (dataGrid.RowHeight)) > totalHeight && e.To == viewModel.OrdersInfo.Count)
         {
-            //Will hit if the RowDragView is dropped below the last row of the collection.                 
-            DisplayAlert("RowDragAndDrop info", "The RowDragView is droppped below the last row of the collection", "OK");
+            // Will hit if the row is dropped at the last position                 
+            UIAlertView alert = new UIAlertView("RowDragAndDrop info", "The row is dropped at the last position", null, "OK");
+            alert.Show();     
         }
     }
 }
