@@ -108,6 +108,3 @@ dataGrid.Columns.Add (customerIdColumn);
 dataGrid.Columns.Add (customerColumn);
 dataGrid.Columns.Add (countryColumn); 
 {% endhighlight %}
-
-
-
