@@ -77,6 +77,17 @@ void DataGrid_SelectionChanging (object sender, GridSelectionChangingEventAr
 }
 {% endhighlight %}
 
+The following code explains how to get the selected item in code-behind, by making use of the `SfDataGrid.SelectionChanged` event.
+
+{% highlight c# %}
+dataGrid.SelectionChanged += DataGrid_SelectionChanged;
+
+private void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
+{
+    // Gets the selected item.
+    var selectedItems = e.AddedItems[0];
+}
+{% endhighlight %}
 
 ## Clear Selection
 
