@@ -215,9 +215,9 @@ dataGrid.Columns.Add(TotalColumn);
 
 ### Using QueryUnboundColumnValue event
 
-You can populate data for the Unbound column by handling `DataGrid_QueryUnboundColumnValue` event, which allows you to customize the value of the `GridUnboundColumn`. `GridUnboundColumnEventsArgs` exposes `Value` property by which you can get or set the value of the unbound column.
+You can populate data for the Unbound column by handling `QueryUnboundColumnValue` event, which allows you to customize the value of the `GridUnboundColumn`. `GridUnboundColumnEventsArgs` exposes `Value` property by which you can get or set the value of the unbound column.
 
-Refer the below code example in which data for the unbound column is populated by handling the `DataGrid_QueryUnboundColumnValue` event.
+Refer the below code example in which data for the unbound column is populated by handling the `QueryUnboundColumnValue` event.
 
 {% highlight c# %}
 dataGrid.QueryUnboundColumnValue += DataGrid_QueryUnboundColumnValue;
