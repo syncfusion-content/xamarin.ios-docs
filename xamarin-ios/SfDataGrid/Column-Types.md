@@ -58,6 +58,25 @@ The FontFamily for the content of header cell in the GridColumn can be customize
 #### HeaderTextAlignment
 You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is `Center`.
 
+#### HeaderTemplate
+
+SfDataGrid allows you to customize the header cell based on your requirement by using the [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderTemplate.html) property.
+
+The following code example shows you how to customize the header cell by loading a template in the header cell.
+{% highlight %}
+
+UILabel label = new UILabel();
+label.Text = "Order ID";
+label.TextAlignment = UITextAlignment.Center;
+
+GridTextColumn column = new GridTextColumn()
+{
+    MappingName = "OrderID",
+    HeaderTemplate = label
+};
+
+{% endhighlight %}
+
 
 ## GridTextColumn
 
@@ -208,3 +227,18 @@ public class CustomCell : GridCell
 The following screenshot shows how template columns are used in SfDataGrid
 
 ![](SfDataGrid_images/TemplateColumns.png)
+
+### Row Header 
+
+RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the RowHeader in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` property as `true`.
+
+Further, SfDataGrid allows you to customize the row header width using the `SfDataGrid.RowHeaderWidth property`. The default value of `SfDataGrid.RowHeaderWidth` is 20.
+
+The below code example illustrates how to enable and customize the row header in SfDataGrid.
+
+{% highlight c# %}
+
+dataGrid.ShowRowHeader = true;
+dataGrid.RowHeaderWidth = 50;
+
+{% endhighlight %}
