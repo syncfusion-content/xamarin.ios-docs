@@ -63,7 +63,8 @@ You can get or set the TextAlignment of the header cell in the GridColumn by usi
 SfDataGrid allows you to customize the header cell based on your requirement by using the [GridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderTemplate.html) property.
 
 The following code example shows you how to customize the header cell by loading a template in the header cell.
-{% highlight %}
+
+{% highlight c# %}
 
 UILabel label = new UILabel();
 label.Text = "Order ID";
@@ -76,7 +77,6 @@ GridTextColumn column = new GridTextColumn()
 };
 
 {% endhighlight %}
-
 
 ## GridTextColumn
 
