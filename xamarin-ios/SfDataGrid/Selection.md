@@ -120,7 +120,6 @@ private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
 
 N> To enable the row header in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` as `true`.
 
-
 ## Clear Selection
 
 SfDataGrid allows you to clear the selection applied in the grid rows in two ways, either by setting the `SfDataGrid.SelectionMode` to `None` or by calling the [SfDataGrid.SelectionController.ClearSelection ()](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController~ClearSelection.html) method.

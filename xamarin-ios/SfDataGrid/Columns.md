@@ -29,7 +29,6 @@ The `SfDataGrid.AutoGenerateColumnsMode` is of type [AutoGenerateColumnsMode](ht
 * RetainOld: When changing the ItemsSource, creates columns for all fields in a data source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created. Similarly, when changing the ItemsSource and when the Grid have any explicit definition for columns, the grouping and sorting are retained as it is.
 * SmartReset: Retains the columns defined explicitly in application level and the columns with `MappingName` identical to the properties in the new data source. Creates columns newly for all the other properties in the data source. Similarly, it retains the grouping and sorting of the columns that are defined explicitly in application level and the columns with `MappingName` identical to the properties in new data source.
 
-
 The default value of `SfDataGrid.AutoGenerateColumns` property is `true` and `SfDataGrid.AutoGenerateColumnsMode` is `Reset`. Hence by default SfDataGrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its `ItemsSource` property.
 
 N> When you change items source for SfDataGrid during run time, then the columns are generated on the basis of option set for `SfDataGrid.AutoGenerateColumnsMode`.
