@@ -160,6 +160,44 @@ The `SfDataGrid.ColumnResizing` event provides the following properties through 
 
 #### Cancel resizing for a column
 
+You can cancel resizing for a particular column using the `SfDataGrid.ColumnResizing` event. You can cancel the resizing operation of a column based on the different arguments provided in the `GridResizingEventArgs`. 
+
+The below code example shows how to cancel resizing for a column using the `SfDataGrid.ColumnResizing` event using the `Index` value. 
+
+{% highlight c# %}
+    this.dataGrid.ResizingColumns += dataGrid_ResizingColumns;
+    private void DataGrid_ColumnResizing(object sender, GridResizingEventArgs e)
+        {
+            //Code to end resizing if ColumnIndex is 2
+            if (e.Index == 2)
+                e.Cancel = true;
+        }
+{% endhighlight %}
+
+The below code example shows how to cancel resizing for a column using the `SfDataGrid.ColumnResizing` event using the `NewValue` value. 
+
+{% highlight c# %}
+    this.dataGrid.ResizingColumns += dataGrid_ResizingColumns;
+    private void DataGrid_ColumnResizing(object sender, GridResizingEventArgs e)
+        {
+            //Code to end resizing if Column's Width is >= 100
+            if (e.NewValue >= 100 ||)
+                e.Cancel = true;
+        }
+{% endhighlight %}
+
+The below code example shows how to cancel resizing for a column using the `SfDataGrid.ColumnResizing` event using the `ProgressStates` value. 
+
+{% highlight c# %}
+    this.dataGrid.ResizingColumns += dataGrid_ResizingColumns;
+    private void DataGrid_ColumnResizing(object sender, GridResizingEventArgs e)
+        {
+            //Code to end resizing if interaction state is Progressing
+            if (e.ResizingState = ProgressStates.Progressing)
+                e.Cancel = true;
+        }
+{% endhighlight %}
+
 You can cancel resizing for a particular column using the `SfDataGrid.ColumnResizing` event. The below code example shows how to cancel resizing for a column using the `SfDataGrid.ColumnResizing` event. 
 
 {% highlight c# %}
