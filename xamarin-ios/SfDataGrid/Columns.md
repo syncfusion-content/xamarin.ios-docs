@@ -108,3 +108,104 @@ dataGrid.Columns.Add (customerIdColumn);
 dataGrid.Columns.Add (customerColumn);
 dataGrid.Columns.Add (countryColumn); 
 {% endhighlight %}
+
+## Resizing Columns
+SfDataGrid allows to resize the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting 'SfDataGrid.AllowResizingColumn' property. A resizing indicator is displayed while resizing a column.
+
+N > Resizing considers 'GridColumn.MinimumWidth' and 'GridColumn.MaximumWidth' of the column and will not resize past the mininum and maximum width constraints.
+
+
+{% highlight c# %}
+dataGrid.AllowResizingColumn = true;
+{% endhighlight %}
+
+![](SfDataGrid_images/Resizing_HitTest_iOS.png)
+![](SfDataGrid_images/Resizing_OnMoved.png)
+
+You can change the column width by tapping and dragging the resizing indicator.
+
+N > The resizing indicator appears when you tap the right corner of the column header.
+
+You can interactively hide a column by setting the `GridColumn.MinimumWidth` property to zero and resizing the column to a wdith less than 0.
+
+### Resizing Modes
+
+SfDataGrid allows two modes of resizing, which can be set using the 'SfDataGrid.ResizingMode' property. The available resizing modes are,
+
+* OnMoved - The resizing indicator is moved based on the touch point and the width of the column is updated as the resizing indicator moves.
+* OnTouchUp - The resizing indicator is moved based on the touch point but however the width of the column is updated only on a touch up operation.
+
+N > The default resizing mode is OnMoved.
+
+The below image shows the resizing mode OnMoved
+
+![](SfDataGrid_images/Resizing_OnMoved.png)
+
+The below image shows the resizing mode OnTouchUp
+
+![](SfDataGrid_images/Resizing_OnTouchUp.png)
+
+### Resizing Events
+
+The resizing operation can be handled based on the requirement using 'SfDataGrid.ColumnResizing' event. The `SfDataGrid.ColumnResizing` event is fired upon starting to resize a column and will be continuously fired till the reisizing operation ends.
+By handling the `SfDataGrid.ColumnResizing` event you can also cancel the resizing of a particular column.
+The `SfDataGrid.ColumnResizing` event provides the following properties through 'GridResizingEventArgs'.
+
+* Index - Returns the index of the column currently being resized.
+* NewValue - Returns the current width of the column being resized.
+* ResizingState - Returns the current state of the user-interaction through a value from the ProgressStates enum.
+* 'Cancel'- A Boolean property to cancel the event and the resizing operation. 
+
+### How To
+
+#### Cancel resizing for a column
+
+You can cancel resizing for a particular column using the `SfDataGrid.ColumnResizing` event. You can cancel the resizing operation of a column based on the different arguments provided in the `GridResizingEventArgs`. 
+
+The below code example shows how to cancel resizing for a column using the `SfDataGrid.ColumnResizing` event using the `Index` value. 
+
+{% highlight c# %}
+    this.dataGrid.ResizingColumns += dataGrid_ResizingColumns;
+    private void DataGrid_ColumnResizing(object sender, GridResizingEventArgs e)
+        {
+            //Code to end resizing if ColumnIndex is 2
+            if (e.Index == 2)
+                e.Cancel = true;
+        }
+{% endhighlight %}
+
+The below code example shows how to cancel resizing for a column using the `SfDataGrid.ColumnResizing` event using the `NewValue` value. 
+
+{% highlight c# %}
+    this.dataGrid.ResizingColumns += dataGrid_ResizingColumns;
+    private void DataGrid_ColumnResizing(object sender, GridResizingEventArgs e)
+        {
+            //Code to end resizing if Column's Width is >= 100
+            if (e.NewValue >= 100 ||)
+                e.Cancel = true;
+        }
+{% endhighlight %}
+
+The below code example shows how to cancel resizing for a column using the `SfDataGrid.ColumnResizing` event using the `ProgressStates` value. 
+
+{% highlight c# %}
+    this.dataGrid.ResizingColumns += dataGrid_ResizingColumns;
+    private void DataGrid_ColumnResizing(object sender, GridResizingEventArgs e)
+        {
+            //Code to end resizing if interaction state is Progressing
+            if (e.ResizingState = ProgressStates.Progressing)
+                e.Cancel = true;
+        }
+{% endhighlight %}
+
+You can cancel resizing for a particular column using the `SfDataGrid.ColumnResizing` event. The below code example shows how to cancel resizing for a column using the `SfDataGrid.ColumnResizing` event. 
+
+{% highlight c# %}
+    this.dataGrid.ResizingColumns += dataGrid_ResizingColumns;
+    private void DataGrid_ColumnResizing(object sender, GridResizingEventArgs e)
+        {
+            //Code to end resizing if ColumnIndex is 2 or Column's Width is >= 100 or if interaction state is Progressing
+            if (e.Index == 2 || e.NewValue >= 100 || e.ResizingState = ProgressStates.Progressing)
+                e.Cancel = true;
+        }
+{% endhighlight %}
