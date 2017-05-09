@@ -53,6 +53,8 @@ this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 {% endhighlight %}
 
+N> Editing support for UserCellTypeColumn and GridUnboundColumn are not provided yet.
+
 ## Support for IEditableObject
 SfDataGrid supports to commit and roll back the changes in cell level when underlying data object implements IEditableObject interface.
 
