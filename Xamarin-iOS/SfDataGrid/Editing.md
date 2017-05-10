@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing | SfDataGrid | Xamarin | Syncfusion
+title: Editing | SfDataGrid | Xamarin.iOS | Syncfusion
 description: Editing the cell values with SfDataGrid.
 platform: xamarin.iOS
 control: SfDataGrid
