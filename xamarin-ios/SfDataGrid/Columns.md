@@ -112,7 +112,7 @@ dataGrid.Columns.Add (countryColumn);
 ## Resizing Columns
 SfDataGrid allows to resize the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting 'SfDataGrid.AllowResizingColumn' property. A resizing indicator is displayed while resizing a column.
 
-N > Resizing considers 'GridColumn.MinimumWidth' and 'GridColumn.MaximumWidth' of the column and will not resize past the mininum and maximum width constraints.
+N> Resizing considers 'GridColumn.MinimumWidth' and 'GridColumn.MaximumWidth' of the column and will not resize past the mininum and maximum width constraints.
 
 
 {% highlight c# %}
@@ -124,7 +124,7 @@ dataGrid.AllowResizingColumn = true;
 
 You can change the column width by tapping and dragging the resizing indicator.
 
-N > The resizing indicator appears when you tap the right corner of the column header.
+N> The resizing indicator appears when you tap the right corner of the column header.
 
 You can interactively hide a column by setting the `GridColumn.MinimumWidth` property to zero and resizing the column to a wdith less than 0.
 
@@ -135,7 +135,7 @@ SfDataGrid allows two modes of resizing, which can be set using the 'SfDataGrid.
 * OnMoved - The resizing indicator is moved based on the touch point and the width of the column is updated as the resizing indicator moves.
 * OnTouchUp - The resizing indicator is moved based on the touch point but however the width of the column is updated only on a touch up operation.
 
-N > The default resizing mode is OnMoved.
+N> The default resizing mode is OnMoved.
 
 The below image shows the resizing mode OnMoved
 
