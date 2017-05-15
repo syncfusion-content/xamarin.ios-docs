@@ -242,3 +242,461 @@ dataGrid.ShowRowHeader = true;
 dataGrid.RowHeaderWidth = 50;
 
 {% endhighlight %}
+
+## GridSwitchColumn
+
+The [GridSwitchColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSwitchColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html), and hence it inherits all the properties of `GridColumn`. It loads a [UISwitch](https://developer.xamarin.com/api/type/MonoTouch.UIKit.UISwitch/) as the content of record cells in the column and responds to value changes in it. You can change the underlying data source by toggling the values shown in the `UISwitch`. To create `GridSwitchColumn` in SfDataGrid the property corresponding to the column in the underlying collection must be of type [bool](https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx).
+
+The following code example shows how to use `GridSwitchColumn`.
+ 
+{% highlight c# %}
+dataGrid = new SfDataGrid();
+GridSwitchColumn switchColumn = new GridSwitchColumn()
+{
+    HeaderText = "Is Closed",
+    MappingName = "IsClosed"
+};
+data.Colum.Add(switchColumn);
+{% endhighlight %}
+
+{% highlight c# %}
+// Model class
+public class OrderInfo
+{
+    private bool _isClosed;
+
+    public bool IsClosed
+    {
+        get { return _isClosed; }
+        set
+        {
+            this._isClosed = value;
+        }
+    }
+}
+
+// ViewModel class
+public class ViewModel
+{
+    public ViewModel()
+    {
+        GetOrderDetails(50);
+    }
+
+    #region ItemsSource
+
+    private ObservableCollection<OrderInfo> ordersInfo;
+
+    public ObservableCollection<OrderInfo> OrdersInfo
+    {
+        get { return ordersInfo; }
+        set { this.ordersInfo = value; }
+    }
+
+    #endregion
+
+    #region ItemSource Generator
+
+    public void GetOrderDetails(int count)
+    {
+        var order = new ObservableCollection<OrderInfo>();
+        for (int i = 1; i <= count; i++)
+        {
+            var ord = new OrderInfo()
+            {
+                IsClosed = (i % 2) == 0 ? true : false
+            };
+            order.Add(ord);
+        }
+        ordersInfo = order;
+    }
+
+    #endregion
+} 
+{% endhighlight %}
+![](SfDataGrid_images/SwitchColumn.jpg)
+
+## GridImageColumn
+
+[GridImageColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridImageColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html), and hence it inherits all the properties of `GridColumn`. It displays images as cell content of a column. To create `GridImageColumn` in SfDataGrid the property corresponding to the column in the underlying collection must be of type [UIImage](https://developer.xamarin.com/api/type/MonoTouch.UIKit.UIImage/).
+
+The [ImageMapStream](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ImageMapStream.html) converts the memory stream to image data, which in turn is converted to `UIImage` by the [ToUIImage](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Imagehelper~ToUIImage.html) extension method of the [ImageHelper](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Imagehelper.html) static class.  
+
+The following code example shows how to create a memory stream and use it to load images(embedded resource) in GridImageColumn using the above mentioned methods.
+ 
+{% highlight c# %}
+GridImageColumn imageColumn = new GridImageColumn();
+imageColumn.MappingName = "Image";
+imageColumn.HeaderText = "Image";
+{% endhighlight %}
+
+{% highlight c# %}
+// Model class
+public class OrderInfo
+{
+    private UIImage image;
+
+    public UIImage Image
+    {
+        get { return this.=image; }
+        set
+        {
+            this.image = value;
+            RaisePropertyChanged("Image");
+        }
+    }
+}
+
+// ViewModel class
+public class ViewModel
+{
+    public ViewModel()
+    {
+        GetOrderDetails(50);
+    }
+
+    #region ItemsSource
+
+    private ObservableCollection<OrderInfo> ordersInfo;
+
+    public ObservableCollection<OrderInfo> OrdersInfo
+    {
+        get { return ordersInfo; }
+        set { this.ordersInfo = value; }
+    }
+
+    #endregion
+
+    #region ItemSource Generator
+
+    public void GetOrderDetails(int count)
+    {
+        var order = new ObservableCollection<OrderInfo>();
+        for (int i = 1; i <= count; i++)
+        {
+            var ord = new OrderInfo()
+            {
+                Image = Imagehelper.ToUIImage(new ImageMapStream(LoadResource("Image" + (i % 29) + ".png").ToArray())),// Need to give the image path properly
+            };
+            order.Add(ord);
+        }
+        ordersInfo = order;
+    }
+    
+    // Create memory stream
+    public MemoryStream LoadResource (String Name)
+	{
+		MemoryStream aMem = new MemoryStream ();
+
+		var assm = Assembly.GetExecutingAssembly ();
+
+		var path = String.Format ("GettingStarted.Resources.{0}", Name);
+
+		var aStream = assm.GetManifestResourceStream (path);
+
+		aStream.CopyTo (aMem);
+
+		return aMem;
+	}
+    #endregion
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/ImageColumn.jpg)
+
+N> The images should have its BuildAction set as EmbeddedResource since we are getting the image as stream from an [Assembly.GetManifestResourceStream](https://developer.xamarin.com/api/member/System.Reflection.Assembly.GetManifestResourceStream/p/System.Type/System.String/) in the LoadResource method.
+
+## GridDateTimeColumn
+
+The [GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It displays the date information as the content of a column. To create `SfDatarGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type [DateTime](https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx). You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Renderers.SfDatePicker.html) element which is a custom view that enables you to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MaximumDate.html) and select one from it. 
+
+{% highlight c# %}
+dataGrid = new SfDataGrid();
+GridDateTimeColumn dateColumn = new GridDateTimeColumn()
+{
+    Format = "d",
+    HeaderText = "Shipped Date",
+    MappingName = "ShippedDate"
+};
+data.Colum.Add(dateColumn);
+{% endhighlight %}
+
+{% highlight c# %}
+// Model class
+public class OrderInfo
+{
+    private DateTime shippedDate;
+
+    public DateTime ShippedDate
+    {
+        get { return shippedDate; }
+        set
+        {
+            shippedDate = value;
+            RaisePropertyChanged("ShippedDate");
+        }
+    }
+}
+
+// ViewModel class
+public class ViewModel
+{
+    private List<DateTime> OrderedDates;
+
+    public ViewModel()
+    {
+        GetOrderDetails(50);
+    }
+
+    #region ItemsSource
+
+    private ObservableCollection<OrderInfo> ordersInfo;
+
+    public ObservableCollection<OrderInfo> OrdersInfo
+    {
+        get { return ordersInfo; }
+        set { this.ordersInfo = value; }
+    }
+
+    #endregion
+
+    #region ItemSource Generator
+
+    private List<DateTime> GetDateBetween(int startYear, int endYear, int count)
+    {
+        List<DateTime> date = new List<DateTime>();
+        Random d = new Random(1);
+        Random m = new Random(2);
+        Random y = new Random(startYear);
+        for (int i = 0; i < count; i++)
+        {
+            int year = y.Next(startYear, endYear);
+            int month = m.Next(3, 13);
+            int day = d.Next(1, 31);
+            date.Add(new DateTime(year, month, day));
+        }
+        return date;
+    }
+
+    public void GetOrderDetails(int count)
+    {
+        var order = new ObservableCollection<OrderInfo>();
+        this.OrderedDates = GetDateBetween(2000, 2014, count);
+        for (int i = 1; i <= count; i++)
+        {
+            var ord = new OrderInfo()
+            {
+                ShippedDate = this.OrderedDates[i - 1],
+            };
+            order.Add(ord);
+        }
+        ordersInfo = order;
+    }
+
+    #endregion
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/DateTimeColumn.jpg)
+
+## GridPickerColumn
+
+The [GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It displays a list of items in the form of a picker as the content of a column. You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Renderers.SfPicker.html) element which is a custom view that enables you to scroll through a list of values from the underlying collection and select one from it. The data source to Picker can be set by using [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~ItemsSource.html) property. The picker column can be populated with data by the following ways.
+
+* Collection of primitive types
+* Collection of user defined types (Custom objects)
+
+![](SfDataGrid_images/PickerColumn.jpg)
+
+### Collection of primitive types
+
+You can create a `GridPickerColumn` and set its `ItemsSource` property to a simple collection to display the collection items in the picker drop down.
+The following code example shows you how to load the `GridPickerColumn` with a simple string collection.
+
+{% highlight c# %}
+dataGrid = new SfDataGrid();
+GridPickerColumn pickerColumn = new GridPickerColumn()
+{
+    BindingContext = viewModel;
+    ItemsSource = viewModel.CustomerNames;
+    HeaderText = "Dealer Name",
+    MappingName = "DealerName"
+};
+data.Colum.Add(pickerColumn);
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+// ViewModel class
+public class ViewModel
+{
+    public ObservableCollection<string> CustomerNames { get; set; }
+
+    public ViewModel()
+    {
+        this.CustomerNames = Customers.ToObservableCollection();
+    }
+
+    internal string[] Customers = new string[] {
+			"Adams",
+			"Crowley",
+			"Ellis",
+			"Gable",
+			"Irvine",
+			"Keefe",
+			"Mendoza",
+			"Owens",
+			"Rooney",
+			"Waddell",
+		};
+}
+{% endhighlight %}
+
+### Collection of User Defined Types
+
+You can create a `GridPickerColumn` and set its ItemsSource property to a user-typed collection to display a list of user defined items in the picker drop down. Initially the picker column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~ValueMemberPath.html) are not set.
+
+ #### DisplayMemberPath
+ 
+ Displays a value by comparing the values of the properties set as `GridColumn.MappingName` and `ValueMemberPath` in their respective underlying collections. If the `ValueMeberPath` property's values contains the `MappingName` property's current value, then its corresponding `DisplayMemberPath` property's value is displayed in the `GridCell`. Else the `GridCell` appears blank. However in the edit mode the values of the `DisplayMemberPath` property are dispayed as the picker items.
+ 
+ #### ValueMemberPath
+ 
+ Once editing is ended the column having the `MappingName` equal to the `ValueMeberPath` has its data changed to the corresponding `ValueMemberPath` value for the selected `DisplayMemberPath` value in the picker. 
+
+The following code example shows you how to customize the picker data using `DisplayMemberPath` and `ValueMemberPath`
+
+{% highlight c# %}
+sfGrid = new SfDataGrid();
+viewModel = new ViewModel();
+sfGrid.ItemsSource = viewmodel.OrdersInfo;
+
+GridTextColumn orderIDColumn = new GridTextColumn();
+orderIDColumn.MappingName = "OrderID";
+orderIDColumn.HeaderText = "Order ID";
+
+GridPickerColumn pickerColumn = new GridPickerColumn();
+pickerColumn.MappingName = "OrderID";
+pickerColumn.HeaderText = "Picker Column";
+pickerColumn.DisplayMemberPath = "EmployeeID";
+pickerColumn.ValueMemberPath = "OrderID";
+pickerColumn.ItemsSource = viewmodel.PickerInfo;
+
+sfGrid.Columns.Add(orderIDColumn);
+sfGrid.Columns.Add(pickerColumn);
+
+// ViewModel class
+public class ViewModel
+{
+    public class ViewModel :INotifyPropertyChanged
+	{
+		public ViewModel ()
+		{
+			SetRowstoGenerate (100);
+            this.PickerInfo = OrdersInfo.ToList();
+		}
+
+		#region ItemsSource
+
+        private OrderInfoRepository order;
+
+		private ObservableCollection<OrderInfo> ordersInfo;
+
+		public ObservableCollection<OrderInfo> OrdersInfo 
+        {
+			get { return ordersInfo; }
+			set { this.ordersInfo = value; RaisePropertyChanged("OrdersInfo"); }
+		}
+
+        public List<OrderInfo> PickerInfo 
+        {
+			get;
+			set;
+		}
+
+		#endregion
+
+		#region ItemSource Generator
+
+		public void SetRowstoGenerate (int count)
+		{
+			order = new OrderInfoRepository ();
+			ordersInfo = order.GetOrderDetails (count);
+		}
+
+		#endregion
+
+        public ObservableCollection<OrderInfo> GetOrderDetails(int count)
+		{
+            ObservableCollection<OrderInfo> orderDetails = new ObservableCollection<OrderInfo> ();
+
+			for (int i = 1; i <= count; i++) {
+
+				var ord = new OrderInfo () {
+					OrderID = i,
+                    EmployeeID = i+5,
+				};
+				orderDetails.Add (ord);
+			}
+			return orderDetails;
+		}
+
+        #region INotifyPropertyChanged implementation
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void RaisePropertyChanged(String name)
+        {
+            if (PropertyChanged != null)
+                this.PropertyChanged(this, new PropertyChangedEventArgs(name));
+        }
+
+        #endregion
+    }
+}
+{% endhighlight %}
+
+The following screenshots expalins the above code and shows the working of the `PickerColumn` with `ValueMemberPath` and `DisplayMemberPath` properties set.
+
+Here in the above code example underlying collection has 2 properties (OrderID,EmployeeID). We have created a `GridPickerColumn` with MappingName = OrderID, DisplayMemberPath = EmployeeID, ValueMemberPath = OrderID. EmployeeId has the values 6,7,8,9,10.... and OrderID has the values 1,2,3,4,5.... Initially the GridCells of the `PickerColumn` will be displayed with the values 6,7,8,9,10.... in row wise order based on the `DisplayMemberPath`.
+
+![](SfDataGrid_images/PickerColumn_DisplayMemberPath.jpg)
+
+Upon entering the edit mode at RowColumnIndex(1,1) , the Picker pop up opens and with the picker items as 6,7,8,9,10.... again based on the `DisplayMemberPath`.
+
+![](SfDataGrid_images/PickerColumn_PickerPopUp.jpg)
+
+When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index (0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4. Note that the PickerColumn's `GridCell` data is not changed and only the OrderID columns data is changed to 4. 
+
+![](SfDataGrid_images/PickerColumn_Customization.png)
+
+## GridNumericColumn
+
+The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It is used to display numeric data. To create `GridNumericColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be a numeric type (int, double, float etc). You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays the [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin-ios/sfnumerictextbox) element. The below code example shows how to create a `GridNumericColumn` in SfDataGrid.
+
+{% highlight c# %}
+dataGrid = new SfDataGrid();
+GridNumericColumn numericColumn = new GridNumericColumn()
+{
+    numericColumn.MappingName = "ProductNo",
+    numericColumn.HeaderText = "Product No",
+    numericColumn.NumberDecimalDigits = 0
+};
+data.Colum.Add(numericColumn);
+{% endhighlight %}
+
+### Number Formatting
+
+`GridNumericColumn` allows you to format the numeric data with culture-specific information.
+
+* [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn~NumberDecimalDigits.html) - You can change the number of decimal digits to be displayed after the decimal point using `GridNumericColumn.NumberDecimalDigits` property.
+
+* [NumberDecimalSeparator](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn~NumberDecimalSeparator.html) - By default, the dot (.) operator separates the decimal part of numeric value .You can use any operator as decimal separator using `GridNumericColumn.NumberDecimalSeparator` property.
+
+* [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn~NumberGroupSeparator.html) - By default, the comma (,) separates group of digits before the decimal point. You can use any operator as group separator using `GridNumericColumn.NumberGroupSeparator` property.
+
+* [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn~NumberGroupSizes.html) - You can change the number of digits in each group before the decimal point on numeric values using `GridNumericColumn.NumberGroupSizes` property.
+
+* [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
+
+![](SfDataGrid_images/NumericColumn.jpg)
