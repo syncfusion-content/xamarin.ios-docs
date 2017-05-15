@@ -2,7 +2,7 @@
 layout: post
 title: Column Sizer | SfDataGrid | Xamarin.iOS | Syncfusion
 description: What are all the different ColumnSizer and how it works in a SfDataGrid.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: SfDataGrid
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html) allows you to apply ColumnSizer for the GridColumns by setting the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnSizer.html) property. 
 
-The following code example illustrates how to apply ColumnSizer in `SfDataGrid`.
+The following code example illustrates how to apply `ColumnSizer` in `SfDataGrid`.
 
 {% highlight c# %}
 dataGrid.ColumnSizer = ColumnSizer.None;  
