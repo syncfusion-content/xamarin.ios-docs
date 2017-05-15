@@ -30,6 +30,26 @@ The below table describes you the types of column and its purpose of usage in Sf
 <td>TemplateColumn (i.e. GridTextColumn with UserCellType)</td>
 <td>To be used when you want to customize your column based on your requirements.</td>
 </tr>
+<tr>
+<td>GridSwitchColumn</td>
+<td>To be used when you want to display switch in each row.</td>
+</tr>
+<tr>
+<td>GridImageColumn</td>
+<td>To be used when you want to display an image in each row.</td>
+</tr>
+<tr>
+<td>GridNumericColumn</td>
+<td>To be used when you want to display a numeric data.</td>
+</tr>
+<tr>
+<td>GridDateTimeColumn</td>
+<td>To be used when you want to display the date time value.</td>
+</tr>
+<tr>
+<td>GridPickerColumn</td>
+<td>To be used when you want to display the IEnumerable data using Picker.</td>
+</tr>
 </table>
 
 
