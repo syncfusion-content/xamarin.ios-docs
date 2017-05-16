@@ -9,61 +9,263 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to render the `Meeting Room Booking Scheduler` using Schedule control by populating events(appointments) in the control. This section covers only the minimal features that you need to know to get started with the Schedule
+This section provides you an overview for working with SfSchedule for Xamarin.Android and also provides a walk through to configure SfSchedule control in real time scenario.
 
-### Configure the Schedule control
+## Assembly Configuration
 
-The following steps explain you how to create and configure a Schedule.
+You can download our Xamarin components directly from our website, refer [here](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation#download-directly-from-website) for assistance.
+ 
+Once the assemblies has been downloaded and explored as mentioned above,you can find all the required assemblies in the installation folders. 
+ 
+{Syncfusion Essential Studio Installed location}\Essential Studio\syncfusionessentialstudio-releaseversion\Xamarin\lib 
+ 
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.1.0.41\Xamarin\lib 
+ 
+>**Note**: Assemblies can be found in unzipped package location in Mac 
+ 
+The following assembly is need to be added as reference from the lib folder to use SfSchedule in your application. 
+ 
+<table> 
+<tr> 
+<th>Project</th> 
+<th>Required assembly</th> 
+</tr> 
+<tr> 
+<td>Xamarin.iOS</td> 
+<td>ios-unified\Syncfusion.SfSchedule.iOS.dll<br/></td> 
+</tr> 
+</table> 
 
-1. Add reference to the SfSchedule in view controller as follows.
+## Create a simple application with SfSchedule 
+ 
+This section explains how to create a simple application using SfSchedule control. SfSchedule control can be configured entirely in C# code. This is how the final output will look like on iOS devices.
+ 
+![](GettingStarted_images/GettingStarted.png) 
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically: {Syncfusion Installed location}\Essential Studio{version number}\lib
-You have to add the following assembly reference to the iOS unified project ios-unifed \ Syncfusion.SfSchedule.iOS.dll
+You can download the entire source code of this demo for Xamarin.iOS from   
+here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleTest_iOS954342624.zip). 
+ 
+This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.
+ 
+* [Creating a new project](#creating-a-new-project) 
+* [Adding SfSchedule to the project](#adding-sfschedule-to-the-project)      
+* [Changing SfScheduleViews](#changing-sfscheduleviews)   
+* [Binding data to SfSchedule control](#binding-data-to-sfschedule-control) 
 
-N> Assemblies are available in unzipped package location in Mac.
+## Creating a new project 
+ 
+Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS. 
+ 
+Add the required assembly references to the project as discussed in the [Assembly Configuration](#assembly-configuration) section. 
+ 
+Import SfSchedule control namespace `Syncfusion.SfSchedule.iOS`. 
 
-## Initializing Schedule
-
-Initialize `SfSchedule` instance in ViewDidLoad method and then add the schedule as a sub view of  self view.
+## Adding SfSchedule to the project 
+ 
+Create an instance of `SfSchedule` control and add as a sub view of self view.
 
 {% highlight c# %}
-
+    
+    using Syncfusion.SfSchedule.iOS;
+    
+    SFSchedule schedule;
     public override void ViewDidLoad()
-    {
+	{
 		base.ViewDidLoad();
-		
 		//Initialize Schedule control
-        SFSchedule meetingRoomScheduler = new SFSchedule();
-        meetingRoomScheduler.ScheduleView = SFScheduleView.SFScheduleViewWeek;
-        View.AddSubview(meetingRoomScheduler);
+		schedule = new SFSchedule();
+		schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+		View.AddSubview(schedule);
+	}
+
+{% endhighlight %}
+
+## Changing Schedule Views 
+ 
+SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using `ScheduleView` property. By default the control is assigned with `DayView`.Current date will be displayed initially for all the Schedule views.
+ 
+Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using `FirstDayOfWeek` property of `SfSchedule`. 
+ 
+{% highlight c# %} 
+ 
+    //setting first day of the week 
+    schedule.FirstDayOfWeek = 3; 
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/FirstDayofWeek.png) 
+
+### Day View 
+ 
+DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration. 
+ 
+{% highlight c# %} 
+ 
+    //setting schedule view 
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/DayView.png) 
+
+### Week View 
+ 
+`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in repective timeslots. 
+ 
+{% highlight c# %} 
+ 
+    //setting schedule view 
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/WeekView.png) 
+
+### Work Week View 
+ 
+`WorkWeekView` is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week. 
+ 
+{% highlight c# %} 
+ 
+    //setting schedule view 
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/WorkWeekView.png) 
+
+>**Notes**: Appointments in non-working days will not be displayed. 
+
+### Month View 
+ 
+`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting `ShowAppointmentsInline` property of `MonthViewSettings` of `SfSchedule` as true. 
+ 
+{% highlight c# %} 
+ 
+    //setting schedule view 
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+    schedule.MonthViewSettings.ShowAppointmentsInline = true;
+ 
+{% endhighlight %} 
+ 
+![](GettingStarted_images/MonthView.png) 
+
+## Binding data to SfSchedule control  
+ 
+You can add events to the schedule by creating collection of `ScheduleAppointment`.
+ 
+### Adding Appointments  
+ 
+`ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as StartTime, EndTime, Subject and some additional information about the appointment can be added using Color, Notes, Location, All Day, Recursive properties. 
+
+Here are steps to render `MeetingRoomScheduler` using SfSchedule control.
+
+* [Adding datas for class](#adding-datas-for-class)
+* [Populating data collection](#populating-data-collection) 
+* [Setting appointments for SfSchedule](#setting-appointments-for-sfschedule) 
+
+#### Adding datas for class
+
+##### Adding event names
+
+You can add `Subject` to the appointments created by creating a collection for the same.
+
+{% highlight c# %}
+    
+    List<String> subjectCollection;
+    
+    /// <summary> 
+    /// Creates subject collection. 
+    /// </summary> 
+    private void CreateSubjectCollection()
+    {
+        //adding subject collection
+        subjectCollection = new List<String>();
+        subjectCollection.Add("GoToMeeting");
+        subjectCollection.Add("Business Meeting");
+        subjectCollection.Add("Conference");
+        subjectCollection.Add("Project Status Discussion");
+        subjectCollection.Add("Auditing");
+        subjectCollection.Add("Client Meeting");
+        subjectCollection.Add("Generate Report");
+        subjectCollection.Add("Target Meeting");
+        subjectCollection.Add("General Meeting");
+        subjectCollection.Add("Pay House Rent");
+        subjectCollection.Add("Car Service");
+        subjectCollection.Add("Medical Check Up");
+        subjectCollection.Add("Wedding Anniversary");
+        subjectCollection.Add("Sam's Birthday");
+        subjectCollection.Add("Jenny's Birthday");
     }
 
 {% endhighlight %}
 
-You can change the default UI of schedule using `ScheduleView` to display the dates in different layouts available in the control.
+##### Adding color collection 
+
+You can add `Color` to the appointments created by creating a collection for the same.
 
 {% highlight c# %}
-
-    //setting schedule view.
-    meetingRoomScheduler.ScheduleView = SFScheduleView. SFScheduleViewWeek;
-    View.AddSubview(meetingRoomScheduler);
+    
+    List<UIColor> colorCollection;
+    
+    /// <summary> 
+    /// Creates color collection.  
+    /// </summary> 
+    private void CreateColorCollection()
+    {
+        // adding colors collection
+        colorCollection = new List<UIColor>();
+        colorCollection.Add(UIColor.FromRGB(0xA2, 0xC1, 0x39));
+        colorCollection.Add(UIColor.FromRGB(0xD8, 0x00, 0x73));
+        colorCollection.Add(UIColor.FromRGB(0x1B, 0xA1, 0xE2));
+        colorCollection.Add(UIColor.FromRGB(0xE6, 0x71, 0xB8));
+        colorCollection.Add(UIColor.FromRGB(0xF0, 0x96, 0x09));
+        colorCollection.Add(UIColor.FromRGB(0x33, 0x99, 0x33));
+        colorCollection.Add(UIColor.FromRGB(0x00, 0xAB, 0xA9));
+        colorCollection.Add(UIColor.FromRGB(0xE6, 0x71, 0xB8));
+        colorCollection.Add(UIColor.FromRGB(0x1B, 0xA1, 0xE2));
+        colorCollection.Add(UIColor.FromRGB(0xD8, 0x00, 0x73));
+        colorCollection.Add(UIColor.FromRGB(0xA2, 0xC1, 0x39));
+        colorCollection.Add(UIColor.FromRGB(0xD8, 0x00, 0x73));
+        colorCollection.Add(UIColor.FromRGB(0x33, 0x99, 0x33));
+        colorCollection.Add(UIColor.FromRGB(0xE6, 0x71, 0xB8));
+        colorCollection.Add(UIColor.FromRGB(0x00, 0xAB, 0xA9));
+    }
 
 {% endhighlight %}
 
-## Populating Events
+##### Generating random times  
 
-You can add events to the schedule by creating collection of `ScheduleAppointments` using `ScheduleAppointmentCollection`. You can schedule meetings for a particular day by setting `From` and `To` of `Meeting` class.Here meeting appointments are created for around 20 days before and after current day, with single appointment each day and with 3 appointments each day(from three days before current day to three days after the current day)
-
+You can add required times for the meetings in schedule. Here random times duration is created.
 
 {% highlight c# %}
 
-    meetingRoomScheduler.Appointments = CreateAppointments();
-    View.AddSubview(meetingRoomScheduler);
+    /// <summary>   
+    /// Creates random time required for meeting.  
+    /// It can be replaced with desired time.   
+    /// </summary> 
+    private List<CGPoint> GettingTimeRanges()
+    {
+        List<CGPoint> randomTimeCollection = new List<CGPoint>();
+        randomTimeCollection.Add(new CGPoint(9, 11));
+        randomTimeCollection.Add(new CGPoint(12, 14));
+        randomTimeCollection.Add(new CGPoint(15, 17));
+        return randomTimeCollection;
+    }
+
+{% endhighlight %}
+
+#### Populating data collection
+
+Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections.
+
+{% highlight c# %}
     
     NSMutableArray CreateAppointments()
     {
         NSDate today = new NSDate();
-        InitializeDataForBookings();
+        CreateSubjectCollection();
+        CreateColorCollection();
         NSMutableArray appCollection = new NSMutableArray();
         NSCalendar calendar = NSCalendar.CurrentCalendar;
 
@@ -107,7 +309,7 @@ You can add events to the schedule by creating collection of `ScheduleAppointmen
             ScheduleAppointment meeting = new ScheduleAppointment();
             meeting.StartTime = startdate;
             meeting.EndTime = enddate;
-            meeting.Subject = (NSString)meetingCollection[randomTime.Next(9)];
+            meeting.Subject = (NSString)subjectCollection[randomTime.Next(9)];
             meeting.AppointmentBackground = colorCollection[randomTime.Next(9)];
 
             appCollection.Add(meeting);
@@ -124,7 +326,7 @@ You can add events to the schedule by creating collection of `ScheduleAppointmen
             ScheduleAppointment meeting = new ScheduleAppointment();
             meeting.StartTime = startdate;
             meeting.EndTime = enddate;
-            meeting.Subject = (NSString)meetingCollection[randomTime.Next(9)];
+            meeting.Subject = (NSString)subjectCollection[randomTime.Next(9)];
             meeting.AppointmentBackground = colorCollection[randomTime.Next(9)];
 
             appCollection.Add(meeting);
@@ -137,70 +339,14 @@ You can add events to the schedule by creating collection of `ScheduleAppointmen
 
 {% endhighlight %}
 
-You can set Time Ranges by creating a collection as List for the same.
+#### Setting appointments for SfSchedule 
+
+Create meetings of type `NSMutableArray` and assign those appointments collection to the `Appointments` property.
 
 {% highlight c# %}
 
-    private List<CGPoint> GettingTimeRanges()
-    {
-        List<CGPoint> randomTimeCollection = new List<CGPoint>();
-        randomTimeCollection.Add(new CGPoint(9, 11));
-        randomTimeCollection.Add(new CGPoint(12, 14));
-        randomTimeCollection.Add(new CGPoint(15, 17));
+    schedule.Appointments = CreateAppointments();
 
-        return randomTimeCollection;
-    }
-
-{% endhighlight %}
-
-You can add `Subject` and `Color` to the appointments created by creating a collection for the same.
-
-{% highlight c# %}
-    
-    List<String> meetingCollection;
-    List<UIColor> colorCollection;
-
-    private void InitializeDataForBookings()
-    {
-    //adding subject collection
-    meetingCollection = new List<String>();
-    meetingCollection.Add("GoToMeeting");
-    meetingCollection.Add("Business Meeting");
-    meetingCollection.Add("Conference");
-    meetingCollection.Add("Project Status Discussion");
-    meetingCollection.Add("Auditing");
-    meetingCollection.Add("Client Meeting");
-    meetingCollection.Add("Generate Report");
-    meetingCollection.Add("Target Meeting");
-    meetingCollection.Add("General Meeting");
-    meetingCollection.Add("Pay House Rent");
-    meetingCollection.Add("Car Service");
-    meetingCollection.Add("Medical Check Up");
-    meetingCollection.Add("Wedding Anniversary");
-    meetingCollection.Add("Sam's Birthday");
-    meetingCollection.Add("Jenny's Birthday");
-
-    // adding colors collection
-    colorCollection = new List<UIColor>();
-    colorCollection.Add(UIColor.FromRGB(0xA2, 0xC1, 0x39));
-    colorCollection.Add(UIColor.FromRGB(0xD8, 0x00, 0x73));
-    colorCollection.Add(UIColor.FromRGB(0x1B, 0xA1, 0xE2));
-    colorCollection.Add(UIColor.FromRGB(0xE6, 0x71, 0xB8));
-    colorCollection.Add(UIColor.FromRGB(0xF0, 0x96, 0x09));
-    colorCollection.Add(UIColor.FromRGB(0x33, 0x99, 0x33));
-    colorCollection.Add(UIColor.FromRGB(0x00, 0xAB, 0xA9));
-    colorCollection.Add(UIColor.FromRGB(0xE6, 0x71, 0xB8));
-    colorCollection.Add(UIColor.FromRGB(0x1B, 0xA1, 0xE2));
-    colorCollection.Add(UIColor.FromRGB(0xD8, 0x00, 0x73));
-    colorCollection.Add(UIColor.FromRGB(0xA2, 0xC1, 0x39));
-    colorCollection.Add(UIColor.FromRGB(0xD8, 0x00, 0x73));
-    colorCollection.Add(UIColor.FromRGB(0x33, 0x99, 0x33));
-    colorCollection.Add(UIColor.FromRGB(0xE6, 0x71, 0xB8));
-    colorCollection.Add(UIColor.FromRGB(0x00, 0xAB, 0xA9));
-    }
-
-{% endhighlight %}
+{% endhighlight %} 
 
 ![](GettingStarted_images/GettingStarted_iOS.png)
-
-You can find the complete getting started sample from this link [ScheduleGettingStarted](http://files2.syncfusion.com/dtsupport/directtrac/general/ze/ScheduleGettingStarted1758881126.zip) 
