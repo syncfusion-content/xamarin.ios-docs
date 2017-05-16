@@ -17,7 +17,7 @@ You can download our Xamarin components directly from our website, refer [here](
  
 Once the assemblies has been downloaded and explored as mentioned above,you can find all the required assemblies in the installation folders. 
  
-{Syncfusion Essential Studio Installed location}\Essential Studio\15.1.0.41\Xamarin\lib 
+{Syncfusion Essential Studio Installed location}\Essential Studio\syncfusionessentialstudio-releaseversion\Xamarin\lib 
  
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.1.0.41\Xamarin\lib 
  
