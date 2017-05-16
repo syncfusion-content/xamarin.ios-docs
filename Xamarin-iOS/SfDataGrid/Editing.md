@@ -27,7 +27,7 @@ GridTextColumn column = new GridTextColumn();
 column.AllowEditing = false;
 {% endhighlight %}
 
-N > `GridColumn.AllowEditing` takes higher priority than `SfDataGrid.AllowEditing`.
+N> `GridColumn.AllowEditing` takes higher priority than `SfDataGrid.AllowEditing`.
 
 ## Entering into edit mode
 
