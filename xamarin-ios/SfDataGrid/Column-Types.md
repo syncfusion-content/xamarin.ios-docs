@@ -334,7 +334,7 @@ public class ViewModel
     #endregion
 } 
 {% endhighlight %}
-![](SfDataGrid_images/SwitchColumn.jpg)
+![](SfDataGrid_images/SwitchColumn.png)
 
 ## GridImageColumn
 
@@ -422,7 +422,7 @@ public class ViewModel
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/ImageColumn.jpg)
+![](SfDataGrid_images/ImageColumn.png)
 
 N> The images should have its BuildAction set as EmbeddedResource since we are getting the image as stream from an [Assembly.GetManifestResourceStream](https://developer.xamarin.com/api/member/System.Reflection.Assembly.GetManifestResourceStream/p/System.Type/System.String/) in the LoadResource method.
 
