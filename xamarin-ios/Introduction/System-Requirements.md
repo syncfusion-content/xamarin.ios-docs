@@ -15,6 +15,8 @@ By using the following IDE, you can develop Xamarin.iOS apps:
 
 * Xamarin Studio
 
+* Visual Studio for Mac
+
 **Supported** **Versions**
 
 Supports iOS 7.0 and higher versions.
