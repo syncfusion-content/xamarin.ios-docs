@@ -127,3 +127,52 @@ Following are the lists of options available to customize the grid borders.
 
 * `GridLinesVisibility.None` allows you to display the DataGrid without borders
 
+## How to
+
+### Change the Sorting Icon in column headers
+
+You can load any desired image as the sort icon in the `SfDataGrid` using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the `DataGridStyle` class. The following code example illustrates how to change the SortIcon in `SfDataGrid`.
+
+{% highlight c# %}
+
+//Apply custom style to SfDataGrid from code
+dataGrid.GridStyle = new Custom();
+
+public class Custom : DataGridStyle
+{
+
+    public override UIImage GetHeaderSortIndicatorUp()
+    {
+        return UIImage.FromFile("SortDown.png");
+    }
+
+    public override UIImage GetHeaderSortIndicatorDown()
+    {
+        return UIImage.FromFile("SortUp.png");
+    }
+
+}
+{% endhighlight %}
+
+The following screenshots shows the final outcome of the above code
+![](SfDataGrid_images/SortIconCustomization.png)
+
+N> The image's BuildAction must be set to BundleResource so that we can access the image via its name.
+
+### Change the color of the resizing indicator
+
+You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in `SfDataGrid`. 
+
+{% highlight c# %}
+
+//Apply custom style to SfDataGrid from code
+dataGrid.GridStyle = new Custom();
+
+public class Custom : DataGridStyle
+{
+    public override UIColor GetResizingIndicatorColor()
+    {
+        return UIColor.Blue;
+    }
+}
+{% endhighlight %}
