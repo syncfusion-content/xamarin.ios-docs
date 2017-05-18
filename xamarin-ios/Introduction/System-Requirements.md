@@ -19,4 +19,4 @@ By using the following IDE, you can develop Xamarin.iOS apps:
 
 **Supported** **Versions**
 
-Supports iOS 7.0 and higher versions.
+Supports iOS 9.0 and higher versions.
