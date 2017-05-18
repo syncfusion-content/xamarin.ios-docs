@@ -35,8 +35,9 @@ public override void ViewDidLoad ()
     base.ViewDidLoad ();
 
     //Initialize the sunburst chart with required frame. This frame can be any rectangle, which bounds inside the view.
-    SFSunburstChart chart = new SFSunburstChart ();
+    SfSunburstChart chart = new SfSunburstChart ();
     chart.Frame   = this.View.Frame;
+	View.AddSubview(chart);
 }
 
 {% endhighlight %}
@@ -433,7 +434,7 @@ sunburst.Title.IsVisible = true;
 sunburst.Title.Text = "Employees Count";
 {% endhighlight %}
 
-## Add legend
+## Add Legend
 
 You can enable legend using [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Legend.html) property as shown below,
 
@@ -449,6 +450,186 @@ You can add data labels to improve the readability of the sunburst chart. This c
 sunburst.DataLabel.ShowLabel = true;
 {% endhighlight %}
 
-Following is the final output screenshot,
+The following is the code example for creating the sunburst chart.
 
+{% highlight C# %}
+
+public partial class GettingStarted_iOSViewController : UIViewController
+{
+    public GettingStarted_iOSViewController (IntPtr handle) : base (handle)
+    {
+        
+    }
+
+    public override void DidReceiveMemoryWarning ()
+    {
+        base.DidReceiveMemoryWarning ();
+
+        // Release any cached data, images, etc that aren't in use.
+    }
+
+    #region View lifecycle
+
+    public override void ViewDidLoad ()
+    {
+        base.ViewDidLoad ();
+        //Initialize the sunburst chart with required frame. This frame can be any rectangle, which bounds inside the view.
+        SfSunburstChart chart = new SfSunburstChart ();
+		chart.Frame   = this.View.Frame;
+	    View.AddSubview(chart);
+
+        //Define the title for the sunburst Chart.
+        sunburst.Title.IsVisible = true
+        sunburst.Title.Text = "Employees Count";
+	   
+        //Adding Legend to the sunburst Chart.
+        sunburst.Legend.IsVisible = true;
+		
+		//Adding data labels to the sunburst 
+		sunburst.DataLabel.ShowLabel = true;
+
+		////Defining the data source for the sunburst chart.
+		DataModel dataModel = new DataModel();
+		sunburst.ItemsSource = dataModel.Data;
+		sunburst.ValueMemberPath = "EmployeesCount";
+		
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country"});
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription"});
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup"});
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole"});
+
+        // Perform any additional setup after loading the view, typically from a nib.
+    }
+
+    #endregion
+}
+	
+public class Model
+{
+    public string Category { get; set; }
+	public string Country { get; set; }
+	public string JobDescription { get; set; }
+	public string JobGroup { get; set; }
+	public string JobRole { get; set; }
+	public double EmployeesCount { get; set; }
+}
+    
+public class DataModel
+{
+	public DataModel()
+	{
+		Data = new ObservableCollection<Model>();
+		
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Sales",
+			EmployeesCount = 70
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Technical",
+			JobGroup = "Testers",
+			EmployeesCount = 35
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "iOS",
+			EmployeesCount = 105
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "Web",
+			EmployeesCount = 40
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Management",
+			EmployeesCount = 40
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Accounts",
+			EmployeesCount = 60
+		});
+		Data.Add(new Model
+		{
+			Country = "India",
+			JobDescription = "Technical",
+			JobGroup = "Testers",
+			EmployeesCount = 25
+		});
+		Data.Add(new Model
+		{
+			Country = "India",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "iOS",
+			EmployeesCount = 155
+		});
+		Data.Add(new Model
+		{
+			Country = "India",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "Web",
+			EmployeesCount = 60
+		});
+		Data.Add(new Model
+		{
+			Country = "China",
+			JobDescription = "Sales",
+			JobGroup = "Executive",
+			EmployeesCount = 30
+		});
+		Data.Add(new Model
+		{
+			Country = "China",
+			JobDescription = "Sales",
+			JobGroup = "Analyst",
+			EmployeesCount = 40
+		});
+		Data.Add(new Model
+		{
+			Country = "UK",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "iOS",
+			EmployeesCount = 100
+		});
+		Data.Add(new Model
+		{
+			Country = "UK",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "Web",
+			EmployeesCount = 30
+		});
+		Data.Add(new Model
+		{
+			Country = "UK",
+			JobDescription = "HR",
+			EmployeesCount = 60
+    	});	
+    	Data.Add(new Model}
+		{
+	    	Country = "UK",
+			JobDescription = "Marketing",
+			EmployeesCount = 40
+		});
+	}
+	public ObservableCollection<Model> Data { get; set; }
+}
+	
+{% endhighlight %}
+Following is the final output screenshot,	
 ![SfSunburstChart](Sunburst_images/gettingstarted.png)
