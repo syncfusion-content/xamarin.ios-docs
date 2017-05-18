@@ -9,19 +9,28 @@ documentation: ug
 
 # Localization
 
-Schedule control is available with complete localization support . Localization can be specified by setting the `Locale` property of the control. In the format of `Language code`.  Based on the locale specified the strings in the control such as Date, time, days are localized accordingly. As the subject of the appointments are given in the application level, it can be set as localized strings as per the requirement. 
+Schedule control is available with complete localization support. Localization can be specified by setting the [Locale](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~Locale.html) property of SfSchedule. In the format of `Language code`.
 
-## Locale
+## Change default control language
 
- Based on the locale specified the strings in the control such as Date, time, days are localized accordingly. By default schedule control is available with `en-US` locale. 
+Based on the `Locale` specified the strings in the control such as Date, time, days are localized accordingly.
 
-{% highlight c# %}
+By default, schedule control is available with en locale, which is English.
 
-    schedule.Locale =  new NSLocale("fr");
+{% tabs %}   
+{% highlight c# %}   
+    
+          //setting locale for the control
+            schedule.Locale = new NSLocale("fr");
+ 
+{% endhighlight %}   
+{% endtabs %}   
 
-{% endhighlight %}
+![](LocalizationGlobalization_images/Localization.png)   
 
->**NOTE**: AM/PM in the timeline will not be localized in the Schedule views.
+## Change custom texts in the control.
 
-![](LocalizationGlobalization_images/Localization.png)
+You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file. 
+
+![](LocalizationGlobalization_images/Localization_IOS.png)  
 
