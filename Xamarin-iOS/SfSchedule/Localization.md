@@ -24,7 +24,9 @@ By default, schedule control is available with en locale, which is English.
             schedule.Locale = new NSLocale("fr");
  
 {% endhighlight %}   
-{% endtabs %}   
+{% endtabs %}  
+
+>**Note ** AM/PM in the timeline will not be localized in the Schedule views 
 
 ![](LocalizationGlobalization_images/Localization.png)   
 
