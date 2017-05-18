@@ -18,9 +18,9 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 N> Assemblies are available in unzipped package location in Mac.
 
-Add the following assembly references to the Android project,
+Add the following assembly references to the iOS project,
 
-android\Syncfusion.SfSunburstChart.iOS.dll
+ios-unified\Syncfusion.SfSunburstChart.iOS.dll
 
 # Add and configure the sunburst chart
 
@@ -30,9 +30,14 @@ The following steps explain on how to create a sunburst chart and configure its 
 
 {% highlight C# %}
 
-SfSunburstChart chart = new SfSunburstChart();
+public override void ViewDidLoad ()
+{
+    base.ViewDidLoad ();
 
-SetContentView(chart);
+    //Initialize the sunburst chart with required frame. This frame can be any rectangle, which bounds inside the view.
+    SFSunburstChart chart = new SFSunburstChart ();
+    chart.Frame   = this.View.Frame;
+}
 
 {% endhighlight %}
 
