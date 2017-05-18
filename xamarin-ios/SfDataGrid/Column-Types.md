@@ -544,7 +544,6 @@ GridPickerColumn pickerColumn = new GridPickerColumn()
 };
 data.Colum.Add(pickerColumn);
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight c# %}
 // ViewModel class
