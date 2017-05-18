@@ -450,7 +450,7 @@ You can add data labels to improve the readability of the sunburst chart. This c
 sunburst.DataLabel.ShowLabel = true;
 {% endhighlight %}
 
-The following is the code example for creating the sunburst chart.
+The following code example for creating sunburst chart.
 
 {% highlight C# %}
 
