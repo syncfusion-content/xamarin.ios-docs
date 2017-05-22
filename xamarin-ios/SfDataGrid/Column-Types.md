@@ -248,7 +248,7 @@ The following screenshot shows how template columns are used in SfDataGrid
 
 ![](SfDataGrid_images/TemplateColumns.png)
 
-### Row Header 
+## Row Header 
 
 RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the RowHeader in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` property as `true`.
 
