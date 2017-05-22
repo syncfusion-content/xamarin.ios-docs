@@ -583,6 +583,7 @@ You can create a `GridPickerColumn` and set its ItemsSource property to a user-t
  
  Once editing is ended the column having the `MappingName` equal to the `ValueMeberPath` has its data changed to the corresponding `ValueMemberPath` value for the selected `DisplayMemberPath` value in the picker. 
 
+### Customization of picker dropdown values
 The following code example shows you how to customize the picker data using `DisplayMemberPath` and `ValueMemberPath`
 
 {% highlight c# %}
