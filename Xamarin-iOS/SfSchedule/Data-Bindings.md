@@ -66,6 +66,8 @@ using Syncfusion.SfSchedule.iOS;
 
 {% endhighlight %}
 
+![](data_binding_images/appointment.png)
+
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
@@ -120,6 +122,8 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
         schedule.Appointments = appCollection;
 {% endhighlight %}
 
+![](data_binding_images/span.png)
+
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
 
@@ -160,6 +164,8 @@ of the respective view settings.
         weekViewSettings.AllDayAppointmentLayoutColor = UIColor.Gray; 
 
 {% endhighlight %} 
+
+![](data_binding_images/allday.png)
 
 ## Recurrence Appointment
 Recurring an appointment on a daily, weekly, monthly, or yearly interval. Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments. 
@@ -247,6 +253,8 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/
             schedule.Appointments = appCollection; 
 {% endhighlight %} 
 
+![](data_binding_images/recurrence.png)
+
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 
@@ -273,6 +281,8 @@ Schedule appointment can be customized by setting appointment style properties s
             schedule.AppointmentStyle = appointmentStyle; 
 
 {% endhighlight %}
+
+![](data_binding_images/style.png)
 
 ### Customize appearance using Event
 Schedule appointment can be customized during runtime using [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `AppointmentStyle` property.
@@ -372,3 +382,5 @@ N>**Note:** `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 			schedule.AppointmentStyle = appointmentStyle;
  
 {% endhighlight %}
+
+![](data_binding_images/selection.png)
