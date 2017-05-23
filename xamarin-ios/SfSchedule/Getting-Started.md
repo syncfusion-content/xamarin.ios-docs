@@ -342,4 +342,4 @@ Create meetings of type `NSMutableArray` and assign those appointments collectio
 
 {% endhighlight %} 
 
-![](GettingStarted_images/GettingStarted_iOS.png)
+![](GettingStarted_images/GettingStarted.png)

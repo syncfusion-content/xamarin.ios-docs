@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Schedule for Xamarin.iOS provides all the common scheduling functionalities to create and manage appointments as well as exposes a gesture friendly UI to perform all common operations likes selection, navigation, etc. **Essential** **Schedule** is a perfect solution for developers looking to add advanced, feature rich **Schedule** to their applications.
 
-![](GettingStarted_images/GettingStarted_iOS.png)
+![](GettingStarted_images/GettingStarted.png)
 
 ## Key features
 

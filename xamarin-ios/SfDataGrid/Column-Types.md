@@ -248,7 +248,7 @@ The following screenshot shows how template columns are used in SfDataGrid
 
 ![](SfDataGrid_images/TemplateColumns.png)
 
-### Row Header 
+## Row Header 
 
 RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the RowHeader in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` property as `true`.
 
@@ -334,7 +334,7 @@ public class ViewModel
     #endregion
 } 
 {% endhighlight %}
-![](SfDataGrid_images/SwitchColumn.png)
+![](SfDataGrid_images/SwitchColumn.jpg)
 
 ## GridImageColumn
 
@@ -422,7 +422,7 @@ public class ViewModel
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/ImageColumn.png)
+![](SfDataGrid_images/ImageColumn.jpg)
 
 N> The images should have its BuildAction set as EmbeddedResource since we are getting the image as stream from an [Assembly.GetManifestResourceStream](https://developer.xamarin.com/api/member/System.Reflection.Assembly.GetManifestResourceStream/p/System.Type/System.String/) in the LoadResource method.
 
@@ -575,14 +575,15 @@ public class ViewModel
 
 You can create a `GridPickerColumn` and set its ItemsSource property to a user-typed collection to display a list of user defined items in the picker drop down. Initially the picker column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~ValueMemberPath.html) are not set.
 
- #### DisplayMemberPath
+#### DisplayMemberPath
  
  Displays a value by comparing the values of the properties set as `GridColumn.MappingName` and `ValueMemberPath` in their respective underlying collections. If the `ValueMeberPath` property's values contains the `MappingName` property's current value, then its corresponding `DisplayMemberPath` property's value is displayed in the `GridCell`. Else the `GridCell` appears blank. However in the edit mode the values of the `DisplayMemberPath` property are dispayed as the picker items.
  
- #### ValueMemberPath
+#### ValueMemberPath
  
  Once editing is ended the column having the `MappingName` equal to the `ValueMeberPath` has its data changed to the corresponding `ValueMemberPath` value for the selected `DisplayMemberPath` value in the picker. 
 
+### Customization of picker dropdown values
 The following code example shows you how to customize the picker data using `DisplayMemberPath` and `ValueMemberPath`
 
 {% highlight c# %}
