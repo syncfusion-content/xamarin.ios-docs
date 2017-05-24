@@ -56,7 +56,7 @@ You can collapse the default header of schedule by setting `HeaderHeight` proper
             var headerString = string.Empty;
             if (schedule.ScheduleView == SFScheduleView.SFScheduleViewMonth)
             {
-                visibleDatesIndex = 8;
+                visibleDatesIndex = 8;//to get current month visible dates.
             }
             else
             {
