@@ -46,22 +46,23 @@ You can collapse the default header of schedule by setting `HeaderHeight` proper
 
 {% highlight c# %}
     
-        //triggering visible dates changed event.
+    //triggering visible dates changed event.
     schedule.VisibleDatesChanged += Schedule_VisibleDatesChanged;
     
     private void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
         {
-            int CurrentVisibleMonth = 0;
+            //to get visible dates index value.
+            int visibleDatesIndex = 0;
             var headerString = string.Empty;
             if (schedule.ScheduleView == SFScheduleView.SFScheduleViewMonth)
             {
-                CurrentVisibleMonth = 8;
+                visibleDatesIndex = 8;
             }
             else
             {
-                CurrentVisibleMonth = 0;
+                visibleDatesIndex = 0;
             }
-            NSDate date = e.VisibleDates.GetItem<NSDate>((nuint)CurrentVisibleMonth);
+            NSDate date = e.VisibleDates.GetItem<NSDate>((nuint)visibleDatesIndex);
             NSDateFormatter dateFormat = new NSDateFormatter();
             dateFormat.DateFormat = "MMMM YYYY";
             headerString = dateFormat.ToString(date);
