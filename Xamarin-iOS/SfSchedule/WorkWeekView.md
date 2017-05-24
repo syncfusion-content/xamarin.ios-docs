@@ -32,6 +32,7 @@ You can customize the default appearance of view header in [WorkWeekView](https:
 			schedule.DayHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
+![](daymodule_images/viewheaderappearance_workweek.png)
 
 You can customize the height of the ViewHeader in `WorkWeekView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderHeight.html) property of `SFSchedule`.
 
@@ -42,6 +43,8 @@ You can customize the height of the ViewHeader in `WorkWeekView` by setting [Vie
 			
 {% endhighlight %}
 
+![](daymodule_images/viewheaderheight_workweek.png)
+
 ## Change Time Interval:
 You can customize the interval of timeslots in `WorkWeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimeInterval.html) property of `SFSchedule`.
 
@@ -50,6 +53,7 @@ You can customize the interval of timeslots in `WorkWeekView` by setting [TimeIn
     schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
 	schedule.TimeInterval = 120;
 {% endhighlight %}
+![](daymodule_images/timeintervalworkweek.png)
 
 ## Change Working hours:
 Working hours in `WorkWeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~WorkEndHour.html) properties of [WorkWeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings.html).
@@ -63,6 +67,8 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
 			workWeekViewSettings.WorkEndHour = 18;
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/chnageworkinghour_workweek.png)
 
 >**Note**:
 `WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
@@ -90,6 +96,8 @@ You can customize the appearance of the working hour timeslots by its color usin
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
+![](daymodule_images/timeslotappearance_workweek.png)
+
 
 ### Timeslot customization in Non-Working hours:
 
@@ -107,6 +115,8 @@ You can customize the appearance of the non-working hour timeslots by its color 
 			workWeekViewSettings.VerticalLineStrokeWidth = 3;
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/nonworkinghour_workweek.png)
 
 >**Note**:
 `HorizontalLineStrokeWidth`and `VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
@@ -132,6 +142,8 @@ You can restrict or allocate certain timeslot as Non-accessible blocks by using[
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
+![](daymodule_images/nonaccessibletimeslot_workweek.png)
+
 
 >**Note**:
 Selection and related events will not be working in this blocks.
@@ -143,6 +155,8 @@ By default, schedule control will be rendered with Sunday as the first day of th
             schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
 			schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
+
+![](daymodule_images/firstdayofweek_workweek.png)
 
 ## Time Label Formatting:
 You can customize the format for the labels which are mentioning the time, by setting [TimeLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekLabelSettings~TimeLabelFormat.html) property of [LabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~LabelSettings.html) in `WorkWeekViewSettings`.
@@ -156,6 +170,8 @@ You can customize the format for the labels which are mentioning the time, by se
 			workweekViewSettings.LabelSettings = workWeekLabelSettings;
 			schedule.WorkWeekViewSettings = workweekViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/timelabelformat_workweek.png)
 
 ## Time Label Appearance:
 
@@ -172,6 +188,8 @@ You can customize the color for the labels which are mentioning the time, by set
 			workWeekViewSettings.LabelSettings = workWeekLabelSettings;
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/timelabelappearance_workweek.png)
 
 ## Selection:
 You can customize the default appearance of selection UI in the timeslots.
@@ -194,6 +212,7 @@ You can customize the timeslot selection by using [SelectionStyle](https://help.
 			schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 
+![](daymodule_images/selectionstyle_workweek.png)
 
 ### Selection customization using custom View:
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionView.html) property of `SFSchedule`.
@@ -207,6 +226,8 @@ You can replace the default selection UI with your custom view by setting [Selec
 			customView.SetTitleColor(UIColor.White, UIControlState.Normal);
 			schedule.SelectionView = customView;
 {% endhighlight %}
+
+![](daymodule_images/selectioncustomview_workweek.png)
 
 >**Note:**
 Selection customization is applicable for time slots alone.

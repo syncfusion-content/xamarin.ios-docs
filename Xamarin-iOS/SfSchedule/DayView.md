@@ -33,6 +33,8 @@ You can customize the default appearance of view header in [DayView](https://hel
 			
 {% endhighlight %}
 
+![](daymodule_images/viewheaderappearance_day.png)
+
 You can customize the height of the ViewHeader in `DayView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderHeight.html) property of `SFSchedule`.
 
 {% highlight C# %}
@@ -42,6 +44,8 @@ You can customize the height of the ViewHeader in `DayView` by setting [ViewHead
 			
 {% endhighlight %}
 
+![](daymodule_images/viewheaderheight_day.png)
+
 ## Change Time Interval:
 You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimeInterval.html) property of `SFSchedule`.
 
@@ -50,6 +54,8 @@ You can customize the interval of timeslots in `DayView` by setting [TimeInterva
     schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
 	schedule.TimeInterval = 120;
 {% endhighlight %}
+
+![](daymodule_images/timeinterval_day.png)
 
 ## Change Working hours:
 Working hours in `DayView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~WorkEndHour.html) properties of [DayViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayViewSettings.html).
@@ -63,6 +69,8 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 			dayViewSettings.WorkEndHour = 18;
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/changeworkinghours_day.png)
 
 >**Note**:
 `WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
@@ -88,6 +96,7 @@ You can customize the appearance of the WorkingHourTimeslot by its color using [
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 
+![](daymodule_images/timeslotappearance_day.png)
 
 ### Timeslot customization in Non-Working hours:
 
@@ -102,6 +111,8 @@ You can customize the appearance of the Non-workingHourTimeslots by its color us
 			dayViewSettings.NonWorkingHourTimeSlotColor = UIColor.Yellow;
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/nonworkinghour_day.png)
 
 >**Note**:
 `TimeSlotStrokeWidth` property common for both Working hours and Non-Working hour time slot customization.
@@ -127,6 +138,7 @@ You can restrict or allocate certain timeslot as non-accessible blocks by using 
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 
+![](daymodule_images/nonaccessibleblock_day.png)
 
 >**Note**:
 Selection and related events will not be working in this blocks.
@@ -148,6 +160,8 @@ You can customize the format for the labels which are mentioning the time, by se
 			this.View.AddSubview(schedule);
 {% endhighlight %}
 
+![](daymodule_images/timelabelformat_day.png)
+
 ## Time Label Appearance:
 
 You can customize the color for the labels which are mentioning the time, by setting [TimeLabelColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~TimeLabelColor.html) property of `LabelSettings` in `DayViewSettings`.
@@ -163,6 +177,8 @@ You can customize the color for the labels which are mentioning the time, by set
 			dayViewSettings.LabelSettings = dayLabelSettings;
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
+
+![](daymodule_images/timelabelappearance_day.png)
 
 ## Selection:
 You can customize the default appearance of selection UI in the timeslots.
@@ -185,6 +201,7 @@ You can customize the timeslot selection by using [SelectionStyle](https://help.
 			schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 
+![](daymodule_images/selectionstyle_day.png)
 
 ### Selection customization using custom View:
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionView.html) property of `SFSchedule`.
@@ -198,6 +215,8 @@ You can replace the default selection UI with your custom view by setting [Selec
 			customView.SetTitleColor(UIColor.White, UIControlState.Normal);
 			schedule.SelectionView = customView;
 {% endhighlight %}
+
+![](daymodule_images/selectioncustomview_day.png)
 
 >**Note:**
 Selection customization is applicable for time slots alone.
