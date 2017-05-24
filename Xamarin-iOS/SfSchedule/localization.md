@@ -17,16 +17,16 @@ Based on the `Locale` specified the strings in the control such as Date, time, d
 
 By default, schedule control is available with en locale, which is English.
 
-{% tabs %}   
+
 {% highlight c# %}   
     
           //setting locale for the control
             schedule.Locale = new NSLocale("fr");
  
 {% endhighlight %}   
-{% endtabs %}  
+ 
 
->**Note ** AM/PM in the timeline will not be localized in the Schedule views 
+>**Note** AM/PM in the timeline will not be localized in the Schedule views 
 
 ![](LocalizationGlobalization_images/Localization.png)   
 
