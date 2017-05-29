@@ -76,7 +76,7 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
 ## Timeslot Appearance:
 You can customize the appearance of timeslots in `WorkWeekView`.
 
- * [Timeslot customization in Work hours](#timeslot-customization-in-Work-hours)
+ * [Timeslot customization in Work hours](#timeslot-customization-in-work-hours)
  * [Timeslot customization in Non-Working hours](timeslot-customization-in-non-working-hours)
 
 ### Timeslot customization in Work hours:
@@ -99,7 +99,7 @@ You can customize the appearance of the working hour timeslots by its color usin
 ![](daymodule_images/timeslotappearance_workweek.png)
 
 
-### Timeslot customization in Non-Working hours:
+### Timeslot customization in Non Working hours:
 
 You can customize the appearance of the non-working hour timeslots by its color using[NonWorkingHourTimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~NonWorkingHourTimeSlotBorderColor.html),[NonWorkingHourTimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~NonWorkingHourTimeSlotColor.html),`VerticalLineStrokeWidth`, ` VerticalTimeSlotBorderColor` and `HorizontalLineStrokeWidth`properties of `WorkWeekViewSettings`.
 
