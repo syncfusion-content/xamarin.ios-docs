@@ -37,7 +37,7 @@ dataGrid.ColumnSizer = ColumnSizer.None;
 
 ## ColumnSizer.LastColumnFill
 
-When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnSizer.html) is “LastColumnFill”, the column width of the GridColumns are adjusted with respect to [SfDataGrid.DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidth.html) property. In case if the columns does not fill the entire view space, then the last column’s width fills the unoccupied space in the view.
+When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnSizer.html) is “LastColumnFill”, the column width of the GridColumns are adjusted with respect to [SfDataGrid.DefaultColumnWidth]http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property. In case if the columns does not fill the entire view space, then the last column’s width fills the unoccupied space in the view.
 
 {% highlight c# %}
 dataGrid.ColumnSizer = ColumnSizer.LastColumnFill;  

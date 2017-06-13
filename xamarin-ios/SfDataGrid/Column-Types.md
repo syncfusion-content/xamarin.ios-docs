@@ -100,7 +100,7 @@ GridTextColumn column = new GridTextColumn()
 
 ### Column Width
 
-SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~DefaultColumnWidthProperty.html) property in SfDataGrid.
+SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
 
 Customizing the width for auto generated columns as shown below.
 
@@ -113,7 +113,9 @@ if (e.Column.MappingName == "OrderID") {
 {% endhighlight %}
 
 ### IsHidden 
-SfDatagrid allows you to hide the particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~IsHidden.html) property. You can set the `IsHidden` property as `True` instead of setting column width as `0`. The default value of the IsHidden property is `False`. 
+SfDataGrid allows you to hide a particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~IsHidden.html) property. The default value of the IsHidden property is `False`. 
+
+N> You can set the `IsHidden` property as `True` instead of setting column width as `0`.
 
 The following code example shows you how to hide the column using IsHidden property.
 
