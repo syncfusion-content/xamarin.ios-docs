@@ -98,6 +98,54 @@ GridTextColumn column = new GridTextColumn()
 
 {% endhighlight %}
 
+### Column Width
+
+SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
+
+N> You can set the `IsHidden` property as `True` instead of setting column width as `0` to hide a column.
+
+Customizing the width for auto generated columns as shown below.
+
+{% highlight c# %}
+// AutoGenerateColumn
+
+dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
+
+void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e){
+if (e.Column.MappingName == "OrderID") {
+    e.Column.Width = 100;
+    }
+}
+
+// Manually generated column
+
+dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" ,Width = 100 });
+
+{% endhighlight %}
+
+### IsHidden 
+SfDataGrid allows you to hide a particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~IsHidden.html) property. The default value of the `IsHidden` property is `False`. 
+
+N> You can set the `IsHidden` property as `True` instead of setting column width as `0` to hide a column.
+
+The following code example shows you how to hide the column using `IsHidden` property.
+
+{% highlight c# %}
+// AutoGenerate Column
+
+dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
+
+void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e){
+if (e.Column.MappingName == "OrderID") {
+    e.Column.IsHidden = true;
+    }
+}
+
+// Manually generated column
+
+dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = true});
+{% endhighlight %}
+
 ## GridTextColumn
 
 GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. Each of the record cells in GridTextColumn displays text based on the `MappingName` which associates the column with a property in the data source.
