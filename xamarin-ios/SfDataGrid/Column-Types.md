@@ -109,6 +109,8 @@ Customizing the width for auto generated columns as shown below.
 {% highlight c# %}
 // AutoGenerateColumn
 
+dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
+
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e){
 if (e.Column.MappingName == "OrderID") {
     e.Column.Width = 100;
@@ -122,13 +124,25 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" ,Width = 100
 {% endhighlight %}
 
 ### IsHidden 
-SfDataGrid allows you to hide a particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~IsHidden.html) property. The default value of the IsHidden property is `False`. 
+SfDataGrid allows you to hide a particular column using [GridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~IsHidden.html) property. The default value of the `IsHidden` property is `False`. 
 
 N> You can set the `IsHidden` property as `True` instead of setting column width as `0` to hide a column.
 
 The following code example shows you how to hide the column using `IsHidden` property.
 
 {% highlight c# %}
+// AutoGenerate Column
+
+dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
+
+void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e){
+if (e.Column.MappingName == "OrderID") {
+    e.Column.IsHidden = true;
+    }
+}
+
+// Manually generated column
+
 dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = true});
 {% endhighlight %}
 
