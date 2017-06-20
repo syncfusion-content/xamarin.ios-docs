@@ -95,7 +95,7 @@ The following picture shows the grid loaded in different styles.
 
 ## Border Customization
 
-* SfDatagrid allows you to customize the grid borders to vertical, horizontal or both based on requirements. you have override the `DataGridStyle.GetGridLinesVisibility`
+* SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. you have override the `DataGridStyle.GetGridLinesVisibility`
 method. 
 
 {% highlight c# %}
@@ -104,7 +104,7 @@ dataGrid.GridStyle = new CustomStyle ();
 {% endhighlight %}
  
 {% highlight c# %}
-//Custom Style class
+//Custom Style class 
 public class CustomStyle : DataGridStyle
 {
     public CustomStyle ()
@@ -133,6 +133,9 @@ public virtual GridLinesVisibility GetGridLinesVisibility()
     return GridLinesVisibility.Both;
 }
 {% endhighlight %}
+The following screenshot shows the final outcome upon execution of the above code.
+
+![](SfDataGrid_images/BorderCustomization_Both.png)
 
 ### Horizontal
 
@@ -144,6 +147,10 @@ public virtual GridLinesVisibility GetGridLinesVisibility()
 }
 {% endhighlight %}
 
+The following screenshot shows the final outcome upon execution of the above code.
+
+![](SfDataGrid_images/BorderCustomization_Horizontal.png)
+
 ### Vertical
 
 * `GridLinesVisibility.Vertical` allows you to display the DataGrid with Vertical border only
@@ -154,6 +161,10 @@ public virtual GridLinesVisibility GetGridLinesVisibility()
 }
 {% endhighlight %}
 
+The following screenshot shows the final outcome upon execution of the above code.
+
+![](SfDataGrid_images/BorderCustomization_Vertical.png)
+
 ### None
 
 * `GridLinesVisibility.None` allows you to display the DataGrid without borders
@@ -163,6 +174,10 @@ public virtual GridLinesVisibility GetGridLinesVisibility()
     return GridLinesVisibility.None;
 }
 {% endhighlight %}
+
+The following screenshot shows the final outcome upon execution of the above code.
+
+![](SfDataGrid_images/BorderCustomization_None.png)
 
 ## How to
 
