@@ -111,7 +111,7 @@ public class CustomStyle : DataGridStyle
     }
     public override GridLinesVisibility GetGridLinesVisibility()
     {
-        return GridLinesVisibility;
+        return base.GetGridLinesVisibility();
     }
 }
 {% endhighlight %}
