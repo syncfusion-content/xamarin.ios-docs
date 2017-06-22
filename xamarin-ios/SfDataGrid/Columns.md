@@ -17,17 +17,38 @@ SfDataGrid allows you to create and add Columns in two ways:
 
 ## Automatic Columns Generation
 
-The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html). It is a bindable property and it decides columns generation for SfDataGrid based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsMode.html) property. 
+The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html). It is a bindable property and it decides columns generation for SfDataGrid based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumnsMode.html) property. 
 
 `SfDataGrid.AutoGenerateColumnsMode` decides a way to create columns when `SfDataGrid.AutoGenerateColumns` is set to `true`. It also decides whether to retain the grouping and sorting when ItemsSource is changed. 
 
 The `SfDataGrid.AutoGenerateColumnsMode` is of type [AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumnsMode.html) which has the following five options.
 
-* None: Stores only the columns that are defined in [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection. When changing the ItemsSource, the grouping and sorting for explicitly defined `SfDataGrid.Columns` alone will be retained.
-* Reset: Retains the columns defined explicitly in the application level and creates columns newly for all the other properties in a data source. When changing the ItemsSource, the grouping and sorting for explicitly defined `SfDataGrid.Columns` alone will be retained.
-* ResetAll: When changing the ItemsSource, the columns for the previous data source are cleared and the columns will be created newly for the new data source. Even when columns are explicitly defined it does not consider the defined columns and creates the column based on the underlying collection. Further, when changing the ItemsSource, the grouping and sorting for all the columns will be cleared.
-* RetainOld: When changing the ItemsSource, creates columns for all fields in a data source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created. Similarly, when changing the ItemsSource and when the Grid have any explicit definition for columns, the grouping and sorting are retained as it is.
-* SmartReset: Retains the columns defined explicitly in application level and the columns with `MappingName` identical to the properties in the new data source. Creates columns newly for all the other properties in the data source. Similarly, it retains the grouping and sorting of the columns that are defined explicitly in application level and the columns with `MappingName` identical to the properties in new data source.
+<table>
+<tr>
+<th> Modes </th>
+<th> Description </th>
+</tr>
+<tr>
+<td> None </td>
+<td> Stores only the columns that are defined in SfDataGrid.Columns collection.<br/> When changing the ItemsSource, the grouping and sorting for explicitly defined SfDataGrid.Columns alone will be retained. </td>
+</tr>
+<tr>
+<td> Reset </td>
+<td> Retains the columns defined explicitly in the application level and creates columns newly for all the other properties in a data source.<br/> When changing the ItemsSource, the grouping and sorting for explicitly defined `SfDataGrid.Columns` alone will be retained. </td>
+</tr>
+<tr>
+<td> ResetAll </td>
+<td> When changing the ItemsSource, the columns for the previous data source are cleared and the columns will be created newly for the new data source. Even when columns are explicitly defined it does not consider the defined columns and creates the column based on the underlying collection.<br/> Further, when changing the ItemsSource, the grouping and sorting for all the columns will be cleared. </td>
+</tr>
+<tr>
+<td> RetainOld </td>
+<td> When changing the ItemsSource, creates columns for all fields in a data source when the Grid does not have any explicit definition for columns. When columns are defined explicitly, then the defined columns alone are retained and new columns are not created.<br/> Similarly, when changing the ItemsSource and when the Grid have any explicit definition for columns, the grouping and sorting are retained as it is </td>
+</tr>
+<tr>
+<td> SmartReset </td>
+<td> Retains the columns defined explicitly in application level and the columns with MappingName identical to the properties in the new data source. Creates columns newly for all the other properties in the data source.<br/> Similarly, it retains the grouping and sorting of the columns that are defined explicitly in application level and the columns with MappingName identical to the properties in new data source </td>
+</tr>
+</table>
 
 The default value of `SfDataGrid.AutoGenerateColumns` property is `true` and `SfDataGrid.AutoGenerateColumnsMode` is `Reset`. Hence by default SfDataGrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its `ItemsSource` property.
 
@@ -35,7 +56,7 @@ N> When you change items source for SfDataGrid during run time, then the columns
 
 ### Customize Automatically Generated Columns
 
-When `SfDataGrid.AutoGenerateColumns` is `true`, then [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each GridColumn. This event receives two arguments namely sender which is the SfDataGrid and [AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGeneratingColumnArgs.html).
+When `SfDataGrid.AutoGenerateColumns` is `true`, then [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each GridColumn. This event receives two arguments namely sender which is the SfDataGrid and [AutoGeneratingColumnArgs](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.AutoGeneratingColumnArgs.html).
 The `AutoGeneratingColumnArgs` object contains the following property:
 
 * Column: This property returns the created column using which you can customize the column.
@@ -147,7 +168,7 @@ The below image shows the resizing mode OnTouchUp
 
 ### Resizing Events
 
-The resizing operation can be handled based on the requirement using 'SfDataGrid.ColumnResizing' event. The `SfDataGrid.ColumnResizing` event is fired upon starting to resize a column and will be continuously fired till the reisizing operation ends.
+The resizing operation can be handled based on the requirement using [SfDataGrid.ColumnResizing](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnResizing_EV.html) event. The `SfDataGrid.ColumnResizing` event is fired upon starting to resize a column and will be continuously fired till the reisizing operation ends.
 By handling the `SfDataGrid.ColumnResizing` event you can also cancel the resizing of a particular column.
 The `SfDataGrid.ColumnResizing` event provides the following properties through 'GridResizingEventArgs'.
 
@@ -160,7 +181,7 @@ The `SfDataGrid.ColumnResizing` event provides the following properties through 
 
 #### Cancel resizing for a column
 
-You can cancel resizing for a particular column using the `SfDataGrid.ColumnResizing` event. You can cancel the resizing operation of a column based on the different arguments provided in the `GridResizingEventArgs`. 
+You can cancel resizing for a particular column using the [SfDataGrid.ColumnResizing](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnResizing_EV.html) event. You can cancel the resizing operation of a column based on the different arguments provided in the `GridResizingEventArgs`. 
 
 The below code example shows how to cancel resizing for a column using the `SfDataGrid.ColumnResizing` event using the `Index` value. 
 
