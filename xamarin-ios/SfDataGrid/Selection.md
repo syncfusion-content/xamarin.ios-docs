@@ -182,3 +182,37 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ![](SfDataGrid_images/MultipleSelectionColors_img1.jpeg)
 
+## Selection Animation
+
+SfDataGrid provides support to select one or more rows programmatically or by touch interactions. In addition, SfDataGrid also provides extensibility to animate the selected rows. 
+It can be done by extending the [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSelectionController.html ).
+
+Refer the below example in which a CustomSelectionController derived from `GridSelectionController` and an instance of it is assigned to [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionController.html ) property to achieve selection animation.
+
+{% highlight c# %}
+dataGrid.SelectionController = new CustomSelectionController(dataGrid);
+dataGrid.SelectionMode = SelectionMode.Multiple;
+{% endhighlight %}
+
+{% highlight c# %}
+public class CustomSelectionController : GridSelectionController
+{
+    public CustomSelectionController(SfDataGrid dataGrid)
+    {
+        this.SelectedRows = new GridSelectedRowsCollection();
+        this.DataGrid = dataGrid;
+    }
+    protected override void SetSelectionAnimation(VirtualizingCellsControl rowElement)
+    {
+        rowElement.Alpha = 0.75f;
+        UIView.Animate(1, 1, UIViewAnimationOptions.CurveLinear, () =>
+        {
+            rowElement.Alpha = 1f;
+        }, null);
+    }
+}
+{% endhighlight %}
+
+The following screenshot shows the selection animation in SfDataGrid.
+
+![](SfDataGrid_images/SelectionAnimation_IOS.png)
