@@ -20,72 +20,73 @@ dataGrid.GridStyle = new Dark ();
 
 {% highlight c# %}
 //Custom style class
-public class Dark : DataGridStyle
+public class Dark : DataGridStyle
 {
-    public Dark ()
+    public Dark()
     {
     }
 
-    public override Color GetHeaderBackgroundColor()
+    public override UIColor GetHeaderBackgroundColor()
     {
-        return Color.FromRgb (15, 15, 15);
+        return UIColor.FromRGB(15, 15, 15);
     }
 
-    public override Color GetHeaderForegroundColor()
+    public override UIColor GetHeaderForegroundColor()
     {
-        return Color.FromRgb (255, 255, 255);
+        return UIColor.FromRGB(255, 255, 255);
     }
 
-    public override Color GetRecordBackgroundColor ()
+    public override UIColor GetRecordBackgroundColor()
     {
-        return Color.FromRgb (43, 43, 43);
+        return UIColor.FromRGB(43, 43, 43);
     }
 
-    public override Color GetRecordForegroundColor ()
+    public override UIColor GetRecordForegroundColor()
     {
-        return Color.FromRgb (255, 255, 255);
+        return UIColor.FromRGB(255, 255, 255);
     }
 
-    public override Color GetSelectionBackgroundColor ()
+    public override UIColor GetSelectionBackgroundColor()
     {
-        return Color.FromRgb (42, 159, 214);
+        return UIColor.FromRGB(42, 159, 214);
     }
 
-    public override Color GetSelectionForegroundColor ()
+    public override UIColor GetSelectionForegroundColor()
     {
-        return Color.FromRgb (255, 255, 255);
+        return UIColor.FromRGB(255, 255, 255);
     }
 
-    public override Color GetCaptionSummaryRowBackgroundColor ()
+    public override UIColor GetCaptionSummaryRowBackgroundColor()
     {
-        return Color.FromRgb (02, 02, 02);
+        return UIColor.FromRGB(02, 02, 02);
     }
 
-    public override Color GetCaptionSummaryRowForeGroundColor ()
+    public override UIColor GetCaptionSummaryRowForeGroundColor()
     {
-        return Color.FromRgb (255, 255, 255);
+        return UIColor.FromRGB(255, 255, 255);
     }
 
-    public override Color GetBordercolor ()
+    public override UIColor GetBordercolor()
     {
-        return Color.FromRgb (81, 83, 82);
+        return UIColor.FromRGB(81, 83, 82);
     }
 
-    public override Color GetLoadMoreViewBackgroundColor ()
+    public override UIColor GetLoadMoreViewBackgroundColor()
     {
-        return Color.FromRgb(242, 242, 242);
+        return UIColor.FromRGB(242, 242, 242);
     }
 
-    public override Color GetLoadMoreViewForegroundColor ()
+    public override UIColor GetLoadMoreViewForegroundColor()
     {
-        return Color.FromRgb(34, 31, 31);
+        return UIColor.FromRGB(34, 31, 31);
     }
-    
-    public override Color GetAlternatingRowBackgroundColor()
+
+    public override UIColor GetAlternatingRowBackgroundColor()
     {
-      return UIColor.Cyan;
+        return UIColor.Cyan;
     }
-} 
+
+}
 {% endhighlight %}
 
 The following picture shows the grid loaded in different styles.
