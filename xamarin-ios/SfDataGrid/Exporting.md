@@ -84,7 +84,7 @@ public override void ViewDidLayoutSubviews()
 
 ## Export to Excel
 
-You can export data to excel by using the `ExportToExcel` method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to excel using the `ExportToExcel` method.
+You can export data to excel by using the [ExportToExcel](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingController~ExportToExcel.html) method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to excel using the `ExportToExcel` method.
 
 {% highlight c# %}
 private void ExportToExcel(object sender, EventArgs e)
@@ -201,7 +201,7 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEvent
 
 ## Export to PDF
 
-You can export data to PDF by using the `ExportToPdf` method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to PDF using the `ExportToPdf` method.
+You can export data to PDF by using the [ExportToPdf](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController~ExportToPdf.html) method by passing the SfDataGrid as an argument. The following code example illustrates exporting data to PDF using the `ExportToPdf` method.
 
 {% highlight c# %}
 private void ExportToPdf(object sender, EventArgs e)
