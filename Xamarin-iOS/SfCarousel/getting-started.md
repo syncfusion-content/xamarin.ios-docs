@@ -17,25 +17,22 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
 And below assembly reference to the iOS unified project.
+
 iOS-unifed\Syncfusion.SfCarousel.iOS.dll
 
 ## Add SfCarousel
 
 * Adding namespace for the added assemblies. 
 
-{% tabs %}
 
 {% highlight C# %}
 
-	using Syncfusion.SFCarousel.iOS; 
+using Syncfusion.SFCarousel.iOS; 
 
 {% endhighlight %}
 
-{% endtabs %}
 
 * Now add the SfCarousel control with a required optimal name by using the included namespace.
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -44,34 +41,26 @@ this.AddSubview(carousel);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ## Add Carousel Items
 
-SfCarousel items can be populated with a collection of image data. This collection includes Arrays, Lists and DataTables. An example to populate image collection as carousel items as follows
-
-{% tabs %}
+SfCarousel items can be populated with a collection of image data. An example to populate image collection as carousel items as follows
 
 {% highlight c# %}
 
-	NSMutableArray<SFCarouselItem> carouselItemCollection = new NSMutableArray<SFCarouselItem> ();
-	For(int i=1;i<18;i++)
-	{
-	SFCarouselItem item =new SFCarouselItem();
-	item.ImageName="image"+i;
-	carouselItemCollection.Add(item);
-	}
-	carousel.DataSource=carouselItemCollection;
+NSMutableArray<SFCarouselItem> carouselItemCollection = new NSMutableArray<SFCarouselItem> ();
+for(int i=1;i<18;i++)
+{
+SFCarouselItem item =new SFCarouselItem();
+item.ImageName="image"+i+".png";
+carouselItemCollection.Add(item);
+}
+carousel.DataSource=carouselItemCollection;
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ## Set Gap between Items
 
 SfCarousel provides option to set the distance between the items in the panel. This can be done by using the `Offset` property in SfCarousel control. 
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -81,13 +70,22 @@ carousel.Offset=20;
 
 {% endhighlight %}
 
-{% endtabs %}
+## Setting the height and width of carousel's Item
+
+`ItemHeight` and `ItemWidth` properties are used to change the height and width of carouselItem in carousel panel.
+
+{% highlight C# %}
+
+SFCarousel carousel=new SFCarousel();
+carousel.ItemWidth=150;
+carousel.ItemHeight=170;
+
+{% endhighlight %}
+
 
 ## Tilt Non Selected Items
 
 Items in the SfCarousel control can be rotated in user defined angle. `RotationAngle` property is used to decide the angle in which items should be rotated
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -98,6 +96,5 @@ carousel.RotationAngle = 45;
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![](images/carousel.png)
+
