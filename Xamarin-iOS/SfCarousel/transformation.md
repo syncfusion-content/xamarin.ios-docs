@@ -17,15 +17,12 @@ The `RotationAngle` property in the SfCarousel control is used to tilt all the u
 
 N> If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
 
-{% tabs %}
-
 {% highlight C# %}
 
-	carousel.RotationAngle=40;
+SFCarousel carousel = new SFCarousel();
+carousel.RotationAngle=40;
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](images/rotationangle.png)
 
@@ -35,15 +32,12 @@ The `Offset` property is used to specify the accurate distance between unselecte
 
 N> The default value is 20.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	carousel.Offset=30;
+SFCarousel carousel = new SFCarousel();
+carousel.Offset=30;
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![](images/offset.png)
 
@@ -51,28 +45,38 @@ N> The default value is 20.
 
 Distance between the selected item and other items can be customized by using `SelectedItemOffset` property of the SfCarousel control.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	carousel.SelectedItemOffset=5;
+SFCarousel carousel = new SFCarousel();
+carousel.SelectedItemOffset=6;
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ## Set Scaling for Carousel Items
 
 The `ScaleOffset` property in the SfCarousel control is used to scale all the items to the specified scale value.
 
-{% tabs %}
-
 {% highlight C# %}
 
-	carousel.ScaleOffset=0.7f;
+SFCarousel carousel = new SFCarousel();
+carousel.ScaleOffset=(nfloat)0.7;
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![](images/scaleoffset.png)
+
+## Spacing of Items in Linear mode
+
+Spacing of all the items in Linear mode can be determined by using `ItemSpacing` property.
+
+N> The default value is 5. 
+
+{% highlight C# %}
+
+SFCarousel carousel = new SFCarousel();
+
+carousel.ViewMode = SFCarouselViewMode.SFCarouselViewModeLinear;
+
+carousel.ItemSpacing = 10;
+
+{% endhighlight %}
