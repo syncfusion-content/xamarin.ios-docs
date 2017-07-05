@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Main Content
 
-The SfNavigationDrawer is mainly divided into two parts, such as [Main Content](#main-content) and  [Drawer Panel Content](/Xamarin/SfNavigationDrawer/Drawer-Content "Sliding Panel Contents")
+The SfNavigationDrawer is mainly divided into two parts, such as [Main Content](#main-content) and  [Drawer Panel Content](/Xamarin-iOS/SfNavigationDrawer/Drawer-Content "Sliding Panel Contents")
 
 ## Main Content
 
