@@ -13,8 +13,6 @@ documentation: ug
 
 This section explains you the steps to configure a PullToRefresh control in a real-time scenario and also provides a walk-through on some of the customization features available in PullToRefresh control.
 
-You can download the entire source code of this demo for Xamarin.iOS from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted85797611).          
-
 ## Creating your first PullToRefresh in Xamarin.iOS.
 
 ### Referencing Essential Studio Components in Your Solution
@@ -96,3 +94,5 @@ You can set the `PullableContent` for the `SfPullToRefresh` by adding the desire
 {% endhighlight %}
 
 {% endtabs %}
+
+You can download the entire source code of this demo for Xamarin.iOS from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted85797611).          
