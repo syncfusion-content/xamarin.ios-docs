@@ -13,7 +13,7 @@ documentation: ug
 
 This section explains you the steps to configure a PullToRefresh control in a real-time scenario and also provides a walk-through on some of the customization features available in PullToRefresh control.
 
-          
+You can download the entire source code of this demo for Xamarin.iOS from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted85797611).          
 
 ## Creating your first PullToRefresh in Xamarin.iOS.
 
@@ -65,56 +65,9 @@ You can set the `PullableContent` for the `SfPullToRefresh` by adding the desire
     pullToRefresh.PullableContent = mainView;
 {% endhighlight %}
 
-## Events
+## Delegate
 
-
-The pulling event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, Refreshing event will be triggered. Now user can proceed to fetching the data from web or database. Once the data is fetched, we should call Refresh to method to complete all animations.
-
-There are three built-in events in the PullToRefresh control namely:
-
-1. `Pulling`
-2. `Refreshing`
-3. `Refreshed`
-
-### Pulling
-
-`Pulling` event is triggered when we start pulling down the PullableContent. It is triggered as long as the pointer or finger is pressed and the progress is less than 100 and not equal to 0 . The arguments for the event are:
-
-* SfPullToRefresh
-* Progress
-
-{% tabs %}
-
-
-{% highlight c# %}
-
-    pullToRefresh.Pulling+= (object sender, SfPullToRefresh.PullingEventArgs e) => {
-				
-			};
-            
-{% endhighlight %}
-
-{% endtabs %}
-
-### Refreshing
-
-`Refreshing` event is triggered once the content is pulled through the PullingThreshold or Progress reaches 100. This event is triggered till the Refresh() method is called.
-
-{% tabs %}
-
-{% highlight c# %}
-
-    pullToRefresh.Refreshing += (object sender, EventArgs e) => {
-				
-			};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Refreshed
-
-`Refreshed` event is triggered once the refreshing and all the animations associated with the control are completed.
+`SFPullToRefresh.Delegate` is called once the refreshing will be completed.
 
 {% tabs %}
 
@@ -137,10 +90,8 @@ There are three built-in events in the PullToRefresh control namely:
 			}));
 
 
-		}
-
-
-	}
+		 }
+    }
 
 {% endhighlight %}
 
