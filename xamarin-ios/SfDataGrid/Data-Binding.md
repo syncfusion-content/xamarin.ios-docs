@@ -72,6 +72,158 @@ dataGrid.ItemsSource = viewModel.DataTable;
 this.View.Add(dataGrid);
 {% endhighlight %}
 
+## Binding JSON Data
+JSON data cannot be bound directly to SfDataGrid. To bind SfDataGrid with JSON data, we must deserialize the JSON data to a bindable format. You can use the open source NuGet Newtonsoft.Json to serialize and deserialize JSON objects.
+
+Xamarin.iOS have limitations in loading dynamic object (Expando object). Hence dynamic objects can be loaded only using dictionary collection. Refer the dynamic limitations for more details.
+
+JSON data can be parsed into a dictionary collection using JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(json_object). 
+
+You can then convert the list of dictionary objects to an observable collection if your data source need to respond to collection changes. 
+
+The List of Dictionary objects or the converted ObservableCollection can now be binded as ItemsSource of SfDataGrid.
+
+Refer the below example in which the list of dictionary objects are converted as an ObservableCollection and bound to SfDataGrid. 
+
+{% highlight c# %}
+//In MainPage.cs
+public partial class GettingStartedViewController : UIViewController
+{
+         private SfDataGrid grid;
+         private ViewModel viewModel;
+         public GettingStartedViewController ()
+         {
+            grid = new SfDataGrid();
+	viewModel = new ViewModel();
+            grid.AutoGenerateColumns = false;
+            grid.ColumnSizer = ColumnSizer.Star;
+            grid.ItemsSource = viewModel.DynamicCollection;
+	grid.GridLoaded += (sender, e) => { grid.View.LiveDataUpdateMode = Syncfusion.Data.LiveDataUpdateMode.AllowDataShaping; };
+
+            grid.Columns.Add(new GridTextColumn()
+            {
+                HeaderText = "Order ID",
+                MappingName = "Values[OrderID]",
+                LineBreakMode = UILineBreakMode.WordWrap,
+                TextAlignment = UITextAlignment.Left,
+                HeaderTextAlignment = UITextAlignment.Center,
+            });
+
+            grid.Columns.Add(new GridTextColumn()
+            {
+                HeaderText = "Customer ID",
+                MappingName = "Values[EmployeeID]",
+                LineBreakMode = UILineBreakMode.WordWrap,
+                TextAlignment = UITextAlignment.Left,
+                HeaderTextAlignment = UITextAlignment.Center,
+            });
+
+       	this.View.Add(grid);
+            
+        }
+		     
+        public override void ViewDidLayoutSubviews()
+        {
+            base.ViewDidLayoutSubviews();
+            this.grid.Frame = new CGRect(0, 20, View.Frame.Width, View.Frame.Height);
+        }
+}
+{% endhighlight %}
+
+{% highlight c# %}
+//In ViewModel.cs
+public class ViewModel
+{
+  public const string JsonData = "[{\"OrderID\":1,\"EmployeeID\":100,\"FirstName\":'Gina',\"LastName\":'Gable'}," +
+                                       "{\"OrderID\":2,\"EmployeeID\":200,\"FirstName\":'Danielle',\"LastName\":'Rooney'}," +
+                                      "{\"OrderID\":3,\"EmployeeID\":300,\"FirstName\":'Frank',\"LastName\":'Gable'}," +
+                                      
+  public ObservableCollection<DynamicModel> DynamicCollection { get; set; }
+  public List<Dictionary<string, object>> DynamicJsonCollection { get; set; }
+
+  public ViewModel()
+  {
+            DynamicJsonCollection = JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(JsonData);
+            DynamicCollection = PopulateData();
+  }
+
+  private ObservableCollection<DynamicModel> PopulateData()
+  {
+           var data = new ObservableCollection<DynamicModel>();
+           foreach (var item in DynamicJsonCollection)
+           {
+                var obj = new DynamicModel() { Values = item };
+                data.Add(obj);
+            }
+            return data;
+  }
+}
+{% endhighlight %}
+
+{% highlight c# %}
+//In DynamicModel.cs
+public class DynamicModel : INotifyPropertyChanged
+{
+        public Dictionary<string, object> data;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public Dictionary<string, object> Values
+        {
+            get
+            {
+                return data;
+            }
+            set
+            {
+                data = value;
+                if (PropertyChanged != null)
+                    PropertyChanged(this, new PropertyChangedEventArgs("Values"));
+            }
+
+        }
+        public DynamicModel()
+        {
+            this.data = new Dictionary<string, object>();
+
+        }
+}
+{% endhighlight %}
+
+N> In order to apply sorting for JSON data, you have to customize the GridQueryableCollectionViewWrapper class and initialize the customized GridQueryableCollectionViewWrapper while setting the ItemSource to SfDataGrid.
+
+Refer the below code example to customize the GridQueryableCollectionViewWrapper class.
+{% highlight c# %}
+public class QueryableViewExt : GridQueryableCollectionViewWrapper
+{
+    public QueryableViewExt(IEnumerable source, SfDataGrid grid) : base(source, grid)
+    {
+
+    }
+
+    public override Expression<Func<string, object, object>> GetExpressionFunc(string propertyName, DataOperation operation = DataOperation.Default, DataReflectionMode reflectionMode = DataReflectionMode.Default)
+    {
+           Expression<Func<string, object, object>> exp = base.GetExpressionFunc(propertyName, operation, reflectionMode);
+           if (exp == null)
+           {
+                Func<string, object, object> func;
+                func = (propertyname, record) =>
+                {
+                    var provider = this.GetPropertyAccessProvider();
+                    return provider.GetValue(record, propertyName);
+                };
+                exp = (propertyname, record) => func(propertyName, record);
+            }
+            return exp;
+     }
+}
+{% endhighlight %}
+
+{% highlight c# %}
+//MainPage.cs
+grid.ItemsSource = new QueryableViewExt(viewModel.DynamicCollection, grid);
+{% endhighlight %}
+
 ## Binding Complex properties
 
 SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
