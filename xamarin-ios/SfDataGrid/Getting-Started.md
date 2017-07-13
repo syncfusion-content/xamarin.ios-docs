@@ -33,7 +33,7 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 <tr>
 <td>Xamarin.iOS</td>
-<td>Syncfusion.Linq.iOS.dll<br/>Syncfusion.SfDataGrid.iOS.dll<br/>Syncfusion.GridCommon.Portable.dll<br/></td>
+<td>Syncfusion.Linq.iOS.dll<br/>Syncfusion.SfDataGrid.iOS.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfNumericTextBox.iOS.dll<br/></td>
 </tr>
 </table>
 
