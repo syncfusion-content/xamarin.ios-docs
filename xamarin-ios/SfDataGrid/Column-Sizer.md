@@ -33,7 +33,7 @@ No Column sizing is applied when the [SfDataGrid.ColumnSizer](http://help.syncfu
 dataGrid.ColumnSizer = ColumnSizer.None;  
 {% endhighlight %}
 
-![](SfDataGrid_images/ColumnSizer_img1.png)
+![](SfDataGrid_images/CoumnSizer_img1.png)
 
 ## ColumnSizer.LastColumnFill
 
@@ -43,7 +43,7 @@ When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamar
 dataGrid.ColumnSizer = ColumnSizer.LastColumnFill;  
 {% endhighlight %}
 
-![](SfDataGrid_images/ColumnSizer_img2.png)
+![](SfDataGrid_images/CoumnSizer_img2.png)
 
 ## ColumnSizer.Star
 
@@ -53,7 +53,7 @@ When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamar
 dataGrid.ColumnSizer = ColumnSizer.Star;  
 {% endhighlight %}
 
-![](SfDataGrid_images/ColumnSizer_img3.png)
+![](SfDataGrid_images/CoumnSizer_img3.png)
 
 ## ColumnSizer.Auto
 
@@ -63,7 +63,7 @@ When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamar
 dataGrid.ColumnSizer = ColumnSizer.Auto;  
 {% endhighlight %}
 
-![](SfDataGrid_images/ColumnSizer_img4.png)
+![](SfDataGrid_images/CoumnSizer_Img4.png)
 
 N> If any column is specified a width explicitly using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property then that column is not considered for Column sizing the width and skipped while applying the ColumnSizer for grid columns.
 
@@ -81,3 +81,25 @@ textColumn.MappingName = "CustomerID";
 textColumn.HeaderText = "Full Name";
 textColumn.ColumnSizer = ColumnSizer.Auto;  
 {% endhighlight %}
+
+### Apply ColumnSizer based on device orientation
+
+You can apply different ColumnSizer based on orientation of the device and the SfDataGrid will rearrange the view accordingly.
+
+Refer the below code example in which the `SfDataGrid.ColumnSizer` is customized based on orientation by checking the orientation of the device in the `ViewLayoutSubViews` override method of the `ViewController` which will be fired when the view changes.
+
+{% highlight c# %}
+public override void ViewDidLayoutSubviews()
+{
+    base.ViewDidLayoutSubviews();
+    if (UIDevice.CurrentDevice.Orientation == UIDeviceOrientation.LandscapeLeft || UIDevice.CurrentDevice.Orientation == UIDeviceOrientation.LandscapeRight)
+        this.datagrid.ColumnSizer = ColumnSizer.Star;
+    else
+        this.datagrid.ColumnSizer = ColumnSizer.Auto;
+    datagrid.Frame = new CoreGraphics.CGRect(0, 0, View.Frame.Width, View.Frame.Height );           
+}  
+{% endhighlight %}
+
+![](SfDataGrid_images/ColumnSizer_Orientation.png)
+
+![](SfDataGrid_images/ColumnSizer_Orientation1.png)
