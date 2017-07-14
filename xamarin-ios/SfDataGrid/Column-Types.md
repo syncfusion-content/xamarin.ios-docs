@@ -98,6 +98,25 @@ GridTextColumn column = new GridTextColumn()
 
 {% endhighlight %}
 
+#### HeaderTextMargin
+
+SfDataGrid allows you to get or set the padding for the header cell by using [GridColumn.HeaderTextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderTextMargin.html) prpperty. 
+
+The following code example shows you how to set the`HeaderTextMargin` property.
+
+{% highlight c# %}
+
+GridTextColumn orderId = new GridTextColumn();
+orderId.MappingName = "OrderID";
+orderId.HeaderTextMargin = 15;
+
+GridTextColumn employeeId = new GridTextColumn();
+employeeId.MappingName = "EmployeeID";
+employeeId.HeaderTextMargin = new Thickness(15, 0, 0, 0);
+
+{% endhighlight %}
+
+
 ### Column Width
 
 SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
@@ -145,6 +164,25 @@ if (e.Column.MappingName == "OrderID") {
 
 dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = true});
 {% endhighlight %}
+
+### TextMargin
+
+SfDataGrid allows you to get or set the padding for the GridCell by using [GridColumn.TextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~TextMargin.html) property. 
+
+The following code example shows you how to set the`TextMargin` property.
+
+{% highlight c# %}
+
+GridTextColumn orderId = new GridTextColumn();
+orderId.MappingName = "OrderID";
+orderId.TextMargin = 15;
+
+GridTextColumn employeeId = new GridTextColumn();
+employeeId.MappingName = "EmployeeID";
+employeeId.TextMargin = new Thickness(0, 0, 25, 0);
+
+{% endhighlight %}
+
 
 ## GridTextColumn
 
@@ -728,11 +766,11 @@ The following screenshots expalins the above code and shows the working of the `
 
 Here in the above code example underlying collection has 2 properties (OrderID,EmployeeID). We have created a `GridPickerColumn` with MappingName = OrderID, DisplayMemberPath = EmployeeID, ValueMemberPath = OrderID. EmployeeId has the values 6,7,8,9,10.... and OrderID has the values 1,2,3,4,5.... Initially the GridCells of the `PickerColumn` will be displayed with the values 6,7,8,9,10.... in row wise order based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_DisplayMemberPath.jpg)
+![](SfDataGrid_images/PickerColumn_DisplayMemberPath.png)
 
 Upon entering the edit mode at RowColumnIndex(1,1) , the Picker pop up opens and with the picker items as 6,7,8,9,10.... again based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_PickerPopUp.jpg)
+![](SfDataGrid_images/PickerColumn_PickerPopUp.png)
 
 When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index (0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4. Note that the PickerColumn's `GridCell` data is not changed and only the OrderID columns data is changed to 4. 
 
