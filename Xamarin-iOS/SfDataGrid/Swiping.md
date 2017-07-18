@@ -103,13 +103,7 @@ All the swipe events provides the following properties in their arguments:
 
 By handling the swipe events, you can make use of these property values from the arguments to perform any desired action such as deleting the row, editing the data, etc.
 
-
-## Swipe Customizations
-
-The following customizations should give you an idea on how to use the swiping event in the grid.
-
-
-### MultipleViews
+## Loading Multiple Views as Swipe Template
 
 You can customize your application by loading any view in the `SfDataGrid.LeftSwipeView` or `SfDataGrid.RightSwipeView` and assigning custom actions to them such as deleting a row, adding a row, editing the underlying data associated, etc. You can also display multiple views in the `SfDataGrid.LeftSwipeView` or `SfDataGrid.RightSwipeView` like in the following example where two views are loaded for editing the cell values in the row and deleting the row respectively. Refer the following code example that shows how to load multiple views in `SfDataGrid.LeftSwipeView` when swiping towards right.
 
@@ -413,7 +407,7 @@ N> Similarly you can load the two views in the `SfDataGrid.RightSwipeView` when 
 ![](SfDataGrid_images/Swiping_img4.png)
 
 
-## Swipe Delete
+## Customized Swipe Delete Functionality
 
 You can perform operations such as deleting a row when swiping a data row from one extent to other in the view and retrieve the deleted row by tapping the view. Refer the below code example which illustrates how to delete a data row when swiping it from one extreme to other in the view and retrieve the deleted row by tapping the view.
 
