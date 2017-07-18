@@ -240,3 +240,66 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 }
 
 {% endhighlight %}
+
+## Updating summaries when dragging and dropping a row between groups
+
+Grouping and summaries of items in SfDataGrid are manipulated based on group key. When you drag and drop an item from one group to another group, the group key of the dragged item will differ from the group key of the items in the dropped group. Hence by default, the summaries will not be updated. This is the actual behavior of SfDataGrid. 
+
+Hence, in order to update the summaries when a row is dragged and dropped between groups you need to call the `UpdateCaptionSummaries` and `Refresh` methods in the `QueryRowDragging` event.
+
+{% highlight c#%}
+public class MyViewController:UIViewController
+{
+    SfDataGrid dataGrid;
+    ViewModel viewModel;
+    public MyViewController()
+    {
+         dataGrid = new SfDataGrid();
+         viewModel = new ViewModel();
+     }
+     public override void ViewDidLoad()
+     {
+         base.ViewDidLoad();
+         this.View.BackgroundColor = UIColor.White;
+         dataGrid.ItemsSource = viewModel.OrdersInfo;
+         dataGrid.ColumnSizer = ColumnSizer.Auto;
+         dataGrid.AutoGenerateColumns = true;
+         dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription() { ColumnName = "CustomerID" });
+         dataGrid.AllowDraggingRow = true;
+         dataGrid.QueryRowDragging += DataGrid_QueryRowDragging;
+
+         GridSummaryRow summaryRow = new GridSummaryRow();
+         summaryRow.Title = "Total Salary:{TotalSalary}";
+         summaryRow.ShowSummaryInRow = true;
+         summaryRow.SummaryColumns.Add(new GridSummaryColumn()
+         {
+              Name = "TotalSalary",
+              MappingName = "Salary",
+              Format = "'{Count}'",
+              SummaryType = SummaryType.CountAggregate
+         });
+         dataGrid.CaptionSummaryRow = summaryRow;
+      }
+
+      public override void ViewDidLayoutSubviews()
+      {
+         dataGrid.Frame = new CGRect(0, 50, View.Frame.Width, View.Frame.Height - 20);
+         base.ViewDidLayoutSubviews();
+      }
+
+      private async void DataGrid_QueryRowDragging(object sender,  QueryRowDraggingEventArgs e)
+      {
+          if (e.Reason == QueryRowDraggingReason.DragEnded)
+          {
+              await Task.Delay(100);
+              this.dataGrid.View.TopLevelGroup.UpdateCaptionSummaries();
+              this.dataGrid.View.Refresh();
+          }
+      }
+            
+}
+{% endhighlight %}
+
+The following screenshot shows the output rendered when executing the above code example.
+
+![](SfDataGrid_images/SummaryUpdate.png)
