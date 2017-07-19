@@ -520,11 +520,11 @@ The [GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/s
 dataGrid = new SfDataGrid();
 GridDateTimeColumn dateColumn = new GridDateTimeColumn()
 {
-    Format = "d",
+    MappingName = "ShippedDate",
     HeaderText = "Shipped Date",
-    MappingName = "ShippedDate"
+    Format = "d"
 };
-data.Colum.Add(dateColumn);
+dataGrid.Columns.Add(dateColumn);
 {% endhighlight %}
 
 {% highlight c# %}
@@ -623,12 +623,13 @@ The following code example shows you how to load the `GridPickerColumn` with a s
 dataGrid = new SfDataGrid();
 GridPickerColumn pickerColumn = new GridPickerColumn()
 {
-    BindingContext = viewModel;
-    ItemsSource = viewModel.CustomerNames;
-    HeaderText = "Dealer Name",
-    MappingName = "DealerName"
+    BindingContext = viewModel,
+    ItemsSource = viewModel.CustomerNames,
+    MappingName = "DealerName",    
+    HeaderText = "Dealer Name"
+
 };
-data.Colum.Add(pickerColumn);
+dataGrid.Columns.Add(pickerColumn);
 {% endhighlight %}
 
 {% highlight c# %}
@@ -782,13 +783,14 @@ The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sf
 
 {% highlight c# %}
 dataGrid = new SfDataGrid();
+            
 GridNumericColumn numericColumn = new GridNumericColumn()
 {
-    numericColumn.MappingName = "ProductNo",
-    numericColumn.HeaderText = "Product No",
-    numericColumn.NumberDecimalDigits = 0
+    MappingName = "ProductNo",
+    HeaderText = "Product No",
+    NumberDecimalDigits =0
 };
-data.Colum.Add(numericColumn);
+dataGrid.Columns.Add(numericColumn);
 {% endhighlight %}
 
 ### Number Formatting

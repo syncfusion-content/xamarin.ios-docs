@@ -125,7 +125,7 @@ dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () {
 The following code example illustrates how to write a Custom Comparer.
 
 {% highlight c# %}
-public class CustomerInfo : IComparer<Object>, ISortDirection
+public class CustomComparer : IComparer<Object>, ISortDirection
 {
     public int Compare(object x, object y)
     {
