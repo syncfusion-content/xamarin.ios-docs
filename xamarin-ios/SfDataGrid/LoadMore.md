@@ -40,6 +40,39 @@ internal void LoadMoreItems()
     for (int i = 0; i < 20; i++)
     this.OrdersInfo.Add(order.GenerateOrder(OrdersInfo.Count + 1));
 } 
+
+//Command.cs
+public class Command : ICommand
+{
+    private Action execute;
+    private bool canExecute = true;
+
+    public event EventHandler CanExecuteChanged;
+
+    public Command(Action action)
+    {
+        execute = action;
+    }
+
+    public bool CanExecute(object parameter)
+    {
+        return canExecute;
+    }
+
+    public void Execute(object parameter)
+    {
+        changeCanExecute(true);
+        execute.Invoke();
+    }
+
+    private void changeCanExecute(bool canExecute)
+    {
+        this.canExecute = canExecute;
+        if (CanExecuteChanged != null)
+            CanExecuteChanged(this, new EventArgs());
+    }
+}
+
 {% endhighlight %}
 
 ## Customize Load More Display Text
