@@ -13,11 +13,11 @@ documentation: UG
 
 The event will be triggered whenever you tap the SfDataGrid with [GridTappedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTappedEventsArgs.html) that contains following properties.
 
-* **RowIndex** - Gets the row index of the row on which you tapped
-* **ColumnIndex** - Gets the column index of the column on which you tapped
-* **RowData** - Gets the row data of the row on which you tapped
+* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowColumnIndex.html) - Gets the row index of the row on which you tapped
+* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowColumnIndex.html) - Gets the column index of the column on which you tapped
+* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowData.html) - Gets the row data of the row on which you tapped
 
-The following code illustrates how to hook the `GridTapped` event and get the row and column details based on where you tapped on SfDataGrid. 
+The following code illustrates how to hook the `GridTapped` event and get the row and column details based on where you tapped on `SfDataGrid`. 
 
 {% highlight c# %}
 dataGrid.GridTapped += DataGrid_GridTapped;
@@ -34,11 +34,11 @@ private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
 
 The event will be triggered whenever you double tap the SfDataGrid with [GridDoubleTappedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs.html) that contains the following properties. 
 
-* **RowIndex** - Gets the row index of the row on which you double tapped
-* **ColumnIndex** - Gets the column index of the column on which you double tapped
-* **RowData** - Gets the row data of the row on which you double tapped
+* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowColumnIndex.html) - Gets the row index of the row on which you double tapped
+* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowColumnIndex.html) - Gets the column index of the column on which you double tapped
+* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowData.html) - Gets the row data of the row on which you double tapped
 
-The following code illustrates how to hook the `GridDoubleTapped` event and get the row and column details based on where you double tapped on SfDataGrid.  
+The following code illustrates how to hook the `GridDoubleTapped` event and get the row and column details based on where you double tapped on `SfDataGrid`.  
 
 {% highlight c# %}
 dataGrid.GridDoubleTapped += DataGrid_GridDoubleTapped;
@@ -53,13 +53,13 @@ private void DataGrid_GridDoubleTapped(object sender, GridDoubleTappedEventsArgs
 
 ## GridLongPressed event
 
-The event will be triggered whenever you long press the SfDataGrid with [GridLongPressedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLongPressedEventsArgs.html) that contains the following properties.
+The event will be triggered whenever you long press the `SfDataGrid` with [GridLongPressedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLongPressedEventsArgs.html) that contains the following properties.
 
-* **RowIndex** - Gets the row index of the row on which you long pressed
-* **ColumnIndex** - Gets the column index of the column on which you long pressed
-* **RowData** - Gets the row data of the row on which you long pressed
+* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowColumnIndex.html) - Gets the row index of the row on which you long pressed
+* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowColumnIndex.html) - Gets the column index of the column on which you long pressed
+* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowData.html) - Gets the row data of the row on which you long pressed
 
-The following code illustrates how to hook the `GridLongPressed` event and get the row and column details based on where you long pressed on SfDataGrid. 
+The following code illustrates how to hook the `GridLongPressed` event and get the row and column details based on where you long pressed on `SfDataGrid`. 
 
 {% highlight c# %}
 dataGrid.GridLongPressed += DataGrid_GridLongPressed;

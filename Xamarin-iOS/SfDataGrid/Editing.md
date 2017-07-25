@@ -43,8 +43,8 @@ this.dataGrid.EditTapAction = TapAction.OnDoubleTap;
 ## Cursor behavior
 When the cell enters into edit mode, cursor is placed based on [SfDataGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~EditorSelectionBehavior.html) property.
 
-* SelectAll – selects the text of edit element loaded inside cell.
-* MoveLast – places the cursor at the last of edit element loaded inside cell.
+* [SelectAll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.EditorSelectionBehavior.html) – selects the text of edit element loaded inside cell.
+* [MoveLast](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.EditorSelectionBehavior.html) – places the cursor at the last of edit element loaded inside cell.
 
 {% highlight c# %}
 //Selects all the text in the edit mode
@@ -262,14 +262,14 @@ SfDataGrid triggers the following events while editing.
 [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event occurs when the CurrentCell enters into edit mode. [GridCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellBeginEditEventArgs.html) has the following members which provides information for `SfDataGrid.CurrentCellBeginEdit` event.
 
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is canceled and the CurrentCell does not enter into the edit mode.
-* RowColumnIndex : Gets the current row,column index of the DataGrid.
-* Column : Gets the Grid Column of the SfDataGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row,column index of the DataGrid.
+* [Column](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellBeginEditEventArgs~Column.html) : Gets the Grid Column of the SfDataGrid.
 
 ### CurrentCellEndEdit
 
 [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) event occurs when the CurrentCell exits the edit mode. [GridCurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellEndEditEventArgs.html) has following members which provides information for `SfDataGrid.CurrentCellEndEdit` event.
 
-* RowColumnIndex : Gets the current row,column index of the DataGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellEndEditEventArgs~RowColumnIndex.html) : Gets the current row,column index of the DataGrid.
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
 
 ## Programatically edit a cell
