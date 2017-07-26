@@ -9,28 +9,28 @@ documentation: UG
 
 # Data Binding
 
-The SfDataGrid is bound to an external data source to display the data. It supports the data sources such as [List](https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx), [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx), and so on. [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.SfDataGrid~ItemsSource.html) property helps to bind the SfDataGrid with the collection of objects.
+The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid.html) is bound to an external data source to display the data. It supports the data sources such as [List](https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx), [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx), and so on. [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.SfDataGrid~ItemsSource.html) property helps to bind the `SfDataGrid` with the collection of objects.
 
-In order to bind the data source of the SfDataGrid, set the `SfDataGrid.ItemsSource` property as shown below such that each row in the SfDataGrid would bind to an object in the data source and each column would bind to a property in the data model object.
+In order to bind the data source of the `SfDataGrid`, set the `SfDataGrid.ItemsSource` property as shown below such that each row in the `SfDataGrid` would bind to an object in the data source and each column would bind to a property in the data model object.
 
 {% highlight c# %}
 OrderInfoRepository viewModel = new OrderInfoRepository ();
 dataGrid.ItemsSource = viewModel.OrderInfoCollection; 
 {% endhighlight %} 
 
-If the data source implements `ICollectionChanged` interface, then SfDataGrid will automatically refresh the view when an item is added, removed or cleared. When you add or remove an item in `ObservableCollection`, the SfDataGrid automatically refreshes the view as the `ObservableCollection` implements the [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged(v=vs.110).aspx). But when you do the same in `List`, SfDataGrid will not refresh the view automatically.
+If the data source implements `ICollectionChanged` interface, then `SfDataGrid` will automatically refresh the view when an item is added, removed or cleared. When you add or remove an item in `ObservableCollection`, the `SfDataGrid` automatically refreshes the view as the `ObservableCollection` implements the [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged(v=vs.110).aspx). But when you do the same in `List`, `SfDataGrid` will not refresh the view automatically.
 
-If the data model implements the `INotifyPropertyChanged` interface, then the SfDataGrid responds to the property change in runtime to update the view.
+If the data model implements the `INotifyPropertyChanged` interface, then the `SfDataGrid` responds to the property change in runtime to update the view.
 
 ## Binding with IEnumerable
 
-SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering are supported when you are binding collection derived from `IEnumerable`.
+`SfDataGrid` control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering are supported when you are binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
 
-SfDataGrid control supports to bind the [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable). SfDataGrid control automatically refresh the UI when you are binding `DataTable` as `ItemsSource` when rows are added, removed or cleared.
+`SfDataGrid` control supports to bind the [DataTable](https://msdn.microsoft.com/en-us/library/system.data.datatable). `SfDataGrid` control automatically refresh the UI when you are binding `DataTable` as `ItemsSource` when rows are added, removed or cleared.
 
-The following code illustrates how to create and bind `DataTable` as `ItemsSource` to SfDataGrid.
+The following code illustrates how to create and bind `DataTable` as `ItemsSource` to `SfDataGrid`.
 
 {% highlight c# %}
 // In ViewModel
@@ -74,7 +74,7 @@ this.View.Add(dataGrid);
 
 ## Binding Complex properties
 
-SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
+`SfDataGrid` control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
 
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" });
@@ -82,7 +82,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" }
 
 ## Binding Indexer properties
 
-SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
+`SfDataGrid` control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
 
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID[0].Customer" });
@@ -90,9 +90,9 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID[0].Cu
 
 ## View
 
-DataGrid has the `View` property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.IOS~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintain and manipulation data and other advanced operations like `Sorting`, `Grouping`, and etc.
+DataGrid has the [View](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~View.html) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.IOS~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintain and manipulation data and other advanced operations like `Sorting`, `Grouping`, and etc.
 
-When you bind Collection to `ItemsSource` property of SfDataGrid, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
+When you bind Collection to `ItemsSource` property of `SfDataGrid`, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 
 N> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
 
@@ -100,7 +100,7 @@ The following property is associated with `View`.
 
 ### LiveDataUpdateMode
 
-SfDataGrid provides support to update the view during data manipulation operations and property changes using LiveDataUpdateMode(https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.iOS~Syncfusion.Data.LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
+`SfDataGrid` provides support to update the view during data manipulation operations and property changes using LiveDataUpdateMode(https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.iOS~Syncfusion.Data.LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
 
 <table>
 <tr>
