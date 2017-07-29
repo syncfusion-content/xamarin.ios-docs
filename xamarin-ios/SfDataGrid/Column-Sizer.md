@@ -9,15 +9,15 @@ documentation: ug
 
 # Column Sizer
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid.html) allows you to apply ColumnSizer for the GridColumns by setting the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) property. 
+SfDataGrid allows you to apply ColumnSizer for the GridColumns by setting the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) property. 
 
-The following code example illustrates how to apply `ColumnSizer` in `SfDataGrid`.
+The following code example illustrates how to apply `ColumnSizer` in SfDataGrid.
 
 {% highlight c# %}
 dataGrid.ColumnSizer = ColumnSizer.None;  
 {% endhighlight %}
 
-`SfDataGrid` applies width for all the GridColumns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection based on the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) property. Following are the lists of options available to set width of the Columns.
+SfDataGrid applies width for all the GridColumns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection based on the `SfDataGrid.ColumnSizer` property. Following are the lists of options available to set width of the Columns.
 
 * None
 * LastColumnFill
@@ -47,7 +47,7 @@ dataGrid.ColumnSizer = ColumnSizer.LastColumnFill;
 
 ## ColumnSizer.Star
 
-When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) is [Star](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ColumnSizer.html), all the GridColumns are adjusted an equal column width to fit within the view. Setting ColumnSizer to `Star` will disable the horizontal scrolling in `SfDataGrid`.
+When the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) is [Star](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ColumnSizer.html), all the GridColumns are adjusted an equal column width to fit within the view. Setting ColumnSizer to `Star` will disable the horizontal scrolling in SfDataGrid.
 
 {% highlight c# %}
 dataGrid.ColumnSizer = ColumnSizer.Star;  
