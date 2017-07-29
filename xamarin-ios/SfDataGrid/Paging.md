@@ -6,10 +6,11 @@ platform: xamarin.ios
 control: SfDataGrid
 documentation: ug
 ---
-# Paging 
-The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid.html) provides interactive support to manipulate data using the [SfDataPager](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.DataPager_namespace.html) control. It also provides built-in options to page data on demand when dealing with large volumes of data. `SfDataGrid` lets you to place the `SfDataPager` above or below it as per your requirement which lets you to easily manage the data paging.
 
-To use the paging functionality in `SfDataGrid` add the below namespace to your project.
+# Paging 
+The SfDataGrid provides interactive support to manipulate data using the [SfDataPager](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.DataPager_namespace.html) control. It also provides built-in options to page data on demand when dealing with large volumes of data. SfDataGrid lets you to place the `SfDataPager` above or below it as per your requirement which lets you to easily manage the data paging.
+
+To use the paging functionality in SfDataGrid add the below namespace to your project.
 `Syncfusion.SfDataGrid.DataPager`
 
 ## Normal Paging
@@ -23,7 +24,7 @@ SfDataGrid performs paging of data using the `SfDataPager`. Follow the below pro
 
 N> The `SfDataPager.PageSize` property should not be assigned with a value of 0.
 
-The following code example shows how to implement paging in `SfDataGrid` for Xamarin.iOS.
+The following code example shows how to implement paging in SfDataGrid for Xamarin.iOS.
 
 {% highlight c# %}
 public partial class ViewController : UIViewController
@@ -107,7 +108,7 @@ The following code example illustrates how to use ResetCache method:
 
 ## Custom Appearence
 
-The following code example shows how to implement paging with custom appearenve in `SfDataGrid` for Xamarin.Android.
+The following code example shows how to implement paging with custom appearance in SfDataGrid for Xamarin.iOS.
 
 {% highlight c# %}
 sfDataPager.AppearanceManager = new CustomAppearance();

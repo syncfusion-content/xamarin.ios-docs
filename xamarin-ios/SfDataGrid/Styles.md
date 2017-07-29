@@ -184,7 +184,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ### Change the Sorting Icon in column headers
 
-You can load any desired image as the sort icon in the `SfDataGrid` using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the `DataGridStyle` class. The following code example illustrates how to change the SortIcon in `SfDataGrid`.
+You can load any desired image as the sort icon in the SfDataGrid using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the `DataGridStyle` class. The following code example illustrates how to change the SortIcon in SfDataGrid.
 
 {% highlight c# %}
 
@@ -214,7 +214,7 @@ N> The image's BuildAction must be set to BundleResource so that we can access t
 
 ### Change the color of the resizing indicator
 
-You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in `SfDataGrid`. 
+You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in SfDataGrid. 
 
 {% highlight c# %}
 

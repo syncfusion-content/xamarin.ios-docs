@@ -9,7 +9,7 @@ documentation: UG
 
 # Columns 
 
-[SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid.html) allows you to create and add Columns in two ways:
+SfDataGrid allows you to create and add Columns in two ways:
 
 * Automatic Columns generation based on the underlying collection.
 * Manually defining columns in C#.
@@ -17,7 +17,7 @@ documentation: UG
 
 ## Automatic Columns Generation
 
-The `SfDataGrid` creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html). It is a bindable property and it decides columns generation for SfDataGrid based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumnsMode.html) property. 
+The SfDataGrid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html). It is a bindable property and it decides columns generation for SfDataGrid based on the [SfDataGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumnsMode.html) property. 
 
 `SfDataGrid.AutoGenerateColumnsMode` decides a way to create columns when `SfDataGrid.AutoGenerateColumns` is set to `true`. It also decides whether to retain the grouping and sorting when ItemsSource is changed. 
 
@@ -52,7 +52,7 @@ The `SfDataGrid.AutoGenerateColumnsMode` is of type [AutoGenerateColumnsMode](ht
 
 The default value of `SfDataGrid.AutoGenerateColumns` property is `true` and `SfDataGrid.AutoGenerateColumnsMode` is `Reset`. Hence by default SfDataGrid creates columns automatically for every non-explicitly defined public property in the underlying collection bound to its `ItemsSource` property.
 
-N> When you change items source for `SfDataGrid` during run time, then the columns are generated on the basis of option set for `SfDataGrid.AutoGenerateColumnsMode`.
+N> When you change items source for SfDataGrid during run time, then the columns are generated on the basis of option set for `SfDataGrid.AutoGenerateColumnsMode`.
 
 ### Customize Automatically Generated Columns
 
@@ -102,9 +102,9 @@ You can also customize a column’s header text, sorting, alignment, padding, et
 
 ## Manually generate Columns
 
-`SfDataGrid` also allows you to define the columns manually by adding the GridColumn objects to the `SfDataGrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDataGrid.AutoGenerateColumns` property to `false`. There are different types of columns available in `SfDataGrid` and you can create any column based on your requirements through code.
+SfDataGrid also allows you to define the columns manually by adding the GridColumn objects to the `SfDataGrid.Columns` collection. In case if you want only the manually defined columns to be in view, then you can achieve it by setting the `SfDataGrid.AutoGenerateColumns` property to `false`. There are different types of columns available in SfDataGrid and you can create any column based on your requirements through code.
  
-The following code example illustrates about creating columns manually in `SfDataGrid`.
+The following code example illustrates about creating columns manually in SfDataGrid.
 
 {% highlight c# %}
 dataGrid.AutoGenerateColumns = false;
@@ -131,7 +131,7 @@ dataGrid.Columns.Add (countryColumn);
 {% endhighlight %}
 
 ## Resizing Columns
-`SfDataGrid` allows to resize the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting [SfDataGrid.AllowResizingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowResizingColumn.html) property. A resizing indicator is displayed while resizing a column.
+SfDataGrid allows to resize the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting [SfDataGrid.AllowResizingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowResizingColumn.html) property. A resizing indicator is displayed while resizing a column.
 
 N> Resizing considers [GridColumn.MinimumWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~MinimumWidth.html) and [GridColumn.MaximumWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~MaximumWidth.html) of the column and will not resize past the mininum and maximum width constraints.
 
@@ -151,7 +151,7 @@ You can interactively hide a column by setting the `GridColumn.MinimumWidth` pro
 
 ### Resizing Modes
 
-`SfDataGrid` allows two modes of resizing, which can be set using the [SfDataGrid.ResizingMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ResizingMode.html) property. The available resizing modes are,
+SfDataGrid allows two modes of resizing, which can be set using the [SfDataGrid.ResizingMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ResizingMode.html) property. The available resizing modes are,
 
 * [OnMoved](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ResizingMode.html) - The resizing indicator is moved based on the touch point and the width of the column is updated as the resizing indicator moves.
 * [OnTouchUp](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ResizingMode.html) - The resizing indicator is moved based on the touch point but however the width of the column is updated only on a touch up operation.
