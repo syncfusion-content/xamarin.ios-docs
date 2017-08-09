@@ -118,7 +118,7 @@ ViewModel model = new ViewModel();
 //Initializing column series
 SFColumnSeries series = new SFColumnSeries();
 
-series.ItemSource = model.Data;
+series.ItemsSource = model.Data;
 
 series.XBindingPath = "Name";
 
