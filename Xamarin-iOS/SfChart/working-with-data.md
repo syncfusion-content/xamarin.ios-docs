@@ -9,150 +9,74 @@ documentation: ug
 
 # Populating Data
 
-SFChart needs to be provided with the datasource, which adopts the SFChartDataSource protocol to visualize the data.
+SFChart control can be configured with data points using ItemsSource property of SFSeries. There are two ways, you can create data points for chart.
 
+## Custom Object
 
-## Chart Data Point	
+You can assign a collection of custom objects to the ItemsSource property. In this case, you need to set the XBindingPath and YBindingPath properties of chart series with the property names of the custom object which contains the x-value/category and y-value respectively.
 
-To visualize the data values in the chart, we need to provide the collection of datapoints as the instance of `SFChartDataPoint`.
-
-N> SFChartDataPoint class has few overloaded constructors depending on the number of y values required to plot a data point for particular series type. For example, you can use a constructor with two parameters to instantiate a data point for XY Data Series like Line, Spline, Pie etc,
-
-Following code snippet illustrates this,
+N> While using custom objects, XBindingPath property is required for all types of chart series. You need to set YBindingPath property only for the XYDataSeries types which needs single y-value for a data point. For example, Line, Spline, Column, Bar, Pie etc. For BubbleSeries type, you need to set both YBindingPath and Size properties since it requires two y-values to plot a single bubble data point. In the case of financial series types like Candle and HiLoOpenClose, which requires four y-values for a single data point, you need to set High, Low, Open and Close properties with the property names of a custom object which contains respective values.
 
 {% highlight c# %}
-public class ChartDataModel : SFChartDataSource
+public class MonthDemand
+
 {
-    NSMutableArray HighTemperature;
 
-    public ChartDataModel ()
+    public MonthDemand(string demand, double year2010, double year2011)
     {
-        HighTemperature= new NSMutableArray();
 
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Jan"),NSObject.FromObject(42)));
+        this.Demand = demand;
 
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Feb"),NSObject.FromObject(44)));
+        this.Year2010 = year2010;
 
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Mar"),NSObject.FromObject(53)));
+        this.Year2011 = year2011;
 
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Apr"),NSObject.FromObject(64)));
+    }
 
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("May"),NSObject.FromObject(75)));
+    public string Demand { get; set; }
 
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Jun"),NSObject.FromObject(83)));
+    public double Year2010 { get; set; }
 
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Jul"),NSObject.FromObject(87)));
+    public double Year2011 { get; set; }
 
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Aug"),NSObject.FromObject(84)));
-
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Sep"),NSObject.FromObject(78)));
-
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Oct"),NSObject.FromObject(67)));
-
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Nov"),NSObject.FromObject(55)));
-
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Dec"),NSObject.FromObject(45))); 
-
-    } 
 }
 
+public class DataModel
+{
+    
+    public ObservableCollection<MonthDemand>  Demands{ get; set; }
+
+    public DataModel ()
+    {
+
+        Demands = new ObservableCollection<MonthDemand>();
+
+        Demands.Add(new MonthDemand("Jan", 42, 27));
+        Demands.Add(new MonthDemand("Feb", 44, 28));
+        Demands.Add(new MonthDemand("Mar", 53, 35));
+        Demands.Add(new MonthDemand("Apr", 64, 44));
+        Demands.Add(new MonthDemand("May", 75, 54));
+        Demands.Add(new MonthDemand("Jun", 83, 63));
+        Demands.Add(new MonthDemand("Jul", 87, 68));
+        Demands.Add(new MonthDemand("Aug", 84, 66));
+        Demands.Add(new MonthDemand("Sep", 78, 59));
+        Demands.Add(new MonthDemand("Oct", 67, 48));
+        Demands.Add(new MonthDemand("Nov", 55, 38));
+        Demands.Add(new MonthDemand("Dec", 45, 29));
+
+    }
+
+}
 {% endhighlight %}
 
-## Adopting chart data source protocol
-
-In order to add data source to SFChart, you need to adopt the `SFChartDataSource` protocol through the class extension as shown below.
-
 {% highlight c# %}
+chart.Series.Add (new SFColumnSeries () {
+    
+    ItemsSource = dataModel.Demands,
 
-// Need to create seperate class for SFChartDataSource
-public class SFChartDataSource : SFChartDataSource
-{
-}
+    XBindingPath = "Demand",
 
-{% endhighlight %}
+    YBindingPath = "Year2010"
 
-The `SFChartDataSource` protocol contains four required methods and an optional method.
-
-**Required Methods**
-
-* `NumberOfSeriesInChart` - returns an integer that represents the number of series to be added to SFChart.
-* `GetSeries` - returns a series object, like SFSeries, for the Chart at a particular index.
-* `GetNumberOfDataPoints` - returns the number of data points required.
-* `GetDataPoint` - returns each data point to be plotted in the series.
-
-**Optional Method**
-
-* `GetDataPoints` - Returns an array of data points to be plotted in the series based on series index.
-
-The following code example shows how to implement the SFChartDataSource and setting DataSource to chart.
-
-{% highlight c# %}
-public override void ViewDidLoad ()
-{
-    base.ViewDidLoad ();
-
-    SFChart chart               	= new SFChart ();
-    chart.Frame                 	= this.View.Frame;
-	chart.Title.Text   				= new NSString( "Weather Analysis");
-	SFCategoryAxis primaryAxis 		= new SFCategoryAxis ();
-	primaryAxis.Title.Text     		= new NSString("Month");
-	chart.PrimaryAxis   			= primaryAxis;
-	SFNumericalAxis secondaryAxis 	= new SFNumericalAxis ();
-	secondaryAxis.Title.Text      	= new NSString("Temperature");
-	chart.SecondaryAxis           	= secondaryAxis;
-	
-	//Defining the data source for the Chart.
-    ChartDataModel dataModel    	= new ChartDataModel ();
-    chart.DataSource            	= dataModel as SFChartDataSource;
-
-    this.View.AddSubview (chart);
-}
-
-public class ChartDataModel : SFChartDataSource
-{
-
-	NSMutableArray HighTemperature;
-
-    public ChartDataModel ()
-    {
-        HighTemperature = new NSMutableArray();
-
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Jan"),NSObject.FromObject(42)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Feb"),NSObject.FromObject(44)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Mar"),NSObject.FromObject(53)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Apr"),NSObject.FromObject(64)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("May"),NSObject.FromObject(75)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Jun"),NSObject.FromObject(83)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Jul"),NSObject.FromObject(87)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Aug"),NSObject.FromObject(84)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Sep"),NSObject.FromObject(78)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Oct"),NSObject.FromObject(67)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Nov"),NSObject.FromObject(55)));
-        HighTemperature.Add (new SFChartDataPoint(NSObject.FromObject ("Dec"),NSObject.FromObject(45))); 
-
-    } 
-	
-    public override nint NumberOfSeriesInChart (SFChart chart)
-    {
-        return 1; 
-    }
-
-    public override SFSeries GetSeries (SFChart chart, nint index)
-    {
-        SFSplineSeries series  = new SFSplineSeries ();
-        series.Label           = new NSString("High");
-        return series;
-    }
-
-    public override SFChartDataPoint GetDataPoint (SFChart chart, nint index, nint seriesIndex)
-    {
-        return HighTemperature.GetItem<SFChartDataPoint> ((nuint)index);
-    }
-
-    public override nint GetNumberOfDataPoints (SFChart chart, nint index)
-    {
-        return 12;
-    }
-}
-
+});
 {% endhighlight %}
