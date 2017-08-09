@@ -384,7 +384,7 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 chart.PrimaryAxis.LabelStyle.LabelsPosition   = SFChartAxisElementPosition.Inside;
 
-chart.PrimaryAxis.MajorTickStyle.TickPosition = SFChartAxisElementPosition.Inside;
+chart.PrimaryAxis.TickPosition                = SFChartAxisElementPosition.Inside;
 {% endhighlight %}
 
 
@@ -492,7 +492,7 @@ Axis labels may overlap with each other based on chart dimensions and label size
 
 {% highlight c# %}
 
-chart.PrimaryAxis.LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows;
+chart.PrimaryAxis.LabelsIntersectAction = SFChartAxisLabelsIntersectAction.MultipleRows;
 
 {% endhighlight %}
 

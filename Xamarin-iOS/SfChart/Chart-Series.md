@@ -9,41 +9,44 @@ documentation: ug
 
 # Chart Series
 
-In order to add data source to SFChart, you need to implement the SFChartDataSource protocol which contains four methods and an optional method. This has been explained briefly in the `Populating Data` document.
-
 ## Multiple Series
 
 You can add multiple series to `Series` property of `SFChart` class.
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    if (index == 0) 
-    {
-        SFColumnSeries series1 = new SFColumnSeries ();
+SFChart chart = new SFChart();
+...
 
-        series1.Label          = new NSString ("Gold");
+SFColumnSeries columnSeries = new SFColumnSeries() { 
+    
+    ItemsSource = Data, 
+    XBindingPath = "Country", 
+    YBindingPath = "Value" 
 
-        return series1;
-    } 
-    else if (index == 1) 
-    {
-        SFColumnSeries series2 = new SFColumnSeries ();
+};
 
-        series2.Label          = new NSString ("Silver");
+SFColumnSeries columnSeries1 = new SFColumnSeries() { 
 
-        return series2;
-    } 
-    else
-    {
-        SFColumnSeries series3 = new SFColumnSeries ();
+    ItemsSource = Data1, 
+    XBindingPath = "Country", 
+    YBindingPath = "Value" 
+    
+};
 
-        series3.Label          = new NSString ("Bronze");
+SFColumnSeries columnSeries2 = new SFColumnSeries() { 
 
-        return series3;
-    } 
-}
+    ItemsSource = Data2, 
+    XBindingPath = "Country", 
+    YBindingPath = "Value" 
+    
+};
+
+chart.Series.Add(columnSeries);
+
+chart.Series.Add(columnSeries1);
+
+chart.Series.Add(columnSeries2);
 {% endhighlight %}
 
 
@@ -55,25 +58,29 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    if (index == 0)
-    {
-        SFColumnSeries series1 = new SFColumnSeries ();
+SFChart chart = new SFChart();
 
-        series1.Label          = new NSString ("Unit Sold");
+...
 
-        return series1;
-    } 
-    else 
-    {
-        SFLineSeries series2 = new SFLineSeries ();
+SFColumnSeries columnSeries = new SFColumnSeries() { 
+    
+    ItemsSource = Data, 
+    XBindingPath = "Month",
+    YBindingPath = "Value" 
+    
+};
 
-        series2.Label        = new NSString ("Total Transaction");
+SFLineSeries lineSeries = new SFLineSeries() { 
+    
+    ItemsSource = Data1, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+    
+}; 
 
-        return series2;
-    } 
-}
+chart.Series.Add(columnSeries);
+
+chart.Series.Add(lineSeries);
 {% endhighlight %}
 
 
@@ -88,25 +95,28 @@ When the combination of Cartesian and accumulation series types are added to the
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    if (index == 0)
-    {
-        SFLineSeries series1    = new SFLineSeries ();
+SFChart chart = new SFChart();
+...
 
-        series1.Label           = new NSString ("Unit Sold");
+SFLineSeries lineSeries = new SFLineSeries() { 
 
-        return series1;
-    } 
-    else 
-    {
-        SFPieSeries series2     = new SFPieSeries ();
+    ItemsSource = Data, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+    
+};
 
-        series2.Label           = new NSString ("Total Transaction");
+SFPieSeries pieSeries = new SFPieSeries() { 
 
-        return series2;
-    } 
-}
+    ItemsSource = Data1, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+    
+};
+
+chart.Series.Add(lineSeries);
+
+chart.Series.Add(pieSeries);
 {% endhighlight %}
 
 ![](ChartSeries_images/Limitation.png)

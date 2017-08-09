@@ -37,7 +37,7 @@ chart.Legend.LabelStyle.Color  = UIColor.Blue;
 
 chart.Legend.LabelStyle.Font   = UIFont.BoldSystemFontOfSize (18);
 
-chart.Legend.LabelStyle.Margin = UIEdgeInsets (0, 5, 0, 5);
+chart.Legend.LabelStyle.Margin = new UIEdgeInsets (0, 5, 0, 5);
 {% endhighlight %}
 
 ![](Legend_images/Customizing_Labels.png)
