@@ -173,7 +173,7 @@ series.EnableTooltip = true;
 
 Refer this [link]() to learn more about the options available in [`SFChart`]() to customize tooltip.
 
-This is how the final output looks like on iOS devices. You can also download the entire source code of this demo from this [link.]()
+This is how the final output looks like on iOS devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
 
 ![](Getting-Started_images/img2.png)
 
