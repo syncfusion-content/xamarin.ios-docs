@@ -53,14 +53,14 @@ None palette will not apply any color to the series. So in order to define the c
 
 ## Apply palette for Series
 
-`ColorModel` property of ChartSeries is used to define the colors for each data point. Following palettes are used to define the colors.
+`ColorModel` property of `SFSeries` is used to define the colors for each data point. Following palettes are used to define the colors.
 
 **Predefined Palettes**
 
-Currently, Chart supports three types of palette and Metro palette is the default palette for SfChart.
+Currently, Series supports three types of palette and None palette is the default palette for Series.
  
 These predefined palettes are
- 
+
 * Metro
 * Pineapple
 * TomatoSpectrum
