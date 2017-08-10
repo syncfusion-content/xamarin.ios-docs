@@ -179,14 +179,10 @@ To customize the range of an axis, you can use the `Minimum` and `Maximum` prope
 
 {% highlight c# %}
 
-chart.PrimaryAxis = new DateTimeAxis() 
-{ 
-
-    Minimum = new DateTime(2010, 1, 1), 
-
-    Maximum = new DateTime(2015, 12, 30) 
-
-};
+SFDateTimeAxis primaryAxis = new SFDateTimeAxis();
+NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);           
+primaryAxis.Minimum = calendar.DateFromComponents(new NSDateComponents() {Year = 2010, Month = 1, Day = 1 });           
+primaryAxis.Maximum = calendar.DateFromComponents(new NSDateComponents() {Year = 2015, Month = 12, Day = 31 });            
 
 {% endhighlight %}
 
@@ -488,7 +484,7 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 ## Smart Axis Labels
 
-Axis labels may overlap with each other based on chart dimensions and label size. The `LabelsIntersectAction` property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of `LabelsIntersectAction` is `AxisLabelsIntersectAction.None`. Other available values of `LabelsIntersectAction` are `AxisLabelsIntersectAction.MultipleRows` and `AxisLabelsIntersectAction.Hide`.
+Axis labels may overlap with each other based on chart dimensions and label size. The `LabelsIntersectAction` property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of `LabelsIntersectAction` is `SFChartAxisLabelsIntersectAction.None`. Other available values of `LabelsIntersectAction` are `SFChartAxisLabelsIntersectAction.MultipleRows` and `SFChartAxisLabelsIntersectAction.Hide`.
 
 {% highlight c# %}
 

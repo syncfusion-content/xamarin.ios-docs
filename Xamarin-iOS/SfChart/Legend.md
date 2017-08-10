@@ -49,27 +49,12 @@ Legend icons are enabled by default, however, you can control its visibility usi
 
 {% highlight c# %}
 
+chart.Legend.IsIconVisible  = true;
+chart.Legend.IconHeight     = 20;
+chart.Legend.IconWidth      = 20;
 
-public override void ViewDidLoad ()
-{
-    chart.Legend.IsIconVisible  = true;
-
-    chart.Legend.IconHeight     = 20;
-
-    chart.Legend.IconWidth      = 20;
-}
-
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFPieSeries series          = new SFPieSeries ();
-
-    series.LegendIcon           = SFChartLegendIcon.SeriesType;
-
-    series.DataMarker.ShowLabel = true;
-
-    return series;
-}
-
+SFPieSeries series          = new SFPieSeries ();
+series.LegendIcon           = SFChartLegendIcon.SeriesType;
 {% endhighlight %}
 
 ![](Legend_images/Legend_Icons.png)
@@ -90,7 +75,7 @@ Following properties are used to define and customize the legend title.
 
 {% highlight c# %}
 
-chart.Legend.Title.Text             = new NSString ("Years");	
+chart.Legend.Title.Text             = "Years";	
 
 chart.Legend.Title.TextColor        = UIColor.Red;
 

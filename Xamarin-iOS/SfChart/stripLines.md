@@ -28,7 +28,7 @@ Following properties are used to configure the strip line.
 
 **NumericalStripLine**
 
-`NumericalStripLine` are used to draw strip lines for `NumericalAxis` and `CategoryAxis`. To add a strip line, create an instance of `SFChartNumericalStripLine` and add to the `StripLines` collection property using `AddStripLine` method of the respective axis.
+`SFChartNumericalStripLine` are used to draw strip lines for `SFNumericalAxis` and `SFCategoryAxis`. To add a strip line, create an instance of `SFChartNumericalStripLine` and add to the `StripLines` collection property using `AddStripLine` method of the respective axis.
 
 {% highlight c# %}
 
@@ -259,7 +259,7 @@ stripLine.Start                     = 42;
 
 stripLine.Width                     = 4;
 
-stripLine.Text                      = new NSString ("Quarter-2");
+stripLine.Text                      = "Quarter-2";
 
 stripLine.BackgroundColor           = UIColor.FromRGB (63, 158, 19);
 

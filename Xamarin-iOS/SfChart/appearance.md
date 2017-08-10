@@ -18,7 +18,7 @@ documentation: ug
 Currently, Chart supports three different palettes. They are 
 
 * Metro
-* TomotoSpectrum
+* TomatoSpectrum
 * Pineapple
 
 Metro is the default palette for SFChart. 
@@ -57,8 +57,13 @@ None palette will not apply any color to the series. So in order to define the c
 
 **Predefined Palettes**
 
-Currently, Chart supports only Metro palette.
-
+Currently, Chart supports three types of palette and Metro palette is the default palette for SfChart.
+ 
+These predefined palettes are
+ 
+* Metro
+* Pineapple
+* TomatoSpectrum
 
 {% highlight c# %}
 

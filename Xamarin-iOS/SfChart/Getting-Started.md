@@ -21,7 +21,7 @@ N> Assemblies are available in unzipped package location in Mac.
 
 You have to add the following assembly reference to the iOS unified project
 
-ios-unifed\Syncfusion.SFChart.iOS.dll
+ios-unified\Syncfusion.SFChart.iOS.dll
 
 ## Initialize Chart
 
@@ -54,7 +54,7 @@ public override void ViewDidLoad ()
 }
 {% endhighlight %}
 
-Run the project and check if you get following output to make sure you have configured your project properly to add SFChart.
+Run the project and check if you get following output to make sure you have configured your project properly to add `SFChart`.
 
 ![](Getting-Started_images/img1.png)
 

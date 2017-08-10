@@ -9,11 +9,11 @@ documentation: ug
 
 # Populating Data
 
-SFChart control can be configured with data points using ItemsSource property of SFSeries. There are two ways, you can create data points for chart.
+`SFChart` control can be configured with data points using ItemsSource property of `SFSeries`. There are two ways, you can create data points for chart.
 
 ## Custom Object
 
-You can assign a collection of custom objects to the ItemsSource property. In this case, you need to set the XBindingPath and YBindingPath properties of chart series with the property names of the custom object which contains the x-value/category and y-value respectively.
+You can assign a collection of custom objects to the ItemsSource property. In this case, you need to set the `XBindingPath` and `YBindingPath` properties of chart series with the property names of the custom object which contains the x-value/category and y-value respectively.
 
 N> While using custom objects, XBindingPath property is required for all types of chart series. You need to set YBindingPath property only for the XYDataSeries types which needs single y-value for a data point. For example, Line, Spline, Column, Bar, Pie etc. For BubbleSeries type, you need to set both YBindingPath and Size properties since it requires two y-values to plot a single bubble data point. In the case of financial series types like Candle and HiLoOpenClose, which requires four y-values for a single data point, you need to set High, Low, Open and Close properties with the property names of a custom object which contains respective values.
 

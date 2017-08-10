@@ -11,10 +11,10 @@ documentation: ug
 
 ## Line Chart
 
-To render a line chart, create an instance of SFLineSeries and add to the Series collection property of SFChart. You can use the following properties to customize the appearance.
+To render a line chart, create an instance of SFLineSeries and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the line
-* `StrokeWidth` – used to change the stroke width of the line
+* `LineWidth` – used to change the width of the line
 
 
 {% highlight c# %}
@@ -37,11 +37,11 @@ chart.Series.Add(lineSeries);
 
 ## Area Chart
 
-To render an area chart, create an instance of `SFAreaSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the appearance.
+To render an area chart, create an instance of `SFAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -62,11 +62,11 @@ chart.Series.Add(areaSeries);
 
 ## Spline Area Chart
 
-To render a spline area chart, create an instance of `SFSplineAreaSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the spline area appearance.
+To render a spline area chart, create an instance of `SFSplineAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the spline area appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -91,11 +91,11 @@ chart.Series.Add(splineAreaSeries);
 
 ## Stacked Area Chart
 
-To render a stacked area chart, create an instance of `SFStackingAreaSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the stacked area appearance.
+To render a stacked area chart, create an instance of `SFStackingAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked area appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BordeWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -134,11 +134,11 @@ chart.Series.Add(stackingAreaSeries3);
 
 ## 100% Stacked Area Chart
 
-To render a 100% stacked area chart, create an instance of `SFStackingArea100Series` and add to the Series collection property of SFChart. You can use the following properties to customize the 100% stacked area appearance.
+To render a 100% stacked area chart, create an instance of `SFStackingArea100Series` and add to the Series collection property of `SFChart`. You can use the following properties to customize the 100% stacked area appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -176,11 +176,11 @@ chart.Series.Add(stackingAreaSeries3);
 
 ## Column Chart
 
-To render a column chart, create an instance of `SFColumnSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the appearance.
+To render a column chart, create an instance of `SFColumnSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -202,7 +202,7 @@ chart.Series.Add(columnSeries);
 
 ## Range Column Chart
 
-To render a range column chart, create an instance of `SFRangeColumnSeries` and add to the Series collection property of SFChart. 
+To render a range column chart, create an instance of `SFRangeColumnSeries` and add to the Series collection property of `SFChart`. 
 
 Since the `SFRangeColumnSeries` requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point. 
 
@@ -225,18 +225,18 @@ chart.Series.Add(rangeColumnSeries);
 Following properties are used to customize the range column segment appearance,
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 ![](ChartTypes_images/RangeColumn.png)
 
 ## Stacked Column Chart
 
-To render a stacked column chart, create an instance of `SFStackingColumnSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the stacked column segment appearance.
+To render a stacked column chart, create an instance of `SFStackingColumnSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked column segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 {% highlight c# %}
 
@@ -273,11 +273,11 @@ chart.Series.Add(stackingColumnSeries3);
 
 ## 100% Stacked Column Chart
 
-To render a 100% stacked column chart, create an instance of `SFStackingColumn100Series` and add to the Series collection property of SFChart. You can use the following properties to customize the series appearance.
+To render a 100% stacked column chart, create an instance of `SFStackingColumn100Series` and add to the Series collection property of `SFChart`. You can use the following properties to customize the series appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -317,11 +317,11 @@ chart.Series.Add(stackingColumn100Series3);
 
 ## Bar Chart
 
-To render a bar chart, create an instance of `SFBarSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the bar segment appearance.
+To render a bar chart, create an instance of `SFBarSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the bar segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -343,11 +343,11 @@ chart.Series.Add(barSeries);
 
 ## Stacked Bar Chart
 
-To render a stacked bar chart, create an instance of `SFStackingBarSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the stacked bar segment appearance.
+To render a stacked bar chart, create an instance of `SFStackingBarSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked bar segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -387,11 +387,11 @@ chart.Series.Add(stackingBarSeries3);
 
 ## 100% Stacked Bar Chart
 
-To render a 100% stacked bar chart, create an instance of `SFStackingBar100Series` and add to the Series collection property of SFChart. You can use the following properties to customize the series appearance.
+To render a 100% stacked bar chart, create an instance of `SFStackingBar100Series` and add to the Series collection property of `SFChart`. You can use the following properties to customize the series appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -429,10 +429,10 @@ chart.Series.Add(stackingBar100Series3);
 
 ## Spline Chart
 
-To render a spline chart, create an instance of `SFSplineSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the spline segment appearance.
+To render a spline chart, create an instance of `SFSplineSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the spline segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
+* `LineWidth` – used to change the line width of the series
 
 
 {% highlight c# %}
@@ -454,10 +454,10 @@ chart.Series.Add(splineSeries);
 
 ## StepLine Chart
 
-To render a step line chart, create an instance of `SFStepLineSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the appearance.
+To render a step line chart, create an instance of `SFStepLineSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the line
-* `StrokeWidth` – used to change the stroke width of the line
+* `LineWidth` – used to change the line width of the series
 
 
 {% highlight c# %}
@@ -482,7 +482,7 @@ chart.Series.Add(stepLine);
 `SFFastLineSeries` is a line chart, but it loads faster than `SFLineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of `SFFastLineSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the fast line segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
+* `LineWidth` – used to change the line width of the series
 
 
 {% highlight c# %}
@@ -522,7 +522,7 @@ chart.Series.Add(series);
 
 ## Bubble Chart
 
-To render a bubble chart, create an instance of `SFBubbleSeries` and add to the Series collection property of SFChart. 
+To render a bubble chart, create an instance of `SFBubbleSeries` and add to the Series collection property of `SFChart`. 
 
 Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here **Size** is used to specify the size of each bubble segment. 
 
@@ -544,8 +544,8 @@ chart.Series.Add(bubbleSeries);
 Following properties are used to customize the bubble segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 * `MinimumRadius` – used to change the minimum size of the series
 * `MaximumRadius` – used to change the maximum size of the series
 
@@ -553,11 +553,11 @@ Following properties are used to customize the bubble segment appearance.
 
 ## Scatter Chart	
 
-To render a scatter chart, create an instance of `SFScatterSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the scatter segment appearance.
+To render a scatter chart, create an instance of `SFScatterSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the scatter segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 * `ScatterWidth` – used to change the width of the series
 * `ScatterHeight` – used to change the height of the series
 
@@ -571,8 +571,7 @@ SFScatterSeries scatterSeries = new SFScatterSeries()
 { 
     ItemsSource = Data, 
     XBindingPath = "XValue", 
-    YBindingPath = "YValue", 
-    Size = "Size” 
+    YBindingPath = "YValue"
 };
 chart.Series.Add(scatterSeries);
 {% endhighlight %}
@@ -581,11 +580,11 @@ chart.Series.Add(scatterSeries);
 
 ## OHLC Chart
 
-To render an OHLC chart, create an instance of `SFOHLCSeries` and add to the Series collection property of SFChart.
+To render an OHLC chart, create an instance of `SFOHLCSeries` and add to the Series collection property of `SFChart`.
 
 OHLC chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-You can use SFChartDataPoint's five parameter constructor to pass x, open, high, low and close values to  `SFOHLCSeries`,
+You can use five parameter constructor to pass x, open, high, low and close values to  `SFOHLCSeries`,
 
 
 {% highlight c# %}
@@ -610,8 +609,7 @@ chart.Series.Add(hiLoOpenCloseSeries);
 You can use the following properties to customize the HiLoOpenCloseSeries segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `LineWidth` – used to change the border width of the series
 
 ![](ChartTypes_images/OHLC.png)
 
@@ -644,11 +642,11 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 ## Candle Chart
 
-To render a candle chart, create an instance of `SFCandleSeries` and add to the Series collection property of SFChart.
+To render a candle chart, create an instance of `SFCandleSeries` and add to the Series collection property of `SFChart`.
 
 Candle chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-You can use SFChartDataPoint's five parameter constructor to pass x, open, high, low and close values to  `SFCandleSeries`,
+You can use five parameter constructor to pass x, open, high, low and close values to  `SFCandleSeries`,
 
 {% highlight c# %}
 
@@ -671,8 +669,8 @@ chart.Series.Add(candleSeries);
 You can use the following properties to customize the candle segment appearance.
 
 * `Color`       – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 ![](ChartTypes_images/Candle.png)
 
@@ -705,7 +703,7 @@ chart.Series.Add(candleSeries);
 
 ## Radar Chart
 
-To render a radar chart, create an instance of `SFRadarSeries` and add to the Series collection property of SFChart.
+To render a radar chart, create an instance of `SFRadarSeries` and add to the Series collection property of `SFChart`.
 
 ### Draw type
 
@@ -729,8 +727,8 @@ radar.DrawType = SFChartPolarRadarSeriesDrawType.Line;
 You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series.
-* `BorderWidth` – used to change the stroke width of the series.
-* `BorderColor` – used to change the stroke color of the series when draw types is set to area
+* `BorderWidth` – used to change the border width of the series.
+* `BorderColor` – used to change the border color of the series when draw types is set to area
 * `Dashes` – used to render line with dashes when draw type is set to line.
 
 {% highlight c# %}
@@ -758,7 +756,7 @@ radarSeries.Closed          = false;
 
 ## Polar Chart
 
-To render a polar chart, create an instance of `SFPolarSeries` and add to the Series collection property of SFChart. 
+To render a polar chart, create an instance of `SFPolarSeries` and add to the Series collection property of `SFChart`. 
 
 ### Draw type
 
@@ -781,8 +779,8 @@ polarSeries.DrawType             = SFChartPolarRadarSeriesDrawType
 You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series.
-* `BorderWidth` – used to change the stroke width of the series.
-* `BorderColor` – used to change the stroke color of the series when draw types is set to area
+* `BorderWidth` – used to change the border width of the series.
+* `BorderColor` – used to change the border color of the series when draw types is set to area
 * `Dashes` – used to render line with dashes when draw type is set to line.
 
 {% highlight c# %}
@@ -811,11 +809,11 @@ polarSeries.Closed             = false;
 
 ## Pie Chart
 
-To render a pie chart, create an instance of `SFPieSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the pie segment appearance.
+To render a pie chart, create an instance of `SFPieSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the pie segment appearance.
 
 * `Color`       – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -862,7 +860,7 @@ series.ExplodeAll  = true;
 
 ### Sector of Pie
 
-SFChart allows you to render all the data points/segments in semi-pie, quarter-pie or in any sector using `StartAngle` and `EndAngle` properties.
+`SFChart` allows you to render all the data points/segments in semi-pie, quarter-pie or in any sector using `StartAngle` and `EndAngle` properties.
 
 
 {% highlight c# %}
@@ -876,11 +874,11 @@ series.EndAngle    = 360;
 
 ## Doughnut Chart
 
-To render a doughnut chart, create an instance of `SFDoughnutSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the doughnut segment appearance.
+To render a doughnut chart, create an instance of `SFDoughnutSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the doughnut segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -899,7 +897,7 @@ chart.Series.Add(doughnutSeries);
 
 ![](ChartTypes_images/Doughnut.png)
 
-### Changing Doughnut inner radius
+### Changing Doughnut Inner Radius
 
 You can change the doughnut chart inner radius using `DoughnutCoefficient` with respect to the plot area. It ranges from 0 to 1 and the default value is `0.4`.
 
@@ -907,12 +905,12 @@ You can change the doughnut chart inner radius using `DoughnutCoefficient` with 
 {% highlight c# %}
     
 SFDoughnutSeries series     = new SFDoughnutSeries ();
-series.doughnutCoefficient  = 0.6f;   
+series.DoughnutCoefficient = 0.6f;   
 {% endhighlight %}
 
 ![](ChartTypes_images/DoughnutCoefficient.png)
 
-### Changing the doughnut size
+### Changing the Doughnut Size
 
 You can use the `CircularCoefficient` property to change the diameter of the doughnut chart with respect to the plot area. It ranges from 0 to 1 and the default value is 0.8.
 
@@ -967,11 +965,11 @@ series.EndAngle         = 360;
 
 ## Pyramid Chart
 
-To render a pyramid chart, create an instance of `SFPyramidSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the pyramid segment appearance.
+To render a pyramid chart, create an instance of `SFPyramidSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the pyramid segment appearance.
 
 * `Color`       – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -1034,11 +1032,11 @@ series.ExplodeIndex    = 2;
 
 ## Funnel Chart
 
-To render a funnel chart, create an instance of `SFFunnelSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the funnel segment appearance.
+To render a funnel chart, create an instance of `SFFunnelSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the funnel segment appearance.
 
 * `Color`       – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -1084,7 +1082,7 @@ series.ExplodeIndex   = 2;
 
 ![](ChartTypes_images/FunnelExplodeIndex.png)
 
-### Changing the minimum width of the funnel
+### Changing the Minimum width of the funnel
 
 You can change the minimum width of the funnel neck using `MinimumWidth` property of `SFFunnelSeries`. Default value of `MinimumWidth` is `20`.
 
