@@ -906,7 +906,7 @@ chart.Series.Add(doughnutSeries);
 
 ![](ChartTypes_images/Doughnut.png)
 
-### Changing Doughnut Inner Radius
+### Changing doughnut inner radius
 
 You can change the doughnut chart inner radius using `DoughnutCoefficient` with respect to the plot area. It ranges from 0 to 1 and the default value is `0.4`.
 
@@ -919,7 +919,7 @@ series.DoughnutCoefficient = 0.6f;
 
 ![](ChartTypes_images/DoughnutCoefficient.png)
 
-### Changing the Doughnut Size
+### Changing the doughnut size
 
 You can use the `CircularCoefficient` property to change the diameter of the doughnut chart with respect to the plot area. It ranges from 0 to 1 and the default value is 0.8.
 
@@ -958,7 +958,7 @@ series.ExplodeAll       = true;
 
 ![](ChartTypes_images/DoughnutExplodeAll.png)
 
-### Sector of Doughnut
+### Sector of doughnut
 
 SfChart allows you to render all the data points/segments in semi-doughnut, quarter- doughnut or in any sector using `StartAngle` and `EndAngle` properties.
 
@@ -1091,7 +1091,7 @@ series.ExplodeIndex   = 2;
 
 ![](ChartTypes_images/FunnelExplodeIndex.png)
 
-### Changing the Minimum width of the funnel
+### Changing the minimum width of the funnel
 
 You can change the minimum width of the funnel neck using `MinimumWidth` property of `SFFunnelSeries`. Default value of `MinimumWidth` is `20`.
 
