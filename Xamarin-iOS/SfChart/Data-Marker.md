@@ -47,7 +47,7 @@ lineSeries.DataMarker.LabelStyle.BackgroundColor = UIColor.Cyan;
 
 lineSeries.DataMarker.LabelStyle.Angle           = 315;
 
-lineSeries.DataMarker.LabelStyle.Margin          = new UIEdgeInsets(5,0,0,0);
+lineSeries.DataMarker.LabelStyle.Margin          = new UIEdgeInsets(5,5,5,5);
 
 lineSeries.DataMarker.LabelStyle.Font            = UIFont.ItalicSystemFontOfSize (18);
 {% endhighlight %}

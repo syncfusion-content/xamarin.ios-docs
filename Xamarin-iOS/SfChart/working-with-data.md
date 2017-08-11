@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Data
 
-`SFChart` control can be configured with data points using ItemsSource property of `SFSeries`. There are two ways, you can create data points for chart.
+`SFChart` control can be configured with data points using ItemsSource property of `SFSeries`. You can create data points for chart.
 
 ## Custom Object
 
@@ -25,11 +25,11 @@ public class MonthDemand
     public MonthDemand(string demand, double year2010, double year2011)
     {
 
-        this.Demand = demand;
+        Demand = demand;
 
-        this.Year2010 = year2010;
+        Year2010 = year2010;
 
-        this.Year2011 = year2011;
+        Year2011 = year2011;
 
     }
 
