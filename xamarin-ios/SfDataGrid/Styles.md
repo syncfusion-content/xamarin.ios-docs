@@ -66,7 +66,7 @@ public class Dark : DataGridStyle
         return UIColor.FromRGB(255, 255, 255);
     }
 
-    public override UIColor GetBordercolor()
+    public override UIColor GetBorderColor()
     {
         return UIColor.FromRGB(81, 83, 82);
     }

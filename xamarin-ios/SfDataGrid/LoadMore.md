@@ -128,6 +128,6 @@ public class CustomLoadMoreView : LoadMoreView
 }
 {% endhighlight %}
 
-Runnig the application renders the following output.
+Running the application renders the following output.
 
 ![](SfDataGrid_images/LoadMore.png)

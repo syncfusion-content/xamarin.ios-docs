@@ -220,7 +220,7 @@ dataGrid.Columns.Add(TotalColumn);
 `GridUnboundColumnEventsArgs` provides the following properties:
 
 * [Column](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Column.html) - Gets the GridColumn of the cell that triggers this event.  
-* [OrginalSender](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridEventArgs~OriginalSender.html) - Gets the dataGrid raising this event.
+* [OriginalSender](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridEventArgs~OriginalSender.html) - Gets the dataGrid raising this event.
 * [Record](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Record.html) - Gets the underlying row data. 
 * [UnboundAction](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~UnboundAction.html) - Defines the action for triggering this event.
 * [Value](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridUnboundColumnEventsArgs~Value.html) - Gets or sets the value for GridUnboundColumn cell based on UnboundAction.

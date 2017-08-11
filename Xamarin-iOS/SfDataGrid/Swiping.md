@@ -278,9 +278,9 @@ public class Swiping : SampleView
 
     private void commitValues ()
     {
-        if (swipedRowindex > 0) 
+        if (swipedRowIndex > 0) 
         {
-            var swipedRowData = this.viewModel.OrdersInfo [this.swipedRowindex - 1];
+            var swipedRowData = this.viewModel.OrdersInfo [this.swipedRowIndex - 1];
             swipedRowData.OrderID = this.orderIDText.Text;
             swipedRowData.CustomerID = this.customerIDText.Text;
             swipedRowData.EmployeeID = this.employeeIDText.Text;
@@ -305,9 +305,9 @@ public class Swiping : SampleView
 
     private void initializeTextFields() 
     { 
-        if (swipedRowindex > 0) 
+        if (swipedRowIndex > 0) 
         {
-            var swipedRowData = this.viewModel.OrdersInfo [this.swipedRowindex - 1];
+            var swipedRowData = this.viewModel.OrdersInfo [this.swipedRowIndex - 1];
             orderIDText.Text = swipedRowData.OrderID;
             this.customerIDText.Text = swipedRowData.CustomerID;
             this.employeeIDText.Text = swipedRowData.EmployeeID;
@@ -332,7 +332,7 @@ public class Swiping : SampleView
 
     void RightSwipeViewButton_TouchDown (object sender, EventArgs e)
     {
-        viewModel.OrdersInfo.RemoveAt(swipedRowindex - 1);
+        viewModel.OrdersInfo.RemoveAt(swipedRowIndex - 1);
     }
 
     public override void LayoutSubviews ()
@@ -359,7 +359,7 @@ public class Swiping : SampleView
     
     private void SfGrid_SwipeEnded (object sender, SwipeEndedEventArgs e)
     {
-        swipedRowindex = e.RowIndex;
+        swipedRowIndex = e.RowIndex;
         initializeTextFields ();
     }
  }
@@ -460,10 +460,10 @@ void UndoTapped (UITapGestureRecognizer gesture)
 {
     if (gesture.State == UIGestureRecognizerState.Ended)
     {
-        var removedData = viewModel.OrdersInfo[swipedRowindex - 1];
+        var removedData = viewModel.OrdersInfo[swipedRowIndex - 1];
         var isSelected = SfGrid.SelectedItems.Contains(removedData);
         viewModel.OrdersInfo.Remove(removedData);
-        viewModel.OrdersInfo.Insert(swipedRowindex - 1, removedData);
+        viewModel.OrdersInfo.Insert(swipedRowIndex - 1, removedData);
         if (isSelected)
             SfGrid.SelectedItems.Add(removedData);
         IsUndoClicked = true;
