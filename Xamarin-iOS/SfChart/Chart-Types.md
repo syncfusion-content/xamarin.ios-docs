@@ -600,9 +600,6 @@ To render an OHLC chart, create an instance of `SFOHLCSeries` and add to the Ser
 
 OHLC chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-You can use five parameter constructor to pass x, open, high, low and close values to  `SFOHLCSeries`,
-
-
 {% highlight c# %}
 
 SFChart chart = new SFChart();
@@ -621,7 +618,6 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 {% endhighlight %}
 
-
 You can use the following properties to customize the HiLoOpenCloseSeries segment appearance.
 
 * `Color` – used to change the color of the series
@@ -632,7 +628,6 @@ You can use the following properties to customize the HiLoOpenCloseSeries segmen
 ### Bull and Bear Color	
 
 In OHLC chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and `BearFillColor` property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
-
 
 {% highlight c# %}
 
@@ -661,8 +656,6 @@ chart.Series.Add(hiLoOpenCloseSeries);
 To render a candle chart, create an instance of `SFCandleSeries` and add to the Series collection property of `SFChart`.
 
 Candle chart requires five values (X, Open, High, Low and Close) to plot a point. 
-
-You can use five parameter constructor to pass x, open, high, low and close values to  `SFCandleSeries`,
 
 {% highlight c# %}
 
