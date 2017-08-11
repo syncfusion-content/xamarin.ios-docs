@@ -18,11 +18,11 @@ Following properties are used to customize its appearance.
 * `BorderColor` – used to change the border color
 * `BorderWidth` – used to change the border width
 * `Font` – used to change the text size, font family and font weight
-* `Margin` - used to change the margin for title
+* `EdgeInsets` - used to change the margin for title
 
 {% highlight c# %}
 
-chart.Title.Text        = new NSString ("Efficiency of Oil Fired Power Production");
+chart.Title.Text        = "Efficiency of Oil Fired Power Production";
 
 chart.Title.TextColor   = UIColor.Blue; 
 
@@ -38,7 +38,7 @@ You can align the title text content to the Start, Center or End of the title us
 
 {% highlight c# %}
 
-chart.Title.Text            = new NSString ("Efficiency of Oil Fired Power Production");
+chart.Title.Text            = "Efficiency of Oil Fired Power Production";
 
 chart.Title.TextAlignment   = UITextAlignment.Left; 
 

@@ -28,7 +28,7 @@ Following properties are used to configure the strip line.
 
 **NumericalStripLine**
 
-`NumericalStripLine` are used to draw strip lines for `NumericalAxis` and `CategoryAxis`. To add a strip line, create an instance of `SFChartNumericalStripLine` and add to the `StripLines` collection property using `AddStripLine` method of the respective axis.
+`SFChartNumericalStripLine` are used to draw strip lines for `SFNumericalAxis` and `SFCategoryAxis`. To add a strip line, create an instance of `SFChartNumericalStripLine` and add to the `StripLines` collection property using `AddStripLine` method of the respective axis.
 
 {% highlight c# %}
 
@@ -47,7 +47,7 @@ stripLine.Start                     = 36;
 
 stripLine.Width                     = 8;
 
-stripLine.Text                      = new NSString ("Average Temperature");
+stripLine.Text                      = "Average Temperature";
 
 stripLine.BackgroundColor           = UIColor.FromRGB (244, 199, 98);
 
@@ -81,7 +81,7 @@ stripLine.WidthType                   = SFChartDateTimeIntervalType.Months;
 
 stripLine.Width                       = 3;
 
-stripLine.Text                        = new NSString ("Quarter - 2");
+stripLine.Text                        = "Quarter - 2";
 
 stripLine.BackgroundColor             = UIColor.FromRGB (30, 115, 15);
 
@@ -121,7 +121,7 @@ stripLine.Width                     = 1;
 
 stripLine.RepeatEvery               = 7;
 
-stripLine.Text                      = new NSString("Weekend");
+stripLine.Text                      = "Weekend";
 
 stripLine.LabelStyle.Angle          = 270;
 
@@ -166,7 +166,7 @@ stripLine.Start                             = 42;
 
 stripLine.Width                             = 6;
 
-stripLine.Text                              = new NSString ("High Temperature");
+stripLine.Text                              = "High Temperature";
 
 stripLine.BackgroundColor                   = UIColor.FromRGB (228, 98, 98);
 
@@ -216,7 +216,7 @@ stripLine.Start                     = 3;
 
 stripLine.Width                     = 3;
 
-stripLine.Text                      = new NSString ("Quarter-2");
+stripLine.Text                      = "Quarter-2";
 
 stripLine.BackgroundColor           = UIColor.FromRGB (226, 98, 98);
 
@@ -259,7 +259,7 @@ stripLine.Start                     = 42;
 
 stripLine.Width                     = 4;
 
-stripLine.Text                      = new NSString ("Quarter-2");
+stripLine.Text                      = "Quarter-2";
 
 stripLine.BackgroundColor           = UIColor.FromRGB (63, 158, 19);
 

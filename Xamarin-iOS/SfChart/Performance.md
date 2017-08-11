@@ -15,12 +15,14 @@ When there are large number of points to load in line series, you can use `SFFas
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFFastLineSeries series = new SFFastLineSeries ();
+SFFastLineSeries columnSeries = new SFFastLineSeries() { 
+    
+    ItemsSource = Data, 
+    XBindingPath = "Country", 
+    YBindingPath = "Value" 
 
-    return series;
-}
+};
+
 {% endhighlight %}
 
 
