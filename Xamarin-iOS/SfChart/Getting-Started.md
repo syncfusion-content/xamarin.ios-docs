@@ -93,9 +93,9 @@ public class ViewModel
 
 ## Populate Chart with data
 
-As we are going to visualize the comparison of heights in the data model, add [`SFColumnSeries`]() to [`SFChart.Series`]() property, and then set the Data property of the above `ViewModel` to the [`SFColumnSeries.ItemsSource`]() property as shown below.
+As we are going to visualize the comparison of heights in the data model, add `SFColumnSeries` to `SFChart.Series` property, and then set the Data property of the above `ViewModel` to the `SFColumnSeries.ItemsSource` property as shown below.
 
-N> You need to set [`XBindingPath`]() and [`YBindingPath`]() properties, so that [`SFChart`]() would fetch values from the respective properties in the data model to plot the series.
+N> You need to set `XBindingPath` and `YBindingPath` properties, so that `SFChart` would fetch values from the respective properties in the data model to plot the series.
 
 {% highlight C# %}
 //Initializing primary axis
@@ -135,43 +135,35 @@ You can add title to chart to provide quick information to the user about the da
 chart.Title.Text = "Chart";
 {% endhighlight %}
 
-Refer this [link]() to learn more about the options available in [`SFChart`]() to customize chart title.
-
 ## Enable data labels
 
-You can add data labels to improve the readability of the chart. This can be achieved using [`SFSeries.DataMarker`]() property as shown below.
+You can add data labels to improve the readability of the chart. This can be achieved using `SFSeries.DataMarker` property as shown below.
 
 {% highlight C# %} 
 series.DataMarker.ShowLabel = true;
 {% endhighlight %}
 
-Refer this [link]() to learn more about the options available in [`SFChart`]() to customize data markers.
-
 ## Enable legend
 
-You can enable legend using [`SFChart.Legend`]() property as shown below,
+You can enable legend using `SFChart.Legend` property as shown below,
 
 {% highlight C# %} 
 chart.Legend.Visible = true;
 {% endhighlight %}
 
-Additionally, you need to set label for each series using [`SFSeries.Label`]() property, which will be displayed in corresponding legend.
+Additionally, you need to set label for each series using `SFSeries.Label` property, which will be displayed in corresponding legend.
 
 {% highlight C# %} 
 series.Label = "Heights";
 {% endhighlight %}
 
-Refer this [link]() to learn more about the options available in [`SFChart`]() to customize legend.
-
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting [`SFSeries.EnableTooltip`]() property to true.
+Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting `SFSeries.EnableTooltip` property to true.
 
 {% highlight C# %} 
 series.EnableTooltip = true;
 {% endhighlight %}
-
-Refer this [link]() to learn more about the options available in [`SFChart`]() to customize tooltip.
 
 This is how the final output looks like on iOS devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
 
