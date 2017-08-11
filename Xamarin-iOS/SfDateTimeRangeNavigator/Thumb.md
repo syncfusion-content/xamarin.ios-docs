@@ -53,7 +53,7 @@ this.View.AddSubview(rangeNavigator);
 
 ![]( Thumb_images/Thumb1.png)
 
-## Cusotmization
+## Customization
 
 User defined thumb layer can be created with SFDateTimeRangeNavigator. We can achieve this by creating a class that extends `SFRangeNavigatorThumbLayer` and overriding the drawing methods of left and right thumbs.
 
@@ -85,27 +85,27 @@ public partial class ViewController : UIViewController
 
     public class CustomThumb : SFRangeNavigatorThumbLayer
     {
-        public override void DrawLeftThumbInContext (CGContext ctx, CGPoint startPoint, CGPoint endPoint)
+        public override void DrawLeftThumbInContext (CGContext context, CGPoint startPoint, CGPoint endPoint)
         {
             CGRect thumbRect = new CGRect (endPoint.X - 10, endPoint.Y, 20, 20);
 
             this.SetLeftThumbFrame (thumbRect);
 
-            UIGraphics.PushContext (ctx);
-            ctx.SetFillColor (UIColor.Red.CGColor);
-            ctx.FillRect (thumbRect);
+            UIGraphics.PushContext (context);
+            context.SetFillColor (UIColor.Red.CGColor);
+            context.FillRect (thumbRect);
             UIGraphics.PopContext ();
         }
 
-        public override void DrawRightThumbInContext (CGContext ctx, CGPoint startPoint, CGPoint endPoint)
+        public override void DrawRightThumbInContext (CGContext context, CGPoint startPoint, CGPoint endPoint)
         {
             CGRect thumbRect = new CGRect (endPoint.X - 10, endPoint.Y, 20, 20);
 
             this.SetRightThumbFrame (thumbRect);
 
-            UIGraphics.PushContext (ctx);
-            ctx.SetFillColor (UIColor.Red.CGColor);
-            ctx.FillRect (thumbRect);
+            UIGraphics.PushContext (context);
+            context.SetFillColor (UIColor.Red.CGColor);
+            context.FillRect (thumbRect);
             UIGraphics.PopContext ();
         }
 

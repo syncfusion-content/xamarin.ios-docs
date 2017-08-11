@@ -33,7 +33,7 @@ this.View.AddSubview(rangeNavigator);
 
 ![]( MajorMinorScale_images/Scales1.png)
 
-## Cusotmization
+## Customization
 
 The `MajorScaleStyle` and `MinorScaleStyle` properties of `SFDateTimeRangeNavigator` are used to customize the appearance of ticks and labels.
 
