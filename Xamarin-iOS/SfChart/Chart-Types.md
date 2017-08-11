@@ -16,7 +16,6 @@ To render a line chart, create an instance of SFLineSeries and add to the Series
 * `Color` – used to change the color of the line
 * `LineWidth` – used to change the width of the line
 
-
 {% highlight c# %}
 
 SFChart chart = new SFChart();
@@ -34,6 +33,23 @@ chart.Series.Add(lineSeries);
 
 
 ![](ChartTypes_images/Line.png)
+
+### Dashed Lines
+
+`Dashes` property of the `SFLineSeries` is used to render line series with dashes.
+
+{% highlight c# %}
+SFLineSeries series = new SFLineSeries ();
+series.ItemsSource = Data; 
+series.XBindingPath = "XValue";
+series.YBindingPath = "YValue";
+  
+NSObject[] dashes       = new NSObject[2];
+dashes [0]              = (NSNumber)2;
+dashes [1]              = (NSNumber)3;
+series.Dashes           = NSArray.FromObjects (dashes);
+chart.Series.Add(series);
+{% endhighlight %}
 
 ## Area Chart
 
