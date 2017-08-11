@@ -63,7 +63,7 @@ Recursive appointment can be created in any recurrence patterns, for instance, s
     
 {% endhighlight %}
 
-The RRule is assigned to the created ScheduleAppointment as given below.
+The RRULE is assigned to the created ScheduleAppointment as given below.
 
 {% highlight c# %}
 
