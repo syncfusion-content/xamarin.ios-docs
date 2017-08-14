@@ -21,7 +21,7 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
     schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
 
     DayViewSettings dayViewSettings = new DayViewSettings ();
-    //Non-AccessbleBlocks
+    //Non-AccessibleBlocks
     NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
     lunch_hour.StartHour = 13;
     lunch_hour.EndHour = 14;
@@ -64,7 +64,7 @@ You can restrict/allocate certain timeslot as non-accessible block using `NonAcc
     SFSchedule schedule= new SFSchedule ();
     schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
     WorkWeekViewSettings workWeekSettings = new WorkWeekViewSettings ();
-    //Non-AccessbleBlocks
+    //Non-AccessibleBlocks
     NonAccessibleBlock lunch_hour = new NonAccessibleBlock ();
     lunch_hour.StartHour = 13;
     lunch_hour.EndHour = 14;

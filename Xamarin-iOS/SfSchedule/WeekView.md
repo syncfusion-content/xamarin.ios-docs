@@ -12,7 +12,7 @@ documentation: ug
 
 # WeekView:
 
-WeekView is to view all days of a particular week. Appointments will be arranged based on the dates on the week in repective timeslots.
+WeekView is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.
 
 ## ViewHeader Appearance:
 You can customize the default appearance of view header in [WeekView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFScheduleView.html) by using [DayHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayHeaderStyle.html) property of [SFSchedule](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule.html).
