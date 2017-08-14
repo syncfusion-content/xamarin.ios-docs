@@ -110,7 +110,7 @@ Schedule control will be rendered with `Sunday` as the first day of the week, bu
 
 ### Week View 
  
-`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in repective timeslots. 
+`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots. 
  
 {% highlight c# %} 
  
@@ -160,11 +160,11 @@ You can add events to the schedule by creating collection of [ScheduleAppointmen
 
 Here are steps to render `MeetingRoomScheduler` using SfSchedule control.
 
-* [Adding datas for class](#adding-datas-for-class)
+* [Adding data for class](#adding-data-for-class)
 * [Populating data collection](#populating-data-collection) 
 * [Setting appointments for SfSchedule](#setting-appointments-for-sfschedule) 
 
-#### Adding datas for class
+#### Adding data for class
 
 ##### Adding event names
 
@@ -301,11 +301,11 @@ Schedule control has a built-in capability to handle the appointment arrangement
             var hour = randomTime.Next((int)randomTimeCollection[AdditionalAppointmentIndex].X, (int)randomTimeCollection[AdditionalAppointmentIndex].Y);
             startDate.Hour = hour;
             endDate.Hour = (startDate.Hour) + 1;
-            NSDate startdate = calendar.DateFromComponents(startDate);
-            NSDate enddate = calendar.DateFromComponents(endDate);
+            NSDate meetingStartDate = calendar.DateFromComponents(startDate);
+            NSDate meetingEndDate = calendar.DateFromComponents(endDate);
             ScheduleAppointment meeting = new ScheduleAppointment();
-            meeting.StartTime = startdate;
-            meeting.EndTime = enddate;
+            meeting.StartTime = meetingStartDate;
+            meeting.EndTime = meetingEndDate;
             meeting.Subject = (NSString)subjectCollection[randomTime.Next(9)];
             meeting.AppointmentBackground = colorCollection[randomTime.Next(9)];
             appCollection.Add(meeting);
@@ -315,11 +315,11 @@ Schedule control has a built-in capability to handle the appointment arrangement
             var hour = randomTime.Next(9, 16);
             startDate.Hour = hour;
             endDate.Hour = (startDate.Hour) + 1;
-            NSDate startdate = calendar.DateFromComponents(startDate);
-            NSDate enddate = calendar.DateFromComponents(endDate);
+            NSDate meetingStartDate = calendar.DateFromComponents(startDate);
+            NSDate meetingEndDate = calendar.DateFromComponents(endDate);
             ScheduleAppointment meeting = new ScheduleAppointment();
-            meeting.StartTime = startdate;
-            meeting.EndTime = enddate;
+            meeting.StartTime = meetingStartDate;
+            meeting.EndTime = meetingEndDate;
             meeting.Subject = (NSString)subjectCollection[randomTime.Next(9)];
             meeting.AppointmentBackground = colorCollection[randomTime.Next(9)];
             appCollection.Add(meeting);

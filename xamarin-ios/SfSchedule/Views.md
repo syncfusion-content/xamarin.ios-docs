@@ -254,11 +254,11 @@ To view entire dates of a particular month, by default current month will be dis
 
 ### MonthInlineView
 
-Month Inline view is to view the appointments in the paricular day in Monthview, appointments available in a particular day will be listed in inline view. 
+Month Inline view is to view the appointments in the particular day in `MonthView`, appointments available in a particular day will be listed in inline view. 
 
 #### Show Appointments Inline 
 
-By setting `ShowAppointmentsInline` property in the MonthViewSettings, you enable/ disable the Month `InlineView` in `MonthView`. Appointments available in a particular day will be listed in inline view, if no appointments in the day dispalyes text as `No Events`. 
+By setting `ShowAppointmentsInline` property in the MonthViewSettings, you enable/ disable the Month `InlineView` in `MonthView`. Appointments available in a particular day will be listed in inline view, if no appointments in the day displays text as `No Events`. 
 
 {% highlight c# %}
 
@@ -290,7 +290,7 @@ Using the  `InlineAppointmentTapped` Event you can get the details of appointmen
 	MonthViewSettings monthViewSettings = new MonthViewSettings();
 	//To navigate vertically
 	monthViewSettings.MonthNavigationDirection =  SFMonthNavigationDirections.Vertical;
-	sfschedule.MonthViewSettings = monthViewSettings;
+	schedule.MonthViewSettings = monthViewSettings;
 
 {% endhighlight %}
 

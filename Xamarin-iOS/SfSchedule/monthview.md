@@ -26,7 +26,7 @@ You can use [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/x
 {% tabs %}
 {% highlight c# %}
 
-			//creating new instance for monthview settings
+			//creating new instance for month view settings
 			MonthViewSettings monthViewSettings = new MonthViewSettings();
 			monthViewSettings.ShowAppointmentsInline = true;
 			schedule.MonthViewSettings = monthViewSettings;
@@ -39,7 +39,7 @@ You can use [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/x
 >**Notes**: If appointments not there in the selected day, Inline view displays the text as "No Events"      
 
 ## Month Navigation direction
-MonthView of Schedule can be navigated in both horizontal and vertical direction. You can change the direction of navigation through [MonthNavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~MonthNavigationDirection.html) property of `MonthViewSettings` in `SfSchedule`, by default Month navigation direction is `Horizontal`.
+`MonthView` of Schedule can be navigated in both horizontal and vertical direction. You can change the direction of navigation through [MonthNavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~MonthNavigationDirection.html) property of `MonthViewSettings` in `SfSchedule`, by default Month navigation direction is `Horizontal`.
 
 {% tabs %}
 {% highlight c# %}
@@ -55,7 +55,7 @@ You can disable the interaction for certain date in Month view by using [Blackou
 {% tabs %}
 {% highlight c# %}
 
-			//creating new instance for monthview settings
+			//creating new instance for month view settings
 			MonthViewSettings monthViewSettings = new MonthViewSettings();
 			monthViewSettings.BlackoutDates = new NSMutableArray();
 			NSDate today = new NSDate();
@@ -125,7 +125,7 @@ You can customize the Week Number appearance by using [SFWeekNumberStyle](https:
 ![](monthview_images/weeknumberstyle.png)
 
 ## Month Label Formatting 
-You can change the Format of the Month date and day labels string in the Schedule using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelFormat.html), [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DayLabelFormat.html) and [DateLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelSize.html)properties of [LabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings.html) in `MonthViewSettings`. 
+You can change the Format of the Month date and day labels string in the Schedule using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelFormat.html), [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DayLabelFormat.html) and [DateLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelSize.html) properties of [LabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings.html) in `MonthViewSettings`. 
 
 {% tabs %}
 {% highlight c# %}

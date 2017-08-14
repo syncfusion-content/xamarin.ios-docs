@@ -11,65 +11,92 @@ documentation: ug
 
 ## Line Chart
 
-To render a line chart, create an instance of `SFLineSeries` and return it in the `GetSeries` method. You can use the following properties to customize the appearance.
+To render a line chart, create an instance of SFLineSeries and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the line
-* `StrokeWidth` – used to change the stroke width of the line
-
+* `LineWidth` – used to change the width of the line
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFLineSeries series = new SFLineSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series; 
-}
+SFLineSeries lineSeries = new SFLineSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value"
+};
+chart.Series.Add(lineSeries);
 
 {% endhighlight %}
 
 
 ![](ChartTypes_images/Line.png)
 
+### Dashed Lines
+
+`Dashes` property of the `SFLineSeries` is used to render line series with dashes.
+
+{% highlight c# %}
+SFLineSeries series = new SFLineSeries ();
+series.ItemsSource = Data; 
+series.XBindingPath = "XValue";
+series.YBindingPath = "YValue";
+  
+NSObject[] dashes       = new NSObject[2];
+dashes [0]              = (NSNumber)2;
+dashes [1]              = (NSNumber)3;
+series.Dashes           = NSArray.FromObjects (dashes);
+chart.Series.Add(series);
+{% endhighlight %}
+
 ## Area Chart
 
-To render an area chart, create an instance of `SFAreaSeries` and return it in the `GetSeries` method. You can use the following properties to customize the appearance.
+To render an area chart, create an instance of `SFAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
+SFChart chart = new SFChart();
+...
+
+SFAreaSeries areaSeries = new SFAreaSeries()
 {
-    SFAreaSeries series = new SFAreaSeries ();
-
-    return series; 
-}
-
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value"
+};
+chart.Series.Add(areaSeries);
 {% endhighlight %}
 
 ![](ChartTypes_images/Area.png)
 
 ## Spline Area Chart
 
-To render a spline area chart, create an instance of `SFSplineAreaSeries` and return it in the `GetSeries` method. You can use the following properties to customize the spline area appearance.
+To render a spline area chart, create an instance of `SFSplineAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the spline area appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFSplineAreaSeries series = new SFSplineAreaSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series; 
-}
+SFSplineAreaSeries splineAreaSeries = new SFSplineAreaSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value"
+};
+chart.Series.Add(splineAreaSeries);
 
 {% endhighlight %}
 
@@ -80,39 +107,42 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## Stacked Area Chart
 
-To render a stacked area chart, create an instance of `SFStackingAreaSeries` and return it in the `GetSeries` method. You can use the following properties to customize the stacked area appearance.
+To render a stacked area chart, create an instance of `SFStackingAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked area appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BordeWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    if (index == 0) {
+SFChart chart = new SFChart();
+...
 
-        SFStackingAreaSeries series1 = new SFStackingAreaSeries ();
+SFStackingAreaSeries stackingAreaSeries1 = new SFStackingAreaSeries() 
+{ 
+    ItemsSource = Data1, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value" 
+};
 
-        return series1;
+SFStackingAreaSeries stackingAreaSeries2 = new SFStackingAreaSeries() 
+{ 
+    ItemsSource = Data2, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value" 
+};
 
-    }
-    else if (index ==1) {
+SFStackingAreaSeries stackingAreaSeries3 = new SFStackingAreaSeries() 
+{ 
+    ItemsSource = Data3, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value" 
+};
 
-        SFStackingAreaSeries series2 = new SFStackingAreaSeries ();
-
-        return series2;
-
-    } 
-    else {
-
-        SFStackingAreaSeries series3 = new SFStackingAreaSeries ();
-
-        return series3;
-
-    }  
-}
+chart.Series.Add(stackingAreaSeries1);
+chart.Series.Add(stackingAreaSeries2);
+chart.Series.Add(stackingAreaSeries3);
 
 {% endhighlight %}
 
@@ -120,61 +150,67 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## 100% Stacked Area Chart
 
-To render a 100% stacked area chart, create an instance of `SFStackingArea100Series` and return it in the `GetSeries` method. You can use the following properties to customize the 100% stacked area appearance.
+To render a 100% stacked area chart, create an instance of `SFStackingArea100Series` and add to the Series collection property of `SFChart`. You can use the following properties to customize the 100% stacked area appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    if (index == 0) {
+SFChart chart = new SFChart();
+...
 
-        SFStackingArea100Series series1 = new SFStackingArea100Series ();
+SFStackingArea100Series stackingAreaSeries1 = new SFStackingArea100Series() 
+{ 
+    ItemsSource = Data1, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value" 
+};
 
-        return series1;
+SFStackingArea100Series stackingAreaSeries2 = new SFStackingArea100Series() 
+{ 
+    ItemsSource = Data2, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value" 
+};
 
-    }
-    else if (index ==1) {
+SFStackingArea100Series stackingAreaSeries3 = new SFStackingArea100Series() 
+{ 
+    ItemsSource = Data3, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value" 
+};
 
-        SFStackingArea100Series series2 = new SFStackingArea100Series ();
-
-        return series2;
-
-    } 
-    else {
-
-        SFStackingArea100Series series3 = new SFStackingArea100Series ();
-
-        return series3;
-
-    }  
-}
-
+chart.Series.Add(stackingAreaSeries1);
+chart.Series.Add(stackingAreaSeries2);
+chart.Series.Add(stackingAreaSeries3);
 {% endhighlight %}
 
 ![](ChartTypes_images/StackedArea100.png)
 
 ## Column Chart
 
-To render a column chart, create an instance of `SFColumnSeries` and return it in the `GetSeries` method. You can use the following properties to customize the appearance.
+To render a column chart, create an instance of `SFColumnSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFColumnSeries series = new SFColumnSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series; 
-}
+SFColumnSeries columnSeries = new SFColumnSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Country", 
+    YBindingPath = "Value" 
+};
+chart.Series.Add(columnSeries);
 {% endhighlight %}
 
 
@@ -182,108 +218,113 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## Range Column Chart
 
-To render a range column chart, create an instance of `SFRangeColumnSeries` and return it in the `GetSeries` method. 
+To render a range column chart, create an instance of `SFRangeColumnSeries` and add to the Series collection property of `SFChart`. 
 
 Since the `SFRangeColumnSeries` requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point. 
 
-
-
-
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFRangeColumnSeries series = new SFRangeColumnSeries ();
-
-    return series; 
-
-}
+SFChart chart = new SFChart();
+...
+   
+SFRangeColumnSeries rangeColumnSeries = new SFRangeColumnSeries() 
+{ 
+    ItemsSource = Data,
+    XBindingPath = "Month", 
+    High = "Value1",
+    Low = "Value2" 
+};
+chart.Series.Add(rangeColumnSeries);
 {% endhighlight %}
 
 
 Following properties are used to customize the range column segment appearance,
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 ![](ChartTypes_images/RangeColumn.png)
 
 ## Stacked Column Chart
 
-To render a stacked column chart, create an instance of `SFStackingColumnSeries` and return it in the `GetSeries` method. You can use the following properties to customize the stacked column segment appearance.
+To render a stacked column chart, create an instance of `SFStackingColumnSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked column segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
-
-
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    if (index == 0) {
+SFChart chart = new SFChart();
+...
 
-        SFStackingColumnSeries series1 = new SFStackingColumnSeries ();
+SFStackingColumnSeries stackingColumnSeries1 = new SFStackingColumnSeries() 
+{ 
+    ItemsSource = Data1, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+};
 
-        return series1;
+SFStackingColumnSeries stackingColumnSeries2 = new SFStackingColumnSeries() 
+{ 
+    ItemsSource = Data2, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+};
 
-    } 
-    else if (index ==1) {
+SFStackingColumnSeries stackingColumnSeries3 = new SFStackingColumnSeries() 
+{ 
+    ItemsSource = Data3, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+};
 
-         SFStackingColumnSeries series2 = new SFStackingColumnSeries ();
-
-         return series2; 
-
-    }
-    else {
-
-        SFStackingColumnSeries series3 = new SFStackingColumnSeries ();
-
-        return series3;
-
-    } 
-}
+chart.Series.Add(stackingColumnSeries1);
+chart.Series.Add(stackingColumnSeries2);
+chart.Series.Add(stackingColumnSeries3);
 {% endhighlight %}
 
 ![](ChartTypes_images/StackedColumn.png)
 
 ## 100% Stacked Column Chart
 
-To render a 100% stacked column chart, create an instance of `SFStackingColumn100Series` and return it in the `GetSeries` method. You can use the following properties to customize the series appearance.
+To render a 100% stacked column chart, create an instance of `SFStackingColumn100Series` and add to the Series collection property of `SFChart`. You can use the following properties to customize the series appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    if (index == 0) {
+SFChart chart = new SFChart();
+...
 
-        SFStackingColumn100Series series1 = new SFStackingColumn100Series ();
+SFStackingColumn100Series stackingColumn100Series1 = new SFStackingColumn100Series() 
+{ 
+    ItemsSource = Data1, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+};
 
-        return series1;
+SFStackingColumn100Series stackingColumn100Series2 = new SFStackingColumn100Series() 
+{ 
+    ItemsSource = Data2, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+};
 
-    } 
-    else if (index ==1) {
+SFStackingColumn100Series stackingColumn100Series3 = new SFStackingColumn100Series() 
+{ 
+    ItemsSource = Data3, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+};
 
-         SFStackingColumn100Series series2 = new SFStackingColumn100Series ();
-
-         return series2; 
-
-    }
-    else {
-
-        SFStackingColumn100Series series3 = new SFStackingColumn100Series ();
-
-        return series3;
-
-    } 
-}
+chart.Series.Add(stackingColumn100Series1);
+chart.Series.Add(stackingColumn100Series2);
+chart.Series.Add(stackingColumn100Series3);
 
 {% endhighlight %}
 
@@ -292,21 +333,25 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## Bar Chart
 
-To render a bar chart, create an instance of `SFBarSeries` and return it in the `GetSeries` method. You can use the following properties to customize the bar segment appearance.
+To render a bar chart, create an instance of `SFBarSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the bar segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFBarSeries series = new SFBarSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series; 
-}
+SFBarSeries barSeries = new SFBarSeries () 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value" 
+};
+chart.Series.Add(barSeries);
 {% endhighlight %}
 
 
@@ -314,39 +359,42 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## Stacked Bar Chart
 
-To render a stacked bar chart, create an instance of `SFStackingBarSeries` and return it in the `GetSeries` method. You can use the following properties to customize the stacked bar segment appearance.
+To render a stacked bar chart, create an instance of `SFStackingBarSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked bar segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    if (index == 0) {
+SFChart chart = new SFChart();
+...
 
-         SFStackingBarSeries series1 = new SFStackingBarSeries ();
+SFStackingBarSeries stackingBarSeries1 = new SFStackingBarSeries() 
+{ 
+    ItemsSource = Data1, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+};
 
-         return series1;
+SFStackingBarSeries stackingBarSeries2 = new SFStackingBarSeries() 
+{ 
+    ItemsSource = Data2, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+};
 
-    } 
-    else if (index ==1) {
+SFStackingBarSeries stackingBarSeries3 = new SFStackingBarSeries() 
+{ 
+    ItemsSource = Data3, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value" 
+};
 
-         SFStackingBarSeries series2 = new SFStackingBarSeries ();
-
-         return series2;
-
-    }
-    else {
-
-        SFStackingBarSeries series3 = new SFStackingBarSeries ();
-
-        return series3;
-
-    } 
-}
+chart.Series.Add(stackingBarSeries1);
+chart.Series.Add(stackingBarSeries2);
+chart.Series.Add(stackingBarSeries3);
 
 {% endhighlight %}
 
@@ -355,57 +403,66 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## 100% Stacked Bar Chart
 
-To render a 100% stacked bar chart, create an instance of `SFStackingBar100Series` and return it in the `GetSeries` method. You can use the following properties to customize the series appearance.
+To render a 100% stacked bar chart, create an instance of `SFStackingBar100Series` and add to the Series collection property of `SFChart`. You can use the following properties to customize the series appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    if (index == 0) {
+SFChart chart = new SFChart();
+...
 
-         SFStackingBar100Series series1 = new SFStackingBar100Series ();
+SFStackingBar100Series stackingBar100Series1 = new SFStackingBar100Series() 
+{ 
+    ItemsSource = Data1, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value" 
+};
 
-         return series1;
-    } 
-    else if (index ==1) {
+SFStackingBar100Series stackingBar100Series2 = new SFStackingBar100Series() 
+{ 
+    ItemsSource = Data2, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value" 
+};
 
-        SFStackingBar100Series series2 = new SFStackingBar100Series ();
+SFStackingBar100Series stackingBar100Series3 = new SFStackingBar100Series() 
+{ 
+    ItemsSource = Data3, 
+    XBindingPath = "Year", 
+    YBindingPath = "Value"  
+};
 
-        return series2;
-    } 
-    else {
-
-         SFStackingBar100Series series3 = new SFStackingBar100Series ();
-
-         return series3;
-    } 
-}
+chart.Series.Add(stackingBar100Series1);
+chart.Series.Add(stackingBar100Series2);
+chart.Series.Add(stackingBar100Series3);
 {% endhighlight %}
 
 ![](ChartTypes_images/StackedBar100.png)
 
 ## Spline Chart
 
-To render a spline chart, create an instance of `SFSplineSeries` and return it in the `GetSeries` method. You can use the following properties to customize the spline segment appearance.
+To render a spline chart, create an instance of `SFSplineSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the spline segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
+* `LineWidth` – used to change the line width of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFSplineSeries series = new SFSplineSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series; 
-
-}
+SFSplineSeries splineSeries = new SFSplineSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value"  
+};
+chart.Series.Add(splineSeries);
 {% endhighlight %}
 
 
@@ -413,21 +470,24 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## StepLine Chart
 
-To render a step line chart, create an instance of `SFStepLineSeries` and return it in the `GetSeries` method. You can use the following properties to customize the appearance.
+To render a step line chart, create an instance of `SFStepLineSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the line
-* `StrokeWidth` – used to change the stroke width of the line
+* `LineWidth` – used to change the line width of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFStepLineSeries series  = new SFStepLineSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series;  
-}
-
+SFStepLineSeries stepLine = new SFStepLineSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value"
+};
+chart.Series.Add(stepLine);
 {% endhighlight %}
 
 
@@ -435,21 +495,24 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## Fast Line Chart
 
-`SFFastLineSeries` is a line chart, but it loads faster than `SFLineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of `SFFastLineSeries` and return it in the `GetSeries` method. You can use the following properties to customize the fast line segment appearance.
+`SFFastLineSeries` is a line chart, but it loads faster than `SFLineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of `SFFastLineSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the fast line segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
+* `LineWidth` – used to change the line width of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFFastLineSeries series    = new SFFastLineSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series; 
-}
-
+SFFastLineSeries fastLineSeries = new SFFastLineSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue"  
+};
+chart.Series.Add(fastLineSeries);
 {% endhighlight %}
 
 ![](ChartTypes_images/FastLine.png)
@@ -458,73 +521,47 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 `Dashes` property of the `SFFastLineSeries` is used to render fast line series with dashes.
 
-
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFFastLineSeries series = new SFFastLineSeries ();
-
-    NSObject[] dashes       = new NSObject[2];
-
-    dashes [0]              = (NSNumber)2;
-
-    dashes [1]              = (NSNumber)3;
-
-    series.Dashes           = NSArray.FromObjects (dashes);
-
-    return series; 
-}
-
+SFFastLineSeries series = new SFFastLineSeries ();
+series.ItemsSource = Data; 
+series.XBindingPath = "XValue";
+series.YBindingPath = "YValue";
+  
+NSObject[] dashes       = new NSObject[2];
+dashes [0]              = (NSNumber)2;
+dashes [1]              = (NSNumber)3;
+series.Dashes           = NSArray.FromObjects (dashes);
+chart.Series.Add(series);
 {% endhighlight %}
 
 ![](ChartTypes_images/DashedLines.png)
 
 ## Bubble Chart
 
-To render a bubble chart, create an instance of `SFBubbleSeries` and return it in the `GetSeries` method. 
+To render a bubble chart, create an instance of `SFBubbleSeries` and add to the Series collection property of `SFChart`. 
 
 Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here **Size** is used to specify the size of each bubble segment. 
 
-
-
 {% highlight c# %}
 
-public ChartDataModel ()
-  {
+SFChart chart = new SFChart();
+...
 
-    AddDataPointsForChart("64", 14.4, 20);
-
-    AddDataPointsForChart("71", 2, 15);
-
-    AddDataPointsForChart("74", 7, 30);
-
-    AddDataPointsForChart("80", 4, 22);
-
-    AddDataPointsForChart("82", 10.3, 28);
-
-    AddDataPointsForChart("94", 1, 8); 
-
-    AddDataPointsForChart("96", 6, 18);
-
-    AddDataPointsForChart("98", 12.3, 28);
-}
-
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFBubbleSeries series = new SFBubbleSeries ();
-
-    return series;  
-}
-
+SFBubbleSeries bubbleSeries = new SFBubbleSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue", 
+    Size = "Size” 
+};
+chart.Series.Add(bubbleSeries);
 {% endhighlight %}
-
-
 
 Following properties are used to customize the bubble segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 * `MinimumRadius` – used to change the minimum size of the series
 * `MaximumRadius` – used to change the maximum size of the series
 
@@ -532,67 +569,59 @@ Following properties are used to customize the bubble segment appearance.
 
 ## Scatter Chart	
 
-To render a scatter chart, create an instance of `SFScatterSeries` and return it in the `GetSeries` method. You can use the following properties to customize the scatter segment appearance.
+To render a scatter chart, create an instance of `SFScatterSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the scatter segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 * `ScatterWidth` – used to change the width of the series
 * `ScatterHeight` – used to change the height of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFScatterSeries series = new SFScatterSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series;  
-}
+SFScatterSeries scatterSeries = new SFScatterSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue"
+};
+chart.Series.Add(scatterSeries);
 {% endhighlight %}
 
 ![](ChartTypes_images/Scatter.png)
 
 ## OHLC Chart
 
-To render an OHLC chart, create an instance of `SFOHLCSeries` and return it in the `GetSeries` method.
+To render an OHLC chart, create an instance of `SFOHLCSeries` and add to the Series collection property of `SFChart`.
 
 OHLC chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-You can use SFChartDataPoint's five parameter constructor to pass x, open, high, low and close values to  `SFOHLCSeries`,
-
-
 {% highlight c# %}
 
- public ChartDataModel ()
- {
+SFChart chart = new SFChart();
+...
 
-    AddDataPointsForChart("2010", 873.8, 878.85, 855.5, 860.5);
-
-    AddDataPointsForChart("2011", 861, 868.4, 835.2, 843.45);
-
-    AddDataPointsForChart("2012", 846.15, 853, 838.5, 847.5);
-
-    AddDataPointsForChart("2013", 846, 860.75, 841, 855);
-
-    AddDataPointsForChart("2014", 841, 845, 827.85, 838.65); 
-}
-
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFOHLCSeries series = new SFOHLCSeries ();
-
-    return series;  
-}
+SFOHLCSeries hiLoOpenCloseSeries = new SFOHLCSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Year", 
+    Open = "Value1", 
+    High = "Value2", 
+    Low = "Value3", 
+    Close = "Value4" 
+};
+chart.Series.Add(hiLoOpenCloseSeries);
 
 {% endhighlight %}
-
 
 You can use the following properties to customize the HiLoOpenCloseSeries segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `LineWidth` – used to change the border width of the series
 
 ![](ChartTypes_images/OHLC.png)
 
@@ -600,19 +629,23 @@ You can use the following properties to customize the HiLoOpenCloseSeries segmen
 
 In OHLC chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and `BearFillColor` property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
 
-
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFOHLCSeries series  = new SFOHLCSeries ();
+SFChart chart = new SFChart();
+...
 
-    series.BearFillColor = UIColor.Blue;
-
-    series.BullFillColor = UIColor.Purple;
-
-    return series; 
-}
+SFOHLCSeries hiLoOpenCloseSeries = new SFOHLCSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Year", 
+    Open = "Value1", 
+    High = "Value2", 
+    Low = "Value3", 
+    Close = "Value4"
+    BearFillColor = UIColor.Blue,
+    BullFillColor = UIColor.Purple 
+};
+chart.Series.Add(hiLoOpenCloseSeries);
 
 {% endhighlight %}
 
@@ -620,44 +653,33 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## Candle Chart
 
-To render a candle chart, create an instance of `SFCandleSeries` and return it in the `GetSeries` method.
+To render a candle chart, create an instance of `SFCandleSeries` and add to the Series collection property of `SFChart`.
 
 Candle chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
-You can use SFChartDataPoint's five parameter constructor to pass x, open, high, low and close values to  `SFCandleSeries`,
-
-
 {% highlight c# %}
 
+SFChart chart = new SFChart();
+...
 
-public ChartDataModel ()
- {
-
-    AddDataPointsForChart("2010", 873.8, 878.85, 855.5, 860.5);
-
-    AddDataPointsForChart("2011", 861, 868.4, 835.2, 843.45);
-
-    AddDataPointsForChart("2012", 846.15, 853, 838.5, 847.5);
-
-    AddDataPointsForChart("2013", 846, 860.75, 841, 855);
-
-    AddDataPointsForChart("2014", 841, 845, 827.85, 838.65); 
-}
-
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFCandleSeries series = new SFCandleSeries ();
-
-    return series;  
-}
+SFCandleSeries candleSeries = new SFCandleSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Year", 
+    Open = "Value1", 
+    High = "Value2", 
+    Low = "Value3", 
+    Close = "Value4" 
+};
+chart.Series.Add(candleSeries);
 
 {% endhighlight %}
 
 You can use the following properties to customize the candle segment appearance.
 
 * `Color`       – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 ![](ChartTypes_images/Candle.png)
 
@@ -671,17 +693,18 @@ for the segments that indicates a decrease in stock price in the measured time i
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFCandleSeries series = new SFCandleSeries ();
-
-    series.BearFillColor  = UIColor.Blue;
-
-    series.BullFillColor  = UIColor.Purple;
-
-    return series; 
-}
-
+SFCandleSeries candleSeries = new SFCandleSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Year", 
+    Open = "Value1", 
+    High = "Value2", 
+    Low = "Value3", 
+    Close = "Value4"
+    BearFillColor = UIColor.Blue,
+    BullFillColor = UIColor.Purple 
+};
+chart.Series.Add(candleSeries);
 {% endhighlight %}
 
 
@@ -689,7 +712,7 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## Radar Chart
 
-To render a candle chart, create an instance of `SFRadarSeries` and return it in the `GetSeries` method.
+To render a radar chart, create an instance of `SFRadarSeries` and add to the Series collection property of `SFChart`.
 
 ### Draw type
 
@@ -699,9 +722,11 @@ To render a candle chart, create an instance of `SFRadarSeries` and return it in
 * `Area` – data points are visualized as area.
 
 {% highlight c# %}
-SFRadarSeries radarSeries   = new SFRadarSeries();
-radarSeries.DrawType        = SFChartPolarRadarSeriesDrawType.Line;
-
+SFRadarSeries radar = new SFRadarSeries ();
+radar.ItemsSource = viewModel.RadarData;
+radar.XBindingPath = "Name";
+radar.YBindingPath = "Value";
+radar.DrawType = SFChartPolarRadarSeriesDrawType.Line;
 {% endhighlight %}
 
 ![](ChartTypes_images/Radar.png)
@@ -711,8 +736,8 @@ radarSeries.DrawType        = SFChartPolarRadarSeriesDrawType.Line;
 You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series.
-* `BorderWidth` – used to change the stroke width of the series.
-* `BorderColor` – used to change the stroke color of the series when draw types is set to area
+* `BorderWidth` – used to change the border width of the series.
+* `BorderColor` – used to change the border color of the series when draw types is set to area
 * `Dashes` – used to render line with dashes when draw type is set to line.
 
 {% highlight c# %}
@@ -740,7 +765,7 @@ radarSeries.Closed          = false;
 
 ## Polar Chart
 
-To render a polar chart, create an instance of `SFPolarSeries` and return it in the `GetSeries` method. 
+To render a polar chart, create an instance of `SFPolarSeries` and add to the Series collection property of `SFChart`. 
 
 ### Draw type
 
@@ -763,8 +788,8 @@ polarSeries.DrawType             = SFChartPolarRadarSeriesDrawType
 You can use the following properties to customize the appearance.
 
 * `Color` – used to change the color of the series.
-* `BorderWidth` – used to change the stroke width of the series.
-* `BorderColor` – used to change the stroke color of the series when draw types is set to area
+* `BorderWidth` – used to change the border width of the series.
+* `BorderColor` – used to change the border color of the series when draw types is set to area
 * `Dashes` – used to render line with dashes when draw type is set to line.
 
 {% highlight c# %}
@@ -793,23 +818,25 @@ polarSeries.Closed             = false;
 
 ## Pie Chart
 
-To render a pie chart, create an instance of `SFPieSeries` and return it in the `GetSeries` method. You can use the following properties to customize the pie segment appearance.
+To render a pie chart, create an instance of `SFPieSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the pie segment appearance.
 
 * `Color`       – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFPieSeries series         = new SFPieSeries ();
+SFChart chart = new SFChart();
+...
 
-    series.CircularCoefficient = 0.5f;
-
-    return series; 
-}
-
+SFPieSeries pieSeries = new SFPieSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Expense", 
+    YBindingPath = "Value",
+    CircularCoefficient = 0.5 
+};
+chart.Series.Add(pieSeries);
 {% endhighlight %}
 
 ![](ChartTypes_images/PieCircularCoefficient.png)
@@ -820,15 +847,9 @@ You can explode a pie segment using `ExplodeIndex` property and specify the expl
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFPieSeries series  = new SFPieSeries ();
 
-    series.ExplodeIndex = 1;
-
-    return series; 
-}
-
+SFPieSeries series  = new SFPieSeries ();
+series.ExplodeIndex = 1;  
 {% endhighlight %}
 
 ![](ChartTypes_images/PieExplodeIndex.png)
@@ -839,35 +860,22 @@ Using `ExplodeAll` property of `SFPieSeries`, you can explode all the pie segmen
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFPieSeries series = new SFPieSeries ();
 
-    series.ExplodeAll  = true;
-
-    return series; 
-}
-
+SFPieSeries series = new SFPieSeries ();
+series.ExplodeAll  = true;      
 {% endhighlight %}
 
 ![](ChartTypes_images/PieExplodeAll.png)
 
 ### Sector of Pie
 
-SFChart allows you to render all the data points/segments in semi-pie, quarter-pie or in any sector using `StartAngle` and `EndAngle` properties.
+`SFChart` allows you to render all the data points/segments in semi-pie, quarter-pie or in any sector using `StartAngle` and `EndAngle` properties.
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFPieSeries series = new SFPieSeries ();
-
-    series.StartAngle  = 180;
-
-    series.EndAngle    = 360;
-
-    return series; 
-}
+SFPieSeries series = new SFPieSeries ();
+series.StartAngle  = 180;
+series.EndAngle    = 360;            
 
 {% endhighlight %}
 
@@ -875,40 +883,38 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 
 ## Doughnut Chart
 
-To render a doughnut chart, create an instance of `SFDoughnutSeries` and return it in the `GetSeries` method. You can use the following properties to customize the doughnut segment appearance.
+To render a doughnut chart, create an instance of `SFDoughnutSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the doughnut segment appearance.
 
 * `Color` – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFDoughnutSeries series = new SFDoughnutSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series; 
-}
+SFDoughnutSeries doughnutSeries = new SFDoughnutSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Expense", 
+    YBindingPath = "Value" 
+};
+chart.Series.Add(doughnutSeries);
 
 {% endhighlight %}
 
 ![](ChartTypes_images/Doughnut.png)
 
-### Changing Doughnut inner radius
+### Changing doughnut inner radius
 
 You can change the doughnut chart inner radius using `DoughnutCoefficient` with respect to the plot area. It ranges from 0 to 1 and the default value is `0.4`.
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFDoughnutSeries series     = new SFDoughnutSeries ();
-
-    series.doughnutCoefficient  = 0.6f;
-
-    return series; 
-}
-
+    
+SFDoughnutSeries series     = new SFDoughnutSeries ();
+series.DoughnutCoefficient = 0.6f;   
 {% endhighlight %}
 
 ![](ChartTypes_images/DoughnutCoefficient.png)
@@ -919,15 +925,9 @@ You can use the `CircularCoefficient` property to change the diameter of the dou
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFDoughnutSeries series     = new SFDoughnutSeries ();
 
-    series.CircularCoefficient  = 0.5f;
-
-    return series; 
-}
-
+SFDoughnutSeries series     = new SFDoughnutSeries ();
+series.CircularCoefficient  = 0.5f;  
 {% endhighlight %}
 
 ![](ChartTypes_images/DoughnutCircularCoefficient.png)
@@ -937,15 +937,9 @@ public override SFSeries GetSeries (SFChart chart, nint index)
 Exploding a specific doughnut segment, you have to set the index to be exploded using `ExplodeIndex` property of the series.
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFDoughnutSeries series = new SFDoughnutSeries ();
 
-    series.ExplodeIndex     = 1;
-
-    return series; 
-}
-
+SFDoughnutSeries series = new SFDoughnutSeries ();
+series.ExplodeIndex     = 1;        
 {% endhighlight %}
 
 ![](ChartTypes_images/DoughnutExplodeIndex.png)
@@ -956,58 +950,49 @@ To explode all the segments, you have to enable `ExplodeAll` property of the ser
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFDoughnutSeries series = new SFDoughnutSeries ();
 
-    series.ExplodeAll       = true;
-
-    return series; 
-}
-
+SFDoughnutSeries series = new SFDoughnutSeries ();
+series.ExplodeAll       = true;  
 {% endhighlight %}
 
 
 ![](ChartTypes_images/DoughnutExplodeAll.png)
 
-### Sector of Doughnut
+### Sector of doughnut
 
 SfChart allows you to render all the data points/segments in semi-doughnut, quarter- doughnut or in any sector using `StartAngle` and `EndAngle` properties.
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFDoughnutSeries series = new SFDoughnutSeries ();
 
-    series.StartAngle       = 180;
-
-    series.EndAngle         = 360;
-
-    return series; 
-}
-
+SFDoughnutSeries series = new SFDoughnutSeries ();
+series.StartAngle       = 180;
+series.EndAngle         = 360;        
 {% endhighlight %}
 
 ![](ChartTypes_images/SemiDoughnut.png)
 
 ## Pyramid Chart
 
-To render a pyramid chart, create an instance of `SFPyramidSeries` and return it in the `GetSeries` method. You can use the following properties to customize the pyramid segment appearance.
+To render a pyramid chart, create an instance of `SFPyramidSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the pyramid segment appearance.
 
 * `Color`       – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFPyramidSeries series = new SFPyramidSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series; 
-}
+SFPyramidSeries pyramidSeries = new SFPyramidSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Country", 
+    YBindingPath = "Value" 
+};
+chart.Series.Add(pyramidSeries);
 
 {% endhighlight %}
 
@@ -1020,15 +1005,8 @@ You can render the pyramid series as linear or surface mode. In linear mode, hei
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFPyramidSeries series = new SFPyramidSeries ();
-
-    series.PyramidMode     = SFChartPyramidMode.Surface;
-
-    return series; 
-}
-
+SFPyramidSeries series = new SFPyramidSeries ();
+series.PyramidMode     = SFChartPyramidMode.Surface;   
 {% endhighlight %}
 
 
@@ -1041,15 +1019,8 @@ You can control the gap between the two segments using `GapRatio` property. Its 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFPyramidSeries series = new SFPyramidSeries ();
-
-    series.GapRatio        = 0.1;
-
-    return series; 
-}
-
+SFPyramidSeries series = new SFPyramidSeries ();
+series.GapRatio        = 0.1;  
 {% endhighlight %}
 
 
@@ -1061,37 +1032,34 @@ You can explode a pyramid segment using `ExplodeIndex` property, and `ExplodeOff
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFPyramidSeries series = new SFPyramidSeries ();
 
-    series.ExplodeIndex    = 2;
-
-    return series; 
-}
-
+SFPyramidSeries series = new SFPyramidSeries ();
+series.ExplodeIndex    = 2;   
 {% endhighlight %}
 
 ![](ChartTypes_images/PyramidExplodeIndex.png)
 
 ## Funnel Chart
 
-To render a funnel chart, create an instance of `SFFunnelSeries` and return it in the `GetSeries` method. You can use the following properties to customize the funnel segment appearance.
+To render a funnel chart, create an instance of `SFFunnelSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the funnel segment appearance.
 
 * `Color`       – used to change the color of the series
-* `StrokeWidth` – used to change the stroke width of the series
-* `StrokeColor` – used to change the stroke color of the series
+* `BorderWidth` – used to change the border width of the series
+* `BorderColor` – used to change the border color of the series
 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFFunnelSeries series = new SFFunnelSeries ();
+SFChart chart = new SFChart();
+...
 
-    return series; 
-}
-
+SFFunnelSeries funnelSeries = new SFFunnelSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Status", 
+    YBindingPath = "Value" 
+};
+chart.Series.Add(funnelSeries);
 {% endhighlight %}
 
 ![](ChartTypes_images/Funnel.png)
@@ -1103,15 +1071,9 @@ You can control the gap between the two segments using `GapRatio` property. Its 
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFFunnelSeries series = new SFFunnelSeries ();
-
-    series.GapRatio       = 0.1;
-
-    return series; 
-}
-
+SFFunnelSeries series = new SFFunnelSeries ();
+series.GapRatio       = 0.1;
+   
 {% endhighlight %}
 
 ![](ChartTypes_images/FunnelGapRatio.png)
@@ -1122,14 +1084,8 @@ You can explode a funnel segment using `ExplodeIndex` property and `ExplodeOffse
 
 
 {% highlight c# %}
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFFunnelSeries series = new SFFunnelSeries ();
-
-    series.ExplodeIndex   = 2;
-
-    return series; 
-}
+SFFunnelSeries series = new SFFunnelSeries ();
+series.ExplodeIndex   = 2;
 
 {% endhighlight %}
 
@@ -1142,14 +1098,8 @@ You can change the minimum width of the funnel neck using `MinimumWidth` propert
 
 {% highlight c# %}
 
-public override SFSeries GetSeries (SFChart chart, nint index)
-{
-    SFFunnelSeries series = new SFFunnelSeries ();
-
-    series.MinimumWidth   = 20;
-
-    return series; 
-}
+SFFunnelSeries series = new SFFunnelSeries ();
+series.MinimumWidth   = 20;
 
 {% endhighlight %}
 
