@@ -22,7 +22,7 @@ Schedule Appointment can be customized in two ways,
 
 **Using AppointmentStyle property**
 
-`ScheduleAppointment` can be customized by setting appointmentstyle properties such as TextColor,TextStyle,BorderColor,BorderCornerRadius,BorderWidth,SelectionBorderColor,SelectionTextColor to the `AppointmentStyle` property of schedule.
+`ScheduleAppointment` can be customized by setting appointment style properties such as TextColor,TextStyle,BorderColor,BorderCornerRadius,BorderWidth,SelectionBorderColor,SelectionTextColor to the `AppointmentStyle` property of schedule.
 
 {% highlight C# %}
 
@@ -34,7 +34,7 @@ Schedule Appointment can be customized in two ways,
 	appointmentStyle.BorderWidth = 10;
 	appointmentStyle.SelectionBorderColor = UIColor.Yellow;
 	appointmentStyle.SelectionTextColor = UIColor.Yellow;
-	sfschedule.AppointmentStyle = appointmentStyle;
+	schedule.AppointmentStyle = appointmentStyle;
 
 {% endhighlight %}
 
@@ -97,7 +97,7 @@ MonthView can be customized by setting monthCellStyle properties such as TextCol
 	monthCellStyle.BackgroundColor = UIColor.Gray;
 	monthCellStyle.TextColor = UIColor.Blue;
 	monthCellStyle.TextStyle = UIFont.SystemFontOfSize(15, UIFontWeight.Bold);
-	sfschedule.MonthCellStyle = monthCellStyle;
+	schedule.MonthCellStyle = monthCellStyle;
 
 {% endhighlight %}
 
@@ -196,7 +196,7 @@ Cells can be selected using customized properties such as `BackgroundColor`, `Bo
 	selectionStyle.BackgroundColor = UIColor.Blue;
 	selectionStyle.BorderColor = UIColor.Yellow;
 	selectionStyle.BorderThickness = 5;
-	sfSchedule.SelectionStyle = selectionStyle;
+	schedule.SelectionStyle = selectionStyle;
 
 {% endhighlight %}
 
@@ -210,7 +210,7 @@ Also custom view can be passed using the `SelectionView` in Schedule.
     button.SetTitle( "+ New event",UIControlState.Normal);
     button.SetTitleColor(UIColor.White,UIControlState.Normal);
     button.BackgroundColor = UIColor.FromRGB(0, 128, 0);
-	sfSchedule.SelectionView = button;
+	schedule.SelectionView = button;
 
 {% endhighlight %}
 

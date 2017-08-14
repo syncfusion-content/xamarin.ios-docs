@@ -468,7 +468,7 @@ public partial class GettingStarted_iOSViewController : UIViewController
         // Release any cached data, images, etc that aren't in use.
     }
 
-    #region View lifecycle
+    #region View life cycle
 
     public override void ViewDidLoad ()
     {
@@ -500,8 +500,6 @@ public partial class GettingStarted_iOSViewController : UIViewController
 
         // Perform any additional setup after loading the view, typically from a nib.
     }
-
-    #endregion
 }
 	
 public class Model
