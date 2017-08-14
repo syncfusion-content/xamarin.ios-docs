@@ -21,4 +21,4 @@ Essential Schedule for Xamarin.iOS provides all the common scheduling functional
 
 **Customization** — Control has simple APIs allowing for elegant customizations. You can edit the look to match the rest of your application.
 
-**Localization** — The build-in content of the user interface can be changed according to culture that is needed. Also, it has built-in culture support for basic items such us day and month text representations.
+**Localization** — The built-in content of the user interface can be changed according to culture that is needed. Also, it has built-in culture support for basic items such us day and month text representations.
