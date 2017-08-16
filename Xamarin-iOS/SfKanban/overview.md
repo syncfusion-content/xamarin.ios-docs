@@ -1,5 +1,5 @@
 ---
-platform: Xamarin.Android
+platform: Xamarin.iOS
 control: kanban
 ---
 
