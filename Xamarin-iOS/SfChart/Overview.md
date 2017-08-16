@@ -18,7 +18,7 @@ Essential Chart for Xamarin.iOS
 
 ## Key features
 
-* Chart supports more than 20 different types of series, ranging from simple bar series to complex financial charts. Each type of chart represents a unique style of representing data that is user-friendly and has greater UI visualization.
+* Chart supports more than 25 different types of series, ranging from simple bar series to complex financial charts. Each type of chart represents a unique style of representing data that is user-friendly and has greater UI visualization.
 * Data can be plotted against multiple scales that help visualize the mixed types of data in a single Chart.
 * Chart provides support to render multiple series at the same time, with options to compare and visualize two different chart series, simultaneously.
 * User-friendly customization support. SfChart provides various options for you to customize Chart features like axis, labels, legends, series and visualize them accordingly.
