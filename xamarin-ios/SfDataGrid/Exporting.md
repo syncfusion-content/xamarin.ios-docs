@@ -57,7 +57,7 @@ public MyViewController()
     exportPdf = new UIButton(UIButtonType.RoundedRect);
     exportPdf.Layer.CornerRadius = 5;
     exportPdf.SetTitleColor(UIColor.Black, UIControlState.Normal);
-    exportPdf.SetTitle("Export To Pdf", UIControlState.Normal);
+    exportPdf.SetTitle("Export To PDF", UIControlState.Normal);
     exportPdf.BackgroundColor = UIColor.FromRGB(212, 208, 200);
     exportPdf.TouchDown += ExportToPdf;
 
@@ -317,7 +317,7 @@ void pdfExport_CellExporting(object sender, DataGridCellPdfExportingEventArgs
 
 The [PdfHeaderFooterEventHandler](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.PdfHeaderFooterEventHandler.html) delegate allows you to customize the header and footer of the exported PDF. The `HeaderAndFooterExporting` event is triggered with [PdfHeaderFooterEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.PdfHeaderFooterEventArgs.html) that contains the following properties:
 
-* [PdfDocumentTemplate](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.PdfHeaderFooterEventArgs~PdfDocumentTemplate.html) – Specfies the header and footer template for the exported PDF.
+* [PdfDocumentTemplate](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.PdfHeaderFooterEventArgs~PdfDocumentTemplate.html) – Specifies the header and footer template for the exported PDF.
 
 The following code example illustrates how to customize the header and footer of the exported PDF document.
 
@@ -332,8 +332,8 @@ private void pdfExport_HeaderAndFooterExporting(object sender, PdfHeaderFooterEv
 {
     var width = e.PdfPage.GetClientSize().Width;
     PdfPageTemplateElement header = new PdfPageTemplateElement(width, 60);
-    var assmbely = Assembly.GetExecutingAssembly();
-    var imagestream = assmbely.GetManifestResourceStream("GettingStarted.SyncfusionLogo.jpg");
+    var assembly = Assembly.GetExecutingAssembly();
+    var imagestream = assembly.GetManifestResourceStream("GettingStarted.SyncfusionLogo.jpg");
     PdfImage pdfImage = PdfImage.FromStream(imagestream);
     header.Graphics.DrawImage(pdfImage, new RectangleF(0, 0, width, 50));
     e.PdfDocumentTemplate.Top = header;

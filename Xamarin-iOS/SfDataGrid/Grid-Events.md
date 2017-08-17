@@ -24,9 +24,9 @@ dataGrid.GridTapped += DataGrid_GridTapped;
 
 private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
 {
-    var rowIndex = e.RowColumnindex.RowIndex;
+    var rowIndex = e.RowColumnIndex.RowIndex;
     var rowData = e.RowData;
-    var columnIndex = e.RowColumnindex.ColumnIndex;
+    var columnIndex = e.RowColumnIndex.ColumnIndex;
 }
 {% endhighlight %}
 
@@ -66,9 +66,9 @@ dataGrid.GridLongPressed += DataGrid_GridLongPressed;
 
 private void DataGrid_GridLongPressed(object sender, GridLongPressedEventsArgs e)
 {
-    var rowIndex = e.RowColumnindex.RowIndex;
+    var rowIndex = e.RowColumnIndex.RowIndex;
     var rowData = e.RowData;
-    var columnIndex = e.RowColumnindex.ColumnIndex;
+    var columnIndex = e.RowColumnIndex.ColumnIndex;
 }
 {% endhighlight %}
 
