@@ -90,9 +90,9 @@ public class ContactsList : ObservableCollection<Contacts>, INotifyPropertyChang
 {
     public ContactsList()
     {
-        foreach (var cusName in CustomerNames)
+        foreach (var customerName in CustomerNames)
         {
-            var contact = new Contacts(cusName);
+            var contact = new Contacts(customerName);
             this.Add(contact);
         }
     }
@@ -199,25 +199,14 @@ Please refer the below code example that illustrates binding the created DataSou
 {% highlight c# %}
 [C#]
 
-    public class TableViewSource : UITableViewSource
-    {
-
-        #region Field
-
-        DataSource dataSource;
-
-    #endregion
-
-    #region Constructor
+public class TableViewSource : UITableViewSource
+{
+    DataSource dataSource;
 
     public TableViewSource(DataSource sfDataSource)
     {
         dataSource = sfDataSource;
     }
-
-    #endregion
-
-    #region implemented abstract members of UITableViewDataSource
 
     public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath)
     {
@@ -247,8 +236,6 @@ Please refer the below code example that illustrates binding the created DataSou
     {
         return (nint)dataSource.DisplayItems.Count;
     }
-
-    #endregion
 } 
 
 {% endhighlight %}
