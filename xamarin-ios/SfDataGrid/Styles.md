@@ -9,7 +9,7 @@ documentation: UG
 
 # Styles
 
-SfDataGrid allows you to apply style to all of its elements by writing a Style class overriding from `DataGridStyle` and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
+SfDataGrid allows you to apply style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
   
 The following example explains you how to apply custom style to SfDataGrid.
 
@@ -20,72 +20,73 @@ dataGrid.GridStyle = new Dark ();
 
 {% highlight c# %}
 //Custom style class
-public class Dark : DataGridStyle
+public class Dark : DataGridStyle
 {
-    public Dark ()
+    public Dark()
     {
     }
 
-    public override Color GetHeaderBackgroundColor()
+    public override UIColor GetHeaderBackgroundColor()
     {
-        return Color.FromRgb (15, 15, 15);
+        return UIColor.FromRGB(15, 15, 15);
     }
 
-    public override Color GetHeaderForegroundColor()
+    public override UIColor GetHeaderForegroundColor()
     {
-        return Color.FromRgb (255, 255, 255);
+        return UIColor.FromRGB(255, 255, 255);
     }
 
-    public override Color GetRecordBackgroundColor ()
+    public override UIColor GetRecordBackgroundColor()
     {
-        return Color.FromRgb (43, 43, 43);
+        return UIColor.FromRGB(43, 43, 43);
     }
 
-    public override Color GetRecordForegroundColor ()
+    public override UIColor GetRecordForegroundColor()
     {
-        return Color.FromRgb (255, 255, 255);
+        return UIColor.FromRGB(255, 255, 255);
     }
 
-    public override Color GetSelectionBackgroundColor ()
+    public override UIColor GetSelectionBackgroundColor()
     {
-        return Color.FromRgb (42, 159, 214);
+        return UIColor.FromRGB(42, 159, 214);
     }
 
-    public override Color GetSelectionForegroundColor ()
+    public override UIColor GetSelectionForegroundColor()
     {
-        return Color.FromRgb (255, 255, 255);
+        return UIColor.FromRGB(255, 255, 255);
     }
 
-    public override Color GetCaptionSummaryRowBackgroundColor ()
+    public override UIColor GetCaptionSummaryRowBackgroundColor()
     {
-        return Color.FromRgb (02, 02, 02);
+        return UIColor.FromRGB(02, 02, 02);
     }
 
-    public override Color GetCaptionSummaryRowForeGroundColor ()
+    public override UIColor GetCaptionSummaryRowForeGroundColor()
     {
-        return Color.FromRgb (255, 255, 255);
+        return UIColor.FromRGB(255, 255, 255);
     }
 
-    public override Color GetBordercolor ()
+    public override UIColor GetBorderColor()
     {
-        return Color.FromRgb (81, 83, 82);
+        return UIColor.FromRGB(81, 83, 82);
     }
 
-    public override Color GetLoadMoreViewBackgroundColor ()
+    public override UIColor GetLoadMoreViewBackgroundColor()
     {
-        return Color.FromRgb(242, 242, 242);
+        return UIColor.FromRGB(242, 242, 242);
     }
 
-    public override Color GetLoadMoreViewForegroundColor ()
+    public override UIColor GetLoadMoreViewForegroundColor()
     {
-        return Color.FromRgb(34, 31, 31);
+        return UIColor.FromRGB(34, 31, 31);
     }
-    
-    public override Color GetAlternatingRowBackgroundColor()
+
+    public override UIColor GetAlternatingRowBackgroundColor()
     {
-      return UIColor.Cyan;
+        return UIColor.Cyan;
     }
-} 
+
+}
 {% endhighlight %}
 
 The following picture shows the grid loaded in different styles.
@@ -95,43 +96,95 @@ The following picture shows the grid loaded in different styles.
 
 ## Border Customization
 
-* SfDatagrid allows you to customize the grid borders to vertical, horizontal or both based on requirements. you have override the `DataGridStyle.GetGridLinesVisibility`
-method. 
+* SfDatagrid allows you to customize the grid borders to vertical, horizontal, both or none based on requirements. Override the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.DataGridStyle~GetGridLinesVisibility.html) method to customize the borders in SfDataGrid.
 
 {% highlight c# %}
-public virtual GridLinesVisibility GetGridLinesVisibility()
-{
-    return GridLinesVisibility;
-} 
+//Apply custom style to SfDataGrid from code
+dataGrid.GridStyle = new CustomStyle ();
 {% endhighlight %}
+ 
+{% highlight c# %}
+//Custom Style class 
+public class CustomStyle : DataGridStyle
+{
+    public CustomStyle ()
+    {
+    }
+    public override GridLinesVisibility GetGridLinesVisibility()
+    {
+        return base.GetGridLinesVisibility();
+    }
+}
+{% endhighlight %}
+
 Following are the lists of options available to customize the grid borders.
 
-* Both
-* Horizontal
-* Vertical
-* None
+* [Both](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLinesVisibility.html)
+* [Horizontal](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLinesVisibility.html)
+* [Vertical](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLinesVisibility.html)
+* [None](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLinesVisibility.html)
 
 ### Both
 
 *  `GridLinesVisibility.Both` allows you to display the DataGrid with both Horizontal and Vertical borders.
+{% highlight c# %}
+public override GridLinesVisibility GetGridLinesVisibility()
+{
+    return GridLinesVisibility.Both;
+}
+{% endhighlight %}
+
+The following screenshot shows the final outcome upon execution of the above code.
+
+![](SfDataGrid_images/BorderCustomization_Both.png)
 
 ### Horizontal
 
 * `GridLinesVisibility.Horizontal` allows you to display the DataGrid with Horizontal border only
+{% highlight c# %}
+public override GridLinesVisibility GetGridLinesVisibility()
+{
+    return GridLinesVisibility.Horizontal;
+}
+{% endhighlight %}
+
+The following screenshot shows the final outcome upon execution of the above code.
+
+![](SfDataGrid_images/BorderCustomization_Horizontal.png)
 
 ### Vertical
 
 * `GridLinesVisibility.Vertical` allows you to display the DataGrid with Vertical border only
+{% highlight c# %}
+public override GridLinesVisibility GetGridLinesVisibility()
+{
+    return GridLinesVisibility.Vertical;
+}
+{% endhighlight %}
+
+The following screenshot shows the final outcome upon execution of the above code.
+
+![](SfDataGrid_images/BorderCustomization_Vertical.png)
 
 ### None
 
 * `GridLinesVisibility.None` allows you to display the DataGrid without borders
+{% highlight c# %}
+public override GridLinesVisibility GetGridLinesVisibility()
+{
+    return GridLinesVisibility.None;
+}
+{% endhighlight %}
+
+The following screenshot shows the final outcome upon execution of the above code.
+
+![](SfDataGrid_images/BorderCustomization_None.png)
 
 ## How to
 
 ### Change the Sorting Icon in column headers
 
-You can load any desired image as the sort icon in the `SfDataGrid` using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the `DataGridStyle` class. The following code example illustrates how to change the SortIcon in `SfDataGrid`.
+You can load any desired image as the sort icon in the SfDataGrid using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the `DataGridStyle` class. The following code example illustrates how to change the SortIcon in SfDataGrid.
 
 {% highlight c# %}
 
@@ -161,7 +214,7 @@ N> The image's BuildAction must be set to BundleResource so that we can access t
 
 ### Change the color of the resizing indicator
 
-You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in `SfDataGrid`. 
+You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in SfDataGrid. 
 
 {% highlight c# %}
 

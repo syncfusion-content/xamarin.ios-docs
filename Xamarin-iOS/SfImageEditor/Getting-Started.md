@@ -1,0 +1,59 @@
+---
+layout: post
+title: Getting Started for Essential Xamarin.iOS ImageEditor
+description: This section explains you the steps required to load an image to the image editor. Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
+platform: Xamarin.iOS
+control: SfImageEditor
+documentation: ug
+---
+# Getting Started
+
+This section explains you the steps required to load an image to the image editor. Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
+
+## Reference Essential Studio components in your solution
+
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
+
+{Syncfusion Installed location}\Essential Studio\15.2.0.40\lib
+
+N> Assemblies are available in unzipped package location in Mac.
+
+Add the following assembly references to the iOS project,
+
+ios-unified\Syncfusion.SfImageEditor.iOS.dll
+
+# Add and configure the image editor
+
+The following steps explain on how to create a image editor  and configure its elements,
+
+* Create an instance of SfImageEditor.
+
+{% highlight C# %}
+
+       SfImageEditor imageEditor = new SfImageEditor(); 
+       imageEditor.Frame = this.View.Frame; 
+       View.AddSubview(imageEditor); 
+
+
+{% endhighlight %}
+
+* Load an image to the Image Editor
+
+You can load the image to the SfImageEditor by set image property in SfImageEditor.
+
+{% highlight C# %}
+
+
+    imageEditor.Image = */ Your Image */
+
+
+{% endhighlight %}
+
+
+
+* Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
+
+Following is the final output screenshot,
+
+![SfImageEditor](ImageEditor_images/gettingstarted.png)
+

@@ -43,8 +43,8 @@ this.dataGrid.EditTapAction = TapAction.OnDoubleTap;
 ## Cursor behavior
 When the cell enters into edit mode, cursor is placed based on [SfDataGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~EditorSelectionBehavior.html) property.
 
-* SelectAll – selects the text of edit element loaded inside cell.
-* MoveLast – places the cursor at the last of edit element loaded inside cell.
+* [SelectAll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.EditorSelectionBehavior.html) – selects the text of edit element loaded inside cell.
+* [MoveLast](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.EditorSelectionBehavior.html) – places the cursor at the last of edit element loaded inside cell.
 
 {% highlight c# %}
 //Selects all the text in the edit mode
@@ -64,7 +64,7 @@ The editing changes in a row will be committed only when user moves to next row 
 
 * [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx) – Gets called to begin edit on underlying data object when cell in a row enters into edit mode.
 
-* [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) – Gets called when user cencels editing to discard the changes in a row since last BeginEdit call.
+* [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx) – Gets called when user cancels editing to discard the changes in a row since last BeginEdit call.
 
 * [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx) – Gets called when user move to the next row by tapping to commit changes in underlying data object since last BeginEdit call.
 
@@ -262,34 +262,34 @@ SfDataGrid triggers the following events while editing.
 [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CurrentCellBeginEdit_EV.html) event occurs when the CurrentCell enters into edit mode. [GridCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellBeginEditEventArgs.html) has the following members which provides information for `SfDataGrid.CurrentCellBeginEdit` event.
 
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is canceled and the CurrentCell does not enter into the edit mode.
-* RowColumnIndex : Gets the current row,column index of the DataGrid.
-* Column : Gets the Grid Column of the SfDataGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row,column index of the DataGrid.
+* [Column](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellBeginEditEventArgs~Column.html) : Gets the Grid Column of the SfDataGrid.
 
 ### CurrentCellEndEdit
 
 [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CurrentCellEndEdit_EV.html) event occurs when the CurrentCell exits the edit mode. [GridCurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellEndEditEventArgs.html) has following members which provides information for `SfDataGrid.CurrentCellEndEdit` event.
 
-* RowColumnIndex : Gets the current row,column index of the DataGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellEndEditEventArgs~RowColumnIndex.html) : Gets the current row,column index of the DataGrid.
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
 
-## Programatically edit a cell
+## Programmatically edit a cell
 
 ### Begin editing
 
-SfDataGrid allows you to edit the cell programmatically by calling the [SfDataGrid.BeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~BeginEdit.html) method. Calling this method makes that particular cell enter the edit mode after which you can edit the data manually or programmatically. The below code example shows how to edit a cell programatically.
+SfDataGrid allows you to edit the cell programmatically by calling the [SfDataGrid.BeginEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~BeginEdit.html) method. Calling this method makes that particular cell enter the edit mode after which you can edit the data manually or programmatically. The below code example shows how to edit a cell programmatically.
 
 {% highlight c# %}
 this.dataGrid.Loaded += dataGrid_Loaded;
 void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {
-    //Edit the cell at 2nd row,2nd column programatically
+    //Edit the cell at 2nd row,2nd column programmatically
     this.dataGrid.BeginEdit(2, 2);
 }
 {% endhighlight %}
 
 ### End editing
 
-You can call the [SfDataGrid.EndEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~EndEdit.html) method to programmatically end editing. A cell that is currently in edit mode commits the edited value to the underlying collection and exits the edit mode when this method is called. The below code example shows how to end the editing programatically.
+You can call the [SfDataGrid.EndEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~EndEdit.html) method to programmatically end editing. A cell that is currently in edit mode commits the edited value to the underlying collection and exits the edit mode when this method is called. The below code example shows how to end the editing programmatically.
 
 {% highlight c# %}
 this.dataGrid.EndEdit();
@@ -297,7 +297,7 @@ this.dataGrid.EndEdit();
 
 ### Cancel editing
 
-You can call the [SfDatagrid.CancelEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CancelEdit.html) method to programatically cancel the editing. A cell that is currently in edit mode exits the edit mode without committing the edited value in the underlying collection when this method is called. The below code example shows how to cancel the editing programatically.
+You can call the [SfDatagrid.CancelEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CancelEdit.html) method to programmatically cancel the editing. A cell that is currently in edit mode exits the edit mode without committing the edited value in the underlying collection when this method is called. The below code example shows how to cancel the editing programmatically.
 
 {% highlight c# %}
 this.dataGrid.CancelEdit();

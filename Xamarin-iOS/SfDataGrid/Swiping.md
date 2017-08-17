@@ -9,18 +9,18 @@ documentation: ug
 
 # Swiping
 
-`SfDataGrid` lets you enable the swiping option by setting the [SfDataGrid.AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowSwiping.html) property to `true`.
+SfDataGrid lets you enable the swiping option by setting the [SfDataGrid.AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowSwiping.html) property to `true`.
 
 {% highlight c# %}
 this.sfGrid.AllowSwiping = true;
 {% endhighlight %}
 
-Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a data row. `SfDataGrid` provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted up to a certain point on the row by setting the [SfDataGrid.MaxSwipeOffset](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~MaxSwipeOffset.html) property.
+Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a data row. SfDataGrid provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted up to a certain point on the row by setting the [SfDataGrid.MaxSwipeOffset](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~MaxSwipeOffset.html) property.
 
 
 ## SwipeViews
 
-`SfDataGrid` enables you to load the desired content using the [SfDataGrid.LeftSwipeView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~LeftSwipeView.html) when swiping towards right and [SfDataGrid.RightSwipeView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~RightSwipeView.html) when swiping towards the left. The contents inside the swipe view are arranged based on the offset values when you swipe a data row. Refer the following code example that shows how to load a view when swiping towards the right and towards the left.
+SfDataGrid enables you to load the desired content using the [SfDataGrid.LeftSwipeView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~LeftSwipeView.html) when swiping towards right and [SfDataGrid.RightSwipeView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~RightSwipeView.html) when swiping towards the left. The contents inside the swipe view are arranged based on the offset values when you swipe a data row. Refer the following code example that shows how to load a view when swiping towards the right and towards the left.
 
 {% highlight c# %}
 UIButton leftSwipeViewText = new UIButton ();
@@ -85,31 +85,25 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ## SwipeEvents
 
-**SwipeStarted** - This event is fired when the swipe offset changes from its initial value. You can cancel the swipe action by setting the `Cancel` property of the [SwipeStartedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipeStartedEventArgs.html) to `true`. 
+[SwipeStarted](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SwipeStarted_EV.html) - This event is fired when the swipe offset changes from its initial value. You can cancel the swipe action by setting the `Cancel` property of the [SwipeStartedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipeStartedEventArgs.html) to `true`. 
 
-**SwipeEnded** - This event is fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipeEndedEventArgs.html). 
+[SwipeEnded](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SwipeEnded_EV.html) - This event is fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipeEndedEventArgs.html). 
 
-**Swiping** - This event is raised while swiping is in progress. This event is triggered with [SwipingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs.html).
+[Swiping](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~Swiping_EV.html) - This event is raised while swiping is in progress. This event is triggered with [SwipingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs.html).
 
 All the swipe events provides the following properties in their arguments:
 
-• **RowIndex** - the swiping row index
+• [RowIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs~RowIndex.html) - the swiping row index
 
-• **RowData** - the underlying data associated with the swiped row as its arguments.
+• [RowData](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs~RowData.html) - the underlying data associated with the swiped row as its arguments.
 
-• **SwipeDirection** - the swipe direction of the swiped row
+• [SwipeDirection](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs~SwipeDirection.html) - the swipe direction of the swiped row
 
-• **SwipeOffset** - the current swipe offset of the row being swiped
+• [SwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs~SwipeOffSet.html) - the current swipe offset of the row being swiped
 
 By handling the swipe events, you can make use of these property values from the arguments to perform any desired action such as deleting the row, editing the data, etc.
 
-
-## Swipe Customizations
-
-The following customizations should give you an idea on how to use the swiping event in the grid.
-
-
-### MultipleViews
+## Loading Multiple Views as Swipe Template
 
 You can customize your application by loading any view in the `SfDataGrid.LeftSwipeView` or `SfDataGrid.RightSwipeView` and assigning custom actions to them such as deleting a row, adding a row, editing the underlying data associated, etc. You can also display multiple views in the `SfDataGrid.LeftSwipeView` or `SfDataGrid.RightSwipeView` like in the following example where two views are loaded for editing the cell values in the row and deleting the row respectively. Refer the following code example that shows how to load multiple views in `SfDataGrid.LeftSwipeView` when swiping towards right.
 
@@ -284,9 +278,9 @@ public class Swiping : SampleView
 
     private void commitValues ()
     {
-        if (swipedRowindex > 0) 
+        if (swipedRowIndex > 0) 
         {
-            var swipedRowData = this.viewModel.OrdersInfo [this.swipedRowindex - 1];
+            var swipedRowData = this.viewModel.OrdersInfo [this.swipedRowIndex - 1];
             swipedRowData.OrderID = this.orderIDText.Text;
             swipedRowData.CustomerID = this.customerIDText.Text;
             swipedRowData.EmployeeID = this.employeeIDText.Text;
@@ -311,9 +305,9 @@ public class Swiping : SampleView
 
     private void initializeTextFields() 
     { 
-        if (swipedRowindex > 0) 
+        if (swipedRowIndex > 0) 
         {
-            var swipedRowData = this.viewModel.OrdersInfo [this.swipedRowindex - 1];
+            var swipedRowData = this.viewModel.OrdersInfo [this.swipedRowIndex - 1];
             orderIDText.Text = swipedRowData.OrderID;
             this.customerIDText.Text = swipedRowData.CustomerID;
             this.employeeIDText.Text = swipedRowData.EmployeeID;
@@ -338,7 +332,7 @@ public class Swiping : SampleView
 
     void RightSwipeViewButton_TouchDown (object sender, EventArgs e)
     {
-        viewModel.OrdersInfo.RemoveAt(swipedRowindex - 1);
+        viewModel.OrdersInfo.RemoveAt(swipedRowIndex - 1);
     }
 
     public override void LayoutSubviews ()
@@ -365,7 +359,7 @@ public class Swiping : SampleView
     
     private void SfGrid_SwipeEnded (object sender, SwipeEndedEventArgs e)
     {
-        swipedRowindex = e.RowIndex;
+        swipedRowIndex = e.RowIndex;
         initializeTextFields ();
     }
  }
@@ -413,7 +407,7 @@ N> Similarly you can load the two views in the `SfDataGrid.RightSwipeView` when 
 ![](SfDataGrid_images/Swiping_img4.png)
 
 
-## Swipe Delete
+## Customized Swipe Delete Functionality
 
 You can perform operations such as deleting a row when swiping a data row from one extent to other in the view and retrieve the deleted row by tapping the view. Refer the below code example which illustrates how to delete a data row when swiping it from one extreme to other in the view and retrieve the deleted row by tapping the view.
 
@@ -466,10 +460,10 @@ void UndoTapped (UITapGestureRecognizer gesture)
 {
     if (gesture.State == UIGestureRecognizerState.Ended)
     {
-        var removedData = viewModel.OrdersInfo[swipedRowindex - 1];
+        var removedData = viewModel.OrdersInfo[swipedRowIndex - 1];
         var isSelected = SfGrid.SelectedItems.Contains(removedData);
         viewModel.OrdersInfo.Remove(removedData);
-        viewModel.OrdersInfo.Insert(swipedRowindex - 1, removedData);
+        viewModel.OrdersInfo.Insert(swipedRowIndex - 1, removedData);
         if (isSelected)
             SfGrid.SelectedItems.Add(removedData);
         IsUndoClicked = true;

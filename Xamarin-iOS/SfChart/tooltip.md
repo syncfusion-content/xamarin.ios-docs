@@ -159,7 +159,7 @@ public override void WillShowTooltip (SFChart chart, SFChartTooltip tooltipView)
 
     xLabel.Font             = UIFont.FromName("Helvetica", 12f);
 
-    xLabel.Text             = tooltipView.DataPoint.XValue.ToString ();
+    xLabel.Text             = (tooltipView.DataPoint as Model).XValue.ToString();
 
     UILabel yLabel          = new UILabel ();
     

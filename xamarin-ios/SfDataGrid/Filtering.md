@@ -265,8 +265,8 @@ public partial class OptionsView : UIView
         var columnnames = filtermodel.BookInfo.GetType ().GetGenericArguments () [0].GetProperties ();
         this.bar = bar;
         
-        foreach (var propety in columnnames) {
-        items.Add (propety.Name);
+        foreach (var property in columnnames) {
+        items.Add (property.Name);
         }
         
         table.Source = new OptionsTableSource (items);

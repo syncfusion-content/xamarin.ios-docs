@@ -55,28 +55,28 @@ The below table describes you the types of column and its purpose of usage in Sf
 
 ## GridColumn
 
-GridColumn is the base column type of all the columns in the SfDataGrid, hence GridColumn properties are used by all the columns. The following sub-sections explains you about the properties in the GridColumn and the customizations that can be done using those properties.
+[GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) is the base column type of all the columns in the SfDataGrid, hence `GridColumn` properties are used by all the columns. The following sub-sections explains you about the properties in the `GridColumn` and the customizations that can be done using those properties.
 
 ### MappingName
 
-[GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) associates the GridColumn with a property available in the underlying data source. While setting `MappingName` alone to the SfDataGrid, [GridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~DisplayBinding.html) will be automatically generated based on the `MappingName`. Data Manipulation operations like sorting, filtering, grouping will be done based on the `MappingName` property.
+[GridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html) associates the GridColumn with a property available in the underlying data source. While setting `MappingName` alone to the SfDataGrid, `GridColumn.DisplayBinding` will be automatically generated based on the `MappingName`. Data Manipulation operations like sorting, filtering, grouping will be done based on the `MappingName` property.
 
 ### Header customizations
 
 #### HeaderCellTextSize
 
-The FontSize for the content of header cell in the GridColumn can be customized by using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html) property. The default font size of the header cells in SfDataGrid is 14.
+The FontSize for the content of header cell in the `GridColumn` can be customized by using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderCellTextSize.html) property. The default font size of the header cells in SfDataGrid is 14.
 
 #### HeaderFont
 
-The FontFamily for the content of header cell in the GridColumn can be customized by using the [GridColumn.HeaderFont](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) property. The default value font used in SfDataGrid is `Helvetica-Bold`.
+The FontFamily for the content of header cell in the `GridColumn` can be customized by using the [GridColumn.HeaderFont](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderFont.html) property. The default value font used in SfDataGrid is `Helvetica-Bold`.
 
 #### HeaderText
 
-[GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderText.html) specifies the text displayed in the column header. If `HeaderText` is not defined, the `GridColumn.MappingName` will be assigned to the `HeaderText` and will be displayed as column header.
+[GridColumn.HeaderText](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderText.html) specifies the text displayed in the column header. If `HeaderText` is not defined, the `GridColumn.MappingName` will be assigned to the `HeaderText` and will be displayed as column header.
 
 #### HeaderTextAlignment
-You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is `Center`.
+You can get or set the TextAlignment of the header cell in the `GridColumn` by using the [GridColumn.HeaderTextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderTextAlignment.html) property. The default alignment for the header cells in SfDataGrid is `Center`.
 
 #### HeaderTemplate
 
@@ -98,9 +98,28 @@ GridTextColumn column = new GridTextColumn()
 
 {% endhighlight %}
 
+#### HeaderTextMargin
+
+SfDataGrid allows you to get or set the padding for the header cell by using [GridColumn.HeaderTextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderTextMargin.html) property. 
+
+The following code example shows you how to set the`HeaderTextMargin` property.
+
+{% highlight c# %}
+
+GridTextColumn orderId = new GridTextColumn();
+orderId.MappingName = "OrderID";
+orderId.HeaderTextMargin = 15;
+
+GridTextColumn employeeId = new GridTextColumn();
+employeeId.MappingName = "EmployeeID";
+employeeId.HeaderTextMargin = new Thickness(15, 0, 0, 0);
+
+{% endhighlight %}
+
+
 ### Column Width
 
-SfDataGrid allows you to customize the width of each GridColumn in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Width.html) property. By default this property will not be assigned any value and the GridColumn renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
+SfDataGrid allows you to customize the width of each `GridColumn` in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Columns.html) collection. You can customize the column width by using the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Width.html) property. By default this property will not be assigned any value and the `GridColumn` renders in view based on the value of [DefaultColumnWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~DefaultColumnWidth.html) property in SfDataGrid.
 
 N> You can set the `IsHidden` property as `True` instead of setting column width as `0` to hide a column.
 
@@ -146,23 +165,42 @@ if (e.Column.MappingName == "OrderID") {
 dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", IsHidden = true});
 {% endhighlight %}
 
+### TextMargin
+
+SfDataGrid allows you to get or set the padding for the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCell.html) by using [GridColumn.TextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~TextMargin.html) property. 
+
+The following code example shows you how to set the`TextMargin` property.
+
+{% highlight c# %}
+
+GridTextColumn orderId = new GridTextColumn();
+orderId.MappingName = "OrderID";
+orderId.TextMargin = 15;
+
+GridTextColumn employeeId = new GridTextColumn();
+employeeId.MappingName = "EmployeeID";
+employeeId.TextMargin = new Thickness(0, 0, 25, 0);
+
+{% endhighlight %}
+
+
 ## GridTextColumn
 
-GridTextColumn is derived from GridColumn and hence it inherits all the properties of GridColumn. Each of the record cells in GridTextColumn displays text based on the `MappingName` which associates the column with a property in the data source.
+[GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTextColumn.html) is derived from `GridColumn` and hence it inherits all the properties of `GridColumn`. Each of the record cells in `GridTextColumn` displays text based on the `MappingName` which associates the column with a property in the data source.
 
-The following code example creates GridTextColumn.
+The following code example creates `GridTextColumn`.
 
 {% highlight c# %}
 dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
 {% endhighlight %}
 
-The below topics explain you about the customizations that can be done in the GridTextColumn in SfDataGrid.
+The below topics explain you about the customizations that can be done in the `GridTextColumn` in SfDataGrid.
 
 ### Formatting
 
-SfDataGrid allows you to format the value displayed in the GridColumn by using the [GridColumn.Format](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property. Assign the FormatString to this property based on the type of the property the GridColumn is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
+SfDataGrid allows you to format the value displayed in the `GridColumn` by using the [GridColumn.Format](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Format.html) property. Assign the FormatString to this property based on the type of the property the `GridColumn` is associated with to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize the value displayed in the record cells.
 
-The following code example shows you how to apply formatting for a GridTextColumn.
+The following code example shows you how to apply formatting for a `GridTextColumn`.
 
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
@@ -176,13 +214,13 @@ dataGrid.Columns.Add (new GridTextColumn () { 
 });
 {% endhighlight %}
 
-N> For AutoGenerated columns the Formatting can be applied by handling the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event.
+N> For AutoGenerated columns the Formatting can be applied by handling the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html) event.
 
 #### Formatting GridTextColumn with different Culture
 
-SfDataGrid allows you to apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for the GridColumns by using the [GridColumn.CultureInfo](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CultureInfo.html) property. Assign the FormatString to this property based on the type of the property the GridColumn is associated with to format the value. You can use different `StringFormats` to customize the value displayed in the record cells.
+SfDataGrid allows you to apply different [CultureInfo](https://developer.xamarin.com/api/type/System.Globalization.CultureInfo/) for the `GridColumns` by using the [GridColumn.CultureInfo](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~CultureInfo.html) property. Assign the FormatString to this property based on the type of the property the GridColumn is associated with to format the value. You can use different `StringFormats` to customize the value displayed in the record cells.
 
-The following code example shows you how to apply different cultures for a GridColumns.
+The following code example shows you how to apply different cultures for a `GridColumns`.
 
 {% highlight c# %}
 dataGrid.Columns.Add (new GridTextColumn () { 
@@ -198,7 +236,7 @@ dataGrid.Columns.Add (new GridTextColumn () { 
 }); 
 {% endhighlight %}
 
-For auto generated columns this is achievable by handling the `SfDataGrid.AutoGeneratingColumn` event. The following code example shows you how to apply different cultures for auto generated GridColumns.
+For auto generated columns this is achievable by handling the `SfDataGrid.AutoGeneratingColumn` event. The following code example shows you how to apply different cultures for auto generated `GridColumns`.
 
 {% highlight c# %}
 void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
@@ -217,21 +255,21 @@ void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
 
 #### CellTextSize
 
-The FontSize for the content of record cells in GridColumn can be customized by using the [GridColumn.CellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html) property. The default font size of the record cells in SfDataGrid is 14.
+The FontSize for the content of record cells in `GridColumn` can be customized by using the [GridColumn.CellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~CellTextSize.html) property. The default font size of the record cells in SfDataGrid is 14.
 
 #### RecordFont
 
-The FontFamily for the content of header cell in the GridColumn can be customized by using the [GridColumn.RecordFont](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html) property. The default value font used in SfDataGrid is `HelveticaNeue`.
+The FontFamily for the content of header cell in the `GridColumn` can be customized by using the [GridColumn.RecordFont](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~RecordFont.html) property. The default value font used in SfDataGrid is `HelveticaNeue`.
 
 #### TextAlignment
 
-You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~TextAlignment.html) property. The default alignment for the record cells in SfDataGrid is `Center`.
+You can get or set the TextAlignment of the header cell in the GridColumn by using the [GridColumn.TextAlignment](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~TextAlignment.html) property. The default alignment for the record cells in SfDataGrid is `Center`.
 
 #### LineBreakMode
 
-You can wrap the record cell velue when the text for the record cells exceeds the content area by setting [GridColumn.LineBreakMode](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~LineBreakMode.html) as `LineBreakMode.WordWrap`
+You can wrap the record cell value when the text for the record cells exceeds the content area by setting [GridColumn.LineBreakMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~LineBreakMode.html) as `LineBreakMode.WordWrap`
 
-The following code example shows how to use GridSwitchColumn.
+The following code example shows how to use `GridSwitchColumn`.
  
 {% tabs %}
 {% highlight c# %}
@@ -254,7 +292,7 @@ customerIdColumn.HeaderText = "Customer ID";
 dataGrid.Columns.Add(customerIdColumn);
 {% endhighlight %}
 
-In order to create a template column in SfDataGrid, you need to specify the `UserCellType` of the column. `UserCellType` is the type of the view to be used in the GridColumn and it must be derived from the GridCell. (i.e. a custom GridCell which hosts the view of your own requirement).
+In order to create a template column in SfDataGrid, you need to specify the [UserCellType](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~UserCellType.html) of the column. `UserCellType` is the type of the view to be used in the `GridColumn` and it must be derived from the `GridCell`. (i.e. a custom GridCell which hosts the view of your own requirement).
  
 The following code example shows you how to create a custom GridCell and use it in a template column.
 
@@ -298,9 +336,9 @@ The following screenshot shows how template columns are used in SfDataGrid
 
 ## Row Header 
 
-RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the RowHeader in SfDataGrid, you need to set the `SfDataGrid.ShowRowHeader` property as `true`.
+RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the RowHeader in SfDataGrid, you need to set the [SfDataGrid.ShowRowHeader](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ShowRowHeader.html) property as `true`.
 
-Further, SfDataGrid allows you to customize the row header width using the `SfDataGrid.RowHeaderWidth property`. The default value of `SfDataGrid.RowHeaderWidth` is 20.
+Further, SfDataGrid allows you to customize the row header width using the [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~RowHeaderWidth.html) property. The default value of `SfDataGrid.RowHeaderWidth` is 20.
 
 The below code example illustrates how to enable and customize the row header in SfDataGrid.
 
@@ -324,7 +362,7 @@ GridSwitchColumn switchColumn = new GridSwitchColumn()
     HeaderText = "Is Closed",
     MappingName = "IsClosed"
 };
-data.Colum.Add(switchColumn);
+data.Column.Add(switchColumn);
 {% endhighlight %}
 
 {% highlight c# %}
@@ -476,17 +514,17 @@ N> The images should have its BuildAction set as EmbeddedResource since we are g
 
 ## GridDateTimeColumn
 
-The [GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It displays the date information as the content of a column. To create `SfDatarGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type [DateTime](https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx). You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Renderers.SfDatePicker.html) element which is a custom view that enables you to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MaximumDate.html) and select one from it. 
+The [GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It displays the date information as the content of a column. To create `SfDataGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type [DateTime](https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx). You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Renderers.SfDatePicker.html) element which is a custom view that enables you to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MaximumDate.html) and select one from it. 
 
 {% highlight c# %}
 dataGrid = new SfDataGrid();
 GridDateTimeColumn dateColumn = new GridDateTimeColumn()
 {
-    Format = "d",
+    MappingName = "ShippedDate",
     HeaderText = "Shipped Date",
-    MappingName = "ShippedDate"
+    Format = "d"
 };
-data.Colum.Add(dateColumn);
+dataGrid.Columns.Add(dateColumn);
 {% endhighlight %}
 
 {% highlight c# %}
@@ -585,12 +623,13 @@ The following code example shows you how to load the `GridPickerColumn` with a s
 dataGrid = new SfDataGrid();
 GridPickerColumn pickerColumn = new GridPickerColumn()
 {
-    BindingContext = viewModel;
-    ItemsSource = viewModel.CustomerNames;
-    HeaderText = "Dealer Name",
-    MappingName = "DealerName"
+    BindingContext = viewModel,
+    ItemsSource = viewModel.CustomerNames,
+    MappingName = "DealerName",    
+    HeaderText = "Dealer Name"
+
 };
-data.Colum.Add(pickerColumn);
+dataGrid.Columns.Add(pickerColumn);
 {% endhighlight %}
 
 {% highlight c# %}
@@ -614,7 +653,7 @@ public class ViewModel
 			"Mendoza",
 			"Owens",
 			"Rooney",
-			"Waddell",
+			"Waddle",
 		};
 }
 {% endhighlight %}
@@ -625,11 +664,11 @@ You can create a `GridPickerColumn` and set its ItemsSource property to a user-t
 
 #### DisplayMemberPath
  
- Displays a value by comparing the values of the properties set as `GridColumn.MappingName` and `ValueMemberPath` in their respective underlying collections. If the `ValueMeberPath` property's values contains the `MappingName` property's current value, then its corresponding `DisplayMemberPath` property's value is displayed in the `GridCell`. Else the `GridCell` appears blank. However in the edit mode the values of the `DisplayMemberPath` property are dispayed as the picker items.
+ Displays a value by comparing the values of the properties set as `GridColumn.MappingName` and `ValueMemberPath` in their respective underlying collections. If the `ValueMemberPath` property's values contains the `MappingName` property's current value, then its corresponding `DisplayMemberPath` property's value is displayed in the `GridCell`. Else the `GridCell` appears blank. However in the edit mode the values of the `DisplayMemberPath` property are displayed as the picker items.
  
 #### ValueMemberPath
  
- Once editing is ended the column having the `MappingName` equal to the `ValueMeberPath` has its data changed to the corresponding `ValueMemberPath` value for the selected `DisplayMemberPath` value in the picker. 
+ Once editing is ended the column having the `MappingName` equal to the `ValueMemberPath` has its data changed to the corresponding `ValueMemberPath` value for the selected `DisplayMemberPath` value in the picker. 
 
 ### Customization of picker dropdown values
 The following code example shows you how to customize the picker data using `DisplayMemberPath` and `ValueMemberPath`
@@ -724,15 +763,15 @@ public class ViewModel
 }
 {% endhighlight %}
 
-The following screenshots expalins the above code and shows the working of the `PickerColumn` with `ValueMemberPath` and `DisplayMemberPath` properties set.
+The following screenshots explains the above code and shows the working of the `PickerColumn` with `ValueMemberPath` and `DisplayMemberPath` properties set.
 
 Here in the above code example underlying collection has 2 properties (OrderID,EmployeeID). We have created a `GridPickerColumn` with MappingName = OrderID, DisplayMemberPath = EmployeeID, ValueMemberPath = OrderID. EmployeeId has the values 6,7,8,9,10.... and OrderID has the values 1,2,3,4,5.... Initially the GridCells of the `PickerColumn` will be displayed with the values 6,7,8,9,10.... in row wise order based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_DisplayMemberPath.jpg)
+![](SfDataGrid_images/PickerColumn_DisplayMemberPath.png)
 
 Upon entering the edit mode at RowColumnIndex(1,1) , the Picker pop up opens and with the picker items as 6,7,8,9,10.... again based on the `DisplayMemberPath`.
 
-![](SfDataGrid_images/PickerColumn_PickerPopUp.jpg)
+![](SfDataGrid_images/PickerColumn_PickerPopUp.png)
 
 When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index (0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4. Note that the PickerColumn's `GridCell` data is not changed and only the OrderID columns data is changed to 4. 
 
@@ -744,13 +783,14 @@ The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sf
 
 {% highlight c# %}
 dataGrid = new SfDataGrid();
+            
 GridNumericColumn numericColumn = new GridNumericColumn()
 {
-    numericColumn.MappingName = "ProductNo",
-    numericColumn.HeaderText = "Product No",
-    numericColumn.NumberDecimalDigits = 0
+    MappingName = "ProductNo",
+    HeaderText = "Product No",
+    NumberDecimalDigits =0
 };
-data.Colum.Add(numericColumn);
+dataGrid.Columns.Add(numericColumn);
 {% endhighlight %}
 
 ### Number Formatting

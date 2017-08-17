@@ -90,11 +90,11 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID[0].Cu
 
 ## View
 
-DataGrid has the `View` property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.IOS~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintain and manipulation data and other advanced operations like `Sorting`, `Grouping`, and etc.
+DataGrid has the [View](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~View.html) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.IOS~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintain and manipulation data and other advanced operations like `Sorting`, `Grouping`, and etc.
 
 When you bind Collection to `ItemsSource` property of SfDataGrid, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 
-Note> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
+N> DataGrid creates different types of views derived from `ICollectionViewAdv` interface based on `ItemsSource`.
 
 The following property is associated with `View`.
 
@@ -121,13 +121,13 @@ SfDataGrid provides support to update the view during data manipulation operatio
 </tr>
 </table>
 
-<% highlight c# %>
+{% highlight c# %}
 dataGrid.GridViewCreated += DataGrid_GridViewCreated;
 private void DataGrid_GridViewCreated(object sender, GridViewCreatedEventArgs e)
 {
     dataGrid.View.LiveDataUpdateMode = LiveDataUpdateMode.Default;
 }
-<% endhighlight %>
+{% endhighlight %}
 
 The following events are associated with `View`.
 
