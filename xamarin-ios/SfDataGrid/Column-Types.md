@@ -100,7 +100,7 @@ GridTextColumn column = new GridTextColumn()
 
 #### HeaderTextMargin
 
-SfDataGrid allows you to get or set the padding for the header cell by using [GridColumn.HeaderTextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderTextMargin.html) prpperty. 
+SfDataGrid allows you to get or set the padding for the header cell by using [GridColumn.HeaderTextMargin](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderTextMargin.html) property. 
 
 The following code example shows you how to set the`HeaderTextMargin` property.
 
@@ -267,7 +267,7 @@ You can get or set the TextAlignment of the header cell in the GridColumn by usi
 
 #### LineBreakMode
 
-You can wrap the record cell velue when the text for the record cells exceeds the content area by setting [GridColumn.LineBreakMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~LineBreakMode.html) as `LineBreakMode.WordWrap`
+You can wrap the record cell value when the text for the record cells exceeds the content area by setting [GridColumn.LineBreakMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~LineBreakMode.html) as `LineBreakMode.WordWrap`
 
 The following code example shows how to use `GridSwitchColumn`.
  
@@ -362,7 +362,7 @@ GridSwitchColumn switchColumn = new GridSwitchColumn()
     HeaderText = "Is Closed",
     MappingName = "IsClosed"
 };
-data.Colum.Add(switchColumn);
+data.Column.Add(switchColumn);
 {% endhighlight %}
 
 {% highlight c# %}
@@ -514,7 +514,7 @@ N> The images should have its BuildAction set as EmbeddedResource since we are g
 
 ## GridDateTimeColumn
 
-The [GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It displays the date information as the content of a column. To create `SfDatarGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type [DateTime](https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx). You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Renderers.SfDatePicker.html) element which is a custom view that enables you to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MaximumDate.html) and select one from it. 
+The [GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It displays the date information as the content of a column. To create `SfDataGrid.GridDateTimeColumn` in SfDataGrid, the property corresponding to the column in the underlying collection must be of type [DateTime](https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110).aspx). You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.Renderers.SfDatePicker.html) element which is a custom view that enables you to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~MaximumDate.html) and select one from it. 
 
 {% highlight c# %}
 dataGrid = new SfDataGrid();
@@ -653,7 +653,7 @@ public class ViewModel
 			"Mendoza",
 			"Owens",
 			"Rooney",
-			"Waddell",
+			"Waddle",
 		};
 }
 {% endhighlight %}
@@ -664,11 +664,11 @@ You can create a `GridPickerColumn` and set its ItemsSource property to a user-t
 
 #### DisplayMemberPath
  
- Displays a value by comparing the values of the properties set as `GridColumn.MappingName` and `ValueMemberPath` in their respective underlying collections. If the `ValueMeberPath` property's values contains the `MappingName` property's current value, then its corresponding `DisplayMemberPath` property's value is displayed in the `GridCell`. Else the `GridCell` appears blank. However in the edit mode the values of the `DisplayMemberPath` property are dispayed as the picker items.
+ Displays a value by comparing the values of the properties set as `GridColumn.MappingName` and `ValueMemberPath` in their respective underlying collections. If the `ValueMemberPath` property's values contains the `MappingName` property's current value, then its corresponding `DisplayMemberPath` property's value is displayed in the `GridCell`. Else the `GridCell` appears blank. However in the edit mode the values of the `DisplayMemberPath` property are displayed as the picker items.
  
 #### ValueMemberPath
  
- Once editing is ended the column having the `MappingName` equal to the `ValueMeberPath` has its data changed to the corresponding `ValueMemberPath` value for the selected `DisplayMemberPath` value in the picker. 
+ Once editing is ended the column having the `MappingName` equal to the `ValueMemberPath` has its data changed to the corresponding `ValueMemberPath` value for the selected `DisplayMemberPath` value in the picker. 
 
 ### Customization of picker dropdown values
 The following code example shows you how to customize the picker data using `DisplayMemberPath` and `ValueMemberPath`
@@ -763,7 +763,7 @@ public class ViewModel
 }
 {% endhighlight %}
 
-The following screenshots expalins the above code and shows the working of the `PickerColumn` with `ValueMemberPath` and `DisplayMemberPath` properties set.
+The following screenshots explains the above code and shows the working of the `PickerColumn` with `ValueMemberPath` and `DisplayMemberPath` properties set.
 
 Here in the above code example underlying collection has 2 properties (OrderID,EmployeeID). We have created a `GridPickerColumn` with MappingName = OrderID, DisplayMemberPath = EmployeeID, ValueMemberPath = OrderID. EmployeeId has the values 6,7,8,9,10.... and OrderID has the values 1,2,3,4,5.... Initially the GridCells of the `PickerColumn` will be displayed with the values 6,7,8,9,10.... in row wise order based on the `DisplayMemberPath`.
 
