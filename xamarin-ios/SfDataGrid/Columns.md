@@ -133,7 +133,7 @@ dataGrid.Columns.Add (countryColumn);
 ## Resizing Columns
 SfDataGrid allows to resize the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting [SfDataGrid.AllowResizingColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowResizingColumn.html) property. A resizing indicator is displayed while resizing a column.
 
-N> Resizing considers [GridColumn.MinimumWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~MinimumWidth.html) and [GridColumn.MaximumWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~MaximumWidth.html) of the column and will not resize past the mininum and maximum width constraints.
+N> Resizing considers [GridColumn.MinimumWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~MinimumWidth.html) and [GridColumn.MaximumWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~MaximumWidth.html) of the column and will not resize past the minimum and maximum width constraints.
 
 
 {% highlight c# %}
@@ -147,7 +147,7 @@ You can change the column width by tapping and dragging the resizing indicator.
 
 N> The resizing indicator appears when you tap the right corner of the column header.
 
-You can interactively hide a column by setting the `GridColumn.MinimumWidth` property to zero and resizing the column to a wdith less than 0.
+You can interactively hide a column by setting the `GridColumn.MinimumWidth` property to zero and resizing the column to a width less than 0.
 
 ### Resizing Modes
 
@@ -168,7 +168,7 @@ The below image shows the resizing mode `OnTouchUp`
 
 ### Resizing Events
 
-The resizing operation can be handled based on the requirement using [SfDataGrid.ColumnResizing](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnResizing_EV.html) event. The `SfDataGrid.ColumnResizing` event is fired upon starting to resize a column and will be continuously fired till the reisizing operation ends.
+The resizing operation can be handled based on the requirement using [SfDataGrid.ColumnResizing](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnResizing_EV.html) event. The `SfDataGrid.ColumnResizing` event is fired upon starting to resize a column and will be continuously fired till the resizing operation ends.
 By handling the `SfDataGrid.ColumnResizing` event you can also cancel the resizing of a particular column.
 The `SfDataGrid.ColumnResizing` event provides the following properties through [GridResizingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridResizingEventArgs.html).
 

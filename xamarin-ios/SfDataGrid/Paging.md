@@ -106,7 +106,7 @@ The following code example illustrates how to use ResetCache method:
 
 {% endhighlight %}
 
-## Custom Appearence
+## Custom Appearance
 
 The following code example shows how to implement paging with custom appearance in SfDataGrid for Xamarin.iOS.
 

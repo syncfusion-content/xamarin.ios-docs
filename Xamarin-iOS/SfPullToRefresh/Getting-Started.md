@@ -20,7 +20,7 @@ This section explains you the steps to configure a PullToRefresh control in a re
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 And below assembly reference to the iOS unified project.
-ios-unifed\Syncfusion.SfPullToRefresh.iOS.dll
+ios-unified\Syncfusion.SfPullToRefresh.iOS.dll
 
 ### Add and Configure the PullToRefresh
 
@@ -47,7 +47,7 @@ ios-unifed\Syncfusion.SfPullToRefresh.iOS.dll
 	
 {% endhighlight %}
 
-## Customizing a simple SfPulToRefresh sample
+## Customizing a simple SfPullToRefresh sample
 
 To develop an application with Android PullToRefresh is simple. The following steps explains how to create and configure its properties.
 
