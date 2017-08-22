@@ -15,7 +15,7 @@ SfDataForm control helps to edit data fields of any data object. It can be used 
 * Caption Customization - Support to load images as captions for editor.
 * Editors - Built-in support for text, numeric, numeric up-down, picker, date picker and time picker editors. 
 * Custom Editor - Support for loading custom editors.
-* Validation - Built-in support to validate data based on [](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx# "")IDataErrorInfo, [](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx# "")INotifyDataErrorInfo, and data annotations. Also, supports to handle validation programmatically.
+* Validation - Built-in support to validate data based on [](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx)IDataErrorInfo, [](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx)INotifyDataErrorInfo, and data annotations. Also, supports to handle validation programmatically.
 
 # Getting Started
 
