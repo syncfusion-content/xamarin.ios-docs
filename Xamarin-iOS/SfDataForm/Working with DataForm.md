@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Working with DataForm | SfDataForm | Xamarin.iOS | Syncfusion
 description: Working with DataForm.
@@ -11,8 +11,8 @@ documentation: ug
 
 ## Auto-generating DataFormItems for Data field
 
-By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html# "") will be generated based on type of property. For example, [DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItem.html# "") will be created for `int` type property. 
-[DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html# "") generation depends on the type and attribute defined for the property. The following table lists the several types of `DataFormItem` and its constraints for auto generation.
+By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on type of property. For example, [DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItem.html) will be created for `int` type property. 
+[DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html) generation depends on the type and attribute defined for the property. The following table lists the several types of `DataFormItem` and its constraints for auto generation.
 
 <table>
 <tr>
@@ -22,7 +22,7 @@ By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-io
 </tr>
 <tr>
 <td>
-{{'[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTextItem.html)'| markdownify }}
+{{'[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormTextItem.html)'| markdownify }}
 </td>
 <td>
 Text
@@ -35,7 +35,7 @@ Default DataFormItem generated for string type and the properties with below att
 </tr>
 <tr>
 <td>
-{{'[DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormNumericItem.html)'| markdownify }}
+{{'[DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItem.html)'| markdownify }}
 </td>
 <td>
 Numeric
@@ -48,7 +48,7 @@ Generated for int, double, float, decimal, long types and its nullable also prop
 </tr>
 <tr>
 <td>
-{{'[DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormDateItem.html)'| markdownify }}
+{{'[DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem.html)'| markdownify }}
 </td>
 <td>
 Date
@@ -61,7 +61,7 @@ Generated for DateTime type and properties with below attributes.
 </tr>
 <tr>
 <td>
-{{'[DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTimeItem.html)'| markdownify }}
+{{'[DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormTimeItem.html)'| markdownify }}
 </td>
 <td>
 Time
@@ -73,7 +73,7 @@ Generated for the property with below attribute.
 </tr>
 <tr>
 <td>
-{{'[DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormPickerItem.html)'| markdownify }}
+{{'[DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormPickerItem.html)'| markdownify }}
 </td>
 <td>
 Picker
@@ -85,10 +85,10 @@ Generated for Enum type property and the property with below attribute.
 </tr>
 <tr>
 <td>
-{{'[DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfdataform/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormItem.html)'| markdownify }}
+{{'[DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html)'| markdownify }}
 </td>
 <td>
-Switch
+Bool
 </td>
 <td>
 Bool type

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Editing | SfDataForm | Xamarin.iOS | Syncfusion
 description: Editing in SfDataForm.
@@ -160,7 +160,7 @@ UISegmentedControl
 </tr>
 <tr>
 <td>
-Switch
+Bool
 </td>
 <td>
 {{'[DataFormSwitchEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormSwitchEditor.html)'| markdownify }}
