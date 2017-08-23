@@ -27,8 +27,8 @@ You can customize the default appearance of view header in [DayView](https://hel
 			viewHeaderStyle.BackgroundColor = UIColor.FromRGB(0, 150, 136);
 			viewHeaderStyle.DayTextColor = UIColor.FromRGB(255, 255, 255);
 			viewHeaderStyle.DateTextColor = UIColor.FromRGB(255, 255, 255);
-			viewHeaderStyle.DayTextSyle = UIFont.FromName("Arial", 15);
-			viewHeaderStyle.DateTextSyle = UIFont.FromName("Arial", 15);
+			viewHeaderStyle.DayTextStyle = UIFont.FromName("Arial", 15);
+			viewHeaderStyle.DateTextStyle = UIFont.FromName("Arial", 15);
 			schedule.DayHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
