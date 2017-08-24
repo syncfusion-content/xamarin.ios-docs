@@ -79,7 +79,7 @@ You can set the `PullableContent` for the `SfPullToRefresh` by adding the desire
 		{
 		
 		}
-		public override void Refreshed(SFPullToRefresh pulltorefresh)
+		public override void Refreshed(SFPullToRefresh pullToRefresh)
 		{
 			NSTimer.CreateScheduledTimer(TimeSpan.FromSeconds(2), new Action<NSTimer>(delegate {
 			

@@ -28,11 +28,11 @@ The following code example illustrates the delegate, properties, and methods use
 
 #region Fields
 
-private string filtertext = "";
-private string selectedcolumn = "All Columns";
-private string selectedcondition = "Equals";
+private string filterText = "";
+private string selectedColumn = "All Columns";
+private string selectedCondition = "Equals";
 internal delegate void FilterChanged();
-internal FilterChanged filtertextchanged;
+internal FilterChanged filterTextChanged;
 
 #endregion
 
@@ -40,10 +40,10 @@ internal FilterChanged filtertextchanged;
 
 public string FilterText
 {
-    get { return filtertext; }
+    get { return filterText; }
     set
     {
-        filtertext = value;
+        filterText = value;
         OnFilterTextChanged();
         RaisePropertyChanged("FilterText");
     }
@@ -51,14 +51,14 @@ public string FilterText
 
 public string SelectedCondition
 {
-    get { return selectedcondition; }
-    set { selectedcondition = value; }
+    get { return selectedCondition; }
+    set { selectedCondition = value; }
 }
 
 public string SelectedColumn
 {
-    get { return selectedcolumn; }
-    set { selectedcolumn = value; }
+    get { return selectedColumn; }
+    set { selectedColumn = value; }
 }
 
 #endregion
@@ -67,7 +67,7 @@ public string SelectedColumn
 
 private void OnFilterTextChanged()
 {
-    filtertextchanged();
+    filterTextChanged();
 }
 
 private bool MakeStringFilter(OrderInfo o, string option, string condition)
@@ -200,7 +200,7 @@ filterText.CancelButtonClicked += CancelButtonClicked;
 
 private void OnFilterTextChanged(object sender, SearchView.QueryTextChangeEventArgs e)
 {
-    viewmodel.FilterText = e.SearchText;
+    viewModel.FilterText = e.SearchText;
 }
 
 private void CancelButtonClicked(object sender, EventArgs e)
@@ -218,7 +218,7 @@ Once you create a `UISearchBar` and a view model, you can perform filtering by s
 {% highlight c# %}
 // Code-Behind
 
-viewModel.filtertextchanged = OnFilterChanged; //where ‘filtertextchanged’ is a delegate declared in ViewModel class.
+viewModel.filterTextChanged = OnFilterChanged; //where ‘filtertextchanged’ is a delegate declared in ViewModel class.
 
 private void OnFilterChanged()
 {
@@ -241,59 +241,59 @@ For example, you can filter the records in `OrderID` or any other particular col
 
 public partial class OptionsView : UIView
 {
-    private FilterViewModel filtermodel;
+    private FilterViewModel filterModel;
     private UITableView table;
     private UISearchBar bar;
-    private UITableView filterconditiontable;
+    private UITableView filterConditiontable;
     List<string> items;
     Filtering ParentView;
     public OptionsView ()
     {
         items = new List<string> ()
         table = new UITableView ();
-        filterconditiontable = new UITableView ();
+        filterConditiontable = new UITableView ();
         table.SectionIndexTrackingBackgroundColor = UIColor.FromRGB (0, 121, 255);
-        filterconditiontable.AllowsSelection = true;
-        this.AddSubview (filterconditiontable);
+        filterConditiontable.AllowsSelection = true;
+        this.AddSubview (filterConditiontable);
         this.AddSubview (table);
     }
     
     public OptionsView (FilterViewModel model, UISearchBar bar , Filtering parentView) : this ()
     {
         this.ParentView = parentView;
-        this.filtermodel = model;
-        var columnnames = filtermodel.BookInfo.GetType ().GetGenericArguments () [0].GetProperties ();
+        this.filterModel = model;
+        var columnNames = filterModel.BookInfo.GetType ().GetGenericArguments () [0].GetProperties ();
         this.bar = bar;
         
-        foreach (var property in columnnames) {
+        foreach (var property in columnNames) {
         items.Add (property.Name);
         }
         
         table.Source = new OptionsTableSource (items);
-        filterconditiontable.Source = new FilterOptionsTableSource (new List<string> ()          
+        filterConditiontable.Source = new FilterOptionsTableSource (new List<string> ()          
         {
             "Contains",
             "Equals",
             "Not Equals"
         });
         
-        this.AddSubview (filterconditiontable);
+        this.AddSubview (filterConditiontable);
         this.AddSubview (table);
     }
 
     public override void RemoveFromSuperview ()
     {
         base.RemoveFromSuperview ();
-        filtermodel.SelectedColumn = (table.Source as OptionsTableSource).selectedItem;
-        filtermodel.SelectedCondition = (filterconditiontable.Source as FilterOptionsTableSource).selecteditem;
+        filterModel.SelectedColumn = (table.Source as OptionsTableSource).selectedItem;
+        filterModel.SelectedCondition = (filterConditiontable.Source as FilterOptionsTableSource).selectedItem;
         
-        if (filtermodel.SelectedColumn != null && filtermodel.SelectedCondition != null)
+        if (filterModel.SelectedColumn != null && filterModel.SelectedCondition != null)
         {
-            this.bar.Placeholder = "Search " + filtermodel.SelectedColumn + " with " + filtermodel.SelectedCondition;
+            this.bar.Placeholder = "Search " + filterModel.SelectedColumn + " with " + filterModel.SelectedCondition;
             if(this.bar.Text != "")
                 this.ParentView.OnFilterChanged ();
         }
-        else if((filtermodel.SelectedColumn != null && filtermodel.SelectedCondition == null)||(filtermodel.SelectedColumn == null && filtermodel.SelectedCondition != null))
+        else if((filterModel.SelectedColumn != null && filterModel.SelectedCondition == null)||(filtermodel.SelectedColumn == null && filtermodel.SelectedCondition != null))
         {
             var alert = new UIAlertView ("Error", "Should Select Both ColumnName and Condition Type", null, "Cancel", null);
             alert.Frame = new CGRect (50, this.Frame.GetMidX (), 60, this.Frame.GetMidY ());
@@ -304,7 +304,7 @@ public partial class OptionsView : UIView
     public override void LayoutSubviews ()
     { 
         table.Frame = (new CGRect (0, 0, this.Frame.Width, (this.Frame.Height / 2)+13));
-        filterconditiontable.Frame=(new CGRect (0, table.Bounds.Bottom + 2, this.Frame.Width, this.Frame.Height));
+        filterConditiontable.Frame=(new CGRect (0, table.Bounds.Bottom + 2, this.Frame.Width, this.Frame.Height));
         base.LayoutSubviews ();
     }
 }
@@ -322,7 +322,7 @@ public class OptionsTableSource : UITableViewSource
         keys = new string[] { "ColumnName" };
     }
     
-    public override nint RowsInSection(UITableView tableview, nint section)
+    public override nint RowsInSection(UITableView tableView, nint section)
     {
         return tableItems.Count;
     }
@@ -358,7 +358,7 @@ public class FilterOptionsTableSource : UITableViewSource
     public List<string>; tableItems;
     string cellIdentifier = "TableCell";
     string[] keys = new string[] { };
-    public string selecteditem = null;
+    public string selectedItem = null;
     
     public FilterOptionsTableSource(List<string> items)
     {
@@ -366,7 +366,7 @@ public class FilterOptionsTableSource : UITableViewSource
         keys = new string[] { "Filter Condition Type" };
     }
     
-    public override nint RowsInSection(UITableView tableview, nint section)
+    public override nint RowsInSection(UITableView tableView, nint section)
     {
         return tableItems.Count;
     }
@@ -397,7 +397,7 @@ public class FilterOptionsTableSource : UITableViewSource
     
     public override void RowSelected(UITableView tableView, Foundation.NSIndexPath indexPath)
     {
-        selecteditem = tableItems[indexPath.Row];
+        selectedItem = tableItems[indexPath.Row];
     }
     
     public override string TitleForHeader(UITableView tableView, nint section)
