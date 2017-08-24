@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Editing | SfDataForm | Xamarin.iOS | Syncfusion
 description: Editing in SfDataForm.

@@ -27,8 +27,8 @@ You can customize the default appearance of view header in [WorkWeekView](https:
 			viewHeaderStyle.BackgroundColor = UIColor.FromRGB(0, 150, 136);
 			viewHeaderStyle.DayTextColor = UIColor.FromRGB(255, 255, 255);
 			viewHeaderStyle.DateTextColor = UIColor.FromRGB(255, 255, 255);
-			viewHeaderStyle.DayTextSyle = UIFont.FromName("Arial", 15);
-			viewHeaderStyle.DateTextSyle = UIFont.FromName("Arial", 15);
+			viewHeaderStyle.DayTextStyle = UIFont.FromName("Arial", 15);
+			viewHeaderStyle.DateTextStyle = UIFont.FromName("Arial", 15);
 			schedule.DayHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -89,7 +89,7 @@ You can customize the appearance of the working hour timeslots by its color usin
 			//Create new instance of WorkWeekViewSettings
 			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
 			workWeekViewSettings.TimeSlotBorderColor = UIColor.Purple;
-			workWeekViewSettings.VerticaTimeSlotBorderColor = UIColor.Blue;
+			workWeekViewSettings.VerticalTimeSlotBorderColor = UIColor.Blue;
 			workWeekViewSettings.TimeSlotColor = UIColor.Yellow;
 			workWeekViewSettings.HorizontalLineStrokeWidth = 3;
 			workWeekViewSettings.VerticalLineStrokeWidth = 3;
@@ -109,7 +109,7 @@ You can customize the appearance of the non-working hour timeslots by its color 
 			//Create new instance of WorkWeekViewSettings
 			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
 			workWeekViewSettings.NonWorkingHourTimeSlotBorderColor = UIColor.Purple;
-			workWeekViewSettings.VerticaTimeSlotBorderColor = UIColor.Blue;
+			workWeekViewSettings.VerticalTimeSlotBorderColor = UIColor.Blue;
 			workWeekViewSettings.NonWorkingHourTimeSlotColor = UIColor.Yellow;
 			workWeekViewSettings.HorizontalLineStrokeWidth = 3;
 			workWeekViewSettings.VerticalLineStrokeWidth = 3;
