@@ -153,7 +153,7 @@ You can customize the View Header appearance by using [SFViewHeaderStyle](https:
 			SFViewHeaderStyle viewHeaderStyle = new SFViewHeaderStyle();
 			viewHeaderStyle.BackgroundColor = UIColor.Blue;
 			viewHeaderStyle.DayTextColor = UIColor.White;
-			viewHeaderStyle.DayTextSyle = UIFont.FromName("Arial", 15);
+			viewHeaderStyle.DayTextStyle = UIFont.FromName("Arial", 15);
 			schedule.DayHeaderStyle = viewHeaderStyle;
 
 {% endhighlight %}
