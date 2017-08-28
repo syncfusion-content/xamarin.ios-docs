@@ -244,17 +244,17 @@ public partial class OptionsView : UIView
     private FilterViewModel filterModel;
     private UITableView table;
     private UISearchBar bar;
-    private UITableView filterConditiontable;
+    private UITableView filterConditionTable;
     List<string> items;
     Filtering ParentView;
     public OptionsView ()
     {
         items = new List<string> ()
         table = new UITableView ();
-        filterConditiontable = new UITableView ();
+        filterConditionTable = new UITableView ();
         table.SectionIndexTrackingBackgroundColor = UIColor.FromRGB (0, 121, 255);
-        filterConditiontable.AllowsSelection = true;
-        this.AddSubview (filterConditiontable);
+        filterConditionTable.AllowsSelection = true;
+        this.AddSubview (filterConditionTable);
         this.AddSubview (table);
     }
     
@@ -284,8 +284,8 @@ public partial class OptionsView : UIView
     public override void RemoveFromSuperview ()
     {
         base.RemoveFromSuperview ();
-        filterModel.SelectedColumn = (table.Source as OptionsTableSource).selectedItem;
-        filterModel.SelectedCondition = (filterConditiontable.Source as FilterOptionsTableSource).selectedItem;
+        filterModel.SelectedColumn = (table.Source as OptionsTableSource).SelectedItem;
+        filterModel.SelectedCondition = (filterConditiontable.Source as FilterOptionsTableSource).SelectedItem;
         
         if (filterModel.SelectedColumn != null && filterModel.SelectedCondition != null)
         {
@@ -314,7 +314,7 @@ public class OptionsTableSource : UITableViewSource
     public List<string> tableItems;
     string cellIdentifier = "TableCell";
     string[] keys = new string[] { };
-    public string selectedItem = null;
+    public string SelectedItem = null;
     
     public OptionsTableSource(List<string> items)
     {
@@ -345,7 +345,7 @@ public class OptionsTableSource : UITableViewSource
     
     public override void RowSelected(UITableView tableView, Foundation.NSIndexPath indexPath)
     {
-        selectedItem = tableItems[indexPath.Row];
+        SelectedItem = tableItems[indexPath.Row];
     }
     public override string TitleForHeader(UITableView tableView, nint section)
     {
@@ -358,7 +358,7 @@ public class FilterOptionsTableSource : UITableViewSource
     public List<string>; tableItems;
     string cellIdentifier = "TableCell";
     string[] keys = new string[] { };
-    public string selectedItem = null;
+    public string SelectedItem = null;
     
     public FilterOptionsTableSource(List<string> items)
     {
@@ -397,7 +397,7 @@ public class FilterOptionsTableSource : UITableViewSource
     
     public override void RowSelected(UITableView tableView, Foundation.NSIndexPath indexPath)
     {
-        selectedItem = tableItems[indexPath.Row];
+        SelectedItem = tableItems[indexPath.Row];
     }
     
     public override string TitleForHeader(UITableView tableView, nint section)
