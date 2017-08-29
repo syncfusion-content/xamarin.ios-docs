@@ -43,7 +43,7 @@ SfDataGrid allows you to customize the height of a grid row on demand by handlin
 
 ### QueryRowHeight
 
-`SfDataGrid.QueryRowHeight` is the event that returns row heights on demand. This event receives two arguments namely the sender that handles the SfDataGrid and the [QueryRowHeightEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowHeightEventArgs.html). The `QueryRowHeightEventRgs` has the following properties.
+`SfDataGrid.QueryRowHeight` is the event that returns row heights on demand. This event receives two arguments namely the sender that handles the SfDataGrid and the [QueryRowHeightEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowHeightEventArgs.html). The `QueryRowHeightEventArgs` has the following properties.
 
 * [RowIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowHeightEventArgs~RowIndex.html): The property RowIndex helps you to identify a particular row in the grid.
 * [Height](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowHeightEventArgs~Height.html): This property sets and returns the height for a grid row on demand. Default line size for the rows is 50.
