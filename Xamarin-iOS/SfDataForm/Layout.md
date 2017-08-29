@@ -143,7 +143,7 @@ You can set the order by using `Order` property in Display attribute.
 {% highlight c# %}
 public class ContactsInfo
 {
-    private string lastname;
+    private string lastName;
     private string contactNo;       
     public ContactsInfo()
     {
@@ -174,10 +174,10 @@ public class ContactsInfo
     [Display(Order = 1)]
     public string LastName
     {
-        get { return this.lastname; }
+        get { return this.lastName; }
         set
         {
-            this.lastname = value;
+            this.lastName = value;
         }
     }
 }
@@ -216,7 +216,7 @@ Grouping can be achieved by defining attributes or by handling `AutoGeneratingDa
 {% highlight c# %}
 public class ContactsInfo
 {
-    private string lastname;
+    private string lastName;
     private string contactNo;
     private string email;   
     private DateTime? birthDate;
@@ -250,10 +250,10 @@ public class ContactsInfo
     [Display(GroupName = "Name")]
     public string LastName
     {
-        get { return this.lastname; }
+        get { return this.lastName; }
         set
         {
-            this.lastname = value;
+            this.lastName = value;
         }
     }
     [Display(GroupName ="Details", ShortName = "ContactNo.")]
@@ -351,7 +351,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% highlight c# %}
 public class ContactsInfo
 {
-    private string lastname;
+    private string lastName;
     private string contactNo;
     private string email;   
     private DateTime? birthDate;
@@ -375,10 +375,10 @@ public class ContactsInfo
     [Display(GroupName = "Name")]
     public string LastName
     {
-        get { return this.lastname; }
+        get { return this.lastName; }
         set
         {
-            this.lastname = value;
+            this.lastName = value;
         }
     }
     [Display(GroupName ="Details", ShortName = "ContactNo.")]
@@ -477,7 +477,7 @@ In this case, group will be shown without expander.
 
 ### Programmatically expand or collapse group
 
-You can expand or collapse the group programmatically by using [ExpandGroup](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~ExpandGroup.html) and [CollpaseGroup](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~CollapseGroup.html) method respectively.
+You can expand or collapse the group programmatically by using [ExpandGroup](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~ExpandGroup.html) and [CollapseGroup](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~CollapseGroup.html) method respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -537,7 +537,7 @@ You can change the editor padding by overriding `GetLeftPaddingForEditor` method
 {% highlight c# %}
 public class ContactsInfo
 {
-    private string lastname;
+    private string lastName;
     public ContactsInfo()
     {
 
@@ -560,10 +560,10 @@ public class ContactsInfo
     [DisplayOptions(ShowLabel = false)]
     public string LastName
     {
-        get { return this.lastname; }
+        get { return this.lastName; }
         set
         {
-            this.lastname = value;
+            this.lastName = value;
         }
     }
 }

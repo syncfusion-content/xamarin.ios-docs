@@ -249,7 +249,7 @@ Property settings, commit, data validation can be handled by overriding required
 {% highlight c# %}
 public class CustomSliderEditor : DataFormEditor<UISlider>
 {
-    public CustomSliderEditor(SfDataForm dataform) : base(dataform)
+    public CustomSliderEditor(SfDataForm dataForm) : base(dataForm)
     {
     }
 
