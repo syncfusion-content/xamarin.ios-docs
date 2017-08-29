@@ -405,16 +405,16 @@ public class ViewModel
 
     public void GetOrderDetails(int count)
     {
-        var order = new ObservableCollection<OrderInfo>();
+        var orderDetails = new ObservableCollection<OrderInfo>();
         for (int i = 1; i <= count; i++)
         {
-            var ord = new OrderInfo()
+            var order = new OrderInfo()
             {
                 IsClosed = (i % 2) == 0 ? true : false
             };
-            order.Add(ord);
+            orderDetails.Add(order);
         }
-        ordersInfo = order;
+        ordersInfo = orderDetails;
     }
 
     #endregion
@@ -477,32 +477,32 @@ public class ViewModel
 
     public void GetOrderDetails(int count)
     {
-        var order = new ObservableCollection<OrderInfo>();
+        var orderDetails = new ObservableCollection<OrderInfo>();
         for (int i = 1; i <= count; i++)
         {
-            var ord = new OrderInfo()
+            var order = new OrderInfo()
             {
                 Image = Imagehelper.ToUIImage(new ImageMapStream(LoadResource("Image" + (i % 29) + ".png").ToArray())),// Need to give the image path properly
             };
-            order.Add(ord);
+            orderDetails.Add(order);
         }
-        ordersInfo = order;
+        ordersInfo = orderDetails;
     }
     
     // Create memory stream
     public MemoryStream LoadResource (String Name)
 	{
-		MemoryStream aMem = new MemoryStream ();
+		MemoryStream memory = new MemoryStream ();
 
-		var assm = Assembly.GetExecutingAssembly ();
+		var assembly = Assembly.GetExecutingAssembly ();
 
 		var path = String.Format ("GettingStarted.Resources.{0}", Name);
 
-		var aStream = assm.GetManifestResourceStream (path);
+		var aStream = assembly.GetManifestResourceStream (path);
 
-		aStream.CopyTo (aMem);
+		aStream.CopyTo (memory);
 
-		return aMem;
+		return memory;
 	}
     #endregion
 }
@@ -586,17 +586,17 @@ public class ViewModel
 
     public void GetOrderDetails(int count)
     {
-        var order = new ObservableCollection<OrderInfo>();
+        var orderDetails = new ObservableCollection<OrderInfo>();
         this.OrderedDates = GetDateBetween(2000, 2014, count);
         for (int i = 1; i <= count; i++)
         {
-            var ord = new OrderInfo()
+            var order = new OrderInfo()
             {
                 ShippedDate = this.OrderedDates[i - 1],
             };
-            order.Add(ord);
+            orderDetails.Add(order);
         }
-        ordersInfo = order;
+        ordersInfo = orderDetails;
     }
 
     #endregion
@@ -676,7 +676,7 @@ The following code example shows you how to customize the picker data using `Dis
 {% highlight c# %}
 sfGrid = new SfDataGrid();
 viewModel = new ViewModel();
-sfGrid.ItemsSource = viewmodel.OrdersInfo;
+sfGrid.ItemsSource = viewModel.OrdersInfo;
 
 GridTextColumn orderIDColumn = new GridTextColumn();
 orderIDColumn.MappingName = "OrderID";
@@ -687,7 +687,7 @@ pickerColumn.MappingName = "OrderID";
 pickerColumn.HeaderText = "Picker Column";
 pickerColumn.DisplayMemberPath = "EmployeeID";
 pickerColumn.ValueMemberPath = "OrderID";
-pickerColumn.ItemsSource = viewmodel.PickerInfo;
+pickerColumn.ItemsSource = viewModel.PickerInfo;
 
 sfGrid.Columns.Add(orderIDColumn);
 sfGrid.Columns.Add(pickerColumn);
@@ -739,11 +739,11 @@ public class ViewModel
 
 			for (int i = 1; i <= count; i++) {
 
-				var ord = new OrderInfo () {
+				var order = new OrderInfo () {
 					OrderID = i,
                     EmployeeID = i+5,
 				};
-				orderDetails.Add (ord);
+				orderDetails.Add (order);
 			}
 			return orderDetails;
 		}
