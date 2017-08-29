@@ -81,8 +81,8 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
     private int _employeeID;
     private int _customerID;
     private bool _isClosed;
-    private string _firstname;
-    private string _lastname;
+    private string _firstName;
+    private string _lastName;
     private string _gender;
     private string _shipCity;
     private string _shipCountry;
@@ -131,20 +131,20 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
 
     public string FirstName
     {
-        get { return _firstname; }
+        get { return _firstName; }
         set
         {
-            this._firstname = value;
+            this._firstName = value;
             RaisePropertyChanged("FirstName");
         }
     }
 
     public string LastName
     {
-        get { return _lastname; }
+        get { return _lastName; }
         set
         {
-            this._lastname = value;
+            this._lastName = value;
             RaisePropertyChanged("LastName");
         }
     }
@@ -241,14 +241,14 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
 
     protected Dictionary<string, object> BackUp()
     {
-        var dict = new Dictionary<string, object>();
+        var dictionary = new Dictionary<string, object>();
         var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
         foreach (var pDescriptor in itemProperties)
         {
             if (pDescriptor.CanWrite)
-                dict.Add(pDescriptor.Name, pDescriptor.GetValue(this));
+                dictionary.Add(pDescriptor.Name, pDescriptor.GetValue(this));
         }
-        return dict;
+        return dictionary;
     }
 }
 {% endhighlight %}
