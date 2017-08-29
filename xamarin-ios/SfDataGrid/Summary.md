@@ -72,7 +72,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
     Format = "{Count}",
     SummaryType = SummaryType.CountAggregate
 });
-sfgrid.CaptionSummaryRow= summaryRow;
+dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
 The following screenshot shows the final outcome for both values of `ShowSummaryInRow` to `true`.
@@ -112,7 +112,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
     Format = "{Sum:c}",
     SummaryType = SummaryType.DoubleAggregate
 });
-sfgrid.CaptionSummaryRow= summaryRow;
+dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
 ![](SfDataGrid_images/Summary_img5.png)
@@ -138,7 +138,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
     Format = "{Sum}",
     SummaryType = SummaryType.DoubleAggregate
 });
-sfgrid.CaptionSummaryRow= summaryRow;
+dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
 ![](SfDataGrid_images/Summary_img6.png)
@@ -160,7 +160,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
     Format = "{Sum:c}",
     SummaryType = SummaryType.DoubleAggregate
 });
-sfgrid.CaptionSummaryRow= summaryRow;
+dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
 ![](SfDataGrid_images/Summary_img7.png)
@@ -182,7 +182,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
     Format = "Total:{Sum:c}",
     SummaryType = SummaryType.DoubleAggregate
 });
-sfgrid.CaptionSummaryRow= summaryRow;
+dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
 ![](SfDataGrid_images/Summary_img8.png)
@@ -210,7 +210,7 @@ summaryRow.SummaryColumns.Add{new GridSummaryColumn()
     Format = "{Count}",
     SummaryType = SummaryType.DoubleAggregate
 });
-sfgrid.CaptionSummaryRow= summaryRow;
+dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
 ![](SfDataGrid_images/Summary_img9.png)
@@ -306,7 +306,7 @@ public static class LinqExtensions
 {
     public static double StdDev<T>(this IEnumerable<T> values, Func<T, double?> selector)
     {
-        double ret = 0;
+        double value = 0;
         var count = values.Count();
         if (count > 0)
         {
@@ -319,9 +319,9 @@ public static class LinqExtensions
                 }
                 return 0.0;
             });
-            ret = Math.Sqrt((sum) / (count - 1));
+            value = Math.Sqrt((sum) / (count - 1));
         }
-        return ret;
+        return value;
     }
 }
 {% endhighlight %}
