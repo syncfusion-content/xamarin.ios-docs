@@ -228,8 +228,7 @@ In Date editor, [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin
 
 ### Customizing format in Date editor
 
-In `SfDatePicker`, Short date will be shown by default. You can the customize format to be applied by using [Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem~Format.html) property in [DataFormDateItem]
-(https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem.html).
+In `SfDatePicker`, Short date will be shown by default. You can the customize format to be applied by using [Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem~Format.html) property in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -273,7 +272,7 @@ In picker editor, [SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-i
 
 ### Customizing ItemsSource of SfPicker
 
-By default, `ItemsSouce` for picker is auto-generated for enum type and collection type properties. For other types, you can set `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~SourceProvider.html).
+By default, `ItemsSource` for picker is auto-generated for enum type and collection type properties. For other types, you can set `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~SourceProvider.html).
 
 **Using SourceProvider**
 
