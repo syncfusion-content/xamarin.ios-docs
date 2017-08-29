@@ -218,7 +218,7 @@ Once you create a `UISearchBar` and a view model, you can perform filtering by s
 {% highlight c# %}
 // Code-Behind
 
-viewModel.filterTextChanged = OnFilterChanged; //where ‘filtertextchanged’ is a delegate declared in ViewModel class.
+viewModel.filterTextChanged = OnFilterChanged; //where ‘filterTextChanged’ is a delegate declared in ViewModel class.
 
 private void OnFilterChanged()
 {
@@ -270,14 +270,14 @@ public partial class OptionsView : UIView
         }
         
         table.Source = new OptionsTableSource (items);
-        filterConditiontable.Source = new FilterOptionsTableSource (new List<string> ()          
+        filterConditionTable.Source = new FilterOptionsTableSource (new List<string> ()          
         {
             "Contains",
             "Equals",
             "Not Equals"
         });
         
-        this.AddSubview (filterConditiontable);
+        this.AddSubview (filterConditionTable);
         this.AddSubview (table);
     }
 
@@ -285,7 +285,7 @@ public partial class OptionsView : UIView
     {
         base.RemoveFromSuperview ();
         filterModel.SelectedColumn = (table.Source as OptionsTableSource).SelectedItem;
-        filterModel.SelectedCondition = (filterConditiontable.Source as FilterOptionsTableSource).SelectedItem;
+        filterModel.SelectedCondition = (filterConditionTable.Source as FilterOptionsTableSource).SelectedItem;
         
         if (filterModel.SelectedColumn != null && filterModel.SelectedCondition != null)
         {
@@ -304,27 +304,27 @@ public partial class OptionsView : UIView
     public override void LayoutSubviews ()
     { 
         table.Frame = (new CGRect (0, 0, this.Frame.Width, (this.Frame.Height / 2)+13));
-        filterConditiontable.Frame=(new CGRect (0, table.Bounds.Bottom + 2, this.Frame.Width, this.Frame.Height));
+        filterConditionTable.Frame=(new CGRect (0, table.Bounds.Bottom + 2, this.Frame.Width, this.Frame.Height));
         base.LayoutSubviews ();
     }
 }
 
 public class OptionsTableSource : UITableViewSource
 {
-    public List<string> tableItems;
+    public List<string> TableItems;
     string cellIdentifier = "TableCell";
     string[] keys = new string[] { };
     public string SelectedItem = null;
     
     public OptionsTableSource(List<string> items)
     {
-        tableItems = items;
+        TableItems = items;
         keys = new string[] { "ColumnName" };
     }
     
     public override nint RowsInSection(UITableView tableView, nint section)
     {
-        return tableItems.Count;
+        return TableItems.Count;
     }
     
     public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath)
@@ -333,7 +333,7 @@ public class OptionsTableSource : UITableViewSource
         // if there are no cells to reuse, create a new one
         if (cell == null)
             cell = new UITableViewCell(UITableViewCellStyle.Default, cellIdentifier);
-        cell.TextLabel.Text = tableItems[indexPath.Row];
+        cell.TextLabel.Text = TableItems[indexPath.Row];
         cell.SelectionStyle = UITableViewCellSelectionStyle.Blue;
         return cell;
     }
@@ -345,7 +345,7 @@ public class OptionsTableSource : UITableViewSource
     
     public override void RowSelected(UITableView tableView, Foundation.NSIndexPath indexPath)
     {
-        SelectedItem = tableItems[indexPath.Row];
+        SelectedItem = TableItems[indexPath.Row];
     }
     public override string TitleForHeader(UITableView tableView, nint section)
     {
@@ -355,20 +355,20 @@ public class OptionsTableSource : UITableViewSource
 
 public class FilterOptionsTableSource : UITableViewSource
 {
-    public List<string>; tableItems;
+    public List<string> TableItems;
     string cellIdentifier = "TableCell";
     string[] keys = new string[] { };
     public string SelectedItem = null;
     
     public FilterOptionsTableSource(List<string> items)
     {
-        tableItems = items;
+        TableItems = items;
         keys = new string[] { "Filter Condition Type" };
     }
     
     public override nint RowsInSection(UITableView tableView, nint section)
     {
-        return tableItems.Count;
+        return TableItems.Count;
     }
     
     public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath)
@@ -377,7 +377,7 @@ public class FilterOptionsTableSource : UITableViewSource
         // if there are no cells to reuse, create a new one
         if (cell == null)
            cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellIdentifier);
-        cell.TextLabel.Text = tableItems[indexPath.Row];
+        cell.TextLabel.Text = TableItems[indexPath.Row];
         cell.SelectionStyle = UITableViewCellSelectionStyle.Blue;
         return cell;
     }
@@ -397,7 +397,7 @@ public class FilterOptionsTableSource : UITableViewSource
     
     public override void RowSelected(UITableView tableView, Foundation.NSIndexPath indexPath)
     {
-        SelectedItem = tableItems[indexPath.Row];
+        SelectedItem = TableItems[indexPath.Row];
     }
     
     public override string TitleForHeader(UITableView tableView, nint section)
