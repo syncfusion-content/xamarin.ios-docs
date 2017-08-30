@@ -39,7 +39,7 @@ public class ViewModel
 {        
     public ViewModel()
     {
-        SetRowstoGenerate(50);
+        SetRowsToGenerate(50);
     }
         
     private DataTable dataTable;
@@ -50,7 +50,7 @@ public class ViewModel
         set { this.dataTable = value; }
     }
 
-    public void SetRowstoGenerate (int count)
+    public void SetRowsToGenerate (int count)
     {
         dataTable = new DataTable();
         dataTable.Columns.Add("Name");
