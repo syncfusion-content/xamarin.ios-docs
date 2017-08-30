@@ -102,8 +102,8 @@ Here data object named **ContactsInfo** created with properties.
 public class ContactsInfo
 {
     private string firstName;
-    private string middelName;
-    private string lastname;
+    private string middleName;
+    private string lastName;
     private string contactNo;
     private string email;
     private string address;
@@ -126,18 +126,18 @@ public class ContactsInfo
 
     public string MiddleName
     {
-        get { return this.middelName; }
+        get { return this.middleName; }
         set
         {
-            this.middelName = value;
+            this.middleName = value;
         }
     }
     public string LastName
     {
-        get { return this.lastname; }
+        get { return this.lastName; }
         set
         {
-            this.lastname = value;
+            this.lastName = value;
         }
     }
 
@@ -312,7 +312,7 @@ Percent
 Property of type Int or Double. [DataType(DataType.Percent)].
 </td>
 <td>
-SfNuemricTextBox
+SfNumericTextBox
 </td>
 </tr>
 <tr>
@@ -432,5 +432,5 @@ dataForm.ColumnCount = 2;
 
 By default, SfDataForm allows to edit the editors. You can disable edit by setting `IsReadOnly` property of SfDataForm.
 Or, you can change the editing behavior by setting `IsReadOnly` property of `DataFormItem`. DataFormItem.IsReadOnly takes higher priority.
-You can also have option to define the editing behavior from `SfDataForm.DataObject` definition using [EditableAttribute](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx# "")
+You can also have option to define the editing behavior from `SfDataForm.DataObject` definition using [EditableAttribute](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx)
 You can also define the editing behavior by defining `SfDataForm.DataObject` fields definition without `setter` or with `private set`.
