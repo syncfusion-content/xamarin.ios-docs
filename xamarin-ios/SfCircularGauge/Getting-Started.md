@@ -25,7 +25,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 {Syncfusion Installed location}\Essential Studio{version number}\lib
 
 You have to add the following assembly reference to the iOS unified project
-ios-unifed \ Syncfusion.SfGauge.iOS.dll
+ios-unified \ Syncfusion.SfGauge.iOS.dll
 
 N> Assemblies are available in unzipped package location in Mac.
 
