@@ -19,7 +19,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-iOS-unifed\Syncfusion.SfGauge.iOS.dll 
+iOS-unified\Syncfusion.SfGauge.iOS.dll 
 
 ### Add SfLinearGauge
 
