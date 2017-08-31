@@ -188,7 +188,7 @@ public bool FilerRecords(object o)
 #endregion
 {% endhighlight %}
 
-The following code example illustrates how to create a `UISearchBar` and apply the filtered records to `ViewModel.FilterText` property in `SearchView.QuertTextChange` event.
+The following code example illustrates how to create a `UISearchBar` and apply the filtered records to `ViewModel.FilterText` property in `SearchView.QueryTextChange` event.
 
 {% highlight c# %}
 // Code-Behind
@@ -293,7 +293,7 @@ public partial class OptionsView : UIView
             if(this.bar.Text != "")
                 this.ParentView.OnFilterChanged ();
         }
-        else if((filterModel.SelectedColumn != null && filterModel.SelectedCondition == null)||(filtermodel.SelectedColumn == null && filtermodel.SelectedCondition != null))
+        else if((filterModel.SelectedColumn != null && filterModel.SelectedCondition == null)||(filterModel.SelectedColumn == null && filterModel.SelectedCondition != null))
         {
             var alert = new UIAlertView ("Error", "Should Select Both ColumnName and Condition Type", null, "Cancel", null);
             alert.Frame = new CGRect (50, this.Frame.GetMidX (), 60, this.Frame.GetMidY ());
