@@ -20,8 +20,8 @@ A needle pointer contains two parts, the needle and the knob that can be placed 
 `NeedlePointer` appearance can be customized by using the `PointerType` property the default value of this property is Rectangle.
 It is enum includes the following option.
 
-•	SFCiruclarGaugePointerTypeBar
-•	SFCiruclarGaugePointerTypeTriangle
+•	SFCircularGaugePointerTypeBar
+•	SFCircularGaugePointerTypeTriangle
 
 {% highlight c# %}
 
@@ -30,7 +30,7 @@ It is enum includes the following option.
     NSMutableArray scales = new NSMutableArray();
     NSMutableArray pointers = new NSMutableArray();
     needlePointer = new SFNeedlePointer();
-    needlePointer.PointerType = SFCiruclarGaugePointerType.SFCiruclarGaugePointerTypeBar;
+    needlePointer.PointerType = SFCircularGaugePointerType.SFCircularGaugePointerTypeBar;
     needlePointer.Value = 70;
     needlePointer.Color = UIColor.Gray;
     needlePointer.KnobRadius = 12;
