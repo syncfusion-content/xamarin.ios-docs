@@ -71,11 +71,11 @@ chart.PrimaryAxis                     = xAxis;
 
 SFChartDateTimeStripLine stripLine    = new SFChartDateTimeStripLine ();
 
-NSDateFormatter dateformatter         = new NSDateFormatter ();
+NSDateFormatter dateFormatter         = new NSDateFormatter ();
 
-dateformatter.DateFormat              = new NSString ("dd/MM/yyyy"); 
+dateFormatter.DateFormat              = new NSString ("dd/MM/yyyy"); 
 
-stripLine.Start                       = dateformatter.Parse ("01/04/2010"); 
+stripLine.Start                       = dateFormatter.Parse ("01/04/2010"); 
 
 stripLine.WidthType                   = SFChartDateTimeIntervalType.Months;
 
@@ -267,13 +267,13 @@ stripLine.EnableSegmentStripLine    = true;
 
 stripLine.SegmentAxisName           = new NSString ("Period");
 
-NSDateFormatter dateformatter       = new NSDateFormatter ();
+NSDateFormatter dateFormatter       = new NSDateFormatter ();
 
-dateformatter.DateFormat            = new NSString ("dd/MM/yyyy");
+dateFormatter.DateFormat            = new NSString ("dd/MM/yyyy");
 
-stripLine.SegmentStartValue         = dateformatter.Parse ("01/04/2010");
+stripLine.SegmentStartValue         = dateFormatter.Parse ("01/04/2010");
 
-stripLine.SegmentEndValue           = dateformatter.Parse ("30/06/2010"); 
+stripLine.SegmentEndValue           = dateFormatter.Parse ("30/06/2010"); 
 
 yAxis.AddStripLine (stripLine);	
 
