@@ -110,7 +110,7 @@ chart.Series.Add(splineAreaSeries);
 To render a stacked area chart, create an instance of `SFStackingAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked area appearance.
 
 * `Color` – used to change the color of the series
-* `BordeWidth` – used to change the border width of the series
+* `BorderWidth` – used to change the border width of the series
 * `BorderColor` – used to change the border color of the series
 
 
