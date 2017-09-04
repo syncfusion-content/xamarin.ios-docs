@@ -28,7 +28,7 @@ Sets the NavigationDrawer sliding position to the left.
 
 {% highlight c# %}
 
-navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
+navigation.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
 
 {% endhighlight %}
 
@@ -44,7 +44,7 @@ Sets the NavigationDrawer sliding position to the right.
 
 {% highlight c# %}
 
-navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionRight;
+navigation.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionRight;
 
 {% endhighlight %}
 
@@ -60,7 +60,7 @@ Sets the NavigationDrawer sliding position to the top.
 
 {% highlight c# %}
 
-navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionTop;
+navigation.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionTop;
 
 {% endhighlight %}
 
@@ -76,7 +76,7 @@ Sets the NavigationDrawer sliding position to the bottom.
 
 {% highlight c# %}
 
-navigationDrawer.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionBottom;
+navigation.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionBottom;
 
 {% endhighlight %}
 
