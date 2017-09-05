@@ -41,7 +41,7 @@ android\Syncfusion.SfNavigationDrawer.iOS.dll
 
 {% highlight c# %}
 
-SFNavigationDrawer navigationDrawer = new SFNavigationDrawer();
+SFNavigationDrawer navigation = new SFNavigationDrawer();
 this.AddSubview(navigationDrawer);
 	
 {% endhighlight %}
@@ -56,21 +56,30 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 
 {% highlight c# %}
 
-	SFNavigationDrawer navigation = new SFNavigationDrawer();
-			navigation.Frame = new CGRect(0, 0, this.Frame.Width, this.Frame.Height);
+	namespace NavigationDrawerTest
+{
+	public partial class ViewController : UIViewController
+	{
+		public ViewController(IntPtr handle) : base(handle)
+		{
+		}
+
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
+			SFNavigationDrawer navigation = new SFNavigationDrawer();
+			this.Add(navigation);
+			navigation.Frame = new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height);
 			navigation.DrawerHeaderHeight = 100;
 			navigation.DrawerWidth = 200;
-
-			UIView contentView = new UIView(new CGRect(0, 0, this.Frame.Width, this.Frame.Height));
-
+			UIView contentView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height);
 			UILabel homeLabel = new UILabel();
-			homeLabel.Frame = new CGRect(15, 2, contentView.Frame.Width - 20, 30);
+			homeLabel.Frame = new CGRect(5, 2, contentView.Frame.Width - 8, 30);
 			homeLabel.Text = "Home";
 			homeLabel.TextColor = UIColor.White;
 			homeLabel.BackgroundColor = UIColor.FromRGB(49, 173, 225);
 			homeLabel.TextAlignment = UITextAlignment.Center;
 			contentView.AddSubview(homeLabel);
-
 			UILabel textBlockLabel1 = new UILabel();
 			textBlockLabel1.Frame = new CGRect(15, 20, contentView.Frame.Width - 10, 300);
 			textBlockLabel1.Text = "Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.";
@@ -80,7 +89,21 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 			textBlockLabel1.Font = UIFont.FromName("Helvetica", 15f);
 			contentView.AddSubview(textBlockLabel1);
 
+			UIButton drawerButton = new UIButton();
+			drawerButton.SetTitle("Content View", UIControlState.Normal);
+			drawerButton.Frame = new CGRect(45, 350, contentView.Frame.Width - 40, 30);
+			drawerButton.BackgroundColor = UIColor.Gray;
+			drawerButton.TouchUpInside += (object sender, EventArgs e) =>
+			{
+				navigation.ToggleDrawer();
+
+			};
+			contentView.AddSubview(drawerButton);
 			navigation.ContentView = contentView;
+			this.Add(navigation);
+		}
+	}
+}
 
 {% endhighlight %}
 
@@ -95,7 +118,37 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 {% highlight c# %}
 
 	//DrawerView
-			UIView headerView = new UIView(new CGRect(0, 0, 100, 100));
+		namespace NavigationDrawerTest
+{
+	public partial class ViewController : UIViewController
+	{
+		public ViewController(IntPtr handle) : base(handle)
+		{
+		}
+
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
+			// Perform any additional setup after loading the view, typically from a nib.
+			SFNavigationDrawer navigation = new SFNavigationDrawer();
+			this.Add(navigation);
+			navigation.Frame = new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height);
+			navigation.DrawerHeaderHeight = 100;
+			navigation.DrawerWidth = 200;
+            UIView contentView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height);
+			UIButton menubutton = new UIButton();
+			menubutton.Frame =new CGRect(10, 5, 25, 25);
+			menubutton.SetBackgroundImage (new UIImage("Images/menu.png"), UIControlState.Normal);
+
+			menubutton.TouchUpInside += (object sender, EventArgs e) => 
+			{
+				navigation.ToggleDrawer();
+			};
+
+			contentView.AddSubview (menubutton);
+			navigation.ContentView = contentView;
+
+			UIView headerView = new UIView(new CGRect(0, 0, navigation.DrawerWidth, 100));
 
 			UIView HeaderView = new UIView();
 			HeaderView.Frame = new CGRect(0, 0, navigation.DrawerWidth, 100);
@@ -106,9 +159,8 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 			usernameLabel.TextColor = UIColor.White;
 			usernameLabel.TextAlignment = UITextAlignment.Center;
 			HeaderView.AddSubview(usernameLabel);
-			UIImageView userImg = new UIImageView();
+			UIImageView userImg = new UIImageView(UIImage.FromBundle("Images/Image15.png"));
 			userImg.Frame = new CGRect((navigation.DrawerWidth / 2) - 25, 15, 50, 50);
-			userImg.Image = new UIImage("Images/User.png");
 			HeaderView.AddSubview(userImg);
 			headerView.AddSubview(HeaderView);
 
@@ -116,14 +168,10 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 
 			UIView centerview = new UIView();
 			centerview.Frame = new CGRect(0, 0, navigation.DrawerWidth, 500);
-
-			UIButton homeButton = new UIButton(new CGRect(0,0,navigation.DrawerWidth,50));
+			UIButton homeButton = new UIButton(new CGRect(0, 0, navigation.DrawerWidth, 50));
 			homeButton.SetTitle("Home", UIControlState.Normal);
 			homeButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
 			homeButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
-			homeButton.Layer.CornerRadius = 0;
-			homeButton.Layer.BorderWidth = 1;
-			homeButton.Layer.BorderColor=UIColor.FromRGB(0, 0, 0).CGColor;
 			centerview.AddSubview(homeButton);
 
 			UIButton profileButton = new UIButton(new CGRect(0, 50, navigation.DrawerWidth, 50));
@@ -131,7 +179,6 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 			profileButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
 			profileButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
 			profileButton.Layer.CornerRadius = 0;
-			profileButton.Layer.BorderWidth = 1;
 			profileButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
 			centerview.AddSubview(profileButton);
 
@@ -140,7 +187,6 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 			inboxButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
 			inboxButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
 			inboxButton.Layer.CornerRadius = 0;
-			inboxButton.Layer.BorderWidth = 1;
 			inboxButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
 			centerview.AddSubview(inboxButton);
 
@@ -149,7 +195,6 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 			outboxButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
 			outboxButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
 			outboxButton.Layer.CornerRadius = 0;
-			outboxButton.Layer.BorderWidth = 1;
 			outboxButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
 			centerview.AddSubview(outboxButton);
 
@@ -157,7 +202,6 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 			sentItemsButton.SetTitle("SentItems", UIControlState.Normal);
 			sentItemsButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
 			sentItemsButton.Layer.CornerRadius = 0;
-			sentItemsButton.Layer.BorderWidth = 1;
 			sentItemsButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
 			centerview.AddSubview(sentItemsButton);
 
@@ -165,14 +209,18 @@ The sliding main content of the NavigationDrawer which is a part of DrawerPanel 
 			trashButton.SetTitle("Trash", UIControlState.Normal);
 			trashButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
 			trashButton.Layer.CornerRadius = 0;
-			trashButton.Layer.BorderWidth = 1;
 			trashButton.Layer.BorderColor = UIColor.FromRGB(0, 0, 0).CGColor;
 			centerview.AddSubview(trashButton);
 			drawerContentView.AddSubview(centerview);
 
-			navigation.DrawerContentView =drawerContentView;
-			navigation.DrawerHeaderView =headerView;
-			this.AddSubview(navigation);
+			navigation.DrawerContentView = drawerContentView;
+			navigation.DrawerHeaderView = headerView;
+			this.Add(navigation);
+
+		}
+
+	}
+}
 
 {% endhighlight %}
 
