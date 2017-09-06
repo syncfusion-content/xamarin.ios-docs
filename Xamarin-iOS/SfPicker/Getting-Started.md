@@ -39,7 +39,7 @@ SfPicker pickerControl;
 
     protected ViewController(IntPtr handle) : base(handle)
     {
-    // Note: this .ctor should not contain any initialization logic.
+    // Note: this constructor should not contain any initialization logic.
     }
 
     public override void ViewDidLoad()

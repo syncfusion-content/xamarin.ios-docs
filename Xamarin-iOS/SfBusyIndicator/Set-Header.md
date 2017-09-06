@@ -40,7 +40,7 @@ BusyIndicator with title
 	SFBusyIndicator busyindicator = new SFBusyIndicator();
 	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
 	busyindicator.Title="Loading...";
-	busyindicator.Fontface=Typeface.create("Arial",Typeface.NONE);
+	busyindicator.FontFace=Typeface.create("Arial",Typeface.NONE);
 
 {% endhighlight %}
 

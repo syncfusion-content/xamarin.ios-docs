@@ -14,7 +14,7 @@ This section explains you the steps required to render the SfCalendar control, t
 
 ## Creating your first SfCalendar in Xamarin.iOS.
 
-This section provides a quick overview to work with the SfCalendar in Objective C. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
+This section provides a quick overview to work with the SfCalendar in Objective-C. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
 
 ### Referencing Essential Studio Components in Your Solution
 
@@ -22,7 +22,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
 And below assembly reference to the iOS unified project.
-iOS-unifed\Syncfusion.SfCalendar.iOS.dll
+iOS-unified\Syncfusion.SfCalendar.iOS.dll
 
 
 ### And and Configure the SfCalendar
