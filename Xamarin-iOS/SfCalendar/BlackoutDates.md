@@ -28,7 +28,7 @@ N> Beyond the min max date range, following restrictions will be applied.
 {% highlight c# %}
 
 	DateTime d1=new DateTime(2015,1,1);
-	calendar.MinDate=mindate;
+	calendar.MinDate=d1;
 	DateTime d2=new DateTime(2040,12,12);
 	calendar.MaxDate=d2;
 	
