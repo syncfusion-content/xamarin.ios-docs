@@ -55,9 +55,9 @@ N> SfRatingItem keeps both selected and unselected view respectively.
 
 {% highlight C# %}
 
-	NSMutableArray Sfitem = new NSMutableArray();
-	Sfitem.Add(item);
-	rating.Items = Sfitem;
+	NSMutableArray collection = new NSMutableArray();
+	collection.Add(item);
+	rating.Items = collection;
 
 {% endhighlight %}
 
@@ -106,14 +106,14 @@ When `EnableCustomItems` property is enabled, it will display the custom items a
 		imageView10.Image = UIImage.FromBundle("Excited_Unselected");
 		item5.UnSelectedView = imageView10;
 	
-	NSMutableArray Sfitem = new NSMutableArray();
-            Sfitem.Add(item);
-            Sfitem.Add(item2);
-        	Sfitem.Add(item3);
-		Sfitem.Add(item4);
-		Sfitem.Add(item5);
+	NSMutableArray collection = new NSMutableArray();
+            collection.Add(item);
+            collection.Add(item2);
+        	collection.Add(item3);
+		collection.Add(item4);
+		collection.Add(item5);
 	rating.EnableCustomView = true;
-	rating.Items = Sfitem;
+	rating.Items = collection;
 
 {% endhighlight %}
 

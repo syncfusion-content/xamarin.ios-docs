@@ -18,7 +18,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 And below assembly reference to the iOS unified project.
 
-iOS-unifed\Syncfusion.SfCarousel.iOS.dll
+iOS-unified\Syncfusion.SfCarousel.iOS.dll
 
 ## Add SfCarousel
 
