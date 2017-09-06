@@ -73,13 +73,13 @@ For styling customization, set the RatingSettings property value with SfRatingSe
 
 {% highlight c# %}
 
-	SFRatingSettings ratingSetting = new SFRatingSettings ();
-	ratingSetting.RatedFill = UIColor.FromRGB (251,209,10);
-	ratingSetting.RatedStroke = UIColor.FromRGB (251,209,10);
-    ratingSetting.RatedStrokeThickness=10;
-	ratingSetting.UnRatedFill=UIColor.FromRGB (251,209,10);
-	ratingSetting.UnRatedStrokeThickness=10;
-	rating.RatingSettings=ratingsettings	
+	SFRatingSettings settings = new SFRatingSettings ();
+	settings.RatedFill = UIColor.FromRGB (251,209,10);
+	settings.RatedStroke = UIColor.FromRGB (251,209,10);
+    settings.RatedStrokeThickness=10;
+	settings.UnRatedFill=UIColor.FromRGB (251,209,10);
+	settings.UnRatedStrokeThickness=10;
+	rating.RatingSettings=settings;	
 			
 {% endhighlight %}
 

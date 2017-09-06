@@ -19,7 +19,7 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 You have to add the following assembly reference to the iOS unified project
 
-iOS-unifed\Syncfusion.SfRotator.iOS.dll
+iOS-unified\Syncfusion.SfRotator.iOS.dll
 
 ## Add SfRotator 
 

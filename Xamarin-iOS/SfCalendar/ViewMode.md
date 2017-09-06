@@ -15,7 +15,7 @@ By default SfCalendar control is assigned with month view. Based on the user’s
 
 ## Month View
 
-This displays entire dates of a particular month, by default current month will be displayed on loading. The current date is provided with seperate color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
+This displays entire dates of a particular month, by default current month will be displayed on loading. The current date is provided with unique color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
 
 The dates in month view can be selected by three ways such as single, multiple and range which can be modified using `SelectionMode`.
 
@@ -33,7 +33,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 * Current day text color can be modified using `TodayTextColor`. 
 * The month view label settings class has the APIs to change date text size, day text size and format options. 
 * The background color of the inline view can be modified using `InlineBackgroundColor` property.
-* The blackoutdate color can be modified with `BlackoutColor` property.
+* The blackout date color can be modified with `BlackoutColor` property.
 
 {% highlight c# %}
 
@@ -46,7 +46,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 	monthViewSettings.TodayTextColor=UIColor.ParseColor("#1B79D6");
 	monthViewSettings.InlineBackgroundColor=UIColor.ParseColor("#E4E8ED");
 	monthViewSettings.WeekDayBackGroundColor=UIColor.ParseColor("#F7F7F7");
-	monthviewSettings.MonthLabelSettings = labelSettings;
+	monthViewSettings.MonthLabelSettings = labelSettings;
 	calendar.MonthViewSettings=monthViewSettings;
 	
 {% endhighlight %}
