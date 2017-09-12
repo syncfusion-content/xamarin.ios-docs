@@ -16,7 +16,7 @@ N> Default `Culture` property value is en-US.
 
 {% highlight C# %}
 
-	numericupdown.Culture = new  new NSLocale("en-IN");
+	numeric.Culture = new  new NSLocale("en-IN");
 	
 {% endhighlight %}
 

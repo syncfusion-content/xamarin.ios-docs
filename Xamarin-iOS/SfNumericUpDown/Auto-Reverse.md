@@ -16,7 +16,7 @@ N> By default the property value is false.
 
 {% highlight C# %}
 
-numericupdown.AutoReverse = true;
+numeric.AutoReverse = true;
 
 {% endhighlight %}
 
@@ -32,8 +32,8 @@ N> By default the minimum property value is 0 and maximum property value is 100.
 
 {% highlight C# %}
 
-	numericupdown.Minimum = 10;
-	numericupdown.Maximum = 50
+	numeric.Minimum = 10;
+	numeric.Maximum = 50
 
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ N> By default the property value is 1.
 
 {% highlight C# %}
 
-	numericupdown.StepValue = 6;
+	numeric.StepValue = 6;
 
 {% endhighlight %}
 
