@@ -45,8 +45,8 @@ The SfNumericUpDown control configured entirely in C# code. The following steps 
 
 {% highlight c# %}
 
-SFNumericUpDown numericupdown=new SFNumericUpDown();
-this.AddSubview(numericupdown);
+SFNumericUpDown numeric=new SFNumericUpDown();
+this.AddSubview(numeric);
 
 {% endhighlight %}
 
@@ -60,7 +60,7 @@ The SfNumericUpDown control display value can be set using `Value` property.
 
 {% highlight C# %}
 
-numericupdown.Value= 5;
+numeric.Value= 5;
 
 {% endhighlight %}
 
@@ -74,7 +74,7 @@ SfNumericTextBox provides option to display the value in double or decimal. Foll
 
 {% highlight c# %}
 
-numericupdown.ParsingMode=SFNumericUpDownParsingMode.Decimal;
+numeric.ParsingMode=SFNumericUpDownParsingMode.Decimal;
 	
 {% endhighlight %}
 
@@ -96,7 +96,7 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 
 {% highlight C# %}
 
-numericupdown.FormatString= @“c”;
+numeric.FormatString= @“c”;
 
 {% endhighlight %}
 

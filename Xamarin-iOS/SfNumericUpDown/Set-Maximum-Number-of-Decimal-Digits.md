@@ -16,7 +16,7 @@ N> The `MaximumNumberDecimalDigits` property can be provided with positive value
 
 {% highlight C# %}
 
-	numericupdown.MaximumNumberDecimalDigits = 2;
+	numeric.MaximumNumberDecimalDigits = 2;
 
 {% endhighlight %}
 
