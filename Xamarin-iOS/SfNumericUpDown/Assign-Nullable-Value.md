@@ -16,7 +16,7 @@ N> By default, the property value is false.
 
 {% highlight C# %}
 
-numericupdown.AllowNull=true;
+numeric.AllowNull=true;
 
 {% endhighlight %}
 
@@ -32,7 +32,7 @@ The `WaterMark` text is used to display some information regarding the SfNumeric
 
 {% highlight c# %}
 
-numericupdown.WaterMark = (NSString)"NumericUpDown";
+numeric.WaterMark = (NSString)"NumericUpDown";
 
 {% endhighlight %}
 
