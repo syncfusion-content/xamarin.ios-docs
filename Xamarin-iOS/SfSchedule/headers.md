@@ -25,7 +25,7 @@ You can customize the height for the Header in Schedule using `HeaderHeight` in 
 
 You can change the header format and style using `HeaderStyle` property in schedule.
 
-You can change the background color,text style and text color using properties such as [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFHeaderStyle~BackgroundColor.html),[TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFHeaderStyle~TextStyle.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFHeaderStyle~TextColor.html) of Header using `HeaderStyle` property in schedule.
+You can change the background color,text style and text color using properties such as [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~BackgroundColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextColor.html) of Header using `HeaderStyle` property in schedule.
 
 {% highlight c# %}
 
