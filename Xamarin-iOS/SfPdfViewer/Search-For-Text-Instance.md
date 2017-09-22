@@ -140,7 +140,7 @@ SearchNext method of PDF viewer can be used to navigate to the successive match 
 
 		SfPdfViewer pdfViewerControl;
         UITextField searchTextField;
-        UIButton searchNextBtn;
+        UIButton searchNextButton;
 
 		public override void ViewDidLoad()
         {
@@ -148,13 +148,13 @@ SearchNext method of PDF viewer can be used to navigate to the successive match 
 
             pdfViewerControl = new SfPdfViewer();
             pdfViewerControl.Frame = new CGRect(this.View.Frame.X, 60, this.View.Frame.Width, this.View.Frame.Height - 20);
-            searchNextBtn = new UIButton();
-            searchNextBtn.Frame = new CGRect(500, 5, 150, 50);
-            searchNextBtn.SetTitle("SearchNext", UIControlState.Normal);
-            searchNextBtn.TouchUpInside += SearchNextBtn_TouchUpInside;
-            searchNextBtn.SetTitleColor(UIColor.Black, UIControlState.Normal);
-            searchNextBtn.BackgroundColor = UIColor.LightGray;
-            this.View.AddSubview(searchNextBtn);
+            searchNextButton = new UIButton();
+            searchNextButton.Frame = new CGRect(500, 5, 150, 50);
+            searchNextButton.SetTitle("SearchNext", UIControlState.Normal);
+            searchNextButton.TouchUpInside += SearchNextButton_TouchUpInside;
+            searchNextButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+            searchNextButton.BackgroundColor = UIColor.LightGray;
+            this.View.AddSubview(searchNextButton);
             searchTextField = new UITextField();
             searchTextField.Frame = new CGRect(150, 10, 300, 40);
             searchTextField.BorderStyle = UITextBorderStyle.Line;
@@ -168,7 +168,7 @@ SearchNext method of PDF viewer can be used to navigate to the successive match 
 
         }
 
-        private void SearchNextBtn_TouchUpInside(object sender, EventArgs e)
+        private void SearchNextButton_TouchUpInside(object sender, EventArgs e)
         {
             pdfViewerControl.SearchNext(searchTextField.Text);
         }
@@ -192,7 +192,7 @@ SearchPrevious method of PDF viewer can be used to navigate to the previous matc
 
 SfPdfViewer pdfViewerControl;
         UITextField searchTextField;
-        UIButton searchPreviousBtn;
+        UIButton searchPreviousButton;
 
 public override void ViewDidLoad()
         {
@@ -200,13 +200,13 @@ public override void ViewDidLoad()
 
             pdfViewerControl = new SfPdfViewer();
             pdfViewerControl.Frame = new CGRect(this.View.Frame.X, 60, this.View.Frame.Width, this.View.Frame.Height - 20);
-            searchPreviousBtn = new UIButton();
-            searchPreviousBtn.Frame = new CGRect(500, 5, 150, 50);
-            searchPreviousBtn.SetTitle("SearchNext", UIControlState.Normal);
-            searchPreviousBtn.TouchUpInside += SearchPreviousBtn_TouchUpInside;
-            searchPreviousBtn.SetTitleColor(UIColor.Black, UIControlState.Normal);
-            searchPreviousBtn.BackgroundColor = UIColor.LightGray;
-            this.View.AddSubview(searchPreviousBtn);
+            searchPreviousButton = new UIButton();
+            searchPreviousButton.Frame = new CGRect(500, 5, 150, 50);
+            searchPreviousButton.SetTitle("SearchNext", UIControlState.Normal);
+            searchPreviousButton.TouchUpInside += SearchPreviousButton_TouchUpInside;
+            searchPreviousButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+            searchPreviousButton.BackgroundColor = UIColor.LightGray;
+            this.View.AddSubview(searchPreviousButton);
             searchTextField = new UITextField();
             searchTextField.Frame = new CGRect(150, 10, 300, 40);
             searchTextField.BorderStyle = UITextBorderStyle.Line;
@@ -220,7 +220,7 @@ public override void ViewDidLoad()
 
         }
 
-        private void SearchPreviousBtn_TouchUpInside(object sender, EventArgs e)
+        private void SearchPreviousButton_TouchUpInside(object sender, EventArgs e)
         {
             pdfViewerControl.SearchNext(searchTextField.Text);
         }
@@ -298,7 +298,7 @@ CancelSearch method of the PDF viewer can be used to cancel the text search prog
 
 		SfPdfViewer pdfViewerControl;
         UITextField searchTextField;
-        UIButton cancelSearchBtn;
+        UIButton cancelSearchButton;
 
 		public override void ViewDidLoad()
         {
@@ -306,13 +306,13 @@ CancelSearch method of the PDF viewer can be used to cancel the text search prog
 
             pdfViewerControl = new SfPdfViewer();
             pdfViewerControl.Frame = new CGRect(this.View.Frame.X, 60, this.View.Frame.Width, this.View.Frame.Height - 20);
-            cancelSearchBtn = new UIButton();
-            cancelSearchBtn.Frame = new CGRect(500, 5, 150, 50);
-            cancelSearchBtn.SetTitle("Cancel", UIControlState.Normal);
-            cancelSearchBtn.TouchUpInside += cancelSearchBtn_TouchUpInside;
-            cancelSearchBtn.SetTitleColor(UIColor.Black, UIControlState.Normal);
-            cancelSearchBtn.BackgroundColor = UIColor.LightGray;
-            this.View.AddSubview(cancelSearchBtn);
+            cancelSearchButton = new UIButton();
+            cancelSearchButton.Frame = new CGRect(500, 5, 150, 50);
+            cancelSearchButton.SetTitle("Cancel", UIControlState.Normal);
+            cancelSearchButton.TouchUpInside += cancelSearchButton_TouchUpInside;
+            cancelSearchButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+            cancelSearchButton.BackgroundColor = UIColor.LightGray;
+            this.View.AddSubview(cancelSearchButton);
             searchTextField = new UITextField();
             searchTextField.Frame = new CGRect(150, 10, 300, 40);
             searchTextField.BorderStyle = UITextBorderStyle.Line;
@@ -326,7 +326,7 @@ CancelSearch method of the PDF viewer can be used to cancel the text search prog
 
         }
 
-        private void cancelSearchBtn_TouchUpInside(object sender, EventArgs e)
+        private void cancelSearchButton_TouchUpInside(object sender, EventArgs e)
         {
             pdfViewerControl.CancelSearch();
         }
@@ -380,8 +380,8 @@ After the adding the search toolbar, the MainViewController.cs file will look as
         private UIView toolbar;
         UITextField pageNumberField = new UITextField();
         UILabel totalPageLabel = new UILabel();
-        UIButton previousPageBtn = new UIButton();
-        UIButton nextPageBtn = new UIButton();
+        UIButton previousPageButton = new UIButton();
+        UIButton nextPageButton = new UIButton();
         UIToolbar toolBar = new UIToolbar();
         UISearchBar searchBar = new UISearchBar();
         UIButton searchButton = new UIButton();
@@ -436,18 +436,18 @@ After the adding the search toolbar, the MainViewController.cs file will look as
             totalPageLabel.Frame = new CGRect(120, 5, 40, 40);
             toolBar.Add(totalPageLabel);
 
-            nextPageBtn.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
-            nextPageBtn.Frame = new CGRect(175, 5, 40, 40);
-            nextPageBtn.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
-            nextPageBtn.TouchUpInside += NextPageBtn_TouchUpInside1;
-            nextPageBtn.SetBackgroundImage(UIImage.FromFile("PageDown.png"), UIControlState.Normal);
-            toolBar.Add(nextPageBtn);
+            nextPageButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+            nextPageButton.Frame = new CGRect(175, 5, 40, 40);
+            nextPageButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+            nextPageButton.TouchUpInside += NextPageButton_TouchUpInside1;
+            nextPageButton.SetBackgroundImage(UIImage.FromFile("PageDown.png"), UIControlState.Normal);
+            toolBar.Add(nextPageButton);
 
-            previousPageBtn.Frame = new CGRect(230, 5, 40, 40);
-            previousPageBtn.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
-            previousPageBtn.TouchUpInside += PreviousPageBtn_TouchUpInside1; ;
-            previousPageBtn.SetBackgroundImage(UIImage.FromFile("PageUp.png"), UIControlState.Normal);
-            toolBar.Add(previousPageBtn);
+            previousPageButton.Frame = new CGRect(230, 5, 40, 40);
+            previousPageButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+            previousPageButton.TouchUpInside += PreviousPageButton_TouchUpInside1; ;
+            previousPageButton.SetBackgroundImage(UIImage.FromFile("PageUp.png"), UIControlState.Normal);
+            toolBar.Add(previousPageButton);
 
             searchButton.Frame = new CGRect(parentView.Frame.Width - 50, 5, 40, 40);
             searchButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
@@ -535,12 +535,12 @@ After the adding the search toolbar, the MainViewController.cs file will look as
             pageNumberField.Text = pdfViewerControl.PageNumber.ToString();
 
         }
-        private void PreviousPageBtn_TouchUpInside1(object sender, EventArgs e)
+        private void PreviousPageButton_TouchUpInside1(object sender, EventArgs e)
         {
             pdfViewerControl.GoToPreviousPage();
         }
 
-        private void NextPageBtn_TouchUpInside1(object sender, EventArgs e)
+        private void NextPageButton_TouchUpInside1(object sender, EventArgs e)
         {
             pdfViewerControl.GoToNextPage();
         }
@@ -549,12 +549,12 @@ After the adding the search toolbar, the MainViewController.cs file will look as
         {
             pageNumberField.Text = pdfViewerControl.PageNumber.ToString();
         }
-        private void NextPageBtn_TouchUpInside(object sender, EventArgs e)
+        private void NextPageButton_TouchUpInside(object sender, EventArgs e)
         {
             pdfViewerControl.GoToNextPage();
         }
 
-        private void PreviousPageBtn_TouchUpInside(object sender, EventArgs e)
+        private void PreviousPageButton_TouchUpInside(object sender, EventArgs e)
         {
             pdfViewerControl.GoToPreviousPage();
         }
