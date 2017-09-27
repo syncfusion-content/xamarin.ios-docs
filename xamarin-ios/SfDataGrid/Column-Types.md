@@ -807,4 +807,7 @@ dataGrid.Columns.Add(numericColumn);
 
 * [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
 
+* [MinValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridEditorColumn~MinValue.html) - you can set the minimum value of the numericColumn using `GridNumericColumn.MinValue` property.
+* [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridEditorColumn~MaxValue.html) - you can set the maximum value of the numericColumn using `GridNumericColumn.MaxValue` property.
+
 ![](SfDataGrid_images/NumericColumn.jpg)

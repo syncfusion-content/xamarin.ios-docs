@@ -25,6 +25,8 @@ SfDataGrid provides three types of scrolling mode which can be customized using 
 dataGrid.ScrollingMode = ScrollingMode.PixelLine; 
 {% endhighlight %}
 
+![](SfDataGrid_images/PixelLine.gif)
+
 ### Line
 
 `ScrollingMode.Line`, will allow to scroll its contents based on lines. i.e., the view will be updated only when the offset values reaches the origin of a row or column in the bound collection
@@ -33,6 +35,8 @@ dataGrid.ScrollingMode = ScrollingMode.PixelLine;
 dataGrid.ScrollingMode = ScrollingMode.Line; 
 {% endhighlight %}
 
+![](SfDataGrid_images/Line.gif)
+
 ### Pixel
 
 `ScrollingMode.Pixel`, will allow to scroll its contents based on pixel values. i.e., the view will be updated each pixel change of the offsets and rows or columns will appear clipped when offset exceeds the origin of the row or column.
@@ -40,6 +44,8 @@ dataGrid.ScrollingMode = ScrollingMode.Line;
 {% highlight c# %}
 dataGrid.ScrollingMode = ScrollingMode.Pixel; 
 {% endhighlight %}
+
+![](SfDataGrid_images/pixel.gif)
 
 ## Programmatic Scrolling
 
@@ -55,6 +61,8 @@ dataGrid.ScrollToRowColumnIndex(int rowIndex, int columnIndex);
 
 {% endhighlight %}
 
+![](SfDataGrid_images/ScrollToRowColumn.gif)
+
 ### Scroll to Row Index
 
 * You can scroll programmatically to particular Row [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowIndex.html) method by passing row index.
@@ -65,6 +73,8 @@ dataGrid.ScrollToRowIndex(int rowIndex);
 
 {% endhighlight %}
 
+![](SfDataGrid_images/ScrollToRowIndex.gif)
+
 ### Scroll to Column Index
 
 * You can scroll programmatically to particular Column [SfDataGrid.ScrollToColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToColumnIndex.html) method by passing column index.
@@ -74,3 +84,5 @@ dataGrid.ScrollToRowIndex(int rowIndex);
 dataGrid.ScrollToColumnIndex(int columnIndex);
 
 {% endhighlight %}
+
+![](SfDataGrid_images/ScrollToColumnIndex.gif)

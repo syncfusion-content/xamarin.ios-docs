@@ -31,6 +31,37 @@ The `QueryColumnDragging` event provide the following arguments through [QueryC
 
 ![](SfDataGrid_images/ColumnDragAndDrop.png)
 
+### Customize column drag and drop indicators
+
+SfDataGrid allows you to customize the column drag and drop indicators by writing a Style class overriding from DataGridStyle and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
+
+The following code example shows how to Customize column drag and drop indicators in SfDataGrid.
+
+{% highlight c#%}
+
+dataGrid.GridStyle = new CustomGridStyle();
+
+{% endhighlight %}
+
+{% highlight c#%}
+// Custom style class
+public class CustomGridStyle : DataGridStyle
+{
+    public CustomGridStyle()
+    {     
+    }
+    public override UIImage GetColumnDragUpIndicator()
+    {
+        return new ImageMapStream(LoadResource("GreenUp.png").ToArray()).ToUIImage();
+    }
+    public override UIImage GetColumnDragDownIndicator()
+    {
+        return new ImageMapStream(LoadResource("GreenDown.png").ToArray()).ToUIImage();
+    }
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/CustomizeColumnDragAndDrop.png)
 
 ## How to disable dragging for particular column?
 
