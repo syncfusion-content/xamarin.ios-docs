@@ -74,6 +74,23 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [4]);
 dataGrid.SelectedItems.Add (viewModel.OrdersInfo [5]);
 {% endhighlight %}
 
+## CurrentItem
+
+[SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CurrentItem.html) property which hold the last selected row of the SfDataGrid. You can get the current item in the `SfDataGrid.SelectionChanged` event, by setting the `SfDataGrid.SelectionMode` as `Multiple` or `SingleDeselect`. If the `SelectionMode` is `Single` currentItem and selectedItem are same.
+
+The below code example illustrates how to setting the selection mode for SfDataGrid and hooking the SelectionChanged event.
+
+{% highlight c# %}
+dataGrid.SelectionMode = SelectionMode.Multiple; 
+ 
+dataGrid.SelectionChanged += DataGrid_SelectionChanged; 
+ 
+void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e) 
+{ 
+ var currentItem = dataGrid.CurrentItem; 
+} 
+{% endhighlight %}
+
 ## Selection Events
 
 The SfDataGrid provides you the following events for Selection:
@@ -107,23 +124,6 @@ private void DataGrid_SelectionChanged (object sender, GridSelectionChangedEvent
     // Gets the selected item.
     var selectedItems = e.AddedItems[0];
 }
-{% endhighlight %}
-
-### CurrentItem
-
-[SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CurrentItem.html) property which hold the last selected row data of the SfDataGrid. You can get the current item in the `SfDataGrid.SelectionChanged` event, by setting the `SfDataGrid.SelectionMode` as `Multiple` or `SingleDeselect`. 
-
-The below code example illustrates how to setting the selection mode for SfDataGrid and hooking the SelectionChanged event.
-
-{% highlight c# %}
-dataGrid.SelectionMode = SelectionMode.Multiple; 
- 
-dataGrid.SelectionChanged += DataGrid_SelectionChanged; 
- 
-void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e) 
-{ 
- var currentItem = dataGrid.CurrentItem; 
-} 
 {% endhighlight %}
 
 ## Row Header Selection
