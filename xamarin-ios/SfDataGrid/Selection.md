@@ -74,11 +74,13 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [4]);
 dataGrid.SelectedItems.Add (viewModel.OrdersInfo [5]);
 {% endhighlight %}
 
-## CurrentItem
+### CurrentItem
 
-[SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CurrentItem.html) property which hold the last selected row of the SfDataGrid. You can get the current item in the `SfDataGrid.SelectionChanged` event, by setting the `SfDataGrid.SelectionMode` as `Multiple` or `SingleDeselect`. If the `SelectionMode` is `Single` currentItem and selectedItem are same.
+[SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CurrentItem.html) property holds the underlying data of the last selected row in a SfDataGrid. 
 
-The below code example illustrates how to setting the selection mode for SfDataGrid and hooking the SelectionChanged event.
+You can get the current item in the `SfDataGrid.SelectionChanged` event, by setting the `SfDataGrid.SelectionMode` as `Multiple` or `SingleDeselect`. If the `SelectionMode` is `Single` currentItem and selectedItem are same.
+
+The below code example illustrates how to set the selection mode for SfDataGrid in the SelectionChanged event.
 
 {% highlight c# %}
 dataGrid.SelectionMode = SelectionMode.Multiple; 
@@ -88,6 +90,8 @@ dataGrid.SelectionChanged += DataGrid_SelectionChanged;
 void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e) 
 { 
  var currentItem = dataGrid.CurrentItem; 
+
+ //your codes
 } 
 {% endhighlight %}
 
