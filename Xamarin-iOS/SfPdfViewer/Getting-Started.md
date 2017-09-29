@@ -254,8 +254,8 @@ In MainViewController.cs, add the below code snippet which contains the implemen
         private UIView toolbar;
         UITextField pageNumberField = new UITextField();
         UILabel totalPageLabel = new UILabel();
-        UIButton previousPageBtn = new UIButton();
-        UIButton nextPageBtn = new UIButton();
+        UIButton previousPageButton = new UIButton();
+        UIButton nextPageButton = new UIButton();
         UIToolbar toolBar = new UIToolbar();
         
 
@@ -313,27 +313,27 @@ In MainViewController.cs, add the below code snippet which contains the implemen
             totalPageLabel.Frame = new CGRect(120, 5, 40, 40);
             toolBar.Add(totalPageLabel);
 
-            nextPageBtn.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
-            nextPageBtn.Frame = new CGRect(175, 5, 40, 40);
-            nextPageBtn.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
-            nextPageBtn.TouchUpInside += NextPageBtn_TouchUpInside1;
-            nextPageBtn.SetBackgroundImage(UIImage.FromFile("PageDown.png"), UIControlState.Normal);
-            toolBar.Add(nextPageBtn);
+            nextPageButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+            nextPageButton.Frame = new CGRect(175, 5, 40, 40);
+            nextPageButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+            nextPageButton.TouchUpInside += NextPageButton_TouchUpInside1;
+            nextPageButton.SetBackgroundImage(UIImage.FromFile("PageDown.png"), UIControlState.Normal);
+            toolBar.Add(nextPageButton);
 
-            previousPageBtn.Frame = new CGRect(230, 5, 40, 40);
-            previousPageBtn.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
-            previousPageBtn.TouchUpInside += PreviousPageBtn_TouchUpInside1; ;
-            previousPageBtn.SetBackgroundImage(UIImage.FromFile("PageUp.png"), UIControlState.Normal);
-            toolBar.Add(previousPageBtn);
+            previousPageButton.Frame = new CGRect(230, 5, 40, 40);
+            previousPageButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+            previousPageButton.TouchUpInside += PreviousPageButton_TouchUpInside1; ;
+            previousPageButton.SetBackgroundImage(UIImage.FromFile("PageUp.png"), UIControlState.Normal);
+            toolBar.Add(previousPageButton);
             return toolBar;
         }
 
-        private void PreviousPageBtn_TouchUpInside1(object sender, EventArgs e)
+        private void PreviousPageButton_TouchUpInside1(object sender, EventArgs e)
         {
             pdfViewerControl.GoToPreviousPage();
         }
 
-        private void NextPageBtn_TouchUpInside1(object sender, EventArgs e)
+        private void NextPageButton_TouchUpInside1(object sender, EventArgs e)
         {
             pdfViewerControl.GoToNextPage();
         }
@@ -342,12 +342,12 @@ In MainViewController.cs, add the below code snippet which contains the implemen
         {
             pageNumberField.Text = pdfViewerControl.PageNumber.ToString();
         }
-        private void NextPageBtn_TouchUpInside(object sender, EventArgs e)
+        private void NextPageButton_TouchUpInside(object sender, EventArgs e)
         {
             pdfViewerControl.GoToNextPage();
         }
 
-        private void PreviousPageBtn_TouchUpInside(object sender, EventArgs e)
+        private void PreviousPageButton_TouchUpInside(object sender, EventArgs e)
         {
             pdfViewerControl.GoToPreviousPage();
         }
