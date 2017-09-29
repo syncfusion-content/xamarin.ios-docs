@@ -59,6 +59,9 @@ SfDataGrid allow you to scroll to particular Row and Column index from programma
 
 dataGrid.ScrollToRowColumnIndex(int rowIndex, int columnIndex);
 
+//For example 
+dataGrid.ScrollToRowColumnIndex(20, 6);
+
 {% endhighlight %}
 
 ![](SfDataGrid_images/ScrollToRowColumn.gif)
@@ -71,6 +74,9 @@ dataGrid.ScrollToRowColumnIndex(int rowIndex, int columnIndex);
 
 dataGrid.ScrollToRowIndex(int rowIndex);
 
+//For example 
+dataGrid.ScrollToRowIndex(20);
+
 {% endhighlight %}
 
 ![](SfDataGrid_images/ScrollToRowIndex.gif)
@@ -82,6 +88,9 @@ dataGrid.ScrollToRowIndex(int rowIndex);
 {% highlight C# %}
 
 dataGrid.ScrollToColumnIndex(int columnIndex);
+
+//For example
+dataGrid.ScrollToColumnIndex(7);
 
 {% endhighlight %}
 
