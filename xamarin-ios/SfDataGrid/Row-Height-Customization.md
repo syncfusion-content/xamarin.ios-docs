@@ -90,9 +90,6 @@ dataGrid.RowHeight = 60;
 
 SfDataGrid allows you to customize the height of a grid row on demand by handling the [SfDataGrid.QueryRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~QueryRowHeight_EV.html) event. This event is raised for the grid rows whenever they come to view and hence you can customize the height of a particular row on demand by using the row index. Setting height to zero will collapse all the row in the grid. 
 
-### Update Row Height while editing
-SfDataGrid allows you to update the height of a grid while editing the grid cell using [SfDataGrid.QueryRowHeight]() event.  
-
 ### QueryRowHeight
 
 `SfDataGrid.QueryRowHeight` is the event that returns row heights on demand. This event receives two arguments namely the sender that handles the SfDataGrid and the [QueryRowHeightEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowHeightEventArgs.html). The `QueryRowHeightEventArgs` has the following properties.
