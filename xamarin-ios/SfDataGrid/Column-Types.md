@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Column Types | SfDataGrid | Xamarin.iOS | Syncfusion
 description: What are all the different types of column and it's properties and customizations in a SfDataGrid.
@@ -807,7 +807,7 @@ dataGrid.Columns.Add(numericColumn);
 
 * [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn~NumberNegativePattern.html) - You can format the pattern of negative numeric values using `GridNumericColumn.NumberNegativePattern`.
 
-* [MinValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridEditorColumn~MinValue.html) - You can set the minimum value of the numericColumn using `GridNumericColumn.MinValue` property.
-* [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridEditorColumn~MaxValue.html) - You can set the maximum value of the numericColumn using `GridNumericColumn.MaxValue` property.
+* [MinValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridEditorColumn~MinValue.html) - You can set the minimum value of the numeric column using `GridNumericColumn.MinValue` property.
+* [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridEditorColumn~MaxValue.html) - You can set the maximum value of the numeric column using `GridNumericColumn.MaxValue` property.
 
 ![](SfDataGrid_images/NumericColumn.jpg)

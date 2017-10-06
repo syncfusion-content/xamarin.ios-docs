@@ -14,7 +14,6 @@ This section explains you about how to enable selection in SfDataGrid and about 
 SfDataGrid lets you to select a specific row or group of rows either programmatically or by touch interactions. To enable Selection in SfDataGrid, you need to set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property to value other than `None`. SfDataGrid has different selection modes to perform selection operation as listed below.
 
 ## Selection Modes 
-
 <table>
 <tr>
 <th> Modes </th>
@@ -75,12 +74,11 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [5]);
 {% endhighlight %}
 
 ### CurrentItem
-
 [SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CurrentItem.html) property holds the underlying data of the last selected row in a SfDataGrid. 
 
 You can get the current item in the `SfDataGrid.SelectionChanged` event, by setting the `SfDataGrid.SelectionMode` as `Multiple` or `SingleDeselect`. If the `SelectionMode` is `Single` currentItem and selectedItem are same.
 
-The below code example illustrates how to set the selection mode for SfDataGrid in the SelectionChanged event.
+The below code example illustrates how to set the selection mode for SfDataGrid in the `SelectionChanged` event.
 
 {% highlight c# %}
 dataGrid.SelectionMode = SelectionMode.Multiple; 
