@@ -92,7 +92,42 @@ public class Dark : DataGridStyle
 The following picture shows the grid loaded in different styles.
 
 ![](SfDataGrid_images/Styles.png)
-![](SfDataGrid_images/AlternatingStyle1.png)
+
+## Applying alternate row style
+SfDataGrid allows you to apply the alternative row style by writing a custom grid style deriving from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
+{% highlight c# %}
+//Apply alternative row style
+dataGrid.GridStyle = new CustomStyle ();
+
+// Custom style class
+public class CustomGridStyle : DataGridStyle
+{
+    public CustomGridStyle()
+    {   
+    }
+    public override UIColor GetAlternatingRowBackgroundColor()
+    {
+        return UIColor.Gray;
+    }
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/AlternateRowStyle.png)
+
+## Customizing the alternation count
+
+SfDataGrid allows you to customize the alternate row count for applying the alternate row style using the [SfDataGrid.AlternationCount](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AlternationCount.html) property.
+
+The below code illustrates how to set the alternate row count.
+
+{% highlight c# %}
+
+//Apply alternative row count
+dataGrid.AlternationCount = 3;
+
+{% endhighlight %}
+
+![](SfDataGrid_images/AlernationCount.png)
 
 ## Border Customization
 
@@ -180,9 +215,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ![](SfDataGrid_images/BorderCustomization_None.png)
 
-## How to
-
-### Change the Sorting Icon in column headers
+## Customizing the sort icons in header
 
 You can load any desired image as the sort icon in the SfDataGrid using the GetHeaderSortIndicatorDown and GetHeaderSortIndicatorUp overrides of the `DataGridStyle` class. The following code example illustrates how to change the SortIcon in SfDataGrid.
 
@@ -212,7 +245,7 @@ The following screenshots shows the final outcome of the above code
 
 N> The image's BuildAction must be set to BundleResource so that we can access the image via its name.
 
-### Change the color of the resizing indicator
+## Customizing resizing indicator
 
 You can change the color of the resizing indicator using the GetResizingIndicatorColor override of the `DataGridStyle` class. The following code example illustrates how to change the color of the ResizingIndicator in SfDataGrid. 
 
