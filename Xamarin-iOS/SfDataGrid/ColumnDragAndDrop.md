@@ -32,10 +32,9 @@ The `QueryColumnDragging` event provide the following arguments through [QueryC
 ![](SfDataGrid_images/ColumnDragAndDrop.png)
 
 ## Customize column drag and drop indicators
-
 SfDataGrid allows you to customize the column drag and drop indicators by writing a custom grid style deriving from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridStyle.html) property.
 
-The following code example shows how to Customize column drag and drop indicators in SfDataGrid.
+The following code example shows how to customize column drag and drop indicators in SfDataGrid.
 
 {% highlight c#%}
 
