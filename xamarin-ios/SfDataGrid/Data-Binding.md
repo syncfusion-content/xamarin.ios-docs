@@ -98,6 +98,9 @@ N> DataGrid creates different types of views derived from `ICollectionViewAdv` i
 
 The following property is associated with `View`.
 
+I> `View` related properties can be used only after creating `SfDataGrid` view. Hence changes related to view can be done in `SfDataGrid.GridViewCreated` or `SfDataGrid.GridLoaded` event or in runtime only. 
+
+
 ### LiveDataUpdateMode
 
 SfDataGrid provides support to update the view during data manipulation operations and property changes using LiveDataUpdateMode(https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.iOS~Syncfusion.Data.LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
