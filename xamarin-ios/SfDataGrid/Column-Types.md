@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column Types | SfDataGrid | Xamarin.iOS | Syncfusion
 description: What are all the different types of column and it's properties and customizations in a SfDataGrid.
@@ -10,6 +10,7 @@ documentation: UG
 # Column Types
 
 SfDataGrid contains two types of column each with its own functionalities. You can use any column based on your requirements.
+ 
  
 The below table describes you the types of column and its purpose of usage in SfDataGrid.
 
