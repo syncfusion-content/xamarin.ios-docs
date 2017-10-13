@@ -97,8 +97,12 @@ public partial class ViewController : UIViewController
 `SfDataForm` is a data edit control. So, you need to create the data object that you want to get edit.
 Here data object named **ContactsInfo** created with properties.
 
+I> Ensure to set Preserve attribute to data object to resolve linker issues. For example, when linker behaviors is "Link All", you must set `Preserve` attribute to load the SfDataForm control. 
+
 {% tabs %}
 {% highlight c# %}
+using Foundation;
+[Preserve(AllMembers = true)]
 public class ContactsInfo
 {
     private string firstName;
