@@ -165,7 +165,7 @@ public class CustomComparer : IComparer<Object>, ISortDirection
 
 ## Animate Sorting icons
 
-SfDatagrid loads two different icons for denoting the Ascending and descending sort direction state. However, SfDataGrid allows you to rotate the Header Sort Direction UP icon animatedly for denoting the Header Sort Direction Down icon  by overriding the `DataGridStyle.GetHeaderSortIndicatorDown` method and returning `null`.
+SfDatagrid loads two different icons for denoting the `Ascending` and `Descending` sort direction state. However, SfDataGrid allows you to rotate the `DataGridStyle.GetHeaderSortIndicatorUp` icon animatedly for denoting the decending state by overriding the `DataGridStyle.GetHeaderSortIndicatorDown` method and returning `null`.
 
 The below code example illustrates how to enable the sorting icons animation by writing a custom style. 
 
