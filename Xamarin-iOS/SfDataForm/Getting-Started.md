@@ -15,7 +15,7 @@ SfDataForm control helps to edit data fields of any data object. It can be used 
 * Caption Customization - Support to load images as captions for editor.
 * Editors - Built-in support for text, numeric, numeric up-down, picker, date picker and time picker editors. 
 * Custom Editor - Support for loading custom editors.
-* Validation - Built-in support to validate data based on [](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx)IDataErrorInfo, [](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx)INotifyDataErrorInfo, and data annotations. Also, supports to handle validation programmatically.
+* Validation - Built-in support to validate data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx), [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx), and data annotations. Also, supports to handle validation programmatically.
 
 # Getting Started
 
@@ -64,7 +64,7 @@ Create new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 To add SfDataForm to your application, do the following steps.
 1. Add required assemblies as discussed in Assembly Deployment section.
 2. Import the `SfDataForm` namespace `Syncfusion.iOS.DataForm`.
-3. Create instance of SfDataForm control and add as a SubView to a [](https://developer.xamarin.com/api/type/MonoTouch.UIKit.UIViewController/# "")UIViewController.
+3. Create instance of SfDataForm control and add as a SubView to a [UIViewController](https://developer.xamarin.com/api/type/MonoTouch.UIKit.UIViewController/).
 
 {% tabs %}
 {% highlight c# %}
@@ -97,8 +97,12 @@ public partial class ViewController : UIViewController
 `SfDataForm` is a data edit control. So, you need to create the data object that you want to get edit.
 Here data object named **ContactsInfo** created with properties.
 
+I> Ensure to set Preserve attribute to data object to resolve linker issues. For example, when linker behaviors is "Link All", you must set `Preserve` attribute to load the SfDataForm control. 
+
 {% tabs %}
 {% highlight c# %}
+using Foundation;
+[Preserve(AllMembers = true)]
 public class ContactsInfo
 {
     private string firstName;
