@@ -115,6 +115,24 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 } 
 {% endhighlight %}
 
+### QueryRowHeights Customization
+
+SfDataGrid allows you to query a range of rows programmatically by using the [SfDataGrid.QueryingRowHeights] (https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGridHelpers~QueryRowHeights.html) method based on the requirement. 
+
+QueryRowHeights has two arguments start index and end index.
+* Start index: It indicates, from which row index the `SfDataGrid.QueryRowHeight` event has to fire.
+* End index: It indicates the end row index for the `SfDataGrid.QueryRowHeight` event to fire.
+
+The following code illustrates how to customize the row height for a range of rows in SfDataGrid.
+
+{% highlight c# %}
+
+//Customizing the QueryingRowHeights in SfDataGrid
+dataGrid.QueringRowHeights(2,5);
+//Its starts to query the rows from second row to the fifth row.
+{% endhighlight %}
+
+
 ## Auto fit the grid rows based on content
 
 SfDataGrid provides support for AutoRowHeight feature by which you can customize the row's height based on the content. This can be achieved by using the `SfDatagrid.QueryRowHeight` event and [SfDatagrid.GetRowHeight](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGridHelpers~GetRowHeight(SfDataGrid,Int32,GridRowSizingOptions).html) method. `SfDatagrid.QueryRowHeight` event returns the row height on demand and `SfDatagrid.GetRowHeight` method returns the height of the row based on the content.
