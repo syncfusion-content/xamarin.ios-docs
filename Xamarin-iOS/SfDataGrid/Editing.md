@@ -18,8 +18,6 @@ dataGrid.AllowEditing = true;
 
 ![](SfDataGrid_images/Editing_Column_iOS.jpg)
 
-N> To update the underlying property as soon as after editing the cell value, set the `Mode` of [ValueBinding](https://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~ValueBinding.html) property as "TwoWay" 
-
 ## Column Editing
 
 You can enable or disable editing for particular column by setting [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property.
