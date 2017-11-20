@@ -75,7 +75,7 @@ In this walk through, you will create a new application that contains the SfPull
 * [Final Output of the sample](#final-output-of-the-sample)
 * [Sample Link](#sample-link)
 
-## Creating the project
+### Creating the project
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
