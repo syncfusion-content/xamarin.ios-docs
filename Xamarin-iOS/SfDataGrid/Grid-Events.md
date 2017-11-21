@@ -244,3 +244,5 @@ public class MyViewController:UIViewController
 {% endhighlight %}
 
 Please refer the below GIF for the final rendering on execution of the above code example.
+
+![](SfDataGrid_images/CustomContextMenu.gif)
