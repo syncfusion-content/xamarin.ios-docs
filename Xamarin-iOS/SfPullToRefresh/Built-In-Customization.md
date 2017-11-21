@@ -30,7 +30,7 @@ The various properties of SfPullToRefresh are listed below:
 
 In the `TransitionType.SlideOnTop`, the progress view will render over the pullable content and it will be moved based on the pulling position, whenever the pulling action is performed.
 
-In the `TransitionType.Push`, the progress view will push the pullable content down and simultaneously moves the refresh content and the pullable content based on the pulling position, whenever the pulling action is performed. 
+In the `TransitionType.Push`, the progress view will push the pullable content down, simultaneously moving the refresh content and the pullable content based on the pulling position, whenever the pulling action is performed. 
 
 Refer the below code example to switch to the `TransitionType.Push` mode of transition.
 
@@ -51,11 +51,11 @@ The [SfPullToRefresh.RefreshContentThreshold](https://help.syncfusion.com/cr/cre
 </tr>
 <tr>
 <td width="20%">SlideOnTop</td>
-<td width="80%">It decides the starting Y-position of the progress view in the application.</td>
+<td width="80%">It denotes the starting Y-position of the progress view in the application.</td>
 </tr>
 <tr>
 <td width="20%">Push</td>
-<td width="80%">It decides the touch-down point for pulling to be recognized.</td>
+<td width="80%">It denotes the Y-point after which pulling will be recognized.</td>
 </tr>
 </table>
 
@@ -101,7 +101,7 @@ pullToRefresh.RefreshContentRadius = 25;
 
 ### ProgressStrokeWidth
 
-The width of the inner stroke of the refresh content can be customized using the [SfPullToRefresh.ProgressStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~ProgressStrokeWidth.html) property. The default width of the inner stroke of the refresh content (circular progress view) is "2".
+The width of the inner stroke of the refresh content can be customized using the [SfPullToRefresh.ProgressStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~ProgressStrokeWidth.html) property. The default width of the inner stroke of the progress view is "2".
 
 Refer the below code example to set the [SfPullToRefresh.ProgressStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~ProgressStrokeWidth.html) property.
 
