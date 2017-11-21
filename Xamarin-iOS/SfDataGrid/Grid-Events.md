@@ -117,10 +117,11 @@ private void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 
 ## Create custom Context Menu using Grid Events
 
-SfDataGrid allows you to create a custom context menu by loading number of UIButtons in a custom view in `GridLoaded` event. 
+SfDataGrid allows you to display any custom view like a context menu that can act similar to a pop using the `GridLongPressed` event and `GridTappedEvent` event.
 
 The following code illustrates how to create a custom context menu using Grid events.
 
+//Creating custom View for context menu
 {% highlight c# %}
 public class ContextMenu:UIView
 {       
@@ -153,6 +154,7 @@ public class MyViewController:UIViewController
     {
         dataGrid = new SfDataGrid();
         viewModel = new ViewModel();
+        // Creates the view for the ContextMenu
         Initialize_ContextMenu();           
     }
 
@@ -182,10 +184,12 @@ public class MyViewController:UIViewController
         clearSortButton.SetTitleColor(UIColor.White, UIControlState.Normal);
         clearSortButton.TouchDown += ClearSortButton_TouchDown;
 
+        // A custom view hosting two buttons are now created
         contextMenu.AddSubview(sortButton);
         contextMenu.AddSubview(clearSortButton);
     }
 
+    // Removes the sorting applied to the SfDataGrid
     private void ClearSortButton_TouchDown(object sender, EventArgs e)
     {
         contextMenu.RemoveFromSuperview();
@@ -193,6 +197,7 @@ public class MyViewController:UIViewController
         dataGrid.SortColumnDescriptions.Clear();
     }
 
+    // Sorts the SfDataGrid data based on the column selected in the context menu
     private void SortButton_TouchDown(object sender, EventArgs e)
     {
         contextMenu.RemoveFromSuperview();
@@ -211,11 +216,13 @@ public class MyViewController:UIViewController
             currentColumnName = dataGrid.Columns[e.RowColumnIndex.ColumnIndex].MappingName;
             var point = dataGrid.RowColumnIndexToPoint(e.RowColumnIndex);
             contextMenu.Frame = new CoreGraphics.CGRect(point.X, point.Y, 80, 80);
+            // Display the ContextMenu when the SfDataGrid is long pressed
             this.View.AddSubview(contextMenu);
             isContextMenuDisplayed = true;
         }
         else
         {
+            // Hides the context menu when SfDataGrid is long pressed when the context menu is already visible in screen
             contextMenu.RemoveFromSuperview();
             isContextMenuDisplayed = false;
         }
@@ -223,6 +230,7 @@ public class MyViewController:UIViewController
 
     private void DataGrid_GridTapped(object sender, GridTappedEventArgs e)
     {
+        // Hides the context menu when SfDataGrid is tapped anywhere outside the context menu view
         contextMenu.RemoveFromSuperview();
         isContextMenuDisplayed = false;
     }
@@ -235,4 +243,4 @@ public class MyViewController:UIViewController
 }
 {% endhighlight %}
 
-On executing the above code example, the below output will appear.
+Please refer the below GIF for the final rendering on execution of the above code example.

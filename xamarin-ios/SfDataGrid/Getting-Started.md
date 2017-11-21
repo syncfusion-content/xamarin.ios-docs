@@ -312,7 +312,7 @@ The below code illustrates how to load SfDataGrid with specific height and width
 {% highlight c# %}
 public override void ViewDidLayoutSubviews()
 {
-    dataGrid.Frame = new CGRect(10, 50, 200, 400);
+    dataGrid.Frame = new CGRect(85, 130, 200, 380);
     base.ViewDidLayoutSubviews();
 }
 {% endhighlight %}
