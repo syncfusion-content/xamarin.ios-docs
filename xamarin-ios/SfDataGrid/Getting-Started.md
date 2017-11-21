@@ -303,7 +303,7 @@ SfDataGrid allows you to select the row/rows by setting the [SfDataGrid.Selectio
 
 You can handle the selection operations with the help of [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanging_EV.html) and [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanged_EV.html) events of the SfDataGrid.
 
-## Loading SfDdataGrid with specified Height and Width
+## Loading SfDataGrid with specified Height and Width
 
 SfDataGrid can be load with specific height and width by specifying the height and width of the `SfDataGrid.Frame` property.
 
@@ -313,10 +313,10 @@ The below code illustrates how to load SfDataGrid with specific height and width
 public override void ViewDidLayoutSubviews()
 {
     dataGrid.Frame = new CGRect(10, 50, 200, 400);
-    sbase.ViewDidLayoutSubviews();
+    base.ViewDidLayoutSubviews();
 }
 {% endhighlight %}
 
-The following screenshot shows how the SfdataGrid is loaded with specific height and width. 
+The following screenshot shows how the SfDataGrid is loaded with specific height and width. 
 
 ![](SfDataGrid_images/Loading_with specific_height_and_width.png)
