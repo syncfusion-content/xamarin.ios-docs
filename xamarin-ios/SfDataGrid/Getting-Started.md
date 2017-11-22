@@ -305,7 +305,7 @@ You can handle the selection operations with the help of [SelectionChanging](htt
 
 ## Loading SfDataGrid with specified Height and Width
 
-SfDataGrid can be load with specific height and width by specifying the height and width of the `SfDataGrid.Frame` property.
+SfDataGrid can be loaded with specific height and width by specifying the height and width of the `SfDataGrid.Frame` property.
 
 The below code illustrates how to load SfDataGrid with specific height and width.
 

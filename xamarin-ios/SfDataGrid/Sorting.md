@@ -225,6 +225,12 @@ private void DataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnEv
     if (e.Column.MappingName == "Freight")
         e.Column.AllowSorting = false;
 }
+
+public override void ViewDidLayoutSubviews()
+{
+    dataGrid.Frame = new CGRect(0, 30, this.View.Frame.Width, this.View.Frame.Height);
+    base.ViewDidLayoutSubviews();
+}
 {% endhighlight %}
 
 ### For Manually defined column
@@ -247,5 +253,11 @@ public override void ViewDidLoad()
     dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Freight", AllowSorting = false });
     dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Country" });
     this.View.AddSubview(dataGrid);
+}
+
+public override void ViewDidLayoutSubviews()
+{
+    dataGrid.Frame = new CGRect(0, 30, this.View.Frame.Width, this.View.Frame.Height);
+    base.ViewDidLayoutSubviews();
 }
 {% endhighlight %}
