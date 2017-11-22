@@ -269,6 +269,7 @@ The below code example shows how to hook the `SfDataGrid.CurrentCellBeginEdit` e
 
 {% highlight c# %}
 this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
+
 private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEditEventArgs args)
 {
     // Editing prevented for the column at RowColumnIndex(2,2).
@@ -287,7 +288,8 @@ private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEd
 The below code example shows how to hook the `SfDataGrid.CurrentCellEndEdit` event.
 
 {% highlight c# %}
-dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
+this.dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
+
 private void DataGrid_CurrentCellEndEdit(object sender, GridCurrentCellEndEditEventArgs args)
 {
     // Editing prevented for the column at RowColumnIndex(1,3).
