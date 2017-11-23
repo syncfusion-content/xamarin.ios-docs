@@ -113,25 +113,36 @@ In the below code snippet, the SfDataGrid is applied `ColumnSizer.Star` and the 
 Hence the second column will take up the remaining space, after the other columns are rendered with star sizer.
 
 {% highlight c# %} 
-GridTextColumn orderIDColumn = new GridTextColumn();
-orderIDColumn.MappingName = "OrderID";
+SfDataGrid dataGrid;
+ViewModel viewModel;
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    base.OnCreate(savedInstanceState);
+    dataGrid = new SfDataGrid(this.BaseContext);
+    viewModel = new ViewModel();
+    dataGrid.ItemsSource = viewModel.OrdersInfo;
+    dataGrid.AutoGenerateColumns = false;
 
-GridTextColumn customerIDColumn = new GridTextColumn();
-customerIDColumn.MappingName = "CustomerID";
-customerIDColumn.ColumnSizer = ColumnSizer.LastColumnFill;
+    GridTextColumn orderIDColumn = new GridTextColumn();
+    orderIDColumn.MappingName = "OrderID";
 
-GridTextColumn freightColumn = new GridTextColumn();
-freightColumn.MappingName = "Freight";
+    GridTextColumn customerIDColumn = new GridTextColumn();
+    customerIDColumn.MappingName = "CustomerID";
+    customerIDColumn.ColumnSizer = ColumnSizer.LastColumnFill;
 
-GridTextColumn countryColumn = new GridTextColumn();
-countryColumn.MappingName = "Country";
+    GridTextColumn freightColumn = new GridTextColumn();
+    freightColumn.MappingName = "Freight";
 
-dataGrid.Columns.Add(orderIDColumn);
-dataGrid.Columns.Add(customerIDColumn);
-dataGrid.Columns.Add(freightColumn);
-dataGrid.Columns.Add(countryColumn);
+    GridTextColumn countryColumn = new GridTextColumn();
+    countryColumn.MappingName = "Country";
 
-View.AddSubviews(dataGrid);
+    dataGrid.Columns.Add(orderIDColumn);
+    dataGrid.Columns.Add(customerIDColumn);
+    dataGrid.Columns.Add(freightColumn);
+    dataGrid.Columns.Add(countryColumn);
+
+    View.AddSubviews(dataGrid);
+}
 {% endhighlight %}
 
 ### Refreshing ColumnSizer for SfDataGrid at runtime
