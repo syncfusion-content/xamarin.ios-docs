@@ -189,7 +189,7 @@ public MyViewController()
 The below GIF demonstrates the final output of the sample.
 
 <div style="text-align:center" markdown="1">
-![](GettingStarted_images/Gettingstarted.gif)
+![](GettingStarted_images/GettingStarted_Refresh_iOS.gif)
 </div>
 
 ### Sample Link

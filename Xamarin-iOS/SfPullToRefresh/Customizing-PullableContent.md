@@ -109,7 +109,7 @@ public void RefreshItemSource()
 The final output of the sample, SfPullToRefresh adapting CollectionView as its pullable content is below.
 
 <div style="text-align:center" markdown="1">
-![](CustomizingPullableContent_images/CollectionView.gif)
+![](CustomizingPullableContent_images/CollectionView_Refresh_iOS.gif)
 </div>
 
 ## SfDataGrid
@@ -186,7 +186,7 @@ private async void PullToRefresh_Refreshing(object sender, RefreshingEventArgs e
 The final output of the sample, SfPullToRefresh adapting SfDataGrid as its pullable content is below.
 
 <div style="text-align:center" markdown="1">
-![](CustomizingPullableContent_images/SfDataGrid.gif)
+![](CustomizingPullableContent_images/SfDataGrid_Refresh_iOS.gif)
 </div>
 
 ## Custom view
@@ -258,7 +258,7 @@ private void PullToRefresh_Refreshing(object sender, RefreshingEventArgs e)
 The final output of the above sample is below.
 
 <div style="text-align:center" markdown="1">
-![](overview_images/WeatherData.gif)
+![](overview_images/WeatherData_Refresh_iOS.gif)
 </div>
 
 ## Samples
