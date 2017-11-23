@@ -186,14 +186,10 @@ public MyViewController()
 
 ### Final output of the sample
 
-The below image demonstrates the final output of the sample.
+The below GIF demonstrates the final output of the sample.
 
 <div style="text-align:center" markdown="1">
-![](GettingStarted_images/GettingStarted_SlideOnTop.png)
-</div>
-
-<div style="text-align:center" markdown="1">
-![](GettingStarted_images/GettingStarted_Push.png)
+![](GettingStarted_images/Gettingstarted.gif)
 </div>
 
 ### Sample Link
