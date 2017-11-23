@@ -200,25 +200,25 @@ The code example of the customized view is below:
 public class CustomView : UIView
 {
     BaseView baseView;
-    CustomScroll customScroll;
-    UILabel label;
+    CustomScrollView customScrollView;
+    UILabel cityLabel;
 
-    public CustomView(BaseView baseview, CustomScroll customscroll, UILabel lable) : base()
+    public CustomView(BaseView view, CustomScrollView scrollView, UILabel city) : base()
     {
-        baseView = baseview;
-        customScroll = customscroll;
-        label = lable;
-        this.AddSubview(baseview);
-        this.AddSubview(customscroll);
-        this.AddSubview(lable);
+        baseView = view;
+        customScrollView = scrollView;
+        cityLabel = city;
+        this.AddSubview(view);
+        this.AddSubview(scrollView);
+        this.AddSubview(city);
     }
 
     public override void LayoutSubviews()
     {
         base.LayoutSubviews();
-        label.Frame = new CGRect(0, 20, this.Frame.Width, 50);
+        cityLabel.Frame = new CGRect(0, 20, this.Frame.Width, 50);
         baseView.Frame = new CGRect(0, (Frame.Height / 4), Frame.Width, Frame.Height / 2);
-        customScroll.Frame = new CGRect(0, this.Frame.Height - 150, this.Frame.Width, 150);
+        customScrollView.Frame = new CGRect(0, this.Frame.Height - 150, this.Frame.Width, 150);
     }
 }
 
