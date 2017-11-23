@@ -265,8 +265,8 @@ The final output of the above sample is below.
 
 You can download the source code of the sample from the below link.
 
-* CollectionView
+* [CollectionView](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CollectionViewRefresh_UG969564409)
 
-* SfDataGrid
+* [SfDataGrid](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridRefresh_UG701964204)
 
-* Custom view
+* [Custom view](http://www.syncfusion.com/downloads/support/directtrac/general/ze/WeatherDataRefresh_UG79834653)
