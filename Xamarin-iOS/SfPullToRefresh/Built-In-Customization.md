@@ -250,3 +250,9 @@ private async void PerformRefreshing()
 }
 
 {% endhighlight %}
+
+The below GIF demonstrates the programmatic refresh.
+
+<div style="text-align:center" markdown="1">
+![](built_in_customization_images\ProgrammaticRefresh_iOS.gif)
+</div>
