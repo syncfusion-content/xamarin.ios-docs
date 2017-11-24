@@ -186,16 +186,12 @@ public MyViewController()
 
 ### Final output of the sample
 
-The below image demonstrates the final output of the sample.
+The below GIF demonstrates the final output of the sample.
 
 <div style="text-align:center" markdown="1">
-![](GettingStarted_images/GettingStarted_SlideOnTop.png)
-</div>
-
-<div style="text-align:center" markdown="1">
-![](GettingStarted_images/GettingStarted_Push.png)
+![](GettingStarted_images/GettingStarted_Refresh_iOS.gif)
 </div>
 
 ### Sample Link
 
-You can download the source code of this sample here.
+You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/SfPullToRefresh_GettingStarted.zip).
