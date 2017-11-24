@@ -24,9 +24,5 @@ SfPullToRefresh is a refresh control that allows you to interact and refresh the
   * [SfPullToRefresh.ProgressStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~ProgressStrokeWidth.html)
 
 <div style="text-align:center" markdown="1">
-![](overview_images/WeatherData_SlideOnTop.png)
-</div>
-
-<div style="text-align:center" markdown="1">
-![](overview_images/WeatherData_Push.png)
+![](overview_images/WeatherData_Refresh_iOS.gif)
 </div>
