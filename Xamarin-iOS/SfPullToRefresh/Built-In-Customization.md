@@ -74,7 +74,7 @@ pullToRefresh.RefreshContentThreshold = 20;
 
 ### PullingThreshold
 
-The [SfPullToRefresh.PullingThreshold](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullingThreshold.html) property indicates the maximum pullable position of the  progress view to reach 100 %. Refreshing will be started in the view only when the pulling progress reaches 100 % and touch is released. If the touch is released before the progress view reaches 100 % of pulling progress, pulling will be canceled and refreshing will not occur.
+The [SfPullToRefresh.PullingThreshold](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullingThreshold.html) property indicates the maximum pullable position of the  progress view to reach 100 % of pulling progress. Refreshing will be started in the view only when the pulling progress reaches 100 % and touch is released. If the touch is released before the progress view reaches 100 % of pulling progress, pulling will be canceled and refreshing will not occur.
 
 Refer to the following code example to set the [SfPullToRefresh.PullingThreshold](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullingThreshold.html) property:
 
@@ -183,7 +183,7 @@ private void PullToRefresh_Pulling(object sender, PullingEventArgs e)
 
 {% endhighlight %}
 
-### Refreshing Event
+### Refreshing event
 
 To refresh the view, hook the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event. The [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event will be fired once the pulling progress reaches 100% and touch is released. You can do the required operations to refresh the view. Once the view is refreshed, set the [RefreshingEventArgs.Refreshed](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.RefreshingEventArgs~Refreshed.html) as <b>true</b> to stop the refreshing animation. 
 
@@ -212,7 +212,7 @@ private void PullToRefresh_Refreshing(object sender, RefreshingEventArgs e)
 
 {% endhighlight %}
 
-### Refreshed Event
+### Refreshed event
 
 The [SfPullToRefresh.Refreshed](https://help.syncfusion.com/cr/cref_files/xamarin-android/sfpulltorefresh/Syncfusion.SfPullToRefresh.Android~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshed_EV.html) event will be fired once the refreshing animation is completed to indicate that the view is refreshed. 
 
@@ -229,9 +229,9 @@ private void PullToRefresh_Refreshed(object sender, EventArgs e)
 
 {% endhighlight %}
 
-## Programmatic Refresh
+## Programmatic refresh
 
-SfPullToRefresh supports refreshing the pullable content programmatically without interaction. To refresh the pullable content programmatically, call the [SfPullToRefresh.StartRefreshing()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~StartRefreshing.html) method. To programmatically end refreshing, call the [SfPullToRefresh.EndRefreshing()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~EndRefreshing.html) method.
+SfPullToRefresh supports refreshing the pullable content programmatically without interaction. To refresh the pullable content programmatically, call the [SfPullToRefresh.StartRefreshing()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~StartRefreshing.html) method. To end programmatic refreshing, call the [SfPullToRefresh.EndRefreshing()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpulltorefresh/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~EndRefreshing.html) method.
 
 Refer to the following code example to refresh the pullable content programmatically:
 

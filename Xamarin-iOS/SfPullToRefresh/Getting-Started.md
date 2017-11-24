@@ -81,7 +81,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 2. Import SfPullToRefresh control under the namespace `Syncfusion.SfPullToRefresh`.
 
-3. Create an instance and add as the subview of the UIViewController. Refer to the following code example to add SfPullToRefresh control to the application:
+3. Create an instance of SfPullToRefresh control and add as the subview of the UIViewController. Refer to the following code example to add this control to the application:
 
 {% highlight c# %}
 
