@@ -17,13 +17,13 @@ This section explains how to refresh the following views by hosting as a pullabl
 * [SfDataGrid](#sfdatagrid) 
 * [Custom view](#custom-view) 
 
-## Collection view
+## CollectionView
 
-SfPullToRefresh can host the collection view as its pullable content and refresh the view. 
+SfPullToRefresh can host the CollectionView as its pullable content and refresh the view. 
 
-### Collection view customizations
+### CollectionView customizations
 
-Refer to the following code example for creating and customizing a collection view:
+Refer to the following code example for creating and customizing a CollectionView:
 
 {% highlight c# %}
 
@@ -51,11 +51,11 @@ public MyViewController()
 
 {% endhighlight %}
 
-The example code of the CollectionViewSource and the CollectionViewCell of the collection view are not displayed here. However, the source code of this sample can be downloaded here.
+The example code of the CollectionViewSource and the CollectionViewCell of the CollectionView are not displayed here. However, the source code of this sample can be downloaded here.
 
 ### Adapting CollectionView in SfPullToRefresh
 
-To add collection view as a pullable content and to refresh the pullable content, refer to the following code example:
+To add CollectionView as a pullable content and to refresh the pullable content, refer to the following code example:
 
 {% highlight c# %}
 
@@ -106,7 +106,7 @@ public void RefreshItemSource()
 
 {% endhighlight %}
 
-The final output of the sample of SfPullToRefresh adapting collection view as its pullable content is as follows:
+The final output of the sample of SfPullToRefresh adapting CollectionView as its pullable content is as follows:
 
 <div style="text-align:center" markdown="1">
 ![](CustomizingPullableContent_images/CollectionView_Refresh_iOS.gif)
