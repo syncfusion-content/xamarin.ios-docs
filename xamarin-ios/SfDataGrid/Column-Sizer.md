@@ -104,13 +104,13 @@ public override void ViewDidLayoutSubviews()
 
 ![](SfDataGrid_images/ColumnSizer_Orientation1.png)
 
-### Fill Remaining width for any column
+### Fill remaining width for any column
 
-SfDataGrid allows to fill the remaining width in view for any column by using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~ColumnSizer.html) property.
-The `GridColumn.ColumnSizer` has higher priority than the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) property. Hence the individual columns having the `GridColumn.ColumnSizer` property set will not be included in the column sizer calculations of the `SfDataGrid`. Set the `GridColumn.ColumnSizer` property as [ColumnSizer.LastColumnFill](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ColumnSizer.html) for the column you want to fill with the remaining width in the view. Please refer the below code example to acheive the same.
+SfDataGrid allows to fill the remaining width in view for any column using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~ColumnSizer.html) property.
 
-In the below code snippet, the SfDataGrid is applied `ColumnSizer.Star` and the second column is applied ColumnSizer.LastColumnFill.
-Hence the second column will take up the remaining space, after the other columns are rendered with star sizer.
+The `GridColumn.ColumnSizer` has higher priority than the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) property. Hence the individual columns having the `GridColumn.ColumnSizer` property set will not be included in the column sizer calculations of the `SfDataGrid`. To fill the column with remaining width in view, set the `GridColumn.ColumnSizer` property as [ColumnSizer.LastColumnFill](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ColumnSizer.html). Refer to the following code example to acheive the same:
+
+In the below code snippet, the SfDataGrid is applied as `ColumnSizer.Star` and the second column is applied as ColumnSizer.LastColumnFill. Hence the second column will take up the remaining space after the other columns are rendered with star sizer.
 
 {% highlight c# %} 
 SfDataGrid dataGrid;
@@ -147,8 +147,9 @@ protected override void OnCreate(Bundle savedInstanceState)
 
 ### Refreshing ColumnSizer for SfDataGrid at runtime
 
-You can refresh the column sizing for `SfDataGrid.Columns` by using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~ColumnSizer.html) property.
-Consider that `ColumnSizer.Auto` is applied to the SfDataGrid. If in case the underlying values are changed in run time, you can refresh the ColumnSizer as shown below.
+To refresh the column sizing for `SfDataGrid.Columns`, use [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~ColumnSizer.html) property.
+
+Consider that `ColumnSizer.Auto` is applied to SfDataGrid. If the underlying values are changed in run time, refresh the column sizer as shown as follows:
 
 {% highlight c# %} 
 SfDataGrid dataGrid;
@@ -178,7 +179,7 @@ private void ColumnSizerChanged(object sender, EventArgs e)
 
 ### Resetting column width to apply ColumnSizer   
 
-By default, the columns having the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Width.html) property set, will not be included for the SfDataGrid's column sizer calculations. If in case you want to include the width columns and refresh the column sizer in runtime, please set the `GridColumn.Width` property to double.NaN before calling the [GridColumnSizer.Refresh()](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer~Refresh(Boolean).html) method. Please refer the below code example to achieve the same.
+By default, the columns having the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Width.html) property set will not be included for column sizer calculations of SfDataGrid. To include width columns and refresh column sizer in runtime, set the `GridColumn.Width` property to double.NaN before calling the [GridColumnSizer.Refresh()](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer~Refresh(Boolean).html) method. Refer to the following code example to achieve the same:
 
 {% highlight c# %}
 SfDataGrid dataGrid;
@@ -241,9 +242,9 @@ private void ResetColumns()
 
 ## Star column sizer ratio support
 
-You can customize the `ColumnSizer.Star` width calculation by writing a custom GridColumnSizer class derived from [GridColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer.html) and assign it to the `SfDataGrid.ColumnSizer` property. You can implement your own logic to divide the column widths in different ratios,by overriding the [SetStarWidthForColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer~SetStarWidthForColumns.html) method in your custom GridColumnSizer class.
+To customize the `ColumnSizer.Star` width calculation, write a custom GridColumnSizer class derived from [GridColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer.html) and assign it to the `SfDataGrid.ColumnSizer` property. To implement your own logic to divide the column widths in different ratios, override the [SetStarWidthForColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer~SetStarWidthForColumns.html) method in your custom GridColumnSizer class.
 
-The following code example shows how to set star sizer ratio for individual columns.
+To set star sizer ratio for individual columns, follow the code example:
 
 {% highlight c# %}
 SfDataGrid dataGrid;
@@ -283,7 +284,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 }
 {% endhighlight %}
 
-The following code example demonstrates how the width is calculated for column, based on the `GetRatio` property in `SetStarWidthForColumns` method.
+The following code example demonstrates how the width is calculated for column, based on the `GetRatio` property in `SetStarWidthForColumns` method:
 
 {% highlight c# %} 
 public class CustomColumnSizer : GridColumnSizer
@@ -348,7 +349,7 @@ public class CustomColumnSizer : GridColumnSizer
 }
 {% endhighlight %} 
 
-The following code example explains the `GetRatio` property. 
+The following code example explains the `GetRatio` property: 
 
 {% highlight c# %} 
 public class ViewModel : INotifyPropertyChanged
