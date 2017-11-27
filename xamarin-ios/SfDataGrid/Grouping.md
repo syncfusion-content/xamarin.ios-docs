@@ -52,7 +52,7 @@ By default, the groups will be in expanded state in a SfDataGrid. However, you c
 this.dataGrid.AllowGroupExpandCollapse = true;
 {% endhighlight %}
 
-### Expand or collapse all the Groups
+### Expand or collapse all the groups
 
 You can expand or collapse all the groups at programmatically at runtime by using [SfDataGrid.ExpandAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ExpandAllGroup.html) and [SfDataGrid.CollapseAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CollapseAllGroup.html) methods.
 
@@ -63,7 +63,7 @@ this.dataGrid.CollapseAllGroup();
 {% endhighlight %}
 {% endtabs %}
 
-### Expand or Collapse the specific Group
+### Expand or collapse the specific group
 
 You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ExpandGroup.html) and [SfDataGrid.CollapseGroup](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CollapseGroup.html) methods.
 
@@ -118,7 +118,7 @@ public class GroupConverter : IValueConverter
 }
 {% endhighlight %}
 
-## Display based grouping using GroupMode property
+## Display based grouping using group mode property
 
 By default column grouping occurs based on the value in the underlying collection thereby creating a new group for each new value of that column. However you can also group a column based on the Display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~GroupMode.html) property as `Display`. In the below code example we have set [GridColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Format.html) property as "#" which displays only the rounded off value in the `GridCell`.  
 
@@ -132,11 +132,11 @@ cargoWeight.Format = "#";
 The below screenshot shows the comparison between the two Group modes. GroupMode.Value on the left and GroupMode.Display on the right.
 ![](SfDataGrid_images/GroupMode.png)
 
-## Clearing or Removing Group
+## Clearing or removing group
 
-You can clear the grouping applied to the SfDataGrid by removing the items from the `SfDataGrid.GroupColumnDescriptions` collection or clearing the collection.
+To clear grouping applied to SfDataGrid, remove the items from the `SfDataGrid.GroupColumnDescriptions` collection or clear the collection.
  
-Please refer the below code snippets to remove the grouping applied to the SfDataGrid.
+Refer to the following code snippets to remove grouping applied:
 
 {% highlight c# %}
 public class MyViewController:UIViewController
@@ -194,11 +194,11 @@ public class MyViewController:UIViewController
 }
 {% endhighlight %}
 
-Run the application to render the following output. 
+Run the application to render the following output: 
 
 ![](SfDataGrid_images/Remove_Grouping.png)
 
-N> You can also clear or remove the grouping on [GridTapped event](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridDoubleTapped_EV.html) or [GridLongPressed event](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridLongPressed_EV.html)
+N> You can also clear or remove the grouping on [GridTapped event](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridDoubleTapped_EV.html), or [GridLongPressed event](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridLongPressed_EV.html).
 
 ## Events
 
