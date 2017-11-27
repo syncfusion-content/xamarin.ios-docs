@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Column Types | SfDataGrid | Xamarin.iOS | Syncfusion
 description: What are all the different types of column and it's properties and customizations in a SfDataGrid.
@@ -335,21 +335,6 @@ The following screenshot shows how template columns are used in SfDataGrid
 
 ![](SfDataGrid_images/TemplateColumns.png)
 
-## Row Header 
-
-RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the RowHeader in SfDataGrid, you need to set the [SfDataGrid.ShowRowHeader](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ShowRowHeader.html) property as `true`.
-
-Further, SfDataGrid allows you to customize the row header width using the [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~RowHeaderWidth.html) property. The default value of `SfDataGrid.RowHeaderWidth` is 20.
-
-The below code example illustrates how to enable and customize the row header in SfDataGrid.
-
-{% highlight c# %}
-
-dataGrid.ShowRowHeader = true;
-dataGrid.RowHeaderWidth = 50;
-
-{% endhighlight %}
-
 ## GridSwitchColumn
 
 The [GridSwitchColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSwitchColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html), and hence it inherits all the properties of `GridColumn`. It loads a [UISwitch](https://developer.xamarin.com/api/type/MonoTouch.UIKit.UISwitch/) as the content of record cells in the column and responds to value changes in it. You can change the underlying data source by toggling the values shown in the `UISwitch`. To create `GridSwitchColumn` in SfDataGrid the property corresponding to the column in the underlying collection must be of type [bool](https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx).
@@ -422,6 +407,22 @@ public class ViewModel
 } 
 {% endhighlight %}
 ![](SfDataGrid_images/SwitchColumn.jpg)
+
+### Editing for switch column
+
+SfDatagrid allows you to edit the switch column by setting the [AllowEditing](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditingProperty.html) property as `true`. By default, `AllowEditing` is `true`. If you set `AllowEditing` as `false` you cannot check or uncheck the Switch column.
+
+The below code illustrates how to set the `AllowEditing`.
+
+{% highlight c#%}
+
+GridSwitchColumn column = new GridSwitchColumn();
+
+column.MappingName = "IsClosed";
+
+column.AllowEditing = true;
+
+{% endhighlight%}
 
 ## GridImageColumn
 
@@ -608,7 +609,7 @@ public class ViewModel
 
 ## GridPickerColumn
 
-The [GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It displays a list of items in the form of a picker as the content of a column. You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a customized Picker element that enables you to scroll through a list of values from the underlying collection and select one from it. The data source to Picker can be set by using [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~ItemsSource.html) property. The picker column can be populated with data by the following ways.
+The [GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn.html) is derived from [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn.html) thereby inheriting all the properties of `GridColumn`. It displays a list of items in the form of a picker as the content of a column. You can enable or disable editing for the particular column by setting the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a customized `Picker` element that enables you to scroll through a list of values from the underlying collection and select one from it. The data source to `Picker` can be set by using [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~ItemsSource.html) property. The picker column can be populated with data by the following ways.
 
 * Collection of primitive types
 * Collection of user defined types (Custom objects)
@@ -812,3 +813,18 @@ dataGrid.Columns.Add(numericColumn);
 * [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridEditorColumn~MaxValue.html) - You can set the maximum value of the numeric column using `GridNumericColumn.MaxValue` property.
 
 ![](SfDataGrid_images/NumericColumn.jpg)
+
+## Row Header 
+
+RowHeader is a special column which is placed as first cell of each row and it will always be frozen. To enable the RowHeader in SfDataGrid, you need to set the [SfDataGrid.ShowRowHeader](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ShowRowHeader.html) property as `true`.
+
+Further, SfDataGrid allows you to customize the row header width using the [SfDataGrid.RowHeaderWidth](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~RowHeaderWidth.html) property. The default value of `SfDataGrid.RowHeaderWidth` is 20.
+
+The below code example illustrates how to enable and customize the row header in SfDataGrid.
+
+{% highlight c# %}
+
+dataGrid.ShowRowHeader = true;
+dataGrid.RowHeaderWidth = 50;
+
+{% endhighlight %}
