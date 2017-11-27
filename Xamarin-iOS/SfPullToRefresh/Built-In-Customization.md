@@ -30,7 +30,7 @@ The various properties of SfPullToRefresh are listed as follows:
 
 In the `TransitionType.SlideOnTop`, the progress view will render over the pullable content. It will be moved based on the pulling position whenever the pulling action is performed.
 
-In the `TransitionType.Push`, the progress view will push the pullable content down. Simultaneously moving the progress view and the pullable content based on the pulling position whenever the pulling action is performed. 
+In the `TransitionType.Push`, the progress view will push the pullable content down thereby simultaneously moving the progress view and the pullable content based on the pulling position whenever the pulling action is performed.
 
 Refer to the following code example to switch to the `TransitionType.Push` mode of transition:
 
