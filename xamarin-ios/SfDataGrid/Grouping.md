@@ -52,11 +52,7 @@ By default, the groups will be in expanded state in a SfDataGrid. However, you c
 this.dataGrid.AllowGroupExpandCollapse = true;
 {% endhighlight %}
 
-### Programmatically expanding or collapsing the groups
-
-You can allow end-user to expand or collapse the groups programmatically at runtime.
-
-#### Expand or collapse all the Groups
+### Expand or collapse all the groups
 
 You can expand or collapse all the groups at programmatically at runtime by using [SfDataGrid.ExpandAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ExpandAllGroup.html) and [SfDataGrid.CollapseAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CollapseAllGroup.html) methods.
 
@@ -67,7 +63,7 @@ this.dataGrid.CollapseAllGroup();
 {% endhighlight %}
 {% endtabs %}
 
-#### Expand or Collapse the specific Group
+### Expand or collapse a specific group
 
 You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ExpandGroup.html) and [SfDataGrid.CollapseGroup](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CollapseGroup.html) methods.
 
@@ -122,7 +118,7 @@ public class GroupConverter : IValueConverter
 }
 {% endhighlight %}
 
-### GroupingMode
+## Display based grouping using group mode property
 
 By default column grouping occurs based on the value in the underlying collection thereby creating a new group for each new value of that column. However you can also group a column based on the Display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~GroupMode.html) property as `Display`. In the below code example we have set [GridColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Format.html) property as "#" which displays only the rounded off value in the `GridCell`.  
 
@@ -135,6 +131,74 @@ cargoWeight.Format = "#";
 
 The below screenshot shows the comparison between the two Group modes. GroupMode.Value on the left and GroupMode.Display on the right.
 ![](SfDataGrid_images/GroupMode.png)
+
+## Clearing or removing a group
+
+To clear grouping applied to SfDataGrid, remove the items from the `SfDataGrid.GroupColumnDescriptions` collection or clear the collection.
+ 
+Refer to the following code snippets to remove grouping applied:
+
+{% highlight c# %}
+public class MyViewController:UIViewController
+{
+    SfDataGrid dataGrid;
+    ViewModel viewModel;
+    UIButton clearGroupingButton;
+    UIStackView stackView;
+    public MyViewController()
+    {
+        dataGrid = new SfDataGrid();
+        viewModel = new ViewModel();
+        clearGroupingButton = new UIButton();
+        stackView = new UIStackView();
+    }
+
+    public override void ViewDidLoad()
+    {
+        base.ViewDidLoad();
+        dataGrid.ItemsSource = viewModel.OrdersInfo; 
+        dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+        {
+            ColumnName = "Freight",
+        });
+        stackView.Axis = UILayoutConstraintAxis.Vertical;
+        clearGroupingButton.SetTitle("Remove Grouping", UIControlState.Normal);
+        clearGroupingButton.BackgroundColor=UIColor.White;
+        clearGroupingButton.SetTitleColor(UIColor.Black, UIControlState.Normal);
+        clearGroupingButton.TouchDown += ClearGroupingButton_TouchDown;
+        clearGroupingButton.HeightAnchor.ConstraintEqualTo(200).Active = true;
+        dataGrid.HeightAnchor.ConstraintEqualTo(600).Active=true;
+        stackView.AddArrangedSubview(removeGroupingButton);
+        stackView.AddArrangedSubview(dataGrid);
+        this.View.AddSubview(stackView);
+    }
+
+    private void ClearGroupingButton_TouchDown(object sender, System.EventArgs e)
+    {
+        //Clearing the Group
+        dataGrid.GroupColumnDescriptions.Clear();
+
+        //Removing the Group based on group item
+        //var groupColumn = dataGrid.GroupColumnDescriptions[0];
+        //dataGrid.GroupColumnDescriptions.Remove(groupColumn);
+        
+        //Removing the Group based on group index
+        //dataGrid.GroupColumnDescriptions.RemoveAt(0);
+    }
+
+    public override void ViewDidLayoutSubviews()
+    {
+        stackView.Frame = new CGRect(0, 30, this.View.Frame.Width, this.View.Frame.Height);
+        base.ViewDidLayoutSubviews();
+    }
+}
+{% endhighlight %}
+
+Run the application to render the following output: 
+
+![](SfDataGrid_images/Remove_Grouping.png)
+
+N> You can also clear or remove the grouping on [GridTapped event](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped event](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridDoubleTapped_EV.html), or [GridLongPressed event](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~GridLongPressed_EV.html).
 
 ## Events
 
@@ -228,7 +292,7 @@ public class CustomStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-## How to hide the grouped column in SfDataGrid?
+## Hiding the column when grouped
 
 In SfDataGrid a column will be generated with the default column width by default. In order to group by a column that should not be visible in view, add the column to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin/sfdatagrid/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~Columns.html) collection and set its width as 0. Thus the column will be grouped and will not be visually seen. Please refer the below code example.
 

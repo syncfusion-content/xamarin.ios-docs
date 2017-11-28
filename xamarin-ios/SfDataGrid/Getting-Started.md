@@ -301,4 +301,21 @@ Run the application to render the following output.
 
 SfDataGrid allows you to select the row/rows by setting the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property. You can set the `SfDataGrid.SelectionMode` property to single, multiple, single deselect or none based on your requirements. Information about the row/rows selected can be tracked using [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectedItem.html) and [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectedItems.html) properties.
 
-You can handle the selection operations with the help of [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanging_EV.html) and [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionChanged_EV.html) events of the SfDataGrid.
+
+## Loading SfDataGrid with customized height and width
+
+SfDataGrid can be loaded with specific height and width by specifying the height and width of the `SfDataGrid.Frame` property.
+
+To load SfDataGrid with specific height and width, follow the code example:
+
+{% highlight c# %}
+public override void ViewDidLayoutSubviews()
+{
+    dataGrid.Frame = new CGRect(85, 130, 200, 380);
+    base.ViewDidLayoutSubviews();
+}
+{% endhighlight %}
+
+The following screenshot shows how the SfDataGrid is loaded with specific height and width: 
+
+![](SfDataGrid_images/Loading_with specific_height_and_width.png)
