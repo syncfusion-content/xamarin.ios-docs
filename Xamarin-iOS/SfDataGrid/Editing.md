@@ -265,7 +265,7 @@ SfDataGrid triggers the following events while editing.
 * [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row,column index of the DataGrid.
 * [Column](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellBeginEditEventArgs~Column.html) : Gets the Grid Column of the SfDataGrid.
 
-The below code example shows how to hook the `SfDataGrid.CurrentCellBeginEdit` event.
+To hook the `SfDataGrid.CurrentCellBeginEdit` event, follow the code example:
 
 {% highlight c# %}
 this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
@@ -285,7 +285,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEd
 * [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCurrentCellEndEditEventArgs~RowColumnIndex.html) : Gets the current row,column index of the DataGrid.
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) : When set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
 
-The below code example shows how to hook the `SfDataGrid.CurrentCellEndEdit` event.
+To hook the `SfDataGrid.CurrentCellEndEdit` event, follow the code example:
 
 {% highlight c# %}
 this.dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
