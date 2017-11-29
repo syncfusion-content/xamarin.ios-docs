@@ -47,8 +47,9 @@ The following code example shows how to enable Tri-State sorting in SfDataGrid.
 dataGrid.AllowTriStateSorting = true;
 {% endhighlight %}
 
+![](SfDataGrid_images/Tristate_Sorting.gif)
 
-## Multi Sorting
+## Multi-column sorting
 
 SfDataGrid allows you to sort the data against more than one columns by setting the [SfDataGrid.AllowMultiSorting](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowMultiSorting.html) property to `true`. The number of columns by which the data can be sorted is unlimited. To apply sorting for multiple columns, tap the desired column headers after setting the `SfDataGrid.AllowMultiSorting` property.
 
@@ -57,6 +58,8 @@ The following code example shows how to enable multi-sorting in SfDataGrid.
 {% highlight c# %}
 dataGrid.AllowMultiSorting = true;
 {% endhighlight %}
+
+![](SfDataGrid_images/MultiColumn_Sorting.gif)
 
 ## Sort column in double click
 
@@ -193,6 +196,69 @@ public class CustomStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-## How to disable sorting for an individual column?
+## How to disable sorting for an individual column
 
 SfDataGrid allows you to disable the sorting for individual columns by using the [GridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowSorting.html) property. The default value of this property is `true` and hence all the columns in the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~Columns.html) collection can be sorted when `SfDataGrid.AllowSorting` is set to `true`.
+
+To disable sorting for an individual column, follow the code example:
+
+### For auto generated column
+
+{% highlight c# %}
+public MyViewController()
+{
+    dataGrid = new SfDataGrid();
+    viewModel = new ViewModel();
+}
+
+public override void ViewDidLoad()
+{
+    base.ViewDidLoad();
+    dataGrid.ItemsSource = viewModel.OrdersInfo; 
+    dataGrid.AllowSorting = true;
+    dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
+    this.View.AddSubview(dataGrid);
+}
+
+private void DataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnEventArgs e)
+{
+    // Sorting will not be done for the Freight column
+    if (e.Column.MappingName == "Freight")
+        e.Column.AllowSorting = false;
+}
+
+public override void ViewDidLayoutSubviews()
+{
+    dataGrid.Frame = new CGRect(0, 30, this.View.Frame.Width, this.View.Frame.Height);
+    base.ViewDidLayoutSubviews();
+}
+{% endhighlight %}
+
+### For manually defined column
+
+{% highlight c# %}
+public MyViewController()
+{
+    dataGrid = new SfDataGrid();
+    viewModel = new ViewModel();
+}
+
+public override void ViewDidLoad()
+{
+    base.ViewDidLoad();
+    dataGrid.ItemsSource = viewModel.OrdersInfo; 
+    dataGrid.AutoGenerateColumns = false;
+    dataGrid.AllowSorting = true;
+    dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
+    // Sorting will not be done for the Freight column
+    dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Freight", AllowSorting = false });
+    dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Country" });
+    this.View.AddSubview(dataGrid);
+}
+
+public override void ViewDidLayoutSubviews()
+{
+    dataGrid.Frame = new CGRect(0, 30, this.View.Frame.Width, this.View.Frame.Height);
+    base.ViewDidLayoutSubviews();
+}
+{% endhighlight %}
