@@ -103,3 +103,313 @@ public override void ViewDidLayoutSubviews()
 ![](SfDataGrid_images/ColumnSizer_Orientation.png)
 
 ![](SfDataGrid_images/ColumnSizer_Orientation1.png)
+
+### Fill remaining width for any column
+
+`SfDataGrid` allows to fill the remaining width in view for any column using [GridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~ColumnSizer.html) property.
+
+The `GridColumn.ColumnSizer` has higher priority than the [SfDataGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnSizer.html) property. Hence the individual columns having the `GridColumn.ColumnSizer` property set will not be included in the column sizer calculations of the `SfDataGrid`. To fill the column with remaining width in view, set the `GridColumn.ColumnSizer` property as [ColumnSizer.LastColumnFill](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ColumnSizer.html). Refer to the following code example to acheive the same:
+
+In the below code snippet, SfDataGrid is applied with `ColumnSizer.Star` and the second column is applied with `ColumnSizer.LastColumnFill`. Hence the second column will take up the remaining space after the other columns are rendered with star size.
+
+{% highlight c# %} 
+SfDataGrid dataGrid;
+ViewModel viewModel;
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    base.OnCreate(savedInstanceState);
+    dataGrid = new SfDataGrid(this.BaseContext);
+    viewModel = new ViewModel();
+    dataGrid.ItemsSource = viewModel.OrdersInfo;
+    dataGrid.AutoGenerateColumns = false;
+
+    GridTextColumn orderIDColumn = new GridTextColumn();
+    orderIDColumn.MappingName = "OrderID";
+
+    GridTextColumn customerIDColumn = new GridTextColumn();
+    customerIDColumn.MappingName = "CustomerID";
+    customerIDColumn.ColumnSizer = ColumnSizer.LastColumnFill;
+
+    GridTextColumn freightColumn = new GridTextColumn();
+    freightColumn.MappingName = "Freight";
+
+    GridTextColumn countryColumn = new GridTextColumn();
+    countryColumn.MappingName = "Country";
+
+    dataGrid.Columns.Add(orderIDColumn);
+    dataGrid.Columns.Add(customerIDColumn);
+    dataGrid.Columns.Add(freightColumn);
+    dataGrid.Columns.Add(countryColumn);
+
+    View.AddSubviews(dataGrid);
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/FillRemainingColumns_Xamarin.IOS.png)
+
+### Refreshing ColumnSizer for SfDataGrid at runtime
+
+To refresh the column sizing for `SfDataGrid.Columns` in runtime, use the [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer~Refresh(Boolean).html) property.
+
+Consider that `ColumnSizer.Auto` is applied to the SfDataGrid. If the underlying values are changed in run time, refresh the column sizer as shown below:
+
+{% highlight c# %} 
+SfDataGrid dataGrid;
+ViewModel viewModel;
+UIButton button;
+public MyViewController()
+{
+    dataGrid = new SfDataGrid();
+    viewModel = new ViewModel();
+    button = new UIButton();
+    button.SetTitle("ColumnSizer",UIControlState.Normal);
+    button.TouchDown += ColumnSizerChanged;
+    dataGrid.AutoGenerateColumns = true;
+    dataGrid.ItemsSource = viewModel.OrdersInfo;
+    dataGrid.AllowEditing = true;
+    dataGrid.ColumnSizer = ColumnSizer.Auto;
+
+    View.AddSubviews(button);
+    View.AddSubviews(dataGrid);
+}
+private void ColumnSizerChanged(object sender, EventArgs e)
+{
+    //Refreshes the column sizer of the SfDataGrid
+    dataGrid.GridColumnSizer.Refresh(true);
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/RefreshColumnSizer_Xamarin.IOS.gif)
+
+### Resetting column width to apply ColumnSizer   
+
+By default, the columns having the [GridColumn.Width](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~Width.html) property set will not be included for column sizer calculations of SfDataGrid. To include the width columns and reset the column sizer in runtime, set the `GridColumn.Width` property to double.NaN before calling the [GridColumnSizer.Refresh()](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer~Refresh(Boolean).html) method. Refer to the following code example to achieve the same:
+
+{% highlight c# %}
+SfDataGrid dataGrid;
+ViewModel viewModel;
+UIButton button;
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    base.OnCreate(savedInstanceState);
+    layout = new LinearLayout(this.BaseContext);
+    layout.Orientation = Orientation.Vertical;
+    button = new Button(this.BaseContext);
+    button.Text = "Reset ColumnWidth";
+    button.Click += ColumnSizerChanged;
+    dataGrid = new SfDataGrid(this.BaseContext);
+    viewModel = new ViewModel();
+    dataGrid.AutoGenerateColumns = false;
+    dataGrid.ItemsSource = viewModel.OrdersInfo;
+
+    GridTextColumn orderIDColumn = new GridTextColumn();
+    orderIDColumn.MappingName = "OrderID";
+    orderIDColumn.Width = 20;
+
+    GridTextColumn customerIDColumn = new GridTextColumn();
+    customerIDColumn.MappingName = "CustomerID";
+
+    GridTextColumn freightColumn = new GridTextColumn();
+    freightColumn.MappingName = "Freight";
+
+    GridTextColumn countryColumn = new GridTextColumn();
+    countryColumn.MappingName = "Country";
+
+    dataGrid.Columns.Add(orderIDColumn);
+    dataGrid.Columns.Add(customerIDColumn);
+    dataGrid.Columns.Add(freightColumn);
+    dataGrid.Columns.Add(countryColumn);
+
+    View.AddSubviews(button);
+    View.AddSubviews(dataGrid);
+}
+{% endhighlight %}
+{% highlight c# %}
+private void ColumnSizerChanged(object sender, EventArgs e)
+{
+    //Resets the widths for the columns having GridColumn.Width property set
+    ResetColumns();
+    dataGrid.GridColumnSizer.Refresh(true);
+}
+private void ResetColumns()
+{
+    foreach (var column in dataGrid.Columns)
+    {
+        // Setting NaN values to columns for which width is applied
+        if (!double.IsNaN(column.Width))
+        {
+            column.Width = double.NaN;
+        }
+    }
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/Reset_ColumnWidth_Xamarin.IOS.png)
+
+## Star column sizer ratio support
+
+To customize the `ColumnSizer.Star` width calculation, write a custom GridColumnSizer class derived from [GridColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer.html) and assign it to the `SfDataGrid.ColumnSizer` property. To implement your own logic to divide the column widths in different ratios, override the [SetStarWidthForColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumnSizer~SetStarWidthForColumns.html) method in your custom GridColumnSizer class.
+
+To set star sizer ratio for individual columns, follow the code example:
+
+{% highlight c# %}
+SfDataGrid dataGrid;
+ViewModel viewModel;
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    base.OnCreate(savedInstanceState);
+    dataGrid = new SfDataGrid(this.BaseContext);
+    viewModel = new ViewModel();
+    dataGrid.AutoGenerateColumns = false;
+    dataGrid.ItemsSource = viewModel.OrdersInfo;
+    dataGrid.ColumnSizer = ColumnSizer.Star;
+    // Assigns the custom column sizer to the SfDataGrid
+    dataGrid.GridColumnSizer = new CustomColumnSizer(this.dataGrid, viewModel);
+
+    GridTextColumn orderIDColumn = new GridTextColumn();
+    orderIDColumn.MappingName = "OrderID";
+    //Assigns the ratio for OrderID column
+    viewModel.ColumnRatio.Add(orderIDColumn.MappingName, 3);
+
+    GridTextColumn customerIDColumn = new GridTextColumn();
+    customerIDColumn.MappingName = "CustomerID";
+    //Assigns the ratio for CustomerID column
+    viewModel.ColumnRatio.Add(customerIDColumn.MappingName, 2);
+
+    GridTextColumn freightColumn = new GridTextColumn();
+    freightColumn.MappingName = "Freight";
+
+    GridTextColumn countryColumn = new GridTextColumn();
+    countryColumn.MappingName = "Country";
+
+    dataGrid.Columns.Add(orderIDColumn);
+    dataGrid.Columns.Add(customerIDColumn);
+    dataGrid.Columns.Add(freightColumn);
+    dataGrid.Columns.Add(countryColumn);
+
+    View.AddSubviews(dataGrid);
+}
+{% endhighlight %}
+
+The following code example demonstrates how the width is calculated for column, based on the `GetRatio` property in `SetStarWidthForColumns` method:
+
+{% highlight c# %} 
+public class CustomColumnSizer : GridColumnSizer
+{
+    SfDataGrid dataGrid;
+    ViewModel viewModel;
+    public CustomColumnSizer(SfDataGrid grid, ViewModel view) : base(grid)
+    {
+        dataGrid = grid;
+        viewModel = view;
+    }
+    protected override void SetStarWidthForColumns(double columnsWidth, IEnumerable<GridColumn> columns)
+    {
+        var removedColumn = new List<GridColumn>();
+        var column = columns.ToList();
+        var totalRemainingStarValue = columnsWidth;
+        double removedWidth = 0;
+        bool isremoved;
+        while (column.Count > 0)
+        {
+            isremoved = false;
+            removedWidth = 0;
+            var columnsCount = 0;
+            foreach (var data in column)
+            {
+                columnsCount += viewModel.GetRatio(data.MappingName);
+            }
+            double starWidth = Math.Floor((totalRemainingStarValue / columnsCount));
+            var col = column.First();
+
+            //Calculate the ColumnSizer ratio for every column  
+            starWidth *= viewModel.GetRatio(col.MappingName);
+            var columnSizer = DataGrid.GridColumnSizer;
+            var method = columnSizer.GetType().GetRuntimeMethods().FirstOrDefault(x => x.Name == "SetColumnWidth");
+            var width = method.Invoke(columnSizer, new object[] { col, starWidth });
+            double computeWidth = (double)width;
+
+            if (starWidth != computeWidth && starWidth > 0)
+            {
+                isremoved = true;
+                column.Remove(col);
+                foreach (var remColumn in removedColumn)
+                {
+                    if (!column.Contains(remColumn))
+                    {
+                        removedWidth += remColumn.ActualWidth;
+                        column.Add(remColumn);
+                    }
+                }
+                removedColumn.Clear();
+                totalRemainingStarValue += removedWidth;
+            }
+            totalRemainingStarValue = totalRemainingStarValue - computeWidth;
+            if (!isremoved)
+            {
+                column.Remove(col);
+                if (!removedColumn.Contains(col))
+                    removedColumn.Add(col);
+            }
+        }
+    }
+}
+{% endhighlight %} 
+
+The following code example explains the `GetRatio` property of the `ViewModel` class: 
+
+{% highlight c# %} 
+public class ViewModel : INotifyPropertyChanged
+{
+    public Dictionary<string, int> ColumnRatio;
+    public ViewModel()
+    {
+        SetRowstoGenerate(50);
+        ColumnRatio = new Dictionary<string, int>();
+    }
+
+    #region ItemsSource
+
+    private ObservableCollection<OrderInfo> ordersInfo;
+
+    public ObservableCollection<OrderInfo> OrdersInfo
+    {
+        get { return ordersInfo; }
+        set { this.ordersInfo = value; }
+    }
+
+    internal int GetRatio(string mappingName)
+    {
+        if (ColumnRatio.ContainsKey(mappingName))
+            return ColumnRatio.GetValueOrDefault(mappingName);
+        else
+            return 1;
+    }
+
+    #endregion
+
+    #region ItemSource Generator
+
+    public void SetRowstoGenerate(int count)
+    {
+        OrderInfoRepository order = new OrderInfoRepository();
+        ordersInfo = order.GetOrderDetails(count);
+    }
+
+    #endregion
+
+    #region INotifyPropertyChanged implementation
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisePropertyChanged(string propertyName)
+    {
+        if (PropertyChanged != null)
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+    #endregion
+}
+{% endhighlight %} 
+
+![](SfDataGrid_images/StarColumnSizerRatio_Xamarin.IOS.png)
