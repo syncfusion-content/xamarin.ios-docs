@@ -228,10 +228,10 @@ protected override void OnCreate(Bundle savedInstanceState)
 private void ColumnSizerChanged(object sender, EventArgs e)
 {
     //Resets the widths for the columns having GridColumn.Width property set
-    ResetColumns();
+    ResetColumnsWidth();
     dataGrid.GridColumnSizer.Refresh(true);
 }
-private void ResetColumns()
+private void ResetColumnsWidth()
 {
     foreach (var column in dataGrid.Columns)
     {
