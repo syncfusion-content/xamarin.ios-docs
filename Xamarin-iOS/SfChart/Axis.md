@@ -494,11 +494,3 @@ chart.PrimaryAxis.LabelsIntersectAction = SFChartAxisLabelsIntersectAction.Multi
 
 
 ![]( Axis_images/LabelsIntersectAction.png)
-
-## Events
-
-**LabelClicked**
-
-This event is triggered when the axis label is clicked. The argument contains the following information.
-
-* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabelClickedEventArgs~Label.html) - Used to get the ChartAxisLabel, which contains axis label position and text.
