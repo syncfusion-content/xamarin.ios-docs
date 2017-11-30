@@ -146,7 +146,7 @@ Zooming and panning can be performed programmatically with the following methods
 
 [`ZoomIn`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomIn.html) method is used to increase the magnification of the plot area to view the data clearly.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
 
@@ -158,7 +158,7 @@ zoomPan.ZoomIn();
 
 [`ZoomOut`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomOut.html) is used to decrease the magnification of the plot area to reset the default view.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
 
@@ -172,7 +172,7 @@ zoomPan.ZoomOut();
 
 This method is used to change the zoom level by using zoom factor.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
 
@@ -184,7 +184,7 @@ zoomPan.Zoom(0.5f);
 
 This method is used to zoom the chart for a given rectangle value.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
 
@@ -196,7 +196,7 @@ zoomPan.Zoom(new CGRect(10, 10, 200, 350));
 
 This method is used to change the zoom level by using zoom position and zoom factor. Zoom position value specifies the starting point of zooming, and zoom factor value specifies the level of zooming.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
 
@@ -208,7 +208,7 @@ zoomPan.Zoom(axis, 0.5f, 0.5f);
 
 This method is used to zoom the given axis to given range.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
 
@@ -221,7 +221,7 @@ zoomPan.Zoom(axis, 20, 25);
 
 [`ZoomWithCumulativeScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomWithCumulativeScale.html) method is used to change the zoom level of given axis to the specified level and origin.
 
-{ % highlight c# %}
+{% highlight c# %}
 
 SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
 
@@ -233,17 +233,10 @@ zoomPan.ZoomWithCumulativeScale(0.5, 0.5, axis);
 
 [`Reset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~Reset.html) method is used to return the plot area back to its original position after zooming. 
 
-{ % highlight c# %}
+{% highlight c# %}
 
 SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
 
 zoomPan.Reset();
 
 {% endhighlight %}
-
-
-
-
-
-
-
