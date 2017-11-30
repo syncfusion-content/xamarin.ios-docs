@@ -86,7 +86,7 @@ It helps to be able to add multiple scales to the same circular gauge, and also 
 	
 	SFCircularScale circularSsPerInterval = 1;
 	circularScale.ScaleScale = new SFCircularScale();
-    circularScale.MinorTicktartOffset = (float)0.5;
+    circularScale.ScaleStartOffset = (float)0.5;
 	circularScale.ScaleEndOffSet = (float)0.55;
 	circularScale.LabelOffset = (float)0.35;
 	circularScale.LabelColor = UIColor.White;
