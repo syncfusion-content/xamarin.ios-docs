@@ -482,6 +482,22 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 ![]( Axis_images/MaxLabels.png)
 
+## AutoScrollingMode
+
+[`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) is `End`.
+
+{% highlight c# %}
+
+SFCategoryAxis primaryAxis = new SFCategoryAxis();
+
+primaryAxis.AutoScrollingDelta = 3;
+
+primaryAxis.AutoScrollingMode = ChartAutoScrollingMode.Start;
+
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
 ## Smart Axis Labels
 
 Axis labels may overlap with each other based on chart dimensions and label size. The `LabelsIntersectAction` property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of `LabelsIntersectAction` is `SFChartAxisLabelsIntersectAction.None`. Other available values of `LabelsIntersectAction` are `SFChartAxisLabelsIntersectAction.MultipleRows` and `SFChartAxisLabelsIntersectAction.Hide`.
@@ -494,3 +510,11 @@ chart.PrimaryAxis.LabelsIntersectAction = SFChartAxisLabelsIntersectAction.Multi
 
 
 ![]( Axis_images/LabelsIntersectAction.png)
+
+## Events
+
+**LabelClicked**
+
+This event is triggered when the axis label is clicked. The argument contains the following information.
+
+* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabelClickedEventArgs~Label.html) - Used to get the ChartAxisLabel, which contains axis label position and text.
