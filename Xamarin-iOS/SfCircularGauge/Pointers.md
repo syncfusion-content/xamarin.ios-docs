@@ -98,7 +98,7 @@ Tail of `NeedlePointer` can be customized by using `TailColor`, `TailLengthFacto
 
 ![](iOS_Images/Tail.png)
 
-##Range Pointer
+## Range Pointer
 
 A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark values. The range pointer’s UI is customized by the `Color` and `Width` properties.
 
