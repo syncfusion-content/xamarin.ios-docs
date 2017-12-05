@@ -482,7 +482,7 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 ![]( Axis_images/MaxLabels.png)
 
-## AutoScrollingMode
+### AutoScrollingMode
 
 [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) is `End`.
 
