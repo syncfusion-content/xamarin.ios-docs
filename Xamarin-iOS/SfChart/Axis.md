@@ -498,6 +498,125 @@ chart.PrimaryAxis = primaryAxis;
 
 {% endhighlight %}
 
+## Axis Crossing
+
+Axis can be positioned anywhere in the chart area by using [`CrossesAt`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~CrossesAt.html) property. This property specifies where the horizontal axis should intersect or cross the vertical axis or vice-versa. Default value of [`CrossesAt`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~CrossesAt.html) property is null.
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new SFCategoryAxis () 
+{ 
+    CrossesAt = 0 
+};
+
+chart.SecondaryAxis = new SFNumericalAxis() 
+{ 
+    CrossesAt = 8 
+};
+
+{% endhighlight %}
+
+![]( Axis_images/AxisCrossing_img1.png)
+
+### Crossing at specific axis
+
+[`CrossingAxisName`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~CrossingAxisName.html) property takes axis name as input and determines the axis that used for crossing. By default, all the horizontal axes cross in primary Y axis, and all the vertical axes cross in primary X axis.
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new SFCategoryAxis() 
+{
+    CrossesAt = 0,
+     
+    Name = “PrimaryAxis”,
+
+    CrossingAxisName = “SecondaryAxis”  
+};
+
+chart.SecondaryAxis =  new SFNumericalAxis() 
+{ 
+    CrossesAt = 2, 
+
+    Name = “YAxis”,
+
+    CrossingAxisName = “PrimaryAxis”
+};
+
+SFBubbleSeries series = new SFBubbleSeries();
+
+series.YAxis = new SFNumericalAxis()
+{
+    CrossesAt = 8,
+
+    Name = (NSString)"SecondaryAxis",
+
+    CrossingAxisName = (NSString)"PrimaryAxis"
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+![]( Axis_images/AxisCrossing_img2.png)
+
+### Crossing value below or above the visible range
+
+Axis will be placed in the opposite side if the value of [`CrossesAt`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~CrossesAt.html) property is greater than the maximum value of crossing axis. Axis will be placed in the default position if the value of [`CrossesAt`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~CrossesAt.html) property is less than the minimum value of crossing axis.
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new SFCategoryAxis() 
+{ 
+    CrossesAt = 150
+};
+
+chart.SecondaryAxis =  new SFNumericalAxis()
+{ 
+    CrossesAt = -2
+};
+
+{% endhighlight %}
+
+![]( Axis_images/AxisCrossing_img3.png)
+
+### Crossing in date time axis
+
+For crossing in date time horizontal axis, date object should be provided as value for [`CrossesAt`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~CrossesAt.html) property of vertical axis.
+
+{% highlight c# %}
+
+chart.PrimaryAxis  = new SFDateTimeAxis() 
+{ 
+    CrossesAt = 0 
+};
+
+chart.SecondaryAxis =  new SFNumericalAxis() 
+{
+    CrossesAt = new DateTime(2003, 1, 1) 
+};
+
+{% endhighlight %}
+
+![]( Axis_images/AxisCrossing_img4.png)
+
+### Positioning the axis elements while crossing
+
+The [`RenderNextToCrossingValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~RenderNextToCrossingValue.html) property is used to determine whether the crossing axis should be placed at crossing position or not. The default value of [`RenderNextToCrossingValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~RenderNextToCrossingValue.html) property is true.
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new SFCategoryAxis()
+{
+    CrossesAt = 0,
+
+    RenderNextToCrossingValue = false
+
+};
+
+{% endhighlight %}
+
+![]( Axis_images/AxisCrossing_img5.png)
+
 ## Smart Axis Labels
 
 Axis labels may overlap with each other based on chart dimensions and label size. The `LabelsIntersectAction` property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of `LabelsIntersectAction` is `SFChartAxisLabelsIntersectAction.None`. Other available values of `LabelsIntersectAction` are `SFChartAxisLabelsIntersectAction.MultipleRows` and `SFChartAxisLabelsIntersectAction.Hide`.
