@@ -35,12 +35,12 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
 {% highlight C# %}
 		   
 		   NSMutableArray appCollection = new NSMutableArray();
-            NSCalendar nscalendar = NSCalendar.CurrentCalendar;
+            NSCalendar date = NSCalendar.CurrentCalendar;
 
             NSDate today = new NSDate();
 
             // Get the year, month, day from the date
-            NSDateComponents startDateComponents = nscalendar.Components(
+            NSDateComponents startDateComponents = date.Components(
             NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
 
             // Set the year, day, hour, minute, second
@@ -52,7 +52,7 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
             startDateComponents.Second = 0;
 
             // Get the year, month, day from the date
-            NSDateComponents endDateComponents = nscalendar.Components(
+            NSDateComponents endDateComponents = date.Components(
             NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
 
             // Set the year, day, hour, minute, second
@@ -64,10 +64,10 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
             endDateComponents.Second = 0;
 
             //setting start time for the event
-            NSDate startDate = nscalendar.DateFromComponents(startDateComponents);
+            NSDate startDate = date.DateFromComponents(startDateComponents);
 
             //setting end time for the event
-            NSDate endDate = nscalendar.DateFromComponents(endDateComponents);
+            NSDate endDate = date.DateFromComponents(endDateComponents);
 
             //Adding calendar appointment in calendar appointment collection 
             appCollection.Add(new SFAppointment()

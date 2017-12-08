@@ -28,23 +28,23 @@ N> Beyond the min max date range, following restrictions will be applied.
 {% highlight c# %}
 
 	SFCalendar  calendar = new SFCalendar ();
-	NSCalendar nscalendar = NSCalendar.CurrentCalendar;
+	NSCalendar date = NSCalendar.CurrentCalendar;
     NSDate today = new NSDate();
-    NSDateComponents minDateComponents = nscalendar.Components(
+    NSDateComponents minDateComponents = date.Components(
 						NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
 	minDateComponents.Year = 2014;
     minDateComponents.Month = 4;
 	minDateComponents.Day = 1;
 				
 
-	NSDateComponents maxDateComponents = nscalendar.Components(
+	NSDateComponents maxDateComponents = date.Components(
 					NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
 	maxDateComponents.Year = 2018;
 	maxDateComponents.Month = 4;
 	maxDateComponents.Day = 1;
 
-	NSDate minDate = nscalendar.DateFromComponents(minDateComponents);
-	NSDate maxDAte = nscalendar.DateFromComponents(maxDateComponents);
+	NSDate minDate = date.DateFromComponents(minDateComponents);
+	NSDate maxDAte = date.DateFromComponents(maxDateComponents);
 
 	calendar.MinDate = minDate;
 	calendar.MaxDate = maxDAte;
@@ -64,14 +64,14 @@ The BlackoutDays can be achieved in two ways.
 {% highlight c# %}
 
 	SFCalendar  calendar = new SFCalendar ();
-	NSCalendar nscalendar = NSCalendar.CurrentCalendar;
+	NSCalendar date = NSCalendar.CurrentCalendar;
     NSDate today = new NSDate();
-    NSDateComponents components = nscalendar.Components(
+    NSDateComponents components = date.Components(
 						NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
 	calendar.BlackoutDates = new NSMutableArray ();
 	for (int i = 0; i < 5; i++) 
 	{
-		NSDate startDate = nscalendar.DateFromComponents (components);
+		NSDate startDate = date.DateFromComponents (components);
 		components.Day += 1;
 		calendar.BlackoutDates.Add (startDate);
 	}
