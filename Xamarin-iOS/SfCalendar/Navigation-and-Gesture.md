@@ -15,17 +15,18 @@ Visible dates can be moved to specific date using `MoveToDate` property availabl
 
 {% highlight c# %}
 
-	Calendar moveToDate = Calendar.getInstance();   
-    moveToDate.Set
-        (
-                2010,
-                Calendar.AUGUST,
-                25,
-                0,
-                0,
-                0
-        );
-    calendar.MoveToDate=moveToDate;
+	NSCalendar nscalendar = NSCalendar.CurrentCalendar;
+    NSDate today = new NSDate();
+    NSDateComponents movetoDateComponents = nscalendar.Components(
+            NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+    
+    movetoDateComponents.Year = 2015;
+    movetoDateComponents.Month = 4;
+    movetoDateComponents.Day = 1;
+
+    NSDate moveToDate = nscalendar.DateFromComponents(movetoDateComponents);
+    calendar.MoveToDate(moveToDate);
+
 
 {% endhighlight %}
 

@@ -66,10 +66,14 @@ For instance add all the holiday dates to blackout dates property.
 {% highlight c# %}
 
 	SFCalendar  calendar = new SFCalendar ();
+	NSCalendar nscalendar = NSCalendar.CurrentCalendar;
+    NSDate today = new NSDate();
+    NSDateComponents components = nscalendar.Components(
+						NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
 	calendar.BlackoutDates = new NSMutableArray ();
 	for (int i = 0; i < 5; i++) 
 	{
-		NSDate startDate = calendar.DateFromComponents (components);
+		NSDate startDate = nscalendar.DateFromComponents (components);
 		components.Day += 1;
 		calendar.BlackoutDates.Add (startDate);
 	}
@@ -83,8 +87,30 @@ Set `MinDate` and `MaxDate` property to limit visible dates range. Check the [Mi
 {% highlight c# %}
 
 	SFCalendar  calendar = new SFCalendar ();
-	calendar.MinDate = new DateTime(2014,4,1);
-	calendar.MaxDate = new DateTime(2018,4,1);
+
+	NSCalendar nscalendar = NSCalendar.CurrentCalendar;
+
+    NSDate today = new NSDate();
+
+    NSDateComponents minDateComponents = nscalendar.Components(
+						NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+	minDateComponents.Year = 2014;
+    minDateComponents.Month = 4;
+	minDateComponents.Day = 1;
+				
+
+	NSDateComponents maxDateComponents = nscalendar.Components(
+					NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+	maxDateComponents.Year = 2018;
+	maxDateComponents.Month = 4;
+	maxDateComponents.Day = 1;
+
+	NSDate minDate = nscalendar.DateFromComponents(minDateComponents);
+	NSDate maxDAte = nscalendar.DateFromComponents(maxDateComponents);
+
+	calendar.MinDate = minDate;
+	calendar.MaxDate = maxDAte;
+
 
 
 {% endhighlight %}                                  

@@ -20,7 +20,7 @@ Inline event support can be toggled on / off with `ShowInLineEvent` property.
 
 {% highlight c# %}
 
-	calendar.ShowInLineEvent=true;
+	 calendar.EnableInLine = true;
 
 {% endhighlight %}
 
@@ -34,13 +34,50 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
 
 {% highlight C# %}
 		   
-		   SFCalendarInlineEvent event=new SFCalendarInlineEvent();
-           DateTime d=new DateTime(2015,1,1);
-           DateTime d1=new DateTime(2015,1,1);
-           event.StartTime=d;
-           event.EndTime=d1;
-           event.Subject=(NSString)”Go to Meeting”;
-           event.Color=UIColor.RED;
+		   NSMutableArray appCollection = new NSMutableArray();
+            NSCalendar nscalendar = NSCalendar.CurrentCalendar;
+
+            NSDate today = new NSDate();
+
+            // Get the year, month, day from the date
+            NSDateComponents startDateComponents = nscalendar.Components(
+            NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+
+            // Set the year, day, hour, minute, second
+            startDateComponents.Year = 2015;
+            startDateComponents.Month = 10;
+            startDateComponents.Day = 9;
+            startDateComponents.Hour = 10;
+            startDateComponents.Minute = 0;
+            startDateComponents.Second = 0;
+
+            // Get the year, month, day from the date
+            NSDateComponents endDateComponents = nscalendar.Components(
+            NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+
+            // Set the year, day, hour, minute, second
+            endDateComponents.Year = 2015;
+            endDateComponents.Month = 10;
+            endDateComponents.Day = 9;
+            endDateComponents.Hour = 12;
+            endDateComponents.Minute = 0;
+            endDateComponents.Second = 0;
+
+            //setting start time for the event
+            NSDate startDate = nscalendar.DateFromComponents(startDateComponents);
+
+            //setting end time for the event
+            NSDate endDate = nscalendar.DateFromComponents(endDateComponents);
+
+            //Adding calendar appointment in calendar appointment collection 
+            appCollection.Add(new SFAppointment()
+            {
+                StartTime = startDate,
+                EndTime = endDate,
+                Subject = (NSString)"Client Meeting",
+                AppointmentBackground = UIColor.Blue
+            });
+
 		   
 {% endhighlight %}
 
@@ -48,8 +85,7 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
 
 {% highlight c# %}
 
-	SFCalendarEventCollection eventsCollection = new SFCalendarEventCollection();
-	eventsCollection.Add(events);
+	 calendar.Appointments = appCollection;
 	
 {% endhighlight %}
 
