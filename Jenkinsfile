@@ -42,7 +42,6 @@ String platform='Xamarin-iOS';
 		 
 	  }
 	  
-	}
 	
     catch(Exception e)
     {
