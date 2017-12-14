@@ -613,6 +613,11 @@ chart.PrimaryAxis = new SFCategoryAxis()
 
 };
 
+chart.SecondaryAxis = new SFNumericalAxis()
+{
+    CrossesAt = 5,
+};
+
 {% endhighlight %}
 
 ![]( Axis_images/AxisCrossing_img5.png)
