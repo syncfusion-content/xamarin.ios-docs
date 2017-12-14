@@ -114,6 +114,36 @@ SFColumnSeries series 	= new SFColumnSeries ();
 series.VisibleOnLegend 	= true;
 {% endhighlight %}
 
+## Legend Wrap
+
+The legend items can be placed in multiple rows by using [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~OverflowMode.html) property if size of the total legend exceeds the available size. The default value of [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~OverflowMode.html) property is Scroll.
+
+{% highlight c# %}
+
+    chart.Legend.Visible = true;
+
+    chart.Legend.OverflowMode = ChartLegendOverflowMode.Wrap;
+
+{% endhighlight %}
+
+![](Legend_images/LegendWrap_img1.png)
+
+### Legend Width
+
+The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~MaxWidth.html) property. This property works only when the [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~OverflowMode.html) is Wrap. The default value of [`MaxWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~MaxWidth.html) property is double.NAN.
+
+{% highlight c# %}
+
+    chart.Legend.Visible = true;
+
+    chart.Legend.OverflowMode = ChartLegendOverflowMode.Wrap;
+
+    chart.Legend.MaxWidth = 280;
+
+{% endhighlight %}
+
+![](Legend_images/LegendWrap_img2.png)
+
 ## Positioning the Legend
 
 You can position the legend anywhere inside the chart. Following properties are used to customize the legend positions.
