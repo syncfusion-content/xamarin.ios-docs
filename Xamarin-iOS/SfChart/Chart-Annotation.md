@@ -128,7 +128,7 @@ EllipseAnnotation annotation = new EllipseAnnotation()
 
     Y2 = 35,
 
-    YAxisName = "Yaxis"
+    YAxisName = "YAxis"
 };
 
 chart.Annotations.Add(annotation);
@@ -143,7 +143,7 @@ series.YBindingPath = "Value";
 
 series.YAxis = new SFNumericalAxis()
 { 
-    Name = new NSString("Yaxis"),
+    Name = new NSString("YAxis"),
 
     OpposedPosition = true,
 };
