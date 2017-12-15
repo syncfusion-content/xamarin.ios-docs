@@ -579,7 +579,6 @@ chart.SecondaryAxis =  new SFNumericalAxis()
 
 ![]( Axis_images/AxisCrossing_img3.png)
 
-
 ### Crossing in date time axis
 
 For crossing in date time horizontal axis, date object should be provided as value for [`CrossesAt`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~CrossesAt.html) property of vertical axis.
