@@ -177,9 +177,7 @@ The `SfDataGrid.ColumnResizing` event provides the following properties through 
 * [ResizingState](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridResizingEventArgs~ResizingState.html) - Returns the current state of the user-interaction through a value from the ProgressStates enum.
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true)- A Boolean property to cancel the event and the resizing operation. 
 
-### How To
-
-#### Cancel resizing for a column
+### Cancel resizing for a column
 
 You can cancel resizing for a particular column using the [SfDataGrid.ColumnResizing](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ColumnResizing_EV.html) event. You can cancel the resizing operation of a column based on the different arguments provided in the `GridResizingEventArgs`. 
 
