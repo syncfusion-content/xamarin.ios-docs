@@ -9,9 +9,9 @@ documentation : ug
 
 # Zooming
 
-The image editor control provides support for zooming and panning.You can Zoom in and Zoom out image  in imageeditor control.
+The image editor control provides support for zooming and panning.You can Zoom in and Zoom out image  in image editor control.
 
-The following properties are related to the zooming feature of the imageeditor control:
+The following properties are related to the zooming feature of the image editor control:
 
 * EnableZooming
 * Maximum ZoomLevel
@@ -32,7 +32,7 @@ The following properties are related to the zooming feature of the imageeditor c
 
 ### Maximum ZoomLevel
 
-You can customize maximum zoom level  by setting value to Maximum ZoomLevel property in imageeditor control.
+You can customize maximum zoom level  by setting value to Maximum ZoomLevel property in image editor control.
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ You can customize maximum zoom level  by setting value to Maximum ZoomLevel prop
 
 ## Panning
 
-Imageeditor control provides support for panning.Imageeditor allows to pan image with only two fingers to identify touch interaction between panning and Resizing or shifting shapes.
+Image editor control provides support for panning.Imageeditor allows to pan image with only two fingers to identify touch interaction between panning and Resizing or shifting shapes.
 
 ![SfImageEditor](ImageEditor_images/zoom.gif)
 

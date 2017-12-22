@@ -9,7 +9,7 @@ documentation : ug
 
 # ToolbarCustomization
 
-You can customize colorpalette and visibility of the toolbar.
+You can customize color palette and visibility of the toolbar.
 
 ## To customize the ColorPalette
 
