@@ -16,7 +16,8 @@ Image Editor is a very handy tool used to edit an image by annotating with free 
 * Crop 
 * Rotate 
 * Flip
-* Support to add shapes like Rectangle, Circle, Text and Path.
+* Support to add shapes like Rectangle, Circle, Arrow, Text and Path.
+* Zoom and Pan
 * Undo and Redo support
 * Signature control
 * Save the image to device
