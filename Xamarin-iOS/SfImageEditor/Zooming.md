@@ -47,7 +47,7 @@ You can customize maximum zoom level  by setting value to Maximum ZoomLevel prop
 
 ## Panning
 
-Image editor control provides support for panning.Imageeditor allows to pan image with only two fingers to identify touch interaction between panning and Resizing or shifting shapes.
+Image editor control provides support for panning.Image editor allows to pan image with only two fingers to identify touch interaction between panning and Resizing or shifting shapes.
 
 ![SfImageEditor](ImageEditor_images/zoom.gif)
 
