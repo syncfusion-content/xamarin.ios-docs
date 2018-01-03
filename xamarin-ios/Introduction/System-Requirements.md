@@ -9,7 +9,7 @@ documentation: ug
 
 # System Requirements
 
-**Integrated** **Development** **Environment** **for** **Mac**
+**Integrated** **Development** **Environment** **for** **Windows**
 
 * Visual Studio 2013
 * Visual Studio 2015
