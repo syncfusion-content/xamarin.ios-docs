@@ -11,6 +11,8 @@ documentation: ug
 
 **Integrated** **Development** **Environment** **for** **Windows**
 
+By using the following IDEs, you can develop Xamarin.iOS applications:
+
 * Visual Studio 2013
 * Visual Studio 2015
 * Visual Studio 2017
@@ -21,7 +23,7 @@ N> You can use Xamarin build host feature to deploy Xamarin.iOS and Xamarin.Form
 
 **Integrated** **Development** **Environment** **for** **Mac**
 
-By using Visual Studio for Mac, you can develop iOS and Android applications.
+By using Visual Studio for Mac, you can develop Xamarin.iOS applications.
 
 N> For installing and configuring Xamarin in Visual Studio for Mac, please refer this [`link`](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
 
