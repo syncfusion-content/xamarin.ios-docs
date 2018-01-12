@@ -57,6 +57,17 @@ You can customize the interval of timeslots in `WeekView` by setting [TimeInterv
 
 ![](daymodule_images/timeinterval_week.png)
 
+## Change Time Interval Height
+You can customize the interval height of timeslots in `WeekView` by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimeIntervalHeight.html)  property of `SFSchedule`.
+
+{% highlight C# %}
+
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+    schedule.TimeIntervalHeight = 120;
+{% endhighlight %}
+
+![](daymodule_images/weekview_height.png)
+
 ## Change Working hours:
 Working hours in `WeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~WorkEndHour.html) properties of [WeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~WeekViewSettings.html).
 
