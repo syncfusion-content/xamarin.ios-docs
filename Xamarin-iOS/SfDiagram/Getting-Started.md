@@ -132,7 +132,7 @@ The flow chart will get displayed in the SfDiagram as follows
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 This demo project can be downloaded from the following link. 
-[GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.iOS/Samples/GettingStarted_iOS.zip)
+[GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.iOS/Samples/GettingStarted_iOS_SfDiagram.zip)
  
 ## Create a simple organizational chart
 
