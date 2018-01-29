@@ -147,4 +147,51 @@ Visible dates can be restricted between certain range of dates, using [MinDispla
 
 {% endhighlight %}   
 
+## VisibleDatesChanged event
+You can get the visible dates of the Schedule using [VisibleDatesChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~VisibleDatesChanged_EV.html) in `SfSchedule`. It is applicable in all the schedule views.The event handler receives an argument of type [VisibleDatesChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.VisibleDatesChangedEventArgs.html) containing [VisibleDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.VisibleDatesChangedEventArgs~VisibleDates.html).
+
+{% highlight c# %} 
+
+    schedule.VisibleDatesChanged += Schedule_VisibleDatesChanged;
+
+    void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
+	{
+	    var visibleDates = e.VisibleDates;
+	} 
+
+{% endhighlight %}  
+
+`VisibleDatesChanged` event will be triggered when view is swiped back or forth and also when schedule view is switched dynamically.
+
+You can add appointments on demand based on the visible date range in this event by setting Appointments property to schedule in the VisibleDatesChanged event.
+
+{% highlight c# %} 
+
+    void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
+	{
+		schedule.Appointments = scheduleAppointmentCollection;
+	} 
+
+{% endhighlight %}  
+
+You can also move to specific time of the day or current time of day when view is swiped by setting specific time in MoveToDate property in the VisibleDatesChanged event. Such that when the schedule view is swiped, it moves to the mentioned time.  
+
+{% highlight c# %}
+
+        schedule.VisibleDatesChanged += Schedule_VisibleDatesChanged;
+       void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
+		{
+			NSDate date = e.VisibleDates.GetItem<NSDate>(0);
+			NSCalendar calendar = NSCalendar.CurrentCalendar;
+			// Get the year, month, day from the date
+			NSDateComponents components = calendar.Components(
+				NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, date);
+			// Set the hour, minute, second
+			components.Hour = 10;
+			components.Minute = 0;
+			components.Second = 0;
+			NSDate moveToDate = calendar.DateFromComponents(components);
+			schedule.MoveToDate(moveToDate);
+		}
+{% endhighlight %}
 
