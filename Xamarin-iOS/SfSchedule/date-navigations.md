@@ -163,7 +163,7 @@ You can get the visible dates of the Schedule using [VisibleDatesChanged](https:
 
 `VisibleDatesChanged` event will be triggered when view is swiped back or forth and also when schedule view is switched dynamically.
 
-You can add appointments on demand in the visible date ranges in this event by setting Appointments property to schedule in the VisibleDatesChanged event.
+You can add appointments on demand based on the visible date range in this event by setting Appointments property to schedule in the VisibleDatesChanged event.
 
 {% highlight c# %} 
 
