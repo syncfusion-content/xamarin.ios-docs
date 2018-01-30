@@ -439,7 +439,7 @@ Calculate the summary values based on custom logic using the [GridSummaryColumn.
 1. Create custom aggregate class by deriving from [ISummaryAggregate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.iOS~Syncfusion.Data.ISummaryAggregate.html) interface.
 2. In the `CalculateAggregateFunc` method, you have to calculate the summary and assign it to the property.
 
-In the follwoing code snippet, the `Standard Deviation` is calculated for the quantity of products:
+In the following code snippet, the `Standard Deviation` is calculated for the quantity of products:
 
 {% highlight c# %}
 public class CustomAggregate : ISummaryAggregate
