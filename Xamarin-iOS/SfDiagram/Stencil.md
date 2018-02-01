@@ -32,14 +32,14 @@ The following code example illustrates how to add the custom shapes into a colle
 {% highlight c# %}
 //Custom shapes 
 Node custom = new Node();
-SfGraphics grap = new SfGraphics();
+SfGraphics graph = new SfGraphics();
 Pen pen2 = new Pen();
 pen2.StrokeBrush = new SolidBrush(UIColor.Black);
 pen2.StrokeWidth = 2;
 SolidBrush brush2 = new SolidBrush(UIColor.FromRGB(99, 184, 225));
 pen2.Brush = brush2;
-grap.DrawRectangle(pen2, new Rectangle(0, 0, 50, 50));
-custom.UpdateSfGraphics(grap);
+graph.DrawRectangle(pen2, new Rectangle(0, 0, 50, 50));
+custom.UpdateSfGraphics(graph);
 Pen pen4 = new Pen();
 pen4.StrokeBrush = new SolidBrush(UIColor.Black);
 pen4.StrokeWidth = 2;
