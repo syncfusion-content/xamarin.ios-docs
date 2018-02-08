@@ -69,6 +69,7 @@ You can customize the interval height of timeslots in `DayView` by setting [Time
 ![](daymodule_images/dayview_height.png)
 
 ## Change Working hours:
+You can hide the time slots by setting [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~EndHour.html) properties of [DayViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayViewSettings.html). Default value for StartHour and EndHour will be 0 to 24 hours. 
 Working hours in `DayView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~WorkEndHour.html) properties of [DayViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayViewSettings.html).
 
 {% highlight C# %}
@@ -76,8 +77,10 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
             schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
 			//Create new instance of DayViewSettings
 			DayViewSettings dayViewSettings = new DayViewSettings();
-			dayViewSettings.WorkStartHour = 10;
-			dayViewSettings.WorkEndHour = 18;
+			dayViewSettings.StartHour = 08;
+d			dayViewSettings.EndHour = 15;	
+			dayViewSettings.WorkStartHour = 09;
+			dayViewSettings.WorkEndHour = 16;
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 

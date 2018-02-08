@@ -67,6 +67,7 @@ You can customize the interval height of timeslots in `WorkWeekView` by setting 
 ![](daymodule_images/workweekview_height.png)
 
 ## Change Working hours:
+You can hide the time slots by setting [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~EndHour.html) properties of [WorkWeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings.html). Default value for StartHour and EndHour will be 0 to 24 hours.
 Working hours in `WorkWeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~WorkEndHour.html) properties of [WorkWeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings.html).
 
 {% highlight C# %}
@@ -74,8 +75,10 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
             schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
 			//Create new instance of WorkWeekViewSettings
 			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-			workWeekViewSettings.WorkStartHour = 10;
-			workWeekViewSettings.WorkEndHour = 18;
+			workWeekViewSettings.StartHour = 08;
+            workWeekViewSettings.EndHour = 15;	
+			workWeekViewSettings.WorkStartHour = 09;
+			workWeekViewSettings.WorkEndHour = 16;
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
