@@ -32,7 +32,7 @@ By default, schedule control is available with en locale, which is English.
 
 ## Change custom texts in the control.
 
-You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file. 
+You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_iOS248617941.zip).
 
 ![](LocalizationGlobalization_images/Localization_IOS.png)  
 
