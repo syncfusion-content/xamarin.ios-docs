@@ -78,7 +78,7 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 			//Create new instance of DayViewSettings
 			DayViewSettings dayViewSettings = new DayViewSettings();
 			dayViewSettings.StartHour = 08;
-d			dayViewSettings.EndHour = 15;	
+			dayViewSettings.EndHour = 15;	
 			dayViewSettings.WorkStartHour = 09;
 			dayViewSettings.WorkEndHour = 16;
 			schedule.DayViewSettings = dayViewSettings;
