@@ -44,5 +44,5 @@ The procedure to use Localizable.Strings for multiple language
 * 	Place the Localizable.Strings file in the respective language.lproj folders.
 
 
->**Note:** The corresponding .lproj folder loades only depends on the device configuration and locale.
+>**Note:** The corresponding .lproj folder loads only depends on the device configuration and locale.
 
