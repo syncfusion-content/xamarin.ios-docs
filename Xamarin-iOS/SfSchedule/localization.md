@@ -41,9 +41,9 @@ If an application requires multiple languages we can follow the below steps.
 *	Create new `<Language>.lproj` folders under resource as `en.lproj`, `fr.lproj`, `de.lproj`.
 * 	Place the `Localizable.Strings` file in the respective `<Language>.lproj` folders.
 
+You can download the entire source code of this demo for Xamarin.iOS from
+here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_iOS248617941.zip).
+
 ![](LocalizationGlobalization_images/Localization_iOS_Img2.png)
 
 >**Note:** The corresponding `<Language>.lproj` folder loads only depends on the device configuration and locale.
-
-You can download the entire source code of this demo for Xamarin.iOS from
-here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_iOS248617941.zip).
