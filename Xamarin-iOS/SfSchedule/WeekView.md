@@ -69,6 +69,7 @@ You can customize the interval height of timeslots in `WeekView` by setting [Tim
 ![](daymodule_images/weekview_height.png)
 
 ## Change Working hours:
+
 Working hours in `WeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~WorkEndHour.html) properties of [WeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~WeekViewSettings.html).
 
 {% highlight C# %}
@@ -84,7 +85,29 @@ Working hours in `WeekView` of Schedule control will be differentiated with non-
 ![](daymodule_images/changeworkinghour_week.png)
 
 >**Note**:
-`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+
+## Changing StartHour and EndHour:
+
+Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~EndHour.html) value is 0 to 24 to show all the time slots in `WeekView`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~EndHour.html) property of `WeekView`, to show only the required time duration for end users.
+
+{% highlight C# %}
+
+            schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+			//Create new instance of WeekViewSettings
+			WeekViewSettings weekViewSettings = new WeekViewSettings();
+			weekViewSettings.StartHour = 08;
+            weekViewSettings.EndHour = 15;
+			schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
+
+![](daymodule_images/changestartendhour_week.png)
+
+>**Note**:
+*   `StartHour` and `EndHour` should be in integer value to represent hours.
+*	`StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
+*	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
+*	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
 ## Timeslot Appearance:
 You can customize the appearance of timeslots in `WeekView`.
