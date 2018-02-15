@@ -77,8 +77,8 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
             schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
 			//Create new instance of DayViewSettings
 			DayViewSettings dayViewSettings = new DayViewSettings();	
-			dayViewSettings.WorkStartHour = 09;
-			dayViewSettings.WorkEndHour = 16;
+			dayViewSettings.WorkStartHour = 10;
+			dayViewSettings.WorkEndHour = 18;
 			schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 
@@ -104,7 +104,7 @@ Change the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfs
 ![](daymodule_images/changestartendhour_day.png)
 
 >**Note**:
-*	`StartHour` must be greater than 0 and `EndHour` must be lesser than 24, otherwise `InvalidDataException` will be thrown.
+*	`StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
 *	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
 *	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
