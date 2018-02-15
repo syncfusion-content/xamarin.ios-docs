@@ -43,5 +43,5 @@ If an application requires multiple languages we can follow the below steps.
 
 ![](LocalizationGlobalization_images/Localization_iOS_Img2.png)
 
->**Note:** The corresponding <`Language>.lproj` folder loads only depends on the device configuration and locale.
+>**Note:** The corresponding `<Language>.lproj` folder loads only depends on the device configuration and locale.
 
