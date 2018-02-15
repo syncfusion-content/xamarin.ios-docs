@@ -69,16 +69,14 @@ You can customize the interval height of timeslots in `DayView` by setting [Time
 ![](daymodule_images/dayview_height.png)
 
 ## Change Working hours:
-You can hide the time slots by setting [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~EndHour.html) properties of [DayViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayViewSettings.html). Default value for StartHour and EndHour will be 0 to 24 hours. 
+
 Working hours in `DayView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~WorkEndHour.html) properties of [DayViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayViewSettings.html).
 
 {% highlight C# %}
 
             schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
 			//Create new instance of DayViewSettings
-			DayViewSettings dayViewSettings = new DayViewSettings();
-			dayViewSettings.StartHour = 08;
-			dayViewSettings.EndHour = 15;	
+			DayViewSettings dayViewSettings = new DayViewSettings();	
 			dayViewSettings.WorkStartHour = 09;
 			dayViewSettings.WorkEndHour = 16;
 			schedule.DayViewSettings = dayViewSettings;
@@ -87,10 +85,28 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 ![](daymodule_images/changeworkinghours_day.png)
 
 >**Note**:
-*	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+
+## Change StartHour and EndHour:
+
+Change the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~EndHour.html) display in `DayView` to show only the required time duration for end users.
+
+{% highlight C# %}
+
+            schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
+			//Create new instance of DayViewSettings
+			DayViewSettings dayViewSettings = new DayViewSettings();
+			dayViewSettings.StartHour = 08;
+			dayViewSettings.EndHour = 15;	
+			schedule.DayViewSettings = dayViewSettings;
+{% endhighlight %}
+
+![](daymodule_images/changestartendhour_day.png)
+
+>**Note**:
 *	`StartHour` must be greater than 0 and `EndHour` must be lesser than 24, otherwise `InvalidDataException` will be thrown.
 *	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException` will be thrown.
-*	 Before `StartHour` and after `EndHour` values, Schedule UI such as Appointments and NonAccessibleBlocks will be clipped.
+*	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
 ## Timeslot Appearance:
 You can customize the appearance of timeslots in `DayView`.
