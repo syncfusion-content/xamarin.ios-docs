@@ -283,13 +283,6 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/
             recurrenceProperties.IsRangeRecurrenceCount = true;
             recurrenceProperties.DailyNDays = 2;
             recurrenceProperties.IsDailyEveryNDays = true;
-            recurrenceProperties.IsWeeklySunday = false;
-            recurrenceProperties.IsWeeklyMonday = true;
-            recurrenceProperties.IsWeeklyTuesday = false;
-            recurrenceProperties.IsWeeklyWednesday = false;
-            recurrenceProperties.IsWeeklyThursday = false;
-            recurrenceProperties.IsWeeklyFriday = false;
-            recurrenceProperties.IsWeeklySaturday = false;
             recurrenceProperties.RangeRecurrenceCount = 10;
             recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
 
