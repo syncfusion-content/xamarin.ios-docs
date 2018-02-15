@@ -1,4 +1,4 @@
----
+﻿---
 
 layout: post
 title: Populating Appointments in Syncfusion SfSchedule control for Xamarin.iOS
@@ -305,6 +305,7 @@ Schedule appointment can be customized during runtime using [AppointmentLoadedEv
   
 void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
     {
+	  e.AppointmentStyle = new SFAppointmentStyle();
         if (e.Appointment != null && e.Appointment.Subject == "Meeting")
         {
             e.AppointmentStyle.BorderColor = UIColor.Blue;
