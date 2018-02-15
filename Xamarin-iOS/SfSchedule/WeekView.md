@@ -89,7 +89,7 @@ Working hours in `WeekView` of Schedule control will be differentiated with non-
 
 ## Change StartHour and EndHour:
 
-Change the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~EndHour.html)display in `WeekView` to show only the required time duration for end users.
+Change the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~EndHour.html) display in `WeekView` to show only the required time duration for end users.
 
 {% highlight C# %}
 
