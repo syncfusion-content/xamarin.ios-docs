@@ -32,7 +32,7 @@ By default, schedule control is available with en locale, which is English.
 
 ## Change custom texts in the control.
 
-You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_iOS248617941.zip).
+You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://developer.xamarin.com/guides/ios/advanced_topics/localization_and_internationalization/).
 
 ![](LocalizationGlobalization_images/Localization_IOS.png)  
 
@@ -45,3 +45,5 @@ If an application requires multiple languages we can follow the below steps.
 
 >**Note:** The corresponding `<Language>.lproj` folder loads only depends on the device configuration and locale.
 
+You can download the entire source code of this demo for Xamarin.iOS from
+here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_iOS248617941.zip).
