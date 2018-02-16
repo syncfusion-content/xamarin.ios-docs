@@ -15,20 +15,20 @@ Strip lines are used to shade the different ranges in plot area in different col
 
 ## How to add strip lines?
 
-Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** based on the type of input you provide to draw the strip line. Since strip lines are drawn based on the axis, you have to add strip line instance to `AddStripLine` method of respective axis. You can also add multiple strip lines to an axis.
+Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** based on the type of input you provide to draw the strip line. Since strip lines are drawn based on the axis, you have to add strip line instance to [`AddStripLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AddStripLine.html) method of respective axis. You can also add multiple strip lines to an axis.
 
 Following properties are used to configure the strip line.
 
-* `Start` – used to change the start position of the strip line
-* `Width` – used to change how long strip line should expand
-* `Text` – used to change the text of the strip line
-* `BackgroundColor` – used to change the background color of the strip line
-* `BorderWidth` – used to change the border width of the strip line
-* `BorderColor` – used to change the border color of the strip line
+* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine~Start.html) – used to change the start position of the strip line
+* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Width.html) – used to change how long strip line should expand
+* [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Text.html) – used to change the text of the strip line
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BackgroundColor.html) – used to change the background color of the strip line
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BorderWidth.html) – used to change the border width of the strip line
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BorderColor.html) – used to change the border color of the strip line
 
 **NumericalStripLine**
 
-`SFChartNumericalStripLine` are used to draw strip lines for `SFNumericalAxis` and `SFCategoryAxis`. To add a strip line, create an instance of `SFChartNumericalStripLine` and add to the `StripLines` collection property using `AddStripLine` method of the respective axis.
+[`SFChartNumericalStripLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine.html) are used to draw strip lines for [`SFNumericalAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis.html) and [`SFCategoryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCategoryAxis.html). To add a strip line, create an instance of [`SFChartNumericalStripLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine.html) and add to the [`StripLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis~StripLines.html) collection property using [`AddStripLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis~AddStripLine.html) method of the respective axis.
 
 {% highlight c# %}
 
@@ -60,7 +60,7 @@ yAxis.AddStripLine (stripLine);
 
 **DateTimeStripLine**
 
-As the name indicates, `SFChartDateTimeStripLine` are used to draw strip lines for `SFDateTimeAxis`. To add a strip line for `SFDateTimeAxis`, create an instance of `SFChartDateTimeStripLine` and add to the `StripLines` collection property using `AddStripLine` method of `SFDateTimeAxis`.
+As the name indicates, [`SFChartDateTimeStripLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeStripLine.html) are used to draw strip lines for [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html). To add a strip line for [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html), create an instance of [`SFChartDateTimeStripLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeStripLine.html) and add to the [`StripLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~StripLines.html) collection property using [`AddStripLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~AddStripLine.html) method of [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html).
 
 
 {% highlight c# %}
@@ -97,8 +97,8 @@ xAxis.AddStripLine (stripLine);
 
 This feature is used to enable the strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
 
-* `RepeatEvery` – used to change the frequency of the strip line being repeated.
-* `RepeatUntil` – specifies the end value at which point strip line has to stop repeating.
+* [`RepeatEvery`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~RepeatEvery.html) – used to change the frequency of the strip line being repeated.
+* [`RepeatUntil`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine~RepeatUntil.html) – specifies the end value at which point strip line has to stop repeating.
 
 Following code snippet and screenshot demonstrates this feature by highlighting weekends. 
 
@@ -136,21 +136,21 @@ xAxis.AddStripLine(stripLine);
 
 ## Customize Text
 
-The `LabelStyle` property provide options to customize the font-family, color, size and font-weight of strip line text. Following are the options available,
+The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~LabelStyle.html) property provide options to customize the font-family, color, size and font-weight of strip line text. Following are the options available,
 
-* `Color` – used to change the color of the text.
-* `BackgroundColor` – used to change the label background color.
-* `BorderColor` – used to change the border color.
-* `BorderWidth` – used to change the width of the border.
-* `BorderDashes` – used to set the dashes for border.
-* `Font`– used to change the text size, font family and font weight.
-* `Margin` - used to change the margin size for text.
-* `Angle` – used to rotate the text.
-* `HorizontalAlignment` – used to change the horizontal alignment of text.
-* `VerticalAlignment`  - used to change the vertical alignment of text.
-* `CornerRadius	` – used to set the corner radius for striplines.
-* `IsPixelWidth` – used to enable or disable the pixel width stripline.
-* `Visible` – used to change the visibility of stripline.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Color.html) – used to change the color of the text.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BackgroundColor.html) – used to change the label background color.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderColor.html) – used to change the border color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderWidth.html) – used to change the width of the border.
+* [`BorderDashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BorderDashes.html) – used to set the dashes for border.
+* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Font.html)– used to change the text size, font family and font weight.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Margin.html) - used to change the margin size for text.
+* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStripLineLabelStyle~Angle.html) – used to rotate the text.
+* [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStripLineLabelStyle~HorizontalAlignment.html) – used to change the horizontal alignment of text.
+* [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStripLineLabelStyle~VerticalAlignment.html)  - used to change the vertical alignment of text.
+* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~CornerRadius.html) – used to set the corner radius for striplines.
+* [`IsPixelWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~IsPixelWidth.html) – used to enable or disable the pixel width stripline.
+* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Visible.html) – used to change the visibility of stripline.
 
 
 {% highlight c# %}
@@ -186,14 +186,14 @@ yAxis.AddStripLine (stripLine);
 
 ## Segmented StripLine
 
-Typically, if you draw a strip line for a vertical axis, the height of the strip line is determined by the `Start` and `Width` properties and width of the strip line is equivalent to the width of its associated horizontal axis i.e., strip line is drawn horizontally to the entire stretch of its associated horizontal axis. Similarly, for horizontal axis, width is determined by `Start` and `Width` properties, and vertically, it is drawn to the entire stretch of the associated vertical axis.
+Typically, if you draw a strip line for a vertical axis, the height of the strip line is determined by the [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine~Start.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Width.html) properties and width of the strip line is equivalent to the width of its associated horizontal axis i.e., strip line is drawn horizontally to the entire stretch of its associated horizontal axis. Similarly, for horizontal axis, width is determined by [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine~Start.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Width.html) properties, and vertically, it is drawn to the entire stretch of the associated vertical axis.
 
-Suppose, you want to draw a strip line that should not stretch along its associated axis, you have to set `SegmentStartValue` and `SegmentEndValue` properties. Values provided in these two properties correspond to its associated axis specified by `SegmentAxisName` property. Finally, you need to set `EnableSegmentStripline` property to true to indicate that strip line should be drawn as a segment.
+Suppose, you want to draw a strip line that should not stretch along its associated axis, you have to set [`SegmentStartValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~SegmentStartValue.html) and [`SegmentEndValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~SegmentEndValue.html) properties. Values provided in these two properties correspond to its associated axis specified by [`SegmentAxisName`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~SegmentAxisName.html) property. Finally, you need to set [`EnableSegmentStripline`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~EnableSegmentStripLine.html) property to true to indicate that strip line should be drawn as a segment.
 
-* `EnableSegmentStripline` – Used to enable / disable the segmented strip line.
-* `SegmentStartValue` – Used to change the segment start value. Value correspond to associated axis.
-* `SegmentEndValue` – Used to change the segment end value. Value correspond to associated axis.
-* `SegmentAxisName` – Specify the name of the associated axis name.
+* [`EnableSegmentStripline`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~EnableSegmentStripLine.html) – Used to enable / disable the segmented strip line.
+* [`SegmentStartValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~SegmentStartValue.html) – Used to change the segment start value. Value correspond to associated axis.
+* [`SegmentEndValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~SegmentEndValue.html) – Used to change the segment end value. Value correspond to associated axis.
+* [`SegmentAxisName`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~SegmentAxisName.html) – Specify the name of the associated axis name.
 
 N> You can set the double or DateTime value for SegmentStart and SegmentEnd properties based on the associated axis type.
 
