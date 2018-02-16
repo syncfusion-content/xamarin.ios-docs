@@ -218,6 +218,7 @@ By using [MonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-ios
 			...
 			void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
 		{
+			e.CellStyle = new SFCellStyle();
 			if (e.IsToday)
 			{
 				e.CellStyle.BackgroundColor = UIColor.Red;
