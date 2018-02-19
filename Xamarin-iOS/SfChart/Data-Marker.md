@@ -25,13 +25,13 @@ lineSeries.DataMarker.ShowMarker = true;
 
  The following properties are used to customize the data marker label appearance.
 
-* `Color` – used to change the color of the label
-* `BackgroundColor` – used to change the label background color
-* `BorderColor` – used to change the border color
-* `BorderWidth` – used to change the thickness of the border
-* `Font` – used to change the text size, font family and font weight
-* `Margin` - used to change the margin size for labels
-* `Angle` – used to rotate the labels
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Color.html) – used to change the color of the label
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BackgroundColor.html) – used to change the label background color
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderColor.html) – used to change the border color
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderWidth.html) – used to change the thickness of the border
+* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Font.html) – used to change the text size, font family and font weight
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Margin.html) - used to change the margin size for labels
+* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDataMarkerLabelStyle~Angle.html) – used to rotate the labels
 
 Following code snippet illustrates the customization of label and its background,
 
@@ -56,10 +56,10 @@ lineSeries.DataMarker.LabelStyle.Font            = UIFont.ItalicSystemFontOfSize
 
 ## Formatting Label Content
 
-You can customize the content of the label using `LabelContent` property. Following are the two options that are supported now,
+You can customize the content of the label using [`LabelContent`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~LabelContent.html) property. Following are the two options that are supported now,
 
-* `SFChartLabelContent.Percentage` – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types
-* `SFChartLabelContent.YValues` – This will show the corresponding Y value (Default)
+* [`SFChartLabelContent.Percentage`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLabelContent.html) – This will show the percentage value of corresponding data point Y value, this is often used in pie, doughnut, funnel and pyramid series types
+* [`SFChartLabelContent.YValues`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLabelContent.html) – This will show the corresponding Y value (Default)
 
 {% highlight c# %}
 
@@ -70,7 +70,7 @@ pieSeries.DataMarker.LabelContent = SFChartLabelContent.Percentage;
 
 ## Label Position
 
-This feature is used to position the data marker labels at Center, Inner and Outer position of the actual data point position. By default, labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using `OffsetX` and `OffsetY` properties respectively.
+This feature is used to position the data marker labels at Center, Inner and Outer position of the actual data point position. By default, labels are positioned based on the series types for better readability. You can move the labels horizontally and vertically using [`OffsetX`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDataMarkerLabelStyle~OffsetX.html) and [`OffsetY`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDataMarkerLabelStyle~OffsetY.html) properties respectively.
 
 The following screenshot illustrates the default position of data marker labels,
 
@@ -110,7 +110,7 @@ series.DataMarker.LabelStyle.LabelPosition = SFChartDataMarkerLabelPosition.Oute
 # Smart Labels
 
 This feature is used to arrange the data marker labels smartly and avoid the intersection when there is
-overlapping of labels. The property EnableSmartLabels in CircularSeries, is used to arrange the data marker labels
+overlapping of labels. The property [`EnableSmartLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~EnableSmartLabels.html) in [`CircularSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries.html), is used to arrange the data marker labels
 smartly. By default, it is false, we need to enable this property.
 
 The following code sample illustrates how to enable the smart labels.	
@@ -142,13 +142,13 @@ return series;
 
 ## Customizing Marker Shapes
 
-Shapes can be added to chart data marker by setting the `ShowMarker` property to true. There are different shapes you can set to the chart using MarkerType property such as rectangle, circle, diamond etc. Following properties are used to customize marker appearance,
+Shapes can be added to chart data marker by setting the [`ShowMarker`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~ShowMarker.html) property to true. There are different shapes you can set to the chart using [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~MarkerType.html) property such as rectangle, circle, diamond etc. Following properties are used to customize marker appearance,
 
-* `MarkerWidth` - used to change the width of the marker
-* `MarkerHeight` - used to change the height of the marker
-* `MarkerColor` - used to change the color of the marker
-* `MarkerBorderColor` - used to change the border color of the shape
-* `MarkerBorderWidth` – used to change the marker border thickness
+* [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~MarkerWidth.html) - used to change the width of the marker
+* [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~MarkerHeight.html) - used to change the height of the marker
+* [`MarkerColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~MarkerColor.html) - used to change the color of the marker
+* [`MarkerBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~MarkerBorderColor.html) - used to change the border color of the shape
+* [`MarkerBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~MarkerBorderWidth.html) – used to change the marker border thickness
 
 The following code example shows how to enable marker and specify its types,
 
@@ -179,9 +179,9 @@ lineSeries.DataMarker.MarkerBorderWidth = 2;
 
 This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. Following properties used to customize connector line,
 
-* `LineColor` – used to change the color of the line
-* `LineWidth` – used to change the stroke thickness of the line
-* `Dashes` – used to set the dashes for the line
+* [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineColor.html) – used to change the color of the line
+* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineWidth.html) – used to change the stroke thickness of the line
+* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFConnectorLineStyle~Dashes.html) – used to set the dashes for the line
 
 The following code illustrates how to specify the connector height and its angle,
 
