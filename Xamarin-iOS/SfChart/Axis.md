@@ -34,7 +34,7 @@ chart.PrimaryAxis 	 = xAxis;
 
 ### Placing labels between ticks
 
-Labels in category axis can be placed between the ticks by setting `LabelPlacement` to `SFChartLabelPlacement.BetweenTicks`. Default value of `LabelPlacement` property is `SFChartLabelPlacement.OnTicks` i.e. labels will be placed on the ticks by default.
+Labels in category axis can be placed between the ticks by setting [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCategoryAxis~LabelPlacement.html) to [`SFChartLabelPlacement.BetweenTicks`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLabelPlacement.html). Default value of [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCategoryAxis~LabelPlacement.html) property is [`SFChartLabelPlacement.OnTicks`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLabelPlacement.html) i.e. labels will be placed on the ticks by default.
 
 {% highlight c# %}
 
@@ -45,7 +45,7 @@ xAxis.LabelPlacement = SFChartLabelPlacement.BetweenTicks;
 
 ### Displaying labels after a fixed interval
 
-To display labels after a fixed interval n, you can set `Interval` property of SFAxis as n. Default value of interval is 1 i.e. all the labels will be displayed by default.
+To display labels after a fixed interval n, you can set [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Interval.html) property of [`SFAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis.html) as n. Default value of interval is 1 i.e. all the labels will be displayed by default.
 
 
 {% highlight c# %}
@@ -72,7 +72,7 @@ chart.PrimaryAxis     = xAxis;
 
 ### Customizing numeric range
 
-To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `SFNumericalAxis`. By default, range will be calculated automatically based on the provided data.
+To customize the range of an axis, you can use the [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~Maximum.html) properties of [`SFNumericalAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis.html). By default, range will be calculated automatically based on the provided data.
 
 
 {% highlight c# %}
@@ -92,7 +92,7 @@ yAxis.Maximum           = new NSNumber (50);
 
 ### Customizing numeric interval
 
-Axis interval can be customized using the `Interval` property of SFAxis. By default, interval will be calculated based on the minimum and maximum value of the provided data.
+Axis interval can be customized using the [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Interval.html) property of [`SFAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis.html). By default, interval will be calculated based on the minimum and maximum value of the provided data.
 
 {% highlight c# %}
 
@@ -103,7 +103,7 @@ yAxis.Interval = new NSNumber (10);
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using `RangePadding` property. Numeric axis supports the following types of padding.
+Padding can be applied to the minimum and maximum extremes of the axis range by using [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis~RangePadding.html) property. Numeric axis supports the following types of padding.
 
 * None
 * Round
@@ -112,7 +112,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **None**
 
-When the value of `RangePadding` property is `SFChartNumericalPadding.None`, padding will not be applied to the axis. This is also the default value of `RangePadding` for horizontal axis.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis~RangePadding.html) property is [`SFChartNumericalPadding.None`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis~RangePadding.html) for horizontal axis.
 
 {% highlight c# %}
 
@@ -125,7 +125,7 @@ yAxis.RangePadding = SFChartNumericalPadding.None;
 
 **Round**
 
-When the value of `RangePadding` property is `SFChartNumericalPadding.Round`, axis range will be rounded to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis~RangePadding.html) property is [`SFChartNumericalPadding.Round`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded to the nearest possible value divided by the interval.
 
 {% highlight c# %}
 
@@ -137,7 +137,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Round;
 
 **Additional**
 
-When the value of `RangePadding` property is `SFChartNumericalPadding.Additional`, axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis~RangePadding.html) property is [`SFChartNumericalPadding.Additional`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
 
 {% highlight c# %}
 
@@ -149,7 +149,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Additional;
 
 **Normal**
 
-When the value of `RangePadding` property is `SFChartNumericalPadding.Normal`, range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFNumericalAxis~RangePadding.html) property is [`SFChartNumericalPadding.Normal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
 
 {% highlight c# %}
 
@@ -175,7 +175,7 @@ chart.PrimaryAxis    = xAxis;
 
 ### Customizing date time range
 
-To customize the range of an axis, you can use the `Minimum` and `Maximum` properties of `SFDateTimeAxis`. By default, range will be calculated automatically based on the provided data.
+To customize the range of an axis, you can use the [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~Maximum.html) properties of [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html). By default, range will be calculated automatically based on the provided data.
 
 {% highlight c# %}
 
@@ -191,7 +191,7 @@ primaryAxis.Maximum = calendar.DateFromComponents(new NSDateComponents() {Year =
 
 ### Date time intervals
 
-Date time intervals can be customized using `Interval` and `IntervalType` properties of the `SFDateTimeAxis`. For example, setting `Interval` as 2 and `IntervalType` as `SFChartDateTimeIntervalType.Years` will consider 2 years as interval.
+Date time intervals can be customized using [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Interval.html) and [`IntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~IntervalType.html) properties of the [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html). For example, setting [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Interval.html) as 2 and [`IntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~IntervalType.html) as [`SFChartDateTimeIntervalType.Years`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeIntervalType.html) will consider 2 years as interval.
 
 Essential Chart supports the following types of interval for date time axis
 
@@ -215,7 +215,7 @@ xAxis.Interval     = new NSNumber (6);
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the range by using `RangePadding` property. Date time axis supports the following types of padding:
+Padding can be applied to the minimum and maximum extremes of the range by using [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~RangePadding.html) property. Date time axis supports the following types of padding:
 
 * None
 * Round
@@ -223,7 +223,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **None**
 
-When the value of `RangePadding` property is `SFChartDateTimePadding.None`, padding will not be applied to the axis. This is also the default value of `RangePadding`.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~RangePadding.html) property is [`SFChartDateTimePadding.None`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~RangePadding.html).
 
 {% highlight c# %}
 
@@ -235,7 +235,7 @@ xAxis.RangePadding = SFChartDateTimePadding.None;
 
 **Round**
 
-When the value of `RangePadding` property is `SFChartDateTimePadding.Round`, axis range will be rounded to the nearest possible date time value.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~RangePadding.html) property is [`SFChartDateTimePadding.Round`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded to the nearest possible date time value.
 
 
 {% highlight c# %}
@@ -248,7 +248,7 @@ xAxis.RangePadding = SFChartDateTimePadding.Round;
 
 **Additional**
 
-When the value of `RangePadding` property is `SFChartDateTimePadding.Additional`, range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~RangePadding.html) property is [`SFChartDateTimePadding.Additional`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
 
 {% highlight c# %}
 
@@ -274,7 +274,7 @@ chart.SecondaryAxis        = yAxis;
 
 ### Customizing the logarithmic range
 
-To customize the range of log axis, you can use the `Minimum` and `Maximum` properties of LogarithmicAxis. By default, nice range will be calculated automatically based on the provided data.
+To customize the range of log axis, you can use the [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~Maximum.html) properties of [`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLogarithmicAxis.html). By default, nice range will be calculated automatically based on the provided data.
 
 
 
@@ -292,7 +292,7 @@ chart.SecondaryAxis             = yAxis;
 
 ### Customizing the logarithmic base 
 
-To customize the log base value, you can use `LogarithmicBase` property.
+To customize the log base value, you can use [`LogarithmicBase`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLogarithmicAxis~LogarithmicBase.html) property.
 
 
 {% highlight c# %}
@@ -313,7 +313,7 @@ Customization of features such as axis title, labels, grid lines and tick lines 
 
 ### Axis Visibility
 
-Axis visibility can be controlled using the `Visible` property of axis. Default value of `Visible` property is `True`.
+Axis visibility can be controlled using the [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Visible.html) property of axis. Default value of [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Visible.html) property is `True`.
 
 {% highlight c# %}
 
@@ -326,15 +326,15 @@ chart.SecondaryAxis.Visible = false;
 
 ### Axis title
 
-The `Title` property in axis provides options to customize the text and font of axis title. Axis does not display title by default. The title can be customized using following properties,
+The [`Title`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Title.html) property in axis provides options to customize the text and font of axis title. Axis does not display title by default. The title can be customized using following properties,
 
-* `Text` – used to set the title for axis.
-* `Color` – used to change the color of the label.
-* `BackgroundColor` – used to change the label background color.
-* `BorderColor` – used to change the border color.
-* `BorderWidth` – used to change the width of the border.
-* `Font` – used to change the text size, font family and font weight.
-* `Margin` - used to change the margin size for labels.
+* [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisTitleStyle~Text.html) – used to set the title for axis.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Color.html) – used to change the color of the label.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BackgroundColor.html) – used to change the label background color.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderColor.html) – used to change the border color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderWidth.html) – used to change the width of the border.
+* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Font.html) – used to change the text size, font family and font weight.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Margin.html) - used to change the margin size for labels.
 
 Following code snippet illustrates how to enable and customize the axis title.
 
@@ -352,14 +352,14 @@ chart.PrimaryAxis.Title.Font   = UIFont.BoldSystemFontOfSize(20);
 
 ### Label customization
 
-The `LabelStyle` property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
+The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~LabelStyle.html) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
 
-* `Color` – used to change the color of the labels.
-* `BackgroundColor` – used to change the label background color.
-* `BorderColor` – used to change the border color.
-* `BorderWidth` – used to change the thickness of the border.
-* `Font` – used to change the text size, font family and font weight.
-* `Margin` - used to change the margin size for labels.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Color.html) – used to change the color of the labels.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BackgroundColor.html) – used to change the label background color.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderColor.html) – used to change the border color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderWidth.html) – used to change the thickness of the border.
+* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Font.html) – used to change the text size, font family and font weight.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Margin.html) - used to change the margin size for labels.
 
 {% highlight c# %}
 
@@ -374,7 +374,7 @@ chart.PrimaryAxis.LabelStyle.Color = UIColor.Red;
 
 ### Label and tick positioning
 
-Axis labels and ticks can be positioned inside or outside the chart area by using `LabelsPosition` and `TickPosition` properties of SFAxis. By default labels and ticks will be positioned outside the chart area.
+Axis labels and ticks can be positioned inside or outside the chart area by using [`LabelsPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~LabelsPosition.html) and [`TickPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~TickPosition.html) properties of [`SFAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis.html). By default labels and ticks will be positioned outside the chart area.
 
 {% highlight c# %}
 
@@ -388,7 +388,7 @@ chart.PrimaryAxis.TickPosition                = SFChartAxisElementPosition.Insid
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The `EdgeLabelsDrawingMode` property can be used to avoid the partial appearance of labels at the corners.
+Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners.
 
 {% highlight c# %}
 
@@ -399,7 +399,7 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = SFChartAxisEdgeLabelsDrawingMode.Shift
 
 ### Grid lines customization
 
-The `ShowMajorGridLines` and `ShowMinorGridLines` properties are used to control the visibility of grid lines. `MajorGridLineStyle` and `MinorGridLineStyle` properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
+The [`ShowMajorGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~ShowMajorGridLines.html) and [`ShowMinorGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~ShowMinorGridLines.html) properties are used to control the visibility of grid lines. [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MajorGridLineStyle.html) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorGridLineStyle.html) properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
 {% highlight c# %}
 
 yAxis.ShowMajorGridLines    = true;
@@ -414,7 +414,7 @@ yAxis.MinorTicksPerInterval	= 1;
 
 ### Tick lines customization
 
-The `MajorTickStyle` and `MinorTickStyle` properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
+The [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MajorTickStyle.html) and [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
 
 {% highlight c# %}
 
@@ -445,7 +445,7 @@ yAxis.MinorTickStyle.LineColor  = UIColor.Green;
 
 ### Inversing axis
 
-Axis can be inversed using the `IsInversed` property of axis. Default value of `IsInversed` property is `False`.
+Axis can be inversed using the [`IsInversed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~IsInversed.html) property of axis. Default value of [`IsInversed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~IsInversed.html) property is `False`.
 
 
 {% highlight c# %}
@@ -458,7 +458,7 @@ chart.SecondaryAxis.IsInversed = true;
 
 ### Placing axes at the opposite side
 
-The `OpposedPosition` property of axis can be used to place the axis at the opposite side of its default position. Default value of `OpposedPosition` property is `False`. 
+The [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~OpposedPosition.html) property of axis can be used to place the axis at the opposite side of its default position. Default value of [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~OpposedPosition.html) property is `False`. 
 
 {% highlight c# %}
 
@@ -471,7 +471,7 @@ chart.SecondaryAxis.OpposedPosition = true;
 
 ### Maximum number of labels per 100 pixels
 
-By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the `MaximumLabels` property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for `Interval` property of an axis.
+By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MaximumLabels.html) property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Interval.html) property of an axis.
 
 {% highlight c# %}
 
@@ -604,7 +604,7 @@ chart.SecondaryAxis = new SFNumericalAxis()
 
 ## Smart Axis Labels
 
-Axis labels may overlap with each other based on chart dimensions and label size. The `LabelsIntersectAction` property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of `LabelsIntersectAction` is `SFChartAxisLabelsIntersectAction.None`. Other available values of `LabelsIntersectAction` are `SFChartAxisLabelsIntersectAction.MultipleRows` and `SFChartAxisLabelsIntersectAction.Hide`.
+Axis labels may overlap with each other based on chart dimensions and label size. The [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~LabelsIntersectAction.html) property of axis is useful in avoiding the overlapping of axis labels with each other. Default value of [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~LabelsIntersectAction.html) is [`SFChartAxisLabelsIntersectAction.None`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html). Other available values of [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~LabelsIntersectAction.html) are [`SFChartAxisLabelsIntersectAction.MultipleRows`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html) and [`SFChartAxisLabelsIntersectAction.Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html).
 
 {% highlight c# %}
 

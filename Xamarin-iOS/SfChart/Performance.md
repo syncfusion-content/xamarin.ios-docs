@@ -9,7 +9,7 @@ documentation: ug
 
 # Performance
 
-When there are large number of points to load in line series, you can use `SFFastLineSeries` series instead of `SFLineSeries`. To renderer a fast line chart, create an instance of `SFFastLineSeries` and add to `SFChart`.
+When there are large number of points to load in line series, you can use [`SFFastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFastLineSeries.html) series instead of [`SFLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineSeries.html). To renderer a fast line chart, create an instance of [`SFFastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFastLineSeries.html) and add to [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
 
 
