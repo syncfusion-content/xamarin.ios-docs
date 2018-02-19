@@ -11,14 +11,14 @@ documentation: ug
 
 ## Enable Zooming
 
-Chart supports zooming to view the data clearly. To enable this feature, you need to add an instance of `SFChartZoomPanBehavior` to the `Behaviors` collection using the `AddChartBehavior` method of `SFChart`.
+Chart supports zooming to view the data clearly. To enable this feature, you need to add an instance of [`SFChartZoomPanBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Behaviors.html) collection using the [`AddChartBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart~AddChartBehavior.html) method of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
 Following properties are used to configure the zooming feature,
 
-* `EnableZooming` – used to enable/disable the pinch zooming. Default value is true 
-* `EnableDoubleTap` – when you enable this property, you can double tap on the chart to reset it to the original size or zoom in by one level
-* `EnableSelectionZooming` – when this property is set to true, you can double tap and drag to select a range on the chart to be zoomed in
-* `EnablePanning` – used to enable/disable the panning. Default value is true
+* [`EnableZooming`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnableZooming.html) – used to enable/disable the pinch zooming. Default value is true 
+* [`EnableDoubleTap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnableDoubleTap.html) – when you enable this property, you can double tap on the chart to reset it to the original size or zoom in by one level
+* [`EnableSelectionZooming`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnableSelectionZooming.html) – when this property is set to true, you can double tap and drag to select a range on the chart to be zoomed in
+* [`EnablePanning`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnablePanning.html) – used to enable/disable the panning. Default value is true
 
 Following code snippet illustrates how to enable zooming.
 
@@ -55,7 +55,7 @@ Following screenshot shows the zoomed area,
 
 ## Zoom Mode
 
-The `ZoomMode` property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of `ZoomMode` is `SFChartZoomMode.XY` (both axis).
+The [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomMode.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomMode.html) is [`SFChartZoomMode.XY`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomMode.html) (both axis).
 
 Following code example illustrates how to restrict the chart to be zoomed only along horizontal axis,
 
@@ -74,7 +74,7 @@ chart.AddChartBehavior(zoomPan);
 ## Delegates
 
 
-We need to implement delegate to deal with the user interactions in chart for zooming and panning. In order to do this,you need to adopt the `SFChartDelegate` protocol through the class extension as shown below.
+We need to implement delegate to deal with the user interactions in chart for zooming and panning. In order to do this,you need to adopt the [`SFChartDelegate`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate.html) protocol through the class extension as shown below.
 
 
 {% highlight c# %}
@@ -100,43 +100,43 @@ public class ChartDelegate : SFChartDelegate
 
 This delegate is called when the axis object has started a zoom operation and it returns the following values.
 
-* `SFChartZoomingInfo` – used to get the zooming state.
+* [`SFChartZoomingInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomingInfo.html) – used to get the zooming state.
 
 **DidZoom**
 
 This delegate is called when the axis object has finished a zoom operation and it returns the following values.
 
-* `SFChartZoomInfo` – used to get the zoomed state.
+* [`SFChartZoomInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomInfo.html) – used to get the zoomed state.
 
 **WillPan**
 
 This delegate is called when the axis object has started a scroll operation and it returns the following values.
 
-* `SFChartPanningInfo` – used to get the scrolled state.
+* [`SFChartPanningInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPanningInfo.html) – used to get the scrolled state.
 
 **DidPan**
 
 This delegate is called when the axis object has finished a scroll operation and it returns the following values.
 
-* `SFChartPanInfo` – used to get the zoomed state.
+* [`SFChartPanInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPanInfo.html) – used to get the zoomed state.
 
 **WillSelectionZoom**
 
 This delegate is called when the axis object has started a selection zoom operation and it returns the following values.
 
-* `SFChartSelectionZoomingInfo` – used to get the selection zoom state.
+* [`SFChartSelectionZoomingInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionZoomingInfo.html) – used to get the selection zoom state.
 
 **DidSelectionZoom**
 
 This delegate is called when the axis object has finished a selection zoom operation and it returns the following values.
 
-* `SFChartSelectionZoomInfo` – used to get the selection zoom state.
+* [`SFChartSelectionZoomInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionZoomInfo.html) – used to get the selection zoom state.
 
 **DidResetZoom**
 
 This delegate is called when the axis object has reset the zoom level and it returns the following values.
 
-* `SFChartResetZoomInfo` – used to get the reset object.
+* [`SFChartResetZoomInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartResetZoomInfo.html) – used to get the reset object.
 
 ## Methods
 

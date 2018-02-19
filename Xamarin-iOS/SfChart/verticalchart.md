@@ -10,7 +10,7 @@ documentation: ug
 # Vertical Chart
 
 Vertical chart is used to show the CartesianSeries vertically which helps to view the data in different
-perceptive using `IsTransposed` property. 
+perceptive using [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property. 
 
 
 
