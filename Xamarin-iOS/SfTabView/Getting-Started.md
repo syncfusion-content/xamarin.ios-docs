@@ -170,7 +170,7 @@ public class ContactsViewModel
 
 ## Binding data to table view
 
-Create a `UITableView` and set the data source from ContactList. Also, appeance of each cell can be customized by `GetCell` method of `UITableViewSource`. Similarly, content region for other tabs can be configured in the same way.
+Create a `UITableView` and set the data source from ContactList. Also, appearance of each cell can be customized by `GetCell` method of `UITableViewSource`. Similarly, content region for other tabs can be configured in the same way.
 
 ## Swiping
 
