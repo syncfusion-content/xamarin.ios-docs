@@ -11,10 +11,10 @@ documentation: ug
 
 ## Line Chart
 
-To render a line chart, create an instance of SFLineSeries and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
+To render a line chart, create an instance of [`SFLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
 
-* `Color` – used to change the color of the line
-* `LineWidth` – used to change the width of the line
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the line
+* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineSeries~LineWidth.html) – used to change the width of the line
 
 {% highlight c# %}
 
@@ -36,7 +36,7 @@ chart.Series.Add(lineSeries);
 
 ### Dashed Lines
 
-`Dashes` property of the `SFLineSeries` is used to render line series with dashes.
+[`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineSeries~Dashes.html) property of the [`SFLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineSeries.html) is used to render line series with dashes.
 
 {% highlight c# %}
 SFLineSeries series = new SFLineSeries ();
@@ -53,11 +53,11 @@ chart.Series.Add(series);
 
 ## Area Chart
 
-To render an area chart, create an instance of `SFAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
+To render an area chart, create an instance of [`SFAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAreaSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAreaSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAreaSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -78,11 +78,11 @@ chart.Series.Add(areaSeries);
 
 ## Spline Area Chart
 
-To render a spline area chart, create an instance of `SFSplineAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the spline area appearance.
+To render a spline area chart, create an instance of [`SFSplineAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineAreaSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the spline area appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAreaSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAreaSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -107,11 +107,11 @@ chart.Series.Add(splineAreaSeries);
 
 ## Stacked Area Chart
 
-To render a stacked area chart, create an instance of `SFStackingAreaSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked area appearance.
+To render a stacked area chart, create an instance of [`SFStackingAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingAreaSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the stacked area appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -150,11 +150,11 @@ chart.Series.Add(stackingAreaSeries3);
 
 ## 100% Stacked Area Chart
 
-To render a 100% stacked area chart, create an instance of `SFStackingArea100Series` and add to the Series collection property of `SFChart`. You can use the following properties to customize the 100% stacked area appearance.
+To render a 100% stacked area chart, create an instance of [`SFStackingArea100Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingArea100Series.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the 100% stacked area appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -192,11 +192,11 @@ chart.Series.Add(stackingAreaSeries3);
 
 ## Column Chart
 
-To render a column chart, create an instance of `SFColumnSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
+To render a column chart, create an instance of [`SFColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -218,9 +218,9 @@ chart.Series.Add(columnSeries);
 
 ## Range Column Chart
 
-To render a range column chart, create an instance of `SFRangeColumnSeries` and add to the Series collection property of `SFChart`. 
+To render a range column chart, create an instance of [`SFRangeColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeColumnSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). 
 
-Since the `SFRangeColumnSeries` requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point. 
+Since the [`SFRangeColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeColumnSeries.html) requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point. 
 
 {% highlight c# %}
 
@@ -240,19 +240,19 @@ chart.Series.Add(rangeColumnSeries);
 
 Following properties are used to customize the range column segment appearance,
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeColumnSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeColumnSeries~BorderColor.html) – used to change the border color of the series
 
 ![](ChartTypes_images/RangeColumn.png)
 
 ## Stacked Column Chart
 
-To render a stacked column chart, create an instance of `SFStackingColumnSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked column segment appearance.
+To render a stacked column chart, create an instance of [`SFStackingColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingColumnSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the stacked column segment appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderColor.html) – used to change the border color of the series
 
 {% highlight c# %}
 
@@ -289,11 +289,11 @@ chart.Series.Add(stackingColumnSeries3);
 
 ## 100% Stacked Column Chart
 
-To render a 100% stacked column chart, create an instance of `SFStackingColumn100Series` and add to the Series collection property of `SFChart`. You can use the following properties to customize the series appearance.
+To render a 100% stacked column chart, create an instance of [`SFStackingColumn100Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingColumn100Series.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the series appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -333,11 +333,11 @@ chart.Series.Add(stackingColumn100Series3);
 
 ## Bar Chart
 
-To render a bar chart, create an instance of `SFBarSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the bar segment appearance.
+To render a bar chart, create an instance of [`SFBarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBarSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the bar segment appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBarSeries~BorderWidth.html) – used to change the border width of series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBarSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -359,11 +359,11 @@ chart.Series.Add(barSeries);
 
 ## Stacked Bar Chart
 
-To render a stacked bar chart, create an instance of `SFStackingBarSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the stacked bar segment appearance.
+To render a stacked bar chart, create an instance of [`SFStackingBarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingBarSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the stacked bar segment appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -403,11 +403,11 @@ chart.Series.Add(stackingBarSeries3);
 
 ## 100% Stacked Bar Chart
 
-To render a 100% stacked bar chart, create an instance of `SFStackingBar100Series` and add to the Series collection property of `SFChart`. You can use the following properties to customize the series appearance.
+To render a 100% stacked bar chart, create an instance of [`SFStackingBar100Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingBar100Series.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the series appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -445,10 +445,10 @@ chart.Series.Add(stackingBar100Series3);
 
 ## Spline Chart
 
-To render a spline chart, create an instance of `SFSplineSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the spline segment appearance.
+To render a spline chart, create an instance of [`SFSplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the spline segment appearance.
 
-* `Color` – used to change the color of the series
-* `LineWidth` – used to change the line width of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries~LineWidth.html) – used to change the line width of the series
 
 
 {% highlight c# %}
@@ -470,10 +470,10 @@ chart.Series.Add(splineSeries);
 
 ## StepLine Chart
 
-To render a step line chart, create an instance of `SFStepLineSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the appearance.
+To render a step line chart, create an instance of [`SFStepLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStepLineSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
 
-* `Color` – used to change the color of the line
-* `LineWidth` – used to change the line width of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the line
+* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineSeries~LineWidth.html) – used to change the line width of the series
 
 
 {% highlight c# %}
@@ -495,10 +495,10 @@ chart.Series.Add(stepLine);
 
 ## Fast Line Chart
 
-`SFFastLineSeries` is a line chart, but it loads faster than `SFLineSeries`. You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of `SFFastLineSeries` and add to the Series collection property of SFChart. You can use the following properties to customize the fast line segment appearance.
+[`SFFastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFastLineSeries.html) is a line chart, but it loads faster than [`SFLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineSeries.html). You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of [`SFFastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFastLineSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the fast line segment appearance.
 
-* `Color` – used to change the color of the series
-* `LineWidth` – used to change the line width of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFastLineSeries~LineWidth.html) – used to change the line width of the series
 
 
 {% highlight c# %}
@@ -519,7 +519,7 @@ chart.Series.Add(fastLineSeries);
 
 ### Dashed Lines
 
-`Dashes` property of the `SFFastLineSeries` is used to render fast line series with dashes.
+[`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFastLineSeries~Dashes.html) property of the [`SFFastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFastLineSeries.html) is used to render fast line series with dashes.
 
 {% highlight c# %}
 SFFastLineSeries series = new SFFastLineSeries ();
@@ -538,7 +538,7 @@ chart.Series.Add(series);
 
 ## Bubble Chart
 
-To render a bubble chart, create an instance of `SFBubbleSeries` and add to the Series collection property of `SFChart`. 
+To render a bubble chart, create an instance of [`SFBubbleSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBubbleSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). 
 
 Bubble chart requires 3 fields (X, Y and Size) to plot a point. Here **Size** is used to specify the size of each bubble segment. 
 
@@ -559,23 +559,23 @@ chart.Series.Add(bubbleSeries);
 
 Following properties are used to customize the bubble segment appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
-* `MinimumRadius` – used to change the minimum size of the series
-* `MaximumRadius` – used to change the maximum size of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBubbleSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBubbleSeries~BorderColor.html) – used to change the border color of the series
+* [`MinimumRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBubbleSeries~MinimumRadius.html) – used to change the minimum size of the series
+* [`MaximumRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBubbleSeries~MaximumRadius.html) – used to change the maximum size of the series
 
 ![](ChartTypes_images/Bubble.png)
 
 ## Scatter Chart	
 
-To render a scatter chart, create an instance of `SFScatterSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the scatter segment appearance.
+To render a scatter chart, create an instance of [`SFScatterSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFScatterSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the scatter segment appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
-* `ScatterWidth` – used to change the width of the series
-* `ScatterHeight` – used to change the height of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFScatterSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFScatterSeries~BorderColor.html) – used to change the border color of the series
+* [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFScatterSeries~ScatterWidth.html) – used to change the width of the series
+* [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFScatterSeries~ScatterHeight.html) – used to change the height of the series
 
 
 {% highlight c# %}
@@ -596,7 +596,7 @@ chart.Series.Add(scatterSeries);
 
 ## OHLC Chart
 
-To render an OHLC chart, create an instance of `SFOHLCSeries` and add to the Series collection property of `SFChart`.
+To render an OHLC chart, create an instance of [`SFOHLCSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFOHLCSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
 OHLC chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
@@ -620,14 +620,14 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 You can use the following properties to customize the HiLoOpenCloseSeries segment appearance.
 
-* `Color` – used to change the color of the series
-* `LineWidth` – used to change the border width of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFOHLCSeries~LineWidth.html) – used to change the border width of the series
 
 ![](ChartTypes_images/OHLC.png)
 
 ### Bull and Bear Color	
 
-In OHLC chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and `BearFillColor` property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
+In OHLC chart, [`BullFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFinancialSeries~BullFillColor.html) property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and [`BearFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFinancialSeries~BearFillColor.html) property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
 
 {% highlight c# %}
 
@@ -653,7 +653,7 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 ## Candle Chart
 
-To render a candle chart, create an instance of `SFCandleSeries` and add to the Series collection property of `SFChart`.
+To render a candle chart, create an instance of [`SFCandleSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCandleSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
 Candle chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
@@ -677,16 +677,16 @@ chart.Series.Add(candleSeries);
 
 You can use the following properties to customize the candle segment appearance.
 
-* `Color`       – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html)       – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCandleSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCandleSeries~BorderColor.html) – used to change the border color of the series
 
 ![](ChartTypes_images/Candle.png)
 
 ### Bull and Bear Color
 
-In Candle chart, `BullFillColor` property is used to specify a fill color for the segments that indicates an
-increase in stock price in the measured time interval and `BearFillColor` property is used to specify a fill color
+In Candle chart, [`BullFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFinancialSeries~BullFillColor.html) property is used to specify a fill color for the segments that indicates an
+increase in stock price in the measured time interval and [`BearFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFinancialSeries~BearFillColor.html) property is used to specify a fill color
 for the segments that indicates a decrease in stock price in the measured time interval.
 
 
@@ -712,11 +712,11 @@ chart.Series.Add(candleSeries);
 
 ## Radar Chart
 
-To render a radar chart, create an instance of `SFRadarSeries` and add to the Series collection property of `SFChart`.
+To render a radar chart, create an instance of [`SFRadarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRadarSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
 ### Draw type
 
-`DrawType` property is used to specify the radar series rendering type. Following are the two options you can set to this property,
+[`DrawType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~DrawType.html) property is used to specify the radar series rendering type. Following are the two options you can set to this property,
 
 * `Line` – data points are visualized as line.
 * `Area` – data points are visualized as area.
@@ -735,10 +735,10 @@ radar.DrawType = SFChartPolarRadarSeriesDrawType.Line;
 
 You can use the following properties to customize the appearance.
 
-* `Color` – used to change the color of the series.
-* `BorderWidth` – used to change the border width of the series.
-* `BorderColor` – used to change the border color of the series when draw types is set to area
-* `Dashes` – used to render line with dashes when draw type is set to line.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~BorderWidth.html) – used to change the border width of the series.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~BorderColor.html) – used to change the border color of the series when draw types is set to area
+* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~Dashes.html) – used to render line with dashes when draw type is set to line.
 
 {% highlight c# %}
 SFRadarSeries radarSeries   = new SFRadarSeries();
@@ -753,7 +753,7 @@ radarSeries.BorderColor     = UIColor.Blue;
 
 ### Closed
 
-`Closed` property is used to determine, whether to connect the first and last data point of the series. By default, the property is set to `true`.
+[`Closed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~Closed.html) property is used to determine, whether to connect the first and last data point of the series. By default, the property is set to `true`.
 
 {% highlight c# %}
 SFRadarSeries radarSeries   = new SFRadarSeries();
@@ -765,7 +765,7 @@ radarSeries.Closed          = false;
 
 ### Radar Start Angle for primary axis
 
-The start position of the radar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property is `Rotate270`. [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes.
+The start position of the radar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property is [`Rotate270`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartPolarAngle.html). [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes.
 
 {% highlight c# %}
 
@@ -815,14 +815,14 @@ chart.SecondaryAxis =  new SFNumericalAxis()
 
 ## Polar Chart
 
-To render a polar chart, create an instance of `SFPolarSeries` and add to the Series collection property of `SFChart`. 
+To render a polar chart, create an instance of [`SFPolarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). 
 
 ### Draw type
 
-`DrawType` property is used to specify the polar series rendering type. Following are the two options you can set to this property,
+[`DrawType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~DrawType.html) property is used to specify the polar series rendering type. Following are the two options you can set to this property,
 
-* `Line` – data points are visualized as line.
-* `Area` – data points are visualized as area.
+* [`Line`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html) – data points are visualized as line.
+* [`Area`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html) – data points are visualized as area.
 
 {% highlight c# %}
 SFPolarSeries polarSeries        = new SFPolarSeries();
@@ -837,10 +837,10 @@ polarSeries.DrawType             = SFChartPolarRadarSeriesDrawType
 
 You can use the following properties to customize the appearance.
 
-* `Color` – used to change the color of the series.
-* `BorderWidth` – used to change the border width of the series.
-* `BorderColor` – used to change the border color of the series when draw types is set to area
-* `Dashes` – used to render line with dashes when draw type is set to line.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~BorderWidth.html) – used to change the border width of the series.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~BorderColor.html) – used to change the border color of the series when draw types is set to area
+* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~Dashes.html) – used to render line with dashes when draw type is set to line.
 
 {% highlight c# %}
 SFPolarSeries polarSeries        = new SFPolarSeries();
@@ -855,7 +855,7 @@ polarSeries.BorderColor          = UIColor.Blue;
 
 ### Closed
 
-`Closed` property is used to determine, whether to connect the first and last data point of the series. By default, the property is set to `true`.
+[`Closed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~Closed.html) property is used to determine, whether to connect the first and last data point of the series. By default, the property is set to `true`.
 
 {% highlight c# %}
 SFPolarSeries polarSeries      = new SFPolarSeries();
@@ -868,7 +868,7 @@ polarSeries.Closed             = false;
 
 ### Polar start angle for primary axis
 
-The start position of the polar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property is `Rotate270`. PolarAngle property can be set for primary axis, secondary axis, or both axes.
+The start position of the polar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property is [`Rotate270`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartPolarAngle.html). PolarAngle property can be set for primary axis, secondary axis, or both axes.
 
 {% highlight c# %}
 
@@ -918,11 +918,11 @@ chart.SecondaryAxis =  new SFNumericalAxis()
 
 ## Pie Chart
 
-To render a pie chart, create an instance of `SFPieSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the pie segment appearance.
+To render a pie chart, create an instance of [`SFPieSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPieSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the pie segment appearance.
 
-* `Color`       – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html)       – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -943,7 +943,7 @@ chart.Series.Add(pieSeries);
 
 ### Exploding a pie segment
 
-You can explode a pie segment using `ExplodeIndex` property and specify the explode radius using `ExplodeRadius` property of `SFPieSeries`.
+You can explode a pie segment using [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAccumulationSeries~ExplodeIndex.html) property and specify the explode radius using [`ExplodeRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~ExplodeRadius.html) property of [`SFPieSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPieSeries.html).
 
 
 {% highlight c# %}
@@ -956,7 +956,7 @@ series.ExplodeIndex = 1;
 
 ### Exploding all the segments
 
-Using `ExplodeAll` property of `SFPieSeries`, you can explode all the pie segments.
+Using [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAccumulationSeries~ExplodeAll.html) property of [`SFPieSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPieSeries.html), you can explode all the pie segments.
 
 
 {% highlight c# %}
@@ -969,7 +969,7 @@ series.ExplodeAll  = true;
 
 ### Sector of Pie
 
-`SFChart` allows you to render all the data points/segments in semi-pie, quarter-pie or in any sector using `StartAngle` and `EndAngle` properties.
+[`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) allows you to render all the data points/segments in semi-pie, quarter-pie or in any sector using [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~StartAngle.html) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~EndAngle.html) properties.
 
 
 {% highlight c# %}
@@ -983,11 +983,11 @@ series.EndAngle    = 360;
 
 ## Doughnut Chart
 
-To render a doughnut chart, create an instance of `SFDoughnutSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the doughnut segment appearance.
+To render a doughnut chart, create an instance of [`SFDoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the doughnut segment appearance.
 
-* `Color` – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -1008,7 +1008,7 @@ chart.Series.Add(doughnutSeries);
 
 ### Changing doughnut inner radius
 
-You can change the doughnut chart inner radius using `DoughnutCoefficient` with respect to the plot area. It ranges from 0 to 1 and the default value is `0.4`.
+You can change the doughnut chart inner radius using [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries~DoughnutCoefficient.html) with respect to the plot area. It ranges from 0 to 1 and the default value is `0.4`.
 
 
 {% highlight c# %}
@@ -1021,7 +1021,7 @@ series.DoughnutCoefficient = 0.6f;
 
 ### Changing the doughnut size
 
-You can use the `CircularCoefficient` property to change the diameter of the doughnut chart with respect to the plot area. It ranges from 0 to 1 and the default value is 0.8.
+You can use the [`CircularCoefficient`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~CircularCoefficient.html) property to change the diameter of the doughnut chart with respect to the plot area. It ranges from 0 to 1 and the default value is 0.8.
 
 
 {% highlight c# %}
@@ -1034,7 +1034,7 @@ series.CircularCoefficient  = 0.5f;
 
 ### Exploding a doughnut segment
 
-Exploding a specific doughnut segment, you have to set the index to be exploded using `ExplodeIndex` property of the series.
+Exploding a specific doughnut segment, you have to set the index to be exploded using [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAccumulationSeries~ExplodeIndex.html) property of the series.
 
 {% highlight c# %}
 
@@ -1046,7 +1046,7 @@ series.ExplodeIndex     = 1;
 
 ### Exploding all the segments
 
-To explode all the segments, you have to enable `ExplodeAll` property of the series.
+To explode all the segments, you have to enable [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAccumulationSeries~ExplodeAll.html) property of the series.
 
 
 {% highlight c# %}
@@ -1060,7 +1060,7 @@ series.ExplodeAll       = true;
 
 ### Sector of doughnut
 
-SfChart allows you to render all the data points/segments in semi-doughnut, quarter- doughnut or in any sector using `StartAngle` and `EndAngle` properties.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) allows you to render all the data points/segments in semi-doughnut, quarter- doughnut or in any sector using [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~StartAngle.html) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~EndAngle.html) properties.
 
 
 {% highlight c# %}
@@ -1074,11 +1074,11 @@ series.EndAngle         = 360;
 
 ## Pyramid Chart
 
-To render a pyramid chart, create an instance of `SFPyramidSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the pyramid segment appearance.
+To render a pyramid chart, create an instance of [`SFPyramidSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPyramidSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the pyramid segment appearance.
 
-* `Color`       – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html)       – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTriangularSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTriangularSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -1100,7 +1100,7 @@ chart.Series.Add(pyramidSeries);
 
 ### Pyramid Mode
 
-You can render the pyramid series as linear or surface mode. In linear mode, height of the pyramid segment is based on the Y value and in surface mode, area of the pyramid segment is based on the Y values. The default value of `PyramidMode` property is `SFChartPyramidMode.Linear`.
+You can render the pyramid series as linear or surface mode. In linear mode, height of the pyramid segment is based on the Y value and in surface mode, area of the pyramid segment is based on the Y values. The default value of [`PyramidMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPyramidSeries~PyramidMode.html) property is [`SFChartPyramidMode.Linear`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPyramidMode.html).
 
 
 {% highlight c# %}
@@ -1114,7 +1114,7 @@ series.PyramidMode     = SFChartPyramidMode.Surface;
 
 ### Gap between the segments
 
-You can control the gap between the two segments using `GapRatio` property. Its ranges from 0 to 1.
+You can control the gap between the two segments using [`GapRatio`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTriangularSeries~GapRatio.html) property. Its ranges from 0 to 1.
 
 
 {% highlight c# %}
@@ -1128,7 +1128,7 @@ series.GapRatio        = 0.1;
 
 ### Exploding a pyramid segment
 
-You can explode a pyramid segment using `ExplodeIndex` property, and `ExplodeOffset` property is used to specify the exploded segment’s distance.
+You can explode a pyramid segment using [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAccumulationSeries~ExplodeIndex.html) property, and [`ExplodeOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTriangularSeries~ExplodeOffset.html) property is used to specify the exploded segment’s distance.
 
 
 {% highlight c# %}
@@ -1141,11 +1141,11 @@ series.ExplodeIndex    = 2;
 
 ## Funnel Chart
 
-To render a funnel chart, create an instance of `SFFunnelSeries` and add to the Series collection property of `SFChart`. You can use the following properties to customize the funnel segment appearance.
+To render a funnel chart, create an instance of [`SFFunnelSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFunnelSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the funnel segment appearance.
 
-* `Color`       – used to change the color of the series
-* `BorderWidth` – used to change the border width of the series
-* `BorderColor` – used to change the border color of the series
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html)       – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTriangularSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTriangularSeries~BorderColor.html) – used to change the border color of the series
 
 
 {% highlight c# %}
@@ -1166,7 +1166,7 @@ chart.Series.Add(funnelSeries);
 
 ### Gap between the segments
 
-You can control the gap between the two segments using `GapRatio` property. Its ranges from 0 to 1.
+You can control the gap between the two segments using [`GapRatio`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTriangularSeries~GapRatio.html) property. Its ranges from 0 to 1.
 
 
 {% highlight c# %}
@@ -1180,7 +1180,7 @@ series.GapRatio       = 0.1;
 
 ### Exploding a funnel segment
 
-You can explode a funnel segment using `ExplodeIndex` property and `ExplodeOffset` property is used to specify the exploded segment’s distance.
+You can explode a funnel segment using [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAccumulationSeries~ExplodeIndex.html) property and [`ExplodeOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTriangularSeries~ExplodeOffset.html) property is used to specify the exploded segment’s distance.
 
 
 {% highlight c# %}
@@ -1193,7 +1193,7 @@ series.ExplodeIndex   = 2;
 
 ### Changing the minimum width of the funnel
 
-You can change the minimum width of the funnel neck using `MinimumWidth` property of `SFFunnelSeries`. Default value of `MinimumWidth` is `20`.
+You can change the minimum width of the funnel neck using [`MinimumWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFunnelSeries~MinimumWidth.html) property of [`SFFunnelSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFunnelSeries.html). Default value of [`MinimumWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFunnelSeries~MinimumWidth.html) is `20`.
 
 
 {% highlight c# %}
