@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Point Selection
 
-You can select a data point by tapping on it. To enable the selection feature, set `EnableDataPointSelection` property as `True` for series. 
+You can select a data point by tapping on it. To enable the selection feature, set [`EnableDataPointSelection`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~EnableDataPointSelection.html) property as `True` for series. 
 
 {% highlight c# %}
 
@@ -24,8 +24,8 @@ series.EnableDataPointSelection = true;
 
 Following properties are used to configure the selection feature,
 
-* `SelectedDataPointIndex` – used to programmatically select a data point
-* `SelectedDataPointColor` – used to change the selected data point color
+* [`SelectedDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~SelectedDataPointIndex.html) – used to programmatically select a data point
+* [`SelectedDataPointColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~SelectedDataPointColor.html) – used to change the selected data point color
 
 {% highlight c# %}
 
@@ -48,7 +48,7 @@ N> For Accumulation series like pie, doughnut, pyramid and funnel, when you sele
 ## Delegates
 
 
-We need to implement delegate to deal with the user interactions in chart for data point selection. In order to do this,you need to adopt the `SFChartDelegate` protocol through the class extension as shown below.
+We need to implement delegate to deal with the user interactions in chart for data point selection. In order to do this,you need to adopt the [`SFChartDelegate`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate.html) protocol through the class extension as shown below.
 
 {% highlight c# %}
 
@@ -73,11 +73,11 @@ public class ChartDelegate : SFChartDelegate
 
 This delegate is called when the series datapoint selection operation has been started and it returns the following values.
 
-* `SFChartSelectionChangingInfo` – used to get the selection state.
+* [`SFChartSelectionChangingInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionChangingInfo.html) – used to get the selection state.
 
 
 **DidDataPointSelect**
 
 This delegate is called when the series datapoint selection operation has been finished and it returns the following values.
 
-* `SFChartSelectionInfo` – used to get the selection state.
+* [`SFChartSelectionInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo.html) – used to get the selection state.

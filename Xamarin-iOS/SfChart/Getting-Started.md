@@ -25,7 +25,7 @@ ios-unified\Syncfusion.SFChart.iOS.dll
 
 ## Initialize Chart
 
-Import the SFChart namespace as shown below in your respective Page,
+Import the [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) namespace as shown below in your respective Page,
 
 {% highlight C# %}
 using Syncfusion.SfChart.iOS;
@@ -54,7 +54,7 @@ public override void ViewDidLoad ()
 }
 {% endhighlight %}
 
-Run the project and check if you get following output to make sure you have configured your project properly to add `SFChart`.
+Run the project and check if you get following output to make sure you have configured your project properly to add [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
 ![](Getting-Started_images/img1.png)
 
@@ -93,9 +93,9 @@ public class ViewModel
 
 ## Populate Chart with data
 
-As we are going to visualize the comparison of heights in the data model, add `SFColumnSeries` to `SFChart.Series` property, and then set the Data property of the above `ViewModel` to the `SFColumnSeries.ItemsSource` property as shown below.
+As we are going to visualize the comparison of heights in the data model, add [`SFColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries.html) to [`SFChart.Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) property, and then set the Data property of the above `ViewModel` to the [`SFColumnSeries.ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~ItemsSource.html) property as shown below.
 
-N> You need to set `XBindingPath` and `YBindingPath` properties, so that `SFChart` would fetch values from the respective properties in the data model to plot the series.
+N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFXyDataSeries~YBindingPath.html) properties, so that [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) would fetch values from the respective properties in the data model to plot the series.
 
 {% highlight C# %}
 //Initializing primary axis
@@ -129,7 +129,7 @@ chart.Series.Add(series);
 
 ## Add Title
 
-You can add title to chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SFChart.Title`]() property as shown below.
+You can add title to chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SFChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Title.html) property as shown below.
 
 {% highlight C# %} 
 chart.Title.Text = "Chart";
@@ -137,7 +137,7 @@ chart.Title.Text = "Chart";
 
 ## Enable data labels
 
-You can add data labels to improve the readability of the chart. This can be achieved using `SFSeries.DataMarker` property as shown below.
+You can add data labels to improve the readability of the chart. This can be achieved using [`SFSeries.DataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~DataMarker.html) property as shown below.
 
 {% highlight C# %} 
 series.DataMarker.ShowLabel = true;
@@ -145,13 +145,13 @@ series.DataMarker.ShowLabel = true;
 
 ## Enable legend
 
-You can enable legend using `SFChart.Legend` property as shown below,
+You can enable legend using [`SFChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart~Legend.html) property as shown below,
 
 {% highlight C# %} 
 chart.Legend.Visible = true;
 {% endhighlight %}
 
-Additionally, you need to set label for each series using `SFSeries.Label` property, which will be displayed in corresponding legend.
+Additionally, you need to set label for each series using [`SFSeries.Label`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Label.html) property, which will be displayed in corresponding legend.
 
 {% highlight C# %} 
 series.Label = "Heights";
@@ -159,7 +159,7 @@ series.Label = "Heights";
 
 ## Enable tooltip
 
-Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting `SFSeries.EnableTooltip` property to true.
+Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting [`SFSeries.EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~EnableTooltip.html) property to true.
 
 {% highlight C# %} 
 series.EnableTooltip = true;
