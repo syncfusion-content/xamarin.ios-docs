@@ -85,7 +85,7 @@ Working hours in `WorkWeekView` of Schedule control will be differentiated with 
 >**Note**:
 	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
 
-## Changing StartHour and EndHour:
+## Changing StartHour and EndHour
 
 Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~EndHour.html) value is 0 to 24 to show all the time slots in `WorkWeekView`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~EndHour.html) property of `WorkWeekView`, to show only the required time duration for end users.
 
@@ -95,17 +95,17 @@ Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-
 			//Create new instance of WorkWeekViewSettings
 			WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
 			workWeekViewSettings.StartHour = 08;
-            workWeekViewSettings.EndHour = 15;	
+			workWeekViewSettings.EndHour = 15;
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
 ![](daymodule_images/chnagestartendhour_workweek.png)
 
 >**Note**:
-*   `StartHour` and `EndHour` should be in integer value to represent hours.
-*	`StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `Invalid DataException` will be thrown.
-*	`EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException`  will be thrown.
-*	 Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
+* `StartHour` and `EndHour` should be in integer value to represent hours.
+* `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `Invalid DataException` will be thrown.
+* `EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException`  will be thrown.
+* Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 
 ## Timeslot Appearance:
 You can customize the appearance of timeslots in `WorkWeekView`.
