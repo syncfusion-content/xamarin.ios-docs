@@ -37,7 +37,6 @@ var overflowButtonSettings = new OverflowButtonSettings();
 		overflowButtonSettings.BackgroundColor = Color.Red;
 		overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
 		overflowButtonSettings.Title = "...";
-		overflowButtonSettings.TitleFontSize = 30;
 		overflowButtonSettings.TitleFontColor = Color.Yellow;
 		tabView.OverflowButtonSettings = overflowButtonSettings;
 			
