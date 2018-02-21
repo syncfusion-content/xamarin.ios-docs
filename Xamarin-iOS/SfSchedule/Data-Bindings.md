@@ -128,9 +128,11 @@ using Syncfusion.SfSchedule.iOS;
 ![](data_binding_images/minheightios.png)
 
 >**Note**:
-* `MinHeight` value will be set, when the an appointment duration (height) value lesser than `MinHeight`.
-* Appointment duration value will be set, when the appointment duration (height) value greater than `MinHeight`.
-* TimeInterval value will be set, when Minimum Height greater than TimeInterval lesser than appointment duration.
+* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
+* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
+* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration).
+* `MinHeight` has ScheduleAppointmentMapping Support.
+* All day Appointment does not support `MinHeight`.
 
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
