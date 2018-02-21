@@ -70,6 +70,70 @@ using Syncfusion.SfSchedule.iOS;
 
 ![](data_binding_images/appointment.png)
 
+## Minimum Appointment Height
+
+[MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
+
+{% highlight c# %}
+ 
+ 	    SFSchedule schedule = new SFSchedule();
+        NSMutableArray appCollection = new NSMutableArray();
+        NSCalendar calendar = NSCalendar.CurrentCalendar;
+        NSDate today = new NSDate();
+        NSDateComponents startDateComponents = calendar.Components(
+        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+        startDateComponents.Hour = 09;
+        startDateComponents.Minute = 0;
+        startDateComponents.Second = 0;
+        NSDateComponents endDateComponents = calendar.Components(
+        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+        endDateComponents.Hour = 09;
+        endDateComponents.Minute = 0;
+        endDateComponents.Second = 0;
+        NSDate startDate = calendar.DateFromComponents(startDateComponents);
+        NSDate endDate = calendar.DateFromComponents(endDateComponents);
+		NSDateComponents startDateComponents1 = calendar.Components(
+        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+        startDateComponents1.Hour = 11;
+        startDateComponents1.Minute = 0;
+        startDateComponents1.Second = 0;
+        NSDateComponents endDateComponents1 = calendar.Components(
+        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+        endDateComponents1.Hour = 12;
+        endDateComponents1.Minute = 0;
+        endDateComponents1.Second = 0;
+        NSDate startDate1 = calendar.DateFromComponents(startDateComponents1);
+        NSDate endDate1 = calendar.DateFromComponents(endDateComponents1);
+        appCollection.Add(new ScheduleAppointment()
+            {
+			    StartTime = startDate,
+                EndTime = endDate,
+                Subject = (NSString)"Client Meeting",
+                AppointmentBackground = UIColor.FromHex("#FFD80073"),
+	            MinHeight=30
+           });
+		appCollection.Add(new ScheduleAppointment()
+            {
+			    StartTime = startDate1,
+                EndTime = endDate1,
+                Subject = (NSString)"Anniversary",
+                AppointmentBackground = UIColor.FromHex("#FFA2C139"),
+	            MinHeight=30
+           });
+        schedule.Appointments = appCollection;
+        View.AddSubview(schedule);
+		
+{% endhighlight %}
+
+![](data_binding_images/minheightios.png)
+
+>**Note**:
+* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
+* Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
+* TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration).
+* `MinHeight` has ScheduleAppointmentMapping Support.
+* All day Appointment does not support `MinHeight`.
+
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
