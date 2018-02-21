@@ -363,4 +363,73 @@ You can customize the Month inline view Appointment by using [MonthInlineAppoint
 
 ![](monthview_images/inlinecustomview.png)
 
+## Selection:
+You can customize the default appearance of selection UI in the month cells.
+
+* [Selection customization using style](#selection-customization-using-style)
+* [Selection customization using custom View](#selection-customization-using-custom-view)
+
+### Selection customization using style:
+You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionStyle.html) property of `SFSchedule`.
+
+{% highlight C# %}
+
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+    //Create new instance of SelectionStyle
+    SFSelectionStyle selectionStyle = new SFSelectionStyle();
+    selectionStyle.BackgroundColor = UIColor.Blue;
+    selectionStyle.BorderColor = UIColor.Black;
+    selectionStyle.BorderThickness = 5;
+    selectionStyle.BorderCornerRadius = 5;
+    schedule.SelectionStyle = selectionStyle;
+    
+{% endhighlight %}
+
+### Selection customization using custom View:
+You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionView.html) property of `SFSchedule`.
+{% highlight C# %}
+
+    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+    //Add the CustomView
+    UIButton customView = new UIButton();
+    customView.SetTitle("+NewEvent", UIControlState.Normal);
+    customView.BackgroundColor = UIColor.FromRGB(255, 152, 0);
+    customView.SetTitleColor(UIColor.White, UIControlState.Normal);
+    schedule.SelectionView = customView;
+    
+{% endhighlight %}
+
+### Programmatic selection
+You can programmatically select the specific cell by setting corresponding date to [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectedDate.html) property of `SFSchedule`. By default, it is null.
+
+{% highlight C# %}
+
+     // Creating instance of calendar
+     NSCalendar calendar = NSCalendar.CurrentCalendar;
+
+    // Creating instance of date
+    NSDate date = new NSDate();
+
+    // Setting a date and time to select
+    NSDateComponents dateComponents = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, date);
+    dateComponents.Year = 2017;
+    dateComponents.Month = 10;
+    dateComponents.Day = 04;
+    schedule.SelectedDate = calendar.DateFromComponents(dateComponents);
+
+{% endhighlight %}
+
+You can clear the selection by setting [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectedDate.html) as null.
+
+{% highlight C# %}
+
+    // Setting null value to deselect
+    schedule.SelectedDate = null
+
+{% endhighlight %}
+
+You can download the entire source code of this demo for Xamarin.iOS from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection481745259.zip)
+
+>**Note**: `SFSchedule` does not support multiple selection.
+>**Note**: `SFSchedule` supports two-way binding of `SelectedDate` property.
 
