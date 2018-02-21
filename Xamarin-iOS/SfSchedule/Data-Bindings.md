@@ -76,7 +76,7 @@ using Syncfusion.SfSchedule.iOS;
 
 {% highlight c# %}
  
-  SFSchedule schedule = new SFSchedule();
+ 	    SFSchedule schedule = new SFSchedule();
         NSMutableArray appCollection = new NSMutableArray();
         NSCalendar calendar = NSCalendar.CurrentCalendar;
         NSDate today = new NSDate();
