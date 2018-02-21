@@ -20,15 +20,15 @@ By default, schedule control is available with en locale, which is English.
 
 {% highlight c# %}   
     
+		   //setting schedule view
+			schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
           //setting locale for the control
-            schedule.Locale = new NSLocale("fr");
+            schedule.Locale = new NSLocale("ja");
  
 {% endhighlight %}   
  
 
->**Note:** AM/PM in the timeline will not be localized in the Schedule views 
-
-![](LocalizationGlobalization_images/Localization.png)   
+![](LocalizationGlobalization_images/Localization_iOS_1.png)   
 
 ## Change custom texts in the control.
 
