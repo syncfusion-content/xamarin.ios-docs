@@ -21,7 +21,7 @@ By default, schedule control is available with en locale, which is English.
 {% highlight c# %}   
     
 		   //setting schedule view
-			schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+			schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
           //setting locale for the control
             schedule.Locale = new NSLocale("ja");
  
