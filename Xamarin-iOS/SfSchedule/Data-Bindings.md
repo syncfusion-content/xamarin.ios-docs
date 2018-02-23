@@ -109,7 +109,7 @@ using Syncfusion.SfSchedule.iOS;
 			    StartTime = startDate,
                 EndTime = endDate,
                 Subject = (NSString)"Client Meeting",
-                AppointmentBackground = UIColor.FromHex("#FFD80073"),
+                AppointmentBackground = UIColor.FromRgb(216,0,115),
 	            MinHeight=30
            });
 		appCollection.Add(new ScheduleAppointment()
@@ -117,8 +117,7 @@ using Syncfusion.SfSchedule.iOS;
 			    StartTime = startDate1,
                 EndTime = endDate1,
                 Subject = (NSString)"Anniversary",
-                AppointmentBackground = UIColor.FromHex("#FFA2C139"),
-	            MinHeight=30
+                AppointmentBackground = UIColor.FromRgb(162,193,57),
            });
         schedule.Appointments = appCollection;
         View.AddSubview(schedule);
