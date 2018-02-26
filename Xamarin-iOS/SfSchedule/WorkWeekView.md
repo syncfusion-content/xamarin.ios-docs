@@ -103,7 +103,7 @@ Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-
 			schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 
-![](daymodule_images/chnagestartendhour_workweek.png)
+![](daymodule_images/changestartendhour_workweek.png)
 
 >**Note**:
 * `StartHour` and `EndHour` should be in integer value to represent hours.
