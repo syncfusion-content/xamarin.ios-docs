@@ -201,7 +201,7 @@ If we run the above sample, the below output will appears on iOS device as shown
 
 ### Adding a UILabel as the ContentView of the SfPopupLayout
 
-Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentView]() property to refresh it. Refer to the following code example in which a text view is added as popup content:
+Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentView]() property to refresh it. Refer to the following code example in which a UILabel is added as popup content:
 
 {% highlight c# %}
 
@@ -259,6 +259,9 @@ namespace GettingStarted
 {% endhighlight %}
 
 N> Setting of ContentView is same for both Type A and Type B
+
+If we run the above sample, the below output will appears on iOS device as shown below.
+![](GettingStarted_images/NuGetInstall.png)
 
 ### AppearanceMode
 
