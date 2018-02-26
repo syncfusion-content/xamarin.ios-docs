@@ -201,7 +201,7 @@ If we run the above sample, the below output will appears on iOS device as shown
 
 ### Adding a UILabel as the ContentView of the SfPopupLayout
 
-Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentView]() property to refresh it. Refer to the following code example in which a textview is added as popup content:
+Any view can be added as the popup content using the [SfPopupLayout.PopupView.ContentView]() property to refresh it. Refer to the following code example in which a text view is added as popup content:
 
 {% highlight c# %}
 
@@ -737,7 +737,7 @@ namespace GettingStarted
         }
         private void ShowPopupButton_TouchDown(object sender, EventArgs e)
         {
-            //Shows SfPopuplayout at x-position 100 and y position 100.
+            //Shows SfPopupLayout at x-position 100 and y position 100.
             popupLayout.Show(100, 100);  
 
         }
@@ -788,7 +788,7 @@ namespace GettingStarted
         }
         private void ShowPopupButton_TouchDown(object sender, EventArgs e)
         {
-            //Shows SfPopuplayout at x-position 100 and y position 100.
+            //Shows SfPopupLayout at x-position 100 and y position 100.
             popupLayout.Show(100, 100, rootView);  
 
         }
@@ -844,7 +844,7 @@ namespace GettingStarted
         }
         private void ShowPopupButton_TouchDown(object sender, EventArgs e)
         {
-            //Shows SfPopuplayout at the touch point.
+            //Shows SfPopupLayout at the touch point.
             popupLayout.ShowAtTouchPoint(); 
 
         }
