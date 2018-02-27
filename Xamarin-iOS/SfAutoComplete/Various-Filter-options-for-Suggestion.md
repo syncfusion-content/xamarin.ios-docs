@@ -153,4 +153,4 @@ Displays the suggestion based on the custom words in SfAutoComplete Control.
 
 {% endtabs %}
 
-![](images/endswith.png)
+![](images/custom.png)
