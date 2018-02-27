@@ -135,6 +135,8 @@ You can add title to chart to provide quick information to the user about the da
 chart.Title.Text = "Chart";
 {% endhighlight %}
 
+Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/chart-title) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize chart title.
+
 ## Enable data labels
 
 You can add data labels to improve the readability of the chart. This can be achieved using [`SFSeries.DataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~DataMarker.html) property as shown below.
@@ -142,6 +144,8 @@ You can add data labels to improve the readability of the chart. This can be ach
 {% highlight C# %} 
 series.DataMarker.ShowLabel = true;
 {% endhighlight %}
+
+Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/data-marker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize data markers.
 
 ## Enable legend
 
@@ -157,6 +161,8 @@ Additionally, you need to set label for each series using [`SFSeries.Label`](htt
 series.Label = "Heights";
 {% endhighlight %}
 
+Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize legend.
+
 ## Enable tooltip
 
 Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting [`SFSeries.EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~EnableTooltip.html) property to true.
@@ -164,6 +170,8 @@ Tooltips are used to show information about the segment, when you tap on the seg
 {% highlight C# %} 
 series.EnableTooltip = true;
 {% endhighlight %}
+
+Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize tooltip.
 
 This is how the final output looks like on iOS devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
 
