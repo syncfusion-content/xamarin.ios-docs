@@ -200,6 +200,8 @@ namespace GettingStarted
     }
 }
 
+{% endhighlight %}
+
 If we run the above sample, the below output will appears on iOS device as shown below.
 ![](GettingStarted_images/DefaultAppearance.png)
 
