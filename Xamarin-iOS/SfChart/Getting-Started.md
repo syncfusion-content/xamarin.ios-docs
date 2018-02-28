@@ -173,9 +173,49 @@ series.EnableTooltip = true;
 
 Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize tooltip.
 
-This is how the final output looks like on iOS devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
+The following code example gives you the complete code for creating a chart.
+
+{% highlight C# %} 
+//Initialize the Chart with required frame. This frame can be any rectangle, which bounds inside the view.
+SFChart chart = new SFChart();
+chart.Frame = this.View.Frame;
+chart.Title.Text = "Chart";
+
+//Adding Primary Axis for the Chart.
+SFCategoryAxis primaryAxis = new SFCategoryAxis();
+primaryAxis.Title.Text = new NSString("Name");
+chart.PrimaryAxis = primaryAxis;
+
+//Adding Secondary Axis for the Chart.
+SFNumericalAxis secondaryAxis = new SFNumericalAxis();
+secondaryAxis.Title.Text = new NSString("Height (in cm)");
+chart.SecondaryAxis = secondaryAxis;
+
+//Initializing view model
+ViewModel model = new ViewModel();
+
+//Initializing column series
+SFColumnSeries series = new SFColumnSeries();
+series.ItemsSource = model.Data;
+series.XBindingPath = "Name";
+series.YBindingPath = "Height";
+series.Label = "Heights";
+
+series.DataMarker.ShowLabel = true;
+series.EnableTooltip = true;
+chart.Legend.Visible = true;
+
+chart.Series.Add(series);
+this.View.AddSubview(chart);
+{% endhighlight %}
+			
+The following output is displayed as a result of the above code example.
 
 ![](Getting-Started_images/img2.png)
+
+You can find the complete getting started sample from this [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
+
+
 
 
 
