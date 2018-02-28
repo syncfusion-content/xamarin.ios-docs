@@ -27,15 +27,15 @@ Following are the list of options available to show SfPopupLayout at various pos
 <td> It is similar to SfPopupLayout.IsOpen property.</td>
 </tr>
 <tr>
-<td> {{'[popupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
 <td> Shows SfPopupLayout at the specified X and y position.</td>
 </tr>
 <tr>
-<td> {{'[popupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html)'| markdownify }} </td>
 <td> Shows SfPopupLayout at the touch point.</td>
 </tr>
 <tr>
-<td> {{'[popupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowRelativeToView.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowRelativeToView.html)'| markdownify }} </td>
 <td> Shows SfPopupLayout at the position relative to the specified view.</td>
 </tr>
 </table>
@@ -90,7 +90,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-N > SfPopupLayout.IsOpen property is not applicable for Type B.
+N> SfPopupLayout.IsOpen property is not applicable for Type B.
 
 If we run the above sample, the below output will appear on iOS device as shown below.
 ![](GettingStarted_images/IsOpen_Property.png)
@@ -259,7 +259,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-N > SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
+N> SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
 
 If we run the above sample, the below output will appear on iOS device as shown below.
 ![](GettingStarted_images/ShowAtTouchPoint.png)
