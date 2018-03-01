@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 --- 
 
-# AnimationMode
+# Popup Animations
 
 Built-in animations are available in SfPopupLayout, which is applied when the PopupView opens and closes in the screen.
 SfPopupLayout has different animation modes as listed below.
@@ -41,7 +41,7 @@ SfPopupLayout has different animation modes as listed below.
 
 N> Setting of AnimationMode is same for both TypeA and TypeB.
 
-## Zoom Animation
+## Zoom 
 
 Zoom-out animation will be applied if the PopupView opens and Zoom-in animation will be applied if the PopupView closes.
 
@@ -64,7 +64,7 @@ public MyViewController()
 If we run the above sample with `AnimationMode` as `Zoom`, the output will look like on iOS device as shown below.
 ![](GettingStarted_images/ZoomAnimation.gif)
 
-## Fade Animation
+## Fade 
 
 Fade-out animation will be applied if the PopupView opens and Fade-in animation will be applied if the PopupView closes
 
@@ -87,7 +87,7 @@ public MyViewController()
 If we run the above sample with `AnimationMode` as `Fade`, the output will look like on iOS device as shown below.
 ![](GettingStarted_images/FadeAnimation.gif)
 
-## SlideOnLeft Animation
+## SlideOnLeft 
 
 PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.
 
@@ -110,7 +110,7 @@ public MyViewController()
 If we run the above sample with `AnimationMode` as `SlideOnLeft`, the output will look like on iOS device as shown below.
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
-## SlideOnTop Animation
+## SlideOnTop 
 
 PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.
 
