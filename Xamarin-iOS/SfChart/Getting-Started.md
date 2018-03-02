@@ -176,37 +176,49 @@ Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/tooltip) to le
 The following code example gives you the complete code for creating a chart.
 
 {% highlight C# %} 
-//Initialize the Chart with required frame. This frame can be any rectangle, which bounds inside the view.
-SFChart chart = new SFChart();
-chart.Frame = this.View.Frame;
-chart.Title.Text = "Chart";
+using Syncfusion.SfChart.iOS;
 
-//Adding Primary Axis for the Chart.
-SFCategoryAxis primaryAxis = new SFCategoryAxis();
-primaryAxis.Title.Text = new NSString("Name");
-chart.PrimaryAxis = primaryAxis;
+namespace Chart_GettingStarted
+{
+	public partial class ViewController : UIViewController
+	{
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
 
-//Adding Secondary Axis for the Chart.
-SFNumericalAxis secondaryAxis = new SFNumericalAxis();
-secondaryAxis.Title.Text = new NSString("Height (in cm)");
-chart.SecondaryAxis = secondaryAxis;
+			//Initialize the Chart with required frame. This frame can be any rectangle, which bounds inside the view.
+			SFChart chart = new SFChart();
+			chart.Title.Text = "Chart";
+			chart.Frame = this.View.Frame;
 
-//Initializing view model
-ViewModel model = new ViewModel();
+			//Initializing view model
+			ViewModel model = new ViewModel();
 
-//Initializing column series
-SFColumnSeries series = new SFColumnSeries();
-series.ItemsSource = model.Data;
-series.XBindingPath = "Name";
-series.YBindingPath = "Height";
-series.Label = "Heights";
+			//Adding Primary Axis for the Chart.
+			SFCategoryAxis primaryAxis = new SFCategoryAxis();
+			primaryAxis.Title.Text = new NSString("Name");
+			chart.PrimaryAxis = primaryAxis;
 
-series.DataMarker.ShowLabel = true;
-series.EnableTooltip = true;
-chart.Legend.Visible = true;
+			//Adding Secondary Axis for the Chart.
+			SFNumericalAxis secondaryAxis = new SFNumericalAxis();
+			secondaryAxis.Title.Text = new NSString("Height (in cm)");
+			chart.SecondaryAxis = secondaryAxis;
 
-chart.Series.Add(series);
-this.View.AddSubview(chart);
+			//Initializing column series
+			SFColumnSeries series = new SFColumnSeries();
+			series.ItemsSource = model.Data;
+			series.XBindingPath = "Name";
+			series.YBindingPath = "Height";
+			
+			series.DataMarker.ShowLabel = true;
+			series.Label = "Heights";
+			series.EnableTooltip = true;
+			
+			chart.Series.Add(series);
+			chart.Legend.Visible = true;
+			this.View.AddSubview(chart);
+		}
+}
 {% endhighlight %}
 			
 The following output is displayed as a result of the above code example.
