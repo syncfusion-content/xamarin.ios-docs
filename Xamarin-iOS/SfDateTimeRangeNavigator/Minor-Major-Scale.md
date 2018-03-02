@@ -13,7 +13,7 @@ documentation: ug
 
 ## Intervals
 
-By default, best possible interval component will be chosen for both major and minor scales based on the available size of the view. For example, if the available space is sufficient to show only year labels without overlapping, interval will be displayed in years. However, you can also set specific interval values using `Intervals` property as demonstrated in the below code snippet.
+By default, best possible interval component will be chosen for both major and minor scales based on the available size of the view. For example, if the available space is sufficient to show only year labels without overlapping, interval will be displayed in years. However, you can also set specific interval values using [`Intervals`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~Intervals.html) property as demonstrated in the below code snippet.
 
 {% highlight c# %}
 
@@ -35,7 +35,7 @@ this.View.AddSubview(rangeNavigator);
 
 ## Customization
 
-The `MajorScaleStyle` and `MinorScaleStyle` properties of `SFDateTimeRangeNavigator` are used to customize the appearance of ticks and labels.
+The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MajorScaleStyle.html) and [`MinorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MinorScaleStyle.html) properties of `SFDateTimeRangeNavigator` are used to customize the appearance of ticks and labels.
 
 
 * `Position` – used to position the labels and ticks inside or outside of the range navigator.

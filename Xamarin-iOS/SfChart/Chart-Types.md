@@ -598,7 +598,7 @@ chart.Series.Add(scatterSeries);
 
 To render an OHLC chart, create an instance of [`SFOHLCSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFOHLCSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
-OHLC chart requires five values (X, Open, High, Low and Close) to plot a point. 
+OHLC chart requires five values ([`X`], [`Open`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~Open.html), [`High`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~High.html), [`Low`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~Low.html) and [`Close`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~Close.html)) to plot a point. 
 
 {% highlight c# %}
 
