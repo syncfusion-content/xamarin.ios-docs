@@ -173,7 +173,7 @@ series.EnableTooltip = true;
 
 Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize tooltip.
 
-The following code example gives you the complete code for creating a chart.
+The following code example gives you the complete code of above configurations.
 
 {% highlight C# %} 
 using Syncfusion.SfChart.iOS;
