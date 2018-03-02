@@ -70,4 +70,34 @@ You can collapse the default header of schedule by setting `HeaderHeight` proper
 
 {% endhighlight %}
 
-You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HeaderSample_iOS-2097240596.zip) 
+You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HeaderSample_iOS-2097240596.zip)
+
+## Header Date Format
+
+We can customize the date format of SFSchedule Header by using [ScheduleDateHeaderFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ScheduleDateHeaderFormat.html) property of `SFSchedule`.
+
+{% highlight c# %}
+//Creating instance of Schedule
+SFSchedule schedule = new SFSchedule();
+//Customizing date format
+schedule.ScheduleDateHeaderFormat = (NSString)"LLL yy";
+{% endhighlight %}
+
+![](Header_images/HeaderDateFormat.png)
+
+## Header Tapped Event
+
+We can handle single tap action of `Header` by using [HeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~HeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when `Header` is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
+
+{% highlight c# %}
+//Creating  new instance of Schedule
+SFSchedule schedule = new SFSchedule();
+schedule.HeaderTapped += Handle_HeaderTapped;
+{% endhighlight %}
+
+{% highlight c# %}
+void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
+{
+var date = e.Date;
+}
+{% endhighlight %}
