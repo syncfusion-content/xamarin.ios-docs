@@ -19,12 +19,12 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
 
 {% highlight C# %}
 
-	NSMutableArray countrylist=new NSMutableArray();
-	countrylist.Add((NSString)"Ukraine");
-	countrylist.Add((NSString)"United Arab Emirates");
-	countrylist.Add((NSString)"United Kingdom"); 
-	countrylist.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=countrylist;
+	NSMutableArray country=new NSMutableArray();
+	country.Add((NSString)"Ukraine");
+	country.Add((NSString)"United Arab Emirates");
+	country.Add((NSString)"United Kingdom"); 
+	country.Add((NSString)"United States"); 
+	countryAutoComplete.AutoCompleteSource=country;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 	countryAutoComplete.HighlightedTextColor = UIColor.Red;
@@ -50,12 +50,12 @@ The height of the Header in the SfAutoComplete can be adjusted by the property `
 
 {% highlight C# %}
 
-	NSMutableArray countrylist=new NSMutableArray();
-	countrylist.Add((NSString)"Ukraine");
-	countrylist.Add((NSString)"United Arab Emirates");
-	countrylist.Add((NSString)"United Kingdom"); 
-	countrylist.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=countrylist;
+	NSMutableArray country=new NSMutableArray();
+	country.Add((NSString)"Ukraine");
+	country.Add((NSString)"United Arab Emirates");
+	country.Add((NSString)"United Kingdom"); 
+	country.Add((NSString)"United States"); 
+	countryAutoComplete.AutoCompleteSource=country;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 	countryAutoComplete.HighlightedTextColor = UIColor.Red;
@@ -84,12 +84,12 @@ We can provide Footer Content at the bottom of the AutoComplete's Suggestion box
 
 {% highlight C# %}
 
-	NSMutableArray countrylist=new NSMutableArray();
-	countrylist.Add((NSString)"Ukraine");
-	countrylist.Add((NSString)"United Arab Emirates");
-	countrylist.Add((NSString)"United Kingdom"); 
-	countrylist.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=countrylist;
+	NSMutableArray country=new NSMutableArray();
+	country.Add((NSString)"Ukraine");
+	country.Add((NSString)"United Arab Emirates");
+	country.Add((NSString)"United Kingdom"); 
+	country.Add((NSString)"United States"); 
+	countryAutoComplete.AutoCompleteSource=country;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 	countryAutoComplete.HighlightedTextColor = UIColor.Red;
@@ -116,12 +116,12 @@ The height of the Header in the SfAutoComplete can be adjusted by the property `
 
 {% highlight C# %}
 
-	NSMutableArray countrylist=new NSMutableArray();
-	countrylist.Add((NSString)"Ukraine");
-	countrylist.Add((NSString)"United Arab Emirates");
-	countrylist.Add((NSString)"United Kingdom"); 
-	countrylist.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=countrylist;
+	NSMutableArray country=new NSMutableArray();
+	country.Add((NSString)"Ukraine");
+	country.Add((NSString)"United Arab Emirates");
+	country.Add((NSString)"United Kingdom"); 
+	country.Add((NSString)"United States"); 
+	countryAutoComplete.AutoCompleteSource=country;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 	countryAutoComplete.HighlightedTextColor = UIColor.Red;

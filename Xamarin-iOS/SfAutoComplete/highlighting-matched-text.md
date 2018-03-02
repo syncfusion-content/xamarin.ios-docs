@@ -16,7 +16,7 @@ Highlight matching characters in a suggestion list to pick an item with more cla
 
 * MultipleOccurrence
 
-The text higlight can be indicated with various customising styles by enabling the below properties. They are
+The text highlight can be indicated with various customizing styles by enabling the below properties. They are
 
 * HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
 
@@ -47,7 +47,7 @@ It highlights the first position of the matching characters in the suggestion li
 
 ## MultipleOccurrence
 
-It higlights the matching character that are present everywhere in the suggestionlist for Contains case in SuggestionMode.
+It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
 
 {% tabs %}
 

@@ -19,7 +19,7 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 	countryList.Add((NSString)"Akrotiri");
 	countryList.Add((NSString)"Andorra");
 	countryList.Add((NSString)"Angola");
-	countryList.Add((NSString)"Antartica"); 
+	countryList.Add((NSString)"Antarctica"); 
     countryList.Add((NSString)"Argentina"); 
     countryList.Add((NSString)"America"); 
     countryList.Add((NSString)"Aruba"); 
@@ -55,7 +55,7 @@ When the entered item is not in the suggestion list, SfAutoComplete displays a t
 	countryList.Add((NSString)"Akrotiri");
 	countryList.Add((NSString)"Andorra");
 	countryList.Add((NSString)"Angola");
-	countryList.Add((NSString)"Antartica"); 
+	countryList.Add((NSString)"Antarctica"); 
     countryList.Add((NSString)"Argentina"); 
     countryList.Add((NSString)"America"); 
     countryList.Add((NSString)"Aruba"); 

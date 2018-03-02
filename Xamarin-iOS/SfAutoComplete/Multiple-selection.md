@@ -110,7 +110,7 @@ TokenSettings token = new TokenSettings();
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delmiter character with the `Delimiter` property.
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
 
 {% tabs %}
 
