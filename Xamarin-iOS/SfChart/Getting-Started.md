@@ -135,6 +135,8 @@ You can add title to chart to provide quick information to the user about the da
 chart.Title.Text = "Chart";
 {% endhighlight %}
 
+Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/chart-title) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize chart title.
+
 ## Enable data labels
 
 You can add data labels to improve the readability of the chart. This can be achieved using [`SFSeries.DataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~DataMarker.html) property as shown below.
@@ -142,6 +144,8 @@ You can add data labels to improve the readability of the chart. This can be ach
 {% highlight C# %} 
 series.DataMarker.ShowLabel = true;
 {% endhighlight %}
+
+Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/data-marker) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize data markers.
 
 ## Enable legend
 
@@ -157,6 +161,8 @@ Additionally, you need to set label for each series using [`SFSeries.Label`](htt
 series.Label = "Heights";
 {% endhighlight %}
 
+Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize legend.
+
 ## Enable tooltip
 
 Tooltips are used to show information about the segment, when you tap on the segment. You can enable tooltip by setting [`SFSeries.EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~EnableTooltip.html) property to true.
@@ -165,9 +171,63 @@ Tooltips are used to show information about the segment, when you tap on the seg
 series.EnableTooltip = true;
 {% endhighlight %}
 
-This is how the final output looks like on iOS devices. You can also download the entire source code of this demo from [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
+Refer this [link](https://help.syncfusion.com/xamarin-ios/sfchart/tooltip) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to customize tooltip.
+
+The following code example gives you the complete code for creating a chart.
+
+{% highlight C# %} 
+using Syncfusion.SfChart.iOS;
+
+namespace Chart_GettingStarted
+{
+	public partial class ViewController : UIViewController
+	{
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
+
+			//Initialize the Chart with required frame. This frame can be any rectangle, which bounds inside the view.
+			SFChart chart = new SFChart();
+			chart.Title.Text = "Chart";
+			chart.Frame = this.View.Frame;
+
+			//Initializing view model
+			ViewModel model = new ViewModel();
+
+			//Adding Primary Axis for the Chart.
+			SFCategoryAxis primaryAxis = new SFCategoryAxis();
+			primaryAxis.Title.Text = new NSString("Name");
+			chart.PrimaryAxis = primaryAxis;
+
+			//Adding Secondary Axis for the Chart.
+			SFNumericalAxis secondaryAxis = new SFNumericalAxis();
+			secondaryAxis.Title.Text = new NSString("Height (in cm)");
+			chart.SecondaryAxis = secondaryAxis;
+
+			//Initializing column series
+			SFColumnSeries series = new SFColumnSeries();
+			series.ItemsSource = model.Data;
+			series.XBindingPath = "Name";
+			series.YBindingPath = "Height";
+			
+			series.DataMarker.ShowLabel = true;
+			series.Label = "Heights";
+			series.EnableTooltip = true;
+			
+			chart.Series.Add(series);
+			chart.Legend.Visible = true;
+			this.View.AddSubview(chart);
+		}
+}
+{% endhighlight %}
+			
+The following output is displayed as a result of the above code example.
 
 ![](Getting-Started_images/img2.png)
+
+You can find the complete getting started sample from this [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
+
+
 
 
 
