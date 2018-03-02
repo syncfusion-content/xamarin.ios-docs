@@ -46,6 +46,41 @@ You can customize the height of the ViewHeader in `DayView` by setting [ViewHead
 
 ![](daymodule_images/viewheaderheight_day.png)
 
+### ViewHeader Date Format
+We can customize the date and day format of `SFSchedule` ViewHeader by using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~DateLabelFormat.html) and [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~DayLabelFormat.html) properties of `LabelSettings`.
+
+{% highlight c# %}
+schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
+//Creating new instance of DayViewSettings
+DayViewSettings dayViewSettings = new DayViewSettings();
+//Creating new instance of DayLabelSettings
+DayLabelSettings dayLabelSettings = new DayLabelSettings();
+//Customizing date format
+dayLabelSettings.DateLabelFormat = (NSString)"dd";
+dayLabelSettings.DayLabelFormat = (NSString)"EEE d MMMM YY";
+dayViewSettings.LabelSettings = dayLabelSettings;
+schedule.DayViewSettings = dayViewSettings;
+{% endhighlight %}
+
+![](daymodule_images/DateFormat_Day.png)
+
+### ViewHeader Tapped Event
+We can handle single tapped action for `ViewHeader` by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
+[Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) contains date time value of visible date.
+
+{% highlight c# %}
+//Creating  new instance of Schedule
+SFSchedule schedule = new SFSchedule();
+schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
+schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+{% endhighlight %}
+
+{% highlight c# %}
+void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+{
+}
+{% endhighlight %}
+
 ## Change Time Interval
 You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimeInterval.html) property of `SFSchedule`.
 
