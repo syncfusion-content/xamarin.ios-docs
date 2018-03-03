@@ -177,6 +177,41 @@ You can customize the View Header appearance by using [SFViewHeaderStyle](https:
 
 ![](monthview_images/viewheaderstyle.png)
 
+### ViewHeader Date Format
+We can customize the date and day format of `SFSchedule` ViewHeader by using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelFormat.html) and [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DayLabelFormat.html) properties of `LabelSettings`.
+
+{% highlight c# %}
+schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+//Creating new instance of MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+//Creating new instance of MonthLabelSettings
+MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
+//Customizing date format
+monthLabelSettings.DateLabelFormat = (NSString)"dd";
+monthLabelSettings.DayLabelFormat = (NSString)"EEEE";
+monthViewSettings.LabelSettings = monthLabelSettings;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+
+![](monthview_images/DateFormat_Month.png)
+
+### ViewHeader Tapped Event
+We can handle single tap action of `ViewHeader` by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
+
+{% highlight c# %}
+//Creating  new instance of Schedule
+SFSchedule schedule = new SFSchedule();
+schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+{% endhighlight %}
+
+{% highlight c# %}
+void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+{
+var date = e.Date;
+}
+{% endhighlight %}
+
 ## MonthCell Appearance 
 You can customize the Month view cell in three ways,
 
@@ -363,13 +398,13 @@ You can customize the Month inline view Appointment by using [MonthInlineAppoint
 
 ![](monthview_images/inlinecustomview.png)
 
-## Selection:
+## Selection
 You can customize the default appearance of selection UI in the month cells.
 
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 
-### Selection customization using style:
+### Selection customization using style
 You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionStyle.html) property of `SFSchedule`.
 
 {% highlight C# %}
@@ -387,7 +422,7 @@ You can customize the month cell selection by using [SelectionStyle](https://hel
 
 ![](monthview_images/SelectionStyle_Month.png)
 
-### Selection customization using custom View:
+### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionView.html) property of `SFSchedule`.
 {% highlight C# %}
 
@@ -439,3 +474,18 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 * `SFSchedule` supports two-way binding of `SelectedDate` property.
 
  ![](monthview_images/selection_Month.png)
+ 
+ ## Today Background Color
+ 
+ We can customize the current date background of  `SFSchedule`  by using [TodayBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~TodayBackgroundColor.html) property of `MonthViewSettings`.
+ 
+ {% highlight c# %}
+ schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+ //Creating new instance of MonthViewSettings
+ MonthViewSettings monthViewSettings = new MonthViewSettings();
+ //Customizing background color
+ monthViewSettings.TodayBackgroundColor = UIColor.Red;
+ schedule.MonthViewSettings = monthViewSettings;
+ {% endhighlight %}
+ 
+ ![](monthview_images/TodayBackground.png)

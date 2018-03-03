@@ -45,6 +45,41 @@ You can customize the height of the ViewHeader in `WorkWeekView` by setting [Vie
 
 ![](daymodule_images/viewheaderheight_workweek.png)
 
+### ViewHeader Date Format
+We can customize the date and day format of `SFSchedule` ViewHeader by using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekLabelSettings~DateLabelFormat.html) and [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekLabelSettings~DayLabelFormat.html) properties of `LabelSettings`.
+
+{% highlight c# %}
+schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
+//Creating new instance of WorkWeekViewSettings
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+//Creating new instance of WorkWeekLabelSettings
+WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
+//Customizing date format
+workWeekLabelSettings.DateLabelFormat = (NSString)"dd";
+workWeekLabelSettings.DayLabelFormat = (NSString)"EEEE";
+workWeekViewSettings.LabelSettings = workWeekLabelSettings;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
+{% endhighlight %}
+
+![](daymodule_images/DateFormat_WorkWeek.png)
+
+### ViewHeader Tapped Event
+We can handle single tap action of `ViewHeader` by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
+
+{% highlight c# %}
+//Creating  new instance of Schedule
+SFSchedule schedule = new SFSchedule();
+schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
+schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+{% endhighlight %}
+
+{% highlight c# %}
+void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
+{
+var date = e.Date;
+}
+{% endhighlight %}
+
 ## Change Time Interval
 You can customize the interval of timeslots in `WorkWeekView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimeInterval.html) property of `SFSchedule`.
 
