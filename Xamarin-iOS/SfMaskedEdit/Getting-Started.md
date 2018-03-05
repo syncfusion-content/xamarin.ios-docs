@@ -93,7 +93,7 @@ Each MaskType has different set of mask elements that are combined to form a mas
 1.	Text
 2.	Reg-Ex
 
-##Text
+## Text
 
 Expressions that are generated with letters, digits and special characters are come under this group. This is mainly used for fixed length inputs. For example: Phone number, PAN number.
 
@@ -158,7 +158,7 @@ maskedEdit.MaskType = MaskType.Text;
 
 This mask expression allows only numeric inputs in the places of 0.
 
-##Regex
+## Regex
 
 The expressions that are generated with regular expressions come under this group, preferable for variable length inputs and input in range. For example: Hexadecimal values [0-9A-C].
 The regular expressions provide significant advantages when creating masks as compared with other masked modes. 
@@ -226,7 +226,7 @@ mask.MaskType = MaskType.RegEx;
 
 This mask expression’\d{3}’ and’ \d{5}’ allows only numeric, where {n} is the count that the input should be accepted.
 
-##Setting Value
+## Setting Value
 
 The SfMaskedEdit control display value can be set using Value property,
 
@@ -243,7 +243,7 @@ maskedEdit.Value="14/11/2014";
 
 {% endtabs %}
 
-##Localization
+## Localization
 The special symbols like a currency symbol, date separator, decimal separator etc., can be localized to any specific culture with 'Culture' property.
 
 <table>
@@ -284,7 +284,7 @@ mask.Culture= new CultureInfo("fr-FR");
 {% endhighlight %}
 {% endtabs %}
 
-##ValidationMode
+## ValidationMode
 
 Input validation happens based on the value of the ‘ValidationMode’ property. The enum values of this property are
 
