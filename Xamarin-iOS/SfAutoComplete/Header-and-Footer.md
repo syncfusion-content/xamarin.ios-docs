@@ -32,7 +32,7 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
    
 	UITableViewHeaderHeaderView header = new UITableViewHeaderHeaderView();
 	UILabel label = new UILabel();
-	label.Text = "Search for";
+	label.Text = "Search for U";
 	label.TextColor = UIColor.Blue;
 	header.AddSubview(label);
 	countryAutoComplete.DropDownHeaderView = header;
@@ -64,7 +64,7 @@ The height of the Header in the SfAutoComplete can be adjusted by the property `
    
 	UITableViewHeaderHeaderView header = new UITableViewHeaderHeaderView();
 	UILabel label = new UILabel();
-	label.Text = "Search for";
+	label.Text = "Search for U";
 	label.TextColor = UIColor.Blue;
 	header.AddSubview(label);
 	countryAutoComplete.DropDownHeaderView = header;

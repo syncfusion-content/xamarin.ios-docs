@@ -63,6 +63,8 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 
 {% endtabs %}
 
+![](images/TokenRepresentationWrap.png)
+
 ### Token Customization
 
 Customization can be done for Token. There are various ways to customize the tokens. They are as follows.

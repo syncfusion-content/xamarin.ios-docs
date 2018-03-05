@@ -25,7 +25,7 @@ Restrict the number of suggestions displayed and have the remaining items loaded
     countryList.Add((NSString)"Aruba"); 
 	countryAutoComplete.AutoCompleteSource=countryList;
 	countryAutoComplete.MaximumSuggestion="2";
-	countryAutoComplete.LoadMoreText = "LoadMore";
+	countryAutoComplete.LoadMoreText = "LOAD MORE";
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 
 {% endhighlight %}
