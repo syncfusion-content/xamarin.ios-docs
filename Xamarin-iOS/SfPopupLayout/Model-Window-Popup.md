@@ -112,7 +112,7 @@ namespace GettingStarted
         }
         private void ShowPopupButton_TouchDown(object sender, EventArgs e)
         {
-            // Below code ensures that the popup doesnot collapse when user interacts outside the popup.
+            // Below code ensures that the popup does not collapse when user interacts outside the popup.
             popupLayout.StaysOpen = true;
             popupLayout.PopupView.ShowCloseButton = true;
             popupLayout.IsOpen = true;   
