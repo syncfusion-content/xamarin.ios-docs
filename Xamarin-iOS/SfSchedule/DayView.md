@@ -27,8 +27,8 @@ You can customize the default appearance of view header in [DayView](https://hel
 			viewHeaderStyle.BackgroundColor = UIColor.FromRGB(0, 150, 136);
 			viewHeaderStyle.DayTextColor = UIColor.FromRGB(255, 255, 255);
 			viewHeaderStyle.DateTextColor = UIColor.FromRGB(255, 255, 255);
-			viewHeaderStyle.DayTextStyle = UIFont.FromName("Arial", 15);
-			viewHeaderStyle.DateTextStyle = UIFont.FromName("Arial", 15);
+			viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular",20);
+			viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular",20);		
 			schedule.DayHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -329,3 +329,17 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 * `SFSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_Day.png)
+
+## Custom Font
+
+We have a Text Style property for HeaderStyle, ViewHeaderStyle, AppointmentStyle, MonthInlineViewStyle, MonthCellStyle, WeekNumberStyle. Setting the custom font for the above styles, use the following steps.
+
+
+### Custom Font Setting in Xamarin.iOS
+1.Download the Custom Font (e.g. Lobster-Regular.ttf)
+2.Add the downloaded Custom Font to the Resources Folder.
+3.Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
+5.Then, directly use Custom Font name as TextStyle
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+

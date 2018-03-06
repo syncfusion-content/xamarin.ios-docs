@@ -31,7 +31,7 @@ You can change the background color,text style and text color using properties s
 
     SFHeaderStyle headerStyle = new SFHeaderStyle();
 	headerStyle.BackgroundColor = UIColor.FromRGB(251, 211, 201);
-	headerStyle.TextStyle = UIFont.SystemFontOfSize(15,UIFontWeight.Bold);
+	headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
 	headerStyle.TextColor=UIColor.White;
 	schedule.HeaderStyle = headerStyle;
 
@@ -101,3 +101,7 @@ void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 var date = e.Date;
 }
 {% endhighlight %}
+
+##Custom Font
+
+For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#custom font)

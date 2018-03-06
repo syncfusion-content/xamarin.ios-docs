@@ -129,7 +129,7 @@ You can customize the Week Number appearance by using [SFWeekNumberStyle](https:
 
 			//creating new instance for WeekNumberStyle
 			SFWeekNumberStyle weekNumberStyle = new SFWeekNumberStyle();
-			weekNumberStyle.TextStyle = UIFont.FromName("Arial", 15);
+
 			weekNumberStyle.BackgroundColor = UIColor.Blue;
 			weekNumberStyle.TextColor = UIColor.White;
 			monthViewSettings.WeekNumberStyle = weekNumberStyle;
