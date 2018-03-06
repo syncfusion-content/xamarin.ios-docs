@@ -332,8 +332,16 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 
 ## Custom Font
 
-We have a Text Style property for HeaderStyle, ViewHeaderStyle, AppointmentStyle, MonthInlineViewStyle, MonthCellStyle, WeekNumberStyle. Setting the custom font for the above styles, use the following steps.
+We can change the appearance of Font by setting the TextStyle property of following classes.
 
+[HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) - Using text style property, customize the header style.
+[ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance)- Using text style property, customize the view header style.
+[AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) - Using text style property, customize the appointment style.
+[MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) - Using text style property, customize the month cell style.
+[MonthInlineViewStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#inlineview-appearance) - Using text style property, customize the month inline view style.
+[WeekNumber Style](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) - Using text style property, customize the week number style.
+
+Following steps will explain how to configure custom fonts.
 
 ### Custom Font Setting in Xamarin.iOS
 1.Download the Custom Font (e.g. Lobster-Regular.ttf)
