@@ -60,7 +60,7 @@ documentation : ug
       
       SfImageEditor editor = new SfImageEditor();
             editor.Frame = View.Frame;
-            Stream stream = this.GetType().GetTypeInfo().Assembly.GetManifestResourceStream("namespacename.Resources.Chart.txt");
+            Stream stream = this.GetType().GetTypeInfo().Assembly.GetManifestResourceStream("namespace_name.Resources.Chart.txt");
             if (stream != null)
                 editor.LoadEdits(stream);
             this.Add(editor);
