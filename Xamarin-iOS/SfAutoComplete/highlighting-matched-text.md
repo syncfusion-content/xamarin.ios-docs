@@ -16,7 +16,15 @@ Highlight matching characters in a suggestion list to pick an item with more cla
 
 * MultipleOccurrence
 
+The text highlight can be indicated with various customizing styles by enabling the below properties. They are
+
+* HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
+
+* HighlightTextFontAttributes - sets the FontAttributes of the highlighted text.
+
 ## FirstOccurrence
+
+It highlights the first position of the matching characters in the suggestion list.
 
 {% tabs %}
 
@@ -29,6 +37,7 @@ Highlight matching characters in a suggestion list to pick an item with more cla
 	countryAutoComplete.AutoCompleteSource=countryList;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
+	countryAutoComplete.HighlightedTextColor = UIColor.Red;
 
 {% endhighlight %}
 
@@ -37,6 +46,8 @@ Highlight matching characters in a suggestion list to pick an item with more cla
 ![](images/FirstOccurrence.png)
 
 ## MultipleOccurrence
+
+It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
 
 {% tabs %}
 
@@ -48,6 +59,7 @@ Highlight matching characters in a suggestion list to pick an item with more cla
 	countryList.Add((NSString)"Albania"); 
 	countryAutoComplete.AutoCompleteSource=countryList;
 	countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
+    countryAutoComplete.HighlightedTextColor = UIColor.Red;
 	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
 
 {% endhighlight %}
