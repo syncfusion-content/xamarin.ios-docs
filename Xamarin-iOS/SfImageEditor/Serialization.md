@@ -8,32 +8,51 @@ documentation : ug
 ---
 
 # Serialization And Deserialization
- ImageEditor provides support to serialize and deserialize the shapes(Circle,Arrow,Rectangle), free hand drawing,Text and Toolbar settings. Save the current state of the Image Editor and Load it back when its needed.
+ ImageEditor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. Save the current state of the Image Editor and Load it back when its needed.
 
 ## Serialization
-  To serialize the shapes like circle,arrow,rectangle,text ,freehand drawing and toolbar settings by calling SaveEdits() method.Serialized object will be return in the form of JSON stream.
+  SaveEdits() method used to serialize the current edits of shapes. Serialized object will be return in the form of JSON stream.
 
 {% tabs %}
 
 {% highlight C# %}
     
-	 SfImageEditor editor = new SfImageEditor();
-            editor.Frame = View.Frame;
-			Stream stream=editor.SaveEdits();
-			this.Add(editor);
+	 SfImageEditor editor;
+        public override void ViewDidLoad()
+        {
+           
+            editor = new SfImageEditor();
+            UIButton saveEdits = new UIButton();
+            saveEdits.Frame = new CoreGraphics.CGRect(0, 10, View.Frame.Width, 100);
+            saveEdits.SetTitle("Serialize",UIControlState.Normal);
+            saveEdits.SetTitleColor(UIColor.Black,UIControlState.Normal);
+            saveEdits.TouchUpInside+= SaveEdits_TouchUpInside;
+            editor.Frame = new CoreGraphics.CGRect(0, 110, View.Frame.Width, View.Frame.Height-100);
+            this.Add(editor);
+            this.Add(saveEdits);
+            base.ViewDidLoad();
+           
+        }
+
+        void SaveEdits_TouchUpInside(object sender, EventArgs e)
+        {
+            Stream stream = editor.SaveEdits();
+        }
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-   convert the stream into string and save as .txt format file and set as Embedded  resource in Xamarin.iOS.
-   Text file like this
+   you can save stream into .txt format file. if you saved as .txt format file to deserialize the shapes then set as Embedded resource in project.
+
+   Please find sample text file shown below
+
    [Chart.txt](http://www.syncfusion.com/downloads/support/directtrac/general/txt/Chart677841499.txt)
        
 
 
 ## Deserialization
-   To deserialize serialized objects by calling LoadEdits(stream) method .Deserialize the object by using loaded JSON stream.
+   LoadEdits() method used to deserialize the shapes.
 
 {% tabs %}
 
@@ -41,7 +60,7 @@ documentation : ug
       
       SfImageEditor editor = new SfImageEditor();
             editor.Frame = View.Frame;
-            Stream stream = this.GetType().GetTypeInfo().Assembly.GetManifestResourceStream("serialization.Resources.Chart.txt");
+            Stream stream = this.GetType().GetTypeInfo().Assembly.GetManifestResourceStream("namespacename.Resources.Chart.txt");
             if (stream != null)
                 editor.LoadEdits(stream);
             this.Add(editor);
