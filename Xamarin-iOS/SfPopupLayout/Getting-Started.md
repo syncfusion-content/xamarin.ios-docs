@@ -69,8 +69,6 @@ SfPopupLayout control can be configured entirely in C# code. To create a sample 
 * [AnimationMode](#animationmode)
 * [Sample Link](#sample-link)
 
-### Create a simple popup
-
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
 ## Adding SfPopupLayout in Xamarin.iOS
@@ -89,7 +87,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 5. Create an instance of SfPopupLayout control and add as subview of the UIViewController. Refer to the following code example to add this control to the application:
 
-### Type A:
+### Displaying Popup when SfPopupLayout is set as root view :
 
 {% highlight c# %}
 
@@ -152,7 +150,7 @@ public class CustomView : UIView
 }
 {% endhighlight %}
 
-### Type B:
+### Displaying Popup when SfPopupLayout is not set as root view :
 
 {% highlight c# %}
 
