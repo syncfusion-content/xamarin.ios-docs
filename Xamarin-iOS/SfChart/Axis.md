@@ -360,6 +360,8 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart
 * [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderWidth.html) – used to change the thickness of the border.
 * [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Font.html) – used to change the text size, font family and font weight.
 * [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Margin.html) - used to change the margin size for labels.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~LabelAlignment.html) - Used to align the label at the start, center, or end.
+* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~CornerRadius.html) - Used to change the corner radius of the background of labels.
 
 {% highlight c# %}
 
@@ -619,6 +621,14 @@ chart.PrimaryAxis.LabelsIntersectAction = SFChartAxisLabelsIntersectAction.Multi
 
 **LabelClicked**
 
-This event is triggered when the axis label is clicked. The argument contains the following information.
+The [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabelClickedEventArgs.html) event is triggered when the axis label is clicked. The argument contains the following information.
 
 * [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabelClickedEventArgs~Label.html) - Used to get the ChartAxisLabel, which contains axis label position and text.
+
+**LabelCreated**
+
+The [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+LabelCreatedEventArgs.html) event is triggered when the axis label is created. The argument contains [`AxisLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+LabelCreatedEventArgs~AxisLabel.html) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabel.html) which contains following properties.
+
+* [`LabelContent`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabel~LabelContent.html) - used to get or set the content of label
+* [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabel~Position.html) - used to get or set the position of the label
+* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabel~LabelStyle.html) - Used to customize the appearance of axis labels based on condition. The properties listed in [`Label customization`](https://help.syncfusion.com/xamarin-ios/sfchart/axis#label-customization) can be customized using LabelStyle property.
