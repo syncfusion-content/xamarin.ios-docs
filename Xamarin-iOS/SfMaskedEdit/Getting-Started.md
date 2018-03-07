@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.iOS.
-description:  A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.iOS platform 
+description:  A quick tour for initial users of Syncfusion SfMaskedEdit control for Xamarin.iOS platform 
 platform: Xamarin.iOS.
 control: SfMaskedEdit
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfMaskedEdit control in a real-time scenario and also provides a walk-through on some of the customization features available in SfMaskedEdit control.
+This section explains how to configure SfMaskedEdit control in a real-time scenario, and also provides a walk-through on some of the customization features available.
                         
 ## Reference Essential Studio Components in your Solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders.
 
 **{Syncfusion Installed location}\Essential Studio{version number}\lib**
 
@@ -67,11 +67,11 @@ maskedEdit.Mask = "00/00/0000";
 
 {% endtabs %}
 
-This mask expression allows only numeric inputs in the places of 0.
+This mask expression only allows numeric input in the place of 0.
 
 ## Setting Value
 
-Set the Value for the control as follows,
+Set the value for the control as follows:
 
 {% tabs %}
 
@@ -93,9 +93,9 @@ Each MaskType has different set of mask elements that are combined to form a mas
 1.	Text
 2.	Reg-Ex
 
-##Text
+## Text
 
-Expressions that are generated with letters, digits and special characters are come under this group. This is mainly used for fixed length inputs. For example: Phone number, PAN number.
+Expressions that are generated with letters, digits, and special characters  come under this group. This is mainly used for fixed length inputs. For example: Phone number and PAN.
 
 **Text Mask elements**
 <table>
@@ -158,15 +158,15 @@ maskedEdit.MaskType = MaskType.Text;
 
 This mask expression allows only numeric inputs in the places of 0.
 
-##Regex
+## Regex
 
-The expressions that are generated with regular expressions come under this group, preferable for variable length inputs and input in range. For example: Hexadecimal values [0-9A-C].
-The regular expressions provide significant advantages when creating masks as compared with other masked modes. 
+Expressions that are generated with regular expressions come under this group, preferred for variable length inputs and input in range. For example: Hexadecimal values [0-9A-C].
+The regular expressions provide significant advantages when creating masks as compared to other masked modes. 
 
 **Advantages:**
-1)	Allows to enter value of indeterminate length.
-2)	Restricts with specific pattern. Example email, password etc.
-3)	Restricts to enter specific range at specific position.
+1)	Allows you to enter value of indeterminate length.
+2)	Restricts based on specific patterns. Example: Email, password, etc.
+3)	Restricts entry of specific range at specific position.
 
 **Regex Mask Elements**
 <table>
@@ -226,9 +226,9 @@ mask.MaskType = MaskType.RegEx;
 
 This mask expression’\d{3}’ and’ \d{5}’ allows only numeric, where {n} is the count that the input should be accepted.
 
-##Setting Value
+## Setting Value
 
-The SfMaskedEdit control display value can be set using Value property,
+The SfMaskedEdit control's display value can be set using the Value property.
 
 {% tabs %}
 
@@ -243,8 +243,8 @@ maskedEdit.Value="14/11/2014";
 
 {% endtabs %}
 
-##Localization
-The special symbols like a currency symbol, date separator, decimal separator etc., can be localized to any specific culture with 'Culture' property.
+## Localization
+Special symbols like currency symbol, date separator, decimal separator, etc., can be localized to any specific culture with 'Culture' property.
 
 <table>
 <tr>
@@ -284,9 +284,9 @@ mask.Culture= new CultureInfo("fr-FR");
 {% endhighlight %}
 {% endtabs %}
 
-##ValidationMode
+## ValidationMode
 
-Input validation happens based on the value of the ‘ValidationMode’ property. The enum values of this property are
+Input validation happens based on the value of the ‘ValidationMode’ property. The enum values of this property are,
 
 •	KeyPress
 •	LostFocus
@@ -311,7 +311,7 @@ When the ValidationMode is LostFocus, the validation take place when the control
 
 ### Prompt Character
 
-Displays prompt character for the absence of user input in Mask and its default value is ‘_’
+Displays prompt character for the absence of user input in Mask and its default value is ‘_’.
 
 {% tabs %}
 
