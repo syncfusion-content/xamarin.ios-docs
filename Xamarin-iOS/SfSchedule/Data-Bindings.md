@@ -403,7 +403,7 @@ Schedule appointment can be customized during runtime using [AppointmentLoadedEv
   
 void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
     {       
-	    if(e.Appointment != null && e.Appointment.IsAllDay == true)
+	    if(e.Appointment != null && e.Appointment.IsAllDay == true && e.Appointment.Subject != null)
 		{
 			e.AppointmentStyle.BorderColor = UIColor.Red;
 			e.AppointmentStyle.TextColor = UIColor.White;
@@ -435,21 +435,19 @@ Default appointment UI can be changed using `View` property passed through `A
     void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
     {
 	
-    if((e.Appointment as ScheduleAppointment).IsAllDay == true)
+    if ( e.Appointment != null && (e.Appointment as Meeting).IsAllDay == true && (e.Appointment as Meeting).EventName != null)
 	{
          UITextView textview = new UITextView();
          textview.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
-         if (e.Appointment != null)
-		     textview.Text = (NSString)e.Appointment.Subject;
+	     textview.Text = (NSString)e.Appointment.Subject;
          e.View = textview;
     }
-	else if((e.Appointment as ScheduleAppointment).Subject == "Retrospective")
+	else if ((e.Appointment as Meeting).Subject == "Retrospective" && (e.Appointment as Meeting).EventName != null)
 	{
 	    UIButton button = new UIButton();
         button.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
 		button.SetBackgroundImage(UIImage.FromFile("Meeting.png"), UIControlState.Normal);
-        if(e.Appointment!=null)
-            button.SetTitle((NSString)e.Appointment.Subject, UIControlState.Normal);
+	    button.SetTitle((NSString)e.Appointment.Subject, UIControlState.Normal);
         e.View = button;
 	}
 	else
@@ -462,7 +460,6 @@ Default appointment UI can be changed using `View` property passed through `A
         e.View = button;
     }
 	}
-
  
 {% endhighlight %}
 
