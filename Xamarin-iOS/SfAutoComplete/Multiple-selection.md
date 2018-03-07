@@ -128,7 +128,7 @@ When selecting the multiple items, the selected items can be divided with a desi
 	countryList.Add((NSString)"America"); 
 	countryAutoComplete.AutoCompleteSource=countryList;
 	countryAutoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
-	countryAutoComplete.Delimiter="*";
+	countryAutoComplete.Delimiter="#";
 
 {% endhighlight %}
 
