@@ -59,6 +59,6 @@ private void MaskedEdit_ValueChanged(object sender, ValueChangedEventArgs e)
 
 Refer this [link](Events#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
 
-![](SfMaskedEditImages/valuechanged.png)
+![](SfMaskedEditImages/validation.png)
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Validation1147848053.zip).
