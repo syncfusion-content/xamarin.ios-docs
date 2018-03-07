@@ -153,4 +153,4 @@ You can customize the color of the progress indicator and track by defining the 
 ![](overview_images/style.png)
 
 
-You can find the complete Getting Started sample from this [link]().
+You can find the complete Getting Started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar_iOS266140402).
