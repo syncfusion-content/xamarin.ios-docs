@@ -71,13 +71,13 @@ public class ChartDelegate : SFChartDelegate
 
 **WillDataPointSelect**
 
-This delegate is called when the series datapoint selection operation has been started and it returns the following values.
+The [`WillDataPointSelect`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~WillDataPointSelect.html) delegate is called when the series datapoint selection operation has been started and it returns the following values.
 
 * [`SFChartSelectionChangingInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionChangingInfo.html) – used to get the selection state.
 
 
 **DidDataPointSelect**
 
-This delegate is called when the series datapoint selection operation has been finished and it returns the following values.
+The [`DidDataPointSelect`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidDataPointSelect.html) delegate is called when the series datapoint selection operation has been finished and it returns the following values.
 
 * [`SFChartSelectionInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo.html) – used to get the selection state.
