@@ -475,7 +475,7 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 
  ![](monthview_images/selection_Month.png)
  
- ## Today Background Color
+## Today Background Color
  
  We can customize the current date background of  `SFSchedule`  by using [TodayBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~TodayBackgroundColor.html) property of `MonthViewSettings`.
  
