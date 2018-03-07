@@ -411,6 +411,14 @@ void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
             e.AppointmentStyle.SelectionBorderColor = UIColor.Yellow;
             e.AppointmentStyle.SelectionTextColor = UIColor.Yellow;
         }
+		else if(e.Appointment != null && e.Appointment.IsAllDay == true)
+		{
+			e.AppointmentStyle.BorderColor = UIColor.Red;
+            e.AppointmentStyle.BorderCornerRadius = 12;
+            e.AppointmentStyle.BorderWidth = 2;
+            e.AppointmentStyle.SelectionBorderColor = UIColor.Yellow;
+            e.AppointmentStyle.SelectionTextColor = UIColor.Yellow;
+		}
     }
 
 {% endhighlight %}
@@ -424,12 +432,23 @@ Default appointment UI can be changed using `View` property passed through `A
 
     void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
     {
+	if((e.Appointment as ScheduleAppointment).Subject == "Meeting")
+	{       
         UIButton button = new UIButton();
-        button.BackgroundColor = UIColor.Green;
+        button.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
         if(e.Appointment!=null)
             button.SetTitle((NSString)e.Appointment.Subject, UIControlState.Normal);
         e.View = button;
     }
+	else if((e.Appointment as ScheduleAppointment).IsAllDay == true)
+	{
+         UITextView textview = new UITextView();
+         textview.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
+         if (e.Appointment != null)
+		     textview.Text = (NSString)e.Appointment.Subject;
+         e.View = textview;
+    }
+	}
 
  
 {% endhighlight %}
