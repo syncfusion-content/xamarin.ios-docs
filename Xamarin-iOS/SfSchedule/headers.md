@@ -104,9 +104,7 @@ var date = e.Date;
 
 ## Custom Font
 
-We can change the appearance of Font by setting the TextStyle property of following classes.
-
-* [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) - We can change the appearance of [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html) property of Schedule `HeaderStyle`.
+We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html) property of  [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) property in Schedule.
 
 {% highlight c# %}
 
