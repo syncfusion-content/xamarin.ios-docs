@@ -32,7 +32,7 @@ When the ValidationMode is LostFocus, the validation takes place when the contro
 
 ## HasError
 
-This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else returns false. The following code example shows the usage of HasError property.
+This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else returns false. The following code example shows the usage of `HasError` property.
 
 {% tabs %}
 {% highlight c# %}

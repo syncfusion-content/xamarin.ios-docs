@@ -225,7 +225,7 @@ maskedEdit.Mask = @"+1(\d{3})\d{6}";
 {% endhighlight %}
 {% endtabs %}
 
-This mask expression’\d{3}’ and’ \d{6}’ allows only numeric, where {n} is the count that the input should be accepted.
+This mask expression ’\d{3}’ and ’\d{6}’ allows only numeric, where {n} is the count that the input should be accepted.
 
 ![](SfMaskedEditImages/masktype.png)
 

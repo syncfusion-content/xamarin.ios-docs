@@ -13,7 +13,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 The appearance of SfMaskedEdit can be customized using the following properties:
 
-## Border Color
+## BorderColor
 
 Sets the custom border color to SfMaskedEdit.
 
@@ -28,13 +28,12 @@ maskedEdit.Layer.BorderColor = UIColor.Green.CGColor;
 
 ![](SfMaskedEditImages/bordercolor.png)
 
-## ErrorBorder Color
+## ErrorBorderColor
 
 Sets the custom error border color to SfMaskedEdit. Error border color indicates the color to be used when the validation fails for your input with respect to the mask used. 
 
 > Validation triggers based on `ValidationMode` property.
-
-Refer this [link](Validation#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
+>Refer this [link](Validation#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
 
 {% tabs %}
 {% highlight c# %}

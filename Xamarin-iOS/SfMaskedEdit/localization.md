@@ -75,4 +75,4 @@ Now the ‘$’ will be localized to ‘€’;‘.’ will be localized to ‘,
 
 ![](SfMaskedEditImages/Localisation.png)
 
-You can find the runnable localization sample from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_MaskType.zip).
+You can find the runnable localization sample from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_Localization.zip).

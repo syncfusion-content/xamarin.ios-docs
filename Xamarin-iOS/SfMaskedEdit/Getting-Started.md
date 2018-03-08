@@ -18,12 +18,17 @@ This section explains you the steps required to configure a SfMaskedEdit control
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
 **{Syncfusion Installed location}\Essential Studio{version number}\lib**
-Example: C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lYou have to add the following assembly reference to the iOS unified project.
+
+Example: C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+You have to add the following assembly reference to the iOS unified project.
+
 ***iOS-unifed\ Syncfusion.SfMaskedEdit.iOS.dll***
+
 
 ## Create a Simple SfMaskedEdit
 
-The SfMaskedEdit control is configured entirely in C# code or by using XAML markup. The following steps explain how to create a SfMaskedEdit and configure its elements:
+The SfMaskedEdit control is configured entirely in C# code. The following steps explain how to create a SfMaskedEdit and configure its elements:
 
 ### Add reference to SfMaskedEdit.
 
@@ -83,7 +88,7 @@ maskedEdit.Mask = "00/00/0000";
 
 This mask expression allows only numeric inputs in the places of 0.
 Refer to this [link](MaskType) to know more about the Mask characters and Mask Types available in SfMaskedEdit control.
-Run the project and check if you get the following output to make sure that you have configured your project properly to add ‘SfMaskedEdit’.
+Run the project and check if you get the following output to make sure that you have configured your project properly to add `SfMaskedEdit`.
 
 ![](SfMaskedEditImages/maskinginput.png)
 
