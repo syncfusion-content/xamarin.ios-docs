@@ -52,7 +52,7 @@ namespace MaskedEdit
         {
             base.ViewDidLoad();
 
-            //Initialize the SfMaksedEdit with required frame.
+            //Initialize the SfMaskedEdit with required frame.
             SfMaskedEdit maskedEdit = new SfMaskedEdit();
             maskedEdit.Frame = new CGRect(10, 50, 350, 40); 
             View.AddSubview(maskedEdit);
