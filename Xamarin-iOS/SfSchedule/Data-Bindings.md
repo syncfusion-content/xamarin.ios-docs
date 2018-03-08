@@ -373,7 +373,7 @@ Schedule appointment can be customized by setting appointment style properties s
         //Creating Appointment style 
         SFAppointmentStyle appointmentStyle = new SFAppointmentStyle();
         appointmentStyle.TextColor = UIColor.Red;
-        appointmentStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
+        appointmentStyle.TextStyle = UIFont.SystemFontOfSize(20, UIFontWeight.Bold);
         appointmentStyle.BorderColor = UIColor.Blue;
         appointmentStyle.BorderCornerRadius = 12;
         appointmentStyle.BorderWidth = 2;
@@ -489,4 +489,30 @@ N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
 ## Custom Font
 
-For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#custom font)
+We can change the appearance of Font by setting the TextStyle property of following classes.
+
+* [AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) - We can change the appearance of [AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~TextStyle.html) property of Schedule `AppointmentStyle`.
+
+{% highlight c# %}
+
+        //Creating Appointment style 
+        SFAppointmentStyle appointmentStyle = new SFAppointmentStyle();
+        appointmentStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
+
+        //Setting Appointment Style 
+        schedule.AppointmentStyle = appointmentStyle; 
+
+{% endhighlight %}
+
+![](data_binding_images/customfontappointment.png)
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.iOS
+1.Download the Custom Font (e.g. Lobster-Regular.ttf)
+2.Add the downloaded Custom Font to the Resources Folder.
+3.Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
+5.Then, directly use Custom Font name as TextStyle
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+

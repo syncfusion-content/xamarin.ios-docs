@@ -129,7 +129,7 @@ You can customize the Week Number appearance by using [SFWeekNumberStyle](https:
 
 			//creating new instance for WeekNumberStyle
 			SFWeekNumberStyle weekNumberStyle = new SFWeekNumberStyle();
-
+			weekNumberStyle.TextStyle = UIFont.FromName("Arial", 15);
 			weekNumberStyle.BackgroundColor = UIColor.Blue;
 			weekNumberStyle.TextColor = UIColor.White;
 			monthViewSettings.WeekNumberStyle = weekNumberStyle;
@@ -489,3 +489,79 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
  {% endhighlight %}
  
  ![](monthview_images/TodayBackground.png)
+ 
+## Custom Font
+
+We can change the appearance of Font by setting the TextStyle property of following classes.
+
+* [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance)- We can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DateTextStyle.html) properties of Schedule `ViewHeaderStyle`. 
+* [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) - We can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) property of Schedule `MonthCellStyle`.
+* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#inlineview-appearance) - We can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthInlineViewStyle~TextStyle.html) property of Schedule `MonthInlineViewStyle`.
+* [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) by setting the [TextStyle]((https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFWeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
+
+{% tabs %}
+{% highlight c# %}
+
+			//creating new instance for viewHeaderStyle 
+			SFViewHeaderStyle viewHeaderStyle = new SFViewHeaderStyle();
+			viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular", 15);
+			schedule.DayHeaderStyle = viewHeaderStyle;
+
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontviewheader_month.png)
+
+{% tabs %}
+{% highlight c# %}
+
+			//creating new instance for SFMonthCellStyle 
+			SFMonthCellStyle monthCellStyle = new SFMonthCellStyle();
+			monthCellStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
+			schedule.MonthCellStyle = monthCellStyle;
+
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontmonthcell.png)
+
+{% tabs %}
+{% highlight c# %}
+
+			schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
+			...
+			void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
+		{
+			SFMonthInlineViewStyle monthInlineViewStyle = new SFMonthInlineViewStyle();
+			monthInlineViewStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
+			e.MonthInlineViewStyle = monthInlineViewStyle;
+		}
+
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontinline.png)
+ 
+ {% tabs %}
+{% highlight c# %}
+
+			//creating new instance for WeekNumberStyle
+			SFWeekNumberStyle weekNumberStyle = new SFWeekNumberStyle();
+			weekNumberStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
+			monthViewSettings.WeekNumberStyle = weekNumberStyle;
+			schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontweeknumber.png)
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.iOS
+1.Download the Custom Font (e.g. Lobster-Regular.ttf)
+2.Add the downloaded Custom Font to the Resources Folder.
+3.Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
+5.Then, directly use Custom Font name as TextStyle
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+

@@ -31,7 +31,7 @@ You can change the background color,text style and text color using properties s
 
     SFHeaderStyle headerStyle = new SFHeaderStyle();
 	headerStyle.BackgroundColor = UIColor.FromRGB(251, 211, 201);
-	headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
+	headerStyle.TextStyle = UIFont.SystemFontOfSize(15,UIFontWeight.Bold);
 	headerStyle.TextColor=UIColor.White;
 	schedule.HeaderStyle = headerStyle;
 
@@ -102,6 +102,29 @@ var date = e.Date;
 }
 {% endhighlight %}
 
-##Custom Font
+## Custom Font
 
-For Configuring custom font, please refer [here](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#custom font)
+We can change the appearance of Font by setting the TextStyle property of following classes.
+
+* [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) - We can change the appearance of [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html) property of Schedule `HeaderStyle`.
+
+{% highlight c# %}
+
+    SFHeaderStyle headerStyle = new SFHeaderStyle();
+	headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
+	schedule.HeaderStyle = headerStyle;
+	
+{% endhighlight %}	
+
+![](Header_images/customfontheader.png)
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.iOS
+1.Download the Custom Font (e.g. Lobster-Regular.ttf)
+2.Add the downloaded Custom Font to the Resources Folder.
+3.Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
+5.Then, directly use Custom Font name as TextStyle
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+

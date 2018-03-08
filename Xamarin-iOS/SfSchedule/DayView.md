@@ -27,8 +27,8 @@ You can customize the default appearance of view header in [DayView](https://hel
 			viewHeaderStyle.BackgroundColor = UIColor.FromRGB(0, 150, 136);
 			viewHeaderStyle.DayTextColor = UIColor.FromRGB(255, 255, 255);
 			viewHeaderStyle.DateTextColor = UIColor.FromRGB(255, 255, 255);
-			viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular",20);
-			viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular",20);		
+			viewHeaderStyle.DayTextStyle = UIFont.FromName("Arial", 15);
+			viewHeaderStyle.DateTextStyle = UIFont.FromName("Arial", 15);	
 			schedule.DayHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
@@ -334,12 +334,22 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 
 We can change the appearance of Font by setting the TextStyle property of following classes.
 
-* [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) - We can change the appearance of [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html) property of Schedule `HeaderStyle`.
 * [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance)- We can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DateTextStyle.html) properties of Schedule `ViewHeaderStyle`. 
-* [AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) - We can change the appearance of [AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~TextStyle.html) property of Schedule `AppointmentStyle`.
-* [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) - We can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) property of Schedule `MonthCellStyle`.
-* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#inlineview-appearance) - We can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthInlineViewStyle~TextStyle.html) property of Schedule `MonthInlineViewStyle`.
-* [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) by setting the [TextStyle]((https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFWeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
+
+{% highlight c# %}
+
+           //Create new instance of Schedule
+			SFSchedule schedule = new SFSchedule();
+			schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
+			//Customize the schedule view header
+			SFViewHeaderStyle viewHeaderStyle = new SFViewHeaderStyle();
+			viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular",20);
+			viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular",20);		
+			schedule.DayHeaderStyle = viewHeaderStyle;
+			
+{% endhighlight %}
+
+![](daymodule_images/customfontviewheader_day.png)
 
 Following steps will explain how to configure the custom fonts.
 
