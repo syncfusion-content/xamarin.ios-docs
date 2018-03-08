@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.iOS 
+description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.iOS platform
+platform: Xamarin.iOS
 control: SfMaskedEdit
 documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Getting Started
@@ -85,4 +87,4 @@ Run the project and check if you get the following output to make sure that you 
 
 ![](SfMaskedEditImages/maskinginput.png)
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-599779688.zip).
+You can find the complete getting started sample from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_GettingStarted.zip).
