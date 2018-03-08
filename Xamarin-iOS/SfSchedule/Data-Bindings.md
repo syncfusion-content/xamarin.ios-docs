@@ -442,21 +442,19 @@ Default appointment UI can be changed using `View` property passed through `A
 	     textview.Text = (NSString)e.Appointment.Subject;
          e.View = textview;
     }
-	else if ((e.Appointment as Meeting).Subject == "Retrospective" && (e.Appointment as Meeting).EventName != null)
+	else if (e.Appointment != null && (e.Appointment as Meeting).EventName == "Retrospective" && (e.Appointment as Meeting).EventName != null)
 	{
 	    UIButton button = new UIButton();
-        button.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
 		button.SetBackgroundImage(UIImage.FromFile("Meeting.png"), UIControlState.Normal);
-	    button.SetTitle((NSString)e.Appointment.Subject, UIControlState.Normal);
+		button.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
         e.View = button;
 	}
 	else
 	{       
         UIButton button = new UIButton();
-        button.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
 		button.SetBackgroundImage(UIImage.FromFile("Cake.png"), UIControlState.Normal);
         if(e.Appointment!=null)
-            button.SetTitle((NSString)e.Appointment.Subject, UIControlState.Normal);
+            button.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
         e.View = button;
     }
 	}
