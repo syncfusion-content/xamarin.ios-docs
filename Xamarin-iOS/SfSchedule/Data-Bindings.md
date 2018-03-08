@@ -425,6 +425,8 @@ void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
 
 {% endhighlight %}
 
+![](PopulatingAppointments_images/appointmentstyle_event.png)
+
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
 
@@ -460,6 +462,8 @@ Default appointment UI can be changed using `View` property passed through `A
 	}
  
 {% endhighlight %}
+
+![](PopulatingAppointments_images/appointmentstyle_customview.png)
 
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
