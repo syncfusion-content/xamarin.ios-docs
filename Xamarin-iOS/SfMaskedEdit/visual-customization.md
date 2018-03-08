@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Visual appearence customization of SfMaskedEdit control for Xamarin.iOS Platform
+description: Learn how to customize the visual appearence of SfMaskedEdit control
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Visual Customization
@@ -73,4 +74,4 @@ maskedEdit.Font = UIFont.FromName("Arial", 20);
 
 ![](SfMaskedEditImages/textappearance.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualCustomize1781899777.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_VisualCustomize.zip).

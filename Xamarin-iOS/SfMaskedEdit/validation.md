@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Input validation in SfMaskedEdit control for Xamarin.iOS platform
+description: Learn how and when to validate the input characters with the given Mask of SfMaskedEdit control.
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Validation
@@ -61,4 +62,4 @@ Refer this [link](Events#valuechanged-event) to know more about the `ValueChange
 
 ![](SfMaskedEditImages/validation.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Validation1147848053.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_Validation.zip).

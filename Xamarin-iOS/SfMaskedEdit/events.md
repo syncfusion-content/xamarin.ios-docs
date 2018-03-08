@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Eevnts in SfMaskedEdit for Xamarin.iOS platform
+description: Learn how to get the value changed and Mask input reject events in SfMaskedEdit
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Events
@@ -101,4 +102,4 @@ private void MaskedEdit_MaskInputRejected(object sender, MaskInputRejectedEventA
 
 ![](SfMaskedEditImages/maskrejected.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Events984714359.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_Events.zip).

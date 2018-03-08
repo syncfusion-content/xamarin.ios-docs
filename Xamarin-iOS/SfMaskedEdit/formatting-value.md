@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Formatting value of Value property of SfMaskedEdit control for Xamarin.iOS platform
+description: Learn how to format the characters in the Value property of SfMaskedEdit control
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Formatting Value
@@ -94,4 +95,4 @@ Refer this [link](Events#valuechanged-event) to know more about the `ValueChange
 
 ![](SfMaskedEditImages/valueformat.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FormattingValue-2100102900.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_FormattingValue.zip).
