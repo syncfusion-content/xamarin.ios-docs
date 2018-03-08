@@ -16,7 +16,7 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 {% highlight C# %}
 
 	NSMutableArray countryList=new NSMutableArray();
-	countryList.Add((NSString)"Akrotiri");
+	countryList.Add((NSString)"Algeria");
 	countryList.Add((NSString)"Andorra");
 	countryList.Add((NSString)"Angola");
 	countryList.Add((NSString)"Antarctica"); 
@@ -24,7 +24,7 @@ Restrict the number of suggestions displayed and have the remaining items loaded
     countryList.Add((NSString)"America"); 
     countryList.Add((NSString)"Aruba"); 
 	countryAutoComplete.AutoCompleteSource=countryList;
-	countryAutoComplete.MaximumSuggestion="2";
+	countryAutoComplete.MaximumSuggestion="4";
 	countryAutoComplete.LoadMoreText = "LOAD MORE";
 	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 
