@@ -41,7 +41,7 @@ maskedEdit.PromptChar = '*';
 ## Setting Placeholder
 
 The placeholder will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. 
-The placeholder text and its appearance can be modified using `Placeholder` and properties respectively.
+The placeholder text and its appearance can be modified using `Placeholder` and `AttributedPlaceholder` properties respectively.
 
 {% tabs %}
 {% highlight c# %}
