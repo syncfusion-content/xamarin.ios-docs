@@ -32,16 +32,10 @@ It highlights the first position of the matching characters in the suggestion li
 
 {% highlight C# %}
 
-	NSMutableArray countryList=new NSMutableArray();
-	countryList.Add((NSString)"Afghanistan");
-	countryList.Add((NSString)"Akrotiri");
-	countryList.Add((NSString)"Albania"); 
-	countryList.Add((NSString)"Algeria"); 
-	countryAutoComplete.AutoCompleteSource=countryList;
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.HighlightedTextColor = UIColor.Red;
-	countryAutoComplete.AutoCompleteSource=countryList;
+countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
+countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
+countryAutoComplete.HighlightedTextColor = UIColor.Red;
+countryAutoComplete.AutoCompleteSource=countryList;
 
 {% endhighlight %}
 
@@ -57,16 +51,11 @@ It highlights the matching character that are present everywhere in the suggesti
 
 {% highlight C# %}
 
-	NSMutableArray countryList=new NSMutableArray();
-	countryList.Add((NSString)"Afghanistan");
-	countryList.Add((NSString)"Akrotiri");
-	countryList.Add((NSString)"Albania"); 
-	countryList.Add((NSString)"Algeria"); 
-	countryAutoComplete.AutoCompleteSource=countryList;
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
-    countryAutoComplete.HighlightedTextColor = UIColor.Red;
-	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
-    countryAutoComplete.AutoCompleteSource=countryList;
+countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
+countryAutoComplete.HighlightedTextColor = UIColor.Red;
+countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
+countryAutoComplete.AutoCompleteSource=countryList;
+
 {% endhighlight %}
 
 {% endtabs %}

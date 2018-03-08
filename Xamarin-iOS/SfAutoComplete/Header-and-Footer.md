@@ -19,23 +19,15 @@ We can provide Header Content at the top of the AutoComplete's Suggestion box. `
 
 {% highlight C# %}
 
-	NSMutableArray country=new NSMutableArray();
-	country.Add((NSString)"Ukraine");
-	country.Add((NSString)"Uganda");
-	country.Add((NSString)"United Arab Emirates");
-	country.Add((NSString)"United Kingdom"); 
-	country.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=country;
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.ShowDropDownHeaderView = true;
+//Shows the header view
+countryAutoComplete.ShowDropDownHeaderView = true;
 
-	//Set height of the Header view
-
-	countryAutoComplete.DropDownHeaderViewHeight = 50;
-	UILabel label = new UILabel();
-	label.Text = "Search for U";
-	label.TextColor = UIColor.Blue;
-	countryAutoComplete.DropDownHeaderView = label;
+//Set height of the Header view
+countryAutoComplete.DropDownHeaderViewHeight = 50;
+UILabel label = new UILabel();
+label.Text = "Search for U";
+label.TextColor = UIColor.Blue;
+countryAutoComplete.DropDownHeaderView = label;
 
 
 {% endhighlight %}
@@ -53,24 +45,15 @@ We can provide Footer Content at the bottom of the AutoComplete's Suggestion box
 
 {% highlight C# %}
 
-	NSMutableArray country=new NSMutableArray();
-	country.Add((NSString)"Uganda");
-	country.Add((NSString)"Ukraine");
-	country.Add((NSString)"United Arab Emirates");
-	country.Add((NSString)"United Kingdom"); 
-	country.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=country;
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.ShowDropDownFooterView = true;
+//Shows the header view
+countryAutoComplete.ShowDropDownFooterView = true;
 
-   //Set height of the Footer view
-	countryAutoComplete.DropDownFooterViewHeight = 50;
-   
-	UILabel label = new UILabel();
-	label.Text = "Add New";
-	label.TextColor = UIColor.Blue;
-	countryAutoComplete.DropDownFooterView = label;
-
+//Set height of the Footer view
+countryAutoComplete.DropDownFooterViewHeight = 50;
+UILabel label = new UILabel();
+label.Text = "Add New";
+label.TextColor = UIColor.Blue;
+countryAutoComplete.DropDownFooterView = label;
 
 {% endhighlight %}
 

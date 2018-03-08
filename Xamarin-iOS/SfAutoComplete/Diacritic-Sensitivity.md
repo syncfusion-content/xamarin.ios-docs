@@ -15,19 +15,21 @@ The control does not stick with one type of keyboard, so you can populate items 
 
 {% highlight C# %}
 
-	NSMutableArray diacritic=new NSMutableArray();
-	diacritic.Add((NSString)"Hów tó drâw ân éléphânt?");
-	diacritic.Add((NSString)"Whéré cân I buy â câmérâ?"); 
-	diacritic.Add((NSString)"Guidé mé âll thé wây"); 
-	diacritic.Add((NSString)"Sây, Hélló Wórld!"); 
-	diacritic.Add((NSString)"Hów tó mâké â róbót?"); 
-	diacritic.Add((NSString)"Whât timé nów in Indiâ?"); 
-	diacritic.Add((NSString)"Whó is whó in thé wórld?"); 
-	countryAutoComplete.AutoCompleteSource=diacritic;
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
-	countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
-	countryAutoComplete.HighlightedTextColor = UIColor.Red;
-    countryAutoComplete.IgnoreDiacritic = false;
+NSMutableArray diacritic=new NSMutableArray();
+diacritic.Add((NSString)"Hów tó drâw ân éléphânt?");
+diacritic.Add((NSString)"Whéré cân I buy â câmérâ?"); 
+diacritic.Add((NSString)"Guidé mé âll thé wây"); 
+diacritic.Add((NSString)"Sây, Hélló Wórld!"); 
+diacritic.Add((NSString)"Hów tó mâké â róbót?"); 
+diacritic.Add((NSString)"Whât timé nów in Indiâ?"); 
+diacritic.Add((NSString)"Whó is whó in thé wórld?"); 
+
+countryAutoComplete.AutoCompleteSource=diacritic;
+countryAutoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
+countryAutoComplete.SuggestionMode=SuggestionMode.Contains;
+countryAutoComplete.HighlightedTextColor = UIColor.Red;
+countryAutoComplete.IgnoreDiacritic = false;
+
 {% endhighlight %}
 
 {% endtabs %}
