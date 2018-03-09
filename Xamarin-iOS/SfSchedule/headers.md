@@ -16,9 +16,7 @@ You can customize the header of the Schedule using [HeaderStyle](https://help.sy
 You can customize the height for the Header in Schedule using `HeaderHeight` in schedule.
 
 {% highlight c# %}
-
-	schedule.HeaderHeight = 50;
-
+schedule.HeaderHeight = 50;
 {% endhighlight %}
 
 ## Appearance
@@ -28,14 +26,11 @@ You can change the header format and style using `HeaderStyle` property in sched
 You can change the background color,text style and text color using properties such as [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~BackgroundColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextColor.html) of Header using `HeaderStyle` property in schedule.
 
 {% highlight c# %}
-
-    SFHeaderStyle headerStyle = new SFHeaderStyle();
-	headerStyle.BackgroundColor = UIColor.FromRGB(251, 211, 201);
-	headerStyle.TextStyle = UIFont.SystemFontOfSize(15,UIFontWeight.Bold);
-	headerStyle.TextColor=UIColor.White;
-	schedule.HeaderStyle = headerStyle;
-
-
+SFHeaderStyle headerStyle = new SFHeaderStyle();
+headerStyle.BackgroundColor = UIColor.FromRGB(251, 211, 201);
+headerStyle.TextStyle = UIFont.SystemFontOfSize(15,UIFontWeight.Bold);
+headerStyle.TextColor=UIColor.White;
+schedule.HeaderStyle = headerStyle;
 {% endhighlight %}
 
 ![](Header_images/HeaderStyle.png) 
@@ -107,11 +102,7 @@ void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html) property of  [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) property in Schedule.
 
 {% highlight c# %}
-
-    SFHeaderStyle headerStyle = new SFHeaderStyle();
-	headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
-	schedule.HeaderStyle = headerStyle;
-	
+headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
 {% endhighlight %}	
 
 ![](Header_images/customfontheader.png)
@@ -119,10 +110,11 @@ We can change the appearance of Font by setting the [TextStyle](https://help.syn
 Following steps will explain how to configure the custom fonts.
 
 ### Custom Font Setting in Xamarin.iOS
-1.Download the Custom Font (e.g. Lobster-Regular.ttf)
-2.Add the downloaded Custom Font to the Resources Folder.
-3.Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
-5.Then, directly use Custom Font name as TextStyle
+* Download the Custom Font (e.g. Lobster-Regular.ttf).
+* Add the downloaded Custom Font to the Resources Folder.
+* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
+* Then, directly use Custom Font name as TextStyle.
+
 >**Note**:
  No need to mention .ttf when set the Custom Font in iOS.
 
