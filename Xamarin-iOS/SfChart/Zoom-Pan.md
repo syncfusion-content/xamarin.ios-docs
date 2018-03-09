@@ -98,43 +98,43 @@ public class ChartDelegate : SFChartDelegate
 
 **WillZoom**
 
-This delegate is called when the axis object has started a zoom operation and it returns the following values.
+The [`WillZoom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~WillZoom.html) delegate is called when the axis object has started a zoom operation and it returns the following values.
 
 * [`SFChartZoomingInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomingInfo.html) – used to get the zooming state.
 
 **DidZoom**
 
-This delegate is called when the axis object has finished a zoom operation and it returns the following values.
+The [`DidZoom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidZoom.html) delegate is called when the axis object has finished a zoom operation and it returns the following values.
 
 * [`SFChartZoomInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomInfo.html) – used to get the zoomed state.
 
 **WillPan**
 
-This delegate is called when the axis object has started a scroll operation and it returns the following values.
+The [`WillPan`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~WillPan.html) delegate is called when the axis object has started a scroll operation and it returns the following values.
 
 * [`SFChartPanningInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPanningInfo.html) – used to get the scrolled state.
 
 **DidPan**
 
-This delegate is called when the axis object has finished a scroll operation and it returns the following values.
+The [`DidPan`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidPan.html) delegate is called when the axis object has finished a scroll operation and it returns the following values.
 
 * [`SFChartPanInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPanInfo.html) – used to get the zoomed state.
 
 **WillSelectionZoom**
 
-This delegate is called when the axis object has started a selection zoom operation and it returns the following values.
+The [`WillSelectionZoom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~WillSelectionZoom.html) delegate is called when the axis object has started a selection zoom operation and it returns the following values.
 
 * [`SFChartSelectionZoomingInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionZoomingInfo.html) – used to get the selection zoom state.
 
 **DidSelectionZoom**
 
-This delegate is called when the axis object has finished a selection zoom operation and it returns the following values.
+The [`DidSelectionZoom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidSelectionZoom.html) delegate is called when the axis object has finished a selection zoom operation and it returns the following values.
 
 * [`SFChartSelectionZoomInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionZoomInfo.html) – used to get the selection zoom state.
 
 **DidResetZoom**
 
-This delegate is called when the axis object has reset the zoom level and it returns the following values.
+The [`DidResetZoom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidResetZoom.html)  delegate is called when the axis object has reset the zoom level and it returns the following values.
 
 * [`SFChartResetZoomInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartResetZoomInfo.html) – used to get the reset object.
 
@@ -144,7 +144,7 @@ Zooming and panning can be performed programmatically with the following methods
 
 ### ZoomIn
 
-[`ZoomIn`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomIn.html) method is used to increase the magnification of the plot area to view the data clearly.
+The [`ZoomIn`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomIn.html) method is used to increase the magnification of the plot area to view the data clearly.
 
 {% highlight c# %}
 
@@ -156,7 +156,7 @@ zoomPan.ZoomIn();
 
 ### ZoomOut 
 
-[`ZoomOut`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomOut.html) is used to decrease the magnification of the plot area to reset the default view.
+The [`ZoomOut`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomOut.html) method is used to decrease the magnification of the plot area to reset the default view.
 
 {% highlight c# %}
 
@@ -170,7 +170,7 @@ zoomPan.ZoomOut();
 
 **Zoom(factor)**
 
-This method is used to change the zoom level by using zoom factor.
+The [`Zoom(factor)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~Zoom(Single).html) method is used to change the zoom level by using zoom factor.
 
 {% highlight c# %}
 
@@ -182,7 +182,7 @@ zoomPan.Zoom(0.5f);
 
 **Zoom(CGRect)**
 
-This method is used to zoom the chart for a given rectangle value.
+The [`Zoom(CGRect)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~Zoom(CGRect).html) method is used to zoom the chart for a given rectangle value.
 
 {% highlight c# %}
 
@@ -194,7 +194,7 @@ zoomPan.Zoom(new CGRect(10, 10, 200, 350));
 
 **Zoom(chartAxis, zoomPosition, zoomFactor)**
 
-This method is used to change the zoom level by using zoom position and zoom factor. Zoom position value specifies the starting point of zooming, and zoom factor value specifies the level of zooming.
+The [`Zoom(chartAxis, zoomPosition, zoomFactor)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~Zoom(SFAxis,Single,Single).html) method is used to change the zoom level by using zoom position and zoom factor. Zoom position value specifies the starting point of zooming, and zoom factor value specifies the level of zooming.
 
 {% highlight c# %}
 
@@ -206,7 +206,7 @@ zoomPan.Zoom(axis, 0.5f, 0.5f);
 
 **Zoom(chartAxis, start, end)**
 
-This method is used to zoom the given axis to given range.
+The [`Zoom(chartAxis, start, end)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~Zoom(SFAxis,Object,Object).html) method is used to zoom the given axis to given range.
 
 {% highlight c# %}
 
@@ -219,7 +219,7 @@ zoomPan.Zoom(axis, 20, 25);
 
 ### ZoomWithCumulativeScale(cumulativeLevel, origin, chartAxis)
 
-[`ZoomWithCumulativeScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomWithCumulativeScale.html) method is used to change the zoom level of given axis to the specified level and origin.
+The [`ZoomWithCumulativeScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomWithCumulativeScale.html) method is used to change the zoom level of given axis to the specified level and origin.
 
 {% highlight c# %}
 
@@ -231,7 +231,7 @@ zoomPan.ZoomWithCumulativeScale(0.5, 0.5, axis);
 
 ### Reset
 
-[`Reset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~Reset.html) method is used to return the plot area back to its original position after zooming. 
+The [`Reset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~Reset.html) method is used to return the plot area back to its original position after zooming. 
 
 {% highlight c# %}
 
