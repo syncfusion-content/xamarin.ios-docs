@@ -9,17 +9,13 @@ documentation: ug
 
 # Model Window Popup
 
-You can use pop-up layout as model window by using the built-in close icon and [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~StaysOpen.html) to prevent the user from interacting with your application until they close the window.
+You can use pop-up layout as model window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~StaysOpen.html) property prevents interaction with your application until you close the window.
 
-Model Window will loads under the parent window surrounded by the overlay which prevents users to click anywhere else on screen other then the content of the modal.
+`Modal`: Model window will load under the parent window surrounded by the overlay which prevents you to click anywhere else on screen apart from the content of the modal.
 
-Modal also doesn't require any user action to open.
+Modal does not require any action to open. It opens in the same window and gives callback when closing or opening the window.
 
-Modal opens in the same window.
-
-Modal gives callbacks when you close or open the modal.
-
-Refer the below code example in which popup will close only if you click cancel button, ok button or close icon with toast message displayed from popup footer button clicked callback.
+Refer to the following code example in which pop-up will close only if you click Cancel button, OK button or Close icon with toast message displayed from pop-up footer button clicked callback.
 
 {% highlight c# %}
 
@@ -142,5 +138,6 @@ public class CustomView : UIView
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appears on iOS device as shown below.
+Run the above sample to get the following output on iOS device.
+
 ![](GettingStarted_images/ModelView.png)
