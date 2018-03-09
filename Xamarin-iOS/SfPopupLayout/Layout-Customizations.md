@@ -320,11 +320,11 @@ public MyViewController()
 This is how the final output will look like on iOS device.
 ![](PopupLayout_images/ShowFooter_False.png)
 
-### Hide the Close button in the SfPopupLayout 
+### Hide the Close icon in the SfPopupLayout 
 
-The SfPopupLayout allows hiding the Close button by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
+The SfPopupLayout allows hiding the Close icon by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
 
-To hide the close button in SfPopupLayout, follow the code example.
+To hide the Close icon in SfPopupLayout, follow the code example.
 
 {% highlight c# %}
 
