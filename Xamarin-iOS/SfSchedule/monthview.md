@@ -497,15 +497,12 @@ We can change the appearance of Font by setting the TextStyle property of follow
 * [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance)- We can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DateTextStyle.html) properties of Schedule `ViewHeaderStyle`. 
 * [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) - We can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) property of Schedule `MonthCellStyle`.
 * [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#inlineview-appearance) - We can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthInlineViewStyle~TextStyle.html) property of Schedule `MonthInlineViewStyle`.
-* [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) by setting the [TextStyle]((https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFWeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
+* [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFWeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
 
 {% tabs %}
 {% highlight c# %}
 
-			//creating new instance for viewHeaderStyle 
-			SFViewHeaderStyle viewHeaderStyle = new SFViewHeaderStyle();
 			viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular", 15);
-			schedule.DayHeaderStyle = viewHeaderStyle;
 
 {% endhighlight %}
 {% endtabs %}
@@ -515,10 +512,7 @@ We can change the appearance of Font by setting the TextStyle property of follow
 {% tabs %}
 {% highlight c# %}
 
-			//creating new instance for SFMonthCellStyle 
-			SFMonthCellStyle monthCellStyle = new SFMonthCellStyle();
 			monthCellStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
-			schedule.MonthCellStyle = monthCellStyle;
 
 {% endhighlight %}
 {% endtabs %}
@@ -545,11 +539,8 @@ We can change the appearance of Font by setting the TextStyle property of follow
  {% tabs %}
 {% highlight c# %}
 
-			//creating new instance for WeekNumberStyle
-			SFWeekNumberStyle weekNumberStyle = new SFWeekNumberStyle();
 			weekNumberStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
-			monthViewSettings.WeekNumberStyle = weekNumberStyle;
-			schedule.MonthViewSettings = monthViewSettings;
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -558,10 +549,10 @@ We can change the appearance of Font by setting the TextStyle property of follow
 Following steps will explain how to configure the custom fonts.
 
 ### Custom Font Setting in Xamarin.iOS
-1.Download the Custom Font (e.g. Lobster-Regular.ttf)
-2.Add the downloaded Custom Font to the Resources Folder.
-3.Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
-5.Then, directly use Custom Font name as TextStyle
+* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Add the downloaded Custom Font to the Resources Folder.
+* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
+* Then, directly use Custom Font name as TextStyle
 >**Note**:
  No need to mention .ttf when set the Custom Font in iOS.
 

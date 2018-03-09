@@ -348,13 +348,8 @@ We can change the appearance of Font by setting the [DayTextStyle](https://help.
 
 {% highlight C# %}
 
-			 //Create new instance of Schedule
-			SFSchedule schedule = new SFSchedule();
-			schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
-			//Customize the schedule view header
 			viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular", 15);
 			viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular", 15);
-			schedule.DayHeaderStyle = viewHeaderStyle;
 			
 {% endhighlight %}
 
