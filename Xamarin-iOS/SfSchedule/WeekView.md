@@ -18,19 +18,17 @@ WeekView is to view all days of a particular week. Appointments will be arranged
 You can customize the default appearance of view header in [WeekView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFScheduleView.html) by using [DayHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayHeaderStyle.html) property of [SFSchedule](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule.html).
 
 {% highlight c# %}
-
-           //Create new instance of Schedule
-			SFSchedule schedule = new SFSchedule();
-			schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
-			//Customize the schedule view header
-			SFViewHeaderStyle viewHeaderStyle = new SFViewHeaderStyle();
-			viewHeaderStyle.BackgroundColor = UIColor.FromRGB(0, 150, 136);
-			viewHeaderStyle.DayTextColor = UIColor.FromRGB(255, 255, 255);
-			viewHeaderStyle.DateTextColor = UIColor.FromRGB(255, 255, 255);
-			viewHeaderStyle.DayTextStyle = UIFont.FromName("Arial", 15);
-			viewHeaderStyle.DateTextStyle = UIFont.FromName("Arial", 15);
-			schedule.DayHeaderStyle = viewHeaderStyle;
-			
+//Create new instance of Schedule
+SFSchedule schedule = new SFSchedule();
+schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+//Customize the schedule view header
+SFViewHeaderStyle viewHeaderStyle = new SFViewHeaderStyle();
+viewHeaderStyle.BackgroundColor = UIColor.FromRGB(0, 150, 136);
+viewHeaderStyle.DayTextColor = UIColor.FromRGB(255, 255, 255);
+viewHeaderStyle.DateTextColor = UIColor.FromRGB(255, 255, 255);
+viewHeaderStyle.DayTextStyle = UIFont.FromName("Arial", 15);
+viewHeaderStyle.DateTextStyle = UIFont.FromName("Arial", 15);
+schedule.DayHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 
 ![](daymodule_images/viewheaderappearance_week.png)
@@ -38,10 +36,8 @@ You can customize the default appearance of view header in [WeekView](https://he
 You can customize the height of the ViewHeader in `WeekView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderHeight.html) property of `SFSchedule`.
 
 {% highlight C# %}
-
-        schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
-		schedule.ViewHeaderHeight = 50;
-			
+schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+schedule.ViewHeaderHeight = 50;			
 {% endhighlight %}
 
 ![](daymodule_images/viewheaderheight_week.png)
@@ -347,10 +343,8 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 We can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DateTextStyle.html) properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) property in Schedule.
 
 {% highlight C# %}
-
-			viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular", 15);
-			viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular", 15);
-			
+viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular", 15);
+viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular", 15);
 {% endhighlight %}
 
 ![](daymodule_images/customfontviewheader_week.png)
@@ -358,10 +352,11 @@ We can change the appearance of Font by setting the [DayTextStyle](https://help.
 Following steps will explain how to configure the custom fonts.
 
 ### Custom Font Setting in Xamarin.iOS
-* Download the Custom Font (e.g. Lobster-Regular.ttf)
+* Download the Custom Font (e.g. Lobster-Regular.ttf).
 * Add the downloaded Custom Font to the Resources Folder.
 * Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
-* Then, directly use Custom Font name as TextStyle
+* Then, directly use Custom Font name as TextStyle.
+
 >**Note**:
  No need to mention .ttf when set the Custom Font in iOS.
  
