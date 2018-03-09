@@ -15,31 +15,28 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 
 {% highlight C# %}
 
-	NSMutableArray countryList=new NSMutableArray();
-	countryList.Add((NSString)"Algeria");
-	countryList.Add((NSString)"Andorra");
-	countryList.Add((NSString)"Angola");
-	countryList.Add((NSString)"Antarctica"); 
-    countryList.Add((NSString)"Argentina"); 
-    countryList.Add((NSString)"America"); 
-    countryList.Add((NSString)"Aruba"); 
-	countryAutoComplete.AutoCompleteSource=countryList;
-	countryAutoComplete.MaximumSuggestion="4";
-	countryAutoComplete.LoadMoreText = "LOAD MORE";
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
+countryAutoComplete.MaximumSuggestion="4";
+countryAutoComplete.LoadMoreText = "LOAD MORE";
+countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 
 {% endhighlight %}
 
 {% endtabs %}
 ### Restricting the maximum display of item dynamically
 
-We can restrict the maximum display of items dynamically by calling `LoadMore` method. The method is of two types.
-
-* LoadMore method with argument.
-
-* LoadMore method without arguments.
-
-The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
+We can restrict the maximum display of items dynamically by calling `LoadMore` method. The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
+ 
+{% tabs %}
+{% highlight c# %}
+ 
+// without passing arguments
+countryAutoComplete.LoadMore();
+ 
+// with passing arguments
+countryAutoComplete.LoadMore(5);
+ 
+{% endhighlight %}
+{% endtabs %}
 
 ![](images/loadmore.png)
 
@@ -51,17 +48,8 @@ When the entered item is not in the suggestion list, SfAutoComplete displays a t
 
 {% highlight C# %}
 
-	NSMutableArray countryList=new NSMutableArray();
-	countryList.Add((NSString)"Akrotiri");
-	countryList.Add((NSString)"Andorra");
-	countryList.Add((NSString)"Angola");
-	countryList.Add((NSString)"Antarctica"); 
-    countryList.Add((NSString)"Argentina"); 
-    countryList.Add((NSString)"America"); 
-    countryList.Add((NSString)"Aruba"); 
-	countryAutoComplete.AutoCompleteSource=countryList;
-	countryAutoComplete.NoResultsFoundText= "No Results Found";
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
+countryAutoComplete.NoResultsFoundText= "No Results Found";
+countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 
 {% endhighlight %}
 
