@@ -19,7 +19,7 @@ Displays the list of suggestions based on starting letter.
 
 {% highlight C# %}
 
-	countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSuggestionModeStartsWith;
+countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSuggestionModeStartsWith;
 
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ Displays the list of suggestions based on starting letter with case sensitive.
 
 {% highlight C# %}
 
-	countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSuggestionModeStartsWithCaseSensitive;
+countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSuggestionModeStartsWithCaseSensitive;
 
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ Displays the list of suggestions, if autocomplete list contains that words.
 
 {% highlight C# %}
 
-	countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSuggestionModeContains;
+countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSuggestionModeContains;
 
 {% endhighlight %}
 
@@ -153,4 +153,4 @@ Displays the suggestion based on the custom words in SfAutoComplete Control.
 
 {% endtabs %}
 
-![](images/endswith.png)
+![](images/custom.png)
