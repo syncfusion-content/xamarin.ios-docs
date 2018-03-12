@@ -13,130 +13,50 @@ We can provide Header and Footer view in the suggestion list in SfAutoComplete b
 
 ## Header Content
 
-We can provide Header Content at the top of the AutoComplete's Suggestion box. `DropDownHeaderView` property is used to set the content of the header. The following code example illustrate how to set Header content in SfAutoComplete.
+We can provide Header Content at the top of the AutoComplete's Suggestion box. `DropDownHeaderView` property is used to set the content of the header. The following code example illustrate how to set Header content in SfAutoComplete. The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
 
 {% tabs %}
 
 {% highlight C# %}
 
-	NSMutableArray country=new NSMutableArray();
-	country.Add((NSString)"Ukraine");
-	country.Add((NSString)"United Arab Emirates");
-	country.Add((NSString)"United Kingdom"); 
-	country.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=country;
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.HighlightedTextColor = UIColor.Red;
-	countryAutoComplete.ShowDropDownHeaderView = true;
-   
-	UITableViewHeaderHeaderView header = new UITableViewHeaderHeaderView();
-	UILabel label = new UILabel();
-	label.Text = "Search for U";
-	label.TextColor = UIColor.Blue;
-	header.AddSubview(label);
-	countryAutoComplete.DropDownHeaderView = header;
+//Shows the header view
+countryAutoComplete.ShowDropDownHeaderView = true;
+
+//Set height of the Header view
+countryAutoComplete.DropDownHeaderViewHeight = 50;
+UILabel label = new UILabel();
+label.Text = "Search for U";
+label.TextColor = UIColor.Blue;
+countryAutoComplete.DropDownHeaderView = label;
 
 
 {% endhighlight %}
 
 {% endtabs %}
-
-## Header Height
-
-The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
-
-{% tabs %}
-
-{% highlight C# %}
-
-	NSMutableArray country=new NSMutableArray();
-	country.Add((NSString)"Ukraine");
-	country.Add((NSString)"United Arab Emirates");
-	country.Add((NSString)"United Kingdom"); 
-	country.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=country;
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.HighlightedTextColor = UIColor.Red;
-	countryAutoComplete.ShowDropDownHeaderView = true;
-	countryAutoComplete.DropDownHeaderViewHeight = 50;
-   
-	UITableViewHeaderHeaderView header = new UITableViewHeaderHeaderView();
-	UILabel label = new UILabel();
-	label.Text = "Search for U";
-	label.TextColor = UIColor.Blue;
-	header.AddSubview(label);
-	countryAutoComplete.DropDownHeaderView = header;
-
-
-	{% endhighlight %}
-
-    {% endtabs %}
 
 ![](images/Header.png)
 
 ## Footer Content
 
-We can provide Footer Content at the bottom of the AutoComplete's Suggestion box. `DropDownFooterView` property is used to set the content of the footer. The following code example illustrate how to set Footer content in SfAutoComplete.
+We can provide Footer Content at the bottom of the AutoComplete's Suggestion box. `DropDownFooterView` property is used to set the content of the footer. The following code example illustrate how to set Footer content in SfAutoComplete. The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownFooterViewHeight`.
+
 
 {% tabs %}
 
 {% highlight C# %}
 
-	NSMutableArray country=new NSMutableArray();
-	country.Add((NSString)"Ukraine");
-	country.Add((NSString)"United Arab Emirates");
-	country.Add((NSString)"United Kingdom"); 
-	country.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=country;
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.HighlightedTextColor = UIColor.Red;
-	countryAutoComplete.ShowDropDownFooterView = true;
-   
-	UITableViewHeaderFooterView footer = new UITableViewHeaderFooterView();
-	UILabel label = new UILabel();
-	label.Text = "Add New";
-	label.TextColor = UIColor.Blue;
-	footer.AddSubview(label);
-	countryAutoComplete.DropDownFooterView = footer;
+//Shows the footer view
+countryAutoComplete.ShowDropDownFooterView = true;
 
+//Set height of the Footer view
+countryAutoComplete.DropDownFooterViewHeight = 50;
+UILabel label = new UILabel();
+label.Text = "Add New";
+label.TextColor = UIColor.Blue;
+countryAutoComplete.DropDownFooterView = label;
 
 {% endhighlight %}
 
 {% endtabs %}
-
-
-## Footer Height
-
-The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownFooterViewHeight`.
-
-{% tabs %}
-
-{% highlight C# %}
-
-	NSMutableArray country=new NSMutableArray();
-	country.Add((NSString)"Ukraine");
-	country.Add((NSString)"United Arab Emirates");
-	country.Add((NSString)"United Kingdom"); 
-	country.Add((NSString)"United States"); 
-	countryAutoComplete.AutoCompleteSource=country;
-	countryAutoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
-	countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
-	countryAutoComplete.HighlightedTextColor = UIColor.Red;
-	countryAutoComplete.ShowDropDownFooterView = true;
-	countryAutoComplete.DropDownFooterViewHeight = 50;
-   
-	UITableViewHeaderFooterView footer = new UITableViewHeaderFooterView();
-	UILabel label = new UILabel();
-	label.Text = "Add New";
-	label.TextColor = UIColor.Blue;
-	footer.AddSubview(label);
-	countryAutoComplete.DropDownFooterView = footer;
-
-	{% endhighlight %}
-
-    {% endtabs %}
 
 ![](images/Footer.png)
