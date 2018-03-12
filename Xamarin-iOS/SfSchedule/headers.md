@@ -35,6 +35,16 @@ schedule.HeaderStyle = headerStyle;
 
 ![](Header_images/HeaderStyle.png) 
 
+### Customize Font Appearance
+
+you can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html) property of  [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) property in Schedule.
+
+{% highlight c# %}
+headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
+{% endhighlight %}	
+
+Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
+
 ## Loading Custom Headers
 
 You can collapse the default header of schedule by setting `HeaderHeight` property of `SFSchedule` as 0. Instead you can use your own custom header for it. While navigating views in schedule, text labels available in the header will be changed based on it visible dates, so while using custom header , respective text value can be obtained from the `VisibleDatesChanged` event of `SFSchedule`.
@@ -96,25 +106,4 @@ void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
     var date = e.Date;
 }
 {% endhighlight %}
-
-## Custom Font
-
-We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html) property of  [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) property in Schedule.
-
-{% highlight c# %}
-headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
-{% endhighlight %}	
-
-![](Header_images/customfontheader.png)
-
-Following steps will explain how to configure the custom fonts.
-
-### Custom Font Setting in Xamarin.iOS
-* Download the Custom Font (e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Resources Folder.
-* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
-* Then, directly use Custom Font name as TextStyle.
-
->**Note**:
- No need to mention .ttf when set the Custom Font in iOS.
 
