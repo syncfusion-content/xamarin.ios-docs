@@ -174,7 +174,7 @@ A range pointer is an accenting line or shaded background range that can be plac
             scale.StartValue = 0;
             scale.EndValue = 100;
             SFRangePointer rangePointer = new SFRangePointer();
-            rangePointer.RangeStart = 15;
+            rangePointer.RangeStart = 0;
             rangePointer.Value = 85;
             scale.Pointers.Add(rangePointer);
             scales.Add(scale);
@@ -249,7 +249,7 @@ The [`SFRangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfg
             scale.StartValue = 0;
             scale.EndValue = 100;
             SFRangePointer rangePointer = new SFRangePointer();
-            rangePointer.RangeStart = 15;
+            rangePointer.RangeStart = 0;
             rangePointer.Value = 85;
             rangePointer.StartOffset = 0.5f;
             rangePointer.EndOffset = 0.7f;
@@ -279,7 +279,7 @@ The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/S
             scale.ScaleStartOffset = 0.9f;
             scale.ScaleEndOffSet = 1;
             SFRangePointer rangePointer = new SFRangePointer();
-            rangePointer.RangeStart = 20;
+            rangePointer.RangeStart = 15;
             rangePointer.StartOffset = 0.9f;
             rangePointer.EndOffset = 1;
             rangePointer.Value = 80;

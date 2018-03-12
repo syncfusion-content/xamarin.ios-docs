@@ -9,7 +9,7 @@ documentation: ug
 
 # Tick Setting 
 
-The [`SFTickSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFTickSettings.html) property is used to identify the gauge’s data value by marking the gauge scale in regular increments.
+The [`SFLinearTickSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearTickSettings.html) property is used to identify the gauge’s data value by marking the gauge scale in regular increments.
 
 ## Ticks visibility
 
@@ -33,7 +33,7 @@ Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusi
 
 ## Tick customization
 
-You can customize the color and thickness of ticks by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFTickSettings~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFTickSettings~Width.html) properties. The ticks length also can be customized using the [`Size`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFTickSettings~Size.html) property as demonstrated below.
+You can customize the color and thickness of ticks by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearTickSettings~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearTickSettings~Thickness.html) properties. The ticks length also can be customized using the [`Length`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearTickSettings~Length.html) property as demonstrated below.
 
 ### Major tick customization
 
@@ -110,7 +110,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/S
 
 ## Setting position for ticks
 
-The major and minor ticks can be positioned far away from the scale by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFTickSettings~Offset.html) property.
+The major and minor ticks can be positioned far away from the scale by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearTickSettings~Offset.html) property.
 
 {% highlight C# %}
 
