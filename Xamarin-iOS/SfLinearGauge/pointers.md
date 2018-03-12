@@ -250,7 +250,7 @@ You can modify the symbol pointer’s size using the [`Thickness`](https://help.
 
 ## Positioning symbol pointer
 
-You can position the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SymbolPointer.html) by using the following two ways:
+You can position the [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) by using the following two ways:
 
 ## Setting symbol pointer position
 
