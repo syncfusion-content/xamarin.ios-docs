@@ -21,7 +21,7 @@ N> The default property value is 1.
 
 {% highlight C# %}
 
-	countryAutocomplete.MinimumPrefixCharacters=2;
+countryAutocomplete.MinimumPrefixCharacters=2;
 
 {% endhighlight %}
 
@@ -40,7 +40,7 @@ N> The default value is 0. The property value is maintained in milliseconds.
 
 {% highlight C# %}
 
-	countryAutoComplete.PopUpDelay = 100;
+countryAutoComplete.PopUpDelay = 100;
 
 {% endhighlight %}
 
@@ -57,7 +57,7 @@ N> The `MaximumDropDownHeight` value can be any positive integer value
 
 {% highlight C# %}
 
-	countryAutoComplete.MaxDropDownHeight=90;
+countryAutoComplete.MaxDropDownHeight = 90;
 
 {% endhighlight %}
 

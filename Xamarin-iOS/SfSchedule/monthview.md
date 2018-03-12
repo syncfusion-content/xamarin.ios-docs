@@ -12,9 +12,7 @@ documentation: ug
 
 {% tabs %}
 {% highlight c# %}
-
-			schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
-
+schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
 {% endhighlight %}
 {% endtabs %}
 
@@ -24,12 +22,10 @@ documentation: ug
 In `MonthView`, appointments are not viewed in the month cell instead appointment indicators are drawn. You can customize the number of appointment indicators displayed in month cell using  [AppointmentIndicatorCount](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~AppointmentIndicatorCount.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~MonthViewSettings.html) in `SfSchedule`, by default Appointment indicator count is 3.
 
 {% highlight c# %}
-
-			//creating new instance for month view settings
-			MonthViewSettings monthViewSettings = new MonthViewSettings();
-			monthViewSettings.AppointmentIndicatorCount = 2;
-			schedule.MonthViewSettings = monthViewSettings;
-
+//creating new instance for month view settings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.AppointmentIndicatorCount = 2;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 
 ![](monthview_images/appointmentindicator.png)
@@ -41,12 +37,10 @@ You can use [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/x
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for month view settings
-			MonthViewSettings monthViewSettings = new MonthViewSettings();
-			monthViewSettings.ShowAppointmentsInline = true;
-			schedule.MonthViewSettings = monthViewSettings;
-
+//creating new instance for month view settings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAppointmentsInline = true;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,9 +53,7 @@ You can use [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/x
 
 {% tabs %}
 {% highlight c# %}
-
-			monthViewSettings.MonthNavigationDirection = SFMonthNavigationDirections.Vertical;
-
+monthViewSettings.MonthNavigationDirection = SFMonthNavigationDirections.Vertical;
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,25 +62,22 @@ You can disable the interaction for certain date in Month view by using [Blackou
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for month view settings
-			MonthViewSettings monthViewSettings = new MonthViewSettings();
-			monthViewSettings.BlackoutDates = new NSMutableArray();
-			NSDate today = new NSDate();
-			NSCalendar calendar = NSCalendar.CurrentCalendar;
-			// Get the year, month, day from the date
-			NSDateComponents components = calendar.Components(
-			NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-			components.Day += 1;
-			for (int i = 0; i < 3; i++)
-			{
-				NSDate startDate = calendar.DateFromComponents(components);
-				components.Day += 1;
-				monthViewSettings.BlackoutDates.Add(startDate);
-			}
-			schedule.MonthViewSettings = monthViewSettings;
-
-
+//creating new instance for month view settings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.BlackoutDates = new NSMutableArray();
+NSDate today = new NSDate();
+NSCalendar calendar = NSCalendar.CurrentCalendar;
+// Get the year, month, day from the date
+NSDateComponents components = calendar.Components(
+NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+components.Day += 1;
+for (int i = 0; i < 3; i++)
+{
+	NSDate startDate = calendar.DateFromComponents(components);
+	components.Day += 1;
+	monthViewSettings.BlackoutDates.Add(startDate);
+}
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -475,7 +464,7 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 
  ![](monthview_images/selection_Month.png)
  
- ## Today Background Color
+## Today Background Color
  
  We can customize the current date background of  `SFSchedule`  by using [TodayBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~TodayBackgroundColor.html) property of `MonthViewSettings`.
  
@@ -489,3 +478,63 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
  {% endhighlight %}
  
  ![](monthview_images/TodayBackground.png)
+ 
+## Custom Font
+
+We can change the appearance of Font by setting the TextStyle property of following classes.
+
+* [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance)- We can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DateTextStyle.html) properties of Schedule `ViewHeaderStyle`. 
+* [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) - We can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) property of Schedule `MonthCellStyle`.
+* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#inlineview-appearance) - We can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthInlineViewStyle~TextStyle.html) property of Schedule `MonthInlineViewStyle`.
+* [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) - We can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFWeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
+
+{% tabs %}
+{% highlight c# %}
+viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular", 15);
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontviewheader_month.png)
+
+{% tabs %}
+{% highlight c# %}
+monthCellStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontmonthcell.png)
+
+{% tabs %}
+{% highlight c# %}
+schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
+...
+void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
+{
+	SFMonthInlineViewStyle monthInlineViewStyle = new SFMonthInlineViewStyle();
+	monthInlineViewStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
+	e.MonthInlineViewStyle = monthInlineViewStyle;
+}
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontinline.png)
+ 
+ {% tabs %}
+{% highlight c# %}
+weekNumberStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontweeknumber.png)
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.iOS
+* Download the Custom Font (e.g. Lobster-Regular.ttf).
+* Add the downloaded Custom Font to the Resources Folder.
+* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
+* Then, directly use Custom Font name as TextStyle.
+
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+
