@@ -59,12 +59,10 @@ Refer to the following screenshot in which the Syncfusion.Xamarin.SfPopupLayout.
 
 The SfPopupLayout control can be configured entirely in C# code. To create a sample application for this control, follow the topics:  
 
-* [Create a simple popup](#create-a-simple-popup)  
 * [Adding SfPopupLayout in Xamarin.iOS](#adding-sfpopuplayout-in-xamarin.iOS) 
-* [Adding a UILabel as the content view of the SfPopupLayout](#adding-a-uilabel-as-the-contentview-of-the-sfpopuplayout) 
-* [AppearanceMode](#appearancemode) 
-* [Showing SfPopupLayout at various position](#showing-sfPopupLayout-at-various-position)
-* [AnimationMode](#animationmode)
+* [Customize positioning](# Customize-positioning) 
+* [Customizing layouts](#Customizing-layouts) 
+* [Customizing animations](#Customizing-animations)
 * [Sample link](#sample-link)
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
@@ -78,8 +76,17 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 3. The SfPopupLayout can be displayed by the following cases:
     
     * The SfPopupLayout can be displayed by making it as the base view or content view of the activity.
+    * You can continue to keep your view as the content view of the activity and still display pop-up over your view by simply calling the SfPopupLayout.Show() method. 
+
+4. For the first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Content.html) property.
+
+5. Create an instance of the SfPopupLayout control and add as subview of the UIViewController. 
 
 ### Displaying pop-up when the SfPopupLayout is set as root view 
+
+The SfPopupLayout can be displayed by making it as the base view or content view of the activity.
+
+Refer to the following code example for displaying popup.
 
 {% highlight c# %}
 
@@ -140,11 +147,13 @@ public class CustomView : UIView
         this.Subviews[0].Frame = new CGRect(0, 20, this.Frame.Right, 50);
     }
 }
-{% endhighlight %}
-
-    * You can continue to keep your view as the content view of the activity and still display pop-up over your view by simply calling the SfPopupLayout.Show() method. 
+{% endhighlight %}   
 
 ### Displaying pop-up when SfPopupLayout is not set as root view 
+
+You can continue to keep your view as the content view of the activity and still display pop-up over your view by simply calling the SfPopupLayout.Show() method. 
+
+Refer to the following code example for displaying popup.
 
 {% highlight c# %}
 
@@ -194,11 +203,8 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-4. For the first case, set the view over which the SfPopupLayout should be displayed as the content of the SfPopupLayout using the [SfPopupLayout.Content](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Content.html) property.
-
-5. Create an instance of the SfPopupLayout control and add as subview of the UIViewController. 
-
 Run the previous sample to get the following output on iOS device.
+
 ![](GettingStarted_images/DefaultAppearance.png)
 
 ## Customize positioning
@@ -284,6 +290,7 @@ namespace GettingStarted
 N> Setting the content view is same for both cases i.e. displaying pop-up when the SfPopupLayout is set as root view and vice versa.
 
 Run the previous sample to get the following output on iOS device.
+
 ![](GettingStarted_images/ContentView.png)
 
 ## Customizing animations

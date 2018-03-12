@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Model Window Popup | SfPopupLayout |Xamarin.iOS | Syncfusion
-description: Model Window Popup with SfPopupLayout
+title: Modal Window Popup | SfPopupLayout |Xamarin.iOS | Syncfusion
+description: Modal Window Popup with SfPopupLayout
 platform: Xamarin.iOS
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Model Window Popup
+# Modal Window Popup
 
 You can use pop-up layout as model window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~StaysOpen.html) property prevents interaction with your application until you close the window.
 
-`Modal`: Model window will load under the parent window surrounded by the overlay which prevents you to click anywhere else on screen apart from the content of the modal.
+`Modal`: Modal window will load under the parent window surrounded by the overlay which prevents you to click anywhere else on screen apart from the content of the modal.
 
 Modal does not require any action to open. It opens in the same window and gives callback when closing or opening the window.
 
-Refer to the following code example in which pop-up will close only if you click Cancel button, OK button or Close icon with toast message displayed from pop-up footer button clicked callback.
+Refer to the following code example in which pop-up will close only if you click on Close icon with toast message displayed from pop-up closed event.
 
 {% highlight c# %}
 
@@ -46,7 +46,7 @@ namespace GettingStarted
             popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;
             popupLayout.PopupView.AcceptButtonText = "OK";
             popupLayout.PopupView.DeclineButtonText = "Cancel";
-            popupLayout.PopupView.HeaderTitle = "Model Window";
+            popupLayout.PopupView.HeaderTitle = "Modal Window";
 
             popupLayout.Content = GetContentOfPopup();
             this.View.AddSubview(popupLayout);

@@ -82,6 +82,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If the previous sample runs with the `AppearanceMode` as `OneButton`, the output will appear on iOS device as follows.
+
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
 ## Pop-up with two buttons in the footer
@@ -138,6 +139,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 If the previous sample runs with the `AppearanceMode` as `TwoButton`, the output will appear on iOS device as follows.
+
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
 ## Customizing pop-up layouts
@@ -174,6 +176,7 @@ namespace GettingStarted
 
             // Adding Header view of the SfPopupLayout
             popupLayout.PopupView.HeaderView = headerContent;
+            popupLayout.PopupView.ShowCloseButton = false;
             this.View.AddSubview(popupLayout);
         }
         private UIView GetContentOfPopup()
@@ -204,6 +207,7 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
+
 ![](PopupLayout_images/HeaderTemplate.png)
 
 ### Footer customization
@@ -267,9 +271,11 @@ namespace GettingStarted
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
+
 ![](PopupLayout_images/HeaderTemplate.png)
 
 ## How to
+
 ### Hide the header in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the header by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
@@ -293,6 +299,7 @@ public MyViewController()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
+
 ![](PopupLayout_images/ShowHeader_False.png)
 
 ### Hide the footer in the SfPopupLayout 
@@ -318,6 +325,7 @@ public MyViewController()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
+
 ![](PopupLayout_images/ShowFooter_False.png)
 
 ### Hide the Close icon in the SfPopupLayout 
@@ -343,13 +351,14 @@ public MyViewController()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
+
 ![](PopupLayout_images/ShowCloseButton_False.png)
 
 ## Styles
 
 The SfPopupLayout applies style to all of its elements by using the [SfPopupLayout.PopupView.PopupStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~PopupStyle.html) property.
 
-## Customizing header elements
+### Customizing header elements
 
 The SfPopupLayout allows customizing the header elements with various available header customizations.
 
@@ -391,7 +400,7 @@ public MyViewController()
     ....
     popupLayout = new SfPopupLayout();
     popupLayout.Content = GetContentOfPopup();
-    popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = UIColor.Blue;
+    popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = UIColor.FromRGB(105, 105, 105);
     popupLayout.PopupView.PopupStyle.HeaderFont = "Helvetica-Bold";
     popupLayout.PopupView.PopupStyle.HeaderFontSize = 25;
     popupLayout.PopupView.PopupStyle.HeaderTextAlignment = UITextAlignment.Center;
@@ -403,9 +412,10 @@ public MyViewController()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
+
 ![](PopupLayout_images/HeaderCustomization.png)
 
-## Customizing footer elements
+### Customizing footer elements
 
 The SfPopupLayout allows customizing the footer elements with various available footer customizations.
 
@@ -448,9 +458,9 @@ public MyViewController()
     popupLayout = new SfPopupLayout();
     popupLayout.Content = GetContentOfPopup();
     popupLayout.PopupView.PopupStyle.FooterBackgroundColor = UIColor.LightGray;
-    popupLayout.PopupView.PopupStyle.AcceptButtonBackgroundColor = UIColor.DarkGray;
+    popupLayout.PopupView.PopupStyle.AcceptButtonBackgroundColor = UIColor.FromRGB(105, 105, 105);
     popupLayout.PopupView.PopupStyle.AcceptButtonTextColor = UIColor.White;
-    popupLayout.PopupView.PopupStyle.DeclineButtonBackgroundColor = UIColor.DarkGray;
+    popupLayout.PopupView.PopupStyle.DeclineButtonBackgroundColor = UIColor.FromRGB(105, 105, 105);
     popupLayout.PopupView.PopupStyle.DeclineButtonTextColor = UIColor.White;
     this.View.AddSubview(popupLayout);
     ....
@@ -459,9 +469,10 @@ public MyViewController()
 {% endhighlight %}
 
 This is how the final output will look like on iOS device.
+
 ![](PopupLayout_images/FooterCustomization.png)
 
-## Border customization
+### Border customization
 
 The SfPopupLayout allows customizing the border appearance with various available border customizations.
 
@@ -503,3 +514,7 @@ public MyViewController()
 }
 
 {% endhighlight %}
+
+This is how the final output will look like on iOS device.
+
+![](PopupLayout_images/BorderCustomization.png)
