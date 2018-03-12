@@ -432,7 +432,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {
 	if (e.Appointment == null)
 		return;	
-	if (e.Appointment.IsAllDay == true)
+	if (e.Appointment.IsAllDay)
 	{
 		UITextView textview = new UITextView();
 		textview.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
