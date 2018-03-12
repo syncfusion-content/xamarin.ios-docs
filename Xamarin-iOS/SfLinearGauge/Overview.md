@@ -1,29 +1,32 @@
 ---
+
 layout: post
 title: Overview of Syncfusion LinearGauge control for Xamarin.iOS
 description: Overview and key features of LinearGauge control
 platform: Xamarin.iOS
 control: LinearGauge
 documentation: ug
+
 ---
 
 # Overview
 
-SfLinearGauge displays a range of values graphically along the linear scale. It is considered as the linear form of the Circular Gauge. It measures the values of the scale and it is present in the horizontal or vertical sliding or meter. SfLinearGauge is used to identify the quantitative values in analog format. It is rendered as a canvas image. By using the SfLinearGauge control, it is possible to render the thermometer.
+[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) displays a range of values graphically along the linear scale, which is considered as the linear form of the linear gauge. It measures the values of the scale and it is present in the horizontal, vertical sliding, or meter. 
 
+[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) is used to visualize the numerical values of a scale in linear manner. It is rendered as a canvas image. By using the [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) control, it is possible to render the thermometer.
 
-![](images/Overview.png)
 
 ## Key Features
 
-* `Scale` – Mentioned minimum and maximum value of linear scale.
+* [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge~Scales.html): Supports to adding multiple scales on linear gauge by horizontal and vertical orientations.
 
-* `SymbolPointer` – The value is pointed by a symbol on the scale.
+* [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~Pointers.html): Supports to add multiple pointers (bar and symbol) on the linear scale.
 
-* `BarPointer` – To mark the value it’s placed on linear gauge.
+* [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~Ranges.html): Highlights the desired range of values in the gauge scale.
 
-* `Range` – Specify the start and end value within the linear scale.
+* [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge~Annotations.html): Annotations are used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
+![](overview_images/overview.png)
 
 
 

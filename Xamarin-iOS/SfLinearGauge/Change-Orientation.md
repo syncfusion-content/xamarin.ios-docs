@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation of Syncfusion LinearGauge Control in Xamarin.iOS
+title: Orientation in LinearGauge
 description: Learn how to set Orientation in LinearGauge
 platform: Xamarin.iOS
 control: LinearGauge
@@ -8,18 +8,26 @@ documentation: ug
 ---
 # Change Orientation
 
-SfLinearGauge provides support for the vertical orientation. By default SfLinearGauge renders with horizontal orientation. You can the change the orientation by using the `Orientation` property. Orientation can be categorized as follows.
+[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) supports horizontal and vertical orientations. By default, [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) is rendered with horizontal orientation. You can the change the orientation by using the `Orientation` property. 
 
-* Horizontal
-* Vertical
+{% highlight C# %}
 
-{% tabs %}
+           SFLinearGauge linearGauge = new SFLinearGauge();
+            linearGauge.BackgroundColor = UIColor.White;
+            linearGauge.Orientation = SFLinearGaugeOrientation.SFLinearGaugeOrientationVertical;
+            SFLinearScale linearScale = new SFLinearScale();
+            linearScale.ScalePosition = SFLinearGaugeScalePosition.SFLinearGaugeScalePositionBackward;
+            linearScale.Interval = 10;
+            linearScale.ScaleBarLength = 350;
+            linearScale.ScaleBarColor = UIColor.FromRGB(224, 224, 224);
+            linearScale.LabelColor = UIColor.FromRGB(66, 66, 66);
+            linearScale.MajorTickSettings.Length = 12;
+            linearScale.MinorTickSettings.Length = 5;
+            linearGauge.Scales.Add(linearScale);
+            this.View.AddSubview(linearGauge);
 
-{% highlight c# %}
 
-  linearGauge.Orientation = SFLinearGaugeOrientation.SFLinearGaugeOrientationVertical;
 
 {% endhighlight %}
 
-{% endtabs %}
-
+![](change_orientation/orientaion.png)
