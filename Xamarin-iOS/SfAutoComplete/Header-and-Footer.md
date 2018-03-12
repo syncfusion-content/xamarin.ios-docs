@@ -45,7 +45,7 @@ We can provide Footer Content at the bottom of the AutoComplete's Suggestion box
 
 {% highlight C# %}
 
-//Shows the header view
+//Shows the footer view
 countryAutoComplete.ShowDropDownFooterView = true;
 
 //Set height of the Footer view
