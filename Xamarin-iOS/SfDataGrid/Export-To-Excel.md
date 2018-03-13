@@ -31,36 +31,36 @@ public MyViewController()
     this.SfGrid.HeaderRowHeight = 45;
     this.SfGrid.RowHeight = 45;
 
-    var Freightcolumn = new GridTextColumn
+    var FreightColumn = new GridTextColumn
     {
         MappingName = "Freight",
         HeaderText = "Freight"
     };
-    var FirstNamecolumn = new GridTextColumn
+    var FirstNameColumn = new GridTextColumn
     {
         MappingName = "FirstName",
         HeaderText = "FirstName",
     };
-    var OrderIDcolumn = new GridTextColumn
+    var OrderIdColumn = new GridTextColumn
     {
         MappingName = "OrderID",
         HeaderText = "OrderID",
     };
-    var EmployeeIDcolumn = new GridTextColumn
+    var EmployeeIdColumn = new GridTextColumn
     {
         MappingName = "EmployeeID",
         HeaderText = "EmployeeID",
     };
-    var IsClosedcolumn = new GridTextColumn
+    var IsClosedColumn = new GridTextColumn
     {
         MappingName = "IsClosed",
         HeaderText = "IsClosed",
     };
-    SfGrid.Columns.Add(OrderIDcolumn);
-    SfGrid.Columns.Add(FirstNamecolumn);
-    SfGrid.Columns.Add(Freightcolumn);
-    SfGrid.Columns.Add(EmployeeIDcolumn);
-    SfGrid.Columns.Add(IsClosedcolumn);
+    SfGrid.Columns.Add(OrderIdColumn);
+    SfGrid.Columns.Add(FirstNameColumn);
+    SfGrid.Columns.Add(FreightColumn);
+    SfGrid.Columns.Add(EmployeeIdColumn);
+    SfGrid.Columns.Add(IsClosedColumn);
 
     exportExcel = new UIButton(UIButtonType.RoundedRect);
     exportExcel.SetTitle("Export To Excel", UIControlState.Normal);
