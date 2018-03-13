@@ -432,7 +432,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {
 	if (e.Appointment == null)
 		return;	
-	if (e.Appointment.IsAllDay == true)
+	if (e.Appointment.IsAllDay)
 	{
 		UITextView textview = new UITextView();
 		textview.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
@@ -457,6 +457,18 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {% endhighlight %}
 
 ![](PopulatingAppointments_images/appointmentstyle_customview.png)
+
+### Customize Font Appearance
+
+You can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) property in Schedule.
+
+{% highlight c# %}
+appointmentStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
+{% endhighlight %}
+
+![](data_binding_images/customfontappointment.png)
+
+Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
@@ -507,25 +519,4 @@ N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 {% endhighlight %}
 
 ![](data_binding_images/selection.png)
-
-## Custom Font
-
-We can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) property in Schedule.
-
-{% highlight c# %}
-appointmentStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
-{% endhighlight %}
-
-![](data_binding_images/customfontappointment.png)
-
-Following steps will explain how to configure the custom fonts.
-
-### Custom Font Setting in Xamarin.iOS
-* Download the Custom Font (e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Resources Folder.
-* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
-* Then, directly use Custom Font name as TextStyle.
-
->**Note**:
- No need to mention .ttf when set the Custom Font in iOS.
 
