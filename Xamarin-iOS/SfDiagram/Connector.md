@@ -9,8 +9,8 @@ keywords:
 # Connector
 The connectors are objects used to create link between two points. Nodes or ports are used to represent the relationship between them.
 
-## Create Connector
-The connector can be created by defining the start and end points.
+## Create connector
+The connector can be created by defining start and end points.
 {% tabs %}
 {% highlight c# %}
 // creating connector instance
@@ -23,7 +23,7 @@ diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
 
-## Connections with Nodes
+## Connections with nodes
 The SourceNode and TargetNode properties allows to define the nodes to be connected. The following code example illustrates how to connect two nodes:
 {% tabs %}
 {% highlight c# %}
@@ -43,10 +43,10 @@ diagram.AddConnector(connector1);
 {% endtabs %}
 ![](Connector_images/Connector_img1.jpeg)
 
-## Connections with Ports
+## Connections with ports
 The SourcePort and TargetPort properties allows to create connections between some specific points of source or target nodes. 
 
-## Using Port
+## Using port
 The following code example illustrates how to create and connect the ports: 
 {% tabs %}
 {% highlight c# %}
@@ -112,6 +112,22 @@ diagram.AddConnector(connector1);
 {% endtabs %}
 ![](Connector_images/Connector_img4.jpeg)
 
+## Curve
+Curve segments are used to create links between two points, nodes, or ports with curve segments. The following code example illustrates how to create a default curve segment.
+{% tabs %}
+{% highlight c# %}
+// creating connector instance with define its segment type
+var connector1 = new Connector()
+{
+SourcePoint=new CGPoint(100,100),
+TargetPoint=new CGPoint(300,300),
+SegmentType= SegmentType.CurveSegment;
+};
+diagram.AddConnector(connector1);
+{% endhighlight %}
+{% endtabs %}
+![](Connector_images/Connector_img5.jpeg)
+
 ## Decorator
 The start and end points of a connector can be decorated with some customizable shapes like arrow, circle, diamond, and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of connector.
 The SourceDecoratorStyle and TargetDecoratorStyle properties define the shape of the decorators. The following code example illustrates how to create decorators of various shapes:
@@ -129,11 +145,11 @@ SegmentType= SegmentType.StraightSegment
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img5.jpeg)
+![](Connector_images/Connector_img6.jpeg)
 
-## Remove Connector
-There are two ways to remove connector from the connection, they are the following:
-1.Passing the connector as parameter to remove connector method in the diagram.
+## Remove connector
+There are two ways to remove connector from the connection, they are:
+1. Passing the connector as parameter to remove connector method in the diagram.
 The following code example illustrates how to remove a connector from the connection:
 {% tabs %}
 {% highlight c# %}
@@ -149,7 +165,7 @@ diagram.AddConnector(connector1);
 diagram.RemoveConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-2.Passing the index value of the connector to remove connector method in the diagram (using RemoveAt method).
+2. Passing the index value of the connector to remove connector method in the diagram (using RemoveAt method).
 The following code example illustrates how to remove a connector from connection:
 {% tabs %}
 {% highlight c# %}
@@ -167,9 +183,9 @@ diagram.Connectors.RemoveAt(0);
 {% endtabs %}
 
 ## Appearance
-The StrokeThickness, Stroke are the set of properties. The style of line connectors and decorators can be customized with that properties.
+The StrokeThickness, stroke are the set of properties. The style of line connectors and decorators can be customized with that properties.
 
-## Connector Appearance
+##  Connector appearance
 The following code example illustrates how to customize the connector appearance:
 {% tabs %}
 {% highlight c# %}
@@ -190,9 +206,9 @@ StrokeWidth = 4
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
+![](Connector_images/Connector_img7.jpeg)
 
-## Decorator Appearance
+## Decorator appearance
 The following code example illustrates how to customize the appearance of the decorator:
 {% tabs %}
 {% highlight c# %}
@@ -224,5 +240,5 @@ Size = 12
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![](Connector_images/Connector_img8.jpeg)
 
