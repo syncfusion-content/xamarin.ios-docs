@@ -1,200 +1,203 @@
 ---
+
 layout: post
 title: Getting Started | SfCircularGauge | iOS | Syncfusion
-description: SCALES
+description: Scales
 platform: xamarin.iOS
 control: SfCircularGauge
 documentation: ug
+
 ---
 
-# SCALES
+# Scales
 
-The Scales contains a Collection of Circular Scale which integrates labels, tick marks, and a rim to customize the basic look and feel of the `SfCircularGauge`.
+CircularScales contain a collection of [`SFCircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 
 ## Scale
 
-Circular Scale contains three sub elements such as Rim, Ticks, and Labels. It defines the Radius, start angle and sweep angle, overall minimum and maximum values, and frequency of labels and tick marks. It can have multiple ranges.
+[`SFCircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale.html) contains the sub elements such as rim, ticks, labels, ranges, and pointers. It defines the radius, start angle, sweep direction, sweep angle, overall minimum and maximum values, frequency of labels, and tick marks. It will have multiple ranges.
 
-A range is a visual element which begins and ends at specified values within a scale. It can have one or more pointers to point out the values in the scale. It also has a Header that can be used to set a unique header for the circular gauge.
-
-{% highlight c# %}
-
-    gauge = new SFCircularGauge ();
-    scale = new SFCircularScale ();
-    NSMutableArray scales = new NSMutableArray();
-    scale = new SFCircularScale();
-    scale.StartValue = 0;
-    scale.EndValue = 100;
-    scale.Interval = 10;
-    scale.StartAngle = 40;
-    scale.SweepAngle = 320;
-    scale.RimWidth = 5;
-    scale.ShowTicks = true;
-    scale.ShowLabels = true;
-    scale.RimColor = UIColor.Gray;
-    scale.LabelColor = UIColor.Gray;
-    scale.LabelOffset = 0.1f;
-    scale.MinorTicksPerInterval = 1;
-    scales.Add(scale);     
-    gauge.Scales = scales;
-    this.AddSubview (gauge);
-    this.control = gauge;
-
-{% endhighlight %}
-
-![](iOS_Images/Scales.png)
-
-## Multiple Scale
-
-It helps to be able to add multiple scales to the same circular gauge, and also it helps to customize all the scales in a Scales collection.
+A range is a visual element, which begins and ends at specified values within a [`SFCircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale.html). It will have one or more pointers to point out the values in scale.
 
 {% highlight c# %}
 
-    ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
-    SFCircularScale scale = new SFCircularScale();
-    scale.MinorTicksPerInterval = 1;
-	scale.LabelColor = UIColor.White;
-	scale.MinorTickSettings.Color = UIColor.White;
-	scale.MajorTickSettings.Color = UIColor.White;
-	
-	SFCircularRange range = new SFCircularRange();
-	range.StartValue = 0;
-	range.EndValue = 60;
-	range.Offset = 1;
-	range.Color = UIColor.Gray;
-	range.Width = 11;
-	scale.Ranges.Add(range);
-	
-	SFCircularRange rangeLayer = new SFCircularRange();
-	rangeLayer.StartValue = 60;
-	rangeLayer.EndValue = 100;
-	rangeLayer.Offset = 1;
-	rangeLayer.Color = UIColor.Red;
-	rangeLayer.Width = 11;
-	scale.Ranges.Add(rangeLayer);
-	
-	ObservableCollection<SFCircularPointer> pointers = new ObservableCollection<SFCircularPointer>();
-	SFMarkerPointer markerPointer = new SFMarkerPointer();
-	markerPointer.Value = 30;
-	markerPointer.Color = UIColor.Green;
-	markerPointer.Offset = (float)0.8;
-	markerPointer.MarkerShape = MarkerShape.InvertedTriangle;
-	markerPointer.EnableAnimation = false;
-	pointers.Add(markerPointer);
-	scale.CircularPointers = pointers;
-    scales.Add(scale);
-	
-	SFCircularScale circularSsPerInterval = 1;
-	circularScale.ScaleScale = new SFCircularScale();
-    circularScale.ScaleStartOffset = (float)0.5;
-	circularScale.ScaleEndOffSet = (float)0.55;
-	circularScale.LabelOffset = (float)0.35;
-	circularScale.LabelColor = UIColor.White;
-	scale.MinorTickSettings.StartOffset = (float)0.5;
-	scale.MajorTickSettings.StartOffset = (float)0.5;
-	scale.MinorTickSettings.EndOffset = (float)0.45;
-	scale.MajorTickSettings.EndOffset = (float)0.45;
-	scale.MinorTickSettings.Width = 2;
-	scale.MajorTickSettings.Width = 4;
-	scale.MinorTickSettings.Color = UIColor.White;
-	scale.MajorTickSettings.Color = UIColor.White;
-	
-	SFCircularRange circularRange = new SFCircularRange();
-	circularRange.StartValue = 0;
-	circularRange.EndValue = 60;
-	circularRange.Offset = (float)0.55;
-	circularRange.Color = UIColor.Gray;
-	circularRange.Width = 11;
-	circularScale.Ranges.Add(range);
-	
-	SFCircularRange circularRangeLayer = new SFCircularRange();
-	circularRangeLayer.StartValue = 60;
-	circularRangeLayer.EndValue = 100;
-	circularRangeLayer.Offset = (float)0.55;
-	circularRangeLayer.Color = UIColor.Red;
-	circularRangeLayer.Width = 11;
-	circularScale.Ranges.Add(circularRangeLayer);
-	
-	ObservableCollection<SFCircularPointer> circularPointers = new ObservableCollection<SFCircularPointer>();
-	SFNeedlePointer needlePointer = new SFNeedlePointer();
-	needlePointer.Value = 30;
-	needlePointer.Color = UIColor.Green;
-	needlePointer.EnableAnimation = false;
-	needlePointer.LengthFactor = (float)0.5;
-	circularPointers.Add(needlePointer);
-	circularScale.Pointers = circularPointers;
-    scales.Add(circularScale);
-    circular.CircularScales = scales;  
-    this.View.AddSubview(circular);
-	
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+            circularGauge.Scales = scales;
+            this.View.AddSubview(circularGauge);
+
 {% endhighlight %}
 
-![](iOS_Images/Multiple_Scales.png)
+![](scales_images/scale.png)
 
-### Scale Direction
+## Setting start and end values for scale
 
-`Direction` property enables you to render the gauge scale either in `ClockWise` or in `AntiClockWise` direction.
-
-{% highlight c# %}
- 
-    SFCircularGauge circular = new SFCircularGauge(this);
-    ObservableCollection<SFCircularScale> circularScales = new ObservableCollection<SFCircularScale();
-    SFCircularScale scale = new SFCircularScale();
-    scale.StartValue = 0;
-    scale.EndValue = 100;
-    scale.Direction = SFCircularScaleDirection.AntiClockwise;
-    circularScales.Add(scale);
-    circular.Scales = circularScales;
-    this.View.AddSubview(circular);
-	
-{% endhighlight %}
-
-![](iOS_Images/AntiClockwise.png)
-
-![](iOS_Images/Clockwise.png)
-
-### Auto Angle
-
-Scale labels can be rotated automatically based on the current angle. To enable or disable the Auto Angle, you can use `EnableAutoAngle` property.
+The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~EndValue.html) properties allow  you to set the start and end values for scale.
 
 {% highlight c# %}
 
-    SFCircularGauge circular = new SFCircularGauge(this);
-    ObservableCollection<SFCircularScale> circularScales = new ObservableCollection<SFCircularScale();
-    SFCircularScale scale = new SFCircularScale();
-    scale.StartValue = 0;
-    scale.EndValue = 100;
-    scale.EnableAutoAngle = true;
-    circularScales.Add(scale);
-    circular.Scales = circularScales;
-    this.View.AddSubview(circular);
-	
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = -30;
+            scale.EndValue = 50;
+            scales.Add(scale);
+            circularGauge.Scales = scales;
+            this.View.AddSubview(circularGauge);
+
 {% endhighlight %}
 
-![](iOS_Images/Auto_Angle.png)
+![](scales_images/start-end-value.png)
 
-### Range color for Labels and Ticks
+## Setting start and sweep angles for scale
 
-You can set the range color to scale labels and ticks by enabling `UseRangeColorForLabels` property.
+The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~StartAngle.html) and [`SweepAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~SweepAngle.html) properties allow you to set the start and end angles for scale.
 
 {% highlight c# %}
 
-    SFCircularGauge circular = new SFCircularGauge(this);
-    ObservableCollection<SFCircularScale> circularScales = new ObservableCollection<SFCircularScale();
-    SFCircularScale scale = new SFCircularScale();
-    scale.StartValue = 0;
-    scale.EndValue = 100; 
-    scale.UseRangeColorForLabels  = true;
-    circularScales.Add(scale);
-    circular.Scales = circularScales;
-    this.View.AddSubview(circular);
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.StartAngle = 125;
+            scale.SweepAngle = 350;
+            scales.Add(scale);
+            circularGauge.Scales = scales;
+            this.View.AddSubview(circularGauge);
+
+{% endhighlight %}
+
+![](scales_images/start-end-angle.png)
+
+## Setting interval for scale
+
+The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~Interval.html) property allows you to set the interval for scale.
+
+{% highlight c# %}
+
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 500;
+            scale.Interval = 100;
+            scales.Add(scale);
+            circularGauge.Scales = scales;
+            this.View.AddSubview(circularGauge);
+
+{% endhighlight %}
+
+![](scales_images/interval.png)
+
+## Setting auto interval for scale
+
+By default, the interval value is calculated by 10. By using the [`EnableAutoInterval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~EnableAutoInterval.html) property, you can set auto interval based on the start and end values.
+
+{% highlight c# %}
+
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 500;
+            scale.EnableAutoInterval = true;
+            scales.Add(scale);
+            circularGauge.Scales = scales;
+            this.View.AddSubview(circularGauge);
+
+{% endhighlight %}
+
+![](scales_images/auto-interval.png)
+
+## Setting scale direction for scale
+
+The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~Direction.html) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
+
+{% highlight c# %}
+
+           SFCircularGauge circularGauge = new SFCircularGauge();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Direction = SFCircularScaleDirection.AntiClockwise;
+            scales.Add(scale);
+            circularGauge.Scales = scales;
+            this.View.AddSubview(circularGauge);
+
+{% endhighlight %}
+
+![](scales_images/scale-direction.png)
+
+## Setting multiple scales for scale
+
+It helps you to add multiple scales to the same circular gauge. You can customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge~Scales.html) collection.
+
+{% highlight c# %}
+
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 240;
+            scale.Interval = 20;
+            scale.MinorTicksPerInterval = 1;
+            scale.RimColor = UIColor.FromRGB(198, 46, 10);
+            scale.LabelOffset = 0.88f;
+            scale.LabelColor = UIColor.FromRGB(198, 46, 10);
+            scale.ScaleStartOffset = 0.7f;
+            scale.ScaleEndOffSet = 0.69f;
+
+            SFTickSettings majorTicks = new SFTickSettings();
+            majorTicks.StartOffset = 0.7f;
+            majorTicks.EndOffset = 0.77f;
+            majorTicks.Width = 2;
+            majorTicks.Color = UIColor.FromRGB(198, 46, 10);
+            scale.MajorTickSettings = majorTicks;
+
+            SFTickSettings minorTicks = new SFTickSettings();
+            minorTicks.StartOffset = 0.7f;
+            minorTicks.EndOffset = 0.75f;
+            minorTicks.Width = 2;
+            minorTicks.Color = UIColor.FromRGB(198, 46, 10);
+            scale.MinorTickSettings = minorTicks;
+            scales.Add(scale);
+
+            SFCircularScale circularScale = new SFCircularScale();
+            circularScale.StartValue = 0;
+            circularScale.EndValue = 160;
+            circularScale.Interval = 40;
+            circularScale.MinorTicksPerInterval = 1;
+            circularScale.RimColor = UIColor.FromRGB(51, 51, 51);
+            circularScale.LabelOffset = 0.45f;
+            circularScale.LabelColor = UIColor.FromRGB(51, 51, 51);
+            circularScale.ScaleStartOffset = 0.65f;
+            circularScale.ScaleEndOffSet = 0.64f;
+
+            SFTickSettings majorTick = new SFTickSettings();
+            majorTick.StartOffset = 0.64f;
+            majorTick.EndOffset = 0.57f;
+            majorTick.Width = 2;
+            majorTick.Color = UIColor.FromRGB(51, 51, 51);
+            circularScale.MajorTickSettings = majorTick;
+
+            SFTickSettings minorTick = new SFTickSettings();
+            minorTick.StartOffset = 0.64f;
+            minorTick.EndOffset = 0.59f;
+            minorTick.Width = 2;
+            minorTick.Color = UIColor.FromRGB(51, 51, 51);
+            circularScale.MinorTickSettings = minorTick;
+
+            scales.Add(circularScale);
+            circularGauge.Scales = scales;
+            this.View.AddSubview(circularGauge);
+
 	
 {% endhighlight %}
 
-![](iOS_Images/Range_Color.png)
-
-### LabelCreated
-
-This event is triggered when the scale label is created. The argument contains the following information.
-
-* `LabelCreated` - used to get or set the scale label content.
+![](scales_images/multiple-scale.png)

@@ -42,6 +42,19 @@ schedule.ViewHeaderHeight = 50;
 
 ![](daymodule_images/viewheaderheight_week.png)
 
+### Customize Font Appearance
+
+You can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DateTextStyle.html) properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) property in Schedule.
+
+{% highlight C# %}
+viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular", 15);
+viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular", 15);
+{% endhighlight %}
+
+![](daymodule_images/customfontviewheader_week.png)
+
+Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
+
 ### ViewHeader Date Format
 We can customize the date and day format of `SFSchedule` ViewHeader by using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekLabelSettings~DateLabelFormat.html) and [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekLabelSettings~DayLabelFormat.html) properties of `LabelSettings`
 
@@ -337,29 +350,6 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 * `SFSchedule` supports two-way binding of `SelectedDate` property.
 
 ![](daymodule_images/selection_Week.png)
-
-## Custom Font
-
-We can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DateTextStyle.html) properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) property in Schedule.
-
-{% highlight C# %}
-viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular", 15);
-viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular", 15);
-{% endhighlight %}
-
-![](daymodule_images/customfontviewheader_week.png)
-
-Following steps will explain how to configure the custom fonts.
-
-### Custom Font Setting in Xamarin.iOS
-* Download the Custom Font (e.g. Lobster-Regular.ttf).
-* Add the downloaded Custom Font to the Resources Folder.
-* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
-* Then, directly use Custom Font name as TextStyle.
-
->**Note**:
- No need to mention .ttf when set the Custom Font in iOS.
- 
  
  
  

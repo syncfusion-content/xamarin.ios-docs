@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion LinearGauge control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.iOS platform 
+description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.iOS platform
 platform: Xamarin.iOS
 control: LinearGauge
 documentation: ug
@@ -9,149 +9,122 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfLinearGauge control in a real-time scenario and also provides a walk-through on some of the customization features available in SfLinearGauge control.
+This section explains the steps required to configure a [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) control.
 
-### Referencing Essential Studio Components in Your Solution
-
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
-
-{Syncfusion Installed location}\Essential Studio {version number}\lib
-
-And below assembly reference to the iOS unified project.
-
-iOS-unified\Syncfusion.SfGauge.iOS.dll 
-
-### Add SfLinearGauge
-
-The following steps explain on how to create a SfLinearGauge and configure its elements
-
-* Adding namespace for the added assemblies. 
-
-{% tabs %}
+**Adding namespace for the added assemblies**
 
 {% highlight c# %}
 
-	using Syncfusion.SfGauge.iOS; 
+	      using Com.Syncfusion.Gauges.SfLinearGauge;
 
 {% endhighlight %}
 
-{% endtabs %}
+## Initialize gauge
 
-* Now add the SfLinearGauge control with a required optimal name by using the included namespace.
-
-{% tabs %}
+You can initialize the [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) control with a required optimal name by using the included namespace.
 
 {% highlight c# %}
 
-SFLinearGauge  linearGauge = new SFLinearGauge ();
-this.AddSubview(linearGauge);
+		public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();    
+                        SFLinearGauge linearGauge = new SFLinearGauge();
+                        this.View.AddSubview(linearGauge);
+		}
 
 {% endhighlight %}
 
-{% endtabs %}
+## Adding header
 
-* Configure the properties of SfLinearGauge
-
-{% tabs %}
+You can assign a unique header to [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) by using the [`SFLinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel.html) property and position it wherever as you desired by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel~Position.html) property.
 
 {% highlight c# %}
 
-linearGauge.Orientation = SFLinearGaugeOrientation.SFLinearGaugeOrientationVertical;
+            SFLinearGauge linearGauge = new SFLinearGauge();
+            linearGauge.BackgroundColor = UIColor.White;
+            SFLinearLabel linearHeader = new SFLinearLabel();
+            linearHeader.Text = (Foundation.NSString)"Thermometer";
+            linearHeader.Font = UIFont.FromName("Helvetica", 20f);
+            linearHeader.Position = new CoreGraphics.CGPoint(0.35, 0.35);
+            linearHeader.Color = UIColor.Black;
+            linearGauge.Header = linearHeader;
 
 {% endhighlight %}
 
-{% endtabs %}
+## Configuring scales
 
-## Add Scales
+Scales is a collection of [`SFLinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale.html), which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub elements of a scale. 
 
-The scale that point out to the values can be added by instantiating LinearScale class and setting minimum values, maximum values, scale intervals and colors etc.
-
-{% tabs %}
+The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~Maximum.html) properties allow you to set the scale range.
 
 {% highlight c# %}
 
-SFLinearScale scale = new SFLinearScale ();
-scale.Minimum = 0;
-scale.Maximum = 100;
-scale.Interval = 20;
-scale.ScaleBarLength = 100;
-scale.ScaleBarColor =UIColor.FromRGB (250, 236, 236);
-scale.LabelColor = UIColor.FromRGB (84, 84, 84); 
-scale.MinorTicksPerInterval = 1;
-scale.ScaleBarSize = 13;
-scale.ScalePosition = SFLinearGaugeScalePosition.SFLinearGaugeScalePositionForward;
+	      SFLinearScale linearScale = new SFLinearScale();
+            linearGauge.Header = new SFLinearLabel();
+            linearScale.ScaleBarColor = UIColor.FromRGB(224, 224, 224);
+            linearScale.MajorTickSettings.Length = 12;
+            linearScale.MinorTickSettings.Length = 5;
+            linearScale.LabelColor = UIColor.FromRGB(66, 66, 66);
+            linearGauge.Scales.Add(linearScale);
 	
 {% endhighlight %}
 
-{% endtabs %}
+## Adding a symbol pointer
 
-## Add a Symbol Pointer
-
-An arrow head that points to the value is called the Symbol Pointer which can be added by instantiating the SymbolPointer class and assigning it to the Pointers collection.
-
-{% tabs %}
+[`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) is a shape that can be placed to mark the pointer value in gauge.
 
 {% highlight c# %}
 
-SFSymbolPointer symbolPointer = new SFSymbolPointer ();
-symbolPointer.Value = 50;
-symbolPointer.Offset = 0;
-symbolPointer.Thickness = 3;
-symbolPointer.Color = UIColor.FromRGB (65, 77, 79);        
+	    SFSymbolPointer symbolPointer = new SFSymbolPointer();
+            symbolPointer.Value = 60;
+            symbolPointer.Thickness = 10;
+            symbolPointer.SymbolPosition = SymbolPointerPosition.Away;
+            symbolPointer.Color = UIColor.FromRGB(117, 117, 117);
+            linearScale.Pointers.Add(symbolPointer);
 
-{% endhighlight %}	
+{% endhighlight %}
 
-{% endtabs %}	
+## Adding a bar pointer
+
+[`SFBarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
+
+{% highlight C# %}
+
+		   SFBarPointer barPointer = new SFBarPointer();
+            barPointer.Value = 50;
+            barPointer.Thickness = 10;
+            barPointer.Color = UIColor.FromRGB(117, 117, 117);
+            linearScale.Pointers.Add(barPointer);
 	
-## Add a Bar Pointer
-
-A flat solid bar that points to the current value can be added by instantiating BarPointer and it can be added to pointers collection.
-
-{% tabs %}
-
-{% highlight c# %}
-
-SFBarPointer rangePointer = new SFBarPointer ();
-rangePointer.Value = 50;
-rangePointer.Color = UIColor.FromRGB (206, 69, 69);
-rangePointer.Thickness = 10;
-			
 {% endhighlight %}
 
-{% endtabs %}
+## Adding ranges
 
-## Add a Range
+You can categorize the scale values using the start and end values properties in [`SFLinearRange`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearRange.html). You can add multiple ranges for a scale using the `ranges` property.
 
-We can improve the readability of data by including ranges that quickly displays when values fall within a specific ranges.
+{% highlight c# %}    
+	
+            SFLinearRange linearRange = new SFLinearRange();
+            linearRange.StartValue = 0;
+            linearRange.EndValue = 40;
+            linearRange.Color = UIColor.FromRGB(39, 190, 183);
+            linearRange.Offset = -20;
+            linearRange.StartWidth = 10;
+            linearRange.EndWidth = 10;
+            linearScale.Ranges.Add(linearRange);
 
-{% tabs %}
-
-{% highlight c# %}
-
-SFLinearRange range = new SFLinearRange ();
-range.StartValue = 0;
-range.EndValue = 50;
-range.Color = UIColor.FromRGB (234, 248, 249);
-range.StartWidth = 10;
-range.EndWidth = 10;
-range.Offset = nfloat.Parse("-0.17");
-scale.Ranges.Add (range);
-//Range
-SFLinearRange range2 = new SFLinearRange ();
-range2.StartValue = 50;
-range2.EndValue = 100;
-range2.Color = UIColor.FromRGB (50, 184, 198);
-range2.StartWidth = 10;
-range2.EndWidth = 10;
-range2.Offset = nfloat.Parse("-0.17");
-scale.Ranges.Add (range2);        
-linearGauge.Scales.Add (scale);
+            SFLinearRange linearRange1 = new SFLinearRange();
+            linearRange1.StartValue = 40;
+            linearRange1.EndValue = 100;
+            linearRange1.Color = UIColor.FromRGB(224 , 255 , 255);
+            linearRange1.Offset = -20;
+            linearRange1.StartWidth = 10;
+            linearRange1.EndWidth = 10;
+            linearScale.Ranges.Add(linearRange1);
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](images/Xamarin.iOS.png)
+![](getting-started_images/getting-started.png)
 
 
 
