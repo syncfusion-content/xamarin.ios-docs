@@ -11,7 +11,7 @@ documentation: UG
 
 This section explains how to enable selection in the SfDataGrid and about the selection modes, properties, events that involves in selection and customizations available for selection.
 
-The SfDataGrid selects a specific row or group of rows either programmatically or by touch interactions. To enable selection in the SfDataGrid, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property to `None`. The SfDataGrid has different selection modes as listed as follows:
+The SfDataGrid selects a specific row or group of rows either programmatically or by touch interactions. To enable selection in the SfDataGrid, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) property to a value other than `None`. The SfDataGrid has different selection modes as listed as follows:
 
 ## Selection modes 
 <table>
