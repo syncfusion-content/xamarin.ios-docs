@@ -460,7 +460,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 
 ### Customize Font Appearance
 
-you can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) property in Schedule.
+You can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) property in Schedule.
 
 {% highlight c# %}
 appointmentStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
