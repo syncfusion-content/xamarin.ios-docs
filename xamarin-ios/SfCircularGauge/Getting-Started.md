@@ -167,5 +167,70 @@ Create a [`SFNeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-i
             scale.Pointers.Add(markerPointer);
 	
 {% endhighlight %}
+
+The following code example gives you the complete code of above configurations.
  
+ {% highlight c# %}  
+
+using System.Collections.ObjectModel;
+using Syncfusion.SfGauge.iOS;
+
+namespace Gauge_GettingStarted
+{
+    public partial class ViewController : UIViewController
+    {
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            //Initializing circular gauge 
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            circularGauge.Frame = new CoreGraphics.CGRect(10, 10, View.Frame.Width-20, View.Frame.Height - 20);
+
+            //Adding header 
+            SFGaugeHeader header = new SFGaugeHeader();
+            header.Text = (Foundation.NSString)"Speedometer";
+            header.TextColor = UIColor.Black;
+            circularGauge.Headers.Add(header);
+
+             //Initializing scales for circular gauge
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+
+              //Adding range
+            SFCircularRange range = new SFCircularRange();
+            range.StartValue = 0;
+            range.EndValue = 40;
+            scale.Ranges.Add(range);
+
+             //Adding needle pointer
+            SFNeedlePointer needlePointer = new SFNeedlePointer();
+            needlePointer.Value = 60;
+            scale.Pointers.Add(needlePointer);
+
+            //Adding range pointer
+            SFRangePointer rangePointer = new SFRangePointer();
+            rangePointer.Value = 60;
+            scale.Pointers.Add(rangePointer);
+
+             //Adding marker pointer
+            SFMarkerPointer markerPointer = new SFMarkerPointer();
+            markerPointer.Value = 70;
+            scale.Pointers.Add(markerPointer);
+
+            circularGauge.Scales = scales;
+            this.View.AddSubview(circularGauge);
+
+        }
+    }
+}
+
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
 ![](getting-started_images/default.png)
+
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/iOS_Gauge_GettingStarted2141822668.zip).
