@@ -34,7 +34,7 @@ You can localize custom text available in the control by adding equivalent local
 
 ![](LocalizationGlobalization_images/Localization_IOS.png)  
 
-If an application requires multiple languages we can follow the below steps:
+If an application requires multiple languages you can follow the below steps:
 
 *	Translate the Localizable.Strings file to each language. 
 *	Create new `<Language>.lproj` folders under resource as `en.lproj`, `fr.lproj`, `de.lproj`.
