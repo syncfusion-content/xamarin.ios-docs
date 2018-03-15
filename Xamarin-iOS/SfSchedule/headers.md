@@ -47,7 +47,7 @@ You can change the appearance of Font by setting the [TextStyle](https://help.sy
 {% highlight c# %}
 headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
 {% endhighlight %}
-{% tabs %}
+{% endtabs %}
 
 Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
