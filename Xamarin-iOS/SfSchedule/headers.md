@@ -15,9 +15,11 @@ You can customize the header of the Schedule using [HeaderStyle](https://help.sy
 
 You can customize the height for the Header in Schedule using `HeaderHeight` in schedule.
 
+{% tabs %}
 {% highlight c# %}
 schedule.HeaderHeight = 50;
 {% endhighlight %}
+{% endtabs %}
 
 ## Appearance
 
@@ -25,6 +27,7 @@ You can change the header format and style using `HeaderStyle` property in sched
 
 You can change the background color,text style and text color using properties such as [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~BackgroundColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextColor.html) of Header using `HeaderStyle` property in schedule.
 
+{% tabs %}
 {% highlight c# %}
 SFHeaderStyle headerStyle = new SFHeaderStyle();
 headerStyle.BackgroundColor = UIColor.FromRGB(251, 211, 201);
@@ -32,6 +35,7 @@ headerStyle.TextStyle = UIFont.SystemFontOfSize(15,UIFontWeight.Bold);
 headerStyle.TextColor=UIColor.White;
 schedule.HeaderStyle = headerStyle;
 {% endhighlight %}
+{% endtabs %}
 
 ![](Header_images/HeaderStyle.png) 
 
@@ -39,9 +43,11 @@ schedule.HeaderStyle = headerStyle;
 
 You can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderStyle~TextStyle.html) property of  [HeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/headers) property in Schedule.
 
+{% tabs %}
 {% highlight c# %}
 headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
-{% endhighlight %}	
+{% endhighlight %}
+{% tabs %}
 
 Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
@@ -49,61 +55,67 @@ Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom
 
 You can collapse the default header of schedule by setting `HeaderHeight` property of `SFSchedule` as 0. Instead you can use your own custom header for it. While navigating views in schedule, text labels available in the header will be changed based on it visible dates, so while using custom header , respective text value can be obtained from the `VisibleDatesChanged` event of `SFSchedule`.
 
+{% tabs %}
 {% highlight c# %}
-    
-    //triggering visible dates changed event.
-    schedule.VisibleDatesChanged += Schedule_VisibleDatesChanged;
-    
-    private void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
-        {
-            //to get visible dates index value.
-            int visibleDatesIndex = 0;
-            var headerString = string.Empty;
-            if (schedule.ScheduleView == SFScheduleView.SFScheduleViewMonth)
-            {
-                visibleDatesIndex = 8;//to get current month visible dates.
-            }
-            else
-            {
-                visibleDatesIndex = 0;
-            }
-            NSDate date = e.VisibleDates.GetItem<NSDate>((nuint)visibleDatesIndex);
-            NSDateFormatter dateFormat = new NSDateFormatter();
-            dateFormat.DateFormat = "MMMM YYYY";
-            headerString = dateFormat.ToString(date);
-        }
+//triggering visible dates changed event.
+schedule.VisibleDatesChanged += Schedule_VisibleDatesChanged;
 
+...
+
+private void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
+{
+    //to get visible dates index value.
+    int visibleDatesIndex = 0;
+    var headerString = string.Empty;
+    if (schedule.ScheduleView == SFScheduleView.SFScheduleViewMonth)
+    {
+        visibleDatesIndex = 8;//to get current month visible dates.
+    }
+    else
+    {
+        visibleDatesIndex = 0;
+    }
+    NSDate date = e.VisibleDates.GetItem<NSDate>((nuint)visibleDatesIndex);
+    NSDateFormatter dateFormat = new NSDateFormatter();
+    dateFormat.DateFormat = "MMMM YYYY";
+    headerString = dateFormat.ToString(date);
+}
 {% endhighlight %}
+{% endtabs %}
 
 You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HeaderSample_iOS-2097240596.zip)
 
 ## Header Date Format
 
-We can customize the date format of SFSchedule Header by using [ScheduleDateHeaderFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ScheduleDateHeaderFormat.html) property of `SFSchedule`.
+You can customize the date format of SFSchedule Header by using [ScheduleDateHeaderFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ScheduleDateHeaderFormat.html) property of `SFSchedule`.
 
+{% tabs %}
 {% highlight c# %}
 //Creating instance of Schedule
 SFSchedule schedule = new SFSchedule();
 //Customizing date format
 schedule.ScheduleDateHeaderFormat = (NSString)"LLL yy";
 {% endhighlight %}
+{% endtabs %}
 
 ![](Header_images/HeaderDateFormat.png)
 
 ## Header Tapped Event
 
-We can handle single tap action of Header by using [HeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~HeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when the Header is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
+You can handle single tap action of Header by using [HeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~HeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when the Header is Tapped. This event contains [HeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.HeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
 
+{% tabs %}
 {% highlight c# %}
 //Creating  new instance of Schedule
 SFSchedule schedule = new SFSchedule();
 schedule.HeaderTapped += Handle_HeaderTapped;
-{% endhighlight %}
 
-{% highlight c# %}
+...
+
 void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 {
     var date = e.Date;
 }
 {% endhighlight %}
+{% endtabs %}
 
