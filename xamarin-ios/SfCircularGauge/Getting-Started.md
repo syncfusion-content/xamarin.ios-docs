@@ -1,25 +1,29 @@
 ---
+
 layout: post
 title: Getting Started | SfCircularGauge | iOS | Syncfusion
 description: getting started
 platform: xamarin.iOS
 control: SfCircularGauge
 documentation: ug
+
 ---
 
+
 # Getting Started
+
+This section explains the steps required to configure the [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html), and also explains the steps required to add basic elements to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) through various APIs available within it.
+
 
 ## Create your first Circular Gauge in Xamarin.iOS
 
 Essential Gauge for Xamarin.iOS allows you to visualize numeric values over a circular scale. The appearance of the gauge can be fully customized to seamlessly integrate with your applications.
 This section provides a quick overview for working with Essential Gauge for Xamarin.iOS. It walks through the entire process of creating a real world gauge.
 
-![](Getting-Started_images/Getting-Started_img6.png)               
-
 CircularGauge
 {:.caption}
 
-###Reference Essential Studio Components in your Solution
+### Reference Essential Studio Components in your Solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio{version number}\lib
@@ -27,250 +31,206 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 You have to add the following assembly reference to the iOS unified project
 ios-unified \ Syncfusion.SfGauge.iOS.dll
 
-N> Assemblies are available in unzipped package location in Mac.
+N> Assemblies are available in unzipped package location in Mac. 
 
-### Initialize the CircularGauge
+### Adding namespace for the assemblies
 
-Create a Circular Gauge object in the View Controller and add Circular Gauge as subview.
-You can create a Circular Gauge object by using the following code example.
+{% highlight c# %}
 
-{% highlight C# %}
-[C#]   
-
-SFCircularGauge gauge = new SFCircularGauge ();
-this.AddSubview (gauge);
-            this.control = gauge;
-	  
-{% endhighlight %}
-
-
-### Insert a Scale to the Gauge
-
-Next, add one of more scales.
-
- {% highlight C# %}
-[C#]
-    gauge = new SFCircularGauge ();
-            scale = new SFCircularScale ();
-            NSMutableArray scales = new NSMutableArray();
-            scale = new SFCircularScale();
-            scale.StartValue = 0;
-            scale.EndValue = 100;
-            scale.Interval = 10;
-            scale.StartAngle = 40;
-            scale.SweepAngle = 320;
-            scale.RimWidth = 6;
-            scale.ShowTicks = true;
-            scale.ShowLabels = true;
-            scale.RimColor = UIColor.FromRGB((byte)209,(byte)70,(byte)70);
-            scale.LabelColor = UIColor.Gray;
-            scale.LabelOffset = 0.1f;
-            scale.MinorTicksPerInterval = 0;
-scales.Add(scale);
-gauge.Scales = scales;
-this.AddSubview (gauge);
-            this.control = gauge;
+    using Syncfusion.SfGauge.iOS;
 
 {% endhighlight %}
 
 
-The following screenshot illustrates the output of the above code.
+## Initialize gauge 
 
+You can initialize the [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) control with a required optimal name by using the included namespace.
 
+{% highlight c# %}
 
-![](Getting-Started_images/Getting-Started_img7.png)         
+                public override void ViewDidLoad()
+		{
+			base.ViewDidLoad();
+                        SFCircularGauge circularGauge = new SFCircularGauge();
+                        this.View.AddSubview(circularGauge);
+		}
 
-Added scale to the Gauge
-{:.caption}
-
-
-### Customize the ticks 
-
-You can customize the major and minor ticks using the Tick settings as follows.
-
-
-{% highlight C# %}
-[C#]
-              gauge = new SFCircularGauge ();
-            scale = new SFCircularScale ();
-
-            NSMutableArray scales = new NSMutableArray();
-            scale = new SFCircularScale();
-            scale.StartValue = 0;
-            scale.EndValue = 100;
-            scale.Interval = 10;
-            scale.StartAngle = 40;
-            scale.SweepAngle = 320;
-            scale.RimWidth = 6;
-            scale.ShowTicks = true;
-            scale.ShowLabels = true;
-            scale.RimColor = UIColor.FromRGB((byte)209,(byte)70,(byte)70);
-            scale.LabelColor = UIColor.Gray;
-            scale.LabelOffset = 0.1f;
-            scale.MinorTicksPerInterval = 0;
-           //Add minor Tick settings
-            SFTickSettings minor = new SFTickSettings();
-            minor.Size = 4;
-            minor.Color = UIColor.FromRGB(68, 68, 68);
-            minor.Width = 3;
-            scale.MinorTickSettings = minor;
-            //Add major Tick settings
-            SFTickSettings major = new SFTickSettings();
-            major.Size = 12;
-            major.Offset = 0.041f;
-            major.Color = UIColor.FromRGB(68,68,68);
-            major.Width = 1.5f;
-            scale.MajorTickSettings = major;
-                scales.Add(scale);
-            gauge.Scales = scales;
-this.AddSubview (gauge);
-            this.control = gauge;
-		
 {% endhighlight %}
 
+## Adding header
 
+You can assign a unique header to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) by using the [`SFGaugeHeader`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader.html) property and position it by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader~Position.html) property as you want.
 
-The following screenshot illustrates the output of the above code.
+{% highlight c# %}
 
-![](Getting-Started_images/Getting-Started_img8.png)          
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            SFGaugeHeader header = new SFGaugeHeader();
+            header.Text = (Foundation.NSString) "Speedometer";
+            header.TextColor = UIColor.Black;
+            circularGauge.Headers.Add(header);
+            this.View.AddSubview(circularGauge);
+	
+{% endhighlight %}
 
-Tick Customization
-{:.caption}
+## Configuring scales
 
-### Add Pointers to the Scale
+You can configure the [`SFCircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale.html) elements by using following APIs, which are available in [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html):
 
-Now, add needle pointer and range pointer and associate it with a scale.
+* `StartAngle`
+* `SweepAngle`
+* `StartValue`
+* `EndValue`
+* `Interval`
+* `RimThickness`
+* `RimColor`
 
-{% highlight C# %}
-[C#]
+{% highlight c# %}
 
-gauge = new SFCircularGauge ();
-            scale = new SFCircularScale ();
-            NSMutableArray scales = new NSMutableArray();
-            scale = new SFCircularScale();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
             scale.StartValue = 0;
             scale.EndValue = 100;
-            scale.Interval = 10;
-            scale.StartAngle = 40;
-            scale.SweepAngle = 320;
-            scale.RimWidth = 6;
-            scale.ShowTicks = true;
-            scale.ShowLabels = true;
-            scale.RimColor = UIColor.FromRGB((byte)209,(byte)70,(byte)70);
-            scale.LabelColor = UIColor.Gray;
-            scale.LabelOffset = 0.1f;
-            scale.MinorTicksPerInterval = 0;
-            NSMutableArray pointers = new NSMutableArray();
-            needlePointer = new SFNeedlePointer();
-            needlePointer.Value = 70;
-            needlePointer.Color = UIColor.Gray;
-            needlePointer.KnobRadius = 12;
-            needlePointer.KnobColor = UIColor.FromRGB(43, 191, 184);
-            needlePointer.Width = 3;
-            needlePointer.LengthFactor =nfloat.Parse("0.7");  
-          rangePointer = new SFRangePointer();
-            rangePointer.Value = 70;
-            rangePointer.Color = UIColor.FromRGB(43, 191, 184);
-            rangePointer.Width = 6;
-            pointers.Add(needlePointer);
-            pointers.Add(rangePointer);
-            //Add minor Tick settings
-            SFTickSettings minor = new SFTickSettings();
-            minor.Size = 4;
-            minor.Color = UIColor.FromRGB(68, 68, 68);
-            minor.Width = 3;
-            scale.MinorTickSettings = minor;
-            //Add major Tick settings
-            SFTickSettings major = new SFTickSettings();
-            major.Size = 12;
-            major.Offset = 0.041f;
-            major.Color = UIColor.FromRGB(68,68,68);
-            major.Width = 1.5f;
-            scale.MajorTickSettings = major;
-            scale.Pointers = pointers;
             scales.Add(scale);
-            gauge.Scales = scales;
-this.AddSubview (gauge);
-            this.control = gauge;
-
+            circularGauge.Scales = scales;
+	
 {% endhighlight %}
 
-The following screenshot illustrates the output of the above code.
+## Adding ranges
 
-![](Getting-Started_images/Getting-Started_img9.png)                        
+You can add ranges to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) by creating ranges collection using the [`SFCircularRange`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange.html) property.
 
-Added pointers to the Gauge
-{:.caption}
+{% highlight c# %}
 
-
-### Add Header to the Gauge
-
-You can add custom labels in the gauge and position it.
-
-{% highlight C# %}
-[C#]
-
-             gauge = new SFCircularGauge ();
-            scale = new SFCircularScale ();
-            NSMutableArray scales = new NSMutableArray();
-            scale = new SFCircularScale();
+           ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
             scale.StartValue = 0;
             scale.EndValue = 100;
-            scale.Interval = 10;
-            scale.StartAngle = 40;
-            scale.SweepAngle = 320;
-            scale.RimWidth = 6;
-            scale.ShowTicks = true;
-            scale.ShowLabels = true;
-            scale.RimColor = UIColor.FromRGB((byte)209,(byte)70,(byte)70);
-            scale.LabelColor = UIColor.Gray;
-            scale.LabelOffset = 0.1f;
-            scale.MinorTicksPerInterval = 0;
-            NSMutableArray pointers = new NSMutableArray();
-            needlePointer = new SFNeedlePointer();
-            needlePointer.Value = 70;
-            needlePointer.Color = UIColor.Gray;
-            needlePointer.KnobRadius = 12;
-            needlePointer.KnobColor = UIColor.FromRGB(43, 191, 184);
-            needlePointer.Width = 3;
-            needlePointer.LengthFactor =nfloat.Parse("0.7");  
-          rangePointer = new SFRangePointer();
-            rangePointer.Value = 70;
-            rangePointer.Color = UIColor.FromRGB(43, 191, 184);
-            rangePointer.Width = 6;
-            pointers.Add(needlePointer);
-            pointers.Add(rangePointer);
-            //Add minor Tick settings
-            SFTickSettings minor = new SFTickSettings();
-            minor.Size = 4;
-            minor.Color = UIColor.FromRGB(68, 68, 68);
-            minor.Width = 3;
-            scale.MinorTickSettings = minor;
-            //Add major Tick settings
-            SFTickSettings major = new SFTickSettings();
-            major.Size = 12;
-            major.Offset = 0.041f;
-            major.Color = UIColor.FromRGB(68,68,68);
-            major.Width = 1.5f;
-            scale.MajorTickSettings = major;
-            scale.Pointers = pointers;
             scales.Add(scale);
-            gauge.Scales = scales;
-SFGaugeHeader header = new SFGaugeHeader();
-            header.Text = (NSString)"Speedometer";
-            header.Position = new CGPoint (0.4f, 0.7f);
-            header.TextColor = UIColor.Gray;
-            gauge.Headers.Add(header);
-this.AddSubview (gauge);
-            this.control = gauge;
+            circularGauge.Scales = scales;
+            SFCircularRange range = new SFCircularRange();
+            range.StartValue = 0;
+            range.EndValue = 40;
+            scale.Ranges.Add(range);
+	
+{% endhighlight %}
+
+## Adding a needle pointer
+
+Create a [`SFNeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer.html), and associate it with a scale that is to be displayed the current value.
+
+{% highlight c# %}
+
+           ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+            circularGauge.Scales = scales;
+            SFNeedlePointer needlePointer = new SFNeedlePointer();
+            needlePointer.Value = 60;
+            scale.Pointers.Add(needlePointer);
+	
+{% endhighlight %}
+
+## Adding a range pointer
+
+[`SFRangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer.html) provides an alternative way to indicate the current value.
+
+{% highlight c# %}    
+
+           ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+            circularGauge.Scales = scales;
+            SFRangePointer rangePointer = new SFRangePointer();
+            rangePointer.Value = 60;
+            scale.Pointers.Add(rangePointer);
+	
+{% endhighlight %}
+
+## Adding a marker pointer
+
+[`SFMarkerPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFMarkerPointer.html) points the current value in scale.
+
+{% highlight c# %}  
+   
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+            circularGauge.Scales = scales;
+            SFMarkerPointer markerPointer = new SFMarkerPointer();
+            markerPointer.Value = 70;
+            scale.Pointers.Add(markerPointer);
+	
+{% endhighlight %}
+
+The following code example gives you the complete code of above configurations.
+ 
+ {% highlight c# %}  
+
+using System.Collections.ObjectModel;
+using Syncfusion.SfGauge.iOS;
+
+namespace Gauge_GettingStarted
+{
+    public partial class ViewController : UIViewController
+    {
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            //Initializing circular gauge 
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            circularGauge.Frame = new CoreGraphics.CGRect(10, 10, View.Frame.Width-20, View.Frame.Height - 20);
+
+            //Adding header 
+            SFGaugeHeader header = new SFGaugeHeader();
+            header.Text = (Foundation.NSString)"Speedometer";
+            header.TextColor = UIColor.Black;
+            circularGauge.Headers.Add(header);
+
+             //Initializing scales for circular gauge
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scales.Add(scale);
+
+              //Adding range
+            SFCircularRange range = new SFCircularRange();
+            range.StartValue = 0;
+            range.EndValue = 40;
+            scale.Ranges.Add(range);
+
+             //Adding needle pointer
+            SFNeedlePointer needlePointer = new SFNeedlePointer();
+            needlePointer.Value = 60;
+            scale.Pointers.Add(needlePointer);
+
+            //Adding range pointer
+            SFRangePointer rangePointer = new SFRangePointer();
+            rangePointer.Value = 60;
+            scale.Pointers.Add(rangePointer);
+
+             //Adding marker pointer
+            SFMarkerPointer markerPointer = new SFMarkerPointer();
+            markerPointer.Value = 70;
+            scale.Pointers.Add(markerPointer);
+
+            circularGauge.Scales = scales;
+            this.View.AddSubview(circularGauge);
+
+        }
+    }
+}
 
 {% endhighlight %}
 
-The following screenshot illustrates the output of the above code.
+The following output is displayed as a result of the above code example.
 
-![](Getting-Started_images/Getting-Started_img10.png)             
+![](getting-started_images/default.png)
 
-Added Header to the Gauge
-{:.caption}
-
-
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/iOS_Gauge_GettingStarted2141822668.zip).
