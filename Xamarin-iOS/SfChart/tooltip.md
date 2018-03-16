@@ -196,9 +196,9 @@ The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncf
 
 {% highlight c# %}
 
-    //Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
+//Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
 
-	tooltip.Show(pointX, pointY, true);
+tooltip.Show(pointX, pointY, true);
 
 {% endhighlight %}
 
@@ -212,8 +212,8 @@ The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncf
 {% highlight c# %}
 
 
-    //The argument determines whether the tooltip should be animated while hiding.
+//The argument determines whether the tooltip should be animated while hiding.
     
- 	tooltip.Hide(true);
+tooltip.Hide(true);
 
 {% endhighlight %}
