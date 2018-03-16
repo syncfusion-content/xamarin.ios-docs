@@ -51,6 +51,8 @@ headerStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
 
 Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
+![](Header_images/customfontheader.png)
+
 ## Loading Custom Headers
 
 You can collapse the default header of schedule by setting `HeaderHeight` property of `SFSchedule` as 0. Instead you can use your own custom header for it. While navigating views in schedule, text labels available in the header will be changed based on it visible dates, so while using custom header , respective text value can be obtained from the `VisibleDatesChanged` event of `SFSchedule`.
