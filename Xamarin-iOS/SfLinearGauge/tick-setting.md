@@ -80,8 +80,6 @@ You can customize the color and thickness of ticks by using the [`Color`](https:
 			
 {% endhighlight %}
 
-{% endtabs %}
-
 ![](tick-setting_images/tick-setting3.png)
 
 ## Setting minor ticks per interval
