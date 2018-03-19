@@ -14,21 +14,15 @@ This section provides a quick overview for working with Diagram for Xamarin.iOS.
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
 {Syncfusion Essential Studio Installed location}\Essential Studio{Essential Studio version}\Xamarin\lib\ios-unified\
 Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib\ ios-unified\
+For creating a diagram for iOS, the following assemblies need to be referenced in your iOS project.
+•	Syncfusion.SfDiagram.iOS
+
+**Installing assemblies through Package Manager Console**
+Open Package Manager console by clicking Tools >> NuGet Package Manager >> Package Manager Console options in Visual Studio.
 <table>
 <tr>
 <td>
-{{'**Project**'| markdownify }}
-</td>
-<td>
-{{'**Required assemblies**'| markdownify }}
-</td>
-</tr>
-<tr>
-<td>
-iOS Project
-</td>
-<td>
-iOS-unified\Syncfusion.SfDiagram.XForms.dll
+PM> Get-Project -All | Install-Package Syncfusion.Xamarin.SfDiagram.Android -source{{'[http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin#"")'| markdownify }}
 </td>
 </tr>
 </table>
