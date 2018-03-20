@@ -40,7 +40,7 @@ SFFastLineSeries columnSeries = new SFFastLineSeries() {
     ItemsSource = Data, 
     XBindingPath = "Country", 
     YBindingPath = "Value",
-	LineWidth = 1, 
+	LineWidth = 1 
 
 };
 
