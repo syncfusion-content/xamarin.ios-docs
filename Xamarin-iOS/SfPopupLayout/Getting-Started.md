@@ -305,6 +305,53 @@ By default, you can choose from the following available animations in the SfPopu
 * [SlideOnTop](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.
 * [None](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): Animation will not be applied.
 
+## How to 
+
+### Loading SfPopupLayout in GridTappedEvent of SfDataGrid
+
+SfPopupLayout allows you to open it in the GridTapped event of SfDataGrid.
+
+Refer the below code example to show the popup in Grid tapped event.
+
+{% highlight c# %}
+
+using Syncfusion.iOS.PopupLayout;
+
+namespace GettingStarted
+{
+    public class MyViewController:UIViewController
+    {
+        SfPopupLayout popupLayout;
+        SfDataGrid dataGrid;
+        ViewModel viewModel;
+
+        public MyViewController()
+        {
+            dataGrid = new SfDataGrid();
+            viewModel = new ViewModel();
+            dataGrid.ItemsSource = viewModel.OrdersInfo;
+            dataGrid.GridTapped += DataGtrid_GridTapped;
+
+            popupLayout = new SfPopupLayout();
+            popupLayout.Content = dataGrid;
+
+            this.View.AddSubview(popupLayout);
+        }
+        
+        private void DataGtrid_GridTapped(object sender, GridTappedEventArgs e)
+        {
+            popupLayout.Show();
+        }
+
+        public override void ViewDidLayoutSubviews()
+        {
+            base.ViewDidLayoutSubviews();
+            popupLayout.Frame = new CGRect(0, 20, this.View.Frame.Width, this.View.Frame.Height - 20);
+        }
+    }
+}
+{% endhighlight %}
+
 ## Sample link
 
 You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1822336781).
