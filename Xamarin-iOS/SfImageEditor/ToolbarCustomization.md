@@ -2,7 +2,7 @@
 layout : post
 title : ToolbarCustomization in Syncfusion SfImageEditor control in Xamarin.iOS
 description : Learn how to customize toolbar in ImageEditor for Xamarin.iOS
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : ImageEditor
 documentation : ug
 ---
