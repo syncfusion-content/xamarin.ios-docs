@@ -17,16 +17,14 @@ Based on the `Locale` specified the strings in the control such as Date, time, d
 
 By default, schedule control is available with en locale, which is English.
 
-
-{% highlight c# %}   
-    
-		   //setting schedule view
-			schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
-          //setting locale for the control
-            schedule.Locale = new NSLocale("ja");
- 
-{% endhighlight %}   
- 
+{% tabs %}
+{% highlight c# %}
+//setting schedule view
+schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
+//setting locale for the control
+schedule.Locale = new NSLocale("ja");
+{% endhighlight %}
+{% endtabs %}
 
 ![](LocalizationGlobalization_images/Localization_iOS_1.png)   
 
@@ -36,7 +34,7 @@ You can localize custom text available in the control by adding equivalent local
 
 ![](LocalizationGlobalization_images/Localization_IOS.png)  
 
-If an application requires multiple languages we can follow the below steps:
+If an application requires multiple languages you can follow the below steps:
 
 *	Translate the Localizable.Strings file to each language. 
 *	Create new `<Language>.lproj` folders under resource as `en.lproj`, `fr.lproj`, `de.lproj`.
