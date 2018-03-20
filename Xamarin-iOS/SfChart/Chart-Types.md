@@ -101,10 +101,6 @@ chart.Series.Add(splineAreaSeries);
 {% endhighlight %}
 
 
-![](ChartTypes_images/SplineArea.png)
-
-
-
 ## Stacked Area Chart
 
 To render a stacked area chart, create an instance of [`SFStackingAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStackingAreaSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the stacked area appearance.
