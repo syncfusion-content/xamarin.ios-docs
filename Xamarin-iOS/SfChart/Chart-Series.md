@@ -132,3 +132,19 @@ series.EnableAnimation      = true;
 series.AnimationDuration    = 0.8;
 
 {% endhighlight %}
+
+# Vertical Chart
+
+Vertical chart is used to show the CartesianSeries vertically which helps to view the data in different
+perceptive using [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property. 
+
+
+{% highlight c# %}
+
+SFLineSeries series   = new SFLineSeries ();
+
+series.IsTransposed   = true;
+
+{% endhighlight %}
+
+![](ChartSeries_images/VerticalChart.png)
