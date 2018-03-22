@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started for Essential Xamarin.iOS ImageEditor
 description: This section explains you the steps required to load an image to the image editor. Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfImageEditor
 documentation: ug
 ---
