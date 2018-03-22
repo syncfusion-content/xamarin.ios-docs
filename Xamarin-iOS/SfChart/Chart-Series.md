@@ -135,7 +135,7 @@ series.AnimationDuration    = 0.8;
 
 # Vertical Chart
 
-Vertical chart is used to show the CartesianSeries vertically which helps to view the data in different
+Vertical chart is used to show the ['SFCartesianSeries'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries.html) vertically which helps to view the data in different
 perceptive using [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property. 
 
 
