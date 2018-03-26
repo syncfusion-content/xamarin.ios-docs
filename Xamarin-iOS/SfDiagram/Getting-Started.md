@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Essential Xamarin.iOS Diagram.
 description: getting started
-platform:  Xamarin
+platform: Xamarin.iOS
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -9,36 +9,20 @@ keywords:
 # Getting Started
 This section provides a quick overview for working with Diagram for Xamarin.iOS. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
-## Assemblies Required
+## Adding diagram reference 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram.IOS”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram.IOS), and then install it.
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
-{Syncfusion Essential Studio Installed location}\Essential Studio{Essential Studio version}\Xamarin\lib\ios-unified\
-Example: C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib\ ios-unified\
-For creating a diagram for iOS, the following assemblies need to be referenced in your iOS project.
-•	Syncfusion.SfDiagram.iOS
-
-**Installing assemblies through Package Manager Console**
-Open Package Manager console by clicking Tools >> NuGet Package Manager >> Package Manager Console options in Visual Studio.
-<table>
-<tr>
-<td>
-PM> Get-Project -All | Install-Package Syncfusion.Xamarin.SfDiagram.Android -source{{'[http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin#"")'| markdownify }}
-</td>
-</tr>
-</table>
+![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ## Basic building blocks of Diagram
-
-• **Diagram-** It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.
-• **Nodes-** This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc. 
-• **Connectors-** These are the objects used to create link between two nodes, to represent the relationships between them in the diagram. 
-• **Ports-** It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
-• **Annotation-** It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
+• **Diagram-**It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.
+• **Nodes-**This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc.
+• **Connectors-**These are the objects used to create link between two nodes, to represent the relationships between them in the diagram.
+• **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
+• **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
 
 ## Creating a Simple Flow Chart
-
 Create a new iOS app (Xamarin.iOS) with iOS class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assembly to the respective projects.
-
 **Adding SfDiagram in Xamarin.iOS**
 1.Import SfDiagram control namespace as Using Syncfusion.SfDiagram.iOS in ViewController.cs Page.
 2. Set the SfDiagram control as Subview of the View.
@@ -48,7 +32,6 @@ using System;
 using System.Collections.ObjectModel;
 using Syncfusion.SfDiagram.iOS;
 using UIKit;
-
 namespace GettingStarted
 {
     public partial class ViewController : UIViewController
@@ -57,7 +40,6 @@ namespace GettingStarted
         {
 		
         }
-
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
@@ -68,19 +50,14 @@ namespace GettingStarted
         {
             base.DidReceiveMemoryWarning();
         }
-
     }
-
 }
-
-
 {% endhighlight %}
 {% endtabs %}
-
 The following code snippet illustrates the creation of Nodes and Connectors in the diagram.
 {% tabs %}
 {% highlight c# %}
-        public override void ViewDidLoad()
+public override void ViewDidLoad()
         {
             base.ViewDidLoad();
             SfDiagram diagram = new SfDiagram();
@@ -119,17 +96,15 @@ public Node AddNode(string id, float offsetX, float offsetY, float width, float 
             node.Annotations.Add(new Annotation() { Content = text });
             return node;
         }
-
 {% endhighlight %}
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-This demo project can be downloaded from the following link. 
+This demo project can be downloaded from the following link.
 [GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.iOS/Samples/GettingStarted_iOS_SfDiagram.zip)
- 
-## Create a simple organizational chart
 
+## Create a simple organizational chart
 SfDiagram provides support to auto-arrange the nodes based on hierarchical relation. Organization chart is an example of displaying hierarchical information.
 Now, you have to create a class named “Employee” to store the employee’s information like name, designation, ID, reporting person ID, etc. Also, create a collection class that stores a collection of the employees.
 {% tabs %}
@@ -145,10 +120,7 @@ public class Employee
 //Employee Collection
 public class Employees : ObservableCollection<Employee>  
 {
-
 }
-
-
 {% endhighlight %}
 {% endtabs %}
 Initialize Employee data
@@ -172,11 +144,8 @@ diagram.DataSourceSettings = new DataSourceSettings() { DataSource = employees, 
 DirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 80, VerticalSpacing = 50, TreeOrientation = TreeOrientation.TopToBottom 
 };
 diagram.BeginNodeRender+=Diagram_BeginNodeRender;
-
 diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
-
 //BeginNodeRender
-
         private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs args)
         {
             Node node = (args.Item as Node);
@@ -185,13 +154,10 @@ diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
             node.Height = 50;
             node.Annotations.Add(new Annotation(){Content=((args.Item as Node).Content as Employee).Name});
         }
-
-
-
 {% endhighlight %}
 {% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
-This demo project can be downloaded from the following link. 
+This demo project can be downloaded from the following link.
 [OrganizationalChart_Demo](http://files2.syncfusion.com/Xamarin.iOS/Samples/OrganizationalChart_iOS_SfDiagram.zip)
