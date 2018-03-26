@@ -58,44 +58,44 @@ The following code snippet illustrates the creation of Nodes and Connectors in t
 {% tabs %}
 {% highlight c# %}
 public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
-            SfDiagram diagram = new SfDiagram();
-   Node Begin = AddNode("Begin", 150, 60, 120, 40, "Begin", ShapeType.Ellipse);
-            Node Process = AddNode("Process", 150, 140, 120, 60, "Process", ShapeType.Rectangle);
-            Node End = AddNode("End", 190, 225, 40, 40, "End", ShapeType.Ellipse);
-            //Add nodes to the SfDiagram
-            diagram.AddNode(Begin);
-            diagram.AddNode(Process);
-            diagram.AddNode(End);
-            Connector connector1 = new Connector()
-            {
-                SourceNode = Begin,
-                TargetNode = Process,
-            };
-            Connector connector2 = new Connector()
-            {
-                SourceNode = Process,
-                TargetNode = End,
-            };
-            //Add connectors to the SfDiagram
-            diagram.AddConnector(connector1);
-            diagram.AddConnector(connector2);
-             View.AddSubview(diagram)
-  }
-        //CreateNode
+{
+	base.ViewDidLoad();
+	SfDiagram diagram = new SfDiagram();
+	Node Begin = AddNode("Begin", 150, 60, 120, 40, "Begin", ShapeType.Ellipse);
+	Node Process = AddNode("Process", 150, 140, 120, 60, "Process", ShapeType.Rectangle);
+	Node End = AddNode("End", 190, 225, 40, 40, "End", ShapeType.Ellipse);
+	//Add nodes to the SfDiagram
+	diagram.AddNode(Begin);
+	diagram.AddNode(Process);
+	diagram.AddNode(End);
+	Connector connector1 = new Connector()
+	{
+		SourceNode = Begin,
+		TargetNode = Process,
+	};
+	Connector connector2 = new Connector()
+	{
+		SourceNode = Process,
+		TargetNode = End,
+	};
+	//Add connectors to the SfDiagram
+	diagram.AddConnector(connector1);
+	diagram.AddConnector(connector2);
+	View.AddSubview(diagram)	                  	           
+}
+//CreateNode
 public Node AddNode(string id, float offsetX, float offsetY, float width, float height, string text, ShapeType shape)
-        {
-            Node node = new Node();
-            node.OffsetX = offsetX;
-            node.OffsetY = offsetY;
-            node.Height = height;
-            node.Width = width;
-            node.ShapeType = shape;
-            node.Style.Brush = new SolidBrush(UIColor.FromRGB(100, 149, 237));
-            node.Annotations.Add(new Annotation() { Content = text });
-            return node;
-        }
+{
+    Node node = new Node();
+    node.OffsetX = offsetX;
+    node.OffsetY = offsetY;
+    node.Height = height;
+    node.Width = width;
+    node.ShapeType = shape;
+    node.Style.Brush = new SolidBrush(UIColor.FromRGB(100, 149, 237));
+    node.Annotations.Add(new Annotation() { Content = text });
+    return node;
+ }
 {% endhighlight %}
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
@@ -146,14 +146,14 @@ DirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 8
 diagram.BeginNodeRender+=Diagram_BeginNodeRender;
 diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 //BeginNodeRender
-        private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs args)
-        {
-            Node node = (args.Item as Node);
-            node.ShapeType = ShapeType.RoundedRectangle;
-            node.Width = 90;
-            node.Height = 50;
-            node.Annotations.Add(new Annotation(){Content=((args.Item as Node).Content as Employee).Name});
-        }
+private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs args)
+{
+    Node node = (args.Item as Node);
+    node.ShapeType = ShapeType.RoundedRectangle;
+    node.Width = 90;
+    node.Height = 50;
+    node.Annotations.Add(new Annotation(){Content=((args.Item as Node).Content as Employee).Name});
+}
 {% endhighlight %}
 {% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
