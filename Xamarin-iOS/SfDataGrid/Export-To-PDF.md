@@ -496,7 +496,7 @@ option.GridLineType = GridLineType.None;
 
 ### ExportAllPages
 
-While exporting to excel using the SfDataPager inside the SfDataGrid, by default it will export only the current page. However, you can export all the pages by setting the [DataGridPdfExportOption.ExportAllPages](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportAllPages.html) to `true`. The default value for this property is false.
+While exporting to PDF using the SfDataPager inside the SfDataGrid, by default it will export only the current page. However, you can export all the pages by setting the [DataGridPdfExportOption.ExportAllPages](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportAllPages.html) to `true`. The default value for this property is false.
 
 {% tabs %}
 {% highlight c# %}
@@ -513,7 +513,7 @@ option.ExportAllPages = true;
 
 ### ExportColumnWidth
 
-By default, the data grid columns will be exported to Excel with the value of the `DataGridPdfExportOption.DefaultColumnWidth` but, you can also export the data grid to Excel with the exact column widths from the SfDataGrid by setting the [DataGridPdfExportOption.ExportColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportColumnWidth.html) to `true`. The default value of the `ExportColumnWidth` property is false.
+By default, the data grid columns will be exported to PDF with the value of the `DataGridPdfExportOption.DefaultColumnWidth` but, you can also export the data grid to PDF with the exact column widths from the SfDataGrid by setting the [DataGridPdfExportOption.ExportColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportColumnWidth.html) to `true`. The default value of the `ExportColumnWidth` property is false.
 
 {% tabs %}
 {% highlight c# %}
@@ -524,7 +524,7 @@ option.ExportColumnWidth = true;
 
 ### ExportRowHeight
 
-By default, the data grid rows will be exported to Excel with the value of the `DataGridPdfExportOption.DefaultRowHeight` but, you can also export the data grid to Excel with the exact row heights from the SfDataGrid by setting the [DataGridPdfExportOption.ExportRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportRowHeight.html) to `true`. The default value of the `ExportRowHeight` property is false.
+By default, the data grid rows will be exported to PDF with the value of the `DataGridPdfExportOption.DefaultRowHeight` but, you can also export the data grid to PDF with the exact row heights from the SfDataGrid by setting the [DataGridPdfExportOption.ExportRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~ExportRowHeight.html) to `true`. The default value of the `ExportRowHeight` property is false.
 
 {% tabs %}
 {% highlight c# %}
@@ -535,7 +535,7 @@ option.ExportRowHeight = true;
 
 ### DefaultColumnWidth
 
-The SfDataGrid allows customizing the column width in Excel file by using the [DataGridPdfExportOption.DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~DefaultColumnWidth.html) property. The `DefaultColumnWidth` value will be applied to all the columns in the Excel sheet.
+The SfDataGrid allows customizing the column width in PDF file by using the [DataGridPdfExportOption.DefaultColumnWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~DefaultColumnWidth.html) property. The `DefaultColumnWidth` value will be applied to all the columns in the PDF.
 
 {% tabs %}
 {% highlight c# %}
@@ -546,7 +546,7 @@ option.DefaultColumnWidth = 100;
 
 ### DefaultRowHeight
 
-SfDataGrid allow you to customize the row height in excel file based on your requirement by using [DataGridPdfExportOption.DefaultRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~DefaultRowHeight.html) property. The `DefaultRowHeight` value will be applied to all the rows in the excel sheet.
+The SfDataGrid allows customizing the row height in PDF file using the [DataGridPdfExportOption.DefaultRowHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportOption~DefaultRowHeight.html) property. The `DefaultRowHeight` value will be applied to all the rows in the PDF.
 
 {% tabs %}
 {% highlight c# %}
