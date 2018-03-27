@@ -355,7 +355,7 @@ option.TopTableSummaryStyle = new ExportCellStyle()
 
 ![](SfDataGrid_images/Excel/SummaryStyle.png)  
 
-#### StartColumnIndex
+### StartColumnIndex
 
 By default, the exported SfDataGrid will start from the 0th column in the Excel sheet but, you can specify the start column in the Excel sheet using the [DataGridExcelExportingOption.StartColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgridconverter/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption~StartColumnIndex.html) property.
 
