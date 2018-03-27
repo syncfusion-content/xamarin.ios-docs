@@ -193,9 +193,11 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 {% endtabs %}
 
 * ExportGroups is false
+
 ![](SfDataGrid_images/PDF/ExcludeGroup.png)
 
 * ExportGroups is true
+
 ![](SfDataGrid_images/PDF/Group.png)
 
 ### Exclude Column Header while Exporting
@@ -506,9 +508,11 @@ option.ExportAllPages = true;
 {% endtabs %}
 
 * ExportAllPages is true
+
 ![](SfDataGrid_images/PDF/ExportAllPage.png)
 
 * ExportAllPages is false
+
 ![](SfDataGrid_images/PDF/CurrentPageExport.png)
 
 ### ExportColumnWidth
@@ -920,4 +924,5 @@ sfGrid.Columns.Add(unboundColumn);
 {% endtabs %}
 
 The following screenshot shows that the unbound column is exported to PDF document along with text columns.
+
 ![](SfDataGrid_images/Exporting_img7.png)
