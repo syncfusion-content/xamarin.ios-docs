@@ -62,7 +62,6 @@ public MyViewController()
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `Zoom`, the output will look like on iOS device as shown below.
-
 ![](GettingStarted_images/ZoomAnimation.gif)
 
 ## Fade 
@@ -86,7 +85,6 @@ public MyViewController()
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `Fade`, the output will look like on iOS device as shown below.
-
 ![](GettingStarted_images/FadeAnimation.gif)
 
 ## SlideOnLeft 
@@ -110,7 +108,6 @@ public MyViewController()
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `SlideOnLeft`, the output will look like on iOS device as shown below.
-
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
 ## SlideOnTop 
@@ -134,7 +131,6 @@ public MyViewController()
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `SlideOnTop`, the output will look like on iOS device as shown below.
-
 ![](GettingStarted_images/SlideOnTopAnimation.gif)
 
 ## None
@@ -158,5 +154,4 @@ public MyViewController()
 {% endhighlight %}
 
 If we run the above sample with `AnimationMode` as `None`, the output will look like on iOS device as shown below.
-
 ![](GettingStarted_images/AnimationMode_None.gif)

@@ -42,12 +42,11 @@ Following are the list of options available to show SfPopupLayout at various pos
 
 ## Center Positioning
 
-SfPopupLayout can be shown at the center by using the following options.
-
 ### IsOpen Property
 
 In the below code example we have open the SfPopupLayout by using `SfPopupLayout.IsOpen` property.
 
+#### Type A:
 {% highlight c# %}
 
 using Syncfusion.iOS.PopupLayout;
@@ -93,15 +92,16 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appear on iOS device as shown below.
-
-![](GettingStarted_images/IsOpen_Property.png)
-
 N> SfPopupLayout.IsOpen property is not applicable for Type B.
+
+If we run the above sample, the below output will appear on iOS device as shown below.
+![](GettingStarted_images/IsOpen_Property.png)
 
 ### SfPopupLayout.Show()
 
 In the below code example we have open the SfPopupLayout by using `SfPopupLayout.Show()`.
+
+#### Type A:
 
 {% highlight c# %}
 
@@ -154,11 +154,11 @@ If we run the above sample, the below output will appear on iOS device as shown 
 
 ## Absolute Positioning
 
-SfPopupLayout can be shown at the specified position by using the following method.
-
 ### SfPopupLayout.Show(x-position, y-position)
 
 In the below code example we have open the SfPopupLayout by using `SfPopupLayout.Show(x-position, y-position)`.
+
+#### Type A:
 
 {% highlight c# %}
 
@@ -195,7 +195,7 @@ namespace GettingStarted
         private void ShowPopupButton_TouchDown(object sender, EventArgs e)
         {
             //Shows SfPopupLayout at x-position 100 and y position 100.
-            popupLayout.Show(100, 700);  
+            popupLayout.Show(100, 100);  
 
         }
         public override void ViewDidLayoutSubviews()
@@ -208,12 +208,13 @@ namespace GettingStarted
 {% endhighlight %}
 
 If we run the above sample, the below output will appear on iOS device as shown below.
-
 ![](GettingStarted_images/ShowAtXYPosition.png)
 
 ### SfPopupLayout.ShowAtTouchPoint()
 
 In the below code example we have open the SfPopupLayout by using `SfPopupLayout.ShowAtTouchPoint()`.
+
+#### Type A:
 
 {% highlight c# %}
 
@@ -262,15 +263,12 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appear on iOS device as shown below.
-
-![](GettingStarted_images/ShowAtTouchPoint.png)
-
 N> SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
 
-## Relative Positioning
+If we run the above sample, the below output will appear on iOS device as shown below.
+![](GettingStarted_images/ShowAtTouchPoint.png)
 
-SfPopupLayout can be shown at the relative position by using the following method.
+## Relative Positioning
 
 ### SfPopupLayout.ShowRelativeToView(View, RelativePosition)
 
@@ -289,6 +287,7 @@ namespace GettingStarted
         SfPopupLayout popupLayout;
         CustomView customView;
         UIButton showPopupButton;
+        UILabel label;
         
         public MyViewController()
         {
@@ -308,12 +307,16 @@ namespace GettingStarted
             showPopupButton.TouchDown += ShowPopupButton_TouchDown;
             customView.AddSubview(showPopupButton);
 
+            label = new UILabel();
+            label.Text = "This is SfPopupLayout";   
+            label.TextColor = UIColor.Black;    
+            customView.AddSubview(label);
             return customView;
         }
         private void ShowPopupButton_TouchDown(object sender, EventArgs e)
         {
             //Shows SfPopupLayout at the bottom of the label.
-            popupLayout.ShowRelativeToView(showPopupButton, RelativePosition.AlignBottom);
+            popupLayout.ShowRelativeToView(label, RelativePosition.AlignBottom);
         }
         public override void ViewDidLayoutSubviews()
         {
@@ -336,11 +339,11 @@ public class CustomView : UIView
     public override void LayoutSubviews()
     {
         base.LayoutSubviews();
-        this.Subviews[0].Frame = new CGRect(50, 280, 200, 50);
+        this.Subviews[0].Frame = new CGRect(0, 20, this.Frame.Right, 50);
+        this.Subviews[1].Frame = new CGRect(0, 70, this.Frame.Right, 50);
     }
 }
 {% endhighlight %}
 
 If we run the above sample, the below output will appear on iOS device as shown below.
-
 ![](GettingStarted_images/RelativeToBottom.png)

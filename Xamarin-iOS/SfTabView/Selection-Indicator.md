@@ -7,14 +7,14 @@ control: TabView
 documentation: ug
 ---
 
-# Selection Indicator Strip
+# Selection Indicator strip
 
-The selection indicator strip can be used to indicate the selected index of the tab view control. This can be customized with the built-in APIs that are available in the `SelectionIndicatorSettings` of `SfTabView`.
+Selection indicator strip can be used to indicate the selected index of the tab view control. It can be customized with the built in APIs available in `SelectionIndicatorSettings` of `SfTabView`.
 
 ![](images/Selection-Indicator/xamarin_ios_tabstyle02.png)
 
 
-The selection indicator can be positioned below the title or above the title, or else it can be filled to the entire selected header space.
+Selection indicator can be positioned below the title or above the title or else it can be filled in the entire selected header space.
 
 {% tabs %}
 
@@ -32,5 +32,5 @@ The selection indicator can be positioned below the title or above the title, or
 
 {% endtabs %}
 
-N> Stroke thickness will not applicable when the selection indicator’s position is set to "Fill".
+N> Stroke thickness is not applicable when selection indicator’s position is set as Fill.
 

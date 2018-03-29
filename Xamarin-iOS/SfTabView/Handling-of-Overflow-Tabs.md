@@ -9,7 +9,7 @@ documentation: ug
 
 # Handling overflow tabs
 
-When you have large number of tabs, the scroller will be enabled to view the overflow of headers, by default. It can be selected from a pop-up by setting the `OverflowMode` property of `SfTabView` to `DropDown`.
+When having large number of tabs, by default scroller will be enabled to view the overflow of headers, in case needed, it can be selected from pop-up by setting `OverflowMode` of `SfTabView` as `DropDown`.
 
 {% tabs %}
 
@@ -21,13 +21,13 @@ tabView.OverflowMode = OverflowMode.DropDown;
 
 {% endtabs %}
 
-By selecting drop-down option for tab view control, the `“Overflow button”` (or `“More button”`) will be added to the header. When you click the `“Overflow button”`, it will display a pop-up to navigate the other indices.
+By selection drop-down option for tab view control, there is a button named `“Overflow button”` (or `“More button”`) will be added to the header. When click on this button, it will display a pop-up to navigate the other indices.
 
-N> Pop-up will display the text value only; it will show the title value of the respective tab item.
+N> Pop-up will display the text value only, it will show the title value of the respective tab item.
 
 ## How to customize the more button?
 
-The appearance of the text can be customized through the APIs that are available in `OverflowButtonSettings` of `SfTabView`. It has APIs to customize both text and font icons available in this button.
+Appearance of the text can be customized through the APIs available `OverflowButtonSettings` of `SfTabView`. It has APIs to customize both text and font icons available in this button. 
 
 {% tabs %}
 

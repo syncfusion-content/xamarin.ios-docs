@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Header 
 
-When the built-in view is not needed, it can be overridden by adding the custom view to the header region for a tab. 
+When built-in view is not needed, it can be overridden by adding custom view for the header region for a tab. 
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ UIButton allCallsButton = new UIButton();
 
 ## How to handle events for custom view with tab view?
 
-When you use button or similar control with clicked event, it can be handled directly and set to the SelectedIndex property to navigate the clicked view.
+When using button or similar control with clicked event, it can be handled directly and set the SelectedIndex property to navigate the clicked view.
 
 {% highlight C# %}
 

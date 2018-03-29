@@ -9,7 +9,7 @@ documentation: ug
 
 # Tab Items
 
-Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
+Tab items can be configured in tab view through the Items property of `SfTabView`, where it holds collection of `SfTabItem` through `TabItemsCollection`
 
 
 {% tabs %}
@@ -44,7 +44,7 @@ Tab items can be configured in tab view through the `Items` property of `SfTabVi
 
 ## Share the header space equally
 
-To share the header space to the tabs equally, set the number of tabs that can be distributed in the available space though the `VisibleHeaderCount` of `SfTabView`.
+In order to share the header space equally for the , we can set the number of tabs which can be distributed in the available space though `VisibleHeaderCount` of SfTabView.
 
 {% tabs %}
 
