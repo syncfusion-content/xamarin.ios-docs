@@ -221,7 +221,6 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endhighlight %}
 
-![](charttypes_images/splineRange.png)
 
 ## Column Chart
 
