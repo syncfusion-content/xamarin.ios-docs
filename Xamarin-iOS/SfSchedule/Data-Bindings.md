@@ -14,59 +14,63 @@ documentation: ug
 
 [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [AppointmentBackground](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~AppointmentBackground.html), [Notes](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~Location.html), [All Day](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~IsAllDay.html), [Recurring properties](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties.html).
 
+{% tabs %}
 {% highlight c# %}
 using Foundation;
-using Syncfusion.SfSchedule.iOS; 
+using Syncfusion.SfSchedule.iOS;
 
-    //Creating an instance for SfSchedule control
-        SFSchedule schedule = new SFSchedule();
+//Creating an instance for SfSchedule control
+SFSchedule schedule = new SFSchedule();
 
-    // Creating instance for schedule appointment collection
-        NSMutableArray appCollection = new NSMutableArray();
-        NSCalendar calendar = NSCalendar.CurrentCalendar;
+// Creating instance for schedule appointment collection
+NSMutableArray appCollection = new NSMutableArray();
+NSCalendar calendar = NSCalendar.CurrentCalendar;
 
-        NSDate today = new NSDate();
+NSDate today = new NSDate();
 
-    // Get the year, month, day from the date
-        NSDateComponents startDateComponents = calendar.Components(
-        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-    
-    // Set the hour, minute, second
-        startDateComponents.Hour = 10;
-        startDateComponents.Minute = 0;
-        startDateComponents.Second = 0;
+// Get the year, month, day from the date
+NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                           NSCalendarUnit.Month |
+                                                           NSCalendarUnit.Day, today);
 
-    // Get the year, month, day from the date
-        NSDateComponents endDateComponents = calendar.Components(
-        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+// Set the hour, minute, second
+startDateComponents.Hour = 10;
+startDateComponents.Minute = 0;
+startDateComponents.Second = 0;
 
-    // Set the hour, minute, second
-        endDateComponents.Hour = 12;
-        endDateComponents.Minute = 0;
-        endDateComponents.Second = 0;
+// Get the year, month, day from the date
+NSDateComponents endDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                         NSCalendarUnit.Month |
+                                                         NSCalendarUnit.Day, today);
 
-    //setting start time for the event
-        NSDate startDate = calendar.DateFromComponents(startDateComponents);
+// Set the hour, minute, second
+endDateComponents.Hour = 12;
+endDateComponents.Minute = 0;
+endDateComponents.Second = 0;
 
-    //setting end time for the event
-        NSDate endDate = calendar.DateFromComponents(endDateComponents);
+//setting start time for the event
+NSDate startDate = calendar.DateFromComponents(startDateComponents);
 
-    //Adding schedule appointment in schedule appointment collection 
-        appCollection.Add(new ScheduleAppointment()
-            {
-	            StartTime = startDate,
-                EndTime = endDate,
-                Subject = (NSString)"Client Meeting",
-                Location = (NSString)"Hutchison road",
-                AppointmentBackground = UIColor.Red
-			});
+//setting end time for the event
+NSDate endDate = calendar.DateFromComponents(endDateComponents);
 
-    //Adding schedule appointment in schedule appointment collection 
-        schedule.Appointments = appCollection;
+//Adding schedule appointment in schedule appointment collection
+appCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startDate,
+    EndTime = endDate,
+    Subject = (NSString)"Client Meeting",
+    Location = (NSString)"Hutchison road",
+    AppointmentBackground = UIColor.Red
+});
 
-        View.AddSubview(schedule); 
+//Adding schedule appointment in schedule appointment collection
+schedule.Appointments = appCollection;
+
+View.AddSubview(schedule);
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](data_binding_images/appointment.png)
 
@@ -74,55 +78,59 @@ using Syncfusion.SfSchedule.iOS;
 
 [MinHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~MinHeight.html) of an appointment is to set an arbitrary height to appointments when it has minimum duration, so that the subject can be readable.
 
+{% tabs %}
 {% highlight c# %}
- 
- 	    SFSchedule schedule = new SFSchedule();
-        NSMutableArray appCollection = new NSMutableArray();
-        NSCalendar calendar = NSCalendar.CurrentCalendar;
-        NSDate today = new NSDate();
-        NSDateComponents startDateComponents = calendar.Components(
-        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-        startDateComponents.Hour = 09;
-        startDateComponents.Minute = 0;
-        startDateComponents.Second = 0;
-        NSDateComponents endDateComponents = calendar.Components(
-        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-        endDateComponents.Hour = 09;
-        endDateComponents.Minute = 0;
-        endDateComponents.Second = 0;
-        NSDate startDate = calendar.DateFromComponents(startDateComponents);
-        NSDate endDate = calendar.DateFromComponents(endDateComponents);
-		NSDateComponents startDateComponents1 = calendar.Components(
-        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-        startDateComponents1.Hour = 11;
-        startDateComponents1.Minute = 0;
-        startDateComponents1.Second = 0;
-        NSDateComponents endDateComponents1 = calendar.Components(
-        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-        endDateComponents1.Hour = 12;
-        endDateComponents1.Minute = 0;
-        endDateComponents1.Second = 0;
-        NSDate startDate1 = calendar.DateFromComponents(startDateComponents1);
-        NSDate endDate1 = calendar.DateFromComponents(endDateComponents1);
-        appCollection.Add(new ScheduleAppointment()
-            {
-			    StartTime = startDate,
-                EndTime = endDate,
-                Subject = (NSString)"Client Meeting",
-                AppointmentBackground = UIColor.FromRGB(216,0,115),
-	            MinHeight=30
-           });
-		appCollection.Add(new ScheduleAppointment()
-            {
-			    StartTime = startDate1,
-                EndTime = endDate1,
-                Subject = (NSString)"Anniversary",
-                AppointmentBackground = UIColor.FromRGB(162,193,57),
-           });
-        schedule.Appointments = appCollection;
-        View.AddSubview(schedule);
-		
+SFSchedule schedule = new SFSchedule();
+NSMutableArray appCollection = new NSMutableArray();
+NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSDate today = new NSDate();
+NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                           NSCalendarUnit.Month |
+                                                           NSCalendarUnit.Day, today);
+startDateComponents.Hour = 09;
+startDateComponents.Minute = 0;
+startDateComponents.Second = 0;
+NSDateComponents endDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                         NSCalendarUnit.Month |
+                                                         NSCalendarUnit.Day, today);
+endDateComponents.Hour = 09;
+endDateComponents.Minute = 0;
+endDateComponents.Second = 0;
+NSDate startDate = calendar.DateFromComponents(startDateComponents);
+NSDate endDate = calendar.DateFromComponents(endDateComponents);
+NSDateComponents startDateComponents1 = calendar.Components(NSCalendarUnit.Year |
+                                                            NSCalendarUnit.Month |
+                                                            NSCalendarUnit.Day, today);
+startDateComponents1.Hour = 11;
+startDateComponents1.Minute = 0;
+startDateComponents1.Second = 0;
+NSDateComponents endDateComponents1 = calendar.Components(NSCalendarUnit.Year |
+                                                          NSCalendarUnit.Month |
+                                                          NSCalendarUnit.Day, today);
+endDateComponents1.Hour = 12;
+endDateComponents1.Minute = 0;
+endDateComponents1.Second = 0;
+NSDate startDate1 = calendar.DateFromComponents(startDateComponents1);
+NSDate endDate1 = calendar.DateFromComponents(endDateComponents1);
+appCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startDate,
+    EndTime = endDate,
+    Subject = (NSString)"Client Meeting",
+    AppointmentBackground = UIColor.FromRGB(216,0,115),
+    MinHeight=30
+});
+appCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startDate1,
+    EndTime = endDate1,
+    Subject = (NSString)"Anniversary",
+    AppointmentBackground = UIColor.FromRGB(162,193,57),
+});
+schedule.Appointments = appCollection;
+View.AddSubview(schedule);
 {% endhighlight %}
+{% endtabs %}
 
 ![](data_binding_images/minheightios.png)
 
@@ -136,102 +144,105 @@ using Syncfusion.SfSchedule.iOS;
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
+{% tabs %}
 {% highlight c# %}
+using Foundation;
+using Syncfusion.SfSchedule.iOS;
 
-        using Foundation;
-    using Syncfusion.SfSchedule.iOS; 
+//Creating an instance for SfSchedule control
+SFSchedule schedule = new SFSchedule();
 
-    //Creating an instance for SfSchedule control
-            SFSchedule schedule = new SFSchedule();
+// Creating instance for schedule appointment collection
+NSMutableArray appCollection = new NSMutableArray();
+NSCalendar calendar = NSCalendar.CurrentCalendar;
 
-    // Creating instance for schedule appointment collection
-        NSMutableArray appCollection = new NSMutableArray();
-        NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSDate today = new NSDate();
 
-        NSDate today = new NSDate();
+// Get the year, month, day from the date
+NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                           NSCalendarUnit.Month |
+                                                           NSCalendarUnit.Day, today);
 
-    // Get the year, month, day from the date
-        NSDateComponents startDateComponents = calendar.Components(
-        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-    
-    // Set the hour, minute, second
-        startDateComponents.Hour = 10;
-        startDateComponents.Minute = 0;
-        startDateComponents.Second = 0;
+// Set the hour, minute, second
+startDateComponents.Hour = 10;
+startDateComponents.Minute = 0;
+startDateComponents.Second = 0;
 
-    // Get the year, month, day from the date
-        NSDateComponents endDateComponents = calendar.Components(
-        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+// Get the year, month, day from the date
+NSDateComponents endDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                         NSCalendarUnit.Month |
+                                                         NSCalendarUnit.Day, today);
 
-    // Set the date, hour, minute, second
-        endDateComponents.Day = endDateComponents.Day + 2;
-        endDateComponents.Hour = 12;
-        endDateComponents.Minute = 0;
-        endDateComponents.Second = 0;
+// Set the date, hour, minute, second
+endDateComponents.Day = endDateComponents.Day + 2;
+endDateComponents.Hour = 12;
+endDateComponents.Minute = 0;
+endDateComponents.Second = 0;
 
-    //setting start time for the event
-        NSDate startDate = calendar.DateFromComponents(startDateComponents);
+//setting start time for the event
+NSDate startDate = calendar.DateFromComponents(startDateComponents);
 
-    //setting end time for the event
-        NSDate endDate = calendar.DateFromComponents(endDateComponents);
+//setting end time for the event
+NSDate endDate = calendar.DateFromComponents(endDateComponents);
 
-    //Adding schedule appointment in schedule appointment collection 
-        appCollection.Add(new ScheduleAppointment()
-            {
-	            StartTime = startDate,
-                EndTime = endDate,
-                Subject = (NSString)"Client Meeting",
-                Location = (NSString)"Hutchison road",
-                AppointmentBackground = UIColor.Red
-			});
+//Adding schedule appointment in schedule appointment collection
+appCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startDate,
+    EndTime = endDate,
+    Subject = (NSString)"Client Meeting",
+    Location = (NSString)"Hutchison road",
+    AppointmentBackground = UIColor.Red
+});
 
-    //Adding schedule appointment in schedule appointment collection 
-        schedule.Appointments = appCollection;
-
+//Adding schedule appointment in schedule appointment collection
+schedule.Appointments = appCollection;
 {% endhighlight %}
+{% endtabs %}
 
 ![](data_binding_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
 
+{% tabs %}
 {% highlight c# %}
-
-    //Adding schedule appointment in schedule appointment collection 
-        appCollection.Add(new ScheduleAppointment()
-            {
-            StartTime = startDate,
-                EndTime = endDate,
-                Subject = (NSString)"Client Meeting",
-                Location = (NSString)"Hutchison road",
-                AppointmentBackground = UIColor.Red,
-                IsAllDay = true
-        });
-{% endhighlight %} 
+//Adding schedule appointment in schedule appointment collection
+appCollection.Add(new ScheduleAppointment()
+{
+    StartTime = startDate,
+    EndTime = endDate,
+    Subject = (NSString)"Client Meeting",
+    Location = (NSString)"Hutchison road",
+    AppointmentBackground = UIColor.Red,
+    IsAllDay = true
+});
+{% endhighlight %}
+{% endtabs %}
 
 ### All-Day Appointment Panel
 All-day appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting `ShowAllDay` property of `DayViewSettings`, `WeekViewSettings` and `WorkWeekViewSettings` of `DayView`, `WeekView` and `WorkWeekView` respectively.
 
+{% tabs %}
 {% highlight c# %}
+//Setting Schedule View
+schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
 
-        //Setting Schedule View
-        schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
-
-	    //Creating Week View Settings for SfSchedule WeekView 
-        WeekViewSettings weekViewSettings = new WeekViewSettings();
-        weekViewSettings.ShowAllDay = true;
-        schedule.WeekViewSettings = weekViewSettings;
-
-{% endhighlight %} 
+//Creating Week View Settings for SfSchedule WeekView
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+weekViewSettings.ShowAllDay = true;
+schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
+{% endtabs %}
 
 All-Day panel background can be customized by setting `AllDayAppointmentLayoutColor` 
 of the respective view settings.
 
+{% tabs %}
 {% highlight c# %}
-
-            weekViewSettings.AllDayAppointmentLayoutColor = UIColor.Gray; 
-
-{% endhighlight %} 
+weekViewSettings.AllDayAppointmentLayoutColor = UIColor.Gray;
+{% endhighlight %}
+{% endtabs %}
 
 ![](data_binding_images/allday.png)
 
@@ -323,38 +334,39 @@ N> `SFSchedule` does not support Editing and Deleting of Recurring appointment's
 ### Adding Recurrence Appointment using Recurrence Builder
 Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~RecurrenceRule.html) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
 
+{% tabs %}
 {% highlight c# %}
+// Creating instance for Schedule Appointment Collection
+NSMutableArray appCollection = new NSMutableArray();
 
-    // Creating instance for Schedule Appointment Collection
-        NSMutableArray appCollection = new NSMutableArray();
+//Adding All-Day Schedule appointment in Schedule Appointment Collection 
+var scheduleAppointment = new ScheduleAppointment()
+{
+	StartTime = startDate,
+	EndTime = endDate,
+	Subject = (NSString)"Client Meeting",
+	Location = (NSString)"Hutchison road",
+	IsRecursive = true,
+	AppointmentBackground = UIColor.Red
+};
+appCollection.Add(scheduleAppointment);
 
-    //Adding All-Day Schedule appointment in Schedule Appointment Collection 
-        var scheduleAppointment = new ScheduleAppointment()
-        {
-	        StartTime = startDate,
-        	EndTime = endDate,
-	        Subject = (NSString)"Client Meeting",
-	        Location = (NSString)"Hutchison road",
-	        IsRecursive = true,
-	        AppointmentBackground = UIColor.Red
-        };
-        appCollection.Add(scheduleAppointment);
+// Creating Recurrence rule
+RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
+recurrenceProperties.RecurrenceType = RecurrenceType.SFRecurrenceTypeDaily;
+recurrenceProperties.IsRangeRecurrenceCount = true;
+recurrenceProperties.DailyNDays = 2;
+recurrenceProperties.IsDailyEveryNDays = true;
+recurrenceProperties.RangeRecurrenceCount = 10;
+recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
 
-    // Creating Recurrence rule
-            RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
-            recurrenceProperties.RecurrenceType = RecurrenceType.SFRecurrenceTypeDaily;
-            recurrenceProperties.IsRangeRecurrenceCount = true;
-            recurrenceProperties.DailyNDays = 2;
-            recurrenceProperties.IsDailyEveryNDays = true;
-            recurrenceProperties.RangeRecurrenceCount = 10;
-            recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
+// Setting Recurrence rule to Schedule Appointment
+scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule;
 
-        // Setting Recurrence rule to Schedule Appointment
-            scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule;
-
-        //Adding Schedule appointment in Schedule Appointment Collection 
-            schedule.Appointments = appCollection; 
-{% endhighlight %} 
+//Adding Schedule appointment in Schedule Appointment Collection 
+schedule.Appointments = appCollection; 
+{% endhighlight %}
+{% endtabs %}
 
 ![](data_binding_images/recurrence.png)
 
@@ -368,22 +380,22 @@ The default appearance of the appointment can be customized by using the [Appoi
 ### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~TextColor.html), [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~TextStyle.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~BorderColor.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~BorderCornerRadius.html), [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~BorderWidth.html) to the `AppointmentStyle` property of `SfSchedule`.
 
+{% tabs %}
 {% highlight c# %}
+//Creating Appointment style 
+SFAppointmentStyle appointmentStyle = new SFAppointmentStyle();
+appointmentStyle.TextColor = UIColor.Red;
+appointmentStyle.TextStyle = UIFont.SystemFontOfSize(20, UIFontWeight.Bold);
+appointmentStyle.BorderColor = UIColor.Blue;
+appointmentStyle.BorderCornerRadius = 12;
+appointmentStyle.BorderWidth = 2;
+appointmentStyle.SelectionBorderColor = UIColor.Yellow;
+appointmentStyle.SelectionTextColor = UIColor.Yellow;
 
-        //Creating Appointment style 
-        SFAppointmentStyle appointmentStyle = new SFAppointmentStyle();
-        appointmentStyle.TextColor = UIColor.Red;
-        appointmentStyle.TextStyle = UIFont.SystemFontOfSize(20, UIFontWeight.Bold);
-        appointmentStyle.BorderColor = UIColor.Blue;
-        appointmentStyle.BorderCornerRadius = 12;
-        appointmentStyle.BorderWidth = 2;
-        appointmentStyle.SelectionBorderColor = UIColor.Yellow;
-        appointmentStyle.SelectionTextColor = UIColor.Yellow;
-
-        //Setting Appointment Style 
-        schedule.AppointmentStyle = appointmentStyle; 
-
+//Setting Appointment Style 
+schedule.AppointmentStyle = appointmentStyle; 
 {% endhighlight %}
+{% endtabs %}
 
 ![](data_binding_images/style.png)
 
@@ -397,42 +409,91 @@ Schedule appointment can be customized during runtime using [AppointmentLoadedEv
 •	[View](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentLoadedEventArgs~View.html) -  Sets the Custom UI for Appointments.
 •	[Bounds](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentLoadedEventArgs~Bounds.html) – Contains the UI bounds of appointment.
 
+{% tabs %}
 {% highlight c# %} 
- 
-          schedule.AppointmentLoaded += schedule_AppointmentLoaded;
-  
-void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
-    {
-        if (e.Appointment != null && e.Appointment.Subject == "Meeting")
-        {
-            e.AppointmentStyle.BorderColor = UIColor.Blue;
-            e.AppointmentStyle.BorderCornerRadius = 12;
-            e.AppointmentStyle.BorderWidth = 2;
-            e.AppointmentStyle.SelectionBorderColor = UIColor.Yellow;
-            e.AppointmentStyle.SelectionTextColor = UIColor.Yellow;
-        }
-    }
+schedule.AppointmentLoaded += schedule_AppointmentLoaded;
 
+...
+
+private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
+{       
+	if(e.Appointment != null && e.Appointment.IsAllDay)
+	{
+		e.AppointmentStyle.BorderColor = UIColor.Red;
+		e.AppointmentStyle.TextColor = UIColor.White;
+		e.AppointmentStyle.BorderCornerRadius = 12;
+		e.AppointmentStyle.BorderWidth = 2;
+		e.AppointmentStyle.SelectionBorderColor = UIColor.Yellow;
+		e.AppointmentStyle.SelectionTextColor = UIColor.Yellow;
+	}
+	else
+	{
+		e.AppointmentStyle.BorderColor = UIColor.Blue;
+		e.AppointmentStyle.TextColor = UIColor.Red;
+		e.AppointmentStyle.BorderCornerRadius = 12;
+		e.AppointmentStyle.BorderWidth = 2;
+		e.AppointmentStyle.SelectionBorderColor = UIColor.Yellow;
+		e.AppointmentStyle.SelectionTextColor = UIColor.Yellow;
+	}
+}
 {% endhighlight %}
+{% endtabs %}
+
+![](PopulatingAppointments_images/appointmentstyle_event.png)
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
 
+{% tabs %}
 {% highlight c# %} 
- 
-     schedule.AppointmentLoaded += schedule_AppointmentLoaded;
+schedule.AppointmentLoaded += schedule_AppointmentLoaded;
 
-    void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
-    {
-        UIButton button = new UIButton();
-        button.BackgroundColor = UIColor.Green;
-        if(e.Appointment!=null)
-            button.SetTitle((NSString)e.Appointment.Subject, UIControlState.Normal);
-        e.View = button;
-    }
+...
 
- 
+private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArgs e)
+{
+	if (e.Appointment == null)
+		return;	
+	if (e.Appointment.IsAllDay)
+	{
+		UITextView textview = new UITextView();
+		textview.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
+		textview.Text = (NSString)e.Appointment.Subject;
+		e.View = textview;
+	}
+	else if (e.Appointment.Subject == "Retrospective")
+	{
+		UIButton button = new UIButton();
+		button.SetBackgroundImage(UIImage.FromFile("Meeting.png"), UIControlState.Normal);
+		button.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
+		e.View = button;
+	}
+	else
+	{       
+		UIButton button = new UIButton();
+		button.SetBackgroundImage(UIImage.FromFile("Cake.png"), UIControlState.Normal);
+		button.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
+		e.View = button;
+	}
+}
 {% endhighlight %}
+{% endtabs %}
+
+![](PopulatingAppointments_images/appointmentstyle_customview.png)
+
+### Customize Font Appearance
+
+You can change the appearance of Font by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~TextStyle.html) property of [AppointmentStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#appearance-customization) property in Schedule.
+
+{% tabs %}
+{% highlight c# %}
+appointmentStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
+{% endhighlight %}
+{% endtabs %}
+
+![](data_binding_images/customfontappointment.png)
+
+Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
 ## Selection
 Schedule control has built-in events to handle tapped, double tapped and long pressed touch actions.
@@ -446,43 +507,45 @@ These events will be triggered while perform respective touch actions in timeslo
 • [SelectedAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.CellTappedEventArgs~SelectedAppointment.html) -  Contains the selected appointment value, it will be null, if any time slots selected.
 • [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.CellTappedEventArgs~Date.html) - Contains selected time slot DateTime value.
 
+{% tabs %}
 {% highlight c# %} 
- 
-        schedule.CellTapped += Schedule_CellTapped;
-	schedule.CellDoubleTapped += Schedule_CellDoubleTapped;
-	schedule.CellLongPressed += Schedule_CellLongPressed;
+schedule.CellTapped += Schedule_CellTapped;
+schedule.CellDoubleTapped += Schedule_CellDoubleTapped;
+schedule.CellLongPressed += Schedule_CellLongPressed;
 
+...
 
-	private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
-		{
-		}
-	private void Schedule_CellDoubleTapped(object sender, CellTappedEventArgs e)
-		{
-		}
-	private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
-		{
-		}
- 
+private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
+{
+}
+private void Schedule_CellDoubleTapped(object sender, CellTappedEventArgs e)
+{
+}
+private void Schedule_CellLongPressed(object sender, CellTappedEventArgs e)
+{
+}
 {% endhighlight %}
+{% endtabs %}
 
 ### Selection customization
 The default selection of an appointment can be customized by using [SelectionBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~SelectionBorderColor.html), [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle~SelectionTextColor.html) properties in `AppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 
 N> `BorderWidth` value must be set to highlight `SelectionBorderColor`.
 
+{% tabs %}
 {% highlight c# %} 
- 
-        //Creating Appointment style 
-        SFAppointmentStyle appointmentStyle = new SFAppointmentStyle();
-        appointmentStyle.BorderColor = UIColor.Blue;
-        appointmentStyle.BorderCornerRadius = 12;
-        appointmentStyle.BorderWidth = 2;
-        appointmentStyle.SelectionBorderColor = UIColor.Yellow;
-        appointmentStyle.SelectionTextColor = UIColor.Yellow;
+//Creating Appointment style
+SFAppointmentStyle appointmentStyle = new SFAppointmentStyle();
+appointmentStyle.BorderColor = UIColor.Blue;
+appointmentStyle.BorderCornerRadius = 12;
+appointmentStyle.BorderWidth = 2;
+appointmentStyle.SelectionBorderColor = UIColor.Yellow;
+appointmentStyle.SelectionTextColor = UIColor.Yellow;
 
-        //Setting Appointment Style 
-        schedule.AppointmentStyle = appointmentStyle;
- 
+//Setting Appointment Style
+schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
+{% endtabs %}
 
 ![](data_binding_images/selection.png)
+

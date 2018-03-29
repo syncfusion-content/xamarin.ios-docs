@@ -12,9 +12,7 @@ documentation: ug
 
 {% tabs %}
 {% highlight c# %}
-
-			schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
-
+schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
 {% endhighlight %}
 {% endtabs %}
 
@@ -23,14 +21,14 @@ documentation: ug
 ## Month Appointment indicator
 In `MonthView`, appointments are not viewed in the month cell instead appointment indicators are drawn. You can customize the number of appointment indicators displayed in month cell using  [AppointmentIndicatorCount](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~AppointmentIndicatorCount.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~MonthViewSettings.html) in `SfSchedule`, by default Appointment indicator count is 3.
 
+{% tabs %}
 {% highlight c# %}
-
-			//creating new instance for month view settings
-			MonthViewSettings monthViewSettings = new MonthViewSettings();
-			monthViewSettings.AppointmentIndicatorCount = 2;
-			schedule.MonthViewSettings = monthViewSettings;
-
+//creating new instance for month view settings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.AppointmentIndicatorCount = 2;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/appointmentindicator.png)
 
@@ -41,12 +39,10 @@ You can use [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/x
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for month view settings
-			MonthViewSettings monthViewSettings = new MonthViewSettings();
-			monthViewSettings.ShowAppointmentsInline = true;
-			schedule.MonthViewSettings = monthViewSettings;
-
+//creating new instance for month view settings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAppointmentsInline = true;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,9 +55,7 @@ You can use [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/x
 
 {% tabs %}
 {% highlight c# %}
-
-			monthViewSettings.MonthNavigationDirection = SFMonthNavigationDirections.Vertical;
-
+monthViewSettings.MonthNavigationDirection = SFMonthNavigationDirections.Vertical;
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,25 +64,22 @@ You can disable the interaction for certain date in Month view by using [Blackou
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for month view settings
-			MonthViewSettings monthViewSettings = new MonthViewSettings();
-			monthViewSettings.BlackoutDates = new NSMutableArray();
-			NSDate today = new NSDate();
-			NSCalendar calendar = NSCalendar.CurrentCalendar;
-			// Get the year, month, day from the date
-			NSDateComponents components = calendar.Components(
-			NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-			components.Day += 1;
-			for (int i = 0; i < 3; i++)
-			{
-				NSDate startDate = calendar.DateFromComponents(components);
-				components.Day += 1;
-				monthViewSettings.BlackoutDates.Add(startDate);
-			}
-			schedule.MonthViewSettings = monthViewSettings;
-
-
+//creating new instance for month view settings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.BlackoutDates = new NSMutableArray();
+NSDate today = new NSDate();
+NSCalendar calendar = NSCalendar.CurrentCalendar;
+// Get the year, month, day from the date
+NSDateComponents components = calendar.Components(
+NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+components.Day += 1;
+for (int i = 0; i < 3; i++)
+{
+    NSDate startDate = calendar.DateFromComponents(components);
+    components.Day += 1;
+    monthViewSettings.BlackoutDates.Add(startDate);
+}
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -99,10 +90,8 @@ You can set First day of week using [FirstDayOfWeek](https://help.syncfusion.com
 
 {% tabs %}
 {% highlight c# %}
-
-			//setting FirstDayOfWeek
-			schedule.FirstDayOfWeek = 2; // Monday
-
+//setting FirstDayOfWeek
+schedule.FirstDayOfWeek = 2; // Monday
 {% endhighlight %}
 {% endtabs %}
 
@@ -113,9 +102,7 @@ You can display the Week Number of the year in Month View by setting [ShowWeekNu
 
 {% tabs %}
 {% highlight c# %}
-
-			monthViewSettings.ShowWeekNumber = true;
-
+monthViewSettings.ShowWeekNumber = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -126,15 +113,13 @@ You can customize the Week Number appearance by using [SFWeekNumberStyle](https:
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for WeekNumberStyle
-			SFWeekNumberStyle weekNumberStyle = new SFWeekNumberStyle();
-			weekNumberStyle.TextStyle = UIFont.FromName("Arial", 15);
-			weekNumberStyle.BackgroundColor = UIColor.Blue;
-			weekNumberStyle.TextColor = UIColor.White;
-			monthViewSettings.WeekNumberStyle = weekNumberStyle;
-			schedule.MonthViewSettings = monthViewSettings;
-
+//creating new instance for WeekNumberStyle
+SFWeekNumberStyle weekNumberStyle = new SFWeekNumberStyle();
+weekNumberStyle.TextStyle = UIFont.FromName("Arial", 15);
+weekNumberStyle.BackgroundColor = UIColor.Blue;
+weekNumberStyle.TextColor = UIColor.White;
+monthViewSettings.WeekNumberStyle = weekNumberStyle;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,41 +130,38 @@ You can change the Format of the Month date and day labels string in the Schedul
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for MonthLabelSettings
-			MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
-			monthLabelSettings.DayLabelFormat = (NSString)"EEEE";
-			monthLabelSettings.DateLabelFormat = (NSString)"dd";
-			monthLabelSettings.DateLabelSize = 20;
-			monthViewSettings.LabelSettings = monthLabelSettings;
-			schedule.MonthViewSettings = monthViewSettings;
-
+//creating new instance for MonthLabelSettings
+MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
+monthLabelSettings.DayLabelFormat = (NSString)"EEEE";
+monthLabelSettings.DateLabelFormat = (NSString)"dd";
+monthLabelSettings.DateLabelSize = 20;
+monthViewSettings.LabelSettings = monthLabelSettings;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
 ![](monthview_images/monthlabelformat.png)
 
 ## View Header Appearance  
-You can customize the View Header appearance by using [SFViewHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle.html) property in SfSchedule. View Header [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~BackgroundColor.html), [DayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextColor.html) and [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextSyle.html) can be customized using `SFViewHeaderStyle` properties.
+You can customize the View Header appearance by using [SFViewHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle.html) property in SfSchedule. View Header [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~BackgroundColor.html), [DayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextColor.html) and [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) can be customized using `SFViewHeaderStyle` properties.
 
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for viewHeaderStyle 
-			SFViewHeaderStyle viewHeaderStyle = new SFViewHeaderStyle();
-			viewHeaderStyle.BackgroundColor = UIColor.Blue;
-			viewHeaderStyle.DayTextColor = UIColor.White;
-			viewHeaderStyle.DayTextStyle = UIFont.FromName("Arial", 15);
-			schedule.DayHeaderStyle = viewHeaderStyle;
-
+//creating new instance for viewHeaderStyle
+SFViewHeaderStyle viewHeaderStyle = new SFViewHeaderStyle();
+viewHeaderStyle.BackgroundColor = UIColor.Blue;
+viewHeaderStyle.DayTextColor = UIColor.White;
+viewHeaderStyle.DayTextStyle = UIFont.FromName("Arial", 15);
+schedule.DayHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 
 ![](monthview_images/viewheaderstyle.png)
 
 ### ViewHeader Date Format
-We can customize the date and day format of `SFSchedule` ViewHeader by using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelFormat.html) and [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DayLabelFormat.html) properties of `LabelSettings`.
+You can customize the date and day format of `SFSchedule` ViewHeader by using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelFormat.html) and [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DayLabelFormat.html) properties of `LabelSettings`.
 
+{% tabs %}
 {% highlight c# %}
 schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
 //Creating new instance of MonthViewSettings
@@ -192,25 +174,28 @@ monthLabelSettings.DayLabelFormat = (NSString)"EEEE";
 monthViewSettings.LabelSettings = monthLabelSettings;
 schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/DateFormat_Month.png)
 
 ### ViewHeader Tapped Event
-We can handle single tap action of `ViewHeader` by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
+You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
 
+{% tabs %}
 {% highlight c# %}
 //Creating  new instance of Schedule
 SFSchedule schedule = new SFSchedule();
 schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
 schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
-{% endhighlight %}
 
-{% highlight c# %}
+...
+
 void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
 {
-var date = e.Date;
+    var date = e.Date;
 }
 {% endhighlight %}
+{% endtabs %}
 
 ## MonthCell Appearance 
 You can customize the Month view cell in three ways,
@@ -224,20 +209,18 @@ By using [SFMonthCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin-io
    
 {% tabs %}
 {% highlight c# %}
-
-			//creating new instance for SFMonthCellStyle 
-			SFMonthCellStyle monthCellStyle = new SFMonthCellStyle();
-			monthCellStyle.BackgroundColor = UIColor.Blue;
-			monthCellStyle.NextMonthBackgroundColor = UIColor.White;
-			monthCellStyle.NextMonthTextColor = UIColor.Gray;
-			monthCellStyle.PreviousMonthBackgroundColor = UIColor.White;
-			monthCellStyle.PreviousMonthTextColor = UIColor.Gray;
-			monthCellStyle.TextColor = UIColor.White;
-			monthCellStyle.TextStyle = UIFont.FromName("Arial", 20);
-			monthCellStyle.TodayBackgroundColor = UIColor.Red;
-			monthCellStyle.TodayTextColor = UIColor.White;
-			schedule.MonthCellStyle = monthCellStyle;
-
+//creating new instance for SFMonthCellStyle
+SFMonthCellStyle monthCellStyle = new SFMonthCellStyle();
+monthCellStyle.BackgroundColor = UIColor.Blue;
+monthCellStyle.NextMonthBackgroundColor = UIColor.White;
+monthCellStyle.NextMonthTextColor = UIColor.Gray;
+monthCellStyle.PreviousMonthBackgroundColor = UIColor.White;
+monthCellStyle.PreviousMonthTextColor = UIColor.Gray;
+monthCellStyle.TextColor = UIColor.White;
+monthCellStyle.TextStyle = UIFont.FromName("Arial", 20);
+monthCellStyle.TodayBackgroundColor = UIColor.Red;
+monthCellStyle.TodayTextColor = UIColor.White;
+schedule.MonthCellStyle = monthCellStyle;
 {% endhighlight %}
 {% endtabs %}
 
@@ -248,44 +231,44 @@ By using [MonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-ios
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
 
-			schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
-			...
-			void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
-		{
-			e.CellStyle = new SFCellStyle();
-			if (e.IsToday)
-			{
-				e.CellStyle.BackgroundColor = UIColor.Red;
-				e.CellStyle.TextColor = UIColor.Blue;
-				e.CellStyle.TextStyle = UIFont.FromName("Arial-BoldItalicMT", 25);
-			}
-			else if (e.IsNextMonthDate)
-			{
-				e.CellStyle.BackgroundColor = UIColor.White;
-				e.CellStyle.TextColor = UIColor.Gray;
-				e.CellStyle.TextStyle = UIFont.FromName("Arial", 15);
-			}
-			else if (e.IsPreviousMonthDate)
-			{
-				e.CellStyle.BackgroundColor = UIColor.White;
-				e.CellStyle.TextColor = UIColor.Gray;
-				e.CellStyle.TextStyle = UIFont.FromName("Arial", 15);
-			}
-			else if (e.IsBlackOutDate)
-			{
-				e.CellStyle.BackgroundColor = UIColor.Black;
-				e.CellStyle.TextColor = UIColor.Blue;
-				e.CellStyle.TextStyle = UIFont.FromName("Arial", 15);
-			}
-			else
-			{
-				e.CellStyle.BackgroundColor = UIColor.Blue;
-				e.CellStyle.TextColor = UIColor.White;
-				e.CellStyle.TextStyle = UIFont.ItalicSystemFontOfSize(20);
-			}
-		}
+...
 
+void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
+{
+    e.CellStyle = new SFCellStyle();
+    if (e.IsToday)
+    {
+        e.CellStyle.BackgroundColor = UIColor.Red;
+        e.CellStyle.TextColor = UIColor.Blue;
+        e.CellStyle.TextStyle = UIFont.FromName("Arial-BoldItalicMT", 25);
+    }
+    else if (e.IsNextMonthDate)
+    {
+        e.CellStyle.BackgroundColor = UIColor.White;
+        e.CellStyle.TextColor = UIColor.Gray;
+        e.CellStyle.TextStyle = UIFont.FromName("Arial", 15);
+    }
+    else if (e.IsPreviousMonthDate)
+    {
+        e.CellStyle.BackgroundColor = UIColor.White;
+        e.CellStyle.TextColor = UIColor.Gray;
+        e.CellStyle.TextStyle = UIFont.FromName("Arial", 15);
+    }
+    else if (e.IsBlackOutDate)
+    {
+        e.CellStyle.BackgroundColor = UIColor.Black;
+        e.CellStyle.TextColor = UIColor.Blue;
+        e.CellStyle.TextStyle = UIFont.FromName("Arial", 15);
+    }
+    else
+    {
+        e.CellStyle.BackgroundColor = UIColor.Blue;
+        e.CellStyle.TextColor = UIColor.White;
+        e.CellStyle.TextStyle = UIFont.ItalicSystemFontOfSize(20);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -296,30 +279,32 @@ You can set the Custom UI for the month cell using [View](https://help.syncfusio
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
 
-			schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
-			...
-			void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
-		{
-			NSCalendar calendar = NSCalendar.CurrentCalendar;
-			// Get the year, month, day from the date
-			NSDateComponents dateComponents = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, e.Date);
-			UIButton button = new UIButton();
-			button.SetTitle(dateComponents.Day.ToString(), UIControlState.Normal);
-			button.SetTitleColor(UIColor.White, UIControlState.Disabled);
-			if (e.IsToday)
-			{
-				button.BackgroundColor = UIColor.Red;
-				button.Font = UIFont.FromName("Arial-BoldItalicMT", 20);
-			}
-			else
-			{
-				button.BackgroundColor = UIColor.Blue;
-				button.Font = UIFont.ItalicSystemFontOfSize(20);
-			}
-			e.View = button;
-		}
+...
 
+void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
+{
+    NSCalendar calendar = NSCalendar.CurrentCalendar;
+    // Get the year, month, day from the date
+    NSDateComponents dateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                          NSCalendarUnit.Month |
+                                                          NSCalendarUnit.Day, e.Date);
+    UIButton button = new UIButton();
+    button.SetTitle(dateComponents.Day.ToString(), UIControlState.Normal);
+    button.SetTitleColor(UIColor.White, UIControlState.Disabled);
+    if (e.IsToday)
+    {
+        button.BackgroundColor = UIColor.Red;
+        button.Font = UIFont.FromName("Arial-BoldItalicMT", 20);
+    }
+    else
+    {
+        button.BackgroundColor = UIColor.Blue;
+        button.Font = UIFont.ItalicSystemFontOfSize(20);
+    }
+    e.View = button;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -330,21 +315,21 @@ Using [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsche
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthInlineAppointmentTapped += Schedule_MonthInlineAppointmentTapped;
 
-			schedule.MonthInlineAppointmentTapped += Schedule_MonthInlineAppointmentTapped;
-			...
-			void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineAppointmentTappedEventArgs e)
-		{
-			var appointment = (e.Appointment as ScheduleAppointment);
-			UIAlertView alert = new UIAlertView()
-			{
-				Title = appointment.Subject,
-				Message = appointment.StartTime.ToString()
-			};
-			alert.AddButton("OK");
-			alert.Show();
-		}
+...
 
+void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineAppointmentTappedEventArgs e)
+{
+    var appointment = (e.Appointment as ScheduleAppointment);
+    UIAlertView alert = new UIAlertView()
+    {
+        Title = appointment.Subject,
+        Message = appointment.StartTime.ToString()
+    };
+    alert.AddButton("OK");
+    alert.Show();
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -355,21 +340,21 @@ By using [MonthInlineLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-i
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
 
-			schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
-			...
-			void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
-		{
-			SFMonthInlineViewStyle monthInlineViewStyle = new SFMonthInlineViewStyle();
-			monthInlineViewStyle.BackgroundColor = UIColor.Black;
-			monthInlineViewStyle.TextColor = UIColor.Green;
-			monthInlineViewStyle.TextStyle = UIFont.FromName("Times New Roman", 13);
-			monthInlineViewStyle.TimeTextColor = UIColor.Green;
-			monthInlineViewStyle.TimeTextStyle = UIFont.ItalicSystemFontOfSize(13);
-			monthInlineViewStyle.TimeTextFormat = (NSString)"hh mm a";
-			e.MonthInlineViewStyle = monthInlineViewStyle;
-		}
+...
 
+void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
+{
+    SFMonthInlineViewStyle monthInlineViewStyle = new SFMonthInlineViewStyle();
+    monthInlineViewStyle.BackgroundColor = UIColor.Black;
+    monthInlineViewStyle.TextColor = UIColor.Green;
+    monthInlineViewStyle.TextStyle = UIFont.FromName("Times New Roman", 13);
+    monthInlineViewStyle.TimeTextColor = UIColor.Green;
+    monthInlineViewStyle.TimeTextStyle = UIFont.ItalicSystemFontOfSize(13);
+    monthInlineViewStyle.TimeTextFormat = (NSString)"hh mm a";
+    e.MonthInlineViewStyle = monthInlineViewStyle;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -380,19 +365,19 @@ You can customize the Month inline view Appointment by using [MonthInlineAppoint
 
 {% tabs %}
 {% highlight c# %}
+schedule.MonthInlineAppointmentLoaded += Schedule_MonthInlineAppointmentLoaded;
 
-			schedule.MonthInlineAppointmentLoaded += Schedule_MonthInlineAppointmentLoaded;
-			...
-			void Schedule_MonthInlineAppointmentLoaded(object sender, MonthInlineAppointmentLoadedEventArgs e)
-		{
-			UIButton button = new UIButton();
-			button.SetTitle(e.Appointment.Subject, UIControlState.Normal);
-			button.SetTitleColor(UIColor.White, UIControlState.Disabled);
-			button.BackgroundColor = UIColor.Blue;
-			button.Font = UIFont.ItalicSystemFontOfSize(20);
-			e.View = button;
-		}
+...
 
+void Schedule_MonthInlineAppointmentLoaded(object sender, MonthInlineAppointmentLoadedEventArgs e)
+{
+    UIButton button = new UIButton();
+    button.SetTitle(e.Appointment.Subject, UIControlState.Normal);
+    button.SetTitleColor(UIColor.White, UIControlState.Disabled);
+    button.BackgroundColor = UIColor.Blue;
+    button.Font = UIFont.ItalicSystemFontOfSize(20);
+    e.View = button;
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -407,65 +392,66 @@ You can customize the default appearance of selection UI in the month cells.
 ### Selection customization using style
 You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionStyle.html) property of `SFSchedule`.
 
+{% tabs %}
 {% highlight C# %}
-
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
-    //Create new instance of SelectionStyle
-    SFSelectionStyle selectionStyle = new SFSelectionStyle();
-    selectionStyle.BackgroundColor = UIColor.Blue;
-    selectionStyle.BorderColor = UIColor.Black;
-    selectionStyle.BorderThickness = 5;
-    selectionStyle.BorderCornerRadius = 5;
-    schedule.SelectionStyle = selectionStyle;
-    
+schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+//Create new instance of SelectionStyle
+SFSelectionStyle selectionStyle = new SFSelectionStyle();
+selectionStyle.BackgroundColor = UIColor.Blue;
+selectionStyle.BorderColor = UIColor.Black;
+selectionStyle.BorderThickness = 5;
+selectionStyle.BorderCornerRadius = 5;
+schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/SelectionStyle_Month.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionView.html) property of `SFSchedule`.
-{% highlight C# %}
 
-    schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
-    //Add the CustomView
-    UIButton customView = new UIButton();
-    customView.SetTitle("+NewEvent", UIControlState.Normal);
-    customView.BackgroundColor = UIColor.FromRGB(255, 152, 0);
-    customView.SetTitleColor(UIColor.White, UIControlState.Normal);
-    schedule.SelectionView = customView;
-    
+{% tabs %}
+{% highlight C# %}
+schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+//Add the CustomView
+UIButton customView = new UIButton();
+customView.SetTitle("+NewEvent", UIControlState.Normal);
+customView.BackgroundColor = UIColor.FromRGB(255, 152, 0);
+customView.SetTitleColor(UIColor.White, UIControlState.Normal);
+schedule.SelectionView = customView;
 {% endhighlight %}
+{% endtabs %}
 
 ![](monthview_images/SelectionView_Month.png)
 
 ### Programmatic selection
 You can programmatically select the specific cell by setting corresponding date to [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectedDate.html) property of `SFSchedule`. By default, it is null.
 
+{% tabs %}
 {% highlight C# %}
+// Creating instance of calendar
+NSCalendar calendar = NSCalendar.CurrentCalendar;
 
-     // Creating instance of calendar
-     NSCalendar calendar = NSCalendar.CurrentCalendar;
+// Creating instance of date
+NSDate date = new NSDate();
 
-    // Creating instance of date
-    NSDate date = new NSDate();
-
-    // Setting a date and time to select
-    NSDateComponents dateComponents = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, date);
-    dateComponents.Year = 2017;
-    dateComponents.Month = 10;
-    dateComponents.Day = 04;
-    schedule.SelectedDate = calendar.DateFromComponents(dateComponents);
-
+// Setting a date and time to select
+NSDateComponents dateComponents = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, date);
+dateComponents.Year = 2017;
+dateComponents.Month = 10;
+dateComponents.Day = 04;
+schedule.SelectedDate = calendar.DateFromComponents(dateComponents);
 {% endhighlight %}
+{% endtabs %}
 
 You can clear the selection by setting [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectedDate.html) as null.
 
+{% tabs %}
 {% highlight C# %}
-
-    // Setting null value to deselect
-    schedule.SelectedDate = null;
-
+// Setting null value to deselect
+schedule.SelectedDate = null;
 {% endhighlight %}
+{% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.iOS from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection481745259.zip)
 
@@ -475,10 +461,11 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 
  ![](monthview_images/selection_Month.png)
  
- ## Today Background Color
+## Today Background Color
  
- We can customize the current date background of  `SFSchedule`  by using [TodayBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~TodayBackgroundColor.html) property of `MonthViewSettings`.
+ You can customize the current date background of  `SFSchedule`  by using [TodayBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~TodayBackgroundColor.html) property of `MonthViewSettings`.
  
+ {% tabs %}
  {% highlight c# %}
  schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
  //Creating new instance of MonthViewSettings
@@ -487,5 +474,67 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
  monthViewSettings.TodayBackgroundColor = UIColor.Red;
  schedule.MonthViewSettings = monthViewSettings;
  {% endhighlight %}
+ {% endtabs %}
  
  ![](monthview_images/TodayBackground.png)
+ 
+## Custom Font
+
+You can change the appearance of Font by setting the TextStyle property of following classes.
+
+* [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance)- You can change the appearance of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DateTextStyle.html) properties of Schedule `ViewHeaderStyle`.
+* [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) - You can change the appearance of [MonthCellStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#monthcell-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) property of Schedule `MonthCellStyle`.
+* [MonthInlineViewStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#inlineview-appearance) - You can change the appearance of [MonthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthCellStyle~TextStyle.html) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFMonthInlineViewStyle~TextStyle.html) property of Schedule `MonthInlineViewStyle`.
+* [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) - You can change the appearance of [WeekNumberStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#week-number-appearance) by setting the [TextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFWeekNumberStyle~TextStyle.html) property of Schedule `WeekNumberStyle`.
+
+{% tabs %}
+{% highlight c# %}
+viewHeaderStyle.DayTextStyle = UIFont.FromName("Lobster-Regular", 15);
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontviewheader_month.png)
+
+{% tabs %}
+{% highlight c# %}
+monthCellStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontmonthcell.png)
+
+{% tabs %}
+{% highlight c# %}
+schedule.MonthInlineLoaded += Schedule_MonthInlineLoaded;
+
+...
+
+void Schedule_MonthInlineLoaded(object sender, MonthInlineLoadedEventArgs e)
+{
+	SFMonthInlineViewStyle monthInlineViewStyle = new SFMonthInlineViewStyle();
+	monthInlineViewStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
+	e.MonthInlineViewStyle = monthInlineViewStyle;
+}
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontinline.png)
+ 
+ {% tabs %}
+{% highlight c# %}
+weekNumberStyle.TextStyle = UIFont.FromName("Lobster-Regular", 15);
+{% endhighlight %}
+{% endtabs %}
+
+ ![](monthview_images/customfontweeknumber.png)
+
+Following steps will explain how to configure the custom fonts.
+
+### Custom Font Setting in Xamarin.iOS
+* Add the Custom Font (e.g. Lobster-Regular.ttf) to the Resources Folder.
+* Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
+* Then, directly use Custom Font name as TextStyle.
+
+>**Note**:
+ No need to mention .ttf when set the Custom Font in iOS.
+

@@ -131,7 +131,7 @@ SFDateTimeRangeNavigator rangeNavigator      = new SFDateTimeRangeNavigator ();
 
 ## Handle range selection
 
-In real time, other controls like chart, grid etc., are updated in response to the range selection performed in SFDateTimeRangeNavigator. You can handle the selection using rangeNavigator:didChangeStartDate:andEndDate delegate method and update other controls based on the selected date time.
+In real time, other controls like chart, grid etc., are updated in response to the range selection performed in SFDateTimeRangeNavigator. You can handle the selection using [`RangeChanged`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorDelegate~RangeChanged.html) delegate method and update other controls based on the selected date time.
 
 Following code example illustrates how to handle range selection and update chart's date time axis range,
 
@@ -157,26 +157,6 @@ public class RangeNavigatorDelegate: SFRangeNavigatorDelegate
 
 {% endhighlight %}
 
-
-{% highlight c# %}
-
-public class RangeNavigatorDelegate: SFRangeNavigatorDelegate
-{
-    SFDateTimeAxis primaryAxis;
-
-    public RangeNavigatorDelegate(SFDateTimeAxis _primaryAxis)
-    {
-        primaryAxis     = _primaryAxis;
-    }
-
-    public override void RangeChanged (SFDateTimeRangeNavigator rangeNavigator, NSDate startDate, NSDate endDate)
-    {
-        primaryAxis.Minimum        = startDate;
-        primaryAxis.Maximum        = endDate;
-    }
-}
-
-{% endhighlight %}
 
 ![](Getting-Started-images/finalview.png)
 

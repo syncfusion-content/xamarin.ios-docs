@@ -21,11 +21,11 @@ SfAutoComplete control, supports binding to different data sources such as IList
 
 {% highlight C# %}
 
-	NSMutableArray countryList=new NSMutableArray();
-	countryList.Add((NSString)"Afghanistan");
-	countryList.Add((NSString)"Akrotiri");
-	countryList.Add((NSString)"Albania"); 
-	countryAutoComplete.AutoCompleteSource=countryList;
+NSMutableArray countryList=new NSMutableArray();
+countryList.Add((NSString)"Afghanistan");
+countryList.Add((NSString)"Akrotiri");
+countryList.Add((NSString)"Albania"); 
+countryAutoComplete.AutoCompleteSource=countryList;
 
 {% endhighlight %}
 
@@ -43,25 +43,25 @@ To populate items using data source, create a model class with the properties th
 
 {% highlight C# %}
 
-	public class Student
-	{
-		string Name;
-		string Age;
-		public Student(string name,string age)
-		{
-			this.Name = name;
-			this.Age = age;
+public class Student
+{
+string Name;
+string Age;
+public Student(string name,string age)
+{
+this.Name = name;
+this.Age = age;
 
-		}
-		public string getName()
-		{
-			return Name;
-		}
-		public string getAge()
-		{
-			return Age;
-		}
-	}
+}
+public string getName()
+{
+return Name;
+}
+public string getAge()
+{
+return Age;
+}
+}
 {% endhighlight %}
 
 {% endtabs %}
@@ -72,32 +72,32 @@ To populate items using data source, create a model class with the properties th
 
 {% highlight C# %}
 
-		public NSMutableArray StudentDetails
-		{
-			get;
-			set;
-		}
+public NSMutableArray StudentDetails
+{
+get;
+set;
+}
 
-		void GetStudentData()
-		{
-			NSMutableArray array = new NSMutableArray();
-			array.Add(getDictionary("John", "24"));
-			array.Add(getDictionary("James", "37"));
+void GetStudentData()
+{
+NSMutableArray array = new NSMutableArray();
+array.Add(getDictionary("John", "24"));
+array.Add(getDictionary("James", "37"));
 
-			StudentDetails = array;
-		}
+StudentDetails = array;
+}
 
-		NSDictionary getDictionary(string name, string age)
-		{
+NSDictionary getDictionary(string name, string age)
+{
 
-			object[] objects = new object[2];
-			object[] keys = new object[2];
-			keys.SetValue("Name", 0);
-			keys.SetValue("Age", 1);
-			objects.SetValue((NSString)name, 0);
-			objects.SetValue((NSString)age, 1);
-			return NSDictionary.FromObjectsAndKeys(objects, keys);
-		}
+object[] objects = new object[2];
+object[] keys = new object[2];
+keys.SetValue("Name", 0);
+keys.SetValue("Age", 1);
+objects.SetValue((NSString)name, 0);
+objects.SetValue((NSString)age, 1);
+return NSDictionary.FromObjectsAndKeys(objects, keys);
+}
 
 		
 {% endhighlight %}
@@ -110,10 +110,10 @@ To populate items using data source, create a model class with the properties th
 
 {% highlight C# %}
 
-			studentAutoComplete= new SfAutoComplete();
-			studentAutoComplete.DataSource = StudentDetails;
-			studentAutoComplete.DisplayMemberPath = "Name";
-			studentAutoComplete.SelectedValuePath = "Age";
+studentAutoComplete= new SfAutoComplete();
+studentAutoComplete.DataSource = StudentDetails;
+studentAutoComplete.DisplayMemberPath = "Name";
+studentAutoComplete.SelectedValuePath = "Age";
 
 {% endhighlight %}
 

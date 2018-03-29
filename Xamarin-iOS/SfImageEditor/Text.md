@@ -2,7 +2,7 @@
 layout : post
 title : Shapes in Syncfusion SfImageEditor control in Xamarin.iOS
 description : Learn how to add text in ImageEditor for Xamarin.iOS
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : ImageEditor
 documentation : ug
 ---
