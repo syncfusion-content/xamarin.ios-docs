@@ -110,7 +110,7 @@ namespace GettingStarted
             dataGrid = new SfDataGrid();
             viewModel = new ViewModel();
             dataGrid.ItemsSource = viewModel.OrdersInfo;
-            dataGrid.GridTapped += DataGtrid_GridTapped;
+            dataGrid.GridTapped += DataGrid_GridTapped;
 
             popupLayout = new SfPopupLayout();
             popupLayout.Content = dataGrid;
@@ -118,7 +118,7 @@ namespace GettingStarted
             this.View.AddSubview(popupLayout);
         }
         
-        private void DataGtrid_GridTapped(object sender, GridTappedEventArgs e)
+        private void DataGrid_GridTapped(object sender, GridTappedEventArgs e)
         {
             popupLayout.Show();
         }
