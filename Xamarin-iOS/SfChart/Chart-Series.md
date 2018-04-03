@@ -132,3 +132,17 @@ series.EnableAnimation      = true;
 series.AnimationDuration    = 0.8;
 
 {% endhighlight %}
+
+## Transpose the Series
+
+The [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property of [`SFCartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries.html) is used to plot the chart in the vertical direction and this helps to view the data in different perspective.
+
+{% highlight c# %}
+
+SFLineSeries series   = new SFLineSeries ();
+
+series.IsTransposed   = true;
+
+{% endhighlight %}
+
+![](ChartSeries_images/VerticalChart.png)

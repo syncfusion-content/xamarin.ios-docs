@@ -205,7 +205,7 @@ tooltip.Show(pointX, pointY, true);
 
 N> The tooltip will be activated at the specified location only if there is any data point under the specified location.
 
-## Hide method
+### Hide method
 
 The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~Hide.html) method is used to hide the tooltip programmatically.
 
