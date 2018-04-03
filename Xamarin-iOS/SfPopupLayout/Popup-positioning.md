@@ -46,7 +46,7 @@ SfPopupLayout can be shown at the center by using the following options.
 
 ### IsOpen Property
 
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.IsOpen` property.
+To open the SfPopupLayout, use the `SfPopupLayout.IsOpen` property as in the following code sample.
 
 {% highlight c# %}
 
@@ -97,11 +97,11 @@ If we run the above sample, the below output will appear on iOS device as shown 
 
 ![](GettingStarted_images/IsOpen_Property.png)
 
-N> SfPopupLayout.IsOpen property is not applicable for Type B.
+N> SfPopupLayout.IsOpen property is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
 
 ### SfPopupLayout.Show()
 
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.Show()`.
+To open the SfPopupLayout, use the `SfPopupLayout.Show()` as in the following code sample.
 
 {% highlight c# %}
 
@@ -149,7 +149,8 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appear on iOS device as shown below.
+Executing the above codes renders the following output in iOS device respectively.
+
 ![](GettingStarted_images/ShowPopup.png)
 
 ## Absolute Positioning
@@ -158,7 +159,7 @@ SfPopupLayout can be shown at the specified position by using the following meth
 
 ### SfPopupLayout.Show(x-position, y-position)
 
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.Show(x-position, y-position)`.
+To open the SfPopupLayout in specific X,Y coordinates, use the `SfPopupLayout.Show(x-position, y-position)` property as in the following code sample.
 
 {% highlight c# %}
 
@@ -207,13 +208,13 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appear on iOS device as shown below.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](GettingStarted_images/ShowAtXYPosition.png)
 
 ### SfPopupLayout.ShowAtTouchPoint()
 
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.ShowAtTouchPoint()`.
+To open the SfPopupLayout from the touch point in the screen, use the `SfPopupLayout.ShowAtTouchPoint()` property as in the following code sample.
 
 {% highlight c# %}
 
@@ -262,11 +263,11 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appear on iOS device as shown below.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
-N> SfPopupLayout.ShowAtTouchPoint() is not applicable for Type B.
+N> SfPopupLayout.ShowAtTouchPoint() is not applicable for `Displaying pop-up when the SfPopupLayout is not set as root view`.
 
 ## Relative Positioning
 
@@ -274,7 +275,7 @@ SfPopupLayout can be shown at the relative position by using the following metho
 
 ### SfPopupLayout.ShowRelativeToView(View, RelativePosition)
 
-In the below code example we have open the SfPopupLayout by using `SfPopupLayout.ShowRelativeToView(View, RelativePosition)`.
+To open the SfPopupLayout relative to a view, use the `SfPopupLayout.ShowRelativeToView(View, RelativePosition)` property as in the following code sample.
 
 #### Type A:
 
@@ -341,6 +342,6 @@ public class CustomView : UIView
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appear on iOS device as shown below.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](GettingStarted_images/RelativeToBottom.png)
