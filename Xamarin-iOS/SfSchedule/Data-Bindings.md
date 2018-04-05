@@ -134,7 +134,7 @@ View.AddSubview(schedule);
 
 ![](data_binding_images/minheightios.png)
 
->**Note**:
+>**NOTE**
 * `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
 * Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
 * TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration).
