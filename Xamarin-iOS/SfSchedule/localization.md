@@ -45,4 +45,5 @@ here [Localization](http://www.syncfusion.com/downloads/support/directtrac/gener
 
 ![](LocalizationGlobalization_images/Localization_iOS_Img2.png)
 
->**Note:** The corresponding `<Language>.lproj` folder loads only depends on the device configuration and locale.
+>**NOTE**
+The corresponding `<Language>.lproj` folder loads only depends on the device configuration and locale.
