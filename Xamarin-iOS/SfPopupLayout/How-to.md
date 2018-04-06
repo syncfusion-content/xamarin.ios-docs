@@ -391,7 +391,7 @@ public class ContactsLists : ObservableCollection<Contacts>
 
 {% highlight c# %}
 
-// ContatsViewModel.cs
+// ContactsViewModel.cs
 
 public class ContactsViewModel
 {
