@@ -21,7 +21,8 @@ Once the assemblies has been downloaded and explored as mentioned above,you can 
  
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\15.1.0.41\Xamarin\lib 
  
->**Note**: Assemblies can be found in unzipped package location in Mac 
+>**NOTE**
+Assemblies can be found in unzipped package location in Mac
  
 The following assembly is need to be added as reference from the lib folder to use SfSchedule in your application. 
  
@@ -134,7 +135,8 @@ schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
  
 ![](GettingStarted_images/WorkWeekView.png) 
 
->**Notes**: Appointments in non-working days will not be displayed. 
+>**NOTE**
+Appointments in non-working days will not be displayed.
 
 ### Month View 
  
