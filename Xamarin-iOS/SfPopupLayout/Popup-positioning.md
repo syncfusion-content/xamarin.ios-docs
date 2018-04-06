@@ -24,7 +24,7 @@ Following are the list of options available to show SfPopupLayout at various pos
 </tr>
 <tr>
 <td> {{'[SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
-<td> It is similar to SfPopupLayout.IsOpen property.</td>
+<td> It is similar to <code>SfPopupLayout.IsOpen</code> property.</td>
 </tr>
 <tr>
 <td> {{'[SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
@@ -93,7 +93,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If we run the above sample, the below output will appear on iOS device as shown below.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](GettingStarted_images/IsOpen_Property.png)
 

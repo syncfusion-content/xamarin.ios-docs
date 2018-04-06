@@ -63,7 +63,6 @@ The SfPopupLayout control can be configured entirely in C# code. To create a sam
 * [Customize positioning](# Customize-positioning) 
 * [Customizing layouts](#Customizing-layouts) 
 * [Customizing animations](#Customizing-animations)
-* [Sample link](#sample-link)
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
@@ -196,7 +195,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Run the previous sample to get the following output on iOS device.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](GettingStarted_images/DefaultAppearance.png)
 
@@ -283,7 +282,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Run the previous sample to get the following output on iOS device.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](GettingStarted_images/ContentView.png)
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Customizations
 
-The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AppearanceMode.html). By default, the "AppearanceMode.OneButton" is set. You can change the appearance of the SfPopupLayout by using the `SfPopupLayout.PopupView.AppearanceMode` property.
+The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AppearanceMode.html). By default, the `AppearanceMode.OneButton` is set. You can change the appearance of the SfPopupLayout by using the `SfPopupLayout.PopupView.AppearanceMode` property.
 
 Two different appearance modes in the SfPopupLayout are as follows.
 
@@ -81,7 +81,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If the previous sample runs with the `AppearanceMode` as `OneButton`, the output will appear on iOS device as follows.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
@@ -138,7 +138,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-If the previous sample runs with the `AppearanceMode` as `TwoButton`, the output will appear on iOS device as follows.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
@@ -206,7 +206,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](PopupLayout_images/HeaderTemplate.png)
 
@@ -270,7 +270,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](PopupLayout_images/HeaderTemplate.png)
 
@@ -331,7 +331,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](PopupLayout_images/HeaderCustomization.png)
 
@@ -388,7 +388,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](PopupLayout_images/FooterCustomization.png)
 
@@ -435,6 +435,6 @@ public MyViewController()
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS device.
+Executing the above codes renders the following output in iOS device respectively.
 
 ![](PopupLayout_images/BorderCustomization.png)
