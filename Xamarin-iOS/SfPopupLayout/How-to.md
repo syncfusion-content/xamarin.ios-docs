@@ -145,7 +145,7 @@ Refer the below code example to show the popup in TouchesEnded event.
 public class CustomViewController:UIViewController
 {
     UITableView tableView;
-    ContatsViewModel viewModel;
+    ContactsViewModel viewModel;
     DataSource sfDataSource;
     internal static SfPopupLayout popupLayout;
    
@@ -155,7 +155,7 @@ public class CustomViewController:UIViewController
         tableView.RowHeight = 70;
         tableView.SeparatorColor = UIColor.Clear;
         tableView.EstimatedRowHeight = 70;
-        viewModel = new ContatsViewModel();
+        viewModel = new ContactsViewModel();
         sfDataSource = new DataSource();
         sfDataSource.Source = viewModel.ContactsList;
         tableView.Source = new PopupTableViewSource(sfDataSource);
@@ -393,9 +393,9 @@ public class ContactsLists : ObservableCollection<Contacts>
 
 // ContatsViewModel.cs
 
-public class ContatsViewModel
+public class ContactsViewModel
 {
-    public ContatsViewModel()
+    public ContactsViewModel()
     {
         ContactsList = new ContactsLists();
     }
@@ -420,7 +420,7 @@ public class ContatsViewModel
 }
 {% endhighlight %}
 
-## Loading UITableView as a contentview of SfPopupLayout
+## Loading UITableView as a content view of SfPopupLayout
 
 SfPopupLayout allows you to load UITableView as a content view.
 
@@ -433,7 +433,7 @@ Refer the below code example to load UITableView in SfPopupLayout.
 public class CustomViewController : UIViewController
 {
     UITableView tableView;
-    ContatsViewModel viewModel;
+    ContactsViewModel viewModel;
     DataSource sfDataSource;
     internal static SfPopupLayout popupLayout;
     UIView view;
@@ -445,7 +445,7 @@ public class CustomViewController : UIViewController
         tableView.SeparatorColor = UIColor.Clear;
         tableView.EstimatedRowHeight = 70;
         tableView.AllowsSelection = false;
-        viewModel = new ContatsViewModel();
+        viewModel = new ContactsViewModel();
         sfDataSource = new DataSource();
         sfDataSource.Source = viewModel.ContactsList;
         tableView.Source = new PopupTableViewSource(sfDataSource);
