@@ -394,7 +394,7 @@ option.ExportAllPages = true;
 
 * ExportAllPages is true
 
-![](SfDataGrid_images/Excel/ CurrentPageExport.png)  
+![](SfDataGrid_images/Excel/CurrentPageExport.png)  
 
 ## Events
 
