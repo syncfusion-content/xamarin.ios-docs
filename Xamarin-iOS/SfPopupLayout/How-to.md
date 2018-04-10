@@ -89,7 +89,7 @@ Executing the above codes renders the following output in an iOS device.
 
 ## Loading SfPopupLayout in GridTappedEvent of SfDataGrid
 
-Sfpopuplayout allows you to open popup in the grid tapped event of SfDataGrid
+SfPopupLayout allows you to open popup in the grid tapped event of SfDataGrid
 
 Refer the below code example to show the popup in Grid tapped event.
 
@@ -184,9 +184,9 @@ public class CustomViewController:UIViewController
 
 public class PopupContactCell : UITableViewCell
 {
-    public override void TouchesEnded(NSSet touches, UIEvent evt)
+    public override void TouchesEnded(NSSet touches, UIEvent eve)
     {
-        base.TouchesEnded(touches, evt);
+        base.TouchesEnded(touches, eve);
         CustomViewController.popupLayout.PopupView.ContentView = GetCustomPopupView();
         CustomViewController.popupLayout.Show();
        

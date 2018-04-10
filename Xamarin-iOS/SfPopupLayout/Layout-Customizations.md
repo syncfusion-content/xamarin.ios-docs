@@ -81,7 +81,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/AppearanceMode_OneButton.png)
 
@@ -138,7 +138,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/AppearanceMode_TwoButton.png)
 
@@ -206,7 +206,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](PopupLayout_images/HeaderTemplate.png)
 
@@ -270,7 +270,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](PopupLayout_images/HeaderTemplate.png)
 
@@ -331,7 +331,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](PopupLayout_images/HeaderCustomization.png)
 
@@ -388,7 +388,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](PopupLayout_images/FooterCustomization.png)
 
@@ -435,6 +435,6 @@ public MyViewController()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](PopupLayout_images/BorderCustomization.png)

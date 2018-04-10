@@ -128,6 +128,6 @@ public class CustomView : UIView
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/ModelView.png)
