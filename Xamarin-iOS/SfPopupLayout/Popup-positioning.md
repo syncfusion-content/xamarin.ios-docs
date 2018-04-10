@@ -93,7 +93,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/IsOpen_Property.png)
 
@@ -149,7 +149,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/ShowPopup.png)
 
@@ -208,7 +208,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/ShowAtXYPosition.png)
 
@@ -263,7 +263,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/ShowAtTouchPoint.png)
 
@@ -342,6 +342,6 @@ public class CustomView : UIView
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/RelativeToBottom.png)

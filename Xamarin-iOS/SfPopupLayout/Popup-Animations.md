@@ -61,7 +61,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/ZoomAnimation.gif)
 
@@ -85,7 +85,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/FadeAnimation.gif)
 
@@ -109,7 +109,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
@@ -133,7 +133,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/SlideOnTopAnimation.gif)
 
@@ -157,6 +157,6 @@ public MyViewController()
 
 {% endhighlight %}
 
-Executing the above codes renders the following output in iOS device respectively.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/AnimationMode_None.gif)
