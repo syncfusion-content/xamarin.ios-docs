@@ -167,3 +167,28 @@ chart.Legend.Orientation    = SFChartLegendOrientation.Vertical;
 {% endhighlight %}
 
 ![](Legend_images/Legend_Position.png)
+
+
+## Event
+
+**LegendItemClicked**
+
+The [`LegendItemClicked`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~LegendItemClicked_EV.html) event is triggered when the chart legend item is clicked. This argument contains the following information.
+
+* [`LegendItem`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItemClickedEventArgs~LegendItem.html) - Used to customize the label and appearance of individual legend item. 
+
+**LegendItemCreated**
+
+The [`LegendItemCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~LegendItemCreated_EV.html) event is triggered when the chart legend item is created. This argument contains the following information.
+
+* [`LegendItem`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItemCreatedEventArgs~LegendItem.html) - Used to customize the label and appearance of individual legend item.
+
+You can customize the legend item by using following properties of [`ChartLegendItem`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItem.html).
+
+* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItem~Label.html) - Used to get or set the legend item label.
+* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItem~LabelStyle.html) - Used to customize the appearance of legend labels. The properties listed in [`customizing label`](https://help.syncfusion.com/xamarin-ios/sfchart/legend#customizing-labels) can be customized using LabelStyle property.
+* [`IconColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItem~IconColor.html) - Used to get or set the legend icon color.
+* [`Index`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItem~Index.html) - Used to get the legend item index.
+* [`DataPoint`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItem~DataPoint.html) - Used to get the legend item data point for accumulation series only.
+* [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItem~Series.html) - Used to get respective chart series.
+* [`View`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLegendItem~View.html) - Used to get or set the legend item view.
