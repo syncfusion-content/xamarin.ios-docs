@@ -190,6 +190,38 @@ chart.Series.Add(stackingAreaSeries3);
 
 ![](ChartTypes_images/StackedArea100.png)
 
+
+## Spline Range Area Chart
+
+To render a Spline range Area chart, create an instance of [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineRangeAreaSeries.html) and add to the series collection of SfChart.
+
+Since the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineRangeAreaSeries.html) requires two Y values for a point, your data should contain [`high`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeSeries~High.html) and [`low`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeSeries~Low.html) values. High and low value specifies the maximum and minimum range of the point.
+
+Following properties are used to customize the spline range area segment appearance,
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries~BorderWidth.html) – used to change the stroke width of the series.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries~BorderColor.html) – used to change the stroke color of the series.
+
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+SFSplineRangeAreaSeries splineRangeAreaSeries = new SFSplineRangeAreaSeries() 
+{ 
+	ItemsSource = Data,
+	XBindingPath = "XValue", 
+	High = "High", 
+	Low = "Low" 
+};
+chart.Series.Add(splineRangeAreaSeries);
+
+{% endhighlight %}
+
+
 ## Column Chart
 
 To render a column chart, create an instance of [`SFColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
