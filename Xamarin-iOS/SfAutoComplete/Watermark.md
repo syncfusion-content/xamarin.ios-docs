@@ -13,7 +13,7 @@ The `watermark` text is used to display some information regarding the SfAutoCom
 
 {% highlight C# %}
 
-	countryAutoComplete.Watermark=(NSString)"Enter a country name";
+countryAutoComplete.Watermark=(NSString)"Enter a country name";
 
 {% endhighlight %}
 

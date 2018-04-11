@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Hiding propmpt characters of SfMaskedEdit control for Xamarin.iOS paltform
+description: Learn how to hide the prompt characters of SfMasedEdit while control loses focus
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
-
 
 # Hiding Prompt Characters
 
@@ -23,4 +23,4 @@ maskedEdit.HidePromptOnLeave = true;
 
 ![](SfMaskedEditImages/Hideprompt.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HidingPrompt-109551610.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_HidingPrompt.zip).

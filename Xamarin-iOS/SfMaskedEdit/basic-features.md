@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Basic features in SfMaskedEdit for Xamarin.iOS platform
+description: Learn how to customize the basic features of SfMaskedEdit
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Basic Features
@@ -40,7 +41,7 @@ maskedEdit.PromptChar = '*';
 ## Setting Placeholder
 
 The placeholder will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. 
-The placeholder text and its appearance can be modified using `Placeholder` and properties respectively.
+The placeholder text and its appearance can be modified using `Placeholder` and `AttributedPlaceholder` properties respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -66,4 +67,4 @@ maskedEdit.AttributedPlaceholder = new NSAttributedString(maskedEdit.Placeholder
 
 ![](SfMaskedEditImages/Settingplaceholder.png)
 
-You can find the complete basic features sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BasicFeatures-59189404.zip).
+You can find the complete basic features sample from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_BasicFeatures.zip).

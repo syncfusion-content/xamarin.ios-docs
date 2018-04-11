@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Eevnts in SfMaskedEdit for Xamarin.iOS platform
+description: Learn how to get the value changed and Mask input reject events in SfMaskedEdit
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Events
@@ -18,11 +19,10 @@ The SfMaskedEdit exposes the following events:
 
 Occurs when the value of the `Value` property is changed by either entering the valid input character or setting the value to the `Value` property through C# code. The event arguments are of type ValueChangedEventArgs and expose the following property:
 
-* `Value`: The new value of the `Value` property.
+* `Value`: The read only property contains the updated value of the `Value` property of SfMaskedEdit.
 
 > Your valid input character is updated to `Value` property based on the `ValidationMode` property.
-
-Refer to this [link](Validation#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
+>Refer to this [link](Validation#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
 
 {% tabs %}
 {% highlight c# %}
@@ -59,7 +59,6 @@ private void MaskedEdit_OnValueChanged(object sender, ValueChangedEventArgs e)
 
 ![](SfMaskedEditImages/valuechanged.png)
 
-This demo can be downloaded from this link.
 
 ## MaskInputRejected event
 
@@ -101,4 +100,4 @@ private void MaskedEdit_MaskInputRejected(object sender, MaskInputRejectedEventA
 
 ![](SfMaskedEditImages/maskrejected.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Events984714359.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_Events.zip).

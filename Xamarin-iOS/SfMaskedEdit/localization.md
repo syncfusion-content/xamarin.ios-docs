@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Localization with Syncfusion SfMaskedEdit control for Xamarin.iOS platform
+description: Learn how to localize the special symbols such as currency symbol, date separator, decimal separator etc., in SfMaskedEdit control for Xamarin.iOS platform
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Localization
@@ -74,4 +75,4 @@ Now the ‘$’ will be localized to ‘€’;‘.’ will be localized to ‘,
 
 ![](SfMaskedEditImages/Localisation.png)
 
-You can find the runnable localization sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization104850867.zip).
+You can find the runnable localization sample from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_Localization.zip).

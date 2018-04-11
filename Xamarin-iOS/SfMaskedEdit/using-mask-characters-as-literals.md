@@ -1,15 +1,16 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Using Mask Characters as Literals in SfMaskedEdit control for Xamarin.iOS platform
+description: Learn how to use mask characters as literals in SfMaskedEdit control for Xamarin.iOS platform
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Using Mask Characters as Literals
 
-To use mask character as a literal, precede the mask character with a backslash (\). For example, to display the dollar sign ($), then set the mask as follows:
+To use mask character as a literal, precede the mask character with a backslash (\\). For example, to display the dollar sign ($), then set the mask as follows:
 
 {% tabs %}
 {% highlight c# %}
@@ -23,4 +24,4 @@ This will produce a mask that displays a dollar sign ($) followed by the prompt 
 
 ![](SfMaskedEditImages/maskasliteral.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MaskCharactersAsLiterals809955669.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_UsingMaskCharactersAsLiterals.zip).

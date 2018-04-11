@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Visual appearence customization of SfMaskedEdit control for Xamarin.iOS Platform
+description: Learn how to customize the visual appearence of SfMaskedEdit control
+platform: Xamarin.iOS
 control: SfMaskedEdit
-documentation: ug
+documentation: ug 
+keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Visual Customization
@@ -12,7 +13,7 @@ documentation: ug
 
 The appearance of SfMaskedEdit can be customized using the following properties:
 
-## Border Color
+## BorderColor
 
 Sets the custom border color to SfMaskedEdit.
 
@@ -27,13 +28,12 @@ maskedEdit.Layer.BorderColor = UIColor.Green.CGColor;
 
 ![](SfMaskedEditImages/bordercolor.png)
 
-## ErrorBorder Color
+## ErrorBorderColor
 
 Sets the custom error border color to SfMaskedEdit. Error border color indicates the color to be used when the validation fails for your input with respect to the mask used. 
 
 > Validation triggers based on `ValidationMode` property.
-
-Refer this [link](Validation#validation-mode) to know more about the `ValidationMode` property of SfMaskedEdit control.
+>Refer this [link](Validation#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,4 +73,4 @@ maskedEdit.Font = UIFont.FromName("Arial", 20);
 
 ![](SfMaskedEditImages/textappearance.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualCustomize1781899777.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_VisualCustomize.zip).

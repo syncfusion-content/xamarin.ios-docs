@@ -2,7 +2,7 @@
 layout : post
 title : Undo, Redo in Syncfusion SfImageEditor control in Xamarin.iOS
 description : Learn how to perform undo and redo in ImageEditor for Xamarin.iOS
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : ImageEditor
 documentation : ug
 ---

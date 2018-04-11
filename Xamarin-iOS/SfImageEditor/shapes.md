@@ -2,7 +2,7 @@
 layout : post
 title : Text in Syncfusion SfImageEditor control in Xamarin.iOS
 description : Learn how to add shapes, text and draw over an Image in ImageEditor for Xamarin.iOS
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : ImageEditor
 documentation : ug
 ---
