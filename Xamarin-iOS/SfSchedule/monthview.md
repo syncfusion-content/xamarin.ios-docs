@@ -32,7 +32,8 @@ schedule.MonthViewSettings = monthViewSettings;
 
 ![](monthview_images/appointmentindicator.png)
 
->**Notes**: If appointments count are lesser than the `AppointmentIndicatorCount` value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.Maximum number of appointment indicators drawn in the month cell is 6.
+>**NOTE**
+If appointments count are lesser than the `AppointmentIndicatorCount` value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.Maximum number of appointment indicators drawn in the month cell is 6.
 
 ## Month Inline View
 You can use [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~ShowAppointmentsInline.html) bool property in [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~MonthViewSettings.html) to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 
@@ -48,7 +49,8 @@ schedule.MonthViewSettings = monthViewSettings;
 
 ![](monthview_images/appointmentindicator.png)
 
->**Notes**: If appointments not there in the selected day, Inline view displays the text as "No Events"      
+>**NOTE**
+If appointments not there in the selected day, Inline view displays the text as "No Events"
 
 ## Month Navigation direction
 `MonthView` of Schedule can be navigated in both horizontal and vertical direction. You can change the direction of navigation through [MonthNavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~MonthNavigationDirection.html) property of `MonthViewSettings` in `SfSchedule`, by default Month navigation direction is `Horizontal`.
@@ -455,7 +457,7 @@ schedule.SelectedDate = null;
 
 You can download the entire source code of this demo for Xamarin.iOS from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection481745259.zip)
 
->**Note**:
+>**NOTE**
 * `SFSchedule` does not support multiple selection.
 * `SFSchedule` supports two-way binding of `SelectedDate` property.
 
@@ -535,6 +537,6 @@ Following steps will explain how to configure the custom fonts.
 * Edit info.plist and add a key Fonts provided by application (value type should be Array). In item0 of the array enter the name of the Font you added in the Resource folder (Such as Lobster-Regular.ttf).
 * Then, directly use Custom Font name as TextStyle.
 
->**Note**:
+>**NOTE**
  No need to mention .ttf when set the Custom Font in iOS.
 
