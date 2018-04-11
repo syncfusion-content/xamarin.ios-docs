@@ -107,7 +107,7 @@ To visualize the progress of a multiple sequential task, split the progress bar 
             circularProgressBar.IsIndeterminate = true;
             circularProgressBar.SegmentCount = 4;
             this.View.AddSubview(circularProgressBar); 
- 
+ {% endhighlight %}
 ![](overview_images/indeterminate.png)
 
 
