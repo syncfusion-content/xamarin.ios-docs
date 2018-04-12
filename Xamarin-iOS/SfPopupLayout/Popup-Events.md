@@ -18,7 +18,7 @@ There are four built-in events in the SfPopupLayout control namely:
 
 ## Opening event
 
-The [SfPopupLayout.Opening](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever opening the Pop-upView in the view. It cancels pop-up opening with `CancelEventArgs` that contains the following property:
+The [SfPopupLayout.Opening](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever opening the Pop-upView in the view. It can cancel pop-up opening with `CancelEventArgs` that contains the following property:
 
 * [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Pop-up opening is based on this value.
 
@@ -76,7 +76,7 @@ private void PopupLayout_Opened(object sender, EventArgs e)
 
 ## Closing event
 
-The [SfPopupLayout.Closing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Closing_EV.html) event will be fired whenever closing the Pop-upView in the view.  It cancels pop-up closing with `CancelEventArgs` that contains the following property:
+The [SfPopupLayout.Closing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Closing_EV.html) event will be fired whenever closing the Pop-upView in the view.  It can cancel pop-up closing with `CancelEventArgs` that contains the following property:
 
 * [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Pop-up closing is based on this value.
 
@@ -141,7 +141,7 @@ Following two events are available in the footer:
 
 ### AcceptButtonClicked
 
-The SfPopupLayout.PopupView.AcceptButtonClicked will be fired when clicking the Accept button in the pop-up footer. It cancels pop-up closing with `CancelEventArgs` that contains the following property:
+The SfPopupLayout.PopupView.AcceptButtonClicked will be fired when clicking the Accept button in the pop-up footer. It can cancel pop-up closing with `CancelEventArgs` that contains the following property:
 
 * [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Pop-up closing is based on this value.
 
@@ -170,7 +170,7 @@ private void PopupView_AcceptButtonClicked(object sender, System.ComponentModel.
 
 ### DeclineButtonClicked
 
-The SfPopupLayout.PopupView.DeclineButtonClicked will be fired when clicking the Decline button in the pop-up footer. It cancels pop-up closing with `CancelEventArgs` that contains the following property:
+The SfPopupLayout.PopupView.DeclineButtonClicked will be fired when clicking the Decline button in the pop-up footer. It can cancel pop-up closing with `CancelEventArgs` that contains the following property:
 
 * [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Pop-up closing is based on this value.
 
