@@ -9,12 +9,11 @@ documentation: ug
 
 # How to 
 
-## Hide the header in the SfPopupLayout 
+## hide the header in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the header by using the [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~ShowHeader.html) property. The default value of this property is `true`.
 
-To hide the header in the SfPopupLayout, follow the code example.
-
+{% tabs %}
 {% highlight c# %}
 
 //MyViewController.cs
@@ -30,17 +29,15 @@ public MyViewController()
 }
 
 {% endhighlight %}
-
-Executing the above codes renders the following output in an iOS device.
+{% endtabs %}
 
 ![](PopupLayout_images/ShowHeader_False.png)
 
-## Hide the footer in the SfPopupLayout 
+## hide the footer in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the footer by using the [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~ShowFooter.html) property. The default value of this property is `true`.
 
-To hide the footer in the SfPopupLayout, follow the code example.
-
+{% tabs %}
 {% highlight c# %}
 
 //MyViewController.cs
@@ -56,17 +53,15 @@ public MyViewController()
 }
 
 {% endhighlight %}
-
-Executing the above codes renders the following output in an iOS device.
+{% endtabs %}
 
 ![](PopupLayout_images/ShowFooter_False.png)
 
-## Hide the Close icon in the SfPopupLayout 
+## hide the Close icon in the SfPopupLayout 
 
 The SfPopupLayout allows hiding the Close icon by using the [SfPopupLayout.PopupView.ShowCloseButton](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~ShowCloseButton.html) property. The default value of this property is `true`.
 
-To hide the Close icon in SfPopupLayout, follow the code example.
-
+{% tabs %}
 {% highlight c# %}
 
 //MyViewController.cs
@@ -82,17 +77,15 @@ public MyViewController()
 }
 
 {% endhighlight %}
-
-Executing the above codes renders the following output in an iOS device.
+{% endtabs %}
 
 ![](PopupLayout_images/ShowCloseButton_False.png)
 
-## Load SfPopupLayout in GridTappedEvent of SfDataGrid
+## open SfPopupLayout in GridTappedEvent of SfDataGrid
 
-SfPopupLayout allows you to open popup in the grid tapped event of SfDataGrid
+The SfPopupLayout allows opening pop-up in the grid tapped event of the SfDataGrid.
 
-Refer the below code example to show the popup in Grid tapped event.
-
+{% tabs %}
 {% highlight c# %}
 
 using Syncfusion.iOS.PopupLayout;
@@ -131,17 +124,15 @@ namespace GettingStarted
     }
 }
 {% endhighlight %}
-
-Executing the above codes renders the following output in an iOS device.
+{% endtabs %}
 
 ![](PopupLayout_images/PopupInDataGrid.png)
 
-## Load SfPopupLayout in TouchesEnded event of UITableView
+## load SfPopupLayout in TouchesEnded event of UITableView
 
-SfPopupLayout allows you to open it in the TouchesEnded event of UITableView.
+The SfPopupLayout allows loading it in the TouchesEnded event of the UITableView.
 
-Refer the below code example to show the popup in TouchesEnded event.
-
+{% tabs %}
 {% highlight c# %}
 
 // CustomViewController.cs
@@ -177,7 +168,9 @@ public class CustomViewController:UIViewController
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 
 // PopupContactCell.cs
@@ -204,17 +197,15 @@ public class PopupContactCell : UITableViewCell
     #endregion
 }
 {% endhighlight %}
-
-Executing the above codes renders the following output in an iOS device.
+{% endtabs %}
 
 ![](PopupLayout_images/PopupInTableView.png)
 
-## Show UITableView as a popup
+## show UITableView as a pop-up
 
-SfPopupLayout allows you to load UITableView as a content of the popup.
+The SfPopupLayout allows loading UITableView as a content of the pop-up.
 
-Refer the below code example to load UITableView in SfPopupLayout.
-
+{% tabs %}
 {% highlight c# %}
 
 // CustomViewController.cs
@@ -266,7 +257,6 @@ public class CustomViewController : UIViewController
     }
 }
 {% endhighlight %}
-
-Executing the above codes renders the following output in an iOS device.
+{% endtabs %}
 
 ![](PopupLayout_images/TableViewInpopup.png)
