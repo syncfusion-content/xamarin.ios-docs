@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Popup Layouts | SfPopupLayout |Xamarin.iOS | Syncfusion
-description: Layouts in SfPopupLayout
+title: How to | SfPopupLayout |Xamarin.iOS | Syncfusion
+description: Explains how to achieve various requirements with SfPopupLayout
 platform: Xamarin.iOS
 control: SfPopupLayout
 documentation: ug
@@ -87,7 +87,7 @@ Executing the above codes renders the following output in an iOS device.
 
 ![](PopupLayout_images/ShowCloseButton_False.png)
 
-## Loading SfPopupLayout in GridTappedEvent of SfDataGrid
+## Load SfPopupLayout in GridTappedEvent of SfDataGrid
 
 SfPopupLayout allows you to open popup in the grid tapped event of SfDataGrid
 
@@ -136,7 +136,7 @@ Executing the above codes renders the following output in an iOS device.
 
 ![](PopupLayout_images/PopupInDataGrid.png)
 
-## Loading SfPopupLayout in TouchesEnded event of UITableView
+## Load SfPopupLayout in TouchesEnded event of UITableView
 
 SfPopupLayout allows you to open it in the TouchesEnded event of UITableView.
 
@@ -209,7 +209,7 @@ Executing the above codes renders the following output in an iOS device.
 
 ![](PopupLayout_images/PopupInTableView.png)
 
-## Loading UITableView as a content view of SfPopupLayout
+## Show UITableView as a popup
 
 SfPopupLayout allows you to load UITableView as a content of the popup.
 
