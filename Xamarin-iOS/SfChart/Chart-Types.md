@@ -103,6 +103,58 @@ chart.Series.Add(splineAreaSeries);
 
 ![](ChartTypes_images/SplineArea.png)
 
+## Step Area Chart
+
+To render a step area chart, create an instance of [`SFStepAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStepAreaSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the step area appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAreaSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAreaSeries~BorderColor.html) – used to change the border color of the series
+
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFStepAreaSeries stepAreaSeries = new SFStepAreaSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value"
+};
+chart.Series.Add(stepAreaSeries);
+
+{% endhighlight %}
+
+## Range Area Chart
+
+To render a range area chart, create an instance of [`SFRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
+
+Since the [`SFRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSeries.html) requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point. 
+
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+   
+SFRangeAreaSeries rangeAreaSeries = new SFRangeAreaSeries() 
+{ 
+    ItemsSource = Data,
+    XBindingPath = "Month", 
+    High = "Value1",
+    Low = "Value2" 
+};
+chart.Series.Add(rangeAreaSeries);
+
+{% endhighlight %}
+
+Following properties are used to customize the range area segment appearance,
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSeries~BorderColor.html) – used to change the border color of the series
 
 
 ## Stacked Area Chart
@@ -189,6 +241,38 @@ chart.Series.Add(stackingAreaSeries3);
 {% endhighlight %}
 
 ![](ChartTypes_images/StackedArea100.png)
+
+
+## Spline Range Area Chart
+
+To render a Spline range Area chart, create an instance of [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineRangeAreaSeries.html) and add to the series collection of SfChart.
+
+Since the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineRangeAreaSeries.html) requires two Y values for a point, your data should contain [`high`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeSeries~High.html) and [`low`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeSeries~Low.html) values. High and low value specifies the maximum and minimum range of the point.
+
+Following properties are used to customize the spline range area segment appearance,
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries~BorderWidth.html) – used to change the stroke width of the series.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries~BorderColor.html) – used to change the stroke color of the series.
+
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+SFSplineRangeAreaSeries splineRangeAreaSeries = new SFSplineRangeAreaSeries() 
+{ 
+	ItemsSource = Data,
+	XBindingPath = "XValue", 
+	High = "High", 
+	Low = "Low" 
+};
+chart.Series.Add(splineRangeAreaSeries);
+
+{% endhighlight %}
+
 
 ## Column Chart
 
