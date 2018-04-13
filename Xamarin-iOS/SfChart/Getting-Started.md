@@ -31,7 +31,7 @@ Import the [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfc
 using Syncfusion.SfChart.iOS;
 {% endhighlight %}
 
-Then initialize an empty chart with two axes as shown below,
+Then initialize an empty chart with [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~SecondaryAxis.html) as shown below,
 
 {% highlight C# %} 
 public override void ViewDidLoad ()

@@ -177,13 +177,13 @@ lineSeries.DataMarker.MarkerBorderWidth = 2;
 
 ## Connector Line
 
-This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. Following properties used to customize connector line,
+This feature is used to connect label and data point using a line. It can be enabled for any chart types but this is often used with Pie and Doughnut chart types. The [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~ConnectorLineStyle.html) property used to customize the connector line.
 
 * [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineColor.html) – used to change the color of the line
 * [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineWidth.html) – used to change the stroke thickness of the line
 * [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFConnectorLineStyle~Dashes.html) – used to set the dashes for the line
 
-The following code illustrates how to specify the connector height and its angle,
+The following code illustrates how to specify the [`ConnectorHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFConnectorLineStyle~ConnectorHeight.html) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFConnectorLineStyle~ConnectorRotationAngle.html),
 
 
 {% highlight c# %}
@@ -208,4 +208,4 @@ lineSeries.DataMarker.ConnectorLineStyle.Dashes                 = NSArray.FromNS
 
 ![](Datamarker_images/ConnectorLine.png)
 
-N> For Pie and Doughnut series, you can set the Bezier curve for connector line using connectorType property of Pie and Doughnut series.
+N> For Pie and Doughnut series, you can set the Bezier curve for connector line using [`ConnectorLineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~ConnectorLineType.html) property of Pie and Doughnut series.
