@@ -39,7 +39,7 @@ SfPopupLayout has different animation modes as listed below.
 </tr>
 </table>
 
-N> Setting of AnimationMode is same for both TypeA and TypeB.
+N> Setting of AnimationMode is same for both `Displaying pop-up when the SfPopupLayout is set as root view` and `Displaying pop-up when the SfPopupLayout is not set as root view` 
 
 ## Zoom 
 
@@ -61,7 +61,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `Zoom`, the output will look like on iOS device as shown below.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/ZoomAnimation.gif)
 
@@ -85,7 +85,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `Fade`, the output will look like on iOS device as shown below.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/FadeAnimation.gif)
 
@@ -109,7 +109,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `SlideOnLeft`, the output will look like on iOS device as shown below.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/SlideOnLeftAnimation.gif)
 
@@ -133,7 +133,7 @@ public MyViewController()
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `SlideOnTop`, the output will look like on iOS device as shown below.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/SlideOnTopAnimation.gif)
 
@@ -157,6 +157,6 @@ public MyViewController()
 
 {% endhighlight %}
 
-If we run the above sample with `AnimationMode` as `None`, the output will look like on iOS device as shown below.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/AnimationMode_None.gif)

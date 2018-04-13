@@ -9,9 +9,9 @@ documentation: ug
 
 # Modal Window Popup
 
-You can use pop-up layout as model window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~StaysOpen.html) property prevents interaction with your application until you close the window.
+You can use pop-up layout as modal window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpopuplayout/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~StaysOpen.html) property prevents interaction with your application until you close the window.
 
-`Modal`: Modal window will load under the parent window surrounded by the overlay which prevents you to click anywhere else on screen apart from the content of the modal.
+`Modal`: Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal. 
 
 Modal does not require any action to open. It opens in the same window and gives callback when closing or opening the window.
 
@@ -36,34 +36,24 @@ namespace GettingStarted
             popupLayout = new SfPopupLayout();
 
             popupContentView = new UILabel();
-            popupContentView.Text = "Window which loads under the parent window surrounded by the overlay which prevents users to click anywhere else on screen other then the content of the modal.Modal also doesn't require any user action to open.Modal opens in the same window.Modal gives callbacks when you close or open the modal.";
+            popupContentView.Text = "Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal. Modal opens in the same window. It also does not require any user action to open, and give callbacks when closing or opening the modal.";
             popupContentView.TextColor = UIColor.Black;
             popupContentView.BackgroundColor = UIColor.Cyan;
             popupContentView.TextAlignment = UITextAlignment.Center;
-
-            popupLayout.PopupView.AcceptButtonClicked += PopupView_AcceptButtonClicked;
-            popupLayout.PopupView.DeclineButtonClicked += PopupView_DeclineButtonClicked;
-            popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;
-            popupLayout.PopupView.AcceptButtonText = "OK";
-            popupLayout.PopupView.DeclineButtonText = "Cancel";
+            popupLayout.Closed += PopupLayout_Closed;
             popupLayout.PopupView.HeaderTitle = "Modal Window";
+            popupLayout.PopupView.ShowFooter = false;
 
             popupLayout.Content = GetContentOfPopup();
             this.View.AddSubview(popupLayout);
         }
 
-        private void PopupView_DeclineButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
+        private void PopupLayout_Closed(object sender, System.EventArgs e)
         {
             popupLayout.IsOpen = false;
             DisplayToast();
         }
-
-        private void PopupView_AcceptButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            popupLayout.IsOpen = false;
-            DisplayToast();
-        }
-
+       
         private void DisplayToast()
         {
             toastMessage = new UILabel();
@@ -138,6 +128,6 @@ public class CustomView : UIView
 }
 {% endhighlight %}
 
-Run the above sample to get the following output on iOS device.
+Executing the above codes renders the following output in an iOS device.
 
 ![](GettingStarted_images/ModelView.png)
