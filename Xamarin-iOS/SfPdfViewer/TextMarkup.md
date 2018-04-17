@@ -537,8 +537,8 @@ void SaveButton_TouchUpInside(object sender, EventArgs e)
 	Stream stream = new MemoryStream();
 	stream = pdfViewerControl.SaveDocument();
 	string path =            Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-	string filepath = Path.Combine(path, "savedDocument.pdf");
-	FileStream fileStream = File.Open(filepath, FileMode.Create);
+	string filePath = Path.Combine(path, "savedDocument.pdf");
+	FileStream fileStream = File.Open(filePath, FileMode.Create);
 	stream.Position = 0;
 	stream.CopyTo(fileStream);
 	fileStream.Close();
