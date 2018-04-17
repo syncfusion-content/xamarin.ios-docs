@@ -216,7 +216,7 @@ The following code snippet illustrates removing a selected annotation in the PDF
 
 IAnnotation annotation;
 internal SfPdfViewer pdfViewerControl;
-UIButton removebutton = new UIButton();
+UIButton removeButton = new UIButton();
 
 public override void ViewDidLoad()
 {
@@ -224,11 +224,11 @@ public override void ViewDidLoad()
 
 	pdfViewerControl = new SfPdfViewer();
 	pdfViewerControl.Frame = new CGRect(this.View.Frame.X, 60, this.View.Frame.Width, this.View.Frame.Height - 20);
-	removebutton.Frame = new CGRect(this.View.Frame.Width - 100, 7, 35, 35);
-	removebutton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
-	removebutton.TouchUpInside += Removebutton_TouchUpInside;
-	removebutton.SetBackgroundImage(UIImage.FromFile("Remove.png"), UIControlState.Normal);
-	this.View.Add(removebutton);
+	removeButton.Frame = new CGRect(this.View.Frame.Width - 100, 7, 35, 35);
+	removeButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+	removeButton.TouchUpInside += RemoveButton_TouchUpInside;
+	removeButton.SetBackgroundImage(UIImage.FromFile("Remove.png"), UIControlState.Normal);
+	this.View.Add(removeButton);
 	this.View.AddSubview(pdfViewerControl);
 	pdfViewerControl.TextMarkupSelected += PdfViewerControl_TextMarkupSelected;
 
@@ -247,7 +247,7 @@ void PdfViewerControl_TextMarkupSelected(object sender, TextMarkupSelectedEventA
    annotation = sender as IAnnotation;
 }
 
-void Removebutton_TouchUpInside(object sender, EventArgs e)
+void RemoveButton_TouchUpInside(object sender, EventArgs e)
 {
 	pdfViewerControl.RemoveAnnotation(annotation);
 }
@@ -396,7 +396,7 @@ The following code snippet illustrates the same.
 
 TextMarkupAnnotation selectedAnnotation;
 internal SfPdfViewer pdfViewerControl;
-UIButton RedColorbutton = new UIButton();
+UIButton redColorButton = new UIButton();
 
 public override void ViewDidLoad()
 {
@@ -404,11 +404,11 @@ public override void ViewDidLoad()
 
 	pdfViewerControl = new SfPdfViewer();
 	pdfViewerControl.Frame = new CGRect(this.View.Frame.X, 60, this.View.Frame.Width, this.View.Frame.Height - 20);
-	RedColorbutton.Frame = new CGRect(this.View.Frame.Width - 100, 7, 35, 35);
-	RedColorbutton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
-	RedColorbutton.BackgroundColor = UIColor.Red;
-	RedColorbutton.TouchUpInside += RedColorbutton _TouchUpInside;
-	this.View.Add(RedColorbutton);
+	redColorButton.Frame = new CGRect(this.View.Frame.Width - 100, 7, 35, 35);
+	redColorButton.HorizontalAlignment = UIControlContentHorizontalAlignment.Center;
+	redColorButton.BackgroundColor = UIColor.Red;
+	redColorButton.TouchUpInside += RedColorButton _TouchUpInside;
+	this.View.Add(redColorButton);
 	this.View.AddSubview(pdfViewerControl);
 	pdfViewerControl.TextMarkupSelected += PdfViewerControl_TextMarkupSelected;
 
@@ -428,7 +428,7 @@ void PdfViewerControl_TextMarkupSelected(object sender, TextMarkupSelectedEventA
 }
 
 //Apply color to the selected annotation in a button click.
-void RedColorbutton_TouchUpInside(object sender, EventArgs e)
+void RedColorButton_TouchUpInside(object sender, EventArgs e)
 {
 	if (selectedAnnotation!= null)
 		selectedAnnotation.Settings.Color = UIColor.Red;
