@@ -195,7 +195,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an ATR indicator.
 
-![](technicalindicators_images/.png)
+![](technicalindicators_images/averagetrue.png)
 
 ## Simple moving average (SMA) indicator
 
@@ -230,6 +230,7 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an SMA indicator.
 
+![](technicalindicators_images/simplemovingaverage.png)
 
 ## Relative Strength Index (RSI) indicator
 
@@ -264,6 +265,8 @@ SfChart chart = new SfChart()
 };
 
 {% endhighlight %}
+
+![](technicalindicators_images/rsi.png)
 
 
 The following screenshot illustrates an RSI technical indicator.
@@ -302,7 +305,8 @@ SfChart chart = new SfChart()
 
 The following screenshot illustrates an accumulation distribution technical indicator.
 
-![](technicalindicators_images/.png)
+![](technicalindicators_images/accumulation.png)
+
 
 
 ## Momentum indicator
@@ -335,6 +339,8 @@ SfChart chart = new SfChart()
 
 
 {% endhighlight %}
+
+![](technicalindicators_images/momentum.png)
 
 
 ## Stochastic indicator
@@ -371,6 +377,7 @@ SfChart chart = new SfChart()
 };
 {% endhighlight %}
 
+![](technicalindicators_images/stochastic.png)
 
 ## Exponential Moving AverageIndicator (EMA) indicator
 
@@ -399,6 +406,8 @@ SfChart chart = new SfChart()
 };
 
 {% endhighlight %}
+
+![](technicalindicators_images/exponentialmovingaverage.png)
 
 
 ## Triangular Moving Average (TMA) indicator
@@ -431,6 +440,7 @@ SfChart chart = new SfChart()
 
 {% endhighlight %}
 
+![](technicalindicators_images/triangularmovingaverage.png)
 
 ## BollingerBand indicator
 
@@ -466,7 +476,7 @@ SfChart chart = new SfChart()
 
 {% endhighlight %}
 
-
+![](technicalindicators_images/bollingerband.png)
 
 ## MACD indicator
 
@@ -503,3 +513,5 @@ SfChart chart = new SfChart()
 };
 
 {% endhighlight %}
+
+![](technicalindicators_images/macd.png)
