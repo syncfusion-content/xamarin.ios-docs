@@ -308,10 +308,10 @@ public class CustomColumnSizer : GridColumnSizer
         var column = columns.ToList();
         var totalRemainingStarValue = columnsWidth;
         double removedWidth = 0;
-        bool isremoved;
+        bool isRemoved;
         while (column.Count > 0)
         {
-            isremoved = false;
+            isRemoved = false;
             removedWidth = 0;
             var columnsCount = 0;
             foreach (var data in column)
@@ -330,7 +330,7 @@ public class CustomColumnSizer : GridColumnSizer
 
             if (starWidth != computeWidth && starWidth > 0)
             {
-                isremoved = true;
+                isRemoved = true;
                 column.Remove(col);
                 foreach (var remColumn in removedColumn)
                 {
@@ -344,7 +344,7 @@ public class CustomColumnSizer : GridColumnSizer
                 totalRemainingStarValue += removedWidth;
             }
             totalRemainingStarValue = totalRemainingStarValue - computeWidth;
-            if (!isremoved)
+            if (!isRemoved)
             {
                 column.Remove(col);
                 if (!removedColumn.Contains(col))
@@ -363,7 +363,7 @@ public class ViewModel : INotifyPropertyChanged
     public Dictionary<string, int> ColumnRatio;
     public ViewModel()
     {
-        SetRowstoGenerate(50);
+        SetRowsToGenerate(50);
         ColumnRatio = new Dictionary<string, int>();
     }
 
@@ -389,7 +389,7 @@ public class ViewModel : INotifyPropertyChanged
 
     #region ItemSource Generator
 
-    public void SetRowstoGenerate(int count)
+    public void SetRowsToGenerate(int count)
     {
         OrderInfoRepository order = new OrderInfoRepository();
         ordersInfo = order.GetOrderDetails(count);
