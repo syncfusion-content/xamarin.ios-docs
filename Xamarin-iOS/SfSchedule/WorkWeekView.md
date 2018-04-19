@@ -112,8 +112,7 @@ schedule.TimeInterval = 120;
 
 ![](daymodule_images/timeintervalworkweek.png)
 
->**Note**:
-
+>**NOTE**
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"h aa"`. You can refer [here](https://help.syncfusion.com/xamarin-ios/sfschedule/workweekview#time-label-formatting) for changing TimeFormat value.
 
 ## Change Time Interval Height
@@ -145,8 +144,8 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![](daymodule_images/chnageworkinghour_workweek.png)
 
->**Note**:
-	`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
+>**NOTE**
+`WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
 
 ## Changing StartHour and EndHour
 
@@ -165,7 +164,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![](daymodule_images/changestartendhour_workweek.png)
 
->**Note**:
+>**NOTE**
 * `StartHour` and `EndHour` should be in integer value to represent hours.
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `Invalid DataException` will be thrown.
 * `EndHour` value must be greater than `StartHour`, otherwise `InvalidDataException`  will be thrown.
@@ -217,7 +216,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![](daymodule_images/nonworkinghour_workweek.png)
 
->**Note**:
+>**NOTE**
 `HorizontalLineStrokeWidth`and `VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
 
 ## Non-Accessible timeslots
@@ -244,7 +243,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![](daymodule_images/nonaccessibletimeslot_workweek.png)
 
->**Note**:
+>**NOTE**
 Selection and related events will not be working in this blocks.
 
 ## Change first day of week
@@ -367,7 +366,7 @@ schedule.SelectedDate = null;
 
 You can download the entire source code of this demo for Xamarin.iOS from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection481745259.zip)
 
->**Note**:
+>**NOTE**
 * `SFSchedule` does not support multiple selection.
 * `SFSchedule` supports two-way binding of `SelectedDate` property.
 

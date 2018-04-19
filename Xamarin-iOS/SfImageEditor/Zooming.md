@@ -2,7 +2,7 @@
 layout : post
 title : Zooming and Panning in Syncfusion SfImageEditor control in Xamarin.iOS
 description : Learn how to perform Zooming and panning image in ImageEditor for Xamarin.iOS
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : ImageEditor
 documentation : ug
 ---

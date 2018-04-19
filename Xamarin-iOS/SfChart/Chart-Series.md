@@ -120,3 +120,29 @@ chart.Series.Add(pieSeries);
 {% endhighlight %}
 
 ![](ChartSeries_images/Limitation.png)
+
+## Animation
+
+[`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) provides animation support for series. Series will be animated on loading data points and whenever the items source changes. Animation can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~EnableAnimation.html) property as true and the animation duration can be handled by the [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~AnimationDuration.html) property, which are available in [`SFSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries.html).
+
+{% highlight c# %}
+
+SFColumnSeries series       = new SFColumnSeries ();
+series.EnableAnimation      = true;
+series.AnimationDuration    = 0.8;
+
+{% endhighlight %}
+
+## Transpose the Series
+
+The [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property of [`SFCartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries.html) is used to plot the chart in the vertical direction and this helps to view the data in different perspective.
+
+{% highlight c# %}
+
+SFLineSeries series   = new SFLineSeries ();
+
+series.IsTransposed   = true;
+
+{% endhighlight %}
+
+![](ChartSeries_images/VerticalChart.png)

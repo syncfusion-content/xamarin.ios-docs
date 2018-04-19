@@ -103,6 +103,58 @@ chart.Series.Add(splineAreaSeries);
 
 ![](ChartTypes_images/SplineArea.png)
 
+## Step Area Chart
+
+To render a step area chart, create an instance of [`SFStepAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStepAreaSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the step area appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAreaSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAreaSeries~BorderColor.html) – used to change the border color of the series
+
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFStepAreaSeries stepAreaSeries = new SFStepAreaSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value"
+};
+chart.Series.Add(stepAreaSeries);
+
+{% endhighlight %}
+
+## Range Area Chart
+
+To render a range area chart, create an instance of [`SFRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
+
+Since the [`SFRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSeries.html) requires two Y values for a point, your data should contain [`HighValues`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSegment~HighValues.html) and [`LowValues`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSegment~LowValues.html). [`High`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeSeries~High.html) and [`Low`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeSeries~Low.html) value specifies the maximum and minimum range of the point. 
+
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+   
+SFRangeAreaSeries rangeAreaSeries = new SFRangeAreaSeries() 
+{ 
+    ItemsSource = Data,
+    XBindingPath = "Month", 
+    High = "Value1",
+    Low = "Value2" 
+};
+chart.Series.Add(rangeAreaSeries);
+
+{% endhighlight %}
+
+Following properties are used to customize the range area segment appearance,
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSeries~BorderWidth.html) – used to change the border width of the series
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAreaSeries~BorderColor.html) – used to change the border color of the series
 
 
 ## Stacked Area Chart
@@ -189,6 +241,38 @@ chart.Series.Add(stackingAreaSeries3);
 {% endhighlight %}
 
 ![](ChartTypes_images/StackedArea100.png)
+
+
+## Spline Range Area Chart
+
+To render a Spline range Area chart, create an instance of [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineRangeAreaSeries.html) and add to the series collection of SfChart.
+
+Since the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineRangeAreaSeries.html) requires two Y values for a point, your data should contain [`high`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeSeries~High.html) and [`low`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeSeries~Low.html) values. High and low value specifies the maximum and minimum range of the point.
+
+Following properties are used to customize the spline range area segment appearance,
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries~BorderWidth.html) – used to change the stroke width of the series.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries~BorderColor.html) – used to change the stroke color of the series.
+
+
+{% highlight c# %} 
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+SFSplineRangeAreaSeries splineRangeAreaSeries = new SFSplineRangeAreaSeries() 
+{ 
+	ItemsSource = Data,
+	XBindingPath = "XValue", 
+	High = "High", 
+	Low = "Low" 
+};
+chart.Series.Add(splineRangeAreaSeries);
+
+{% endhighlight %}
+
 
 ## Column Chart
 
@@ -598,7 +682,7 @@ chart.Series.Add(scatterSeries);
 
 To render an OHLC chart, create an instance of [`SFOHLCSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFOHLCSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
-OHLC chart requires five values ([`X`], [`Open`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~Open.html), [`High`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~High.html), [`Low`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~Low.html) and [`Close`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~Close.html)) to plot a point. 
+OHLC chart requires five values [`XValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataPoint~XValue.html), [`Open`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFinancialSeries~Open.html), [`High`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFinancialSeries~High.html), [`Low`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFinancialSeries~Low.html) and [`Close`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFFinancialSeries~Close.html) to plot a point. 
 
 {% highlight c# %}
 
@@ -655,7 +739,7 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 To render a candle chart, create an instance of [`SFCandleSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCandleSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
-Candle chart requires five values (X, Open, High, Low and Close) to plot a point. 
+Candle chart requires five values [`XValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataPoint~XValue.html), [`Open`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataPoint~Open.html), [`High`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataPoint~High.html), [`Low`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataPoint~Low.html) and [`Close`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataPoint~Close.html) to plot a point. 
 
 {% highlight c# %}
 
