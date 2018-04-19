@@ -9,9 +9,9 @@ documentation: ug
 
 # Scrolling 
 
-## ScrollingMode
+## Scrolling mode
 
-SfDataGrid provides three types of scrolling mode which can be customized using the [SfDataGrid.ScrollingMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollingMode.html) property. By default, the SfDataGrid will scroll its content based on pixel values.
+The DataGrid provides three types of scrolling modes customized using the [SfDataGrid.ScrollingMode](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollingMode.html) property. By default, the SfDataGrid will scroll its content based on pixel values.
 
 * [PixelLine](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ScrollingMode.html)
 * [Line](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ScrollingMode.html)
@@ -19,7 +19,7 @@ SfDataGrid provides three types of scrolling mode which can be customized using 
 
 ### PixelLine
 
-`ScrollingMode.PixelLine`, will allow to scroll its contents like an excel sheet. i.e., whenever a row or a column is clipped on the top, the particular row or column will be auto scrolled to display fully in view.
+The `ScrollingMode.PixelLine` allows scrolling its contents like an Excel sheet: whenever a row or a column is clipped at the top, a particular row or column will be auto scrolled to display fully in view.
 
 {% highlight c# %}
 dataGrid.ScrollingMode = ScrollingMode.PixelLine; 
@@ -29,7 +29,7 @@ dataGrid.ScrollingMode = ScrollingMode.PixelLine;
 
 ### Line
 
-`ScrollingMode.Line`, will allow to scroll its contents based on lines. i.e., the view will be updated only when the offset values reaches the origin of a row or column in the bound collection
+The `ScrollingMode.Line` allows scrolling its contents based on lines: the view will be updated only when the offset values reach the origin of a row or column in the bound collection.
 
 {% highlight c# %}
 dataGrid.ScrollingMode = ScrollingMode.Line; 
@@ -39,7 +39,7 @@ dataGrid.ScrollingMode = ScrollingMode.Line;
 
 ### Pixel
 
-`ScrollingMode.Pixel`, will allow to scroll its contents based on pixel values. i.e., the view will be updated each pixel change of the offsets and rows or columns will appear clipped when offset exceeds the origin of the row or column.
+The `ScrollingMode.Pixel` allows scrolling its contents based on pixel values: the view will be updated each pixel change of the offsets and rows or columns will appear clipped when offset exceeds the origin of the row or column.
 
 {% highlight c# %}
 dataGrid.ScrollingMode = ScrollingMode.Pixel; 
@@ -47,13 +47,13 @@ dataGrid.ScrollingMode = ScrollingMode.Pixel;
 
 ![](SfDataGrid_images/pixel.gif)
 
-## Programmatic Scrolling
+## Programmatic scrolling
 
-SfDataGrid allow you to scroll to particular Row and Column index from programmatically
+The SfDataGrid allows scrolling to a particular row and column index programmatically.
 
-### Scroll to Row and Column Index
+### Scrolling to the row and column index
 
-* You can scroll programmatically to particular Row and Column using [SfDataGrid.ScrollToRowColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowColumnIndex.html) method by passing row and column index.
+You can scroll programmatically to a particular row and column using the [SfDataGrid.ScrollToRowColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowColumnIndex.html) method by passing the row and column index.
 
 {% highlight C# %}
 
@@ -66,9 +66,9 @@ dataGrid.ScrollToRowColumnIndex(20, 6);
 
 ![](SfDataGrid_images/ScrollToRowColumn.gif)
 
-### Scroll to Row Index
+### Scrolling to the row index
 
-* You can scroll programmatically to particular Row [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowIndex.html) method by passing row index.
+You can scroll programmatically to a particular row using the [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowIndex.html) method by passing the row index.
 
 {% highlight C# %}
 
@@ -81,9 +81,9 @@ dataGrid.ScrollToRowIndex(20);
 
 ![](SfDataGrid_images/ScrollToRowIndex.gif)
 
-### Scroll to Column Index
+### Scrolling to the column index
 
-* You can scroll programmatically to particular Column [SfDataGrid.ScrollToColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToColumnIndex.html) method by passing column index.
+You can scroll programmatically to a particular column using the [SfDataGrid.ScrollToColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToColumnIndex.html) method by passing the column index.
 
 {% highlight C# %}
 
