@@ -350,6 +350,72 @@ chart.PrimaryAxis.Title.Font   = UIFont.BoldSystemFontOfSize(20);
 
 ![]( Axis_images/AxisTitle.png)
 
+### Axis label rotation
+
+The [`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~LabelRotationAngle.html) property of axis can be used to rotate the axis labels position. Default value of [`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~LabelRotationAngle.html) property is 0d.
+
+{% highlight c# %}
+
+SFCategoryAxis categoryAxis = new SFCategoryAxis(); 
+  
+categoryAxis.LabelRotationAngle = -45; 
+  
+chart.PrimaryAxis = categoryAxis;
+
+{% endhighlight %}
+
+![]( Axis_images/rotationangle.png)
+
+### Axis line customization
+
+[`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLineStyle.html) property as shown in the below code snippet.
+
+* [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineColor.html) - used to change the stroke color of axis line.
+* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineWidth.html) - used to change the stroke width of axis line.
+* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLineStyle~Dashes.html) - used to render axis line series with dashes.
+
+{% highlight c# %}
+
+SFCategoryAxis primaryAxis = new SFCategoryAxis();
+
+primaryAxis.AxisLineStyle.LineColor = UIColor.Red;
+
+primaryAxis.AxisLineStyle.LineWidth = 10;
+
+NSObject[] dashes       = new NSObject[2];
+
+dashes [0]              = (NSNumber)2;
+
+dashes [1]              = (NSNumber)3;
+
+primaryAxis.AxisLineStyle.Dashes = NSArray.FromObjects(dashes);
+
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
+![]( Axis_images/axislinecustom.png)
+
+### Axis line offset
+
+The [`AxisLineOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AxisLineOffset.html) property is used to offset the rendering of axis line.
+
+{% highlight c# %}
+
+SFCategoryAxis categoryAxis = new SFCategoryAxis(); 
+  
+categoryAxis.PlotOffset = 20;
+
+categoryAxis.AxisLineOffset = 20;
+
+categoryAxis.AxisLineStyle.StrokeWidth = 5;
+  
+chart.PrimaryAxis = categoryAxis;
+
+{% endhighlight %}
+
+![]( Axis_images/axislineoffset.png)
+
 ### Label customization
 
 The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~LabelStyle.html) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
@@ -399,6 +465,40 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = SFChartAxisEdgeLabelsDrawingMode.Shift
 
 ![]( Axis_images/EdgeLabel.png)
 
+### Edge labels visibility
+
+The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~EdgeLabelsVisibilityMode.html) property.
+The following options are available in [`EdgeLabelsVisibilityMode`]((https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~EdgeLabelsVisibilityMode.html),
+
+* `Default` - used to display the edge label based on auto interval calculations.
+* `Visible` - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+* `AlwaysVisible` - used to always display the edge labels even while zooming the chart.
+
+The following code example demonstrates the AlwaysVisible option while zooming.
+
+{% highlight c# %}
+
+chart.SecondaryAxis.EdgeLabelsVisibilityMode  = SFChartAxisEdgeLabelsVisibilityMode.AlwaysVisible; 
+
+{% endhighlight %}
+
+### Label Extent 
+
+The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~LabelExtent.html) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new SFCategoryAxis();
+
+Chart.PrimaryAxis.LabelExtent = 60;
+
+Chart.PrimaryAxis.Title.Text = new NSString("Month");
+
+{% endhighlight %}
+
+
+![]( Axis_images/labelextent.png)
+
 ### Grid lines customization
 
 The [`ShowMajorGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~ShowMajorGridLines.html) and [`ShowMinorGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~ShowMinorGridLines.html) properties are used to control the visibility of grid lines. [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MajorGridLineStyle.html) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorGridLineStyle.html) properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
@@ -416,7 +516,7 @@ yAxis.MinorTicksPerInterval	= 1;
 
 ### Tick lines customization
 
-The [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MajorTickStyle.html) and [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the width, size, color and visibility of tick lines. By default minor tick lines will not be visible.
+The [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MajorTickStyle.html) and [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineWidth.html), ['LineSize'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisTickStyle~LineSize.html), ['LineColor'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineColor.html) and ['MinorTicksPerInterval'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorTicksPerInterval.html) of tick lines. By default minor tick lines will not be visible.
 
 {% highlight c# %}
 
@@ -468,8 +568,21 @@ chart.SecondaryAxis.OpposedPosition = true;
 
 {% endhighlight %}
 
-
 ![]( Axis_images/OpposedPosition.png)
+
+### Offset the rendering
+
+The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PlotOffset.html) property is used to offset the rendering of the axis at start and end position. The following code snippet demonstrates to apply the plot offset to both x and y axes.
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new SFCategoryAxis() { PlotOffset = 30 };
+
+Chart.SecondaryAxis = new SFNumericalAxis() {PlotOffset = 30 };
+
+{% endhighlight %}
+
+![]( Axis_images/plotoffset.png)
 
 ### Maximum number of labels per 100 pixels
 
@@ -483,6 +596,16 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 
 ![]( Axis_images/MaxLabels.png)
+
+### AutoScrollingDelta
+
+[`AutoScrollingDelta`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingDelta.html) is used to ensure that the specified range of data is always visible in the chart. It always shows the recently added data points at the end and scrolling will be reset to the end of the range whenever a new point is added.
+
+By adding [`SFChartZoomPanBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html) to the chart, you can scroll to see the previous datapoints.
+
+### AutoScrollingDeltaType
+
+In [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html), you can apply auto scrolling delta value in years, months, days, hours, minutes, seconds and milliseconds by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingDelta.html) property.
 
 ### AutoScrollingMode
 
