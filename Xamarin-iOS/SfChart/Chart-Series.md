@@ -98,12 +98,12 @@ chart.Series.Add(lineSeries);
 
 ![](ChartSeries_images/CombinationSeries.png)
 
-**Limitation of Combination Chart**
+**Limitation of combination chart**
 
 * Bar, StackingBar, and StackingBar100 cannot be combined with the other Cartesian type series
 * Cartesian type series cannot be combined with accumulation series (pie, doughnut, funnel, and pyramid) and radar & polar series
 
-When the combination of Cartesian and accumulation series types are added to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) property, the series which are similar to the first series will be rendered and other series will be ignored. Following code snippet illustrates this.
+When the combination of [`SFCartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries.html) and [`SFAccumulationSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAccumulationSeries.html)  types are added to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) property, the series which are similar to the first series will be rendered and other series will be ignored. Following code snippet illustrates this.
 
 {% highlight c# %}
 
