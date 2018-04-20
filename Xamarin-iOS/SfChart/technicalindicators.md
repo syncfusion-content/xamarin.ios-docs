@@ -71,7 +71,7 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-**Binding the ItemsSource of ChartSeries**
+**Binding the items source of chart series**
 
 By setting [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Name.html) property of chart series to the [`SeriesName`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~SeriesName.html) property of [`FinancialTechnicalIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator.html) you can bind the items source of chart series to technical indicators, including x and y axis.
 
@@ -91,7 +91,7 @@ SfChart chart = new SfChart()
               High = "High",
               Low = "Low",
               Close = "Close",
-              Name = "HLOC"
+              Name = "OHLC"
           }
     },
 
@@ -99,7 +99,7 @@ SfChart chart = new SfChart()
       {
           new AccumulationDistributionIndicator()
           {
-              SeriesName = "HLOC"              
+              SeriesName = "OHLC"              
           }
     }
 };
@@ -107,7 +107,7 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-Technical indicators have the below  properties as common; 
+Technical indicators have the below properties as common; 
 
  * [`Period`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBBIndicator~Period.html) - used to indicates the moving average period.
  * [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~SignalLineColor.html) - used to defines the color for the respective indicator line.
@@ -128,7 +128,7 @@ SfChart chart = new SfChart()
       {
           new AccumulationDistributionIndicator()
           {
-              SeriesName = "HLOC",
+              SeriesName = "OHLC",
               XAxis = new NumericalAxis()
           }
       }
@@ -151,7 +151,7 @@ SfChart chart = new SfChart()
       {
           new AccumulationDistributionIndicator()
           {
-              SeriesName = "HLOC",
+              SeriesName = "OHLC",
               EnableAnimation = true,
               AnimationDuration = 0.8      
           }
