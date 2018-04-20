@@ -23,7 +23,7 @@ lineSeries.DataMarker.ShowMarker = true;
 
 ## Customizing Labels
 
-Data labels are enabled by default but you can also change the visibility of the labels using [`ShowLabel`] property of [`ChartDataMarker`]. The label appearance can be customized using [`LabelStyle`] property.
+Data labels are enabled by default but you can also change the visibility of the labels using [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker~ShowLabel.html) property of [`SFChartDataMarker`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarker.html). The label appearance can be customized using [`LabelStyle`] property.
 
  The following properties are used to customize the data marker label appearance.
 
@@ -183,9 +183,7 @@ The [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/s
 
 {% highlight c# %}
 
-lineSeries.DataMarker.ShowLabel  = false;
-
-lineSeries.DataMarker.ShowMarker = true;
+lineSeries.DataMarker.ShowLabel  = true;
 
 lineSeries.DataMarker.UseSeriesPalette = false;
 
