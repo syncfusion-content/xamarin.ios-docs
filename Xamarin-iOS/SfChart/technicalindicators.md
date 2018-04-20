@@ -412,7 +412,7 @@ SfChart chart = new SfChart()
 
 ## Triangular moving average (TMA) indicator
 
-A Triangular moving average is simply a double-smoothed simple moving average of data calculated over a period of time where the middle portion of the data has more weight. 
+A triangular moving average is simply a double-smoothed simple moving average of data calculated over a period of time where the middle portion of the data has more weight. 
 The [`TriangularMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTMAIndicator.html) can be defined as in the following code example.
 
 
