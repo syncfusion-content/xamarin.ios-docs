@@ -162,7 +162,7 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-## Average true range indicator (ATR)
+## Average true range (ATR) indicator 
 
 ATR indicator is a technical analysis volatility indicator. This indicator does not provide an indication of price trend; simply the degree of price volatility. The average true range is an N-day smoothed moving average (SMMA) of the true range values.
 
@@ -232,7 +232,7 @@ The following screenshot illustrates an SMA indicator.
 
 ![](technicalindicators_images/simplemovingaverage.png)
 
-## Relative Strength Index (RSI) indicator
+## Relative strength index (RSI) indicator
 
 The RSI indicator has additional two lines other than signal line; they indicate the overbought and oversold region.
 
@@ -266,15 +266,15 @@ SfChart chart = new SfChart()
 
 {% endhighlight %}
 
-![](technicalindicators_images/rsi.png)
-
 
 The following screenshot illustrates an RSI technical indicator.
+
+![](technicalindicators_images/rsi.png)
 
 
 ## Accumulation distribution indicator
 
-Accumulation Distribution Indicator is a volume-based indicator designed to measure the accumulative flow of money into and out of a security. It requires [`Volume`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFADIndicator~Volume.html) property additionally with the data source to calculate the signal line. 
+Accumulation distribution indicator is a volume-based indicator designed to measure the accumulative flow of money into and out of a security. It requires [`Volume`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFADIndicator~Volume.html) property additionally with the data source to calculate the signal line. 
 
 The following code example helps you to add [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFADIndicator.html).
 
@@ -303,7 +303,7 @@ SfChart chart = new SfChart()
 {% endhighlight %}
 
 
-The following screenshot illustrates an accumulation distribution technical indicator.
+The following screenshot illustrates an accumulation distribution indicator.
 
 ![](technicalindicators_images/accumulation.png)
 
@@ -379,7 +379,7 @@ SfChart chart = new SfChart()
 
 ![](technicalindicators_images/stochastic.png)
 
-## Exponential Moving AverageIndicator (EMA) indicator
+## Exponential moving average (EMA) indicator
 
 The [`ExponentialMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFEMAIndicator.html) is similar to [`SimpleMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSMAIndicator.html) and this can be defined using the following code examples.
 
@@ -410,9 +410,9 @@ SfChart chart = new SfChart()
 ![](technicalindicators_images/exponentialmovingaverage.png)
 
 
-## Triangular Moving Average (TMA) indicator
+## Triangular moving average (TMA) indicator
 
-A Triangular Moving Average is simply a double-smoothed simple moving average of data calculated over a period of time where the middle portion of the data has more weight. 
+A Triangular moving average is simply a double-smoothed simple moving average of data calculated over a period of time where the middle portion of the data has more weight. 
 The [`TriangularMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTMAIndicator.html) can be defined as in the following code example.
 
 
@@ -442,7 +442,7 @@ SfChart chart = new SfChart()
 
 ![](technicalindicators_images/triangularmovingaverage.png)
 
-## BollingerBand indicator
+## Bollinger band indicator
 
 This indicator also having [`UpperLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBBIndicator~UpperLineColor.html), [`LowerLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBBIndicator~LowerLineColor.html)  and [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~SignalLineColor.html) property for defining the brushes for the indicator lines.
 
@@ -484,7 +484,7 @@ This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.co
 Also you can draw line, histogram MACD or both using the [`MACDType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~MACDType.html) property, which defines the type of MACD to be drawn.
 
 The [`MACDLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~MACDLineColor.html) property is used to define the color for the MACD line  and the  [`HistogramColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~HistogramColor.html) property is used to define the color for the MACD histogram.
-You can specify the MACDTechnicalIndicator using the following code example.
+You can specify the MACD indicator using the following code example.
 
 {% highlight c# %}
 
