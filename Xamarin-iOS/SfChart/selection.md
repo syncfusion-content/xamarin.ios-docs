@@ -71,13 +71,20 @@ public class ChartDelegate : SFChartDelegate
 
 **WillDataPointSelect**
 
-The [`WillDataPointSelect`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~WillDataPointSelect.html) delegate is called when the series datapoint selection operation has been started and it returns the following values.
+The [`WillDataPointSelect`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~WillDataPointSelect.html) delegate is called when the series datapoint selection operation has been started, the argument includes the [`SFChartSelectionChangingInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionChangingInfo.html) which is used to get the selection state. The argument contains the following information.
 
-* [`SFChartSelectionChangingInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionChangingInfo.html) – used to get the selection state.
+* [`SelectedSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedSeries.html) – used to get the series of selected data point.
+* [`SelectedSegment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedSegment.html) - used to get the segment of selected data point.
+* [`SelectedDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedDataPointIndex.html) – used to get the selected data point index.
+* [`PreviousSelectedIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~PreviousSelectedIndex.html) – used to get the previous selected data point index.
+* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionChangingInfo~Cancel.html) – used to set the value indicating whether the selection should be canceled.
 
 
 **DidDataPointSelect**
 
-The [`DidDataPointSelect`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidDataPointSelect.html) delegate is called when the series datapoint selection operation has been finished and it returns the following values.
+The [`DidDataPointSelect`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidDataPointSelect.html)  delegate is called when the series datapoint selection operation has been started, the argument includes the [`SFChartSelectionInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo.html) which is used to get the selection state. The argument contains the following information.
 
-* [`SFChartSelectionInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo.html) – used to get the selection state.
+* [`SelectedSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedSeries.html) – used to get the series of selected data point.
+* [`SelectedSegment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedSegment.html) - used to get the segment of selected data point.
+* [`SelectedDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedDataPointIndex.html) – used to get the selected data point index.
+* [`PreviousSelectedIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~PreviousSelectedIndex.html) – used to get the previous selected data point index.
