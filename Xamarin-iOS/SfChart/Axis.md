@@ -368,10 +368,10 @@ chart.PrimaryAxis = categoryAxis;
 
 ### Axis line customization
 
-[`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLineStyle.html) property as shown in the below code snippet.
+[`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) provides support to customize the style of the axis line by using the [`AxisLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLineStyle.html) property as shown in the below code snippet.
 
-* [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineColor.html) - used to change the stroke color of axis line.
-* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineWidth.html) - used to change the stroke width of axis line.
+* [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineColor.html) - used to change the line color of axis line.
+* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineWidth.html) - used to change the line width of axis line.
 * [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLineStyle~Dashes.html) - used to render axis line series with dashes.
 
 {% highlight c# %}
@@ -382,11 +382,11 @@ primaryAxis.AxisLineStyle.LineColor = UIColor.Red;
 
 primaryAxis.AxisLineStyle.LineWidth = 10;
 
-NSObject[] dashes       = new NSObject[2];
+NSObject[] dashes = new NSObject[2];
 
-dashes [0]              = (NSNumber)2;
+dashes [0] = (NSNumber)2;
 
-dashes [1]              = (NSNumber)3;
+dashes [1] = (NSNumber)3;
 
 primaryAxis.AxisLineStyle.Dashes = NSArray.FromObjects(dashes);
 
@@ -474,7 +474,7 @@ The following options are available in [`EdgeLabelsVisibilityMode`]((https://hel
 * `Visible` - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
 * `AlwaysVisible` - used to always display the edge labels even while zooming the chart.
 
-The following code example demonstrates the AlwaysVisible option while zooming.
+The following code example demonstrates the AlwaysVisible option.
 
 {% highlight c# %}
 
@@ -482,7 +482,7 @@ chart.SecondaryAxis.EdgeLabelsVisibilityMode  = SFChartAxisEdgeLabelsVisibilityM
 
 {% endhighlight %}
 
-### Label Extent 
+### Label extent 
 
 The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~LabelExtent.html) property allows to set the gap between axis labels and title. This is typically used to maintain the fixed gap between axis labels and title when the digits of the axis value changed in live update.
 
@@ -578,7 +578,7 @@ The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart
 
 Chart.PrimaryAxis = new SFCategoryAxis() { PlotOffset = 30 };
 
-Chart.SecondaryAxis = new SFNumericalAxis() {PlotOffset = 30 };
+Chart.SecondaryAxis = new SFNumericalAxis() { PlotOffset = 30 };
 
 {% endhighlight %}
 
@@ -597,17 +597,17 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 
 ![]( Axis_images/MaxLabels.png)
 
-### AutoScrollingDelta
+### Auto scrolling
 
-[`AutoScrollingDelta`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingDelta.html) is used to ensure that the specified range of data is always visible in the chart. It always shows the recently added data points at the end and scrolling will be reset to the end of the range whenever a new point is added.
+[`AutoScrollingDelta`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingDelta.html) property is used to ensure that the specified range of data is always visible in the chart. It always shows the recently added data points at the end and scrolling will be reset to the end of the range whenever a new point is added.
 
 By adding [`SFChartZoomPanBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html) to the chart, you can scroll to see the previous datapoints.
 
-### AutoScrollingDeltaType
+### Auto scrolling delta type
 
 In [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html), you can apply auto scrolling delta value in years, months, days, hours, minutes, seconds and milliseconds by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingDelta.html) property.
 
-### AutoScrollingMode
+### Auto scrolling mode
 
 [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) is `End`.
 
