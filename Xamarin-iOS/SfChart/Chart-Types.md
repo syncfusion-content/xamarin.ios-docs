@@ -106,6 +106,37 @@ chart.Series.Add(splineAreaSeries);
 
 ![](ChartTypes_images/SplineArea.png)
 
+### Spline area series types
+
+[`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineAreaSeries~SplineType.html) allows you to change the spline area curve in series. 
+
+The following types are used in [`SFSplineAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineAreaSeries.html) as
+
+* [`Natural`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+* [`Monotonic`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+* [`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+* [`Clamped`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+
+By default SplineType value is Natural.
+
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineAreaSeries~SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFSplineAreaSeries splineAreaSeries = new SFSplineAreaSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value",
+    SplineType = SplineType.Cardinal
+};
+chart.Series.Add(splineAreaSeries);
+
+{% endhighlight %}
+
 ## Step Area Chart
 
 To render a step area chart, create an instance of [`SFStepAreaSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStepAreaSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the step area appearance.
@@ -311,6 +342,38 @@ chart.Series.Add(columnSeries);
 
 
 ![](ChartTypes_images/Column.png)
+
+## Overlapped placement
+
+By default, all the column series which has the same x and y axes are placed side by side in a chart. If you want place the series one over the other (overlapped), set the [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~SideBySideSeriesPlacement.html) property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to false and configure the [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries~Width.html) property to differentiate the series. The following code snippet and screenshot illustrate the overlapped placement of column series.
+
+{% highlight c# %}
+
+SFChart chart = new SFChart()
+{
+    SideBySideSeriesPlacement = false
+};
+
+SFColumnSeries series1 = new SFColumnSeries()
+ {
+    ItemsSource = view.Data1,
+    XBindingPath = "Year",
+    YBindingPath = "Medals"
+ };
+ SFColumnSeries series2 = new SFColumnSeries()
+ {
+    ItemsSource = view.Data2,
+    XBindingPath = "Year",
+    YBindingPath = "Medals",
+    Width="0.5"
+ };
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+![](ChartTypes_images/overlapped.png)
 
 ## Range Column Chart
 
@@ -595,6 +658,37 @@ chart.Series.Add(splineSeries);
 
 ![](ChartTypes_images/Spline.png)
 
+### Spline series types
+
+[`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries~SplineType.html) allows you to change the spline curve in series. 
+
+The following types are used in [`SFSplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries.html) as
+
+* [`Natural`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+* [`Monotonic`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+* [`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+* [`Clamped`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+
+By default SplineType value is Natural.
+
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries~SplineType.html) value as [`Cardinal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SplineType.html)
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFSplineSeries splineSeries = new SFSplineSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Year",
+    YBindingPath = "Value",
+    SplineType = SplineType.Cardinal
+};
+chart.Series.Add(splineAreaSeries);
+
+{% endhighlight %}
+
 ## StepLine Chart
 
 To render a step line chart, create an instance of [`SFStepLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStepLineSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
@@ -843,16 +937,35 @@ chart.Series.Add(candleSeries);
 
 ![](ChartTypes_images/Candle1.png)
 
+### Enable solid candles
+
+In Candle Series, [`EnableSolidCandles`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCandleSeries~EnableSolidCandles.html) property is used to specify whether the candle segment should be filled or hollow. The default value of this property is `false`.
+
+{% highlight c# %}
+
+SFCandleSeries candleSeries = new SFCandleSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Year", 
+    Open = "Value1", 
+    High = "Value2", 
+    Low = "Value3", 
+    Close = "Value4",
+    EnableSolidCandles = true
+};
+chart.Series.Add(candleSeries);
+{% endhighlight %}
+
 ## Radar Chart
 
-To render a radar chart, create an instance of [`SFRadarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRadarSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
+To render a radar chart, create an instance of [`SFRadarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRadarSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
 ### Draw type
 
 [`DrawType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~DrawType.html) property is used to specify the radar series rendering type. Following are the two options you can set to this property,
 
-* `Line` – data points are visualized as line.
-* `Area` – data points are visualized as area.
+* [`Line`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html) – data points are visualized as line.
+* [`Area`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html) – data points are visualized as area.
 
 {% highlight c# %}
 SFRadarSeries radar = new SFRadarSeries ();
@@ -1087,6 +1200,8 @@ You can explode a pie segment using [`ExplodeIndex`](https://help.syncfusion.com
 SFPieSeries series  = new SFPieSeries ();
 series.ExplodeIndex = 1;  
 {% endhighlight %}
+
+Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAccumulationSeries~ExplodeOnTouch.html) property of [`SFPieSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPieSeries.html). Default value of this property is false.
 
 ![](ChartTypes_images/PieExplodeIndex.png)
 

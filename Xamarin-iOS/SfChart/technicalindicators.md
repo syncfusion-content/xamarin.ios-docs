@@ -51,12 +51,12 @@ Set the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sf
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
       ...                
       TechnicalIndicators =
       {
-          new AccumulationDistributionIndicator()
+          new SFADIndicator()
           {
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
@@ -78,12 +78,12 @@ By setting [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchar
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     Series =
       {
-          new HiLoOpenCloseSeries()
+          new SFOHLCSeries()
           {
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
@@ -97,7 +97,7 @@ SfChart chart = new SfChart()
 
     TechnicalIndicators =
       {
-          new AccumulationDistributionIndicator()
+          new SFADIndicator()
           {
               SeriesName = "OHLC"              
           }
@@ -121,12 +121,12 @@ You can define the axis using the following code example.
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new AccumulationDistributionIndicator()
+          new SFADIndicator()
           {
               SeriesName = "OHLC",
               XAxis = new NumericalAxis()
@@ -144,12 +144,12 @@ SfChart chart = new SfChart()
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new AccumulationDistributionIndicator()
+          new SFADIndicator()
           {
               SeriesName = "OHLC",
               EnableAnimation = true,
@@ -171,15 +171,15 @@ You can define the [`AverageTrueIndicator`](https://help.syncfusion.com/cr/cref_
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new AverageTrueIndicator()
+          new SFATRIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Blue,
+              SignalLineColor = UIColor.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -206,15 +206,15 @@ The following code example demonstrates the usage of [`SimpleMovingAverageIndica
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new SimpleMovingAverageIndicator()
+          new SFSMAIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Blue,
+              SignalLineColor = UIColor.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -243,17 +243,17 @@ To define the [`RSITechnicalIndicator`](https://help.syncfusion.com/cr/cref_file
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new RSIIndicator()
+          new SFRSIIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Blue,
-              UpperLineColor = Color.Teal,
-              LowerLineColor = Color.Red,
+              SignalLineColor = UIColor.Blue,
+              UpperLineColor = UIColor.Teal,
+              LowerLineColor = UIColor.Red,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -281,14 +281,14 @@ The following code example helps you to add [`AccumulationDistributionIndicator`
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new AccumulationDistributionIndicator()
+          new SFADIndicator()
           {
-              SignalLineColor = Color.Blue,
+              SignalLineColor = UIColor.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -308,7 +308,6 @@ The following screenshot illustrates an accumulation distribution indicator.
 ![](technicalindicators_images/accumulation.png)
 
 
-
 ## Momentum indicator
 
 This indicator is having two lines, momentum line and center line. The [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~SignalLineColor.html) property and [`UpperLineColor`] property is used to define the color for the momentum and center line respectively.
@@ -317,16 +316,16 @@ You can define [`MomentumIndicator`](https://help.syncfusion.com/cr/cref_files/x
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new MomentumIndicator()
+          new SFMomentumIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Blue,
-              UpperLineColor = Color.Red,
+              SignalLineColor = UIColor.Blue,
+              UpperLineColor = UIColor.Red,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -352,18 +351,18 @@ You can define [`StochasticIndicator`](https://help.syncfusion.com/cr/cref_files
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new StochasticIndicator()
+          new SFStochasticIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Yellow,
-              UpperLineColor = Color.Red,
-              LowerLineColor = Color.Teal,
-              PeriodLineColor = Color.DarkBlue,
+              SignalLineColor = UIColor.Yellow,
+              UpperLineColor = UIColor.Red,
+              LowerLineColor = UIColor.Teal,
+              PeriodLineColor = UIColor.DarkBlue,
               KPeriod = 8,
               DPeriod = 5,
               ItemsSource = viewModel.TechnicalIndicatorData,
@@ -386,15 +385,15 @@ The [`ExponentialMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_fi
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new ExponentialMovingAverageIndicator()
+          new SFEMAIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Blue,
+              SignalLineColor = UIColor.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -418,15 +417,15 @@ The [`TriangularMovingAverageIndicator`](https://help.syncfusion.com/cr/cref_fil
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new TriangularMovingAverageIndicator()
+          new SFTMAIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Blue,
+              SignalLineColor = UIColor.Blue,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -452,17 +451,17 @@ You can define the [`BollingerBandIndicator`](https://help.syncfusion.com/cr/cre
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new BollingerBandIndicator()
+          new SFBBIndicator()
           {
               Period = 14,
-              SignalLineColor = Color.Blue,
-              UpperLineColor = Color.Red,
-              LowerLineColor = Color.Teal,
+              SignalLineColor = UIColor.Blue,
+              UpperLineColor = UIColor.Red,
+              LowerLineColor = UIColor.Teal,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
@@ -488,20 +487,20 @@ You can specify the MACD indicator using the following code example.
 
 {% highlight c# %}
 
-SfChart chart = new SfChart()
+SFChart chart = new SFChart()
 {
     ...        
     TechnicalIndicators =
       {
-          new MACDIndicator()
+          new SFMACDIndicator()
           {
               MACDType = MACDType.Both,
               ShortPeriod = 2,
               LongPeriod = 10,
               Trigger = 14,
-              indicator.SignalLineColor = Color.Blue,
-              indicator.HistogramColor = Color.LightSkyBlue,
-              indicator.MACDLineColor = Color.Orange,
+              SignalLineColor = UIColor.Blue,
+              HistogramColor = UIColor.LightSkyBlue,
+              MACDLineColor = UIColor.Orange,
               ItemsSource = viewModel.TechnicalIndicatorData,
               XBindingPath = "XValue",
               Open = "Open",
