@@ -127,7 +127,7 @@ The following properties available in the SFChartTooltip to customize the appear
 * [`TextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~TextAlignment.html) – used to change text alignment horizontally.
 * [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~Series.html) – returns the series at the tapped location.
 * [`DataPoint`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~DataPoint.html) – returns the chart data point at the tapped location.
-* `ChartBehavior` - returns the SFChartTooltipBehavior of the tooltip.
+* [`ChartBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) - returns the SFChartTooltipBehavior of the tooltip.
 
 {% highlight c# %}
 
@@ -191,7 +191,7 @@ tooltip.Show(pointX, pointY, true);
 
 {% endhighlight %}
 
-The [`Show(CGPoint,UIView,Boolean)`] method shows the tooltip at the specified coordinate location. 
+The [`Show(CGPoint,UIView,Boolean)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~Show(CGPoint,UIView,Boolean).html) method shows the tooltip at the specified coordinate location. 
 
 ### Hide method
 
@@ -207,8 +207,8 @@ tooltip.Hide(true);
 
 ### GetView method 
 
-The [`GetView(SFChartTooltip)`] method can be overridden to customize the tooltip view or to return custom view to be displayed as a tooltip.
+The [`GetView(SFChartTooltip)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~GetView.html) method can be overridden to customize the tooltip view or to return custom view to be displayed as a tooltip.
 
 ### DrawRect method
 
-The [`DrawRect(CGRect)`] method is used to drawing the tooltip within the specified rectangle.
+The [`DrawRect(CGRect)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~DrawRect.html) method is used to drawing the tooltip within the specified rectangle.
