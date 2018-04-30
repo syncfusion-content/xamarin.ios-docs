@@ -19,12 +19,15 @@ Strip line is classified into **NumericalStripLine** and **DateTimeStripLine** b
 
 Following properties are used to configure the strip line.
 
-* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine~Start.html) – used to change the start position of the strip line
-* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Width.html) – used to change how long strip line should expand
-* [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Text.html) – used to change the text of the strip line
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BackgroundColor.html) – used to change the background color of the strip line
-* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BorderWidth.html) – used to change the border width of the strip line
-* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BorderColor.html) – used to change the border color of the strip line
+* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine~Start.html) – used to change the start position of the strip line.
+* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Width.html) – used to change how long strip line should expand.
+* [`WidthType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeStripLine~WidthType.html) - used to change the date time unit of the value specified in the width property.
+* [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Text.html) – used to change the text of the strip line.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BackgroundColor.html) – used to change the background color of the strip line.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BorderWidth.html) – used to change the border width of the strip line.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~BorderColor.html) – used to change the border color of the strip line.
+* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Visible.html) - used to change the visibility of the strip line in chart axis.
+* [`IsPixelWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~IsPixelWidth.html) - used to specify the unit type for [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Width.html) property, whether it will be screen point or chart value.
 
 **NumericalStripLine**
 
@@ -98,6 +101,7 @@ xAxis.AddStripLine (stripLine);
 This feature is used to enable the strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
 
 * [`RepeatEvery`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~RepeatEvery.html) – used to change the frequency of the strip line being repeated.
+* [`RepeatEveryType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeStripLine~RepeatEveryType.html) - specifies the date time unit of the value specified in the [`RepeatEvery`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~RepeatEvery.html) property.
 * [`RepeatUntil`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine~RepeatUntil.html) – specifies the end value at which point strip line has to stop repeating.
 
 Following code snippet and screenshot demonstrates this feature by highlighting weekends. 
@@ -149,8 +153,6 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart
 * [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStripLineLabelStyle~HorizontalAlignment.html) – used to change the horizontal alignment of text.
 * [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFStripLineLabelStyle~VerticalAlignment.html)  - used to change the vertical alignment of text.
 * [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~CornerRadius.html) – used to set the corner radius for striplines.
-* [`IsPixelWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~IsPixelWidth.html) – used to enable or disable the pixel width stripline.
-* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~Visible.html) – used to change the visibility of stripline.
 
 
 {% highlight c# %}
