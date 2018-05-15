@@ -17,7 +17,7 @@ The data grid creates and add columns in two ways:
 
 ## Automatic columns generation
 
-The data grid creates columns automatically based on the property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html). Columns are generated based on type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn.html) is added for int type property. Below table shows the column type created for the respective data type. For remaining types, [GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTextColumn.html) will be created. 
+The data grid creates columns automatically based on the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html) property. Columns are generated based on the type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridNumericColumn.html) is added for the int type property. For remaining types, [GridTextColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTextColumn.html) will be created. Following table shows the column type created for the respective data type. 
 
 <table>
 <tr>
@@ -25,11 +25,11 @@ The data grid creates columns automatically based on the property [SfDataGrid.Au
 <th> Column </th>
 </tr>
 <tr>
-<td> string, object </td>
+<td> string and object </td>
 <td> GridTextColumn </td>
 </tr>
 <tr>
-<td> int, float, double, decimal and it’s respective nullable types </td>
+<td> int, float, double, decimal, and its respective nullable types </td>
 <td> GridNumericColumn </td>
 </tr>
 <tr>
@@ -50,7 +50,7 @@ The data grid creates columns automatically based on the property [SfDataGrid.Au
 </tr>
 </table>
 
-You can refer the sample from here to get to know the codes for defining properties in the Model class and popuplating data for generating different types of column automatically. 
+You can refer to the sample here to know the codes for defining properties in the Model class and popuplating the data for generating different types of column automatically. 
 
 ### AutoGenerateColumns with different modes
 
