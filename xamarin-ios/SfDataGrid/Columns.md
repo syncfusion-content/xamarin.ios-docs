@@ -50,7 +50,7 @@ The data grid creates columns automatically based on the [SfDataGrid.AutoGenerat
 </tr>
 </table>
 
-You can refer to the sample here to know the codes for defining properties in the Model class and popuplating the data for generating different types of column automatically. 
+You can refer to the sample here to know the codes for defining properties in the Model class and populating the data for generating different types of column automatically. 
 
 ### AutoGenerateColumns with different modes
 
