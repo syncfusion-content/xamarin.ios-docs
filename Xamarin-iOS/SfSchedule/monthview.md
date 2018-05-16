@@ -70,7 +70,8 @@ You can disable the interaction for certain date in Month view by using [Blackou
 MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.BlackoutDates = new NSMutableArray();
 NSDate today = new NSDate();
-NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
 // Get the year, month, day from the date
 NSDateComponents components = calendar.Components(
 NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
@@ -287,7 +288,9 @@ schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
 
 void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
 {
-    NSCalendar calendar = NSCalendar.CurrentCalendar;
+    NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+    calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
+
     // Get the year, month, day from the date
     NSDateComponents dateComponents = calendar.Components(NSCalendarUnit.Year |
                                                           NSCalendarUnit.Month |
@@ -432,7 +435,8 @@ You can programmatically select the specific cell by setting corresponding date 
 {% tabs %}
 {% highlight C# %}
 // Creating instance of calendar
-NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
 
 // Creating instance of date
 NSDate date = new NSDate();

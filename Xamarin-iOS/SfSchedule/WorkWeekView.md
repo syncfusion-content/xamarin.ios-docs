@@ -360,7 +360,8 @@ You can programmatically select the specific timeslot by setting corresponding d
 {% tabs %}
 {% highlight C# %}
 // Creating instance of calendar
-NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
 
 // Creating instance of date
 NSDate date = new NSDate();
