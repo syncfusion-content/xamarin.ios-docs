@@ -26,7 +26,8 @@ Visible dates can be moved to specific date using [MoveToDate](https://help.sync
 {% tabs %}
 {% highlight c# %}
 NSDate date = new NSDate();
-NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
 // Get the year, month, day from the date
 NSDateComponents components = calendar.Components(
 NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, date);
@@ -87,7 +88,8 @@ SFSchedule schedule= new SFSchedule ();
 schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
 NSDate today = new NSDate ();
 NSMutableArray appCollection = new NSMutableArray ();
-NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
 // Get the year, month, day from the date
 NSDateComponents components = calendar.Components (NSCalendarUnit.Year |
                                                    NSCalendarUnit.Month |
@@ -120,7 +122,8 @@ schedule.MinDisplayDate = minDate;
 SFSchedule schedule= new SFSchedule ();
 NSDate today = new NSDate ();
 NSMutableArray appCollection = new NSMutableArray ();
-NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
 // Get the year, month, day from the date
 NSDateComponents components = calendar.Components (NSCalendarUnit.Year |
                                                    NSCalendarUnit.Month |
@@ -185,7 +188,9 @@ schedule.VisibleDatesChanged += Schedule_VisibleDatesChanged;
 void Schedule_VisibleDatesChanged(object sender, VisibleDatesChangedEventArgs e)
 {
     NSDate date = e.VisibleDates.GetItem<NSDate>(0);
-    NSCalendar calendar = NSCalendar.CurrentCalendar;
+    NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+    calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
+
     // Get the year, month, day from the date
     NSDateComponents components = calendar.Components(NSCalendarUnit.Year |
                                                       NSCalendarUnit.Month |
