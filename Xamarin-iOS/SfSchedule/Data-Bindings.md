@@ -24,7 +24,8 @@ SFSchedule schedule = new SFSchedule();
 
 // Creating instance for schedule appointment collection
 NSMutableArray appCollection = new NSMutableArray();
-NSCalendar calendar = NSCalendar.CurrentCalendar;
+NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
 
 NSDate today = new NSDate();
 
