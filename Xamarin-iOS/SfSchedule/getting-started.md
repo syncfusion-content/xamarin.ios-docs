@@ -268,7 +268,8 @@ NSMutableArray CreateAppointments()
     CreateSubjectCollection();
     CreateColorCollection();
     NSMutableArray appCollection = new NSMutableArray();
-    NSCalendar calendar = NSCalendar.CurrentCalendar;
+    NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+    calendar.TimeZone = NSTimeZone.FromGMT(NSTimeZone.LocalTimeZone.GetSecondsFromGMT);
     
     NSDateComponents DateFrom = calendar.Components(NSCalendarUnit.Year |
                                                     NSCalendarUnit.Month |
