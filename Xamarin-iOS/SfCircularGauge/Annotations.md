@@ -301,15 +301,14 @@ Annotations provide options to add any image over the gauge control with respect
             header2.TextStyle = UIFont.FromName("Helvetica-Bold", 20f);
             gauge.Headers.Add(header2);
 
-            SFGaugeAnnotation annottaion = new SFGaugeAnnotation();
+            SFGaugeAnnotation annotation = new SFGaugeAnnotation();
             UIImageView image = new UIImageView();
             image.Frame = new CoreGraphics.CGRect(0, 0, 30, 30);
-
             image.Image = UIImage.FromBundle("weather.jpg");
-            annottaion.View = image;
-            annottaion.Angle = 270;
-            annottaion.Offset = 0.2f;
-            gauge.Annotations.Add(annottaion);
+            annotation.View = image;
+            annotation.Angle = 270;
+            annotation.Offset = 0.2f;
+            gauge.Annotations.Add(annotation);
             gauge.Scales = scales;
             this.View.AddSubview(gauge);
 
