@@ -13,7 +13,7 @@ documentation: ug
 
 [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge~Annotations.html), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge~Annotations.html) property.
 
-##  Setting sub gauge for annotation
+##  Setting view annotation
 
 When the annotation allows you to place custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the `Annotations`:
 
@@ -247,3 +247,144 @@ The following code is used to create the `Annotations`.
 {% endhighlight %}
 
 ![](annotations_images/annotations.png)
+
+##  Setting image annotation
+
+Annotations provide options to add any image over the gauge control with respect to its offset position. You can add multiple images in single control.
+
+{% highlight c# %}
+
+            SFCircularGauge gauge = new SFCircularGauge();
+            gauge.BackgroundColor = UIColor.White;
+
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.ShowLabels = false;
+            scale.ShowTicks = false;
+            scale.RimWidth = 20;
+            scale.RadiusFactor = 1;
+            scale.RimColor = UIColor.FromRGB(224, 224, 224);
+            scale.StartAngle = 0;
+            scale.SweepAngle = 360;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+
+            SFRangePointer pointer = new SFRangePointer();
+            pointer.RangeStart = 0;
+            pointer.Value = 73.2f;
+            pointer.Offset = 1;
+            pointer.Width = 20;
+            pointer.RangeCap = SFCiruclarGaugeRangeCap.Both;
+            pointer.Color = UIColor.FromRGB(252, 251, 72);
+            scale.Pointers.Add(pointer);
+            scales.Add(scale);
+
+            SFGaugeHeader header = new SFGaugeHeader();
+            header.Text = (Foundation.NSString)"73.2";
+            header.Position = new CoreGraphics.CGPoint((float)0.48, (float)0.6);
+            header.TextColor = UIColor.FromRGB(66, 66, 66);
+            header.TextStyle = UIFont.FromName("Helvetica-Bold", 20f);
+            gauge.Headers.Add(header);
+
+            SFGaugeHeader header1 = new SFGaugeHeader();
+            header1.Text = (Foundation.NSString)"o";
+            header1.Position = new CoreGraphics.CGPoint((float)0.55, (float)0.58);
+            header1.TextColor = UIColor.FromRGB(66, 66, 66);
+            header1.TextStyle = UIFont.FromName("Helvetica-Bold", 20f);
+            gauge.Headers.Add(header1);
+
+            SFGaugeHeader header2 = new SFGaugeHeader();
+            header2.Text = (Foundation.NSString)"F";
+            header2.Position = new CoreGraphics.CGPoint((float)0.58, (float)0.6);
+            header2.TextColor = UIColor.FromRGB(66, 66, 66);
+            header2.TextStyle = UIFont.FromName("Helvetica-Bold", 20f);
+            gauge.Headers.Add(header2);
+
+            SFGaugeAnnotation annottaion = new SFGaugeAnnotation();
+            UIImageView image = new UIImageView();
+            image.Frame = new CoreGraphics.CGRect(0, 0, 30, 30);
+
+            image.Image = UIImage.FromBundle("weather.jpg");
+            annottaion.View = image;
+            annottaion.Angle = 270;
+            annottaion.Offset = 0.2f;
+            gauge.Annotations.Add(annottaion);
+            gauge.Scales = scales;
+            this.View.AddSubview(gauge);
+
+{% endhighlight %}
+
+![](annotations_images/image_annotation.PNG)
+
+##  Setting text annotation
+
+You can add any text over the gauge control to enhance the readability. You can add multiple text instances in single control.  
+
+{% highlight c# %}
+
+            SFCircularGauge gauge = new SFCircularGauge();
+            gauge.BackgroundColor = UIColor.White;
+
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+
+            SFCircularScale scale = new SFCircularScale();
+            scale.StartAngle = 60;
+            scale.SweepAngle = 330;
+            scale.StartValue = 0;
+            scale.EndValue = 15;
+            scale.ShowLabels = false;
+            scale.ShowRim = false;
+            scale.ShowTicks = false;
+            SFRangePointer range = new SFRangePointer();
+            range.Color = UIColor.FromRGB(6, 130, 246);
+            range.Offset = 0.8f;
+            range.Value = 13;
+            range.RangeCap = SFCiruclarGaugeRangeCap.Start;
+            range.Width = 30;
+            scale.Pointers.Add(range);
+
+            SFCircularScale scale1 = new SFCircularScale();
+            scale1.StartAngle = 0;
+            scale1.SweepAngle = 360;
+            scale1.RimColor = UIColor.FromRGB(224, 224, 224);
+            scale1.RadiusFactor = 0.8f;
+            scale1.RimWidth = 30;
+            scale1.ShowTicks = false;
+            scale1.ShowRim = false;
+            scale1.ShowLabels = false;
+            scales.Add(scale1);
+
+            SFGaugeHeader header = new SFGaugeHeader();
+            header.TextStyle = UIFont.FromName("Helvetica-Bold", 20f);
+
+            header.Text = (Foundation.NSString)"13M";
+            header.Position = new CoreGraphics.CGPoint((float)0.5, (float)0.5);
+            header.TextColor = UIColor.FromRGB(6, 130, 246);
+            gauge.Headers.Add(header);
+
+            SFMarkerPointer pointer1 = new SFMarkerPointer();
+            pointer1.MarkerShape = MarkerShape.Image;
+            pointer1.ImageSource = "shot.jpg";
+            pointer1.MarkerWidth = 60;
+            pointer1.MarkerHeight = 60;
+            pointer1.Value = 0;
+            pointer1.Offset = 0.8f;
+            scale.Pointers.Add(pointer1);
+
+            SFMarkerPointer pointer2 = new SFMarkerPointer();
+            pointer2.MarkerShape = MarkerShape.Circle;
+            pointer2.MarkerWidth = 40;
+            pointer2.MarkerHeight = 40;
+            pointer2.Color = UIColor.FromRGB(158, 158, 158);
+            pointer2.Value = 13;
+            pointer2.Offset = 0.8f;
+            scale.Pointers.Add(pointer2);
+            scales.Add(scale);
+            gauge.Scales = scales;
+
+            this.View.AddSubview(gauge);
+
+{% endhighlight %}
+
+![](annotations_images/text_annotation.PNG)
