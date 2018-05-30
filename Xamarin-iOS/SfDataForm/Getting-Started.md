@@ -400,6 +400,17 @@ Property of type enum, list.
 SfPicker
 </td>
 </tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+The String type property with [DataType(DataType.Password)] attribute.
+</td>
+<td>
+UITextField
+</td>
+</tr>
 </table>
 
 ## Layout options

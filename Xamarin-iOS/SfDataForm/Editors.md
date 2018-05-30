@@ -178,6 +178,21 @@ Property of type enum and list.
 SfPicker
 </td>
 </tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormPasswordEditor.h)'| markdownify }}
+</td>
+<td>
+The String type property and property with 
+[DataType(DataType.Password)] attribute.
+</td>
+<td>
+UITextField
+</td>
+</tr>
 </table>
 
 ## Text Editor
@@ -480,4 +495,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ![](SfDataForm_images/NumericUpDownCulture.png)
+
+## Password editor
+
+In the password editor, the [UITextField](https://developer.xamarin.com/api/type/MonoTouch.UIKit.UITextField/) is loaded.
 
