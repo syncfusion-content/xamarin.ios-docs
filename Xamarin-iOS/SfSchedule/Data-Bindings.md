@@ -552,10 +552,10 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 		return;	
 	if (e.Appointment.IsAllDay)
 	{
-		UITextView textview = new UITextView();
-		textview.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
-		textview.Text = (NSString)e.Appointment.Subject;
-		e.View = textview;
+		UITextView textView = new UITextView();
+		textView.BackgroundColor = (UIColor)e.Appointment.AppointmentBackground;
+		textView.Text = (NSString)e.Appointment.Subject;
+		e.View = textView;
 	}
 	else if (e.Appointment.Subject == "Retrospective")
 	{
