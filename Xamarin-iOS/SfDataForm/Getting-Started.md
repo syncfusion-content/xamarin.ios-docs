@@ -224,6 +224,9 @@ DataFormTextItem
 </td>
 <td>
 Property of type String and any other type apart from below specified cases.
+[DataType(DataType.Text)]
+[DataType(DataType.MultilineText)]
+[DataType(DataType.Password)]
 </td>
 </tr>
 <tr>
@@ -398,6 +401,17 @@ Property of type enum, list.
 </td>
 <td>
 SfPicker
+</td>
+</tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+The String type property with [DataType(DataType.Password)] attribute.
+</td>
+<td>
+UITextField
 </td>
 </tr>
 </table>
