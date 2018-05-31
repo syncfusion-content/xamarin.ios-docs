@@ -224,6 +224,9 @@ DataFormTextItem
 </td>
 <td>
 Property of type String and any other type apart from below specified cases.
+[DataType(DataType.Text)]
+[DataType(DataType.MultilineText)]
+[DataType(DataType.Password)]
 </td>
 </tr>
 <tr>
