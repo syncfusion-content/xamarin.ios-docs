@@ -293,26 +293,6 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![](daymodule_images/timelabelappearance_workweek.png)
 
-## Time Label Size
-
-You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekLabelSettings~TimeLabelSize.html) property of `LabelSettings` in `WorkWeekViewSettings`.
-
-{% tabs %}
-{% highlight C# %}
-schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
-//Create new instance of WorkWeekViewSettings
-WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
-//Create new instance of WorkWeekLabelSettings
-WorkWeekLabelSettings workWeekLabelSettings = new WorkWeekLabelSettings();
-//Customizing the size of the time label
-workWeekLabelSettings.TimeLabelSize = 5;
-workWeekViewSettings.LabelSettings = workWeekLabelSettings;
-schedule.WorkWeekViewSettings = workWeekViewSettings;
-{% endhighlight %}
-{% endtabs %}
-
-![](daymodule_images/TimeLabelSize_WorkWeek.png)
-
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
 
