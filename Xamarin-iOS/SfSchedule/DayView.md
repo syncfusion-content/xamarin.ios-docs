@@ -280,6 +280,26 @@ schedule.DayViewSettings = dayViewSettings;
 
 ![](daymodule_images/timelabelappearance_day.png)
 
+## Time Label Size
+
+You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~TimeLabelSize.html) property of `LabelSettings` in `DayViewSettings`.
+
+{% tabs %}
+{% highlight C# %}
+schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
+//Create new instance of DayViewSettings
+DayViewSettings dayViewSettings = new DayViewSettings();
+//Create new instance of DayLabelSettings
+DayLabelSettings dayLabelSettings = new DayLabelSettings();
+//Customizing the size of the time label
+dayLabelSettings.TimeLabelSize = 5;
+dayViewSettings.LabelSettings = dayLabelSettings;
+schedule.DayViewSettings = dayViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](daymodule_images/TimeLabelSize_Day.png)
+
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
 
