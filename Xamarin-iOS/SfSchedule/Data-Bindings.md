@@ -250,7 +250,7 @@ weekViewSettings.AllDayAppointmentLayoutColor = UIColor.Gray;
 ![](data_binding_images/allday.png)
 
 ## Recurrence Appointment
-Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by enabling `IsRecursive` property in Schedule appointments.
+Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by enabling `RecurrenceRule` property in Schedule appointments.
 
 ### Recurrence Rule
 The `RecurrenceRule` is a string value, that contains the details of the recurrence appointments like repeat type - daily/weekly/monthly/yearly, how many times it needs to be repeated, the interval duration and also the time period to render the appointment, etc.
@@ -270,42 +270,21 @@ The `RecurrenceRule` is a string value, that contains the details of the recurre
 ### Recurrence Pattern
 Recurrence pattern used in the control are in iCal standard. Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties.html).
 
-| RecurrenceType | RecurrenceProperties | Description |
-|----------------|-------------------------|---------------------------------------------------------------|
-| Daily | DailyNDays | Gets or sets the event to recur on a daily N intervals basis. |
-|  | IsDailyEveryNDays | Checks whether the event occurs Daily Every N days. |
-| Weekly | IsWeeklySunday | Checks whether the event occurs every Sunday of week |
-|  | IsWeeklyMonday | Checks whether the event occurs every Monday of week |
-|  | IsWeeklyTuesday | Checks whether the event occurs every Tuesday of week |
-|  | IsWeeklyWednesday | Checks whether the event occurs every Wednesday of week |
-|  | IsWeeklyThursday | Checks whether the event occurs every Thursday of week |
-|  | IIsWeeklyFriday | Checks whether the event occurs every Friday of week |
-|  | IsWeeklySaturday | Checks whether the event occurs every Saturday of week |
-|  | NthWeek | Gets or sets the event only nth week of the year. |
-|  | WeekDay | Gets or sets the event every week day. |
-|  | WeeklyEveryNWeeks | Gets or sets the event every N Weeks. |
-| Monthly | SpecificMonth | Gets or sets the event in a specific month. |
-|  | SpecificMonthDay | Gets or sets the event in a specific month day. |
-|  | IsMonthlySpecific | Checks whether the event is Monthly specific event |
-|  | MonthlyEveryNMonths | Gets or sets the event every N Months. |
-|  | MonthlyNthWeek | Gets or sets the event nth week of every month. |
-|  | MonthlySpecificMonthDay | Gets or sets the event specific month day of Month. |
-|  | MonthlyWeekDay | Gets or sets the event every week day of month. |
-| Yearly | IsYearlySpecific | Checks whether the event is Yearly Specific. |
-|  | YearlyEveryNYears | Gets or sets the event occurs every N Years. |
-|  | YearlyGenericMonth | Gets or sets the event occurs in generic month. |
-|  | YearlyNthWeek | Gets or sets the event occurs yearly nth week. |
-|  | YearlySpecificMonth | Gets or sets the event occurs yearly specific month. |
-|  | YearlySpecificMonthDay | Gets or sets the event occurs yearly specific month day. |
-|  | YearlyWeekDay | Gets or sets the event occurs yearly week day. |
-|  | EveryNYears | Gets or sets the event every N Years. |
-| Common | IsRangeEndDate | Checks whether the event has Range end date |
-|  | IsRangeNoEndDate | Checks whether the event has No Range end date |
-|  | IsRangeRecurrenceCount | Checks whether the event has recurrence count. |
-|  | RangeEndDate | Gets or sets the event range end date. |
-|  | RangeStartDate | Gets or sets the event range start date. |
-|  | RangeRecurrenceCount | Gets or sets the event range recurrence count. |
-|  | IsSpecific | Checks whether the event occurs in Specific recurrence type. |
+| RecurrenceType | RecurrenceProperties | Description                                                                                 |
+|----------------|----------------------|---------------------------------------------------------------------------------------------|
+| Daily          | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
+| Weekly         | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
+|                | DayOfWeek            | Gets or sets the day of week on which recurrence has to be set.                             |
+|                | WeekDays             | Gets or sets the day/days in a week on which recurrence has to be set.                      |
+| Monthly        | Interval             | Gets or sets the day interval on which  recurrence has to be set.                           |
+|                | DayOfWeek            | Gets or sets the day of week on which  recurrence has to be set.                            |
+| Yearly         | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
+|                | DayOfMonth           | Gets or sets the day on which recurrence has to be set for every month.                     |
+|                | DayOfWeek            | Gets or sets the day of week on which  recurrence has to be set.                            |
+| Common         | RecurrenceRange      | Gets or sets the type of the recurrence range for the time limit of recurrence appointment. |
+|                | RecurrenceCount      | Gets or sets the count for recurring appointment.                                           |
+|                | StartDate            | Gets or sets the date to start the recurrence appointment.                                  |
+|                | EndDate              | Gets or sets the date to end the recurrence appointment.                                    |
 
 Find the following `RecurrenceRule` possibilities available in the Schedule control while creating the recurrence appointment.
 
@@ -349,7 +328,6 @@ var scheduleAppointment = new ScheduleAppointment()
 	EndTime = endDate,
 	Subject = (NSString)"Client Meeting",
 	Location = (NSString)"Hutchison road",
-	IsRecursive = true,
 	AppointmentBackground = UIColor.Red
 };
 appCollection.Add(scheduleAppointment);
@@ -357,14 +335,13 @@ appCollection.Add(scheduleAppointment);
 // Creating Recurrence rule
 RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
 recurrenceProperties.RecurrenceType = RecurrenceType.SFRecurrenceTypeDaily;
-recurrenceProperties.IsRangeRecurrenceCount = true;
-recurrenceProperties.DailyNDays = 2;
+recurrenceProperties.RecurrenceRange = true;
+recurrenceProperties.Interval = 2;
 recurrenceProperties.IsDailyEveryNDays = true;
-recurrenceProperties.RangeRecurrenceCount = 10;
-recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
+recurrenceProperties.RecurrenceCount = 10;
 
 // Setting Recurrence rule to Schedule Appointment
-scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule;
+scheduleAppointment.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
 
 //Adding Schedule appointment in Schedule Appointment Collection 
 schedule.Appointments = appCollection; 
