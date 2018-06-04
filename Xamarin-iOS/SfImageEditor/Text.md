@@ -66,7 +66,7 @@ Right click the font file and open properties, in that Change the "Build Action"
     
 ![](ImageEditor_images/iOSFontFamily2.png)
 
-Open "info.Plist" file and select the "source" at the bottom of the file.
+Open "Info.plist" file and select the "source" at the bottom of the file.
 
 After open the "source" file you should need to add "Fonts provided by application" into the "source" file and add the downloaded custom fonts name with ".ttf" extension.
 
