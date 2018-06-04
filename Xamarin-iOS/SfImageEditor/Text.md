@@ -66,7 +66,7 @@ Right click the font file and open properties, in that Change the "Build Action"
     
 ![](ImageEditor_images/iOSFontFamily2.png)
 
-Open "info.plist" file and select the "source" at the bottom of the file.
+Open "info.Plist" file and select the "source" at the bottom of the file.
 
 After open the "source" file you should need to add "Fonts provided by application" into the "source" file and add the downloaded custom fonts name with ".ttf" extension.
 
@@ -78,7 +78,7 @@ Finally use the below code snippet to apply custom font family for Xamarin.iOS
 
 {% highlight C# %}
 
-    editor.AddText("New Xefus Text", new TextSettings() { FontFamily = UIFont.FromName("Xefus",20f) });
+    editor.AddText("New Pacifico Text", new TextSettings() { FontFamily = UIFont.FromName("Pacifico",20f) });
 
 {% endhighlight %}
 
