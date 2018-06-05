@@ -28,14 +28,14 @@ You can also add the desired text elements over the image from the code programm
 
 #### TextSettings
 
-TextSettings is defined to set the values for `Color` and `FontSize`.
-
+TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
+`Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Roundhand`.
 
 {% tabs %}
 
 {% highlight C# %}
 
-    editor.AddText("New Text", new TextSettings() { Color = UIColor.Green, FontSize = 16d});
+    editor.AddText("New Text", new TextSettings() { Color = UIColor.Black, FontSize = 16d, FontFamily=UIFont.FromName("Arial",16f)});
 
 {% endhighlight %}
 
@@ -45,34 +45,7 @@ TextSettings is defined to set the values for `Color` and `FontSize`.
 
 # Custom Font Family
 
-We can able to change the font family of selected text from default font family into custom font family.
-
-   * From Toolbar
-   * Using Code
-
-### From Toolbar
-
-After adding text we can able to change the font family of the selected text from toolbar, Select the desired text and click the font family buttons available in the sub menu.
-   
-Now the font family of the selected text has been changed.
-
-### Using Code
-
-Download the custom fonts file in ttf file format and add these fonts into "Resource" folder in sample project. Refer the below screen shot.
-
-![](ImageEditor_images/iOSFontFamily1.png)
-   
-Right click the font file and open properties, in that Change the "Build Action" property of every font file as "BundleResource" and "Copy to output directory" to "Always Copy".
-    
-![](ImageEditor_images/iOSFontFamily2.png)
-
-Open "Info.plist" file and select the "source" at the bottom of the file.
-
-After open the "source" file you should need to add "Fonts provided by application" into the "source" file and add the downloaded custom fonts name with ".ttf" extension.
-
-![](ImageEditor_images/iOSFontFamily3.png)
-    
-Finally use the below code snippet to apply custom font family for Xamarin.iOS
+Using a font other than the built-in UIFont is also available in iOS. Use the below code snippet to apply custom font.
 
 {% tabs %}
 
@@ -85,5 +58,18 @@ Finally use the below code snippet to apply custom font family for Xamarin.iOS
 {% endtabs %}
 
 ![](ImageEditor_images/FontFamily.png)
+
+Download the custom fonts file in ttf file format and add these fonts into "Resource" folder in sample project.
+
+Right click the font file and open properties, in that Change the "Build Action" property of every font file as "BundleResource" and "Copy to output directory" to "Always Copy".
+    
+![](ImageEditor_images/CustomFontFamily1.png)
+
+Open the "info.plist" file and select the "source" at the bottom of the file.
+
+After open the "source" file you should need to add "Fonts provided by application" into the "source" file and add the downloaded custom fonts name with ".ttf" extension.
+
+![](ImageEditor_images/CustomFontFamily2.png)
+
 
 
