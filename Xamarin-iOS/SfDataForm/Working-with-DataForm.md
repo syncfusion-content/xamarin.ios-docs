@@ -288,13 +288,13 @@ Here, Localization Resource File (.Resx) and accessed the localized string direc
  
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
-        {
-            if (e.DataFormItem.Name.Equals("ContactName"))
-            {
-                e.DataFormItem.PlaceHolderText = Localization.FirstName;
-                e.DataFormItem.Name = Localization.ContactName;
-            }
-        }
+{
+    if (e.DataFormItem.Name.Equals("ContactName"))
+    {
+        e.DataFormItem.PlaceHolderText = Localization.FirstName;
+        e.DataFormItem.Name = Localization.ContactName;
+    }
+}
 {% endhighlight %}
 
 ## Changing DataFormItem
