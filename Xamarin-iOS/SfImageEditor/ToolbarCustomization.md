@@ -95,7 +95,7 @@ Toolbar items will be resize based on the toolbar height. To change Height of th
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/ToolbarHeight.png)
+![SfImageEditor](ImageEditor_images/ToolbarHeightCustomization.png)
 
 ### Individual Toolbar Item Height Customization
 
