@@ -51,7 +51,7 @@ Right click the font file and open properties, in that Change the "Build Action"
     
 ![](ImageEditor_images/CustomFontFamily1.png)
 
-Open the "info.pli st" file and select "Source" at the bottom of the file.
+Open the "info.plist" file and select "Source" at the bottom of the file.
 
 After open the "source" file you should need to add "Fonts provided by application" into the "source" file and add the downloaded custom fonts name with ".ttf" extension.
 
