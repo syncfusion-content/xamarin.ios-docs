@@ -64,7 +64,6 @@ string[] StudentNames = new string[]
     "Alan", 
     "Alexander", 
     "Arthur", 
-    "Amilia", 
     "Benjamin", 
     "Bobby", 
     "Carter", 

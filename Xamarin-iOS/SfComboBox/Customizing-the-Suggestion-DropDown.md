@@ -35,7 +35,7 @@ sfCombo.SelectedDropDownItemColor = UIColor.FromRGB(0, 173, 255);
 
 The height of the drop-down portion of the combo box control can be varied using the `MaximumDropDownHeight` property. 
 
-N> The valueon the `MaximumDropDownHeight` property can be any positive integer value.
+N> The value of `MaximumDropDownHeight` property can be any positive integer value.
 
 {% tabs %}
 

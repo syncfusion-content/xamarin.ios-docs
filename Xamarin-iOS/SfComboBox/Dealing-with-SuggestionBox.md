@@ -14,7 +14,7 @@ In the combobox control, the DropDown Box can placed in the following two positi
 
 * Top 
 
-Using the Suggestionbox placement property, you can place the suggestion box at the top or bottom. 
+Using the Suggestion box placement property, you can place the suggestion box at the top or bottom. 
 
 ## SuggestionBox placement at bottom
 
