@@ -272,28 +272,28 @@ Recurrence pattern used in the control are in iCal standard. Schedule control su
 
 | RecurrenceType | RecurrenceProperties | Description                                                                                 |
 |----------------|----------------------|---------------------------------------------------------------------------------------------|
-| Daily          | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
-| 				 | IsDailyEveryNDays    | Checks whether the event occurs Daily Every N days.                                         |
-| Weekly         | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
-|                | DayOfWeek            | Gets or sets the day of week on which recurrence has to be set.                             |
-|                | WeekDays             | Gets or sets the day/days in a week on which recurrence has to be set.                      |
-|				 | Week					| Gets or sets the week of month on which recurrence has to be set.							  |
-| Monthly        | Interval             | Gets or sets the day interval on which  recurrence has to be set.                           |
-|                | DayOfWeek            | Gets or sets the day of week on which  recurrence has to be set.                            |
-|				 | Week					| Gets or sets the week of month on which recurrence has to be set.							  |
-|                | DayOfMonth           | Gets or sets the day on which recurrence has to be set for every month.                     |
-|				 | IsMonthlySpecific    | Checks whether the event is Monthly specific event.										  |
-| Yearly         | Interval             | Gets or sets the day interval on which recurrence has to be set.                            |
-|                | DayOfMonth           | Gets or sets the day on which recurrence has to be set for every month.                     |
-|                | DayOfWeek            | Gets or sets the day of week on which  recurrence has to be set.                            |
-|				 | Month				| Gets or sets the specific month of year on which recurrence has to be set.				  |
-|				 | Week					| Gets or sets the week of month on which recurrence has to be set.							  |
-|				 | IsYearlySpecific     | Checks whether the event is Yearly Specific.												  |
-| Common         | RecurrenceRange      | Gets or sets the type of the recurrence range for the time limit of recurrence appointment. |
-|                | RecurrenceCount      | Gets or sets the count for recurring appointment.                                           |
-|                | StartDate            | Gets or sets the date to start the recurrence appointment.                                  |
-|                | EndDate              | Gets or sets the date to end the recurrence appointment.                                    |
-| 				 | IsSpecific			| Checks whether the event occurs in specific recurrence type.								  |
+| Daily          | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~Interval.html)             | Gets or sets the day interval on which recurrence has to be set.                            |
+| 				 | [IsDailyEveryNDays](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~IsDailyEveryNDays.html)    | Checks whether the event occurs Daily Every N days.                                         |
+| Weekly         | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~Interval.html)            | Gets or sets the day interval on which recurrence has to be set.                            |
+|                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~DayOfWeek.html)            | Gets or sets the day of week on which recurrence has to be set.                             |
+|                | [WeekDays](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~WeekDays.html)             | Gets or sets the day/days in a week on which recurrence has to be set.                      |
+|				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~Week.html)					| Gets or sets the week of month on which recurrence has to be set.							  |
+| Monthly        | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~Interval.html)            | Gets or sets the day interval on which  recurrence has to be set.                           |
+|                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~DayOfWeek.html)            | Gets or sets the day of week on which  recurrence has to be set.                            |
+|				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~Week.html)				| Gets or sets the week of month on which recurrence has to be set.							  |
+|                | [DayOfMonth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~DayOfMonth.html)           | Gets or sets the day on which recurrence has to be set for every month.                     |
+|				 | [IsMonthlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~IsMonthlySpecific.html)  | Checks whether the event is Monthly specific event.										  |
+| Yearly         | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~Interval.html)             | Gets or sets the day interval on which recurrence has to be set.                            |
+|                | [DayOfMonth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~DayOfMonth.html)           | Gets or sets the day on which recurrence has to be set for every month.                     |
+|                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~DayOfWeek.html)            | Gets or sets the day of week on which  recurrence has to be set.                            |
+|				 | [Month](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~Month.html)				| Gets or sets the specific month of year on which recurrence has to be set.				  |
+|				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~Week.html)					| Gets or sets the week of month on which recurrence has to be set.							  |
+|				 | [IsYearlySpecific](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~IsYearlySpecific.html)     | Checks whether the event is Yearly Specific.												  |
+| Common         | [RecurrenceRange](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~RecurrenceRange.html)      | Gets or sets the type of the recurrence range for the time limit of recurrence appointment. |
+|                | [RecurrenceCount](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~RecurrenceCount.html)      | Gets or sets the count for recurring appointment.                                           |
+|                | [StartDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~StartDate.html)           | Gets or sets the date to start the recurrence appointment.                                  |
+|                | [EndDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~EndDate.html)              | Gets or sets the date to end the recurrence appointment.                                    |
+| 				 | [IsSpecific](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.RecurrenceProperties~IsSpecific.html)			| Checks whether the event occurs in specific recurrence type.								  |
 
 Find the following `RecurrenceRule` possibilities available in the Schedule control while creating the recurrence appointment.
 
