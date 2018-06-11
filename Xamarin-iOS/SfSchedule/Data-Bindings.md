@@ -241,7 +241,7 @@ schedule.ItemsSource = Meetings;
 
 
 ## Spanned Appointments
-Spanned Appointment is an appointment which lasts more than 24 hours.
+Spanned Appointment is an appointment which lasts more than 24 hours. It doesn’t block out time slots in `SfSchedule`,it will render in [All-Day appointment](https://help.syncfusion.com/xamarin-ios/sfschedule/data-bindings#all-day-appointment-panel) panel exclusively.
 
 {% tabs %}
 {% highlight c# %}
@@ -320,8 +320,11 @@ appCollection.Add(new ScheduleAppointment()
 {% endhighlight %}
 {% endtabs %}
 
+>**NOTE**
+Appointment which lasts through an entire day (exact 24 hours) will be considered as all day appointment without setting `IsAllDay` property. For example  06/09/2018 12:00AM to 06/10/2018 12:00AM.
+
 ### All-Day Appointment Panel
-All-day appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting `ShowAllDay` property of `DayViewSettings`, `WeekViewSettings` and `WorkWeekViewSettings` of `DayView`, `WeekView` and `WorkWeekView` respectively.
+All-day appointment and Spanned appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting `ShowAllDay` property of `DayViewSettings`, `WeekViewSettings` and `WorkWeekViewSettings` of `DayView`, `WeekView` and `WorkWeekView` respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -334,6 +337,9 @@ weekViewSettings.ShowAllDay = true;
 schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
+
+>**NOTE**
+Appointments which lasts less than 24 hours with different start date and end date will be rendered in time slot.
 
 All-Day panel background can be customized by setting `AllDayAppointmentLayoutColor` 
 of the respective view settings.
