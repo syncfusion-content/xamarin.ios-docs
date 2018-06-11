@@ -3,7 +3,7 @@ layout : post
 title : Header and Footer in Syncfusion SfComboBox control for Xamarin.iOS
 description :   Learn how to enable Header and Footer in SfComboBox
 platform : Xamarin.iOS 
-control : AutoComplete
+control : ComboBox
 documentation : ug
 ---
 
