@@ -52,6 +52,52 @@ schedule.MonthViewSettings = monthViewSettings;
 >**NOTE**
 If appointments not there in the selected day, Inline view displays the text as "No Events"
 
+## Agenda View:
+An agenda view displays selected appointments in a list below the month view. To enable agenda view in the schedule month view, set [ShowAgendaView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~ShowAgendaView.html) to true as shown in the following code.
+
+{% tabs %}
+{% highlight c# %}
+SFSchedule schedule = new SFSchedule();
+            schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+            MonthViewSettings monthViewSettings = new MonthViewSettings();
+            monthViewSettings.ShowAgendaView = true;
+            schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/monthinlineview.png)
+
+>**NOTE**
+- If don’t select any month cell, agenda view displays text as “No Selected Date” .
+- If appointment not there in selected day, agenda view displays text as “No Events”.
+- If enable ShowAgendaView property and ShowAppointmentsInline property at same time, both of the view(Agenda View and Appointment Inline View) will be enabled to schedule .
+
+## Agenda View Appearance:
+You can customize the Agenda view appointment and Selected Date Text by setting [AgendaViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle.html) property of `MonthViewSettings`. Agenda view [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextColor.html) , [HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~HeaderHeight.html) , [DateTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextFormat.html) , [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextStyle.html) , [TimeTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextColor.html) , [TimeTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextStyle.html) , [TimeTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextFormat.html) , [SubjectTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextColor.html) , [SubjectTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextStyle.html) , [SubjectTextSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextSize.html) , [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~BackgroundColor.html) can be customized using AgendaViewStyle properties.
+{% tabs %}
+{% highlight c# %}
+SFSchedule schedule = new SFSchedule();
+            schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+            MonthViewSettings monthViewSettings = new MonthViewSettings();
+            monthViewSettings.ShowAgendaView = true;
+            schedule.MonthViewSettings = monthViewSettings;
+            AgendaViewStyle agendaViewStyle = new AgendaViewStyle();
+            // Customize selected Date Text
+            agendaViewStyle.DateTextColor = UIColor.Purple;
+            agendaViewStyle.HeaderHeight = 50;
+            agendaViewStyle.DateTextFormat = (NSString)"dd MMMM, yyyy";
+            agendaViewStyle.DateTextStyle = UIFont.SystemFontOfSize(17);
+            // Customize appointment
+            agendaViewStyle.TimeTextColor = UIColor.Red;
+            agendaViewStyle.TimeTextStyle = UIFont.SystemFontOfSize(13);
+            agendaViewStyle.TimeTextFormat = (NSString)"hh a";
+            agendaViewStyle.SubjectTextColor = UIColor.Blue;
+            agendaViewStyle.SubjectTextStyle = UIFont.SystemFontOfSize(15);
+            agendaViewStyle.BackgroundColor = UIColor.FromRGB(222, 240, 222);
+            schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle;
+{% endhighlight %}
+{% endtabs %}
+
 ## Month Navigation direction
 `MonthView` of Schedule can be navigated in both horizontal and vertical direction. You can change the direction of navigation through [MonthNavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~MonthNavigationDirection.html) property of `MonthViewSettings` in `SfSchedule`, by default Month navigation direction is `Horizontal`.
 
