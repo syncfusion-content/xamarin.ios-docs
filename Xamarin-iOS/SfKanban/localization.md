@@ -17,7 +17,7 @@ To localize the SfKanban based on language settings in device using string files
 
 2. Right-click the **Resources** folder, click **Add**, and then click **NewFolder**, name the folder as **[language name].lproj**.
 
-For example, you will have to give name as **fr.lrpoj** for French culture.
+For example, you will have to give name as **fr.lproj** for French culture.
 
 3. Right-click the **[language name].lproj** folder, click **Add**, and then click **NewItem**.
 
