@@ -65,7 +65,7 @@ SFSchedule schedule = new SFSchedule();
 {% endhighlight %}
 {% endtabs %}
 
-![](monthview_images/monthinlineview.png)
+![](monthview_images/AgendaView-iOS.png)
 
 >**NOTE**
 - An agenda view displays text as “No Selected Date” until no date is selected.
@@ -97,6 +97,8 @@ SFSchedule schedule = new SFSchedule();
             schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle;
 {% endhighlight %}
 {% endtabs %}
+
+![](monthview_images/AgendaViewStyle.png)
 
 ## Month Navigation direction
 `MonthView` of Schedule can be navigated in both horizontal and vertical direction. You can change the direction of navigation through [MonthNavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~MonthNavigationDirection.html) property of `MonthViewSettings` in `SfSchedule`, by default Month navigation direction is `Horizontal`.
