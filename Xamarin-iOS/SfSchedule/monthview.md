@@ -53,7 +53,7 @@ schedule.MonthViewSettings = monthViewSettings;
 If appointments not there in the selected day, Inline view displays the text as "No Events"
 
 ## Agenda View:
-An agenda view displays selected appointments in a list below the month view. To enable agenda view in the schedule month view, set [ShowAgendaView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~ShowAgendaView.html) to true as shown in the following code.
+The Schedule month view displays a divided agenda view which is used to show the selected date’s appointments below the month. You can show agenda view by setting [ShowAgendaView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~ShowAgendaView.html) property as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -68,9 +68,9 @@ SFSchedule schedule = new SFSchedule();
 ![](monthview_images/monthinlineview.png)
 
 >**NOTE**
-- If don’t select any month cell, agenda view displays text as “No Selected Date” .
-- If appointment not there in selected day, agenda view displays text as “No Events”.
-- If enable ShowAgendaView property and ShowAppointmentsInline property at same time, both of the view(Agenda View and Appointment Inline View) will be enabled to schedule .
+- An agenda view displays text as “No Selected Date” until no date is selected.
+- If there is no appointment in a selected day, agenda view displays the text as “No Events”.
+- If you enable ShowAgendaView and ShowAppointmentsInline properties together, both of the views (Agenda View and Appointment Inline View) will be displayed in schedule month view.
 
 ## Agenda View Appearance:
 You can customize the Agenda view appointment and Selected Date Text by setting [AgendaViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle.html) property of `MonthViewSettings`. Agenda view [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextColor.html) , [HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~HeaderHeight.html) , [DateTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextFormat.html) , [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextStyle.html) , [TimeTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextColor.html) , [TimeTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextStyle.html) , [TimeTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextFormat.html) , [SubjectTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextColor.html) , [SubjectTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextStyle.html) , [SubjectTextSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextSize.html) , [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~BackgroundColor.html) can be customized using AgendaViewStyle properties.
