@@ -516,7 +516,7 @@ e.Cancel = true;
 {% endtabs %}
 
 ### Get the dragging appointment position
-Using [AppointmentDragOver](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDragOver_EV.html) event you can get the dragging appointment details, position, time of the particular location. The event will continuously triggered when the appointment is being dragged. The [AppointmentDragEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs.html) argument contains the following properties.
+Using [AppointmentDragOver](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDragOver_EV.html) event, you can get the dragging appointment details, position and time of the particular location. The event will be continuously triggered when the appointment is being dragged. The [AppointmentDragEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs.html) argument contains the following properties.
 
 [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs~Appointment.html) - Gets the dragging appointment details.
 [DraggingPoint]https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs~DraggingPoint.html) - Gets the dragging point (X, Y) of the appointment in Schedule.
@@ -537,7 +537,7 @@ var draggingTime = e.DraggingTime;
 {% endhighlight %}
 {% endtabs %}
 
-### Displaying alert when dragging appointment over the blocked time slots
+### Displaying alert while dragging appointment over the blocked time slots
 Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below, we have indicated the message while dragging over the Schedule `NonAccessibleBlock`.
 
 {% tabs %}
@@ -550,13 +550,14 @@ private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArg
 {
 //// Comparing the NonAccessibleBlock Start hour with the dragging time
 NSCalendar calendar = NSCalendar.CurrentCalendar;
-NSDateComponents dropTime = calendar.Components(NSCalendarUnit.Year |
+NSDateComponents draggingTime = calendar.Components(NSCalendarUnit.Year |
 NSCalendarUnit.Month |
 NSCalendarUnit.Day |
 NSCalendarUnit.Hour |
 NSCalendarUnit.Minute |
-NSCalendarUnit.Second, e.DropTime);
-if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == dropTime.Hour)
+NSCalendarUnit.Second, e.DraggingTime);
+if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == draggingTime.Hour
+|| schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour - 1 == draggingTime.Hour && draggingTime.Hour > 0)
 {
 label.Text = "Cannot be moved to blocked time slots";
 }
@@ -566,7 +567,7 @@ label.Text = "Cannot be moved to blocked time slots";
 ### Handle appointment dropping
 Using [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDrop_EV.html) event you can get the dropping appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs.html) argument contains the following properties.
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs~Appointment.html) - Gets the dropped appointment details.
+[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs~Appointment.html) - Gets the details of the appointment to be dropped.
 [Cancel](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs~Cancel.html) - Appointment dropping can be handled (enable / disable) using this Boolean property.
 [DropTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs~DropTime.html) - Gets the dropped time of the appointment in Schedule
 
@@ -586,7 +587,7 @@ var dropTime = e.DropTime;
 {% endtabs %}
 
 ### Disabling dropping when dropping appointment within the Non-Accessible region
-Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below, we have disabled the appointment dropping when the dropping in the Non-Accessible block region.
+Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below, we have disabled the appointment dropping while dropping in the Non-Accessible block region.
 
 {% tabs %}
 {% highlight c# %}
@@ -604,7 +605,8 @@ NSCalendarUnit.Day |
 NSCalendarUnit.Hour |
 NSCalendarUnit.Minute |
 NSCalendarUnit.Second, e.DropTime);
-if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == dropTime.Hour)
+if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == dropTime.Hour
+|| schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour - 1 == dropTime.Hour && dropTime.Hour > 0)
 {
 e.Cancel = true;
 }
@@ -613,7 +615,7 @@ e.Cancel = true;
 {% endtabs %}
 
 ### Customizing the Drag and Drop environment
-Using [DragDropSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DragDropSettings.html) property of schedule can handle the behavior of drag and drop in Schedule.
+Using [DragDropSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DragDropSettings.html) property of schedule, you can handle the behavior of drag and drop in Schedule.
 
 {% tabs %}
 {% highlight c# %}
@@ -678,6 +680,8 @@ dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 schedule.DragDropSettings = dragDropSettings;
 {% endhighlight %}
 {% endtabs %}
+
+![](data_binding_images/timeindicator.png)
 
 >**Notes**
 * While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
