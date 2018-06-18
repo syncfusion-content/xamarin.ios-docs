@@ -9,11 +9,11 @@ documentation: ug
 
 # Major and Minor Scales
 
-[`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) displays major and minor scales at the top and bottom position of the control. You can also control its visibility using [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~IsVisible.html) properties.
+[`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) displays major and minor scales at the top and bottom position of the control. You can also control its visibility using [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~IsVisible.html) properties.
 
 ## Intervals
 
-By default, best possible interval component will be chosen for both major and minor scales based on the available size of the view. For example, if the available space is sufficient to show only year labels without overlapping, interval will be displayed in years. However, you can also set specific interval values using [`Intervals`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~Intervals.html) property as demonstrated in the below code snippet.
+By default, best possible interval component will be chosen for both major and minor scales based on the available size of the view. For example, if the available space is sufficient to show only year labels without overlapping, interval will be displayed in years. However, you can also set specific interval values using [`Intervals`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~Intervals.html) property as demonstrated in the below code snippet.
 
 {% highlight c# %}
 
@@ -35,26 +35,26 @@ this.View.AddSubview(rangeNavigator);
 
 ## Customization
 
-The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MajorScaleStyle.html) and [`MinorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MinorScaleStyle.html) properties of [`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) are used to customize the appearance of ticks and labels.
+The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MajorScaleStyle.html) and [`MinorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MinorScaleStyle.html) properties of [`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) are used to customize the appearance of ticks and labels.
 
 
-* [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~Position.html) – used to position the labels and ticks inside or outside of the range navigator.
-* [`LabelTextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelTextAlignment.html) – used to set the alignment of the labels. 
-* [`LabelTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelTextColor.html) – used to change the text color of the labels.
-* [`LabelFont`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelFont.html) – used to change the font of the labels.
-* [`LabelBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelBorderColor.html) – used to change the border color of the labels.
-* [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelBorderWidth.html) – used to change the border width of the labels. 
-* [`LabelBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelBackgroundColor.html) – used to change the background color of the labels.
-* [`LabelMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelMargin.html) – used to change the margin size of the labels. 
-* [`SelectedLabelFont`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelFont.html) – used to change the font of the selected labels.
-* [`SelectedLabelTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelTextColor.html) – used to change the text color of the selected labels. 
-* [`SelectedLabelBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelBorderColor.html) – used to change the border color of the selected labels.
-* [`SelectedLabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelBorderWidth.html) – used to change the border width of the selected labels. 
-* [`SelectedLabelBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelBackgroundColor.html) – used to change the background color of the selected labels.
-* [`SelectedLabelTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelTextColor.html) – used to change the text color of the selected labels. 
-* [`SelectedLabelMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelMargin.html) – used to change the margin of the selected labels.
-* [`TickColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~TickColor.html) – used to change the color of the ticks.
-* [`TickWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~TickWidth.html) – used to set the width of the ticks.
+* [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~Position.html) – used to position the labels and ticks inside or outside of the range navigator.
+* [`LabelTextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelTextAlignment.html) – used to set the alignment of the labels. 
+* [`LabelTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelTextColor.html) – used to change the text color of the labels.
+* [`LabelFont`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelFont.html) – used to change the font of the labels.
+* [`LabelBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelBorderColor.html) – used to change the border color of the labels.
+* [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelBorderWidth.html) – used to change the border width of the labels. 
+* [`LabelBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelBackgroundColor.html) – used to change the background color of the labels.
+* [`LabelMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelMargin.html) – used to change the margin size of the labels. 
+* [`SelectedLabelFont`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelFont.html) – used to change the font of the selected labels.
+* [`SelectedLabelTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelTextColor.html) – used to change the text color of the selected labels. 
+* [`SelectedLabelBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelBorderColor.html) – used to change the border color of the selected labels.
+* [`SelectedLabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelBorderWidth.html) – used to change the border width of the selected labels. 
+* [`SelectedLabelBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelBackgroundColor.html) – used to change the background color of the selected labels.
+* [`SelectedLabelTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelTextColor.html) – used to change the text color of the selected labels. 
+* [`SelectedLabelMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~SelectedLabelMargin.html) – used to change the margin of the selected labels.
+* [`TickColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~TickColor.html) – used to change the color of the ticks.
+* [`TickWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~TickWidth.html) – used to set the width of the ticks.
 
 
 {% highlight c# %}
