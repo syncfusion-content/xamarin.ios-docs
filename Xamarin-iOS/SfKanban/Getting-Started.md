@@ -45,8 +45,8 @@ In this walk through, you will create a new application that contains the SfKanb
 **Adding SfKanban in Xamarin.iOS**
 
 1. Add the required assembly references to the project as discussed in the _Reference Essential Studio Components in your Solution_ section.
-2. Import [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html) control namespace [`Syncfusion.SfKanban.iOS`](https://help.syncfusion.com/cr/xamarin-ios/sfkanban).
-3. Create an instance of [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html) control and add as a SubView to a UIViewController.
+2. Import [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html) control namespace [`Syncfusion.SfKanban.iOS`](https://help.syncfusion.com/cr/xamarin-ios/sfkanban).
+3. Create an instance of [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html) control and add as a SubView to a UIViewController.
 
 
 {% highlight C# %}
@@ -74,7 +74,7 @@ public partial class ViewController : UIViewController
 
 **Create KanbanModel for the SfKanban**
 
-Create a collection of [`KanbanModel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel.html) objects for populating [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html).
+Create a collection of [`KanbanModel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel.html) objects for populating [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html).
 
 {% highlight C# %}
 using System.Collections.ObjectModel;
@@ -154,20 +154,20 @@ public partial class ViewController : UIViewController
 
 **Binding data to SfKanban**
 
-In order to bind the data source of the [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html), set [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ItemsSource.html) property as shown below. The following code binds the collection created in previous step to [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ItemsSource.html) property.
+In order to bind the data source of the [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html), set [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ItemsSource.html) property as shown below. The following code binds the collection created in previous step to [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ItemsSource.html) property.
 
 {% highlight C# %}
 kanban.ItemsSource = this.Data;
 {% endhighlight %}
 **Defining Columns**
 
-By default, we need to define the columns manually by adding the [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn.html) object to the [`Columns`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~Columns.html) collection property in [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html). 
+By default, we need to define the columns manually by adding the [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn.html) object to the [`Columns`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~Columns.html) collection property in [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html). 
 
-[`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ItemsSource.html) which was bound to the kanban will be added to the respective columns using [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ColumnMappingPath.html) property in [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html) and [`Categories`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn~Categories.html) collection property in [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn.html).
+[`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ItemsSource.html) which was bound to the kanban will be added to the respective columns using [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ColumnMappingPath.html) property in [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html) and [`Categories`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn~Categories.html) collection property in [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn.html).
 
-We need to set the required property name to [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ColumnMappingPath.html) which will be essential to add the data to the respective columns.
+We need to set the required property name to [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ColumnMappingPath.html) which will be essential to add the data to the respective columns.
 
-In this example, data whose [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel~Category.html) property’s value is set as `Open` will be added to the openColumn and other data will be added to the respective columns.
+In this example, data whose [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel~Category.html) property’s value is set as `Open` will be added to the openColumn and other data will be added to the respective columns.
 
 The following code example illustrates how this can be done.
 
@@ -195,21 +195,21 @@ doneColumn.Categories = new List<object>() { "Done" };
 kanban.Columns.Add(doneColumn); 
 {% endhighlight %}
 
-You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~AutoGenerateColumns.html) property to true in which you don't need to define the columns as mentioned in the above example.  This will create columns depending on the [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ColumnMappingPath.html) property for all the distinct values in [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ItemsSource.html).
+You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~AutoGenerateColumns.html) property to true in which you don't need to define the columns as mentioned in the above example.  This will create columns depending on the [`ColumnMappingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ColumnMappingPath.html) property for all the distinct values in [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ItemsSource.html).
 
-When the columns are auto-generated, you can handle the [`ColumnsGenerated`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ColumnsGenerated_EV.html) event to customize the columns after they are added to the [`ActualColumns`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ActualColumns.html) collection in [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html).
+When the columns are auto-generated, you can handle the [`ColumnsGenerated`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ColumnsGenerated_EV.html) event to customize the columns after they are added to the [`ActualColumns`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~ActualColumns.html) collection in [`SfKanban`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html).
 
 **Working with workflows**
 
-A Kanban workflow is a set of [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow~Category.html) and  [`AllowedTransitions`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow~AllowedTransitions.html), that an item moves through during its life cycle and typically represents processes within your organization.
+A Kanban workflow is a set of [`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow~Category.html) and  [`AllowedTransitions`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow~AllowedTransitions.html), that an item moves through during its life cycle and typically represents processes within your organization.
 
-[`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow~Category.html) represents a state of an item at a particular point in a specific workflow. An item can be in only one category at a specific point of time.
+[`Category`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow~Category.html) represents a state of an item at a particular point in a specific workflow. An item can be in only one category at a specific point of time.
 
-[`AllowedTransitions`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow~AllowedTransitions.html) is a list of categories to where the card can be moved from the current category. 
+[`AllowedTransitions`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow~AllowedTransitions.html) is a list of categories to where the card can be moved from the current category. 
 
 **Creating the workflows**
 
-Initialize [`Workflows`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~Workflows.html) property with a list of [`KanbanWorkflow`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow.html) instances. Each instance represents a workflow in Kanban. The following code example illustrates how this can be done.
+Initialize [`Workflows`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~Workflows.html) property with a list of [`KanbanWorkflow`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanWorkflow.html) instances. Each instance represents a workflow in Kanban. The following code example illustrates how this can be done.
 
 {% highlight C# %}
 var workflows = new List<KanbanWorkflow>();
@@ -230,7 +230,7 @@ kanban.Workflows = workflows;
 
 **Work In-Progress Limit**
 
-In column, you can set minimum and maximum items limit by using the [`MinimumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfkanban/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn~MaximumLimit.html) properties. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the color of the error bar. 
+In column, you can set minimum and maximum items limit by using the [`MinimumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColumn~MaximumLimit.html) properties. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the color of the error bar. 
 
 {% highlight C# %}
 openColumn.MinimumLimit = 5; 

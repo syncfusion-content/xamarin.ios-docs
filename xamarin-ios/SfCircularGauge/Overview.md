@@ -15,9 +15,9 @@ Essential Gauge for Xamarin.Android helps you to visualize the numeric values ov
 
 ## Key features
 
-[`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) is a composed control of several scales. Scales will be an integrated UI part of the circular gauge.
+[`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) is a composed control of several scales. Scales will be an integrated UI part of the circular gauge.
 
-[`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) is a composite UI element with the following subparts:
+[`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) is a composite UI element with the following subparts:
 
 * Scales
 * Ranges
