@@ -9,11 +9,11 @@ documentation: ug
 
 # Pointers
 
-[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) provides support to mark the values using [`SFBarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer.html) and [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html).
+[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) provides support to mark the values using [`SFBarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer.html) and [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html).
 
 ## Adding bar pointer to scale
 
-[`SFBarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
+[`SFBarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
 
 {% highlight c# %}
 	
@@ -45,7 +45,7 @@ documentation: ug
 
 ## Bar pointer customization
 
-The bar pointer’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearPointer~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearPointer~Thickness.html) properties.
+The bar pointer’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearPointer~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearPointer~Thickness.html) properties.
 
 {% highlight c# %}
 	
@@ -78,8 +78,8 @@ The bar pointer’s UI is customized by using the [`Color`](https://help.syncfus
 
 ## Setting corner radius type for bar pointer
 
-Corners of the [`SFBarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer.html) can be customized by setting the value to the [`CornerRadiusType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer~CornerRadiusType.html) property. All corners of bar pointer can be customized using the `Start`, `End`, `Both`, and `None` options.
- [`CornerRadiusValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer~CornerRadiusValue.html) property used to reduce the radius of the corners.
+Corners of the [`SFBarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer.html) can be customized by setting the value to the [`CornerRadiusType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer~CornerRadiusType.html) property. All corners of bar pointer can be customized using the `Start`, `End`, `Both`, and `None` options.
+ [`CornerRadiusValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer~CornerRadiusValue.html) property used to reduce the radius of the corners.
 
 {% highlight c# %}
 
@@ -115,7 +115,7 @@ Corners of the [`SFBarPointer`](https://help.syncfusion.com/cr/cref_files/xamari
 
 ## Setting gradient color for bar pointer
 
-You can give smooth color transition to bar pointer to specifying the different colors based on bar pointer’s value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer~GradientStops.html) property.
+You can give smooth color transition to bar pointer to specifying the different colors based on bar pointer’s value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer~GradientStops.html) property.
 
 {% highlight c# %}
 
@@ -173,7 +173,7 @@ You can give smooth color transition to bar pointer to specifying the different 
 
 ## Adding symbol pointer to scale
 
-In [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html), the value is pointed by a symbol on the scale.
+In [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html), the value is pointed by a symbol on the scale.
 
 {% highlight c# %}
 
@@ -219,7 +219,7 @@ In [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfg
 
 ## Symbol pointer customization
 
-You can modify the symbol pointer’s size using the [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearPointer~Thickness.html) property. The color of the symbol pointer is changed using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearPointer~Color.html) property.
+You can modify the symbol pointer’s size using the [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearPointer~Thickness.html) property. The color of the symbol pointer is changed using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearPointer~Color.html) property.
 
 {% highlight c# %}
 
@@ -250,11 +250,11 @@ You can modify the symbol pointer’s size using the [`Thickness`](https://help.
 
 ## Positioning symbol pointer
 
-You can position the [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) by using the following two ways:
+You can position the [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) by using the following two ways:
 
 ## Setting symbol pointer position
 
-You can customize the position of the [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) by using the [`SymbolPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~SymbolPosition.html). The default symbol pointer position is `Far`.
+You can customize the position of the [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) by using the [`SymbolPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~SymbolPosition.html). The default symbol pointer position is `Far`.
 
 {% highlight c# %}
 
@@ -298,7 +298,7 @@ You can customize the position of the [`SFSymbolPointer`](https://help.syncfusio
 
 ## Setting offset for symbol pointer
 
-You can move  the [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~Offset.html) property. 
+You can move  the [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~Offset.html) property. 
 
 {% highlight c# %}
 
@@ -342,7 +342,7 @@ You can move  the [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/
 
 ## Change symbol pointer shapes
 
-Different types of shapes are used in [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) to mark the pointer value in scale. You can change the shape of [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) by using the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~MarkerShape.html) property in pointer. 
+Different types of shapes are used in [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) to mark the pointer value in scale. You can change the shape of [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) by using the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~MarkerShape.html) property in pointer. 
 
 {% highlight c# %}
 
@@ -390,7 +390,7 @@ Different types of shapes are used in [`SFSymbolPointer`](https://help.syncfusio
 
 ## Setting image shape for symbol pointer
 
-You can achieve the image shape  by setting the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~MarkerShape.html) property to `Image` and setting image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~ImageSource.html) property in [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html).
+You can achieve the image shape  by setting the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~MarkerShape.html) property to `Image` and setting image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer~ImageSource.html) property in [`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html).
 
 {% highlight c# %}
 
@@ -436,7 +436,7 @@ You can achieve the image shape  by setting the [`MarkerShape`](https://help.syn
 
 ## Adding multiple pointers
 
-In addition to the default pointer, you can add n number of pointers to a linear scale by using the [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~Pointers.html) property.
+In addition to the default pointer, you can add n number of pointers to a linear scale by using the [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~Pointers.html) property.
 
 {% highlight c# %}
 
