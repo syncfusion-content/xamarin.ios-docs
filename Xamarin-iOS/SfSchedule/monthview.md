@@ -52,16 +52,16 @@ schedule.MonthViewSettings = monthViewSettings;
 >**NOTE**
 If appointments not there in the selected day, Inline view displays the text as "No Events"
 
-## Agenda View:
-The Schedule month view displays a divided agenda view which is used to show the selected date’s appointments below the month. You can show agenda view by setting [ShowAgendaView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~ShowAgendaView.html) property as true.
+## Agenda View
+The Schedule month view displays a divided agenda view which is used to show the selected date’s appointments below the month. You can show agenda view by setting [ShowAgendaView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~ShowAgendaView.html) property as true.
 
 {% tabs %}
 {% highlight c# %}
 SFSchedule schedule = new SFSchedule();
-            schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
-            MonthViewSettings monthViewSettings = new MonthViewSettings();
-            monthViewSettings.ShowAgendaView = true;
-            schedule.MonthViewSettings = monthViewSettings;
+schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAgendaView = true;
+schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,29 +72,29 @@ SFSchedule schedule = new SFSchedule();
 - If there is no appointment in a selected day, agenda view displays the text as “No Events”.
 - If you enable ShowAgendaView and ShowAppointmentsInline properties together, both of the views (Agenda View and Appointment Inline View) will be displayed in schedule month view.
 
-## Agenda View Appearance:
-You can customize the Agenda view appointment and Selected Date Text by setting [AgendaViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle.html) property of `MonthViewSettings`. Agenda view [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextColor.html) , [HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~HeaderHeight.html) , [DateTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextFormat.html) , [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextStyle.html) , [TimeTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextColor.html) , [TimeTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextStyle.html) , [TimeTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextFormat.html) , [SubjectTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextColor.html) , [SubjectTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextStyle.html) , [SubjectTextSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextSize.html) , [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~BackgroundColor.html) can be customized using AgendaViewStyle properties.
+### Agenda View Appearance
+You can customize the Agenda view appointment and Selected Date Text by setting [AgendaViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle.html) property of `MonthViewSettings`. Agenda view [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextColor.html) , [HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~HeaderHeight.html) , [DateTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextFormat.html) , [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~DateTextStyle.html) , [TimeTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextColor.html) , [TimeTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextStyle.html) , [TimeTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~TimeTextFormat.html) , [SubjectTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextColor.html) , [SubjectTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextStyle.html) , [SubjectTextSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~SubjectTextSize.html) , [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfschedule/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AgendaViewStyle~BackgroundColor.html) can be customized using AgendaViewStyle properties.
 {% tabs %}
 {% highlight c# %}
 SFSchedule schedule = new SFSchedule();
-            schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
-            MonthViewSettings monthViewSettings = new MonthViewSettings();
-            monthViewSettings.ShowAgendaView = true;
-            schedule.MonthViewSettings = monthViewSettings;
-            AgendaViewStyle agendaViewStyle = new AgendaViewStyle();
-            // Customize selected Date Text
-            agendaViewStyle.DateTextColor = UIColor.Purple;
-            agendaViewStyle.HeaderHeight = 50;
-            agendaViewStyle.DateTextFormat = (NSString)"dd MMMM, yyyy";
-            agendaViewStyle.DateTextStyle = UIFont.SystemFontOfSize(17);
-            // Customize appointment
-            agendaViewStyle.TimeTextColor = UIColor.Red;
-            agendaViewStyle.TimeTextStyle = UIFont.SystemFontOfSize(13);
-            agendaViewStyle.TimeTextFormat = (NSString)"hh a";
-            agendaViewStyle.SubjectTextColor = UIColor.Blue;
-            agendaViewStyle.SubjectTextStyle = UIFont.SystemFontOfSize(15);
-            agendaViewStyle.BackgroundColor = UIColor.FromRGB(222, 240, 222);
-            schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle;
+schedule.ScheduleView = SFScheduleView.SFScheduleViewMonth;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAgendaView = true;
+schedule.MonthViewSettings = monthViewSettings;
+AgendaViewStyle agendaViewStyle = new AgendaViewStyle();
+// Customize selected Date Text
+agendaViewStyle.DateTextColor = UIColor.Purple;
+agendaViewStyle.HeaderHeight = 50;
+agendaViewStyle.DateTextFormat = (NSString)"dd MMMM, yyyy";
+agendaViewStyle.DateTextStyle = UIFont.SystemFontOfSize(17);
+// Customize appointment
+agendaViewStyle.TimeTextColor = UIColor.Red;
+agendaViewStyle.TimeTextStyle = UIFont.SystemFontOfSize(13);
+agendaViewStyle.TimeTextFormat = (NSString)"hh a";
+agendaViewStyle.SubjectTextColor = UIColor.Blue;
+agendaViewStyle.SubjectTextStyle = UIFont.SystemFontOfSize(15);
+agendaViewStyle.BackgroundColor = UIColor.FromRGB(222, 240, 222);
+schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle;
 {% endhighlight %}
 {% endtabs %}
 
