@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Change Orientation
 
-[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) supports horizontal and vertical orientations. By default, [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) is rendered with horizontal orientation. You can the change the orientation by using the `Orientation` property. 
+[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) supports horizontal and vertical orientations. By default, [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) is rendered with horizontal orientation. You can the change the orientation by using the `Orientation` property. 
 
 {% highlight C# %}
 

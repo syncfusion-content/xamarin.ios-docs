@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the steps required to configure the `SfSunburstChart` and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
+This section explains you the steps required to populate the sunburst chart with data, data labels, legend and title. This section covers only the minimal features that you need to know to get started with the sunburst chart. 
 
-## Add sunburst chart references
+## Reference Essential Studio components in your solution
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
 
-{Syncfusion Installed location}\Essential Studio\15.2.0.39\lib
+{Syncfusion Installed location}\Essential Studio\15.2.0.40\lib
 
 N> Assemblies are available in unzipped package location in Mac.
 
@@ -22,17 +22,11 @@ Add the following assembly references to the iOS project,
 
 ios-unified\Syncfusion.SfSunburstChart.iOS.dll
 
-# Initialize sunburst chart
+# Add and configure the sunburst chart
 
-Import the SfSunburstChart namespace as shown below.
+The following steps explain on how to create a sunburst chart and configure its elements,
 
-{% highlight C# %}
-
-using Syncfusion.SfSunburstChart.iOS;
-
-{% endhighlight %}
-
-Then initialize an empty SunburstChart.
+1. Create an instance of SfSunburstChart.
 
 {% highlight C# %}
 
@@ -50,7 +44,7 @@ public override void ViewDidLoad ()
 
 ## Initialize view model
 
-In this section, data in the following table is used for demonstration.
+In this section, the data in the following table is used for demonstration,
 
 <table>
 <tr>
@@ -58,68 +52,36 @@ In this section, data in the following table is used for demonstration.
 Country
 </th>
 <th>
-Job description
+Job Description
 </th>
 <th>
-Job group
+Job Group
 </th>
 <th>
-Job role
+Job Role
 </th>
 <th>
-Employees count
+Employees Count
 </th>
 </tr>
 <tr>
 <td>
-United States
+America
 </td>
 <td>
 Sales
 </td>
 <td>
-Executive
 </td>
 <td>
 </td>
 <td>
-50
-</td>
-</tr>
-<tr>
-<td>
-United States
-</td>
-<td>
-Sales
-</td>
-<td>
-Analyst
-</td>
-<td>
-</td>
-<td>
-40
+70
 </td>
 </tr>
 <tr>
 <td>
-United States
-</td>
-<td>
-Marketing
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-40
-</td>
-</tr>
-<tr>
-<td>
-United States
+America
 </td>
 <td>
 Technical
@@ -135,7 +97,7 @@ Testers
 </tr>
 <tr>
 <td>
-United States
+America
 </td>
 <td>
 Technical
@@ -147,12 +109,12 @@ Developers
 Windows
 </td>
 <td>
-175
+105
 </td>
 </tr>
 <tr>
 <td>
-United States
+America
 </td>
 <td>
 Technical
@@ -164,12 +126,12 @@ Developers
 Web
 </td>
 <td>
-70
+40
 </td>
 </tr>
 <tr>
 <td>
-United States
+America
 </td>
 <td>
 Management
@@ -184,7 +146,7 @@ Management
 </tr>
 <tr>
 <td>
-United States
+America
 </td>
 <td>
 Accounts
@@ -210,7 +172,7 @@ Testers
 <td>
 </td>
 <td>
-33
+25
 </td>
 </tr>
 <tr>
@@ -227,7 +189,7 @@ Developers
 Windows
 </td>
 <td>
-125
+155
 </td>
 </tr>
 <tr>
@@ -245,36 +207,6 @@ Web
 </td>
 <td>
 60
-</td>
-</tr>
-<tr>
-<td>
-India
-</td>
-<td>
-HR Executives
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-70
-</td>
-</tr>
-<tr>
-<td>
-India
-</td>
-<td>
-Accounts
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-45
 </td>
 </tr>
 <tr>
@@ -311,117 +243,6 @@ Analyst
 </tr>
 <tr>
 <td>
-Germany
-</td>
-<td>
-Marketing
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-50
-</td>
-</tr>
-<tr>
-<td>
-Germany
-</td>
-<td>
-Technical
-</td>
-<td>
-Testers
-</td>
-<td>
-</td>
-<td>
-40
-</td>
-</tr>
-<tr>
-<td>
-Germany
-</td>
-<td>
-Technical
-</td>
-<td>
-Developers
-</td>
-<td>
-Windows
-</td>
-<td>
-65
-</td>
-</tr>
-<tr>
-<td>
-Germany
-</td>
-<td>
-Technical
-</td>
-<td>
-Developers
-</td>
-<td>
-Web
-</td>
-<td>
-27
-</td>
-</tr>
-<tr>
-<td>
-Germany
-</td>
-<td>
-Management
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-33
-</td>
-</tr>
-<tr>
-<td>
-Germany
-</td>
-<td>
-Accounts
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-55
-</td>
-</tr>
-<tr>
-<td>
-UK
-</td>
-<td>
-Technical
-</td>
-<td>
-Testers
-</td>
-<td>
-</td>
-<td>
-25
-</td>
-</tr>
-<tr>
-<td>
 UK
 </td>
 <td>
@@ -434,7 +255,7 @@ Developers
 Windows
 </td>
 <td>
-96
+100
 </td>
 </tr>
 <tr>
@@ -451,7 +272,7 @@ Developers
 Web
 </td>
 <td>
-55
+30
 </td>
 </tr>
 <tr>
@@ -459,7 +280,7 @@ Web
 UK
 </td>
 <td>
-HR executives
+HR Executives
 </td>
 <td>
 </td>
@@ -474,183 +295,339 @@ HR executives
 UK
 </td>
 <td>
-Accounts
+Marketing
 </td>
 <td>
 </td>
 <td>
 </td>
 <td>
-30
+40
 </td>
 </tr>
 </table>
 
-Define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html).
+Now, let us define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html).
 
 {% highlight c# %}
-
-public class SunburstModel
-{
-        public string JobDescription { get; set; }
-        public string JobGroup { get; set; }
-        public string JobRole { get; set; }
-        public double EmployeesCount { get; set; }
-        public string Country { get; set; }
+public class Model   
+{   
+    public string Category { get; set; }
+    public string Country { get; set; }
+    public string JobDescription { get; set; }
+    public string JobGroup { get; set; }
+    public string JobRole { get; set; }
+    public double EmployeesCount { get; set; }
 }
-
 {% endhighlight %} 
 
-Then, create a view model class, and initialize a list of SunburstModel objects as follows.
-
-In ['SfSunburstChart'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html), [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~ItemsSource.html) property should be a collection of objects. Add the following class for generating the datapoints.
-
+In ['SfSunburstChart'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html), the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~ItemsSource.html) should to be a collection of objects. Add the following class for generating the datapoints.
 
 {% highlight c# %}
-
-public class SunburstViewModel
+public class DataModel
 {
-        public ObservableCollection<SunburstModel> DataSource { get; set; }
-        public SunburstViewModel()
+    public ObservableCollection<Model> Data { get; set; }
+    public DataModel()
+    {
+        Data = new ObservableCollection<Model>
         {
-            this.DataSource = new ObservableCollection<SunburstModel>
+            new Model
             {
-                new SunburstModel { Country = "USA", JobDescription = "Sales", JobGroup="Executive", EmployeesCount = 50 },
-                new SunburstModel { Country = "USA", JobDescription = "Sales", JobGroup = "Analyst", EmployeesCount = 40 },
-                new SunburstModel { Country = "USA", JobDescription = "Marketing", EmployeesCount = 40 },
-                new SunburstModel { Country = "USA", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 35 },
-                new SunburstModel { Country = "USA", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 175 },
-                new SunburstModel { Country = "USA", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 70 },
-                new SunburstModel { Country = "USA", JobDescription = "Management", EmployeesCount = 40 },
-                new SunburstModel { Country = "USA", JobDescription = "Accounts", EmployeesCount = 60 },
-
-                new SunburstModel { Country = "India", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 33 },
-                new SunburstModel { Country = "India", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 125 },
-                new SunburstModel { Country = "India", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 60 },
-                new SunburstModel { Country = "India", JobDescription = "HR Executives", EmployeesCount = 70 },
-                new SunburstModel { Country = "India", JobDescription = "Accounts", EmployeesCount = 45 },
-
-                new SunburstModel { Country = "Germany", JobDescription = "Sales", JobGroup = "Executive", EmployeesCount = 30 },
-                new SunburstModel { Country = "Germany", JobDescription = "Sales", JobGroup = "Analyst", EmployeesCount = 40 },
-                new SunburstModel { Country = "Germany", JobDescription = "Marketing", EmployeesCount = 50 },
-                new SunburstModel { Country = "Germany", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 40 },
-                new SunburstModel { Country = "Germany", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 65 },
-                new SunburstModel { Country = "Germany", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 27 },
-                new SunburstModel { Country = "Germany", JobDescription = "Management", EmployeesCount = 33 },
-                new SunburstModel { Country = "Germany", JobDescription = "Accounts", EmployeesCount = 55 },
-
-                new SunburstModel { Country = "UK", JobDescription = "Technical", JobGroup = "Testers", EmployeesCount = 25 },
-                new SunburstModel { Country = "UK", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 96 },
-                new SunburstModel { Country = "UK", JobDescription = "Technical", JobGroup = "Developers", JobRole = "Web", EmployeesCount = 55 },
-                new SunburstModel { Country = "UK", JobDescription = "HR Executives", EmployeesCount = 60 },
-                new SunburstModel { Country = "UK", JobDescription = "Accounts", EmployeesCount = 30 }
-            };
-        }
+                Country = "America", JobDescription = "Sales",
+                EmployeesCount = 70
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Technical",
+                JobGroup = "Testers", EmployeesCount = 35
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Technical",
+                JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 105
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Technical",
+                JobGroup = "Developers", JobRole = "Web", EmployeesCount = 40
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Management",
+                EmployeesCount = 40
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Accounts",
+                EmployeesCount = 60
+            },
+            new Model
+            {
+                Country = "India", JobDescription = "Technical",
+                JobGroup = "Testers", EmployeesCount = 25
+            },
+            new Model
+            {
+                Country = "India", JobDescription = "Technical", JobGroup = "Developers",
+            JobRole = "Windows", EmployeesCount = 155
+            },
+            new Model
+            {
+                Country = "India", JobDescription = "Technical", JobGroup = "Developers",
+                JobRole = "Web", EmployeesCount = 60
+            },
+            new Model
+            {
+                Country = "Germany", JobDescription = "Sales", JobGroup = "Executive",
+                EmployeesCount = 30
+            },
+            new Model
+            {
+                Country = "Germany", JobDescription = "Sales", JobGroup = "Analyst",
+                EmployeesCount = 40
+            },
+            new Model
+            {
+                Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
+                JobRole = "Windows", EmployeesCount = 100
+            },
+            new Model
+            {
+                Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
+                JobRole = "Web", EmployeesCount = 30
+            },
+            new Model
+            {
+                Country = "UK", JobDescription = "HR Executives", EmployeesCount = 60
+            },
+            new Model
+            {
+                Country = "UK", JobDescription = "Marketing", EmployeesCount = 40
+            }
+        };
+    }
 }
 
 {% endhighlight %} 
 
-## Populate sunburst chart with data
+## Populate SunburstChart with data
 
-Now, set the DataSource property of the above SunburstViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~ItemsSource.html) property. 
-Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Levels.html) collection. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using the [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~ValueMemberPath.html) property.
+Now, set the Data property of the above DataModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~ItemsSource.html) property. 
+Add [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Levels.html) property. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~ValueMemberPath.html).
 
 {% highlight C# %}
-
-            SfSunburstChart sunburstChart = new SfSunburstChart();
-
-            SunburstViewModel dataModel = new SunburstViewModel();
-            sunburstChart.ItemsSource = dataModel.DataSource;
-            sunburstChart.ValueMemberPath = "EmployeesCount";
-
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
-
-            sunburstChart.Frame = this.View.Frame;
-            View.AddSubview(sunburstChart);
-
+SfSunburstChart sunburst = new SfSunburstChart();
+sunburst.ValueMemberPath = "EmployeesCount";
+sunburst.ItemsSource = dataModel.Data;
+sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "Country"});
+sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobDescription"});
+sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobGroup"});
+sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobRole"});
 {% endhighlight %}
 
-![SfSunburstChart](Getting-Started_images/DataSource.png)
+## Add Title
 
-## Add title
-
-You can add title to the sunburst chart to provide information to users about the data being plotted in the chart. You can set title using the [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Title.html) property.
+You can add title to sunburst chart to provide quick information to the user about the data being plotted in the chart. You can set title using [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Title.html) property as shown below.
 
 {% highlight C# %} 
-
-            sunburstChart.Title.IsVisible = true;
-            sunburstChart.Title.Text = "Employees Count";
-
+sunburst.Title.IsVisible = true;
+sunburst.Title.Text = "Employees Count";
 {% endhighlight %}
 
-![SfSunburstChart](Getting-Started_images/Title.png)
+## Add Legend
 
-## Add legend
-
-You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Legend.html) property.
+You can enable legend using [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Legend.html) property as shown below,
 
 {% highlight C# %} 
-
-sunburstChart.Legend.IsVisible = true; 
-
+sunburst.Legend.IsVisible = true; 
 {% endhighlight %}
-
-![SfSunburstChart](Getting-Started_images/Legend.png)
 
 ## Add data labels
 
-You can add data labels to improve the readability of the sunburst chart. Data labels can be added using the [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~DataLabel.html) property.
+You can add data labels to improve the readability of the sunburst chart. This can be achieved using [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~DataLabel.html) property as shown below.
 
 {% highlight C# %} 
-
-sunburstChart.DataLabel.ShowLabel = true;
-
+sunburst.DataLabel.ShowLabel = true;
 {% endhighlight %}
 
-![SfSunburstChart](Getting-Started_images/DataLabel.png)
-
-Below snippet is the complete code for generating the following output.
+The following code example for creating sunburst chart.
 
 {% highlight C# %}
 
-public partial class ViewController : UIViewController
-{   
+public partial class GettingStarted_iOSViewController : UIViewController
+{
+    public GettingStarted_iOSViewController (IntPtr handle) : base (handle)
+    {
+        
+    }
+
+    public override void DidReceiveMemoryWarning ()
+    {
+        base.DidReceiveMemoryWarning ();
+
+        // Release any cached data, images, etc that aren't in use.
+    }
+
     #region View life cycle
 
     public override void ViewDidLoad ()
     {
-        base.ViewDidLoad ();        
+        base.ViewDidLoad ();
+        //Initialize the sunburst chart with required frame. This frame can be any rectangle, which bounds inside the view.
+        SfSunburstChart chart = new SfSunburstChart ();
+		chart.Frame   = this.View.Frame;
+	    View.AddSubview(chart);
+
+        //Define the title for the sunburst Chart.
+        sunburst.Title.IsVisible = true
+        sunburst.Title.Text = "Employees Count";
+	   
+        //Adding Legend to the sunburst Chart.
+        sunburst.Legend.IsVisible = true;
+		
+		//Adding data labels to the sunburst 
+		sunburst.DataLabel.ShowLabel = true;
+
+		////Defining the data source for the sunburst chart.
+		DataModel dataModel = new DataModel();
+		sunburst.ItemsSource = dataModel.Data;
+		sunburst.ValueMemberPath = "EmployeesCount";
+		
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country"});
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription"});
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup"});
+		sunburst.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole"});
+
         // Perform any additional setup after loading the view, typically from a nib.
-  
-		    SfSunburstChart sunburstChart = new SfSunburstChart();
-
-            SunburstViewModel dataModel = new SunburstViewModel();
-            sunburstChart.ItemsSource = dataModel.DataSource;
-            sunburstChart.ValueMemberPath = "EmployeesCount";
-  
-            sunburstChart.Title.IsVisible = true;
-            sunburstChart.Title.Text = "Employees Count";
-
-            sunburstChart.Legend.IsVisible = true;
-            sunburstChart.DataLabel.ShowLabel = true;
-
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
-
-            sunburstChart.Frame = this.View.Frame;
-            View.AddSubview(sunburstChart);
     }
 }
 	
+public class Model
+{
+    public string Category { get; set; }
+	public string Country { get; set; }
+	public string JobDescription { get; set; }
+	public string JobGroup { get; set; }
+	public string JobRole { get; set; }
+	public double EmployeesCount { get; set; }
+}
+    
+public class DataModel
+{
+	public DataModel()
+	{
+		Data = new ObservableCollection<Model>();
+		
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Sales",
+			EmployeesCount = 70
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Technical",
+			JobGroup = "Testers",
+			EmployeesCount = 35
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "iOS",
+			EmployeesCount = 105
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "Web",
+			EmployeesCount = 40
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Management",
+			EmployeesCount = 40
+		});
+		Data.Add(new Model
+		{
+			Country = "USA",
+			JobDescription = "Accounts",
+			EmployeesCount = 60
+		});
+		Data.Add(new Model
+		{
+			Country = "India",
+			JobDescription = "Technical",
+			JobGroup = "Testers",
+			EmployeesCount = 25
+		});
+		Data.Add(new Model
+		{
+			Country = "India",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "iOS",
+			EmployeesCount = 155
+		});
+		Data.Add(new Model
+		{
+			Country = "India",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "Web",
+			EmployeesCount = 60
+		});
+		Data.Add(new Model
+		{
+			Country = "China",
+			JobDescription = "Sales",
+			JobGroup = "Executive",
+			EmployeesCount = 30
+		});
+		Data.Add(new Model
+		{
+			Country = "China",
+			JobDescription = "Sales",
+			JobGroup = "Analyst",
+			EmployeesCount = 40
+		});
+		Data.Add(new Model
+		{
+			Country = "UK",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "iOS",
+			EmployeesCount = 100
+		});
+		Data.Add(new Model
+		{
+			Country = "UK",
+			JobDescription = "Technical",
+			JobGroup = "OS",
+			JobRole = "Web",
+			EmployeesCount = 30
+		});
+		Data.Add(new Model
+		{
+			Country = "UK",
+			JobDescription = "HR",
+			EmployeesCount = 60
+    	});	
+    	Data.Add(new Model}
+		{
+	    	Country = "UK",
+			JobDescription = "Marketing",
+			EmployeesCount = 40
+		});
+	}
+	public ObservableCollection<Model> Data { get; set; }
+}
+	
 {% endhighlight %}
-
-The following screenshot depicts the final output.
-
-![SfSunburstChart](Getting-Started_images/GettingStarted.png)
-
-You can find the complete getting started sample from this link.
+Following is the final output screenshot,	
+![SfSunburstChart](Sunburst_images/gettingstarted.png)
