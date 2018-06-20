@@ -869,15 +869,14 @@ schedule.AppointmentStyle = appointmentStyle;
 
 ## TimeZone
 
-Schedule allows you to create appointments in various time zones, and the appointments to be displayed in the user's time zone and any other time zone. Appointments to be rendered by recalculating Start and End time zone based on give time zone
-Consider the following scenario you are in North Carolina and you want to set up an appointment for 10 am on North Carolina time. You have a colleague in London and another in Chennai that need to participate. The time for this appointment will be 3 pm (15:00) in London and 5.30 am in Chennai. 
-When you each view your calendar you need to see the appointment displayed relative to your local time zone 5.30 am, 10 am, 3 pm respectively and it can be achieved by setting schedule time zone to default and Appointments time zone to Eastern Standard Time(North Carolina)
+Schedule allows you to create appointments in various time zones and display them in the user's time zone and any other time zone. Appointments are rendered by recalculating Start and End time based on given time zone.
+Consider the following scenario you are in North Carolina and you want to set up a meeting at 10 AM on North Carolina time. You have colleagues in London and Chennai and they also need to participate. The time for this meeting will be 3 PM (15:00) in London and 5.30 AM in Chennai. 
+When you each view your calendar, you need to see the appointment displayed relative to your local time zone 5.30 am, 10 am, 3 pm respectively and it can be achieved by setting schedule time zone to default and Appointments time zone to Eastern Standard Time (North Carolina)
 
-If you set an appointment as all day appointment then it's start time and end times are set default as 12 am to 12 am so there is no need to use time zone for all day appointments
+If you create all day appointment, then it's start time and end times are set default as 12 am to 12 am so time zone is not applicable for all day appointments
 
 
-### Schedule TimeZone 
-	Set schedule to a specific time zone by using "TimeZone" Property of schedule by setting schedule to a default time zone schedule takes that time zone as the local time zone and appointment's start time and end time calculated based on schedule time zone
+Set schedule to a specific time zone by using "TimeZone" Property of schedule by setting schedule to a default time zone schedule takes that time zone as the local time zone and appointment's start time and end time calculated based on schedule time zone
 
     {%tabs%}
     {% highlight c# %}
@@ -886,25 +885,24 @@ If you set an appointment as all day appointment then it's start time and end ti
     {% endtabs %}
 
 ### Appointment's Time Zone
-	Set Appointment to specif time zone using StartTimeZone and EndTimeZone property of the Appointment the appointment's start time and end time calculated based the given time zone information for start time and end time, you can give different time zone's for start time and end time property.
-	Use ActualStartTime and ActualEndTime Property to get the exact Local Start Time and End Time of the appointment
+Set Appointment to specif time zone using StartTimeZone and EndTimeZone property of the Appointment the appointment's start time and end time calculated based the given time zone information for start time and end time, you can give different time zone's for start time and end time property.
+Use ActualStartTime and ActualEndTime Property to get the exact Local Start Time and End Time of the appointment
 
     {%tabs%}
     {% highlight c# %}
     appointment.StartTimeZone = (NSString)"India Standard Time";
 	appointment.EndTimeZone = (NSString)"India Standard Time";
 	 
-	Calendar localStartTime = appointment.ActualStartTime;
-	Calendar localEndTime = appointment.ActualEndTime;
+	NSDate localStartTime = appointment.ActualStartTime;
+	NSDate localEndTime = appointment.ActualEndTime;
     {% endhighlight %}
     {% endtabs %}
 
 >**NOTE**
-* If schedule Time zone and Appointment's start time zone and end time zone are not set then the appointment to be render based on the device local time zone
-* If schedule Time zone was set and Appointment's start time zone and end time zone are not set then appointment's start time and end time value to be converted into schedule time zone for device local time zone
-* If schedule Time zone was not set and Appointment's start time zone and end time zone are set the appointment's start time and end time value to be converted into device local time zone for specified time zone
 * If the recurring appointment is converted to another time zone then the whole sequence is recalculated according to the new time zone information
-* No need to handle time zone for All day appointments
-* Dynamic changes of Schedule time zone and Appointment's start time zone and end time zone supported 
-* Custom Appointment supported for ScheduleAppointment's StartTimeZone and EndTimeZone properties
-* After rescheduling an appointment using drag and drop, its start and end times will be updated based on the start time zone and end time zone. 
+* After rescheduling an appointment using drag and drop, if ScheduleTimeZone has set then the appointment's start time and end time recalculated based on Schedule Time Zone. Otherwise, the appointment's start time and end time recalculated based on Local Time Zone.
+Schedule's ActualStartTime and ActualEndTime properties has the local start time and local end time of the appointment.
+
+For an example,consider, your local time zone is IndianStandardTime and appointment's start time zone and end time zone has set as default, if you drag an appointment from 9 AM and drop this on 1 PM and you set the schedule Time zone as AUS Central Time Zone (Darwin) then the appointment's start time and end time will be calculated from the schedule time zone and the appointment will be rendered on 5 PM on your schedule,
+if you don't set the schedule Time Zone and it was set as default then the appointment rendered based on the device local time zone.
+if you don't set the schedule Time Zone and it was set as default then the appointment rendered based on the device local time zone.
