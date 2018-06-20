@@ -9,7 +9,7 @@ documentation: UG
 
 # Data Binding
 
-The SfDataGrid is bound to an external data source to display the data. It supports the data sources such as [List](https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx), [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx), and so on. [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.SfDataGrid~ItemsSource.html) property helps to bind the SfDataGrid with the collection of objects.
+The SfDataGrid is bound to an external data source to display the data. It supports the data sources such as [List](https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx), [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx), and so on. [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.SfDataGrid~ItemsSource.html) property helps to bind the SfDataGrid with the collection of objects.
 
 In order to bind the data source of the SfDataGrid, set the `SfDataGrid.ItemsSource` property as shown below such that each row in the SfDataGrid would bind to an object in the data source and each column would bind to a property in the data model object.
 
@@ -74,7 +74,7 @@ this.View.Add(dataGrid);
 
 ## Binding Complex properties
 
-SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
+SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
 
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" });
@@ -82,7 +82,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID.Order" }
 
 ## Binding Indexer properties
 
-SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
+SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.IOS~Syncfusion.SfDataGrid.GridColumn~MappingName.html).
 
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID[0].Customer" });
@@ -90,7 +90,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID[0].Cu
 
 ## View
 
-DataGrid has the [View](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~View.html) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.Linq.IOS~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintain and manipulation data and other advanced operations like `Sorting`, `Grouping`, and etc.
+DataGrid has the [View](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~View.html) property of type [ICollectionViewAdv](https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.IOS~Syncfusion.Data.CollectionViewAdv.html) interface that implements `ICollectionView` interface. `View` is responsible for maintain and manipulation data and other advanced operations like `Sorting`, `Grouping`, and etc.
 
 When you bind Collection to `ItemsSource` property of SfDataGrid, then `View` will be created and maintains the operations on `Data` such as `Grouping`, `Sorting`, `Insert`, `Delete`, and `Modification`.
 
@@ -102,7 +102,7 @@ The following property is associated with `View`.
 
 ### LiveDataUpdateMode
 
-SfDataGrid provides support to update the view during data manipulation operations and property changes using LiveDataUpdateMode(https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.Linq.iOS~Syncfusion.Data.LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
+SfDataGrid provides support to update the view during data manipulation operations and property changes using LiveDataUpdateMode(https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.iOS~Syncfusion.Data.LiveDataUpdateMode.html). It allows you to customize when to update the view based on the `SfDataGrid.View.LiveDataUpdateMode` property.
 
 <table>
 <tr>
@@ -135,7 +135,7 @@ The following events are associated with `View`.
 
 ### RecordPropertyChanged
 
-[RecordPropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.Linq.IOS~Syncfusion.Data.ICollectionViewAdv~RecordPropertyChanged_EV.html) event is raised when the `DataModel` property value is changed, if the `DataModel` implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely sender that handles the `DataModel` and [PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) as argument.
+[RecordPropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.IOS~Syncfusion.Data.ICollectionViewAdv~RecordPropertyChanged_EV.html) event is raised when the `DataModel` property value is changed, if the `DataModel` implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely sender that handles the `DataModel` and [PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) as argument.
 
 `PropertyChangedEventArgs` has below property,
 
@@ -143,7 +143,7 @@ The following events are associated with `View`.
 
 ### CollectionChanged
 
-[CollectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.Linq.IOS~Syncfusion.Data.CollectionViewAdv~CollectionChanged_EV.html) event is raised whenever that is some change in `Records / DisplayElements` collection. The event receives two arguments namely sender that handles `View` object and [NotifyCollectionChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) as argument.
+[CollectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.IOS~Syncfusion.Data.CollectionViewAdv~CollectionChanged_EV.html) event is raised whenever that is some change in `Records / DisplayElements` collection. The event receives two arguments namely sender that handles `View` object and [NotifyCollectionChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) as argument.
 
 `NotifyCollectionChangedEventArgs` has below properties,
 
@@ -159,7 +159,7 @@ The following events are associated with `View`.
 
 ### SourceCollectionChanged
 
-[SourceCollectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.Linq.IOS~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html) event is raised when you make changes in `SourceCollection` for example add or remove the collection. The event receives two arguments namely sender that handles `GridQueryableCollectionViewWrapper` object and `NotifyCollectionChangedEventArgs` as argument.
+[SourceCollectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/linq/Syncfusion.Linq.IOS~Syncfusion.Data.ICollectionViewAdv~SourceCollectionChanged_EV.html) event is raised when you make changes in `SourceCollection` for example add or remove the collection. The event receives two arguments namely sender that handles `GridQueryableCollectionViewWrapper` object and `NotifyCollectionChangedEventArgs` as argument.
 
 `NotifyCollectionChangedEventArgs` has below properties,
 
