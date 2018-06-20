@@ -884,7 +884,7 @@ Set schedule to a specific time zone by using "TimeZone" Property of schedule by
     {% endhighlight %}
     {% endtabs %}
 
-### Appointment's Time Zone
+### Creating Appointment's in different Timezone
 Set Appointment to specif time zone using StartTimeZone and EndTimeZone property of the Appointment the appointment's start time and end time calculated based the given time zone information for start time and end time, you can give different time zone's for start time and end time property.
 Use ActualStartTime and ActualEndTime Property to get the exact Local Start Time and End Time of the appointment
 
