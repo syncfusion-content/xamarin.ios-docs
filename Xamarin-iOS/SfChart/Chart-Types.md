@@ -801,7 +801,7 @@ To render a scatter chart, create an instance of [`SFScatterSeries`](https://hel
 * [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFScatterSeries~BorderColor.html) – used to change the border color of the series.
 * [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFScatterSeries~ScatterWidth.html) – used to change the width of the series.
 * [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFScatterSeries~ScatterHeight.html) – used to change the height of the series.
-
+* [`ShapeType`]() - used to change the rendering shape of scatter series. The available shapes are cross, diamond, ellipse, hexagon, inverted triangle, pentagon, plus, rectangle and triangle.
 
 {% highlight c# %}
 
@@ -810,6 +810,7 @@ SFChart chart = new SFChart();
 
 SFScatterSeries scatterSeries = new SFScatterSeries() 
 { 
+    ShapeType = ChartScatterShapeType.Ellipse,
     ItemsSource = Data, 
     XBindingPath = "XValue", 
     YBindingPath = "YValue"
