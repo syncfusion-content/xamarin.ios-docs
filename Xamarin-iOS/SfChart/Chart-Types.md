@@ -1338,11 +1338,11 @@ Any view can be added to the center of doughnut chart using the [`CenterView`]()
 
 {% highlight C# %}
 
-SFDoughnutSeries doughnutSeries = new SFDoughnutSeries()
-{
-	...
-	CenterView = new Label() { Text = "CenterView" };
-}
+UILabel label = new UILabel();
+label.Text = "CenterView";
+label.Frame = new CGRect(0, 0, 100, 40);
+SFDoughnutSeries doughnutSeries = new SFDoughnutSeries();
+doughnutSeries.CenterView = label;
 
 {% endhighlight %}
 
