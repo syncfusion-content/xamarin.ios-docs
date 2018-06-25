@@ -14,6 +14,8 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
+I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
 ## Basic building blocks of Diagram
 • **Diagram-**It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.
 • **Nodes-**This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc.
