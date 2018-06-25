@@ -32,6 +32,7 @@ For creating a PDF Viewer for iOS, the following assemblies need to be reference
 </tr>
 </table>
 
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Create a simple PDF Viewer
 
