@@ -37,8 +37,6 @@ The following list of assemblies need to be added as reference from the lib fold
 </tr>
 </table>
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
-
 In order to use export to excel and export to PDF functionalities of SfDataGrid, add the below assembly to your project.
 
 <table>
@@ -52,6 +50,7 @@ In order to use export to excel and export to PDF functionalities of SfDataGrid,
 </tr>
 </table>
 
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Create a simple SfDataGrid 
 
