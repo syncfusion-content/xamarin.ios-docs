@@ -9,17 +9,17 @@ documentation: ug
 
 # Thumbs
 
-The [`LeftThumbStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~LeftThumbStyle.html) and [`RightThumbStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~RightThumbStyle.html) properties are used to configure the left and right thumbs of the [`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html). Following properties are available in thumb style to configure left and right thumbs individually. 
+The [`LeftThumbStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~LeftThumbStyle.html) and [`RightThumbStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~RightThumbStyle.html) properties are used to configure the left and right thumbs of the [`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html). Following properties are available in thumb style to configure left and right thumbs individually. 
 
-* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~BorderColor.html) – used to change the stroke color of the thumb
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~BackgroundColor.html) – used to change the background color of the thumb
-* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~BorderWidth.html) – used to change the stroke width of the thumb
-* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~Width.html) – used to change the width of the thumb
-* [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~Height.html)  – used to change the height of the thumb
-* [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~LineColor.html) – used to change the line color of the thumb
-* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~LineWidth.html) – used to change the line width of the thumb
-* [`LineDashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~LineDashes.html) – used to change the dash array of the thumb line
-* [`Shape`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~Shape.html) – used to set one of the predefined shapes for thumb like Default, Circle, Square, Diamond, LeftArrow, RightArrow
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~BorderColor.html) – used to change the stroke color of the thumb
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~BackgroundColor.html) – used to change the background color of the thumb
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~BorderWidth.html) – used to change the stroke width of the thumb
+* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~Width.html) – used to change the width of the thumb
+* [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~Height.html)  – used to change the height of the thumb
+* [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~LineColor.html) – used to change the line color of the thumb
+* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~LineWidth.html) – used to change the line width of the thumb
+* [`LineDashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~LineDashes.html) – used to change the dash array of the thumb line
+* [`Shape`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~Shape.html) – used to set one of the predefined shapes for thumb like Default, Circle, Square, Diamond, LeftArrow, RightArrow
 
 
 {% highlight c# %}
@@ -55,7 +55,7 @@ this.View.AddSubview(rangeNavigator);
 
 ## Customization
 
-User defined thumb layer can be created with SFDateTimeRangeNavigator. We can achieve this by creating a class that extends [`SFRangeNavigatorThumbLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbLayer.html) and overriding the drawing methods of left and right thumbs.
+User defined thumb layer can be created with SFDateTimeRangeNavigator. We can achieve this by creating a class that extends [`SFRangeNavigatorThumbLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbLayer.html) and overriding the drawing methods of left and right thumbs.
 
 {% highlight c# %}
 

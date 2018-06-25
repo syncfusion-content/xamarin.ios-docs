@@ -12,7 +12,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html), and also explains the steps required to add basic elements to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) through various APIs available within it.
+This section explains the steps required to configure the [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html), and also explains the steps required to add basic elements to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) through various APIs available within it.
 
 
 ## Create your first Circular Gauge in Xamarin.iOS
@@ -44,7 +44,7 @@ N> Assemblies are available in unzipped package location in Mac.
 
 ## Initialize gauge 
 
-You can initialize the [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) control with a required optimal name by using the included namespace.
+You can initialize the [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) control with a required optimal name by using the included namespace.
 
 {% highlight c# %}
 
@@ -59,7 +59,7 @@ You can initialize the [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_f
 
 ## Adding header
 
-You can assign a unique header to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) by using the [`SFGaugeHeader`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader.html) property and position it by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader~Position.html) property as you want.
+You can assign a unique header to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) by using the [`SFGaugeHeader`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader.html) property and position it by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader~Position.html) property as you want.
 
 {% highlight c# %}
 
@@ -74,7 +74,7 @@ You can assign a unique header to [`SFCircularGauge`](https://help.syncfusion.co
 
 ## Configuring scales
 
-You can configure the [`SFCircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale.html) elements by using following APIs, which are available in [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html):
+You can configure the [`SFCircularScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale.html) elements by using following APIs, which are available in [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html):
 
 * `StartAngle`
 * `SweepAngle`
@@ -97,7 +97,7 @@ You can configure the [`SFCircularScale`](https://help.syncfusion.com/cr/cref_fi
 
 ## Adding ranges
 
-You can add ranges to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) by creating ranges collection using the [`SFCircularRange`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange.html) property.
+You can add ranges to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) by creating ranges collection using the [`SFCircularRange`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange.html) property.
 
 {% highlight c# %}
 
@@ -116,7 +116,7 @@ You can add ranges to [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_fi
 
 ## Adding a needle pointer
 
-Create a [`SFNeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer.html), and associate it with a scale that is to be displayed the current value.
+Create a [`SFNeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer.html), and associate it with a scale that is to be displayed the current value.
 
 {% highlight c# %}
 
@@ -134,7 +134,7 @@ Create a [`SFNeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-i
 
 ## Adding a range pointer
 
-[`SFRangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer.html) provides an alternative way to indicate the current value.
+[`SFRangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer.html) provides an alternative way to indicate the current value.
 
 {% highlight c# %}    
 
@@ -152,7 +152,7 @@ Create a [`SFNeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-i
 
 ## Adding a marker pointer
 
-[`SFMarkerPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFMarkerPointer.html) points the current value in scale.
+[`SFMarkerPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFMarkerPointer.html) points the current value in scale.
 
 {% highlight c# %}  
    
