@@ -13,7 +13,7 @@ SfDataGrid allows you to freeze the rows and columns when scrolling the grid.
 
 ## Freeze Rows
 
-SfDataGrid provides extensive support to freeze the rows at the top of the view below the header row by setting the [SfDataGrid.FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~FrozenRowsCount.html) property. 
+SfDataGrid provides extensive support to freeze the rows at the top of the view below the header row by setting the [SfDataGrid.FrozenRowsCount](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~FrozenRowsCount.html) property. 
 
 The following code example illustrates freezing two rows in SfDataGrid.
 
@@ -33,7 +33,7 @@ N> Header row is frozen by default and works regardless of the `FrozenRowsCount`
 
 ## Freeze Columns
 
-SfDataGrid also provides support to freeze the columns at the left of the view by setting the [SfDataGrid.FrozenColumnsCount](http://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdatagrid/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~FrozenColumnsCount.html) property. 
+SfDataGrid also provides support to freeze the columns at the left of the view by setting the [SfDataGrid.FrozenColumnsCount](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~FrozenColumnsCount.html) property. 
 
 The following code example illustrates freezing two columns in SfDataGrid.
 
