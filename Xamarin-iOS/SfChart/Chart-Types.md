@@ -1334,7 +1334,7 @@ The small segments in the doughnut chart can be grouped into “others” catego
 
 ## Add view to the center of doughnut chart
 
-Any view can be added to the center of doughnut chart using the [`CenterView`]() property of [`SFDoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries.html). The binding context of the [`CenterView`]() will be the respective [`SFDoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries.html).
+Any view can be added to the center of doughnut chart using the [`CenterView`]() property of [`SFDoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries.html).
 
 {% highlight C# %}
 
