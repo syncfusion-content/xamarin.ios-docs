@@ -604,7 +604,7 @@ The [`AnnotationClicked`]() event is triggered when the user has clicked the ann
 
 ## Get the touch position in annotation
 
-Following are the overridable methods that are available in annotation to send the information about touch interactions.
+Following are the override methods that are available in annotation to send the information about touch interactions.
 
 * [`TouchBegan`]() – occurs when touch down inside the annotation.
 * [`TouchMove`]() – occurs while moving the finger inside the annotation.
