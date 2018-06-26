@@ -19,7 +19,7 @@ You can set specific time zone to schedule by using [TimeZone](https://help.sync
 
 {% tabs %}
 {% highlight c# %}
-schedule.TimeZone = (NSString)"GMT Standard Time";
+schedule.TimeZone = "GMT Standard Time";
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,8 +29,8 @@ You can use `StartTime` and `EndTime` property to get the exact Start Time and E
 
 {% tabs %}	
 {% highlight c# %}
-appointment.StartTimeZone = (NSString)"India Standard Time";
-appointment.EndTimeZone = (NSString)"India Standard Time";
+appointment.StartTimeZone = "India Standard Time";
+appointment.EndTimeZone = "India Standard Time";
 	  
 NSDate exactStartTime = appointment.StartTime;
 NSDate exactEndTime = appointment.EndTime;
