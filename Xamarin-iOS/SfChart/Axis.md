@@ -258,6 +258,22 @@ xAxis.RangePadding = SFChartDateTimePadding.Additional;
 
 ![]( Axis_images/DateTimePaddingAdditional.png)
 
+## DateTimeCategoryAxis
+
+[`DateTimeCategoryAxis`]() is a unique type of axis used mainly with financial series. All the data points are plotted with equal spaces, similar to CategoryAxis, thereby removing space for missing dates. Intervals and range for the axis calculated to similar of DateTimeAxis. There are no visual gaps between points, even when the difference between two points is more than a year. The following APIs are used for customizing DateTimeCategoryAxis.
+
+•	[`Interval`]() - Used to get or set the double value that represents the interval between the labels.
+•	[`IntervalType`]() - Used to get or set the DateTimeIntervalType that represents the type of the interval to be displayed and considered for plotting the series.
+
+{% highlight c# %}
+
+SFDateTimeCategoryAxis xAxis = new SFDateTimeCategoryAxis();
+xAxis.Interval = new NSNumber(1);
+xAxis.IntervalType = SFChartDateTimeIntervalType.Months;
+chart.PrimaryAxis = xAxis;
+
+{% endhighlight %}
+
 ## Logarithmic Axis
 
 Logarithmic axis uses logarithmic scale and displays numbers as axis labels.
