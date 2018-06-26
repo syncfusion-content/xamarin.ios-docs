@@ -11,11 +11,11 @@ documentation: ug
 
 # Labels 
 
-[`SFLinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale.html) labels associate a numeric value with major scale tick marks.
+[`SFLinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale.html) labels associate a numeric value with major scale tick marks.
 
 ## Label color customization
 
-The label color can be changed using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelColor.html) property.
+The label color can be changed using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelColor.html) property.
 
 {% highlight c# %}
 
@@ -37,7 +37,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 
 ## Label font customization
 
-The label font can be customized by using the [`LabelFont`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelFont.html) property.
+The label font can be customized by using the [`LabelFont`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelFont.html) property.
 
 {% highlight c# %}
 
@@ -59,7 +59,7 @@ The label font can be customized by using the [`LabelFont`](https://help.syncfus
 
 ## Setting position for labels
 
-The labels can be positioned far away from the ticks by using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelOffset.html) property in pixel.
+The labels can be positioned far away from the ticks by using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelOffset.html) property in pixel.
 
 {% highlight c# %}
 
@@ -82,11 +82,11 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
 
 ### Setting postfix and prefix for labels
 
-You can  postfix/prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelPrefix.html) properties, respectively.
+You can  postfix/prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelPrefix.html) properties, respectively.
 
 ### Setting label postfix
 
-The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelPostfix.html) property allows you to postfix the values to scale labels.
+The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelPostfix.html) property allows you to postfix the values to scale labels.
 
 {% highlight c# %}
 
@@ -111,7 +111,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgau
 
 ### Setting label prefix
 
-The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelPrefix.html) property allows you to prefix the values to scale labels.
+The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~LabelPrefix.html) property allows you to prefix the values to scale labels.
 
 {% highlight c# %}
 
@@ -134,7 +134,7 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgaug
 
 ## Labels visibility
 
-Labels visibility can be customized using the [`ShowScaleLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~ShowScaleLabel.html) property of linear scale.
+Labels visibility can be customized using the [`ShowScaleLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~ShowScaleLabel.html) property of linear scale.
 
 {% highlight c# %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Header
 
-You can add a title to gauge using the [`SFLinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel.html) option to provide information to users about the data that is being plotted in the linear gauge.
+You can add a title to gauge using the [`SFLinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel.html) option to provide information to users about the data that is being plotted in the linear gauge.
 
 ## Adding header to linear gauge
 
@@ -44,7 +44,7 @@ You can add a title to gauge using the [`SFLinearLabel`](https://help.syncfusion
 
 ##  Positioning the header
 
-To change the position of header, use the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel~Position.html)  property in the linear header. It ranges from 0 to 1. By default, the header will be positioned on the top of linear gauge.
+To change the position of header, use the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel~Position.html)  property in the linear header. It ranges from 0 to 1. By default, the header will be positioned on the top of linear gauge.
 
 {% highlight c# %}
 
@@ -73,7 +73,7 @@ To change the position of header, use the [`Position`](https://help.syncfusion.c
 
 ##  Customizing header text
 
-You can customize the text of [`SFLinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel.html) by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel~Color.html) and [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel~Font.html) properties as shown in the following code snippet.
+You can customize the text of [`SFLinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel.html) by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel~Color.html) and [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel~Font.html) properties as shown in the following code snippet.
 
 {% highlight c# %}
 

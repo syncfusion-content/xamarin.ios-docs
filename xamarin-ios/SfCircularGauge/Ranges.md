@@ -15,7 +15,7 @@ Range is a visual element, which begins and ends at specified values within a sc
 
 ## Setting start and end values for range
 
-Start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~EndValue.html) properties. 
+Start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~EndValue.html) properties. 
 
 {% highlight c# %}
 
@@ -37,7 +37,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
 ## Range customization
 
-An UI of a range is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Width.html) properties. First, you should set the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Offset.html) property for range, then increase the width of the range. 
+An UI of a range is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Width.html) properties. First, you should set the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Offset.html) property for range, then increase the width of the range. 
 
 {% highlight c# %}
 
@@ -74,7 +74,7 @@ An UI of a range is customized by using the [`Color`](https://help.syncfusion.co
 
 The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
 
-1.The [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Offset.html) property with the [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Width.html) property.
+1.The [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Offset.html) property with the [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~Width.html) property.
 
 {% highlight c# %}
 
@@ -96,7 +96,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 ![](ranges_images/range-offset.png)
 
-2.The [`InnerStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~InnerStartOffset.html), [`InnerEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~InnerEndOffset.html), [`OuterStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~OuterStartOffset.html), and [`OuterEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~OuterEndOffset.html) properties.
+2.The [`InnerStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~InnerStartOffset.html), [`InnerEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~InnerEndOffset.html), [`OuterStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~OuterStartOffset.html), and [`OuterEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularRange~OuterEndOffset.html) properties.
 
 {% highlight c# %}
 
@@ -122,7 +122,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 ## Setting multiple ranges
 
-In addition to the default range, you can add n number of ranges to a scale by using the [`Ranges`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfgauge/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~Ranges.html) property.
+In addition to the default range, you can add n number of ranges to a scale by using the [`Ranges`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~Ranges.html) property.
 
 {% highlight c# %}
 
