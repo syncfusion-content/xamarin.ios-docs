@@ -364,6 +364,7 @@ To open the SfPopupLayout relative to a view without absolute position, use the 
 
 #### Type A:
 
+{% tabs %}
 {% highlight c# %}
 
 using Syncfusion.iOS.PopupLayout;
@@ -409,7 +410,9 @@ namespace GettingStarted
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight c# %}
 
 // CustomView.cs
@@ -426,6 +429,7 @@ public class CustomView : UIView
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 Executing the above codes renders the following output in an iOS device.
 
