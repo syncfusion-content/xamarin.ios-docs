@@ -50,6 +50,28 @@ In order to use export to excel and export to PDF functionalities of SfDataGrid,
 </tr>
 </table>
 
+## NuGet configuration
+
+To install the SfDataGrid control in the application, configure the NuGet package of the Syncfusion components.
+
+Refer to the following KB to configure the NuGet package of the Syncfusion components:
+
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+
+The following NuGet package should be added to use the SfDataGrid control in the application:
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required package </th>
+</tr>
+<tr>
+<td> Xamarin.Forms </td>
+<td> Syncfusion.Xamarin.SfDataGrid.iOS</td>
+</tr>
+</table>
+Refer to the following screenshot in which the Syncfusion.Xamarin.SfDataGrid.iOS is highlighted.
+![](SfDataGrid_images/DataGrid_IOS_NugetInstall.png)
 
 ## Create a simple SfDataGrid 
 
