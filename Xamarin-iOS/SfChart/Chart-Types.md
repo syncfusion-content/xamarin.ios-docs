@@ -1324,6 +1324,22 @@ series.EndAngle         = 360;
 
 ![](ChartTypes_images/SemiDoughnut.png)
 
+### Add view to the center of doughnut chart
+
+Any view can be added to the center of doughnut chart using the [`CenterView`]() property of [`SFDoughnutSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries.html).
+
+{% highlight C# %}
+
+UILabel label = new UILabel();
+label.Text = "CenterView";
+label.Frame = new CGRect(0, 0, 100, 40);
+SFDoughnutSeries doughnutSeries = new SFDoughnutSeries();
+doughnutSeries.CenterView = label;
+
+{% endhighlight %}
+
+![](ChartTypes_images/DoughnutCenterView.png)
+
 ## Pyramid Chart
 
 To render a pyramid chart, create an instance of [`SFPyramidSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPyramidSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfchart/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the pyramid segment appearance.
