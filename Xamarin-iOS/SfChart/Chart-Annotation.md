@@ -591,3 +591,49 @@ chart.Annotations.Add(annotation);
 {% endhighlight %}
 
 ![](Chart_Annotation_images/image16.png)
+
+## Event
+
+**AnnotationClicked**
+
+The [`AnnotationClicked`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~AnnotationClicked_EV.html) event is triggered when the user has clicked the annotation. The argument contains the following information.
+
+* [`Annotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationClickedEventArgs~Annotation.html) – used to get the instance of annotation which is clicked.
+* [`X`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationClickedEventArgs~X.html) – used to get the x position of touch point on annotation.
+* [`Y`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationClickedEventArgs~Y.html) – used to get the y position of touch point on annotation..
+
+## Get the touch position in annotation
+
+Following are the override methods that are available in annotation to send the information about touch interactions.
+
+* [`TouchBegan`]() – occurs when touch down inside the annotation.
+* [`TouchMove`]() – occurs while moving the finger inside the annotation.
+* [`TouchCancelled`]() – called when touch cancelled on the annotation area.
+* [`TouchEnded`]() – occurs when touch up inside the annotation. 
+
+{% highlight c# %}
+
+public class TextAnnotationExt : TextAnnotation
+{
+   protected override void TouchBegan(NSSet touches, UIEvent uiEvent)
+   {
+      base.TouchBegan(touches, uiEvent);
+   }
+
+   protected override void TouchMove(NSSet touches, UIEvent uiEvent)
+   {
+      base.TouchMove(touches, uiEvent);
+   }
+
+   protected override void TouchCancelled(NSSet touches, UIEvent uiEvent)
+   {
+      base.TouchCancelled(touches, uiEvent);
+   }
+
+   protected override void TouchEnded(NSSet touches, UIEvent uiEvent)
+   {
+      base.TouchEnded(touches, uiEvent);
+   }
+}
+
+{% endhighlight  %}
