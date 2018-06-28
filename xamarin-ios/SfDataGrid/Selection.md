@@ -43,7 +43,7 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/MultipleSelection.png)
+![](SfDataGrid_images/MultipleSelection.PNG)
 
 ## Getting selected rows
 
@@ -97,7 +97,7 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [8]);
 
 The following screenshot shows the programmatic selection in the data grid:
 
-![](SfDataGrid_images/MultipleSelection.png)
+![](SfDataGrid_images/MultipleSelection.PNG)
 
 ### Scroll to selected item
 
@@ -256,7 +256,7 @@ void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 
 ## Customizing Selection Appearance
 
-### Multiple selection colors
+### Adding multiple selection colors
 
 The SfDataGrid supports selecting one or more rows either programmatically or by touch interactions. By default, the SfDataGrid applies a common background color for the selected rows based on the current theme. However, it also provides extensibility to have multiple selection colors when touching the rows by writing a custom SelectionController derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSelectionController.html) and assigning it to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectionController.html) property. Override the GetSelectionColor() method to apply different colors for selection at runtime.
 
@@ -305,7 +305,7 @@ public class CustomSelectionController : GridSelectionController
 
 The following screenshot shows the final outcome upon execution of the above code.
 
-![](SfDataGrid_images/AddingColors.png)
+![](SfDataGrid_images/AddingColors.PNG)
 
 ### Changing selection background and foreground Color
 
@@ -340,7 +340,7 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/ChangingColor.png)
+![](SfDataGrid_images/SelectionBackground.PNG)
 
 ## Changing current cell border color
 
@@ -370,4 +370,4 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CurrentCellBorderColor.png)
+![](SfDataGrid_images/CurrentcellBorder.PNG)
