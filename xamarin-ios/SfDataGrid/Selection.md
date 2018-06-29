@@ -305,7 +305,7 @@ public class CustomSelectionController : GridSelectionController
 
 The following screenshot shows the final outcome upon execution of the above code.
 
-![](SfDataGrid_images/AddingColors.PNG)
+![](SfDataGrid_images/AddingMultipleColors.PNG)
 
 ### Changing selection background and foreground Color
 
@@ -340,7 +340,7 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/SelectionBackground.PNG)
+![](SfDataGrid_images/SelectionColor.PNG)
 
 ## Changing current cell border color
 
@@ -370,4 +370,4 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CurrentcellBorder.PNG)
+![](SfDataGrid_images/CurrentCellBorder.PNG)
