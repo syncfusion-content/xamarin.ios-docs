@@ -114,3 +114,61 @@ This event occurs before resetting the changes made in an image. You can control
 This event occurs when reset has been completed.
 
 
+### ImageLoaded Event
+
+This event will be triggered once the image is loaded. By using this event we can add any shapes, text or crop over an image while initially loading the image. 
+
+{% highlight C# %}
+
+       public override void ViewDidLoad()
+            {               
+                            . . .
+
+                editor.ImageLoaded += Editor_ImageLoaded;
+
+                            . . .
+            }
+
+        private void Editor_ImageLoaded(object sender, ImageLoadedEventArgs args)
+            {
+                editor.AddShape(ShapeType.Circle, new PenSettings() {Color = UIColor.Green,Mode = Mode.Stroke });
+            }
+
+{% endhighlight %}
+
+
+### ItemSelected Event
+
+This event will be triggered whenever you tap the image editor selected shapes (Rectangle, Circle and Arrow) and Text. You can get the settings of each selected shapes and text with the help of ItemSelected argument. Also we can change the settings which will affect the selected shape.
+
+{% highlight C# %}
+
+       public override void ViewDidLoad()
+            {               
+                            . . .
+
+                editor.ItemSelected += Editor_ItemSelected;
+
+                            . . .
+            }
+
+
+        private void Editor_ItemSelected(object sender, ItemSelectedEventArgs args)
+            {
+                var Settings = args.Settings;   
+
+                if (Settings is PenSettings)
+                {
+                    (Settings as PenSettings).Color = UIColor.Green;
+                }
+                else
+                {
+                    (Settings as TextSettings).Color = UIColor.Yellow;
+                }
+     
+            }
+
+{% endhighlight %}
+
+
+
