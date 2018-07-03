@@ -31,6 +31,7 @@ Text
 Default DataFormItem generated for string type and the properties with below attributes. 
 [DataType(DataType.Text)]
 [DataType(DataType.MultilineText)]
+[DataType(DataType.Password)]
 </td>
 </tr>
 <tr>
