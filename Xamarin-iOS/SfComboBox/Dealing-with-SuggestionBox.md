@@ -23,7 +23,7 @@ Displays the suggestion box at the bottom of the combo box control.
 {% tabs %}
 {% highlight c# %}
 
-sfCombo.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom; 
+combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom; 
  
 {% endhighlight %}
 {% endtabs %}
@@ -37,7 +37,7 @@ Displays the suggestion box at the top of the combo box control.
 {% tabs %}
 {% highlight c# %}
 
-sfCombo.SuggestionBoxPlacement = SuggestionBoxPlacement.Top; 
+combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top; 
  
 {% endhighlight %}
 {% endtabs %}

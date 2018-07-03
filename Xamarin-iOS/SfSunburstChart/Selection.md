@@ -9,11 +9,11 @@ documentation: ug
 
 # Selection
 
-The sunburst chart provides support to select or highlight the segments.
+The sunburst chart provides support to select or highlight the segments. Selection can be enabled with the help of [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SelectionSettings~EnableSelection.html) property.
 
 ## Selection type
 
-The `SelectionType` property allows you to select a segment based on the following categories:
+The [`SelectionType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SelectionSettings~SelectionType.html) property allows you to select a segment based on the following categories:
 
 * Child: Highlights the selected segment along with its children in all levels.
 * Group: Highlights the entire group of the selected segment in a hierarchy.
@@ -28,9 +28,9 @@ The following code shows the `Child` selection type.
 
 {% highlight C# %} 
 
-            sunburstChart.SelectionSettings.EnableSelection = true;
-            sunburstChart.SelectionSettings.Opacity = 0.5;
-            sunburstChart.SelectionSettings.SelectionType = SelectionType.Child;            
+  sunburstChart.SelectionSettings.EnableSelection = true;
+  sunburstChart.SelectionSettings.Opacity = 0.5;
+  sunburstChart.SelectionSettings.SelectionType = SelectionType.Child;            
 
 {% endhighlight %}
 
@@ -46,9 +46,9 @@ The following code shows the `Group` selection type.
 
 {% highlight C# %} 
 
-            sunburstChart.SelectionSettings.EnableSelection = true;
-            sunburstChart.SelectionSettings.Opacity = 0.5;
-            sunburstChart.SelectionSettings.SelectionType = SelectionType.Group;            
+  sunburstChart.SelectionSettings.EnableSelection = true;
+  sunburstChart.SelectionSettings.Opacity = 0.5;
+  sunburstChart.SelectionSettings.SelectionType = SelectionType.Group;            
 
 {% endhighlight %}
 
@@ -64,9 +64,9 @@ The following code shows the `Parent` selection type.
 
 {% highlight C# %} 
 
-            sunburstChart.SelectionSettings.EnableSelection = true;
-            sunburstChart.SelectionSettings.Opacity = 0.5;
-            sunburstChart.SelectionSettings.SelectionType = SelectionType.Parent;            
+  sunburstChart.SelectionSettings.EnableSelection = true;
+  sunburstChart.SelectionSettings.Opacity = 0.5;
+  sunburstChart.SelectionSettings.SelectionType = SelectionType.Parent;            
 
 {% endhighlight %}
 
@@ -82,9 +82,9 @@ The following code shows the `Single` selection type.
 
 {% highlight C# %} 
 
-            sunburstChart.SelectionSettings.EnableSelection = true;
-            sunburstChart.SelectionSettings.Opacity = 0.5;
-            sunburstChart.SelectionSettings.SelectionType = SelectionType.Single;
+  sunburstChart.SelectionSettings.EnableSelection = true;
+  sunburstChart.SelectionSettings.Opacity = 0.5;
+  sunburstChart.SelectionSettings.SelectionType = SelectionType.Single;
 
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ The following code shows the `Single` selection type.
 
 ## Selection display mode
 
-The selection display mode provides the following selection options to highlight the segments:
+The [`SelectionDisplayMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SelectionSettings~SelectionDisplayMode.html) provides the following selection options to highlight the segments:
 
 * By stroke
 * By Color
@@ -102,16 +102,16 @@ The selection display mode provides the following selection options to highlight
 
 ### Opacity
 
-This mode highlights the selected segment with the opacity specified in the `Opacity` property.
+This mode highlights the selected segment with the opacity specified in the [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SelectionSettings~Opacity.html) property.
 
 {% tabs %} 
 
 {% highlight C# %} 
 
-            sunburstChart.SelectionSettings.EnableSelection = true;
-            sunburstChart.SelectionSettings.Opacity = 0.5;           
-            sunburstChart.SelectionSettings.SelectionType = SelectionType.Group;
-            sunburstChart.SelectionSettings.SelectionDisplayMode = SelectionDisplayMode.HighlightByOpacity;
+  sunburstChart.SelectionSettings.EnableSelection = true;
+  sunburstChart.SelectionSettings.Opacity = 0.5;           
+  sunburstChart.SelectionSettings.SelectionType = SelectionType.Group;
+  sunburstChart.SelectionSettings.SelectionDisplayMode = SelectionDisplayMode.HighlightByOpacity;
 
 {% endhighlight %}
 
@@ -121,16 +121,16 @@ This mode highlights the selected segment with the opacity specified in the `Opa
 
 ### Color
 
-This mode highlights the selected segment using the brush specified in the `SelectionBrush` property.
+This mode highlights the selected segment using the brush specified in the [`SelectionBrush`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SelectionSettings~SelectionBrush.html) property.
 
 {% tabs %}
 
 {% highlight C# %} 
 
-            sunburstChart.SelectionSettings.EnableSelection = true;  
-            sunburstChart.SelectionSettings.SelectionDisplayMode = SelectionDisplayMode.HighlightByColor;          
-            sunburstChart.SelectionSettings.SelectionBrush = UIColor.Black;
-            sunburstChart.SelectionSettings.SelectionType = SelectionType.Group;          
+  sunburstChart.SelectionSettings.EnableSelection = true;  
+  sunburstChart.SelectionSettings.SelectionDisplayMode = SelectionDisplayMode.HighlightByColor;          
+  sunburstChart.SelectionSettings.SelectionBrush = UIColor.Black;
+  sunburstChart.SelectionSettings.SelectionType = SelectionType.Group;          
 
 {% endhighlight %}
 
@@ -140,16 +140,16 @@ This mode highlights the selected segment using the brush specified in the `Sele
 
 ### Stroke
 
-This mode highlights the selected segment by applying stroke to it. The color and thickness of the stroke can be customized using the `SelectionStrokeBrush` and `SelectionStrokeWidth` properties.
+This mode highlights the selected segment by applying stroke to it. The color and thickness of the stroke can be customized using the [`SelectionStrokeBrush`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SelectionSettings~SelectionStrokeBrush.html) and [`SelectionStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SelectionSettings~SelectionStrokeWidth.html) properties.
 
 {% tabs %}
 
 {% highlight C# %} 
 
-            sunburstChart.SelectionSettings.EnableSelection = true;
-            sunburstChart.SelectionSettings.SelectionDisplayMode = SelectionDisplayMode.HighlightByStroke;           
-            sunburstChart.SelectionSettings.SelectionBrush = UIColor.Black;
-            sunburstChart.SelectionSettings.SelectionType = SelectionType.Group;          
+  sunburstChart.SelectionSettings.EnableSelection = true;
+  sunburstChart.SelectionSettings.SelectionDisplayMode = SelectionDisplayMode.HighlightByStroke;           
+  sunburstChart.SelectionSettings.SelectionBrush = UIColor.Black;
+  sunburstChart.SelectionSettings.SelectionType = SelectionType.Group;          
 
 {% endhighlight %}
 
@@ -161,24 +161,23 @@ This mode highlights the selected segment by applying stroke to it. The color an
 
 ### Selection Changed
 
-This event occurs whenever you select the segment. You can get the selected segment details as argument from SunburstSelectionChangedEventArgs handler.
+This event occurs whenever you select the segment. You can get the [`SelectedSegment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstSelectionChangedEventArgs~SelectedSegment.html) and [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstSelectionChangedEventArgs~IsSelected.html) properties details as argument from [`SunburstSelectionChangedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstSelectionChangedEventArgs.html) handler.
 
 {% tabs %} 
 
 {% highlight C# %}
 
-            sunburstChart.SelectionSettings.EnableSelection = true;
-            sunburstChart.SelectionSettings.SelectionDisplayMode = SelectionDisplayMode.HighlightByStroke;
-            sunburstChart.SelectionSettings.SelectionType = SelectionType.Single;
+  sunburstChart.SelectionSettings.EnableSelection = true;
+  sunburstChart.SelectionSettings.SelectionDisplayMode = SelectionDisplayMode.HighlightByStroke;
+  sunburstChart.SelectionSettings.SelectionType = SelectionType.Single;
 
-            sunburstChart.SelectionChanged += SunburstChart_SelectionChanged; 
+  sunburstChart.SelectionChanged += SunburstChart_SelectionChanged; 
 
-        private void SunburstChart_SelectionChanged(object sender, SunburstSelectionChangedEventArgs e)
-        {
-            if (e.SelectedSegment != null)
-                e.SelectedSegment.Color = UIColor.Green;          
-        }
-
+  private void SunburstChart_SelectionChanged(object sender, SunburstSelectionChangedEventArgs e)
+  {
+     if (e.SelectedSegment != null)
+        e.SelectedSegment.Color = UIColor.Green;          
+  }
 
 {% endhighlight %}
 

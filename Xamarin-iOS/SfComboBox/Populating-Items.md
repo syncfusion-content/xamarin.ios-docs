@@ -28,7 +28,7 @@ countryList.Add((NSString)"Canada");
 countryList.Add((NSString)"China"); 
 countryList.Add((NSString)"Denmark"); 
 countryList.Add((NSString)"Dominica"); 
-sfCombo.ComboBoxSource = countryList; 
+combobox.ComboBoxSource = countryList; 
 
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ To populate items using data source, create a model class with the properties th
 
 {% highlight C# %}
 
-public class Student 
+public class Employee 
 { 
 private string name; 
 public string Name 
@@ -62,33 +62,33 @@ set
     }          
 } 
 
-private string age; 
-public string Age 
+private string employee_ID; 
+public string Employee_ID 
 { 
     get 
     { 
-        return age; 
+        return employee_ID; 
     } 
 
 set 
     { 
-        age = value; 
+        employee_ID = value; 
     } 
 } 
 
-public Student(string name, string age) 
+public Employee(string name, string employee_ID) 
 { 
     this.Name = name; 
-    this.Age = age; 
+    this.Employee_ID = employee_ID; 
 
 } 
 public string getName() 
 { 
     return Name; 
 } 
-public string getAge() 
+public string getEmployee_ID() 
 { 
-    return Age; 
+    return Employee_ID; 
 } 
 } 
 {% endhighlight %}
@@ -101,16 +101,22 @@ public string getAge()
 
 {% highlight C# %}
 
-public ObservableCollection<Student> StudentDetails 
+public ObservableCollection<Employee> EmployeeDetails 
 { 
     get; 
     set; 
 } 
-void GetStudentData() 
+void GetEmployeeData() 
 { 
-    StudentDetails = new ObservableCollection<Student>(); 
-    StudentDetails.Add(new Student("John", "24")); 
-    StudentDetails.Add(new Student("James", "37")); 
+    EmployeeDetails = new ObservableCollection<Employee>(); 
+    EmployeeDetails.Add(new Employee("Aldrin", "1"));
+    EmployeeDetails.Add(new Employee("Frank", "2"));
+    EmployeeDetails.Add(new Employee("Howard", "3"));
+    EmployeeDetails.Add(new Employee("James", "4"));
+    EmployeeDetails.Add(new Employee("John", "5"));
+    EmployeeDetails.Add(new Employee("Michael", "6"));
+    EmployeeDetails.Add(new Employee("Mark", "7")); 
+    EmployeeDetails.Add(new Employee("Steve", "8"));
 } 
 
 		
@@ -124,11 +130,11 @@ void GetStudentData()
 
 {% highlight C# %}
 
-SfComboBox sfCombo = new SfComboBox(); 
-this.GetStudentData(); 
-sfCombo.DisplayMemberPath = (NSString)"Name"; 
-sfCombo.SelectedValuePath = (NSString)"Age"; 
-sfCombo.DataSource = StudentDetails; 
+SfComboBox combobox = new SfComboBox(); 
+this.GetEmployeeData(); 
+combobox.DisplayMemberPath = (NSString)"Name"; 
+combobox.SelectedValuePath = (NSString)"Employee_ID"; 
+combobox.DataSource = EmployeeDetails; 
 
 {% endhighlight %}
 

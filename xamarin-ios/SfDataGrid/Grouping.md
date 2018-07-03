@@ -35,6 +35,58 @@ The following code example illustrates how to apply grouping by a column in SfDa
 The following screenshot shows the output rendered when grouping is applied.
 ![](SfDataGrid_images/Grouping.png)
 
+## MultiGrouping
+
+The SfDataGrid also allows to group the data against one or more columns by using the `SfDataGrid.GroupingMode` property. When the `GroupingMode` is set as `GroupingMode.Multiple`, the data will be organized into hierarchical tree structure based on identical values of that column. MultiGrouping feature works similarly as MultiSorting feature. Initially, the data is grouped according to the first column added in the `GroupColumnDescriptions` collection. When more columns are added to the `GroupColumnDescriptions`, the newly added column will be grouped in consideration to the previous group(s). This results in a tree like hierarchy.
+
+{% highlight c# %}
+
+this.dataGrid.GroupingMode = GroupingMode.Multiple;
+
+{% endhighlight %}
+
+The following screenshot shows the output rendered when above code is executed:
+![](SfDataGrid_images/MultiColumnGrouping.png)
+
+## Indent column customizations
+
+Indent columns are the columns present to the left of the `CaptionSummaryRows` when `GroupingMode` is set as multiple. The number of indent cells in each `CaptionSummaryRow` will be determined by the level of that `Group`. For example, the first group will have only one indent cell and the next immediate group will have an extra indent cell. It keeps on adding by one for each lower level groups to maintain the tree structure. Each data row will have indent cells count equal to the level of the last sub group in view. The following customizations can be done for the indent cells.
+
+### Customize indent column width
+
+By default, the width of the indent column is 20. To customize the width, use the `IndentColumnWidth` property. 
+
+{% highlight c# %}
+
+this.dataGrid.IndentColumnWidth = 60;
+
+{% endhighlight %}
+
+### Customize indent column background color 
+
+Set background color to the indent cells based on the row where indent cells present. To set the desired background color, use the `GetIndentBackgroundColor()` override method in the custom `DataGridStyle` class. Refer to this [link](https://help.syncfusion.com/xamarin-android/sfdatagrid/styles) to know how to apply custom styles to the SfDataGrid. 
+
+{% highlight c# %}
+
+this.dataGrid.GridStyle = new CustomStyle();
+
+public class CustomStyle : DataGridStyle
+{
+    public override UIColor GetIndentBackgroundColor(RowType rowType)
+    {
+       if (rowType == RowType.DefaultRow)
+           return UIColor.Orange;
+       if (rowType == RowType.CaptionCoveredRow)
+           return UIColor.Blue;
+       else return UIColor.LightGray;
+    }
+}
+
+{% endhighlight %}
+
+The following screenshot shows the output rendered when above code is executed:
+![](SfDataGrid_images/IndentColumnStyling.png)
+
 ## Expand groups while grouping
  
 You can expand all the groups while grouping by setting [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoExpandGroups.html) to `true`. So, when user group any column, then all groups will be in expanded state. 

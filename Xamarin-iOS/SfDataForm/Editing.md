@@ -187,21 +187,6 @@ Property of type enum and list.
 SfPicker
 </td>
 </tr>
-<tr>
-<td>
-Password
-</td>
-<td>
-{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
-</td>
-<td>
-The String type property and property with 
-[DataType(DataType.Password)] attribute.
-</td>
-<td>
-UITextField
-</td>
-</tr>
 </table>
 
 ## Changing editor for type
@@ -307,6 +292,32 @@ dataForm.RegisterEditor("Salary", "Slider");
 {% endtabs %}
 
 ![](SfDataForm_images/SliderEditor.png)
+
+## Support for password editor
+
+You can load password editor by setting `SecureTextEntry` property in  `UITextField` as `true'.   
+
+{% tabs %}
+{% highlight c# %}
+public class CustomTextEditor : DataFormTextEditor
+{
+    public CustomTextEditor(SfDataForm dataForm) : base(dataForm)
+    {
+    }
+
+    protected override void OnInitializeView(DataFormItem dataFormItem, UITextField view)
+    {
+        if (dataFormItem.Name == "Password")
+            view.SecureTextEntry = true;
+        base.OnInitializeView(dataFormItem, view);
+    }
+}
+
+dataForm.RegisterEditor("Text", new CustomTextEditor(dataForm));
+{% endhighlight %}
+{% endtabs %}
+
+![](SfDataForm_images/PasswordEditor.png)
 
 ## Support for Email editor
 

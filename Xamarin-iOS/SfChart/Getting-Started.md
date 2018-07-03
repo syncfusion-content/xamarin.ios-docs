@@ -23,6 +23,8 @@ You have to add the following assembly reference to the iOS unified project
 
 ios-unified\Syncfusion.SFChart.iOS.dll
 
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [`link`](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
 ## Initialize Chart
 
 Import the [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) namespace as shown below in your respective Page,

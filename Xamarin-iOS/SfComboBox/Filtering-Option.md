@@ -17,9 +17,9 @@ N> The Allow-Filtering property works only when the IsEditable property is set t
 
 {% highlight C# %}
 
-sfCombo = new SfComboBox(); 
-sfCombo.IsEditable = true; 
-sfCombo.AllowFiltering = true; 
+combobox = new SfComboBox(); 
+combobox.IsEditable = true; 
+combobox.AllowFiltering = true; 
 
 {% endhighlight %}
 

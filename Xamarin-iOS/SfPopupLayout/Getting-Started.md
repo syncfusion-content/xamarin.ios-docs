@@ -55,6 +55,8 @@ Refer to the following screenshot in which the Syncfusion.Xamarin.SfPopupLayout.
 
 ![](GettingStarted_images/NuGetInstall.png)
 
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
 ## Create a sample application with SfPopupLayout
 
 The SfPopupLayout control can be configured entirely in C# code. To create a sample application for this control, follow the topics:  
@@ -183,7 +185,7 @@ namespace GettingStarted
         }
         private void ShowPopupButton_TouchDown(object sender, EventArgs e)
         {
-            popupLayout.Show(rootView);
+            popupLayout.Show();
         }
         public override void ViewDidLayoutSubviews()
         {
@@ -211,6 +213,7 @@ The following list of options are available to position the SfPopupLayout in the
 * `Absolute Positioning`: Use the [SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Show.html)to display the SfPopupLayout at the specified X and y position.
 * `OnTouch`: Use the [SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) to display the SfPopupLayout at the touch point.
 * `Relative Positioning`: Use the [SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowRelativeToView.html) to display the SfPopupLayout at any of the 8 positions relative to the specified view.
+* `Absolute relative positioning`: Use the [SfPopupLayout.ShowRelativeToView(View, RelativePosition,x position,y position)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowRelativeToView(UIView,RelativePosition,Double,Double).html) to display the SfPopupLayout at an absolute x,y coordinate from the relative position of the specified view.
 
 More information for pop-up positioning is in this [link](https://help.syncfusion.com/xamarin-ios/sfpopuplayout/popup-positioning).
 
@@ -294,10 +297,12 @@ Built-in animations are available in the SfPopupLayout applied when the PopupVie
 
 By default, you can choose from the following available animations in the SfPopupLayout using the property [SfPopupLayout.AnimationMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html).
 
-* [Zoom](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): Zoom-out animation will be applied if the PopupView opens, and zoom-in animation will be applied if the PopupView closes. This is the default AnimationMode
-* [Fade](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): Fade-out animation will be applied if the PopupView opens, and fade-in animation will be applied if the PopupView closes.
-* [SlideOnLeft](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): PopupView will be animated from left-to-right, when it opens and it will be animated from right-to-left when the PopupView closes.
-* [SlideOnTop](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): PopupView will be animated from top-to-bottom, when it opens and it will be animated from bottom-to-top when the PopupView closes.
+* [Zoom](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): Zoom-out animation will be applied when the PopupView opens, and zoom-in animation will be applied when the PopupView closes. This is the default AnimationMode
+* [Fade](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): Fade-out animation will be applied when the PopupView opens, and fade-in animation will be applied when the PopupView closes.
+* [SlideOnLeft](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): PopupView will be animated from left-to-right, when it opens and from right-to-left when the PopupView closes.
+* [SlideOnRight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): PopupView will be animated from right-to-left, when it opens and from left-to-right when the PopupView closes.
+* [SlideOnTop](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): PopupView will be animated from top-to-bottom, when it opens and from bottom-to-top when the PopupView closes.
+* [SlideOnBottom](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): PopupView will be animated from bottom-to-top, when it opens and from top-to-bottom when the PopupView closes
 * [None](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AnimationMode.html): Animation will not be applied.
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin-ios/sfpopuplayout/popup-animations).
