@@ -226,3 +226,23 @@ lineSeries.DataMarker.ConnectorLineStyle.Dashes = NSArray.FromNSObjects (dashes)
 ![](Datamarker_images/ConnectorLine.png)
 
 N> For Pie and Doughnut series, you can set the Bezier curve for connector line using [`ConnectorLineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~ConnectorLineType.html) property of Pie and Doughnut series.
+
+## Event
+
+### DataMarkerLabelCreated
+
+The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~DataMarkerLabelCreated_EV.html) event occurs when the data marker label is created. This argument contains object of the [`DataMarkerLabel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel.html). The following properties are available in DataMarkerLabel to customize the appearance of data markers based on condition.
+
+* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~Label.html) – Gets or sets the text of data marker.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~BackgroundColor.html) – Gets or sets the background color of data marker label.
+* [`Index`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~Index.html) – Gets the data point index of data marker label.
+* [`XPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~XPosition.html) – Gets the x-position of data marker label.
+* [`YPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~YPosition.html) – Gets the y-position of data marker label.
+* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~LabelStyle.html) – Gets or sets the label style to customize the appearance of individual data marker label.
+* [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerWidth.html) – Gets or sets the marker width.
+* [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerHeight.html) – Gets or sets the marker height.
+* [`MarkerBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerBorderWidth.html) – Gets or sets the border width of marker symbol.
+* [`MarkerBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerBorderColor.html) – Gets or sets the border color of marker symbol.
+* [`MarkerColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerColor.html) – Gets or sets the marker color.
+* [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerType.html) – Gets or sets the shape type of marker. The available shapes are ellipse, diamond, hexagon, cross, HorizontalLine, VerticalLine, InvertedTriangle, triangle, pentagon, plus, and square.
+* [`View`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~View.html) - Gets or sets the view.

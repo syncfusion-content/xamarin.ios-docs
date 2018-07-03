@@ -13,7 +13,7 @@ keywords: button, SfRadioButton, RadioButton
 # Visual Customization
 
 ## Customizing state color
-The default state colors can be customized using `CheckedColor` and `UncheckedColor `properties. The checked state color is updated to `CheckedColor` property value when the state is changed to the checked and unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked.
+The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked state color is updated to the `CheckedColor` property value when the state is changed to the checked. The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked.
 
 {% tabs %}
 {% highlight c# %}
@@ -32,9 +32,9 @@ radioGroup.AddArrangedSubview(uncheck);
 
 ![](Images/StateColor.png)
 
-## Setting appearance of caption text
+## Setting caption text appearance 
 
-You can customize the display text appearance of `SfRadioButton` control using the following properties:
+You can customize the display text appearance of the `SfRadioButton` control using the following properties:
 
 * `SetTitleColor`: Changes the color of the text.
 * `HorizontalAlignment`: Changes the horizontal alignment of the caption text.
@@ -56,4 +56,4 @@ radioButton.Font = UIFont.FromDescriptor(fontDescriptor.CreateWithTraits(UIFontD
 
 ![](Images/CaptionAppereance.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Android/Samples/MaskedEdit_VisualCustomize.zip).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/RadioButton_VisualCustomization.zip ).
