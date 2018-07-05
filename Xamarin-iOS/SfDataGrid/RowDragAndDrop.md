@@ -51,7 +51,23 @@ Refer the following code example that shows how to load row like view in templa
 {% highlight c# %}
 
 //Assigning custom view to row drag and drop template.
-sfGrid.RowDragDropTemplate = new RowDragDropTemplate(context);
+sfGrid.RowDragDropTemplate = new RowDragDropTemplate();
+
+sfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
+{
+     if (e.Reason == QueryRowDraggingReason.DragStarted)
+     {
+        (sfGrid.RowDragDropTemplate as RowDragDropTemplate).UpdateRow(e.RowData);
+     }         
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -124,6 +140,8 @@ public class RowDragDropTemplate : UIView
 {% endtabs %}
 
 ![](SfDataGrid_images/.png)
+
+You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomTemplate-1341433818)
 
 ## Events in row drag and drop
 
