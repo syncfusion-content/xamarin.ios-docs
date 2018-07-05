@@ -19,7 +19,7 @@ sfGrid.AllowDraggingRow = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/ColumnDraganddrop.gif)
+![](SfDataGrid_images/ColumnDragandDrop.gif)
 
 ## Column drag and drop event
 
