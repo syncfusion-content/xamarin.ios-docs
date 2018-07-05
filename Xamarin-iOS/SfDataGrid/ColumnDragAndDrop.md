@@ -19,6 +19,8 @@ sfGrid.AllowDraggingRow = true;
 {% endhighlight %}
 {% endtabs %}
 
+![](SfDataGrid_images/ColumnDraganddrop.gif)
+
 ## Column drag and drop event
 
 The `QueryColumnDragging` event is fired when dragging a column, and will be continuously fired until the dragging ends. By handing the `SfDataGrid.QueryColumnDragging ` event, you can cancel the dragging of a particular column header.
@@ -200,4 +202,4 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/.png)
+![](SfDataGrid_images/CustomizedIndicator_Column.png)
