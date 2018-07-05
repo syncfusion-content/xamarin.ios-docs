@@ -16,7 +16,7 @@ ImageEditor allow us to change the position of shapes/Edits which are arranged o
 3)BringForward
 4)SendBackward
 
-# BringToFront
+## BringToFront
 
 BringToFront is a method which is used to bring the selected object to the front of a group of elements on image.
 
@@ -44,7 +44,7 @@ SendToBack is a method which is used to Send the selected object to the Back of 
 
 {% endtabs %}
 
-### BringForward
+## BringForward
 
 BringForward is a method which is used to bring the selected object to one step front of a group of elements on image
 
@@ -58,7 +58,7 @@ BringForward is a method which is used to bring the selected object to one step 
 
 {% endtabs %}
 
-#### SendBackward
+## SendBackward
 
 SendBackward is a method which is used to send the selected object to one step backward of a group of elements on image.
 
