@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Text
+## Text
 
 To add the desired text elements over the image, use the following two ways:
 
@@ -26,7 +26,7 @@ To change the color of the selected text, select the desired text and click on t
 
 You can also add the desired text elements over the image from the code programmatically. The `AddText` method in the SfImageEditor control is used to add text based on the string value and `TextSettings`.
 
-#### TextSettings
+## TextSettings
 
 TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
 `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
@@ -45,7 +45,7 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 ![SfImageEditor](ImageEditor_images/text.png)
 
-#### Bounds
+## Bounds
 
 `Bounds` property allows you to set frame for the newly added `Text` and you can position the text wherever you want on the image. The value of the text frame should be in percentage(maximum - 100 & minimum - 0).
 
@@ -56,7 +56,7 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 {% endhighlight %}
 
 
-# Custom Font Family
+## Custom Font Family
 
 Using a font other than the built-in typefaces can be applied for image editor text style with the help of custom font family support. Download the custom fonts file in ttf file format and add these fonts into required folder in particular project file.
 

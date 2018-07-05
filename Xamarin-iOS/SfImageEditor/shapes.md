@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Shapes
+## Shapes
 
 You can annotate any path on an image using free hand drawing and add shapes like rectangle, circle over the image. The shapes can be added in two ways:
 
@@ -34,11 +34,11 @@ I> By default, the shape will have `Red` stroke with `Transparent` fill.
 
 The `AddShape` method in the SfImageEditor control is used to add shapes based on the `ShapeType` and `PenSettings`.
 
-#### ShapeType
+## ShapeType
 
 ShapeType is an enum type with values `Rectangle`, `Circle`,`Arrow` and `Path`.
 
-#### PenSettings
+## PenSettings
 
 PenSettings is defined to set the values for `StrokeColor`, `FillColor` and `StrokeWidth`.
 
@@ -73,7 +73,7 @@ N> FillColor property is applicable only if the ShapeType is `Rectangle` or `Cir
 
 ![SfImageEditor](ImageEditor_images/path.gif)
 
-#### Bounds
+## Bounds
 
 `Bounds` property allows you to set frame for the newly added shapes(rectangle and circle) and you can position the shapes wherever you want on the image. The value of the shapes frame should be in percentage(maximum - 100 & minimum - 0).
 
