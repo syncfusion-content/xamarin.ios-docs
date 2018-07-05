@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# ToolbarCustomization
+## ToolbarCustomization
 
 You can customize color palette, toolbar visibility and appearance of each toolbar item.
 
@@ -26,7 +26,7 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 2.FooterToolbarItem
 3.SubItems
 
-### Adding HeaderToolbarItem
+## Adding HeaderToolbarItem
 
 `HeaderToolbarItem` will be arranged on top of the image editor and you can customize header toolbar item with the help of Icon and Text as like below,
 
@@ -36,7 +36,7 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 
 {% endhighlight %}
 
-### Adding FooterToolbarItem   
+## Adding FooterToolbarItem   
 
  `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footer toolbar item with the help of Icon and Text along with sub items.
 
@@ -49,7 +49,7 @@ Refer to the below code snippet to customize footer toolbar item,
 
 {% endhighlight %}
 
-### Adding SubItems to the FooterToolbarItem
+## Adding SubItems to the FooterToolbarItem
 
 `SubItems` only applicable for `FooterToolbarItem` and it represents grouped action of respective footer toolbar item. SubItems will be arranged above the footer toolbar item layout and you can also customize sub items appearance as like main toolbar items. 
 
@@ -73,7 +73,8 @@ Refer to the below code snippet to customize sub items of footer toolbar item,
 
 {% endhighlight %}
 
-N> You can remove existing toolbar items(Text,Path,Shape,Transform,Reset,Undo,Redo and Save) from the image editor toolbarItems collection based on the index value. 
+N> You can remove existing toolbar items("back, Text, Add, TextColor, FontFamily, Arial, Noteworthy, Marker Felt,
+Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shape, Rectangle, StrokeThickness, Circle, Arrow, Transform, Crop, free, original, square, 3:1, 3:2, 4:3, 5:4, 16:9, Rotate, Flip, Reset, Undo, Redo, Save") from the image editor toolbarItems collection based on the index value. 
 
 You can change icon and text value dynamically for any of already added toolbar item based on the index as like below,
 
@@ -85,7 +86,7 @@ editor.ToolBarSettings.ToolbarItems[3].Icon = UIImage.FromBundle("image.png")
 {% endhighlight %}
 
 
-### ToolbarItemSelected event 
+## ToolbarItemSelected event 
 
 Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered and you can get the respective tapped toolbar item as an argument as shown below, 
 
@@ -114,7 +115,7 @@ Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be 
 
 {% endhighlight %}
 
-#### MoveSubItemsToFooterToolbar 
+### MoveSubItemsToFooterToolbar 
 
 `MoveSubItemsToFooterToolbar` boolean property of ToolbarItemSelected event argument decides the placement of each sub items of respective footer toolbar item. 
 
@@ -183,7 +184,9 @@ To show or hide toolbar by setting toolbar IsVisible property to either true or 
 
 You can hide or show the toolbar items by specifying its icon name and set boolean value to false or true. 
 
- N> You can customize icon  by specifying its names  like  text, path, shapes, transform, rectangle, circle, arrow, flip, crop, rotate, reset, undo, Redo and save.
+ N> You can customize icon  by specifying its names  like  "back, Text, Add, TextColor, FontFamily, Arial, Noteworthy, Marker Felt,
+Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shape, Rectangle, StrokeThickness, Circle, Arrow, Transform, Crop, free, original, square, 3:1, 3:2, 4:3, 5:4, 16:9, Rotate, Flip, Reset, Undo, Redo, Save"
+
 
 {% tabs %}
 
@@ -248,7 +251,7 @@ Toolbar items will be resize based on the toolbar height. To change Height of th
 
 ![SfImageEditor](ImageEditor_images/ToolbarHeight.png)
 
-### Individual Toolbar Item Height Customization
+## Individual Toolbar Item Height Customization
 
 To arrange toolbar items aspect fit based on the toolbar height by using following properties  
 

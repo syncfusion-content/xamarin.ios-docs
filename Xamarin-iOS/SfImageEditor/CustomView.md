@@ -7,15 +7,16 @@ control : ImageEditor
 documentation : ug
 ---
 
-# CustomView
+## CustomView
 
 You can add any custom shapes or views on the image by using the `AddCustomView` method in the SfImageEditor control. To add the custom view, specify any view and its desired `CustomViewSettings` as shown in the following code snippet.
 
 {% highlight C# %}
 
-            UIImageView view = new UIImageView();
-            view.Image = UIImage.FromBundle("image.png");
-            editor.AddCustomView(view, new CustomViewSettings());
+            UIImageView customImage = new UIImageView();
+            customImage.Frame = new CoreGraphics.CGRect(0, 0, 200, 200);
+            customImage.Image = UIImage.FromBundle("CustomViewImage.png");
+            imageEditor.AddCustomView(customImage, new CustomViewSettings());
 
 {% endhighlight %}
 
