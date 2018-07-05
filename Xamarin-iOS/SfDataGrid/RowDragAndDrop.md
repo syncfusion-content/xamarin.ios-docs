@@ -240,7 +240,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 {
      //e.To returns the index of the current row.
      //e.Position returns the x and y position of the current row
-      if ((e.To == 3) && e.Position == new Point(927,1167) && e.Reason == QueryRowDraggingReason.DragEnded)
+      if ((e.To == 3) && e.Position == new Point(60,280) && e.Reason == QueryRowDraggingReason.DragEnded)
         e.Cancel = true;
 }
 
