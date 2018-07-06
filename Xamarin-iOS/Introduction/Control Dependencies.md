@@ -393,7 +393,7 @@ This page lists the assemblies required for each control to be referred in iOS p
 <dd>Syncfusion.Licensing.dll</dd> 
 </dl>
 
-## SfSegementedControl
+## SfSegmentedControl
 
 <dl>
 <dt>NuGet</dt>
