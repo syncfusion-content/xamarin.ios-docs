@@ -152,8 +152,63 @@ private void Diagram_Loaded(object sender)
       //Updating the layout
       diagram.LayoutManager.Layout.UpdateLayout();
 }
-
 {% endhighlight %}
 {% endtabs %}
-![](Minmap_images/Minmap_img1.jpeg)
+![](Mindmap_images/Mindmap_img1.jpeg)
+
+## Mind map layout style
+Mind map styles are defined as collection of node style with a single connector style. Collection of node style will apply from root node to leaf node either through branch wise or level wise.
+
+## Branch wise node style
+Defined node style collection will be applied from branch wise by setting “ApplyNodeStyleBy” property as Branch. The following code example illustrates how to apply style for mind map level wise.
+{% tabs %}
+{% highlight c# %}
+private void UpdateTheme()
+        {
+            bool m_repeatmode = true;
+            nodeStyleCollection.Clear();
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(HexToRGB("#d7ebfb")), HexToRGB("#d7ebfb"), objShape1, StrokeStyle.Default,
+            new TextStyle((int)(14), UIColor.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(HexToRGB("#ffebc4")), HexToRGB("#ffebc4"), objShape2, StrokeStyle.Default,
+            new TextStyle((int)(14), UIColor.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(HexToRGB("#ffcdcd")), HexToRGB("#ffcdcd"), objShape4, StrokeStyle.Default,
+            new TextStyle((int)(14), UIColor.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            lineStyle = new LineStyle(SegmentType.CurveSegment, StrokeStyle.Default, 3, ApplyColorFrom.TargetFill, DecoratorType.None, ApplyColorFrom.None, ApplyColorFrom.None);
+            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy. Branch, m_repeatmode));
+        }
+private void Diagram_Loaded(object sender)
+ {
+    UpdateTheme();
+ }
+{% endhighlight %}
+{% endtabs %}
+![](Mindmap_images/Mindmap_img2.jpeg)
+
+## Level wise node style
+Defined node style collection will be applied from level wise by setting “ApplyNodeStyleBy” property as Level. The following code example illustrates how to apply style for mind map level wise.
+{% tabs %}
+{% highlight c# %}
+private void UpdateTheme()
+        {
+            bool m_repeatmode = true;
+            nodeStyleCollection.Clear();
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(HexToRGB("#d7ebfb")), HexToRGB("#d7ebfb"), objShape1, StrokeStyle.Default,
+            new TextStyle((int)(14), UIColor.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(HexToRGB("#ffebc4")), HexToRGB("#ffebc4"), objShape2, StrokeStyle.Default,
+            new TextStyle((int)(14), UIColor.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            nodeStyleCollection.Add(new NodeStyle(new SolidBrush(HexToRGB("#ffcdcd")), HexToRGB("#ffcdcd"), objShape4, StrokeStyle.Default,
+            new TextStyle((int)(14), UIColor.Black, ".SF UI Text", HorizontalAlignment.Center, VerticalAlignment.Center)));
+            lineStyle = new LineStyle(SegmentType.CurveSegment, StrokeStyle.Default, 3, ApplyColorFrom.TargetFill, DecoratorType.None, ApplyColorFrom.None, ApplyColorFrom.None);
+            (diagram.LayoutManager.Layout as MindMapLayout).UpdateLayoutStyle(new LayoutStyle(nodeStyleCollection, lineStyle, ApplyNodeStyleBy.Level, m_repeatmode));
+        }
+private void Diagram_Loaded(object sender)
+ {
+    UpdateTheme();
+ }
+{% endhighlight %}
+{% endtabs %}
+![](Mindmap_images/Mindmap_img3.jpeg)
+
+## Repeat mode
+When style collection ends, still next level/ branch can have styles. To be cyclic, enable repeat mode. Else to continue with last style disable it.
 
