@@ -518,15 +518,19 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
     }
     protected override UIView GenerateViewForLabel(DataFormItem dataFormItem)
     {
-        var label = base.GenerateViewForLabel(dataFormItem) as UILabel;
-        label.Font = UIFont.BoldSystemFontOfSize(16);
+        var label = base.GenerateViewForLabel(dataFormItem);
+        if (label is UILabel)
+        {
+            (label as UILabel).BackgroundColor = UIColor.FromRGB(255, 149, 34);
+            (label as UILabel).TextColor = UIColor.White;
+        }
         return label;
     }
     protected override void OnEditorCreated(DataFormItem dataFormItem, UIView editor)
     {
         if (editor is UITextField)
-            (editor as UITextField).TextColor = UIColor.Orange;
-        editor.BackgroundColor = UIColor.Blue;
+            (editor as UITextField).TextColor = UIColor.White;
+        editor.BackgroundColor = UIColor.FromRGB(0, 115, 220);
     }
 }
 dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
