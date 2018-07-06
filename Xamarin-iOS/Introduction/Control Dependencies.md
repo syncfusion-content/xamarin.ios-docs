@@ -9,7 +9,7 @@ documentation: ug
 
 # Control Dependencies
 
-This page lists the assemblies required for each control to be referred in iOS project.
+This page lists the assemblies required for each control to be referred in Xamarin.iOS project.
 
 ## SfAutoComplete
 
