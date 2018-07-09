@@ -44,10 +44,10 @@ diagram.AddConnector(connector1);
 ![](Connector_images/Connector_img1.jpeg)
 
 ## Connections with ports
-The SourcePort and TargetPort properties allows to create connections between some specific points of source or target nodes. 
+The SourcePort and TargetPort properties allows to create connections between some specific points of source or target nodes.
 
 ## Using port
-The following code example illustrates how to create and connect the ports: 
+The following code example illustrates how to create and connect the ports:
 {% tabs %}
 {% highlight c# %}
 // creating node  instance
@@ -128,6 +128,22 @@ diagram.AddConnector(connector1);
 {% endtabs %}
 ![](Connector_images/Connector_img5.jpeg)
 
+## Bezier 
+Bezier curve has cubic curve segments that are configurable with the control points. The “SourceControlPoint” and “TargetControlPoint” of bezier segment allow you to modify the control points. The following code example illustrates how to create and modify a bezier curve segment via control points.
+{% tabs %}
+{% highlight c# %}
+// creating connector instance with define its segment type
+  
+Connector connector = new Connector();
+connector.SourcePoint = new CoreGraphics.CGPoint(100, 100);
+connector.TargetPoint = new CoreGraphics.CGPoint(300, 300);
+connector.SegmentType = SegmentType.BezierSegment;
+diagram.AddConnector(connector);
+
+{% endhighlight %}
+{% endtabs %}
+![](Connector_images/Connector_img6.jpeg)
+
 ## Decorator
 The start and end points of a connector can be decorated with some customizable shapes like arrow, circle, diamond, and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of connector.
 The SourceDecoratorStyle and TargetDecoratorStyle properties define the shape of the decorators. The following code example illustrates how to create decorators of various shapes:
@@ -145,7 +161,7 @@ SegmentType= SegmentType.StraightSegment
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
+![](Connector_images/Connector_img7.jpeg)
 
 ## Remove connector
 There are two ways to remove connector from the connection, they are:
@@ -185,7 +201,7 @@ diagram.Connectors.RemoveAt(0);
 ## Appearance
 The StrokeThickness, stroke are the set of properties. The style of line connectors and decorators can be customized with that properties.
 
-##  Connector appearance
+## Connector appearance
 The following code example illustrates how to customize the connector appearance:
 {% tabs %}
 {% highlight c# %}
@@ -206,7 +222,7 @@ StrokeWidth = 4
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![](Connector_images/Connector_img8.jpeg)
 
 ## Decorator appearance
 The following code example illustrates how to customize the appearance of the decorator:
@@ -240,5 +256,5 @@ Size = 12
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img8.jpeg)
+![](Connector_images/Connector_img9.jpeg)
 

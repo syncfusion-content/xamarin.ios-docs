@@ -29,7 +29,13 @@ Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\15.3.0.26\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location in Mac.
 
-The following list of assemblies need to be added as reference from the lib folder to use `SfDataForm` in your application.
+### Adding SfDataForm Reference
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm.iOS/#), and then install it.
+
+![](SfDataForm_images/SfDataForm_NuGet_iOS.png)
+
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
 <table>
 <tr>
@@ -45,6 +51,9 @@ Xamarin.iOS
 Syncfusion.SfNumericUpDown.iOS.dll<br/>Syncfusion.SfNumericTextBox.iOS.dll<br/>Syncfusion.SfDataForm.iOS.dll<br/></td>
 </tr>
 </table>
+
+>**Important** 
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Creating SfDataForm
 
@@ -208,6 +217,8 @@ Now run the application to render the `SfDataForm` to edit the data object as li
 
 ![](SfDataForm_images/Overview.png)
 
+You can download the entire source code of this demo for Xamarin.Forms from here [DataFormGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormGettingStarted352892937.zip).
+
 ## Defining Editors
 
 By default, SfDataForm control generates DataFormItems (which has UI settings of data field) automatically when data object set to `SfDataForm.DataObject` property. `DataFormItem` encapsulates the layout and editor setting for a data field appearing in `SfDataForm.DataObject`. 
@@ -224,6 +235,9 @@ DataFormTextItem
 </td>
 <td>
 Property of type String and any other type apart from below specified cases.
+[DataType(DataType.Text)]
+[DataType(DataType.MultilineText)]
+[DataType(DataType.Password)]
 </td>
 </tr>
 <tr>
@@ -398,6 +412,17 @@ Property of type enum, list.
 </td>
 <td>
 SfPicker
+</td>
+</tr>
+<tr>
+<td>
+Password
+</td>
+<td>
+The String type property with [DataType(DataType.Password)] attribute.
+</td>
+<td>
+UITextField
 </td>
 </tr>
 </table>

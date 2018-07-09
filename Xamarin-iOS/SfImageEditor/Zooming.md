@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Zooming
+## Zooming
 
 The image editor control provides support for zooming and panning.You can Zoom in and Zoom out image  in image editor control.
 
@@ -16,7 +16,7 @@ The following properties are related to the zooming feature of the image editor 
 * EnableZooming
 * Maximum ZoomLevel
 
-### EnableZooming
+## EnableZooming
 
  You can Enable or Disable zooming by setting Enable Zooming to either true or false.
 
@@ -30,7 +30,7 @@ The following properties are related to the zooming feature of the image editor 
 
 {% endtabs %}
 
-### Maximum ZoomLevel
+## Maximum ZoomLevel
 
 You can customize maximum zoom level  by setting value to Maximum ZoomLevel property in image editor control.
 
