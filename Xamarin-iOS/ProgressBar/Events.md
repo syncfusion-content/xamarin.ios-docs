@@ -47,16 +47,16 @@ The following code example shows how to customize the progress bar when progress
 
 {% highlight c# %}
 
-        SfCircularProgressBar circularProgressBar = new SfCircularProgressBar();
-        linearProgressBar.Frame = new CoreGraphics.CGRect(10,150,this.View.Frame.Width,this.View.Frame.Height);
-		circularProgressBar.Minimum = 100;
-		circularProgressBar.Maximum = 500;
-		circularProgressBar.Progress = 500;
-		circularProgressBar.ProgressCompleted += this.ProgressBarBase_OnProgressCompleted;
-        circularProgressBar.Content = new UITextView();
-		(circularProgressBar.Content as UITextView).Text="Start";
-        (circularProgressBar.Content as UITextView).Frame= new CoreGraphics.CGRect(10,10,100,170);
-        SetContentView(circularProgressBar);
+SfCircularProgressBar circularProgressBar = new SfCircularProgressBar();
+circularProgressBar.Frame = new CoreGraphics.CGRect(10,150,this.View.Frame.Width,this.View.Frame.Height);
+circularProgressBar.Minimum = 100;
+circularProgressBar.Maximum = 500;
+circularProgressBar.Progress = 500;
+circularProgressBar.ProgressCompleted += this.ProgressBarBase_OnProgressCompleted;
+circularProgressBar.Content = new UITextView();
+(circularProgressBar.Content as UITextView).Text="Start";
+(circularProgressBar.Content as UITextView).Frame= new CoreGraphics.CGRect(10,10,100,170);
+SetContentView(circularProgressBar);
 
 private void ProgressBarBase_OnProgressCompleted(object sender, ProgressValueEventArgs e)
 {
