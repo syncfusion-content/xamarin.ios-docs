@@ -31,33 +31,33 @@ public async override void ViewDidLoad()
 private async System.Threading.Tasks.Task SetCustomContentProgress()
 {
     double progress = 0;
-    UIView CustContentLayout;
+    UIView CustomContentLayout;
     while (progress < 75)
     {
-        CustContentLayout = new UIView();
+        CustomContentLayout = new UIView();
         this.circular.Progress = progress += 1;
-        CustContentLayout.Frame = new CoreGraphics.CGRect(0, 0, 100, 80);
-        string custContent = progress + "%";
+        CustomContentLayout.Frame = new CoreGraphics.CGRect(0, 0, 100, 80);
+        string customContent = progress + "%";
         UILabel progressLabel = new UILabel()
         {
-            Frame = new CoreGraphics.CGRect(CustContentLayout.Center.X - 20, 25, 40, 20),
-            Text = custContent,
+            Frame = new CoreGraphics.CGRect(CustomContentLayout.Center.X - 20, 25, 40, 20),
+            Text = customContent,
             Font = UIFont.FromName("HelveticaNeue", 11f),
             TextAlignment = UITextAlignment.Center,
             TextColor = UIColor.FromRGB(0, 124, 238)
         };
-        CustContentLayout.AddSubview(progressLabel);
+        CustomContentLayout.AddSubview(progressLabel);
         UILabel textView = new UILabel()
         {
-            Frame = new CoreGraphics.CGRect(CustContentLayout.Center.X - 20, CustContentLayout.Center.Y, 40, 20),
+            Frame = new CoreGraphics.CGRect(CustomContentLayout.Center.X - 20, CustomContentLayout.Center.Y, 40, 20),
             Text = "used",
             TextAlignment = UITextAlignment.Center,
             Font = UIFont.FromName("HelveticaNeue", 10f),
             TextColor = UIColor.FromRGB(0, 124, 238),
         };
-        CustContentLayout.Center = this.circular.Center;
-        CustContentLayout.AddSubview(textView);
-        this.circular.Content = CustContentLayout;
+        CustomContentLayout.Center = this.circular.Center;
+        CustomContentLayout.AddSubview(textView);
+        this.circular.Content = CustomContentLayout;
         await System.Threading.Tasks.Task.Delay(50);       
     }
 }
