@@ -48,16 +48,11 @@ The following code example shows mapping the solid color range in the linear pro
 {% highlight c# %}
 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
-
 linearProgressBar.Progress = 100;
-
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.ParseColor("#00bdaf"), Start = 0, End = 25 });
-
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.ParseColor("#2f7ecc"), Start = 25, End = 50 });
-
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.ParseColor("#e9648e"), Start = 50, End = 75 });
-
-linearProgressBar.RangeColors.Add(new RangeColor() { Color = Color.ParseColor ("#fbb78a"), Start = 75, End = 100 });
+linearProgressBar.RangeColors.Add(new RangeColor() { Color = UIColor.FromRGB(0, 189, 175), Start = 0, End = 25 });
+linearProgressBar.RangeColors.Add(new RangeColor() { Color = UIColor.FromRGB(47, 126, 204), Start = 25, End = 50 });
+linearProgressBar.RangeColors.Add(new RangeColor() { Color = UIColor.FromRGB(233, 100, 142),Start=50, End=75 });
+linearProgressBar.RangeColors.Add(new RangeColor() { Color = UIColor.FromRGB(251, 183, 138), Start = 75, End = 100 });
 
 {% endhighlight %} 
 
@@ -68,26 +63,15 @@ The following code example shows how to apply gradient transition effect to the 
 {% highlight c# %}
 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
-
 linearProgressBar.Progress = 100;
+linearProgressBar.RangeColors.Add(new RangeColor { IsGradient = true, Color = UIColor.FromRGB(233, 236, 247), Start = 0, End = 20 });
+linearProgressBar.RangeColors.Add(new RangeColor { IsGradient = true, Color = UIColor.FromRGB(160, 217, 239), Start = 20, End = 40 });
+linearProgressBar.RangeColors.Add(new RangeColor { IsGradient = true, Color = UIColor.FromRGB(98, 193, 229), Start = 40, End = 60 });
+linearProgressBar.RangeColors.Add(new RangeColor { IsGradient = true, Color = UIColor.FromRGB(32, 167, 219), Start = 60, End = 80 })
+linearProgressBar.RangeColors.Add(new RangeColor { IsGradient = true, Color = UIColor.FromRGB(8, 150, 197), Start = 80, End = 100 })
+linearProgressBar.Frame = new CoreGraphics.CGRect(0, 160, this.View.Frame.Width, this.View.Frame.Height);
 
-linearProgressBar.RangeColors.Add(
-
-new RangeColor() { Color = Color.ParseColor("#88A0D9EF"), IsGradient = true, Start = 0 , End = 25 });
-
-linearProgressBar.RangeColors.Add(
-
-new RangeColor() { Color = Color.ParseColor("#AA62C1E5"), IsGradient = true, Start = 25, End = 50 });
-
-linearProgressBar.RangeColors.Add(
-
-new RangeColor() { Color = Color.ParseColor("#DD20A7DB"), IsGradient = true, Start = 50, End = 75 });
-
-linearProgressBar.RangeColors.Add(
-
-new RangeColor() { Color = Color.ParseColor("#FF1C96C5"), IsGradient = true, Start = 75, End = 100 });
-
-{% endhighlight %} 
+{% endhighlight %}
 
 ![](overview_images/gradient.png)
 
@@ -105,7 +89,7 @@ linearProgressBar.Progress = 100;
 
 linearProgressBar.TrackHeight = 10;
 
-linearProgressBar.Padding = new UIEdgeInsets(0,2,0,0);
+linearProgressBar.IndicatorPadding = new UIEdgeInsets(2,2,2,2);
 
 linearProgressBar.Frame = new CoreGraphics.CGRect(0, 160, this.View.Frame.Width, this.View.Frame.Height);
 
@@ -127,13 +111,13 @@ The following code example shows how to customize the appearance of circular pro
 
 {% highlight c# %}
 
-SfCircularProgressBar trackOutsideProgressBar = new SfCircularProgressBar(this);
+SfCircularProgressBar trackOutsideProgressBar = new SfCircularProgressBar();
 
 trackOutsideProgressBar.Progress = 75;
 
-trackOutsideProgressBar.IndicatorOuterRadius = 0.7;
+trackOutsideProgressBar.IndicatorOuterRadius = 0.7f;
 
-trackOutsideProgressBar.IndicatorInnerRadius = 0.65;
+trackOutsideProgressBar.IndicatorInnerRadius = 0.65f;
 
 trackOutsideProgressBar.ShowProgressValue = false;
 
@@ -148,7 +132,7 @@ The [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncf
 
 {% highlight c# %}
 
-SfLinearProgressBar linearProgressBar = new SfLinearProgressBar(this);
+SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
 
 linearProgressBar.Progress = 50;
 
@@ -170,13 +154,13 @@ The following code example shows the color customization in progress and track i
 
 {% highlight c# %}
 
-SfLinearProgressBar linearProgressBar = new SfLinearProgressBar(this);
+SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
 
 linearProgressBar.Progress = 75;
 
-linearProgressBar.ProgressColor = Color.ParseColor("#FF51483a");
+linearProgressBar.ProgressColor = = UIColor.FromRGB(28, 150, 197);
 
-linearProgressBar.TrackColor = Color.ParseColor("#3351483a");
+linearProgressBar.TrackColor = UIColor.FromRGB(28, 150, 197); 
 
 {% endhighlight %} 
 
@@ -185,13 +169,13 @@ linearProgressBar.TrackColor = Color.ParseColor("#3351483a");
 The linear progress bar provides support to customize the color for the secondary progress bar using the [`SecondaryProgressColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfLinearProgressBar~SecondaryProgressColor.html) property,as shown in the following code example.
 
 {% highlight c# %}
-SfLinearProgressBar linearProgressBar = new SfLinearProgressBar(this);
+SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
 
 linearProgressBar.Progress = 25;
 
 linearProgressBar.SecondaryProgress = 75;
 
-linearProgressBar.SecondaryProgressColor = Color.CornflowerBlue;
+linearProgressBar.SecondaryProgressColor = UIColor.FromRGB(100, 149, 237);
 
 {% endhighlight %} 
 

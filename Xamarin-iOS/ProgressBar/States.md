@@ -24,7 +24,8 @@ By enabling the [`IsIndeterminate`](https://help.syncfusion.com/cr/cref_files/xa
 // Using linear progress bar. 
 SfLinearProgressBar sfLinearProgressBar = new SfLinearProgressBar(); 
 sfLinearProgressBar.Frame = new CoreGraphics.CGRect(10,150,this.View.Frame.Width,this.View.Frame.Height);            
-sfLinearProgressBar.IsIndeterminate = true;            
+sfLinearProgressBar.IsIndeterminate = true;   
+         
 // Using circular progress bar.
 SfCircularProgressBar circularProgressBar = new SfCircularProgressBar();   
 circularProgressBar.Frame = new CoreGraphics.CGRect(0, 160, this.View.Frame.Width, this.View.Frame.Height);         
