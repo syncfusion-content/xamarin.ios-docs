@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Serialization And Deserialization
+## Serialization And Deserialization
  ImageEditor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. Save the current state of the Image Editor and Load it back when its needed.
 
 ## Serialization

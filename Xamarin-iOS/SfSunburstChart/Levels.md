@@ -11,14 +11,14 @@ documentation: ug
 
 The sunburst chart is used to display hierarchical data. More than one hierarchical data can be added to the [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Levels.html) collection of the sunburst chart. Each level of the hierarchy is represented by a circle.
 
-The following code shows how to add hierarchical levels in the `Levels` collection.
+The following code shows how to add hierarchical levels in the Levels collection.
 
 {% tabs %} 
 
 {% highlight C# %} 
 
-       SunburstHierarchicalLevel level = new SunburstHierarchicalLevel();
-       sunburstChart.Levels.Add(level);
+  SunburstHierarchicalLevel level = new SunburstHierarchicalLevel();
+  sunburstChart.Levels.Add(level);
 
 {% endhighlight %}
 
@@ -34,18 +34,18 @@ The following code shows how to map the group member path.
 
 {% highlight C# %} 
 
-SunburstHierarchicalLevel level1 = new SunburstHierarchicalLevel();
-level1.GroupMemberPath = "Level1";
+  SunburstHierarchicalLevel level1 = new SunburstHierarchicalLevel();
+  level1.GroupMemberPath = "Level1";
 
-SunburstHierarchicalLevel level2 = new SunburstHierarchicalLevel();
-level2.GroupMemberPath = "Level2";
+  SunburstHierarchicalLevel level2 = new SunburstHierarchicalLevel();
+  level2.GroupMemberPath = "Level2";
 
-SunburstHierarchicalLevel level3 = new SunburstHierarchicalLevel();
-level3.GroupMemberPath = "Level3";
+  SunburstHierarchicalLevel level3 = new SunburstHierarchicalLevel();
+  level3.GroupMemberPath = "Level3";
 
-sunburstChart.Levels.Add(level1);
-sunburstChart.Levels.Add(level2);
-sunburstChart.Levels.Add(level3);
+  sunburstChart.Levels.Add(level1);
+  sunburstChart.Levels.Add(level2);
+  sunburstChart.Levels.Add(level3);
 
 {% endhighlight %}
 
@@ -57,19 +57,19 @@ The following code specifies the levels for data model specified in the getting 
 
 {% highlight C# %} 
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
+  SfSunburstChart sunburstChart = new SfSunburstChart();
 
-            SunburstViewModel dataModel = new SunburstViewModel();
-            sunburstChart.ItemsSource = dataModel.DataSource;
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SunburstViewModel dataModel = new SunburstViewModel();
+  sunburstChart.ItemsSource = dataModel.DataSource;
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });            
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });            
 
-            sunburstChart.Frame = this.View.Frame;
-            View.AddSubview(sunburstChart); 
+  sunburstChart.Frame = this.View.Frame;
+  View.AddSubview(sunburstChart); 
 
 {% endhighlight %}
 

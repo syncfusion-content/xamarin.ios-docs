@@ -183,7 +183,7 @@ SfPicker
 Password
 </td>
 <td>
-{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
+{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
 </td>
 <td>
 The String type property and property with 
@@ -500,3 +500,21 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 In the password editor, the [UITextField](https://developer.xamarin.com/api/type/MonoTouch.UIKit.UITextField/) is loaded.
 
+{% highlight c# %}
+private string password;
+
+[Display(ShortName = "Transaction password", Prompt = "Enter password")]
+[DataType(DataType.Password)]
+public string Password
+{
+    get { return this.password; }
+    set
+    {
+        this.password = value;
+        RaisePropertyChanged("Password");
+        this.RaiseErrorChanged("Password");
+    }
+}
+{% endhighlight %}
+
+![](SfDataForm_images/DataFormPasswordEditor.png)

@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Shapes
+## Shapes
 
 You can annotate any path on an image using free hand drawing and add shapes like rectangle, circle over the image. The shapes can be added in two ways:
 
@@ -22,7 +22,11 @@ You can add the shapes from the toolbar by clicking on the `Shapes` icon availab
 
 #### Change Color and Fill Options of the Shape
 
-While you click on a shape, the current toolbar menu with the shapes list will be hidden and new menu with the options such as `Stroke`, `Fill` and `Colors` will be appear. The `Stroke` and `Fill` buttons will toggle the stroke and fill option of the shapes whereas the colors menu will help to change the color of the shape.
+When the shape is clicked, the current toolbar menu with the shapes list will be hidden, and new menu with the options such as `Stroke`, `Fill`, and `Colors` will appear. 
+
+If the selected shape is in `Stroke` mode, then the menu will appear with `StrokeThickness`, `Color` and `Opacity` options so that you can customize the selected shape appearance with these options. 
+
+If the selected shape is in `Fill` mode, then the menu will appear with `FillColor` and `Opacity` options. So, you can customize the selected shape appearance with these options. 
 
 I> By default, the shape will have `Red` stroke with `Transparent` fill.
 
@@ -30,11 +34,11 @@ I> By default, the shape will have `Red` stroke with `Transparent` fill.
 
 The `AddShape` method in the SfImageEditor control is used to add shapes based on the `ShapeType` and `PenSettings`.
 
-#### ShapeType
+## ShapeType
 
 ShapeType is an enum type with values `Rectangle`, `Circle`,`Arrow` and `Path`.
 
-#### PenSettings
+## PenSettings
 
 PenSettings is defined to set the values for `StrokeColor`, `FillColor` and `StrokeWidth`.
 
@@ -69,6 +73,15 @@ N> FillColor property is applicable only if the ShapeType is `Rectangle` or `Cir
 
 ![SfImageEditor](ImageEditor_images/path.gif)
 
+## Bounds
+
+`Bounds` property allows you to set frame for the newly added shapes(rectangle and circle) and you can position the shapes wherever you want on the image. The value of the shapes frame should be in percentage(maximum - 100 & minimum - 0).
+
+{% highlight C# %}
+
+  edit.AddShape(ShapeType.Circle, new PenSettings() { Bounds = new Rectangle(20,20,35,35) });
+
+{% endhighlight %}
 
 ## How to delete a shape or text from the view
 

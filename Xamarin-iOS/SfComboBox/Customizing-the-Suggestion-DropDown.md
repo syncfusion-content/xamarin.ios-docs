@@ -23,7 +23,7 @@ you can set color for the selected item in the drop-down item using the property
 
 {% highlight C# %}
 
-sfCombo.SelectedDropDownItemColor = UIColor.FromRGB(0, 173, 255);
+combobox.SelectedDropDownItemColor = UIColor.FromRGB(0, 173, 255);
 
 {% endhighlight %}
 
@@ -41,7 +41,7 @@ N> The value of `MaximumDropDownHeight` property can be any positive integer val
 
 {% highlight C# %}
 
-sfCombo.MaxDropDownHeight = 60;
+combobox.MaxDropDownHeight = 60;
 
 {% endhighlight %}
 
@@ -80,8 +80,8 @@ The dropdown button can be customized using the DropDownButtonSettings property 
 {% highlight C# %}
 
 DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings(); 
-dropDownButtonSettings.Image = "date.png"; 
-sfCombo.DropDownButtonSettings = dropDownButtonSettings; 
+dropDownButtonSettings.Image = "calendar.png"; 
+combobox.DropDownButtonSettings = dropDownButtonSettings; 
 
 {% endhighlight %}
 
@@ -97,7 +97,7 @@ The watermark text is used to display some information regarding the combo box. 
 
 {% highlight C# %}
 
-sfCombo.Watermark = (NSString)"Enter the Country name"; 
+combobox.Watermark = (NSString)"Select any Countries name"; 
 
 {% endhighlight %}
 
