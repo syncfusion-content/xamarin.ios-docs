@@ -161,7 +161,7 @@ FreeTextAnnotation selectedFreeTextAnnotation;
 
 private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotationSelectedEventArgs args)
 {
-	//Cast the sender object to freetext annotation
+	//Cast the sender object to free text annotation
 	selectedFreeTextAnnotation = sender as FreeTextAnnotation;
 }
 
@@ -219,7 +219,7 @@ The PDF viewer can remove a selected annotation or all the annotations in the PD
 
 ### Removing a selected free text annotation.
 
-The following code snippet illustrates removing a selected freetext from the PDF document.
+The following code snippet illustrates removing a selected free text from the PDF document.
 {% tabs %}
 {% highlight c# %}
 
@@ -227,13 +227,13 @@ FreeTextAnnotation selectedFreeTextAnnotation;
 
 private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotationSelectedEventArgs args)
 {
-	//Cast the sender object to freetext annotation.
+	//Cast the sender object to free text annotation.
 	selectedFreeTextAnnotation = sender as FreeTextAnnotation;
 }
 
 private void deleteFreeTextAnnotationButton_Clicked(object sender, EventArgs e)
 {
-	//Delete the selected freetext annotation
+	//Delete the selected free text annotation
 	pdfViewer.RemoveAnnotation(selectedFreeTextAnnotation);
 }
 
@@ -261,6 +261,29 @@ The event `FreeTextAnnotationRemoved` will be raised when a free text annotation
 
 SfPdfViewer pdfViewer = new SfPdfViewer();
 pdfViewer.FreeTextAnnotationRemoved += PdfViewer_FreeTextAnnotationRemoved;
+
+{% endhighlight %}
+{% endtabs %}
+
+The properties of the removed free text can be obtained from the `args` parameter of the event handler.
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_FreeTextAnnotationRemoved(object sender, FreeTextAnnotationRemovedEventArgs args)
+{
+	//Get the bounds 
+	CGRect bounds = args.Bounds;
+	//Get the page number on which the deselected free text is 
+	int pageNumber = args.PageNumber;
+	//Get the text of the free text annotation 
+	string text = args.Text;
+	//Get the text color 
+	UIColor textColor = args.TextColor;
+	//Get the text size 
+	float textSize = args.TextSize;
+
+}
 
 {% endhighlight %}
 {% endtabs %}
