@@ -52,7 +52,7 @@ In order to use export to excel and export to PDF functionalities of SfDataGrid,
 
 ## NuGet configuration
 
-To install the required nugets for the SfDataGrid control in the application, first you have to configure the NuGet packages of the Syncfusion components.
+To install the required NuGet for the SfDataGrid control in the application, first you have to configure the NuGet packages of the Syncfusion components.
 
 Refer to the following KB to configure the NuGet package of the Syncfusion components:
 
