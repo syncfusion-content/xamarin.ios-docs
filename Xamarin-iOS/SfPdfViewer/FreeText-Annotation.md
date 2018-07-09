@@ -7,15 +7,15 @@ control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with freetext annotations
+# Working with free text annotations
 
-PDF viewer allows you to include freetext annotations in a PDF document and provides options to modify or remove the existing freetext annotations.  
+PDF viewer allows you to include free text annotations in a PDF document and provides options to modify or remove the existing ones.
 
-## Adding freetext annotations
+## Adding free text annotations
 
-### Enabling freetext annotation mode
+### Enabling free text annotation mode
 
-Set the [AnnotationMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfpdfviewer/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~AnnotationMode.html) property of the PDF viewer to `FreeText`. After setting the annotation mode, tap any PDF page and a popup will appear. Zooming, panning and scrolling will be disabled. Type the text in the popup and click "OK" to add the typed text to the page. Once the freetext annotation is added to the page zooming, panning and scrolling will be enabled again.
+Set the `AnnotationMode` property of the PDF viewer to `FreeText`. After setting the annotation mode, tap any PDF page and a popup will appear. Zooming, panning and scrolling will be disabled. Type the text in the popup and click &#34;OK&#34; to add the typed text to the page. Zooming, panning, and scrolling will be enabled again if the free text annotation is added. 
 
 {% tabs %}
 {% highlight c# %}
@@ -26,9 +26,9 @@ pdfViewer.AnnotationMode = AnnotationMode.FreeText;
 {% endhighlight %}
 {% endtabs %}
 
-### Disabling freetext annotation
+### Disabling free text annotation mode
 
-Use the following code to reset the annotation mode to `None`.
+Setting the annotation mode to `None` disables the free text mode.
 
 {% tabs %}
 {% highlight c# %}
@@ -39,9 +39,9 @@ pdfViewer.AnnotationMode = AnnotationMode.None;
 {% endhighlight %}
 {% endtabs %}
 
-### Detecting the inclusion of freetext annotation
+### Detecting the inclusion of free text annotations
 
-The event `FreeTextAnnotationAdded` will be raised when a freetext annotation is added to the PDF. 
+The event `FreeTextAnnotationAdded` will be raised when a free text annotation is added to the PDF.
 
 {% tabs %}
 {% highlight c# %}
@@ -52,9 +52,22 @@ pdfViewer.FreeTextAnnotationAdded += PdfViewer_FreeTextAnnotationAdded;
 {% endhighlight %}
 {% endtabs %}
 
-## Selecting a freetext annotation
+## Detecting tap on free text annotations
 
-You can select a freetext annotation by tapping it. When a freetext is selected the `FreeTextAnnotationSelected` event will be raised. 
+Tapping a free text annotation selects it or deselects if it is already selected. The event `FreeTextAnnotationTapped` is raised when a free text is tapped.
+
+{% tabs %}
+{% highlight c# %}
+
+SfPdfViewer pdfViewer = new SfPdfViewer();
+pdfViewer.FreeTextAnnotationTapped += PdfViewer_FreeTextAnnotationTapped;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Selecting free text annotations
+
+You can select a free text annotation by tapping it. When a free text is selected, the `FreeTextAnnotationSelected` event will be raised.
 
 {% tabs %}
 {% highlight c# %}
@@ -65,7 +78,7 @@ pdfViewer.FreeTextAnnotationSelected += PdfViewer_FreeTextAnnotationSelected;
 {% endhighlight %}
 {% endtabs %}
 
-When the event is raised the properties of the selected freetext can be obtained from the `args` parameter of the event handler.
+When the event is raised, the properties of the selected free text can be obtained from the `args` parameter of the event handler.
 
 {% tabs %}
 {% highlight c# %} 
@@ -91,9 +104,52 @@ private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotat
 {% endhighlight %}
 {% endtabs %}
 
-### Changing the properties of the selected freetext
+## Deselecting free text annotations
 
-You can change the properties of the selected annotation by casting the `sender` object parameter of the `FreeTextAnnotationSelected` event's handler to FreeTextAnnotation and modifying its properties.  The following code shows how to change the properties. 
+You can deselect a selected free text annotation by tapping on it or somewhere else on the PDF page. Deselection can be detected using the `FreeTextAnnotationDeselected` event.
+
+{% tabs %}
+{% highlight c# %}
+
+SfPdfViewer pdfViewer = new SfPdfViewer();
+pdfViewer.FreeTextAnnotationDeselected += PdfViewer_FreeTextAnnotationDeselected;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Customizing the appearance of free text annotations
+
+You can customize the default text color and size of all free text annotations to be added. This will not affect the already added free text annotations. The appearance of a selected free text can also be modified. 
+
+### Setting the default text color
+
+You can set the default text color of the free text annotations by using the `SfPdfViewer.AnnotationSettings.FreeText.TextColor` property. Refer to the following code.
+ 
+{% tabs %} 
+{% highlight c# %}
+
+SfPdfViewer pdfViewer = new SfPdfViewer();
+pdfViewer.AnnotationSettings.FreeText.TextColor = UIColor.Red;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Setting the default text size
+
+You can set the default text size of the free text annotations by using the `SfPdfViewer.AnnotationSettings.FreeText.TextSize` property. Refer to the following code example.
+
+{% tabs %}
+{% highlight c# %}
+
+SfPdfViewer pdfViewer = new SfPdfViewer();
+pdfViewer.AnnotationSettings.FreeText.TextSize = 4; 
+
+{% endhighlight %}
+{% endtabs %}
+
+### Changing the properties of a selected free text 
+
+You can change the properties of the selected annotation by casting the `sender` parameter of the `FreeTextAnnotationSelected` event handler to `FreeTextAnnotation` and modifying its properties. The following code shows how to change the properties.
 
 {% tabs %}
 {% highlight c# %} 
@@ -121,59 +177,47 @@ private void ChangeFreeTextPropertiesButton_TouchUpInside(object sender, EventAr
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing the default appearance of freetext annotations
+## Moving or resizing free text annotations
 
-You can customize the default text color and text size of all freetext annotations that are yet to be added. This will not affect the freetext annotations that were already added. Customizing these properties for an individual selected freetext is described in the 'Selecting a freetext annotation' section further below;
+To move or resize the annotation, it should be selected. After the selector appears, tapping and dragging anywhere inside the selector will move the annotation. Tapping on the bubbles around the selector and dragging will resize the annotation.
 
-### Setting the default text color
+### Detecting the move or resize of a free text
 
-You can set the default text color of the freetext annotations by using the `SfPdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextColor` property. Refer to the following code. 
- 
-{% tabs %} 
-{% highlight c# %}
-
-SfPdfViewer pdfViewer = new SfPdfViewer();
-
-pdfViewer.AnnotationMode = AnnotationMode.FreeText;
-
-pdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextColor = UIColor.Red;
-
-{% endhighlight %}
-{% endtabs %}
-
-### Setting the default text size
-
-You can set the default text size of the freetext annotations by using the `SfPdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextSize` property. Refer to the following code example. 
+The event `FreeTextAnnotationMovedOrResized` will be raised when you move or resize the selected annotation.
 
 {% tabs %}
 {% highlight c# %}
 
 SfPdfViewer pdfViewer = new SfPdfViewer();
-
-pdfViewer.AnnotationMode = AnnotationMode.FreeText;
-
-pdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextSize = 4; 
+pdfViewer.FreeTextAnnotationMovedOrResized += PdfViewer_FreeTextAnnotationMovedOrResized;
 
 {% endhighlight %}
 {% endtabs %}
 
-## Deleting freetext annotations
+The properties of the moved or resized free text can be obtained from the `args` parameter of the event handler.
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewer_FreeTextAnnotationMovedOrResized(object sender, FreeTextAnnotationMovedOrResizedEventArgs args)
+{
+	//Retrieve the old bounds of the annotation
+	CGRect oldBounds = args.OldBounds;
+
+	//Retrieve the new bounds of the annotation
+	CGRect newBounds = args.NewBounds;
+
+	//Retrieve the current page number
+	int pageNumber = args.PageNumber;
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Deleting free text annotations
 
 The PDF viewer can remove a selected annotation or all the annotations in the PDF document. 
 
-### Removing all annotations
-
-The `ClearAllAnnotations` method can be used to delete all annotations irrespective of their types from the PDF. 
-
-{% tabs %}
-{% highlight c# %}
-
-pdfViewer.ClearAllAnnotations();
-
-{% endhighlight %}
-{% endtabs %}
-
-### Removing a selected freetext annotation.
+### Removing a selected free text annotation.
 
 The following code snippet illustrates removing a selected freetext from the PDF document.
 {% tabs %}
@@ -196,9 +240,21 @@ private void deleteFreeTextAnnotationButton_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Detecting the removal of a freetext
+### Removing all annotations
 
-The event `FreeTextAnnotationRemoved` will be raised when a freetext annotation is removed from the PDF.
+The `ClearAllAnnotations` method can be used to delete all annotations irrespective of their types from the PDF. 
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewer.ClearAllAnnotations();
+
+{% endhighlight %}
+{% endtabs %}
+
+### Detecting the removal of a free text
+
+The event `FreeTextAnnotationRemoved` will be raised when a free text annotation is removed from the PDF.
 
 {% tabs %}
 {% highlight c# %}
@@ -206,67 +262,5 @@ The event `FreeTextAnnotationRemoved` will be raised when a freetext annotation 
 SfPdfViewer pdfViewer = new SfPdfViewer();
 pdfViewer.FreeTextAnnotationRemoved += PdfViewer_FreeTextAnnotationRemoved;
 
-{% endhighlight %}
-{% endtabs %}
-
-## Detecting a tap on freetext annotations
-
-Tapping a freetext annotation selects it or deselects if it is already selected. The event `FreeTextAnnotationTapped` is raised when a freetext is tapped. 
-
-{% tabs %}
-{% highlight c# %}
-
-SfPdfViewer pdfViewer = new SfPdfViewer();
-pdfViewer.FreeTextAnnotationTapped += PdfViewer_FreeTextAnnotationTapped;
-
-{% endhighlight %}
-{% endtabs %}
-
-## Deselecting freetext annotations
-
-You can deselect a selected freetext annotation by tapping on it or somewhere else on the PDF page. Deselection can be detected using the `FreeTextAnnotationDeselected` event.
-
-{% tabs %}
-{% highlight c# %}
-
-SfPdfViewer pdfViewer = new SfPdfViewer();
-pdfViewer.FreeTextAnnotationDeselected += PdfViewer_FreeTextAnnotationDeselected;
-
-{% endhighlight %}
-{% endtabs %}
-
-## Moving or resizing the selected freetext annotation
-
-Tap and drag the annotation to move it. It can be resized by selecting it and dragging the bubbles at the corners.  
-
-### Detecting the move or resizing of a freetext annotation
-
-The event `FreeTextAnnotationMovedOrResized` will be raised when you move or resize the selected annotation.
-
-{% tabs %}
-{% highlight c# %}
-
-SfPdfViewer pdfViewer = new SfPdfViewer();
-pdfViewer.FreeTextAnnotationMovedOrResized += PdfViewer_FreeTextAnnotationMovedOrResized;
-
-{% endhighlight %}
-{% endtabs %}
-
-The properties of the moved or resized freetext can be obtained from the `args` parameter of the event handler. 
-
-{% tabs %}
-{% highlight c# %}
-
-private void PdfViewer_FreeTextAnnotationMovedOrResized(object sender, FreeTextAnnotationMovedOrResizedEventArgs args)
-{
-	//Retrieve the old bounds of the annotation
-	CGRect oldBounds = args.OldBounds;
-
-	//Retrieve the new bounds of the annotation
-	CGRect newBounds = args.NewBounds;
-
-	//Retrieve the current page number
-	int pageNumber = args.PageNumber;
-}
 {% endhighlight %}
 {% endtabs %}
