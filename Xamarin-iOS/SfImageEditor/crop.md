@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-# Crop
+## Crop
 
 The image editor control gives you an option to crop the image as desired. Cropping the image can be done in two ways:
 
@@ -32,7 +32,7 @@ Cropping operation can be done programmatically in two ways:
 * Enable Cropping and Selecting the Crop region visually
 * Manually enter the cropping area
 
-#### Handling the cropping tool
+## Handling the cropping tool
 
 The `ToggleCropping` method in the SfImageEditor control is used to enable and disable a cropping region placed over the image to visually choose the area for cropping. 
 
