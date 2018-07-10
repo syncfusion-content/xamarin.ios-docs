@@ -141,7 +141,7 @@ public class RowDragDropTemplate : UIView
 
 ![](SfDataGrid_images/CustomizedTemplate.png)
 
-You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomTemplate-1341433818)
+You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RowDragandDropTemplate_IOS1749446243)
 
 ## Events in row drag and drop
 
