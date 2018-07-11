@@ -19,10 +19,10 @@ Node node1 = new Node(100, 300, 100, 100);
 node1.Annotations.Add(new Annotation() { Content = "Label" });
 diagram.AddNode(node1);
 // To Add Annotation for Connector
-Connector Connector1 = new Connector();
-Connector1.SourcePoint = new CGPoint(100, 100);
-Connector1.TargetPoint = new CGPoint(200, 200);
-Connector1.Annotations.Add(new Annotation() { Content = "Label" });diagram.AddConnector(Connector1);
+Connector connector1 = new Connector();
+connector1.SourcePoint = new CGPoint(100, 100);
+connector1.TargetPoint = new CGPoint(200, 200);
+connector1.Annotations.Add(new Annotation() { Content = "Label" });diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
 ![](Annotation_images/Annotation_img1.jpeg)
@@ -32,13 +32,13 @@ You can access the node or connector annotation using annotation name. The follo
 {% tabs %}
 {% highlight c# %}
 // Accessing Annotation 
-Connector Connector1 = new Connector();
-Connector1.SourcePoint = new CGPoint(100, 100);
-Connector1.TargetPoint = new CGPoint(300, 300);
+Connector connector1 = new Connector();
+connector1.SourcePoint = new CGPoint(100, 100);
+connector1.TargetPoint = new CGPoint(300, 300);
 var label = new Annotation() { Content = "Label" };
-Connector1.Annotations.Add(label);
-diagram.AddConnector(Connector1);
-Connector1.Annotations.Remove(label);
+connector1.Annotations.Add(label);
+diagram.AddConnector(connector1);
+connector1.Annotations.Remove(label);
 {% endhighlight %}
 {% endtabs %}
 
@@ -47,13 +47,13 @@ You can remove the annotation using index value. The following code illustrates 
 {% tabs %}
 {% highlight c# %}
 //Remove Annotation using Index
-Connector Connector1 = new Connector();
-Connector1.SourcePoint = new CGPoint(100, 100);
-Connector1.TargetPoint = new CGPoint(300, 300);
+Connector connector1 = new Connector();
+connector1.SourcePoint = new CGPoint(100, 100);
+connector1.TargetPoint = new CGPoint(300, 300);
 var label = new Annotation() { Content = "Label" };
-Connector1.Annotations.Add(label);
-diagram.AddConnector(Connector1);
-Connector1.Annotations.RemoveAt(0);
+connector1.Annotations.Add(label);
+diagram.AddConnector(connector1);
+connector1.Annotations.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,26 +65,26 @@ You can customize the annotation using properties. The following code illustrate
 Node node1 = new Node(100,300,100,100);
 var label = new Annotation()
 {
-Content = "Label",
-FontFamily = "Arial",
-FontSize = 14,
-TextBrush = new SolidBrush(UIColor.Red)
+  Content = "Label",
+  FontFamily = "Arial",
+  FontSize = 14,
+  TextBrush = new SolidBrush(UIColor.Red)
 } ;
 node1.Annotations.Add(label);
 diagram.AddNode(node1);
 // Annotation customization for connector 
-Connector Connector1 = new Connector();
-Connector1.SourcePoint = new CGPoint(100, 100);
-Connector1.TargetPoint = new CGPoint(200, 200);
+Connector connector1 = new Connector();
+connector1.SourcePoint = new CGPoint(100, 100);
+connector1.TargetPoint = new CGPoint(200, 200);
 var label = new Annotation()
 {
-Content = "Label",
-FontFamily = "Arial",
-FontSize = 14,
-TextBrush = new SolidBrush(UIColor.Red)
+  Content = "Label",
+  FontFamily = "Arial",
+  FontSize = 14,
+  TextBrush = new SolidBrush(UIColor.Red)
 };
-Connector1.Annotations.Add(label);
-diagram.AddConnector(Connector1);
+connector1.Annotations.Add(label);
+diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
 ![](Annotation_images/Annotation_img2.jpeg)
@@ -97,20 +97,18 @@ Annotation can be aligned relatively with node boundaries. It has horizontal and
 Node node1 = new Node(100,300,100,100);
 Annotation label = new Annotation()
 {
-       Content = "Label",
-       HorizontalAlignment = HorizontalAlignment.Center,
-      VerticalAlignment = VerticalAlignment.Top
+    Content = "Label",
+    HorizontalAlignment = HorizontalAlignment.Center,
+    VerticalAlignment = VerticalAlignment.Top
 };
 node1.Annotations.Add(label);
 diagram.AddNode(node1);
 //Annotation alignment for Connector
-Connector Connector1 = new Connector();
-Connector1.SourcePoint = new CGPoint(100, 100);
-Connector1.TargetPoint = new CGPoint(200, 200);
-Connector1.Annotations.Add(new Annotation() { Content = "Label", HorizontalAlignment = HorizontalAlignment.Center,
-      VerticalAlignment = VerticalAlignment.Center
- });
-diagram.AddConnector(Connector1);
+Connector connector1 = new Connector();
+connector1.SourcePoint = new CGPoint(100, 100);
+connector1.TargetPoint = new CGPoint(200, 200);
+connector1.Annotations.Add(new Annotation() { Content = "Label", HorizontalAlignment = HorizontalAlignment.Center,VerticalAlignment = VerticalAlignment.Center });
+diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
 ![](Annotation_images/Annotation_img3.jpeg)
