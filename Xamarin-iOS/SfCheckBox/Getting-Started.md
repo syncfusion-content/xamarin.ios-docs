@@ -138,7 +138,7 @@ null
 </tr>
 </table>
 
-N>For the check box, to report the indeterminate state,set the `IsThreeState` property to true.
+N>For the check box, to report the indeterminate state, set the `IsThreeState` property to true.
 
 Check box can be used as a single or as a group. A single check box mostly used for a binary yes/no choice, such as "Remember me?", login scenario, or a terms of service agreement.
 
@@ -233,7 +233,6 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Inter1.png)
-![](Images/Inter2.png)
+![](Images/Inter1.png) ![](Images/Inter2.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_IndeterminateState.zip).
