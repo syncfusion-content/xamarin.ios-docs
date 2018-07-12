@@ -63,22 +63,22 @@ public override void ViewDidLoad()
 {
 	base.ViewDidLoad();
 	SfDiagram diagram = new SfDiagram();
-	Node Begin = AddNode("Begin", 150, 60, 120, 40, "Begin", ShapeType.Ellipse);
-	Node Process = AddNode("Process", 150, 140, 120, 60, "Process", ShapeType.Rectangle);
-	Node End = AddNode("End", 190, 225, 40, 40, "End", ShapeType.Ellipse);
+	Node begin = AddNode("Begin", 150, 60, 120, 40, "Begin", ShapeType.Ellipse);
+	Node process = AddNode("Process", 150, 140, 120, 60, "Process", ShapeType.Rectangle);
+	Node end = AddNode("End", 190, 225, 40, 40, "End", ShapeType.Ellipse);
 	//Add nodes to the SfDiagram
-	diagram.AddNode(Begin);
-	diagram.AddNode(Process);
-	diagram.AddNode(End);
+	diagram.AddNode(begin);
+	diagram.AddNode(process);
+	diagram.AddNode(end);
 	Connector connector1 = new Connector()
 	{
-		SourceNode = Begin,
-		TargetNode = Process,
+		SourceNode = begin,
+		TargetNode = process,
 	};
 	Connector connector2 = new Connector()
 	{
-		SourceNode = Process,
-		TargetNode = End,
+		SourceNode = process,
+		TargetNode = end,
 	};
 	//Add connectors to the SfDiagram
 	diagram.AddConnector(connector1);

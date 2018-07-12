@@ -26,7 +26,7 @@ diagram.PageSettings.GridSize = 14;
 {% endhighlight %}
 {% endtabs %}
 
-## Snapping Gridlines
+## Snapping gridlines
 Nodes can be aligned and resized easily using gridlines by enabling the snap to grid. The following code example illustrates how to enable the snap to grid.
 {% tabs %}
 {% highlight c# %}
