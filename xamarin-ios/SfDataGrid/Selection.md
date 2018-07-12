@@ -370,4 +370,4 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CurrentCellBorder.PNG)
+![](SfDataGrid_images/CurrentcellBorder.PNG)
