@@ -42,7 +42,7 @@ To install the required NuGet for the SfPullToRefresh control in the application
 
 ### SfPullToRefresh for Xamarin.iOS
 
-The following NuGet package should be installed to use SfPullToRefresh control in the application.
+The following NuGet package should be installed to use SfPullToRefresh control in the application
 
 <table>
 <tr>
