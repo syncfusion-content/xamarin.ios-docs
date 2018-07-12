@@ -11,7 +11,7 @@ documentation: ug
 
 ## Download directly from website
 
-You can also download the complete Xamarin.Forms component from [here](https://www.syncfusion.com/downloads/latest-version). You may be asked to choose the windows installer or zip file to download.
+You can also download the complete Xamarin.iOS component from [here](https://www.syncfusion.com/downloads/latest-version). You may be asked to choose the windows installer or zip file to download.
 
 **Windows Installer (exe)**
 
@@ -41,7 +41,7 @@ You can find the Syncfusion libraries, samples and NuGet when extracting the dow
 
 * **"sample"** folder - e.g., C:\Users\Public\Documents\Syncfusion\16.2.0.41\Xamarin\sample
 
-   It contains the sample applications for our controls in Xamarin.iOS, Xamarin.Android, and Xamarin.Forms platforms in iOS, Android, and Forms folders, respectively.
+   It contains the sample applications for our controls in Xamarin.iOS platforms in iOS folder.
 
 ### Add reference to the project
 
