@@ -118,7 +118,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ## Cancel dropping of a particular column in a position
 
-Dropping of a particular column in a position can be canceled by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and `Position`. Refer the following code sample to cancel dropping of a particular column in a position:
+Dropping of a particular column in a position can be canceled using the `QueryRowDraggingReason` and `Position` arguments in the `QueryRowDragging` event handler. Refer the following code sample to cancel dropping of a particular column in a position:
 
 {% tabs %}
 {% highlight c# %}
