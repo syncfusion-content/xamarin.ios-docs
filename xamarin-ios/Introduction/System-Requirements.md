@@ -13,7 +13,6 @@ documentation: ug
 
 By using the following IDEs, you can develop Xamarin.iOS applications:
 
-* Visual Studio 2013
 * Visual Studio 2015
 * Visual Studio 2017
 
