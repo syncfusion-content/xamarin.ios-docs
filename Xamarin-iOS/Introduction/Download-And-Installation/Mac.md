@@ -11,7 +11,7 @@ documentation: ug
 
 ## Download directly from website
 
-You can also download the complete Xamarin.iOS component from [here](https://www.syncfusion.com/downloads/latest-version).
+You can download the complete Xamarin.iOS component from [here](https://www.syncfusion.com/downloads/latest-version).
 
 **MAC Installer (pkg)**
 
@@ -27,7 +27,7 @@ The following procedure illustrates how to install the installer of Syncfusion X
 
 ### Explore the libraries package
 
-You can find the Syncfusion libraries, samples and NuGet when extracting the downloaded zip package or from the installed location in Mac.
+You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
 
 {Essential Studio installed location}\Syncfusion\Essential Studio\16.2.0.41\Xamarin
 
@@ -48,5 +48,3 @@ You can find the Syncfusion libraries, samples and NuGet when extracting the dow
 You can then add the assembly references to the Xamarin.iOS. The following is the location where you can locate assembly for Chart control and you can find assemblies for the other controls also from the same location.
 
 lib\ios-unified\Syncfusion.SfChart.iOS.dll
-
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. For example, if we are using SfKanban, we need to call the Init method of SfKanbanRenderer as shown in this [KB article](https://www.syncfusion.com/kb/7171).
