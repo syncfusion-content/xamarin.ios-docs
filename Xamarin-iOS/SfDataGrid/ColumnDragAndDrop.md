@@ -37,7 +37,7 @@ The `QueryColumnDragging` event provides the following arguments through [Query
 
 ### Cancel dragging for a particular column
 
-Dragging can be canceled for a particular column by handling the `QueryColumnDragging` event and using conditions based on [QueryColumnDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryColumnDraggingReason.html). Refer to the following code sample to cancel dragging for a particular column:
+Dragging of a particular column can be canceled using [QueryColumnDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryColumnDraggingReason.html) argument in the `QueryColumnDragging` event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ### cancel dropping when dragging over particular columns
 
-Dropping can be canceled over particular columns while dragging a column.Refer to the following code sample to cancel dropping over particular columns:
+Dropping when dragging of a particular column can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -78,7 +78,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ### cancel dropping for a particular column
 
-Dropping can be canceled for a particular column by handling the `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dropping for a particular column:
+Dropping of a particular column can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -98,7 +98,7 @@ private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventA
 
 ### cancel dropping at a particular position
 
-Dropping at a particular position can be canceled by handling the `QueryColumnDragging` event and using conditions based on `QueryColumnDraggingReason`. Refer to the following code sample to cancel dropping at a particular position:
+Dropping at a particular position can be canceled using `QueryColumnDraggingReason` argument in the `QueryColumnDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}

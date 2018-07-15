@@ -158,7 +158,7 @@ The `QueryRowDragging` event provides following properties in [QueryRowDragging
 
 ## Cancel dragging for particular row
 
-Dragging can be disabled for a particular row by handling the `QueryRowDragging` event using conditions based on [QueryRowDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowDraggingReason.html). 
+Dragging of a particular row can be canceled using [QueryRowDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowDraggingReason.html) argument of the `QueryRowDragging` event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -178,7 +178,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Cancel dropping when dragging over particular rows
 
-Dropping can be disabled for some particular rows when dragging over rows.
+Dropping when dragging over particular rows can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -199,7 +199,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Cancel dropping of particular row 
 
-Dropping can be canceled for a particular row by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. 
+Dropping of a particular row can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -219,7 +219,7 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 ## Cancel dropping at a particular position
 
-Dropping of a particular row in a position can be canceled by handling the `QueryRowDragging` event using conditions based on `QueryRowDraggingReason` and `Position`. 
+Dropping at a particular position can be canceled using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -307,7 +307,7 @@ N> FrozenRowsCount must be less than rows in view.
 
 ## Reorder the underlying data
 
-Reordering changes directly on the underlying data can be done by handling `QueryRowDragging` event using conditions based on `QueryRowDraggingReason`. Refer following code sample to make permanent reordering changes.
+Reordering changes directly on the underlying data can be done using `QueryRowDraggingReason` argument of the `QueryRowDragging` event handler. Refer following code sample to make permanent reordering changes.
 
 {% tabs %}
 {% highlight c# %}
