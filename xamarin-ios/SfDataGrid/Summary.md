@@ -788,6 +788,6 @@ public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/Customizingcaptionsummaryforgroupsummary.PNG)
+![](SfDataGrid_images/Customizinggroupsummary.PNG)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo707626479).
