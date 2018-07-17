@@ -38,7 +38,7 @@ You can customize the display text appearance of the `SfRadioButton` control usi
 
 * `SetTitleColor`: Changes the color of the text.
 * `HorizontalAlignment`: Changes the horizontal alignment of the caption text.
-* `Font`:Changes the font family of the text and sets font attributes(bold/italic/none) of the text and also sets font size of the caption text.
+* `Font`: Changes the font family of the text and sets font attributes(bold/italic/none) of the text and also sets font size of the caption text.
 
 {% tabs %}
 {% highlight c# %}
