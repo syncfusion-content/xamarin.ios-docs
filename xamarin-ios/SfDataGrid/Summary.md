@@ -160,7 +160,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
 });
 {% endhighlight %}
 
-![](SfDataGrid_images/GroupRow.png)
+![](SfDataGrid_images/DisplayGroupSummaryForEntireRow.png)
 
 ### Displaying summary in the column
 
@@ -198,7 +198,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
 });
 {% endhighlight %}
 
-![](SfDataGrid_images/GroupColumn.png)
+![](SfDataGrid_images/DisplayGroupSummaryForIndividualColumn.png)
 
 ## Table summaries
 
@@ -788,6 +788,6 @@ public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/Customizinggroupsummary.PNG)
+![](SfDataGrid_images/CustomizingGroupSummary.PNG)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo707626479).
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo_iOS1565656637).
