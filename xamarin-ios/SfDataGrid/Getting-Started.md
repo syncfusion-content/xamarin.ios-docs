@@ -22,9 +22,30 @@ Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}
 
 N> Assemblies can be found in unzipped package location in Mac
 
+## NuGet configuration
+
+To install the required NuGet for the SfDataGrid control in the application, configure the NuGet packages of the Syncfusion components.
+
+Refer to the following KB to configure the NuGet packages of the Syncfusion components:
+
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+
+The following NuGet package should be installed to use the SfDataGrid control in the application.
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required package </th>
+</tr>
+<tr>
+<td> Xamarin.iOS </td>
+<td> Syncfusion.Xamarin.SfDataGrid.iOS</td>
+</tr>
+</table>
+
 ### Adding SfDataGrid Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid.ios/#), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid.ios/#), and then install it.
 
 ![](SfDataGrid_images/SfDataGrid_IOS.png)
 
@@ -41,7 +62,7 @@ To know more about obtaining our components, refer to this [link](https://help.s
 </tr>
 </table>
 
-To export the SfDataGrid to Excel and PDF formats, search for [Syncfusion.Xamarin.SfGridConverter](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGridConverter.ios/) in the NuGet package manager, and then install it.
+To export the SfDataGrid to Excel and PDF formats, search for [Syncfusion.Xamarin.SfGridConverter.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGridConverter.ios/) in the NuGet package manager, and then install it.
 
 ![](SfDataGrid_images/SfGridConverter_iOS.png)
 
