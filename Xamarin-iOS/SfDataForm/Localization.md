@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation | SfDataForm | Xamarin.iOS | Syncfusion
-description: How to localise the value in SfDataForm.
+description: How to localize the value in SfDataForm.
 platform: xamarin.ios
 control: SfDataForm
 documentation: ug
