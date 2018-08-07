@@ -27,7 +27,7 @@ ResourceType [Display](https://apisof.net/catalog/System.ComponentModel.DataAnno
 {% tabs %}
 {% highlight c# %}
 
-[Display(Name ="FirstName", Prompt = "EnterFirstname", ResourceType = typeof(Localization))]
+[Display(Name ="FirstName", Prompt = "EnterFirstName", ResourceType = typeof(Localization))]
 public String FirstName { get; set; } 
 
 {% endhighlight %}
@@ -51,7 +51,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
         if (e.DataFormItem.LabelText == "FirstName")
         {
             e.DataFormItem.LabelText = Localization.FirstName;
-            e.DataFormItem.PlaceHolderText = Localization.EnterFirstname;
+            e.DataFormItem.PlaceHolderText = Localization.EnterFirstName;
         }
     }
 }
