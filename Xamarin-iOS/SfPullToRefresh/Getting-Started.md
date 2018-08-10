@@ -44,6 +44,8 @@ The following NuGet package should be installed to use the SfPullToRefresh contr
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPullToRefresh.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SFPullTORefresh.IOS), and then install it.
 
+Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh.iOS package is highlighted:
+
 ![](GettingStarted_images/NuGetInstall.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
@@ -51,17 +53,13 @@ To know more about obtaining our components, refer to this [link](https://help.s
 <table>
 <tr>
 <th> Project </th>
-<th> Required packages </th>
+<th> Required assembly </th>
 </tr>
 <tr>
 <td> Xamarin.iOS </td>
 <td> ios-unified\Syncfusion.SfPullToRefresh.iOS.dll </td>
 </tr>
 </table>
-
-Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh.iOS package is highlighted:
-
-![](GettingStarted_images/NuGetInstall.png)
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
