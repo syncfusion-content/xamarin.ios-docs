@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Multiple series and combination of series | SFChart | Xamarin.iOS | Syncfusion
 description: How to add multiple series and combination series in SFChart
@@ -199,9 +199,9 @@ series.AnimationDuration    = 0.8;
 
 {% endhighlight %}
 
-## Transpose the Series
+## Vertical chart
 
-The [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property of [`SFCartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries.html) is used to plot the chart in the vertical direction and this helps to view the data in different perspective.
+The [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property of [`SFCartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries.html) is used to plot the chart vertically and view the data in a different perspective.
 
 {% highlight c# %}
 
