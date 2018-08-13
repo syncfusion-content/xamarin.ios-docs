@@ -114,4 +114,4 @@ private void DataForm_Validating(object sender, ValidatingEventArgs e)
 
 ![](SfDataForm_images/DataFormLocalization.png)
 
-You can download the entire source code of this demo for Xamarin.Forms using attributes from here [LocalizationThroughAttribute](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocalizationAttribute886562419.zip) and using event from here [LocalizationThroughEvent](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocalizationEvent1289147897.zip).
+You can download the entire source code of this demo for Xamarin.Forms using attributes from here [LocalizationThroughAttribute](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocalizationAttribute1737934918.zip) and using event from here [LocalizationThroughEvent](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocalizationEvent2072234240.zip).
