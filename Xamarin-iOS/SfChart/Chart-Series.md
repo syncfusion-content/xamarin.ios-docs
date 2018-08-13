@@ -199,7 +199,7 @@ series.AnimationDuration    = 0.8;
 
 {% endhighlight %}
 
-## Vertical chart
+## Transpose the Series (Vertical Chart)
 
 The [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property of [`SFCartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries.html) is used to plot the chart vertically and view the data in a different perspective.
 
