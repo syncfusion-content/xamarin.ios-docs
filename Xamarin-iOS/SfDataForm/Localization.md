@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization 
 
-You can localize the DataFormItem [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute values and validation ( [Required](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.RequiredAttribute), [StringLength](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.StringLengthAttribute) ) attributes values by using ResourceType display
+You can localize the DataFormItem [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute values and validation ( [Required](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.RequiredAttribute), [StringLength](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.StringLengthAttribute) ) attributes values by using `ResourceType` display
 attribute or using the `AutoGeneratingDataFormItem` event.
  
 Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
@@ -22,7 +22,7 @@ Here, the display attributes or data form item display values get localized base
 
 ### Using attribute
 
-ResourceType [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of Name, ShortName, GroupName and Prompt values.
+`ResourceType` [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of `Name`, `ShortName`, `GroupName` and `Prompt` values.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +35,7 @@ public String FirstName { get; set; }
 
 ### Using event
 
-You can also localize the DataFormItem LabelText, PlaceHolderText, GroupName in the `AutoGeneratingDataFormItem` event of SfDataForm by using the Resources (.Resx) file.
+You can also localize the DataFormItem `LabelText`, `PlaceHolderText`, `GroupName` in the `AutoGeneratingDataFormItem` event of SfDataForm by using the Resources (.Resx) file.
 
 Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx) based on culture.
 
@@ -67,7 +67,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Localizing data form error messages
 
-Here, the validation (Required,StringLength)  attributes or data form error messages get localized based on culture from Localization Resource File (.Resx).
+Here, the validation (`Required`,`StringLength`)  attributes or data form error messages get localized based on culture from Localization Resource File (.Resx).
 
 ### Using attribute
 
@@ -85,7 +85,7 @@ public String FirstName { get; set; }
 
 ### Using event
 
-You can also localize the data form error message in the ` Validating` event of SfDataForm by using the Resources (.Resx) file.
+You can also localize the data form error message in the `Validating` event of SfDataForm by using the Resources (.Resx) file.
 
 Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx) based on culture.
 
