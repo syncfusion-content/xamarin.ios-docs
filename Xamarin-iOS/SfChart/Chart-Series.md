@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Multiple series and combination of series | SFChart | Xamarin.iOS | Syncfusion
 description: How to add multiple series and combination series in SFChart
