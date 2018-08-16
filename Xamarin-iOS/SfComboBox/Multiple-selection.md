@@ -23,7 +23,7 @@ Selected items will be displayed with a customizable token representation and th
 
 {% highlight C# %}
 
-sfCombo.MultiSelectMode = MultiSelectMode.Token; 
+combobox.MultiSelectMode = MultiSelectMode.Token; 
 
 {% endhighlight %}
 
@@ -44,22 +44,22 @@ The selected item can be displayed as token inside the combo box in the followin
 //Create instance for SfComboBox
 
 { 
-SfComboBox sfCombo = new SfComboBox(); 
-sfCombo.IsEditable = true; 
-sfCombo.SuggestionMode = SuggestionMode.StartsWith; 
-sfCombo.Frame = new CoreGraphics.CGRect(25,100, UIScreen.MainScreen.Bounds.Width-50, 100); 
-sfCombo.MultiSelectMode = MultiSelectMode.Token; 
-sfCombo.TokensWrapMode = TokensWrapMode.Wrap; 
-sfCombo.ItemHeight = 60; 
-this.GetStudentData(); 
-sfCombo.DisplayMemberPath = (NSString)"Name"; 
-sfCombo.ImageMemberPath = "Image"; 
-sfCombo.DataSource = StudentDetails; 
-sfCombo.DropDownItemChanged += SfCombo_DropDownItemChanged; 
-sfCombo.MaxDropDownHeight = 250; 
+SfComboBox combobox = new SfComboBox(); 
+combobox.IsEditable = true; 
+combobox.SuggestionMode = SuggestionMode.StartsWith; 
+combobox.Frame = new CoreGraphics.CGRect(25,100, UIScreen.MainScreen.Bounds.Width-50, 100); 
+combobox.MultiSelectMode = MultiSelectMode.Token; 
+combobox.TokensWrapMode = TokensWrapMode.Wrap; 
+combobox.ItemHeight = 60; 
+this.GetEmployeeData(); 
+combobox.DisplayMemberPath = (NSString)"Name"; 
+combobox.ImageMemberPath = "Image"; 
+combobox.DataSource = EmployeeDetails; 
+combobox.DropDownItemChanged += SfCombo_DropDownItemChanged; 
+combobox.MaxDropDownHeight = 250; 
 } 
 
-string[] StudentNames = new string[] 
+string[] EmployeeNames = new string[] 
 { 
     "Alan", 
     "Alexander", 
@@ -85,12 +85,12 @@ string[] StudentNames = new string[]
     "Zara", 
 }; 
 
-void GetStudentData() 
+void GetEmployeeData() 
 { 
-    StudentDetails = new ObservableCollection<Student>(); 
-    for (int i = 1; i <= StudentNames.Length; i++) 
+    EmployeeDetails = new ObservableCollection<Employee>(); 
+    for (int i = 1; i <= EmployeeNames.Length; i++) 
     { 
-        StudentDetails.Add(new Student(StudentNames[i-1], "Image"+i+".png")); 
+        EmployeeDetails.Add(new Employee(EmployeeNames[i-1], "Image"+i+".png")); 
     } 
 } 
 
@@ -106,7 +106,7 @@ UIView SfCombo_DropDownItemChanged(object sender, DropDownItemEventArgs e)
     resultLabel.Font = UIFont.FromName("Helvetica", 20f); 
     resultLabel.TextAlignment = UITextAlignment.Left; 
     var item = auto.DataSource.ElementAt((int)e.Index); 
-    var selectedObject = (item as Student); 
+    var selectedObject = (item as Employee); 
     imageView.Image = new UIImage(selectedObject.Image); 
     resultLabel.Text = selectedObject.Name; 
     parentView.AddSubview(imageView); 
@@ -114,7 +114,7 @@ UIView SfCombo_DropDownItemChanged(object sender, DropDownItemEventArgs e)
     e.View = parentView; 
     return e.View; 
 } 
-public class Student 
+public class Employee 
 { 
 private string name; 
 public string Name 
@@ -144,7 +144,7 @@ set
 } 
 } 
 
-public Student(string name, string image) 
+public Employee(string name, string image) 
 { 
     this.Name = name; 
     this.Image = image; 
@@ -192,7 +192,7 @@ token.DeleteButtonColor = UIColor.Black;
 token.FontFamily = "Times New Roman"; 
 token.IsCloseButtonVisible = true; 
 token.CornerRadius = 10; 
-sfCombo.TokenSettings = token;
+combobox.TokenSettings = token;
 
 {% endhighlight %}
 
@@ -205,12 +205,13 @@ sfCombo.TokenSettings = token;
 
 When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the `Delimiter` property.
 
+N> The default delimiter character is “,”.
+
 {% tabs %}
 
 {% highlight C# %}
 
-sfCombo.MultiSelectMode = MultiSelectMode.Delimiter; 
-sfCombo.Delimiter="#";
+combobox.MultiSelectMode = MultiSelectMode.Delimiter; 
 
 {% endhighlight %}
 
@@ -218,3 +219,18 @@ sfCombo.Delimiter="#";
 
 ![](images/Delimiter.png)
 
+
+We can add the custom delimiter character by using `Delimiter` property.
+
+{% tabs %}
+
+{% highlight C# %}
+
+combobox.MultiSelectMode = MultiSelectMode.Delimiter; 
+combobox.Delimiter="#";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/CustomDelimiter.png)

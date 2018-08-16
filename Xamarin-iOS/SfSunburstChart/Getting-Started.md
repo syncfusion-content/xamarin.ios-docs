@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the steps required to configure the `SfSunburstChart` and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
+This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 
 ## Add sunburst chart references
 
@@ -28,7 +28,7 @@ Import the SfSunburstChart namespace as shown below.
 
 {% highlight C# %}
 
-using Syncfusion.SfSunburstChart.iOS;
+  using Syncfusion.SfSunburstChart.iOS;
 
 {% endhighlight %}
 
@@ -492,11 +492,11 @@ Define a data model that represents the above data in [`SfSunburstChart`](https:
 
 public class SunburstModel
 {
-        public string JobDescription { get; set; }
-        public string JobGroup { get; set; }
-        public string JobRole { get; set; }
-        public double EmployeesCount { get; set; }
-        public string Country { get; set; }
+    public string JobDescription { get; set; }
+    public string JobGroup { get; set; }
+    public string JobRole { get; set; }
+    public double EmployeesCount { get; set; }
+    public string Country { get; set; }
 }
 
 {% endhighlight %} 
@@ -557,19 +557,19 @@ Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_
 
 {% highlight C# %}
 
-            SfSunburstChart sunburstChart = new SfSunburstChart();
+  SfSunburstChart sunburstChart = new SfSunburstChart();
 
-            SunburstViewModel dataModel = new SunburstViewModel();
-            sunburstChart.ItemsSource = dataModel.DataSource;
-            sunburstChart.ValueMemberPath = "EmployeesCount";
+  SunburstViewModel dataModel = new SunburstViewModel();
+  sunburstChart.ItemsSource = dataModel.DataSource;
+  sunburstChart.ValueMemberPath = "EmployeesCount";
 
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
-            sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "Country" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobDescription" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobGroup" });
+  sunburstChart.Levels.Add(new SunburstHierarchicalLevel() { GroupMemberPath = "JobRole" });
 
-            sunburstChart.Frame = this.View.Frame;
-            View.AddSubview(sunburstChart);
+  sunburstChart.Frame = this.View.Frame;
+  View.AddSubview(sunburstChart);
 
 {% endhighlight %}
 
@@ -581,8 +581,8 @@ You can add title to the sunburst chart to provide information to users about th
 
 {% highlight C# %} 
 
-            sunburstChart.Title.IsVisible = true;
-            sunburstChart.Title.Text = "Employees Count";
+  sunburstChart.Title.IsVisible = true;
+  sunburstChart.Title.Text = "Employees Count";
 
 {% endhighlight %}
 
@@ -594,7 +594,7 @@ You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusi
 
 {% highlight C# %} 
 
-sunburstChart.Legend.IsVisible = true; 
+  sunburstChart.Legend.IsVisible = true; 
 
 {% endhighlight %}
 
@@ -606,7 +606,7 @@ You can add data labels to improve the readability of the sunburst chart. Data l
 
 {% highlight C# %} 
 
-sunburstChart.DataLabel.ShowLabel = true;
+  sunburstChart.DataLabel.ShowLabel = true;
 
 {% endhighlight %}
 
@@ -653,4 +653,4 @@ The following screenshot depicts the final output.
 
 ![SfSunburstChart](Getting-Started_images/GettingStarted.png)
 
-You can find the complete getting started sample from this link.
+You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sunburst_iOS856526781).

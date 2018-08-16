@@ -13,20 +13,47 @@ This section provides a quick overview for working with SfPullToRefresh in Xamar
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, all the required assemblies can be found in {Syncfusion Essential Studio Installed location}\Essential Studio\15.4.0.17\Xamarin\lib this installation folder.
+After installing Essential Studio for Xamarin, all the required assemblies can be found in {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib this installation folder.
 
-e.g., C:\Program Files (x86)\Syncfusion\Essential Studio\15.4.0.17\Xamarin\lib
+e.g., C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location in Mac.
 
-### SfPullToRefresh for Xamarin.iOS
+## NuGet configuration
 
-The following assembly should be added as reference from the "lib" folder to use SfPullToRefresh in the application:
+To install the required NuGet for the SfPullToRefresh control in the application, configure the NuGet packages of the Syncfusion components.
+
+Refer to the following KB to configure the NuGet packages of the Syncfusion components:
+
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+
+The following NuGet package should be installed to use the SfPullToRefresh control in the application.
 
 <table>
 <tr>
 <th> Project </th>
-<th> Required assemblies </th>
+<th> Required package </th>
+</tr>
+<tr>
+<td> Xamarin.iOS </td>
+<td>Syncfusion.SfPopupLayout.iOS</td>
+</tr>
+</table>
+
+### Adding SfPullToRefresh Reference
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPullToRefresh to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPullToRefresh.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SFPullTORefresh.IOS), and then install it.
+
+Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh.iOS package is highlighted:
+
+![](GettingStarted_images/NuGetInstall.png)
+
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required assembly </th>
 </tr>
 <tr>
 <td> Xamarin.iOS </td>
@@ -34,30 +61,7 @@ The following assembly should be added as reference from the "lib" folder to use
 </tr>
 </table>
 
-## NuGet installation
-
-To install SfPullToRefresh control in the application, configure the NuGet package of the Syncfusion components. Refer to the following KB to configure the NuGet package of the Syncfusion components: 
-
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
-
-### SfPullToRefresh for Xamarin.iOS
-
-The following NuGet package should be added to use SfPullToRefresh control in the application:
-
-<table>
-<tr>
-<th> Project </th>
-<th> Required packages </th>
-</tr>
-<tr>
-<td> Xamarin.iOS </td>
-<td> Syncfusion.Xamarin.SfPullToRefresh.iOS </td>
-</tr>
-</table>
-
-Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh.iOS package is highlighted:
-
-![](GettingStarted_images/NuGetInstall.png)
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Create a sample application with SfPullToRefresh
 
@@ -81,7 +85,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 2. Import SfPullToRefresh control under the namespace `Syncfusion.SfPullToRefresh`.
 
-3. Create an instance of SfPullToRefresh control and add as the sub view of the UIViewController. Refer to the following code example to add this control to the application:
+3. Create an instance of SfPullToRefresh control and add as the subview of the UIViewController. Refer to the following code example to add this control to the application:
 
 {% highlight c# %}
 

@@ -21,7 +21,7 @@ In editable mode the user can select an item from the dropdown list by either ty
 
 {% highlight C# %}
 
-sfCombo.IsEditable = true;
+combobox.IsEditable = true;
 
 {% endhighlight %}
 
@@ -35,7 +35,7 @@ N> The default ComboBoxModes is Non-Editable
 
 {% highlight C# %}
 
-sfCombo.IsEditable = false;
+combobox.IsEditable = false;
 
 {% endhighlight %}
 

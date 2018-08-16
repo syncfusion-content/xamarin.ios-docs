@@ -1,23 +1,23 @@
 ---
 layout : post
-title : Custom view of Syncfusion SfImageEditor control in Xamarin.ios
-description : Learn how to add custom view in ImageEditor for Xamarin.ios
+title : Custom view of Syncfusion SfImageEditor control in Xamarin.iOS
+description : Learn how to add custom view in ImageEditor for Xamarin.iOS
 platform : xamarin.ios
 control : ImageEditor
 documentation : ug
 ---
 
-# CustomView
+## CustomView
 
 You can add any custom shapes or views on the image by using the `AddCustomView` method in the SfImageEditor control. To add the custom view, specify any view and its desired `CustomViewSettings` as shown in the following code snippet.
 
 {% highlight C# %}
 
-UIImageView customImage = new UIImageView();
-customImage.Frame = new CoreGraphics.CGRect(0, 0, 200, 200);
-customImage.Image = UIImage.FromBundle("CustomViewImage.png");
-imageEditor.AddCustomView(customImage, new CustomViewSettings());
-  
+            UIImageView customImage = new UIImageView();
+            customImage.Frame = new CoreGraphics.CGRect(0, 0, 200, 200);
+            customImage.Image = UIImage.FromBundle("CustomViewImage.png");
+            imageEditor.AddCustomView(customImage, new CustomViewSettings());
+
 {% endhighlight %}
 
 ## CustomViewSettings
@@ -28,13 +28,12 @@ CustomViewSettings is defined to set the values for `CanMaintainAspectRatio` and
 
 {% highlight C# %}
 
-CustomViewSettings customViewSettings = new CustomViewSettings()
-{
-    CanMaintainAspectRatio = false,
-    Bounds = new System.Drawing.RectangleF(0, 0, 100, 100)
-};
+        CustomViewSettings customViewSettings = new CustomViewSettings()
+            {
+                CanMaintainAspectRatio = false,
+                Bounds = new Rectangle(0, 0, 100, 100)
+            };
 
 {% endhighlight %}
 
 ![SfImageEditor](ImageEditor_images/CustomView.png)
-

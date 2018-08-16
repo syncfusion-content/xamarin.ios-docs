@@ -20,16 +20,16 @@ The header content can be added at the top of the combo box control's suggestion
 {% highlight C# %}
 
 //Shows the header view 
-sfCombo.ShowDropDownHeaderView = true; 
+combobox.ShowDropDownHeaderView = true; 
 
 //Set height of the Header view 
-sfCombo.DropDownHeaderViewHeight = 50; 
+combobox.DropDownHeaderViewHeight = 50; 
 UILabel label = new UILabel(); 
 label.Text = "Country Options"; 
 label.TextColor = UIColor.Blue; 
 label.BackgroundColor = UIColor.FromRGB(234,233,233); 
 label.TextAlignment = UITextAlignment.Center; 
-sfCombo.DropDownHeaderView = label; 
+combobox.DropDownHeaderView = label; 
 
 {% endhighlight %}
 
@@ -47,16 +47,16 @@ The footer content can be added at the bottom of the combo box control's suggest
 
 {% highlight C# %}
 //Shows the footer view 
-sfCombo.ShowDropDownFooterView = true; 
+combobox.ShowDropDownFooterView = true; 
 
 //Set height of the footer view 
-sfCombo.DropDownFooterViewHeight  = 50; 
+combobox.DropDownFooterViewHeight  = 50; 
 UILabel label = new UILabel(); 
 label.Text = "Show Other Countries"; 
 label.TextColor = UIColor.Blue; 
 label.BackgroundColor = UIColor.FromRGB(234,233,233); 
 label.TextAlignment = UITextAlignment.Center; 
-sfCombo.DropDownFooterView = label;
+combobox.DropDownFooterView = label;
 
 {% endhighlight %}
 

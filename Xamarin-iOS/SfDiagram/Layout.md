@@ -15,15 +15,15 @@ You have to create a class for data, employee with the properties to store emplo
 {% tabs %}
 {% highlight c# %}
 //Employee Business Object
-    public class Employee
-    {
-        public string Team { get; set; }
-        public string Role { get; set; }
-        public int EmployeeId { get; set; }
-    }
-    //Employee Collection
-    public class Employees : ObservableCollection<Employee>
-    {
+public class Employee
+{
+    public string Team { get; set; }
+    public string Role { get; set; }
+    public int EmployeeId { get; set; }
+}
+//Employee Collection
+public class Employees : ObservableCollection<Employee>
+{
 }
 {% endhighlight %}
 {% endtabs %}
@@ -87,13 +87,13 @@ You can change the chart type and orientation by using BeginNodeLayout event of 
 // Registering an event
  diagram.BeginNodeLayout += Diagram_BeginNodeLayout;
 private void Diagram_BeginNodeLayout(object sender, BeginNodeLayoutEventArgs args)
-        {
-            if (!args.HasSubTree)
-            {
-                args.Type = ChartType.Left;
-                args.Orientation = Orientation.Vertical;
-            }
-        }
+{
+    if (!args.HasSubTree)
+    {
+        args.Type = ChartType.Left;
+        args.Orientation = Orientation.Vertical;
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,24 +104,24 @@ You can change node content using BeginNodeRender event of the SfDiagram. This e
 // Registering an event
 diagram.BeginNodeRender += Diagram_BeginNodeRender;
 private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs args)
-        {
-            Node node = args.Item as Node;
-            node.Width = 150;
-            node.Height = 60;
-            node.ShapeType = ShapeType.Rectangle;
-            Style style = new Style(){Brush = new SolidBrush(UIColor.OliveDrab) }; 
-            node.Style = style;
-            AnnotationCollection annotations = new AnnotationCollection();
-            Annotation annotation = new Annotation()
-            {
-                Content = (node.Content as Employee).Role,
-                HorizontalAlignment =             HorizontalAlignment.Center,
-                VerticalAlignment = VerticalAlignment.Center,
-                TextBrush = new SolidBrush(UIColor.White)
-            };
-            annotations.Add(annotation);
-            node.Annotations = annotations;
-        }
+{
+    Node node = args.Item as Node;
+    node.Width = 150;
+    node.Height = 60;
+    node.ShapeType = ShapeType.Rectangle;
+    Style style = new Style(){Brush = new SolidBrush(UIColor.OliveDrab) }; 
+    node.Style = style;
+    AnnotationCollection annotations = new AnnotationCollection();
+    Annotation annotation = new Annotation()
+    {
+        Content = (node.Content as Employee).Role,
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center,
+        TextBrush = new SolidBrush(UIColor.White)
+    };
+    annotations.Add(annotation);
+    node.Annotations = annotations;
+}
 {% endhighlight %}
 {% endtabs %}
 

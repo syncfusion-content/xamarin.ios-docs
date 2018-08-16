@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Overview
+## Overview
 
 Image Editor is a very handy tool used to edit an image by annotating with free hand drawing paths, text and built in shapes.It also allows you crop and flip the image.The Image Editor control has an in-built toolbar which helps you to perform the editing operations.
 

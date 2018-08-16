@@ -22,7 +22,9 @@ Add the following assembly references to the iOS project,
 
 ios-unified\Syncfusion.SfImageEditor.iOS.dll
 
-# Add and configure the image editor
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
+## Initializing the image editor
 
 The following steps explain on how to create a image editor  and configure its elements,
 
@@ -43,12 +45,10 @@ You can load the image to the SfImageEditor by set image property in SfImageEdit
 
 {% highlight C# %}
 
-
-    imageEditor.Image = */ Your Image */
-
+    SfImageEditor imageEditor = new SfImageEditor(); 
+    imageEditor.Image = UIImage.FromBundle("image.png");
 
 {% endhighlight %}
-
 
 
 * Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
