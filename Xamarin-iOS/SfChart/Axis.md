@@ -520,6 +520,9 @@ Chart.PrimaryAxis.Title.Text = new NSString("Month");
 ### Grid lines customization
 
 The [`ShowMajorGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~ShowMajorGridLines.html) and [`ShowMinorGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~ShowMinorGridLines.html) properties are used to control the visibility of grid lines. [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MajorGridLineStyle.html) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorGridLineStyle.html) properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
+
+* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisGridLineStyle~Dashes.html) - Used to render the major and minor gridline with dashes.
+
 {% highlight c# %}
 
 yAxis.ShowMajorGridLines    = true;
@@ -773,3 +776,34 @@ The [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncf
 * [`LabelContent`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabel~LabelContent.html) - used to get or set the content of label
 * [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabel~Position.html) - used to get or set the position of the label
 * [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabel~LabelStyle.html) - Used to customize the appearance of axis labels based on condition. The properties listed in [`Label customization`](https://help.syncfusion.com/xamarin-ios/sfchart/axis#label-customization) can be customized using LabelStyle property.
+* [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis+ChartAxisLabel~IsVisible.html) - Used to customize the visibility of axis labels. By default IsVisible property is true.
+
+## Delegate
+
+We need to implement delegate to deal with the axis range. In order to do this, you need to adopt the [`SFChartDelegate`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate.html) protocol through the class extension as shown below.
+
+{% highlight c# %}
+
+public override void ViewDidLoad ()
+{
+    chart.Delegate = new ChartDelegate ();
+}
+
+public class ChartDelegate : SFChartDelegate
+{
+      public override void DidActualRangeChange(SFChart chart, SFAxis axis, SFAxisRangeInfo info)
+      {
+           
+      }
+}
+
+{% endhighlight %}
+
+**DidActualRangeChange**
+
+The  [`DidActualRangeChange`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidActualRangeChange.html) delegate is called when the actual range of axis changing, the argument includes [`SFAxisRangeInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisRangeInfo.html) the  which is used to get the range from the axis. The argument contains the following information.
+
+* [`ActualMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisRangeInfo~ActualMinimum.html) - used to get or set the actual minimum value of the axis.
+* [`ActualMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisRangeInfo~ActualMaximum.html) - used to get or set the actual maximum value of the axis.
+* [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisRangeInfo~VisibleMinimum.html) - used to get or set the visible minimum value of the axis.
+* [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisRangeInfo~VisibleMaximum.html) - used to get or set the visible maximum value of the axis.
