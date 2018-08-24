@@ -167,7 +167,7 @@ Following screenshot illustrates the customization of trackball elements.
 
 ## LabelAlignment
 
-The position of trackball’s axis label can be changed using the [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle~LabelAlignment.html) property of [`TrackballLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~TrackballLabelStyle.html). The following options are available in LabelAlignemnt.
+The position of trackball’s axis label can be changed using the [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle~LabelAlignment.html) property of [`TrackballLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~TrackballLabelStyle.html). The following options are available in LabelAlignment.
 
 * Far - The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis. 
 * Near - The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
