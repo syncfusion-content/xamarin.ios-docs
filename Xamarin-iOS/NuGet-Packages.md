@@ -30,7 +30,7 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
 
 2. Click the Copy URL label under Xamarin platform to copy the Syncfusion Xamarin platform NuGet feed to clipboard or directly use the following URL: 
 
-    [http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin) 
+    [https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin) 
 
     ![](NuGet_Packages_Images/img1.png)
 
@@ -51,7 +51,7 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
     **Name:** Name of the package listed in the available package sources.
     
     **Source:** Syncfusion Xamarin NuGet Feed URL      
-    [http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin).
+    [https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin).
 
 5.	Click the **Update** button to add the name and source details to package sources. 
 
@@ -73,7 +73,7 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
 
     **Name:** Enter the name (For e.g., Syncfusion Xamarin Packages).
 
-    **Location:** Enter the following URL – [http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin).
+    **Location:** Enter the following URL – [https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin).
 
     ![](NuGet_Packages_Images/img5.png)
  
@@ -120,7 +120,7 @@ To reference the Syncfusion Xamarin.iOS component using the Package Manager Cons
     Install-Package Syncfusion.Xamarin.SfChart.IOS
 
     #install specified package in default project with specified package source
-    Install-Package Syncfusion.Xamarin.SfChart.IOS -Source "http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin"
+    Install-Package Syncfusion.Xamarin.SfChart.IOS -Source "https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin"
 
     #install specified package in specified project 
     Install-Package Syncfusion.Xamarin.SfChart.IOS -ProjectName SyncfusionDemoApplication
@@ -168,10 +168,10 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 
     ~~~
     #For Windows platform
-    nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
+    nuget.exe Sources Add –Name “Syncfusion Source” –Source “https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
 
     #For MAC/Linux platform
-    mono nuget.exe Sources Add –Name “Syncfusion Source” –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
+    mono nuget.exe Sources Add –Name “Syncfusion Source” –Source “https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
     ~~~
 
 ### NuGet installation
@@ -198,7 +198,7 @@ nuget.exe install “Syncfusion.Xamarin.Calculate.IOS”
 nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
 #install specific Syncfusion NuGet package with Syncfusion Xamarin NuGet feed for windows 
-nuget.exe install “Syncfusion.Xamarin.Calculate.IOS”  –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
+nuget.exe install “Syncfusion.Xamarin.Calculate.IOS”  –Source “https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
 
 #install specific package for Mac and Linux 
 mono nuget.exe install “Syncfusion.Xamarin.Calculate.IOS”
@@ -207,7 +207,7 @@ mono nuget.exe install “Syncfusion.Xamarin.Calculate.IOS”
 mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
 
 #install specific Syncfusion NuGet package with Syncfusion Xamarin NuGet feed for Mac and Linux 
-mono nuget.exe install “Syncfusion.Xamarin.Calculate.IOS”  –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
+mono nuget.exe install “Syncfusion.Xamarin.Calculate.IOS”  –Source “https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
 ~~~
 
 ## Upgrading NuGet packages
@@ -262,7 +262,7 @@ To update the installed Syncfusion Xamarin.iOS NuGet packages using the Package 
     Update-Package Syncfusion.Xamarin.Calculate.IOS
 
     #Update specified package in default project with specified package source
-    Update-Package Syncfusion.Xamarin.Calculate.IOS –Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin” 
+    Update-Package Syncfusion.Xamarin.Calculate.IOS –Source “https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin” 
 
     #Update specified package in specified project 
     Update-Package Syncfusion.Xamarin.Calculate.IOS -ProjectName SyncfusionDemoApplication
@@ -299,7 +299,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update “C:\Users\SyncfusionApplication\package.config”
 
     #update all NuGet packages from specified Packages Source
-    nuget update -Source “http://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
+    nuget update -Source “https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin”
     ~~~
 
     N> Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
