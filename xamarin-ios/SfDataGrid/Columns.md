@@ -307,11 +307,11 @@ The following code illustrates how to hook the Closed event and get the new valu
             private void Closed_Method(object sender, PickerClosedEventArgs e)
             {
               var newValue = e.NewValue;
-              var oldValur = e.OldValue;
+              var oldValue = e.OldValue;
               var action = e.Action;
             }
 
-{% endhighlight%}
+{% endhighlight %}
 
 ## Value changed event
 This event is triggered whenever the values has been changed in GridTextColumn, GridNumericColumn and GridSwitchColumn respectively. ValueChangedEventArgs contains the following properties:
@@ -333,4 +333,4 @@ This event is triggered whenever the values has been changed in GridTextColumn, 
             var rowData = e.RowData;
         }
 
-{% endhighlight%}
+{% endhighlight %}
