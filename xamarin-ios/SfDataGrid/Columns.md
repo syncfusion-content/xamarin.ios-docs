@@ -281,3 +281,56 @@ You can cancel resizing for a particular column using the `SfDataGrid.ColumnResi
                 e.Cancel = true;
         }
 {% endhighlight %}
+
+## Picker closed event
+
+This event is triggered whenever the "OK" or "Cancel" button in Picker editor or DateTime editor in GridPickerColumn and GridDateTimeColumn respectively has been clicked. PickerClosedEventArgs contains the following properties:
+
+* [OldValue] : Gets the old value of the picker.
+* [NewValue] : Gets the new value of the picker.
+* [Action]   : Gets the action performed either value committed or cancelled.
+
+The following code illustrates how to hook the Closed event and get the new value, old value and action performed details:
+
+{% highlight c# %}
+
+            //For GridPickerColumn event has been raised.
+            GridPickerColumn  pickerColumn= new GridPickerColumn() { MappingName = "ShipCountry" };
+            pickerColumn.Closed += Closed_Method;
+            dataGrid.Columns.Add(pickerColumn);
+
+            //For GridDateTimeColumn event has been raised.
+            GridDateTimeColumn dateTimeColumn = new GridDateTimeColumn() { MappingName = "ShippingDate" };
+            dateTimeColumn.Closed += Closed_Method;
+            dataGrid.Columns.Add(dateTimeColumn);
+
+            private void Closed_Method(object sender, PickerClosedEventArgs e)
+            {
+              var newValue = e.NewValue;
+              var oldValur = e.OldValue;
+              var action = e.Action;
+            }
+
+{% endhighlight%}
+
+## Value changed event
+This event is triggered whenever the values has been changed in GridTextColumn, GridNumericColumn and GridSwitchColumn respectively. ValueChangedEventArgs contains the following properties:
+
+* [Column]        : Gets the Column.
+* [NewValue]      : Gets a value indicating whether the value is new value.
+* [RowColIndex]   : Gets the RowColumnIndex.
+* [RowData]       : Gets the RowData.
+
+{% highlight c# %}
+
+        dataGrid.ValueChanged += DataGrid_ValueChanged;
+
+        private void DataGrid_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            var column = e.Column;
+            var newValue = e.NewValue;
+            var rowColIndex = e.RowColIndex;
+            var rowData = e.RowData;
+        }
+
+{% endhighlight%}
