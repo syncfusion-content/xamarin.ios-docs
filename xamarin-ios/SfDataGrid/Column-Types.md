@@ -75,7 +75,7 @@ Refer the following code example to customize the header cell text size for the 
 GridTextColumn column = new GridTextColumn()
 {
     MappingName = "OrderID",
-    HeaderCellTextSize=14
+    HeaderCellTextSize = 16
 };
 
 {% endhighlight %}
