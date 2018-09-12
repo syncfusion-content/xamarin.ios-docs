@@ -68,6 +68,17 @@ The below table describes you the types of column and its purpose of usage in Sf
 #### HeaderCellTextSize
 
 The FontSize for the content of header cell in the `GridColumn` can be customized by using the [GridColumn.HeaderCellTextSize](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridColumn~HeaderCellTextSize.html) property. The default font size of the header cells in SfDataGrid is 14.
+Refer the following code example to customize the header cell text size for the `GridColumn.HeaderCellTextSize`.
+
+{% highlight c# %}
+
+GridTextColumn column = new GridTextColumn()
+{
+    MappingName = "OrderID",
+    HeaderCellTextSize = 16
+};
+
+{% endhighlight %}
 
 #### HeaderFont
 
