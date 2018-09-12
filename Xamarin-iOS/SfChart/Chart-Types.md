@@ -375,6 +375,38 @@ chart.Series.Add(series2);
 
 ![](ChartTypes_images/overlapped.png)
 
+## Histogram Chart
+
+To render a histogram chart, create an instance of [`SFHistogramSeries`]() and add to the Series collection property of [`SFChart`]().
+
+Histogram chart can provide a visual display of large amounts of data that are difficult to understand in a tabular or spreadsheet form.
+
+You can customize interval using [`Interval`]() property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`]().  You can use the following properties to customize the appearance.
+
+* [`Color`]() – used to change the color of the series.
+* [`StrokeWidth`]() – used to change the stroke width of the series.
+* [`StrokeColor`]() – used to change the stroke color of the series.
+* [`CurveColor`]() – used to change the color of the normal distribution curve.
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFHistogramSeries histogramSeries = new SFHistogramSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue",
+    Interval = 20 
+};
+chart.Series.Add(histogramSeries);
+{% endhighlight %}
+
+
+![](ChartTypes_images/Histogram.png)
+
+
 ## Range Column Chart
 
 To render a range column chart, create an instance of [`SFRangeColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeColumnSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). 
