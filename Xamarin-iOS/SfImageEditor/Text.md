@@ -22,13 +22,17 @@ To add text from the toolbar, click on the Text icon in the toolbar. When the Te
 
 To change the color of the selected text, select the desired text and click on the color buttons available in the sub menu.
 
+#### Change TextEffect of selected Text
+
+You can make text as `Bold`, `Italic` or `Underline`, By using TextEffects buttons available in the sub menu. 
+
 ### Using Code
 
 You can also add the desired text elements over the image from the code programmatically. The `AddText` method in the SfImageEditor control is used to add text based on the string value and `TextSettings`.
 
 ## TextSettings
 
-TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
+TextSettings is defined to set the values for `Color`, `FontSize`, `TextEffects` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
 `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
 
 
@@ -36,7 +40,7 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 {% highlight C# %}
 
-            editor.AddText("New Text", new TextSettings() { Color = Color.Black, FontSize = 16d, FontFamily = UIFont.FromName("ArialMT",18)});
+            editor.AddText("New Text", new TextSettings() { Color = Color.Black, FontSize = 16d, FontFamily = UIFont.FromName("ArialMT",18), TextEffects = TextEffects.Bold | TextEffects.Italic | TextEffects.Underline});
 
 {% endhighlight %}
 
