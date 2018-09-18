@@ -404,7 +404,7 @@ chart.Series.Add(histogramSeries);
 {% endhighlight %}
 
 
-![](ChartTypes_images/Histogram.png)
+![Histogram chart type in Xamarin.iOS](ChartTypes_images/Histogram.png)
 
 
 ## Range Column Chart
