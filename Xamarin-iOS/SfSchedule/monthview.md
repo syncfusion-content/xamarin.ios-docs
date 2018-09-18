@@ -444,7 +444,7 @@ You can customize the default appearance of selection UI in the month cells.
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 
 ### Month cell selection text color
-Month cell Selection Text Color can be customized using [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~SelectionTextColor) property of `MonthViewSettings`.
+Month cell Selection Text Color can be customized using [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~SelectionTextColor.html) property of `MonthViewSettings`.
 
 {% tabs %}
 {% highlight c# %}
