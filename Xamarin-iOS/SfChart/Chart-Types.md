@@ -377,7 +377,7 @@ chart.Series.Add(series2);
 
 ## Histogram Chart
 
-To render a histogram chart, create an instance of [`SFHistogramSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFHistogramSeries.html), and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
+To render a histogram chart, create an instance of [`SFHistogramSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFHistogramSeries.html), and add it to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
 Histogram chart provides a visual display of large amount of data that are difficult to understand in a tabular or data grid form.
 
