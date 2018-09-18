@@ -87,7 +87,7 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 
 {% highlight C# %}
 
-    editor.AddText("Hello\nGood morning\nHave a nice day", new TextSettings() {TextAlignment = TextAlignment.Right });
+    editor.AddText("Hello\nGood morning\nHave a nice day", new TextSettings() {TextAlignment = UITextAlignment.Right });
 
 {% endhighlight %}
 
