@@ -1326,7 +1326,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endhighlight %}
 
-![Stacked doughnut for Xamarin iOS](charttypes_images/stacked_doughnut.png)
+![Stacked doughnut type in Xamarin.iOS](charttypes_images/stacked_doughnut.png)
 
 ### Changing doughnut inner radius
 
