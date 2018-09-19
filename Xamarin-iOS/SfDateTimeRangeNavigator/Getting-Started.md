@@ -15,7 +15,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Initialize DateTimeRangeNavigator
 
-[`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the chart in designer.
+[`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the datetime range navigator in designer.
 
 ![SFDateTimeRangeNavigator Designer support in Xamarin.iOS](Getting-Started-images/designer.gif) 
 
