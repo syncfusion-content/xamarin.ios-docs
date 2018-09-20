@@ -146,3 +146,112 @@ void Diagram_NodeClicked(object sender, NodeClickedEventArgs args)
 {% endtabs %}
 ![](Layout_images/Layout_img1.jpeg)
 
+## Drag-and-drop support for directed tree layout 
+It is easier to drag a child or parent node to some other node in the directed tree layout. The following code example illustrates how to enable draggable option in layout.
+{% tabs %}
+{% highlight c# %}
+(diagram.LayoutManager.Layout as DirectedTreeLayout).IsDraggable = true;
+{% endhighlight %}
+{% endtabs %}
+
+The following code illustrates how to add the child of dropped node while dragging the node using the LayoutNodeDropped event. 
+
+{% tabs %}
+{% highlight c# %}
+//Registering an event 
+  diagram.LayoutNodeDropped += Diagram_OnLayoutNodeDropped;
+
+//Define the LayoutNodeDropped event
+
+private void Diagram_OnLayoutNodeDropped(object sender, LayoutNodeDroppedEventArgs args)
+        {
+            Node draggedNode = args.DraggedItem as Node;
+            Node droppedNode = args.DroppedItem as Node;
+            bool contain = true;
+            if (draggedNode != RootNode && draggedNode != droppedNode)
+            {
+                Node ParentNode = GetParent((droppedNode.Content as DiagramEmployee).ReportingPerson);
+                do
+                {
+
+                    if (ParentNode != draggedNode)
+                    {
+                        contain = false;
+                    }
+                    else
+                    {
+                        contain = true;
+                        break;
+
+                    }
+                    ParentNode = GetParent((ParentNode.Content as DiagramEmployee).ReportingPerson);
+                } while (ParentNode != RootNode);
+
+                if (!contain)
+                {
+                    Connector con;bool hasChild = false;
+                    foreach (Connector connector in draggedNode.InConnectors)
+                    {
+                        con = connector;
+                        con.SourceNode = droppedNode;
+                        hasChild = true;
+
+                    }
+                    if (hasChild)
+                    {
+                        Node PrevParentNode = GetParent((draggedNode.Content as DiagramEmployee).ReportingPerson);
+                        bool noChild = false;
+                        foreach(Connector c in draggedNode.OutConnectors)
+                        {
+                            noChild = true;
+                        }
+                        if (PrevParentNode != null && noChild)
+                        {
+                            (PrevParentNode.Content as DiagramEmployee).HasChild = false;
+                            DrawTemplate(PrevParentNode);
+                        }
+                        DiagramEmployee ParentEmployee = (droppedNode.Content as DiagramEmployee);
+                        (draggedNode.Content as DiagramEmployee).ReportingPerson = ParentEmployee.Name;
+                        ParentEmployee.HasChild = true;
+                        DrawTemplate(droppedNode);
+                    }
+                    droppedNode.IsExpanded = true;
+                    diagram.LayoutManager.Layout.UpdateLayout();
+                    
+                }
+		   }
+		}
+	
+        private Node GetParent(string parentId)
+        {
+            foreach (Node node in diagram.Nodes)
+            {
+                if ((node.Content as DiagramEmployee).Name == parentId)
+                {
+                    return node;
+                }
+            }
+            return RootNode;
+        }
+{% endhighlight %}
+{% endtabs %}
+![Drag and drop](Layout_images/Layout_img2.gif)
+
+## Layout sibling spacing 
+It is easier to provide spacing between the sibling nodes of any branch on the directed tree layout, nodes can also be excluded from the layout. You can provide space for each node by customizing the “SiblingSpace” property of node. The following code illustrates how to add space for node using sibling spacing class instance. 
+{% tabs %}
+{% highlight c# %}
+//Define the sibling spacing for node 
+private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs args)
+        {
+            Node node = (args.Item as Node);
+            node.ShapeType = ShapeType.RoundedRectangle;
+            node.Width = 90;
+            node.Height = 50;
+            SiblingSpace siblingspacing = new SiblingSpace(100,100);                
+            node.SiblingSpace = siblingspacing;
+            node.Annotations.Add(new Annotation() { Content = ((args.Item as Node).Content as Employee).Name });
+        }
+{% endhighlight %}
+{% endtabs %}
+
