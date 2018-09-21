@@ -30,7 +30,7 @@ diagram.OverviewPanel = overview;
 Prevents the diagram to be updated in overview panel if any interaction takes place in the diagram layer. Prevents the diagram update for the entire actions till it turns true. It will be helpful when there is no need of frequent refreshing in the overview panel whenever diagram changes.
 {% tabs %}
 {% highlight c# %}
-//Define preventrefresh property 
+//Define prevent refresh property 
    overview.PreventRefresh = true;
 {% endhighlight %}
 {% endtabs %}
@@ -39,7 +39,7 @@ Prevents the diagram to be updated in overview panel if any interaction takes pl
 Method to force refresh the diagram in overview panel. When the overview panel is prevented from updating diagram interaction by enabling PreventRefresh, force refresh is used to update the diagram in the overview panel. 
 {% tabs %}
 {% highlight c# %}
-  //Define forerefresh method 
+  //Define force refresh method 
    overview.ForceRefresh();
 {% endhighlight %}
 {% endtabs %}
@@ -49,7 +49,7 @@ The “StartX” and “StartY” properties are used to define the start positi
 {% tabs %}
 {% highlight c# %}
  //Customize the view port rect 
-  ViewportRect ViewportRect = new ViewportRect(overviewpanel);
+  ViewportRect ViewportRect = new ViewportRect(overview);
   ViewportRect.StrokeColor = UIColor.Black;
   ViewportRect.StartX = 300;
   ViewportRect.StartY = 100;
