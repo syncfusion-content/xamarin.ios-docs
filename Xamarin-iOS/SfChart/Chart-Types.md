@@ -375,6 +375,38 @@ chart.Series.Add(series2);
 
 ![](ChartTypes_images/overlapped.png)
 
+## Histogram Chart
+
+To render a histogram chart, create an instance of [`SFHistogramSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFHistogramSeries.html), and add it to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
+
+Histogram chart provides a visual display of large amount of data that are difficult to understand in a tabular or data grid form.
+
+You can customize intervals using the [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFHistogramSeries~Interval.html) property and collapse the normal distribution curve using the [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFHistogramSeries~ShowNormalDistributionCurve.html) property.  You can use the following properties to customize the appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of the series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFHistogramSeries~StrokeWidth.html) – used to change the stroke width of the series.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFHistogramSeries~StrokeColor.html) – used to change the stroke color of the series.
+* [`CurveColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFHistogramSeries~CurveColor.html) – used to change the color of the normal distribution curve.
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFHistogramSeries histogramSeries = new SFHistogramSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue",
+    Interval = 20 
+};
+chart.Series.Add(histogramSeries);
+{% endhighlight %}
+
+
+![Histogram chart type in Xamarin.iOS](ChartTypes_images/Histogram.png)
+
+
 ## Range Column Chart
 
 To render a range column chart, create an instance of [`SFRangeColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeColumnSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). 
@@ -986,7 +1018,7 @@ You can use the following properties to customize the appearance.
 * [`Alpha`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Alpha.html) - used to control the transparency of the chart series.
 * [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~BorderWidth.html) – used to change the border width of the series.
 * [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~BorderColor.html) – used to change the border color of the series when draw types is set to area.
-* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~Dashes.html) – used to render line with dashes when draw type is set to line.
+* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~Dashes.html) – used to render lines with dashes when the draw type is set to 'Line'.
 
 {% highlight c# %}
 SFRadarSeries radarSeries   = new SFRadarSeries();
@@ -1089,7 +1121,7 @@ You can use the following properties to customize the appearance.
 * [`Alpha`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Alpha.html) - used to control the transparency of the chart series.
 * [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~BorderWidth.html) – used to change the border width of the series.
 * [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~BorderColor.html) – used to change the border color of the series when draw types is set to area.
-* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~Dashes.html) – used to render line with dashes when draw type is set to line.
+* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase~Dashes.html) – used to render lines with dashes when the draw type is set to 'Line'.
 
 {% highlight c# %}
 SFPolarSeries polarSeries        = new SFPolarSeries();
@@ -1262,6 +1294,39 @@ chart.Series.Add(doughnutSeries);
 {% endhighlight %}
 
 ![](ChartTypes_images/Doughnut.png)
+
+### Stacked doughnut
+
+Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries~IsStackedDoughnut.html) property. The following properties are used to customize the stacked doughnut chart:
+
+* [`CapStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries~CapStyle.html) - Specifies the shape of the start and end points of the circular segment. The supported values are `BothFlat`, `BothCurve`, `StartCurve`, and `EndCurve`. The default value of the this property is [`BothFlat`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DoughnutCapStyle.html).
+* [`Spacing`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries~Spacing.html) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
+* [`MaximumValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries~MaximumValue.html) - Represents the entire span of an individual circle. The default value of the this property is `double.NaN`.
+* [`TrackColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries~TrackColor.html) - Changes the color of the track area.
+* [`TrackBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
+* [`TrackBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
+
+{% highlight c# %} 
+[C#]
+
+SFChart chart = new SFChart();
+...
+
+SFDoughnutSeries doughnutSeries = new SFDoughnutSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    IsStackedDoughnut = true,
+    CapStyle = DoughnutCapStyle.BothCurve,
+    Spacing = 0.4,
+    MaximumValue = 100
+};
+chart.Series.Add(doughnutSeries);
+
+{% endhighlight %}
+
+![Stacked doughnut type in Xamarin.iOS](charttypes_images/stacked_doughnut.png)
 
 ### Changing doughnut inner radius
 
