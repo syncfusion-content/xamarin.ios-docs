@@ -12,6 +12,7 @@ documentation: UG
 The data grid supports to display the concise information about the bound data objects using summaries. The control provides the following summary types:
 
 * **Caption Summary**: Used to display the summary information in the caption of the group.
+* **Group Summary** - Used to display summary information of data objects in each group.
 * **Table Summary**: Used to display the summary information at top and/or bottom in the data grid.
 
 ![](SfDataGrid_images/Summary.PNG)
@@ -120,6 +121,84 @@ dataGrid.CaptionSummaryRow= summaryRow;
 {% endhighlight %}
 
 ![](SfDataGrid_images/Displayingsummaryinthecolumn.PNG)
+
+
+## Group summary
+
+Group summary values are calculated based on records in the group. The summary information will be displayed at the bottom of each group. You can view the group summary row by expanding the corresponding group header. The data grid adds any number of group summary row.
+
+Add group summary rows in the data grid by adding the [GridGroupSummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridGroupSummaryRow.html) to [SfDataGrid.GroupSummaryRows](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GroupSummaryRowControl.html) collection.
+
+### Displaying summary in the row
+
+The summary information can be displayed in the row by setting the [GridGroupSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSummaryRow~ShowSummaryInRow.html) to `true` and by defining summary columns. You have to define the [GridGroupSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSummaryRow~Title.html) based on the [GridGroupSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSummaryRow~Name.html) property to format summary columns value in a row.
+ 
+Refer to [Formatting Summary](https://help.syncfusion.com/xamarin-ios/sfdatagrid/summary#formatting-summary) section to know more about how to format summary. 
+
+{% highlight c# %}
+this.dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
+{
+    ShowSummaryInRow = true,
+    Title = "Total Salary: {Salary} for {customerID} members",
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="Salary",
+            MappingName="Salary",
+            SummaryType=SummaryType.DoubleAggregate,
+            Format="{Sum}"
+        },
+        new GridSummaryColumn()
+        {
+            Name="customerID",
+            MappingName="customerID",
+            Format="{Count}",
+            SummaryType=SummaryType.CountAggregate
+        }
+    }
+});
+{% endhighlight %}
+
+![](SfDataGrid_images/DisplayGroupSummaryForEntireRow.png)
+
+### Displaying summary in the column
+
+The summary information can be displayed in the column by setting the [GridGroupSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSummaryRow~ShowSummaryInRow.html) to `false` and by defining summary columns. To calculate summary based on the column, specify the following properties:
+
+1. [GridSummaryColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSummaryColumn~MappingName.html): Provides MappingName of the column (Property name of data object) that you want to calculate summary.
+2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSummaryColumn~SummaryType.html): Provides different built-in summary calculation functions for various types.
+3. [GridSummaryColumn.Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSummaryColumn~Format.html): Provides format string for the summary based on support function name in the specified SummaryType.
+
+Refer to [Formatting Summary](https://help.syncfusion.com/xamarin-ios/sfdatagrid/summary#formatting-summary) section to know more about how to format summary and [Aggregate Types](https://help.syncfusion.com/xamarin-ios/sfdatagrid/summary#aggregate-types) section to know about different Summary Types.
+
+In the following code snippet, summary is defined for `Salary` and `CustomerID` columns:
+
+{% highlight c# %}
+this.dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
+{
+    ShowSummaryInRow = false,
+    SummaryColumns = new ObservableCollection<ISummaryColumn>()
+    {
+        new GridSummaryColumn()
+        {
+            Name="Salary",
+            MappingName="Salary",
+            SummaryType=SummaryType.DoubleAggregate,
+            Format="{Sum}"
+        },
+        new GridSummaryColumn()
+        {
+            Name="customerID",
+            MappingName="CustomerID",
+            Format="Total members - {Count:d}",
+            SummaryType=SummaryType.CountAggregate
+        }
+    }
+});
+{% endhighlight %}
+
+![](SfDataGrid_images/DisplayGroupSummaryForIndividualColumn.png)
 
 ## Table summaries
 
@@ -627,4 +706,88 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 
 ![](SfDataGrid_images/Customizingcaptionsummary.PNG)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo707626479).
+### Customizing Group summary
+
+The data grid allows customizes the group summary by extending [GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridGroupSummaryCellRenderer.html) class.
+
+{% highlight c#%}
+
+public class MyViewController:UIViewController
+{
+    SfDataGrid dataGrid;
+    ViewModel viewModel;
+    public MyViewController()
+    {
+        dataGrid = new SfDataGrid();
+        viewModel = new ViewModel();
+        dataGrid.ItemsSource = viewModel.OrdersInfo;
+        dataGrid.AutoGenerateColumns = false;
+        dataGrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID", Width = 80 });
+        dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Salary", Width = 90});
+        dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerID", Width = 140});
+        dataGrid.Columns.Add(new GridTextColumn() { MappingName = "Country", Width = 70});
+        
+        // To remove default summary and Add custom summary.
+        dataGrid.CellRenderers.Remove("GroupSummary");
+        dataGrid.CellRenderers.Add("GroupSummary", new GridGroupSummaryCellRendererExt());
+
+        dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+        {
+            ColumnName = "Salary"
+        });
+
+        dataGrid.GroupSummaryRows.Add(new GridGroupSummaryRow()
+        {
+            ShowSummaryInRow = true,
+            Title = "Total Salary: {Salary} for {customerID} members",
+            SummaryColumns = new ObservableCollection<ISummaryColumn>()
+            {
+                new GridSummaryColumn()
+                {
+                    Name="Salary",
+                    MappingName="Salary",
+                    SummaryType=SummaryType.DoubleAggregate,
+                    Format="{Sum}"
+                },
+                new GridSummaryColumn()
+                {
+                    Name="customerID",
+                    MappingName="customerID",
+                    Format="{Count}",
+                    SummaryType=SummaryType.CountAggregate
+                }
+            }
+        });
+        
+        View.BackgroundColor = UIColor.White;
+        View.AddSubview(dataGrid);
+         
+        public override void ViewDidLayoutSubviews()
+        {
+            base.ViewDidLayoutSubviews();
+            dataGrid.Frame = new CoreGraphics.CGRect(0, 0, View.Frame.Width, View.Frame.Height);
+        }
+    }
+}
+
+// Custom CellRenderer
+public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
+{
+    public GridGroupSummaryCellRendererExt()
+    {
+    }
+
+    public override void OnInitializeDisplayView(DataColumnBase dataColumn, UILabel view)
+    {
+        base.OnInitializeDisplayView(dataColumn, view);
+        view.BackgroundColor = UIColor.DarkGray;
+        view.TextAlignment = UITextAlignment.Center;
+        view.TextColor = UIColor.White;
+        view.Font = UIFont.FromName("Baskerville-SemiBoldItalic", 12);
+     }
+}
+{% endhighlight %}
+
+![](SfDataGrid_images/CustomizingGroupSummary.PNG)
+
+You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo_iOS1565656637).
