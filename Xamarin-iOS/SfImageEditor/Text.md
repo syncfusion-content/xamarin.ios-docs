@@ -22,13 +22,17 @@ To add text from the toolbar, click on the Text icon in the toolbar. When the Te
 
 To change the color of the selected text, select the desired text and click on the color buttons available in the sub menu.
 
+#### Change TextEffect of selected Text
+
+Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
+
 ### Using Code
 
 You can also add the desired text elements over the image from the code programmatically. The `AddText` method in the SfImageEditor control is used to add text based on the string value and `TextSettings`.
 
 ## TextSettings
 
-TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
+TextSettings is defined to set the values for `Color`, `FontSize`, `FontFamily`, `TextEffects` and `Angle`. By default there are six types of font family has been given in toolbar that are 
 `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
 
 
@@ -36,7 +40,7 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 {% highlight C# %}
 
-            editor.AddText("New Text", new TextSettings() { Color = Color.Black, FontSize = 16d, FontFamily = UIFont.FromName("ArialMT",18)});
+            editor.AddText("New Text", new TextSettings() { Color = Color.Black, FontSize = 16d, FontFamily = UIFont.FromName("ArialMT",18), Angle=45, TextEffects = TextEffects.Bold | TextEffects.Italic | TextEffects.Underline });
 
 {% endhighlight %}
 
@@ -51,7 +55,7 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 {% highlight C# %}
 
-  edit.AddText("New Text", new TextSettings() { Bounds = new Rectangle(20, 20, 35, 35) });
+  editor.AddText("New Text", new TextSettings() { Bounds = new Rectangle(20, 20, 35, 35) });
 
 {% endhighlight %}
 
@@ -75,5 +79,50 @@ Right click the font file and open properties, in that Change the "Build Action"
 
 {% endhighlight %}
 
+## Multiline text and text alignment
 
+### Multiline text
+You can annotate multiple line text over an image with the help of text preview window.
 
+### Text alignment
+`TextAlignment` is an enum type and text can be aligned with the help of text alignment enum values such as left, right and center. 
+
+N> The default text alignment is `Left` and text alignment is not applicable for single line text.
+
+{% highlight C# %}
+
+    editor.AddText("Hello\nGood morning\nHave a nice day", new TextSettings() {TextAlignment = UITextAlignment.Right });
+
+{% endhighlight %}
+
+![SfImageEditor](ImageEditor_images/multiline.png)
+
+## Text Rotation
+
+You can rotate and resize the text by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text, CustomView and None as shown in the following code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.RotatableElements = ImageEditorElements.Text;   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The default value for RotatableElements is `None`.
+
+You can rotate the text based on a particular angle using `Angle` property in `TextSettings` as shown in the following code snippet. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.AddText("Good morning", new TextSettings(){Angle = 45});    
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfImageEditor](ImageEditor_images/rotation.png)
