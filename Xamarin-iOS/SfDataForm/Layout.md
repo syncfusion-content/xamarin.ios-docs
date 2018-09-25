@@ -386,6 +386,8 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
+![](SfDataForm_images/GroupItemOder.png)
+
 ### Change GroupName for group
 
 You can change `GroupName` for group in `AutoGeneratingDataFormItem` event.
