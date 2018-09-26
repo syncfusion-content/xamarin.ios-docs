@@ -74,7 +74,7 @@ Refer to the below code snippet to customize sub items of footer toolbar item,
 {% endhighlight %}
 
 N> You can remove existing toolbar items("back, Text, Add, TextColor, FontFamily, Arial, Noteworthy, Marker Felt,
-Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shape, Rectangle, StrokeThickness, Circle, Arrow, Transform, Crop, free, original, square, 3:1, 3:2, 4:3, 5:4, 16:9, Rotate, Flip, Reset, Undo, Redo, TextAlignment, Left, Right, Center, TextEffects, Bold, Italic, Underline and Save") from the image editor toolbarItems collection based on the index value. 
+Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shape, Rectangle, StrokeThickness, Circle, Arrow, Transform, Crop, free, original, square, 3:1, 3:2, 4:3, 5:4, 16:9, Rotate, Flip, Reset, Undo, Redo, Save") from the image editor toolbarItems collection based on the index value. 
 
 You can change icon and text value dynamically for any of already added toolbar item based on the index as like below,
 
