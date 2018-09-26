@@ -439,8 +439,41 @@ void Schedule_MonthInlineAppointmentLoaded(object sender, MonthInlineAppointment
 ## Selection
 You can customize the default appearance of selection UI in the month cells.
 
+* [Month cell selection text color customization](#month-cell-selection-text-color-customization)
+* [Month cell selection indicator color](#month-cell-selection-indicator-color-customization)
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
+
+### Month cell selection text color customization
+Month cell Selection Text Color can be customized using [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~SelectionTextColor.html) property of `MonthViewSettings`.
+
+{% tabs %}
+{% highlight c# %}
+//creating new instance for MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.SelectionTextColor = UIColor.Red;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/selectiontext.png)
+
+### Month cell selection indicator color customization
+Month cell Selection Indicator Color can be customized using [SelectionIndicatorColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~SelectionIndicatorColor.html) property of `MonthViewSettings`.
+
+{% tabs %}
+{% highlight c# %}
+//creating new instance for MonthViewSettings
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.SelectionIndicatorColor = UIColor.Red;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![](monthview_images/selectionindicator.png)
+
+>**NOTE**
+This support won't apply for current day indicator, you can use `TodayBackgroundColor` property to customize the same.
 
 ### Selection customization using style
 You can customize the month cell selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionStyle.html) property of `SFSchedule`.
