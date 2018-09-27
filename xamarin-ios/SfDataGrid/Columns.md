@@ -284,13 +284,13 @@ You can cancel resizing for a particular column using the `SfDataGrid.ColumnResi
 
 ## Picker closed event
 
-This event is triggered whenever the "OK" or "Cancel" button in Picker editor or DateTime editor in GridPickerColumn and GridDateTimeColumn respectively has been clicked. PickerClosedEventArgs contains the following properties:
+This event is available for both the `GridPickerColumn` and the `GridDateTimeColumn`.The [GridPickerColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~Closed_EV.html) and the [GridDateTimeColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~Closed_EV.html) events will be triggered whenever the "Done" button is pressed in Picker editor and DateTime editor of the `GridPickerColumn` and `GridDateTimeColumn` respectively. This event handler contains the parameter of type [PickerClosedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs.html) that contains the following properties.
 
-* [OldValue] : Gets the old value of the picker.
-* [NewValue] : Gets the new value of the picker.
-* [Action]   : Gets the action performed either value committed or cancelled.
+* [OldValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs~OldValue.html) : Gets the old value of the picker.
+* [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs~NewValue.html) : Gets the newly selected value of the picker.
+* [Action](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs~Action.html)   : Returns string value "Commit" when "Done" button is pressed or "Cancel" when the picker view is collapsed without pressing "Done" button.
 
-The following code illustrates how to hook the Closed event and get the new value, old value and action performed details:
+The following code illustrates how to hook the `Closed` event and get the picker details.
 
 {% highlight c# %}
 
@@ -310,27 +310,5 @@ The following code illustrates how to hook the Closed event and get the new valu
               var oldValue = e.OldValue;
               var action = e.Action;
             }
-
-{% endhighlight %}
-
-## Value changed event
-This event is triggered whenever the values has been changed in GridTextColumn, GridNumericColumn and GridSwitchColumn respectively. ValueChangedEventArgs contains the following properties:
-
-* [Column]        : Gets the Column.
-* [NewValue]      : Gets a value indicating whether the value is new value.
-* [RowColIndex]   : Gets the RowColumnIndex.
-* [RowData]       : Gets the RowData.
-
-{% highlight c# %}
-
-        dataGrid.ValueChanged += DataGrid_ValueChanged;
-
-        private void DataGrid_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            var column = e.Column;
-            var newValue = e.NewValue;
-            var rowColIndex = e.RowColIndex;
-            var rowData = e.RowData;
-        }
 
 {% endhighlight %}
