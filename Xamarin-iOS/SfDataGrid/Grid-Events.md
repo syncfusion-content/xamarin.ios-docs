@@ -116,7 +116,7 @@ private void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 {% endhighlight %}
 
 ## Value changed event
-The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ValueChanged_EV.html) event will be triggered whenever the value has been changed by editing a cell of the GridTextColumn, GridNumericColumn or GridSwitchColumn respectively. This event handler contains the parameter of type [ValueChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ValueChangedEventArgs.html) that contains the following properties.
+The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ValueChanged_EV.html) event will be triggered whenever the value has been changed by toggling the switch of the GridSwitchColumn. This event handler contains the parameter of type [ValueChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ValueChangedEventArgs.html) that contains the following properties.
 
 * [Column](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ValueChangedEventArgs~Column.html)        : Gets the current `GridColumn` that contains the grid cell for which value is edited or changed.
 * [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ValueChangedEventArgs~NewValue.html)      : The new edited value to be committed.
