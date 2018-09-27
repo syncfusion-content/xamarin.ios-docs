@@ -660,3 +660,31 @@ sfGrid.Columns.Add(unboundColumn);
 The following screenshot shows that the unbound column is exported to excel sheet along with text columns.
 
 ![](SfDataGrid_images/Exporting_img8.png)
+
+## Exporting the selected rows of SfDataGrid
+
+SfDataGrid allows you to export the Selected rows alone. By default all the rows along with selected rows will be exported.
+
+You can export the SfDataGrid.SelectedItems alone to Excel by using the [DataGridExcelExportingController.ExportToExcel](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridExcelExportingController~ExportToExcel.html) method by passing the SfDataGrid and SfDataGrid.SelectedItems as an argument.
+
+Refer the below code to export the selected rows alone.
+
+{% highlight c# %}
+
+    private void ExPortToExcel(object sender, EventArgs e)
+        {
+            DataGridExcelExportingController excelExport = new DataGridExcelExportingController();
+            ObservableCollection<object> selectedItems = dataGrid.SelectedItems;
+            var excelEngine = excelExport.ExportToExcel(this.dataGrid, selectedItems);
+            var workbook = excelEngine.Excel.Workbooks[0];
+            MemoryStream stream = new MemoryStream();
+            workbook.SaveAs(stream);
+            workbook.Close();
+            excelEngine.Dispose();
+            Save("DataGrid.xlsx", "application/msexcel", stream);
+        }
+
+{% endhighlight %}
+
+The following screenshot shows that the selected rows are exported to excel sheet.
+![](SfDataGrid_images/Excel/SelectedItems_ExportToExcel.png)
