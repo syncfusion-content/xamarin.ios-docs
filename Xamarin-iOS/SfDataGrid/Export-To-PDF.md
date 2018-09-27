@@ -931,7 +931,7 @@ The following screenshot shows that the unbound column is exported to PDF docume
 
 SfDataGrid allows you to export the Selected rows alone. By default all the rows along with selected rows will be exported. 
 
-You can export the SfDataGrid.SelectedItems alone to Pdf by using the [DataGridExcelExportingController.ExportToPdf](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportingController~ExportToPdf.html) method by passing the SfDataGrid and SfDataGrid.SelectedItems as an argument.
+You can export the SfDataGrid.SelectedItems alone to PDF by using the [DataGridExcelExportingController.ExportToPdf](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGridConverter.XForms~Syncfusion.SfDataGrid.XForms.Exporting.DataGridPdfExportingController~ExportToPdf.html) method by passing the SfDataGrid and SfDataGrid.SelectedItems as an argument.
 
 Refer the below code to export the selected rows alone.
 
