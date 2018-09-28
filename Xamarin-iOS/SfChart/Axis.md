@@ -462,7 +462,7 @@ chart.PrimaryAxis.LabelStyle.Color = UIColor.Red;
 
 ### Label and tick positioning
 
-Axis labels and ticks can be positioned inside or outside the chart area by using [`LabelsPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~LabelsPosition.html) and [`TickPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~TickPosition.html) properties of [`SFAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis.html). By default labels and ticks will be positioned outside the chart area.
+Axis labels and ticks can be positioned [`Inside`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html) or [`Outside`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html) the chart area by using [`LabelsPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~LabelsPosition.html) and [`TickPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~TickPosition.html) properties of [`SFAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis.html). By default labels and ticks will be positioned outside the chart area.
 
 {% highlight c# %}
 
@@ -476,7 +476,7 @@ chart.PrimaryAxis.TickPosition                = SFChartAxisElementPosition.Insid
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners.
+Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners. The default [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~EdgeLabelsDrawingMode.html) is [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsDrawingMode.html).
 
 {% highlight c# %}
 
@@ -490,9 +490,9 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = SFChartAxisEdgeLabelsDrawingMode.Shift
 The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~EdgeLabelsVisibilityMode.html) property.
 The following options are available in [`EdgeLabelsVisibilityMode`]((https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~EdgeLabelsVisibilityMode.html),
 
-* `Default` - used to display the edge label based on auto interval calculations.
-* `Visible` - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
-* `AlwaysVisible` - used to always display the edge labels even while zooming the chart.
+* [`Default`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html) - used to display the edge label based on auto interval calculations.
+* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+* [`AlwaysVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html) - used to always display the edge labels even while zooming the chart.
 
 The following code example demonstrates the AlwaysVisible option.
 
@@ -632,7 +632,7 @@ In [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Sync
 
 ### Auto scrolling mode
 
-[`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) is `End`.
+[`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) is [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAutoScrollingMode.html).
 
 {% highlight c# %}
 

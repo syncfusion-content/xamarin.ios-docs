@@ -225,7 +225,7 @@ lineSeries.DataMarker.ConnectorLineStyle.Dashes = NSArray.FromNSObjects (dashes)
 
 ![](Datamarker_images/ConnectorLine.png)
 
-N> For Pie and Doughnut series, you can set the Bezier curve for connector line using [`ConnectorLineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~ConnectorLineType.html) property of Pie and Doughnut series.
+N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartConnectorLineType.html) curve for connector line using [`ConnectorLineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~ConnectorLineType.html) property of Pie and Doughnut series.
 
 ## Event
 
