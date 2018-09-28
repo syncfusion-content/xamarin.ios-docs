@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Labels
+# Customizing labels
 
 SfRangeSlider provides option to show or hide the label and position customization.
 
@@ -106,3 +106,25 @@ Available options for this property are:
 {% endhighlight %}
 
 {% endtabs %}
+
+## Customizing label font
+
+The range slider control provides the `Font` property to customize the value text and custom label text.
+
+{% highlight c# %}
+
+	SfRangeSlider sfRangeSlider = new SfRangeSlider();
+	sfRangeSlider.Frame = new CoreGraphics.CGRect(10, 50, 350, 300);
+	sfRangeSlider.FontSize = 22;
+	sfRangeSlider.Font = UIFont.FromName("Helvetica", sfRangeSlider.FontSize);
+	NSMutableArray<SfLabelItems> labels = new NSMutableArray<SfLabelItems>();
+	labels.Add(new SfLabelItems() { Label = (NSString)"Min", Value = 0 });
+	labels.Add(new SfLabelItems() { Label = (NSString)"Max", Value = 100 });
+	sfRangeSlider.CustomLabel = labels;
+	sfRangeSlider.TickPlacement = SFTickPlacement.SFTickPlacementBottomRight;
+	sfRangeSlider.ShowCustomLabel = true;
+	this.View.AddSubview(sfRangeSlider);
+ 
+{% endhighlight %}
+
+![](images/FontCustomLabel.png)

@@ -8,16 +8,16 @@ documentation: ug
 ---
 # Overview
 
-SfRangeSlider control allows you to select the range of value within the specified minimum and maximum limits. The range can be selected by moving the Thumb control along a track.
+The range slider control for Xamarin.iOS allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
 
 ![](images/Overview.png)
 
-## Key Features
+## Key features
 
-* `Ticks` - The position of the ticks can be customized.
-
-* `Tick Placement` - The TickPlacement property determines where to draw tick marks in a relation to the track.
-
-* `Range` - The SfRangeSlider control supports to select range of value by using two Thumbs.
-
-* `Label Support` - The SfRangeSlider control supports to select range of value by using two Thumbs.
+* Provides support to select values as a range.
+ 
+* Restricts values to choose within a minimum and maximum constraints.
+ 
+* Supports to change the tick intervals in uniform pattern.
+ 
+* Provides user-friendly customization support to customize ticks and labels.

@@ -971,3 +971,28 @@ sfGrid.Columns.Add(unboundColumn);
 The following screenshot shows that the unbound column is exported to PDF document along with text columns.
 
 ![](SfDataGrid_images/Exporting_img7.png)
+
+## Exporting the selected rows of SfDataGrid
+
+SfDataGrid allows you to export only the currently selected rows in the grid to the document using the [DataGridPdfExportingController.ExportToPdf](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGridConverter.ios~Syncfusion.SfDataGrid.Exporting.DataGridPdfExportingController~ExportToPdf.html) method by passing the instance of the SfDataGrid and [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectedItems.html) collection as an argument.
+
+Refer the below code to export the selected rows alone to the PDF document.
+
+{% highlight c# %}
+
+      private void ExportToPDF(object sender, EventArgs e)
+        {
+            DataGridPdfExportingController pdfExport = new DataGridPdfExportingController();
+            MemoryStream stream = new MemoryStream();
+            ObservableCollection<object> selectedItems = dataGrid.SelectedItems;
+            var doc = pdfExport.ExportToPdf(this.dataGrid, selectedItems);
+            doc.Save(stream);
+            doc.Close(true);
+            Save("DataGrid.pdf", "application/pdf", stream);
+        }   
+
+{% endhighlight %}
+
+The following screenshot shows that the selected rows are exported to PDF document.
+
+![](SfDataGrid_images/PDF/SelectedItems_ExportToPdf.png)
