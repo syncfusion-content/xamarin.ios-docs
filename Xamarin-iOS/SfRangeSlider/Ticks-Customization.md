@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Ticks Customization
+# Customizing ticks
 
 Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
 
@@ -92,4 +92,18 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 ![](images/Outside.png)
 
 
+## Customizing tick color
 
+The range slider control provides the `TickColor` property to customize the color of ticks in tick bar.
+
+{% highlight c# %}
+
+	SfRangeSlider sfRangeSlider = new SfRangeSlider();
+	sfRangeSlider.Frame = new CoreGraphics.CGRect(10, 50, 350, 300);
+	sfRangeSlider.TickColor = UIColor.Red;
+	sfRangeSlider.TickLength = 10;
+	this.View.AddSubview(sfRangeSlider);
+ 
+{% endhighlight %}
+
+![](images/TickColor.png)
