@@ -137,6 +137,33 @@ The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin-
 
 {% endhighlight %}
 
+## ItemsSourceChanged event
+
+The [SfDataGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ItemsSourceChanged_EV.html) event will be triggered whenever the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ItemsSource.html) property is changed in the grid during both the runtime changes and initial loading of the DataGrid. This event handler contains the parameter of type [GridItemsSourceChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs.html) that contains the following properties:
+
+* [OldItemSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs~OldItemSource.html): Gets the previous ItemsSource collection as object. Always null when the grid is initially loaded.
+* [NewItemSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs~NewItemSource.html): Gets the current ItemsSource collection as object.
+* [OldView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs~OldView.html): Gets the old [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~View.html) associated with the `OldItemSource`. Always null when the grid is initially loaded.
+* [NewView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs~NewView.html): Gets the new [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~View.html) associated with the `NewItemSource`.
+
+The following code example shows how to hook the `SfDataGrid.ItemsSourceChanged` event and get the `ItemsSource` collection details.
+
+{% tabs %}
+{% highlight c# %}
+
+dataGrid.ItemsSourceChanged += DataGrid_ItemsSourceChanged;
+
+ private void DataGrid_ItemsSourceChanged(object sender, GridItemsSourceChangedEventArgs e)
+ {
+    var newItemSource = e.NewItemSource;
+    var oldItemSource = e.OldItemSource;
+    var newView = e.NewView;
+    var oldView = e.OldView;
+ }
+ 
+{% endhighlight %}
+{% endtabs %}
+
 ## Create custom context menu using grid events
 
 SfDataGrid allows to display any custom view like a context menu that can act similar to a pop using the `GridLongPressed` event and the `GridTapped` event.
