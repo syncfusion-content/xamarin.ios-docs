@@ -114,22 +114,6 @@ After loading the shapes file, the following output will be reproduced.
 
 ![](Images/GettingStarted_image.png)
 
-## GeoJSON support
-
-Maps control supports reading and loading the GeoJSON files. GeoJSON file contains attribute information for the spatial features and coordinates in a dataset.
- 
-{% tabs %}
-
-{% highlight c# %}
-     
- SFShapeFileLayer layer = new SFShapeFileLayer();
-
- layer.Uri = "usa_state.json";
-			
-{% endhighlight %}
-
-{% endtabs %}
-
 ## Data binding
 
 Data can be binded to the shape file layer using the [`DataSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~DataSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~ShapeIDPath.html), [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~ShapeIDTableField.html) properties.
@@ -497,6 +481,6 @@ return NSDictionary.FromObjectsAndKeys(objects, keys);
 
 The following output is reproduced as a result of above codes.
 
-![](Images/GettingStartedimg2.PNG) 
+![](Images/GettingStarted.png) 
 
 You can download the complete getting started sample from this [link]().
