@@ -52,7 +52,7 @@ diagram.NodeTemplate = template;
 {% endtabs %}
 
 ## Diagram constraints
-The constraints property of diagram allows you to enable or disable certain features. 
+The constraints property of diagram allows you to enable or disable certain features.
 This will enable or disable the following node behavior.
 * Drag
 * Resize
@@ -69,6 +69,45 @@ SfDiagram diagram = new SfDiagram();
 // Disable the item dragging
 diagram.EnableDrag = false;
 View.AddSubview(diagram);
+{% endhighlight %}
+{% endtabs %}
+
+## DiagramStyleSettings
+It is easier to apply default rendering styles to all shapes, connectors, stencil symbol, and stencil header in a diagram. Pass the following arguments to diagram style setting constructor: 
+ * DefaultNodeStyle argument: Defines the node style properties. 
+ * DefaultConnectorStyle argument: Defines the connector style properties.
+ * DefaultSymbolStyle argument: Defines the symbol style properties. 
+ * DefaultHeaderStyle argument: Defines the header style properties. 
+The following code shows how to define the diagram style settings for the diagram object.
+
+{% tabs %}
+{% highlight c# %}
+//Diagram style settings 
+
+Style NodeStyle = new Style() { Brush = new SolidBrush(UIColor.Blue), StrokeBrush = new SolidBrush(UIColor.Brown), StrokeWidth = 2, StrokeStyle = StrokeStyle.Dashed };
+
+Style ConnectorStyle = new Style() { StrokeBrush = new SolidBrush(UIColor.Purple), StrokeWidth = 3, StrokeStyle = StrokeStyle.Dotted };
+
+SymbolStyle SymbolStyle = new SymbolStyle() { Width = 70, Height = 70, StrokeWidth = 2, StrokeColor = UIColor.Red };
+
+HeaderStyle HeaderStyle = new HeaderStyle() { FontSize = 24, TextBrush = UIColor.White, Fill = UIColor.Yellow, FontStyle = FontStyle.Italic, HorizontalAlignment = HorizontalAlignment.Center };
+
+DiagramStyleSettings diagramStyleSettings = new DiagramStyleSettings(NodeStyle, ConnectorStyle, SymbolStyle, HeaderStyle);
+
+//Pass diagram style settings instance to SfDiagram constructor argument  
+SfDiagram diagram = new SfDiagram(diagramStyleSettings);
+{% endhighlight %}
+{% endtabs %}
+
+## Zooming enhancement 
+Supports customizing the zoom levels. You can set minimum zoom level value to 0.01f and maximum to ‘infinite’. 
+{% tabs %}
+{% highlight c# %}
+// Define the minimum and maximum zoom factor value 
+
+  diagram.MinimumZoomFactor = 0.01f;
+  diagram.MaximumZoomFactor = 5.00f;
+
 {% endhighlight %}
 {% endtabs %}
 
