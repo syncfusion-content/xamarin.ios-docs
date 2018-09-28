@@ -276,7 +276,7 @@ return new CGPoint(-8, -25);
 
 ## Events
 
-`Delegate` is triggerred from SFMapDelegate
+`Delegate` is triggered from SFMapDelegate
 Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarker.html) which gives the information about the marker.
 
 {% tabs %}

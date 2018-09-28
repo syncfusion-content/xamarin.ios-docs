@@ -179,9 +179,10 @@ void Layer_ShapeSelectionChanged(object sender, ShapeSelectedEventArgs e)
 {
 if (e.Data != null)
 {
-NSDictionary dic = (NSDictionary)e.Data;
 
-displayToastWithMessage((NSString)(dic["State"] + "\n"), (NSString)dic["Candidate"]);
+NSDictionary dictionary = (NSDictionary)e.Data;
+
+displayToastWithMessage((NSString)(dictionary["State"] + "\n"), (NSString)dictionary["Candidate"]);
 }
 
 }

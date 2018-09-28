@@ -247,7 +247,7 @@ using Syncfusion.SfMaps.iOS;
 
 using UIKit;
 
-namespace Ugsam
+namespace GettingStarted
 
 {
 
@@ -483,4 +483,4 @@ The following output is reproduced as a result of above codes.
 
 ![](Images/GettingStarted.png) 
 
-You can download the complete getting started sample from this [link]().
+You can download the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-785815725).
