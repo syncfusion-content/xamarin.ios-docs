@@ -112,6 +112,9 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 3. Create an instance of SfDataGrid control and add as a SubView to a UIViewController.
 
+4. As we disscussed in this [link](). You can also add SfDataGrid by using Storyboard. Please refer the below images to set the properties on Storyboard.
+
+![](SfDataGrid_images/GettingStarted_HeaderRowHeight_RowHeight_ios.png)
 
 {% highlight c# %}
 using Syncfusion.SfDataGrid; 
@@ -257,11 +260,30 @@ In order to bind the data source of the SfDataGrid, set the [SfDataGrid.ItemsS
 
 The following code example binds the collection created in previous step to `SfDataGrid.ItemsSource` property.
 
+As Disscussed in this [link](). You can also set the ItemSource property using Storyboard. Please follow the below steps.
+
+1. Drag SfDataGrid from toolbox and Drag into storyboard.
+
+2. Place the cursor on SfDataGrid in Storyboard and set identity same as sfgrid on properties window.
+
+![](SfDataGrid_images/GettingStarted_Storyboard_IdentityName_SfDataGrid_ios.jpg)
+
+3. Set ItemSource property to sfgrid in code behind 
+
+{% tabs %}
 {% highlight c# %}
 OrderInfoRepository viewModel = new OrderInfoRepository ();
 dataGrid.ItemsSource = viewModel.OrderInfoCollection; 
 {% endhighlight %}
-
+{% highlight Storyboard's c# %}
+public override void ViewDidLoad()
+{
+base.ViewDidLoad();
+OrderInfoRespoitory viewModel = new OrderInfoRepository();
+sfgrid.ItemSource = viewModel.OrderInfoCollection;
+}
+{% endhighlight %}
+{% endtabs %}
 Now run the application to render the following output.
 
 ![](SfDataGrid_images/Overview.png)
@@ -300,6 +322,10 @@ dataGrid.Columns.Add (countryColumn);
 ## Sorting
 
 SfDataGrid allows you to apply sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowSorting.html) property to true.
+ 
+ As we Disscussed in this [link](). You can also apply sorting on its data to SfDataGrid. Set AllowSorting as true by enabling the checkbox. Please refer the below image.
+ 
+ ![](SfDataGrid_images/GettinStarted_AllowSorting_StoryBoard_SfDataGrid.png)
  
 {% highlight c# %}
 dataGrid.AllowSorting = true; 
@@ -345,6 +371,14 @@ public override void ViewDidLayoutSubviews()
     base.ViewDidLayoutSubviews();
 }
 {% endhighlight %}
+
+You can also set custom width and height for SfDataGrid by using StoryBoard. Please follow the below step.
+
+1. As we Discussed in this [link](). Place the cursor on SfDatagrid on Storyboard and go to properties window then switch to Layout tab. 
+
+2. You can set the custom height and width to view.
+
+![](SfDataGrid_images/GettingStarted_Custom_Width_and_Height_Storyboard_SfDatagrid_iOS.jpg)
 
 The following screenshot shows how the SfDataGrid is loaded with specific height and width: 
 

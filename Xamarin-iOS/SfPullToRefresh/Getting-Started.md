@@ -87,6 +87,8 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 3. Create an instance of SfPullToRefresh control and add as the subview of the UIViewController. Refer to the following code example to add this control to the application:
 
+As we discussed in this [link](). You can also add Subview as SfPullToRefresh to the view using StoryBoard.
+
 {% highlight c# %}
 
 using Syncfusion.SfPullToRefresh; 
@@ -107,6 +109,8 @@ public class MyViewController : UIViewController
 ### Adding a simple view as the PullableContent
 
 Any view can be added as the pullable content using [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullableContent.html) property to refresh it. Refer to the following code example in which a simple custom view is added as pullable content:
+
+As we disscussed in this [link](). You can also add a view as a PullableContent to SfPullToRefresh using StoryBoard.
 
 {% highlight c# %}
 
@@ -172,6 +176,10 @@ SfPullToRefresh support two types of transitions. By default, `TransitionType.Sl
 Refer to the topic `TransitionType` under `Built-in Customization` section for more details regarding [SfPullToRefresh.TransitionType](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~TransitionType.html) property.
 
 Refer to the following code example to switch to the `TransitionType.Push` mode of transition:
+
+As we discussed in this [link](). You can aslo set TransitionType Mode to SfPullToRefresh using StoryBoard. Please refer the below images.
+
+![](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.jpg)
 
 {% highlight c# %}
 

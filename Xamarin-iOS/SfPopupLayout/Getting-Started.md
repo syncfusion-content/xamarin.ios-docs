@@ -83,6 +83,8 @@ The SfPopupLayout can be displayed by making it as the base view or content view
 
 Refer to the following code example for displaying popup.
 
+As we discussed in this [link](). You can also display popup when the SfPopupLayout is set as root view using storybaord.
+
 {% highlight c# %}
 
 using Syncfusion.iOS.PopupLayout;
@@ -111,7 +113,7 @@ namespace GettingStarted
             showPopupButton.SetTitleColor(UIColor.White, UIControlState.Normal);
             showPopupButton.BackgroundColor = UIColor.Gray;
             showPopupButton.TouchDown += ShowPopupButton_TouchDown;
-
+			
             customView.AddSubview(showPopupButton);
             return customView;
         }
@@ -149,6 +151,8 @@ public class CustomView : UIView
 You can continue to keep your view as the content view of the activity and still display pop-up over your view by simply calling the SfPopupLayout.Show() method. 
 
 Refer to the following code example for displaying popup.
+
+As we discussed in this [link](). You can also display popup when the SfPopupLayout is set as root view using storybaord.
 
 {% highlight c# %}
 
