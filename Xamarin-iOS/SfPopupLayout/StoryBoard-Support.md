@@ -27,7 +27,7 @@ This section explains how to renderer SfPopupLayout using storyboard with simple
 
 ![](SfPopupLayout_images/axml_support_sfpopuplayout.png)storyboard_staysopen_sfpopup_ios.jpg)
 
-8. Ensure the behaviour
+8. Ensure the behavior
 
 The below code will illustrate to display the Popup on button click.
 

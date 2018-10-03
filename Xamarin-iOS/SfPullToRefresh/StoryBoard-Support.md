@@ -29,7 +29,7 @@ This section explains how to renderer SfPullToRefresh using axml with SfDataGrid
 
 8. Set the SfDataGrid as PullableContent to SfPullToRefresh on code behind.
 
-9. Ensure the behaviour.
+9. Ensure the behavior.
 
 Please refer the below code to set SfDataGrid as PullableContent to SfPullToRefresh on code behind
 

@@ -25,13 +25,13 @@ This section explains how to renderer the SfDataGrid on StoryBoard
 
 6. Set the needed properties in Properties window.
 
-7. Ensure the behaviour
+7. Ensure the behavior
 
 The following demo illustrates renderer the SfDataGrid on StoryBoard.
 
 ![](SfDataGrid_images/StoryBoard_SfDataGrid_ios.gif)
 
-# how to use property of sfDatagrid on StoryBoard
+# how to use property of SfDataGrid on StoryBoard
 
 This section explains how to use property of SfDataGrid on StoryBoard.
 
@@ -49,7 +49,7 @@ The following steps will illustrates how to set property of SfDataGrid and SfDat
 
 4. Set the ItemSource for sfgrid in Code Behind.
 
-5. Ensure the behaviour.
+5. Ensure the behavior.
 
 The following code illustrates to set ItemSource for SfDataGrid and Source for SfDataPager in code behind.
 
