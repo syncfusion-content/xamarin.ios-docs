@@ -31,7 +31,7 @@ The following screenshot shows the default appearance of multiple series.
 
 Chart will use the colors from [`CustomColors`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartColorModel~CustomColors.html) property if [`ColorModel.Palette`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartColorModel~Palette.html) is set to [`SFChartColorPalette.Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartColorPalette.html).
 
-Following code illustrates how to set the custom colors.
+Following code illustrates how to set the [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartColorPalette.html) colors.
 
 {% highlight c# %}
 
