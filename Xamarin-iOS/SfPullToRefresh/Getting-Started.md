@@ -79,6 +79,59 @@ SfPullToRefresh control can be configured entirely in C# code. To create a sampl
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
+## Adding SfPullToRefresh in Xamarin.iOS using designer
+
+1. Add a new storyboard inside of project
+
+2. Drag SfPullToRefresh control from toolbox and drop into storyboard
+
+3. Since this is hosting control so it does not has preview on designer page. You can see the Popupview only when deploy on the device.
+
+4. Now Drag the SfDataGrid control from toolbox and drop into inside the SfPullToRefresh in StoryBoard.
+
+5. Open the properties window of SfPullToRefresh and set the required properties and identity name refer the below image.
+
+6. Set the SfDataGrid as PullableContent to SfPullToRefresh in c# code.
+
+![](GettingStarted_images/StoryBoard_support_TransitionType_SfPullToRefresh_ios.png)
+
+{% tabs %}
+
+{% highlight c# %}
+    public partial class newViewController : UIViewController
+    {
+     
+
+        ViewModel viewModel;
+        public newViewController() : base("newViewController", null)
+        {
+            
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+            viewModel = new ViewModel();
+           
+            sfgrid.ItemsSource = viewModel.OrdersInfo;
+            sfpull.PullableContent = sfgrid;
+           
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+        }
+    }
+{% endhighlight %}
+
+{% endtabs %}
+
+You can download the entire source code of this demo for Xamarin.Android from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/StoryBoard_Support_SfPullToRefresh_iOS1723365924).
+
+Refer this link to know the properties that can be configured via designer for SfPullToRefresh
+
 ### Adding SfPullToRefresh in Xamarin.iOS
 
 1. Add the required assembly references to the project as mentioned in the [Assembly deployment](#assembly-deployment) section or install the NuGet as mentioned in the [NuGet installation](#nuget-installation) section.
@@ -87,8 +140,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 3. Create an instance of SfPullToRefresh control and add as the subview of the UIViewController. Refer to the following code example to add this control to the application:
 
-As we discussed in this [link](). You can also add Subview as SfPullToRefresh to the view using StoryBoard.
-
+{% tabs %}
 {% highlight c# %}
 
 using Syncfusion.SfPullToRefresh; 
@@ -105,13 +157,13 @@ public class MyViewController : UIViewController
 } 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Adding a simple view as the PullableContent
 
 Any view can be added as the pullable content using [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullableContent.html) property to refresh it. Refer to the following code example in which a simple custom view is added as pullable content:
 
-As we disscussed in this [link](). You can also add a view as a PullableContent to SfPullToRefresh using StoryBoard.
-
+{% tabs %}
 {% highlight c# %}
 
 //MyViewController.cs
@@ -140,6 +192,7 @@ private void InitializeViews()
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Refreshing the view
 
@@ -147,6 +200,7 @@ To refresh the view, hook the [SfPullToRefresh.Refreshing](https://help.syncfusi
 
 Refer to the following code example illustrating hooking of the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event and refreshing the view:
 
+{% tabs %}
 {% highlight c# %}
 
 //MyViewController.cs
@@ -168,6 +222,7 @@ private void PullToRefresh_Refreshing(object sender, RefreshingEventArgs e)
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ### TransitionType customization
 
@@ -177,10 +232,11 @@ Refer to the topic `TransitionType` under `Built-in Customization` section for m
 
 Refer to the following code example to switch to the `TransitionType.Push` mode of transition:
 
-As we discussed in this [link](). You can aslo set TransitionType Mode to SfPullToRefresh using StoryBoard. Please refer the below images.
+As we discussed above. You can aslo set TransitionType Mode to SfPullToRefresh via StoryBoard refer the below image.
 
-![](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.jpg)
+![](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
 
+{% tabs %}
 {% highlight c# %}
 
 public MyViewController()
@@ -191,6 +247,7 @@ public MyViewController()
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Final output of the sample
 
@@ -203,3 +260,20 @@ The following GIF demonstrates the final output of the sample:
 ### Sample link
 
 You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/SfPullToRefresh_GettingStarted.zip).
+
+## Properties that can be configured via designer
+
+<table>
+<tr>
+<th> Properties</th>
+<th> Attribute Name</th>
+</tr>
+<tr><td>PullingThreshold</td> <td>Pulling Threshold</td></tr>
+<tr><td>ProgressStrokeColor</td><td>Progress Stroke Color</td></tr>
+<tr><td>ProgressBackgroundColor</td><td>Progress Background Color</td></tr>
+<tr><td>ProgressShadowColor</td><td>Progress Shadow Color</td></tr>
+<tr><td>ProgressStrokeWidth</td><td>Progress Stroke Width</td></tr>
+<tr><td>TransitionType</td><td>Transition Type</td></tr>
+<tr><td>RefreshContentThreshold</td><td>Refresh Content Threshold</td></tr>
+<tr><td>RefreshContentRadius</td><td>Refresh Content Radius</td></tr>
+</table>

@@ -104,7 +104,68 @@ In this walk through, you will create a new application that contains the SfData
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
-## Adding SfDataGrid in Xamarin.iOS
+## Adding SfDataGrid in Xamarin.iOS using designer page
+
+1. Add a new storyboard inside of project
+
+2. Drag SfDataGrid control from toolbox and drop into storyboard 
+
+3. Preview for SfDataGrid will be shown
+
+4. Open the properties window of SfDataGrid and set the required properties.
+
+![SfDataGrid renderer in designer page](SfDataGrid_images/StoryBoard_SfDataGrid_ios.gif)
+
+### Setting the SfDataGrid properties in designer page
+
+This section explains how to use property of SfDataGrid in storyboard.
+
+The following steps will illustrates how to set properties of SfDataGrid and SfDataPager in storyboard:
+
+1. As discussed above set the identity name and required properties for SfDataGrid in storyboard refer the below image.
+
+![SfDataGrid properties](SfDataGrid_images/Storyboard_property_SfDataGrid_ios.png)
+
+ Set the  identity name and required properties for SfDataPager in storyboard refer the below image.
+
+![SfDataGrid properties](SfDataGrid_images/Storyboard_property_SfDataPager_ios.png)
+
+{% tabs %}
+
+{% highlight c# %}
+namespace GridIniOS
+{
+	public partial class MyViewController : UIViewController
+	{
+		ViewModel viewModel;
+		public MyViewController() : base("MyViewController",null)
+		{
+		}
+		public override void ViewDidLoad()
+		{
+ 			base.ViewDidLoad();
+ 			// Perform any additional setup loading the view, typically from a nib.
+ 			viewModel = new ViewModel();
+ 			sfpager.Source = viewModel.OrdersInfo;
+ 			sfgrid.ItemSource = sfpager.PagedSource;
+		}
+		public override void DidReceiveMemoryWarning()
+		{
+			base.DidReceiveMemoryWarning();
+			// Release any cached data, images, etc that aren't in use.
+		}
+	}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can download the entire source code of this sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/custom_designer_sfdatagrid_ios-764618167).
+
+Refer this link to know the properties that can be configured via designer for SfDataGrid.
+
+## Adding SfDataGrid in Xamarin.iOS using C# code
 
 1. Add the required assembly references to the project as discussed in the [Assembly deployment](#assembly-deployment) section.
 
@@ -112,10 +173,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 3. Create an instance of SfDataGrid control and add as a SubView to a UIViewController.
 
-4. As we disscussed in this [link](). You can also add SfDataGrid by using Storyboard. Please refer the below images to set the properties on Storyboard.
-
-![](SfDataGrid_images/GettingStarted_HeaderRowHeight_RowHeight_ios.png)
-
+{% tabs %}
 {% highlight c# %}
 using Syncfusion.SfDataGrid; 
 public partial class GettingStartedViewController : UIViewController
@@ -142,6 +200,11 @@ public partial class GettingStartedViewController : UIViewController
     }
 }
 {% endhighlight %}
+{% endtabs %}
+
+As we disscussed above you can set HeaderRowHeight and RowHeight for SfDataGrid via storyboard refer the below image.
+
+![SfDataGrid properties](SfDataGrid_images/GettingStarted_HeaderRowHeight_RowHeight_ios.png)
 
 Run the application to render the following output. 
 
@@ -151,6 +214,7 @@ The [Frame](https://developer.xamarin.com/api/property/UIKit.UIView.Frame/) is u
 
 To overcome the above problem, the top position of the view's `Frame` has to be customized accordingly to position the view below the title bar in iOS. Refer the below code example in which the top position of the SfDataGrid's `Frame` is set to 30 to overcome the problem.
 
+{% tabs %}
 {% highlight c# %}
 public override void ViewDidLoad ()
 {
@@ -159,6 +223,7 @@ public override void ViewDidLoad ()
       View.AddSubview (dataGrid);
  }
  {% endhighlight %}
+{% endtabs %}
 
  Run the application with the above code to render the following output. 
 
@@ -170,6 +235,7 @@ SfDataGrid is a data-bound control. Hence you must create a data model to bind i
 
 Create a simple data source as shown in the following code example in a new class file and save it as OrderInfo.cs file. 
 
+{% tabs %}
 {% highlight c# %}
 public class OrderInfo
 {
@@ -214,11 +280,13 @@ public class OrderInfo
     }
 } 
 {% endhighlight %}
+{% endtabs %}
 
 N> If you want your data model to respond to property changes, then implement `INotifyPropertyChanged` interface in your model class
 
 Create a model repository class with OrderInfo collection property initialized with required number of data objects in a new class file as shown in the following code example and save it as OrderInfoRepository.cs file.
 
+{% tabs %}
 {% highlight c# %}
 public class OrderInfoRepository
 {
@@ -253,6 +321,7 @@ public class OrderInfoRepository
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 ## Binding data to SfDataGrid
 
@@ -260,28 +329,10 @@ In order to bind the data source of the SfDataGrid, set the [SfDataGrid.ItemsS
 
 The following code example binds the collection created in previous step to `SfDataGrid.ItemsSource` property.
 
-As Disscussed in this [link](). You can also set the ItemSource property using Storyboard. Please follow the below steps.
-
-1. Drag SfDataGrid from toolbox and Drag into storyboard.
-
-2. Place the cursor on SfDataGrid in Storyboard and set identity same as sfgrid on properties window.
-
-![](SfDataGrid_images/GettingStarted_Storyboard_IdentityName_SfDataGrid_ios.jpg)
-
-3. Set ItemSource property to sfgrid in code behind 
-
 {% tabs %}
 {% highlight c# %}
 OrderInfoRepository viewModel = new OrderInfoRepository ();
 dataGrid.ItemsSource = viewModel.OrderInfoCollection; 
-{% endhighlight %}
-{% highlight Storyboard's c# %}
-public override void ViewDidLoad()
-{
-base.ViewDidLoad();
-OrderInfoRespoitory viewModel = new OrderInfoRepository();
-sfgrid.ItemSource = viewModel.OrderInfoCollection;
-}
 {% endhighlight %}
 {% endtabs %}
 Now run the application to render the following output.
@@ -294,6 +345,7 @@ By default, the SfDataGrid automatically creates columns for all the properties 
  
 You can also define the columns manually by setting the [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html) property to false and by adding the `GridColumn` objects to the [SfDataGrid.Columns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AutoGenerateColumns.html) collection. The following code example illustrates how this can be done. 
 
+{% tabs %}
 {% highlight c# %}
 dataGrid.AutoGenerateColumns = false;
 
@@ -318,36 +370,42 @@ dataGrid.Columns.Add (customerIdColumn);
 dataGrid.Columns.Add (customerColumn);
 dataGrid.Columns.Add (countryColumn); 
 {% endhighlight %}
+{% endtabs %}
 
 ## Sorting
 
 SfDataGrid allows you to apply sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowSorting.html) property to true.
  
- As we Disscussed in this [link](). You can also apply sorting on its data to SfDataGrid. Set AllowSorting as true by enabling the checkbox. Please refer the below image.
+ As we disscussed above. You can apply sorting to SfDataGrid via stroyboard refer the below images.
  
  ![](SfDataGrid_images/GettinStarted_AllowSorting_StoryBoard_SfDataGrid.png)
  
+ {% tabs %}
 {% highlight c# %}
 dataGrid.AllowSorting = true; 
 {% endhighlight %}
-
+{% endtabs %}
 Run the application and touch the header cell to sort the data and the following output will be displayed.
  
 ![](SfDataGrid_images/Sorting.png)
 
 You can also configure sorting by adding the column to the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SortColumnDescriptions.html) collection as below.
 
+{% tabs %}
 {% highlight c# %}
 dataGrid.SortColumnDescriptions.Add (new SortColumnDescription () { ColumnName = "CustomerID" });
 {% endhighlight %}
+{% endtabs %}
 
 ## Grouping
 
 SfDataGrid allows you to group a column by adding the column to the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SortColumnDescriptions.html) collection as shown below.
 
+{% tabs %}
 {% highlight c# %}
 dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { ColumnName = "ShipCountry" });
 {% endhighlight %}
+{% endtabs %}
 
 Run the application to render the following output. 
 
@@ -363,7 +421,7 @@ SfDataGrid allows you to select the row/rows by setting the [SfDataGrid.Selectio
 SfDataGrid can be loaded with specific height and width by specifying the height and width of the `SfDataGrid.Frame` property.
 
 To load SfDataGrid with specific height and width, follow the code example:
-
+{% tabs %}
 {% highlight c# %}
 public override void ViewDidLayoutSubviews()
 {
@@ -371,15 +429,65 @@ public override void ViewDidLayoutSubviews()
     base.ViewDidLayoutSubviews();
 }
 {% endhighlight %}
+{% endtabs %}
 
-You can also set custom width and height for SfDataGrid by using StoryBoard. Please follow the below step.
+ As we disscussed above. You can set the custom height and width to SfDataGrid via storyboard refer the below images.
 
-1. As we Discussed in this [link](). Place the cursor on SfDatagrid on Storyboard and go to properties window then switch to Layout tab. 
-
-2. You can set the custom height and width to view.
-
-![](SfDataGrid_images/GettingStarted_Custom_Width_and_Height_Storyboard_SfDatagrid_iOS.jpg)
+![](SfDataGrid_images/GettingStarted_Custom_Width_and_Height_Storyboard_SfDatagrid_iOS.png)
 
 The following screenshot shows how the SfDataGrid is loaded with specific height and width: 
 
 ![](SfDataGrid_images/Loading_with specific_height_and_width.png)
+
+## Properties that can be configured via designer
+
+<table>
+<tr>
+<th> Properties</th>
+<th> Attribute Name</th>
+</tr>
+
+<tr><td>AlternatingRowColor</td><td>Alternating Row Color</td></tr>
+<tr><td>AlternationCount</td><td>Alternation Count</td></tr>
+<tr><td>AllowPullToRefresh</td> <td>Allow Pull To Refresh</td></tr>
+<tr><td>AllowLoadMore</td><td>Allow Load More</td></tr>
+<tr><td>AllowEditing</td><td>Allow Editing</td></tr>
+<tr><td>AllowSorting</td><td>Allow Sorting</td></tr>
+<tr><td>AllowMultiSorting</td><td>Allow Multi Sorting</td></tr>
+<tr><td>AllowTriStateSorting</td><td>Allow Tri State Sorting</td></tr>
+<tr><td>AllowDraggingColumn</td><td>Allow Dragging Column</td></tr>
+<tr><td>AllowDraggingRow</td><td>Allow Dragging Row</td></tr>
+<tr><td>AllowResizingColumn</td><td>Allow Resizing Column</td></tr>
+<tr><td>AutoGenerateColumns</td><td>Auto Generate Columns</td></tr>
+<tr><td>AutoGenerateColumnsMode</td><td>Auto Generate Columns Mode</td></tr>
+<tr><td>AutoEllipsisMode</td><td>Auto Ellipsis Mode</td></tr>
+<tr><td>CellBorderStyle</td><td>Cell Border Style</td></tr>
+<tr><td>ColumnSizer</td><td>Column Sizer</td></tr>
+<tr><td>DefaultColumnWidth</td><td>Default Column Width</td></tr>
+<tr><td>DataFetchSize</td><td>Data Fetch Size</td></tr>
+<tr><td>EditTapAction</td><td>Edit Tap Action</td></tr>
+<tr><td>EditorSelectionBehavior</td><td>Editor Selection Behavior</td></tr>
+<tr><td>EnableDataVirtualization</td><td>Enable Data Virtualization</td></tr>
+<tr><td>FrozenRowsCount</td><td>Frozen Rows Count</td></tr>
+<tr><td>FrozenColumnsCount</td><td>Frozen Columns Count</td></tr>
+<tr><td>GroupCaptionTextFormat</td><td>Group Caption Text Format</td></tr>
+<tr><td>GroupingMode</td><td>Grouping Mode</td></tr>
+<tr><td>HeaderRowHeight</td><td>Header Row Height</td></tr>
+<tr><td>IndentColumnWidth</td><td>Indent Column Width</td></tr>
+<tr><td>Orientation</td><td>Orientation</td></tr>
+<tr><td>NumericButtonBackground</td><td>Numeric Button Background</td></tr>
+<tr><td>NumericButtonCount</td><td>Numeric Button Count</td></tr>
+<tr><td>PageCount</td><td>Page Count</td></tr>
+<tr><td>PageSize</td><td>Page Size</td></tr>
+<tr><td>ResizingMode</td><td>Resizing Mode</td></tr>
+<tr><td>RowHeight</td><td>Row Height</td></tr>
+<tr><td>RowHeaderWidth</td><td>Row Header Width</td></tr>
+<tr><td>ScrollingMode</td><td>Scrolling Mode</td></tr>
+<tr><td>SelectionForeground</td><td>Selection Foreground</td></tr>
+<tr><td>SelectionMode</td><td>Selection Mode</td></tr>
+<tr><td>SelectedIndex</td><td>Selected Index</td></tr>
+<tr><td>ShowRowHeader</td><td>Show Row Header</td></tr>
+<tr><td>ShowColumnWhenGrouped</td><td>Show Column When Grouped</td></tr>
+<tr><td>SortTapAction</td><td>Sort Tap Action</td></tr>
+<tr><td>UseOnDemandPaging</td><td>Use On Demand Paging</td></tr>
+</table>
