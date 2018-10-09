@@ -43,7 +43,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![Annotation support in Xamarin.iOS Chart](Chart_Annotation_images/image1.png)
+![Annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img1.png)
 
 ## Positioning the annotation
 
@@ -77,7 +77,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![Positioning the Xamarin.iOS Chart annotation based on axis coordinates](Chart_Annotation_images/image2.png)
+![Positioning the Xamarin.iOS Chart annotation based on axis coordinates](Chart_Annotation_images/img2.png)
 
 ### Positioning based on CoordinateUnit as pixels
 
@@ -107,7 +107,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![Positioning the Xamarin.iOS Chart annotation based on pixel coordinates](Chart_Annotation_images/image3.png)
+![Positioning the Xamarin.iOS Chart annotation based on pixel coordinates](Chart_Annotation_images/img3.png)
 
 ## Adding annotation for multiple axes
 
@@ -152,7 +152,7 @@ chart.Series.Add(series);
 
 {% endhighlight %}
 
-![Multiple axis support for annotation in Xamarin.iOS Chart](Chart_Annotation_images/image4.png)
+![Multiple axis support for annotation in Xamarin.iOS Chart](Chart_Annotation_images/img4.png)
 
 ## Text annotation
 
@@ -176,7 +176,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![Text annotation support in Xamarin.iOS Chart](Chart_Annotation_images/image5.png)
+![Text annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img5.png)
 
 ### Customizing text annotation
 
@@ -223,7 +223,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![Customizing text annotation support in Xamarin.iOS Chart](Chart_Annotation_images/image6.png)
+![Customizing text annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img6.png)
 
 ## Shape annotation
 
@@ -270,7 +270,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![Rectangle annotation support in Xamarin.iOS Chart](Chart_Annotation_images/image7.png)
+![Rectangle annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img7.png)
 
 ### Ellipse annotation
 
@@ -298,7 +298,7 @@ chart.Annotations.Add(annotation);
 
 N> When [`X2`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ShapeAnnotation~X2.html) and [`Y2`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ShapeAnnotation~Y2.html) properties of [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.EllipseAnnotation.html) are set,  [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.EllipseAnnotation~Height.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.EllipseAnnotation~Width.html) properties do not work.
 
-![Ellipse annotation support in Xamarin.iOS Chart](Chart_Annotation_images/image8.png)
+![Ellipse annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img8.png)
 
 ### Line annotation
 
@@ -326,7 +326,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![Line annotation support in Xamarin.iOS Chart](Chart_Annotation_images/image9.png)
+![Line annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img9.png)
 
 **Adding arrow to line annotation**
 
@@ -354,7 +354,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![Arrow support for line annotation in Xamarin.iOS Chart](Chart_Annotation_images/image10.png)
+![Arrow support for line annotation in Xamarin.iOS Chart](Chart_Annotation_images/img10.png)
 
 ### Vertical and Horizontal line annotations
 
@@ -381,7 +381,7 @@ chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![Vertical and Horizontal line annotation support in Xamarin.iOS Chart](Chart_Annotation_images/image11.png)
+![Vertical and Horizontal line annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img11.png)
 
 **Displaying axis label for vertical and horizontal line annotations**
 
@@ -412,7 +412,7 @@ chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![Displaying axis label for vertical and horizontal line annotations in Xamarin.iOS Chart](Chart_Annotation_images/image12.png)
+![Displaying axis label for vertical and horizontal line annotations in Xamarin.iOS Chart](Chart_Annotation_images/img12.png)
 
 **Customizing axis label**
 
@@ -474,7 +474,7 @@ chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![Customizing axis label in Xamarin.iOS Chart](Chart_Annotation_images/image13.png)
+![Customizing axis label in Xamarin.iOS Chart](Chart_Annotation_images/img13.png)
 
 **Adding arrow to vertical and horizontal line annotations**
 
@@ -505,7 +505,7 @@ chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![Arrow support for vertical and horizontal line annotations in Xamarin.iOS Chart](Chart_Annotation_images/image14.png)
+![Arrow support for vertical and horizontal line annotations in Xamarin.iOS Chart](Chart_Annotation_images/img14.png)
 
 ## Adding text in shape annotation 
 
@@ -558,7 +558,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![Customizing text for shape annotation in Xamarin.iOS Chart](Chart_Annotation_images/image15.png)
+![Customizing text for shape annotation in Xamarin.iOS Chart](Chart_Annotation_images/img15.png)
 
 ## View annotation
 
@@ -590,7 +590,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![View annotation type in Xamarin.iOS Chart](Chart_Annotation_images/image16.png)
+![View annotation type in Xamarin.iOS Chart](Chart_Annotation_images/img16.png)
 
 ## Event
 
