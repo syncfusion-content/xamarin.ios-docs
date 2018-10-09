@@ -91,7 +91,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 5. Open the properties window of SfPullToRefresh and set the required properties and identity name refer the below image.
 
-6. Set the SfDataGrid as PullableContent to SfPullToRefresh in c# code.
+6. Set the SfDataGrid as PullableContent to SfPullToRefresh in code behind.
 
 ![](GettingStarted_images/StoryBoard_support_TransitionType_SfPullToRefresh_ios.png)
 
@@ -232,7 +232,7 @@ Refer to the topic `TransitionType` under `Built-in Customization` section for m
 
 Refer to the following code example to switch to the `TransitionType.Push` mode of transition:
 
-As we discussed above. You can aslo set TransitionType Mode to SfPullToRefresh via StoryBoard refer the below image.
+As we discussed above. You can also set TransitionType Mode to SfPullToRefresh via StoryBoard refer the below image.
 
 ![](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
 

@@ -202,7 +202,7 @@ public partial class GettingStartedViewController : UIViewController
 {% endhighlight %}
 {% endtabs %}
 
-As we disscussed above you can set HeaderRowHeight and RowHeight for SfDataGrid via storyboard refer the below image.
+As we discussed above you can set HeaderRowHeight and RowHeight for SfDataGrid via storyboard refer the below image.
 
 ![SfDataGrid properties](SfDataGrid_images/GettingStarted_HeaderRowHeight_RowHeight_ios.png)
 
@@ -376,7 +376,7 @@ dataGrid.Columns.Add (countryColumn);
 
 SfDataGrid allows you to apply sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowSorting.html) property to true.
  
- As we disscussed above. You can apply sorting to SfDataGrid via stroyboard refer the below images.
+ As we discussed above. You can apply sorting to SfDataGrid via stroyboard refer the below images.
  
  ![](SfDataGrid_images/GettinStarted_AllowSorting_StoryBoard_SfDataGrid.png)
  
@@ -431,7 +431,7 @@ public override void ViewDidLayoutSubviews()
 {% endhighlight %}
 {% endtabs %}
 
- As we disscussed above. You can set the custom height and width to SfDataGrid via storyboard refer the below images.
+ As we discussed above. You can set the custom height and width to SfDataGrid via storyboard refer the below images.
 
 ![](SfDataGrid_images/GettingStarted_Custom_Width_and_Height_Storyboard_SfDatagrid_iOS.png)
 
