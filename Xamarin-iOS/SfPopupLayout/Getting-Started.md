@@ -60,7 +60,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a sample application with SfPopupLayout
 
-The SfPopupLayout control can be configured entirely in C# code or via story baord. To create a sample application for this control, follow the topics:  
+The SfPopupLayout control can be configured entirely in C# code or via story board. To create a sample application for this control, follow the topics:  
 
 * [Adding SfPopupLayout in Xamarin.iOS](#adding-sfpopuplayout-in-xamarin.iOS) 
 * [Customize positioning](# Customize-positioning) 
@@ -87,13 +87,13 @@ The below code will illustrate to display the SfPopupLayout when set as a root v
 {% highlight c# %}
 using UIKit;
 
-namespace Storyboard_SfpopupLayout_ios
+namespace Storyboard_SfPopupLayout_ios
 {
     public partial class MyViewController : UIViewController
     {
-        partial void buttonclicked(UIButton sender)
+        partial void ButtonClicked(UIButton sender)
         {
-            sfpopup.Show();
+            sfPopup.Show();
         }
 
         public MyViewController() : base("MyViewController", null)
