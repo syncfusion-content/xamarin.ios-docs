@@ -65,7 +65,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a sample application with SfPullToRefresh
 
-SfPullToRefresh control can be configured entirely in C# code. To create a sample application for this control, follow the topics:  
+SfPullToRefresh control can be configured entirely in C# code or via story board. To create a sample application for this control, follow the topics:  
 
 * [Creating the project](#creating-the-project)  
 * [Adding SfPullToRefresh in Xamarin.iOS](#adding-sfpulltorefresh-in-xamarinios) 
@@ -79,17 +79,17 @@ SfPullToRefresh control can be configured entirely in C# code. To create a sampl
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
-## Adding SfPullToRefresh in Xamarin.iOS using designer
+## Adding SfPullToRefresh in Xamarin.iOS using story board
 
 1. Add a new storyboard inside of project
 
 2. Drag SfPullToRefresh control from toolbox and drop into storyboard
 
-3. Since this is hosting control so it does not has preview on designer page. You can see the Popupview only when deploy on the device.
+3. Now Drag the SfDataGrid control from the toolbox and drop it into the SfPullToRefresh in StoryBoard.
 
-4. Now Drag the SfDataGrid control from toolbox and drop into inside the SfPullToRefresh in StoryBoard.
+4. Since this is a hosting control it does not show a preview on the designer page and you can only see the PullToRefresh when deployed in the device.
 
-5. Open the properties window of SfPullToRefresh and set the required properties and identity name refer the below image.
+5. Open the properties window of SfPullToRefresh and set the required properties like shown in the below image.
 
 6. Set the SfDataGrid as PullableContent to SfPullToRefresh in code behind.
 
@@ -232,10 +232,6 @@ Refer to the topic `TransitionType` under `Built-in Customization` section for m
 
 Refer to the following code example to switch to the `TransitionType.Push` mode of transition:
 
-As we discussed above. You can also set TransitionType Mode to SfPullToRefresh via StoryBoard refer the below image.
-
-![](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
-
 {% tabs %}
 {% highlight c# %}
 
@@ -249,6 +245,9 @@ public MyViewController()
 {% endhighlight %}
 {% endtabs %}
 
+Refer the below image to set TransitionType Mode to SfPullToRefresh via StoryBoard.
+![](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
+
 ### Final output of the sample
 
 The following GIF demonstrates the final output of the sample:
@@ -261,7 +260,7 @@ The following GIF demonstrates the final output of the sample:
 
 You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/SfPullToRefresh_GettingStarted.zip).
 
-## Properties that can be configured via designer
+## Properties that can be configured via story board
 
 <table>
 <tr>
