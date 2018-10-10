@@ -20,7 +20,7 @@ chart.Legend.Visible = true;
 {% endhighlight %}
 
 
-![](Legend_images/Legend.png)
+![Legend support in Xamarin.iOS Chart](Legend_images/Legend.png)
 
 ## Customizing Labels
 
@@ -40,7 +40,7 @@ chart.Legend.LabelStyle.Font   = UIFont.BoldSystemFontOfSize (18);
 chart.Legend.LabelStyle.Margin = new UIEdgeInsets (0, 5, 0, 5);
 {% endhighlight %}
 
-![](Legend_images/Customizing_Labels.png)
+![Legend labels customization support in Xamarin.iOS Chart](Legend_images/Customizing_Labels.png)
 
 ## Legend Icons
 
@@ -57,7 +57,7 @@ SFPieSeries series          = new SFPieSeries ();
 series.LegendIcon           = SFChartLegendIcon.SeriesType;
 {% endhighlight %}
 
-![](Legend_images/Legend_Icons.png)
+![Legend icons in Xamarin.iOS Chart](Legend_images/Legend_Icons.png)
 
 ## Legend Title
 
@@ -91,7 +91,7 @@ chart.Legend.Title.BorderWidth      = 3;
 {% endhighlight %}
 
 
-![](Legend_images/Legend_Title.png)
+![Title for legend in Xamarin.iOS Chart](Legend_images/Legend_Title.png)
 
 ## Toggle the series visibility
 
@@ -146,7 +146,7 @@ The legend items can be placed in multiple rows by using [`OverflowMode`](http:/
 
 {% endhighlight %}
 
-![](Legend_images/LegendWrap_img1.png)
+![Legend wrapping support in Xamarin.iOS Chart](Legend_images/LegendWrap_img1.png)
 
 ### Legend Width
 
@@ -162,7 +162,7 @@ The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.c
 
 {% endhighlight %}
 
-![](Legend_images/LegendWrap_img2.png)
+![Providing width for legend in Xamarin.iOS Chart](Legend_images/LegendWrap_img2.png)
 
 ## Positioning the Legend
 
@@ -186,7 +186,7 @@ chart.Legend.OffsetY        = 90;
 chart.Legend.Orientation    = SFChartLegendOrientation.Vertical;
 {% endhighlight %}
 
-![](Legend_images/Legend_Position.png)
+![Legend positioning support in Xamarin.iOS Chart](Legend_images/Legend_Position.png)
 
 
 ## Event

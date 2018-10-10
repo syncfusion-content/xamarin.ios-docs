@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | Xamarin.iOS | Syncfusion
-description: Overview
+description: Basic overview about the list of available features on Syncfusion Xamarin.iOS  components and steps to use the guide.
 platform: xamarin.ios
 control: Overview
 documentation: ug
