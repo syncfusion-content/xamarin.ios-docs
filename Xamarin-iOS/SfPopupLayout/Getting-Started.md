@@ -60,7 +60,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a sample application with SfPopupLayout
 
-The SfPopupLayout control can be configured entirely in C# code. To create a sample application for this control, follow the topics:  
+The SfPopupLayout control can be configured entirely in C# code or via story baord. To create a sample application for this control, follow the topics:  
 
 * [Adding SfPopupLayout in Xamarin.iOS](#adding-sfpopuplayout-in-xamarin.iOS) 
 * [Customize positioning](# Customize-positioning) 
@@ -69,15 +69,15 @@ The SfPopupLayout control can be configured entirely in C# code. To create a sam
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
-##Adding SfPopupLayout using designer page
+##Adding SfPopupLayout using story board
 
 1. Add a new storyboard inside of project
 
 2. Drag SfPopupLayout control from toolbox and drop into storyboard
 
-3. Since this is hosting control so it does not has preview on designer page. You can see the Popupview only when deploy on the device.
+3. Since this is a hosting control it does not show a preview on the designer page and you can only see the Popup when deployed in the device.
 
-4. Open the properties window of SfPopupLayout and set the required properties refer the below image.
+4. Open the properties window of SfPopupLayout and set the required properties like shown in the below image.
 
 ![](PopupLayout_images/storyboard_staysopen_sfpopup_ios.png)
 
