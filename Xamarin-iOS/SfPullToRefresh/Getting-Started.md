@@ -114,8 +114,8 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
             // Perform any additional setup after loading the view, typically from a nib.
             viewModel = new ViewModel();
            
-            sfgrid.ItemsSource = viewModel.OrdersInfo;
-            sfpull.PullableContent = sfgrid;
+            sfGrid.ItemsSource = viewModel.OrdersInfo;
+            sfPull.PullableContent = sfGrid;
            
         }
 
