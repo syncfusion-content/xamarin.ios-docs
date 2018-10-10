@@ -65,7 +65,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a sample application with SfPullToRefresh
 
-SfPullToRefresh control can be configured entirely in C# code or via story board. To create a sample application for this control, follow the topics:  
+SfPullToRefresh control can be configured entirely in C# code or using story board. To create a sample application for this control, follow the topics:  
 
 * [Creating the project](#creating-the-project)  
 * [Adding SfPullToRefresh in Xamarin.iOS](#adding-sfpulltorefresh-in-xamarinios) 
@@ -81,17 +81,13 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 ## Adding SfPullToRefresh in Xamarin.iOS using story board
 
-1. Add a new storyboard inside of project
+To add SfPullToRefresh using story board, follow the steps:
 
-2. Drag SfPullToRefresh control from toolbox and drop into storyboard
-
-3. Now Drag the SfDataGrid control from the toolbox and drop it into the SfPullToRefresh in StoryBoard.
-
-4. Since this is a hosting control it does not show a preview on the designer page and you can only see the PullToRefresh when deployed in the device.
-
-5. Open the properties window of SfPullToRefresh and set the required properties like shown in the below image.
-
-6. Set the SfDataGrid as PullableContent to SfPullToRefresh in code behind.
+1. Add a new story board inside the project.
+2. Drag the SfPullToRefresh control from toolbox and drop into story board. 
+3. Drag the SfDataGrid control from toolbox and drop into SfPullToRefresh in story board. Preview will not be shown since this is a hosting control. You can only see the pull-to-refresh when deployed in the device.
+4. Open the properties window of SfPullToRefresh and set the required properties.
+6. Set the SfDataGrid as PullableContent to SfPullToRefresh in code-behind.
 
 ![SfPullToRefresh properties via story board](GettingStarted_images/StoryBoard_support_TransitionType_SfPullToRefresh_ios.png)
 
@@ -128,9 +124,9 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 {% endtabs %}
 
-You can download the entire source code of this demo for Xamarin.Android from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/StoryBoard_Support_SfPullToRefresh_iOS1723365924).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/StoryBoard_Support_SfPullToRefresh_iOS1723365924).
 
-Refer this link to know the properties that can be configured via designer for SfPullToRefresh
+Refer to this link to know the properties that can be configured using story board for SfPullToRefresh.
 
 ### Adding SfPullToRefresh in Xamarin.iOS
 
@@ -245,7 +241,7 @@ public MyViewController()
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below image to set TransitionType Mode to SfPullToRefresh via StoryBoard.
+Refer to the following image to set TransitionType mode to SfPullToRefresh using story board.
 ![SfPullToRefresh properties via story board](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
 
 ### Final output of the sample
@@ -260,7 +256,7 @@ The following GIF demonstrates the final output of the sample:
 
 You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/SfPullToRefresh_GettingStarted.zip).
 
-## Properties that can be configured via story board
+## Properties configured using story board
 
 <table>
 <tr>
