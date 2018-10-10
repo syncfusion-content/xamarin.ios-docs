@@ -129,7 +129,7 @@ Set the  identity name and required properties for SfDataPager in storyboard lik
 {% tabs %}
 
 {% highlight c# %}
-namespace GridIniOS
+namespace Grid
 {
 	public partial class MyViewController : UIViewController
 	{
@@ -142,8 +142,8 @@ namespace GridIniOS
  			base.ViewDidLoad();
  			// Perform any additional setup loading the view, typically from a nib.
  			viewModel = new ViewModel();
- 			sfpager.Source = viewModel.OrdersInfo;
- 			sfgrid.ItemSource = sfpager.PagedSource;
+ 			sfPager.Source = viewModel.OrdersInfo;
+ 			sfGrid.ItemSource = sfPager.PagedSource;
 		}
 		public override void DidReceiveMemoryWarning()
 		{
