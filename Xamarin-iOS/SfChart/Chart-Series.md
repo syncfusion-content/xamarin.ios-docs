@@ -199,6 +199,28 @@ series.AnimationDuration    = 0.8;
 
 {% endhighlight %}
 
+## Animation methods
+
+### AnimateSeries
+
+The [`AnimateSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart~AnimateSeries.html) method can be used to animate the series programmatically.
+
+{% highlight c# %}
+
+chart.AnimateSeries();
+
+{% endhighlight %}
+
+### Animate
+
+The [`Animate`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Animate.html) can be used to animate all the series in the chart programmatically.
+
+{% highlight c# %}
+
+chart.Animate();
+
+{% endhighlight %}
+
 ## Transpose the Series (Vertical Chart)
 
 The [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property of [`SFCartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries.html) is used to plot the chart vertically and view the data in a different perspective.
@@ -212,3 +234,10 @@ series.IsTransposed   = true;
 {% endhighlight %}
 
 ![Series transpose support in Xamarin.iOS Chart](ChartSeries_images/VerticalChart.png)
+
+## Methods
+
+Following methods are available in [`SFSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries.html)
+
+* [`FindNearestChartPoint(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~FindNearestChartPoint.html) - used to get the nearest data point for the particular touch point. 
+* [`FindNearestChartPoints(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~FindNearestChartPoints.html) - used to get the list of nearest data points for the particular touch point.
