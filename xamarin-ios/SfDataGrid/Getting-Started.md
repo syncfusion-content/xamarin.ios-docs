@@ -64,7 +64,7 @@ To know more about obtaining our components, refer to this [link](https://help.s
 
 To export the SfDataGrid to Excel and PDF formats, search for [Syncfusion.Xamarin.SfGridConverter.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGridConverter.ios/) in the NuGet package manager, and then install it.
 
-![](SfDataGrid_images/SfGridConverter_iOS.png)
+![DataGridExport in Xamarin.iOS](SfDataGrid_images/SfGridConverter_iOS.png)
 
 If you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
