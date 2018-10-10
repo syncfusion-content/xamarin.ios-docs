@@ -13,22 +13,40 @@ You can customize color palette, toolbar visibility and appearance of each toolb
 
 ## Customize toolbar items
 
-SfImageEditor control supports to customize and configure the appearance of toolbar menu. You can customize image editor toolbar by adding respective FooterToolbarItem and HeaderToolbarItem 
+The image editor control provides support to customize and configure the appearance of toolbar menu. You can customize the toolbar by adding respective FooterToolbarItem and HeaderToolbarItem.
 
 #### ToolbarItem
 
-You can customize each toolbar item with the help of `Text` and `Icon` properties.
+You can customize each toolbar item using the `Text` and `Icon` properties.
 
+### Name
 
-ImageEditor Toolbar menu contains set of header and footer menu items which helps to perform image editor actions and this can be categorized into the following types,
+You can get or set the names of built-in toolbar and dynamically added toolbar items using the `Name` property.
 
-1.HeaderToolbarItem
-2.FooterToolbarItem
-3.SubItems
+{% highlight C# %}
+
+        public override void ViewDidLoad()
+        {
+            SfImageEditor editor = new SfImageEditor();
+            var itemName = editor.ToolBarSettings.ToolbarItems[2].Name;
+            base.ViewDidLoad();
+        }
+
+{% endhighlight %}
+
+N> The following built-in toolbar item names are available in image editor: `Back`, `Text`, `Add`, `TextColor`, `FontFamily`, `Arial`, `Noteworthy`, `Marker Felt`, `Bradley Hand`, `SignPainter`, `TextEffects`, `Bold`, `Italic`, `Underline`, `Opacity`, `Path`, `StrokeThickness`, `Colors`, `Opacity`, `Shape`, `Rectangle`, `StrokeThickness`, `Circle`, `Arrow`, `Transform`, `Crop`, `free`, `original`, `square`, `3:1`, `3:2`, `4:3`, `5:4`, `16:9`, `Rotate`, `Flip`, `Reset`, `Undo`, `Redo`, and `Save`.
+
+N> You cannot modify the names of existing built-in toolbar items and cannot create toolbar item with these list.
+
+The toolbar menu contains a set of header and footer menu items that helps to perform editing actions. This can be categorized into the following types:
+
+1. HeaderToolbarItem
+2. FooterToolbarItem
+3. SubItems
 
 ## Adding HeaderToolbarItem
 
-`HeaderToolbarItem` will be arranged on top of the image editor and you can customize header toolbar item with the help of Icon and Text as like below,
+The `HeaderToolbarItem` is placed on the top of the image editor, and you can customize the header toolbar item using the `Icon` and `Text` properties:
 
 {% highlight C# %}
 
@@ -38,15 +56,14 @@ ImageEditor Toolbar menu contains set of header and footer menu items which help
 
 ## Adding FooterToolbarItem   
 
- `FooterToolbarItem` will be arranged on bottom of the image editor and you can customize footer toolbar item with the help of Icon and Text along with sub items.
+The `FooterToolbarItem` is placed on the bottom of the image editor, and you can customize the footer toolbar item using the `Icon` and `Text` properties.
 
 Refer to the below code snippet to customize footer toolbar item,
 
 {% highlight C# %}
 
-            editor.ToolBarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = UIImage.FromBundle("delete.png"), Text="Delete" });
-            editor.ToolBarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = UIImage.FromBundle("more.png"), Text="More" });
-
+            editor.ToolBarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = UIImage.FromBundle("delete.png"), Text = "Delete" });
+            editor.ToolBarSettings.ToolbarItems.Add(new FooterToolbarItem() { Icon = UIImage.FromBundle("more.png"), Text = "More" });
 {% endhighlight %}
 
 ## Adding SubItems to the FooterToolbarItem
@@ -57,54 +74,42 @@ Refer to the below code snippet to customize sub items of footer toolbar item,
 
 {% highlight C# %}
 
- 	 editor.ToolBarSettings.ToolbarItems.Add(new FooterToolbarItem()
+            editor.ToolBarSettings.ToolbarItems.Add(new FooterToolbarItem()
             {
                 Text = "More",
                 Icon = UIImage.FromBundle("more.png"),
-                SubItems = new ObservableCollection<ToolbarItem>()
+                SubItems = new List<ToolbarItem>()
                 {
-                   new ToolbarItem() {
-                Icon = UIImage.FromBundle("download.png")
-                },
-                   new ToolbarItem() {
-                Icon = UIImage.FromBundle("share.png")
-                } }
+                    new ToolbarItem() {Icon = UIImage.FromBundle("download.png")},
+                    new ToolbarItem() {Icon = UIImage.FromBundle("share.png")}
+                }
             });
 
 {% endhighlight %}
 
-N> You can remove existing toolbar items("back, Text, Add, TextColor, FontFamily, Arial, Noteworthy, Marker Felt,
-Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shape, Rectangle, StrokeThickness, Circle, Arrow, Transform, Crop, free, original, square, 3:1, 3:2, 4:3, 5:4, 16:9, Rotate, Flip, Reset, Undo, Redo, Save") from the image editor toolbarItems collection based on the index value. 
-
-You can change icon and text value dynamically for any of already added toolbar item based on the index as like below,
+N> You can remove the existing toolbar items [names](/xamarin/sfimageeditor/toolbarcustomization#name) from image editor toolbarItems collection based on the index value and change the icon and text values dynamically for any of the already added toolbar item based on the index as shown in the following code snippet.
 
 {% highlight C# %}
 
-editor.ToolBarSettings.ToolbarItems[5].Text = "new item";
-editor.ToolBarSettings.ToolbarItems[3].Icon = UIImage.FromBundle("image.png")
+            editor.ToolBarSettings.ToolbarItems[5].Text = "new item";
+            editor.ToolBarSettings.ToolbarItems[3].Icon = UIImage.FromBundle("image.png");
 
 {% endhighlight %}
 
-
 ## ToolbarItemSelected event 
 
-Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered and you can get the respective tapped toolbar item as an argument as shown below, 
+Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered, and you can get the respective tapped toolbar item as an argument as shown in the following code snippet. 
 
 {% highlight C# %}
 
-
-       public override void ViewDidLoad()
+        public override void ViewDidLoad()
         {
-			   . . .
-
-            editor.ToolBarSettings.ToolbarItemSelected += ToolbarSettings_ToolBarItemSelected;
-
-			   . . .
+            editor.ToolBarSettings.ToolbarItemSelected += ToolBarSettings_ToolbarItemSelected;
         }
 
         private void ToolBarSettings_ToolbarItemSelected(object sender, ToolbarItemSelectedEventArgs e)
         {
-           UIAlertView alert = new UIAlertView()
+            UIAlertView alert = new UIAlertView()
             {
                 Title = "ToolbarItem",
                 Message = "Selected ToolbarItem is" + e.ToolbarItem.Text
@@ -117,49 +122,44 @@ Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be 
 
 ### MoveSubItemsToFooterToolbar 
 
-`MoveSubItemsToFooterToolbar` boolean property of ToolbarItemSelected event argument decides the placement of each sub items of respective footer toolbar item. 
+The `MoveSubItemsToFooterToolbar` is boolean property of the ToolbarItemSelected event argument; it decides the placement of each sub items of respective footer toolbar item. 
 
 If you set the value to `true`, the respective sub items of footer item will be placed on footer toolbar layout. If you set `false`, then the sub items will be placed above the footer toolbar layout.
 
 {% highlight C# %}
 
         public override void ViewDidLoad()
+        {
+            editor = new SfImageEditor();
+            editor.ToolBarSettings.ToolbarItems.Add(new FooterToolbarItem()
             {
-                        . . .
-
-               
-            SfImageEditor edit = new SfImageEditor(this);
-            edit.ToolBarSettings.ToolbarItems.Add(new FooterToolbarItem()
-				{
-					Text = "NewFooterItem",
-					SubItems = new List<ToolbarItem>()
-							{
-								new ToolbarItem(){ Text= "Subitem1"},
-								new ToolbarItem(){ Text= "Subitem2"},
-								new ToolbarItem(){ Text= "Subitem3"},
-							}
-				});
-                edit.ToolBarSettings.ToolbarItemSelected += ToolBarSettings_ToolbarItemSelected;
-                        
-                        . . .
-            }
-
-
-          private void ToolBarSettings_ToolbarItemSelected(object sender, ToolbarItemSelectedEventArgs e)
-            {
-                if(e.ToolbarItem != null && e.ToolbarItem is FooterToolbarItem)
+                Text = "NewFooterItem",
+                SubItems = new List<ToolbarItem>()
                 {
-                    if(e.ToolbarItem.Text == "NewFooterItem")
-                    {
-                        e.MoveSubItemsToFooterToolbar = false;
-                    }
+                    new ToolbarItem(){ Text= "Subitem1"},
+                    new ToolbarItem(){ Text= "Subitem2"},
+                    new ToolbarItem(){ Text= "Subitem3"},
+                }
+            });
+            editor.ToolBarSettings.ToolbarItemSelected += ToolBarSettings_ToolbarItemSelected;
+
+            base.ViewDidLoad();
+        }
+
+        private void ToolBarSettings_ToolbarItemSelected(object sender, ToolbarItemSelectedEventArgs e)
+        {
+            if (e.ToolbarItem != null && e.ToolbarItem is FooterToolbarItem)
+            {
+                if (e.ToolbarItem.Text == "NewFooterItem")
+                {
+                    e.MoveSubItemsToFooterToolbar = false;
                 }
             }
+        }
 
 {% endhighlight %}
 
-N> This is not applicable for built-in footer toolbar items .
-
+N> This is not applicable for built-in footer toolbar items.
 
 ## To Hide/Show toolbar
 
@@ -179,14 +179,12 @@ To show or hide toolbar by setting toolbar IsVisible property to either true or 
 
 ![SfImageEditor](ImageEditor_images/toolbarvisibility.png)
 
-
 ## To Hide/Visible the toolbar Item
 
 You can hide or show the toolbar items by specifying its icon name and set boolean value to false or true. 
 
  N> You can customize icon  by specifying its names  like  "back, Text, Add, TextColor, FontFamily, Arial, Noteworthy, Marker Felt,
 Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shape, Rectangle, StrokeThickness, Circle, Arrow, Transform, Crop, free, original, square, 3:1, 3:2, 4:3, 5:4, 16:9, Rotate, Flip, Reset, Undo, Redo, Save"
-
 
 {% tabs %}
 
@@ -198,9 +196,7 @@ Bradley Hand, SignPainter, Opacity, Path, StrokeThickness, Colors, Opacity, Shap
 
 {% endtabs %}
 
-
 ![SfImageEditor](ImageEditor_images/toolbaritemvisibility.png)
-
 
 ## To customize the ColorPalette
 
@@ -210,18 +206,18 @@ You can change default colors of the ColorPalette in toolbar.
 
 {% highlight C# %}
 
-    	ObservableCollection<UIColor> CustomColorPalette = new ObservableCollection<UIColor>()
-	{
-				UIColor.Yellow,
-				UIColor.Blue,
-				UIColor.DarkGray
-	};
+            ObservableCollection<UIColor> CustomColorPalette = new ObservableCollection<UIColor>()
+            {
+                UIColor.Yellow,
+                UIColor.Blue,
+                UIColor.DarkGray
+            };
 
-			editor.ColorPalette = CustomColorPalette;
+            editor.ColorPalette = CustomColorPalette;
+
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ## ToolbarHeight Customization
 
@@ -230,30 +226,30 @@ You can customize `height of the toolbar` and also toolbar items `icon` and `tex
 ### Customize Toolbar Height 
 
 SfImageEditor control supports to customize the default height of `Header`, `Footer` and `Sub item` Toolbar by using following properties,
-1.	HeaderToolbarHeight
-2.	FooterToolbarHeight 
-3.	SubItemToolbarHeight
 
-Toolbar items will be resize based on the toolbar height. To change Height of the Toolbar as like below,
+1. HeaderToolbarHeight
+2. FooterToolbarHeight 
+3. SubItemToolbarHeight
+
+The toolbar items will be resized based on the height. To change the height of the toolbar, refer to the following code snippet.
 
 {% tabs %}
 
 {% highlight C# %}
 
-    editor.ToolBarSettings.HeaderToolbarHeight = 70;
-    editor.ToolBarSettings.FooterToolbarHeight = 70;
-    editor.ToolBarSettings.SubItemToolbarHeight = 70;
+            editor.ToolBarSettings.HeaderToolbarHeight = 70;
+            editor.ToolBarSettings.FooterToolbarHeight = 70;
+            editor.ToolBarSettings.SubItemToolbarHeight = 70;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
 ![SfImageEditor](ImageEditor_images/ToolbarHeight.png)
 
 ## Individual Toolbar Item Height Customization
 
-To arrange toolbar items aspect fit based on the toolbar height by using following properties  
+You can arrange the toolbar items based on the toolbar height using the following properties:
 
 1.  TextHeight
 2.  IconHeight
@@ -264,10 +260,10 @@ To change the toolbar item Text and Icon height as like below,
 
 {% highlight C# %}
 
-     FooterToolbarItem footerItem = new FooterToolbarItem()
+            FooterToolbarItem footerItem = new FooterToolbarItem()
             {
-                IconHeight=40,
-                TextHeight=20,
+                IconHeight = 40,
+                TextHeight = 20,
                 Icon = UIImage.FromBundle("share.png"),
                 Text = "Share"
             };
@@ -277,5 +273,3 @@ To change the toolbar item Text and Icon height as like below,
 {% endhighlight %}
 
 {% endtabs %}
-
-
