@@ -47,7 +47,7 @@ The following NuGet package should be installed to use the SfDataGrid control in
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid.ios/#), and then install it.
 
-![](SfDataGrid_images/SfDataGrid_IOS.png)
+![SfDataGrid in nuget.org](SfDataGrid_images/SfDataGrid_IOS.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -85,7 +85,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 This section explains how to create a SfDataGrid and configure it. The SfDataGrid control can be configured entirely in C# code or via story board. This is how the final output will look like on iOS devices.
  
-![](SfDataGrid_images/GettingStarted.png)
+![SfDataGrid in Xamarin.iOS](SfDataGrid_images/GettingStarted.png)
  
 You can download the entire source code of this demo for Xamarin.iOS from [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/DataGrid_GettingStartediOS.zip). 
 
@@ -204,7 +204,7 @@ You can also set the HeaderRowHeight and RowHeight for SfDataGrid via storyboard
 
 Run the application to render the following output. 
 
-![](SfDataGrid_images/SfDataGridWithoutTopPadding.png)
+![SfDataGrid with RowHeight and HeaderRowHeight](SfDataGrid_images/SfDataGridWithoutTopPadding.png)
 
 The [Frame](https://developer.xamarin.com/api/property/UIKit.UIView.Frame/) is used to arrange a view in Xamarin.iOS. By default a view in Xamarin.iOS will be arranged without any padding from the title bar. Hence the content of the arranged view will overlap with the title bar if the top position of its `Frame` is set as `0`. 
 
@@ -223,7 +223,7 @@ public override void ViewDidLoad ()
 
  Run the application with the above code to render the following output. 
 
-![](SfDataGrid_images/SfDataGridWithTopPadding.png)
+![SfDataGrid with top padding](SfDataGrid_images/SfDataGridWithTopPadding.png)
 
 ## Create DataModel for the SfDataGrid
 
@@ -333,7 +333,7 @@ dataGrid.ItemsSource = viewModel.OrderInfoCollection;
 {% endtabs %}
 Now run the application to render the following output.
 
-![](SfDataGrid_images/Overview.png)
+![Data Virtualization in SfDataGrid for Xamarin.iOS](SfDataGrid_images/Overview.png)
 
 ## Defining Columns
 
@@ -374,7 +374,7 @@ SfDataGrid allows you to apply sorting on its data by setting the [SfDataGrid.A
  
 You can also set the sorting for SfDataGrid via storyboard like shown in the below image.
  
-![](SfDataGrid_images/GettinStarted_AllowSorting_StoryBoard_SfDataGrid.png)
+![Sorting via story board in SfDataGrid fo Xamarin.iOS](SfDataGrid_images/GettinStarted_AllowSorting_StoryBoard_SfDataGrid.png)
  
  {% tabs %}
 {% highlight c# %}
@@ -383,7 +383,7 @@ dataGrid.AllowSorting = true;
 {% endtabs %}
 Run the application and touch the header cell to sort the data and the following output will be displayed.
  
-![](SfDataGrid_images/Sorting.png)
+![Sorting in SfDataGrid in Xamarin.iOS](SfDataGrid_images/Sorting.png)
 
 You can also configure sorting by adding the column to the [SfDataGrid.SortColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SortColumnDescriptions.html) collection as below.
 
@@ -405,7 +405,7 @@ dataGrid.GroupColumnDescriptions.Add (new GroupColumnDescription () { Column
 
 Run the application to render the following output. 
 
-![](SfDataGrid_images/Grouping.png)
+![Grouping in SfDatGrid in Xamarin.iOS](SfDataGrid_images/Grouping.png)
 
 ## Selection
 
@@ -429,11 +429,11 @@ public override void ViewDidLayoutSubviews()
 
 You can also set the custom height and width to SfDataGrid via storyboard like shown in the below image.
 
-![](SfDataGrid_images/GettingStarted_Custom_Width_and_Height_Storyboard_SfDatagrid_iOS.png)
+![Custom width and height via story board in SfDataGrid for Xamarin.iOS](SfDataGrid_images/GettingStarted_Custom_Width_and_Height_Storyboard_SfDatagrid_iOS.png)
 
 The following screenshot shows how the SfDataGrid is loaded with specific height and width: 
 
-![](SfDataGrid_images/Loading_with specific_height_and_width.png)
+![SfDataGrid with specific heigt and width](SfDataGrid_images/Loading_with specific_height_and_width.png)
 
 ## Properties that can be configured via designer
 
