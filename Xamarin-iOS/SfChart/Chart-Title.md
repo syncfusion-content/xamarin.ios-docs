@@ -30,7 +30,7 @@ chart.Title.TextColor   = UIColor.Blue;
 {% endhighlight %}
 
 
-![](charttitle_images/charttitle_img1.png)
+![Title for Xamarin.iOS Chart](charttitle_images/charttitle_img1.png)
 
 
 ## Text Alignment
@@ -48,4 +48,4 @@ chart.Title.TextColor       = UIColor.Blue;
 {% endhighlight %}
 
 
-![](charttitle_images/charttitle_img2.png)
+![Text alignment support for title in Xamarin.iOS Chart](charttitle_images/charttitle_img2.png)
