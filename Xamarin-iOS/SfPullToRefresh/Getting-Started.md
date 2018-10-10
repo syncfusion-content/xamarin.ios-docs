@@ -46,7 +46,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.o
 
 Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh.iOS package is highlighted:
 
-![](GettingStarted_images/NuGetInstall.png)
+![SfPullToRefresh in nuget.org](GettingStarted_images/NuGetInstall.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -65,7 +65,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a sample application with SfPullToRefresh
 
-SfPullToRefresh control can be configured entirely in C# code. To create a sample application for this control, follow the topics:  
+SfPullToRefresh control can be configured entirely in C# code or using story board. To create a sample application for this control, follow the topics:  
 
 * [Creating the project](#creating-the-project)  
 * [Adding SfPullToRefresh in Xamarin.iOS](#adding-sfpulltorefresh-in-xamarinios) 
@@ -79,6 +79,55 @@ SfPullToRefresh control can be configured entirely in C# code. To create a sampl
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
+## Adding SfPullToRefresh in Xamarin.iOS using story board
+
+To add SfPullToRefresh using story board, follow the steps:
+
+1. Add a new story board inside the project.
+2. Drag the SfPullToRefresh control from toolbox and drop into story board. 
+3. Drag the SfDataGrid control from toolbox and drop into SfPullToRefresh in story board. Preview will not be shown since this is a hosting control. You can only see the pull-to-refresh when deployed in the device.
+4. Open the properties window of SfPullToRefresh and set the required properties.
+6. Set the SfDataGrid as PullableContent to SfPullToRefresh in code-behind.
+
+![SfPullToRefresh properties via story board](GettingStarted_images/StoryBoard_support_TransitionType_SfPullToRefresh_ios.png)
+
+{% tabs %}
+
+{% highlight c# %}
+    public partial class newViewController : UIViewController
+    {
+     
+
+        ViewModel viewModel;
+        public newViewController() : base("newViewController", null)
+        {
+            
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+            viewModel = new ViewModel();
+           
+            sfGrid.ItemsSource = viewModel.OrdersInfo;
+            sfPull.PullableContent = sfGrid;
+           
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+        }
+    }
+{% endhighlight %}
+
+{% endtabs %}
+
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/StoryBoard_Support_SfPullToRefresh_iOS1723365924).
+
+Refer to this link to know the properties that can be configured using story board for SfPullToRefresh.
+
 ### Adding SfPullToRefresh in Xamarin.iOS
 
 1. Add the required assembly references to the project as mentioned in the [Assembly deployment](#assembly-deployment) section or install the NuGet as mentioned in the [NuGet installation](#nuget-installation) section.
@@ -87,6 +136,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 3. Create an instance of SfPullToRefresh control and add as the subview of the UIViewController. Refer to the following code example to add this control to the application:
 
+{% tabs %}
 {% highlight c# %}
 
 using Syncfusion.SfPullToRefresh; 
@@ -103,11 +153,13 @@ public class MyViewController : UIViewController
 } 
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Adding a simple view as the PullableContent
 
 Any view can be added as the pullable content using [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~PullableContent.html) property to refresh it. Refer to the following code example in which a simple custom view is added as pullable content:
 
+{% tabs %}
 {% highlight c# %}
 
 //MyViewController.cs
@@ -136,6 +188,7 @@ private void InitializeViews()
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ### Refreshing the view
 
@@ -143,6 +196,7 @@ To refresh the view, hook the [SfPullToRefresh.Refreshing](https://help.syncfusi
 
 Refer to the following code example illustrating hooking of the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPullToRefresh.iOS~Syncfusion.SfPullToRefresh.SfPullToRefresh~Refreshing_EV.html) event and refreshing the view:
 
+{% tabs %}
 {% highlight c# %}
 
 //MyViewController.cs
@@ -164,6 +218,7 @@ private void PullToRefresh_Refreshing(object sender, RefreshingEventArgs e)
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ### TransitionType customization
 
@@ -173,6 +228,7 @@ Refer to the topic `TransitionType` under `Built-in Customization` section for m
 
 Refer to the following code example to switch to the `TransitionType.Push` mode of transition:
 
+{% tabs %}
 {% highlight c# %}
 
 public MyViewController()
@@ -183,15 +239,36 @@ public MyViewController()
 }
 
 {% endhighlight %}
+{% endtabs %}
+
+Refer to the following image to set TransitionType mode to SfPullToRefresh using story board.
+![SfPullToRefresh properties via story board](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
 
 ### Final output of the sample
 
 The following GIF demonstrates the final output of the sample:
 
 <div style="text-align:center" markdown="1">
-![](GettingStarted_images/GettingStarted_Refresh_iOS.gif)
+![SfPullToRefresh in Xamarin.iOS](GettingStarted_images/GettingStarted_Refresh_iOS.gif)
 </div>
 
 ### Sample link
 
 You can download the source code of this sample [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/SfPullToRefresh_GettingStarted.zip).
+
+## Properties configured using story board
+
+<table>
+<tr>
+<th> Properties</th>
+<th> Attribute Name</th>
+</tr>
+<tr><td>PullingThreshold</td> <td>Pulling Threshold</td></tr>
+<tr><td>ProgressStrokeColor</td><td>Progress Stroke Color</td></tr>
+<tr><td>ProgressBackgroundColor</td><td>Progress Background Color</td></tr>
+<tr><td>ProgressShadowColor</td><td>Progress Shadow Color</td></tr>
+<tr><td>ProgressStrokeWidth</td><td>Progress Stroke Width</td></tr>
+<tr><td>TransitionType</td><td>Transition Type</td></tr>
+<tr><td>RefreshContentThreshold</td><td>Refresh Content Threshold</td></tr>
+<tr><td>RefreshContentRadius</td><td>Refresh Content Radius</td></tr>
+</table>
