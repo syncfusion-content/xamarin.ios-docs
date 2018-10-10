@@ -246,14 +246,14 @@ public MyViewController()
 {% endtabs %}
 
 Refer the below image to set TransitionType Mode to SfPullToRefresh via StoryBoard.
-![SfPullToRefresh pro](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
+![SfPullToRefresh properties via story board](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
 
 ### Final output of the sample
 
 The following GIF demonstrates the final output of the sample:
 
 <div style="text-align:center" markdown="1">
-![](GettingStarted_images/GettingStarted_Refresh_iOS.gif)
+![SfPullToRefresh in Xamarin.iOS](GettingStarted_images/GettingStarted_Refresh_iOS.gif)
 </div>
 
 ### Sample link
