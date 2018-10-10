@@ -41,7 +41,7 @@ The following NuGet package should be installed to use the SfPopupLayout control
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfPopupLayout to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfPopupLayout.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfPopUpLayout.IOS), and then install it.
 
-![](GettingStarted_images/NuGetInstall.png)
+![SfPopupLayout in nuget.org](GettingStarted_images/NuGetInstall.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -79,7 +79,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 4. Open the properties window of SfPopupLayout and set the required properties like shown in the below image.
 
-![](PopupLayout_images/storyboard_staysopen_sfpopup_ios.png)
+![SfPopupLayout properties via story board](PopupLayout_images/storyboard_staysopen_sfpopup_ios.png)
 
 The below code will illustrate to display the SfPopupLayout when set as a root view via storyboard
 
@@ -257,7 +257,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an iOS device.
 
-![](GettingStarted_images/DefaultAppearance.png)
+![SfPopupLayout default appearance](GettingStarted_images/DefaultAppearance.png)
 
 You can download the source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1822336781).
 
@@ -347,7 +347,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an iOS device.
 
-![](GettingStarted_images/ContentView.png)
+![Popup with custom view](GettingStarted_images/ContentView.png)
 
 N> Setting the content view is same for both cases i.e. displaying pop-up when the SfPopupLayout is set as root view and vice versa.
 
