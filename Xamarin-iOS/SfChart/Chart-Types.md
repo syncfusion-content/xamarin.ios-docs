@@ -33,7 +33,7 @@ chart.Series.Add(lineSeries);
 {% endhighlight %}
 
 
-![](ChartTypes_images/Line.png)
+![Line chart type in Xamarin.iOS](ChartTypes_images/Line.png)
 
 ### Dashed Lines
 
@@ -76,7 +76,7 @@ SFAreaSeries areaSeries = new SFAreaSeries()
 chart.Series.Add(areaSeries);
 {% endhighlight %}
 
-![](ChartTypes_images/Area.png)
+![Area chart type in Xamarin.iOS](ChartTypes_images/Area.png)
 
 ## Spline Area Chart
 
@@ -104,7 +104,7 @@ chart.Series.Add(splineAreaSeries);
 {% endhighlight %}
 
 
-![](ChartTypes_images/SplineArea.png)
+![SplineArea chart type in Xamarin.iOS](ChartTypes_images/SplineArea.png)
 
 ### Spline area series types
 
@@ -235,7 +235,7 @@ chart.Series.Add(stackingAreaSeries3);
 
 {% endhighlight %}
 
-![](ChartTypes_images/StackedArea.png)
+![StackedArea chart type in Xamarin.iOS](ChartTypes_images/StackedArea.png)
 
 ## 100% Stacked Area Chart
 
@@ -278,7 +278,7 @@ chart.Series.Add(stackingAreaSeries2);
 chart.Series.Add(stackingAreaSeries3);
 {% endhighlight %}
 
-![](ChartTypes_images/StackedArea100.png)
+![StackingArea100 chart type in Xamarin.iOS](ChartTypes_images/StackedArea100.png)
 
 
 ## Spline Range Area Chart
@@ -341,7 +341,7 @@ chart.Series.Add(columnSeries);
 {% endhighlight %}
 
 
-![](ChartTypes_images/Column.png)
+![Column chart type in Xamarin.iOS](ChartTypes_images/Column.png)
 
 ## Overlapped placement
 
@@ -373,7 +373,7 @@ chart.Series.Add(series2);
 
 {% endhighlight %}
 
-![](ChartTypes_images/overlapped.png)
+![Overlapped placement support in Xamarin.iOS Chart](ChartTypes_images/overlapped.png)
 
 ## Histogram Chart
 
@@ -439,7 +439,7 @@ Following properties are used to customize the range column segment appearance,
 * [`Spacing`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeColumnSeries~Spacing.html) - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeColumnSeries~Width.html) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively. 
 
-![](ChartTypes_images/RangeColumn.png)
+![RangeColumn chart type in Xamarin.iOS](ChartTypes_images/RangeColumn.png)
 
 ## Stacked Column Chart
 
@@ -485,7 +485,7 @@ chart.Series.Add(stackingColumnSeries2);
 chart.Series.Add(stackingColumnSeries3);
 {% endhighlight %}
 
-![](ChartTypes_images/StackedColumn.png)
+![StackingColumn chart type in Xamarin.iOS](ChartTypes_images/StackedColumn.png)
 
 ## 100% Stacked Column Chart
 
@@ -534,7 +534,7 @@ chart.Series.Add(stackingColumn100Series3);
 {% endhighlight %}
 
 
-![](ChartTypes_images/StackedColumn100.png)
+![StackingColumn100 chart type in Xamarin.iOS Chart](ChartTypes_images/StackedColumn100.png)
 
 ## Bar Chart
 
@@ -565,7 +565,7 @@ chart.Series.Add(barSeries);
 {% endhighlight %}
 
 
-![](ChartTypes_images/Bar.png)
+![Bar chart type in Xamarin.iOS](ChartTypes_images/Bar.png)
 
 ## Stacked Bar Chart
 
@@ -614,7 +614,7 @@ chart.Series.Add(stackingBarSeries3);
 {% endhighlight %}
 
 
-![](ChartTypes_images/StackedBar.png)
+![StackingBar chart type in Xamarin.iOS](ChartTypes_images/StackedBar.png)
 
 ## 100% Stacked Bar Chart
 
@@ -662,7 +662,7 @@ chart.Series.Add(stackingBar100Series2);
 chart.Series.Add(stackingBar100Series3);
 {% endhighlight %}
 
-![](ChartTypes_images/StackedBar100.png)
+![StackingBar100 chart type in Xamarin.iOS](ChartTypes_images/StackedBar100.png)
 
 ## Spline Chart
 
@@ -688,7 +688,7 @@ chart.Series.Add(splineSeries);
 {% endhighlight %}
 
 
-![](ChartTypes_images/Spline.png)
+![Spline chart type in Xamarin.iOS](ChartTypes_images/Spline.png)
 
 ### Spline series types
 
@@ -745,7 +745,7 @@ chart.Series.Add(stepLine);
 {% endhighlight %}
 
 
-![](ChartTypes_images/StepLine.png)
+![StepLine chart type in Xamarin.iOS](ChartTypes_images/StepLine.png)
 
 ## Fast Line Chart
 
@@ -770,7 +770,7 @@ SFFastLineSeries fastLineSeries = new SFFastLineSeries()
 chart.Series.Add(fastLineSeries);
 {% endhighlight %}
 
-![](ChartTypes_images/FastLine.png)
+![FastLine chart type in Xamarin.iOS](ChartTypes_images/FastLine.png)
 
 ### Dashed Lines
 
@@ -789,7 +789,7 @@ series.Dashes           = NSArray.FromObjects (dashes);
 chart.Series.Add(series);
 {% endhighlight %}
 
-![](ChartTypes_images/DashedLines.png)
+![Dashed lines support for FastLineSeries in Xamarin.iOS Chart](ChartTypes_images/DashedLines.png)
 
 ## Bubble Chart
 
@@ -821,7 +821,7 @@ Following properties are used to customize the bubble segment appearance.
 * [`MinimumRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBubbleSeries~MinimumRadius.html) – used to change the minimum size of the series.
 * [`MaximumRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBubbleSeries~MaximumRadius.html) – used to change the maximum size of the series.
 
-![](ChartTypes_images/Bubble.png)
+![Bubble chart type in Xamarin.iOS](ChartTypes_images/Bubble.png)
 
 ## Scatter Chart	
 
@@ -850,7 +850,7 @@ SFScatterSeries scatterSeries = new SFScatterSeries()
 chart.Series.Add(scatterSeries);
 {% endhighlight %}
 
-![](ChartTypes_images/Scatter.png)
+![Scatter chart type in Xamarin.iOS](ChartTypes_images/Scatter.png)
 
 ## OHLC Chart
 
@@ -882,7 +882,7 @@ You can use the following properties to customize the HiLoOpenCloseSeries segmen
 * [`Alpha`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Alpha.html) - used to control the transparency of the chart series.
 * [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFOHLCSeries~LineWidth.html) – used to change the border width of the series.
 
-![](ChartTypes_images/OHLC.png)
+![HiLoOpenClose chart type in Xamarin.iOS](ChartTypes_images/OHLC.png)
 
 ### Bull and Bear Color	
 
@@ -908,7 +908,7 @@ chart.Series.Add(hiLoOpenCloseSeries);
 
 {% endhighlight %}
 
-![](ChartTypes_images/OHLC1.png)
+![Bull and bear Color support for financial series in Xamarin.iOS Chart](ChartTypes_images/OHLC1.png)
 
 ## Candle Chart
 
@@ -941,7 +941,7 @@ You can use the following properties to customize the candle segment appearance.
 * [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCandleSeries~BorderWidth.html) – used to change the border width of the series.
 * [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCandleSeries~BorderColor.html) – used to change the border color of the series.
 
-![](ChartTypes_images/Candle.png)
+![Candle chart type in Xamarin.iOS](ChartTypes_images/Candle.png)
 
 ### Bull and Bear Color
 
@@ -968,7 +968,7 @@ chart.Series.Add(candleSeries);
 {% endhighlight %}
 
 
-![](ChartTypes_images/Candle1.png)
+![Bull and bear Color support for financial series in Xamarin.iOS Chart](ChartTypes_images/Candle1.png)
 
 ### Enable solid candles
 
@@ -1008,7 +1008,7 @@ radar.YBindingPath = "Value";
 radar.DrawType = SFChartPolarRadarSeriesDrawType.Line;
 {% endhighlight %}
 
-![](ChartTypes_images/Radar.png)
+![Draw type support for radar series in Xamarin.iOS Chart](ChartTypes_images/Radar.png)
 
 ### Customize the appearance
 
@@ -1029,7 +1029,7 @@ radarSeries.BorderColor     = UIColor.Blue;
 {% endhighlight %}
 
 
-![](ChartTypes_images/RadarCustomization.png)
+![Customizing the appearance of radar series in Xamarin.iOS Chart](ChartTypes_images/RadarCustomization.png)
 
 ### Closed
 
@@ -1041,7 +1041,7 @@ radarSeries.Closed          = false;
 
 {% endhighlight %}
 
-![](ChartTypes_images/RadarClosed.png)
+![Closed radar series in Xamarin.iOS Chart](ChartTypes_images/RadarClosed.png)
 
 ### Radar Start Angle for primary axis
 
@@ -1058,7 +1058,7 @@ chart.SecondaryAxis = new SFNumericalAxis();
 
 {% endhighlight %}
 
-![](ChartTypes_images/radarangle_img1.png)
+![Radar start angle support for primary axis in Xamarin.iOS Chart](ChartTypes_images/radarangle_img1.png)
 
 ### Radar Start Angle for secondary axis
 
@@ -1073,7 +1073,7 @@ chart.SecondaryAxis = new SFNumericalAxis()
 
 {% endhighlight %}
 
-![](ChartTypes_images/radarangle_img2.png)
+![Radar start angle support for secondary axis in Xamarin.iOS Chart](ChartTypes_images/radarangle_img2.png)
 
 ### Radar Start Angle for both axis
 
@@ -1091,7 +1091,7 @@ chart.SecondaryAxis =  new SFNumericalAxis()
 
 {% endhighlight %}
 
-![](ChartTypes_images/radarangle_img3.png)
+![Radar start angle support for both axes in Xamarin.iOS Chart](ChartTypes_images/radarangle_img3.png)
 
 ## Polar Chart
 
@@ -1111,7 +1111,7 @@ polarSeries.DrawType             = SFChartPolarRadarSeriesDrawType
 {% endhighlight %}
 
 
-![](ChartTypes_images/Polar.png)
+![Draw type support for polar series in Xamarin.iOS Chart](ChartTypes_images/Polar.png)
 
 ### Customize the appearance
 
@@ -1132,7 +1132,7 @@ polarSeries.BorderColor          = UIColor.Blue;
 {% endhighlight %}
 
 
-![](ChartTypes_images/PolarCustomization.png)
+![Customizing the appearance of polar series in Xamarin.iOS Chart](ChartTypes_images/PolarCustomization.png)
 
 ### Closed
 
@@ -1145,7 +1145,7 @@ polarSeries.Closed             = false;
 {% endhighlight %}
 
 
-![](ChartTypes_images/PolarClosed.png)
+![Closed polar series in Xamarin.iOS Chart](ChartTypes_images/PolarClosed.png)
 
 ### Polar start angle for primary axis
 
@@ -1162,7 +1162,7 @@ chart.SecondaryAxis = new SFNumericalAxis();
 
 {% endhighlight %}
 
-![](ChartTypes_images/polarangle_img1.png)
+![Polar start angle support for primary axis in Xamarin.iOS Chart](ChartTypes_images/polarangle_img1.png)
 
 ### Polar start angle for secondary axis
 
@@ -1177,7 +1177,7 @@ chart.SecondaryAxis = new SFNumericalAxis()
 
 {% endhighlight %}
 
-![](ChartTypes_images/polarangle_img2.png)
+![Polar start angle support for secondary axis in Xamarin.iOS Chart](ChartTypes_images/polarangle_img2.png)
 
 ### Polar start angle for both axis
 
@@ -1195,7 +1195,7 @@ chart.SecondaryAxis =  new SFNumericalAxis()
 
 {% endhighlight %}
 
-![](ChartTypes_images/polarangle_img3.png)
+![Polar start angle support for both axes in Xamarin.iOS Chart](ChartTypes_images/polarangle_img3.png)
 
 ## Pie Chart
 
@@ -1221,7 +1221,7 @@ SFPieSeries pieSeries = new SFPieSeries()
 chart.Series.Add(pieSeries);
 {% endhighlight %}
 
-![](ChartTypes_images/PieCircularCoefficient.png)
+![Pie chart type in Xamarin.iOS](ChartTypes_images/PieCircularCoefficient.png)
 
 ### Exploding a pie segment
 
@@ -1236,7 +1236,7 @@ series.ExplodeIndex = 1;
 
 Also, the segments can be exploded by touch using [`ExplodeOnTouch`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAccumulationSeries~ExplodeOnTouch.html) property of [`SFPieSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFPieSeries.html). Default value of this property is false.
 
-![](ChartTypes_images/PieExplodeIndex.png)
+![Exploding a pie segment support in Xamarin.iOS Chart](ChartTypes_images/PieExplodeIndex.png)
 
 ### Exploding all the segments
 
@@ -1249,7 +1249,7 @@ SFPieSeries series = new SFPieSeries ();
 series.ExplodeAll  = true;      
 {% endhighlight %}
 
-![](ChartTypes_images/PieExplodeAll.png)
+![Exploding all the segments of pie series in Xamarin.iOS Chart](ChartTypes_images/PieExplodeAll.png)
 
 ### Sector of Pie
 
@@ -1263,7 +1263,7 @@ series.EndAngle    = 360;
 
 {% endhighlight %}
 
-![](ChartTypes_images/SemiPie.png)
+![Sector support for pie series in Xamarin.iOS Chart](ChartTypes_images/SemiPie.png)
 
 ### Group small data points into “others”
 
@@ -1293,7 +1293,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endhighlight %}
 
-![](ChartTypes_images/Doughnut.png)
+![Doughnut chart type in Xamarin.iOS](ChartTypes_images/Doughnut.png)
 
 ### Stacked doughnut
 
@@ -1339,7 +1339,7 @@ SFDoughnutSeries series     = new SFDoughnutSeries ();
 series.DoughnutCoefficient = 0.6f;   
 {% endhighlight %}
 
-![](ChartTypes_images/DoughnutCoefficient.png)
+![DoughnutCoefficient support for doughnut series in Xamarin.iOS Chart](ChartTypes_images/DoughnutCoefficient.png)
 
 ### Changing the doughnut size
 
@@ -1352,7 +1352,7 @@ SFDoughnutSeries series     = new SFDoughnutSeries ();
 series.CircularCoefficient  = 0.5f;  
 {% endhighlight %}
 
-![](ChartTypes_images/DoughnutCircularCoefficient.png)
+![CircularCoefficient support for doughnut series in Xamarin.iOS Chart](ChartTypes_images/DoughnutCircularCoefficient.png)
 
 ### Exploding a doughnut segment
 
@@ -1364,7 +1364,7 @@ SFDoughnutSeries series = new SFDoughnutSeries ();
 series.ExplodeIndex     = 1;        
 {% endhighlight %}
 
-![](ChartTypes_images/DoughnutExplodeIndex.png)
+![Exploding a doughnut segment support in Xamarin.iOS Chart](ChartTypes_images/DoughnutExplodeIndex.png)
 
 ### Exploding all the segments
 
@@ -1378,7 +1378,7 @@ series.ExplodeAll       = true;
 {% endhighlight %}
 
 
-![](ChartTypes_images/DoughnutExplodeAll.png)
+![Exploding all the segments of doughnut series in Xamarin.iOS Chart](ChartTypes_images/DoughnutExplodeAll.png)
 
 ### Sector of doughnut
 
@@ -1392,7 +1392,7 @@ series.StartAngle       = 180;
 series.EndAngle         = 360;        
 {% endhighlight %}
 
-![](ChartTypes_images/SemiDoughnut.png)
+![Sector support for doughnut series in Xamarin.iOS Chart](ChartTypes_images/SemiDoughnut.png)
 
 ### Group small data points into “others”
 
@@ -1412,7 +1412,7 @@ doughnutSeries.CenterView = label;
 
 {% endhighlight %}
 
-![](ChartTypes_images/DoughnutCenterView.png)
+![CenterView support for doughnut series in Xamarin.iOS Chart](ChartTypes_images/DoughnutCenterView.png)
 
 ## Pyramid Chart
 
@@ -1439,7 +1439,7 @@ chart.Series.Add(pyramidSeries);
 
 {% endhighlight %}
 
-![](ChartTypes_images/Pyramid.png)
+![Pyramid chart type in Xamarin.iOS](ChartTypes_images/Pyramid.png)
 
 ### Pyramid Mode
 
@@ -1453,7 +1453,7 @@ series.PyramidMode     = SFChartPyramidMode.Surface;
 {% endhighlight %}
 
 
-![](ChartTypes_images/PyramidMode.png)
+![Pyramid mode support in Xamarin.iOS Chart](ChartTypes_images/PyramidMode.png)
 
 ### Gap between the segments
 
@@ -1467,7 +1467,7 @@ series.GapRatio        = 0.1;
 {% endhighlight %}
 
 
-![](ChartTypes_images/GapRatio.png)
+![Gap between the pyramid segments support in Xamarin.iOS Chart](ChartTypes_images/GapRatio.png)
 
 ### Exploding a pyramid segment
 
@@ -1480,7 +1480,7 @@ SFPyramidSeries series = new SFPyramidSeries ();
 series.ExplodeIndex    = 2;   
 {% endhighlight %}
 
-![](ChartTypes_images/PyramidExplodeIndex.png)
+![Exploding a pyramid segment support in Xamarin.iOS Chart](ChartTypes_images/PyramidExplodeIndex.png)
 
 ## Funnel Chart
 
@@ -1506,7 +1506,7 @@ SFFunnelSeries funnelSeries = new SFFunnelSeries()
 chart.Series.Add(funnelSeries);
 {% endhighlight %}
 
-![](ChartTypes_images/Funnel.png)
+![Funnel chart type in Xamarin.iOS](ChartTypes_images/Funnel.png)
 
 ### Gap between the segments
 
@@ -1520,7 +1520,7 @@ series.GapRatio       = 0.1;
    
 {% endhighlight %}
 
-![](ChartTypes_images/FunnelGapRatio.png)
+![Gap between the funnel segments support in Xamarin.iOS Chart](ChartTypes_images/FunnelGapRatio.png)
 
 ### Exploding a funnel segment
 
@@ -1533,7 +1533,7 @@ series.ExplodeIndex   = 2;
 
 {% endhighlight %}
 
-![](ChartTypes_images/FunnelExplodeIndex.png)
+![Exploding a funnel segment support in Xamarin.iOS Chart](ChartTypes_images/FunnelExplodeIndex.png)
 
 ### Changing the minimum width of the funnel
 
@@ -1547,4 +1547,4 @@ series.MinimumWidth   = 20;
 
 {% endhighlight %}
 
-![](ChartTypes_images/MinWidth.png)
+![Minimum width support for funnel series in Xamarin.iOS Chart](ChartTypes_images/MinWidth.png)

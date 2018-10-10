@@ -62,7 +62,7 @@ public override void ViewDidLoad ()
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
 
-![](Getting-Started_images/img1.png)
+![Initializing Xamarin.iOS Chart](Getting-Started_images/img1.png)
 
 ## Initialize view model
 
@@ -229,7 +229,7 @@ namespace Chart_GettingStarted
 			
 The following output is displayed as a result of the above code example.
 
-![](Getting-Started_images/img2.png)
+![Tooltip support in Xamarin.iOS Chart](Getting-Started_images/img2.png)
 
 You can find the complete getting started sample from this [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
 
