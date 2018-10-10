@@ -27,7 +27,7 @@ chart.AddChartBehavior (behavior);
 {% endhighlight %}
 
 
-![](trackball_images/trackball_img1.png)
+![Trackball support in Xamarin.iOS Chart](trackball_images/trackball_img1.png)
 
 ## Label Display Mode
 
@@ -53,7 +53,7 @@ chart.AddChartBehavior (behavior);
 
 In the following screenshot, trackball label is shown for only single data point,
 
-![](trackball_images/trackball_img2.png)
+![Label display mode support for trackball in Xamarin.iOS Chart](trackball_images/trackball_img2.png)
 
 ## Customizing appearance
 
@@ -163,7 +163,7 @@ chart.AddChartBehavior (behavior);
 
 Following screenshot illustrates the customization of trackball elements.
 
-![](trackball_images/trackball_img3.png)
+![Customizing the appearance of trackball label in Xamarin.iOS Chart](trackball_images/trackball_img3.png)
 
 ## Show/hide the series label
 
@@ -186,4 +186,4 @@ chart.Series.Add(lineSeries);
 
 {% endhighlight %}
 
-![](trackball_images/series_trackball.png)
+![Showing and hiding the trackball label for series in Xamarin.iOS Chart](trackball_images/series_trackball.png)

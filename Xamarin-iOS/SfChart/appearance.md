@@ -25,7 +25,7 @@ Metro is the default palette for [`SFChart`](https://help.syncfusion.com/cr/cref
 
 The following screenshot shows the default appearance of multiple series.
 
-![](appearance_images/appearance_img1.png)
+![Predefined palettes support in Xamarin.iOS Chart](appearance_images/appearance_img1.png)
 
 **Custom Palette**
 
@@ -45,7 +45,7 @@ chart.ColorModel.CustomColors     = NSArray.FromObjects
 
 {% endhighlight %}
 
-![](appearance_images/appearance_img2.png)
+![Custom palette support in Xamarin.iOS Chart](appearance_images/appearance_img2.png)
 
 **None Palette**
 
@@ -73,7 +73,7 @@ series.ColorModel.Palette   = SFChartColorPalette.Metro;
 
 {% endhighlight %}
 
-![](appearance_images/appearance_img3.png)
+![Predefined palettes support in Xamarin.iOS Chart](appearance_images/appearance_img3.png)
 
 **Custom Palette**
 
@@ -99,7 +99,7 @@ series.ColorModel.CustomColors  = NSArray.FromObjects
 {% endhighlight %}
 
 
-![](appearance_images/appearance_img4.png)
+![Custom palette support in Xamarin.iOS Chart](appearance_images/appearance_img4.png)
 
 **None Palette**
 
@@ -156,7 +156,7 @@ Following code snippets and screenshot illustrates how to apply the gradient col
 
 {% endhighlight %}
 
-![](appearance_images/gradient_series.png)
+![Gradient support in Xamarin.iOS Chart](appearance_images/gradient_series.png)
 
 Following code snippet and screenshot illustrates how to apply the gradient color to the chart area.
 
@@ -180,7 +180,7 @@ Following code snippet and screenshot illustrates how to apply the gradient colo
 
 {% endhighlight %}
 
-![](appearance_images/gradient_chart.png)
+![Gradient support in Xamarin.iOS Chart](appearance_images/gradient_chart.png)
 
 ## Plotting Area Customization
 
