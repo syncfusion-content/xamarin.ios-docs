@@ -60,7 +60,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a sample application with SfPopupLayout
 
-The SfPopupLayout control can be configured entirely in C# code or via story board. To create a sample application for this control, follow the topics:  
+The SfPopupLayout control can be configured entirely in C# code or using story board. To create a sample application for this control, follow the topics:  
 
 * [Adding SfPopupLayout in Xamarin.iOS](#adding-sfpopuplayout-in-xamarin.iOS) 
 * [Customize positioning](# Customize-positioning) 
@@ -69,19 +69,17 @@ The SfPopupLayout control can be configured entirely in C# code or via story boa
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
-##Adding SfPopupLayout using story board
+## Adding SfPopupLayout using story board
 
-1. Add a new storyboard inside of project
+To add SfPopupLayout using story board, follow the steps:
 
-2. Drag SfPopupLayout control from toolbox and drop into storyboard
-
-3. Since this is a hosting control it does not show a preview on the designer page and you can only see the Popup when deployed in the device.
-
-4. Open the properties window of SfPopupLayout and set the required properties like shown in the below image.
+1. Add a new story board inside the project.
+2. Drag the SfPopupLayout control from toolbox and drop into story board. Preview will not be shown since this is a hosting control. You can only see the pop-up when deployed in the device.
+3. Open the properties window of SfPopupLayout and set the required properties.
 
 ![SfPopupLayout properties via story board](PopupLayout_images/storyboard_staysopen_sfpopup_ios.png)
 
-The below code will illustrate to display the SfPopupLayout when set as a root view via storyboard
+The following code illustrates displaying the SfPopupLayout when set as a root view using storyboard.
 
 {% tabs %}
 {% highlight c# %}
@@ -116,9 +114,9 @@ namespace Storyboard_SfPopupLayout_ios
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Storyboard_SfpopupLayout_ios-281954337).
+You can download the entire source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Storyboard_SfpopupLayout_ios-281954337).
 
-Refer this link to know the properties that can be configured via designer for SfPopupLayout
+Refer to this link to know the properties that can be configured using story board for SfPopupLayout.
 
 ## Adding SfPopupLayout in Xamarin.iOS using C# code
 
@@ -367,7 +365,7 @@ By default, you can choose from the following available animations in the SfPopu
 
 More information for pop-up animations is in this [link](https://help.syncfusion.com/xamarin-ios/sfpopuplayout/popup-animations).
 
-## Properties that can be configured via designer
+## Properties configured using story board
 
 <table>
 <tr>
