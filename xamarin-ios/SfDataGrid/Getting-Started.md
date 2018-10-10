@@ -83,7 +83,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Create a simple SfDataGrid 
 
-This section explains how to create a SfDataGrid and configure it. The SfDataGrid control can be configured entirely in C# code or via story board. This is how the final output will look like on iOS devices.
+This section explains how to create a SfDataGrid and configure it. The SfDataGrid control can be configured entirely in C# code or using story board. This is how the final output will look like on iOS devices.
  
 ![SfDataGrid in Xamarin.iOS](SfDataGrid_images/GettingStarted.png)
  
@@ -104,25 +104,21 @@ In this walk through, you will create a new application that contains the SfData
 
 Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 
-## Adding SfDataGrid in Xamarin.iOS using designer page
+## Adding SfDataGrid in Xamarin.iOS using story board
 
-1. Add a new storyboard inside of project.
-
-2. Drag the SfDataGrid control from the toolbox and drop it into the storyboard.
-
-3. Preview for SfDataGrid will be shown.
-
-4. Open the properties window of SfDataGrid and set the required properties.
+1. Add a new story board inside the project.
+2. Drag the SfDataGrid control from toolbox and drop it into the story board. Preview for SfDataGrid will be shown.
+3. Open the properties window of SfDataGrid and set the required properties.
 
 ![SfDataGrid renderer in designer page](SfDataGrid_images/StoryBoard_SfDataGrid_ios.gif)
 
-### Setting the SfDataGrid properties in designer page
+### Setting the SfDataGrid properties in story board
 
-Set the identity name and required properties for SfDataGrid in storyboard like shown in the below image.
+Set the identity name and required properties for SfDataGrid in story board.
 
 ![SfDataGrid properties](SfDataGrid_images/Storyboard_property_SfDataGrid_ios.png)
 
-Set the  identity name and required properties for SfDataPager in storyboard like shown in the below image.
+Set the identity name and required properties for SfDataPager in story board.
 
 ![SfDataGrid properties](SfDataGrid_images/Storyboard_property_SfDataPager_ios.png)
 
@@ -157,9 +153,9 @@ namespace Grid
 
 {% endtabs %}
 
-You can download the entire source code of this sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/custom_designer_sfdatagrid_ios-764618167).
+You can download the entire source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/custom_designer_sfdatagrid_ios-764618167).
 
-Refer this link to know the properties that can be configured via designer for SfDataGrid.
+Refer to this link to know the properties that can be configured using story board for SfDataGrid.
 
 ## Adding SfDataGrid in Xamarin.iOS using C# code
 
@@ -198,7 +194,7 @@ public partial class GettingStartedViewController : UIViewController
 {% endhighlight %}
 {% endtabs %}
 
-You can also set the HeaderRowHeight and RowHeight for SfDataGrid via storyboard like shown in the below image.
+You can also set HeaderRowHeight and RowHeight for SfDataGrid using story board.
 
 ![SfDataGrid properties](SfDataGrid_images/GettingStarted_HeaderRowHeight_RowHeight_ios.png)
 
@@ -372,7 +368,7 @@ dataGrid.Columns.Add (countryColumn);
 
 SfDataGrid allows you to apply sorting on its data by setting the [SfDataGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowSorting.html) property to true.
  
-You can also set the sorting for SfDataGrid via storyboard like shown in the below image.
+You can also set the sorting for SfDataGrid using story board.
  
 ![Sorting via story board in SfDataGrid fo Xamarin.iOS](SfDataGrid_images/GettinStarted_AllowSorting_StoryBoard_SfDataGrid.png)
  
@@ -427,7 +423,7 @@ public override void ViewDidLayoutSubviews()
 {% endhighlight %}
 {% endtabs %}
 
-You can also set the custom height and width to SfDataGrid via storyboard like shown in the below image.
+You can also set the custom height and width to SfDataGrid using story board.
 
 ![Custom width and height via story board in SfDataGrid for Xamarin.iOS](SfDataGrid_images/GettingStarted_Custom_Width_and_Height_Storyboard_SfDatagrid_iOS.png)
 
@@ -435,7 +431,7 @@ The following screenshot shows how the SfDataGrid is loaded with specific height
 
 ![SfDataGrid with specific heigt and width](SfDataGrid_images/Loading_with specific_height_and_width.png)
 
-## Properties that can be configured via designer
+## Properties configured using story board
 
 <table>
 <tr>
