@@ -46,7 +46,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.o
 
 Refer to the following screenshot in which the Syncfusion.Xamarin.SfPullToRefresh.iOS package is highlighted:
 
-![](GettingStarted_images/NuGetInstall.png)
+![SfPullToRefresh in nuget.org](GettingStarted_images/NuGetInstall.png)
 
 To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet, refer the list of assemblies mentioned in the table below.
 
@@ -93,7 +93,7 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iO
 
 6. Set the SfDataGrid as PullableContent to SfPullToRefresh in code behind.
 
-![](GettingStarted_images/StoryBoard_support_TransitionType_SfPullToRefresh_ios.png)
+![SfPullToRefresh properties via story board](GettingStarted_images/StoryBoard_support_TransitionType_SfPullToRefresh_ios.png)
 
 {% tabs %}
 
@@ -246,7 +246,7 @@ public MyViewController()
 {% endtabs %}
 
 Refer the below image to set TransitionType Mode to SfPullToRefresh via StoryBoard.
-![](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
+![SfPullToRefresh pro](GettingStarted_images/GettingStarted_StoryBoard_SfPullToRefresh_TransitionType_Push.png)
 
 ### Final output of the sample
 
