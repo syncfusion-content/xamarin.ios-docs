@@ -196,7 +196,7 @@ SFChart chart = new SFChart()
 
 The following screenshot illustrates an ATR indicator.
 
-![](technicalindicators_images/averagetrue.png)
+![Average true range indicator type in Xamarin.iOS Chart](technicalindicators_images/averagetrue.png)
 
 ## Simple moving average indicator
 
@@ -231,7 +231,7 @@ SFChart chart = new SFChart()
 
 The following screenshot illustrates an SMA indicator.
 
-![](technicalindicators_images/simplemovingaverage.png)
+![Simple moving average indicator type in Xamarin.iOS Chart](technicalindicators_images/simplemovingaverage.png)
 
 ## Relative strength index indicator
 
@@ -270,7 +270,7 @@ SFChart chart = new SFChart()
 
 The following screenshot illustrates an RSI technical indicator.
 
-![](technicalindicators_images/rsi.png)
+![Relative strength index indicator type in Xamarin.iOS Chart](technicalindicators_images/rsi.png)
 
 
 ## Accumulation distribution indicator
@@ -306,7 +306,7 @@ SFChart chart = new SFChart()
 
 The following screenshot illustrates an accumulation distribution indicator.
 
-![](technicalindicators_images/accumulation.png)
+![Accumulation distribution indicator type in Xamarin.iOS Chart](technicalindicators_images/accumulation.png)
 
 
 ## Momentum indicator
@@ -340,7 +340,7 @@ SFChart chart = new SFChart()
 
 {% endhighlight %}
 
-![](technicalindicators_images/momentum.png)
+![Momentum indicator type in Xamarin.iOS Chart](technicalindicators_images/momentum.png)
 
 
 ## Stochastic indicator
@@ -377,7 +377,7 @@ SFChart chart = new SFChart()
 };
 {% endhighlight %}
 
-![](technicalindicators_images/stochastic.png)
+![Stochastic indicator type in Xamarin.iOS Chart](technicalindicators_images/stochastic.png)
 
 ## Exponential moving average indicator
 
@@ -407,7 +407,7 @@ SFChart chart = new SFChart()
 
 {% endhighlight %}
 
-![](technicalindicators_images/exponentialmovingaverage.png)
+![Exponential moving average indicator type in Xamarin.iOS Chart](technicalindicators_images/exponentialmovingaverage.png)
 
 
 ## Triangular moving average indicator
@@ -440,7 +440,7 @@ SFChart chart = new SFChart()
 
 {% endhighlight %}
 
-![](technicalindicators_images/triangularmovingaverage.png)
+![Triangular moving average indicator type in Xamarin.iOS Chart](technicalindicators_images/triangularmovingaverage.png)
 
 ## Bollinger band indicator
 
@@ -476,7 +476,7 @@ SFChart chart = new SFChart()
 
 {% endhighlight %}
 
-![](technicalindicators_images/bollingerband.png)
+![Bollinger band indicator type in Xamarin.iOS Chart](technicalindicators_images/bollingerband.png)
 
 ## MACD indicator
 
@@ -514,4 +514,4 @@ SFChart chart = new SFChart()
 
 {% endhighlight %}
 
-![](technicalindicators_images/macd.png)
+![MACD indicator type in Xamarin.iOS Chart](technicalindicators_images/macd.png)

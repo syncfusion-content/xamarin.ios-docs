@@ -23,7 +23,7 @@ series.EnableTooltip           = true;
 {% endhighlight %}
 
 
-![](tooltip_images/tooltip1.png)
+![Tooltip support in Xamarin.iOS Chart](tooltip_images/tooltip1.png)
 
 
 ## Customizing appearance 
@@ -85,7 +85,7 @@ chart.AddChartBehavior (behavior);
 {% endhighlight %}
 
 
-![](tooltip_images/tooltip2.png)
+![Customizing the appearance of tooltip in Xamarin.iOS Chart](tooltip_images/tooltip2.png)
 
 ## Delegates
 
@@ -175,7 +175,7 @@ public override void WillShowTooltip (SFChart chart, SFChartTooltip tooltipView)
 {% endhighlight %}
 
 
-![](tooltip_images/tooltip3.png)
+![Customizing the appearance of tooltip view in Xamarin.iOS Chart](tooltip_images/tooltip3.png)
 
 ## Methods
 
