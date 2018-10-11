@@ -62,7 +62,7 @@ chart.Series.Add(columnSeries2);
 {% endhighlight %}
 
 
-![](ChartSeries_images/MultipleSeries.png)
+![Multiple series support in Xamarin.iOS Chart](ChartSeries_images/MultipleSeries.png)
 
 ## Combination Series
 
@@ -96,7 +96,7 @@ chart.Series.Add(lineSeries);
 {% endhighlight %}
 
 
-![](ChartSeries_images/CombinationSeries.png)
+![Combination of series support in Xamarin.iOS Chart](ChartSeries_images/CombinationSeries.png)
 
 **Limitation of combination chart**
 
@@ -131,7 +131,7 @@ chart.Series.Add(lineSeries);
 chart.Series.Add(pieSeries);
 {% endhighlight %}
 
-![](ChartSeries_images/Limitation.png)
+![Limitation of Xamarin.iOS Chart series combination](ChartSeries_images/Limitation.png)
 
 ## Grouping stacked series
 
@@ -185,7 +185,7 @@ chart.Series.Add(stackingColumnSeries4);
 
 {% endhighlight %}
 
-![](ChartSeries_images/groupedlabel.png)
+![Grouping support for stacked series in Xamarin.iOS Chart](ChartSeries_images/groupedlabel.png)
 
 ## Animation
 
@@ -211,4 +211,4 @@ series.IsTransposed   = true;
 
 {% endhighlight %}
 
-![](ChartSeries_images/VerticalChart.png)
+![Series transpose support in Xamarin.iOS Chart](ChartSeries_images/VerticalChart.png)

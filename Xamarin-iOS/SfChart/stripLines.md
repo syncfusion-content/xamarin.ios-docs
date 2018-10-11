@@ -59,7 +59,7 @@ yAxis.AddStripLine (stripLine);
 {% endhighlight %}
 
 
-![](striplines_images/stripline_img1.png)
+![Numerical strip lines support in Xamarin.iOS Chart](striplines_images/stripline_img1.png)
 
 **DateTimeStripLine**
 
@@ -94,7 +94,7 @@ xAxis.AddStripLine (stripLine);
 
 
 
-![](striplines_images/stripline_img2.png)
+![DateTime strip lines support in Xamarin.iOS Chart](striplines_images/stripline_img2.png)
 
 ## Strip Line Recurrence
 
@@ -138,7 +138,7 @@ xAxis.AddStripLine(stripLine);
 {% endhighlight %}
 
 
-![](striplines_images/stripline_img3.png)
+![Strip lines recurrence support in Xamarin.iOS Chart](striplines_images/stripline_img3.png)
 
 ## Customize Text
 
@@ -186,7 +186,7 @@ yAxis.AddStripLine (stripLine);
 {% endhighlight %}
 
 
-![](striplines_images/stripline_img4.png)
+![Strip lines text customization support in Xamarin.iOS Chart](striplines_images/stripline_img4.png)
 
 ## Segmented StripLine
 
@@ -237,7 +237,7 @@ xAxis.AddStripLine (stripLine);
 {% endhighlight %}
 
 
-![](striplines_images/stripline_img5.png)
+![Segmented strip lines support in Xamarin.iOS Chart](striplines_images/stripline_img5.png)
 
 Following code snippet shows how to set the segment start and end value if the associated axis type is date time. 
 
@@ -284,4 +284,4 @@ yAxis.AddStripLine (stripLine);
 {% endhighlight %}
 
 
-![](striplines_images/stripline_img6.png)
+![Segmented support for DateTime strip lines in Xamarin.iOS Chart](striplines_images/stripline_img6.png)

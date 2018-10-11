@@ -281,3 +281,34 @@ You can cancel resizing for a particular column using the `SfDataGrid.ColumnResi
                 e.Cancel = true;
         }
 {% endhighlight %}
+
+## Picker closed event
+
+This event is available for both the `GridPickerColumn` and the `GridDateTimeColumn`.The [GridPickerColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridPickerColumn~Closed_EV.html) and the [GridDateTimeColumn.Closed](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDateTimeColumn~Closed_EV.html) events will be triggered whenever the "Done" button is pressed in Picker editor and DateTime editor of the `GridPickerColumn` and `GridDateTimeColumn` respectively. This event handler contains the parameter of type [PickerClosedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs.html) that contains the following properties.
+
+* [OldValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs~OldValue.html) : Gets the old value of the picker.
+* [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs~NewValue.html) : Gets the newly selected value of the picker.
+* [Action](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.PickerClosedEventArgs~Action.html)   : Returns string value "Commit" when "Done" button is pressed or "Cancel" when the picker view is collapsed without pressing "Done" button.
+
+The following code illustrates how to hook the `Closed` event and get the picker details.
+
+{% highlight c# %}
+
+            //For GridPickerColumn event has been raised.
+            GridPickerColumn  pickerColumn= new GridPickerColumn() { MappingName = "ShipCountry" };
+            pickerColumn.Closed += Closed_Method;
+            dataGrid.Columns.Add(pickerColumn);
+
+            //For GridDateTimeColumn event has been raised.
+            GridDateTimeColumn dateTimeColumn = new GridDateTimeColumn() { MappingName = "ShippingDate" };
+            dateTimeColumn.Closed += Closed_Method;
+            dataGrid.Columns.Add(dateTimeColumn);
+
+            private void Closed_Method(object sender, PickerClosedEventArgs e)
+            {
+              var newValue = e.NewValue;
+              var oldValue = e.OldValue;
+              var action = e.Action;
+            }
+
+{% endhighlight %}
