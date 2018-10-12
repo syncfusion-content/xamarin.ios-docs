@@ -480,7 +480,7 @@ SFChart chart = new SFChart()
 ## MACD indicator
 
 This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~ShortPeriod.html) and [`LongPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~LongPeriod.html) for defining the motion of the indicator.
-Also you can draw [`Line`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartMACDType.html), histogram MACD or both using the [`MACDType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~MACDType.html) property, which defines the type of MACD to be drawn.
+Also you can draw [`Line`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartMACDType.html), Histogram MACD or Both using the [`MACDType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~MACDType.html) property, which defines the type of MACD to be drawn.
 
 The [`MACDLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~MACDLineColor.html) property is used to define the color for the MACD line  and the  [`HistogramColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~HistogramColor.html) property is used to define the color for the MACD histogram.
 You can specify the MACD indicator using the following code example.
