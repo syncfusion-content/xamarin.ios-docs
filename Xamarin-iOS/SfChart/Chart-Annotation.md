@@ -156,8 +156,7 @@ chart.Series.Add(series);
 
 ## Text annotation
 
-The [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.TextAnnotation.html) is used to add simple text in specific points over the chart area.
-
+The [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.TextAnnotation.html) is used to add simple text with the help of ['Text`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.TextAnnotation~Text.html) property in specific points over the chart area.
 {% highlight c# %}
 
 SFChart chart = new SFChart();
