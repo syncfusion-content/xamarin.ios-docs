@@ -213,7 +213,7 @@ chart.AnimateSeries();
 
 ### Animate
 
-The [`Animate`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Animate.html) can be used to animate the series programmatically.
+The [`Animate`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Animate.html) can be used to animate particular series in the chart programmatically.
 
 {% highlight c# %}
 
