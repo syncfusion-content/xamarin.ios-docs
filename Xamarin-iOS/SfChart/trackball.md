@@ -195,3 +195,27 @@ chart.Series.Add(lineSeries);
 {% endhighlight %}
 
 ![Showing and hiding the trackball label for series in Xamarin.iOS Chart](trackball_images/series_trackball.png)
+
+## Methods
+
+### Show method
+
+The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~Show.html) method is used to activate the trackball at the specified location.
+
+{% highlight c# %} 
+[C#]
+
+trackball.Show(point);
+
+{% endhighlight %}
+
+### Hide method
+
+The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~Hide.html) method is used to hide the trackball programmatically.
+
+{% highlight c# %} 
+[C#]
+
+trackball.Hide();
+
+{% endhighlight %}
