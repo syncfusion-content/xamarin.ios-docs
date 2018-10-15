@@ -30,7 +30,7 @@ chart.PrimaryAxis 	 = xAxis;
 {% endhighlight %}
 
 
-![]( Axis_images/CategoryAxis.png)
+![Category axis support in Xamarin.iOS Chart]( Axis_images/CategoryAxis.png)
 
 ### Placing labels between ticks
 
@@ -41,7 +41,7 @@ Labels in category axis can be placed between the ticks by setting [`LabelPlacem
 xAxis.LabelPlacement = SFChartLabelPlacement.BetweenTicks;
 {% endhighlight %}
 
-![]( Axis_images/BetweenTicks.png)
+![Axis labels between ticks support in Xamarin.iOS Chart]( Axis_images/BetweenTicks.png)
 
 ### Displaying labels after a fixed interval
 
@@ -54,7 +54,7 @@ xAxis.Interval = new NSNumber (2);
 {% endhighlight %}
 
 
-![]( Axis_images/CategoryInterval.png)
+![Enable or disable the axis auto-interval support in Xamarin.iOS Chart]( Axis_images/CategoryInterval.png)
 
 ## Numeric Axis
 
@@ -68,7 +68,7 @@ SFNumericalAxis xAxis = new SFNumericalAxis ();
 chart.PrimaryAxis     = xAxis;
 {% endhighlight %}
 
-![]( Axis_images/NumericalAxis.png)
+![Numerical axis support in Xamarin.iOS Chart]( Axis_images/NumericalAxis.png)
 
 ### Customizing numeric range
 
@@ -88,7 +88,7 @@ yAxis.Maximum           = new NSNumber (50);
 {% endhighlight %}
 
 
-![]( Axis_images/NumericMinMax.png)
+![NumericalAxis range customization support in Xamarin.iOS Chart]( Axis_images/NumericMinMax.png)
 
 ### Customizing numeric interval
 
@@ -99,7 +99,7 @@ Axis interval can be customized using the [`Interval`](https://help.syncfusion.c
 yAxis.Interval = new NSNumber (10);
 {% endhighlight %}
 
-![]( Axis_images/NumericInterval.png)
+![NumericalAxis interval customization support in Xamarin.iOS Chart]( Axis_images/NumericInterval.png)
 
 ### Apply padding to the range
 
@@ -121,7 +121,7 @@ yAxis.RangePadding = SFChartNumericalPadding.None;
 {% endhighlight %}
 
 
-![]( Axis_images/NumericPaddingNone.png)
+![NumericalAxis range padding support in Xamarin.iOS Chart]( Axis_images/NumericPaddingNone.png)
 
 **Round**
 
@@ -133,7 +133,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Round;
 {% endhighlight %}
 
 
-![]( Axis_images/NumericPaddingRound.png)
+![NumericalAxis range padding support in Xamarin.iOS Chart]( Axis_images/NumericPaddingRound.png)
 
 **Additional**
 
@@ -145,7 +145,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Additional;
 {% endhighlight %}
 
 
-![]( Axis_images/NumericPaddingAdditional.png)
+![NumericalAxis range padding support in Xamarin.iOS Chart]( Axis_images/NumericPaddingAdditional.png)
 
 **Normal**
 
@@ -157,7 +157,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Normal;
 {% endhighlight %}
 
 
-![]( Axis_images/NumericPaddingNormal.png)
+![NumericalAxis range padding support in Xamarin.iOS Chart]( Axis_images/NumericPaddingNormal.png)
 
 ## Date Time Axis
 
@@ -171,7 +171,7 @@ chart.PrimaryAxis    = xAxis;
 {% endhighlight %}
 
 
-![]( Axis_images/DateTimeAxis.png)
+![DateTime axis support in Xamarin.iOS Chart]( Axis_images/DateTimeAxis.png)
 
 ### Customizing date time range
 
@@ -187,7 +187,7 @@ primaryAxis.Maximum = calendar.DateFromComponents(new NSDateComponents() {Year =
 {% endhighlight %}
 
 
-![]( Axis_images/DateTimeMinMax.png)
+![DateTimeAxis range customization support in Xamarin.iOS Chart]( Axis_images/DateTimeMinMax.png)
 
 ### Date time intervals
 
@@ -211,15 +211,15 @@ xAxis.Interval     = new NSNumber (6);
 {% endhighlight %}
 
 
-![]( Axis_images/DateTimeInterval.png)
+![DateTimeAxis interval support in Xamarin.iOS Chart]( Axis_images/DateTimeInterval.png)
 
 ### Apply padding to the range
 
 Padding can be applied to the minimum and maximum extremes of the range by using [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~RangePadding.html) property. Date time axis supports the following types of padding:
 
-* None
-* Round
-* Additional
+* [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimePadding.html)
+* [`Round`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimePadding.html)
+* [`Additional`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimePadding.html)
 
 **None**
 
@@ -231,7 +231,7 @@ xAxis.RangePadding = SFChartDateTimePadding.None;
 {% endhighlight %}
 
 
-![]( Axis_images/DateTimePaddingNone.png)
+![DateTimeAxis range padding support in Xamarin.iOS Chart]( Axis_images/DateTimePaddingNone.png)
 
 **Round**
 
@@ -244,7 +244,7 @@ xAxis.RangePadding = SFChartDateTimePadding.Round;
 {% endhighlight %}
 
 
-![]( Axis_images/DateTimePaddingRound.png)
+![DateTimeAxis range padding support in Xamarin.iOS Chart]( Axis_images/DateTimePaddingRound.png)
 
 **Additional**
 
@@ -256,7 +256,7 @@ xAxis.RangePadding = SFChartDateTimePadding.Additional;
 {% endhighlight %}
 
 
-![]( Axis_images/DateTimePaddingAdditional.png)
+![DateTimeAxis range padding support in Xamarin.iOS Chart]( Axis_images/DateTimePaddingAdditional.png)
 
 ## Date-time category axis
 
@@ -274,7 +274,7 @@ chart.PrimaryAxis = xAxis;
 
 {% endhighlight %}
 
-![]( Axis_images/DateTimeCategoryAxis.png)
+![DateTimeCategory axis support in Xamarin.iOS Chart]( Axis_images/DateTimeCategoryAxis.png)
 
 ## Logarithmic Axis
 
@@ -288,7 +288,7 @@ chart.SecondaryAxis        = yAxis;
 {% endhighlight %}
 
 
-![]( Axis_images/LogAxis1.png)
+![Logarithmic axis support in Xamarin.iOS Chart]( Axis_images/LogAxis1.png)
 
 ### Customizing the logarithmic range
 
@@ -306,7 +306,7 @@ chart.SecondaryAxis             = yAxis;
 {% endhighlight %}
 
 
-![]( Axis_images/LogAxis2.png)
+![LogarithmicAxis range customization support in Xamarin.iOS Chart]( Axis_images/LogAxis2.png)
 
 ### Customizing the logarithmic base 
 
@@ -323,7 +323,7 @@ chart.SecondaryAxis              = yAxis;
 {% endhighlight %}
 
 
-![]( Axis_images/LogAxis3.png)
+![LogarithmicAxis base support in Xamarin.iOS Chart]( Axis_images/LogAxis3.png)
 
 ## Common axis features
 
@@ -340,7 +340,7 @@ chart.SecondaryAxis.Visible = false;
 {% endhighlight %}
 
 
-![]( Axis_images/AxisIsVisible.png)
+![Axis visibility support in Xamarin.iOS Chart]( Axis_images/AxisIsVisible.png)
 
 ### Axis title
 
@@ -366,7 +366,7 @@ chart.PrimaryAxis.Title.Font   = UIFont.BoldSystemFontOfSize(20);
 {% endhighlight %}
 
 
-![]( Axis_images/AxisTitle.png)
+![Axis title support in Xamarin.iOS Chart]( Axis_images/AxisTitle.png)
 
 ### Axis label rotation
 
@@ -382,7 +382,7 @@ chart.PrimaryAxis = categoryAxis;
 
 {% endhighlight %}
 
-![]( Axis_images/rotationangle.png)
+![Axis label rotation support in Xamarin.iOS Chart]( Axis_images/rotationangle.png)
 
 ### Axis line customization
 
@@ -412,7 +412,7 @@ chart.PrimaryAxis = primaryAxis;
 
 {% endhighlight %}
 
-![]( Axis_images/axislinecustom.png)
+![Axis line customization support in Xamarin.iOS Chart]( Axis_images/axislinecustom.png)
 
 ### Axis line offset
 
@@ -432,7 +432,7 @@ chart.PrimaryAxis = categoryAxis;
 
 {% endhighlight %}
 
-![]( Axis_images/axislineoffset.png)
+![Axis line offset support in Xamarin.iOS Chart]( Axis_images/axislineoffset.png)
 
 ### Label customization
 
@@ -444,7 +444,7 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfus
 * [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderWidth.html) – used to change the thickness of the border.
 * [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Font.html) – used to change the text size, font family and font weight.
 * [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Margin.html) - used to change the margin size for labels.
-* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~LabelAlignment.html) - Used to align the label at the start, center, or end.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~LabelAlignment.html) - Used to align the label at the [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisLabelAlignment.html), Center, or End.
 * [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~CornerRadius.html) - Used to change the corner radius of the background of labels.
 * [`MaxWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~MaxWidth.html) - Provides the maximum text width of the axis label and wraps into the next line when exceeds the maximum width.
 * [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~WrappedLabelAlignment.html) - Positions the wrapped text at the start, center, or end. The default value of the [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~WrappedLabelAlignment.html) property is `Start`.
@@ -458,11 +458,11 @@ chart.PrimaryAxis.LabelStyle.Color = UIColor.Red;
 {% endhighlight %}
 
 
-![]( Axis_images/LabelStyle.png)
+![Axis label customization support in Xamarin.iOS Chart]( Axis_images/LabelStyle.png)
 
 ### Label and tick positioning
 
-Axis labels and ticks can be positioned inside or outside the chart area by using [`LabelsPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~LabelsPosition.html) and [`TickPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~TickPosition.html) properties of [`SFAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis.html). By default labels and ticks will be positioned outside the chart area.
+Axis labels and ticks can be positioned [`Inside`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html) or [`Outside`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html) the chart area by using [`LabelsPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisLabelStyle~LabelsPosition.html) and [`TickPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~TickPosition.html) properties of [`SFAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis.html). By default labels and ticks will be positioned outside the chart area.
 
 {% highlight c# %}
 
@@ -472,27 +472,27 @@ chart.PrimaryAxis.TickPosition                = SFChartAxisElementPosition.Insid
 {% endhighlight %}
 
 
-![]( Axis_images/TickPosition.png)
+![Axis labels and ticks positioning support in Xamarin.iOS Chart]( Axis_images/TickPosition.png)
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners.
+Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~EdgeLabelsDrawingMode.html) property can be used to avoid the partial appearance of labels at the corners. The default [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~EdgeLabelsDrawingMode.html) is [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsDrawingMode.html).
 
 {% highlight c# %}
 
 chart.PrimaryAxis.EdgeLabelsDrawingMode = SFChartAxisEdgeLabelsDrawingMode.Shift; 
 {% endhighlight %}
 
-![]( Axis_images/EdgeLabel.png)
+![Axis edge labels placement support in Xamarin.iOS Chart]( Axis_images/EdgeLabel.png)
 
 ### Edge labels visibility
 
 The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~EdgeLabelsVisibilityMode.html) property.
 The following options are available in [`EdgeLabelsVisibilityMode`]((https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~EdgeLabelsVisibilityMode.html),
 
-* `Default` - used to display the edge label based on auto interval calculations.
-* `Visible` - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
-* `AlwaysVisible` - used to always display the edge labels even while zooming the chart.
+* [`Default`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html) - used to display the edge label based on auto interval calculations.
+* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+* [`AlwaysVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html) - used to always display the edge labels even while zooming the chart.
 
 The following code example demonstrates the AlwaysVisible option.
 
@@ -517,11 +517,12 @@ Chart.PrimaryAxis.Title.Text = new NSString("Month");
 {% endhighlight %}
 
 
-![]( Axis_images/labelextent.png)
+![Axis label extent support in Xamarin.iOS Chart]( Axis_images/labelextent.png)
 
 ### Grid lines customization
 
 The [`ShowMajorGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~ShowMajorGridLines.html) and [`ShowMinorGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~ShowMinorGridLines.html) properties are used to control the visibility of grid lines. [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MajorGridLineStyle.html) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorGridLineStyle.html) properties in axis are used to customize the major grid lines and minor grid lines of an axis respectively. They provide options to change the width, dashes, color of grid lines. By default minor grid lines will not be visible. 
+
 {% highlight c# %}
 
 yAxis.ShowMajorGridLines    = true;
@@ -532,7 +533,7 @@ yAxis.MinorTicksPerInterval	= 1;
 
 {% endhighlight %}
 
-![]( Axis_images/GridLineStyle.png)
+![Axis grid lines customization support in Xamarin.iOS Chart]( Axis_images/GridLineStyle.png)
 
 ### Tick lines customization
 
@@ -563,7 +564,7 @@ yAxis.MinorTickStyle.LineColor  = UIColor.Green;
 {% endhighlight %}
 
 
-![]( Axis_images/TickStyle.png)
+![Axis tick lines customization support in Xamarin.iOS Chart]( Axis_images/TickStyle.png)
 
 ### Inversing axis
 
@@ -576,7 +577,7 @@ chart.SecondaryAxis.IsInversed = true;
 {% endhighlight %}
 
 
-![]( Axis_images/IsInversed.png)
+![Axis inverse support in Xamarin.iOS Chart]( Axis_images/IsInversed.png)
 
 ### Placing axes at the opposite side
 
@@ -588,7 +589,7 @@ chart.SecondaryAxis.OpposedPosition = true;
 
 {% endhighlight %}
 
-![]( Axis_images/OpposedPosition.png)
+![Opposed axis support in Xamarin.iOS Chart]( Axis_images/OpposedPosition.png)
 
 ### Offset the rendering
 
@@ -602,7 +603,7 @@ Chart.SecondaryAxis = new SFNumericalAxis() { PlotOffset = 30 };
 
 {% endhighlight %}
 
-![]( Axis_images/plotoffset.png)
+![PlotOffset support for axis in Xamarin.iOS Chart]( Axis_images/plotoffset.png)
 
 ### Maximum number of labels per 100 pixels
 
@@ -615,7 +616,7 @@ Chart.SecondaryAxis.MaximumLabels = 5;
 {% endhighlight %}
 
 
-![]( Axis_images/MaxLabels.png)
+![Maximum axis labels support in Xamarin.iOS Chart]( Axis_images/MaxLabels.png)
 
 ### Auto scrolling
 
@@ -625,11 +626,11 @@ By adding [`SFChartZoomPanBehavior`](https://help.syncfusion.com/cr/cref_files/x
 
 ### Auto scrolling delta type
 
-In [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html), you can apply auto scrolling delta value in years, months, days, hours, minutes, seconds and milliseconds by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingDelta.html) property.
+In [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html), you can apply auto scrolling delta value in [`Years`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Months`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Days`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Hours`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Minutes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Seconds`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html) and [`Milliseconds`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html) by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingDelta.html) property.
 
 ### Auto scrolling mode
 
-[`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) is `End`.
+[`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~AutoScrollingMode.html) is [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAutoScrollingMode.html).
 
 {% highlight c# %}
 
@@ -661,7 +662,7 @@ chart.SecondaryAxis = new SFNumericalAxis()
 
 {% endhighlight %}
 
-![]( Axis_images/AxisCrossing_img1.png)
+![AxisCrossing support in Xamarin.iOS Chart]( Axis_images/AxisCrossing_img1.png)
 
 ### Crossing at specific axis
 
@@ -702,7 +703,7 @@ chart.Series.Add(series);
 
 {% endhighlight %}
 
-![]( Axis_images/AxisCrossing_img2.png)
+![Crossing at Specific axis support in Xamarin.iOS Chart]( Axis_images/AxisCrossing_img2.png)
 
 ### Crossing in date time axis
 
@@ -722,7 +723,7 @@ chart.SecondaryAxis =  new SFNumericalAxis()
 
 {% endhighlight %}
 
-![]( Axis_images/AxisCrossing_img4.png)
+![DateTimeAxis crosses at support in Xamarin.iOS Chart]( Axis_images/AxisCrossing_img4.png)
 
 ### Positioning the axis elements while crossing
 
@@ -745,7 +746,7 @@ chart.SecondaryAxis = new SFNumericalAxis()
 
 {% endhighlight %}
 
-![]( Axis_images/AxisCrossing_img5.png)
+![Positioning axis elements while crossing support in Xamarin.iOS Chart]( Axis_images/AxisCrossing_img5.png)
 
 ## Smart Axis Labels
 
@@ -758,7 +759,7 @@ chart.PrimaryAxis.LabelsIntersectAction = SFChartAxisLabelsIntersectAction.Multi
 {% endhighlight %}
 
 
-![]( Axis_images/LabelsIntersectAction.png)
+![Smart axis labels support in Xamarin.iOS Chart]( Axis_images/LabelsIntersectAction.png)
 
 ## Events
 

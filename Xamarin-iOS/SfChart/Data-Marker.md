@@ -19,7 +19,7 @@ lineSeries.DataMarker.ShowMarker = true;
 {% endhighlight %}
 
 
-![](Datamarker_images/DataMarker.png)
+![Data markers support in Xamarin.iOS Chart](Datamarker_images/DataMarker.png)
 
 ## Customizing Labels
 
@@ -55,7 +55,7 @@ lineSeries.DataMarker.LabelStyle.Margin          = new UIEdgeInsets(5,5,5,5);
 lineSeries.DataMarker.LabelStyle.Font            = UIFont.ItalicSystemFontOfSize (18);
 {% endhighlight %}
 
-![](Datamarker_images/Customizing_Labels.png)
+![Customizing the labels of data markers in Xamarin.iOS Chart](Datamarker_images/Customizing_Labels.png)
 
 ## Formatting Label Content
 
@@ -69,7 +69,7 @@ You can customize the content of the label using [`LabelContent`](https://help.s
 pieSeries.DataMarker.LabelContent = SFChartLabelContent.Percentage;
 {% endhighlight %}
 
-![](Datamarker_images/Label_Content.png)
+![Formatting the label content of data markers in Xamarin.iOS Chart](Datamarker_images/Label_Content.png)
 
 ## Label Position
 
@@ -77,7 +77,7 @@ The [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Sync
 
 The following screenshot illustrates the default position of data marker labels,
 
-![](Datamarker_images/LabelPosition_Default.png)
+![Positioning the data marker labels support in Xamarin.iOS Chart](Datamarker_images/LabelPosition_Default.png)
 
 
 The following code sample illustrates the center position of data marker labels,
@@ -87,7 +87,7 @@ The following code sample illustrates the center position of data marker labels,
 series.DataMarker.LabelStyle.LabelPosition = SFChartDataMarkerLabelPosition.Center;
 {% endhighlight %}
 
-![](Datamarker_images/LabelPosition_Center.png)
+![Positioning the data marker labels support in Xamarin.iOS Chart](Datamarker_images/LabelPosition_Center.png)
 
 The following code sample illustrates the Inner position of data marker labels,
 
@@ -96,7 +96,7 @@ The following code sample illustrates the Inner position of data marker labels,
 series.DataMarker.LabelStyle.LabelPosition = SFChartDataMarkerLabelPosition.Inner;
 {% endhighlight %}
 
-![](Datamarker_images/LabelPosition_Inner.png)
+![Positioning the data marker labels support in Xamarin.iOS Chart](Datamarker_images/LabelPosition_Inner.png)
 
 
 The following code sample illustrates the outer position of data marker labels, 
@@ -107,7 +107,7 @@ series.DataMarker.LabelStyle.LabelPosition = SFChartDataMarkerLabelPosition.Oute
 {% endhighlight %}
 
 
-![](Datamarker_images/LabelPosition_Outer.png)
+![Positioning the data marker labels support in Xamarin.iOS Chart](Datamarker_images/LabelPosition_Outer.png)
 
 
 # Smart Labels
@@ -141,7 +141,7 @@ return series;
 
 {% endhighlight %}
 
-![](Datamarker_images/Smartlabels.png)
+![Smart labels support for data markers in Xamarin.iOS Chart](Datamarker_images/Smartlabels.png)
 
 ## Customizing Marker Shapes
 
@@ -175,7 +175,7 @@ lineSeries.DataMarker.MarkerBorderColor = UIColor.Red;
 lineSeries.DataMarker.MarkerBorderWidth = 2;
 {% endhighlight %}
 
-![](Datamarker_images/Marker.png)
+![Data markers shape customization support in Xamarin.iOS Chart](Datamarker_images/Marker.png)
 
 ## Apply series color
 
@@ -223,9 +223,9 @@ lineSeries.DataMarker.ConnectorLineStyle.Dashes = NSArray.FromNSObjects (dashes)
 {% endhighlight %}
 
 
-![](Datamarker_images/ConnectorLine.png)
+![Connector line support for data markers in Xamarin.iOS Chart](Datamarker_images/ConnectorLine.png)
 
-N> For Pie and Doughnut series, you can set the Bezier curve for connector line using [`ConnectorLineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~ConnectorLineType.html) property of Pie and Doughnut series.
+N> For Pie and Doughnut series, you can set the [`Bezier`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartConnectorLineType.html) curve for connector line using [`ConnectorLineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCircularSeries~ConnectorLineType.html) property of Pie and Doughnut series.
 
 ## Event
 
@@ -244,5 +244,5 @@ The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin
 * [`MarkerBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerBorderWidth.html) – Gets or sets the border width of marker symbol.
 * [`MarkerBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerBorderColor.html) – Gets or sets the border color of marker symbol.
 * [`MarkerColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerColor.html) – Gets or sets the marker color.
-* [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerType.html) – Gets or sets the shape type of marker. The available shapes are ellipse, diamond, hexagon, cross, HorizontalLine, VerticalLine, InvertedTriangle, triangle, pentagon, plus, and square.
+* [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~MarkerType.html) – Gets or sets the shape type of marker. The available shapes are [`Ellipse`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), [`Diamond`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), [`Hexagon`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), [`Cross`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), [`HorizontalLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), [`VerticalLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), [`Triangle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), [`Pentagon`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), [`Plus`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html), and [`Square`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDataMarkerType.html).
 * [`View`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DataMarkerLabel~View.html) - Gets or sets the view.

@@ -43,7 +43,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image1.png)
+![Annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img1.png)
 
 ## Positioning the annotation
 
@@ -51,7 +51,7 @@ Annotations can be positioned in plot area based on [`X1`](https://help.syncfusi
 
 ### Positioning based on CoordinateUnit as axis
 
-To position the annotation based on axis, set the [`X1`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotation~X1.html) and [`Y1`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotation~Y1.html), [`X2`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ShapeAnnotation~X2.html) and [`Y2`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ShapeAnnotation~Y2.html) properties based on axis range values, if needed, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotation~CoordinateUnit.html) value as `Axis`.
+To position the annotation based on axis, set the [`X1`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotation~X1.html) and [`Y1`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotation~Y1.html), [`X2`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ShapeAnnotation~X2.html) and [`Y2`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ShapeAnnotation~Y2.html) properties based on axis range values, if needed, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotation~CoordinateUnit.html) value as [`Axis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartCoordinateUnit.html).
 
 {% highlight c# %}
 
@@ -77,7 +77,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image2.png)
+![Positioning the Xamarin.iOS Chart annotation based on axis coordinates](Chart_Annotation_images/img2.png)
 
 ### Positioning based on CoordinateUnit as pixels
 
@@ -107,7 +107,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image3.png)
+![Positioning the Xamarin.iOS Chart annotation based on pixel coordinates](Chart_Annotation_images/img3.png)
 
 ## Adding annotation for multiple axes
 
@@ -152,12 +152,11 @@ chart.Series.Add(series);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image4.png)
+![Multiple axis support for annotation in Xamarin.iOS Chart](Chart_Annotation_images/img4.png)
 
 ## Text annotation
 
-The [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.TextAnnotation.html) is used to add simple text in specific points over the chart area.
-
+The [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.TextAnnotation.html) is used to add simple text with the help of ['Text`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.TextAnnotation~Text.html) property in specific points over the chart area.
 {% highlight c# %}
 
 SFChart chart = new SFChart();
@@ -176,7 +175,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image5.png)
+![Text annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img5.png)
 
 ### Customizing text annotation
 
@@ -188,8 +187,8 @@ The [`TextAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syn
 * [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderWidth.html) – Used to change the width of the border.
 * [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Font.html) – Used to change the text size, family, and weight.
 * [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Margin.html) - Used to change the margin of the text.
-* [`HorizontalLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationLabelStyle~HorizontalLabelAlignment.html) – Used to align the text horizontally.
-* [`VerticalLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationLabelStyle~VerticalLabelAlignment.html) – Used to align the text vertically.
+* [`HorizontalLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationLabelStyle~HorizontalLabelAlignment.html) – Used to align the text horizontally([`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html),[`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html),[`End`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html)).
+* [`VerticalLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationLabelStyle~VerticalLabelAlignment.html) – Used to align the text vertically([`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html),[`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html),[`End`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html)).
 
 {% highlight c# %}
 
@@ -223,7 +222,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image6.png)
+![Customizing text annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img6.png)
 
 ## Shape annotation
 
@@ -270,7 +269,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image7.png)
+![Rectangle annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img7.png)
 
 ### Ellipse annotation
 
@@ -298,7 +297,7 @@ chart.Annotations.Add(annotation);
 
 N> When [`X2`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ShapeAnnotation~X2.html) and [`Y2`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ShapeAnnotation~Y2.html) properties of [`EllipseAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.EllipseAnnotation.html) are set,  [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.EllipseAnnotation~Height.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.EllipseAnnotation~Width.html) properties do not work.
 
-![](Chart_Annotation_images/image8.png)
+![Ellipse annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img8.png)
 
 ### Line annotation
 
@@ -326,11 +325,11 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image9.png)
+![Line annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img9.png)
 
 **Adding arrow to line annotation**
 
-To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.LineAnnotation~LineCap.html) property to `Arrow`. The default value of the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.LineAnnotation~LineCap.html) property is `None`.
+To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.LineAnnotation~LineCap.html) property to [`Arrow`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLineCap.html). The default value of the [`LineCap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.LineAnnotation~LineCap.html) property is [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartLineCap.html).
 
 {% highlight c# %}
 
@@ -354,7 +353,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image10.png)
+![Arrow support for line annotation in Xamarin.iOS Chart](Chart_Annotation_images/img10.png)
 
 ### Vertical and Horizontal line annotations
 
@@ -381,7 +380,7 @@ chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image11.png)
+![Vertical and Horizontal line annotation support in Xamarin.iOS Chart](Chart_Annotation_images/img11.png)
 
 **Displaying axis label for vertical and horizontal line annotations**
 
@@ -412,7 +411,7 @@ chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image12.png)
+![Displaying axis label for vertical and horizontal line annotations in Xamarin.iOS Chart](Chart_Annotation_images/img12.png)
 
 **Customizing axis label**
 
@@ -474,7 +473,7 @@ chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image13.png)
+![Customizing axis label in Xamarin.iOS Chart](Chart_Annotation_images/img13.png)
 
 **Adding arrow to vertical and horizontal line annotations**
 
@@ -505,7 +504,7 @@ chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image14.png)
+![Arrow support for vertical and horizontal line annotations in Xamarin.iOS Chart](Chart_Annotation_images/img14.png)
 
 ## Adding text in shape annotation 
 
@@ -558,7 +557,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image15.png)
+![Customizing text for shape annotation in Xamarin.iOS Chart](Chart_Annotation_images/img15.png)
 
 ## View annotation
 
@@ -590,7 +589,7 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
-![](Chart_Annotation_images/image16.png)
+![View annotation type in Xamarin.iOS Chart](Chart_Annotation_images/img16.png)
 
 ## Event
 

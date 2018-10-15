@@ -20,7 +20,7 @@ chart.Legend.Visible = true;
 {% endhighlight %}
 
 
-![](Legend_images/Legend.png)
+![Legend support in Xamarin.iOS Chart](Legend_images/Legend.png)
 
 ## Customizing Labels
 
@@ -40,11 +40,11 @@ chart.Legend.LabelStyle.Font   = UIFont.BoldSystemFontOfSize (18);
 chart.Legend.LabelStyle.Margin = new UIEdgeInsets (0, 5, 0, 5);
 {% endhighlight %}
 
-![](Legend_images/Customizing_Labels.png)
+![Legend labels customization support in Xamarin.iOS Chart](Legend_images/Customizing_Labels.png)
 
 ## Legend Icons
 
-The legend icons are enabled by default, however, you can control its visibility using [`IsIconVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~IsIconVisible.html) property. The icon type also can be specified using the [`LegendIcon`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~LegendIcon.html) property in [`SFSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries.html). [`IconWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~IconWidth.html) and [`IconHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~IconHeight.html) properties are used to adjust the width and height of the legend icons respectively.
+The legend icons are enabled by default, however, you can control its visibility using [`IsIconVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~IsIconVisible.html) property. The icon type also can be specified using the [`LegendIcon`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~LegendIcon.html) property in [`SFSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries.html). Default icon type is [`Circle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendIcon.html). [`IconWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~IconWidth.html) and [`IconHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~IconHeight.html) properties are used to adjust the width and height of the legend icons respectively.
 
 
 {% highlight c# %}
@@ -57,7 +57,7 @@ SFPieSeries series          = new SFPieSeries ();
 series.LegendIcon           = SFChartLegendIcon.SeriesType;
 {% endhighlight %}
 
-![](Legend_images/Legend_Icons.png)
+![Legend icons in Xamarin.iOS Chart](Legend_images/Legend_Icons.png)
 
 ## Legend Title
 
@@ -91,7 +91,7 @@ chart.Legend.Title.BorderWidth      = 3;
 {% endhighlight %}
 
 
-![](Legend_images/Legend_Title.png)
+![Title for legend in Xamarin.iOS Chart](Legend_images/Legend_Title.png)
 
 ## Toggle the series visibility
 
@@ -146,7 +146,7 @@ The legend items can be placed in multiple rows by using [`OverflowMode`](http:/
 
 {% endhighlight %}
 
-![](Legend_images/LegendWrap_img1.png)
+![Legend wrapping support in Xamarin.iOS Chart](Legend_images/LegendWrap_img1.png)
 
 ### Legend Width
 
@@ -162,7 +162,7 @@ The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.c
 
 {% endhighlight %}
 
-![](Legend_images/LegendWrap_img2.png)
+![Providing width for legend in Xamarin.iOS Chart](Legend_images/LegendWrap_img2.png)
 
 ## Positioning the Legend
 
@@ -171,7 +171,7 @@ You can position the legend anywhere inside the chart. Following properties are 
 * [`DockPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~DockPosition.html)– used to position the legend relatively. Options available are: [`Left`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendPosition.html)., [`Right`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendPosition.html)., [`Top`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendPosition.html)., [`Bottom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendPosition.html). and [`Floating`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendPosition.html). If the dock position is Floating, you can position the legend using x and y coordinates.
 * [`OffsetX`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~OffsetX.html)– used to move the legend on x coordinate by the given offset value, this will work only if the dock position is [`Floating`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendPosition.html).
 * [`OffsetY`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~OffsetY.html) - used to move the legend on y coordinate by the given offset value, this will work only if the dock position is [`Floating`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendPosition.html).
-* [`Orientation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~Orientation.html) - used to change the legend items ordering direction. Options available are: Horizontal and Vertical.
+* [`Orientation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~Orientation.html) - used to change the legend items ordering direction. Options available are: [`Horizontal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendOrientation.html) and [`Vertical`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegendOrientation.html).
 
 
 
@@ -186,7 +186,7 @@ chart.Legend.OffsetY        = 90;
 chart.Legend.Orientation    = SFChartLegendOrientation.Vertical;
 {% endhighlight %}
 
-![](Legend_images/Legend_Position.png)
+![Legend positioning support in Xamarin.iOS Chart](Legend_images/Legend_Position.png)
 
 
 ## Event
