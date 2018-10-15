@@ -196,7 +196,7 @@ chart.Series.Add(lineSeries);
 
 ![Showing and hiding the trackball label for series in Xamarin.iOS Chart](trackball_images/series_trackball.png)
 
-## Method
+## Methods
 
 ### Show method
 
