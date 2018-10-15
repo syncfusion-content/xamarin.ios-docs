@@ -259,7 +259,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DateEditorFormat.png)
+![DateFormat](SfDataForm_images/DateEditorFormat.png)
 
 ### Setting MaximumDate and MinimumDate in Date editor
 
@@ -424,7 +424,7 @@ public class Address
 
 You can download the entire source code of this demo for Xamarin.Forms from here [DataFormPickerEditor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataForm_iOSPicker1559934655.zip)
 
-![](SfDataForm_images/ComplexPropertyPicker.png)
+![Complex property](SfDataForm_images/ComplexPropertyPicker.png)
 
 ## NumericUpDown Editor
 
@@ -445,7 +445,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/SpinButtonCenter.png)
+![Spin button](SfDataForm_images/SpinButtonCenter.png)
 
 ### Changing step value in NumericUpDown
 
@@ -534,7 +534,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/NumericCulture.png)
+![NumericTextBox culture](SfDataForm_images/NumericCulture.png)
 
 **SfNumericUpDown**
 
@@ -553,7 +553,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/NumericUpDownCulture.png)
+![NumericUpDown culture](SfDataForm_images/NumericUpDownCulture.png)
 
 ## Password editor
 
@@ -578,4 +578,4 @@ public string Password
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DataFormPasswordEditor.png)
+![Password editor](SfDataForm_images/DataFormPasswordEditor.png)
