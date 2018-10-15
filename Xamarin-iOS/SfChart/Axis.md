@@ -213,8 +213,6 @@ xAxis.Interval     = new NSNumber (6);
 
 ![DateTimeAxis interval support in Xamarin.iOS Chart]( Axis_images/DateTimeInterval.png)
 
-N> The [`ActualIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~ActualIntervalType.html) is used to get the interval type calculated from actual data in [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html).
-
 ### Apply padding to the range
 
 Padding can be applied to the minimum and maximum extremes of the range by using [`RangePadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~RangePadding.html) property. Date time axis supports the following types of padding:
