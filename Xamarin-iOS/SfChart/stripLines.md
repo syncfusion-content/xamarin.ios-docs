@@ -101,10 +101,8 @@ xAxis.AddStripLine (stripLine);
 This feature is used to enable the strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
 
 * [`RepeatEvery`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~RepeatEvery.html) – used to change the frequency of the strip line being repeated.
-* [`RepeatEveryType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeStripLine~RepeatEveryType.html) - specifies the date time unit of the value specified in the [`RepeatEvery`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~RepeatEvery.html) property.
+* [`RepeatEveryType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeStripLine~RepeatEveryType.html) - specifies the date time unit of the value specified in the [`RepeatEvery`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartStripLine~RepeatEvery.html) property and [`RepeatUntil`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeStripLine~RepeatUntil.html) property.
 * [`RepeatUntil`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartNumericalStripLine~RepeatUntil.html) – specifies the end value at which point strip line has to stop repeating.
-
-N> [`RepeatUntil`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeStripLine~RepeatUntil.html) specifies the end value in date time unit.
 
 Following code snippet and screenshot demonstrates this feature by highlighting weekends. 
 

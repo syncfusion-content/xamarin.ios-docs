@@ -248,9 +248,7 @@ The following APIs are commonly used in all [`ShapeAnnotation`](https://help.syn
 
 ### Rectangle annotation
 
-The [`RectangleAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.RectangleAnnotation.html) is used to draw a rectangle or a square in specific points over the chart area.
-
-* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.RectangleAnnotation~CornerRadius.html) - used to add the rounded corners to the rectangle annotation.
+The [`RectangleAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.RectangleAnnotation.html) is used to draw a rectangle or a square in specific points over the chart area. You can customize the rounded corners of the rectangle using [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.RectangleAnnotation~CornerRadius.html) property.
 
 {% highlight c# %}
 
