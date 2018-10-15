@@ -199,28 +199,6 @@ series.AnimationDuration    = 0.8;
 
 {% endhighlight %}
 
-## Animation methods
-
-### AnimateSeries
-
-The [`AnimateSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart~AnimateSeries.html) method can be used to animate all the series in the chart programmatically.
-
-{% highlight c# %}
-
-chart.AnimateSeries();
-
-{% endhighlight %}
-
-### Animate
-
-The [`Animate`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Animate.html) can be used to animate particular series in the chart programmatically.
-
-{% highlight c# %}
-
-series.Animate();
-
-{% endhighlight %}
-
 ## Transpose the Series (Vertical Chart)
 
 The [`IsTransposed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~IsTransposed.html) property of [`SFCartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries.html) is used to plot the chart vertically and view the data in a different perspective.
