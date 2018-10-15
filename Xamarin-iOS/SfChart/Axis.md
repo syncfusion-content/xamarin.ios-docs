@@ -193,8 +193,6 @@ primaryAxis.Maximum = calendar.DateFromComponents(new NSDateComponents() {Year =
 
 Date time intervals can be customized using [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Interval.html) and [`IntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~IntervalType.html) properties of the [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html). For example, setting [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~Interval.html) as 2 and [`IntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~IntervalType.html) as [`SFChartDateTimeIntervalType.Years`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDateTimeIntervalType.html) will consider 2 years as interval.
 
-* [`ActualIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~ActualIntervalType.html) -  used to get the interval that is calculated from actual data in [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html).
-
 Essential Chart supports the following types of interval for date time axis
 
 * Years
@@ -214,6 +212,8 @@ xAxis.Interval     = new NSNumber (6);
 
 
 ![DateTimeAxis interval support in Xamarin.iOS Chart]( Axis_images/DateTimeInterval.png)
+
+N> The [`ActualIntervalType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis~ActualIntervalType.html) is used to get the interval type calculated from actual data in [`SFDateTimeAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeAxis.html).
 
 ### Apply padding to the range
 
