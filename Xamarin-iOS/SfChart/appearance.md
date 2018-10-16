@@ -202,5 +202,5 @@ chart.AreaBorderWidth = 3;
 
 Following methods are available in chart to get the brushes
 
-* [`GetColor(int colorIndex)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartColorModel~GetColor.html) - returns the brush at the specified index for current palette.
+* [`GetColor(int colorIndex)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartColorModel~GetColor.html) - returns the color at the specified index for current palette.
 * [`GetColors(SFChartColorPalette palette)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartColorModel~GetColors.html) - returns the collection of brushes for specified palette.
