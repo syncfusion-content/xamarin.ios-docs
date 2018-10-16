@@ -6,7 +6,7 @@ control: Diagram
 documentation: ug
 keywords: 
 ---
-# DrawingMode
+# Drawing mode
 Drawing mode is used to draw continuously on the diagram area for selected mode dynamically.
 
 ## Text node
@@ -24,5 +24,5 @@ Connector mode adds continuous orthogonal connectors on the diagram area. In thi
 diagram.DrawingMode = DrawingMode.Connector;
 {% endhighlight %}
 {% endtabs %}
-![](DrawingMode_images/DrawingMode.gif)
+![Drawing mode in Xamarin.iOS diagram](DrawingMode_images/DrawingMode.gif)
 
