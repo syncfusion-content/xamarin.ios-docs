@@ -111,6 +111,7 @@ Technical indicators have the below properties as common;
 
  * [`Period`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBBIndicator~Period.html) - used to indicates the moving average period.
  * [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~SignalLineColor.html) - used to defines the color for the respective indicator line.
+ * [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~LineWidth.html) - used to change the line width of the indicator.
 
 **Adding axis**
 
@@ -310,7 +311,7 @@ The following screenshot illustrates an accumulation distribution indicator.
 
 ## Momentum indicator
 
-This indicator is having two lines, momentum line and center line. The [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~SignalLineColor.html) property and [`UpperLineColor`] property is used to define the color for the momentum and center line respectively.
+This indicator is having two lines, momentum line and center line. The [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFTechnicalIndicator~SignalLineColor.html) property and [`CenterLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMomentumIndicator~CenterLineColor.html) property is used to define the color for the momentum and center line respectively.
 You can define [`MomentumIndicator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMomentumIndicator.html) using the following code example.
 
 
@@ -479,7 +480,7 @@ SFChart chart = new SFChart()
 
 ## MACD indicator
 
-This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~ShortPeriod.html) and [`LongPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~LongPeriod.html) for defining the motion of the indicator.
+This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~ShortPeriod.html) and [`LongPeriod`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~LongPeriod.html) for defining the motion of the indicator. [`Trigger`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~Trigger.html) property is used to define the trigger period for the indicator.
 Also you can draw [`Line`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartMACDType.html), Histogram MACD or Both using the [`MACDType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~MACDType.html) property, which defines the type of MACD to be drawn.
 
 The [`MACDLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~MACDLineColor.html) property is used to define the color for the MACD line  and the  [`HistogramColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFMACDIndicator~HistogramColor.html) property is used to define the color for the MACD histogram.

@@ -18,6 +18,11 @@ Vertical(Y) axis uses numeric or logarithmic scale. Horizontal(X) axis supports 
 * Date time
 * Logarithmic Axis
 
+The following APIs are available in ChartAxis:
+
+* [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~VisibleLabels.html) – Represents the axis label collection, which is visible in axis.
+* [`VisibleRange`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~VisibleRange.html) – Represents the [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DoubleRange~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DoubleRange~End.html) range of an axis. The [`Delta`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.DoubleRange~Delta.html) property of VisibleRange represents the delta value.
+
 ## Category Axis
 
 Category axis displays text labels instead of numbers. 

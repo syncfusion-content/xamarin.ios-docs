@@ -212,3 +212,10 @@ series.IsTransposed   = true;
 {% endhighlight %}
 
 ![Series transpose support in Xamarin.iOS Chart](ChartSeries_images/VerticalChart.png)
+
+## Methods
+
+Following methods are available in [`SFSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries.html)
+
+* [`FindNearestChartPoint(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~FindNearestChartPoint.html) - used to get the nearest data point for the particular touch point. 
+* [`FindNearestChartPoints(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~FindNearestChartPoints.html) - used to get the list of nearest data points for the particular touch point.
