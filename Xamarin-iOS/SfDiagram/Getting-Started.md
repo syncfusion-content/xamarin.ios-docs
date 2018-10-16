@@ -12,7 +12,7 @@ This section provides a quick overview for working with Diagram for Xamarin.iOS.
 ## Adding diagram reference 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram.IOS”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram.IOS), and then install it.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Diagram reference in Xamarin.iOS diagram](Getting-Started_images/Getting-Started_img1.jpeg)
 
 I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -101,7 +101,7 @@ public Node AddNode(string id, float offsetX, float offsetY, float width, float 
 {% endhighlight %}
 {% endtabs %}
 The flow chart will get displayed in the SfDiagram as follows
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Getting started demo in Xamarin.iOS diagram](Getting-Started_images/Getting-Started_img2.jpeg)
 
 This demo project can be downloaded from the following link.
 [GettingStarted_Demo](http://files2.syncfusion.com/Xamarin.iOS/Samples/GettingStarted_iOS_SfDiagram.zip)
@@ -159,7 +159,7 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 {% endhighlight %}
 {% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
-![Organizational chart in Xamarin.iOS diagram](Getting-Started_images/Getting-Started_img3.jpeg)
+![Organizational chart demo in Xamarin.iOS diagram](Getting-Started_images/Getting-Started_img3.jpeg)
 
 This demo project can be downloaded from the following link.
 [OrganizationalChart_Demo](http://files2.syncfusion.com/Xamarin.iOS/Samples/OrganizationalChart_iOS_SfDiagram.zip)
