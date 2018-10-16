@@ -154,7 +154,7 @@ private void Diagram_Loaded(object sender)
 }
 {% endhighlight %}
 {% endtabs %}
-![](Mindmap_images/Mindmap_img1.jpeg)
+![Mindmap layout in Xamarin.iOS diagram](Mindmap_images/Mindmap_img1.jpeg)
 
 ## Mind map layout style
 Mind map styles are defined as a collection of node style with a single connector style. Collection of node style is applied from root node to leaf node either through branch wise or level wise.
