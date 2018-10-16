@@ -182,7 +182,7 @@ private void Diagram_Loaded(object sender)
  }
 {% endhighlight %}
 {% endtabs %}
-![](Mindmap_images/Mindmap_img2.jpeg)
+![Branch wise node style in Xamarin.iOS diagram](Mindmap_images/Mindmap_img2.jpeg)
 
 ## Level wise node style
 Defined node style collection is applied from level wise by setting the “ApplyNodeStyleBy” property to level. The following code example illustrates how to apply style for mind map level wise.
@@ -207,7 +207,7 @@ private void Diagram_Loaded(object sender)
 }
 {% endhighlight %}
 {% endtabs %}
-![](Mindmap_images/Mindmap_img3.jpeg)
+![Level wise node style in Xamarin.iOS diagram](Mindmap_images/Mindmap_img3.jpeg)
 
 ## Repeat mode
 When style collection ends, the next level or branch can have styles. To be cyclic, enable repeat mode or disable it to continue with last style.
@@ -220,5 +220,5 @@ The mind map free form layout provides an option to rearrange nodes in a layout.
 (diagram.LayoutManager.Layout as MindMapLayout).EnableFreeForm = true;
 {% endhighlight %}
 {% endtabs %}
-![FreeForm](Mindmap_images/Mindmap_img4.jpeg)
+![FreeForm  in Xamarin.iOS diagram](Mindmap_images/Mindmap_img4.jpeg)
 
