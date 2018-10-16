@@ -9,7 +9,7 @@ keywords:
 # Stencil
 Stencil has a collection of symbols. It is used to clone the desired symbol by dragging it from the stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup.
 
-## Add Default shapes into stencil
+## Add default shapes into stencil
 The below given collection will be the items of a stencil. Based on the items, the stencil will populate the symbols. 
 The following code example illustrates how to add the symbol into a collection:
 {% tabs %}
@@ -105,7 +105,7 @@ stencil.SymbolGroups.Add(new SymbolGroup() { Items = col4 , Header = "CustomShap
 {% endtabs %}
 ![](Stencil_images/Stencil_img2.jpeg)
 
-## Add Category heading text
+## Add category heading text
 You can add category of symbol group heading in stencil. The following code example illustrates how to add category heading text in stencil.
 {% tabs %}
 {% highlight c# %}

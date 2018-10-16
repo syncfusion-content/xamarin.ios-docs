@@ -10,7 +10,7 @@ keywords:
 Annotations is a block of text that can be displayed over a node or connector. Annotation is used to represent an object textually with a string, that can be edited at run time.
 You can add multiple labels to a node or connector.
 
-## Create Annotation
+## Create annotation
 Define the annotation and add that in the annotations property of node or connector to add annotations. The content property of annotation defines the object to be displayed. The following code illustrates how to create annotation:
 {% tabs %}
 {% highlight c# %}
@@ -57,7 +57,7 @@ connector1.Annotations.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
-## Annotation Customization
+## Annotation customization
 You can customize the annotation using properties. The following code illustrates how to customize an annotation.
 {% tabs %}
 {% highlight c# %}

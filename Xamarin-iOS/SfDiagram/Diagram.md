@@ -9,7 +9,7 @@ keywords:
 # Diagram
 The diagram control allows to create different types of diagrams such as flow charts, use case diagrams, workflow process diagrams, and more.
 
-## PageSettings
+## Page settings
 The Page settings are enabled to customize the appearance, width, and height of the diagram page. The size and appearance of the diagram pages can be customized with the PageSettings property.
 The PageWidth and PageHeight properties of page settings define the size of the page. You can also customize the appearance of page regions with the BackgroundColor property.
 The following code illustrates how to customize the page size and appearance of the page:
@@ -35,7 +35,7 @@ View.AddSubview(stencil);
 {% endhighlight %}
 {% endtabs %}
 
-## NodeTemplate:
+## Node template:
 You can replace the entire node template with your own design using SfDiagram.NodeTemplate property.
 The following code snippet illustrates replacing the node template:
 {% tabs %}

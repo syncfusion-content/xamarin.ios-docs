@@ -125,7 +125,7 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 {% endhighlight %}
 {% endtabs %}
 
-## Expand and Collapse Node
+## Expand and collapse node
 You can expand and collapse the parent node using NodeClicked event of the SfDiagram. This event will fire when you click node in the Layout.
 {% tabs %}
 {% highlight c# %}

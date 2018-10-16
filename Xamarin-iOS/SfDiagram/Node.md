@@ -9,7 +9,7 @@ keywords:
 # Node
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, or any other kind of data. It represents the functions of a complete system in regards to how it interacts with external entities.
 
-## Create Node
+## Create node
 A node can be created and added to the diagram, either programmatically or interactively. Nodes are stacked on the diagram area from bottom to top.
 The following code snippet illustrates how to create the node:
 {% tabs %}
@@ -22,7 +22,7 @@ diagram.AddNode(n);
 {% endtabs %}
 ![](Node_images/Node_img1.jpeg)
 
-## Create a Node with Custom path/shape
+## Create a node with custom path/shape
 A node can be created with different custom shapes and paths using SfGraphics.
 The following code snippet is used to create the node with custom shape or path.
 {% tabs %}

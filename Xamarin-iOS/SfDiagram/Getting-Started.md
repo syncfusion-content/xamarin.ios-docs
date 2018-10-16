@@ -23,7 +23,7 @@ I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial set
 • **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
 • **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
 
-## Creating a Simple Flow Chart
+## Creating a simple flow chart
 Create a new iOS app (Xamarin.iOS) with iOS class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assembly to the respective projects.
 **Adding SfDiagram in Xamarin.iOS**
 1.Import SfDiagram control namespace as Using Syncfusion.SfDiagram.iOS in ViewController.cs Page.
