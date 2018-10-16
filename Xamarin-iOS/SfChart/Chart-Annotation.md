@@ -247,7 +247,7 @@ The following APIs are commonly used in all [`ShapeAnnotation`](https://help.syn
 
 ### Rectangle annotation
 
-The [`RectangleAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.RectangleAnnotation.html) is used to draw a rectangle or a square in specific points over the chart area.
+The [`RectangleAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.RectangleAnnotation.html) is used to draw a rectangle or a square in specific points over the chart area. You can customize the rounded corners of the rectangle using [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.RectangleAnnotation~CornerRadius.html) property.
 
 {% highlight c# %}
 
@@ -634,5 +634,26 @@ public class TextAnnotationExt : TextAnnotation
       base.TouchEnded(touches, uiEvent);
    }
 }
+
+{% endhighlight  %}
+
+## Methods
+
+### Adding separate view for annotation 
+
+The [`ChartAnnotationView`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationView.html) is used to render [`Annotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotationView~Annotation.html) using the GetView method. The following code sample demonstrates how to add a separate view for annotation. 
+
+{% highlight c# %} 
+[C#]
+
+ public class CustomEllipseAnnotation : EllipseAnnotation
+        {
+		    ChartAnnotationView view = new ChartAnnotationView();
+            protected override ChartAnnotationView GetView()
+            {
+                return view;
+
+            }
+        }
 
 {% endhighlight  %}
