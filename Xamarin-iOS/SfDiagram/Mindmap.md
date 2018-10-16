@@ -220,5 +220,5 @@ The mind map free form layout provides an option to rearrange nodes in a layout.
 (diagram.LayoutManager.Layout as MindMapLayout).EnableFreeForm = true;
 {% endhighlight %}
 {% endtabs %}
-![FreeForm  in Xamarin.iOS diagram](Mindmap_images/Mindmap_img4.jpeg)
+![FreeForm in Xamarin.iOS diagram](Mindmap_images/Mindmap_img4.jpeg)
 

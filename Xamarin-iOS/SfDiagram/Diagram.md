@@ -72,7 +72,7 @@ View.AddSubview(diagram);
 {% endhighlight %}
 {% endtabs %}
 
-## DiagramStyleSettings
+## Diagram style settings
 It is easier to apply default rendering styles to all shapes, connectors, stencil symbol, and stencil header in a diagram. Pass the following arguments to diagram style setting constructor: 
  * DefaultNodeStyle argument: Defines the node style properties. 
  * DefaultConnectorStyle argument: Defines the connector style properties.
