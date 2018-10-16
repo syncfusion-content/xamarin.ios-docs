@@ -20,7 +20,7 @@ Node n = new Node() { Width = 120, Height = 40, OffsetX = 300,OffsetY = 60, Shap
 diagram.AddNode(n);
 {% endhighlight %}
 {% endtabs %}
-![](Node_images/Node_img1.jpeg)
+![Node in Xamarin.iOS diagram](Node_images/Node_img1.jpeg)
 
 ## Create a node with custom path/shape
 A node can be created with different custom shapes and paths using SfGraphics.

@@ -41,7 +41,7 @@ var connector1 = new Connector()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img1.jpeg)
+![connections with nodes in Xamarin.iOS diagram](Connector_images/Connector_img1.jpeg)
 
 ## Connections with ports
 The SourcePort and TargetPort properties allows to create connections between some specific points of source or target nodes.
@@ -74,7 +74,7 @@ var connector1 = new Connector()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img2.jpeg)
+![Using port in Xamarin.iOS diagram](Connector_images/Connector_img2.jpeg)
 
 ## Segments
 The path of the connector is defined with a collection of segments.
@@ -93,7 +93,7 @@ SegmentType= SegmentType.StraightSegment
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img3.jpeg)
+![Straight connector in Xamarin.iOS diagram](Connector_images/Connector_img3.jpeg)
 
 ## Orthogonal
 The orthogonal segments are used to create segments that are perpendicular to each other.
@@ -110,7 +110,7 @@ var connector1 = new Connector()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img4.jpeg)
+![Orthogonal connector in Xamarin.iOS diagram](Connector_images/Connector_img4.jpeg)
 
 ## Curve
 Curve segments are used to create links between two points, nodes, or ports with curve segments. The following code example illustrates how to create a default curve segment.
@@ -126,7 +126,7 @@ var connector1 = new Connector()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img5.jpeg)
+![Curve connector in Xamarin.iOS diagram](Connector_images/Connector_img5.jpeg)
 
 ## Bezier 
 Bezier curve has cubic curve segments that are configurable with the control points. The “SourceControlPoint” and “TargetControlPoint” of bezier segment allow you to modify the control points. The following code example illustrates how to create and modify a bezier curve segment via control points.
@@ -144,7 +144,7 @@ diagram.AddConnector(connector);
 
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img6.jpeg)
+![Bezier connector in Xamarin.iOS diagram](Connector_images/Connector_img6.jpeg)
 
 ## Decorator
 The start and end points of a connector can be decorated with some customizable shapes like arrow, circle, diamond, and square. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of connector.
@@ -163,7 +163,7 @@ SegmentType = SegmentType.StraightSegment
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img7.jpeg)
+![Connector decorator in Xamarin.iOS diagram](Connector_images/Connector_img7.jpeg)
 
 ## Remove connector
 There are two ways to remove connector from the connection, they are:
@@ -224,7 +224,7 @@ connector1.Style = new Style()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img8.jpeg)
+![Connector appearance in Xamarin.iOS diagram](Connector_images/Connector_img8.jpeg)
 
 ## Decorator appearance
 The following code example illustrates how to customize the appearance of the decorator:
@@ -258,5 +258,5 @@ connector1.SourceDecoratorStyle = new DecoratorStyle()
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Connector_images/Connector_img9.jpeg)
+![Decorator appearance in Xamarin.iOS diagram](Connector_images/Connector_img9.jpeg)
 

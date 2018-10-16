@@ -28,7 +28,7 @@ public class Employees : ObservableCollection<Employee>
 {% endhighlight %}
 {% endtabs %}
 
-## Initialize Data Source Settings
+## Initialize data source settings
 The following code example illustrates the initialization of data source settings
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ The following code example illustrates the initialization of data source setting
 {% endhighlight %}
 {% endtabs %}
 
-## Organization Layout
+## Organization layout
 An organizational chart is a diagram that displays the structure and relationship of an organization. To create an organizational chart, you should set the type as LayoutType.Organization. The following code example illustrates how to create an organizational chart:
 {% tabs %}
 {% highlight c# %}

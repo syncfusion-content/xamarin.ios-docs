@@ -6,7 +6,7 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Getting Started
+# Getting started
 This section provides a quick overview for working with Diagram for Xamarin.iOS. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
 ## Adding diagram reference 
@@ -159,7 +159,7 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 {% endhighlight %}
 {% endtabs %}
 The Employee data is displayed in the SfDiagram as follows
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![Organizational chart in Xamarin.iOS diagram](Getting-Started_images/Getting-Started_img3.jpeg)
 
 This demo project can be downloaded from the following link.
 [OrganizationalChart_Demo](http://files2.syncfusion.com/Xamarin.iOS/Samples/OrganizationalChart_iOS_SfDiagram.zip)

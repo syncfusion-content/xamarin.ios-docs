@@ -24,7 +24,7 @@ diagram.OverviewPanel = overview;
 {% endhighlight %}
 {% endtabs %}
 
-![Overview](OverviewPanel_images/OverviewPanel.gif)
+![Overview panel in Xamarin.iOS diagram](OverviewPanel_images/OverviewPanel.gif)
 
 ### Prevent refresh
 Prevents diagram being updated in overview panel if any interaction takes place in the diagram layer. Prevents the diagram update for the entire actions till the property is set to true. This property is helpful when there is no need for frequent refreshing in the overview panel.

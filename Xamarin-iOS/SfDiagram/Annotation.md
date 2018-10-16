@@ -25,7 +25,7 @@ connector1.TargetPoint = new CGPoint(200, 200);
 connector1.Annotations.Add(new Annotation() { Content = "Label" });diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img1.jpeg)
+![Annotation in Xamarin.iOS diagram](Annotation_images/Annotation_img1.jpeg)
 
 ## Accessing an annotation from node and connector instance
 You can access the node or connector annotation using annotation name. The following code illustrates how to access annotation:
@@ -87,7 +87,7 @@ connector1.Annotations.Add(label);
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img2.jpeg)
+![Annotation customization i Xamarin.iOS diagram](Annotation_images/Annotation_img2.jpeg)
 
 ## Alignment
 Annotation can be aligned relatively with node boundaries. It has horizontal and vertical alignment settings. It will be complex when using four alignments together but gives you more control. 
@@ -111,5 +111,5 @@ connector1.Annotations.Add(new Annotation() { Content = "Label", HorizontalAlign
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img3.jpeg)
+![Annotation alignment in Xamarin.iOS diagram](Annotation_images/Annotation_img3.jpeg)
 

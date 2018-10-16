@@ -24,7 +24,7 @@ Collection1.Add(new Node() { Width = 50, Height = 50, ShapeType = ShapeType.Righ
 stencil.SymbolGroups.Add(new SymbolGroup() { Items = coll, Header = "BasicShapes" });
 {% endhighlight %}
 {% endtabs %}
-![](Stencil_images/Stencil_img1.jpeg)
+![Default shapes into stencil in Xamarin.iOS diagram](Stencil_images/Stencil_img1.jpeg)
 
 ## Add custom shapes into stencil
 The following code example illustrates how to add the custom shapes into a collection:
@@ -103,7 +103,7 @@ col4.Add(custom6);
 stencil.SymbolGroups.Add(new SymbolGroup() { Items = col4 , Header = "CustomShapes" });
 {% endhighlight %}
 {% endtabs %}
-![](Stencil_images/Stencil_img2.jpeg)
+![Custom shapes into stencil in Xamarin.iOS diagram](Stencil_images/Stencil_img2.jpeg)
 
 ## Add category heading text
 You can add category of symbol group heading in stencil. The following code example illustrates how to add category heading text in stencil.
@@ -133,5 +133,5 @@ stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = con1, HeaderName = "
 diagram.Stencil=stencil;
 {% endhighlight %}
 {% endtabs %}
-![](Stencil_images/Stencil_img3.jpeg)
+![Category heading text in Xamarin.iOS diagram](Stencil_images/Stencil_img3.jpeg)
 
