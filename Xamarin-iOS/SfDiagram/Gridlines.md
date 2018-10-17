@@ -33,5 +33,5 @@ Nodes can be aligned and resized easily using gridlines by enabling the snap to 
 diagram.PageSettings.SnapToGrid = true;
 {% endhighlight %}
 {% endtabs %}
-![](Gridlines_images/Gridlines.gif)
+![Snapping gridlines in Xamarin.iOS diagram](Gridlines_images/Gridlines.gif)
 
