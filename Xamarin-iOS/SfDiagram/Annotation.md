@@ -10,7 +10,7 @@ keywords:
 Annotations is a block of text that can be displayed over a node or connector. Annotation is used to represent an object textually with a string, that can be edited at run time.
 You can add multiple labels to a node or connector.
 
-## Create Annotation
+## Create annotation
 Define the annotation and add that in the annotations property of node or connector to add annotations. The content property of annotation defines the object to be displayed. The following code illustrates how to create annotation:
 {% tabs %}
 {% highlight c# %}
@@ -25,7 +25,7 @@ connector1.TargetPoint = new CGPoint(200, 200);
 connector1.Annotations.Add(new Annotation() { Content = "Label" });diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img1.jpeg)
+![Annotation in Xamarin.iOS diagram](Annotation_images/Annotation_img1.jpeg)
 
 ## Accessing an annotation from node and connector instance
 You can access the node or connector annotation using annotation name. The following code illustrates how to access annotation:
@@ -57,7 +57,7 @@ connector1.Annotations.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
-## Annotation Customization
+## Annotation customization
 You can customize the annotation using properties. The following code illustrates how to customize an annotation.
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +87,7 @@ connector1.Annotations.Add(label);
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img2.jpeg)
+![Annotation customization i Xamarin.iOS diagram](Annotation_images/Annotation_img2.jpeg)
 
 ## Alignment
 Annotation can be aligned relatively with node boundaries. It has horizontal and vertical alignment settings. It will be complex when using four alignments together but gives you more control. 
@@ -111,5 +111,5 @@ connector1.Annotations.Add(new Annotation() { Content = "Label", HorizontalAlign
 diagram.AddConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-![](Annotation_images/Annotation_img3.jpeg)
+![Annotation alignment in Xamarin.iOS diagram](Annotation_images/Annotation_img3.jpeg)
 
