@@ -7,18 +7,19 @@ control : ImageEditor
 documentation : ug
 ---
 
-## Zooming
+# Zooming
 
-The image editor control provides support for zooming and panning.You can Zoom in and Zoom out image  in image editor control.
+The image editor control provides support to zoom and pan actions over an image.
 
-The following properties are related to the zooming feature of the image editor control:
+The following properties are used for zooming feature of the image editor control:
 
 * EnableZooming
 * Maximum ZoomLevel
+* PanningMode
 
-## EnableZooming
+## Enable zooming
 
- You can Enable or Disable zooming by setting Enable Zooming to either true or false.
+You can enable or disable the zooming functionality by setting the `EnableZooming` value to true or false. By default, the `EnableZooming` value is set to true.
 
 {% tabs %}
 
@@ -32,7 +33,7 @@ The following properties are related to the zooming feature of the image editor 
 
 ## Maximum ZoomLevel
 
-You can customize maximum zoom level  by setting value to Maximum ZoomLevel property in image editor control.
+You can customize maximum zoom level  by setting value to `MaximumZoomLevel` property in image editor control.
 
 {% tabs %}
 
@@ -45,10 +46,15 @@ You can customize maximum zoom level  by setting value to Maximum ZoomLevel prop
 
 {% endtabs %}
 
-## Panning
+## Panning mode
 
-Image editor control provides support for panning.Image editor allows to pan image with only two fingers to identify touch interaction between panning and Resizing or shifting shapes.
+The image editor control provides support for panning and allows to pan the image with two fingers or single finger by setting the `PanningMode`.
+
+The following properties are used for panning:
+
+* `SingleFinger`: Zooms or pans the image with single finger, but shapes and text selection cannot be performed with this mode.
+* `TwoFinger`: Zooms or pans the image with two finger. The shapes and text selection can be performed with this mode.
+
+By default, the `PanningMode` value is set to `TwoFinger`.
 
 ![SfImageEditor](ImageEditor_images/zoom.gif)
-
-

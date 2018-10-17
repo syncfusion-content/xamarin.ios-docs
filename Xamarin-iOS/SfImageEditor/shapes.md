@@ -2,60 +2,57 @@
 layout : post
 title : Text in Syncfusion SfImageEditor control in Xamarin.iOS
 description : Learn how to add shapes, text and draw over an Image in ImageEditor for Xamarin.iOS
-platform : xamarin.ios
-control : ImageEditor
-documentation : ug
+platform : xamarin-iOS.ios
+control : ImageEditoriOSentation : ug
 ---
 
 ## Shapes
 
-You can annotate any path on an image using free hand drawing and add shapes like rectangle, circle over the image. The shapes can be added in two ways:
+You can annotate any shapes over an image using the `AddShape` method. The following shapes are available in image editor:
 
-* From Toolbar
-* Using Code
+* Circle
+* Rectangle
+* Arrow
+* Path
 
-## How to add a shape (Rectangle, Circle,Arrow) over an image
+### Selecting a shape type
 
-### From Toolbar
+The `ShapeType` is an enum property with values `Rectangle`, `Circle`, `Arrow`, and `Path`. You can give the desired shape type as an argument to the `AddShape` method.
 
-You can add the shapes from the toolbar by clicking on the `Shapes` icon available in the toolbar below the image. When the `Shapes` icon is touched, a sub toolbar will appear on top of that toolbar from which we can choose the shape( `Rectangle`,`Circle` and `Arrow`). Click on the desired shape and the shape will be added on the center of the image. The shape will have the handles on each edges of the shape which help in resizing it to the desired size and you can move it to the desired position by dragging the shape.
+{% highlight C# %}
 
-#### Change Color and Fill Options of the Shape
+      editor.AddShape(ShapeType.Circle);
 
-When the shape is clicked, the current toolbar menu with the shapes list will be hidden, and new menu with the options such as `Stroke`, `Fill`, and `Colors` will appear. 
+{% endhighlight %}
 
-If the selected shape is in `Stroke` mode, then the menu will appear with `StrokeThickness`, `Color` and `Opacity` options so that you can customize the selected shape appearance with these options. 
+## Customizing a shape with pen settings
 
-If the selected shape is in `Fill` mode, then the menu will appear with `FillColor` and `Opacity` options. So, you can customize the selected shape appearance with these options. 
-
-I> By default, the shape will have `Red` stroke with `Transparent` fill.
-
-### Using Code
-
-The `AddShape` method in the SfImageEditor control is used to add shapes based on the `ShapeType` and `PenSettings`.
-
-## ShapeType
-
-ShapeType is an enum type with values `Rectangle`, `Circle`,`Arrow` and `Path`.
+You can customize the appearance of each shape using the `PenSettings` property:
 
 ## PenSettings
 
-PenSettings is defined to set the values for `StrokeColor`, `FillColor` and `StrokeWidth`.
+The `PenSettings` property consists of the following properties:
 
-N> FillColor property is applicable only if the ShapeType is `Rectangle` or `Circle` and `StrokeWidth` only used for `Path`.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.PenSettings~Color.html): Specifies the desired stroke color to a shape.
+* `FillColor`: Specifies the desired fill color to a shape.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.PenSettings~StrokeWidth.html): Allows to denote the stroke width for the desired shape.
+* [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.PenSettings~Mode.html): Determines whether the shape color mode is `Fill` or `Stroke`. It is an enum value.
+* [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.PenSettings~Opacity.html): Denotes opacity for the desired shapes.
+* [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.PenSettings~Bounds.html): Allows to set frame for the newly added shapes (rectangle and circle). You can position the shapes wherever you want on the image.In percentage, the value of the shape frame should fall between 0 and 100.
 
-   * To add a rectangle,circle or arrow over the image, you need to specify the ShapeType as well as the desired PenSettings as in the below code snippet:
+N> The `FillColor` property is applicable only if the ShapeType is `Rectangle` or `Circle`.
+
+* To add a rectangle, circle, or arrow over an image, specify the `ShapeType` and the desired `PenSettings` as shown in the following code snippet.
 
 {% tabs %}
 
 {% highlight C# %}
 
-      editor.AddShape(ShapeType.Circle, new PenSettings() { Color = UIColor.Green});
+            editor.AddShape(ShapeType.Circle, new PenSettings() { Color = UIColor.Red, Mode = Mode.Stroke, Opacity = 1f, Bounds = new Rectangle(20, 20, 35, 35) });
 
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ![SfImageEditor](ImageEditor_images/shapes.gif)
 
@@ -73,33 +70,9 @@ N> FillColor property is applicable only if the ShapeType is `Rectangle` or `Cir
 
 ![SfImageEditor](ImageEditor_images/path.gif)
 
-## Bounds
+## Deleting a shape or text from view
 
-`Bounds` property allows you to set frame for the newly added shapes(rectangle and circle) and you can position the shapes wherever you want on the image. The value of the shapes frame should be in percentage(maximum - 100 & minimum - 0).
-
-{% highlight C# %}
-
-  edit.AddShape(ShapeType.Circle, new PenSettings() { Bounds = new Rectangle(20,20,35,35) });
-
-{% endhighlight %}
-
-## How to delete a shape or text from the view
-
-You can delete a selected shape or text from the view in two ways:
-
-* From Toolbar
-* Using Code
-
-N> You cannot delete Path.
-
-### From Toolbar
-
-When a shape is selected, a circular floating button with `Delete` icon will appear above the bottom toolbars. Clicking on the button will delete the selected shape from the view.
-
-### Using Code
-
-You can delete the selected shape programmatically using the `Delete` method as like in below code snippet:
-
+You can delete the selected shape by using the `Delete` method as shown in the following code snippet.
 
 {% tabs %}
 
@@ -110,3 +83,5 @@ You can delete the selected shape programmatically using the `Delete` method as 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> You cannot delete the path.

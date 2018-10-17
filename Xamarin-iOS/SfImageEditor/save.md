@@ -9,19 +9,9 @@ documentation : ug
 
 ## Save
 
-You can save the image along with the changes to the device. Saving the image can be done in two ways:
+You can save the image along with the current edits to the device using the `Save` method.
 
-* From Toolbar
-* Using Code
-
-### From Toolbar
-
-You can save the image from the toolbar by clicking on the `Save` button available on the top toolbar. The saved image will be added in default pictures folder of the device. 
-
-
-### Using Code
-
-Programmatically, you can make use of the `Save` method in the SfImageEditor control to save the image.
+The saved image will be added in default pictures folder of the device.
 
 {% tabs %}
 
@@ -33,41 +23,66 @@ Programmatically, you can make use of the `Save` method in the SfImageEditor con
 
 {% endtabs %}
 
-## Save Events
+## Save events
 
-The SfImageEditor has Events when performing Save operation namely,  ImageSaving and ImageSaved events.
+The SfImageEditor has events when performing save operation namely `ImageSaving` and `ImageSaved`.
 
 ### ImageSaving
 
-This event occurs before saving the image. You can control the save functionality by using the Cancel argument.
+This event occurs before saving the image. You can control the save functionality using the `Cancel` argument.
 
-{% tabs %}
+* Cancel: 
+
+It restricts saving image to the default location when set `Cancel` value to `true`.
 
 {% highlight C# %}
 
-    args.Cancel = true;
+        public override void ViewDidLoad()
+        {
+            editor.ImageSaving += Editor_ImageSaving;
+        }
+
+        private void Editor_ImageSaving(object sender, ImageSavingEventArgs e)
+        {
+            e.Cancel = true;
+        }
 
 {% endhighlight %}
 
-{% endtabs %}
+* Stream
+
+You can get current image edits as stream using this argument.
+
+{% highlight C# %}
+         
+        private void Editor_ImageSaving(object sender, ImageSavingEventArgs e)
+        {
+            var stream = e.Stream;
+        }
+
+{% endhighlight %}
 
 ### ImageSaved
 
-This event occurs after the image has been saved. To get the location of the saved image, use the Location argument as shown below,
-
-{% tabs %}
+This event occurs after the image has been saved. To get the location of the saved image, use the location argument as shown in the following code.
 
 {% highlight C# %}
 
-    string savedLocation = args.Location;
+        public override void ViewDidLoad()
+        {            
+            editor.ImageSaved += Editor_ImageSaved;
+        }
+
+        private void Editor_ImageSaved(object sender, ImageSavedEventArgs e)
+        {
+            string savedLocation = e.Location; // You can get the saved image location with the help of this argument
+        }
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ## Saving Image with Custom Size and Format
 
-The `Save` method in the SfImageEditor control allows user to save an image in different format such as `png` and `jpg`.
+The `Save` method in the SfImageEditor control allows user to save an image in different format such as `png`, `jpg` and `bmp`.
 
 To choose the format while Saving the image.
 
@@ -87,29 +102,17 @@ To choose the format and size while Saving the image as like below,
 
 {% highlight C# %}
 
-editor.Save(".png",new CGSize(913,764));
+editor.Save(".png",new Size(913,764));
 
 {% endhighlight %}
 
 {% endtabs %}
 
-N> Supported formats are `.png` and `.jpg`.
+N> Supported formats are `.png`, `.jpg` and `.bmp`.
 
 ## Reset
 
-You can reset the changes and load the initial loaded image. Reset the image can be done in two ways:
-
-* From Toolbar
-* Using Code
-
-### From Toolbar
-
-To reset the changes from the toolbar, click on the `Reset` button available in the top toolbar. The changes will be reset and the initial loaded image will appear.
-
-### Using Code
-
-The `Reset` method resets the complete set of changes made in the image and resets the original loaded image to the Image Editor control.
-
+The `Reset` method resets the complete set of changes made in image and resets the image to original loaded image.
 
 {% tabs %}
 
@@ -121,84 +124,88 @@ The `Reset` method resets the complete set of changes made in the image and rese
 
 {% endtabs %}
 
-## Reset Events
+## Reset events
 
-The SfImageEditor has Events when performing Reset operation namely BeginReset and EndReset.
+The SfImageEditor has events when performing reset operation namely `BeginReset` and `EndReset`.
 
 ### BeginReset
 
-This event occurs before resetting the changes made in an image. You can control the reset functionality by using the Cancel argument.
+This event occurs before resetting the changes made in an image. You can control the reset functionality using the Cancel argument.
 
-{% tabs %}
 
 {% highlight C# %}
 
-     args.Cancel = true;
+        public override void ViewDidLoad()
+        {
+            editor.BeginReset += Editor_BeginReset;
+        }
+
+        private void Editor_BeginReset(object sender, BeginResetEventArgs e)
+        {
+            e.Cancel = true; //It restricts resetting image to initial loaded image.
+        }
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ### EndReset
 
 This event occurs when reset has been completed.
 
+{% highlight C# %}
+
+        public override void ViewDidLoad()
+        {
+            editor.EndReset += Editor_EndReset;
+        }
+
+        private void Editor_EndReset(object sender, EndResetEventArgs e)
+        {
+            NavigationController.PushViewController(new ImageEditorViewController());  //Navigates to new page after completing the reset action.
+        }
+
+{% endhighlight %}
 
 ## ImageLoaded Event
 
-This event will be triggered once the image is loaded. By using this event we can add any shapes, text or crop over an image while initially loading the image. 
+This event will be triggered after the image has been loaded. By using this event, you can add any shapes or text over an image or crop an image while initially loading the image. 
 
 {% highlight C# %}
 
-       public override void ViewDidLoad()
-            {               
-                            . . .
+        public override void ViewDidLoad()
+        {
+            editor.ImageLoaded += Editor_ImageLoaded;
+        }
 
-                editor.ImageLoaded += Editor_ImageLoaded;
-
-                            . . .
-            }
-
-        private void Editor_ImageLoaded(object sender, ImageLoadedEventArgs args)
-            {
-                editor.AddShape(ShapeType.Circle, new PenSettings() {Color = UIColor.Green,Mode = Mode.Stroke });
-            }
+        private void Editor_ImageLoaded(object sender, ImageLoadedEventArgs e)
+        {
+            editor.AddShape(ShapeType.Circle, new PenSettings() { Color = UIColor.Red, Mode = Mode.Stroke });
+        }
 
 {% endhighlight %}
-
 
 ## ItemSelected Event
 
-This event will be triggered whenever you tap the image editor selected shapes (Rectangle, Circle and Arrow) and Text. You can get the settings of each selected shapes and text with the help of ItemSelected argument. Also we can change the settings which will affect the selected shape.
+This event will be triggered whenever you tap the selected shapes (rectangle, circle, and arrow) and text. You can get the settings of each selected shapes and text using the ItemSelected argument. You can also change the settings that will affect the selected shape.
 
 {% highlight C# %}
 
-       public override void ViewDidLoad()
-            {               
-                            . . .
+        public override void ViewDidLoad()
+        {
+            editor.ItemSelected += Editor_ItemSelected;
+        }
 
-                editor.ItemSelected += Editor_ItemSelected;
+        private void Editor_ItemSelected(object sender, ItemSelectedEventArgs e)
+        {
+            var Settings = e.Settings;
 
-                            . . .
-            }
-
-
-        private void Editor_ItemSelected(object sender, ItemSelectedEventArgs args)
+            if (Settings is PenSettings)
             {
-                var Settings = args.Settings;   
-
-                if (Settings is PenSettings)
-                {
-                    (Settings as PenSettings).Color = UIColor.Green;
-                }
-                else
-                {
-                    (Settings as TextSettings).Color = UIColor.Yellow;
-                }
-     
+                (Settings as PenSettings).Color = UIColor.Green;
             }
+            else
+            {
+                (Settings as TextSettings).Color = UIColor.Red;
+            }
+        }
 
 {% endhighlight %}
-
-
-
