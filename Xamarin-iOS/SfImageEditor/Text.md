@@ -2,76 +2,56 @@
 layout : post
 title : Shapes in Syncfusion SfImageEditor control in Xamarin.iOS
 description : Learn how to add text in ImageEditor for Xamarin.iOS
-platform : xamarin.ios
+platform : xamarin-iOS.ios
 control : ImageEditor
 documentation : ug
 ---
 
 ## Text
 
-To add the desired text elements over the image, use the following two ways:
+You can annotate the desired text elements to an image using the `AddText` method with customization options.
 
-* From Toolbar
-* Using Code
+{% highlight C# %}
 
-### From Toolbar
+    editor.AddText("New Text");
 
-To add text from the toolbar, click on the Text icon in the toolbar. When the Text is tapped, a pop-up will appear. To add the text over the image, Type the desired text and click OK. To close the pop-up, click CANCEL button. By dragging, the text can be moved to the desired place.Text can be Resized with the help of handle.
+{% endhighlight %}
 
-#### Change Color of the selected Text
+## Customize text with TextSettings
 
-To change the color of the selected text, select the desired text and click on the color buttons available in the sub menu.
+You can customize the appearance of the text using the `TextSettings` property.
 
-#### Change TextEffect of selected Text
+The `TextSettings` property consists of the following properties:
 
-Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
-
-### Using Code
-
-You can also add the desired text elements over the image from the code programmatically. The `AddText` method in the SfImageEditor control is used to add text based on the string value and `TextSettings`.
-
-## TextSettings
-
-TextSettings is defined to set the values for `Color`, `FontSize`, `FontFamily`, `TextEffects` and `Angle`. By default there are six types of font family has been given in toolbar that are 
-`Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
-
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.TextSettings~Color.html): Defines the color of the desired text.
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.TextSettings~FontSize.html): Specifies the desired font size of the text under text settings.
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.TextSettings~FontFamily.html): Specifies the desired font family for text. Six types of font families are available in toolbar: `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`, `Bradley Hand`, `Snell Round hand`.
+* [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.TextSettings~Bounds.html): Allows to set frame for the newly added `Text`. You can position the text wherever you want on the image. In percentage, the value of the text frame should fall between 0 and 100.
+* [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.TextSettings~Opacity.html): Changes the opacity of text.
+* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.TextSettings~Angle.html): Changes the angle of text.
+* [`TextEffects`](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.TextSettings~TextEffects.html): Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
 
 {% tabs %}
 
 {% highlight C# %}
 
-            editor.AddText("New Text", new TextSettings() { Color = Color.Black, FontSize = 16d, FontFamily = UIFont.FromName("ArialMT",18), Angle=45, TextEffects = TextEffects.Bold | TextEffects.Italic | TextEffects.Underline });
+            editor.AddText("New Text", new TextSettings() { Color = UIColor.Black, FontSize = 16d, FontFamily = UIFont.FromName("ArialMT", 18), Bounds = new Rectangle(20, 20, 35, 35), Angle = 45, TextEffects = TextEffects.Bold | TextEffects.Italic | TextEffects.Underline });
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
 ![SfImageEditor](ImageEditor_images/text.png)
-
-## Bounds
-
-`Bounds` property allows you to set frame for the newly added `Text` and you can position the text wherever you want on the image. The value of the text frame should be in percentage(maximum - 100 & minimum - 0).
-
-{% highlight C# %}
-
-  editor.AddText("New Text", new TextSettings() { Bounds = new Rectangle(20, 20, 35, 35) });
-
-{% endhighlight %}
-
 
 ## Custom Font Family
 
-Using a font other than the built-in typefaces can be applied for image editor text style with the help of custom font family support. Download the custom fonts file in ttf file format and add these fonts into required folder in particular project file.
+Using a font other than the built-in typefaces can be applied for image editor text style with the help of custom font family support. Download the custom fonts file in ttf file format and add these fonts into resource folder.
 
-Add the custom fonts into Resource folder,
-
-   ![SfImageEditor](ImageEditor_images/iOSCustomFont1.png)
+![SfImageEditor](ImageEditor_images/iOSCustomFont1.png)
 
 Right click the font file and open properties, in that Change the "Build Action" property of every font file as "BundleResource" and "Copy to output directory" to "Copy Always" then add the custom font family name into info list as like below,
 
 ![SfImageEditor](ImageEditor_images/iOSCustomFont2.png)
-
 
 {% highlight C# %}
 
