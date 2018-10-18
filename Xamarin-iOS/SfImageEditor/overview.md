@@ -9,7 +9,7 @@ documentation: ug
 
 ## Overview
 
-The image editor control for Xamarin iOS is a very handy tool used to edit an image by annotating with free hand drawing paths, text and built in shapes.It also allows you crop and flip the image.The Image Editor control has an in-built toolbar which helps you to perform the editing operations.
+The image editor control for Xamarin.iOS is a very handy tool, which is used to edit an image by annotating with free hand drawing paths, text and built-in shapes; it also allows to crop and flip a image.This control has a built-in toolbar that helps to perform editing operations.
 
 ## Key features
 
