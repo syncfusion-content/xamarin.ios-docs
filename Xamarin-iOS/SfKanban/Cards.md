@@ -47,7 +47,7 @@ kanban.IndicatorColorPalette = colorModels;
 
 {% endhighlight %}
 
-![](Kanban_images/CardCustomization.png)
+![Customization of cards in Xamarin.iOS Kanban](Kanban_images/CardCustomization.png)
 
 ## Template
 
@@ -107,6 +107,6 @@ public partial class ViewController : UIViewController
 
 {% endhighlight %}
 
-![](Kanban_images/CardTemplate.png)
+![Template support for cards in Xamarin.iOS Kanban](Kanban_images/CardTemplate.png)
 
 
