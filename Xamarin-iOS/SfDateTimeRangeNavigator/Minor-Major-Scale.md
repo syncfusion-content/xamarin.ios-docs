@@ -31,14 +31,14 @@ this.View.AddSubview(rangeNavigator);
 
 {% endhighlight %}
 
-![]( MajorMinorScale_images/Scales1.png)
+![Interval support for major and minor scales in Xamarin.iOS DateTimeRangeNavigator]( MajorMinorScale_images/Scales1.png)
 
 ## Customization
 
 The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MajorScaleStyle.html) and [`MinorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MinorScaleStyle.html) properties of [`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) are used to customize the appearance of ticks and labels.
 
 
-* [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~Position.html) – used to position the labels and ticks inside or outside of the range navigator.
+* [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~Position.html) – used to position the labels and ticks [`Inside`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScalePosition.html) or [`Outside`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScalePosition.html) of the range navigator.
 * [`LabelTextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelTextAlignment.html) – used to set the alignment of the labels. 
 * [`LabelTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelTextColor.html) – used to change the text color of the labels.
 * [`LabelFont`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~LabelFont.html) – used to change the font of the labels.
@@ -86,5 +86,5 @@ this.View.AddSubview(rangeNavigator);
 
 {% endhighlight %}
 
-![]( MajorMinorScale_images/Scales2.png)
+![Customizing the appearance of ticks and labels in Xamarin.iOS DateTimeRangeNavigator]( MajorMinorScale_images/Scales2.png)
 
