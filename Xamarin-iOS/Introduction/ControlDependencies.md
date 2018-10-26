@@ -448,3 +448,15 @@ This page lists the assemblies required for each control to be referred in Xamar
 <dd>Syncfusion.SfTreeMap.iOS.dll</dd>
 <dd>Syncfusion.Licensing.dll</dd> 
 </dl>
+
+## SfTreeMap
+
+<dl>
+<dt>NuGet</dt>
+<dd>Syncfusion.Xamarin.SfTreeView.IOS</dd>
+&nbsp;
+<dt>Assemblies</dt>
+<dd>Syncfusion.SfTreeView.iOS.dll</dd>
+<dd>Syncfusion.GridCommon.Portable.dll</dd>
+<dd>Syncfusion.Licensing.dll</dd> 
+</dl>
