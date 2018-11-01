@@ -829,7 +829,7 @@ You can directly remove the added exception appointment for recurrence pattern b
 {% tabs %}
 {% highlight c# %}
 var exceptionAppointment = scheduleAppointmentCollection[1];
-            eventCollection.Remove(exceptionAppointment);
+            scheduleAppointmentCollection.Remove(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 
