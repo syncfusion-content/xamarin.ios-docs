@@ -73,7 +73,7 @@ View.AddSubview(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/appointment.png)
+![Creating Appointment in schedule Xamarin iOS](data_binding_images/appointment.png)
 
 ## Minimum Appointment Height
 
@@ -134,7 +134,7 @@ View.AddSubview(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/minheightios.png)
+![Minimum Appointment height support in schedule Xamarin iOS](data_binding_images/minheightios.png)
 
 >**NOTE**
 * `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
@@ -300,7 +300,7 @@ schedule.Appointments = appCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/span.png)
+![spanning or multiday appointments in schedule Xamarin iOS](data_binding_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
@@ -350,7 +350,7 @@ weekViewSettings.AllDayAppointmentLayoutColor = UIColor.Gray;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/allday.png)
+![All day appointments in schedule Xamarin iOS](data_binding_images/allday.png)
 
 ## Recurrence Appointment
 Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting `RecurrenceRule` property in Schedule appointments.
@@ -461,7 +461,7 @@ schedule.Appointments = appCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/recurrence.png)
+![Recurrence appointment support in schedule Xamarin iOS](data_binding_images/recurrence.png)
 
 ### Recurrence Pattern Exceptions 
 You can delete or change any recurrence pattern appointment by handling exception dates and appointments of the recurring appointments. 
@@ -860,7 +860,7 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/style.png)
+![Appointments styling support in schedule Xamarin iOS](data_binding_images/style.png)
 
 ### Customize appearance using Event
 Schedule appointment can be customized during runtime using [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `AppointmentStyle` property.
@@ -902,7 +902,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointmentstyle_event.png)
+![Appointments customization in schedule Xamarin iOS](PopulatingAppointments_images/appointmentstyle_event.png)
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
@@ -942,7 +942,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointmentstyle_customview.png)
+![Custom view support for appointments in schedule Xamarin iOS](PopulatingAppointments_images/appointmentstyle_customview.png)
 
 ### Customize Font Appearance
 
@@ -954,7 +954,7 @@ appointmentStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/customfontappointment.png)
+![custom font support in schedule Xamarin iOS](data_binding_images/customfontappointment.png)
 
 Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
@@ -1010,4 +1010,4 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/selection.png)
+![Selection customization in schedule Xamarin iOS](data_binding_images/selection.png)

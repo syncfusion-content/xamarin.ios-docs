@@ -18,7 +18,7 @@ schedule.AllowAppointmentDrag = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/draganddrop.gif)
+![Drag and Drop appointments in schedule Xamarin iOS](data_binding_images/draganddrop.gif)
 
 ## Handle dragging based on the appointment
 Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDragStarting_EV.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragStartingEventArgs.html) argument contains the following properties.
@@ -216,7 +216,7 @@ schedule.DragDropSettings = dragDropSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/timeindicator.png)
+![Time Indicator in schedule Xamarin iOS](data_binding_images/timeindicator.png)
 
 >**Notes**
 * While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
