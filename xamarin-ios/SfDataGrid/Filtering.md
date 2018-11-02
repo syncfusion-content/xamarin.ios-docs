@@ -230,7 +230,7 @@ private void OnFilterChanged()
 }
 {% endhighlight %}
 
-### Column based filtering
+## Filter individual columns
 
 You can filter the records in all the columns or in particular column using the codes in the below code example. 
 
@@ -409,7 +409,7 @@ public class FilterOptionsTableSource : UITableViewSource
 
 ![](SfDataGrid_images/Filtering_img2.png)
 
-### Condition based filtering
+## Filter based on conditions
 
 In addition to the column based filtering, you can filter the records based on some conditions. For example, you can filter the records based on the input you given or you can filter the records contrast to your input. You can achieve the condition based filtering for all the columns or any particular column.
 
