@@ -82,7 +82,7 @@ public class Command : ICommand
 
 Running the application renders the following output.
 
-![SfDataGrid_PullToRefresh](SfDataGrid_images/PullToRefresh.png)
+![DataGrid with PullToRefresh functionality](SfDataGrid_images/PullToRefresh.png)
 
 ## Host SfDataGrid inside SfPullToRefresh
 
@@ -92,4 +92,4 @@ For more details and code example for hosting the SfDataGrid inside SfPullToRefr
 
 The final output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![SfDatagrid_Refresh](SfDataGrid_images/SfDatagrid_Refresh_iOS.gif)
+![Hosting DataGrid inside PullToRefresh component](SfDataGrid_images/SfDatagrid_Refresh_iOS.gif)

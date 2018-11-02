@@ -211,7 +211,7 @@ private void CancelButtonClicked(object sender, EventArgs e)
 }
 {% endhighlight %}
 
-![SfDataGrid_Filtering_img1](SfDataGrid_images/Filtering_img1.png)
+![DataGrid with filtered data](SfDataGrid_images/Filtering_img1.png)
 
 Once you create a `UISearchBar` and a view model, you can perform filtering by setting `SfDataGrid.View.Filter` property. You have to call the `SfDataGrid.View.RefreshFilter()` method after you set the filtered records to the `SfDataGrid.View.Filter` property as like in below code example.
 
@@ -407,7 +407,7 @@ public class FilterOptionsTableSource : UITableViewSource
 }
 {% endhighlight %}
 
-![SfDataGrid_Filtering_img2](SfDataGrid_images/Filtering_img2.png)
+![DataGrid with data filtered based on columns](SfDataGrid_images/Filtering_img2.png)
 
 ## Filter based on conditions
 
@@ -535,7 +535,7 @@ private bool MakeNumericFilter(OrderInfo o, string option, string condition)
 }
 {% endhighlight %}
 
-![SfDataGrid_Filtering_img3](SfDataGrid_images/Filtering_img3.png)
+![DataGrid with data filtered based on conditions](SfDataGrid_images/Filtering_img3.png)
 
 ## Clear filtering
 
