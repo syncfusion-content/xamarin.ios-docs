@@ -73,7 +73,7 @@ View.AddSubview(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/appointment.png)
+![Creating Appointment in schedule Xamarin iOS](data_binding_images/appointment.png)
 
 ## Minimum Appointment Height
 
@@ -134,7 +134,7 @@ View.AddSubview(schedule);
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/minheightios.png)
+![Minimum Appointment height support in schedule Xamarin iOS](data_binding_images/minheightios.png)
 
 >**NOTE**
 * `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
@@ -300,7 +300,7 @@ schedule.Appointments = appCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/span.png)
+![spanning or multiday appointments in schedule Xamarin iOS](data_binding_images/span.png)
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
@@ -350,7 +350,7 @@ weekViewSettings.AllDayAppointmentLayoutColor = UIColor.Gray;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/allday.png)
+![All day appointments in schedule Xamarin iOS](data_binding_images/allday.png)
 
 ## Recurrence Appointment
 Recurring appointment on a daily, weekly, monthly, or yearly interval. Recurring appointments can be created by setting `RecurrenceRule` property in Schedule appointments.
@@ -461,221 +461,385 @@ schedule.Appointments = appCollection;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/recurrence.png)
+![Recurrence appointment support in schedule Xamarin iOS](data_binding_images/recurrence.png)
 
-## Drag and Drop Appointments
-Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AllowAppointmentDrag.html) property of `SfSchedule`.
+### Recurrence Pattern Exceptions 
+You can delete or change any recurrence pattern appointment by handling exception dates and appointments of the recurring appointments. 
 
+#### Recurrence Exception Dates
+You can delete any occurrence appointment which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.  
+#### Recurrence Exception appointment
+You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment in the schedule DataSource.
+### Create recurrence exceptions for ScheduleAppointment
+#### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
+You can delete any of occurrence which is exception from recurrence pattern appointment by using [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~RecurrenceExceptionDates.html) property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
 {% tabs %}
 {% highlight c# %}
-schedule.AllowAppointmentDrag = true;
+ NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+            NSDate today = NSDate.Now;
+            // Get the year, month, day from the date
+            NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                                       NSCalendarUnit.Month |
+                                                                       NSCalendarUnit.Day, today);
+            // Set the year, month, day, hour, minute, second
+            startDateComponents.Year = 2017;
+            startDateComponents.Month = 09;
+            startDateComponents.Day = 03;
+            startDateComponents.Hour = 10;
+            startDateComponents.Minute = 0;
+            startDateComponents.Second = 0;
+            //setting start time for the event
+            NSDate startDate = calendar.DateFromComponents(startDateComponents);
+            //setting end time for the event
+            NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
+
+            // Set the exception date. 
+            var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
+            // Add Schedule appointment
+            ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
+            {
+                StartTime = startDate,
+                EndTime = endDate,
+                Subject = (NSString)"Occurs Daily",
+                AppointmentBackground = UIColor.Blue,
+                RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20",
+                RecurrenceExceptionDates = new ObservableCollection<NSDate> {
+                exceptionDate
+                }
+            };
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/draganddrop.gif)
+>**NOTE**
+•	Exception dates should be Universal Time Coordinates (UTC) time zone.
+•	You can also update the RecurrenceExceptionDates collection dynamically.
 
-### Handle dragging based on the appointment
-Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDragStarting_EV.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragStartingEventArgs.html) argument contains the following properties.
+![Recurrence Exception dates support in schedule Xamarin iOS](data_binding_images/exception_dates.png)
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragStartingEventArgs~Appointment.html) - Gets the dragged appointment details.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Appointment dragging can be handled (enable/disable) using this boolean property.
-
-{% tabs %}
-{% highlight c# %}
-schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
-
-...
-
-private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
-{
-        var appointment = e.Appointment;
-        e.Cancel = false;
-}
-{% endhighlight %}
-{% endtabs %}
-
-#### Disabling dragging when the appointment is AllDay appointment
-Using `Cancel` property in the `AppointmentDragStartingEventArgs` argument of Schedule `AppointmentDragStarting` event, you can enable/disable the appointment dragging based on the requirement. In the below code, appointment dragging is disabled when the appointment is AllDay appointment.
+#### Delete occurrence from recurrence pattern dynamically or add exception dates to recurrence pattern dynamically
+You can also delete any occurrence from the recurrence pattern appointment by adding exception date to the RecurrenceExceptionDates collection.
 
 {% tabs %}
 {% highlight c# %}
-schedule.AppointmentDragStarting += Schedule_AppointmentDragStarting;
-
-...
-
-private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStartingEventArgs e)
-{
-        var appointment = e.Appointment as ScheduleAppointment;
-
-      if (appointment.IsAllDay)
-      {
-            e.Cancel = true;
-      }
-}
+ exceptionDate = exceptionDate.AddSeconds(24 * 60 * 60);
+            var recurrenceAppointment = scheduleAppointmentCollection[0];
+            recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
 {% endhighlight %}
 {% endtabs %}
 
-### Get the dragging appointment position
-Using [AppointmentDragOver](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDragOver_EV.html) event, you can get the dragging appointment details, position and time of the particular location. The event will be continuously triggered when the appointment is being dragged. The [AppointmentDragEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs.html) argument contains the following properties.
-
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs~Appointment.html) - Gets the dragging appointment details.
-[DraggingPoint](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs~DraggingPoint.html) - Gets the dragging point (X, Y) of the appointment in Schedule.
-[DraggingTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs~DraggingTime.html) - Gets the dragging time of the appointment in Schedule
+#### Add deleted occurrence to recurrence pattern dynamically or remove exception dates from recurrence pattern dynamically
+You can also add the deleted occurrence to the recurrence pattern appointment by removing exception date from the RecurrenceExceptionDates collection.
 
 {% tabs %}
 {% highlight c# %}
-schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
-
-...
-
-private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
-{
-        var appointment = e.Appointment;
-        var draggingPoint = e.DraggingPoint;
-        var draggingTime = e.DraggingTime;
-}
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+            recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
-#### Displaying alert while dragging appointment over the blocked time slots
-Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below code, Indicating the message while dragging over the Schedule `NonAccessibleBlock`.
+>**NOTE**
+If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with [RecurrenceId](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~RecurrenceId.html) and [ExceptionOccurrenceActualDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~ExceptionOccurrenceActualDate.html) from Schedule `DataSource` and recurrence pattern appointment created for that exception date.
+
+#### Add all deleted occurrences to recurrence pattern dynamically or clear exception dates from recurrence pattern dynamically
+You can also add all deleted occurrences to the recurrence pattern appointment by clearing the exception dates from the RecurrenceExceptionDates collection.
 
 {% tabs %}
 {% highlight c# %}
-schedule.AppointmentDragOver += Schedule_AppointmentDragOver;
-
-...
-
-private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArgs e)
-{
-        //// Comparing the NonAccessibleBlock Start hour with the dragging time
-        NSCalendar calendar = NSCalendar.CurrentCalendar;
-        NSDateComponents draggingTime = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day | NSCalendarUnit.Hour | NSCalendarUnit.Minute | NSCalendarUnit.Second, e.DraggingTime);
-        if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == draggingTime.Hour ||  schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour - 1 == draggingTime.Hour && draggingTime.Hour > 0)
-        {
-                label.Text = "Cannot be moved to blocked time slots";
-        }
-}
-{% endhighlight %}
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+            recurrenceAppointment.RecurrenceExceptionDates.Clear();
 {% endtabs %}
 
-### Handle appointment dropping
-Using [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDrop_EV.html) event you can get the dropping appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs.html) argument contains the following properties.
+### Add exception appointment to recurrence pattern
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs~Appointment.html) - Gets the details of the appointment to be dropped.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Appointment dropping can be handled (enable / disable) using this Boolean property.
-[DropTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs~DropTime.html) - Gets the dropped time of the appointment in Schedule
+You can change any occurrence appointment which is an exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of `ScheduleAppointment`.
+You should add the created exception recurrence appointment to the schedule `DataSource`.
+{% tabs %}
+{% highlight c# %}
+  NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+            NSDate today = NSDate.Now;
+            // Get the year, month, day from the date
+            NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                                       NSCalendarUnit.Month |
+                                                                       NSCalendarUnit.Day, today);
+            // Set the year, month, day, hour, minute, second
+            startDateComponents.Year = 2017;
+            startDateComponents.Month = 09;
+            startDateComponents.Day = 03;
+            startDateComponents.Hour = 10;
+            startDateComponents.Minute = 0;
+            startDateComponents.Second = 0;
+            //setting start time for the event
+            NSDate startDate = calendar.DateFromComponents(startDateComponents);
+            //setting end time for the event
+            NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
+
+            // Set the exception date. 
+            var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
+            // Add Schedule appointment
+            ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
+            {
+                StartTime = startDate,
+                EndTime = endDate,
+                Subject = (NSString)"Occurs Daily",
+                AppointmentBackground = UIColor.Blue,
+                RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20"
+            };
+            var exceptionAppointment = new ScheduleAppointment
+            {
+                StartTime = exceptionDate.AddSeconds(3 * 60 * 60),
+                EndTime = exceptionDate.AddSeconds(4 * 60 * 60),
+                Subject = (NSString)"Meeting",
+                AppointmentBackground = UIColor.Red,
+                // set the parent appointment to recurrence Id.
+                RecurrenceId = recurrenceAppointment,
+                 //Actual occurrence date
+                ExceptionOccurrenceActualDate = exceptionDate
+            };
+{% endtabs %}
+
+>**NOTE**
+•	`RecurrenceId` should be a recurrence pattern appointment object.
+•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
+•	`ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
+
+![Recurrence Exception Appointment support in schedule Xamarin iOS](data_binding_images/exception_appointment.png)
+
+#### Add exception appointment to recurrence pattern dynamically
+You can also add exception appointment dynamically for added exception date by adding exception appointment to the schedule `DataSource` which is exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of the `ScheduleAppointment` class.
 
 {% tabs %}
 {% highlight c# %}
-schedule.AppointmentDrop += Schedule_AppointmentDrop;
-
-...
-
-private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
-{
-        var appointment = e.Appointment;
-        e.Cancel = false;
-        var dropTime = e.DropTime;
-}
-{% endhighlight %}
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+// Add exception appointment to the current recurrence series
+var exceptionAppointment = new ScheduleAppointment
+            {
+                StartTime = exceptionDate.AddSeconds(3 * 60 * 60),
+                EndTime = exceptionDate.AddSeconds(4 * 60 * 60),
+                Subject = (NSString)"Meeting",
+                AppointmentBackground = UIColor.Red,
+                // set the parent appointment to recurrence Id
+                RecurrenceId = recurrenceAppointment,
+                //Actual occurrence date
+                ExceptionOccurrenceActualDate = exceptionDate
+            };
+            //Adding exception appointment in schedule appointment collection
+            scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endtabs %}
+>**NOTE**
+•	`RecurrenceId` should be a recurrence pattern appointment object.
+•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+•	`ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
-#### Disabling dropping when dropping appointment within the Non-Accessible region
-Using `Cancel` property in the `AppointmentDropEventArgs` argument of Schedule `AppointmentDrop` event, you can enable/disable the appointment dropping based on the requirement. In the below code, appointment dropping is disabled while dropping in the Non-Accessible block region.
+#### Remove exception appointment from recurrence pattern
+You can directly remove the added exception appointment for recurrence pattern by removing it from schedule `DataSource`.
 
 {% tabs %}
 {% highlight c# %}
-schedule.AppointmentDrop += Schedule_AppointmentDrop;
-
-...
-
-private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
-{
-        //// Comparing the NonAccessibleBlock Start hour with the dragging time
-        NSCalendar calendar = NSCalendar.CurrentCalendar;
-        NSDateComponents dropTime = calendar.Components(NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day | NSCalendarUnit.Hour | NSCalendarUnit.Minute | NSCalendarUnit.Second, e.DropTime);
-        if (schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour == dropTime.Hour || schedule.WeekViewSettings.NonAccessibleBlockCollection.GetItem<NonAccessibleBlock>(0).StartHour - 1 == dropTime.Hour && dropTime.Hour > 0)
-        {
-                e.Cancel = true;
-        }
-}
-{% endhighlight %}
+var exceptionAppointment = scheduleAppointmentCollection[1];
+//Remove exception appointment from schedule appointment collection
+            scheduleAppointmentCollection.Remove(exceptionAppointment);
 {% endtabs %}
 
-### Customizing the Drag and Drop environment
-Using [DragDropSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DragDropSettings.html) property of schedule, you can handle the behavior of drag and drop in Schedule.
+### Create recurrence exceptions for custom appointment
+#### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
+You can delete any occurrence which is exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception dates.
+To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class (`Meeting`).
 
 {% tabs %}
 {% highlight c# %}
-DragDropSettings dragDropSettings = new DragDropSettings();
-dragDropSettings.AllowNavigate = true;
-dragDropSettings.AllowScroll = false;
-var timeSpan = new TimeSpan(0, 0, 0, 1, 0);
-dragDropSettings.AutoNavigationDelay = timeSpan;
-dragDropSettings.ShowTimeIndicator = true;
-dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
-schedule.DragDropSettings = dragDropSettings;
+ public ObservableCollection<NSDate> RecurrenceExceptionDates { get; set; } = new ObservableCollection<NSDate>();
 {% endhighlight %}
 {% endtabs %}
 
-#### Disabling navigation when dragging appointment
-Using [AllowNavigate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~AllowNavigate.html) boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment the endpoint of the current view.
+You should map this custom property (`RecurrenceExceptionDates`) of custom class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the schedule appointment.
 
 {% tabs %}
 {% highlight c# %}
-dragDropSettings.AllowNavigate = false;
+// data mapping for custom appointments.
+            dataMapping.RecurrenceExceptionDates = "RecurrenceExceptionDates";
+            
+// Create the new exception date.
+            var calendar = new NSCalendar(NSCalendarType.Gregorian);
+            var today = NSDate.Now;
+            // Get the year, month, day from the date
+            var startDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                                       NSCalendarUnit.Month |
+                                                                       NSCalendarUnit.Day, today);
+            // Set the year, month, day, hour, minute, second
+            startDateComponents.Year = 2017;
+            startDateComponents.Month = 09;
+            startDateComponents.Day = 03;
+            startDateComponents.Hour = 10;
+            startDateComponents.Minute = 0;
+            startDateComponents.Second = 0;
+
+            //setting start time for the event
+            var startDate = calendar.DateFromComponents(startDateComponents);
+            //setting end time for the event
+            var endDate = startDate.AddSeconds(2 * 60 * 60);
+            var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
+
+            // Add Schedule appointment
+            var recurrenceAppointment = new Meeting
+            {
+                From = startDate,
+                To = endDate,
+                EventName = (NSString)"Occurs Daily",
+                Color = UIColor.Blue,
+                RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20",
+                RecurrenceExceptionDates = new ObservableCollection<NSDate>
+                {
+                exceptionDate
+                }
+            };
 {% endhighlight %}
 {% endtabs %}
 
-#### Handling navigation delay while holding dragged appointment
-Using [AutoNavigationDelay](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~AutoNavigationDelay.html)  `TimeSpan` property can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
+>**NOTE**
+•	Exception dates should be in Universal Time Coordinates (UTC) time zone.
+•	You can also dynamically update the custom property RecurrenceExceptionDates collection.
+
+![Recurrence Exception dates support in schedule Xamarin iOS](data_binding_images/exception_dates.png)
+
+#### Delete occurrence from recurrence pattern dynamically or add exception dates to recurrence pattern dynamically
+You can also delete any occurrence from the recurrence pattern appointment by adding exception date to the `RecurrenceExceptionDates` custom property collection.
 
 {% tabs %}
 {% highlight c# %}
-var timeSpan = new TimeSpan(0, 0, 0, 1, 0);
-dragDropSettings.AutoNavigationDelay = timeSpan;
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+var addExceptionDate = exceptionDate.AddSeconds(24 * 60 * 60);
+            recurrenceAppointment.RecurrenceExceptionDates.Add(addExceptionDate);
 {% endhighlight %}
 {% endtabs %}
 
-#### Disabling scroll when dragging appointment
-Using [AllowScroll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~AllowScroll.html) boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
+#### Add deleted occurrence to recurrence pattern dynamically or remove exception dates from recurrence pattern dynamically
+You can also add the deleted occurrence to the recurrence pattern appointment by removing exception date from the `RecurrenceExceptionDates` custom property collection.
 
 {% tabs %}
 {% highlight c# %}
-dragDropSettings.AllowScroll = false;
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+            recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
-#### Disabling dragging time indicator
-[ShowTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~ShowTimeIndicator.html) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots. Default value of the `ShowTimeIndicator` property is true.
+>**NOTE**
+If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with `RecurrenceId` and `ActualDate` from the schedule `DataSource` and recurrence pattern appointment created for that exception date.
+
+#### Add all deleted occurrence to recurrence pattern dynamically or clear exception dates from recurrence pattern dynamically
+You can also add all deleted occurrence to the recurrence pattern appointment by clearing the exception dates from the `RecurrenceExceptionDates` custom property collection.
 
 {% tabs %}
 {% highlight c# %}
-dragDropSettings.ShowTimeIndicator = false;
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+            recurrenceAppointment.RecurrenceExceptionDates.Clear();
 {% endhighlight %}
 {% endtabs %}
 
-### Customize appearance of dragging Time Indicator
-Using [TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~TimeIndicatorStyle.html) property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeIndicatorStyle~TextColor.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeIndicatorStyle~TextSize.html) and [TextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeIndicatorStyle~TextFormat.html).
+#### Add exception appointment to recurrence pattern
+You can change any occurrence appointment which is exception from the recurrence pattern appointment by using the `RecurrenceId` property of `AppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and `ExceptionOccurrenceActualDate` property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
+For adding custom exception appointment to the recurrence series, add the `ActualDate` and `RecurrenceID` properties to custom class (`Meeting`).
 
 {% tabs %}
 {% highlight c# %}
-TimeIndicatorStyle timeIndicatorStyle = new TimeIndicatorStyle();
-timeIndicatorStyle.TextColor = UIColor.Red;
-timeIndicatorStyle.TextSize = 15;
-timeIndicatorStyle.TextFormat = (NSString)"hh : mm";
-dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
-schedule.DragDropSettings = dragDropSettings;
+public Calendar ActualDate { get; set; }
+public object RecurrenceID { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/timeindicator.png)
+You should map this custom property (`RecurrenceID`) of `Meeting` with the `RecurrenceId` property of `AppointmentMapping` class which is used to map the exception appointment with schedule recurrence series appointment(`Meeting`).
+You should also map this custom property (`ActualDate`) of `Meeting` with the `ExceptionOccurrenceActualDate` property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment with schedule recurrence appointment.
+You should add the created exception recurrence appointment to the schedule `DataSource`.
 
->**Notes**
-* While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
-* While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.
-* Doesn't support control to control drag and drop.
+{% tabs %}
+{% highlight c# %}
+ NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+            NSDate today = NSDate.Now;
+            // Get the year, month, day from the date
+            NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
+                                                                       NSCalendarUnit.Month |
+                                                                       NSCalendarUnit.Day, today);
+            // Set the year, month, day, hour, minute, second
+            startDateComponents.Year = 2017;
+            startDateComponents.Month = 09;
+            startDateComponents.Day = 03;
+            startDateComponents.Hour = 10;
+            startDateComponents.Minute = 0;
+            startDateComponents.Second = 0;
+            //setting start time for the event
+            NSDate startDate = calendar.DateFromComponents(startDateComponents);
+            //setting end time for the event
+            NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
+            // Set the exception date. 
+            var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
+            // Add Schedule appointment
+            ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
+            {
+                StartTime = startDate,
+                EndTime = endDate,
+                Subject = (NSString)"Occurs Daily",
+                AppointmentBackground = UIColor.Blue,
+                RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20"
+            };
+
+            var exceptionAppointment = new ScheduleAppointment
+            {
+                StartTime = exceptionDate.AddSeconds(2 * 60 * 60),
+                EndTime = exceptionDate.AddSeconds(3 * 60 * 60),
+                Subject = (NSString)"Meeting",
+                AppointmentBackground = UIColor.Red,
+                // set the parent appointment to recurrence Id
+                RecurrenceId = recurrenceAppointment,
+                 //Actual occurrence date
+                ExceptionOccurrenceActualDate = exceptionDate
+            };
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+•	`RecurrenceId` should be a recurrence pattern appointment object.
+•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+•	`ActualDate` should be in Universal Time Coordinates (UTC) time zone.
+
+![Recurrence Exception Appointment support in schedule Xamarin iOS](data_binding_images/exception_appointment.png)
+
+#### Add exception appointment to recurrence pattern dynamically
+
+You can also add exception appointment dynamically for added exception date by adding exception appointment to the schedule `DataSource` by using the `RecurrenceId` property of `AppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and `ExceptionOccurrenceActualDate` property of the `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
+
+{% tabs %}
+{% highlight c# %}
+            var recurrenceAppointment = scheduleAppointmentCollection[0];
+           // Add Exception appointment to recurrence series
+            var exceptionAppointment = new Meeting
+            {
+                From = exceptionDate.AddSeconds(3 * 60 * 60),
+                To = exceptionDate.AddSeconds(4 * 60 * 60),
+                EventName = (NSString)"Meeting",
+                Color = UIColor.Red,
+                // set the parent appointment to recurrence Id
+                RecurrenceID = recurrenceAppointment,
+                 //Actual occurrence date
+                ActualDate = exceptionDate
+            };
+            scheduleAppointmentCollection.Add(exceptionAppointment);
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+•	`RecurrenceId` should be a recurrence pattern appointment object.
+•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+•	`ActualDate` should be in Universal Time Coordinates (UTC) time zone.
+
+
+#### Remove exception appointment from recurrence pattern
+You can directly remove the added exception appointment for recurrence pattern by removing from the schedule `DataSource`.
+
+{% tabs %}
+{% highlight c# %}
+var exceptionAppointment = scheduleAppointmentCollection[1];
+            scheduleAppointmentCollection.Remove(exceptionAppointment);
+{% endhighlight %}
+{% endtabs %}
 
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
@@ -704,7 +868,7 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/style.png)
+![Appointments styling support in schedule Xamarin iOS](data_binding_images/style.png)
 
 ### Customize appearance using Event
 Schedule appointment can be customized during runtime using [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `AppointmentStyle` property.
@@ -746,7 +910,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointmentstyle_event.png)
+![Appointments customization in schedule Xamarin iOS](PopulatingAppointments_images/appointmentstyle_event.png)
 
 ## Customize appearance using Custom View
 Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
@@ -786,7 +950,7 @@ private void schedule_AppointmentLoaded(object sender, AppointmentLoadedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](PopulatingAppointments_images/appointmentstyle_customview.png)
+![Custom view support for appointments in schedule Xamarin iOS](PopulatingAppointments_images/appointmentstyle_customview.png)
 
 ### Customize Font Appearance
 
@@ -798,7 +962,7 @@ appointmentStyle.TextStyle = UIFont.FromName("Lobster-Regular",15);
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/customfontappointment.png)
+![custom font support in schedule Xamarin iOS](data_binding_images/customfontappointment.png)
 
 Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
@@ -854,4 +1018,4 @@ schedule.AppointmentStyle = appointmentStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](data_binding_images/selection.png)
+![Selection customization in schedule Xamarin iOS](data_binding_images/selection.png)
