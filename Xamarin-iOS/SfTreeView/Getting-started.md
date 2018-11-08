@@ -47,7 +47,7 @@ The following NuGet package should be installed to use the TreeView control in t
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add TreeView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTreeView.iOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView.iOS/), and then install it. 
 
-![Add TreeView](Images/TreeView_Add.png)
+![Xamarin iOS Add TreeView](Images/TreeView_Add.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/control-dependencies#sftreeview) to know about the dependent assemblies for TreeView. 
 
@@ -70,7 +70,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 This section explains how to create a TreeView and configure it. The TreeView control can be configured entirely in C# code or using story board. This is how the final output will look like on iOS devices.
 
-![TreeView in iOS](Images/TreeView_Templating.png)
+![Xamarin iOS TreeView](Images/TreeView_Templating.png)
 
 You can download the entire source code of this demo for Xamarin.iOS from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758). 
 
@@ -96,13 +96,13 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 2. Drag the TreeView control from toolbox and drop it into the story board. Preview for TreeView will be shown.
 3. Open the properties window of TreeView and set the required properties.
 
-![Add TreeView through designer page](Images/TreeView_Designer.png)
+![Xamarin iOS Add TreeView through designer page](Images/TreeView_Designer.png)
 
 ### Setting the TreeView properties in story board
 
 Set the identity name and required properties for TreeView in story board.
 
-![TreeView properties](Images/TreeView_Properties.png)
+![Xamarin iOS TreeView properties](Images/TreeView_Properties.png)
 
 {% tabs %}
 
@@ -502,7 +502,7 @@ It is also applicable for both Unbound Mode data items. Now, run the application
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758).
 
-![TreeView Bound Mode](Images/TreeView_Templating.png)
+![Xamarin iOS TreeView Bound Mode](Images/TreeView_Templating.png)
 
 ## Interacting with a tree view
 
