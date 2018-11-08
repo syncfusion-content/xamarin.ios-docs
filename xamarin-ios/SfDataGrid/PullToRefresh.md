@@ -84,7 +84,7 @@ Running the application renders the following output.
 
 ![DataGrid with PullToRefresh functionality](SfDataGrid_images/PullToRefresh.png)
 
-## Host DataGrid inside PullToRefresh control
+## Host DataGrid inside Pull to Refresh control
 
 SfPullToRefresh is a refresh control that allows you to interact and refresh the view loaded in it. When the SfDataGrid is hosted inside the SfPullToRefresh, it is used to refresh the item while performing the pull to refresh action. 
 
@@ -92,4 +92,4 @@ For more details and code example for hosting the SfDataGrid inside SfPullToRefr
 
 The final output will look like on iOS, Android and Windows Phone devices as shown below.
 
-![Hosting DataGrid inside PullToRefresh component](SfDataGrid_images/SfDatagrid_Refresh_iOS.gif)
+![Hosting DataGrid inside Pull to Refresh component](SfDataGrid_images/SfDatagrid_Refresh_iOS.gif)
