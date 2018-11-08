@@ -492,7 +492,6 @@ You can delete any of occurrence which is exception from recurrence pattern appo
             NSDate startDate = calendar.DateFromComponents(startDateComponents);
             //setting end time for the event
             NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
-
             // Set the exception date. 
             var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
             // Add Schedule appointment
@@ -572,7 +571,6 @@ You should add the created exception recurrence appointment to the schedule `Dat
             NSDate startDate = calendar.DateFromComponents(startDateComponents);
             //setting end time for the event
             NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
-
             // Set the exception date. 
             var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
             // Add Schedule appointment
@@ -672,13 +670,11 @@ You should map this custom property (`RecurrenceExceptionDates`) of custom class
             startDateComponents.Hour = 10;
             startDateComponents.Minute = 0;
             startDateComponents.Second = 0;
-
             //setting start time for the event
             var startDate = calendar.DateFromComponents(startDateComponents);
             //setting end time for the event
             var endDate = startDate.AddSeconds(2 * 60 * 60);
             var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
-
             // Add Schedule appointment
             var recurrenceAppointment = new Meeting
             {
@@ -780,7 +776,6 @@ You should add the created exception recurrence appointment to the schedule `Dat
                 AppointmentBackground = UIColor.Blue,
                 RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20"
             };
-
             var exceptionAppointment = new ScheduleAppointment
             {
                 StartTime = exceptionDate.AddSeconds(2 * 60 * 60),
