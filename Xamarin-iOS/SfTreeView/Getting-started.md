@@ -120,7 +120,7 @@ namespace GettingStartedBound
  			base.ViewDidLoad();
  			// Perform any additional setup loading the view, typically from a nib.
  			FileManagerViewModel viewModel = new FileManagerViewModel();
-            treeView.ChildPropertyName = "SubFolder";
+            treeView.ChildPropertyName = "SubFiles";
             treeView.ItemsSource = viewModel.Folders;
             treeView.Adapter = new NodeImageAdapter();
 		}
@@ -238,19 +238,19 @@ public class FileManager : INotifyPropertyChanged
 {
    private string fileName;
    private UIImage imageIcon;
-   private ObservableCollection<FileManager> subFolder;
+   private ObservableCollection<FileManager> subFiles;
 
-   public ObservableCollection<FileManager> SubFolder
+   public ObservableCollection<FileManager> SubFiles
    {
        get
        {
-            return subFolder;
+            return subFiles;
        }
 
         set
        {
-            subFolder = value;
-            RaisedOnPropertyChanged("SubFolder");
+            subFiles = value;
+            RaisedOnPropertyChanged("SubFiles");
        }
     }
 
@@ -413,7 +413,7 @@ public override void ViewDidLoad()
     // Perform any additional setup after loading the view
     SfTreeView treeView = new SfTreeView(View.Bounds);
     FileManagerViewModel viewModel = new FileManagerViewModel();
-    treeView.ChildPropertyName = "SubFolder";
+    treeView.ChildPropertyName = "SubFiles";
     treeView.ItemsSource = viewModel.Folders;
     treeView.Adapter = new NodeImageAdapter();
     Add(treeView);
@@ -525,7 +525,7 @@ public override void ViewDidLoad()
     FileManagerViewModel viewModel = new FileManagerViewModel();
     treeView.AutoExpandMode = AutoExpandMode.AllNodesExpanded;
     treeView.ExpanderActionTarget = ExpanderActionTarget.Node; 
-    treeView.ChildPropertyName = "SubFolder";
+    treeView.ChildPropertyName = "SubFiles";
     treeView.ItemsSource = viewModel.Folders;
     treeView.Adapter = new NodeImageAdapter();
     Add(treeView);
