@@ -82,7 +82,7 @@ public class Command : ICommand
 
 Running the application renders the following output.
 
-![DataGrid with PullToRefresh functionality](SfDataGrid_images/PullToRefresh.png)
+![DataGrid with Pull to Refresh functionality](SfDataGrid_images/PullToRefresh.png)
 
 ## Host DataGrid inside Pull to Refresh control
 
