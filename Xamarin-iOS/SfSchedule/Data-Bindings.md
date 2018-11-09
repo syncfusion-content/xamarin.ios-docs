@@ -463,14 +463,17 @@ schedule.Appointments = appCollection;
 
 ![Recurrence appointment support in schedule Xamarin iOS](data_binding_images/recurrence.png)
 
-### Recurrence Pattern Exceptions 
+## Recurrence Pattern Exceptions 
 You can delete or change any recurrence pattern appointment by handling exception dates and appointments of the recurring appointments. 
 
-#### Recurrence Exception Dates
+### Recurrence Exception Dates
 You can delete any occurrence appointment which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.  
-#### Recurrence Exception appointment
+
+### Recurrence Exception appointment
 You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment in the schedule DataSource.
+
 ### Create recurrence exceptions for ScheduleAppointment
+
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 You can delete any of occurrence which is exception from recurrence pattern appointment by using [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~RecurrenceExceptionDates.html) property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
 {% tabs %}
@@ -549,7 +552,7 @@ var recurrenceAppointment = scheduleAppointmentCollection[0];
 {% endhighlight %}
 {% endtabs %}
 
-### Add exception appointment to recurrence pattern
+#### Add exception appointment to recurrence pattern
 
 You can change any occurrence appointment which is an exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of `ScheduleAppointment`.
 You should add the created exception recurrence appointment to the schedule `DataSource`.
@@ -642,7 +645,11 @@ var exceptionAppointment = scheduleAppointmentCollection[1];
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code of this demo for Xamarin.iOS from
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-add-Recurrence-Exceptions-to-SfSchedule-recurring-appointments-in-Xamarin.iOS).
+
 ### Create recurrence exceptions for custom appointment
+
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 You can delete any occurrence which is exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception dates.
 To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class (`Meeting`).
@@ -839,6 +846,9 @@ var exceptionAppointment = scheduleAppointmentCollection[1];
             scheduleAppointmentCollection.Remove(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
+
+You can download the entire source code of this demo for Xamarin.iOS from
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-add-Recurrence-Exceptions-to-SfSchedule-for-custom-recurring-appointments-in-Xamarin.iOS/).
 
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
