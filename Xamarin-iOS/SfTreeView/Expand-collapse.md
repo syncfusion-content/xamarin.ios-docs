@@ -60,10 +60,6 @@ treeView.CollapseNode(node);
 {% endhighlight %}
 {% endtabs %}
 
-## Expand and Collapse using Keyboard
-
-TreeView allows to expand and collapse the nodes by using right and left arrows keys. To expand a node, press the right arrow key and to collapse a node, press the left arrow key on the focused item.
-
 ## Events
 
 TreeView exposes following events to handle expanding and collapsing of items.
