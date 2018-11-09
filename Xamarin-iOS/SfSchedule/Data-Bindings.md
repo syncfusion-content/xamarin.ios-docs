@@ -463,49 +463,59 @@ schedule.Appointments = appCollection;
 
 ![Recurrence appointment support in schedule Xamarin iOS](data_binding_images/recurrence.png)
 
-### Recurrence Pattern Exceptions 
+## Recurrence Pattern Exceptions 
 You can delete or change any recurrence pattern appointment by handling exception dates and appointments of the recurring appointments. 
 
-#### Recurrence Exception Dates
+### Recurrence Exception Dates
 You can delete any occurrence appointment which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.  
-#### Recurrence Exception appointment
+
+### Recurrence Exception appointment
 You can also change any occurrence appointment which is exception from recurrence pattern appointment by adding the recurrence exception appointment in the schedule DataSource.
-### Create recurrence exceptions for ScheduleAppointment
+
+### Create recurrence exceptions for schedule appointment
+
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 You can delete any of occurrence which is exception from recurrence pattern appointment by using [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~RecurrenceExceptionDates.html) property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
 {% tabs %}
 {% highlight c# %}
  NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
-            NSDate today = NSDate.Now;
-            // Get the year, month, day from the date
-            NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
-                                                                       NSCalendarUnit.Month |
-                                                                       NSCalendarUnit.Day, today);
-            // Set the year, month, day, hour, minute, second
-            startDateComponents.Year = 2017;
-            startDateComponents.Month = 09;
-            startDateComponents.Day = 03;
-            startDateComponents.Hour = 10;
-            startDateComponents.Minute = 0;
-            startDateComponents.Second = 0;
-            //setting start time for the event
-            NSDate startDate = calendar.DateFromComponents(startDateComponents);
-            //setting end time for the event
-            NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
-            // Set the exception date. 
-            var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
-            // Add Schedule appointment
-            ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
-            {
-                StartTime = startDate,
-                EndTime = endDate,
-                Subject = (NSString)"Occurs Daily",
-                AppointmentBackground = UIColor.Blue,
-                RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20",
-                RecurrenceExceptionDates = new ObservableCollection<NSDate> {
-                exceptionDate
-                }
-            };
+NSDate today = NSDate.Now;
+
+// Get the year, month, day from the date
+NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
+														   NSCalendarUnit.Month |
+														   NSCalendarUnit.Day, today);
+														   
+// Set the year, month, day, hour, minute, second
+startDateComponents.Year = 2017;
+startDateComponents.Month = 09;
+startDateComponents.Day = 03;
+startDateComponents.Hour = 10;
+startDateComponents.Minute = 0;
+startDateComponents.Second = 0;
+
+//setting start time for the event
+NSDate startDate = calendar.DateFromComponents(startDateComponents);
+
+//setting end time for the event
+NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
+
+// Set the exception date. 
+var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
+
+// Add Schedule appointment
+ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
+{
+	StartTime = startDate,
+	EndTime = endDate,
+	Subject = (NSString)"Occurs Daily",
+	AppointmentBackground = UIColor.Blue,
+	RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20",
+	RecurrenceExceptionDates = new ObservableCollection<NSDate> 
+	{
+		exceptionDate
+	}
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -520,9 +530,9 @@ You can also delete any occurrence from the recurrence pattern appointment by ad
 
 {% tabs %}
 {% highlight c# %}
- exceptionDate = exceptionDate.AddSeconds(24 * 60 * 60);
-            var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
+exceptionDate = exceptionDate.AddSeconds(24 * 60 * 60);
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+recurrenceAppointment.RecurrenceExceptionDates.Add(exceptionDate);
 {% endhighlight %}
 {% endtabs %}
 
@@ -532,7 +542,7 @@ You can also add the deleted occurrence to the recurrence pattern appointment by
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
+recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
@@ -545,55 +555,62 @@ You can also add all deleted occurrences to the recurrence pattern appointment b
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Clear();
+recurrenceAppointment.RecurrenceExceptionDates.Clear();
 {% endhighlight %}
 {% endtabs %}
 
-### Add exception appointment to recurrence pattern
+#### Add exception appointment to recurrence pattern
 
 You can change any occurrence appointment which is an exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of `ScheduleAppointment`.
 You should add the created exception recurrence appointment to the schedule `DataSource`.
 {% tabs %}
 {% highlight c# %}
-  NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
-            NSDate today = NSDate.Now;
-            // Get the year, month, day from the date
-            NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
-                                                                       NSCalendarUnit.Month |
-                                                                       NSCalendarUnit.Day, today);
-            // Set the year, month, day, hour, minute, second
-            startDateComponents.Year = 2017;
-            startDateComponents.Month = 09;
-            startDateComponents.Day = 03;
-            startDateComponents.Hour = 10;
-            startDateComponents.Minute = 0;
-            startDateComponents.Second = 0;
-            //setting start time for the event
-            NSDate startDate = calendar.DateFromComponents(startDateComponents);
-            //setting end time for the event
-            NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
-            // Set the exception date. 
-            var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
-            // Add Schedule appointment
-            ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
-            {
-                StartTime = startDate,
-                EndTime = endDate,
-                Subject = (NSString)"Occurs Daily",
-                AppointmentBackground = UIColor.Blue,
-                RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20"
-            };
-            var exceptionAppointment = new ScheduleAppointment
-            {
-                StartTime = exceptionDate.AddSeconds(3 * 60 * 60),
-                EndTime = exceptionDate.AddSeconds(4 * 60 * 60),
-                Subject = (NSString)"Meeting",
-                AppointmentBackground = UIColor.Red,
-                // set the parent appointment to recurrence Id.
-                RecurrenceId = recurrenceAppointment,
-                 //Actual occurrence date
-                ExceptionOccurrenceActualDate = exceptionDate
-            };
+ NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
+NSDate today = NSDate.Now;
+
+// Get the year, month, day from the date
+NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
+														   NSCalendarUnit.Month |
+														   NSCalendarUnit.Day, today);
+														   
+// Set the year, month, day, hour, minute, second
+startDateComponents.Year = 2017;
+startDateComponents.Month = 09;
+startDateComponents.Day = 03;
+startDateComponents.Hour = 10;
+startDateComponents.Minute = 0;
+startDateComponents.Second = 0;
+
+//setting start time for the event
+NSDate startDate = calendar.DateFromComponents(startDateComponents);
+
+//setting end time for the event
+NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
+
+// Set the exception date. 
+var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
+
+// Add Schedule appointment
+ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
+{
+	StartTime = startDate,
+	EndTime = endDate,
+	Subject = (NSString)"Occurs Daily",
+	AppointmentBackground = UIColor.Blue,
+	RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20"
+};
+
+var exceptionAppointment = new ScheduleAppointment
+{
+	StartTime = exceptionDate.AddSeconds(3 * 60 * 60),
+	EndTime = exceptionDate.AddSeconds(4 * 60 * 60),
+	Subject = (NSString)"Meeting",
+	AppointmentBackground = UIColor.Red,
+	// set the parent appointment to recurrence Id.
+	RecurrenceId = recurrenceAppointment,
+	 //Actual occurrence date
+	ExceptionOccurrenceActualDate = exceptionDate
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -610,20 +627,22 @@ You can also add exception appointment dynamically for added exception date by a
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
+
 // Add exception appointment to the current recurrence series
 var exceptionAppointment = new ScheduleAppointment
-            {
-                StartTime = exceptionDate.AddSeconds(3 * 60 * 60),
-                EndTime = exceptionDate.AddSeconds(4 * 60 * 60),
-                Subject = (NSString)"Meeting",
-                AppointmentBackground = UIColor.Red,
-                // set the parent appointment to recurrence Id
-                RecurrenceId = recurrenceAppointment,
-                //Actual occurrence date
-                ExceptionOccurrenceActualDate = exceptionDate
-            };
-            //Adding exception appointment in schedule appointment collection
-            scheduleAppointmentCollection.Add(exceptionAppointment);
+{
+	StartTime = exceptionDate.AddSeconds(3 * 60 * 60),
+	EndTime = exceptionDate.AddSeconds(4 * 60 * 60),
+	Subject = (NSString)"Meeting",
+	AppointmentBackground = UIColor.Red,
+	// set the parent appointment to recurrence Id
+	RecurrenceId = recurrenceAppointment,
+	//Actual occurrence date
+	ExceptionOccurrenceActualDate = exceptionDate
+};
+
+//Adding exception appointment in schedule appointment collection
+scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 >**NOTE**
@@ -638,11 +657,15 @@ You can directly remove the added exception appointment for recurrence pattern b
 {% highlight c# %}
 var exceptionAppointment = scheduleAppointmentCollection[1];
 //Remove exception appointment from schedule appointment collection
-            scheduleAppointmentCollection.Remove(exceptionAppointment);
+scheduleAppointmentCollection.Remove(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code of this demo for Xamarin.iOS from
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-create-Recurrence-Exceptions-to-SfSchedule-recurring-appointments-in-Xamarin.iOS).
+
 ### Create recurrence exceptions for custom appointment
+
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 You can delete any occurrence which is exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception dates.
 To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class (`Meeting`).
@@ -658,40 +681,45 @@ You should map this custom property (`RecurrenceExceptionDates`) of custom class
 {% tabs %}
 {% highlight c# %}
 // data mapping for custom appointments.
-            dataMapping.RecurrenceExceptionDates = "RecurrenceExceptionDates";
+dataMapping.RecurrenceExceptionDates = "RecurrenceExceptionDates";
             
 // Create the new exception date.
-            var calendar = new NSCalendar(NSCalendarType.Gregorian);
-            var today = NSDate.Now;
-            // Get the year, month, day from the date
-            var startDateComponents = calendar.Components(NSCalendarUnit.Year |
-                                                                       NSCalendarUnit.Month |
-                                                                       NSCalendarUnit.Day, today);
-            // Set the year, month, day, hour, minute, second
-            startDateComponents.Year = 2017;
-            startDateComponents.Month = 09;
-            startDateComponents.Day = 03;
-            startDateComponents.Hour = 10;
-            startDateComponents.Minute = 0;
-            startDateComponents.Second = 0;
-            //setting start time for the event
-            var startDate = calendar.DateFromComponents(startDateComponents);
-            //setting end time for the event
-            var endDate = startDate.AddSeconds(2 * 60 * 60);
-            var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
-            // Add Schedule appointment
-            var recurrenceAppointment = new Meeting
-            {
-                From = startDate,
-                To = endDate,
-                EventName = (NSString)"Occurs Daily",
-                Color = UIColor.Blue,
-                RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20",
-                RecurrenceExceptionDates = new ObservableCollection<NSDate>
-                {
-                exceptionDate
-                }
-            };
+var calendar = new NSCalendar(NSCalendarType.Gregorian);
+var today = NSDate.Now;
+
+// Get the year, month, day from the date
+var startDateComponents = calendar.Components(NSCalendarUnit.Year |
+										   NSCalendarUnit.Month |
+										   NSCalendarUnit.Day, today);
+										   
+// Set the year, month, day, hour, minute, second
+startDateComponents.Year = 2017;
+startDateComponents.Month = 09;
+startDateComponents.Day = 03;
+startDateComponents.Hour = 10;
+startDateComponents.Minute = 0;
+startDateComponents.Second = 0;
+
+//setting start time for the event
+var startDate = calendar.DateFromComponents(startDateComponents);
+
+//setting end time for the event
+var endDate = startDate.AddSeconds(2 * 60 * 60);
+var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
+
+// Add Schedule appointment
+var recurrenceAppointment = new Meeting
+{
+	From = startDate,
+	To = endDate,
+	EventName = (NSString)"Occurs Daily",
+	Color = UIColor.Blue,
+	RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20",
+	RecurrenceExceptionDates = new ObservableCollection<NSDate>
+	{
+		exceptionDate
+	}
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -708,7 +736,7 @@ You can also delete any occurrence from the recurrence pattern appointment by ad
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
 var addExceptionDate = exceptionDate.AddSeconds(24 * 60 * 60);
-            recurrenceAppointment.RecurrenceExceptionDates.Add(addExceptionDate);
+recurrenceAppointment.RecurrenceExceptionDates.Add(addExceptionDate);
 {% endhighlight %}
 {% endtabs %}
 
@@ -718,7 +746,7 @@ You can also add the deleted occurrence to the recurrence pattern appointment by
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
+recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
 
@@ -731,7 +759,7 @@ You can also add all deleted occurrence to the recurrence pattern appointment by
 {% tabs %}
 {% highlight c# %}
 var recurrenceAppointment = scheduleAppointmentCollection[0];
-            recurrenceAppointment.RecurrenceExceptionDates.Clear();
+recurrenceAppointment.RecurrenceExceptionDates.Clear();
 {% endhighlight %}
 {% endtabs %}
 
@@ -753,44 +781,51 @@ You should add the created exception recurrence appointment to the schedule `Dat
 {% tabs %}
 {% highlight c# %}
  NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
-            NSDate today = NSDate.Now;
-            // Get the year, month, day from the date
-            NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
-                                                                       NSCalendarUnit.Month |
-                                                                       NSCalendarUnit.Day, today);
-            // Set the year, month, day, hour, minute, second
-            startDateComponents.Year = 2017;
-            startDateComponents.Month = 09;
-            startDateComponents.Day = 03;
-            startDateComponents.Hour = 10;
-            startDateComponents.Minute = 0;
-            startDateComponents.Second = 0;
-            //setting start time for the event
-            NSDate startDate = calendar.DateFromComponents(startDateComponents);
-            //setting end time for the event
-            NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
-            // Set the exception date. 
-            var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
-            // Add Schedule appointment
-            ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
-            {
-                StartTime = startDate,
-                EndTime = endDate,
-                Subject = (NSString)"Occurs Daily",
-                AppointmentBackground = UIColor.Blue,
-                RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20"
-            };
-            var exceptionAppointment = new ScheduleAppointment
-            {
-                StartTime = exceptionDate.AddSeconds(2 * 60 * 60),
-                EndTime = exceptionDate.AddSeconds(3 * 60 * 60),
-                Subject = (NSString)"Meeting",
-                AppointmentBackground = UIColor.Red,
-                // set the parent appointment to recurrence Id
-                RecurrenceId = recurrenceAppointment,
-                 //Actual occurrence date
-                ExceptionOccurrenceActualDate = exceptionDate
-            };
+NSDate today = NSDate.Now;
+
+// Get the year, month, day from the date
+NSDateComponents startDateComponents = calendar.Components(NSCalendarUnit.Year |
+													   NSCalendarUnit.Month |
+													   NSCalendarUnit.Day, today);
+													   
+// Set the year, month, day, hour, minute, second
+startDateComponents.Year = 2017;
+startDateComponents.Month = 09;
+startDateComponents.Day = 03;
+startDateComponents.Hour = 10;
+startDateComponents.Minute = 0;
+startDateComponents.Second = 0;
+
+//setting start time for the event
+NSDate startDate = calendar.DateFromComponents(startDateComponents);
+
+//setting end time for the event
+NSDate endDate = startDate.AddSeconds(2 * 60 * 60);
+
+// Set the exception date. 
+var exceptionDate = startDate.AddSeconds(4 * 24 * 60 * 60);
+
+// Add Schedule appointment
+ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
+{
+	StartTime = startDate,
+	EndTime = endDate,
+	Subject = (NSString)"Occurs Daily",
+	AppointmentBackground = UIColor.Blue,
+	RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20"
+};
+
+var exceptionAppointment = new ScheduleAppointment
+{
+	StartTime = exceptionDate.AddSeconds(2 * 60 * 60),
+	EndTime = exceptionDate.AddSeconds(3 * 60 * 60),
+	Subject = (NSString)"Meeting",
+	AppointmentBackground = UIColor.Red,
+	// set the parent appointment to recurrence Id
+	RecurrenceId = recurrenceAppointment,
+	 //Actual occurrence date
+	ExceptionOccurrenceActualDate = exceptionDate
+};
 {% endhighlight %}
 {% endtabs %}
 
@@ -807,20 +842,21 @@ You can also add exception appointment dynamically for added exception date by a
 
 {% tabs %}
 {% highlight c# %}
-            var recurrenceAppointment = scheduleAppointmentCollection[0];
-           // Add Exception appointment to recurrence series
-            var exceptionAppointment = new Meeting
-            {
-                From = exceptionDate.AddSeconds(3 * 60 * 60),
-                To = exceptionDate.AddSeconds(4 * 60 * 60),
-                EventName = (NSString)"Meeting",
-                Color = UIColor.Red,
-                // set the parent appointment to recurrence Id
-                RecurrenceID = recurrenceAppointment,
-                 //Actual occurrence date
-                ActualDate = exceptionDate
-            };
-            scheduleAppointmentCollection.Add(exceptionAppointment);
+var recurrenceAppointment = scheduleAppointmentCollection[0];
+
+// Add Exception appointment to recurrence series
+var exceptionAppointment = new Meeting
+{
+	From = exceptionDate.AddSeconds(3 * 60 * 60),
+	To = exceptionDate.AddSeconds(4 * 60 * 60),
+	EventName = (NSString)"Meeting",
+	Color = UIColor.Red,
+	// set the parent appointment to recurrence Id
+	RecurrenceID = recurrenceAppointment,
+	 //Actual occurrence date
+	ActualDate = exceptionDate
+};
+scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 
@@ -836,9 +872,12 @@ You can directly remove the added exception appointment for recurrence pattern b
 {% tabs %}
 {% highlight c# %}
 var exceptionAppointment = scheduleAppointmentCollection[1];
-            scheduleAppointmentCollection.Remove(exceptionAppointment);
+scheduleAppointmentCollection.Remove(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
+
+You can download the entire source code of this demo for Xamarin.iOS from
+here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-create-Recurrence-Exceptions-to-SfSchedule-for-custom-recurring-appointments-in-Xamarin.iOS/).
 
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFAppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
