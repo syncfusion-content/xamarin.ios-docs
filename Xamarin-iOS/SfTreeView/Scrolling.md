@@ -56,7 +56,7 @@ N> Due to some restrictions in native ScrollView, you cannot change the `IsScrol
 {% tabs %}
 {% highlight c# %}
 
-treeView.IsScrollBarVisible=false;
+treeView.IsScrollBarVisible = false;
 
 {% endhighlight %}
 {% endtabs %}

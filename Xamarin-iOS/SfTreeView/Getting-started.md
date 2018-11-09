@@ -79,10 +79,10 @@ In this walk through, you will create a new application with the TreeView that i
 * [Creating the project](#creating-the-project)
 * [Adding TreeView in Xamarin.iOS using story board](#adding-treeview-in-xamarin.ios-using-story-board)     
 * [Adding TreeView in Xamarin.iOS using C# code](#adding-treeview-in-xamarin.ios-using-c#-code)     
-* [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source-unbound-mode) 
-* [Creating Data Model](#creating-data-model-for-the-treeview)  
-* [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source-bound-mode)
-* [Defining a adapter to expander and content view](#defining-a-template-to-expander-and-content-view)
+* [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source---unbound-mode) 
+* [Creating Data Model](#creating-data-model)  
+* [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source---bound-mode)
+* [Defining a adapter to expander and content view](#defining-a-adapter-to-expander-and-content-view)
 * [Interacting with a tree view](#interacting-with-a-treeview)
 * [Selection](#selection)
  
@@ -226,7 +226,7 @@ Now, run the application to render the below output:
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound2036228865).
 
-## Creating Data Model for the tree view
+## Creating Data Model
 
 Create a data model to bind it to the control. 
 
@@ -474,13 +474,13 @@ public class NodeImageAdapter : TreeViewAdapter
     {
     }
 
-    protected override View CreateContentView(TreeViewItemInfoBase itemInfo)
+    protected override UIView CreateContentView(TreeViewItemInfoBase itemInfo)
     {
         var gridView = new NodeImageView();
         return gridView;
     }
 
-    protected override void UpdateContentView(View view, TreeViewItemInfoBase itemInfo)
+    protected override void UpdateContentView(UIView view, TreeViewItemInfoBase itemInfo)
     {
         var grid = view as NodeImageView;
         var treeViewNode = itemInfo.Node;
@@ -504,7 +504,7 @@ You can also download the entire source code of this demo from [here](http://www
 
 ![Xamarin iOS TreeView Bound Mode](Images/TreeView_Templating.png)
 
-## Interacting with a tree view
+## Interacting with a TreeView
 
 The `TreeView` allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. The expanding and collapsing interactions can be handled with the help of [NodeCollapsing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NodeCollapsing_EV.html) and [NodeExpanding](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NodeExpanding_EV.html) events.
 
