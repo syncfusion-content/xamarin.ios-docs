@@ -34,52 +34,30 @@ Creating a custom adapter class derived from `TreeViewAdapter`.
 {% tabs %}
 {% highlight c# %}
 // Adapter extension class
-public class CustomAdapter : TreeViewAdapter
+public class NodeImageAdapter : TreeViewAdapter
 {
-    public CustomAdapter()
+    public NodeImageAdapter()
     {
     }
 
-    protected override View CreateContentView(TreeViewItemInfoBase itemInfo)
+    protected override UIView CreateContentView(TreeViewItemInfoBase itemInfo)
     {
-        var customView = new CustomContentView(TreeView.Context);
-        return customView;
+        var gridView = new NodeImageView();
+        return gridView;
     }
 
-    protected override void UpdateContentView(View view, TreeViewItemInfoBase itemInfo)
+    protected override void UpdateContentView(UIView view, TreeViewItemInfoBase itemInfo)
     {
-        var grid = view as CustomContentView;
+        var grid = view as NodeImageView;
         var treeViewNode = itemInfo.Node;
         if (grid != null)
         {
-            var icon = grid.GetChildAt(0) as ImageView;
-            if (icon != null)
-            {
-                var imageID = (treeViewNode.Content as FileManager).ImageIcon;
-                icon.SetImageResource(imageID);
-            }
-
-            var label1 = grid.GetChildAt(1) as ContentLabel;
+            var imageView = grid.Subviews[0] as UIImageView;
+            if (imageView != null)
+                imageView.Image = (treeViewNode.Content as NodeImageModel).ImageIcon;
+            var label1 = grid.Subviews[1] as UILabel;
             if (label1 != null)
-            {
-                label1.Text = (treeViewNode.Content as FileManager).FileName.ToString();
-            }
-        }
-    }
-
-    protected override View CreateExpanderView(TreeViewItemInfoBase itemInfo)
-    {
-        var expanderView = new ImageView(TreeView.Context);
-        return expanderView;
-    }
-
-    protected override void UpdateExpanderView(View view, TreeViewItemInfoBase itemInfo)
-    {
-        var image = view as ImageView;
-        var node = itemInfo.Node;
-        if (image != null && node.HasChildNodes)
-        {
-            image.SetImageResource(node.IsExpanded ? Resource.Drawable.expand : Resource.Drawable.collapse);
+                label1.Text = (treeViewNode.Content as NodeImageModel).FileName;
         }
     }
 }

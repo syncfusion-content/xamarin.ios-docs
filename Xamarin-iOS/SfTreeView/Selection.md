@@ -80,7 +80,7 @@ The TreeView allows changing the selection background color for the selected ite
 
 ### Selection foreground
 
-The TreeView allows changing the selection background color for the selected items by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionForegroundColor.html) property. You can also change the selection background color at runtime.
+The TreeView allows changing the selection foreground color for the selected items by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionForegroundColor.html) property. You can also change the selection foreground color at runtime.
 
 N> `SelectionForegroundColor` is applicable only for unbound mode.
 
@@ -129,5 +129,5 @@ N> [SelectionChanging](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfT
 
 ## Limitation
 
-* When a UIView is loaded inside the [Adapter](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Adapter.html) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionBackgroundColor.html) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of UIView in the `Adapter`.
+* When a UIView is loaded inside the [Adapter](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Adapter.html) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionBackgroundColor.html) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of `UIView` in the `Adapter`.
  * When the `TreeView` contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.
