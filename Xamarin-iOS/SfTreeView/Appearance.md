@@ -95,7 +95,7 @@ treeView.Indentation = 40;
 {% endhighlight %}
 {% endtabs %}
 
-## Item Height
+## ItemHeight
 
 The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ItemHeight.html) property. The default value of this property is `40`. This property can be customized at runtime.
 
@@ -106,7 +106,7 @@ treeView.ItemHeight = 40;
 {% endhighlight %}
 {% endtabs %}
 
-## Expander Width
+## ExpanderWidth
 
 The TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ExpanderWidth.html) property. The default value of this property is `40`. This property can be customized at runtime.
 
