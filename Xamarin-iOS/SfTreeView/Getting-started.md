@@ -47,7 +47,7 @@ The following NuGet package should be installed to use the TreeView control in t
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add TreeView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTreeView.iOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView.iOS/), and then install it. 
 
-![Add TreeView](Images/TreeView_Add.png)
+![Xamarin iOS Add TreeView](Images/TreeView_Add.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/control-dependencies#sftreeview) to know about the dependent assemblies for TreeView. 
 
@@ -70,7 +70,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 This section explains how to create a TreeView and configure it. The TreeView control can be configured entirely in C# code or using story board. This is how the final output will look like on iOS devices.
 
-![TreeView in iOS](Images/TreeView_Templating.png)
+![Xamarin iOS TreeView](Images/TreeView_Templating.png)
 
 You can download the entire source code of this demo for Xamarin.iOS from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758). 
 
@@ -79,10 +79,10 @@ In this walk through, you will create a new application with the TreeView that i
 * [Creating the project](#creating-the-project)
 * [Adding TreeView in Xamarin.iOS using story board](#adding-treeview-in-xamarin.ios-using-story-board)     
 * [Adding TreeView in Xamarin.iOS using C# code](#adding-treeview-in-xamarin.ios-using-c#-code)     
-* [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source-unbound-mode) 
-* [Creating Data Model](#creating-data-model-for-the-treeview)  
-* [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source-bound-mode)
-* [Defining a adapter to expander and content view](#defining-a-template-to-expander-and-content-view)
+* [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source---unbound-mode) 
+* [Creating Data Model](#creating-data-model)  
+* [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source---bound-mode)
+* [Defining a adapter to expander and content view](#defining-a-adapter-to-expander-and-content-view)
 * [Interacting with a tree view](#interacting-with-a-treeview)
 * [Selection](#selection)
  
@@ -96,13 +96,13 @@ Create a new iOS application in Xamarin Studio or Visual Studio for Xamarin.iOS.
 2. Drag the TreeView control from toolbox and drop it into the story board. Preview for TreeView will be shown.
 3. Open the properties window of TreeView and set the required properties.
 
-![Add TreeView through designer page](Images/TreeView_Designer.png)
+![Xamarin iOS Add TreeView through designer page](Images/TreeView_Designer.png)
 
 ### Setting the TreeView properties in story board
 
 Set the identity name and required properties for TreeView in story board.
 
-![TreeView properties](Images/TreeView_Properties.png)
+![Xamarin iOS TreeView properties](Images/TreeView_Properties.png)
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ namespace GettingStartedBound
  			base.ViewDidLoad();
  			// Perform any additional setup loading the view, typically from a nib.
  			FileManagerViewModel viewModel = new FileManagerViewModel();
-            treeView.ChildPropertyName = "SubFolder";
+            treeView.ChildPropertyName = "SubFiles";
             treeView.ItemsSource = viewModel.Folders;
             treeView.Adapter = new NodeImageAdapter();
 		}
@@ -226,7 +226,7 @@ Now, run the application to render the below output:
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound2036228865).
 
-## Creating Data Model for the tree view
+## Creating Data Model
 
 Create a data model to bind it to the control. 
 
@@ -238,19 +238,19 @@ public class FileManager : INotifyPropertyChanged
 {
    private string fileName;
    private UIImage imageIcon;
-   private ObservableCollection<FileManager> subFolder;
+   private ObservableCollection<FileManager> subFiles;
 
-   public ObservableCollection<FileManager> SubFolder
+   public ObservableCollection<FileManager> SubFiles
    {
        get
        {
-            return subFolder;
+            return subFiles;
        }
 
         set
        {
-            subFolder = value;
-            RaisedOnPropertyChanged("SubFolder");
+            subFiles = value;
+            RaisedOnPropertyChanged("SubFiles");
        }
     }
 
@@ -413,7 +413,7 @@ public override void ViewDidLoad()
     // Perform any additional setup after loading the view
     SfTreeView treeView = new SfTreeView(View.Bounds);
     FileManagerViewModel viewModel = new FileManagerViewModel();
-    treeView.ChildPropertyName = "SubFolder";
+    treeView.ChildPropertyName = "SubFiles";
     treeView.ItemsSource = viewModel.Folders;
     treeView.Adapter = new NodeImageAdapter();
     Add(treeView);
@@ -474,13 +474,13 @@ public class NodeImageAdapter : TreeViewAdapter
     {
     }
 
-    protected override View CreateContentView(TreeViewItemInfoBase itemInfo)
+    protected override UIView CreateContentView(TreeViewItemInfoBase itemInfo)
     {
         var gridView = new NodeImageView();
         return gridView;
     }
 
-    protected override void UpdateContentView(View view, TreeViewItemInfoBase itemInfo)
+    protected override void UpdateContentView(UIView view, TreeViewItemInfoBase itemInfo)
     {
         var grid = view as NodeImageView;
         var treeViewNode = itemInfo.Node;
@@ -502,9 +502,9 @@ It is also applicable for both Unbound Mode data items. Now, run the application
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758).
 
-![TreeView Bound Mode](Images/TreeView_Templating.png)
+![Xamarin iOS TreeView Bound Mode](Images/TreeView_Templating.png)
 
-## Interacting with a tree view
+## Interacting with a TreeView
 
 The `TreeView` allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. The expanding and collapsing interactions can be handled with the help of [NodeCollapsing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NodeCollapsing_EV.html) and [NodeExpanding](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NodeExpanding_EV.html) events.
 
@@ -525,7 +525,7 @@ public override void ViewDidLoad()
     FileManagerViewModel viewModel = new FileManagerViewModel();
     treeView.AutoExpandMode = AutoExpandMode.AllNodesExpanded;
     treeView.ExpanderActionTarget = ExpanderActionTarget.Node; 
-    treeView.ChildPropertyName = "SubFolder";
+    treeView.ChildPropertyName = "SubFiles";
     treeView.ItemsSource = viewModel.Folders;
     treeView.Adapter = new NodeImageAdapter();
     Add(treeView);
