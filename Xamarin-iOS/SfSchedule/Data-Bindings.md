@@ -668,7 +668,7 @@ here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-create-
 
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 You can delete any occurrence which is exception from the recurrence pattern appointment by using the `RecurrenceExceptionDates` property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception dates.
-To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class (`Meeting`).
+To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class `Meeting`.
 
 {% tabs %}
 {% highlight c# %}
@@ -676,7 +676,7 @@ To add the exception dates in the recurrence series of custom appointment, add t
 {% endhighlight %}
 {% endtabs %}
 
-You should map this custom property (`RecurrenceExceptionDates`) of custom class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the schedule appointment.
+You should map this custom property `RecurrenceExceptionDates` of custom class with the `RecurrenceExceptionDates` property of `AppointmentMapping` class to map the exception dates to the schedule appointment.
 
 {% tabs %}
 {% highlight c# %}
@@ -765,7 +765,7 @@ recurrenceAppointment.RecurrenceExceptionDates.Clear();
 
 #### Add exception appointment to recurrence pattern
 You can change any occurrence appointment which is exception from the recurrence pattern appointment by using the `RecurrenceId` property of `AppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and `ExceptionOccurrenceActualDate` property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
-For adding custom exception appointment to the recurrence series, add the `ActualDate` and `RecurrenceID` properties to custom class (`Meeting`).
+For adding custom exception appointment to the recurrence series, add the `ActualDate` and `RecurrenceID` properties to custom class `Meeting`.
 
 {% tabs %}
 {% highlight c# %}
@@ -774,8 +774,8 @@ public object RecurrenceID { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-You should map this custom property (`RecurrenceID`) of `Meeting` with the `RecurrenceId` property of `AppointmentMapping` class which is used to map the exception appointment with schedule recurrence series appointment(`Meeting`).
-You should also map this custom property (`ActualDate`) of `Meeting` with the `ExceptionOccurrenceActualDate` property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment with schedule recurrence appointment.
+You should map this custom property `RecurrenceID` of `Meeting` with the `RecurrenceId` property of `AppointmentMapping` class which is used to map the exception appointment with schedule recurrence series appointment `Meeting`.
+You should also map this custom property `ActualDate` of `Meeting` with the `ExceptionOccurrenceActualDate` property of `AppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment with schedule recurrence appointment.
 You should add the created exception recurrence appointment to the schedule `DataSource`.
 
 {% tabs %}
