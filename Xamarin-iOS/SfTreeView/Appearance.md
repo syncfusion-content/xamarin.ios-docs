@@ -60,6 +60,21 @@ public class NodeImageAdapter : TreeViewAdapter
                 label1.Text = (treeViewNode.Content as NodeImageModel).FileName;
         }
     }
+
+    protected override UIView CreateExpanderView(TreeViewItemInfoBase itemInfo)
+    {
+        var expanderImage = new UIImageView();
+        return expanderImage;
+    }
+    
+    protected override void UpdateExpanderView(UIView view, TreeViewItemInfoBase itemInfo)
+    {
+        var imageView = view as UIImageView;
+        var node = itemInfo.Node;
+        if (imageView != null)
+            if (node.HasChildNodes)
+                imageView.Image = node.IsExpanded ? UIImage.FromBundle("Images/expand.png") : UIImage.FromBundle("Images/collapse.png");
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -67,7 +82,7 @@ public class NodeImageAdapter : TreeViewAdapter
 ![Xamarin iOS TreeView Customized adapter](Images/TreeView_CustomAdapter.png)
 
 To create custom view to use in adapter, refer this [link](https://help.syncfusion.com/xamarin-ios/sftreeview/getting-started#creating-custom-view-for-adapter).
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomizedAdapter-1866983821)
+You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomAdapter-863616830)
 
 ## Indentation
 
@@ -220,6 +235,6 @@ protected override void UpdateContentView(UIView view, TreeViewItemInfoBase item
 {% endhighlight %}
 {% endtabs %}
 
-You can download the example for level based styling demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-1430010482).
+You can download the example for level based styling demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-660740124).
 
 ![Xamarin iOS TreeView with styling](Images/TreeView_LevelStyle.png)
