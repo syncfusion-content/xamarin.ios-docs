@@ -66,7 +66,7 @@ public class NodeImageAdapter : TreeViewAdapter
         var expanderImage = new UIImageView();
         return expanderImage;
     }
-    
+
     protected override void UpdateExpanderView(UIView view, TreeViewItemInfoBase itemInfo)
     {
         var imageView = view as UIImageView;
@@ -138,38 +138,36 @@ public class NodeImageAdapter : TreeViewAdapter
     {
         if (itemInfo.Node.Level == 0)
         {
-            var gridView = new CustomView1();
+            var gridView = new NodeImageView();
             return gridView;
         }
         else
         {
-            var gridView = new CustomView2();
+            var gridView = new NodeImageView1();
             return gridView;
         }
     }
-
+       
     protected override void UpdateContentView(UIView view, TreeViewItemInfoBase itemInfo)
     {
-        var grid = view as CustomView1;
         var treeViewNode = itemInfo.Node;
+        var grid = view as NodeImageView;
         if (grid != null)
         {
             var imageView = grid.Subviews[0] as UIImageView;
             if (imageView != null)
-                var imageView.Image = (treeViewNode.Content as FileManager).ImageIcon;
+                imageView.Image = (treeViewNode.Content as FileManager).ImageIcon;
 
             var label1 = grid.Subviews[1] as UILabel;
             if (label1 != null)
-            {
                 label1.Text = (treeViewNode.Content as FileManager).FileName;
-            }
             var label2 = grid.SubViews[2] as UILabel;
             if (label2 != null)
                 label2.Text = treeViewNode.HasChildNodes ? treeViewNode.ChildNodes.Count.ToString()+" files" : "No files";
         }
         else
         {
-            var grid1 = view as CustomView2;
+            var grid1 = view as NodeImageView1;
             if (grid1 != null)
             {
                 var imageView = grid1.Subviews[0] as UIImageView;
@@ -178,11 +176,80 @@ public class NodeImageAdapter : TreeViewAdapter
                 
                 var label1 = grid1.Subviews[1] as UILabel;
                 if (label1 != null)
-                {
                     label1.Text = (treeViewNode.Content as FileManager).FileName;
-                }
             }
         }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+// Custom views
+public class NodeImageView : UIView
+{
+    UILabel label1;
+    UIImageView imageIcon;
+    UILabel label2;
+
+    public NodeImageView()
+    {
+        label1 = new UILabel();
+        label2 = new UILabel();
+        label1.Font = UIFont.SystemFontOfSize(18);
+        imageIcon = new UIImageView();
+        imageIcon.ClipsToBounds = true;
+        this.AddSubview(imageIcon);
+        this.AddSubview(label1);
+        this.AddSubview(label2);
+    }
+
+    public override void LayoutSubviews()
+    {
+        base.LayoutSubviews();
+        var imageWidth = 40;
+        var labelWidth = 60;
+        this.imageIcon.Frame = new CGRect(0, 0, imageWidth, this.Frame.Height);
+        this.label1.Frame = new CGRect(imageWidth, 0, this.Frame.Width-imageWidth-labelWidth, this.Frame.Height);
+        this.label2.Frame = new CGRect(this.Frame.Width - labelWidth, 0, labelWidth, this.Frame.Height);
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        base.Dispose(disposing);
+    }
+}
+
+{% endhighlight %}
+{% highlight c# %}
+
+public class NodeImageView1 : UIView
+{
+    UILabel label1;
+    UIImageView imageIcon;
+
+    public NodeImageView1()
+    {
+        label1 = new UILabel();
+        label1.Font = UIFont.SystemFontOfSize(16);
+        imageIcon = new UIImageView();
+        imageIcon.LayoutMargins.InsetRect(new CGRect(5, 5, 5, 5));
+        this.AddSubview(imageIcon);
+        this.AddSubview(label1);
+    }
+
+    public override void LayoutSubviews()
+    {
+        base.LayoutSubviews();
+        this.imageIcon.Frame = new CGRect(5, 5, 30, this.Frame.Height-10);
+        this.label1.Frame = new CGRect(40, 0, this.Frame.Width, this.Frame.Height);
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        base.Dispose(disposing);
     }
 }
 {% endhighlight %}
@@ -190,7 +257,7 @@ public class NodeImageAdapter : TreeViewAdapter
 
 ![Xamarin iOS TreeView with Level based Views](Images/TreeView_LevelBasedView.png)
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedViews-1568238571)
+You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedViews1230479197)
 
 ### Level based styling.
 
