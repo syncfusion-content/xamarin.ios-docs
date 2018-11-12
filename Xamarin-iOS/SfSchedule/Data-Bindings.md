@@ -396,7 +396,7 @@ schedule.Appointments = appCollection;
 ![Recurrence appointment support in schedule Xamarin iOS](data_binding_images/recurrence.png)
 
 ## Recurrence Pattern Exceptions 
-You can delete or change any recurrence pattern appointment by handling exception dates and appointments of the recurring appointments. 
+You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
 
 ### Recurrence Exception Dates
 You can delete any occurrence appointment which is exception from the recurrence pattern appointment by adding exception dates to the recurring appointment.  
@@ -406,10 +406,10 @@ You can also change any occurrence appointment which is exception from recurrenc
 
 ### Create recurrence exceptions for schedule appointment
 
-You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
+You can add/remove the recurrence exception appointments and recurrence exception dates to ScheduleAppointment by using its property, [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~RecurrenceExceptionDates.html), [RecurrenceId](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~RecurrenceId.html), [ExceptionOccurrenceActualDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~ExceptionOccurrenceActualDate.html).
 
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
-You can delete any of occurrence which is exception from recurrence pattern appointment by using [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~RecurrenceExceptionDates.html) property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
+You can delete any of occurrence which is exception from recurrence pattern appointment by using `RecurrenceExceptionDates` property of `ScheduleAppointment`.The deleted occurrence date will be considered as recurrence exception dates.
 {% tabs %}
 {% highlight c# %}
  NSCalendar calendar = new NSCalendar(NSCalendarType.Gregorian);
@@ -481,7 +481,7 @@ recurrenceAppointment.RecurrenceExceptionDates.RemoveAt(0);
 {% endtabs %}
 
 >**NOTE**
-If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with [RecurrenceId](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~RecurrenceId.html) and [ExceptionOccurrenceActualDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~ExceptionOccurrenceActualDate.html) from Schedule `DataSource` and recurrence pattern appointment created for that exception date.
+If you add the deleted occurrence to the recurrence pattern by removing exception date when any [exception appointment](#recurrence-exception-appointment) has been created for the mentioned exception date, the respective exception appointment will be deleted by matching with `RecurrenceId` and `ExceptionOccurrenceActualDate` from Schedule `DataSource` and recurrence pattern appointment created for that exception date.
 
 #### Add all deleted occurrences to recurrence pattern dynamically or clear exception dates from recurrence pattern dynamically
 You can also add all deleted occurrences to the recurrence pattern appointment by clearing the exception dates from the RecurrenceExceptionDates collection.
@@ -600,11 +600,11 @@ here [RecurrenceExceptions](https://github.com/SyncfusionExamples/How-to-create-
 
 ### Create recurrence exceptions for custom appointment
 
-You can delete or change any recurrence pattern appointment by handling exception dates and exception appointments to that recurring appointment.
+You can add/remove the recurrence exception appointments and recurrence exception dates to the CustomAppointment, You can create a custom class [Meeting](#mapping) with mandatory fields `RecurrenceExceptionDates`, `ActualDate`, `RecurrenceId`.
 
 #### Delete occurrence from recurrence pattern appointment or adding exception dates to recurrence pattern appointment
 You can delete any occurrence which is exception from the recurrence pattern appointment by using the [RecurrenceExceptionDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentMapping~RecurrenceExceptionDates.html) property of `AppointmentMapping` class which is used to map the exception dates to the schedule recurrence appointment. The deleted occurrence date will be considered as recurrence exception dates.
-To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class [Meeting](#mapping).
+To add the exception dates in the recurrence series of custom appointment, add the RecurrenceExceptionDates property to custom class `Meeting`.
 
 {% tabs %}
 {% highlight c# %}
