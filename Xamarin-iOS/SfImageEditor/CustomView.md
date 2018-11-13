@@ -9,30 +9,34 @@ documentation : ug
 
 ## CustomView
 
-You can add any custom shapes or views on the image by using the `AddCustomView` method in the SfImageEditor control. To add the custom view, specify any view and its desired `CustomViewSettings` as shown in the following code snippet.
+You can add any custom shapes or views to an image using the `AddCustomView` method in the image editor control. To add a custom view, specify the view and its desired `CustomViewSettings` as shown in the following code snippet.
 
 {% highlight C# %}
 
             UIImageView customImage = new UIImageView();
             customImage.Frame = new CoreGraphics.CGRect(0, 0, 200, 200);
             customImage.Image = UIImage.FromBundle("CustomViewImage.png");
-            imageEditor.AddCustomView(customImage, new CustomViewSettings());
+            editor.AddCustomView(customImage, new CustomViewSettings());
 
 {% endhighlight %}
 
 ## CustomViewSettings
 
-CustomViewSettings is defined to set the values for `CanMaintainAspectRatio`, `Bounds` and `Angle`.
-•	CanMaintainAspectRatio property is used to set the Boolean value to maintain the aspect ratio value or not when resizing the custom view.
-•	Bounds property is used to set the bounds of the custom view. Using this property to position the custom view wherever you want on the image.
-•	Angle property is used to set the angle of the custom view. Using this property, you can rotate the custom view at desired angle.
+The CustomViewSettings is defined to set the values for `CanMaintainAspectRatio`, `Bounds` and `Angle`.
+
+* The CanMaintainAspectRatio property is used to decide whether the aspect ratio value needs to be maintained when resizing the custom view.
+
+* Bounds property is used to set the bounds of the custom view. Using this property, you can position the custom view wherever you want on the image. In percentage, the value should fall between 0 and 100.
+
+* Angle property is used to set the angle of the custom view. Using this property, you can rotate the custom view at desired angle.
 
 {% highlight C# %}
 
-        CustomViewSettings customViewSettings = new CustomViewSettings()
+            CustomViewSettings customViewSettings = new CustomViewSettings()
             {
                 CanMaintainAspectRatio = false,
-                Bounds = new Rectangle(0, 0, 100, 100)
+                Bounds = new Rectangle(0, 0, 100, 100),
+                Angle = 45
             };
 
 {% endhighlight %}
@@ -47,7 +51,7 @@ You can rotate and resize the custom view by enabling the `RotatableElements` pr
 
 {% highlight C# %}
 
-        imageEditor.RotatableElements = ImageEditorElements.CustomView;   
+    editor.RotatableElements = ImageEditorElements.CustomView;
 
 {% endhighlight %}
 

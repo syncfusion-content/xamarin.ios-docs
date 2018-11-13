@@ -19,7 +19,7 @@ The [`LeftThumbStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syn
 * [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~LineColor.html) – used to change the line color of the thumb
 * [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~LineWidth.html) – used to change the line width of the thumb
 * [`LineDashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~LineDashes.html) – used to change the dash array of the thumb line
-* [`Shape`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~Shape.html) – used to set one of the predefined shapes for thumb like Default, Circle, Square, Diamond, LeftArrow, RightArrow
+* [`Shape`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbStyle~Shape.html) – used to set one of the predefined shapes for thumb like [`Default`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorThumbShape.html), Circle, Square, Diamond, LeftArrow, RightArrow
 
 
 {% highlight c# %}
@@ -51,7 +51,7 @@ this.View.AddSubview(rangeNavigator);
 
 {% endhighlight %}
 
-![]( Thumb_images/Thumb1.png)
+![Thumbs in Xamarin.iOS DateTimeRangeNavigator]( Thumb_images/Thumb1.png)
 
 ## Customization
 
@@ -114,4 +114,4 @@ public partial class ViewController : UIViewController
 
 {% endhighlight %}
 
-![]( Thumb_images/Thumb2.png)
+![Customization of thumbs in Xamarin.iOS DateTimeRangeNavigator]( Thumb_images/Thumb2.png)
