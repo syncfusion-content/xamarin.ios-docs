@@ -531,7 +531,11 @@ ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
 	EndTime = endDate,
 	Subject = (NSString)"Occurs Daily",
 	AppointmentBackground = UIColor.Blue,
-	RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20"
+	RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20",
+        RecurrenceExceptionDates = new ObservableCollection<NSDate> 
+	{
+           exceptionDate
+	}
 };
 
 var exceptionAppointment = new ScheduleAppointment
@@ -748,7 +752,11 @@ ScheduleAppointment recurrenceAppointment = new ScheduleAppointment
 	EndTime = endDate,
 	Subject = (NSString)"Occurs Daily",
 	AppointmentBackground = UIColor.Blue,
-	RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20"
+	RecurrenceRule = (NSString)"FREQ=DAILY;COUNT=20",
+        RecurrenceExceptionDates = new ObservableCollection<NSDate> 
+	{
+           exceptionDate
+	}
 };
 
 var exceptionAppointment = new ScheduleAppointment
