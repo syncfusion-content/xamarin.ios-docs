@@ -19,10 +19,13 @@ The TreeView allows you to customize the appearance of content view and expander
                                       
 {% tabs %}
 {% highlight c# %}
-protected override void OnCreate(Bundle savedInstanceState)
+public override void ViewDidLoad()
 {
-    SfTreeView treeView = new SfTreeView();
+    base.ViewDidLoad();
+    // Perform any additional setup after loading the view
+    SfTreeView treeView = new SfTreeView(View.Bounds);
     treeView.Adapter = new CustomAdapter();
+    Add(treeView);
 }
 {% endhighlight %}
 {% endtabs %}
