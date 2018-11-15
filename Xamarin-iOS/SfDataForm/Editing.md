@@ -253,7 +253,7 @@ dataForm.RegisterEditor("Text", new CustomTextEditor(dataForm));
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/EditorCustomization.png)
+![Editor customization](SfDataForm_images/EditorCustomization.png)
 
 ## Creating new custom editor
 
@@ -306,7 +306,7 @@ dataForm.RegisterEditor("Salary", "Slider");
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/SliderEditor.png)
+![Custom editor](SfDataForm_images/SliderEditor.png)
 
 ## Support for Email editor
 
@@ -324,7 +324,7 @@ dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;priva
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/EmailEditor.png)
+![Email editor](SfDataForm_images/EmailEditor.png)
 
 ## Commit mode
 
@@ -431,6 +431,50 @@ public double? Amount
     {
         amount = value;
         RaisePropertyChanged("Amount");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+In SfDataForm, it is not possible to pass directly `DateTimeOffset` DataType to a property. You can use `Converter` attribute to convert DateTimeOffset to DateTime and vice versa in SfDataForm.
+
+{% tabs %}
+{% highlight c# %}
+
+private DateTimeOffset displayDate;
+
+Converter(typeof(ValueConverterExt))]
+public DateTimeOffset DisplayDate
+{
+    get
+    {
+        return displayDate;
+    }
+    set
+    {
+        displayDate = value;
+    }
+}
+public class ValueConverterExt : IPropertyValueConverter
+{
+    public object Convert(object value)
+    {
+        DateTime baseTime = new DateTime(2008, 6, 19, 7, 0, 0);
+        DateTime targetTime;
+
+        var dateTimeOffset = (DateTimeOffset)value;
+        dateTimeOffset = new DateTimeOffset(baseTime,
+                                            TimeZoneInfo.Local.GetUtcOffset(baseTime));
+        targetTime = dateTimeOffset.DateTime;
+        return targetTime;
+    }
+    public object ConvertBack(object value)
+    {
+        var dateTime = (DateTime)value;
+        dateTime = new DateTime(2008, 6, 19, 7, 0, 0);
+        dateTime = DateTime.SpecifyKind(dateTime, DateTimeKind.Local);
+        DateTimeOffset dateTimeOffset = dateTime;
+        return dateTimeOffset;
     }
 }
 {% endhighlight %}
