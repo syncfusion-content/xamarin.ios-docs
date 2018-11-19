@@ -253,7 +253,7 @@ dataForm.RegisterEditor("Text", new CustomTextEditor(dataForm));
 {% endhighlight %}
 {% endtabs %}
 
-![Editor customization](SfDataForm_images/EditorCustomization.png)
+![Editor customization in Xamarin.iOS](SfDataForm_images/EditorCustomization.png)
 
 ## Creating new custom editor
 
@@ -306,7 +306,7 @@ dataForm.RegisterEditor("Salary", "Slider");
 {% endhighlight %}
 {% endtabs %}
 
-![Custom editor](SfDataForm_images/SliderEditor.png)
+![Custom editor in Xamarin.iOS](SfDataForm_images/SliderEditor.png)
 
 ## Support for Email editor
 
@@ -324,7 +324,7 @@ dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;priva
 {% endhighlight %}
 {% endtabs %}
 
-![Email editor](SfDataForm_images/EmailEditor.png)
+![Email editor in Xamarin.iOS](SfDataForm_images/EmailEditor.png)
 
 ## Commit mode
 
@@ -399,6 +399,9 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 ## Converter
 
 If you want to show the original value in different format or as different value, you need to use [Converter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.ConverterAttribute.html) attribute.
+
+### Changing original value of the editor using converter
+
 Here, original value is multiplied by 10 and shown in editor. While committing, it is divided by 10 and stored in data object.
 
 {% tabs %}
@@ -436,7 +439,10 @@ public double? Amount
 {% endhighlight %}
 {% endtabs %}
 
-In SfDataForm, it is not possible to pass directly `DateTimeOffset` DataType to a property. You can use `Converter` attribute to convert DateTimeOffset to DateTime and vice versa in SfDataForm.
+
+### Converting DateTimeOffset value to DateTime
+
+In SfDataForm, you could not pass directly `DateTimeOffset` DataType to a property.You can use `Converter` attribute to convert DateTimeOffset to DateTime and vice-versa.
 
 {% tabs %}
 {% highlight c# %}
