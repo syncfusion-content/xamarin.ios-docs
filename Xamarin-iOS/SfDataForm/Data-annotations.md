@@ -65,7 +65,7 @@ Order
 </td>
 <td>
 Specifies the order of the field in data form.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/layout#changing-order-of-the-dataformitem)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/layout#changing-order-of-the-dataformitem)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
@@ -86,7 +86,7 @@ MinLength
 </td>
 <td>
 Specifies the minimum required length.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -96,7 +96,7 @@ MaxLength
 </td>
 <td>
 Specifies the maximum required length.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -106,7 +106,7 @@ Required
 </td>
 <td>
 Specifies data field value is required.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ RegularExpression
 </td>
 <td>
 Specified value must match the specific pattern.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -126,7 +126,7 @@ Range
 </td>
 <td>
 Specifies the maximum and minimum value.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/validation#data-annotations)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
@@ -170,7 +170,7 @@ RowSpan
 </td>
 <td>
 Specifies the row span for the data form item.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/layout#rowspan)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/layout#rowspan)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -179,7 +179,7 @@ ColumnSpan
 </td>
 <td>
 Specifies the column span for the data form item.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/layout#columnspan)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/layout#columnspan)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -187,7 +187,7 @@ Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/layout#columns
 ValidMessage
 </td>
 <td>
-Specifies positive message to be shown when validation is passed. Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/validation#valid-or-positive-message)'| markdownify }} for more details.
+Specifies positive message to be shown when validation is passed. Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/validation#valid-or-positive-message)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -196,7 +196,7 @@ ImageSource
 </td>
 <td>
 Specifies the image source for loading image instead of label.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/layout#loading-images-for-label)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/layout#loading-images-for-label)'| markdownify }} for more details.
 </td>
 </tr>
 <tr>
@@ -205,7 +205,7 @@ ShowLabel
 </td>
 <td>
 Specifies whether label should be visible or not.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/layout#label-visibility)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/layout#label-visibility)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
@@ -223,7 +223,7 @@ ConverterType
 </td>
 <td>
 Specifies Converter type. It is used to convert the original value in different format or as different value.
-Refer {{'[here]https://help.syncfusion.com/xamarin-ios/sfdataform/editing#converter)'| markdownify }} for more details.
+Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/editing#converter)'| markdownify }} for more details.
 </td>
 </tr>
 </table>
