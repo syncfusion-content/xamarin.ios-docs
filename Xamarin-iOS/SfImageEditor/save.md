@@ -209,3 +209,30 @@ This event will be triggered whenever you tap the selected shapes (rectangle, ci
         }
 
 {% endhighlight %}
+
+## ItemUnselected Event
+
+This event will be triggered whenever you change the shape selections from one shape to another shape (rectangle, circle, arrow and text). You can get the settings of previous selected shape and text using the ItemUnselected event. You can also change the settings of previous selected shape.
+
+{% highlight C# %}
+
+        public override void ViewDidLoad()
+        {
+            editor.ItemUnselected += Editor_ItemUnselected;
+        }
+
+        private void Editor_ItemUnselected(object sender, ItemUnselectedEventArgs e)
+        {
+            var Settings = e.Settings;
+
+            if (Settings is PenSettings)
+            {
+                (Settings as PenSettings).Color = UIColor.Green;
+            }
+            else
+            {
+                (Settings as TextSettings).Color = UIColor.Green;
+            }
+        }
+
+{% endhighlight %}
