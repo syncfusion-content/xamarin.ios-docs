@@ -27,7 +27,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Initialize Chart
 
-You can add the [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to the storyboard from the toolbox and the output can be previewed in the designer. But the other elements of the chart such as the axis, series, legend, and more can be customised using C# code.
+You can add the [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) to the storyboard from the toolbox and the output can be previewed in the designer. But the other elements of the chart such as the axis, series, legend, and more can be customized using C# code.
 
 ![SFChart Designer support in Xamarin.iOS](Getting-Started_images/img3.gif)
 
