@@ -7,7 +7,11 @@ control: SFChart
 documentation: ug
 ---
 
-# Data Point Selection
+# Selection
+
+[`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) supports selection that enables you to select a segment in a series or series itself.
+
+## Data Point Selection
 
 You can select a data point by tapping on it. To enable the selection feature, set [`EnableDataPointSelection`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~EnableDataPointSelection.html) property as `True` for series. 
 
@@ -44,6 +48,38 @@ series.SelectedDataPointColor   = UIColor.Red;
 
 N> For Accumulation series like pie, doughnut, pyramid and funnel, when you select a data point, the corresponding legend item also will be selected.
 
+## Series Selection
+
+Series selection is used in case of multiple series when you want to highlight a particular series. Series Selection can be enabled by setting [`EnableSeriesSelection`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~EnableSeriesSelection.html) property to true. The [`SeriesSelectionColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~SeriesSelectionColor.html) property is used to set the color to highlight the series.
+
+{% highlight c# %}
+
+chart.EnableSeriesSelection = true;
+...
+
+SFColumnSeries series = new SFColumnSeries();
+series.Color = UIColor.FromRGB(174, 235, 231);
+...
+
+SFColumnSeries series1 = new SFColumnSeries();
+series1.Color = UIColor.FromRGB(211, 190, 229);
+...
+
+SFColumnSeries series2 = new SFColumnSeries();
+series2.Color = UIColor.FromRGB(192, 216, 240);
+
+{% endhighlight %}
+
+![Series selection support in Xamarin.iOS Chart](selection_images/seriesSelection.png)
+
+To set the series selection color,
+
+{% highlight c# %}
+
+chart.SeriesSelectionColor = UIColor.FromRGB(0, 155, 247);
+
+{% endhighlight %}
+
 ## Delegates
 
 
@@ -76,6 +112,7 @@ The [`WillDataPointSelect`](https://help.syncfusion.com/cr/cref_files/xamarin-io
 * [`SelectedSegment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedSegment.html) - used to get the segment of selected data point.
 * [`SelectedDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedDataPointIndex.html) – used to get the selected data point index.
 * [`PreviousSelectedIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~PreviousSelectedIndex.html) – used to get the previous selected data point index.
+* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~PreviousSelectedSeries.html) - used to get the previous selected series. 
 * [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionChangingInfo~Cancel.html) – used to set the value indicating whether the selection should be canceled.
 
 
@@ -87,3 +124,4 @@ The [`DidDataPointSelect`](https://help.syncfusion.com/cr/cref_files/xamarin-ios
 * [`SelectedSegment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedSegment.html) - used to get the segment of selected data point.
 * [`SelectedDataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~SelectedDataPointIndex.html) – used to get the selected data point index.
 * [`PreviousSelectedIndex`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~PreviousSelectedIndex.html) – used to get the previous selected data point index.
+* [`PreviousSelectedSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartSelectionInfo~PreviousSelectedSeries.html) - used to get the previous selected series. 
