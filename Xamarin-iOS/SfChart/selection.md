@@ -55,19 +55,30 @@ Series selection is used in case of multiple series when you want to highlight a
 {% highlight c# %}
 
 chart.EnableSeriesSelection = true;
-chart.SeriesSelectionColor = UIColor.FromRGB(0, 155, 247);
 ...
 
 SFColumnSeries series = new SFColumnSeries();
-series.Color = UIColor.FromRGB(178, 225, 253);
+series.Color = UIColor.FromRGB(174, 235, 231);
 ...
 
 SFColumnSeries series1 = new SFColumnSeries();
-series1.Color = UIColor.FromRGB(178, 225, 253);
+series1.Color = UIColor.FromRGB(211, 190, 229);
+...
+
+SFColumnSeries series2 = new SFColumnSeries();
+series2.Color = UIColor.FromRGB(192, 216, 240);
 
 {% endhighlight %}
 
 ![Series selection support in Xamarin.iOS Chart](selection_images/seriesSelection.png)
+
+To set the series selection color,
+
+{% highlight c# %}
+
+chart.SeriesSelectionColor = UIColor.FromRGB(0, 155, 247);
+
+{% endhighlight %}
 
 ## Delegates
 
