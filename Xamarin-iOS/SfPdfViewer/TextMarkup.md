@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Working with text markup annotation
+title:  Working with text markup annotation | Syncfusion
 description: Working with text markup annotation
-platform: Xamarin.Forms
+platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug
 ---
