@@ -17,7 +17,7 @@ This section explains you the steps required to configure a SfMaskedEdit control
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add masked edit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.IOS)", and then install it. 
 
-![](SfMaskedEditImages/nuget.png)
+![Xamarin.iOS Masked Edit NuGet](SfMaskedEditImages/nuget.png)
 
 
 ## Create a Simple SfMaskedEdit
@@ -85,6 +85,6 @@ This mask expression allows only numeric inputs in the places of 0.
 Refer to this [link](MaskType) to know more about the Mask characters and Mask Types available in SfMaskedEdit control.
 Run the project and check if you get the following output to make sure that you have configured your project properly to add `SfMaskedEdit`.
 
-![](SfMaskedEditImages/maskinginput.png)
+![Xamarin.iOS Masked Edit](SfMaskedEditImages/maskinginput.png)
 
 You can find the complete getting started sample from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_GettingStarted.zip).
