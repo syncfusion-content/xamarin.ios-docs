@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started in SfRadioButton for Xamarin.iOS platform
+title: Getting started in Syncfusion Radio Button for Xamarin.iOS platform
 description: Learn how to customize the basic features of SfRadioButton
 platform: Xamarin.iOS
 control: SfRadioButton
@@ -13,7 +13,7 @@ keywords: button, SfRadioButton, RadioButton
 This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
 ## Add SfCheckBox reference
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maskededit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.iOS)", and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add radio button to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.iOS)", and then install it. 
 
 ![](Images/nuget.png)
 
