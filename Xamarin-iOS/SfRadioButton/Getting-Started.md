@@ -15,7 +15,7 @@ This section explains the steps required to configure the `SfRadioButton` contro
 ## Add SfCheckBox reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add radio button to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.iOS)", and then install it. 
 
-![](Images/nuget.png)
+![Xamarin.iOS Radio Button NuGet](Images/nuget.png)
 
 N>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -75,7 +75,7 @@ radioButton.SetTitle("RadioButton", UIControlState.Normal);
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Caption.png)
+![Xamarin.iOS Radio Button caption text](Images/Caption.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/RadioButton_GettingStarted.zip).
 
@@ -104,6 +104,6 @@ radioGroup.AddArrangedSubview(female);
 
 N>`SfRadioButtons` are mutually exclusive among them when they are defined within `SfRadioGroup`.
 
-![](Images/StateChage.png)
+![Xamarin.iOS Radio Button states](Images/StateChage.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/RadioButton_StateChanging.zip).
