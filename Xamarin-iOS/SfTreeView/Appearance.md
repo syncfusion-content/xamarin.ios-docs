@@ -308,3 +308,11 @@ protected override void UpdateContentView(UIView view, TreeViewItemInfoBase item
 You can download the example for level based styling demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-660740124).
 
 ![Xamarin iOS TreeView with styling](Images/TreeView_LevelStyle.png)
+
+# Right-to-left localization.
+
+ The TreeView supports right-to-left localization when the device language is set to right to left languages such as Arabic, Hebrew.
+
+N> If you need to customize the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Adapter.html) with your custom views, you need to layout views in application based on device layout direction to respond for right-to-left localization.
+
+![Xamarin iOS TreeView with right-to-left localization](Images/TreeView_Rtl.png)
