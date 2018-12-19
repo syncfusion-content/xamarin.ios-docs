@@ -311,8 +311,67 @@ You can download the example for level based styling demo from [here](http://www
 
 ## Right to left(RTL)
 
- The TreeView supports right-to-left localization when the device language is set to right to left languages such as Arabic, Hebrew or by changing device layout direction.
+TreeView supports right to left localization by setting by setting [SemanticContentAttribute](https://developer.xamarin.com/api/property/UIKit.UIView.SemanticContentAttribute/) to `UISemanticContentAttribute.ForceRightToLeft`.TreeView also supports RTL based on device language layout direction.
 
-N> If you need to customize the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Adapter.html) with your custom views, you need to layout views in application based on device layout direction to respond for right-to-left localization.
+{% tabs %}
+{% highlight c# %}
 
-![Xamarin iOS TreeView with right-to-left localization](Images/TreeView_Rtl.png)
+SfTreeView treeView = new SfTreeView();
+treeView.SemanticContentAttribute = UISemanticContentAttribute.ForceRightToLeft;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> If you need to customize the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Adapter.html) with your custom views, you need to layout views in application based on device layout direction to respond for right-to-left support.
+
+{% tabs %}
+{% highlight c# %}
+// Customized content view
+
+public class NodeImageView : UIView
+{
+
+    UILabel label1;
+    UIImageView imageIcon;
+    SfTreeView view
+    
+    public NodeImageView(SfTreeView treeView)
+    {
+        view = treeView;
+        label1 = new UILabel();
+        if (GetUserInterfaceLayoutDirection(view.SemanticContentAttribute) == UIUserInterfaceLayoutDirection.RightToLeft)
+            label1.TextAlignment = UITextAlignment.Right;
+        imageIcon = new UIImageView();
+        imageIcon.ClipsToBounds = true;
+        imageIcon.AdjustsImageSizeForAccessibilityContentSizeCategory = true;
+        imageIcon.InsetsLayoutMarginsFromSafeArea = true;
+        this.AddSubview(imageIcon);
+        this.AddSubview(label1);
+    }
+
+    public override void LayoutSubviews()
+    {
+        var imageWidth = 40;
+        if (GetUserInterfaceLayoutDirection(view.SemanticContentAttribute) == UIUserInterfaceLayoutDirection.RightToLeft)
+        {
+            this.imageIcon.Frame = new CGRect(this.Frame.Width- imageWidth, 0, imageWidth, this.Frame.Height);
+            this.label1.Frame = new CGRect(0, 0, this.Frame.Width- imageWidth, this.Frame.Height);
+        }
+        else
+        {
+            this.imageIcon.Frame = new CGRect(0, 0, imageWidth, this.Frame.Height);
+            this.label1.Frame = new CGRect(imageWidth, 0, this.Frame.Width, this.Frame.Height);
+        }
+        base.LayoutSubviews();
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        base.Dispose(disposing);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin iOS TreeView with right-to-left](Images/Right-To-Left-Xamarin-iOS-TreeView.png)
+
