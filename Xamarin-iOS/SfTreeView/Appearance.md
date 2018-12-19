@@ -309,7 +309,7 @@ You can download the example for level based styling demo from [here](http://www
 
 ![Xamarin iOS TreeView with styling](Images/TreeView_LevelStyle.png)
 
-## RTL.
+## Right to left(RTL)
 
  The TreeView supports right-to-left localization when the device language is set to right to left languages such as Arabic, Hebrew or by changing device layout direction.
 
