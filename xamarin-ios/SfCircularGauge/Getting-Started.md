@@ -48,14 +48,20 @@ You can initialize the [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_f
 
 {% highlight c# %}
 
-                public override void ViewDidLoad()
+        public override void ViewDidLoad()
 		{
 			base.ViewDidLoad();
-                        SFCircularGauge circularGauge = new SFCircularGauge();
-                        this.View.AddSubview(circularGauge);
+            SFCircularGauge circularGauge = new SFCircularGauge();
+            this.View.AddSubview(circularGauge);
 		}
 
 {% endhighlight %}
+
+## Initialize gauge from designer
+
+[`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the circular gauge in designer.
+
+![Xamarin.iOS CircularGauge Getting Started](getting-started_images/designer.gif)
 
 ## Adding header
 
@@ -231,6 +237,6 @@ namespace Gauge_GettingStarted
 
 The following output is displayed as a result of the above code example.
 
-![](getting-started_images/default.png)
+![Xamarin.iOS CircularGauge Getting Started](getting-started_images/default.png)
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/iOS_Gauge_GettingStarted2141822668.zip).
