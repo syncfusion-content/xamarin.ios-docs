@@ -64,44 +64,11 @@ Run the project and check if you get following output to make sure you have conf
 
 ![Initializing Xamarin.iOS Chart](Getting-Started_images/img1.png)
 
-## Initialize view model
-
-Now, let us define a simple data model that represents a data point in SfChart.
-
-{% highlight C# %}
-public class Person   
-{   
-    public string Name { get; set; }
-
-    public double Height { get; set; }
-}
-{% endhighlight %} 
-
-Next, create a view model class and initialize a list of `Person` objects as shown below,
-
-{% highlight C# %}
-public class ViewModel  
-{
-      public List<Person> Data { get; set; }      
-
-      public ViewModel()       
-      {
-            Data = new List<Person>()
-            {
-                new Person { Name = "David", Height = 180 },
-                new Person { Name = "Michael", Height = 170 },
-                new Person { Name = "Steve", Height = 160 },
-                new Person { Name = "Joel", Height = 182 }
-            }; 
-       }
- }
-{% endhighlight %} 
-
 ## Populate Chart with data
 
-As we are going to visualize the comparison of heights in the data model, add [`SFColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries.html) to [`SFChart.Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) property, and then set the Data property of the above `ViewModel` to the [`SFColumnSeries.ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~ItemsSource.html) property as shown below.
+As we are going to visualize the comparison of person heights in the chart data, create an instance of [`SFColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) and then set the actual `Data` collection to the [`ItemSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~ItemsSource.html) property of [`SFSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries.html) as shown below.
 
-N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFXyDataSeries~YBindingPath.html) properties, so that [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) would fetch values from the respective properties in the data model to plot the series.
+N> You need to get the `Name` and `Height` values in the `Data` collection to the [`SFColumnSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFColumnSeries.html) by setting [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFXyDataSeries~YBindingPath.html) with the respective field names to plot the series. 
 
 {% highlight C# %}
 //Initializing primary axis
@@ -118,13 +85,19 @@ secondaryAxis.Title.Text = new NSString("Height (in cm)");
 
 chart.SecondaryAxis = secondaryAxis;
 
-//Initializing view model
-ViewModel model = new ViewModel();
+ObservableCollection<ChartData> Data = new ObservableCollection<ChartData>()
+{
+    new ChartData { Name = "David", Height = 180 },
+    new ChartData { Name = "Michael", Height = 170 },
+    new ChartData { Name = "Steve", Height = 160 },
+    new ChartData { Name = "Joel", Height = 182 }
+};
+            
 
 //Initializing column series
 SFColumnSeries series = new SFColumnSeries();
 
-series.ItemsSource = model.Data;
+series.ItemsSource = Data;
 
 series.XBindingPath = "Name";
 
@@ -132,6 +105,16 @@ series.YBindingPath = "Height";
 
 chart.Series.Add(series);
 {% endhighlight %}
+
+{% highlight C# %}
+
+public class ChartData   
+{   
+    public string Name { get; set; }
+
+    public double Height { get; set; }
+}
+{% endhighlight %} 
 
 ## Add Title
 
