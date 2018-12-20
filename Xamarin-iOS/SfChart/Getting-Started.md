@@ -179,10 +179,7 @@ namespace Chart_GettingStarted
 			SFChart chart = new SFChart();
 			chart.Title.Text = "Chart";
 			chart.Frame = this.View.Frame;
-
-			//Initializing view model
-			ViewModel model = new ViewModel();
-
+            
 			//Adding Primary Axis for the Chart.
 			SFCategoryAxis primaryAxis = new SFCategoryAxis();
 			primaryAxis.Title.Text = new NSString("Name");
@@ -192,10 +189,18 @@ namespace Chart_GettingStarted
 			SFNumericalAxis secondaryAxis = new SFNumericalAxis();
 			secondaryAxis.Title.Text = new NSString("Height (in cm)");
 			chart.SecondaryAxis = secondaryAxis;
+            
+            ObservableCollection<ChartData> Data = new ObservableCollection<ChartData>()
+            {
+                new ChartData { Name = "David", Height = 180 },
+                new ChartData { Name = "Michael", Height = 170 },
+                new ChartData { Name = "Steve", Height = 160 },
+                new ChartData { Name = "Joel", Height = 182 }
+            };
 
 			//Initializing column series
 			SFColumnSeries series = new SFColumnSeries();
-			series.ItemsSource = model.Data;
+			series.ItemsSource = Data;
 			series.XBindingPath = "Name";
 			series.YBindingPath = "Height";
 			
