@@ -258,14 +258,15 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 In Date editor, [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfDatePicker.html) will be loaded.
 
-### Setting null value in date picker
+### Setting null value in date editor
 
-In data form date picker, by default DateTime data type default value will be displayed (1/01/0001). You can also set the null value by adding nullable DateTime data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor. 
+In data form date editor, by default DateTime data type default value will be displayed (1/01/0001). You can also set the null value by adding nullable DateTime data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor. 
 
 {% tabs %}
 {% highlight c# %}
 
 [DataType(DataType.Date)]
+[Display(Name ="Birth Date")]
 public DateTime? BirthDate { get; set; }
 
 {% endhighlight %}
@@ -273,7 +274,7 @@ public DateTime? BirthDate { get; set; }
 
 ![Setting nullable date to data form date item in Xamarin.iOS DataForm](SfDataForm_images/DateTime_Nullable.png)
 
-### Customizing format in Date editor
+### Customizing format in date editor
 
 In `SfDatePicker`, Short date will be shown by default. You can the customize format to be applied by using [Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem~Format.html) property in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem.html).
 
