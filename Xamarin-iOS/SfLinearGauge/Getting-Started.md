@@ -34,9 +34,9 @@ You can initialize the [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_fil
 
 {% endhighlight %}
 
-## Initialize gauge from designer
+## Initialize linear gauge from designer
 
-[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the linear gauge in designer.
+[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the linear gauge in designer.
 
 ![Xamarin.iOS LinearGauge Designer](getting-started_images/designer.gif)
 

@@ -21,9 +21,9 @@ And below assembly reference to the iOS unified project.
 
 iOS-unified\Syncfusion.SfGauge.iOS.dll 
 
-## Initialize gauge from designer
+## Initialize digital gauge from designer
 
-[`SFDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFDigitalGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digital gauge in designer.
+[`SFDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFDigitalGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the digital gauge in designer.
 
 ![Xamarin.iOS DigitalGauge Designer](images/designer.gif)
 

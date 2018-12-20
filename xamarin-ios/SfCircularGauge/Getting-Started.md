@@ -57,9 +57,9 @@ You can initialize the [`SFCircularGauge`](https://help.syncfusion.com/cr/cref_f
 
 {% endhighlight %}
 
-## Initialize gauge from designer
+## Initialize circular gauge from designer
 
-[`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the circular gauge in designer.
+[`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the circular gauge in designer.
 
 ![Xamarin.iOS CircularGauge Designer](getting-started_images/designer.gif)
 
