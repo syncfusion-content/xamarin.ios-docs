@@ -18,6 +18,7 @@ Restrict the Values within a specific range by setting the Maximum and Minimum p
         numericTextBox.Minimum = 50;
         numericTextBox.Maximum = 1000;
         numericTextBox.Value = 10;
+        numericTextBox.Frame = new CGRect(10, 50, 350, 40);
         this.View.AddSubview(numericTextBox);
 			
 {% endhighlight %}
