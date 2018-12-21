@@ -306,7 +306,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/MoreFieldsOnLoad.png)
+![Initial rendering of data form items in Xamarin.iOS DataForm](SfDataForm_images/MoreFieldsOnLoad.png)
 
 If you want to generate MiddleName and LastName fields at runtime, you need to set `refreshLayout` flag as `true` and call [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~RefreshLayout.html) method which triggers `AutoGeneratingDataFormItem` event again and generates the items based on `refreshLayout` flag.
 
@@ -322,7 +322,7 @@ private void Button_TouchDown(object sender, EventArgs e)
 
 Here, `MiddleName` and `LastName` fields are generated at runtime after clicking more field button.
 
-![](SfDataForm_images/MoreFieldsAdd.png)
+![Adding data form fields at run time in Xamarin.iOS DataForm](SfDataForm_images/MoreFieldsAdd.png)
 
 `GroupName` field is displayed initially in DataForm. If you want to remove it at runtime, you need to set refreshLayout flag as true and pass argument as true in[RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~RefreshLayout.html) method. It triggers `AutoGeneratingDataFormItem` event for all the fields where you can cancel `GroupName’ field item generation.
 
@@ -338,7 +338,7 @@ private void Button_TouchDown(object sender, EventArgs e)
 
 Here, GroupName field is removed at runtime.
 
-![](SfDataForm_images/MoreFieldsRemove.png)
+![Removing data form fields at run time in Xamarin.iOS DataForm](SfDataForm_images/MoreFieldsRemove.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MoreFields303076378).
 
@@ -430,7 +430,7 @@ dataForm.ItemManager = new DataFormItemManagerExt(dataForm, dictionary);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DataFormDictionary.png)
+![Loading data form with dictionary in Xamarin.iOS DataForm](SfDataForm_images/DataFormDictionary.png)
 
 Here, data form is loaded with field from dictionary.
 
