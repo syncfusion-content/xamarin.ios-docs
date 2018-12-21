@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfCalendar | Xamarin.iOS | Syncfusion
-description: Learn how to localize your calendar to regional language
+description: How to Localize the static text of Calendar control.
 platform: Xamarin.iOS
 control: Calendar
 documentation: ug
