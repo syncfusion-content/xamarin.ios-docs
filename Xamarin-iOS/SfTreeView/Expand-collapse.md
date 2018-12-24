@@ -60,6 +60,22 @@ treeView.CollapseNode(node);
 {% endhighlight %}
 {% endtabs %}
 
+### Expand and Collapse all the nodes
+
+Expand and Collapse all the nodes programmatically at runtime by using the `SfTreeView.ExpandAll` method and `SfTreeView.CollapseAll` method.
+
+{% tabs %}
+{% highlight c# %}
+
+//Expands all the nodes
+treeView.ExpandAll();
+
+//Collapses all the nodes
+treeView.CollapseAll();
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Events
 
 TreeView exposes following events to handle expanding and collapsing of items.
