@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL | TreeView for Xamarin.iOS | Syncfusion
+title: Right-to-left | TreeView for Xamarin.iOS | Syncfusion
 description: Describes how to enable right-to-left localization treeview.
 platform: Xamarin.iOS
 control: SfTreeView
