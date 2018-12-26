@@ -89,7 +89,27 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
 	
 {% endhighlight %}
 
-![](images/inline_event.png)                                        
+![](images/inline_event.png)        
+
+You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~InlineItemLoaded_EV.html) Event using in SfCalendar, using View of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.InlineItemLoadedEventArgs_members.html) argument. You can get the details of Appointment in the Appointment argument.
+
+{% highlight c# %}
+
+    calendar.InlineItemLoaded += Calendar_InlineItemLoaded; 
+
+    ...
+
+    void Calendar_InlineItemLoaded(object sender, InlineItemLoadedEventArgs e)
+    {
+        UIButton button = new UIButton();
+        button.SetTitle(e.Appointment.Subject, UIControlState.Normal);
+        button.SetTitleColor(UIColor.White, UIControlState.Disabled);
+        button.BackgroundColor = UIColor.Blue;
+        button.Font = UIFont.ItalicSystemFontOfSize(20);
+        e.View = button;
+    } 
+{% endhighlight %}
+                                
 
 
 
