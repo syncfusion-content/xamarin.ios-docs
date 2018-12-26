@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started for PDF viewer
+title:  Getting Started for PDF viewer | Syncfusion
 description: getting started
 platform: Xamarin.iOS
 control: SfPdfViewer
@@ -146,7 +146,7 @@ UITextField pageNumberField;
 {% endhighlight %}
 {% endtabs %}
 
-N>**When a page number which is not in the bounds (1 – page count) is provided as an input to the GoToPage method, no action will be performed. 
+N>When a page number which is not in the bounds (1 – page count) is provided as an input to the GoToPage method, no action will be performed. 
 
 ## How to get & set the current page number?
 
@@ -200,7 +200,7 @@ public override void ViewDidLoad()
 {% endhighlight %}
 {% endtabs %}
 
-N>**When a page number which is not in the bounds (1 – page count) is provided as an input to the GoToPage method, no action will be performed. 
+N>When a page number which is not in the bounds (1 – page count) is provided as an input to the GoToPage method, no action will be performed. 
 
 ## How to get the total page number?
 
@@ -240,7 +240,7 @@ PageCount property of the PDF viewer can be used to acquire the total number of 
 {% endhighlight %}
 {% endtabs %}
 
-N>**When the current page is the first page, GoToPreviousPage method will not have any effect. Similarly, when in last page, GoToNextPage method will not have any effect.
+N>When the current page is the first page, GoToPreviousPage method will not have any effect. Similarly, when in last page, GoToNextPage method will not have any effect.
 
 ## Designing a toolbar
 

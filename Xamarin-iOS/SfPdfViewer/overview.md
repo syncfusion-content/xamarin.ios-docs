@@ -19,4 +19,4 @@ The following list shows the key features available in PDF Viewer control.
 * Scroll, pan, zoom in and out
 * Page navigation
 
-N>**PDF Viewer for Xamarin.iOS will be supported from iOS version 9.0 onwards.
+N>PDF Viewer for Xamarin.iOS will be supported from iOS version 9.0 onwards.

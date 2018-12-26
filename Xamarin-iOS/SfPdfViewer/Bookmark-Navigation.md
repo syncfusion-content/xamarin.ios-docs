@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Bookmark Navigation
+title:  Bookmark Navigation | Syncfusion
 description: Bookmark Navigation
 platform: Xamarin.iOS
 control: SfPdfViewer
