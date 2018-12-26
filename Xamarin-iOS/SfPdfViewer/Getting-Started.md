@@ -380,7 +380,7 @@ In MainViewController.cs, add the below code snippet which contains the implemen
 
 The final output will look as like in the below screenshot.
 
-![](pdfviewer_images/gettingstarted.png)
+![PDF Viewer with custom toolbar](pdfviewer_images/gettingstarted.png)
 
 This demo can be downloaded from the below link.
 
