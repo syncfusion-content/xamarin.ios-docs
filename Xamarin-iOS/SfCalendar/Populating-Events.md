@@ -13,7 +13,7 @@ SfCalendar control has built-in capability to display the events based on the Ca
 
 N> The default UI of the inline view with events will be like list of events with a dark background
 
-![](images/inline_events.png)                                        
+![Calendar Inline Events](images/inline_events.png)                                        
 
 
 Inline event support can be toggled on / off with `ShowInLineEvent` property.
@@ -89,7 +89,7 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
 	
 {% endhighlight %}
 
-![](images/inline_event.png)        
+![Calendar Inline Events](images/inline_event.png)        
 
 You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~InlineItemLoaded_EV.html) Event using in SfCalendar, using View of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.InlineItemLoadedEventArgs_members.html) argument. You can get the details of Appointment in the Appointment argument.
 
