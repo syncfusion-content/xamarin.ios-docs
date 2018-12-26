@@ -91,7 +91,7 @@ pdfViewer.AnnotationSettings.HandwrittenSignature.FlattenSignatureOnSave = true;
 {% endhighlight %}
 {% endtabs %}
 
-N>**The default value of the property is `true`.
+N>The default value of the property is `true`.
 
 ### Events
 
