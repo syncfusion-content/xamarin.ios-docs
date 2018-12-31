@@ -13,7 +13,7 @@ SfCalendar control has built-in capability to display the events based on the Ca
 
 N> The default UI of the inline view with events will be like list of events with a dark background
 
-![](images/inline_events.png)                                        
+![Calendar Inline Events](images/inline_events.png)                                        
 
 
 Inline event support can be toggled on / off with `ShowInLineEvent` property.
@@ -89,7 +89,48 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
 	
 {% endhighlight %}
 
-![](images/inline_event.png)                                        
+![Calendar Inline Events](images/inline_event.png)        
+
+## Customize inline/agenda view appearance
+You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~InlineItemLoaded_EV.html) event using in `SfCalendar` and you can get the details of appointment from the `Appointment` property, the custom view can be set to `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.InlineItemLoadedEventArgs_members.html) argument.
+
+{% highlight c# %}
+
+    calendar.InlineItemLoaded += Calendar_InlineItemLoaded; 
+
+    ...
+
+    void Calendar_InlineItemLoaded(object sender, InlineItemLoadedEventArgs e)
+    {
+        UIButton button = new UIButton();
+        button.SetTitle(e.Appointment.Subject, UIControlState.Normal);
+        button.SetTitleColor(UIColor.White, UIControlState.Disabled);
+        button.BackgroundColor = UIColor.Blue;
+        button.Font = UIFont.ItalicSystemFontOfSize(20);
+        e.View = button;
+    } 
+{% endhighlight %}
+
+## Getting inline/agenda view appointment details
+
+Using  `InlineEvent` property from the `InlineItemTappedEventArgs` argument of `InlineItemTapped` event, you can get the month inline/agenda appointments details while tapping the specific appointment in inline/agenda view.
+
+{% highlight c# %}
+calendar.InlineItemTapped+= Calendar_InlineItemTapped; 
+
+private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs e)
+{
+    var appointment = e.InlineEvent;
+    UIAlertView alert = new UIAlertView()
+    {
+        Title = appointment.Subject,
+        Message = appointment.StartTime.ToString()
+    };
+    alert.AddButton("OK");
+    alert.Show(); 
+} 
+{% endhighlight %}
+                                
 
 
 
