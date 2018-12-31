@@ -91,7 +91,8 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
 
 ![Calendar Inline Events](images/inline_event.png)        
 
-You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~InlineItemLoaded_EV.html) Event using in SfCalendar, using View of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.InlineItemLoadedEventArgs_members.html) argument. You can get the details of Appointment in the Appointment argument.
+## Customize inline/agenda view appearance
+You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~InlineItemLoaded_EV.html) event using in `SfCalendar` and you can get the details of appointment from the `Appointment` property, the custom view can be set to `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.InlineItemLoadedEventArgs_members.html) argument.
 
 {% highlight c# %}
 
@@ -110,10 +111,9 @@ You can customize the inline item view by [OnInlineItemLoaded](https://help.sync
     } 
 {% endhighlight %}
 
-## Getting Inline/Agenda View Appointment details
+## Getting inline/agenda view appointment details
 
-Using  InlineEvent argument in the InlineItemTappedEventArgs 
-of InlineItemTapped  event, you can get the Month Inline/Agenda Appointments details while tapping the specific appointment. You can do the required functions while tapping the Inline/Agenda appointment using this event.
+Using  `InlineEvent` argument in the `InlineItemTappedEventArgs` of `InlineItemTapped` event, you can get the month inline/agenda appointments details while tapping the specific appointment in inline/agenda view
 
 {% highlight c# %}
 calendar.InlineItemTapped+= Calendar_InlineItemTapped; 
