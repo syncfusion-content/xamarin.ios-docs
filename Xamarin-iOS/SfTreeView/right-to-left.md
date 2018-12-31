@@ -33,7 +33,7 @@ public class NodeImageView : UIView
 
     UILabel label1;
     UIImageView imageIcon;
-    SfTreeView view
+    SfTreeView view;
     
     public NodeImageView(SfTreeView treeView)
     {
