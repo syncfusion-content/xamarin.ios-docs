@@ -216,7 +216,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-## MultiLine Text editor
+## Multiline Text editor
 
 In the `MultilineText` editor, the [UITextView](https://developer.apple.com/documentation/uikit/uitextview) is loaded.
 
