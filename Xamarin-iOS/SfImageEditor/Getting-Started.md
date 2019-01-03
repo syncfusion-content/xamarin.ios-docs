@@ -57,4 +57,4 @@ Following is the final output screenshot,
 
 ![SfImageEditor](ImageEditor_images/gettingstarted.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1588608365.zip).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted263890973.zip).
