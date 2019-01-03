@@ -13,7 +13,7 @@ SfCalendar control has built-in capability to display the events based on the Ca
 
 N> The default UI of the inline view with events will be like list of events with a dark background
 
-![Calendar Inline Events](images/inline_events.png)                                        
+![Inline Evets in Xamarin.iOS Calendar](images/xamarin.ios-calendar-inline_events.png)                                        
 
 
 Inline event support can be toggled on / off with `ShowInLineEvent` property.
@@ -30,54 +30,53 @@ N> The Inline function will be available only in month view with single selectio
 
 Calendar events collection can be provided to SfCalendar using the following steps.
 
-The Appointment class has some basic properties such as `StartTime`, `EndTime` and `Subject`.
+The Appointment class has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFAppointment~EndTime.html) and [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFAppointment~Subject.html).
 
 {% highlight C# %}
 		   
-		   NSMutableArray appCollection = new NSMutableArray();
-            NSCalendar date = NSCalendar.CurrentCalendar;
+NSMutableArray appCollection = new NSMutableArray();
+NSCalendar date = NSCalendar.CurrentCalendar;
 
-            NSDate today = new NSDate();
+NSDate today = new NSDate();
 
-            // Get the year, month, day from the date
-            NSDateComponents startDateComponents = date.Components(
-            NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+// Get the year, month, day from the date
+NSDateComponents startDateComponents = date.Components(
+NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
 
-            // Set the year, day, hour, minute, second
-            startDateComponents.Year = 2015;
-            startDateComponents.Month = 10;
-            startDateComponents.Day = 9;
-            startDateComponents.Hour = 10;
-            startDateComponents.Minute = 0;
-            startDateComponents.Second = 0;
+// Set the year, day, hour, minute, second
+startDateComponents.Year = 2015;
+startDateComponents.Month = 10;
+startDateComponents.Day = 9;
+startDateComponents.Hour = 10;
+startDateComponents.Minute = 0;
+startDateComponents.Second = 0;
 
-            // Get the year, month, day from the date
-            NSDateComponents endDateComponents = date.Components(
-            NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+// Get the year, month, day from the date
+NSDateComponents endDateComponents = date.Components(
+NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
 
-            // Set the year, day, hour, minute, second
-            endDateComponents.Year = 2015;
-            endDateComponents.Month = 10;
-            endDateComponents.Day = 9;
-            endDateComponents.Hour = 12;
-            endDateComponents.Minute = 0;
-            endDateComponents.Second = 0;
+// Set the year, day, hour, minute, second
+endDateComponents.Year = 2015;
+endDateComponents.Month = 10;
+endDateComponents.Day = 9;
+endDateComponents.Hour = 12;
+endDateComponents.Minute = 0;
+endDateComponents.Second = 0;
 
-            //setting start time for the event
-            NSDate startDate = date.DateFromComponents(startDateComponents);
+//setting start time for the event
+NSDate startDate = date.DateFromComponents(startDateComponents);
 
-            //setting end time for the event
-            NSDate endDate = date.DateFromComponents(endDateComponents);
+//setting end time for the event
+NSDate endDate = date.DateFromComponents(endDateComponents);
 
-            //Adding calendar appointment in calendar appointment collection 
-            appCollection.Add(new SFAppointment()
-            {
-                StartTime = startDate,
-                EndTime = endDate,
-                Subject = (NSString)"Client Meeting",
-                AppointmentBackground = UIColor.Blue
-            });
-
+//Adding calendar appointment in calendar appointment collection 
+appCollection.Add(new SFAppointment()
+{
+    StartTime = startDate,
+    EndTime = endDate,
+    Subject = (NSString)"Client Meeting",
+    AppointmentBackground = UIColor.Blue
+});
 		   
 {% endhighlight %}
 
@@ -89,7 +88,7 @@ The Appointment class has some basic properties such as `StartTime`, `EndTime` a
 	
 {% endhighlight %}
 
-![Calendar Inline Events](images/inline_event.png)        
+![Calendar Inline Events](images/xamarin.ios-calendar-inline_event.png)        
 
 ## Customize inline/agenda view appearance
 You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~InlineItemLoaded_EV.html) event using in `SfCalendar` and you can get the details of appointment from the `Appointment` property, the custom view can be set to `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.InlineItemLoadedEventArgs_members.html) argument.

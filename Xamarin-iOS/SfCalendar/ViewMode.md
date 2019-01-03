@@ -25,29 +25,26 @@ The dates in month view can be selected by three ways such as single, multiple a
 
 {% endhighlight %}
 
-![](images/month_view.png)                                        
+![Month View in Xamarin.iOS Calendar](images/xamarin.ios-calendar-month_view.png)                                        
 
 
 ### Month View Settings
 
-* Current day text color can be modified using `TodayTextColor`. 
+* Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings~TodayTextColor.html). 
 * The month view label settings class has the APIs to change date text size, day text size and format options. 
-* The background color of the inline view can be modified using `InlineBackgroundColor` property.
-* The blackout date color can be modified with `BlackoutColor` property.
+* The background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings~InlineBackgroundColor.html) property.
+* The blackout date color can be modified with [BlackoutColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings~BlackoutColor.html) property.
 
 {% highlight c# %}
 
-	SFMonthLabelSettings labelSettings = new SFMonthLabelSettings();
-	labelSettings.DateFormat = “dd”;
-	labelSettings.DayLabelSize = 20;
-	labelSettings.DayFormat = "EEE";
-	labelSettings.DateLabelSize =  12;
-	SFMonthViewSettings monthViewSettings = new SFMonthViewSettings();
-	monthViewSettings.TodayTextColor=UIColor.ParseColor("#1B79D6");
-	monthViewSettings.InlineBackgroundColor=UIColor.ParseColor("#E4E8ED");
-	monthViewSettings.WeekDayBackGroundColor=UIColor.ParseColor("#F7F7F7");
-	monthViewSettings.MonthLabelSettings = labelSettings;
-	calendar.MonthViewSettings=monthViewSettings;
+SFMonthViewSettings monthViewSettings = new SFMonthViewSettings();
+monthViewSettings.TodayTextColor = UIColor.FromRGB(27, 121, 214);
+monthViewSettings.InlineBackgroundColor = UIColor.FromRGB(228, 232, 237);
+monthViewSettings.CurrentMonthBackgroundColor = UIColor.FromRGB(128, 0, 128);
+monthViewSettings.PreviousMonthBackgroundColor =UIColor.FromRGB(152, 149, 240);
+monthViewSettings.PreviousMonthTextColor = UIColor.FromRGB(0, 0, 0);
+monthViewSettings.DateSelectionColor = UIColor.FromRGB(255, 255, 255);
+calendar.MonthViewSettings = monthViewSettings;
 	
 {% endhighlight %}
 
@@ -64,26 +61,25 @@ This displays entire dates/month of a particular year, by default current year w
 	
 {% endhighlight %}
 
-![](images/year_view.png)                                        
+![Year View in Xamarin.iOS Calendar](images/xamarin.ios-calendar-year_view.png)                                        
 
 
 ### Year View Settings
 
-* The month header color can be modified using `MonthHeaderTextColor` property.
-* The year header and date text color can be changed using `YearTextColor` and `DateTextColor` properties respectively.
-* The gravity of the month name can be modified using `LabelAlignment` property, to position it to left, right or center. 
-* The complete layout’s background color can be modified using `YearLayoutBackground` property.
+* The month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~MonthHeaderTextColor.html) property.
+* The year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearCell~DatetextColor.html) properties respectively.
+* The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to left, right or center. 
+* The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~YearLayoutBackground.html) property.
 
 {% highlight c# %}
 
-	SFCalendar calendar = new SFCalendar();
-	SFYearViewSettings yearViewSettings = new SFYearViewSettings();
-	yearViewSettings.YearHeaderTextColor=Color.parseColor("#1B79D6");
-	yearViewSettings.MonthHeaderBackground=Color.parseColor("#E4E8ED");
-	yearViewSettings.DateTextColor=Color.RED;
-	yearViewSettings.HeaderLabelAlignment=LabelAlignment.Center;
-	calendar.YearViewSettings=yearViewSettings;
-	this.AddSubview(calendar);
+SFYearViewSettings yearViewSettings = new SFYearViewSettings();
+yearViewSettings.YearHeaderTextColor = UIColor.FromRGB(27, 121, 214);
+yearViewSettings.YearLayoutBackground = UIColor.FromRGB(255, 228, 181);
+yearViewSettings.MonthHeaderBackground = UIColor.FromRGB(139, 69, 19);
+yearViewSettings.DateTextColor = UIColor.FromRGB(230, 230, 250);
+yearViewSettings.HeaderLabelAlignment = NSTextAlignment.NSTextAlignmentCenter;
+calendar.YearViewSettings = yearViewSettings;
 
 {% endhighlight %}
 

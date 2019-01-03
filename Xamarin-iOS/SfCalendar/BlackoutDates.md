@@ -11,7 +11,7 @@ documentation: ug
 
 ## Min Max dates
 
-Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in SfCalendar control. It is applicable in all the Calendar views.
+Visible dates can be restricted between certain range of dates using [MinDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~MaxDate.html) properties available in SfCalendar control. It is applicable in all the Calendar views.
 
 The inline feature in month view will work only within the min max date range.
 
@@ -27,27 +27,27 @@ N> Beyond the min max date range, following restrictions will be applied.
 
 {% highlight c# %}
 
-	SFCalendar  calendar = new SFCalendar ();
-	NSCalendar date = NSCalendar.CurrentCalendar;
-    NSDate today = new NSDate();
-    NSDateComponents minDateComponents = date.Components(
-						NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-	minDateComponents.Year = 2014;
-    minDateComponents.Month = 4;
-	minDateComponents.Day = 1;
-				
-
-	NSDateComponents maxDateComponents = date.Components(
+SFCalendar  calendar = new SFCalendar ();
+NSCalendar date = NSCalendar.CurrentCalendar;
+NSDate today = new NSDate();
+NSDateComponents minDateComponents = date.Components(
 					NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-	maxDateComponents.Year = 2018;
-	maxDateComponents.Month = 4;
-	maxDateComponents.Day = 1;
+minDateComponents.Year = 2014;
+minDateComponents.Month = 4;
+minDateComponents.Day = 1;
+			
 
-	NSDate minDate = date.DateFromComponents(minDateComponents);
-	NSDate maxDAte = date.DateFromComponents(maxDateComponents);
+NSDateComponents maxDateComponents = date.Components(
+				NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+maxDateComponents.Year = 2018;
+maxDateComponents.Month = 4;
+maxDateComponents.Day = 1;
 
-	calendar.MinDate = minDate;
-	calendar.MaxDate = maxDAte;
+NSDate minDate = date.DateFromComponents(minDateComponents);
+NSDate maxDAte = date.DateFromComponents(maxDateComponents);
+
+calendar.MinDate = minDate;
+calendar.MaxDate = maxDAte;
 	
 {% endhighlight %}
 
@@ -57,28 +57,27 @@ In SfCalendar, BlackoutDates refers the disabled dates that restrict the user fr
 
 The BlackoutDays can be achieved in two ways. 
 
-*	A date collection can be provided to set the `BlackoutDates`. This is useful when one wants to block dates where holidays or any other events occur. 
+*	A date collection can be provided to set the [BlackoutDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~BlackoutDates.html). This is useful when one wants to block dates where holidays or any other events occur. 
 
-*	By invoking the `AddDatesInPast` method, all past dates will be blacked out till current date.
+*	By invoking the [AddDatesInPast](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~AddDatesInPast.html) method, all past dates will be blacked out till current date.
 
 {% highlight c# %}
 
-	SFCalendar  calendar = new SFCalendar ();
-	NSCalendar date = NSCalendar.CurrentCalendar;
-    NSDate today = new NSDate();
-    NSDateComponents components = date.Components(
-						NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-	calendar.BlackoutDates = new NSMutableArray ();
-	for (int i = 0; i < 5; i++) 
-	{
-		NSDate startDate = date.DateFromComponents (components);
-		components.Day += 1;
-		calendar.BlackoutDates.Add (startDate);
-	}
+SFCalendar  calendar = new SFCalendar ();
+NSCalendar date = NSCalendar.CurrentCalendar;
+NSDate today = new NSDate();
+NSDateComponents components = date.Components(
+					NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
+calendar.BlackoutDates = new NSMutableArray ();
+for (int i = 0; i < 5; i++) 
+{
+	NSDate startDate = date.DateFromComponents (components);
+	components.Day += 1;
+	calendar.BlackoutDates.Add (startDate);
+}
 	
 {% endhighlight %}
 
-![](images/blackout_dates.png)                                        
-
+![BlackoutDates support in Xamarin.iOS Calendar](images/xamarin.ios-calendar-blackout_dates.png)                                        
 
 N> This support is enabled only in month view and the dates that consists inline events will also be disabled, when they are blacked out.

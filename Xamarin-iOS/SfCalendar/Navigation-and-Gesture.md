@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Navigation and Gestures with Syncfusion Calendar control for Xamarin.iOS
+title: Date Navigations and Gestures in Syncfusion SfCalendar
 description: Learn the complete navigating and gestures support
 platform: Xamarin.iOS
 control: Calendar
@@ -15,18 +15,17 @@ Visible dates can be moved to specific date using `MoveToDate` property availabl
 
 {% highlight c# %}
 
-	NSCalendar date = NSCalendar.CurrentCalendar;
-    NSDate today = new NSDate();
-    NSDateComponents movetoDateComponents = date.Components(
-            NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
-    
-    movetoDateComponents.Year = 2015;
-    movetoDateComponents.Month = 4;
-    movetoDateComponents.Day = 1;
+NSCalendar date = NSCalendar.CurrentCalendar;
+NSDate today = new NSDate();
+NSDateComponents movetoDateComponents = date.Components(
+        NSCalendarUnit.Year | NSCalendarUnit.Month | NSCalendarUnit.Day, today);
 
-    NSDate moveToDate = date.DateFromComponents(movetoDateComponents);
-    calendar.MoveToDate(moveToDate);
+movetoDateComponents.Year = 2015;
+movetoDateComponents.Month = 4;
+movetoDateComponents.Day = 1;
 
+NSDate moveToDate = date.DateFromComponents(movetoDateComponents);
+calendar.MoveToDate(moveToDate);
 
 {% endhighlight %}
 
@@ -40,18 +39,18 @@ N> By default, SfCalendar views can be moved backwards and forwards using touch 
 
 {% highlight c# %}
 
-    calendar.ViewMode = SFCalendarViewMode.SFCalendarViewModeMonth;
-	calendar.NavigationEnable=false;
+calendar.ViewMode = SFCalendarViewMode.SFCalendarViewModeMonth;
+calendar.EnableNavigation = false;
 
 {% endhighlight %}
 
 ## Transition modes
 
-Dates can be navigated by using swipe gesture. By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using `TransitionMode` property of SfCalendar control.
+Dates can be navigated by using swipe gesture. By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using `TransitionType` property of SfCalendar control.
 
 {% highlight c# %}
 
-    calendar.TransitionMode=SFCalendarTransitionMode.SFCalendarTransitionModeCard;
+  calendar.TransitionType = SFCalendarTransitionType.SFCalendarTransitionTypeCard;
 	
 {% endhighlight %}
 

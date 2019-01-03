@@ -9,7 +9,7 @@ documentation: ug
 
 # FirstDayofWeek
 
-By default, the starting day will be Sunday. This can be modified using `FirstDayofWeek` property. Changing the first day of week will be applied to both month and year view.
+By default, the starting day will be Sunday. This can be modified using [FirstDayofWeek](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~FirstDayofWeek.html) property. Changing the first day of week will be applied to both month and year view.
 
 {% highlight c# %}
 	
@@ -17,7 +17,7 @@ By default, the starting day will be Sunday. This can be modified using `FirstDa
 	
 {% endhighlight %}
 
-![](images/firstday_week.png)                                        
+![FirstDayofWeek support in Xamarin.iOS calendar](images/xamarin.ios-calendar-firstday_week.png)                                        
 
 
 
