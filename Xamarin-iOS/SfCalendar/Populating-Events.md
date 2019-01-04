@@ -111,6 +111,14 @@ You can customize the inline item view by [OnInlineItemLoaded](https://help.sync
     } 
 {% endhighlight %}
 
+Inline view mode
+
+![Calendar Inline Events](images/Xamarin.iOS-Calendar-Inlineitemcustomview.png)
+
+Agenda view mode
+
+![Calendar Inline Events](images/Xamarin.iOS-Calendar-Agendaitemcustomview.png)
+
 ## Getting inline/agenda view appointment details
 
 Using  `InlineEvent` property from the `InlineItemTappedEventArgs` argument of `InlineItemTapped` event, you can get the month inline/agenda appointments details while tapping the specific appointment in inline/agenda view.
@@ -131,6 +139,11 @@ private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs 
 } 
 {% endhighlight %}
                                 
+Inline view mode
 
+![Calendar Inline Events](images/Xamarin.iOS-Calendar-Inlineitemtapped.png)
 
+Agenda view mode
+
+![Calendar Inline Events](images/Xamarin.iOS-Calendar-Agendaitemtapped.png)
 
