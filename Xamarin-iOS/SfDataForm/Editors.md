@@ -256,7 +256,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Date Editor
 
-In Date editor, [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfDatePicker.html) will be loaded.
+In Date editor, [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfDatePicker.html) will be loaded which allows you to select date values.
 
 ### Setting null value in date editor
 
@@ -313,6 +313,46 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 {% endhighlight %}
 {% endtabs %}
+
+## Time editor
+
+In the time editor, the [SfTimePicke](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfTimePicker.html) will be loaded which allows you to select time values.
+
+**Setting null value in time editor**
+
+In the `SfTimePicker`, by default `DateTime` data type default value will be displayed (12:00 AM). You can also set the null value by adding nullable `DateTime` data type for the time picker property in data form, which allows you to set the null value and display the empty value in time editor. 
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.Time)
+[Display(Name = "Birth Time")]
+public DateTime? BirthTime { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting nullable time to data form item in Xamarin.iOS DataForm](SfDataForm_images/Time_Nullable.png)
+
+**Customizing format in time editor**
+
+In the `TimePicker`, short time will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfTimePicker~Format.html) property in [DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormTimeItem.html).
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "BirthTime")
+        (e.DataFormItem as DataFormTimeItem).Format = "HH:mm";
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting time format to data form time item in Xamarin.iOS DataForm](SfDataForm_images/Editors_TimeFormat.png)
 
 ## Picker Editor
 
