@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Events
 
-SfCalendar control has built-in capability to display the events based on the Calendar events collection provided to `appointment` property. For events to be listed for a particular day, enable the inline feature in month view cell.
+`SfCalendar` control has built-in capability to display the events based on the Calendar events collection provided to `appointment` property. For events to be listed for a particular day, enable the inline feature in month view cell.
 
 N> The default UI of the inline view with events will be like list of events with a dark background
 
@@ -28,7 +28,7 @@ N> The Inline function will be available only in month view with single selectio
 
 ## Adding events using Collection
 
-Calendar events collection can be provided to SfCalendar using the following steps.
+Calendar events collection can be provided to `SfCalendar` using the following steps.
 
 The Appointment class has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFAppointment~EndTime.html) and [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFAppointment~Subject.html).
 

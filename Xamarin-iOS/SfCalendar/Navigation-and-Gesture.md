@@ -11,7 +11,7 @@ documentation: ug
 
 ## Move to Date 
 
-Visible dates can be moved to specific date using `MoveToDate` property available in SfCalendar. It will move to any specific month if the `ViewMode` is month view or move to year if it is a year view.
+Visible dates can be moved to specific date using `MoveToDate` property available in `SfCalendar`. It will move to any specific month if the `ViewMode` is month view or move to year if it is a year view.
 
 {% highlight c# %}
 
@@ -33,9 +33,9 @@ N>  The specified date should lie between MinDate and MaxDate, if the specified 
 
 ## Toggle  navigation
 
-This navigation, using touch gesture can be enabled and disabled using `NavigationEnable` property available in SfCalendar control. By default, `NavigationEnable` property is enabled.
+This navigation, using touch gesture can be enabled and disabled using `NavigationEnable` property available in `SfCalendar` control. By default, `NavigationEnable` property is enabled.
 
-N> By default, SfCalendar views can be moved backwards and forwards using touch swipe gesture. 
+N> By default, `SfCalendar` views can be moved backwards and forwards using touch swipe gesture. 
 
 {% highlight c# %}
 

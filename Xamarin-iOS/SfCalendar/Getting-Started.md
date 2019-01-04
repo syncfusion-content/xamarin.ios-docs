@@ -9,12 +9,12 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to render the SfCalendar control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the SfCalendar.
+This section explains you the steps required to render the `SfCalendar` control, to change selection mode, set min max dates and black out dates for the control. This section covers only the minimal features that you need to know to get started with the `SfCalendar`.
 
 
 ## Creating your first SfCalendar in Xamarin.iOS.
 
-This section provides a quick overview to work with the SfCalendar in Objective-C. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
+This section provides a quick overview to work with the `SfCalendar` in Objective-C. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
 
 ### Referencing Essential Studio Components in Your Solution
 

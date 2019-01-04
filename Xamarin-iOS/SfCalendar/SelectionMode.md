@@ -33,4 +33,4 @@ N> The selected dates can be retrieved through `CalendarTapped` Delegate which i
 ![MultiSelection support in Xamarin.iOS calendar](images/xamarin.ios-calendar-multi_selection.png)                                        
 
 
-N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of SfCalendar control.
+N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of `SfCalendar` control.

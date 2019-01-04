@@ -9,9 +9,9 @@ documentation: ug
 
 # Built-in Views
 
-SfCalendar control provides two types of views to display dates such as month view and year view. It can be assigned to the SfCalendar control by using view mode property.
+`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using view mode property.
 
-By default SfCalendar control is assigned with month view. Based on the user’s preference SfCalendar viewed in any of the available two type.
+By default `SfCalendar` control is assigned with month view. Based on the user’s preference `SfCalendar` viewed in any of the available two type.
 
 ## Month View
 

@@ -53,7 +53,7 @@ calendar.MaxDate = maxDAte;
 
 ## Blackout dates
 
-In SfCalendar, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes. 
+In `SfCalendar`, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes. 
 
 The BlackoutDays can be achieved in two ways. 
 
