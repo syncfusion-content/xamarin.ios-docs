@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Navigations and Gestures in Syncfusion SfCalendar
+title: Date Navigation and Gestures in Xamarin.iOS SfCalendar
 description: Learn the complete navigating and gestures support
 platform: Xamarin.iOS
 control: Calendar
