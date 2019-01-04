@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Getting Started for Essential Xamarin.iOS ImageEditor
-description: This section explains you the steps required to load an image to the image editor. Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
+title: Getting Started with Syncfusion ImageEditor control for Xamarin.iOS
+description: Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
 platform: xamarin.ios
 control: SfImageEditor
 documentation: ug
@@ -57,3 +57,4 @@ Following is the final output screenshot,
 
 ![SfImageEditor](ImageEditor_images/gettingstarted.png)
 
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted263890973.zip).
