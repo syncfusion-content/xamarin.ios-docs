@@ -38,7 +38,7 @@ If an application requires multiple languages you can follow the below steps:
 * 	Place the `Localizable.Strings` file in the respective `<Language>.lproj` folders.
 
 You can download the entire source code of this demo for Xamarin.iOS from
-here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_iOS1646966912.zip).
+here [Localization](https://github.com/SyncfusionExamples/Localizing-the-custom-texts-in-Xamarin.iOS-Calendar).
 
 ![Localization support in Xamarin.iOS SfCalendar](Images/xamarin.ios-calendar-localization.png)
 
