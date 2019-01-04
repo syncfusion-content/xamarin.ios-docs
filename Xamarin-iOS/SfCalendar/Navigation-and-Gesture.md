@@ -43,14 +43,3 @@ calendar.ViewMode = SFCalendarViewMode.SFCalendarViewModeMonth;
 calendar.EnableNavigation = false;
 
 {% endhighlight %}
-
-## Transition modes
-
-Dates can be navigated by using swipe gesture. By default those navigation are performed along with Scroll animation. Other than the default scroll animation, there are other options available like card, reveal, float animations. It can be changed by using `TransitionType` property of SfCalendar control.
-
-{% highlight c# %}
-
-  calendar.TransitionType = SFCalendarTransitionType.SFCalendarTransitionTypeCard;
-	
-{% endhighlight %}
-
