@@ -216,7 +216,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-## MultiLine Text editor
+## Multiline Text editor
 
 In the `MultilineText` editor, the [UITextView](https://developer.apple.com/documentation/uikit/uitextview) is loaded.
 
@@ -260,7 +260,7 @@ In Date editor, [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin
 
 ### Setting null value in date editor
 
-In data form date editor, by default `DateTime` data type default value will be displayed (1/01/0001). You can also set the null value by adding nullable `DateTime` data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor. 
+In `SfDatePicker`, the default date value (1/01/0001) is displayed by default. You can also set the null value by adding nullable `DateTime` data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor. 
 
 {% tabs %}
 {% highlight c# %}
@@ -313,6 +313,46 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 {% endhighlight %}
 {% endtabs %}
+
+## Time editor
+
+In the time editor, the [SfTimePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfTimePicker.html) will be loaded.
+
+**Setting null value in time editor**
+
+In `SfTimePicker`, the default time value (12:00 AM) is displayed by default. You can also set the null value by adding nullable `DateTime` data type for the time picker property in data form, which allows you to set the null value and display the empty value in time editor. 
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.Time)]
+[Display(Name = "Birth Time")]
+public DateTime? BirthTime { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting nullable time to data form item in Xamarin.iOS DataForm](SfDataForm_images/Time_Nullable.png)
+
+**Customizing format in time editor**
+
+In the `SfTimePicker`, short time will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfTimePicker~Format.html) property in [DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormTimeItem.html).
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "BirthTime")
+        (e.DataFormItem as DataFormTimeItem).Format = "HH:mm";
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting time format to data form time item in Xamarin.iOS DataForm](SfDataForm_images/Editors_TimeFormat.png)
 
 ## Picker Editor
 
