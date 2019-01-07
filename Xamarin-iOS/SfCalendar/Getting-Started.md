@@ -14,7 +14,7 @@ This section explains you the steps required to render the `SfCalendar` control,
 
 ## Creating your first SfCalendar in Xamarin.iOS.
 
-This section provides a quick overview to work with the `SfCalendar` in Objective-C. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
+This section provides a quick overview to work with the `SfCalendar` in Xamarin.iOS. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
 
 ### Referencing Essential Studio Components in Your Solution
 
