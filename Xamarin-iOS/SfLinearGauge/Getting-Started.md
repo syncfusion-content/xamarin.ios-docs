@@ -34,6 +34,12 @@ You can initialize the [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_fil
 
 {% endhighlight %}
 
+## Initialize linear gauge from designer
+
+[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the linear gauge in designer.
+
+![Xamarin.iOS LinearGauge Designer](getting-started_images/designer.gif)
+
 ## Adding header
 
 You can assign a unique header to [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) by using the [`SFLinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel.html) property and position it wherever as you desired by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel~Position.html) property.
@@ -124,7 +130,7 @@ You can categorize the scale values using the start and end values properties in
 
 {% endhighlight %}
 
-![](getting-started_images/getting-started.png)
+![Xamarin.iOS LinearGauge Getting Started](getting-started_images/)
 
 
 
