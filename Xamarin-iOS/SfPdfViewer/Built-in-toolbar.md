@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with built-in toolbar
+title:  Working with built-in toolbar | Syncfusion
 description: Working with built-in toolbar
 platform: Xamarin.iOS
 control: SfPdfViewer
@@ -24,5 +24,5 @@ pdfViewerControl.Toolbar.Enabled = false;
 {% endhighlight %}
 {% endtabs %}
 
-N>**By default, the built-in toolbar of SfPdfViewer is always visible.
+N>By default, the built-in toolbar of SfPdfViewer is always visible.
 
