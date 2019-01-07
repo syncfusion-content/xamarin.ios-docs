@@ -346,7 +346,11 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html) collection and handles value reflection and validation. It also provides overrides to handle get and set property values from and to data object.
 
-### Manually defining DataFormItem
+### Loading data form with data object
+
+You can load the data form with `DataObject` by manually generating items and handling read and write values.
+
+#### Manually defining DataFormItem
 
 By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on data object. If you want to generate `DataFormItems` manually, you need to override [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~ItemManager.html).
 To create `DataFormItems`, you need to override [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~GenerateDataFormItems(PropertyDescriptorCollection,List%7BDataFormItemBase%7D).html) method.
@@ -382,6 +386,36 @@ dataForm.DataObject = new ContactsInfo();
 dataForm.ItemManager = new DataFormItemManagerExt(dataForm);
 {% endhighlight %}
 {% endtabs %}
+
+#### Handling reading and writing values to and from the data object
+
+By default, value will be shown in editor by getting it from data object and after editing data object will be committed with new value. If you want to customize the value, you need to override [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~SetValue.html) methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html).
+
+Here, the value is reading and writing from/to the data object.
+
+{% highlight c# %}
+public class DataFormItemManagerExt : DataFormItemManager
+{
+    public  SfDataForm dataform = new SfDataForm();
+    public DataFormItemManagerExt(SfDataForm dataForm) : base(dataForm)
+    {
+
+    }
+
+    public override object GetValue(DataFormItem dataFormItem)
+    {
+        var value = dataform.DataObject.GetType().GetRuntimeProperty(dataFormItem.Name).GetValue(dataform.DataObject);
+        return value;
+    }
+
+    public override void SetValue(DataFormItem dataFormItem, object value)
+    {
+        dataform.DataObject.GetType().GetRuntimeProperty(dataFormItem.Name).SetValue(dataform.DataObject, value);
+    }
+}
+{% endhighlight %}
+
+You can download the source code of this demo from here [GenerateDataFormItemsForDataObject](https://github.com/SyncfusionExamples/Generate-DataFormItems-for-DataObject-in-Xamarin-DataForm)
 
 ### Loading data form with dictionary
 
@@ -464,4 +498,4 @@ public class DataFormItemManagerExt : DataFormItemManager
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormDictionary-1494335136).
+You can download the source code of this demo from here [GenerateDataFormItemsForDictionary](https://github.com/SyncfusionExamples/Generate-DataFormItems-for-Dictionary-loaded-in-Xamarin-DataForm)
