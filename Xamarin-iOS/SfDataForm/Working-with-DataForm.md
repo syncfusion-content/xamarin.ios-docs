@@ -346,7 +346,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html) collection and handles value reflection and validation. It also provides overrides to handle get and set property values from and to data object.
 
-### Loading data form with data object
+### Generate DataFormItems for data object
 
 You can load the data form with `DataObject` by manually generating items and handling read and write values.
 
@@ -359,9 +359,10 @@ To create `DataFormItems`, you need to override [GenerateDataFormItems](https://
 {% highlight c# %}
 public class DataFormItemManagerExt : DataFormItemManager
 {       
+    public SfDataForm sfDataForm;
     public DataFormItemManagerExt(SfDataForm dataForm) : base(dataForm)
     {
-            
+        sfDataForm = dataForm;       
     }
     protected override List<DataFormItemBase> GenerateDataFormItems(PropertyDescriptorCollection itemProperties, List<DataFormItemBase> dataFormItems)
     {
@@ -396,28 +397,28 @@ Here, the value is reading and writing from/to the data object.
 {% highlight c# %}
 public class DataFormItemManagerExt : DataFormItemManager
 {
-    public  SfDataForm dataform = new SfDataForm();
+    public SfDataForm sfDataForm;
     public DataFormItemManagerExt(SfDataForm dataForm) : base(dataForm)
     {
-
+        sfDataForm = dataForm;
     }
 
     public override object GetValue(DataFormItem dataFormItem)
     {
-        var value = dataform.DataObject.GetType().GetRuntimeProperty(dataFormItem.Name).GetValue(dataform.DataObject);
+        var value = sfDataForm.DataObject.GetType().GetRuntimeProperty(dataFormItem.Name).GetValue(sfDataForm.DataObject);
         return value;
     }
 
     public override void SetValue(DataFormItem dataFormItem, object value)
     {
-        dataform.DataObject.GetType().GetRuntimeProperty(dataFormItem.Name).SetValue(dataform.DataObject, value);
+        sfDataForm.DataObject.GetType().GetRuntimeProperty(dataFormItem.Name).SetValue(sfDataForm.DataObject, value);
     }
 }
 {% endhighlight %}
 
 You can download the source code of this demo from here [GenerateDataFormItemsForDataObject](https://github.com/SyncfusionExamples/Generate-DataFormItems-for-DataObject-in-Xamarin-DataForm)
 
-### Loading data form with dictionary
+### Generate DataFormItems for dictionary
 
 You can load data form with custom dictionary by manually generating items and handling read and write values.
 
