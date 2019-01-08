@@ -39,7 +39,7 @@ Text
 Property of type string and any other type apart from below specified cases.
 </td>
 <td>
-UITextField
+{{'[UITextField](https://developer.apple.com/documentation/uikit/uitextfield)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ Property of string type with Multiline text.
 [DataType(DataType.Multiline)] 
 </td>
 <td>
-UITextView
+{{'[UITextView](https://developer.apple.com/documentation/uikit/uitextview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -68,7 +68,7 @@ Numeric
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes.
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin-ios/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -82,7 +82,7 @@ Percent
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes. [DataType(“Percent”)].
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin-ios/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -96,7 +96,7 @@ Currency
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes. [DataType(DataType.Currency)].
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin-ios/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@ Property of type DateTime and Property with below attribute
 [DataType(DataType.DateTime)]
 </td>
 <td>
-SfDatePicker
+{{'[SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfDatePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -127,7 +127,7 @@ Property with below attribute.
 [DataType(DataType.Time)].
 </td>
 <td>
-SfTimePicker
+{{'[SfTimePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfTimePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -141,7 +141,7 @@ NumericUpDown
 Property of type Int or Double.
 </td>
 <td>
-SfNumericUpDown
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin-ios/sfnumericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Segment
 Property of type enum.
 </td>
 <td>
-UISegmentedControl
+{{'[UISegmentedControl](https://developer.apple.com/documentation/uikit/uisegmentedcontrol)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ Bool
 Property of type bool
 </td>
 <td>
-UISwitch
+{{'[UISwitch](https://developer.apple.com/documentation/uikit/uiswitch)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -184,7 +184,7 @@ Property of type enum and list.
 [EnumDataTypeAttribute]
 </td>
 <td>
-SfPicker
+{{'[SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfPicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -199,7 +199,7 @@ The String type property and property with
 [DataType(DataType.Password)] attribute.
 </td>
 <td>
-UITextField
+{{'[UITextField](https://developer.apple.com/documentation/uikit/uitextfield)'| markdownify }}
 </td>
 </tr>
 </table>
