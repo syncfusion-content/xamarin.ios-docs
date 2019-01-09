@@ -352,7 +352,7 @@ You can load the data form with `DataObject` by manually generating items and ha
 
 #### Manually defining DataFormItem
 
-By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on data object. If you want to generate `DataFormItems` manually, you need to override [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~ItemManager.html).
+By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on data object. If you want to generate `DataFormItems` manually for data object, you need to override [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~ItemManager.html).
 To create `DataFormItems`, you need to override [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~GenerateDataFormItems(PropertyDescriptorCollection,List%7BDataFormItemBase%7D).html) method.
 
 {% tabs %}
@@ -467,7 +467,7 @@ dataForm.ItemManager = new DataFormItemManagerExt(dataForm, dictionary);
 
 ![Loading data form with dictionary in Xamarin.iOS DataForm](SfDataForm_images/DataFormDictionary.png)
 
-Here, data form is loaded with field from dictionary.
+By default, the value will be shown in editor by getting it from the dictionary.
 
 #### Handling reading and writing value to and from data object
 
