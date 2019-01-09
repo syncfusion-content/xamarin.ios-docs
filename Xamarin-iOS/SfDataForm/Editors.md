@@ -358,8 +358,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 In switch editor, [UISwitch]( https://developer.apple.com/documentation/uikit/uiswitch) is loaded, and DataForm `Switch` editor supports bool data type property.
 
-To add `Switch` editor in DataForm, register the editor as `Switch` for the required property using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
-
 {% tabs %}
 {% highlight c# %}
 
