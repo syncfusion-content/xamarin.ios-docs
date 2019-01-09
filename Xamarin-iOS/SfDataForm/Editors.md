@@ -354,6 +354,27 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Setting time format to data form time item in Xamarin.iOS DataForm](SfDataForm_images/Editors_TimeFormat.png)
 
+## Switch Editor
+
+In switch editor, [UISwitch]( https://developer.apple.com/documentation/uikit/uiswitch) is loaded, and DataForm `Switch` editor supports bool data type property.
+
+To add `Switch` editor in DataForm, register the editor as `Switch` for the required property using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(Name ="Cellular Data")]
+public bool CellularData { get; set; } = true;
+
+[Display(Name = "Airplane Mode")]
+public bool AirplaneMode { get; set; }
+ 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting switch editor in Xamarin.iOS DataForm](SfDataForm_images/Editors_Switch.png)
+
 ## Picker Editor
 
 In picker editor, [SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfPicker.html) will be loaded.
