@@ -356,7 +356,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Switch Editor
 
-In switch editor, [UISwitch]( https://developer.apple.com/documentation/uikit/uiswitch) is loaded by default, and DataForm `Switch` editor supports bool data type property.
+In switch editor, [UISwitch](https://developer.apple.com/documentation/uikit/uiswitch) is loaded. By default, for bool data type property, the `Switch` editor will be loaded in data form.
 
 {% tabs %}
 {% highlight c# %}
