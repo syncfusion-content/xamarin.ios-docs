@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Working with shape annotations | Syncfusion
-description: Working with shape annotations
+description: Working with shape annotations in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug

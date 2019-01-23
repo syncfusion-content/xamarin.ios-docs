@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Getting Started for PDF viewer | Syncfusion
-description: getting started
+description: Getting Started for PDF viewer in Xamarin.iOS 
 platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug

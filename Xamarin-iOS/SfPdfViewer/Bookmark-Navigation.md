@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Bookmark Navigation | Syncfusion
-description: Bookmark Navigation
+description: Bookmark Navigation in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug
