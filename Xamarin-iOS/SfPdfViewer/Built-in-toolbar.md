@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with built-in toolbar | Syncfusion
+title:  Working with built-in toolbar in Xamarin.iOS PDF viewer | Syncfusion
 description: Working with built-in toolbar in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer

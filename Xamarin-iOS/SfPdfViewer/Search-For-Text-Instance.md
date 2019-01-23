@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Search for a text instance | Syncfusion
+title:  Search for a text instance in Xamarin.iOS PDF viewer| Syncfusion
 description: Search for a text instance in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer

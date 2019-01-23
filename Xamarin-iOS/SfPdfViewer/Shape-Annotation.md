@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with shape annotations | Syncfusion
+title:  Working with shape annotations in Xamarin.iOS PDF viewer | Syncfusion
 description: Working with shape annotations in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer

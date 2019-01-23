@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with Document Link Annotation (Table of content) | Syncfusion
+title:  Working with Document Link Annotation (Table of content) in Xamarin.iOS PDF viewer | Syncfusion
 description: Working with Document Link Annotation (Table of content) in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer
