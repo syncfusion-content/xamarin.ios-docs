@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with ink annotation in Xamarin.iOS PDF viewer | Syncfusion
+title:  Add modify freehand draws Syncfusion PDF Viewer Xamarin.iOS
 description: Working with ink annotation in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer

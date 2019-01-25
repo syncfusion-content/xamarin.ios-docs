@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with text markup annotation in Xamarin.iOS PDF viewer | Syncfusion
+title:  Add & modify text markups PDF viewer Xamarin.iOS | Syncfusion
 description: Working with text markup annotation in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer

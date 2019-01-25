@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with shape annotations in Xamarin.iOS PDF viewer | Syncfusion
+title:  Add & modify shapes using PDF viewer Xamarin.iOS | Syncfusion
 description: Working with shape annotations in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer
