@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Add modify freehand draws Syncfusion PDF Viewer Xamarin.iOS
+title:  Add freehand scribble in PDF using Syncfusion PDF Viewer iOS
 description: Working with ink annotation in Xamarin.iOS PDF viewer
 platform: Xamarin.iOS
 control: SfPdfViewer
