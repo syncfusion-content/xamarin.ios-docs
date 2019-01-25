@@ -1,6 +1,10 @@
 ---
-platform: Xamarin.iOS
+layout: post
+title: Overview of PDF Viewer for Xamarin.iOS | Syncfusion
+description: Overview and key features of Xamarin.iOS PDF viewer
+platform: Xamarin.Android
 control: SfPdfViewer
+documentation: ug
 ---
 
 # PDFViewer
