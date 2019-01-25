@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Document link in PDF viewer Xamarin.iOS | Syncfusion
-description: Working with Document Link Annotation (Table of content) in Xamarin.iOS PDF viewer
+description: Document Link Annotation or Table of content support in PDF viewer Xamarin.iOS allows the user to navigate to specific destination within PDF document.
 platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug

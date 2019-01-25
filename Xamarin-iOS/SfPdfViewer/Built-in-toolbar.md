@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Built-in toolbar in PDF viewer Xamarin.iOS  | Syncfusion
-description: Working with built-in toolbar in Xamarin.iOS PDF viewer
+description: The PDF Viewer Xamarin.iOS allows the users to perform almost all operations in PDF Viewer using the built-in toolbar
 platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Search text in PDF using PDF viewer Xamarin.iOS | Syncfusion
-description: Search for a text instance in Xamarin.iOS PDF viewer
+description: Search text support allows the user to locate and highlight text instances in the PDF document using PDF Viewer Xamarin.iOS
 platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug

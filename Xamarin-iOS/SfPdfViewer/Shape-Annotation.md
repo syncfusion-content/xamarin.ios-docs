@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Add & modify shapes using PDF viewer Xamarin.iOS | Syncfusion
-description: Working with shape annotations in Xamarin.iOS PDF viewer
+description: PDF viewer Xamarin.iOS allows user to add, move and delete shapes such as line, rectangle & ellipse PDF document
 platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug
