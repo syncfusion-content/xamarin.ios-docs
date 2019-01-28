@@ -1,6 +1,6 @@
 ---
-title: Port
-description: Briefs about port in SfDiagram
+title: Port for Essential Xamarin.iOS Diagram | Syncfusion
+description: Briefs about port ,connection with node and connector and its customization in SfDiagram for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfDiagram
 documentation: UG
@@ -60,7 +60,7 @@ node.Ports.Remove(port);
 {% endhighlight %}
 {% endtabs %}
 
-# Customization
+## Customization
 You can customize a port by resizing it and applying style to it.
 The following code illustrates how to customize a port:
 {% tabs %}
