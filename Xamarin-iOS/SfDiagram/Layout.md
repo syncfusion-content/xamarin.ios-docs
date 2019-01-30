@@ -1,6 +1,6 @@
 ---
-title: Adding layout in diagram control for Xamarin.iOS.
-description: Learn how to add layout in diagram control.
+title: Adding layout in diagram control for Xamarin.iOS | Syncfusion
+description: Describes how to add layout,data source setting ,drag & drop support in layout and expand & collapse in diagram control for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfDiagram
 documentation: UG
