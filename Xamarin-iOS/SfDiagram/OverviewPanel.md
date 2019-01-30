@@ -1,6 +1,6 @@
 ---
-title: Add overview for diagram
-description: Learn how to add overview in diagram
+title: Add overview for Essential Xamarin.iOS Diagram | Syncfusion
+description: Describes how to add overview panel and its customization in diagram control for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfDiagram
 documentation: UG
