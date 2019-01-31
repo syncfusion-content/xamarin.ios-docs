@@ -1,6 +1,6 @@
 ---
-title: Adding userhadles for diagram
-description: Learn how to add userhandles in diagram
+title: Userhadles for Essential Xamarin.iOS Diagram | Syncfusion
+description: Learn how to add userhandles ,userhandles customization and its event handle in diagram for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfDiagram
 documentation: UG
