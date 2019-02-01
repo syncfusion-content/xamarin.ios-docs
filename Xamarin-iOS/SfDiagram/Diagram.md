@@ -1,6 +1,6 @@
 ---
-title: Diagram for Essential Xamarin.iOS Diagram
-description: Diagram
+title: Diagram for Essential Xamarin.iOS Diagram | Syncfusion
+description: Briefs about diagram ,stencil,page setting and diagram constraints in SfDiagram for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfDiagram
 documentation: UG
