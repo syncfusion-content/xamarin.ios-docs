@@ -1,6 +1,6 @@
 ---
-title: Adding connectors in diagram control for Xamarin.iOS
-description: Learn how to add connector in diagram control.
+title: Adding connectors in diagram control for Xamarin.iOS | Syncfusion
+description: Describes how to add connector,connection with node and it's appearance in diagram control for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfDiagram
 documentation: UG

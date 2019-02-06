@@ -1,6 +1,6 @@
 ---
-title: Adding annotation for node and connector
-description: Learn how to add annotation in node and connector
+title: Annotation for Essential Xamarin.iOS Diagram | Syncfusion
+description: Learn how to add annotation in node and connector for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfDiagram
 documentation: UG
