@@ -457,11 +457,11 @@ dataForm.ColumnCount = 2;
 
 ![Setting column count to data form in Xamarin.iOS DataForm](SfDataForm_images/DataFormGrid.png)
 
-## Loading SfDataForm with customized height and width
+## Loading DataForm with customized height and width
 
-SfDataForm can be loaded with specific height and width by specifying the height and width of the `SfDataForm.Frame` property.
+DataForm can be loaded with specific height and width by specifying the height and width of the `SfDataForm.Frame` property.
 
-To load SfDataForm with specific height and width, follow the code example
+To load DataForm with specific height and width, follow the code example.
 
 {% tabs %}
 {% highlight c# %}
