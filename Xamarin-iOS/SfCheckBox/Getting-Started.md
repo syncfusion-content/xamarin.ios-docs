@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started in SfCheckBox for Xamarin.iOS platform
+title: Getting started in Syncfusion CheckBox for Xamarin.iOS platform
 description: Learn how to customize the basic features of SfCheckBox
 platform: Xamarin.iOS
 control: SfCheckBox
@@ -13,9 +13,9 @@ keywords: button, SfCheckBox, CheckBox
 This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
 
 ## Add SfCheckBox reference
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add maskededit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons)", and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add checkbox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons)", and then install it. 
 
-![](Images/nuget.png)
+![Xamarin.iOS CheckBox NuGet](Images/nuget.png)
 
 N>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -76,7 +76,7 @@ checkBox.SetTitle("CheckBox",UIControlState.Normal);
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Caption.png) 
+![Xamarin.iOS CheckBox caption text](Images/Caption.png) 
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_GettingStarted.zip).
 
@@ -87,7 +87,7 @@ The three visual states of `SfCheckBox` are:
 * Unchecked
 * Indeterminate
 
-![](Images/States.png) 
+![Xamarin.iOS CheckBox visual states](Images/States.png) 
 
 You can change the state of the check box using the `IsChecked` property of `SfCheckBox`. In checked state, a tick mark is added to the visualization of check box.
 
@@ -150,7 +150,7 @@ checkBox.IsChecked = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Agree.png)
+![Xamarin.iOS CheckBox tri-state](Images/Agree.png)
 
 Multiple check boxes can be used as a group for multi-select scenarios in which a user chooses one or more items from the group of choices that are not mutually exclusive.
 
@@ -171,7 +171,7 @@ onion.IsChecked = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/StateChange.png)
+![Xamarin.iOS CheckBox states changes](Images/StateChange.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_StateChanging.zip).
 
@@ -233,6 +233,6 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Inter1.png) ![](Images/Inter2.png)
+![Xamarin.iOS CheckBox intermediate state](Images/Inter1.png) ![](Images/Inter2.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_IndeterminateState.zip).
