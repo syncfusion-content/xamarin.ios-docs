@@ -385,34 +385,6 @@ dataForm.ItemManager = new DataFormItemManagerExt(dataForm);
 {% endhighlight %}
 {% endtabs %}
 
-#### Handling reading and writing values to and from the data object
-
-By default, the value will be shown in editor by getting it from the data object. After editing, the data object will be committed with a new value. To customize the value, override the [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~SetValue.html) methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html).
-
-Here, the value is reading and writing from/to the data object.
-
-{% highlight c# %}
-public class DataFormItemManagerExt : DataFormItemManager
-{
-    public SfDataForm sfDataForm;
-    public DataFormItemManagerExt(SfDataForm dataForm) : base(dataForm)
-    {
-        sfDataForm = dataForm;
-    }
-
-    public override object GetValue(DataFormItem dataFormItem)
-    {
-        var value = sfDataForm.DataObject.GetType().GetRuntimeProperty(dataFormItem.Name).GetValue(sfDataForm.DataObject);
-        return value;
-    }
-
-    public override void SetValue(DataFormItem dataFormItem, object value)
-    {
-        sfDataForm.DataObject.GetType().GetRuntimeProperty(dataFormItem.Name).SetValue(sfDataForm.DataObject, value);
-    }
-}
-{% endhighlight %}
-
 You can download the source code of this demo from [GenerateDataFormItemsForDataObject](https://github.com/SyncfusionExamples/generate-dataformitems-for-dataobject-in-xamarin-dataform)
 
 ### Manually generate DataFormItems for data dictionary
@@ -464,7 +436,7 @@ Here, the data form is loaded with field from dictionary.
 
 #### Handling reading and writing value to and from dictionary
 
-By default, the value will be shown in editor by getting it from the dictionary. After editing, the dictionary will be committed with a new value. To customize the value, override the [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~SetValue.html) methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html).
+By default, the value will be shown in editor by getting it from the dictionary. After editing, to commit the new value in the dictionary override the [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~SetValue.html) methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html).
 Here, value is reading and writing from/to dictionary instead of data object.
 
 {% tabs %}
