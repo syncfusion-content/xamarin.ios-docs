@@ -258,55 +258,75 @@ dataForm.RegisterEditor("Text", new CustomTextEditor(dataForm));
 ## Creating new custom editor
 
 You can create custom editor by overriding [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormEditor%601.html) class.
-Property settings, commit, data validation can be handled by overriding required methods. Here, `UISlider` is loaded for `Salary` editor.
+Property settings, commit, data validation can be handled by overriding required methods. Here, `UITextField` is loaded for `Age` editor.
 
 {% tabs %}
 {% highlight c# %}
-public class CustomSliderEditor : DataFormEditor<UISlider>
+public class CustomTextEditor : DataFormEditor<UITextField>
 {
-    public CustomSliderEditor(SfDataForm dataForm) : base(dataForm)
-    {
-    }
+	public CustomTextEditor(SfDataForm dataForm) : base(dataForm)
+	{
+	}
 
-    protected override UISlider OnCreateEditorView()
-    {
-        return new UISlider();
-    }
+	protected override UITextField OnCreateEditorView()
+	{
+		return new UITextField();
+	}
+	protected override void OnInitializeView(DataFormItem dataFormItem, UITextField view)
+	{
+		base.OnInitializeView(dataFormItem, view);
+	}
 
-    protected override void OnInitializeView(DataFormItem dataFormItem, UISlider view)
-    {
-        view.Value = (int)dataForm.ItemManager.GetValue(dataFormItem);
-    }
+	protected override void OnWireEvents(UITextField view)
+	{
+		view.ValueChanged+= OnViewValueChanged;
+	}
 
-    protected override void OnWireEvents(UISlider view)
-    {
-        view.ValueChanged += View_ValueChanged;
-    }
+	private void OnViewValueChanged(object sender, EventArgs e)
+	{
+		var view = sender as UITextField;
+		if (DataForm.CommitMode == CommitMode.PropertyChanged || DataForm.ValidationMode == ValidationMode.PropertyChanged)
+			this.OnValidateValue(view);
+		if (this.DataForm.CommitMode != CommitMode.PropertyChanged) return;
+		this.OnCommitValue(view);
+		OnValidateValue(sender as UITextField);
+	}
 
-    private void View_ValueChanged(object sender, EventArgs e)
-    {
-        OnCommitValue(sender as UISlider);
-        OnValidateValue(sender as UISlider);
-    }
 
-    protected override void OnUnWireEvents(UISlider view)
-    {
-        view.ValueChanged -= View_ValueChanged;
-    }
+	private void OnViewPropertyChanged(object sender, PropertyChangedEventArgs e)
+	{
+		OnValidateValue(sender as UITextField);
+	}
 
-    protected override void OnCommitValue(UISlider view)
-    {
-        var dataFormItemView = view.Superview as DataFormItemView;
-        dataForm.ItemManager.SetValue(dataFormItemView.DataFormItem, view.Value);
-    }
+
+	protected override bool OnValidateValue(UITextField view)
+	{
+		return this.DataForm.Validate("Age");
+	}
+
+	protected override void OnCommitValue(UITextField view)
+	{
+		var dataFormItemView = view.Superview as DataFormItemView;
+		this.DataForm.ItemManager.SetValue(dataFormItemView.DataFormItem, view.Text);
+	}
+
+	protected override void OnUnWireEvents(UITextField view)
+	{
+		view.ValueChanged -= OnViewValueChanged;
+	}
 }
 
-dataForm.RegisterEditor("Slider", new CustomSliderEditor(dataForm));
-dataForm.RegisterEditor("Salary", "Slider");
+dataForm.RegisterEditor("numeric", new CustomTextEditor(dataForm));
+dataForm.RegisterEditor("Age", "numeric");
+dataForm.ValidationMode = ValidationMode.LostFocus;
 {% endhighlight %}
 {% endtabs %}
 
-![Creating custom editor for the data form item in Xamarin.iOS DataForm](SfDataForm_images/SliderEditor.png)
+You should manually commit the custom DataFormItem editor value by using [OnCommitValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormEditor%601~OnCommitValue.html) override method of [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormEditor%601.html) class on custom editor `Value` or `Focus changed` event which is used to update the custom editor value in respective property in [DataObject](https://help.syncfusion.com/xamarin-ios/sfdataform/getting-started#setting-dataobject) based on dataform [commit mode](https://help.syncfusion.com/xamarin-ios/sfdataform/editing#commit-mode) set. 
+
+Also , you should manually validate the custom editor value in by using [OnValidateValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormEditor%601~OnValidateValue.html) override method of `DataFormEditor` class on custom editor `Value` or `Focus changed` event which is used to validate the custom editor value based on data form [validation mode](https://help.syncfusion.com/xamarin-ios/sfdataform/validation?cs-save-lang=1&cs-lang=xaml#validation-mode) set. In the override method for OnValidateValue, you need to return [DataForm.Validate(string)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~Validate.html) method in order to validate the particular data item.
+
+![Creating custom editor for the data form item in Xamarin.iOS DataForm](SfDataForm_images/DataFormCustomEditor.png)
 
 ## Support for Email editor
 
