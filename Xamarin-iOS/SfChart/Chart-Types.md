@@ -709,7 +709,6 @@ dashes[1] = (NSNumber)6;
 splineSeries.Dashes = NSArray.FromObjects(dashes);
 chart.Series.Add(splineSeries);
   
-
 {% endhighlight %}
 
 ### Spline series types
