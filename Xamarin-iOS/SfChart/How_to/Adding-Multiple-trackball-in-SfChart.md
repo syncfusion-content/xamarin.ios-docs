@@ -13,7 +13,7 @@ documentation: ug
 
 The following code sample demonstrates this:
 
-{% highlight xaml %}
+{% highlight c# %}
 
 SFChartTrackballBehavior trackballBehavior1 = new SFChartTrackballBehavior();
 trackballBehavior1.ActivationMode = SFChartTrackballActivationMode.None;
