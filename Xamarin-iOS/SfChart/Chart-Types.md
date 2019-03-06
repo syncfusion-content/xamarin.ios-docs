@@ -851,6 +851,38 @@ chart.Series.Add(scatterSeries);
 
 ![Scatter chart type in Xamarin.iOS](ChartTypes_images/Scatter.png)
 
+## Fast Scatter Chart
+
+The [`FastScatterSeries`]() is a special kind of scatter series that renders a collection with a huge number of data points. You can use the following properties to customize the appearance of a fast scatter point.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – Changes the color of series.
+* [`Alpha`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Alpha.html) - Controls the transparency of chart series.
+* [`BorderWidth`]() – Changes the border width of series.
+* [`BorderColor`]() – Changes the border color of series.
+* [`ScatterWidth`]() – Changes the width of series.
+* [`ScatterHeight`]() – Changes the height of series.
+* [`ShapeType`]() - Change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Diamond`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Ellipse`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Hexagon`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Pentagon`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Plus`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Rectangle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html) and [`Triangle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html).
+* [`EnableAntiAliasing`]() – Since [`FastScatterSeries`]() can be loaded with a large number of points, the rendering of series should be smooth. This requirement can be achieved by setting the [`EnableAntiAliasing`]() property of [`FastScatterSeries`]() to false.
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFFastScatterSeries fastScatterSeries = new SFFastScatterSeries() 
+{ 
+    ScatterHeight = 8,
+    ScatterWidth = 8,
+    ShapeType = ChartScatterShapeType.Ellipse,
+    ItemsSource = Data, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue"
+};
+chart.Series.Add(fastScatterSeries);
+{% endhighlight %}
+
+![Fast Scatter chart type in Xamarin.iOS](ChartTypes_images/Scatter.png)
+
 ## OHLC Chart
 
 To render an OHLC chart, create an instance of [`SFOHLCSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFOHLCSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html).
