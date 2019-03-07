@@ -70,8 +70,8 @@ View.AddSubView(calendar);
 ![Month View in Xamarin.iOS Calendar](images/Xamarin.iOS-Calendar-HideLeadingTrailingDates.png)
 
 N>
-* The DrawMonthCell event is triggered for the current month dates only.
-* The VisibleDates count in the MonthChanged event depends on the current month dates only.
+* The DrawMonthCell event is triggered for the current month dates.
+* The VisibleDates in the MonthChanged event will return the current month dates.
 
 
 ## YearView
