@@ -52,7 +52,7 @@ N> The view modes can be switched by clicking the Header Text in MonthView or by
 
 ### Hide trailing and leading dates
 
-The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the `ShowLeadingAndTrailingDays` property. The following code demonstrates how to hide the leading and trailing dates in calendar.The `SfCalendar` allows you to hide the days of the next month and previous month in the calendar to enhance the appearance of the calendar. This can be achieved by enabling the `ShowLeadingAndTrailingDays` property. The following code illustrates how to hide the leading and trailing dates in the calendar,
+The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the `ShowLeadingAndTrailingDays` property. The following code demonstrates how to hide the leading and trailing dates in calendar.
 
 {% tabs %}
 
