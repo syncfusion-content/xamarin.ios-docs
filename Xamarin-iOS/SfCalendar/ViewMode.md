@@ -67,7 +67,7 @@ View.AddSubView(calendar);
 
 {% endtabs %}
 
-![Month View in Xamarin.iOS Calendar](images/Xamarin.iOS-Calendar-HideLeadingTrailingDatesss.png)
+![Month View in Xamarin.iOS Calendar](images/Xamarin.iOS-Calendar-HideLeadingTrailingDates.png)
 
 N>
 * The DrawMonthCell event is triggered for the current month dates only.
