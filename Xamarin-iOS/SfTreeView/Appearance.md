@@ -322,4 +322,4 @@ treeView.IsAnimationEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Android TreeView with Animation](Images/TreeView_Animation.gif)
+![Xamarin iOS TreeView with Animation](Images/TreeView_Animation.gif)
