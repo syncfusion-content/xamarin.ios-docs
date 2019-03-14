@@ -100,7 +100,7 @@ public class EmployeeInfo : IDataErrorInfo, INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Validation1.png)
+![Validation in Xamarin.iOS DataForm](SfDataForm_images/Validation1.png)
 
 ### Using INotifyDataErrorInfo
 
@@ -261,7 +261,7 @@ public DateTime JoinDate
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Validation2.png)
+![Date range validation in Xamarin.iOS DataForm](SfDataForm_images/Validation2.png)
 
 ## Validation mode
 
@@ -374,7 +374,7 @@ public string Name
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/ValidMessage.png)
+![Valid message for validation in Xamarin.iOS DataForm](SfDataForm_images/ValidMessage.png)
 
 ## How to validate property value based on another value
 
@@ -402,6 +402,48 @@ private void DataFormGettingStarted_PropertyChanged(object sender, PropertyChang
             dataForm.Validate("AccountNumber");
     }
 }
+
+{% endhighlight %}
+{% endtabs %}
+
+## Customize validation message using DataFormLayoutManager
+
+You can use custom [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager.html) class to customize validation message by overriding [UpdateViewForValidation](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~UpdateViewForValidation.html) method. It lets you to return different custom views for each validation message based on certain conditions.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
+public class CustomLayoutManager : DataFormLayoutManager
+    {
+        public CustomLayoutManager(SfDataForm dataForm) : base(dataForm)
+        {
+        }
+        protected override UIView UpdateViewForValidation(DataFormItem dataFormItem, CoreGraphics.CGRect bounds)
+        {
+            base.UpdateViewForValidation(dataFormItem, bounds);
+
+            UIView validView = new UIView(bounds);
+            UILabel validMessage = new UILabel() { BackgroundColor = UIColor.Green };
+            validMessage.Text = "Field value is valid";
+            validMessage.Font = UIFont.FromName("HelveticaNeue", 10);
+            validMessage.Frame = bounds;
+            validView.AddSubview(validMessage);
+
+
+            UIView inValidView = new UIView(bounds);
+            UILabel inValidMessage = new UILabel() { BackgroundColor = UIColor.Red };
+            inValidMessage.Text = "Field should not be empty";
+            inValidMessage.Font = UIFont.FromName("HelveticaNeue", 10);
+            inValidMessage.Frame = bounds;
+            inValidView.AddSubview(inValidMessage);
+
+            if (dataFormItem.IsValid)
+                return validView;
+            else
+                return inValidView;
+        }
+    }
 
 {% endhighlight %}
 {% endtabs %}
