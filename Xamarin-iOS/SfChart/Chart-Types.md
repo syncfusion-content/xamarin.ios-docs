@@ -691,7 +691,7 @@ chart.Series.Add(splineSeries);
 
 ### Dashed Lines
 
-[`Dashes`] property of the [`SFSplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries.html) is used to render spline series with dashes.
+[`Dashes`]() property of the [`SFSplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries.html) is used to render spline series with dashes.
 
 {% highlight c# %} 
 [C#]
