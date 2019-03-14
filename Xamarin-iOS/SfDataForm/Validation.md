@@ -414,9 +414,9 @@ You can use custom [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_f
 {% highlight c# %}
 
 dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
-public class CustomLayoutManager : DataFormLayoutManager
+public class DataFormLayoutManagerExt : DataFormLayoutManager
     {
-        public CustomLayoutManager(SfDataForm dataForm) : base(dataForm)
+        public DataFormLayoutManagerExt(SfDataForm dataForm) : base(dataForm)
         {
         }
         protected override UIView UpdateViewForValidation(DataFormItem dataFormItem, CoreGraphics.CGRect bounds)
