@@ -120,6 +120,20 @@ treeView.ExpanderWidth = 40;
 {% endhighlight %}
 {% endtabs %}
 
+## ExpanderPosition
+
+The TreeView allows you change the position of expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ExpanderPosition.html) property. The default value of this property is `Start`.This property has following two positions:
+
+* `Start`: Allows displaying the expander view at the start position.
+* `End`: Allows displaying the expander view at the end position.
+
+{% tabs %}
+{% highlight c# %}
+SfTreeView treeView = new SfTreeView();
+treeView.ExpanderPosition = ExpanderPosition.End;
+{% endhighlight %}
+{% endtabs %}
+
 ## Level based Customization
 
 ### Level based views
@@ -308,3 +322,18 @@ protected override void UpdateContentView(UIView view, TreeViewItemInfoBase item
 You can download the example for level based styling demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LevelBasedStyling-660740124).
 
 ![Xamarin iOS TreeView with styling](Images/TreeView_LevelStyle.png)
+
+## Animation
+
+The `SfTreeView` supports to animate expanding or collapsing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html). To enable/disable the animation use [IsAnimationEnabled](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~IsAnimationEnabled.html) property of `SfTreeView`.
+ 
+N> The default value of the `IsAnimationEnabled` property is `false`.
+
+{% tabs %}
+{% highlight c# %}
+SfTreeView treeView = new SfTreeView();
+treeView.IsAnimationEnabled = true;
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin iOS TreeView with Animation](Images/TreeView_Animation.gif)
