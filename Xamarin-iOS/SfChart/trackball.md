@@ -57,13 +57,13 @@ In the following screenshot, trackball label is shown for only single data point
 
 ## Activation mode
 
-The [`ActivationMode`]() property can be used to restrict the trackball visibility based on the touch actions. The default value of [`ActivationMode`]() property is [`SFChartTrackballActivationMode.LongPress`]().
+The [`ActivationMode`]() property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`SFChartTrackballActivationMode.LongPress`]().
 
 The SFChartTrackballActivationMode enum contains the following values:
 
-* [`LongPress`]() – Trackball is activated only when performing long press action.
-* [`TouchMove`]() – Trackball is activated only when performing touch move action.
-* [`None`]() – Trackball is not visible when setting activation mode as [`None`](). It may be activated when calling [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~Show.html) method.
+* [`LongPress`]() – Activates trackball only when performing the long press action.
+* [`TouchMove`]() – Activates trackball only when performing touch move action.
+* [`None`]() – Hides the visibility of trackball when setting activation mode to [`None`](). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~Show.html) method.
 
 ## Customizing appearance
 
@@ -232,7 +232,7 @@ trackball.Hide();
 
 ### HitTest method
 
-The [`HitTest`] method is used to check whether the point is in trackball or not.
+The [`HitTest`]() method is used to check whether the point is in trackball or not.
 
 {% highlight c# %} 
 [C#]
