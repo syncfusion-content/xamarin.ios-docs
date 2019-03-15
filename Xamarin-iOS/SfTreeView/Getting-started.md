@@ -82,6 +82,8 @@ In this walk through, you will create a new application with the TreeView that i
 * [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source---unbound-mode) 
 * [Creating Data Model](#creating-data-model)  
 * [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source---bound-mode)
+* [Creating Hierarchical Data Model](#creating-hierarchical-data-model-for-the-tree-view)
+* [Bind to a Hierarchy Property Descriptors data source - Bound Mode](#bind-to-a-hierarchy-Property-descriptors-data-source---bound-mode)
 * [Defining a adapter to expander and content view](#defining-a-adapter-to-expander-and-content-view)
 * [Interacting with a tree view](#interacting-with-a-treeview)
 * [Selection](#selection)
@@ -415,6 +417,290 @@ public override void ViewDidLoad()
     FileManagerViewModel viewModel = new FileManagerViewModel();
     treeView.ChildPropertyName = "SubFiles";
     treeView.ItemsSource = viewModel.Folders;
+    treeView.Adapter = new NodeImageAdapter();
+    Add(treeView);
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Creating Hierarchical Data Model for the tree view
+
+Create a hierarchical data model to bind it to the control. 
+
+Create a simple hierarchical  data source as shown in the following code example in a new class file, and save it as FileManager.cs file: 
+
+{% tabs %}
+{% highlight c# %}
+public class Folder : INotifyPropertyChanged
+{
+    private string fileName;
+    private ImageSource imageIcon;
+    private ObservableCollection<File> files;
+
+    public Folder()
+    {
+    }
+
+    public ObservableCollection<File> Files
+    {
+        get { return files; }
+        set
+        {
+            files = value;
+            RaisedOnPropertyChanged("SubFiles");
+        }
+    }
+
+    public string FileName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("FileName");
+        }
+    }
+
+    public ImageSource ImageIcon
+    {
+        get { return imageIcon; }
+        set
+        {
+            imageIcon = value;
+            RaisedOnPropertyChanged("ImageIcon");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+
+public class File : INotifyPropertyChanged
+{
+    private string fileName;
+    private ImageSource imageIcon;
+    private ObservableCollection<SubFile> subFiles;
+
+    public File()
+    {
+    }
+
+    public ObservableCollection<SubFile> SubFiles
+    {
+        get { return subFiles; }
+        set
+        {
+            subFiles = value;
+            RaisedOnPropertyChanged("SubFiles");
+        }
+    }
+
+    public string FileName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("FileName");
+        }
+    }
+
+    public ImageSource ImageIcon
+    {
+        get { return imageIcon; }
+        set
+        {
+            imageIcon = value;
+            RaisedOnPropertyChanged("ImageIcon");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+
+
+public class SubFile : INotifyPropertyChanged
+{
+    private string fileName;
+    private ImageSource imageIcon;
+
+    public SubFile()
+    {
+    }
+
+    public string FileName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("FolderName");
+        }
+    }
+
+    public ImageSource ImageIcon
+    {
+        get { return imageIcon; }
+        set
+        {
+            imageIcon = value;
+            RaisedOnPropertyChanged("ImageIcon");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> If you want your hierarchical data model to respond to property changes, then implement `INotifyPropertyChanged` interface in your model class.
+
+Create a model repository class with ImageNodeInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as FileManagerViewModel.cs file:
+
+{% tabs %}
+{% highlight c# %}
+public class FileManagerViewModel
+{
+    public ObservableCollection<Folder> Folders { get; set; }
+
+    public ObservableCollection<File> Files { get; set; }
+
+    public ObservableCollection<SubFile> SubFiles { get; set; }
+
+    public FileManagerViewModel()
+    {
+        this.Folders = GetFiles();
+    }
+
+    private ObservableCollection<Folder> GetFiles()
+    {
+        var nodeImageInfo = new ObservableCollection<Folder>();
+        Assembly assembly = typeof(NodeWithImage).GetTypeInfo().Assembly;
+
+        var doc = new Folder() { FileName = "Documents", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var download = new Folder() { FileName = "Downloads", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var mp3 = new Folder() { FileName = "Music", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var pictures = new Folder() { FileName = "Pictures", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var video = new Folder() { FileName = "Videos", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+
+        var pollution = new File() { FileName = "Environmental Pollution.docx", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_word.png", assembly) };
+        var globalWarming = new File() { FileName = "Global Warming.ppt", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_ppt.png", assembly) };
+        var sanitation = new File() { FileName = "Sanitation.docx", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_word.png", assembly) };
+        var socialNetwork = new File() { FileName = "Social Network.pdf", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_pdf.png", assembly) };
+        var youthEmpower = new File() { FileName = "Youth Empowerment.pdf", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_pdf.png", assembly) };
+
+        var games = new File() { FileName = "Game.exe", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_exe.png", assembly) };
+        var tutorials = new File() { FileName = "Tutorials.zip", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_zip.png", assembly) };
+        var typeScript = new File() { FileName = "TypeScript.7z", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_zip.png", assembly) };
+        var uiGuide = new File() { FileName = "UI-Guide.pdf", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_pdf.png", assembly) };
+
+        var song = new File() { FileName = "Gouttes", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_mp3.png", assembly) };
+
+        var camera = new File() { FileName = "Camera Roll", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var stone = new File() { FileName = "Stone.jpg", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_png.png", assembly) };
+        var wind = new File() { FileName = "Wind.jpg", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_png.png", assembly) };
+
+        var img0 = new SubFile() { FileName = "WIN_20160726_094117.JPG", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_img0.png", assembly) };
+        var img1 = new SubFile() { FileName = "WIN_20160726_094118.JPG", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_img1.png", assembly) };
+
+        var video1 = new File() { FileName = "Naturals.mp4", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_video.png", assembly) };
+        var video2 = new File() { FileName = "Wild.mpeg", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_video.png", assembly) };
+
+        doc.Files = new ObservableCollection<File>
+            {
+                pollution,
+                globalWarming,
+                sanitation,
+                socialNetwork,
+                youthEmpower
+            };
+
+        download.Files = new ObservableCollection<File>
+            {
+                games,
+                tutorials,
+                typeScript,
+                uiGuide
+            };
+
+        mp3.Files = new ObservableCollection<File>
+            {
+                song
+            };
+
+        pictures.Files = new ObservableCollection<File>
+            {
+                camera,
+                stone,
+                wind
+            };
+
+        camera.SubFiles = new ObservableCollection<SubFile>
+            {
+                img0,
+                img1
+            };
+
+        video.Files = new ObservableCollection<File>
+            {
+                video1,
+                video2
+            };
+
+        nodeImageInfo.Add(doc);
+        nodeImageInfo.Add(download);
+        nodeImageInfo.Add(mp3);
+        nodeImageInfo.Add(pictures);
+        nodeImageInfo.Add(video);
+        return nodeImageInfo;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Bind to a Hierarchy Property Descriptors data source - Bound Mode
+
+You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ItemsSource.html) to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the `ItemsSource` property. Then create a `HierarchyPropertyDescriptors` and set the `TargetType` and [ChildPropertyName](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ChildPropertyName.html) property values. Finally add that `HierarchyPropertyDescriptors` to treeview.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.iOS.TreeView;
+using Syncfusion.TreeView.Engine;
+
+public override void ViewDidLoad()
+{
+    base.ViewDidLoad();
+    // Perform any additional setup after loading the view
+    SfTreeView treeView = new SfTreeView(View.Bounds);
+    FileManagerViewModel viewModel = new FileManagerViewModel();
+    treeView.ItemsSource = viewModel.ImageNodeInfo;
+    var data = new HierarchyPropertyDescriptors();
+    data.Add(new HierarchyPropertyDescriptor() { TargetType = typeof(Folder), ChildPropertyName = "Files" });
+    data.Add(new HierarchyPropertyDescriptor() { TargetType = typeof(File), ChildPropertyName = "SubFiles" });
+    treeView.HierarchyPropertyDescriptors = data;
     treeView.Adapter = new NodeImageAdapter();
     Add(treeView);
 }
