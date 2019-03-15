@@ -230,6 +230,17 @@ trackball.Hide();
 
 {% endhighlight %}
 
+### HitTest method
+
+The [`HitTest`] method is used to check whether the point is in trackball or not.
+
+{% highlight c# %} 
+[C#]
+
+trackball.HitTest(pointX, pointY);
+
+{% endhighlight %}
+
 ### TrackballLabelsGenerated
 
 To customize the appearance of trackball label based on condition, override the TrackballLabelsGenerated method of [`SFChartTrackballBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html). The argument of this method is [`SFChartPointInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo.html) which contains the following properties: 
