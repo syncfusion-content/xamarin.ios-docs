@@ -689,6 +689,28 @@ chart.Series.Add(splineSeries);
 
 ![Spline chart type in Xamarin.iOS](ChartTypes_images/Spline.png)
 
+### Dashed Lines
+
+[`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries~Dashes.html) property of the [`SFSplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries.html) is used to render spline series with dashes.
+
+{% highlight c# %} 
+[C#]
+
+SFSplineSeries splineSeries = new SFSplineSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value"  
+};
+
+NSObject[] dashes = new NSObject[2];
+dashes[0] = (NSNumber)5;
+dashes[1] = (NSNumber)6;
+splineSeries.Dashes = NSArray.FromObjects(dashes);
+chart.Series.Add(splineSeries);
+  
+{% endhighlight %}
+
 ### Spline series types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries~SplineType.html) allows you to change the spline curve in series. 
