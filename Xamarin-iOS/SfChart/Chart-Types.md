@@ -689,6 +689,28 @@ chart.Series.Add(splineSeries);
 
 ![Spline chart type in Xamarin.iOS](ChartTypes_images/Spline.png)
 
+### Dashed Lines
+
+[`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries~Dashes.html) property of the [`SFSplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries.html) is used to render spline series with dashes.
+
+{% highlight c# %} 
+[C#]
+
+SFSplineSeries splineSeries = new SFSplineSeries() 
+{ 
+    ItemsSource = Data, 
+    XBindingPath = "Month", 
+    YBindingPath = "Value"  
+};
+
+NSObject[] dashes = new NSObject[2];
+dashes[0] = (NSNumber)5;
+dashes[1] = (NSNumber)6;
+splineSeries.Dashes = NSArray.FromObjects(dashes);
+chart.Series.Add(splineSeries);
+  
+{% endhighlight %}
+
 ### Spline series types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSplineSeries~SplineType.html) allows you to change the spline curve in series. 
@@ -850,6 +872,38 @@ chart.Series.Add(scatterSeries);
 {% endhighlight %}
 
 ![Scatter chart type in Xamarin.iOS](ChartTypes_images/Scatter.png)
+
+## Fast Scatter Chart
+
+The [`FastScatterSeries`]() is a special kind of scatter series that renders a collection with a huge number of data points. You can use the following properties to customize the appearance of a fast scatter point.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) – used to change the color of series.
+* [`Alpha`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Alpha.html) - used to control  the transparency of chart series.
+* [`BorderWidth`]() – used to change the border width of series.
+* [`BorderColor`]() – used to change the border color of series.
+* [`ScatterWidth`]() – used to change the width of series.
+* [`ScatterHeight`]() – used to change the height of series.
+* [`ShapeType`]() - used to change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Diamond`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Ellipse`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Hexagon`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Pentagon`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Plus`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Rectangle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html) and [`Triangle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartScatterShapeType.html).
+* [`EnableAntiAliasing`]() – Enables or disables the smoothness of series. Default value of [`EnableAntiAliasing`]() property is true.
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFFastScatterSeries fastScatterSeries = new SFFastScatterSeries() 
+{ 
+    ScatterHeight = 8,
+    ScatterWidth = 8,
+    ShapeType = ChartScatterShapeType.Ellipse,
+    ItemsSource = Data, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue"
+};
+chart.Series.Add(fastScatterSeries);
+{% endhighlight %}
+
+![Fast Scatter chart type in Xamarin.iOS](ChartTypes_images/Scatter.png)
 
 ## OHLC Chart
 
