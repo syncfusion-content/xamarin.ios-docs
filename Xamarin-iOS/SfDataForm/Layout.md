@@ -784,5 +784,5 @@ dataForm.ScrollTo("BirthDate")
 {% endhighlight %}
 {% endtabs %}
 
-![Scroll to specific editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-ios-scrolltosupport.gif)
+![Scroll to specific editor in Xamarin.iOS DataForm](SfDataForm_images/xamarin-ios-scrolltosupport.gif)
 
