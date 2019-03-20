@@ -353,6 +353,20 @@ private void DataForm_Validated(object sender, ValidatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+You can get the details of invalid DataFormItems when validating the data form as `Explicit` validation mode using `ValidationCompleted` event. This event contains `ValidationCompletedEventArgs` argument, which holds a list of DataFormItem as errors. 
+
+{% tabs %}
+{% highlight c# %}
+dataForm.ValidationCompleted += DataForm_ValidationCompleted; 
+… 
+
+private void DataForm_ValidationCompleted(object sender, ValidationCompletedEventArgs e) 
+{ 
+var invalidItems = e.Errors; 
+} 
+{% endhighlight %}
+{% endtabs %}
+
 ## Valid or Positive message
 
 If the value meets the desired criteria, you can show [valid or positive message](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DisplayOptionsAttribute~ValidMessage.html).  Like error message, valid message also will be displayed in the bottom of the editor.
