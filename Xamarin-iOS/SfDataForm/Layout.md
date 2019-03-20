@@ -774,9 +774,9 @@ if (dataFormItem.Name == "Name")
 {% endtabs %}
 Here, `Name` field will be hidden.
 
-## Programatically scroll to specific editor
+## Programmatically scroll to specific editor
 
-You can programatically scroll to specific editor using the `ScrollTo` method by passing the `property name`. 
+You can programmatically scroll to specific editor using the `ScrollTo` method by passing the `property name`. 
 
 {% tabs %}
 {% highlight c# %}
