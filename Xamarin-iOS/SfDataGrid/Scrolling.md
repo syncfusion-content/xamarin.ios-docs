@@ -95,3 +95,40 @@ dataGrid.ScrollToColumnIndex(7);
 {% endhighlight %}
 
 ![](SfDataGrid_images/ScrollToColumnIndex.gif)
+
+## Vertical Over Scroll Mode
+
+The `SfDataGrid.VerticalOverScrollMode` property customizes the bouncing behavior of the data grid.
+
+The `SfDataGrid.VerticalOverScrollMode` is of `VerticalScrollMode` type having the following two modes:
+
+* Bounce
+* None
+
+### Bounce
+
+The Bounce mode allows the data grid to have bouncing effect. Default value of `SfDataGrid.VerticalOverScrollMode` is Bounce .
+
+To customize the bouncing effect in the data grid, follow the code example:
+
+{% highlight C# %}
+
+dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.Bounce;
+
+{% endhighlight %}
+
+![](SfDataGrid_images/VerticalOverScrollModeBounce.gif)
+
+### None
+
+The `None` mode disables the bouncing effect in the data grid.
+
+To customize the bouncing effect in the data grid, follow the code example:
+
+{% highlight C# %}
+
+dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
+
+{% endhighlight %}
+
+![](SfDataGrid_images/VerticalOverScrollModeNone.gif)
