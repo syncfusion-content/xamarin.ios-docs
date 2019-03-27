@@ -185,9 +185,29 @@ The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SF
 
 {% highlight c# %}
 
-// Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
+public partial class ViewController : UIViewController
+{
+    SFChartTooltipBehavior tooltipBehavior;
 
-tooltip.Show(pointX, pointY, true);
+    public override void ViewDidLoad()
+    {
+        . . .
+		
+        UIButton button = new UIButton();
+        button.TouchUpInside += Button_TouchUpInside
+
+        tooltipBehavior = new SFChartTooltipBehavior();
+        chart.Behaviors.Add(tooltipBehavior);
+
+        . . .
+    }
+
+    void Button_TouchUpInside(object sender, EventArgs e)
+    {
+        //Arguments are x, y positions and bool value determines whether the tooltip should be animated while displaying.
+        tooltipBehavior.Show(point, true);
+    }
+}
 
 {% endhighlight %}
 
