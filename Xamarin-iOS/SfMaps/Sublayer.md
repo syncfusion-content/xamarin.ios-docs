@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sublayer
+title: Sublayer in Syncfusion Maps control for Xamarin.iOS
 description: This section describes about sublayer.
 platform: Xamarin.iOS
 control: SfMaps
