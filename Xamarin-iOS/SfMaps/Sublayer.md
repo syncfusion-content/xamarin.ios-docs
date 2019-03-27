@@ -107,7 +107,7 @@ this.View.AddSubview(map);
 
 {% endtabs %}
 
-![](Images/Sublayer.png)
+![ShapeFileLayer Sublayer in Xamarin.iOS](Images/Sublayer.png)
 
 ## Adding sublayer in ImageryLayer
 
