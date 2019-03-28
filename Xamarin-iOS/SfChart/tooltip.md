@@ -204,7 +204,7 @@ public partial class ViewController : UIViewController
 
     void Button_TouchUpInside(object sender, EventArgs e)
     {
-        //Arguments are x, y positions and bool value determines whether the tooltip should be animated while displaying.
+        //point - determines the x, y positions of tooltip and bool value determines whether the tooltip should be animated while displaying.
         tooltipBehavior.Show(point, true);
     }
 }
