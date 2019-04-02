@@ -117,7 +117,7 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.Bounce;
 
 {% endhighlight %}
 
-![Bounce](SfDataGrid_images/VerticalOverScrollModeBounce.gif)
+![Bounce](SfDataGrid_images/VerticalScrollOverModeBounce.gif)
 
 ### None
 
@@ -131,4 +131,4 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 
 {% endhighlight %}
 
-![Do not bounce](SfDataGrid_images/VerticalOverScrollModeNone.gif)
+![Do not bounce](SfDataGrid_images/VerticalScrollOverModeNone.gif)
