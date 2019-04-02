@@ -25,7 +25,7 @@ The `ScrollingMode.PixelLine` allows scrolling its contents like an Excel sheet:
 dataGrid.ScrollingMode = ScrollingMode.PixelLine; 
 {% endhighlight %}
 
-![](SfDataGrid_images/PixelLine.gif)
+![PixelLine scrolling](SfDataGrid_images/PixelLine.gif)
 
 ### Line
 
@@ -35,7 +35,7 @@ The `ScrollingMode.Line` allows scrolling its contents based on lines: the view 
 dataGrid.ScrollingMode = ScrollingMode.Line; 
 {% endhighlight %}
 
-![](SfDataGrid_images/Line.gif)
+![Line scrolling](SfDataGrid_images/Line.gif)
 
 ### Pixel
 
@@ -45,7 +45,7 @@ The `ScrollingMode.Pixel` allows scrolling its contents based on pixel values: t
 dataGrid.ScrollingMode = ScrollingMode.Pixel; 
 {% endhighlight %}
 
-![](SfDataGrid_images/pixel.gif)
+![Pixel scrolling](SfDataGrid_images/pixel.gif)
 
 ## Programmatic scrolling
 
@@ -64,7 +64,7 @@ dataGrid.ScrollToRowColumnIndex(20, 6);
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ScrollToRowColumn.gif)
+![Scroll to row/column index](SfDataGrid_images/ScrollToRowColumn.gif)
 
 ### Scrolling to the row index
 
@@ -79,7 +79,7 @@ dataGrid.ScrollToRowIndex(20);
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ScrollToRowIndex.gif)
+![Scroll to row index](SfDataGrid_images/ScrollToRowIndex.gif)
 
 ### Scrolling to the column index
 
@@ -94,7 +94,7 @@ dataGrid.ScrollToColumnIndex(7);
 
 {% endhighlight %}
 
-![](SfDataGrid_images/ScrollToColumnIndex.gif)
+![Scroll to column index](SfDataGrid_images/ScrollToColumnIndex.gif)
 
 ## Vertical Over Scroll Mode
 
@@ -117,7 +117,7 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.Bounce;
 
 {% endhighlight %}
 
-![](SfDataGrid_images/VerticalOverScrollModeBounce.gif)
+![Bounce](SfDataGrid_images/VerticalOverScrollModeBounce.gif)
 
 ### None
 
@@ -131,4 +131,4 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 
 {% endhighlight %}
 
-![](SfDataGrid_images/VerticalOverScrollModeNone.gif)
+![Do not bounce](SfDataGrid_images/VerticalOverScrollModeNone.gif)
