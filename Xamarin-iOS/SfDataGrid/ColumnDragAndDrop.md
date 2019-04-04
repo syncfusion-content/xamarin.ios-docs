@@ -31,6 +31,7 @@ The `QueryColumnDragging` event provides the following arguments through [Query
 * [To](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~To.html): Returns the dragging index where you try to drop the column.
 * [Reason](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~Reason.html): Returns column dragging details as `QueryColumnDraggingReason`.
 * [DraggingPosition](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~DraggingPosition.html): Returns the position of the drag view during column drag and drop operations.
+* [CanAutoScroll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~CanAutoScroll.html): Returns whether auto-scrolling should happen when column drag view reaches the left or right ends of the `SfDataGrid`.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): Returns a Boolean property to cancel the event.
 
 ![](SfDataGrid_images/ColumnDragAndDrop.png)
@@ -215,3 +216,21 @@ public class CustomGridStyle : DataGridStyle
 {% endtabs %}
 
 ![](SfDataGrid_images/CustomizedIndicator_Column.png)
+
+## Cancel auto scrolling 
+
+Horizontal auto-scrolling of the `SfDataGrid` during column drag and drop can be canceled using `CanAutoScroll` argument of the `QueryColumnDragging` event handler.
+
+{% tabs %}
+{% highlight c# %}
+
+this.SfGrid.QueryColumnDragging += SfGrid_QueryColumnDragging;
+
+private void SfGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
+{  
+    // Disable scroll while dragging and dropping the columns.   
+    e.CanAutoScroll = false;
+}
+
+{% endhighlight %}
+{% endtabs %}
