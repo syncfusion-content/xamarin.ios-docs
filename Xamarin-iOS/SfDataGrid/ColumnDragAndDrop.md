@@ -34,8 +34,6 @@ The `QueryColumnDragging` event provides the following arguments through [Query
 * [CanAutoScroll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~CanAutoScroll.html): Returns whether auto-scrolling should happen when column drag view reaches the left or right ends of the `SfDataGrid`.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): Returns a Boolean property to cancel the event.
 
-![Column drag and drop](SfDataGrid_images/ColumnDragAndDrop.png)
-
 ### Cancel dragging for a particular column
 
 Dragging of a particular column can be canceled using [QueryColumnDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryColumnDraggingReason.html) argument of the `QueryColumnDragging` event handler. 
