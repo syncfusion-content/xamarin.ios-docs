@@ -55,6 +55,16 @@ In the following screenshot, trackball label is shown for only single data point
 
 ![Label display mode support for trackball in Xamarin.iOS Chart](trackball_images/trackball_img2.png)
 
+## Activation mode
+
+The [`ActivationMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~ActivationMode.html) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`SFChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html).
+
+The SFChartTrackballActivationMode enum contains the following values:
+
+* [`LongPress`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Activates trackball only when performing the long press action.
+* [`TouchMove`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Activates trackball only when performing touch move action.
+* [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~Show.html) method.
+
 ## Customizing appearance
 
 **Customize Trackball Labels**
@@ -217,6 +227,17 @@ The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SF
 [C#]
 
 trackball.Hide();
+
+{% endhighlight %}
+
+### HitTest method
+
+The [`HitTest`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~HitTest.html) method is used to check whether the point is in trackball or not.
+
+{% highlight c# %} 
+[C#]
+
+trackball.HitTest(pointX, pointY);
 
 {% endhighlight %}
 
