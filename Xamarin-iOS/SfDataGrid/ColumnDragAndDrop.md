@@ -19,7 +19,7 @@ sfGrid.AllowDraggingColumn = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/ColumnDragandDrop.gif)
+![Column drag and drop](SfDataGrid_images/ColumnDragandDrop.gif)
 
 ## Column drag and drop event
 
@@ -34,7 +34,7 @@ The `QueryColumnDragging` event provides the following arguments through [Query
 * [CanAutoScroll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryColumnDraggingEventArgs~CanAutoScroll.html): Returns whether auto-scrolling should happen when column drag view reaches the left or right ends of the `SfDataGrid`.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): Returns a Boolean property to cancel the event.
 
-![](SfDataGrid_images/ColumnDragAndDrop.png)
+![Column drag and drop](SfDataGrid_images/ColumnDragAndDrop.png)
 
 ### Cancel dragging for a particular column
 
@@ -215,7 +215,7 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CustomizedIndicator_Column.png)
+![Customized column drag and drop indicator](SfDataGrid_images/CustomizedIndicator_Column.png)
 
 ## Cancel auto scrolling 
 

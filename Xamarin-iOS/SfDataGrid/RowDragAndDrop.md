@@ -19,7 +19,7 @@ sfGrid.AllowDraggingRow = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Rowdraganddrop.gif)
+![Row drag and drop](SfDataGrid_images/Rowdraganddrop.gif)
 
 ## Dragging scenarios
 
@@ -39,7 +39,7 @@ SfDataGrid allows you to load a desired content when performing row drag and dro
 
 Default template will be loaded, if template is not explicitly assigned for row drag and drop operations. 
 
-![](SfDataGrid_images/DefaultTemplateIOS.png)
+![Default template for row drag view](SfDataGrid_images/DefaultTemplateIOS.png)
 
 ## Customizing row drag and drop template
 
@@ -139,7 +139,7 @@ public class RowDragDropTemplate : UIView
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CustomizedTemplate.png)
+![Customized template for row drag view](SfDataGrid_images/CustomizedTemplate.png)
 
 You can download the customizing row drag-and-drop template sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RowDragandDropTemplate_IOS1749446243).
 
@@ -392,7 +392,7 @@ public class CustomGridStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CustomizedIndicator_ROW.png)
+![Cutsomized row drag and drop indicator](SfDataGrid_images/CustomizedIndicator_ROW.png)
 
 ## Updating summaries when dragging and dropping a row between groups
 
@@ -457,7 +457,7 @@ public class MyViewController:UIViewController
 
 The following screenshot shows the output rendered when executing the above code example.
 
-![](SfDataGrid_images/UpdatedSummary.png)
+![Update summary during row drag and drop](SfDataGrid_images/UpdatedSummary.png)
 
 ## Cancel auto scrolling
 
