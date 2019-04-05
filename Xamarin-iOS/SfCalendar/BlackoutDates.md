@@ -82,8 +82,8 @@ for (int i = 0; i < 5; i++)
 
 N> This support is enabled only in month view and the dates that consists inline events will also be disabled, when they are blacked out.
 
-### Customize the BlackoutDates Color
-You can customize the color of BlackoutDates in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings.html).
+### Customize the blackout dates Color
+You can customize the color of [BlackoutDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~BlackoutDates.html) in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings.html).
 
 {% tabs %}
 {% highlight c# %}
