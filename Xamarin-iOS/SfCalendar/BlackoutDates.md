@@ -81,3 +81,16 @@ for (int i = 0; i < 5; i++)
 ![BlackoutDates support in Xamarin.iOS Calendar](images/xamarin.ios-calendar-blackout_dates.png)                                        
 
 N> This support is enabled only in month view and the dates that consists inline events will also be disabled, when they are blacked out.
+
+### Customize the blackout dates Color
+You can customize the color of [BlackoutDates](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~BlackoutDates.html) in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings.html).
+
+{% tabs %}
+{% highlight c# %}
+SFCalendar calendar = new SFCalendar(); 
+SFMonthViewSettings monthViewSettings = new SFMonthViewSettings();
+monthViewSettings.BlackOutColor = UIColor.Red;
+calendar.MonthViewSettings = monthViewSettings;
+View.AddSubView(calendar);
+{% endhighlight %}
+{% endtabs %}
