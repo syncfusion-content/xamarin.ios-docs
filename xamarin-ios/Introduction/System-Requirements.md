@@ -9,23 +9,60 @@ documentation: ug
 
 # System Requirements
 
-**Integrated** **Development** **Environment** **for** **Windows**
 
-By using the following IDEs, you can develop Xamarin.iOS applications:
+### Hardware Environment
 
-* Visual Studio 2015
-* Visual Studio 2017
+* Processor: x86 or x64
+* RAM : 512 MB (minimum), 1 GB (recommended)
+* Hard disk: up to 1.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing the setup in other drive.
 
-N> For installing and configuring Xamarin in Visual Studio, please refer this [`link`](https://developer.xamarin.com/guides/android/getting_started/installation/windows/).
+### Development Environment
+Please find the recommended development environment for Xamarin platform in the following link. 
 
-N> You can use Xamarin build host feature to deploy Xamarin.iOS and Xamarin.Forms for iOS apps from Visual Studio, read the [`Xamarin documentation`](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) for more information about build host feature.
+[https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
-**Integrated** **Development** **Environment** **for** **Mac**
+### Supported Platforms
 
-By using Visual Studio for Mac, you can develop Xamarin.iOS applications.
-
-N> For installing and configuring Xamarin in Visual Studio for Mac, please refer this [`link`](https://docs.microsoft.com/en-us/visualstudio/mac/installation).
-
-**Supported** **Versions**
-
-Supports iOS 9.0 and higher versions.
+<table>
+    <tr>
+        <th>Platform<br/>
+            <br/></th>        
+        <th>
+          Device Types
+            <br/>
+            <br/>
+        </th>
+          <th>
+            Controls
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Supported versions
+            <br/>
+            <br/>
+        </th>
+    </tr>
+	<tr>
+        <td>
+            iOS
+            <br/>
+            <br/>
+        </td>
+        <td>
+            iPhone, iPod, iPad
+            <br/>
+            <br/>
+        </td>
+          <td>
+            All controls 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            iOS 9.0 and later versions
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
