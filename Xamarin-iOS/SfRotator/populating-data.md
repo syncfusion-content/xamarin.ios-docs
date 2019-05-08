@@ -19,14 +19,20 @@ SfRotator items can be populated with a collection of image data. For example, a
 
 {% highlight C# %}
 
-	NSMutableArray<SFRotatorItem> rotatorItemCollection = new NSMutableArray<SFRotatorItem> ();
-	For(int i=1;i<18;i++)
-	{
-	SFRotatorItem item =new SFRotatorItem ();
-	item.ImageName="image"+i;
-	rotatorItemCollection.Add(item);
-	}
-	rotator.DataSource=rotatorItemCollection;
+	NSMutableArray<SFRotatorItem> rotatorItems = new NSMutableArray<SFRotatorItem>();
+
+    for (int i = 1; i < 5; i++)
+    {
+        SFRotatorItem item = new SFRotatorItem();
+
+        UIView customView = new UIView();
+        UIImageView image = new UIImageView();
+        image.Image = UIImage.FromFile("movie" + i.ToString() + ".png");
+        item.View = image;
+        customView.AddSubview(image);
+        rotatorItems.Add(item);
+    }
+    rotator.DataSource = rotatorItems;
 	
 {% endhighlight %}
 
@@ -34,4 +40,4 @@ SfRotator items can be populated with a collection of image data. For example, a
 
 ## RotatorItem
 
-RotatorItems consisting of three properties ImageName,View and Text using this user can set content for SFRotator.
+RotatorItems consisting of two properties View and ItemText using this user can set content for SFRotator.
