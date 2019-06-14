@@ -9,7 +9,7 @@ documentation: ug
 
 # Shape Type
 
-[`SfMaps`](https://help.syncfusion.com/xamarin/sfmaps/getting-started) allows to provide various shape type in the [`ShapeFileLayer`](https://help.syncfusion.com/xamarin/sfmaps/layers#shape-file-layer) such as Polygon, Polyline and Points.
+[`SfMaps`](https://help.syncfusion.com/xamarin-ios/sfmaps/getting-started) allows to provide various shape type in the [`ShapeFileLayer`](https://help.syncfusion.com/xamarin-ios/sfmaps/getting-started#adding-layers) such as Polygon, Polyline and Points.
 
 ## Polygon
 
@@ -19,7 +19,7 @@ A polygon is a two-dimensional surface stored as a sequence of points defining i
 
 ## Polyline
 
-The polyline is shape that has a dimension of 1. It is called a simple line, if it does not intersect itself. The polylines are often used to define linear features such as roads, rivers, and power lines. Mostly the shape file layer with the polyline shape type is used as [`sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer#adding-sublayers-in-shapefilelayer).
+The polyline is shape that has a dimension of 1. It is called a simple line, if it does not intersect itself. The polylines are often used to define linear features such as roads, rivers, and power lines. Mostly the shape file layer with the polyline shape type is used as [`sublayer`](https://help.syncfusion.com/xamarin-ios/sfmaps/sublayer#adding-sublayer).
 
 The below example demonstrates the sublayer with the polyline shape type. In that roads(sublayer) of Bahrain (base layer) has been displayed using the shape file layer of maps
 
@@ -67,7 +67,7 @@ View.AddSubview(maps);
 
 A point is shape with a dimension of 0 that occupies a single location in coordinate space. A point has a single x,y coordinate value. The points are often used to define features such as oil wells, landmarks, and elevations.
 
-The below example demonstrates the [`sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer#adding-sublayers-in-shapefilelayer) with the points shape type. In that, the places (sublayer) of Australia (base layer) has been displayed using the shape file layer of maps
+The below example demonstrates the [`sublayer`](https://help.syncfusion.com/xamarin-ios/sfmaps/sublayer#adding-sublayer) with the points shape type. In that, the places (sublayer) of Australia (base layer) has been displayed using the shape file layer of maps
 
 {% tabs %}
 
