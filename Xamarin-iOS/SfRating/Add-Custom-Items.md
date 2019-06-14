@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Custom items in Syncfusion Rating Itmes control for Xamarin.iOS
+title: Adding custom items in Syncfusion Rating control for Xamarin.iOS
 description: Learn how to add the Custom Items in rating control
 platform: Xamarin.iOS
 control: Rating
@@ -29,9 +29,9 @@ The `SelectedView` property is used to apply the given SelectedView to selected 
 
 {% highlight C# %}
 
-	var imageView = new UIImageView(View.Frame);
-	imageView.Image = UIImage.FromBundle("Angry_selected");
-	item.SelectedView = imageView;
+    UIImageView angrySelected = new UIImageView();
+    angrySelected.Image = UIImage.FromBundle("Angry_selected.png");
+    ratingItem.SelectedView = angrySelected;
 
 {% endhighlight %}
 
@@ -41,9 +41,9 @@ The `UnSelectedView` property is used to apply the given UnSelectedView to unsel
 
 {% highlight C# %}
 
-	var imageView2 = new UIImageView(View.Frame);
-	imageView2.Image = UIImage.FromBundle("Angry_Unselected");
-	item.UnSelectedView = imageView2;
+    UIImageView angryUnselected = new UIImageView();
+    angryUnselected.Image=UIImage.FromBundle("Angry_Unselected.png");
+    ratingItem.UnSelectedView = angryUnselected;    
 
 {% endhighlight %}
 
@@ -56,7 +56,7 @@ N> SfRatingItem keeps both selected and unselected view respectively.
 {% highlight C# %}
 
 	NSMutableArray collection = new NSMutableArray();
-	collection.Add(item);
+	collection.Add(ratingItem);
 	rating.Items = collection;
 
 {% endhighlight %}
@@ -66,61 +66,58 @@ N> SfRatingItem keeps both selected and unselected view respectively.
 When `EnableCustomItems` property is enabled, it will display the custom items added in the rating item. 
 
 {% highlight C# %}
-	
-	SfRating rating= new SfRating();
-	SfRatingItem item = new SfRatingItem(rating);
-		var imageView = new UIImageView(View.Frame);
-		imageView.Image = UIImage.FromBundle("Angry_selected");
-		item.SelectedView = imageView;
-		var imageView2 = new UIImageView(View.Frame);
-		imageView2.Image = UIImage.FromBundle("Angry_Unselected");
-		item.UnSelectedView = imageView2;
 
-	SfRatingItem item2 = new SfRatingItem(rating);
-		var imageView3 = new UIImageView(View.Frame);
-		imageView3.Image = UIImage.FromBundle("UnHappy_selected");			item2.SelectedView = imageView3;
-		var imageView4 = new UIImageView(View.Frame);
-		imageView4.Image = UIImage.FromBundle("UnHappy_Unselected");	
-		item2.UnSelectedView = imageView4;
+    SfRating rating= new SfRating();
+    rating.EnableCustomView = true;
+    
+    SfRatingItem angry = new SfRatingItem(rating);
+    UIImageView angrySelected = new UIImageView();
+    angrySelected.Image = UIImage.FromBundle("Angry_selected.png");
+    angry.SelectedView = angrySelected;
+    UIImageView angryUnselected = new UIImageView();
+    angryUnselected.Image=UIImage.FromBundle("Angry_Unselected.png");
+    angry.UnSelectedView = angryUnselected;
 
-	SfRatingItem item3 = new SfRatingItem(rating);
-		var imageView5 = new UIImageView(View.Frame);
-		imageView5.Image = UIImage.FromBundle("Neutral_selected");
-		item3.SelectedView = imageView5;
-		var imageView6 = new UIImageView(View.Frame);
-		imageView6.Image = UIImage.FromBundle("Neutral_Unselected");
-		item3.UnSelectedView = imageView6;
+    SfRatingItem unhappy = new SfRatingItem(rating);
+    UIImageView unhappySelected = new UIImageView();
+    unhappySelected.Image = UIImage.FromBundle("UnHappy_selected.png");
+    unhappy.SelectedView = unhappySelected;
+    UIImageView unhappyUnselected = new UIImageView();
+    unhappyUnselected.Image = UIImage.FromBundle("UnHappy_Unselected.png");
+    unhappy.UnSelectedView = unhappyUnselected;
 
-	SfRatingItem item4 = new SfRatingItem(rating);
-		var imageView7 = new UIImageView(View.Frame);	imageView7.Image = UIImage.FromBundle("Happy_selected");
-		item4.SelectedView = imageView7;
-		var imageView8 = new UIImageView(View.Frame);
-		imageView8.Image = UIImage.FromBundle("Happy_Unselected");
-		item4.UnSelectedView = imageView8;
+    SfRatingItem neutral = new SfRatingItem(rating);
+    UIImageView neutralSelected = new UIImageView();
+    neutralSelected.Image = UIImage.FromBundle("Neutral_selected.png");
+    neutral.SelectedView = neutralSelected;
+    UIImageView neutralUnselected = new UIImageView();
+    neutralUnselected.Image = UIImage.FromBundle("Neutral_Unselected.png");
+    neutral.UnSelectedView = neutralUnselected;
 
-	SfRatingItem item5 = new SfRatingItem(rating);
-		var imageView9 = new UIImageView(View.Frame);
-		imageView9.Image = UIImage.FromBundle("Excited_selected");
-		item5.SelectedView = imageView9;
-		var imageView10 = new UIImageView(View.Frame);
-		imageView10.Image = UIImage.FromBundle("Excited_Unselected");
-		item5.UnSelectedView = imageView10;
-	
-	NSMutableArray collection = new NSMutableArray();
-            collection.Add(item);
-            collection.Add(item2);
-        	collection.Add(item3);
-		collection.Add(item4);
-		collection.Add(item5);
-	rating.EnableCustomView = true;
-	rating.Items = collection;
+    SfRatingItem happy = new SfRatingItem(rating);
+    UIImageView happySelected = new UIImageView();
+    happySelected.Image = UIImage.FromBundle("Neutral_selected.png");
+    happy.SelectedView = happySelected;
+    UIImageView happyUnselected = new UIImageView();
+    happyUnselected.Image = UIImage.FromBundle("Neutral_Unselected.png");
+    happy.UnSelectedView = happyUnselected;
+
+    SfRatingItem excited = new SfRatingItem(rating);
+    UIImageView excitedSelected = new UIImageView();
+    excitedSelected.Image = UIImage.FromBundle("Neutral_selected.png");
+    excited.SelectedView = excitedSelected;
+    UIImageView excitedUnselected = new UIImageView();
+    excitedUnselected.Image = UIImage.FromBundle("Neutral_Unselected.png");
+    excited.UnSelectedView = excitedUnselected;
+
+    NSMutableArray ratingItemList = new NSMutableArray();
+    ratingItemList.Add(angry);
+    ratingItemList.Add(unhappy);
+    ratingItemList.Add(neutral);
+    ratingItemList.Add(happy);
+    ratingItemList.Add(excited);
+    rating.Items = ratingItemList;
 
 {% endhighlight %}
 
-![](images/CustomviewItems.png)
- 
-
-
-
-
- 
+![Custom rating item](images/CustomviewItems.png)
