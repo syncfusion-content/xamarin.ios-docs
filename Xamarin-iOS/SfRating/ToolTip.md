@@ -9,10 +9,9 @@ documentation: ug
 
 ---
 
-
 # ToolTip
 
-The ToolTip shows the value of the SfRating control.
+Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.iOS SfRating control, tooltip shows the data of `Value`. It will be displayed when a rating item is selected and will be disappeared when the rating item is unselected.
 
 ## Set Tooltip Placement
 
@@ -28,13 +27,13 @@ The ToolTip will display on top of the SfRating control.
 
 {% highlight c# %}
 
-rating.TooltipPlacement=SFRatingTooltipPlacement.TopLeft;
+rating.TooltipPlacement = SFRatingTooltipPlacement.TopLeft;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/topLeft.jpg) 
+![Tooltip at Top](images/topLeft.jpg) 
 
 ### BottomRight
 
@@ -42,11 +41,11 @@ The tooltip will display on bottom of the SfRating control.
 
 {% highlight c# %}
 
-	   rating.TooltipPlacement=SFRatingTooltipPlacement.BottomRight;
+	   rating.TooltipPlacement = SFRatingTooltipPlacement.BottomRight;
 
 {% endhighlight %}
 
-![](images/rightBottom.jpg)
+![Tooltip at Bottom](images/rightBottom.jpg)
 
 ### None
 
@@ -56,13 +55,13 @@ It is used to invisible the tool tip in the SfRating control.
 
 {% highlight c# %}
 
-rating.TooltipPlacement=SFRatingTooltipPlacement.None;
+rating.TooltipPlacement = SFRatingTooltipPlacement.None;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/null.jpg)
+![No tooltip](images/null.jpg)
 
 ## Set ToolTip Precision
 
@@ -74,10 +73,10 @@ N> The default value of ToolTip precision is 1.
 
 {% highlight c# %}
 
-rating.TooltipPlacement=6;
+rating.TooltipPrecision = 6;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/toolTipPrecision.jpg)
+![Tooltip precision](images/toolTipPrecision.jpg)
