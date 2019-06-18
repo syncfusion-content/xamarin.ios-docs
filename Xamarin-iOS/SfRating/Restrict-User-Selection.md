@@ -21,4 +21,4 @@ SfRating control provides support for changeable or unchangeable values for Rati
 
 {% endtabs %}
 
-![](images/readOnly.jpg)
+![Restrict user selection](images/readOnly.jpg)
