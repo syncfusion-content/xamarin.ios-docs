@@ -1,19 +1,21 @@
 ---
 layout : post
-title : Events in Syncfusion SfComboBox control for Xamarin.iOS
+title : Events in Syncfusion SfAutoComplete control for Xamarin.iOS
 description :  Learn how to handle the Events in SfComboBox
 platform : Xamarin.iOS 
-control : ComboBox
+control : AutoComplete
 documentation : ug
 ---
 
 # Events
 
-The Events in SfComboBox are,
+The Events in SfAutoComplete are,
 
 * FocusChanged
 
 * SelectionChanged
+
+* SelectionChanging
 
 * TextChanged
 
@@ -28,6 +30,7 @@ The Events in SfComboBox are,
 Code snippet of FocusChanged event:
 
 {% tabs %}
+
 {% highlight c# %}
 
  autocomplete.FocusChanged += Autocomplete_FocusChanged;
@@ -52,11 +55,12 @@ Code snippet of FocusChanged event:
 
 ## SelectionChanged
 
-`SelectionChanged` event is triggered when we selecting an item among the filtered suggestions in SfAutoComplete.
+`SelectionChanged` event is triggered after selecting an item among the filtered suggestions in SfAutoComplete.
 
 Code snippet of SelectionChanged event:
 
 {% tabs %}
+
 {% highlight c# %}
 
  autocomplete.SelectionChanged += Autocomplete_SelectionChanged;
@@ -69,8 +73,32 @@ Code snippet of SelectionChanged event:
  }
 
 {% endhighlight %}
+
 {% endtabs %}
  
+
+## SelectionChanging
+
+`SelectionChanging` event is triggered when we selecting an item among the filtered suggestions in SfAutoComplete.
+
+Code snippet of SelectionChanged event:
+
+{% tabs %}
+
+{% highlight c# %}
+
+ autocomplete.SelectionChanging+=Autocomplete_SelectionChanging;
+
+ void Autocomplete_SelectionChanging(object sender,SelectionChanging EventArgse) 
+ {
+
+ DisplayAlert("Alert", "Selection Changing", "Ok");
+
+ }
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## TextChanged 
 
@@ -79,6 +107,7 @@ Code snippet of SelectionChanged event:
 Code snippet of TextChanged event:
 
 {% tabs %}
+
 {% highlight c# %}
 
  autocomplete.TextChanged += Autocomplete_TextChanged;
@@ -91,6 +120,7 @@ Code snippet of TextChanged event:
  }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## FilterCollectionChanged
@@ -100,6 +130,7 @@ Code snippet of TextChanged event:
 Code snippet of FilterCollectionChanged event:
 
 {% tabs %}
+
 {% highlight c# %}
 
  autocomplete.FilterCollectionChanged += Autocomplete_FilterCollectionChanged;
@@ -112,4 +143,5 @@ Code snippet of FilterCollectionChanged event:
  }
 
 {% endhighlight %}
+
 {% endtabs %}
