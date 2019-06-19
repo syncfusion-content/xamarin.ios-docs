@@ -9,7 +9,7 @@ documentation : ug
 
 # Events
 
-The Events in SfAutoComplete are,
+The Events in SfAutoComplete are:
 
 * FocusChanged
 
@@ -23,11 +23,11 @@ The Events in SfAutoComplete are,
 
 ## FocusChanged
 
-`FocusChanged` event is triggered when we either focus or unfocus the control. The argument contains the following information.
+The `FocusChanged` event is triggered when you either focus or unfocus the control. The argument contains the following information.
 
-* `HasFocus` - It indicates the control whether in focus state or not. HasFocus value is true while focusing the control. otherwise it becomes false.
+* `HasFocus`: Indicates the control whether in focus state or not. HasFocus value is true while focusing the control. otherwise it becomes false.
 
-Code snippet of FocusChanged event:
+Code snippet of FocusChanged event
 
 {% tabs %}
 
@@ -55,9 +55,9 @@ Code snippet of FocusChanged event:
 
 ## SelectionChanged
 
-`SelectionChanged` event is triggered after selecting an item among the filtered suggestions in SfAutoComplete.
+The `SelectionChanged` event is triggered after selecting an item among the filtered suggestions in SfAutoComplete.
 
-Code snippet of SelectionChanged event:
+Code snippet of SelectionChanged event
 
 {% tabs %}
 
@@ -79,9 +79,9 @@ Code snippet of SelectionChanged event:
 
 ## SelectionChanging
 
-`SelectionChanging` event is triggered when we selecting an item among the filtered suggestions in SfAutoComplete.
+The `SelectionChanging` event is triggered when you select an item among the filtered suggestions in SfAutoComplete.
 
-Code snippet of SelectionChanged event:
+Code snippet of SelectionChanged event
 
 {% tabs %}
 
@@ -102,9 +102,9 @@ Code snippet of SelectionChanged event:
 
 ## TextChanged 
 
-`TextChanged` event is triggered when we changing the text of SfAutoComplete.
+The `TextChanged` event is triggered when you change the text of SfAutoComplete.
 
-Code snippet of TextChanged event:
+Code snippet of TextChanged event
 
 {% tabs %}
 
@@ -125,9 +125,9 @@ Code snippet of TextChanged event:
 
 ## FilterCollectionChanged
 
-`FilterCollectionChanged` event is triggered whenever the items gets filtered in the suggestion.
+The `FilterCollectionChanged` event is triggered whenever the items gets filtered in the suggestion.
 
-Code snippet of FilterCollectionChanged event:
+Code snippet of FilterCollectionChanged event
 
 {% tabs %}
 
