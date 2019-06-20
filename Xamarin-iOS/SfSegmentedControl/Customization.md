@@ -84,7 +84,7 @@ segmentedControl.CornerRadius = 15;
 
 {% endhighlight %}
 
-![](images/Customization/SegementedControl_ControlRadius.png)
+![](images/Customization/SegmentedControl_ControlRadius.png)
 
 ### Segment items radius
 

@@ -21,7 +21,7 @@ segmentControl.SelectionTextColor = UIColor.FromRGB(4, 142, 172);
 
 {% endhighlight %}
 
-![](images/Selection-indicator/SegementedControl_Selectiontextcolor.png)
+![](images/Selection-indicator/SegmentedControl_Selectiontextcolor.png)
 
 ## Selection Strip
 
@@ -42,7 +42,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 {% endhighlight %}
 
 
-![](images/Selection-indicator/SegementedControl_Top.png)
+![](images/Selection-indicator/SegmentedControl_Top.png)
 
 ###### Bottom
 
