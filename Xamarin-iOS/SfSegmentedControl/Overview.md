@@ -11,7 +11,7 @@ documentation : ug
 
 Essential segmented control for Xamarin.iOS provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
 
-![](images/Overview/SegmentedControlOverview.png)
+![SegmentedControl overview in Xamarin.iOS](images/Overview/SegmentedControlOverview.png)
 
 ## Key Features
 

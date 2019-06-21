@@ -34,6 +34,6 @@ SfSegmentedControl segmentedControl = new SfSegmentedControl();
 segmentedControl.SelectedIndex = 2;
 {% endhighlight %}
 
-![](images/Selection-changed/SegmentedControl_SelectionChange.png)
+![SegmentedControl SelectedIndex in Xamarin.iOS](images/Selection-changed/SegmentedControl_SelectionChange.png)
 
 

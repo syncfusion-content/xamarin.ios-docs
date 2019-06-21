@@ -21,7 +21,7 @@ segmentControl.SelectionTextColor = UIColor.FromRGB(4, 142, 172);
 
 {% endhighlight %}
 
-![](images/Selection-indicator/SegmentedControl_Selectiontextcolor.png)
+![SegmentedControl SelectionTextColor in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Selectiontextcolor.png)
 
 ## Selection Strip
 
@@ -42,7 +42,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 {% endhighlight %}
 
 
-![](images/Selection-indicator/SegmentedControl_Top.png)
+![Selected segment item Top in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Top.png)
 
 ###### Bottom
 
@@ -54,7 +54,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 
 {% endhighlight %}
 
-![](images/Selection-indicator/SegmentedControl_Bottom.png)
+![Selected segment item Bottom in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Bottom.png)
 
 ###### Fill
 
@@ -66,7 +66,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 
 {% endhighlight %}
 
-![](images/Selection-indicator/SegmentedControl_Fill.png)
+![Selected segment item Fill in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Fill.png)
 
 ###### Border
 
@@ -78,7 +78,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 
 {% endhighlight %}
 
-![](images/Selection-indicator/SegmentedControl_Border.png)
+![Selected segment item Border in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Border.png)
 
 #### Color
 
@@ -90,7 +90,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() { C
 
 {% endhighlight %}
 
-![](images/Selection-indicator/SegmentedControl_Stripcolor.png)
+![Selected segment item Color in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Stripcolor.png)
 
 #### Thickness
 

@@ -41,7 +41,7 @@ public override void ViewDidLoad()
 }
 {% endhighlight %}
 
-![](images/Data-source/SegmentedControl_String.png)
+![SegmentedControl string datasource in Xamarin.iOS](images/Data-source/SegmentedControl_String.png)
 
 ## Segment items
 
@@ -86,7 +86,7 @@ private void AddCollection()
 }
 {% endhighlight %}
 
-![](images/Data-source/SegmentItem_Collection.png)    
+![SegmentedControl segment item datasource in Xamarin.iOS](images/Data-source/SegmentItem_Collection.png)    
 
 ## Custom views
 
@@ -133,6 +133,6 @@ private void AddCollection()
 }
 {% endhighlight %}
 
-![](images/Data-source/SegmentedControl_ViewCollection.png)
+![SegmentedControl custom view datasource in Xamarin.iOS](images/Data-source/SegmentedControl_ViewCollection.png)
 
 

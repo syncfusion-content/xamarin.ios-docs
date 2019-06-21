@@ -46,7 +46,7 @@ public override void ViewDidLoad()
 }
 {% endhighlight %}
 
-![](images/Display-mode/SegmentedControl_Text.png)
+![SegmentedControl Text in Xamarin.iOS](images/Display-mode/SegmentedControl_Text.png)
 
 ## Image 
 
@@ -103,7 +103,7 @@ private void AddCollection()
 }
 {% endhighlight %}
 
-![](images/Display-mode/SegmentedControl_Image.png)
+![SegmentedControl Image in Xamarin.iOS](images/Display-mode/SegmentedControl_Image.png)
 
 ## Image with text
 
@@ -157,7 +157,7 @@ private void AddCollection()
 }
 {% endhighlight %}
 
-![](images/Display-mode/SegmentedControl_ImagewithText.png)
+![SegmentedControl ImageWithText in Xamarin.iOS](images/Display-mode/SegmentedControl_ImagewithText.png)
 
 ## How to use font icons
 

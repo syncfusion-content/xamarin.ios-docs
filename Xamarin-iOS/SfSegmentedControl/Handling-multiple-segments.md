@@ -43,7 +43,7 @@ public override void ViewDidLoad()
 
 {% endhighlight %}
 
-![](images/Multiple-segments/SegmentedControl_VisibleSegments.png)
+![SegmentedControl VisibleSegmentsCount in Xamarin.iOS](images/Multiple-segments/SegmentedControl_VisibleSegments.png)
 
 ## Segment width
 

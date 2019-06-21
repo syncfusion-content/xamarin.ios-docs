@@ -31,7 +31,7 @@ segmentedControl.Font = UIFont.SystemFontOfSize(20);
 
 {% endhighlight %}
 
-![](images/Customization/SegmentedControl_Font.png)
+![SegmentedControl Font in Xamarin.iOS](images/Customization/SegmentedControl_Font.png)
 
 ### Font color
 
@@ -43,7 +43,7 @@ segmentedControl.FontColor = UIColor.Red;
 
 {% endhighlight %}
 
-![](images/Customization/SegmentedControl_Fontcolor.png)
+![SegmentedControl FontColor in Xamarin.iOS](images/Customization/SegmentedControl_Fontcolor.png)
 
 ## Border
 
@@ -56,7 +56,7 @@ segmentedControl.BorderThickness = 5;
 
 {% endhighlight %}
 
-![](images/Customization/SegmentedControl_Border.png)
+![SegmentedControl Border in Xamarin.iOS](images/Customization/SegmentedControl_Border.png)
 
 ## Padding
 
@@ -68,7 +68,7 @@ segmentedControl.SegmentPadding = 15;
 
 {% endhighlight %}
 
-![](images/Customization/SegmentedControl_Padding.png)
+![SegmentedControl Padding in Xamarin.iOS](images/Customization/SegmentedControl_Padding.png)
 
 ## Corner radius
 
@@ -84,7 +84,7 @@ segmentedControl.CornerRadius = 15;
 
 {% endhighlight %}
 
-![](images/Customization/SegmentedControl_ControlRadius.png)
+![SegmentedControl CornerRadius in Xamarin.iOS](images/Customization/SegmentedControl_ControlRadius.png)
 
 ### Segment items radius
 
@@ -98,7 +98,7 @@ segmentedControl.SegmentCornerRadius = 15;
 
 {% endtabs %}
 
-![](images/Customization/SegmentedControl_ItemCornerRadius.png)
+![SegmentedControl SegmentCornerRadius in Xamarin.iOS](images/Customization/SegmentedControl_ItemCornerRadius.png)
 
 ### Selected segment radius
 
@@ -110,7 +110,7 @@ segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {
 
 {% endhighlight %}
 
-![](images/Customization/SegmentedControl_SelectionRadius.png)
+![Selected segment item CornerRadius in Xamarin.iOS](images/Customization/SegmentedControl_SelectionRadius.png)
 
 ## Color
 
@@ -126,7 +126,7 @@ segmentedControl.Color = UIColor.FromRGB(4, 142, 172);
 
 {% endhighlight %}
 
-![](images/Customization/SegmentedControl_Color.png)
+![SegmentedControl Color in Xamarin.iOS](images/Customization/SegmentedControl_Color.png)
 
 ### Segment items color
 
@@ -138,7 +138,7 @@ segmentedControl.SegmentBackgroundColor = UIColor.FromRGB(53,80,136);
 
 {% endhighlight %}
 
-![](images/Customization/SegmentedControl_SegmentColor.png)
+![SegmentedControl SegmentBackgroundColor in Xamarin.iOS](images/Customization/SegmentedControl_SegmentColor.png)
 
 ### Selected segment color
 
