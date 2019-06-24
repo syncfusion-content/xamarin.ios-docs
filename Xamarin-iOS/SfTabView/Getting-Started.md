@@ -174,6 +174,20 @@ public class ContactsViewModel
 
 Create a `UITableView`, and set the data source from `ContactList`. The appearance of each cell can be customized by using the `GetCell` method of `UITableViewSource`. Similarly, the content region for other tabs also can be configured.
 
+## ContentTransitionDuration
+
+You can set the duration for the TabView content transition by setting `ContentTransitionDuration` property. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+  tabview.ContentTransitionDuration = 200;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Swiping
 
 By default, both vertical swiping for the list view and horizontal swiping for the tab view will work. If it is not required, you can customize this by using the `EnableSwiping` property of `SfTabView`.
