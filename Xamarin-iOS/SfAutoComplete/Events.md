@@ -83,7 +83,7 @@ The `SelectionChanging` event is triggered when you select an item among the fil
 
  autocomplete.SelectionChanging += Autocomplete_SelectionChanging;
 
- void Autocomplete_SelectionChanging(object sender,SelectionChanging EventArgse) 
+ void Autocomplete_SelectionChanging(object sender,SelectionChanging EventArgs e) 
  {
 
  DisplayAlert("Alert", "Selection Changing", "Ok");
@@ -125,11 +125,11 @@ The `FilterCollectionChanged` event is triggered whenever the items gets filtere
 
  autocomplete.FilterCollectionChanged += Autocomplete_FilterCollectionChanged;
 
- void Autocomplete_FilterCollectionChanged(object sender, TextEventArgs e)
+ void Autocomplete_FilterCollectionChanged(object sender, FilterCollectionChangedEventArgs e)
  {
-
+ 
  DisplayAlert("Alert", "FilterCollectionChanged", "Ok");
-
+  
  }
 
 {% endhighlight %}
