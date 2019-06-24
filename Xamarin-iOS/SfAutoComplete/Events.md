@@ -55,6 +55,27 @@ The `FocusChanged` event occurs when the control gets the focus and loses the fo
 
 The `SelectionChanged` event is triggered after selecting an item among the filtered suggestions in SfAutoComplete.
 
+The SelectionChanged event returns the following arguments:
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>AddedItems</td>
+<td>Shows recently added item in AutoComplete.</td>
+</tr>
+<tr>
+<td>RemovedItems</td>
+<td>Shows recently removed items in AutoComplete.</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Holds all selected items in AutoComplete.</td>
+</tr>
+</table>
+
 {% tabs %}
 
 {% highlight c# %}
@@ -77,6 +98,19 @@ The `SelectionChanged` event is triggered after selecting an item among the filt
 
 The `SelectionChanging` event is triggered when you select an item among the filtered suggestions in SfAutoComplete.
 
+The SelectionChanging event returns the following argument:
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Value</td>
+<td>Holds all selecting items in AutoComplete.</td>
+</tr>
+</table>
+
 {% tabs %}
 
 {% highlight c# %}
@@ -98,6 +132,19 @@ The `SelectionChanging` event is triggered when you select an item among the fil
 
 The `TextChanged` event is triggered when you change the text of SfAutoComplete.
 
+The TextChanged event returns the following argument:
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Value</td>
+<td>Holds the text of AutoComplete.</td>
+</tr>
+</table>
+
 {% tabs %}
 
 {% highlight c# %}
@@ -118,6 +165,19 @@ The `TextChanged` event is triggered when you change the text of SfAutoComplete.
 ## FilterCollectionChanged
 
 The `FilterCollectionChanged` event is triggered whenever the items gets filtered in the suggestion.
+
+The FilterCollectionChanged event returns the following argument:
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Value</td>
+<td>Holds the filtered items in the suggestion.</td>
+</tr>
+</table>
 
 {% tabs %}
 
