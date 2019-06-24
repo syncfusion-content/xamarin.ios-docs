@@ -9,7 +9,7 @@ documentation: ug
 
 # Display mode
 
-Depending on application, different scenarios may require for effective communication. The segmented control supports these three options: icons, text, or a combination of both.
+Depending on application, different scenarios may be needed for effective communication. The segmented control supports the following three options: icons, text, and a combination of both.
 
 ## Text
 
@@ -161,7 +161,7 @@ private void AddCollection()
 
 ## How to use font icons
 
-The segmented control enables the user to use font icons for the items in the data source collection. For this we have to first give the desired font icon and its font family using `IconFont` and `FontIconFont` properties of `SfSegmentItem` .
+The segmented control enables user to use font icons for the items in the data source collection. To use font icons, give the desired font icon and its font family using the `IconFont` and `FontIconFont` properties of `SfSegmentItem`.
 
 {% highlight c# %}
 
@@ -174,6 +174,6 @@ segmentItem.FontIconFont = customFontFamily;
 
 **Adding font file in project**
 
-1. Add the font file inside `Resource` folder.
-2. Set font file build action as `BundleResource`.
+1. Add the font file inside the `Resource` folder.
+2. Set font file build action to `BundleResource`.
 3. Update the `Info.plist` file (fonts that are provided by application, UIAppFonts, or key).

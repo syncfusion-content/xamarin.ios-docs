@@ -9,7 +9,7 @@ documentation: ug
 
 # Indicating the selected item
 
-The segmented control indicates the selected item by differentiating it with text color of the item or using selection strip.
+The segmented control indicates the selected item by differentiating it with text color of the item or by using selection strip.
 
 ## Selection text color
 
@@ -46,7 +46,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 
 ###### Bottom
 
-Like top placement, selection strip can be customized by its color and thickness and can be positioned at the bottom of selected item.
+Like top placement, selection strip can be customized by its color and thickness, and it can be positioned at the bottom of selected item.
 
 {% highlight c# %}
 

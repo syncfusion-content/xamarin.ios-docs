@@ -13,7 +13,7 @@ The segmented control supports customizing segment color, text color, icon size,
 
 ## Text appearance
 
-The text inside the segmented control can be customized by its font size, color, and its font family.
+The text inside the segmented control can be customized by its font size, color, and font family.
 
 ### Font family and size
 
@@ -47,7 +47,7 @@ segmentedControl.FontColor = UIColor.Red;
 
 ## Border
 
-You can customize the border of segmented control by using the `BorderColor`  and `BorderThickness` properties and border of each segment items can also customized by using the `SegmentBorderColor`  and `SegmentBorderThickness`.
+You can customize the border of the segmented control by using the `BorderColor`  and `BorderThickness` properties. Border of each segment item can also be customized using the `SegmentBorderColor`  and `SegmentBorderThickness` properties.
 
 {% highlight c# %}
 
@@ -72,11 +72,11 @@ segmentedControl.SegmentPadding = 15;
 
 ## Corner radius
 
-The segmented control provides corner radius support for control, each segment items and selected segment item.
+The segmented control provides corner radius support to control, each segment item and selected segment item.
 
 ### Control radius
 
-The segmented control also handles corner radius for border line of the whole control using `CornerRadius` property.
+The segmented control also handles corner radius for border line of the whole control using the `CornerRadius` property.
 
 {% highlight c# %}
 
@@ -88,7 +88,7 @@ segmentedControl.CornerRadius = 15;
 
 ### Segment items radius
 
-The segmented control customizes the corner radius for each segmented item using `SegmentCornerRadius` property.
+The segmented control customizes corner radius for each segmented item using the `SegmentCornerRadius` property.
 
 {% highlight c# %}
 
@@ -114,11 +114,11 @@ segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {
 
 ## Color
 
-The segmented control allow users to customize the background color of control, segment items and selected segment item.
+The segmented control allows users to customize the background color of control, segment items and selected segment item.
 
 ### Control color
 
-You can customize the background color of the control by setting value for the `Color` property.
+You can customize the background color of the control by setting a value to the `Color` property.
 
 {% highlight c# %}
 
@@ -130,7 +130,7 @@ segmentedControl.Color = UIColor.FromRGB(4, 142, 172);
 
 ### Segment items color
 
-You can customize the background color of the for each segment items by setting value for the `SegmentBackgroundColor` property.
+You can customize the background color of each segment item by setting a value to the `SegmentBackgroundColor` property.
 
 {% highlight c# %}
 

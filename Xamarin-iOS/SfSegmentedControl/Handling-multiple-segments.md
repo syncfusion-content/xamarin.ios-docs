@@ -9,11 +9,11 @@ documentation: ug
 
 # Handling multiple segments
 
-The segmented control handles segmented items with space distributed for the items in two ways by `VisibleSegmentsCount` and `SegmentWidth`. When the available space in the segmented control is not equally distributed, the items beyond the edges of the control can be viewed by scrolling the panel.
+The segmented control handles segmented items with space distributed for items in two ways by `VisibleSegmentsCount` and `SegmentWidth`. When the available space in the segmented control is not equally distributed, the items beyond the edges of the control can be viewed by scrolling the panel.
 
 ## Visible segment counts
 
-The segmented control displays items for view based on the count value that is given for `VisibleSegmentsCount` property. 
+The segmented control displays items for view based on the count value given for the `VisibleSegmentsCount` property. 
 
 {% highlight c# %}
 
@@ -47,7 +47,7 @@ public override void ViewDidLoad()
 
 ## Segment width
 
-Users can use the `SegmentWidth` property to display the segmented items within the given width instead of `VisibleSegmentsCount`.
+You can use the `SegmentWidth` property to display the segmented items within the given width instead of `VisibleSegmentsCount`.
 
 {% highlight c# %}
 

@@ -13,7 +13,7 @@ The segmented control can be populated from a collection of strings, views, or a
 
 ## String collection
 
-The segmented control provides the collection of strings as a data source.
+The segmented control provides a collection of strings as a data source.
 
 {% highlight c# %}
 public override void ViewDidLoad()
@@ -45,7 +45,7 @@ public override void ViewDidLoad()
 
 ## Segment items
 
-The segmented control customize the text or icons, or use other built-in customization options available for the segments. Segment item collections can also be used.
+The segmented control customizes the text or icons or use other built-in customization options available for the segments. Segment item collections can also be used.
 
 {% highlight c# %}
 ObservableCollection<SfSegmentItem> sizeCollection;
