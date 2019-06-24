@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Events in Syncfusion SfAutoComplete control for Xamarin.iOS
-description :  Learn how to handle the Events in SfComboBox
+description :  Learn how to handle the Events in SfAutoComplete
 platform : Xamarin.iOS 
 control : AutoComplete
 documentation : ug
@@ -23,11 +23,9 @@ The Events in SfAutoComplete are:
 
 ## FocusChanged
 
-The `FocusChanged` event is triggered when you either focus or unfocus the control. The argument contains the following information.
+The `FocusChanged` event occurs when the control gets the focus and loses the focus. The argument contains the following information.
 
 * `HasFocus`: Indicates the control whether in focus state or not. HasFocus value is true while focusing the control. otherwise it becomes false.
-
-Code snippet of FocusChanged event
 
 {% tabs %}
 
@@ -57,8 +55,6 @@ Code snippet of FocusChanged event
 
 The `SelectionChanged` event is triggered after selecting an item among the filtered suggestions in SfAutoComplete.
 
-Code snippet of SelectionChanged event
-
 {% tabs %}
 
 {% highlight c# %}
@@ -81,13 +77,11 @@ Code snippet of SelectionChanged event
 
 The `SelectionChanging` event is triggered when you select an item among the filtered suggestions in SfAutoComplete.
 
-Code snippet of SelectionChanged event
-
 {% tabs %}
 
 {% highlight c# %}
 
- autocomplete.SelectionChanging+=Autocomplete_SelectionChanging;
+ autocomplete.SelectionChanging += Autocomplete_SelectionChanging;
 
  void Autocomplete_SelectionChanging(object sender,SelectionChanging EventArgse) 
  {
@@ -103,8 +97,6 @@ Code snippet of SelectionChanged event
 ## TextChanged 
 
 The `TextChanged` event is triggered when you change the text of SfAutoComplete.
-
-Code snippet of TextChanged event
 
 {% tabs %}
 
@@ -126,8 +118,6 @@ Code snippet of TextChanged event
 ## FilterCollectionChanged
 
 The `FilterCollectionChanged` event is triggered whenever the items gets filtered in the suggestion.
-
-Code snippet of FilterCollectionChanged event
 
 {% tabs %}
 
