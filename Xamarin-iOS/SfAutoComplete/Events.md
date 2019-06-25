@@ -25,7 +25,16 @@ The Events in SfAutoComplete are:
 
 The `FocusChanged` event occurs when the control gets the focus and loses the focus. The argument contains the following information.
 
-* `HasFocus`: Indicates the control whether in focus state or not. HasFocus value is true while focusing the control. otherwise it becomes false.
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>HasFocus</td>
+<td>Indicates whether the control is in focused state or not.</td>
+</tr>
+</table>
 
 {% tabs %}
 
@@ -108,6 +117,10 @@ The SelectionChanging event returns the following argument:
 <tr>
 <td>Value</td>
 <td>Holds all selecting items in AutoComplete.</td>
+</tr>
+<tr>
+<td>Cancel</td>
+<td>Restricts the item to be selected.</td>
 </tr>
 </table>
 
