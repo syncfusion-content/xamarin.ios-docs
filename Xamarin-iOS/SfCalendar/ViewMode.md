@@ -9,7 +9,7 @@ documentation: ug
 
 # Built-in Views
 
-`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using view mode property.
+`SfCalendar` control provides four types of views to display dates such as month,year,decade,century. It can be assigned to the `SfCalendar` control by using view mode property.
 
 By default `SfCalendar` control is assigned with month view. Based on the user’s preference `SfCalendar` viewed in any of the available two type.
 
@@ -82,6 +82,7 @@ You can customize the border color of calendar month cell using [MonthViewSettin
 
 SFMonthViewSettings monthViewSettings = new SFMonthViewSettings();
 monthViewSettings.BorderColor = UIColor.FromRGB(255, 0, 0);
+monthViewSettings.CellGridOptions = CellGridOptions.Both;
 calendar.MonthViewSettings = monthViewSettings;
 
 {% endhighlight %}
