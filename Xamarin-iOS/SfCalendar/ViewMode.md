@@ -155,4 +155,111 @@ calendar.YearViewSettings = yearViewSettings;
 
 {% endhighlight %}
 
+## Year view mode
+
+You can set the year view as either date or month using [YearViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~YearViewMode.html). By default, current year and months will be displayed. 
+
+* If the `YearViewMode` is date,it will be displays all the months with dates in a particular year view.
+* If the `YearViewMode` is month,it will be displays all the months in a particular year view.
+
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfCalendar calendar = new SfCalendar(this);
+calendar.ViewMode=SFCalendarViewMode.SFCalendarViewModeYear;
+calendar.YearViewMode = YearViewMode.Date;
+this.Content = calendar;
+ 
+{% endhighlight %}
+
+{% endtabs %}
+ 
+
+N>
+* The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
+
+## Decade view
+
+This view displays the period of 10 years. By default, current year range of 10 years will be displayed on loading. You can easily navigate between month/year view to decade view by tapping the calendar header. The year can be navigated quickly by selecting a particular year from decade view.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SFCalendar calendar = new SFCalendar();
+calendar.ViewMode=SFCalendarViewMode.SFCalendarViewModeDecade;
+View.AddSubView(calendar);
+ 
+{% endhighlight %}	
+
+{% endtabs %}
+
+ 
+## Decade view customization
+
+* Year text color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~MonthHeaderTextColor.html).
+* You can customize the decade view header text and background color by using the [YearHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~YearHeaderTextColor.html) and [HeaderBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~HeaderBackground.html) property.
+* You can customize the background of decade view by using [LayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~LayoutBackground.html) and [MonthLayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~MonthLayoutBackground.html).
+
+
+{% tabs %}
+
+{% highlight c# %}
+
+SFYearViewSettings yearViewSettings = new SFYearViewSettings();
+yearViewSettings.YearHeaderTextColor = UIColor.FromRGB(255, 0, 0);
+yearViewSettings.YearLayoutBackground = UIColor.FromRGB(211,211,211);
+yearViewSettings.MonthHeaderTextColor = UIColor.FromRGB(0,0,255);
+yearViewSettings.YearHeaderBackground = UIColor.FromRGB(242,242,242);
+yearViewSettings.MonthLayoutBackground = UIColor.FromRGB(242,242,242);
+calendar.YearViewSettings = yearViewSettings;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Century view
+
+This view displays the period of 100 years. By default, current year range of 100 years will be displayed on loading. You can easily navigate between month/year/decade view to century view by tapping the calendar header. You can easily navigate to decade view by selecting decade years in century view.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SFCalendar calendar = new SFCalendar();
+calendar.ViewMode=SFCalendarViewMode.SFCalendarViewModeCentury;
+View.AddSubView(calendar);
+ 
+{% endhighlight %}
+
+{% endtabs %}
+ 
+## Century view customization
+
+* Year text color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~MonthHeaderTextColor.html).
+* You can customize the century view header text and background color by using the [YearHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~YearHeaderTextColor.html) and [HeaderBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~HeaderBackground.html) property.
+* You can customize the background of century view by using [LayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~LayoutBackground.html) and [MonthLayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~MonthLayoutBackground.html).
+
+
+{% tabs %}
+
+{% highlight c# %}
+	
+SFYearViewSettings yearViewSettings = new SFYearViewSettings();
+yearViewSettings.YearHeaderTextColor = UIColor.FromRGB(255, 0, 0);
+yearViewSettings.YearLayoutBackground = UIColor.FromRGB(211,211,211);
+yearViewSettings.MonthHeaderTextColor = UIColor.FromRGB(0,0,255);
+yearViewSettings.YearHeaderBackground = UIColor.FromRGB(242,242,242);
+yearViewSettings.MonthLayoutBackground = UIColor.FromRGB(242,242,242);
+calendar.YearViewSettings = yearViewSettings;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+
+
 
