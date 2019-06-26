@@ -25,7 +25,7 @@ segmentedControl.BorderColor = UIColor.Red;
 };
 {% endhighlight %}
 
-## Selected index programmatically.
+## Selected index programmatically
 
 Users can set the default value programmatically for selection to be placed. The selection is updated based on the index value given for `SelectedIndex`. 
 
