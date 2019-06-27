@@ -786,3 +786,35 @@ dataForm.ScrollTo("BirthDate")
 
 ![Scroll to specific editor in Xamarin.iOS DataForm](SfDataForm_images/xamarin-ios-scrolltosupport.gif)
 
+## Changing the height of DataFormItem
+
+You can define the height of each `DataFormItem` using the `Height` property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+You can define the height as described as follows.
+
+* You can directly set the exact height value.
+* You can use the ` AutoFitLabel` to size the height of DataFormItem, so that it fits to the label text that it contains.
+
+{% tabs %}
+
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDataFormItemEventArgs e)
+{
+   if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
+     {
+        if (e.DataFormItem.Name == "Residential_Address")
+        {
+           e.DataFormItem.Height = 200;
+        }
+        if (e.DataFormItem.Name == "Permanent_Address")
+        {
+           e.DataFormItem.AutoFitLabel = true;
+        }
+     }
+}
+{% endhighlight %}
+
+{% endtabs %}
+

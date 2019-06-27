@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides an overview for working with the tab view control for Xamarin.iOS. Walk through the entire process of creating a real-world application with tab view.
 
-# Assembly deployment
+## Assembly deployment
 
 After installing the Essential Studio for Xamarin, find all the required assemblies in the installation folders,
 
@@ -41,13 +41,13 @@ The following list of assemblies should be added as reference from the lib folde
 
 This section explains how to create a simple tab view and configure it. The following screenshot illustrates the tab view in iOS devices.
 
-![](images/Getting-Started/xamarin_ios_tabview.png)
+![simple tab view](images/Getting-Started/xamarin_ios_tabview.png)
 
-# Creating the project
+## Creating the project
 
 Create a new BlankApp (iOS) application in Xamarin Studio or Visual Studio.
 
-# Adding tab view in Xamarin.iOS
+## Adding tab view in Xamarin.iOS
 
 Add the required assembly reference to the project as discussed in the Assembly deployment section.
 
@@ -82,7 +82,7 @@ Set the tab view control to sub view in the `ViewDidLoad` method on the inherite
 
 {% endtabs %}
 
-# Adding tab items
+## Adding tab items
 
 Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 
@@ -173,6 +173,20 @@ public class ContactsViewModel
 ## Binding data to table view
 
 Create a `UITableView`, and set the data source from `ContactList`. The appearance of each cell can be customized by using the `GetCell` method of `UITableViewSource`. Similarly, the content region for other tabs also can be configured.
+
+## ContentTransitionDuration
+
+You can set the duration for the TabView content transition by setting `ContentTransitionDuration` property. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+  tabview.ContentTransitionDuration = 200;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Swiping
 
