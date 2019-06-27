@@ -133,27 +133,7 @@ This displays entire dates/month of a particular year, by default current year w
 	
 {% endhighlight %}
 
-![Year View in Xamarin.iOS Calendar](images/xamarin.ios-calendar-year_view.png)                                        
-
-
-## Year view customization
-
-* The month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~MonthHeaderTextColor.html) property.
-* The year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearCell~DatetextColor.html) properties respectively.
-* The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to left, right or center. 
-* The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~YearLayoutBackground.html) property.
-
-{% highlight c# %}
-
-SFYearViewSettings yearViewSettings = new SFYearViewSettings();
-yearViewSettings.YearHeaderTextColor = UIColor.FromRGB(27, 121, 214);
-yearViewSettings.YearLayoutBackground = UIColor.FromRGB(255, 228, 181);
-yearViewSettings.MonthHeaderBackground = UIColor.FromRGB(139, 69, 19);
-yearViewSettings.DateTextColor = UIColor.FromRGB(230, 230, 250);
-yearViewSettings.HeaderLabelAlignment = NSTextAlignment.NSTextAlignmentCenter;
-calendar.YearViewSettings = yearViewSettings;
-
-{% endhighlight %}
+![Year View in Xamarin.iOS Calendar](images/xamarin.ios-calendar-year_view.png)      
 
 ## Year view mode
 
@@ -178,7 +158,28 @@ this.Content = calendar;
  
 
 N>
-* The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
+* The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.                                  
+
+
+## Year view customization
+
+* The month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~MonthHeaderTextColor.html) property.
+* The year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearCell~DatetextColor.html) properties respectively.
+* The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to left, right or center. 
+* The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~YearLayoutBackground.html) property.
+
+{% highlight c# %}
+
+SFYearViewSettings yearViewSettings = new SFYearViewSettings();
+yearViewSettings.YearHeaderTextColor = UIColor.FromRGB(27, 121, 214);
+yearViewSettings.YearLayoutBackground = UIColor.FromRGB(255, 228, 181);
+yearViewSettings.MonthHeaderBackground = UIColor.FromRGB(139, 69, 19);
+yearViewSettings.DateTextColor = UIColor.FromRGB(230, 230, 250);
+yearViewSettings.HeaderLabelAlignment = NSTextAlignment.NSTextAlignmentCenter;
+calendar.YearViewSettings = yearViewSettings;
+
+{% endhighlight %}
+
 
 ## Decade view
 
