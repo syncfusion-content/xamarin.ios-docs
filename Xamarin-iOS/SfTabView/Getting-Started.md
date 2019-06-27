@@ -41,7 +41,7 @@ The following list of assemblies should be added as reference from the lib folde
 
 This section explains how to create a simple tab view and configure it. The following screenshot illustrates the tab view in iOS devices.
 
-![](images/Getting-Started/xamarin_ios_tabview.png)
+![simple tab view](images/Getting-Started/xamarin_ios_tabview.png)
 
 ## Creating the project
 
