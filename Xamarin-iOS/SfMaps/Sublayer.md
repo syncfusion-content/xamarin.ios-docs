@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sublayer
+title: Sublayer in Syncfusion Maps control for Xamarin.iOS
 description: This section describes about sublayer.
 platform: Xamarin.iOS
 control: SfMaps
@@ -11,7 +11,7 @@ documentation: ug
  
 The sublayer in maps allows to load multiple shape files in a single container, enabling maps to display more information. 
 
-## Adding sublayer
+## Adding sublayer in ShapeFileLayer
 
 You can add multiple shape files in the [`SFShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer.html) using [`Sublayers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~Sublayers.html) property.
 
@@ -107,7 +107,39 @@ this.View.AddSubview(map);
 
 {% endtabs %}
 
-![](Images/Sublayer.png)
+![ShapeFileLayer Sublayer in Xamarin.iOS](Images/Sublayer.png)
+
+## Adding sublayer in ImageryLayer
+
+You can add multiple shape files in the `ImageryLayer` using [`Sublayers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~Sublayers.html) property.
+
+{% tabs %}
+
+{% highlight c# %}
+
+    SFMap map = new SFMap();
+
+    ImageryLayer imageryLayer = new ImageryLayer();
+
+    SFShapeFileLayer shapeFileLayer = new SFShapeFileLayer();
+    shapeFileLayer.Uri= (NSString)NSBundle.MainBundle.PathForResource("africa", "shp");
+
+    SFShapeSetting shapeSetting = new SFShapeSetting();
+    shapeSetting.StrokeThickness = 1;
+    shapeSetting.Fill = UIColor.Orange;
+    shapeFileLayer.ShapeSettings = shapeSetting;
+
+    imageryLayer.Sublayers.Add(shapeFileLayer);
+
+    map.Layers.Add(imageryLayer);
+
+    View.AddSubview(map);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ImageryLayer Sublayer in Xamarin.iOS](Images/ImageryLayer-SubLayer.png)
 
 ### Customizing sublayer
 
