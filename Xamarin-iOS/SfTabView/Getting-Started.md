@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides an overview for working with the tab view control for Xamarin.iOS. Walk through the entire process of creating a real-world application with tab view.
 
-# Assembly deployment
+## Assembly deployment
 
 After installing the Essential Studio for Xamarin, find all the required assemblies in the installation folders,
 
@@ -43,11 +43,11 @@ This section explains how to create a simple tab view and configure it. The foll
 
 ![](images/Getting-Started/xamarin_ios_tabview.png)
 
-# Creating the project
+## Creating the project
 
 Create a new BlankApp (iOS) application in Xamarin Studio or Visual Studio.
 
-# Adding tab view in Xamarin.iOS
+## Adding tab view in Xamarin.iOS
 
 Add the required assembly reference to the project as discussed in the Assembly deployment section.
 
@@ -82,7 +82,7 @@ Set the tab view control to sub view in the `ViewDidLoad` method on the inherite
 
 {% endtabs %}
 
-# Adding tab items
+## Adding tab items
 
 Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 
