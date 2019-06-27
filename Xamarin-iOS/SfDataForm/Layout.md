@@ -119,11 +119,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null)
     {
-        if (e.DataFormItem.Name == "Gender")
-        {
-            e.DataFormItem.LabelPosition = LabelPosition.Top;
-        }
-        if (e.DataFormItem.Name == "Address")
+        if (e.DataFormItem.Name.Equals("Gender") || e.DataFormItem.Name.Equals("Address"))
         {
             e.DataFormItem.LabelPosition = LabelPosition.Top;
         }
