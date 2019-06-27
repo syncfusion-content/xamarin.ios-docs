@@ -102,6 +102,37 @@ dataForm.LabelPosition = LabelPosition.Top;
 
 ![Arranging data form field when label position as top in Xamarin.iOS DataForm](SfDataForm_images/LabelTop.png)
 
+### Changing label position of the DataFormItem
+
+You can change the label position using the `LabelPosition` property in `DataFormItem`, and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+{% tabs %}
+{% highlight xaml %}
+<dataForm:SfDataForm x:Name="dataForm" DataObject="{Binding ContactsInfo}"  AutoGeneratingDataFormItem="DataForm_AutoGeneratingDataFormItem">
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.RegisterEditor("Gender", "Segment");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "Gender")
+        {
+            e.DataFormItem.LabelPosition = LabelPosition.Top;
+        }
+        if (e.DataFormItem.Name == "Address")
+        {
+            e.DataFormItem.LabelPosition = LabelPosition.Top;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Loading images for label
 
 You can load image instead of label by defining attribute or by handing `AutoGeneratingDataFormItem` event.
