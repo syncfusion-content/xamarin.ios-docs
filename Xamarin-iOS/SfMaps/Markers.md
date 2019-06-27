@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Markers
+title: Markers in Syncfusion Maps control
 description: This section describes about map marker.
 platform: Xamarin.iOS
 control: SfMaps
@@ -103,7 +103,7 @@ this.View.AddSubview(map);
 
 {% endtabs %}
 
-![](Images/Marker_icon_type.png)
+![Marker icon type suqare](Images/Marker_icon_type.png)
 
 ### Setting contrast color
 
@@ -234,7 +234,7 @@ this.View.AddSubview(map);
 
 {% endtabs %}
 
-![](Images/Marker_icon_type_image.png) 
+![marker icon type image](Images/Marker_icon_type_image.png) 
 
 ### Label customization
 
@@ -282,7 +282,7 @@ this.View.AddSubview(map);
 
 {% endtabs %}
 
-![](Images/Markers_label_customization.png)
+![marker label customization](Images/Markers_label_customization.png)
 
 ## Custom marker
 
@@ -351,7 +351,7 @@ return new CGPoint(-8, -25);
 
 {% endtabs %}
 
-![](Images/Custom_marker.png)
+![custom marker](Images/Custom_marker.png)
 
 ## Events
 
@@ -424,5 +424,5 @@ markerView.Frame = new CGRect(50, 350, 200, 300);
 
 {% endtabs %}
 
-![](Images/Markers_event.png)
+![marker selected event](Images/Markers_event.png)
 
