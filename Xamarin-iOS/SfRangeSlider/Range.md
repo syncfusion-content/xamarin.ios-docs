@@ -58,3 +58,42 @@ Gets and sets the end value of the range.
 {% endhighlight  %}
 
 {% endtabs %} 
+
+## ValueChangeMode
+
+The ValueChangeMode property changes the value based on the touch of the `SfRangeSlider` control. It consists of the following two types
+
+* Default
+* OnThumbPress
+
+N> The default value of the ValueChangeMode property is `Default`.
+
+
+### Default
+
+The value is updated when you touch inside the control.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	rangeSlider.ValueChangeMode = ValueChangeMode.Default;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+### OnThumb
+
+The value is updated when you touch or move the thumb/knob.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	rangeSlider.ValueChangeMode = ValueChangeMode.OnThumb;
+
+{% endhighlight %}
+
+{% endtabs %}
