@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a rating control in a real-time scenario and also provides a walk-through on some of the customization features available in Rating control.
+This section explains how to configure the SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in the SfRating control.
 
 ## Referencing Essential Studio Components in Your Solution
 
@@ -43,32 +43,37 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 
 {% highlight c# %}
 
-	SFRating rating = new SFRating ();
-	this.AddSubview(rating);
+	SFRating rating;
+	
+	public override void ViewDidLoad()
+	{
+		base.ViewDidLoad();
+		rating = new SfRating();
+		rating.Frame = new CGRect(10, 310, this.View.Frame.Width, 60);
+		this.Add(rating);
+	}
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-* Configure the properties of Rating
+## Set number of rating items
+
+The number of rating items to be displayed can be customized in the SfRating control. Users can create a rating application with 5 rating items as follows.
+
+N> The default value of this property is 5.
 
 {% tabs %}
 
 {% highlight c# %}
 
-    rating.ItemCount=5;
-	rating.Precision = SFRatingPrecision.Half;
-	rating.ToolTipPlacement= SFRatingToolTipPlacement.None;
-	rating.ItemSize=10;
-	rating.Readonly=true;
-	rating.Value=(nfloat)3.5;
-	rating.ItemSpacing = 5;
+    rating.ItemCount = 5;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Set Value
+## SetValue
 
 Display value can be set in SfRating control which is selected among the items. The following example shows the display value of 3 with 5 rating items. 
 
@@ -78,25 +83,12 @@ N> By default, property value is 0.
 
 {% highlight c# %}
 
-    rating.Value=3;
+    rating.Value = 3;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Precision
+![Rating application using SFRating](images/gettingstarted.png)
 
-SfRating control provides option to rate the items in full, half and exact value. This can be set through `Precision` property.
-
-{% tabs %}
-
-{% highlight c# %}
-
-    rating.Precision =  SFRatingPrecision.Standard;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-![](images/gettingstarted.png)
+Please find the sample from this link: [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted1345326680.zip).

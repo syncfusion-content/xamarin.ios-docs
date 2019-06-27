@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-SfRating control provides support to customize the Size, Item count and space between rating items.
+When the default view is not needed, you can customize the view of Xamarin.iOS SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
 
 ## Set Size
 
@@ -21,13 +21,13 @@ N> By default, property value is 50.
 
 {% highlight c# %}
 	   
-	rating.ItemSize=20;
+	rating.ItemSize = 20;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/layoutSize.jpg)
+![SfRatinglayout customization](images/layoutSize.jpg)
  
 ## Set Number of Items
 
@@ -39,13 +39,13 @@ N> The default property value is 5.
 
 {% highlight c# %}
 
-	rating.ItemCount=4;
+	rating.ItemCount = 4;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/fourstar.jpg) 
+![Set number of rating items](images/fourstar.jpg) 
 
 ## Set Space between Items
 
@@ -57,13 +57,13 @@ N> By default, property value is 5.
 
 {% highlight c# %}
 
-	rating.ItemSpacing=20;
+	rating.ItemSpacing = 20;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/layoutSpace.jpg) 
+![Space between rating items](images/layoutSpace.jpg) 
 
 ## Rating Settings
 
@@ -73,15 +73,21 @@ For styling customization, set the RatingSettings property value with SfRatingSe
 
 {% highlight c# %}
 
-	SFRatingSettings settings = new SFRatingSettings ();
-	settings.RatedFill = UIColor.FromRGB (251,209,10);
-	settings.RatedStroke = UIColor.FromRGB (251,209,10);
-    settings.RatedStrokeThickness=10;
-	settings.UnRatedFill=UIColor.FromRGB (251,209,10);
-	settings.UnRatedStrokeThickness=10;
-	rating.RatingSettings=settings;	
+SfRating rating;
+SfRatingSettings ratingSetings;
+
+public override void ViewDidLoad()
+{
+	base.ViewDidLoad();
+	rating = new SfRating();
+	ratingSettings = new SfRatingSettings();
+	ratingSettings.RatedFill = UIColor.Red;
+	ratingSettings.UnRatedFill = UIColor.Blue;
+	ratingSettings.RatedStrokeWidth = 5;
+	ratingSettings.UnRatedStrokeWidth = 3;
+	rating.RatingSettings = ratingSettings;
+}
 			
 {% endhighlight %}
 
 {% endtabs %}
-
