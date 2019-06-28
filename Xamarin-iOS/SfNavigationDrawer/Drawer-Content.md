@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various features of Syncfusion NavigationDrawer control for Xamarin.iOS
+title: Various features of Syncfusion NavigationDrawer control for iOS.
 description: Learn how to set content view, drawer content view, footer view, header view, drawer size in NavigationDrawer.
 platform: Xamarin.iOS
 control: NavigationDrawer
@@ -106,7 +106,7 @@ The sliding main content of the SfNavigationDrawer can be set with any view usin
 
 {% endtabs %}
 
-![](images/Drawercontentview.png)
+![images](images/Drawercontentview.png)
 
 ## Drawer Header Content
 
@@ -177,7 +177,7 @@ namespace NavigationDrawerTest
 
 {% endtabs %}
 
-![](images/Drawerheadview.png)
+![images](images/Drawerheadview.png)
 
 
 ## Drawer Footer Content
@@ -234,7 +234,7 @@ namespace NavigationDrawerTest
 
 {% endtabs %}
 
-![](images/Drawerfooterview.png)
+![images](images/Drawerfooterview.png)
 
 ## Drawer Size
 
@@ -250,3 +250,230 @@ Gets or sets the height and width of the DrawerView panel in the NavigationDrawe
 {% endhighlight %}
 
 {% endtabs %}
+
+## Multiple drawers
+
+The Navigation Drawer allows users to open the drawer on multiple sides with different toggle methods. The DrawerSettings class and its properties need to be used when users need to provide multiple drawers. The multiple drawers can be implemented using the following drawer settings:
+* Default drawer settings
+* Secondary drawer settings
+
+N> The header and footer content are optional, but the drawer content is mandatory to allocate space for the drawer.
+		
+## Default drawer settings
+
+Implement the default drawer using the default drawer settings class. The following code sample demonstrates how to set the properties of default drawer settings inside the DrawerSettings class.
+{% tabs %}
+
+{% highlight c# %}
+
+DrawerSettings defaultDrawerSettings = new DrawerSettings();
+defaultDrawerSettings.DrawerHeight = 450;
+defaultDrawerSettings.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
+defaultDrawerSettings.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnTop;
+defaultDrawerSettings.DrawerHeaderHeight = 500;
+defaultDrawerSettings.DrawerBackgroundColor = UIColor.Red;
+defaultDrawerSettings.DrawerWidth = 150;
+defaultDrawerSettings.DrawerHeaderHeight = 150;
+defaultDrawerSettings.DrawerFooterHeight = 150;
+  
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The Navigation Drawer works with the value given for the properties inside the DrawerSettings class when using the default drawer settings.
+
+### Header view of the default drawer
+
+The header content can be provided to the default drawer using the `DrawerHeaderView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code sample demonstrates how to set header content to the default drawer.
+
+{% tabs %}
+
+{% highlight c# %}
+
+DrawerSettings defaultDrawerSettings = new DrawerSettings();
+defaultDrawerSettings.DrawerHeaderHeight = 150;
+UIView headerView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height));
+UILabel header = new UILabel();
+header.Frame = new CGRect(5, 2, contentView.Frame.Width - 8, 30);
+header.Text = "James Pollack";
+header.TextColor = UIColor.White;
+header.BackgroundColor = UIColor.FromRGB(49, 173, 225);
+header.TextAlignment = UITextAlignment.Center;
+headerView.AddSubview(header);
+defaultDrawerSettings.DrawerHeaderView = headerView;
+navigation.DefaultDrawerSettings = defaultDrawerSettings;
+
+{% endhighlight %}
+
+{% endtabs %}      
+
+### Content view of the default drawer
+
+The drawer content can be provided to the default drawer using the `DrawerContentView` property inside the DrawerSettings class. The following code sample demonstrates how to set drawer content to the default drawer.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfNavigationDrawer navigationDrawer = new SfNavigationDrawer(this);
+DrawerSettings defaultDrawerSettings = new DrawerSettings();
+defaultDrawerSettings.DrawerHeaderHeight = 150;
+UIView contentView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height));
+UILabel content = new UILabel();
+content.Frame = new CGRect(5, 2, contentView.Frame.Width - 8, 30);
+content.Text = "James Pollack";
+content.TextColor = UIColor.White;
+content.BackgroundColor = UIColor.FromRGB(49, 173, 225);
+content.TextAlignment = UITextAlignment.Center;
+contentView.AddSubview(content);
+defaultDrawerSettings.DrawerContentView = contentView;
+navigationDrawer.DefaultDrawerSettings = defaultDrawerSettings;
+SetContentView(navigationDrawer);
+
+  
+{% endhighlight %}
+
+{% endtabs %}   
+
+### Footer view of the default drawer
+
+The footer content can be provided to the default drawer using the `DrawerFooterView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code sample demonstrates how to set footer content to the default drawer.
+
+{% tabs %}
+
+{% highlight c# %}
+
+DrawerSettings defaultDrawerSettings = new DrawerSettings();
+defaultDrawerSettings.DrawerFooterHeight = 150;
+UIView footerView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height));
+UILabel footer = new UILabel();
+footer.Frame = new CGRect(5, 2, contentView.Frame.Width - 8, 30);
+footer.Text = "James Pollock";
+footer.TextColor = UIColor.White;
+footer.BackgroundColor = UIColor.FromRGB(49, 173, 225);
+footer.TextAlignment = UITextAlignment.Center;
+footerView.AddSubview(footer);
+defaultDrawerSettings.DrawerFooterView = footerView;
+navigation.DefaultDrawerSettings = defaultDrawerSettings;
+
+{% endhighlight %}
+
+{% endtabs %}   
+
+## Secondary drawer settings   
+
+Implement the secondary drawer using the secondary drawer settings class. Its properties and functionalities are same as the default drawer. The secondary drawer can be set to different positions similar to the default drawer. The following code sample demonstrates how to set the properties of secondary drawer settings inside the DrawerSettings class.
+
+{% tabs %}
+
+{% highlight c# %}
+
+DrawerSettings secondaryDrawerSettings = new DrawerSettings();
+secondaryDrawerSettings.DrawerHeight = 450;
+secondaryDrawerSettings.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionRight;
+secondaryDrawerSettings.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnTop;
+secondaryDrawerSettings.DrawerHeaderHeight = 500;
+secondaryDrawerSettings.DrawerBackgroundColor = UIColor.Blue;
+secondaryDrawerSettings.DrawerWidth = 150;
+secondaryDrawerSettings.DrawerHeaderHeight = 150;
+secondaryDrawerSettings.DrawerFooterHeight = 150;
+
+  
+{% endhighlight %}
+
+{% endtabs %}
+
+N> When the default drawer and the secondary drawer are set to the same position, the default drawer will open on swiping.
+
+### Header view of the secondary drawer
+
+The header content can be provided to the secondary drawer using the `DrawerHeaderView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code sample demonstrates how to set the header content to the secondary drawer.
+
+{% tabs %}
+
+{% highlight c# %}
+
+DrawerSettings secondaryDrawerSettings = new DrawerSettings();
+secondaryDrawerSettings.DrawerHeaderHeight = 150;
+UIView headerView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height));
+UILabel header = new UILabel();
+header.Frame = new CGRect(5, 2, contentView.Frame.Width - 8, 30);
+header.Text = "James Pollack";
+header.TextColor = UIColor.White;
+header.BackgroundColor = UIColor.FromRGB(49, 173, 225);
+header.TextAlignment = UITextAlignment.Center;
+headerView.AddSubview(header);
+secondaryDrawerSettings.DrawerHeaderView = headerView;
+navigation.SecondaryDrawerSettings=secondaryDrawerSettings;
+
+{% endhighlight %}
+
+{% endtabs %}      
+
+### Content view of the secondary drawer
+
+The drawer content can be provided to the secondary drawer using the `DrawerContentView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code sample demonstrates how to set the drawer content to the secondary drawer.
+
+{% tabs %}
+
+{% highlight c# %}
+
+SfNavigationDrawer navigationDrawer = new SfNavigationDrawer(this);
+DrawerSettings secondaryDrawerSettings = new DrawerSettings();
+secondaryDrawerSettings.DrawerHeaderHeight = 150;
+UIView contentView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height));
+UILabel content = new UILabel();
+content.Frame = new CGRect(5, 2, contentView.Frame.Width - 8, 30);
+content.Text = "James Pollack";
+content.TextColor = UIColor.White;
+content.BackgroundColor = UIColor.FromRGB(49, 173, 225);
+content.TextAlignment = UITextAlignment.Center;
+contentView.AddSubview(content);
+secondaryDrawerSettings.DrawerContentView = contentView;
+navigationDrawer.SecondaryDrawerSettings = secondaryDrawerSettings;
+SetContentView(navigationDrawer);
+
+{% endhighlight %}
+
+{% endtabs %}   
+
+### Footer view of the secondary drawer
+
+The footer content can be provided to the secondary drawer using the `DrawerFooterView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code sample demonstrates how to set footer content to the secondary drawer.
+
+{% tabs %}
+
+{% highlight c# %}
+
+DrawerSettings secondaryDrawerSettings = new DrawerSettings();
+secondaryDrawerSettings.DrawerFooterHeight = 150;
+UIView footerView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height));
+UILabel footer = new UILabel();
+footer.Frame = new CGRect(5, 2, contentView.Frame.Width - 8, 30);
+footer.Text = "James Pollock";
+footer.TextColor = UIColor.White;
+footer.BackgroundColor = UIColor.FromRGB(49, 173, 225);
+footer.TextAlignment = UITextAlignment.Center;
+footerView.AddSubview(footer);
+secondaryDrawerSettings.DrawerFooterView = footerView;
+navigation.SecondaryDrawerSettings = secondaryDrawerSettings;
+
+{% endhighlight %}
+
+{% endtabs %}   
+
+## Toggling method
+
+Users can toggle the secondary drawer using the `ToggleSecondaryDrawer` method. 
+
+{% highlight c# %} 
+
+navigationDrawer.ToggleSecondaryDrawer();
+
+{% endhighlight %}
+
+### Opening the drawer programmatically
+
+The `IsOpen` property in the DrawerSettings of SecondaryDrawerSettings is used to open or close the drawer programmatically.
+
+N> Users can open only one drawer at a time.
