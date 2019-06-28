@@ -29,7 +29,7 @@ combobox.SelectedDropDownItemColor = UIColor.FromRGB(0, 173, 255);
 
 {% endtabs %}
 
-![](images/selecteddropdownitemcolor.png)
+![Selected drop down item color](images/selecteddropdownitemcolor.png)
 
 ## Set maximum height to the drop-down
 
@@ -47,7 +47,7 @@ combobox.MaxDropDownHeight = 60;
 
 {% endtabs %}
 
-![](images/maximumdropdownheight.png)
+![Maximum drop down height](images/maximumdropdownheight.png)
 
 ## Set border color to the DropDown
 
@@ -71,7 +71,7 @@ this.View.AddSubview(countryComboBox);
 
 {% endtabs %}
 
-![](images/drop-down-border-color.png)
+![Drop down border color](images/drop-down-border-color.png)
 
 ## DropDown Button Customization 
 
@@ -111,9 +111,9 @@ combobox.DropDownButtonSettings = dropDownButtonSettings;
 
 {% endtabs %}
 
-![](images/buttoncustomization.png)
+![Drop down button customization](images/buttoncustomization.png)
 
-# WaterMark
+# Set WaterMark 
 
 The watermark text is used to display some information regarding the combo box. This watermark is visible only when the textbox is empty or null. The watermark text disappears when users begins to type or select any item from the dropdown list in the combo box control. 
 
@@ -127,4 +127,4 @@ combobox.Watermark = (NSString)"Select any Countries name";
 
 {% endtabs %}
 
-![](images/watermark.png)
+![Watermark](images/watermark.png)

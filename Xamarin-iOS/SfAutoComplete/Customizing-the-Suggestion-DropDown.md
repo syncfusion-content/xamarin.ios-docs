@@ -27,7 +27,7 @@ countryAutocomplete.MinimumPrefixCharacters=2;
 
 {% endtabs %}
 
-![](images/minimumprefixcharacter.png)
+![Minimum prefix character](images/minimumprefixcharacter.png)
 
 
 ## Set Popup Delay
@@ -63,7 +63,7 @@ countryAutoComplete.MaxDropDownHeight = 90;
 
 {% endtabs %}
 
-![](images/maximumdropdownheight.png)
+![Maximum drop down height](images/maximumdropdownheight.png)
 
 ## Set border color to the DropDown
 
@@ -88,4 +88,4 @@ The DropDownBorderColor property is used to change the border color of DropDown.
 
 {% endtabs %}
 
-![](images/drop-down-border-color.png)
+![Drop down border color](images/drop-down-border-color.png)
