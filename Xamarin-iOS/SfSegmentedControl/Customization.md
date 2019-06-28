@@ -96,8 +96,6 @@ segmentedControl.SegmentCornerRadius = 15;
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![SegmentedControl SegmentCornerRadius in Xamarin.iOS](images/Customization/SegmentedControl_ItemCornerRadius.png)
 
 ### Selected segment radius
