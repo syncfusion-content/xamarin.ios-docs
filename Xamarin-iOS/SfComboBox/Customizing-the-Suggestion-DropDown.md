@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : Customizing the Syncfusion ComboBox control in Xamarin.iOS
 description : Learn how to Customizing the ComboBox 
@@ -48,6 +48,30 @@ combobox.MaxDropDownHeight = 60;
 {% endtabs %}
 
 ![](images/maximumdropdownheight.png)
+
+## Set border color to the DropDown
+
+The DropDownBorderColor property is used to change the border color of DropDown. The following code example demonstrates how to change the border color of DropDown.
+
+{% tabs %}
+
+{% highlight C# %}
+    
+SfComboBoxcountryComboBox=newSfComboBox();
+countryComboBox.Frame=newCGRect(10,20,250,30);
+NSMutableArraycountryList=newNSMutableArray();
+countryList.Add((NSString)"Afghanistan");
+countryList.Add((NSString)"Akrotiri");
+countryList.Add((NSString)"Albania");
+countryComboBox.ComboBoxSource=countryList;
+countryComboBox.DropDownBorderColor=UIColor.Red;
+this.View.AddSubview(countryComboBox);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/drop-down-border-color.png)
 
 ## DropDown Button Customization 
 
