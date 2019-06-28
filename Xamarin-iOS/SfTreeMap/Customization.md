@@ -29,9 +29,9 @@ You can color all the leaf nodes with the same color by setting value to the [`C
 
 {% highlight C# %} 
 
- UniColorMapping uniColorMapping = new UniColorMapping();
- uniColorMapping.Color = Color.Red;
- treeMap.LeafItemColorMapping = uniColorMapping;
+  SFUniColorMapping uniColorMapping = new SFUniColorMapping();
+            uniColorMapping.Color = UIColor.Red;
+            treeMap.LeafItemColorMapping = uniColorMapping;
 
 {% endhighlight %}
 
@@ -47,38 +47,38 @@ You can group the leaf nodes based on the range of color values of data. You can
 
 {% highlight c# %}
 
- RangeColorMapping rangeColorMapping = new RangeColorMapping();
+            SFRangeColorMapping colorMapping = new SFRangeColorMapping();
 
-            Range range1 = new Range();
+            SFRange range1 = new SFRange();
+            range1.LegendLabel = (NSString)"1 % Growth";
             range1.From = 0;
             range1.To = 1;
-            range1.Color = Color.ParseColor("#77D8D8");
-            range1.LegendLabel = "1 % Growth";
+            range1.Color = UIColor.FromRGB(119, 216, 216);
 
-            Range range2 = new Range();
+            SFRange range2 = new SFRange();
+            range2.LegendLabel = (NSString)"2 % Growth";
             range2.From = 0;
             range2.To = 2;
-            range2.Color = Color.ParseColor("#AED960");
-            range2.LegendLabel = "2 % Growth";
+            range2.Color = UIColor.FromRGB(174, 217, 96);
 
-            Range range3 = new Range();
+            SFRange range3 = new SFRange();
+            range3.LegendLabel = (NSString)"3 % Growth";
             range3.From = 0;
             range3.To = 3;
-            range3.Color = Color.ParseColor("#FFAF51");
-            range3.LegendLabel = "3 % Growth";
+            range3.Color = UIColor.FromRGB(255, 175, 81);
 
-            Range range4 = new Range();
+            SFRange range4 = new SFRange();
+            range4.LegendLabel = (NSString)"4 % Growth";
             range4.From = 0;
             range4.To = 4;
-            range4.Color = Color.ParseColor("#F3D240");
-            range4.LegendLabel = "4 % Growth";
+            range4.Color = UIColor.FromRGB(243, 210, 64);
 
-            rangeColorMapping.Ranges.Add(range1);
-            rangeColorMapping.Ranges.Add(range2);
-            rangeColorMapping.Ranges.Add(range3);
-            rangeColorMapping.Ranges.Add(range4);
+            colorMapping.Ranges.Add(range1);
+            colorMapping.Ranges.Add(range2);
+            colorMapping.Ranges.Add(range3);
+            colorMapping.Ranges.Add(range4);
 
-            treeMap.LeafItemColorMapping = rangeColorMapping;
+            treeMap.LeafItemColorMapping = colorMapping;
 
 {% endhighlight %}
 
@@ -94,10 +94,10 @@ You can differentiate all the leaf nodes using the [`DesaturationColorMapping`](
 
 {% highlight c# %}
 
-            DesaturationColorMapping desaturationColorMapping = new DesaturationColorMapping();
-            desaturationColorMapping.Color = Color.ParseColor("#41B8C4");
+            SFDesaturationColorMapping desaturationColorMapping = new SFDesaturationColorMapping();
             desaturationColorMapping.From = 1;
-            desaturationColorMapping.To = 0.2;
+            desaturationColorMapping.To = 0.2f;
+            desaturationColorMapping.Color = UIColor.FromRGB(65, 184, 196);
             treeMap.LeafItemColorMapping = desaturationColorMapping;
 
 {% endhighlight %}
@@ -114,15 +114,15 @@ Leaf nodes were colored based on the colors mentioned in the [`Colors`](https://
 
 {% highlight c# %}
 
-            PaletteColorMapping paletteMapping = new PaletteColorMapping();
-            paletteMapping.Colors.Add(Color.ParseColor("#BD8EC2"));
-            paletteMapping.Colors.Add(Color.ParseColor("#FFD34E"));
-            paletteMapping.Colors.Add(Color.ParseColor("#55B949"));
-            paletteMapping.Colors.Add(Color.ParseColor("#00B2DA"));
-            paletteMapping.Colors.Add(Color.ParseColor("#744A94"));
-            paletteMapping.Colors.Add(Color.ParseColor("#A1A616"));
-            paletteMapping.Colors.Add(Color.ParseColor("#0753A1"));
-            treeMap.LeafItemColorMapping = paletteMapping;
+            SFPaletteColorMapping paletteColorMapping = new SFPaletteColorMapping();
+            paletteColorMapping.Colors.Add(UIColor.FromRGB(189, 142, 194));
+            paletteColorMapping.Colors.Add(UIColor.FromRGB(255, 211, 78));
+            paletteColorMapping.Colors.Add(UIColor.FromRGB(85, 185, 73));
+            paletteColorMapping.Colors.Add(UIColor.FromRGB(0, 178, 218));
+            paletteColorMapping.Colors.Add(UIColor.FromRGB(116, 74, 148));
+            paletteColorMapping.Colors.Add(UIColor.FromRGB(161, 166, 22));
+            paletteColorMapping.Colors.Add(UIColor.FromRGB(7, 83, 161));
+            treeMap.LeafItemColorMapping = paletteColorMapping;
 
 {% endhighlight %}
 
@@ -138,7 +138,7 @@ You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](ht
 
 {% highlight c# %}
 
-          treeMap.ShowTooltip = true;
+           treeMap.ShowTooltip = true;
 
 {% endhighlight %}
 
