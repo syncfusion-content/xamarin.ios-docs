@@ -847,3 +847,5 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 
 {% endtabs %}
 
+![DataFormItem height in Xamarin.iOS DataForm](SfDataForm_images/xamarin.ios-Height.gif)
+

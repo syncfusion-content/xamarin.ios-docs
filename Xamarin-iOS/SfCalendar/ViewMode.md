@@ -162,11 +162,12 @@ this.Content = calendar;
 
 {% endtabs %}
  
+![Year view mode in Xamarin.iOS Calendar](images/xamarin.ios-YearViewMode.png)  
 
 N>
 * The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.   
 
-![Year view mode in Xamarin.iOS Calendar](images/xamarin.ios-YearViewMode.png)                               
+                             
 
 
 ## Year view customization
