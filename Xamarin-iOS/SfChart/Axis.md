@@ -571,6 +571,21 @@ yAxis.MinorTickStyle.LineColor  = UIColor.Green;
 
 ![Axis tick lines customization support in Xamarin.iOS Chart](Axis_images/TickStyle.png)
 
+
+### Customize individual axis elements
+
+The [`RangeStyles`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~RangeStyles.html) can be used to customize the gridlines, ticks and axis labels for a specific region of [`SFAxis`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis.html). The following properties are used to customize the specific range in an axis:
+
+* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisRangeStyle~Start.html) - Sets the start range of an axis
+* [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisRangeStyle~End.html) - Sets the end range of an axis
+* [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisRangeStyle~MajorGridLineStyle.html) - Customizes the major grid lines of an axis.
+* [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisRangeStyle~MinorGridLineStyle.html) - Customizes the minor grid lines of an axis.
+* [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisRangeStyle~MajorTickStyle.html) - Customizes the major tick lines of an axis.
+* [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisRangeStyle~MinorTickStyle.html) - Customizes the minor tick lines of an axis.
+* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisRangeStyle~LabelStyle.html) - Customizes the axis labels for a specific range.
+
+![Individual axis elements customization support in Xamarin.iOS Chart](Axis_images/AxisRangeCustomize.png)
+
 ### Inversing axis
 
 Axis can be inversed using the [`IsInversed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~IsInversed.html) property of axis. Default value of [`IsInversed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~IsInversed.html) property is `False`.
