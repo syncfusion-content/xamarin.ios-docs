@@ -106,7 +106,7 @@ The sliding main content of the SfNavigationDrawer can be set with any view usin
 
 {% endtabs %}
 
-![images](images/Drawercontentview.png)
+![Drawercontentview](images/Drawercontentview.png)
 
 ## Drawer Header Content
 
@@ -177,7 +177,7 @@ namespace NavigationDrawerTest
 
 {% endtabs %}
 
-![images](images/Drawerheadview.png)
+![Drawerheadview](images/Drawerheadview.png)
 
 
 ## Drawer Footer Content
@@ -234,7 +234,7 @@ namespace NavigationDrawerTest
 
 {% endtabs %}
 
-![images](images/Drawerfooterview.png)
+![Drawerfooterview](images/Drawerfooterview.png)
 
 ## Drawer Size
 
@@ -270,8 +270,7 @@ DrawerSettings defaultDrawerSettings = new DrawerSettings();
 defaultDrawerSettings.DrawerHeight = 450;
 defaultDrawerSettings.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
 defaultDrawerSettings.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnTop;
-defaultDrawerSettings.DrawerHeaderHeight = 500;
-defaultDrawerSettings.DrawerBackgroundColor = UIColor.Red;
+defaultDrawerSettings.ContentBackgroundColor = UIColor.Red;
 defaultDrawerSettings.DrawerWidth = 150;
 defaultDrawerSettings.DrawerHeaderHeight = 150;
 defaultDrawerSettings.DrawerFooterHeight = 150;
@@ -315,7 +314,7 @@ The drawer content can be provided to the default drawer using the `DrawerConten
 
 {% highlight c# %}
 
-SfNavigationDrawer navigationDrawer = new SfNavigationDrawer(this);
+SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
 DrawerSettings defaultDrawerSettings = new DrawerSettings();
 defaultDrawerSettings.DrawerHeaderHeight = 150;
 UIView contentView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height));
@@ -372,8 +371,7 @@ DrawerSettings secondaryDrawerSettings = new DrawerSettings();
 secondaryDrawerSettings.DrawerHeight = 450;
 secondaryDrawerSettings.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionRight;
 secondaryDrawerSettings.Transition = SFNavigationDrawerTransition.SFNavigationDrawerTransitionSlideOnTop;
-secondaryDrawerSettings.DrawerHeaderHeight = 500;
-secondaryDrawerSettings.DrawerBackgroundColor = UIColor.Blue;
+secondaryDrawerSettings.ContentBackgroundColor = UIColor.Blue;
 secondaryDrawerSettings.DrawerWidth = 150;
 secondaryDrawerSettings.DrawerHeaderHeight = 150;
 secondaryDrawerSettings.DrawerFooterHeight = 150;
@@ -418,7 +416,7 @@ The drawer content can be provided to the secondary drawer using the `DrawerCont
 
 {% highlight c# %}
 
-SfNavigationDrawer navigationDrawer = new SfNavigationDrawer(this);
+SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
 DrawerSettings secondaryDrawerSettings = new DrawerSettings();
 secondaryDrawerSettings.DrawerHeaderHeight = 150;
 UIView contentView = new UIView(new CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height));

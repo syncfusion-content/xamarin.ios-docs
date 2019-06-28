@@ -15,8 +15,8 @@ When the entered item is not in the suggestion list, SfComboBox displays a text 
 
 {% highlight C# %}
 
-comboBox.NoResultsFoundText= "No Results Found";
-comboBox.SuggestionMode=SuggestionMode.StartsWith;
+comboBox.NoResultsFoundText = "No Results Found";
+comboBox.SuggestionMode = SuggestionMode.StartsWith;
 
 {% endhighlight %}
 
@@ -32,10 +32,10 @@ The `NoResultsFoundTextColor` and `NoResultsFoundFont` are the properties used t
 
 {% highlight c# %}
 
-comboBox.SuggestionMode=SuggestionMode.StartsWith;
+comboBox.SuggestionMode = SuggestionMode.StartsWith;
 comboBox.NoResultsFoundText = "No Results Found";
 comboBox.NoResultsFoundTextColor = UIColor.Blue;
-comboBox.NoResultsFoundFont= UIFont.FromName("Pacifico", 20);
+comboBox.NoResultsFoundFont = UIFont.FromName("Pacifico", 20);
 
 {% endhighlight %}
 

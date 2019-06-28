@@ -15,8 +15,8 @@ When the entered item is not in the suggestion list, SfAutoComplete displays a t
 
 {% highlight C# %}
 
-countryAutoComplete.NoResultsFoundText= "No Results Found";
-countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
+countryAutoComplete.NoResultsFoundText = "No Results Found";
+countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 
 {% endhighlight %}
 
@@ -32,10 +32,10 @@ The `NoResultsFoundTextColor` and `NoResultsFoundFont` are the properties used t
 
 {% highlight c# %}
 
-countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
+countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 countryAutoComplete.NoResultsFoundText = "No Results Found";
 countryAutoComplete.NoResultsFoundTextColor = UIColor.FromRGB(128,0,0);
-countryAutoComplete.NoResultsFoundFont= UIFont.FromName("Pacifico", 20);
+countryAutoComplete.NoResultsFoundFont = UIFont.FromName("Pacifico", 20);
 
 {% endhighlight %}
 
