@@ -120,7 +120,7 @@ N>
 {% highlight c# %}
 
 SFCalendar sfCalendar = new SFCalendar();
-sfCalendar.NumberOfWeeksInView = 3;
+sfCalendar.NumberOfWeeksInView = 2;
 View.AddSubView(sfCalendar);
 
 {% endhighlight %}
