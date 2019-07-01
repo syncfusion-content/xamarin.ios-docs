@@ -101,7 +101,7 @@ private void ExportToPdf_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/AllLine.png)
+![Export to PDF](SfDataGrid_images/PDF/AllLine.png)
 
 ## Exporting Options
 
@@ -134,7 +134,7 @@ var doc = pdfExport.ExportToPdf (this.dataGrid, exportOption);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/ExcludeColumn.png)
+![Exclude Columns while Exporting](SfDataGrid_images/PDF/ExcludeColumn.png)
 
 ### PdfDocument
 
@@ -194,11 +194,11 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 
 * ExportGroups is false
 
-![](SfDataGrid_images/PDF/ExcludeGroup.png)
+![Exclude Groups while Exporting is false](SfDataGrid_images/PDF/ExcludeGroup.png)
 
 * ExportGroups is true
 
-![](SfDataGrid_images/PDF/Group.png)
+![Exclude Groups while Exporting is true](SfDataGrid_images/PDF/Group.png)
 
 ### Exclude Column Header while Exporting
 
@@ -220,7 +220,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/AllLine.png)
+![Exclude Column Header while Exporting](SfDataGrid_images/PDF/AllLine.png)
 
 ### Exclude Table Summaries while Exporting
 
@@ -242,7 +242,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/ExcludeGroup.png)
+![Exclude Table Summaries while Exporting](SfDataGrid_images/PDF/ExcludeGroup.png)
 
 ### Exporting the SfDataGrid from Particular Starting Page
 
@@ -276,7 +276,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/StartIndex.png)
+![StartPageIndex](SfDataGrid_images/PDF/StartIndex.png)
 
 #### StartPoint
 
@@ -298,7 +298,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/StartPoint.png)
+![StartPoint](SfDataGrid_images/PDF/StartPoint.png)
 
 ### ApplyGridStyle
 
@@ -320,7 +320,7 @@ private void PDFExport_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/ExportGridStyle.png)
+![ApplyGridStyle](SfDataGrid_images/PDF/ExportGridStyle.png)
 
 The SfDataGrid also allows customizing the following styles while exporting to PDF:
 
@@ -349,7 +349,7 @@ option.BottomTableSummaryStyle = new PdfGridCellStyle()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/SummaryStyle.png)
+![BottomTableSummaryStyle](SfDataGrid_images/PDF/SummaryStyle.png)
 
 #### GroupCaptionStyle
 
@@ -370,7 +370,7 @@ option.GroupCaptionStyle = new PdfGridCellStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/SummaryStyle.png)
+![GroupCaptionStyle](SfDataGrid_images/PDF/SummaryStyle.png)    
 
 #### HeaderStyle
 
@@ -391,7 +391,7 @@ option.HeaderStyle = new PdfGridCellStyle()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/RecordHeaderStyle.png)
+![HeaderStyle](SfDataGrid_images/PDF/RecordHeaderStyle.png)
 
 #### RecordStyle 
 
@@ -412,7 +412,7 @@ option.RecordStyle = new PdfGridCellStyle()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/RecordHeaderStyle.png)
+![RecordStyle](SfDataGrid_images/PDF/RecordHeaderStyle.png)
 
 #### TopTableSummaryStyle
 
@@ -433,7 +433,7 @@ option.TopTableSummaryStyle = new PdfGridCellStyle()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/SummaryStyle.png)
+![TopTableSummaryStyle](SfDataGrid_images/PDF/SummaryStyle.png)
 
 ## Exclude GroupSummaryRows when exporting 
 
@@ -447,7 +447,7 @@ DataGridPdfExportOption option = new DataGridPdfExportOption();
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/GroupSummaryPdf.png)
+![Exclude GroupSummaryRows when exporting](SfDataGrid_images/PDF/GroupSummaryPdf.png)
 
 ### GroupSummaryStyle 
 
@@ -466,7 +466,7 @@ StringFormat = new PdfStringFormat() { Alignment = PdfTextAlignment.Right, Chara
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/GroupSummaryStyle.png)
+![GroupSummaryStyle](SfDataGrid_images/PDF/GroupSummaryStyle.png)
 
 ### Customizing Borders
 
@@ -488,7 +488,7 @@ option.GridLineType = GridLineType.Both;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/AllLine.png)
+![Customizing Borders Both](SfDataGrid_images/PDF/AllLine.png)
 
 #### Horizontal
 
@@ -501,7 +501,7 @@ option.GridLineType = GridLineType.Horizontal;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/HorizontalLine.png)
+![Customizing Borders Horizontal](SfDataGrid_images/PDF/HorizontalLine.png)
 
 #### Vertical
 
@@ -514,7 +514,7 @@ option.GridLineType = GridLineType.Vertical;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/VerticalLine.png)
+![Customizing Borders vertical](SfDataGrid_images/PDF/VerticalLine.png)
 
 #### None
 
@@ -527,7 +527,7 @@ option.GridLineType = GridLineType.None;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/NoneLine.png)
+![Customizing Borders None](SfDataGrid_images/PDF/NoneLine.png)
 
 ### ExportAllPages
 
@@ -542,11 +542,11 @@ option.ExportAllPages = true;
 
 * ExportAllPages is true
 
-![](SfDataGrid_images/PDF/ExportAllPage.png)
+![ExportAllPages is true](SfDataGrid_images/PDF/ExportAllPage.png)
 
 * ExportAllPages is false
 
-![](SfDataGrid_images/PDF/CurrentPageExport.png)
+![ExportAllPages is false](SfDataGrid_images/PDF/CurrentPageExport.png)
 
 ### ExportColumnWidth
 
@@ -608,7 +608,7 @@ option.PdfDocument = pdfDocument;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/AllLine.png)
+![PDF Page Orientation Change](SfDataGrid_images/PDF/AllLine.png)
 
 ### Setting Header and Footer
 
@@ -636,7 +636,7 @@ private void pdfExport_HeaderAndFooterExporting(object sender, PdfHeaderFooterEv
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/HeaderFooter.png)
+![Setting Header and Footer](SfDataGrid_images/PDF/HeaderFooter.png)
 
 ## Events
 
@@ -683,7 +683,8 @@ void pdfExport_RowExporting (object sender, DataGridRowPdfExportingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/RowEvent.png)
+![RowExporting](SfDataGrid_images/PDF/RowEvent.png)
+
 
 ### CellExporting
 
@@ -735,7 +736,7 @@ void pdfExport_CellExporting(object sender, DataGridCellPdfExportingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Exporting_img6.png)
+![CellExporting](SfDataGrid_images/Exporting_img6.png)
 
 ## Save a File
 
@@ -877,7 +878,7 @@ private void PdfExport_CellExporting(object sender, DataGridCellPdfExportingEven
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/FontChange.png)
+![Embedding Fonts in PDF File](SfDataGrid_images/PDF/FontChange.png)
 
 ## Customize Cell Values while Exporting
 
@@ -902,7 +903,7 @@ private void PdfExport_CellExporting(object sender, DataGridCellPdfExportingEven
 
 In the following screenshot IsClosed column value has been changed based on the condition.
 
-![](SfDataGrid_images/PDF/CellValueChange.png)
+![Customize Cell Values while Exporting](SfDataGrid_images/PDF/CellValueChange.png)
 
 ## Changing Row Style in PDF Based on Data
 
@@ -928,7 +929,7 @@ private void PdfExport_RowExporting(object sender, DataGridRowPdfExportingEventA
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/RowEvent.png)
+![Changing Row Style in PDF Based on Data](SfDataGrid_images/PDF/RowEvent.png)
 
 ## Customize the Cells based on Column Name
 
@@ -948,7 +949,16 @@ private void PdfExport_CellExporting(object sender, DataGridCellPdfExportingEven
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/PDF/FontChange.png)
+![Customize the Cells based on Column Name](SfDataGrid_images/PDF/FontChange.png)
+
+## Exporting Unbound rows
+
+By default the unbound rows will not be exported to pdf document. However, You can export the unbound rows to PDF by setting the [DataGridPdfExportOption.ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption~ExportUnboundRows.html) property as `true`.
+
+{% highlight c# %}
+DataGridPdfExportOption option = new DataGridPdfExportOption();
+option.ExportUnboundRows = true;
+{% endhighlight %}
 
 ## Exporting Unbound Columns
 
@@ -970,7 +980,7 @@ sfGrid.Columns.Add(unboundColumn);
 
 The following screenshot shows that the unbound column is exported to PDF document along with text columns.
 
-![](SfDataGrid_images/Exporting_img7.png)
+![Exporting Unbound Columns](SfDataGrid_images/Exporting_img7.png)
 
 ## Exporting the selected rows of SfDataGrid
 
@@ -995,4 +1005,4 @@ Refer the below code to export the selected rows alone to the PDF document.
 
 The following screenshot shows that the selected rows are exported to PDF document.
 
-![](SfDataGrid_images/PDF/SelectedItems_ExportToPdf.png)
+![Exporting the selected rows of SfDataGrid](SfDataGrid_images/PDF/SelectedItems_ExportToPdf.png)
