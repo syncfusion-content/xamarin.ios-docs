@@ -97,3 +97,17 @@ The value is updated when you touch or move the thumb/knob.
 {% endhighlight %}
 
 {% endtabs %}
+
+## Value
+
+Gets or sets the range value, which ranges between Minimum and Maximum. The default value of RangeSlider is 0.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	 rangeSlider.Value = 30;
+
+{% endhighlight %}
+
+{% endtabs %}
