@@ -73,7 +73,7 @@ Available options for this property are:
 
 {% endtabs %}
 
-![](images/Value-TopLeft .png)
+![SFRangeSLider Value placement in Xamarin.iOS](images/Value-TopLeft .png)
 
 {% tabs %}
 
@@ -85,7 +85,7 @@ Available options for this property are:
 
 {% endtabs %}
 
-![](images/Value-BottomRight.png)
+![SfRangeSLider BottomRight Value placement in Xamarin.iOS](images/Value-BottomRight.png)
 
 ## Label Placement
 
@@ -127,7 +127,7 @@ The range slider control provides the `Font` property to customize the value tex
  
 {% endhighlight %}
 
-![](images/FontCustomLabel.png)
+![SfRangeSLider custom font in Xamarin.iOS](images/FontCustomLabel.png)
 
 ## Customizing label color
 
