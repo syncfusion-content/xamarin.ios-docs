@@ -22,7 +22,8 @@ The `DragStarted` event is raised when a thumb is dragged. After the thumb relea
 </tr>
 </table>
 
-                                                
+{% tabs %}
+
 {% highlight c# %}
 
 	rangeSlider.DragStarted+=(object sender, DragThumbEventArgs e) =>
@@ -36,12 +37,16 @@ The `DragStarted` event is raised when a thumb is dragged. After the thumb relea
 	};
 
 {% endhighlight %}
-                                    
+
+{% endtabs %}
+
 ## How to trigger ValueChange event?
 
 The `ValueChange` event is triggered when `SfRangeSlider` value is changed. The argument contains the value of RangeSlider.
 
 `Value` - Used to gets or sets the value for range slider.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -52,12 +57,16 @@ The `ValueChange` event is triggered when `SfRangeSlider` value is changed. The 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## How to trigger RangeChange event?
 
 The `RangeChange` event is triggered when either ``RangeStart`` or `RangeEnd` values are changed. The argument contains the following information.
 
 `RangeStart` – Gets or sets the range start value of range slider.
 `RangeEnd` – Gets or sets the range end value of range slider.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -69,9 +78,13 @@ The `RangeChange` event is triggered when either ``RangeStart`` or `RangeEnd` va
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## How to trigger RangeStartChange event?
 
 The `RangeStartChange` event is triggered when `RangeStart` value is changed. The argument contains `RangeStart` value.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -82,9 +95,13 @@ The `RangeStartChange` event is triggered when `RangeStart` value is changed. Th
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## How to trigger RangeEndChange event?
 
 The `RangeEndChange` event is triggered when `RangeEnd` value is changed. The argument contains `RangeEnd` value.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -95,11 +112,15 @@ The `RangeEndChange` event is triggered when `RangeEnd` value is changed. The ar
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## How to trigger ThumbTouchDown event?
 
 The `ThumbTouchDown` event occurs when touching the thumb. The argument contains the state of the thumb.
 
 `IsStartThumb` - Gets the state whether thumb touch down position is start or end. If the thumb touch down position is start, then `IsStartThumb` state is true. If it's end, then `IsStartThumb` state is false. It is a read only property.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -110,9 +131,13 @@ The `ThumbTouchDown` event occurs when touching the thumb. The argument contains
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ## How to trigger ThumbTouchUp event?
 
 `IsStartThumb` - Gets the state whether thumb touch up position is start or end. If the thumb touch up position is start, then `IsStartThumb` state is true. If it's end, then IsStartThumb state is false. It is a read only property.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -122,3 +147,5 @@ The `ThumbTouchDown` event occurs when touching the thumb. The argument contains
         }
 		
 {% endhighlight %}
+
+{% endtabs %}
