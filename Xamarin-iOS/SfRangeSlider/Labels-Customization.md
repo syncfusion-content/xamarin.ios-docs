@@ -128,3 +128,17 @@ The range slider control provides the `Font` property to customize the value tex
 {% endhighlight %}
 
 ![](images/FontCustomLabel.png)
+
+## Customizing label color
+
+The `LabelColor` property used to change the color of the label.
+
+{% tabs %}
+
+{% highlight c# %}
+
+	rangeSlider.Labelcolor = Color.Red;
+
+{% endhighlight %}
+
+{% endtabs %}
