@@ -113,7 +113,7 @@ combobox.DropDownButtonSettings = dropDownButtonSettings;
 
 ![Drop down button customization](images/buttoncustomization.png)
 
-# Set WaterMark 
+# Set watermark text
 
 The watermark text is used to display some information regarding the combo box. This watermark is visible only when the textbox is empty or null. The watermark text disappears when users begins to type or select any item from the dropdown list in the combo box control. 
 
