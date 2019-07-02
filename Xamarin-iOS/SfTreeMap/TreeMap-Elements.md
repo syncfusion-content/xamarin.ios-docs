@@ -33,18 +33,16 @@ You can customize the labels of the legend items using the [`LegendLabel`](https
 
 {% highlight c# %}
 
-    LegendSetting legendSettings = new LegendSetting();
-    legendSettings.IconSize = new Size(15, 15);
-            legendSettings.ShowLegend = true;
-            legendSettings.LegendSize = new Size(700, 45);
-            legendSettings.LabelStyle = new Style() { TextColor = Color.Black };
-            treeMap.LegendSettings = legendSettings;
+    SFLegendSetting legendSetting = new SFLegendSetting();
+            legendSetting.ShowLegend = true;
+            legendSetting.Size = new CoreGraphics.CGSize(500, 45);
+            treeMap.LegendSettings = legendSetting;
 
 {% endhighlight %}
 
 {% endtabs %} 
 
-![Treemap legend](Getting-Started_images/GettingStarted.jpg)
+![Treemap legend](TreeMap_Images/GettingStarted.jpg)
 
 ## Header
 
@@ -54,21 +52,22 @@ You can set headers for each level by setting the [`ShowHeader`](https://help.sy
 
 {% highlight c# %}
 
-          TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+ SFTreeMapFlatLevel flatLevel = new SFTreeMapFlatLevel();
+            flatLevel.GroupBorderColor = UIColor.Gray;
+            flatLevel.GroupBorderWidth = 1;
+            flatLevel.GroupBackground = UIColor.White;
             flatLevel.HeaderHeight = 20;
-            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupPath = (NSString)"Continent";
             flatLevel.GroupGap = 5;
+            flatLevel.HeaderStyle = new SFStyle() { Color = UIColor.Black };
             flatLevel.ShowHeader = true;
-            flatLevel.GroupStrokeColor = Color.Gray;
-            flatLevel.GroupStrokeWidth = 1;
-            flatLevel.HeaderStyle = new Style() { TextColor = Color.Black };
             treeMap.Levels.Add(flatLevel);
 
 {% endhighlight %} 
 
 {% endtabs %} 
 
-![Treemap header](Getting-Started_images/Trim.png)
+![Treemap header](TreeMap_Images/Trim.png)
 
 ## Data labels
 
@@ -78,17 +77,18 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfus
 
 {% highlight c# %}
 
-            LeafItemSetting leafItemSetting = new LeafItemSetting();
-            leafItemSetting.ShowLabels = true;
+            SFLeafItemSetting leafItemSetting = new SFLeafItemSetting();
             leafItemSetting.Gap = 2;
-            leafItemSetting.LabelPath = "Country";
+            leafItemSetting.LabelPath = (NSString)"Region";
+            leafItemSetting.BorderColor = UIColor.FromRGB(169, 217, 247);
+            leafItemSetting.ShowLabels = true;
             treeMap.LeafItemSettings = leafItemSetting;
  
 {% endhighlight %}
 
 {% endtabs %} 
 
-![Providing Visibility for data labels in TreeMap](Getting-Started_images/Trim.png)
+![Providing Visibility for data labels in TreeMap](TreeMap_Images/Trim.png)
 
 ### Avoid overlap in data labels
 
@@ -102,13 +102,13 @@ You can trim the data labels inside the leaf node boundaries using the `Trim` op
 
 {% highlight c# %}
 
-   treeMap.LeafItemSettings.OverflowMode = LabelOverflowMode.Trim;
+   leafItemSetting.OverflowMode = LabelOverflowMode.Trim;
  
 {% endhighlight %}
 
 {% endtabs %}
 
-![Data label trim support in Xamarin.Forms TreeMap](Getting-Started_images/Trim.png)
+![Data label trim support in Xamarin.Forms TreeMap](TreeMap_Images/Trim.png)
 
 #### Wrap
 
@@ -118,13 +118,13 @@ You can wrap the data labels inside the leaf node boundaries using the `Wrap` op
 
 {% highlight c# %}
 
-    treeMap.LeafItemSettings.OverflowMode = LabelOverflowMode.Wrap;
+    leafItemSetting.OverflowMode = LabelOverflowMode.Wrap;
  
 {% endhighlight %}
 
 {% endtabs %}
 
-![Data label wrap support in Xamarin.Forms TreeMap](Getting-Started_images/Wrap.png)
+![Data label wrap support in Xamarin.Forms TreeMap](TreeMap_Images/Wrap.png)
 
 #### Hide
 
@@ -134,13 +134,13 @@ You can hide the data labels inside the leaf node boundaries using the `Hide` op
 
 {% highlight c# %}
 
-   treeMap.LeafItemSettings.OverflowMode = LabelOverflowMode.Hide;
+  leafItemSetting.OverflowMode = LabelOverflowMode.Hide;
  
 {% endhighlight %}
 
 {% endtabs %}
 
-![Data label hide support in TreeMap](Getting-Started_images/Hide.png)
+![Data label hide support in TreeMap](TreeMap_Images/Hide.png)
 
 ### Customize data labels
 
@@ -150,11 +150,11 @@ You can customize the data labels using the [`LabelStyle`](https://help.syncfusi
 
 {% highlight c# %}
 
-         treeMap.LeafItemSettings.LabelStyle = new Style() { TextColor = Color.Red, TextSize = 12 };
+          leafItemSetting.LabelStyle = new SFStyle() { Color = UIColor.Red, Font = UIFont.SystemFontOfSize(15) };
  
 {% endhighlight %}
 
 {% endtabs %}
 
-![Customizing the data labels support in TreeMap ](Getting-Started_images/LabelCustomization.png)
+![Customizing the data labels support in TreeMap ](TreeMap_Images/LabelStyle.png)
 

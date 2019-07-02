@@ -145,7 +145,7 @@ You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](ht
 {% endtabs %} 
 
 
-![Tooltip](TreeMapLevels_images/Tooltip.png)
+![Tooltip](TreeMap_Images/Tooltip.png)
 
 ### Tooltip customization
 
@@ -218,7 +218,7 @@ Refer the below code snippet for defining the custom tooltip.
 
 {% endtabs %}  
 
-![CustomTooltip](TreeMapLevels_images/CustomTooltip.png)
+![CustomTooltip](TreeMap_Images/CustomTooltip.png)
 
 ## Selection
 
@@ -236,4 +236,4 @@ The TreeMap control provides selection support, which allows you to select the t
 
 {% endtabs %}  
 
-![Selection](Getting-Started_images/Selection.png)
+![Selection](TreeMap_Images/Selection.png)

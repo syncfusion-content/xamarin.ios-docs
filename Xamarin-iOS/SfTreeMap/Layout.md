@@ -26,13 +26,13 @@ The **Squarified** layout creates rectangles with best aspect ratio.
 
 {% highlight C# %} 
       
-    treeMap.LayoutType = Com.Syncfusion.Treemap.Enums.LayoutType.Squarified;
+    treeMap.LayoutType = SFTreeMapLayoutType.SFTreeMapLayoutTypeSquarified;
 
 {% endhighlight %}
 
 {% endtabs %}  
 
-![Squarified layout](Getting-Started_images/Squarified.png)
+![Squarified layout](TreeMap_Images/Squarified.png)
 
 ## SliceAndDiceAuto
 
@@ -42,13 +42,13 @@ The **SliceAndDiceAuto** layout creates rectangles with high aspect ratio and di
 
 {% highlight C# %} 
 
-   treeMap.LayoutType = Com.Syncfusion.Treemap.Enums.LayoutType.SliceAndDiceAuto;
+   treeMap.LayoutType = SFTreeMapLayoutType.SFTreeMapLayoutTypeSliceAndDiceAuto;
 
 {% endhighlight %}
 
 {% endtabs %}  
 
-![SliceAndDiceAuto layout](Getting-Started_images/SliceAndDiceAuto.png)
+![SliceAndDiceAuto layout](TreeMap_Images/SliceAndDiceAuto.png)
 
 ## SliceAndDiceHorizontal
 
@@ -58,13 +58,13 @@ The **SliceAndDiceHorizontal** layout creates rectangles with high aspect ratio 
 
 {% highlight C# %} 
 
-       treeMap.LayoutType = Com.Syncfusion.Treemap.Enums.LayoutType.SliceAndDiceHorizontal;
+       treeMap.LayoutType = SFTreeMapLayoutType.SFTreeMapLayoutTypeSliceAndDiceHorizontal;
 
 {% endhighlight %}
 
 {% endtabs %}  
 
-![SliceAndDiceHorizontal layout](Getting-Started_images/SliceAndDiceHorizontal.png)
+![SliceAndDiceHorizontal layout](TreeMap_Images/Horizontal.png)
 
 ## SliceAndDiceVertical
 
@@ -74,13 +74,13 @@ The **SliceAndDiceVertical** layout creates rectangles with high aspect ratio an
 
 {% highlight C# %} 
 
-      treeMap.LayoutType = Com.Syncfusion.Treemap.Enums.LayoutType.SliceAndDiceVertical;
+      treeMap.LayoutType = SFTreeMapLayoutType.SFTreeMapLayoutTypeSliceAndDiceVertical;
 
 {% endhighlight %}
 
 {% endtabs %}  
 
-![SliceAndDiceVertical layout](Getting-Started_images/SliceAndDiceVertical.png)
+![SliceAndDiceVertical layout](TreeMap_Images/Vertical.png)
 
 The following is the complete code for squarified layout type.
 
@@ -88,69 +88,76 @@ The following is the complete code for squarified layout type.
 
 {% highlight C# %} 
 
-     SfTreeMap treeMap = new SfTreeMap(this);
-            treeMap.ColorValuePath = "Growth";
-            treeMap.WeightValuePath = "Population";
-            treeMap.LayoutType = Com.Syncfusion.Treemap.Enums.LayoutType.Squarified;
-            treeMap.ShowTooltip = true;
-           
-            LeafItemSetting leafItemSetting = new LeafItemSetting();
-            leafItemSetting.ShowLabels = true;
-            leafItemSetting.Gap = 2;
-            leafItemSetting.LabelPath = "Country";
-            treeMap.LeafItemSettings = leafItemSetting;
+            SFTreeMap treeMap = new SFTreeMap();
+          
+            treeMap.WeightValuePath = (NSString)"Population";
+            treeMap.ColorValuePath = (NSString)"Growth";
+            treeMap.LayoutType = SFTreeMapLayoutType.SFTreeMapLayoutTypeSquarified;
 
-            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            SFTreeMapFlatLevel flatLevel = new SFTreeMapFlatLevel();
+            flatLevel.GroupBorderColor = UIColor.Gray;
+            flatLevel.GroupBorderWidth = 1;
+            flatLevel.GroupBackground = UIColor.White;
             flatLevel.HeaderHeight = 20;
-            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupPath = (NSString)"Continent";
             flatLevel.GroupGap = 5;
+            flatLevel.HeaderStyle = new SFStyle() { Color = UIColor.Black };
             flatLevel.ShowHeader = true;
-            flatLevel.GroupStrokeColor = Color.Gray;
-            flatLevel.GroupStrokeWidth = 1;
-            flatLevel.HeaderStyle = new Style() { TextColor = Color.Black };
             treeMap.Levels.Add(flatLevel);
 
-            LegendSetting legendSettings = new LegendSetting();
-            legendSettings.ShowLegend = true;
-            legendSettings.LegendSize = new Size(700, 45);
-            legendSettings.LabelStyle = new Style() { TextColor = Color.Black };
-            treeMap.LegendSettings = legendSettings;
+            SFLeafItemSetting leafItemSetting = new SFLeafItemSetting();
+            leafItemSetting.Gap = 2;
+            leafItemSetting.LabelPath = (NSString)"Region";
+            leafItemSetting.BorderColor = UIColor.FromRGB(169, 217, 247);
+            leafItemSetting.ShowLabels = true;
+            treeMap.LeafItemSettings = leafItemSetting;
 
-            RangeColorMapping rangeColorMapping = new RangeColorMapping();
+            SFRangeColorMapping colorMapping = new SFRangeColorMapping();
 
-            Range range1 = new Range();
+            SFRange range1 = new SFRange();
+            range1.LegendLabel = (NSString)"1 % Growth";
             range1.From = 0;
             range1.To = 1;
-            range1.Color = Color.ParseColor("#77D8D8");
-            range1.LegendLabel = "1 % Growth";
+            range1.Color = UIColor.FromRGB(119, 216, 216);
 
-            Range range2 = new Range();
+            SFRange range2 = new SFRange();
+            range2.LegendLabel = (NSString)"2 % Growth";
             range2.From = 0;
             range2.To = 2;
-            range2.Color = Color.ParseColor("#AED960");
-            range2.LegendLabel = "2 % Growth";
+            range2.Color = UIColor.FromRGB(174, 217, 96);
 
-            Range range3 = new Range();
+            SFRange range3 = new SFRange();
+            range3.LegendLabel = (NSString)"3 % Growth";
             range3.From = 0;
             range3.To = 3;
-            range3.Color = Color.ParseColor("#FFAF51");
-            range3.LegendLabel = "3 % Growth";
+            range3.Color = UIColor.FromRGB(255, 175, 81);
 
-            Range range4 = new Range();
+            SFRange range4 = new SFRange();
+            range4.LegendLabel = (NSString)"4 % Growth";
             range4.From = 0;
             range4.To = 4;
-            range4.Color = Color.ParseColor("#F3D240");
-            range4.LegendLabel = "4 % Growth";
+            range4.Color = UIColor.FromRGB(243, 210, 64);
 
-            rangeColorMapping.Ranges.Add(range1);
-            rangeColorMapping.Ranges.Add(range2);
-            rangeColorMapping.Ranges.Add(range3);
-            rangeColorMapping.Ranges.Add(range4);
+            colorMapping.Ranges.Add(range1);
+            colorMapping.Ranges.Add(range2);
+            colorMapping.Ranges.Add(range3);
+            colorMapping.Ranges.Add(range4);
 
-            treeMap.LeafItemColorMapping = rangeColorMapping;
-            treeMap.DataSource = GetDataSource();
-            SetContentView(treeMap);
+            treeMap.LeafItemColorMapping = colorMapping;
 
+            SFLegendSetting legendSetting = new SFLegendSetting();
+            legendSetting.ShowLegend = true;
+            legendSetting.Size = new CoreGraphics.CGSize(500, 45);
+            treeMap.LegendSettings = legendSetting;
+
+            GetPopulationData();
+            treeMap.DataSource = PopulationDetails;
+            treeMap.ShowTooltip = true;
+            treeMap.Frame = new CoreGraphics.CGRect(View.Frame.Left, View.Frame.Top + 50, View.Frame.Width, View.Frame.Height - 100);
+
+            this.View.Add(treeMap);
+
+    
 {% endhighlight %}
 
 {% endtabs %}  
