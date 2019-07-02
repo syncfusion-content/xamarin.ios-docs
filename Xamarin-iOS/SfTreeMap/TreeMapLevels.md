@@ -24,74 +24,81 @@ You can use the [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 You can use the [`GroupGap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel~GroupGap.html) property to separate items from every flat level and differentiate the levels mentioned in the TreeMap control.
 
+The following code snippet explains the tree map flat level.
+
 {% tabs %}  
 
 {% highlight C# %}  
 
-  SfTreeMap treeMap = new SfTreeMap(this);
-            treeMap.ColorValuePath = "Growth";
-            treeMap.WeightValuePath = "Population";
-            treeMap.LayoutType = Com.Syncfusion.Treemap.Enums.LayoutType.Squarified;
-            treeMap.ShowTooltip = true;
+  SFTreeMap treeMap = new SFTreeMap();
+         
+            treeMap.WeightValuePath = (NSString)"Population";
+            treeMap.ColorValuePath = (NSString)"Growth";
+            treeMap.LayoutType = SFTreeMapLayoutType.SFTreeMapLayoutTypeSquarified;
 
-            LeafItemSetting leafItemSetting = new LeafItemSetting();
-            leafItemSetting.ShowLabels = true;
-            leafItemSetting.Gap = 2;
-            leafItemSetting.LabelPath = "Country";
-            treeMap.LeafItemSettings = leafItemSetting;
-
-            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            SFTreeMapFlatLevel flatLevel = new SFTreeMapFlatLevel();
+            flatLevel.GroupBorderColor = UIColor.Gray;
+            flatLevel.GroupBorderWidth = 1;
+            flatLevel.GroupBackground = UIColor.White;
             flatLevel.HeaderHeight = 20;
-            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupPath = (NSString)"Continent";
             flatLevel.GroupGap = 5;
+            flatLevel.HeaderStyle = new SFStyle() { Color = UIColor.Black };
             flatLevel.ShowHeader = true;
-            flatLevel.GroupStrokeColor = Color.Gray;
-            flatLevel.GroupStrokeWidth = 1;
-            flatLevel.HeaderStyle = new Style() { TextColor = Color.Black };
             treeMap.Levels.Add(flatLevel);
 
-            LegendSetting legendSettings = new LegendSetting();
-            legendSettings.ShowLegend = true;
-            legendSettings.LegendSize = new Size(700, 45);
-            legendSettings.LabelStyle = new Style() { TextColor = Color.Black };
-            treeMap.LegendSettings = legendSettings;
+            SFLeafItemSetting leafItemSetting = new SFLeafItemSetting();
+            leafItemSetting.Gap = 2;
+            leafItemSetting.LabelPath = (NSString)"Region";
+            leafItemSetting.BorderColor = UIColor.FromRGB(169, 217, 247);
+            leafItemSetting.ShowLabels = true;
+            leafItemSetting.OverflowMode = LabelOverflowMode.Trim;
+            treeMap.LeafItemSettings = leafItemSetting;
 
-            RangeColorMapping rangeColorMapping = new RangeColorMapping();
+            SFRangeColorMapping colorMapping = new SFRangeColorMapping();
 
-            Range range1 = new Range();
+            SFRange range1 = new SFRange();
+            range1.LegendLabel = (NSString)"1 % Growth";
             range1.From = 0;
             range1.To = 1;
-            range1.Color = Color.ParseColor("#77D8D8");
-            range1.LegendLabel = "1 % Growth";
+            range1.Color = UIColor.FromRGB(119, 216, 216);
 
-            Range range2 = new Range();
+            SFRange range2 = new SFRange();
+            range2.LegendLabel = (NSString)"2 % Growth";
             range2.From = 0;
             range2.To = 2;
-            range2.Color = Color.ParseColor("#AED960");
-            range2.LegendLabel = "2 % Growth";
+            range2.Color = UIColor.FromRGB(174, 217, 96);
 
-            Range range3 = new Range();
+            SFRange range3 = new SFRange();
+            range3.LegendLabel = (NSString)"3 % Growth";
             range3.From = 0;
             range3.To = 3;
-            range3.Color = Color.ParseColor("#FFAF51");
-            range3.LegendLabel = "3 % Growth";
+            range3.Color = UIColor.FromRGB(255, 175, 81);
 
-            Range range4 = new Range();
+            SFRange range4 = new SFRange();
+            range4.LegendLabel = (NSString)"4 % Growth";
             range4.From = 0;
             range4.To = 4;
-            range4.Color = Color.ParseColor("#F3D240");
-            range4.LegendLabel = "4 % Growth";
+            range4.Color = UIColor.FromRGB(243, 210, 64);
 
-            rangeColorMapping.Ranges.Add(range1);
-            rangeColorMapping.Ranges.Add(range2);
-            rangeColorMapping.Ranges.Add(range3);
-            rangeColorMapping.Ranges.Add(range4);
+            colorMapping.Ranges.Add(range1);
+            colorMapping.Ranges.Add(range2);
+            colorMapping.Ranges.Add(range3);
+            colorMapping.Ranges.Add(range4);
 
-            treeMap.LeafItemColorMapping = rangeColorMapping;
-            treeMap.DataSource = GetDataSource();
+            treeMap.LeafItemColorMapping = colorMapping;
 
-            SetContentView(treeMap);
+            SFLegendSetting legendSetting = new SFLegendSetting();
+            legendSetting.ShowLegend = true;
+            legendSetting.Size = new CoreGraphics.CGSize(500, 45);
+            treeMap.LegendSettings = legendSetting;
 
+            GetPopulationData();
+            treeMap.DataSource = PopulationDetails;
+            treeMap.ShowTooltip = true;
+            treeMap.Frame = new CoreGraphics.CGRect(View.Frame.Left, View.Frame.Top + 50, View.Frame.Width, View.Frame.Height - 100);
+
+            this.View.Add(treeMap);
 
 {% endhighlight %}
 
@@ -101,45 +108,48 @@ You can use the [`GroupGap`](https://help.syncfusion.com/cr/cref_files/xamarin-i
 
 ## Hierarchical Level
 
-Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data.
+Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data. The following code snippet explains the hierarchical data.
 
 {% tabs %}  
 
 {% highlight C# %}  
 
-SfTreeMap treeMap = new SfTreeMap(this);
-            treeMap.WeightValuePath = "Sales";
-           
-            DesaturationColorMapping colorMapping = new DesaturationColorMapping();
-            colorMapping.Color = Color.ParseColor("#41B8C4");
-            colorMapping.From = 1;
-            colorMapping.To = 0.2;
-            treeMap.ColorValuePath = "Expense";
-            treeMap.LeafItemColorMapping = colorMapping;
+ SFTreeMap treeMap = new SFTreeMap();
+            treeMap.WeightValuePath = (NSString)"Sales";
 
-            TreeMapHierarchicalLevel level = new TreeMapHierarchicalLevel();
-            level.ChildPadding = 4;
-            level.ShowHeader = true;
-            level.HeaderHeight = 20;
-            level.HeaderPath = "Name";
-            level.ChildStrokeColor = Color.Gray;
-            level.ChildStrokeWidth = 1;
-            level.ChildPath = "RegionalSales";
-            level.HeaderStyle = new Style() { TextColor = Color.Gray, TextSize = 16 };           
-            level.ChildBackgroundColor = Color.White;
+            SFLeafItemSetting leafItemSetting = new SFLeafItemSetting();
+            leafItemSetting.Gap = 2;
+            leafItemSetting.LabelPath = (NSString)"Name";
+            leafItemSetting.BorderColor = UIColor.FromRGB(169, 217, 247);
+            leafItemSetting.ShowLabels = true;
+            treeMap.LeafItemSettings = leafItemSetting;
+
+            SFTreeMapHierarchicalLevel level = new SFTreeMapHierarchicalLevel()
+            {
+                ChildPadding = 4,
+                HeaderStyle = new SFStyle() { Color = UIColor.Black },
+                ShowHeader = true,
+                HeaderHeight = 20,
+                HeaderPath = (NSString)"Name",
+                ChildPath = (NSString)"RegionalSales"
+            };
+
             treeMap.Levels.Add(level);
 
-            LeafItemSetting leafItemSetting = new LeafItemSetting();
-            leafItemSetting.ShowLabels = true;
-            leafItemSetting.Gap = 5;
-            leafItemSetting.StrokeColor = Color.White;
-            leafItemSetting.StrokeWidth = 2;
-            leafItemSetting.LabelStyle = new Style() { TextColor = Color.White };
-            leafItemSetting.LabelPath = "Name";
-            treeMap.LeafItemSettings = leafItemSetting;
-                      
-            treeMap.DataSource = GetDataSource();
-            SetContentView(treeMap);
+            SFDesaturationColorMapping colorMapping = new SFDesaturationColorMapping();
+            colorMapping.Color = UIColor.FromRGB(0x41, 0xB8, 0xC4);
+            colorMapping.From = 1;
+            colorMapping.To = 0.2f;
+            treeMap.ColorValuePath = (NSString)"Expense";
+            treeMap.LeafItemColorMapping = colorMapping;
+
+            GetPopulationData();
+            treeMap.DataSource = PopulationDetails;
+            treeMap.ShowTooltip = true;
+
+            treeMap.Frame = new CoreGraphics.CGRect(View.Frame.Left, View.Frame.Top + 50, View.Frame.Width, View.Frame.Height - 100);// this.View.Frame;
+
+            this.View.Add(treeMap);
   
 {% endhighlight %}
 
@@ -151,52 +161,75 @@ Below code snippet explains the underlying hierarchical data model
 
 {% highlight C# %} 
 
-        JSONArray GetDataSource()
+        public NSMutableArray PopulationDetails
         {
-            JSONArray regional1 = new JSONArray();
-            regional1.Put(getJsonObject1("United States", "New York", 2353, 2000));
-            regional1.Put(getJsonObject1("United States", "Los Angeles", 3453, 3000));
-            regional1.Put(getJsonObject1("United States", "San Francisco", 8456, 8000));
-            regional1.Put(getJsonObject1("United States", "Chicago", 6785, 7000));
-            regional1.Put(getJsonObject1("United States", "Miami", 7045, 6000));
-
-            JSONArray regional2 = new JSONArray();
-            regional2.Put(getJsonObject1("Canada", "Toronto", 7045, 7000));
-            regional2.Put(getJsonObject1("Canada", "Vancouver", 4352, 4000));
-            regional2.Put(getJsonObject1("Canada", "Winnipeg", 7843, 7500));
-
-            JSONArray regional3 = new JSONArray();
-            regional3.Put(getJsonObject1("Mexico", "Mexico City", 7843, 6500));
-            regional3.Put(getJsonObject1("Mexico", "Cancun", 6683, 6000));
-            regional3.Put(getJsonObject1("Mexico", "Acapulco", 2454, 2000));
-
-            JSONArray array = new JSONArray();
-            array.Put(getJsonObject("United States", 98456, 87000, regional1));
-            array.Put(getJsonObject("Canada", 43523, 40000, regional2));
-            array.Put(getJsonObject("Mexico", 45634, 46000, regional3));
-
-            return array;
+            get;
+            set;
         }
 
-        JSONObject getJsonObject(String name, double expense, double sales, JSONArray regionalSale)
+        void GetPopulationData()
         {
-            JSONObject obj = new JSONObject();
-            obj.Put("Name", name);
-            obj.Put("Expense", expense);
-            obj.Put("Sales", sales);
-            obj.Put("RegionalSales", regionalSale);
-            return obj;
+            NSMutableArray array = new NSMutableArray();
+
+            NSMutableArray regional1 = new NSMutableArray();
+            regional1.Add(getDictionary("United States", "New York", 2353, 2000));
+            regional1.Add(getDictionary("United States", "Los Angeles", 3453, 3000));
+            regional1.Add(getDictionary("United States", "San Francisco", 8456, 8000));
+            regional1.Add(getDictionary("United States", "Chicago", 6785, 7000));
+            regional1.Add(getDictionary("United States", "Miami", 7045, 6000));
+
+            NSMutableArray regional2 = new NSMutableArray();
+            regional2.Add(getDictionary("Canada", "Toronto", 7045, 7000));
+            regional2.Add(getDictionary("Canada", "Vancouver", 4352, 4000));
+            regional2.Add(getDictionary("Canada", "Winnipeg", 7843, 7500));
+
+
+            NSMutableArray regional3 = new NSMutableArray();
+            regional3.Add(getDictionary("Mexico", "Mexico City", 7843, 6500));
+            regional3.Add(getDictionary("Mexico", "Cancun", 6683, 6000));
+            regional3.Add(getDictionary("Mexico", "Acapulco", 2454, 2000));
+
+
+            array.Add(getDictionary1("United States", 98456, 87000, regional1));
+            array.Add(getDictionary1("Canada", 43523, 40000, regional2));
+            array.Add(getDictionary1("Mexico", 45634, 46000, regional3));
+            PopulationDetails = array;
+
         }
 
-        JSONObject getJsonObject1(String country, String name, double expense, double sales)
+        NSDictionary getDictionary1(string name, double expense, double sales, NSMutableArray regionalSales)
         {
-            JSONObject obj = new JSONObject();
-            obj.Put("Country", country);
-            obj.Put("Name", name);
-            obj.Put("Expense", expense);
-            obj.Put("Sales", sales);
-            return obj;
+
+            object[] objects = new object[4];
+            object[] keys = new object[4];
+            keys.SetValue("Name", 0);
+            keys.SetValue("Expense", 1);
+            keys.SetValue("Sales", 2);
+            keys.SetValue("RegionalSales", 3);
+            objects.SetValue((NSString)name, 0);
+            objects.SetValue(expense, 1);
+            objects.SetValue(sales, 2);
+            objects.SetValue(regionalSales, 3);
+            return NSDictionary.FromObjectsAndKeys(objects, keys);
         }
+
+
+        NSDictionary getDictionary(string country, string name, double expense, double sales)
+        {
+
+            object[] objects = new object[4];
+            object[] keys = new object[4];
+            keys.SetValue("Country", 0);
+            keys.SetValue("Name", 1);
+            keys.SetValue("Expense", 2);
+            keys.SetValue("Sales", 3);
+            objects.SetValue((NSString)country, 0);
+            objects.SetValue((NSString)name, 1);
+            objects.SetValue(expense, 2);
+            objects.SetValue(sales, 3);
+            return NSDictionary.FromObjectsAndKeys(objects, keys);
+        }
+
 
 {% endhighlight %}
 

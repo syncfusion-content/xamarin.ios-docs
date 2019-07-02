@@ -2,7 +2,7 @@
 layout: post
 title: ItemSelected Event in Syncfusion SfTreeMap control
 description: This section explains the ItemSelected event support in TreeMap. 
-platform: Xamarin.Android
+platform: Xamarin.iOS
 control: TreeMap
 documentation: ug
 ---
@@ -19,13 +19,13 @@ Set the [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/xamar
 
 {% highlight C# %}
 
-treeMap.HighlightOnSelection = true;
+treeMap.HightlightOnSelection = true;
 
 treeMap.ItemSelected += TreeMap_ItemSelected;
 
-private void TreeMap_ItemSelected(object sender, TreeMapSelectedEventArgs e)
+  void TreeMap_ItemSelected(object sender, TreeMapItemSelectedEventArgs e)
         {
-           
+
         }
 
 {% endhighlight %}
