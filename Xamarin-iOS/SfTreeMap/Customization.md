@@ -155,9 +155,9 @@ Tooltip can be customized by inheriting the [`TooltipSetting`](https://help.sync
 
 {% highlight C# %} 
 
-treeMap.ShowTooltip = true;
-            CustomTooltipSetting tooltip = new CustomTooltipSetting(this);
-            treeMap.TooltipSettings = tooltip;
+ treeMap.ShowTooltip = true;
+            CustomTooltipSetting tooltipSetting = new CustomTooltipSetting();
+            treeMap.TooltipSettings = tooltipSetting;
 
 {% endhighlight %}
 
@@ -169,47 +169,48 @@ Refer the below code snippet for defining the custom tooltip.
 
 {% highlight C# %} 
 
-public class CustomTooltipSetting : TooltipSetting
+  public class CustomTooltipSetting : TooltipSetting
     {
-        Context context;
-        public CustomTooltipSetting(Context con)
+        public CustomTooltipSetting()
         {
-            context = con;
+
         }
-
-        public override View GetView(object data, Context context)
+        public override UIView GetView(object shapeData)
         {
-            LinearLayout layout = new LinearLayout(context);
-            LinearLayout.LayoutParams linearlayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WrapContent,
-                    LinearLayout.LayoutParams.WrapContent);
-            layout.Orientation = Orientation.Vertical;
-            layout.LayoutParameters = linearlayoutParams;
-            layout.SetGravity(GravityFlags.CenterHorizontal);
+            NSArray array = (NSArray)shapeData;
+            NSDictionary dic = new NSDictionary();
 
-            TextView topLabel = new TextView(context);
-            topLabel.Text = ((JSONObject)data).GetString("Country");
-            topLabel.TextSize = 12;
-            topLabel.SetTextColor(Color.ParseColor("#FFFFFF"));
-            topLabel.Gravity = GravityFlags.CenterHorizontal;
+            for (nuint i = 0; i < array.Count; i++)
+            {
+                dic = array.GetItem<NSDictionary>(i);
+            }
+            UIView view = new UIView();
+            NSString topText = (NSString)(dic["Region"]);
+            NSString bottomText = (NSString)(dic["Growth"].ToString() + "%");
 
-            TextView SplitLine = new TextView(context);
-            SplitLine.Text = "-------";
-            SplitLine.SetTextColor(Color.Gray);
-            SplitLine.Gravity = GravityFlags.CenterHorizontal;
+            UILabel topLabel = new UILabel();
+            topLabel.Text = topText;
+            topLabel.Font = UIFont.SystemFontOfSize(12);
+            topLabel.TextColor = UIColor.White;
+            topLabel.TextAlignment = UITextAlignment.Center;
 
+            UILabel bottomLabel = new UILabel();
+            bottomLabel.Text = bottomText;
+            bottomLabel.Font = UIFont.SystemFontOfSize(12);
+            bottomLabel.TextColor = UIColor.White;
+            bottomLabel.TextAlignment = UITextAlignment.Center;
 
-            TextView bottoLabel = new TextView(context);
-            var growth = ((JSONObject)data).GetDouble("Growth");
-            bottoLabel.Text = ((int)growth).ToString() + "%";
-            bottoLabel.TextSize = 12;
-            bottoLabel.SetTextColor(Color.ParseColor("#FFFFFF"));
-            bottoLabel.Gravity = GravityFlags.CenterHorizontal;
+            view.AddSubview(topLabel);
+            view.AddSubview(bottomLabel);
 
-            layout.AddView(topLabel);
-            layout.AddView(SplitLine);
-            layout.AddView(bottoLabel);
+            CGSize expectedLabelSize1 = topText.GetSizeUsingAttributes(new UIStringAttributes() { Font = topLabel.Font });
+            CGSize expectedLabelSize2 = bottomText.GetSizeUsingAttributes(new UIStringAttributes() { Font = bottomLabel.Font });
 
-            return layout;
+            view.Frame = new CGRect(0.0f, 0.0f, Math.Max(expectedLabelSize1.Width, expectedLabelSize2.Width), 35.0f);
+            topLabel.Frame = new CGRect(0.0f, 0.0f, Math.Max(expectedLabelSize1.Width, expectedLabelSize2.Width), 15.0f);
+            bottomLabel.Frame = new CGRect(0.0f, 20.0f, Math.Max(expectedLabelSize1.Width, expectedLabelSize2.Width), 15.0f);
+
+            return view;
         }
     }
 
@@ -227,148 +228,12 @@ The TreeMap control provides selection support, which allows you to select the t
 
 {% highlight C# %} 
 
- treeMap.HighlightOnSelection = true;
-            treeMap.HighlightStrokeColor = Color.Red;
-            treeMap.HighlightStrokeWidth = 8;
+  treeMap.HightlightOnSelection = true;
+            treeMap.HighlightColor = UIColor.Red;
+            treeMap.HighlightBorderWidth = 8;
 
 {% endhighlight %}
 
 {% endtabs %}  
 
 ![Selection](Getting-Started_images/Selection.png)
-
-## Item customization
-
-Treemap control provides support to customize the items which allows any type of custom view to replace the item.
-To achieve this derive a class from [`TreeMapAdapter`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.TreeMapAdapter.html) and override the GetTreeMapItemView method and return the needed custom view as in the below snippet.
-
-{% tabs %} 
-
-{% highlight C# %} 
-
- public class CustomAdapter: TreeMapAdapter
-    {
-        Context context;
-        public CustomAdapter(Context con)
-        {
-            context = con;
-        }
-        public override View GetTreeMapItemView(TreeMapItem item)
-        {
-            LinearLayout layout = new LinearLayout(context);
-            layout.SetBackgroundColor(Color.Red);
-            LinearLayout.LayoutParams linearlayoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WrapContent,
-                    LinearLayout.LayoutParams.WrapContent);
-            layout.Orientation = Orientation.Vertical;
-            layout.LayoutParameters = linearlayoutParams;
-            layout.SetGravity(GravityFlags.CenterHorizontal);
-
-            TextView topLabel = new TextView(context);
-            topLabel.Text = item.Label;
-            topLabel.TextSize = 12;
-            topLabel.SetTextColor(Color.ParseColor("#FFFFFF"));
-            topLabel.Gravity = GravityFlags.Left;            
-
-            ImageView imageView = new ImageView(context);           
-            if (item.Label == "Archery")
-                imageView.SetImageResource(Resource.Drawable.Archery);
-            else if(item.Label == "Boxing")
-                imageView.SetImageResource(Resource.Drawable.Boxing);
-            else if (item.Label == "Cycling")
-                imageView.SetImageResource(Resource.Drawable.Cycling);
-            else if (item.Label == "Diving")
-                imageView.SetImageResource(Resource.Drawable.Diving);
-            else if (item.Label == "Gymnastics")
-                imageView.SetImageResource(Resource.Drawable.Gymnastics);
-            else if (item.Label == "Shooting")
-                imageView.SetImageResource(Resource.Drawable.Shooting);
-
-            else if (item.Label == "Soccer")
-                imageView.SetImageResource(Resource.Drawable.Soccer);
-            else if (item.Label == "Swimming")
-                imageView.SetImageResource(Resource.Drawable.Swimming);
-            else if (item.Label == "Track and Field")
-                imageView.SetImageResource(Resource.Drawable.TrackAndField);
-            else if (item.Label == "Wrestling")
-                imageView.SetImageResource(Resource.Drawable.Wrestling);
-
-            layout.AddView(topLabel);
-            layout.AddView(imageView);
-           
-            return layout;
-
-        }
-    }
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-Set the custom view to the tree map item as per the below code snippet.
-
-{% tabs %} 
-
-{% highlight C# %} 
-
-SfTreeMap treeMap = new SfTreeMap(this);
-            treeMap.ColorValuePath = "TotalMedals";
-            treeMap.WeightValuePath = "TotalMedals";
-            treeMap.LayoutType = Com.Syncfusion.Treemap.Enums.LayoutType.Squarified;          
-
-            LeafItemSetting leafItemSetting = new LeafItemSetting();
-            leafItemSetting.ShowLabels = false;
-            leafItemSetting.Gap = 2;
-            leafItemSetting.LabelPath = "GameName";
-            treeMap.LeafItemSettings = leafItemSetting;
-
-            treeMap.DataSource = GetDataSource();
-            CustomAdapter customAdapter = new CustomAdapter(this);
-            treeMap.Adapter = customAdapter;
-            SetContentView(treeMap);
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-Refer the below code snippet for the under bound data of tree map item customization.
-
-{% tabs %} 
-
-{% highlight C# %} 
-
-JSONArray GetDataSource()
-        {
-            JSONArray array = new JSONArray();
-            array.Put(getJsonObject("US", "Swimming", 16, 9, 6, 31, "Swimming.png"));
-            array.Put(getJsonObject("US", "Track and Field", 9, 13, 7, 29, "TrackAndField.png"));
-            array.Put(getJsonObject("US", "Gymnastics", 3, 1, 2, 6, "Gymnastics.png"));
-            array.Put(getJsonObject("US", "Boxing", 1, 0, 1, 2, "Boxing.png"));
-
-            array.Put(getJsonObject("US", "Cycling", 1, 2, 1, 4, "Cycling.png"));
-            array.Put(getJsonObject("US", "Shooting", 3, 0, 1, 4, "Shooting.png"));
-            array.Put(getJsonObject("US", "Wrestling", 2, 0, 2, 4, "Wrestling.png"));
-            array.Put(getJsonObject("US", "Diving", 1, 1, 2, 4, "Diving.png"));
-            return array;
-        }
-
-        JSONObject getJsonObject(string country, string gameName, double goldMedals, double silverMedals,
-            double bronzeMedals, double totalMedals, string imageName)
-        {
-            JSONObject obj = new JSONObject();
-
-            obj.Put("Country", country);
-            obj.Put("GameName", gameName);
-            obj.Put("GoldMedals", goldMedals);
-            obj.Put("SilverMedals", silverMedals);
-            obj.Put("BronzeMedals", bronzeMedals);
-            obj.Put("TotalMedals", totalMedals);
-            obj.Put("ImageName", imageName);
-            return obj;
-
-        }
-
-{% endhighlight %}
-
-{% endtabs %}  
-
-![ItemTemplate](TreeMapLevels_images/ItemCustomization.png)

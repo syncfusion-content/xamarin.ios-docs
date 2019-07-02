@@ -162,38 +162,38 @@ You can differentiate the nodes based on their values and colors using [`RangeCo
 
 {% highlight c# %}
 
-RangeColorMapping rangeColorMapping = new RangeColorMapping();
+SFRangeColorMapping colorMapping = new SFRangeColorMapping();
 
-            Range range1 = new Range();
+            SFRange range1 = new SFRange();
+            range1.LegendLabel = (NSString)"1 % Growth";
             range1.From = 0;
             range1.To = 1;
-            range1.Color = Color.ParseColor("#77D8D8");
-            range1.LegendLabel = "1 % Growth";
+            range1.Color = UIColor.FromRGB(119, 216, 216);
 
-            Range range2 = new Range();
+            SFRange range2 = new SFRange();
+            range2.LegendLabel = (NSString)"2 % Growth";
             range2.From = 0;
             range2.To = 2;
-            range2.Color = Color.ParseColor("#AED960");
-            range2.LegendLabel = "2 % Growth";
+            range2.Color = UIColor.FromRGB(174, 217, 96);
 
-            Range range3 = new Range();
+            SFRange range3 = new SFRange();
+            range3.LegendLabel = (NSString)"3 % Growth";
             range3.From = 0;
             range3.To = 3;
-            range3.Color = Color.ParseColor("#FFAF51");
-            range3.LegendLabel = "3 % Growth";
+            range3.Color = UIColor.FromRGB(255, 175, 81);
 
-            Range range4 = new Range();
+            SFRange range4 = new SFRange();
+            range4.LegendLabel = (NSString)"4 % Growth";
             range4.From = 0;
             range4.To = 4;
-            range4.Color = Color.ParseColor("#F3D240");
-            range4.LegendLabel = "4 % Growth";
+            range4.Color = UIColor.FromRGB(243, 210, 64);
 
-            rangeColorMapping.Ranges.Add(range1);
-            rangeColorMapping.Ranges.Add(range2);
-            rangeColorMapping.Ranges.Add(range3);
-            rangeColorMapping.Ranges.Add(range4);
+            colorMapping.Ranges.Add(range1);
+            colorMapping.Ranges.Add(range2);
+            colorMapping.Ranges.Add(range3);
+            colorMapping.Ranges.Add(range4);
 
-            treeMap.LeafItemColorMapping = rangeColorMapping;
+            treeMap.LeafItemColorMapping = colorMapping;
 
 {% endhighlight %}
 
@@ -207,10 +207,11 @@ You can customize the tree map leaf nodes using [`LeafItemSettings`](https://hel
 
 {% highlight c# %}
 
-LeafItemSetting leafItemSetting = new LeafItemSetting();
-            leafItemSetting.ShowLabels = true;
+ SFLeafItemSetting leafItemSetting = new SFLeafItemSetting();
             leafItemSetting.Gap = 2;
-            leafItemSetting.LabelPath = "Country";
+            leafItemSetting.LabelPath = (NSString)"Region";
+            leafItemSetting.BorderColor = UIColor.FromRGB(169, 217, 247);
+            leafItemSetting.ShowLabels = true;
             treeMap.LeafItemSettings = leafItemSetting;
 
 {% endhighlight %}
@@ -229,11 +230,10 @@ You can customize the labels of legend items using the [`LegendLabel`](https://h
 
 {% highlight c# %}
 
-   LegendSetting legendSettings = new LegendSetting();
-            legendSettings.ShowLegend = true;
-            legendSettings.LegendSize = new Size(700, 45);
-            legendSettings.LabelStyle = new Style() { TextColor = Color.Black };
-            treeMap.LegendSettings = legendSettings;
+ SFLegendSetting legendSetting = new SFLegendSetting();
+            legendSetting.ShowLegend = true;
+            legendSetting.Size = new CoreGraphics.CGSize(500, 45);
+            treeMap.LegendSettings = legendSetting;
 
 {% endhighlight %}
 
