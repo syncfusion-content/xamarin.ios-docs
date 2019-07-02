@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : Customizing the Syncfusion ComboBox control in Xamarin.iOS
 description : Learn how to Customizing the ComboBox 
@@ -29,7 +29,7 @@ combobox.SelectedDropDownItemColor = UIColor.FromRGB(0, 173, 255);
 
 {% endtabs %}
 
-![](images/selecteddropdownitemcolor.png)
+![Selected drop down item color](images/selecteddropdownitemcolor.png)
 
 ## Set maximum height to the drop-down
 
@@ -47,7 +47,31 @@ combobox.MaxDropDownHeight = 60;
 
 {% endtabs %}
 
-![](images/maximumdropdownheight.png)
+![Maximum drop down height](images/maximumdropdownheight.png)
+
+## Set border color to the DropDown
+
+The DropDownBorderColor property is used to change the border color of DropDown. The following code example demonstrates how to change the border color of DropDown.
+
+{% tabs %}
+
+{% highlight C# %}
+    
+SfComboBox countryComboBox = new SfComboBox();
+countryComboBox.Frame = new CGRect(10, 20, 250, 30);
+NSMutableArray countryList = new NSMutableArray();
+countryList.Add((NSString)"Afghanistan");
+countryList.Add((NSString)"Akrotiri");
+countryList.Add((NSString)"Albania");
+countryComboBox.ComboBoxSource = countryList;
+countryComboBox.DropDownBorderColor = UIColor.Red;
+this.View.AddSubview(countryComboBox);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Drop down border color](images/drop-down-border-color.png)
 
 ## DropDown Button Customization 
 
@@ -87,9 +111,9 @@ combobox.DropDownButtonSettings = dropDownButtonSettings;
 
 {% endtabs %}
 
-![](images/buttoncustomization.png)
+![Drop down button customization](images/buttoncustomization.png)
 
-# WaterMark
+## Watermark
 
 The watermark text is used to display some information regarding the combo box. This watermark is visible only when the textbox is empty or null. The watermark text disappears when users begins to type or select any item from the dropdown list in the combo box control. 
 
@@ -103,4 +127,4 @@ combobox.Watermark = (NSString)"Select any Countries name";
 
 {% endtabs %}
 
-![](images/watermark.png)
+![Watermark](images/watermark.png)
