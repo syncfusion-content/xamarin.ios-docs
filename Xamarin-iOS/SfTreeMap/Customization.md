@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in Syncfusion TreeMap control for Xamarin.iOS
-description: This section explains the steps required to customize the data in Syncfusion TreeMap control for Xamarin.Forms
+description: This section explains the steps required to customize the data in Syncfusion TreeMap control for Xamarin.iOS
 platform: Xamarin.iOS
 control: TreeMap
 documentation: ug
@@ -132,7 +132,7 @@ Leaf nodes were colored based on the colors mentioned in the [`Colors`](https://
 
 ## Tooltip
 
-You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~ShowTooltip.html) property to true. By default, it takes the property of bound object that is referenced in [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.TreeMapFlatLevel~GroupPath.html) and displays its content when the corresponding node is tapped.
+You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~TooltipSettings.html) property to true. By default, it takes the property of bound object that is referenced in [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel~GroupPath.html) and displays its content when the corresponding node is tapped.
 
 {% tabs %}  
 
@@ -149,7 +149,7 @@ You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](ht
 
 ### Tooltip customization
 
-Tooltip can be customized by inheriting the [`TooltipSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~TooltipSettings.html) and can define our own customized view.
+Tooltip can be customized by inheriting the [`TooltipSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~TooltipSettings.html) and can define our own customized view.
 
 {% tabs %} 
 
@@ -222,7 +222,7 @@ Refer the below code snippet for defining the custom tooltip.
 
 ## Selection
 
-The TreeMap control provides selection support, which allows you to select the tree map items. The selection can be enabled by setting the [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~HighlightOnSelection.html) property to true in TreeMap. You can specify the highlight color and border width using the [`HighlightStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~HighlightStrokeColor.html) and [`HighlightStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~HighlightStrokeColor.html) properties, respectively.
+The TreeMap control provides selection support, which allows you to select the tree map items. The selection can be enabled by setting the [`HightlightOnSelection`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~HightlightOnSelection.html) property to true in TreeMap. You can specify the highlight color and border width using the [`HighlightColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~HighlightColor.html) and [`HighlightBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~HighlightBorderWidth.html) properties, respectively.
 
 {% tabs %}  
 
