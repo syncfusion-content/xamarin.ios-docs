@@ -57,14 +57,14 @@ The DropDownBorderColor property is used to change the border color of DropDown.
 
 {% highlight C# %}
     
-SfComboBoxcountryComboBox=newSfComboBox();
-countryComboBox.Frame=newCGRect(10,20,250,30);
-NSMutableArraycountryList=newNSMutableArray();
+SfComboBox countryComboBox = new SfComboBox();
+countryComboBox.Frame = new CGRect(10, 20, 250, 30);
+NSMutableArray countryList = new NSMutableArray();
 countryList.Add((NSString)"Afghanistan");
 countryList.Add((NSString)"Akrotiri");
 countryList.Add((NSString)"Albania");
-countryComboBox.ComboBoxSource=countryList;
-countryComboBox.DropDownBorderColor=UIColor.Red;
+countryComboBox.ComboBoxSource = countryList;
+countryComboBox.DropDownBorderColor = UIColor.Red;
 this.View.AddSubview(countryComboBox);
 
 {% endhighlight %}
@@ -113,7 +113,7 @@ combobox.DropDownButtonSettings = dropDownButtonSettings;
 
 ![Drop down button customization](images/buttoncustomization.png)
 
-# Set watermark text
+## Watermark
 
 The watermark text is used to display some information regarding the combo box. This watermark is visible only when the textbox is empty or null. The watermark text disappears when users begins to type or select any item from the dropdown list in the combo box control. 
 
