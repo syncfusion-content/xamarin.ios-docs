@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: Markers
+title: Markers in Syncfusion Maps control
 description: This section describes about map marker.
 platform: Xamarin.iOS
 control: SfMaps
@@ -103,7 +103,86 @@ this.View.AddSubview(map);
 
 {% endtabs %}
 
-![](Images/Marker_icon_type.png)
+![Marker icon type suqare](Images/Marker_icon_type.png)
+
+### Setting contrast color
+
+Based on the background color of the shapes, contrast color will be applied to marker icon.
+
+{% tabs %}
+
+{% highlight c# %}
+
+       SFMap map = new SFMap();
+ 
+            SFShapeFileLayer layer = new SFShapeFileLayer();
+ 
+            layer.Uri =      (NSString)NSBundle.MainBundle.PathForResource("usa_state", "shp");
+ 
+            layer.DataSource = GetDataSource();
+ 
+            layer.ShapeIDTableField = (NSString)"STATE_NAME";
+ 
+            layer.ShapeIDPath = (NSString)"State";
+ 
+            SFEqualColorMapping colorMapping = new SFEqualColorMapping();
+ 
+            colorMapping.Color = UIColor.FromRGB(216, 68, 68);
+ 
+            colorMapping.Value = (NSString)"Romney";
+ 
+            SFEqualColorMapping colorMapping1 = new SFEqualColorMapping();
+ 
+            colorMapping1.Color = UIColor.FromRGB(49, 109, 181);
+ 
+            colorMapping1.Value = (NSString)"Obama";
+legendSetting.ShowLegend = true;
+            legendSetting.Position = new CoreGraphics.CGPoint(30, 70);
+            legendSetting.IconSize = new CoreGraphics.CGSize(20, 20);
+            layer.LegendSettings = legendSetting;
+            SFMapMarker marker = new SFMapMarker();
+            marker.Latitude = 37;
+            marker.Longitude = -120;
+            layer.Markers.Add(marker);
+            SFMapMarker marker1 = new SFMapMarker();
+            marker1.Latitude = 31;
+            marker1.Longitude = -97;
+            layer.Markers.Add(marker1);
+            SFMapMarker marker2 = new SFMapMarker();
+            marker2.Latitude = 41;
+            marker2.Longitude = -92;
+            layer.Markers.Add(marker2);
+            SFMapMarker marker3 = new SFMapMarker();
+            marker3.Latitude = 38;
+            marker3.Longitude = -98;
+            layer.Markers.Add(marker3);
+            SFMapMarker marker4 = new SFMapMarker();
+            marker4.Latitude = 41;
+            marker4.Longitude = -99;
+            layer.Markers.Add(marker4);
+ 
+            SFShapeSetting shapeSetting = new SFShapeSetting();
+ 
+            shapeSetting.ValuePath = (NSString)"Candidate";
+ 
+            shapeSetting.ColorValuePath = (NSString)"Candidate";
+ 
+            shapeSetting.ColorMappings.Add(colorMapping);
+ 
+            shapeSetting.ColorMappings.Add(colorMapping1);
+ 
+            layer.ShapeSettings = shapeSetting;
+ 
+            map.Layers.Add(layer);
+ 
+            this.View.AddSubview(map);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Marker icon color based on the background color](Images/MarkerIconContrastColor.jpg)
 
 ### Setting image marker icon
 
@@ -155,7 +234,7 @@ this.View.AddSubview(map);
 
 {% endtabs %}
 
-![](Images/Marker_icon_type_image.png) 
+![marker icon type image](Images/Marker_icon_type_image.png) 
 
 ### Label customization
 
@@ -203,7 +282,7 @@ this.View.AddSubview(map);
 
 {% endtabs %}
 
-![](Images/Markers_label_customization.png)
+![marker label customization](Images/Markers_label_customization.png)
 
 ## Custom marker
 
@@ -272,7 +351,7 @@ return new CGPoint(-8, -25);
 
 {% endtabs %}
 
-![](Images/Custom_marker.png)
+![custom marker](Images/Custom_marker.png)
 
 ## Events
 
@@ -345,5 +424,5 @@ markerView.Frame = new CGRect(50, 350, 200, 300);
 
 {% endtabs %}
 
-![](Images/Markers_event.png)
+![marker selected event](Images/Markers_event.png)
 
