@@ -170,7 +170,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEd
 
 ### Saving edited unbound row cell value to external source
 
-You can get the edited value of unbound row cell from GridUnboundRowEventsArgs.Value](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridUnboundRowEventArgs~Value.html) property of [QueryUnboundRow](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~QueryUnboundRow_EV.html) event when UnboundAction](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridUnboundRowEventArgs~UnboundAction.html) is `CommitData`.
+You can get the edited value of unbound row cell from [GridUnboundRowEventsArgs.Value](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridUnboundRowEventArgs~Value.html) property of [QueryUnboundRow](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~QueryUnboundRow_EV.html) event when [UnboundAction](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridUnboundRowEventArgs~UnboundAction.html) is `CommitData`.
 
 
 {% highlight c# %}
