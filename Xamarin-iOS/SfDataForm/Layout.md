@@ -831,15 +831,13 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 {
    if (e.DataFormItem != null)
      {
-       if (e.DataFormItem.Name == "Experience" || e.DataFormItem.Name == "Comments")
+       if (e.DataFormItem.Name == "Experience" || e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement")
        {
-		   e.DataFormItem.LabelPosition = LabelPosition.Left;
            e.DataFormItem.AutoFitLabel = true;
        }
        if (e.DataFormItem.Name == "Recommend")
        {
-		   e.DataFormItem.LabelPosition = LabelPosition.Left;
-           e.DataFormItem.Height = 200;
+           e.DataFormItem.Height = 400;
        }
      }
 }
