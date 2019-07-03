@@ -584,6 +584,24 @@ The [`RangeStyles`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfu
 * [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisRangeStyle~MinorTickStyle.html) - Customizes the minor tick lines of an axis.
 * [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAxisRangeStyle~LabelStyle.html) - Customizes the axis labels for a specific range.
 
+{% highlight c# %}
+
+SFNumericalAxis  numericalAxis = new SFNumericalAxis () { Minimum = new NSNumber (15), Maximum = new NSNumber (27) };
+
+ChartAxisRangeStyleCollection axisRangeStyles = new ChartAxisRangeStyleCollection();
+
+ChartAxisRangeStyle rangeStyle = new ChartAxisRangeStyle() { Start = 15, End = 21};
+
+rangeStyle.MajorGridLineStyle = new SFAXisGridLineStyle() { LineColor = UIColor.FromRGB(9, 110, 191), LineWidth = 3 };
+
+rangeStyle.LabelStyle = new SFAxisLabelStyle() { Color = UIColor.FromRGB(9, 110, 191)), Font = UIFont.BoldSystemFontOfSize(10) }; 
+
+....
+
+axisRangeStyles.Add(rangeStyle);
+
+{% endhighlight %}
+
 ![Individual axis elements customization support in Xamarin.iOS Chart](Axis_images/AxisRangeCustomize.png)
 
 ### Inversing axis
