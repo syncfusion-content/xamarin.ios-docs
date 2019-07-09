@@ -27,7 +27,7 @@ Assemblies can be found in unzipped package location in Mac
 ## Adding SfSchedule Reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSchedule to your project, open the NuGet package manager in Visual Studio, and search for Syncfusion.Xamarin.SfSchedule, and then install it.
 
-![](GettingStarted_images/installation_image.png)
+![Adding schedule reference in xamarin ios](GettingStarted_images/installation_image.png)
  
 To know more about obtaining our components, refer this [link](https://help.syncfusion.com/xamarin-android/introduction/download-and-installation). Also, if you prefer to manually refer the assemblies instead of NuGet,refer the assembly mentioned in the table below.
 
@@ -49,7 +49,7 @@ Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup
  
 This section explains how to create a simple application using SfSchedule control. SfSchedule control can be configured entirely in C# code. This is how the final output will look like on iOS devices.
  
-![](GettingStarted_images/GettingStarted.png) 
+![Schedule in xamarin ios](GettingStarted_images/GettingStarted.png) 
 
 You can download the entire source code of this demo for Xamarin.iOS from   
 here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleTest_iOS954342624.zip). 
@@ -102,7 +102,7 @@ schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/FirstDayofWeek.png) 
+![First day of week in schedule xamarin ios](GettingStarted_images/FirstDayofWeek.png) 
 
 ### Day View 
  
@@ -115,7 +115,7 @@ schedule.ScheduleView = SFScheduleView.SFScheduleViewDay;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/DayView.png) 
+![Day view in schedule xamarin ios](GettingStarted_images/DayView.png) 
 
 ### Week View 
  
@@ -128,7 +128,7 @@ schedule.ScheduleView = SFScheduleView.SFScheduleViewWeek;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/WeekView.png) 
+![Week view in schedule xamarin ios](GettingStarted_images/WeekView.png) 
 
 ### Work Week View 
  
@@ -141,7 +141,7 @@ schedule.ScheduleView = SFScheduleView.SFScheduleViewWorkWeek;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/WorkWeekView.png) 
+![Work week view in schedule xamarin ios](GettingStarted_images/WorkWeekView.png) 
 
 >**NOTE**
 Appointments in non-working days will not be displayed.
@@ -170,7 +170,7 @@ schedule.MonthViewSettings.ShowAppointmentsInline = true;
 {% endhighlight %}
 {% endtabs %}
  
-![](GettingStarted_images/MonthView.png) 
+![Month view in schedule xamarin ios](GettingStarted_images/MonthView.png) 
 
 ## Binding data to SfSchedule control  
 
@@ -378,4 +378,4 @@ schedule.Appointments = CreateAppointments();
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted.png)
+![Appointments in schedule xamarin ios](GettingStarted_images/GettingStarted.png)
