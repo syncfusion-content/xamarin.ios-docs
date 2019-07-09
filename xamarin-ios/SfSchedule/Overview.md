@@ -15,7 +15,7 @@ Essential Schedule for Xamarin.iOS provides all the common scheduling functional
 
 ## Key features
 
-**Built-in Views** — Schedule provides 4 different types of views such as Day, WorkWeek, Week and Month
+**Built-in Views** — Schedule provides five different types of views such as Day, WorkWeek, Week, Timeline and Month.
 
 **Recurrence Appointment** — Recurring appointments can be created with Daily, weekly, monthly, and yearly recurrence patterns which is supported in ICalc standard.
 

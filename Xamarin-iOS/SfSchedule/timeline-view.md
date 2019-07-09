@@ -2,7 +2,7 @@
 
 layout: post
 title: Timeline view scheduler | Xamarin.iOS | Syncfusion
-description: Xamarin.Android scheduler timeline view displays the dates in a horizontal time axis with desired days count, displays events accurately across the time slots.
+description: Xamarin.iOS scheduler timeline view displays the dates in a horizontal time axis with desired days count, displays events accurately across the time slots.
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
@@ -108,8 +108,7 @@ schedule.TimeInterval = 180;
 {% endtabs %}
 
 >**NOTE**
-If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` as “hh:mm”. By default, `TimeFormat` is "hh a". Refer to this [documentation](https://help.syncfusion.com/xamarin/sfschedule/weekview#time-label-formatting) for changing `TimeFormat` value.
-
+If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` as “hh:mm”. By default, `TimeFormat` is "hh a".
 
 ## Time interval height 
 
@@ -236,7 +235,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ## Timeslot customization
 
-You can customize the appearance of time slots using the [Color](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~Color.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~BorderColor.html) and [BorderStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~BorderStrokeWidth.html) properties of `TimelineViewSettings`.
+You can customize the appearance of time slots using the [Color](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~Color.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~BorderColor.html) and [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~BorderWidth.html) properties of `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight c# %}
@@ -245,7 +244,7 @@ schedule.ScheduleView = SFScheduleView.SFScheduleViewTimeline;
 TimelineViewSettings timelineViewSettings = new TimelineViewSettings();
 timelineViewSettings.BorderColor = UIColor.FromRGB(132, 144, 249);
 timelineViewSettings.Color = UIColor.FromRGB(232, 234, 249);
-timelineViewSettings.BorderStrokeWidth = 2;
+timelineViewSettings.BorderWidth = 2;
 schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
