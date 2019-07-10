@@ -1607,3 +1607,32 @@ series.MinimumWidth   = 20;
 {% endhighlight %}
 
 ![Minimum width support for funnel series in Xamarin.iOS Chart](ChartTypes_images/MinWidth.png)
+
+## Waterfall Chart
+
+[`WaterfallSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.WaterfallSeries.html) clarifies the cumulative effect of a set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
+
+* [`SummaryBindingPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.WaterfallSeries~SummaryBindingPath.html) – Gets or sets the string value that indicates the sum of previous segments in series.
+* [`SummarySegmentColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.WaterfallSeries~SummarySegmentColor.html) – Changes the color of summary segment in series.
+* [`NegativeSegmentColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.WaterfallSeries~NegativeSegmentColor.html) – Changes the color of negative segment in series.
+* [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.WaterfallSeries~AllowAutoSum.html) – Enables or disables the segment that has been drawn based on the sum value of previous segments. By default, the value of this property is true. When disabling this property, it renders the segment by using the y-value of provided ItemsSource collection.
+* [`ShowConnectorLine`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.WaterfallSeries~ShowConnectorLine.html) – Enables or disables the connector line of series. By default, value of this property is true.
+* [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.WaterfallSeries~ConnectorLineStyle.html) – Customizes the appearance of connector line style.
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries()
+{
+	ItemsSource = RevenueDetails,
+	XBindingPath = "Category",
+	YBindingPath = "Value",
+	AllowAutoSum = true,
+	SummaryBindingPath = "IsSummary",
+	NegativeSegmentColor = UIColor.Pink,
+	SummarySegmentColor = UIColor.Gray,
+	ShowConnectorLine = true
+};
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}

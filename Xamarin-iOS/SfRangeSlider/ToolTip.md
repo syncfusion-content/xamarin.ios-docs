@@ -75,5 +75,20 @@ rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementNone;
 
 {% endtabs %}
 
+## Tooltip color
+
+`TooltipTextColor` - Used to change the tooltip text color.
+`TooltipBackgroundColor` - Used to change the tooltip background color.
+
+{% tabs %}
+
+{% highlight c# %}
+
+    rangeSlider.ToolTipBackgroundColor = UIColor.Red;
+    rangeSlider.TooltipTextColor = UIColor.White;
+	
+{% endhighlight %}
+
+{% endtabs %}
 
 

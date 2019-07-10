@@ -104,7 +104,7 @@ dataForm.LabelPosition = LabelPosition.Top;
 
 ### Changing label position of the DataFormItem
 
-You can change the label position using the `LabelPosition` property in `DataFormItem`, and it will be handled in the `AutoGeneratingDataFormItem` event.
+You can change the label position using the [LabelPosition](https://help.syncfusion.com/cr/cref_files/xamarin-iOs/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem~LabelPosition.html) property in `DataFormItem`, and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -831,15 +831,13 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 {
    if (e.DataFormItem != null)
      {
-       if (e.DataFormItem.Name == "Experience" || e.DataFormItem.Name == "Comments")
+       if (e.DataFormItem.Name == "Experience" || e.DataFormItem.Name == "Comments" || e.DataFormItem.Name == "Improvement")
        {
-		   e.DataFormItem.LabelPosition = LabelPosition.Left;
            e.DataFormItem.AutoFitLabel = true;
        }
        if (e.DataFormItem.Name == "Recommend")
        {
-		   e.DataFormItem.LabelPosition = LabelPosition.Left;
-           e.DataFormItem.Height = 200;
+           e.DataFormItem.Height = 400;
        }
      }
 }
