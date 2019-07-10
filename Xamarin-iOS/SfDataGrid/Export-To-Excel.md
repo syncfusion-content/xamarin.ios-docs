@@ -102,7 +102,7 @@ private void ExportToExcel_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/ExcelExport.png)
+![Export to Excel](SfDataGrid_images/Excel/ExcelExport.png)
 
 ## Exporting Options
 
@@ -153,7 +153,7 @@ option.ApplyGridStyle = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/GridStyle.png) 
+![ApplyGridStyle](SfDataGrid_images/Excel/GridStyle.png) 
 
 ### DefaultColumnWidth
 
@@ -191,7 +191,7 @@ option.ExcludedColumns = list;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/ExcludeColumns.png) 
+![ExcludedColumns](SfDataGrid_images/Excel/ExcludeColumns.png) 
 
 ### ExportColumnWidth
 
@@ -239,11 +239,11 @@ option.ExportGroups = true;
 
 * ExportGroups is true
 
-![](SfDataGrid_images/Excel/GroupingExcel.png) 
+![ExportGroupsistrue](SfDataGrid_images/Excel/GroupingExcel.png) 
 
 * ExportGroups is false
 
-![](SfDataGrid_images/Excel/ExcelExport.png) 
+![ExportGroupsisfalse](SfDataGrid_images/Excel/ExcelExport.png) 
 
 ### ExportHeader
 
@@ -256,7 +256,7 @@ option.ExportHeader = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/ExcludeHeader.png) 
+![ExportHeader](SfDataGrid_images/Excel/ExcludeHeader.png) 
 
 ### ExportTableSummary
 
@@ -269,7 +269,7 @@ option.ExportTableSummary = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/ExcludeSummary.png)  
+![ExportTableSummary](SfDataGrid_images/Excel/ExcludeSummary.png)  
 
 ### BottomTableSummaryStyle
 
@@ -303,7 +303,7 @@ option.GroupCaptionStyle = new ExportCellStyle()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/SummaryStyle.png)  
+![GroupCaptionStyle](SfDataGrid_images/Excel/SummaryStyle.png)  
 
 ### HeaderStyle
 
@@ -337,7 +337,7 @@ option.RecordStyle = new ExportCellStyle()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/RecordHeaderStyle.png)  
+![RecordStyle](SfDataGrid_images/Excel/RecordHeaderStyle.png) 
 
 ### TopTableSummaryStyle
 
@@ -355,7 +355,7 @@ option.TopTableSummaryStyle = new ExportCellStyle()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/SummaryStyle.png)  
+![TopTableSummaryStyle](SfDataGrid_images/Excel/SummaryStyle.png)  
 
 ### ExportGroupSummary
 
@@ -369,7 +369,7 @@ DataGridExcelExportingOption option = new DataGridExcelExportingOption();
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/GroupSummaryExcel.png) 
+![ExportGroupSummary](SfDataGrid_images/Excel/GroupSummaryExcel.png) 
 
 ### GroupSummaryStyle 
 
@@ -387,7 +387,7 @@ option.GroupSummaryStyle = new ExportCellStyle()
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/GroupSummaryStyle.png) 
+![GroupSummaryStyle](SfDataGrid_images/Excel/GroupSummaryStyle.png) 
 
 ### StartColumnIndex
 
@@ -422,11 +422,11 @@ option.ExportAllPages = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/ExportAllPage.png)  
+![ExportAllPages is false](SfDataGrid_images/Excel/ExportAllPage.png)  
 
 * ExportAllPages is true
 
-![](SfDataGrid_images/Excel/ CurrentPageExport.png)  
+![ExportAllPages is true](SfDataGrid_images/Excel/CurrentPageExport.png) 
 
 ## Events
 
@@ -473,7 +473,7 @@ void excelExport_RowExporting (object sender, DataGridRowExcelExportingEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/RowEvent.png)  
+![RowExporting](SfDataGrid_images/Excel/RowEvent.png)  
 
 ### CellExporting
 
@@ -544,7 +544,7 @@ void excelExport_CellExporting(object sender, DataGridCellExcelExportingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/RecordHeaderStyle.png)
+![CellExporting](SfDataGrid_images/Excel/RecordHeaderStyle.png)
 
 
 ### Custom Borders
@@ -568,7 +568,7 @@ private void ExcelExport_CellExporting(object sender, DataGridCellExcelExporting
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/Excel/RecordHeaderStyle.png)
+![Custom Borders](SfDataGrid_images/Excel/RecordHeaderStyle.png)
 
 ## Save a File
 
@@ -688,6 +688,15 @@ public class PreviewControllerDS : QLPreviewControllerDataSource
 {% endhighlight %}
 {% endtabs %}
 
+## Exporting Unbound rows
+
+By default, the Unbound rows will not be exported to the excel document. However, you can export the unbound rows to excel by setting the [DataGridExcelExportingOption.ExportUnboundRows](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGridConverter.iOS~Syncfusion.SfDataGrid.Exporting.DataGridExcelExportingOption~ExportUnboundRows.html) property as `true`.
+
+{% highlight c# %}
+DataGridExcelExportingOption option = new DataGridExcelExportingOption();
+option.ExportUnboundRows = true;
+{% endhighlight %}
+
 ## Exporting Unbound Columns
 
 The [SfDataGrid.GridUnboundColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridUnboundColumn.html) will be exported as [SfDataGrid.GridTextColumns](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTextColumn.html) without any specific codes. You can customize the `SfDataGrid.GridUnboundColumns` as `SfDataGrid.GridTextColumns` using the `CellExporting` and `RowExporting` events.
@@ -708,7 +717,7 @@ sfGrid.Columns.Add(unboundColumn);
 
 The following screenshot shows that the unbound column is exported to excel sheet along with text columns.
 
-![](SfDataGrid_images/Exporting_img8.png)
+![Exporting Unbound Columns](SfDataGrid_images/Exporting_img8.png)
 
 ## Exporting the selected rows of SfDataGrid
 
@@ -734,4 +743,4 @@ Refer the below code to export the selected rows alone to Excel.
 {% endhighlight %}
 
 The following screenshot shows that the selected rows are exported to excel sheet.
-![](SfDataGrid_images/Excel/SelectedItems_ExportToExcel.png)
+![Exporting the selected rows of SfDataGrid](SfDataGrid_images/Excel/SelectedItems_ExportToExcel.png)
