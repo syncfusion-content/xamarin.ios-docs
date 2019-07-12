@@ -9,12 +9,12 @@ documentation: ug
 
 # TreeMap Levels
 
-The levels of tree map can be categorized into the following two types:
+The levels of TreeMap can be categorized into the following two types:
 
 * Flat level
 * Hierarchical level
 
-## Flat Level
+## Flat level
 
 ### GroupPath
 
@@ -106,7 +106,7 @@ The following code snippet explains the tree map flat level.
 
 ![FlatLevel](TreeMapLevels_images/Flatlevel.png)
 
-## Hierarchical Level
+## Hierarchical level
 
 Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data. The following code snippet explains the hierarchical data.
 
@@ -155,7 +155,7 @@ Hierarchical level is used to define levels for hierarchical data collection tha
 
 {% endtabs %}  
 
-Below code snippet explains the underlying hierarchical data model
+The following code snippet demonstrates the underlying hierarchical data model.
 
 {% tabs %}  
 

@@ -88,7 +88,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfus
 
 {% endtabs %} 
 
-![Providing Visibility for data labels in TreeMap](TreeMap_Images/Trim.png)
+![Providing visibility for data labels in TreeMap](TreeMap_Images/Trim.png)
 
 ### Avoid overlap in data labels
 

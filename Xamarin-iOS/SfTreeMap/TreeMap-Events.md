@@ -11,7 +11,7 @@ documentation: ug
 
 ## ItemSelected
 
-The [`ItemSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~ItemSelected_EV.html) event occurs when an item is selected. The selected leaf node underlying data item and IsSelected boolean property will be passed as arguments to [`TreeMapItemSelectedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.TreeMapItemSelectedEventArgs.html). The [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.TreeMapItemSelectedEventArgs~IsSelected.html) property indicates whether the item has been selected.
+The [`ItemSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~ItemSelected_EV.html) event occurs when an item is selected. The selected leaf node underlying data item and the IsSelected boolean property will be passed as arguments to [`TreeMapItemSelectedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.TreeMapItemSelectedEventArgs.html). The [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.TreeMapItemSelectedEventArgs~IsSelected.html) property indicates whether the item has been selected.
 
 Set the [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~HightlightOnSelection.html) property to true to use the `ItemSelected` event.
 

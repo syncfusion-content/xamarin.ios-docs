@@ -13,15 +13,15 @@ This section explains the steps required to configure the TreeMap control and pr
 
 ## Adding SfTreeMap reference
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
+
 {Syncfusion Installed location} \Essential Studio\17.2.0.28\lib
 
-Add the following TreeMap assembly reference in the Xamarin.iOS project,
-ios-unified\Syncfusion.SfTreeMap.iOS.dll
+Add the following TreeMap assembly reference in the Xamarin.iOS project :ios-unified\Syncfusion.SfTreeMap.iOS.dll
    
 ## Initializing TreeMap
 
-Import the TreeMap namespace as shown below
+Import the TreeMap namespace as shown in the following code sample.
 
 {% tabs %}  
 
@@ -50,10 +50,9 @@ public override void ViewDidLoad()
 
 {% endtabs %}  
 
-## Populate TreeMap with data
+## Populating TreeMap with data
 
-Treemap items can be populated using the DataSource property by setting the defined view model data.
-To render leaf nods for the underlying data, levels and leaf item settings must be specified.
+Treemap items can be populated using the DataSource property by setting the defined view model data. To render leaf nods for the underlying data, levels and leaf item settings must be specified.
 
 {% tabs %}  
 
@@ -94,7 +93,7 @@ To render leaf nods for the underlying data, levels and leaf item settings must 
 
 {% endtabs %}
 
-Below code snippet explains the underlying view model data to render tree map.
+The following code snippet explains the underlying view model data to render TreeMap.
 
 {% tabs %} 
 
@@ -148,15 +147,15 @@ NSDictionary getDictionary(string continent, string region, double growth, doubl
 
 You can group TreeMapItems using the following two types of levels:
 
-* TreeMap Flat Level
-* TreeMap Hierarchical Level
+* TreeMap flat level
+* TreeMap hierarchical level
 
-Add the levels either flat level or hierarchical level to the [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~Levels.html) collection in treemap.
-Each level will be formed based on the property specified in the [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel~GroupPath.html) and each rectangle size will be calculated based on the [`WeightValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~WeightValuePath.html) property.
+Add either flat level or hierarchical level to the [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~Levels.html) collection in TreeMap.
+Each level will be formed based on the property specified in the [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel~GroupPath.html), and each rectangle size will be calculated based on the [`WeightValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~WeightValuePath.html) property.
 
 ## Customizing the appearance of TreeMap by range
 
-You can differentiate the nodes based on their values and colors using [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRangeColorMapping.html). You can define the color value range using the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRange~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRange~To.html) properties in Range. The values of From and To properties depend on underlying data bound to the [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~ColorValuePath.html) property.
+You can differentiate the nodes based on their values and colors using [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRangeColorMapping.html). You can define the color value range using the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRange~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRange~To.html) properties in Range. The values of the From and To properties depend on underlying data bound to the [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~ColorValuePath.html) property.
 
 {% tabs %} 
 
@@ -201,7 +200,7 @@ SFRangeColorMapping colorMapping = new SFRangeColorMapping();
 
 ## LeafItemSetting
 
-You can customize the tree map leaf nodes using [`LeafItemSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~LeafItemSettings.html).
+You can customize the leaf nodes of  TreeMap using [`LeafItemSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~LeafItemSettings.html).
 
 {% tabs %}  
 
@@ -220,7 +219,7 @@ You can customize the tree map leaf nodes using [`LeafItemSettings`](https://hel
 
 ## Enabling legends
 
-The color value of leaf nodes can be tracked using tree map legend. The legend support is applicable only for the TreeMap whose leaf nodes are colored using RangeColorMapping. Set the value of [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFLegendSetting~ShowLegend.html) property to “True” to make legends visible.
+The color value of leaf nodes can be tracked using TreeMap legend. The legend support is applicable only for the TreeMap whose leaf nodes are colored using RangeColorMapping. Set the value of [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFLegendSetting~ShowLegend.html) property to “True” to make legends visible.
 
 ## Labels for legends
 
@@ -239,7 +238,7 @@ You can customize the labels of legend items using the [`LegendLabel`](https://h
 
 {% endtabs %}
 
-The following code sample helps you reproduce the output.
+The following code sample is used to reproduce the output.
 
 {% tabs %} 
 
@@ -313,7 +312,7 @@ The following code sample helps you reproduce the output.
 
 {% endtabs %}
 
-You can find the complete getting-started sample in the following link: [Getting-started sample]().
+You can find the complete getting-started sample in the following link: [Getting-started]().
 
 The following screenshot illustrates the output of SfTreeMap.
 
