@@ -592,7 +592,7 @@ ChartAxisRangeStyleCollection axisRangeStyles = new ChartAxisRangeStyleCollectio
 
 ChartAxisRangeStyle rangeStyle = new ChartAxisRangeStyle() { Start = 15, End = 21};
 
-rangeStyle.MajorGridLineStyle = new SFAXisGridLineStyle() { LineColor = UIColor.FromRGB(9, 110, 191), LineWidth = 3 };
+rangeStyle.MajorGridLineStyle = new SFAxisGridLineStyle() { LineColor = UIColor.FromRGB(9, 110, 191), LineWidth = 3 };
 
 rangeStyle.LabelStyle = new SFAxisLabelStyle() { Color = UIColor.FromRGB(9, 110, 191)), Font = UIFont.BoldSystemFontOfSize(10) }; 
 
