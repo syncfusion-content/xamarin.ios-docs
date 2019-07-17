@@ -124,7 +124,7 @@ To add SfPullToRefresh using story board, follow the steps:
 
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/StoryBoard_Support_SfPullToRefresh_iOS1723365924).
+You can download the entire source code of this demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted_UG_iOS-686418710).
 
 Refer to this link to know the properties that can be configured using story board for SfPullToRefresh.
 
