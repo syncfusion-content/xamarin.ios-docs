@@ -114,7 +114,7 @@ namespace Storyboard_SfPopupLayout_ios
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Storyboard_SfpopupLayout_ios-281954337).
+You can download the entire source code of this sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Storyboard_SfpopupLayout_ios-779309500).
 
 Refer to this link to know the properties that can be configured using story board for SfPopupLayout.
 
