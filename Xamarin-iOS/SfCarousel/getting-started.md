@@ -96,5 +96,5 @@ carousel.RotationAngle = 45;
 
 {% endhighlight %}
 
-![OverView Image](images/carousel.png)
+![Overview Image](images/carousel.png)
 You can find the complete getting started sample from this [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CarouselSample-473851751)
