@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Markers in Syncfusion Maps control
 description: This section describes about map marker.
