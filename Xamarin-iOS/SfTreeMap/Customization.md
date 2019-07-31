@@ -23,7 +23,7 @@ The [`ColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncf
 
 ### UniColorMapping
 
-You can color all the leaf nodes with the same color by setting a value to the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.UniColorMapping~Color.html) property of [`UniColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.UniColorMapping.html).
+You can color all the leaf nodes with the same color by setting a value to the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFUniColorMapping~Color.html) property of [`UniColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFUniColorMapping.html).
 
 {% tabs %}  
 
@@ -37,11 +37,11 @@ You can color all the leaf nodes with the same color by setting a value to the [
 
 {% endtabs %}  
 
-![UniColorMapping](TreeMapLevels_images/Unicolor.png)
+![UniColorMapping](TreeMap_Images/Unicolor.png)
 
 ### RangeColorMapping
 
-You can group the leaf nodes based on the range of color values of data. You can set a unique color for every range. To achieve this, specify the [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Range~To.html) and [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Range~From.html) values as range bound and specify the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.Range~Color.html) value to fill the leaf nodes of a particular range using the `RangeColorMapping` property of TreeMap. You must specify value to ColorValuePath since the ranges `From` and `To` depend on the under bound value of [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~ColorValuePath.html).
+You can group the leaf nodes based on the range of color values of data. You can set a unique color for every range. To achieve this, specify the [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRange~To.html) and [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRange~From.html) values as range bound and specify the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRange~Color.html) value to fill the leaf nodes of a particular range using the [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRangeColorMapping.html) property of TreeMap. You must specify value to ColorValuePath since the ranges `From` and `To` depend on the under bound value of [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~ColorValuePath.html).
 
 {% tabs %}  
 
@@ -84,11 +84,11 @@ You can group the leaf nodes based on the range of color values of data. You can
 
 {% endtabs %}  
 
-![RangeColorMapping](TreeMapLevels_images/Flatlevel.png)
+![RangeColorMapping](TreeMap_Images/Squarified.png)
 
 ### DesaturationColorMapping
 
-You can differentiate all the leaf nodes using the [`DesaturationColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.DesaturationColorMapping.html) property of TreeMap. Differentiation can be achieved even when the same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.DesaturationColorMapping~Color.html) value specified. You can also change the opacity range by setting the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.DesaturationColorMapping~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.DesaturationColorMapping~To.html) properties of `DesaturationColorMapping`.
+You can differentiate all the leaf nodes using the [`DesaturationColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFDesaturationColorMapping.html) property of TreeMap. Differentiation can be achieved even when the same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFDesaturationColorMapping~Color.html) value specified. You can also change the opacity range by setting the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFDesaturationColorMapping~From.html)) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFDesaturationColorMapping~To.html) properties of `DesaturationColorMapping`.
 
 {% tabs %}  
 
@@ -104,7 +104,7 @@ You can differentiate all the leaf nodes using the [`DesaturationColorMapping`](
 
 {% endtabs %}  
 
-![DesaturationColorMapping](TreeMapLevels_images/Desaturation.png)
+![DesaturationColorMapping](TreeMap_Images/Desaturation.png)
 
 ### Palette color mapping
 
@@ -128,11 +128,11 @@ Leaf nodes were colored based on the colors mentioned in the [`Colors`](https://
 
 {% endtabs %} 
 
-![DesaturationColorMapping](TreeMapLevels_images/Palette.png)
+![PaletteColorMapping](TreeMap_Images/Palette.png)
 
 ## Tooltip
 
-You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~ShowTooltip.html) property to true. By default, it takes the property of bound object referenced in [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.TreeMapFlatLevel~GroupPath.html) and displays its content when the corresponding node is tapped.
+You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~ShowTooltip.html) property to true. By default, it takes the property of bound object referenced in [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel~GroupPath.html) and displays its content when the corresponding node is tapped.
 
 {% tabs %}  
 
@@ -149,7 +149,7 @@ You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](ht
 
 ### Tooltip customization
 
-Tooltip can be customized by inheriting [`TooltipSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfTreeMap.Android~Com.Syncfusion.Treemap.SfTreeMap~TooltipSettings.html). Tooltip defines our own customized view.
+Tooltip can be customized by inheriting `TooltipSetting`. Tooltip defines our own customized view.
 
 {% tabs %} 
 

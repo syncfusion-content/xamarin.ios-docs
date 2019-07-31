@@ -42,7 +42,7 @@ You can customize the labels of the legend items using the [`LegendLabel`](https
 
 {% endtabs %} 
 
-![Treemap legend](TreeMap_Images/GettingStarted.jpg)
+![Treemap legend](TreeMap_Images/Squarified.png)
 
 ## Header
 

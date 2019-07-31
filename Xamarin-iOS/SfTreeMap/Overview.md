@@ -11,7 +11,7 @@ documentation: ug
 
 The TreeMap control provides a simple yet effective way to visualize flat or hierarchical data as clustered rectangles with a specific weighted attribute that determines the size of the rectangle.
 
-![GettingStartedOutput](Getting-Started_images/GettingStarted.jpg)
+![GettingStartedOutput](TreeMap_Images/GettingStarted.png)
 
 ## Key features
 

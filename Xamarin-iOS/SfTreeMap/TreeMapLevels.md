@@ -104,7 +104,7 @@ The following code snippet explains the tree map flat level.
 
 {% endtabs %}  
 
-![FlatLevel](TreeMapLevels_images/Flatlevel.png)
+![FlatLevel](TreeMap_Images/Squarified.png)
 
 ## Hierarchical level
 
@@ -235,5 +235,5 @@ The following code snippet demonstrates the underlying hierarchical data model.
 
 {% endtabs %}  
 
-![HierarchicalLevel](TreeMapLevels_images/Hierarchical.jpg)
+![HierarchicalLevel](TreeMap_Images/Hierarchical.png)
 

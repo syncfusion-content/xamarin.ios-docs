@@ -31,6 +31,8 @@ treeMap.EnableDrilldown = true;
 
 {% endtabs %} 
 
+![Drilldown](TreeMap_Images/Drilldown.png)
+
 ## Header customization
 
 The drilldown header used for zoom out (i.e., drill up one level) operation can be customized by setting style using the `DrilldownHeaderStyle` property in TreeMap. This property provides similar customization option as of the TreeMap level header.
@@ -47,7 +49,7 @@ The following code snippet demonstrates how to define the drilldown header style
 
 {% endtabs %} 
 
-![Drilldown](Drilldown_Images/HeaderStyle.png)
+![Drilldown](TreeMap_Images/DrilldownHeaderStyle.png)
 
 The following is the complete code for drilldown.
 
@@ -114,7 +116,7 @@ SFTreeMap treeMap = new SFTreeMap();
 
 {% endtabs %} 
 
-![Drilldown](Drilldown_Images/Drilldown.png)
+![Drilldown](TreeMap_Images/Drilldown.gif)
 
 Below is the model data used for the above drilldown example.
 

@@ -64,7 +64,7 @@ Treemap items can be populated using the DataSource property by setting the defi
 
             SFLeafItemSetting leafItemSetting = new SFLeafItemSetting();
             leafItemSetting.Gap = 2;
-            leafItemSetting.LabelPath = (NSString)"Country";
+            leafItemSetting.LabelPath = (NSString)"Region";
             leafItemSetting.BorderColor = UIColor.FromRGB(169, 217, 247);
             leafItemSetting.ShowLabels = true;
             treeMap.LeafItemSettings = leafItemSetting;
@@ -84,7 +84,6 @@ Treemap items can be populated using the DataSource property by setting the defi
             treeMap.DataSource = PopulationDetails;
             treeMap.ShowTooltip = true;
 
-            treeMap.EnableDrilldown = true;
             treeMap.Frame = new CoreGraphics.CGRect(View.Frame.Left, View.Frame.Top + 50, View.Frame.Width, View.Frame.Height - 100);
 
             this.View.Add(treeMap);
@@ -244,76 +243,79 @@ The following code sample is used to reproduce the output.
 
 {% highlight c# %}
 
- SfTreeMap treeMap = new SfTreeMap(this);
-            treeMap.ColorValuePath = "Growth";
-            treeMap.WeightValuePath = "Population";
-            treeMap.LayoutType = Com.Syncfusion.Treemap.Enums.LayoutType.Squarified;
-            treeMap.ShowTooltip = true;
+ SFTreeMap treeMap = new SFTreeMap();
+            treeMap.WeightValuePath = (NSString)"Population";
+            treeMap.ColorValuePath = (NSString)"Growth";
 
-            LeafItemSetting leafItemSetting = new LeafItemSetting();
-            leafItemSetting.ShowLabels = true;
+            SFLeafItemSetting leafItemSetting = new SFLeafItemSetting();
             leafItemSetting.Gap = 2;
-            leafItemSetting.LabelPath = "Country";
+            leafItemSetting.LabelPath = (NSString)"Region";
+            leafItemSetting.BorderColor = UIColor.FromRGB(169, 217, 247);
+            leafItemSetting.ShowLabels = true;
             treeMap.LeafItemSettings = leafItemSetting;
 
-            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            SFTreeMapFlatLevel flatLevel = new SFTreeMapFlatLevel();
+            flatLevel.GroupBorderColor = UIColor.Gray;
+            flatLevel.GroupBorderWidth = 1;
+            flatLevel.GroupBackground = UIColor.White;
             flatLevel.HeaderHeight = 20;
-            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupPath = (NSString)"Continent";
             flatLevel.GroupGap = 5;
+            flatLevel.HeaderStyle = new SFStyle() { Color = UIColor.Black };
             flatLevel.ShowHeader = true;
-            flatLevel.GroupStrokeColor = Color.Gray;
-            flatLevel.GroupStrokeWidth = 1;
-            flatLevel.HeaderStyle = new Style() { TextColor = Color.Black };
             treeMap.Levels.Add(flatLevel);
 
-            LegendSetting legendSettings = new LegendSetting();
-            legendSettings.ShowLegend = true;
-            legendSettings.LegendSize = new Size(700, 45);
-            legendSettings.LabelStyle = new Style() { TextColor = Color.Black };
-            treeMap.LegendSettings = legendSettings;
+            SFLegendSetting legendSetting = new SFLegendSetting();
+            legendSetting.ShowLegend = true;
+            legendSetting.Size = new CoreGraphics.CGSize(500, 45);
+            treeMap.LegendSettings = legendSetting;
 
-            RangeColorMapping rangeColorMapping = new RangeColorMapping();
+            SFRangeColorMapping colorMapping = new SFRangeColorMapping();
 
-            Range range1 = new Range();
+            SFRange range1 = new SFRange();
+            range1.LegendLabel = (NSString)"1 % Growth";
             range1.From = 0;
             range1.To = 1;
-            range1.Color = Color.ParseColor("#77D8D8");
-            range1.LegendLabel = "1 % Growth";
+            range1.Color = UIColor.FromRGB(119, 216, 216);
 
-            Range range2 = new Range();
+            SFRange range2 = new SFRange();
+            range2.LegendLabel = (NSString)"2 % Growth";
             range2.From = 0;
             range2.To = 2;
-            range2.Color = Color.ParseColor("#AED960");
-            range2.LegendLabel = "2 % Growth";
+            range2.Color = UIColor.FromRGB(174, 217, 96);
 
-            Range range3 = new Range();
+            SFRange range3 = new SFRange();
+            range3.LegendLabel = (NSString)"3 % Growth";
             range3.From = 0;
             range3.To = 3;
-            range3.Color = Color.ParseColor("#FFAF51");
-            range3.LegendLabel = "3 % Growth";
+            range3.Color = UIColor.FromRGB(255, 175, 81);
 
-            Range range4 = new Range();
+            SFRange range4 = new SFRange();
+            range4.LegendLabel = (NSString)"4 % Growth";
             range4.From = 0;
             range4.To = 4;
-            range4.Color = Color.ParseColor("#F3D240");
-            range4.LegendLabel = "4 % Growth";
+            range4.Color = UIColor.FromRGB(243, 210, 64);
 
-            rangeColorMapping.Ranges.Add(range1);
-            rangeColorMapping.Ranges.Add(range2);
-            rangeColorMapping.Ranges.Add(range3);
-            rangeColorMapping.Ranges.Add(range4);
+            colorMapping.Ranges.Add(range1);
+            colorMapping.Ranges.Add(range2);
+            colorMapping.Ranges.Add(range3);
+            colorMapping.Ranges.Add(range4);
 
-            treeMap.LeafItemColorMapping = rangeColorMapping;
-            treeMap.DataSource = GetDataSource();
+            treeMap.LeafItemColorMapping = colorMapping;
 
-            SetContentView(treeMap);
+            GetPopulationData();
+            treeMap.DataSource = PopulationDetails;
+            treeMap.ShowTooltip = true;
+            treeMap.Frame = new CoreGraphics.CGRect(View.Frame.Left, View.Frame.Top + 50, View.Frame.Width, View.Frame.Height - 100);
+
+            this.View.AddSubview(treeMap);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-You can find the complete getting-started sample in the following link: [Getting-started]().
+You can find the complete getting-started sample in the following link: [Getting-started](https://github.com/SyncfusionExamples/TreeMap_GettingStarted_iOS).
 
 The following screenshot illustrates the output of SfTreeMap.
 
-![Output of SfTreeMap](Getting-Started_images/GettingStarted.jpg)
+![Output of SfTreeMap](TreeMap_Images/GettingStarted.png)
