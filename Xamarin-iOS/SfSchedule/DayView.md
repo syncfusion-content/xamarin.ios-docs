@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize the Schedule DayView at SfSchedule control for Xamarin.iOS
+title: Customize DayView at Syncfusion Schedule control for Xamarin.iOS
 description: Learn how to Customize the schedule DayView in SfSchedule control for Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule
