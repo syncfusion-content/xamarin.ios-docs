@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : Customizing the Syncfusion ComboBox control in Xamarin.iOS
 description : Learn how to Customizing the ComboBox 
