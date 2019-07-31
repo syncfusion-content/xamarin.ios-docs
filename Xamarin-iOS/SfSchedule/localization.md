@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization of Schedule
-description: How to Localize the contents of Schedule control.
+title: Localization of Schedule in Xamarin.iOS
+description: How to Localize the contents of Schedule control in Xamrin.iOS.
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
@@ -26,13 +26,13 @@ schedule.Locale = new NSLocale("ja");
 {% endhighlight %}
 {% endtabs %}
 
-![](LocalizationGlobalization_images/Localization_iOS_1.png)   
+![Localization support for schedule in Xamarin.iOS](LocalizationGlobalization_images/Localization_iOS_1.png)   
 
 ## Change custom texts in the control.
 
 You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://developer.xamarin.com/guides/ios/advanced_topics/localization_and_internationalization/).
 
-![](LocalizationGlobalization_images/Localization_IOS.png)  
+![Localization implementation in Xamarin.iOS](LocalizationGlobalization_images/Localization_IOS.png)  
 
 If an application requires multiple languages you can follow the below steps:
 
@@ -43,7 +43,7 @@ If an application requires multiple languages you can follow the below steps:
 You can download the entire source code of this demo for Xamarin.iOS from
 here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_iOS1315782719.zip).
 
-![](LocalizationGlobalization_images/Localization_iOS_Img2.png)
+![Localization folder structure for schedule in Xamarin.iOS](LocalizationGlobalization_images/Localization_iOS_Img2.png)
 
 >**NOTE**
 The corresponding `<Language>.lproj` folder loads only depends on the device configuration and locale.

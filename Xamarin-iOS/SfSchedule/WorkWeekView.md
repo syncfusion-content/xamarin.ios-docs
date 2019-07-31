@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customize the Schedule WorkWeekView at SfSchedule control for Xamarin.iOS
-description: Learn how to Customize the schedule WorkWeekView in SfSchedule control
+title: Customize the WorkWeekView at SfSchedule control for Xamarin.iOS
+description: Learn how to Customize the schedule WorkWeekView in SfSchedule control in Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
@@ -33,7 +33,7 @@ schedule.DayHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/viewheaderappearance_workweek.png)
+![Work week view view header appearance customization in schedule for Xamarin.iOS](daymodule_images/viewheaderappearance_workweek.png)
 
 You can customize the height of the ViewHeader in `WorkWeekView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderHeight.html) property of `SFSchedule`.
 
@@ -44,7 +44,7 @@ schedule.ViewHeaderHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/viewheaderheight_workweek.png)
+![Work week view view header height customization for schedule in Xamarin.iOS](daymodule_images/viewheaderheight_workweek.png)
 
 ### Customize Font Appearance
 
@@ -57,7 +57,7 @@ viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular", 20);
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/customfontviewheader_workweek.png)
+![Work week view custom font for view header for schedule in Xamarin.iOS](daymodule_images/customfontviewheader_workweek.png)
 
 Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
@@ -79,7 +79,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/DateFormat_WorkWeek.png)
+![Work week view view header date format customization for schedule in Xamarin.iOS](daymodule_images/DateFormat_WorkWeek.png)
 
 ### ViewHeader Tapped Event
 You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
@@ -110,7 +110,7 @@ schedule.TimeInterval = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timeintervalworkweek.png)
+![Work week view time interval customization for schedule in Xamarin.iOS](daymodule_images/timeintervalworkweek.png)
 
 >**NOTE**
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"h aa"`. You can refer [here](https://help.syncfusion.com/xamarin-ios/sfschedule/workweekview#time-label-formatting) for changing TimeFormat value.
@@ -125,7 +125,7 @@ schedule.TimeIntervalHeight = 120;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/workweekview_height.png)
+![Work week view time interval height customization for schedule in Xamarin.iOS](daymodule_images/workweekview_height.png)
 
 ## Change Working hours
 
@@ -145,7 +145,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/chnageworkinghour_workweek.png)
+![Work view working hours customization for schedule in Xamarin.iOS](daymodule_images/chnageworkinghour_workweek.png)
 
 >**NOTE**
 No need to specify the decimal point values for `WorkStartHour` and `WorkEndHour`, if you don’t want to set the minutes.
@@ -168,7 +168,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changestartendhour_workweek.png)
+![Work week view customizing start and end hour for schedule in Xamarin.iOS](daymodule_images/changestartendhour_workweek.png)
 
 >**NOTE**
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
@@ -203,7 +203,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timeslotappearance_workweek.png)
+![Work week view time slot appearance customization for schedule in Xamarin.iOS](daymodule_images/timeslotappearance_workweek.png)
 
 ### Timeslot customization in Non Working hours
 
@@ -223,7 +223,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/nonworkinghour_workweek.png)
+![Work week view non working hours customization for schedule in Xamarin.iOS](daymodule_images/nonworkinghour_workweek.png)
 
 >**NOTE**
 `HorizontalLineStrokeWidth`and `VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
@@ -250,7 +250,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/nonaccessibletimeslot_workweek.png)
+![Non accessible block support in schedule work week view for Xamarin.iOS](daymodule_images/nonaccessibletimeslot_workweek.png)
 
 >**NOTE**
 Selection and related events will not be working in this blocks.
@@ -265,7 +265,7 @@ schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/firstdayofweek_workweek.png)
+![First day of week for work week view in schedule for Xamarin.iOS](daymodule_images/firstdayofweek_workweek.png)
 
 ## Time Label Formatting
 You can customize the format for the labels which are mentioning the time, by setting [TimeLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekLabelSettings~TimeLabelFormat.html) property of [LabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WorkWeekViewSettings~LabelSettings.html) in `WorkWeekViewSettings`.
@@ -281,7 +281,7 @@ schedule.WorkWeekViewSettings = workweekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timelabelformat_workweek.png)
+![Work week view time label customization for schedule in Xamarin.iOS](daymodule_images/timelabelformat_workweek.png)
 
 ## Time Label Appearance
 
@@ -300,7 +300,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timelabelappearance_workweek.png)
+![Work week view time label appearance customization for schedule in Xamarin.iOS](daymodule_images/timelabelappearance_workweek.png)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
@@ -324,7 +324,7 @@ schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/selectionstyle_workweek.png)
+![Selection style for schedule Work week view in Xamarin.iOS](daymodule_images/selectionstyle_workweek.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionView.html) property of `SFSchedule`.
@@ -341,7 +341,7 @@ schedule.SelectionView = customView;
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/selectioncustomview_workweek.png)
+![Custom selection view support for schedule Work week view in Xamarin.iOS](daymodule_images/selectioncustomview_workweek.png)
 
 ### Programmatic selection
 You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectedDate.html) property of `SFSchedule`. By default, it is null.
@@ -380,6 +380,6 @@ You can download the entire source code of this demo for Xamarin.iOS from here [
 * `SFSchedule` does not support multiple selection.
 * `SFSchedule` supports two-way binding of `SelectedDate` property.
 
-![](daymodule_images/selection_WorkWeek.png)
+![Programmatic selection support for schedule Work week view in Xamarin.iOS](daymodule_images/selection_WorkWeek.png)
 
 

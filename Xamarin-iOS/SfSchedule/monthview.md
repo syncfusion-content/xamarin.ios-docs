@@ -1,7 +1,7 @@
 ---   
 layout: post   
-title: MonthView   
-description: Overview of MonthView related features
+title:Customize the MonthView at SFSchedule control in Xamarin.iOS
+description: Overview of MonthView related features of Schedule in Xamarin.iOS
 platform: xamarin.ios   
 control: SfSchedule   
 documentation: ug   

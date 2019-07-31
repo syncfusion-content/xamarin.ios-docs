@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dates, Navigations and Gestures in Schedule
-description: How to Navigate date, enable or disable navigation and other functionalities of Schedule control.
+title: Dates, Navigations and Gestures for Schedule in Xamarin.iOS
+description: How to Navigate date, enable or disable navigation and other functionalities of Schedule control in Xamarin.iOS.
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
