@@ -15,11 +15,30 @@ When the entered item is not in the suggestion list, SfAutoComplete displays a t
 
 {% highlight C# %}
 
-countryAutoComplete.NoResultsFoundText= "No Results Found";
-countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
+countryAutoComplete.NoResultsFoundText = "No Results Found";
+countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/NoResultsFound.png)
+![NoResultsFound](images/NoResultsFound.png)
+
+## Customizing NoResultsFoundText
+
+The `NoResultsFoundTextColor` and `NoResultsFoundFont` are the properties used to customize the foreground color and font of the NoResultsFoundText.
+
+{% tabs %}
+
+{% highlight c# %}
+
+countryAutoComplete.SuggestionMode = SuggestionMode.StartsWith;
+countryAutoComplete.NoResultsFoundText = "No Results Found";
+countryAutoComplete.NoResultsFoundTextColor = UIColor.FromRGB(128,0,0);
+countryAutoComplete.NoResultsFoundFont = UIFont.FromName("Pacifico", 20);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NoResultsFound_Customization](images/NoResultsFound_Customization.png)

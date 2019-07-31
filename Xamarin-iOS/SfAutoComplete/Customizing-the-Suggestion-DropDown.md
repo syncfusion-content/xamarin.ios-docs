@@ -27,7 +27,7 @@ countryAutocomplete.MinimumPrefixCharacters=2;
 
 {% endtabs %}
 
-![](images/minimumprefixcharacter.png)
+![Minimum prefix character](images/minimumprefixcharacter.png)
 
 
 ## Set Popup Delay
@@ -63,4 +63,29 @@ countryAutoComplete.MaxDropDownHeight = 90;
 
 {% endtabs %}
 
-![](images/maximumdropdownheight.png)
+![Maximum drop down height](images/maximumdropdownheight.png)
+
+## Set border color to the DropDown
+
+The DropDownBorderColor property is used to change the border color of DropDown. The following code example demonstrates how to change the border color of DropDown.
+
+{% tabs %}
+
+{% highlight C# %}
+
+            SfAutoComplete countryAutoComplete = new SfAutoComplete();
+            countryAutoComplete.Frame = new CGRect(10, 20, 250, 30);
+            NSMutableArray countryList = new NSMutableArray();
+            countryList.Add((NSString)"Afghanistan");
+            countryList.Add((NSString)"Akrotiri");
+            countryList.Add((NSString)"Albania");
+            countryAutoComplete.AutoCompleteSource = countryList;
+            countryAutoComplete.DropDownBorderColor = UIColor.Red;
+            countryAutoComplete.ShowSuggestionsOnFocus = true;
+            this.View.AddSubview(countryAutoComplete);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Drop down border color](images/drop-down-border-color.png)

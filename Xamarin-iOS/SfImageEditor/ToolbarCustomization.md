@@ -219,6 +219,22 @@ You can change default colors of the ColorPalette in toolbar.
 
 {% endtabs %}
 
+## Default Color Selected Index
+
+You can change the default index of the color palette in toolbar. By default, color palette index value is 2.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.DefaultSelectedColorIndex = 0;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfImageEditor default color selected index](ImageEditor_images/DefaultColorSelectedIndex.jpg)
+
 ## ToolbarHeight Customization
 
 You can customize `height of the toolbar` and also toolbar items `icon` and `text`.

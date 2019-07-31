@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessing View modes in Syncfusion Calendar control for Xamarin.iOS
-description: Learn how to change the view mode for calendar
+description: Calendar Xamarin.Android displays month, year, decade and century views which allows users to easily select and navigate between all built-in views
 platform: Xamarin.iOS
 control: Calendar
 documentation: ug
@@ -9,15 +9,15 @@ documentation: ug
 
 # Built-in Views
 
-`SfCalendar` control provides four types of views to display dates such as month,year,decade,century. It can be assigned to the `SfCalendar` control by using view mode property.
+Xamarin.Android calendar control provides 4 different types of views such month, year, decade and century. It allows users to easily select and navigate between all built-in views. This can be achieved by using [ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ViewMode.html) property of SfCalendar.
 
-By default `SfCalendar` control is assigned with month view. Based on the user’s preference `SfCalendar` viewed in any of the available two type.
+N> By default calendar control is assigned with month view. 
 
 ## Month view
 
 This displays entire dates of a particular month, by default current month will be displayed on loading. The current date is provided with unique color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
 
-The dates in month view can be selected by three ways such as single, multiple and range which can be modified using `SelectionMode`.
+The dates in month view can be selected by four ways such as single, multiple, range and multi range selections which can be achieved using [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html)
 
 {% highlight c# %}
 
@@ -72,7 +72,7 @@ calendar.MonthViewSettings = monthViewSettings;
 
 N> The view modes can be switched by clicking the Header Text in MonthView or by selecting a month in YearView
 
-### Month cell border color customization
+### Month view border color customization
 
 You can customize the border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 
@@ -87,6 +87,8 @@ calendar.MonthViewSettings = monthViewSettings;
 
 {% endhighlight %}
 
+![Month view border color in Xamarin.iOS Calendar](images/xamarin.ios-BorderColor.png)
+
 ### Today border color customization
 
 You can customize the today border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
@@ -100,6 +102,8 @@ monthViewSettings.TodayBorderColor = UIColor.FromRGB(255, 0, 0);
 calendar.MonthViewSettings = monthViewSettings;
 
 {% endhighlight %}
+
+![Month today border color in Xamarin.iOS Calendar](images/xamarin.ios-TodayBorderColor.png)
 
 ## Week view
 
@@ -116,12 +120,14 @@ N>
 {% highlight c# %}
 
 SFCalendar sfCalendar = new SFCalendar();
-sfCalendar.NumberOfWeeksInView = 3;
+sfCalendar.NumberOfWeeksInView = 2;
 View.AddSubView(sfCalendar);
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Week view in Xamarin.iOS Calendar](images/xamarin.ios-NumberOfWeeksInView.png)
 
 ## Year view
 
@@ -133,27 +139,7 @@ This displays entire dates/month of a particular year, by default current year w
 	
 {% endhighlight %}
 
-![Year View in Xamarin.iOS Calendar](images/xamarin.ios-calendar-year_view.png)                                        
-
-
-## Year view customization
-
-* The month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~MonthHeaderTextColor.html) property.
-* The year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearCell~DatetextColor.html) properties respectively.
-* The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to left, right or center. 
-* The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~YearLayoutBackground.html) property.
-
-{% highlight c# %}
-
-SFYearViewSettings yearViewSettings = new SFYearViewSettings();
-yearViewSettings.YearHeaderTextColor = UIColor.FromRGB(27, 121, 214);
-yearViewSettings.YearLayoutBackground = UIColor.FromRGB(255, 228, 181);
-yearViewSettings.MonthHeaderBackground = UIColor.FromRGB(139, 69, 19);
-yearViewSettings.DateTextColor = UIColor.FromRGB(230, 230, 250);
-yearViewSettings.HeaderLabelAlignment = NSTextAlignment.NSTextAlignmentCenter;
-calendar.YearViewSettings = yearViewSettings;
-
-{% endhighlight %}
+![Year View in Xamarin.iOS Calendar](images/xamarin.ios-calendar-year_view.png)      
 
 ## Year view mode
 
@@ -176,9 +162,33 @@ this.Content = calendar;
 
 {% endtabs %}
  
+![Year view mode in Xamarin.iOS Calendar](images/xamarin.ios-YearViewMode.png)  
 
 N>
-* The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
+* The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.   
+
+                             
+
+
+## Year view customization
+
+* The month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~MonthHeaderTextColor.html) property.
+* The year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearCell~DatetextColor.html) properties respectively.
+* The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to left, right or center. 
+* The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~YearLayoutBackground.html) property.
+
+{% highlight c# %}
+
+SFYearViewSettings yearViewSettings = new SFYearViewSettings();
+yearViewSettings.YearHeaderTextColor = UIColor.FromRGB(27, 121, 214);
+yearViewSettings.YearLayoutBackground = UIColor.FromRGB(255, 228, 181);
+yearViewSettings.MonthHeaderBackground = UIColor.FromRGB(139, 69, 19);
+yearViewSettings.DateTextColor = UIColor.FromRGB(230, 230, 250);
+yearViewSettings.HeaderLabelAlignment = NSTextAlignment.NSTextAlignmentCenter;
+calendar.YearViewSettings = yearViewSettings;
+
+{% endhighlight %}
+
 
 ## Decade view
 
@@ -196,6 +206,7 @@ View.AddSubView(calendar);
 
 {% endtabs %}
 
+![Decade view mode in Xamarin.iOS Calendar](images/xamarin.ios-DecadeView.png)
  
 ## Decade view customization
 
@@ -220,6 +231,8 @@ calendar.YearViewSettings = yearViewSettings;
 
 {% endtabs %}
 
+![Decade view customization in Xamarin.iOS Calendar](images/xamarin.ios-DecadeView-Custom.png)
+
 ## Century view
 
 This view displays the period of 100 years. By default, current year range of 100 years will be displayed on loading. You can easily navigate between month/year/decade view to century view by tapping the calendar header. You can easily navigate to decade view by selecting decade years in century view.
@@ -235,6 +248,8 @@ View.AddSubView(calendar);
 {% endhighlight %}
 
 {% endtabs %}
+
+![Century view mode in Xamarin.iOS Calendar](images/xamarin.ios-CenturyView.png)
  
 ## Century view customization
 
@@ -258,6 +273,8 @@ calendar.YearViewSettings = yearViewSettings;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Century view mode in Xamarin.iOS Calendar](images/xamarin.ios-CenturyView-Custom.png)
 
 
 
