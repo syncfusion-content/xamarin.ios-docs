@@ -1,6 +1,6 @@
 ---   
 layout: post   
-title:Customize the MonthView at SFSchedule control in Xamarin.iOS
+title: Customize the MonthView at Syncfusion Schedule control in Xamarin.iOS
 description: Overview of MonthView related features of Schedule in Xamarin.iOS
 platform: xamarin.ios   
 control: SfSchedule   

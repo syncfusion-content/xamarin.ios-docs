@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization of Schedule in Xamarin.iOS
+title: Localization of syncfusion Schedule in Xamarin.iOS
 description: How to Localize the contents of Schedule control in Xamrin.iOS.
 platform: xamarin.iOS
 control: SfSchedule
