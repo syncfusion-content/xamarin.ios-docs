@@ -2,7 +2,7 @@
 
 layout: post
 title: TimeZone support in Syncfusion SfSchedule control for Xamarin.iOS
-description: Learn how to use TimeZone in SfSchedule control
+description: Learn how to use TimeZone in SfSchedule control for Xamarin.iOS
 platform: xamarin.ios
 control: SfSchedule
 documentation: ug
