@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Named Ranges
-description: Description about the named ranges support in Essential Calculate
+title: Named Ranges | Xamarin.ios | Syncfusion
+description: Description about the named ranges support in Xamarin.ios Calculate
 platform: xamarin.ios
 control: Calculate
 documentation: ug

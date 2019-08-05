@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Parse and Compute
-description: Explains about the parsing and computing methods in Calculate.
+title: Parse and Compute | Xamarin.ios | Syncfusion
+description: Explains about the parsing and computing methods in Xamarin.ios Calculate.
 platform: xamarin.ios
 control: Calculate
 documentation: ug
