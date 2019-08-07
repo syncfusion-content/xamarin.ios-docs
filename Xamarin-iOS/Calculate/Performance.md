@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance and Limitations
-description: Describes how to improve the performance of Essential Calculate and its limitations
+title: Performance and Limitations | Xamarin.ios | Syncfusion
+description: Describes how to improve the performance of Xamarin.ios Calculate and its limitations
 platform: xamarin.ios
 control: Calculate
 documentation: ug
