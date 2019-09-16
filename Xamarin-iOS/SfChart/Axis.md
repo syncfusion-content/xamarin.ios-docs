@@ -61,6 +61,38 @@ xAxis.Interval = new NSNumber (2);
 
 ![Enable or disable the axis auto-interval support in Xamarin.iOS Chart](Axis_images/CategoryInterval.png)
 
+### Indexed category axis
+
+Category axis can also be rendered based on the index values of data source by setting the [`ArrangeByIndex`]() property to true in the axis.
+
+{% highlight c# %} 
+[C#]
+
+chart.PrimaryAxis = new SFCategoryAxis() 
+{ 
+	ArrangeByIndex = false 
+};
+
+SFColumnSeries series1 = new SFColumnSeries()
+{
+        ItemsSource = view.Data1,
+        XBindingPath = "Country",
+        YBindingPath = "Year2016"
+};
+SFColumnSeries series2 = new SFColumnSeries()
+{
+        ItemsSource = view.Data2,
+        XBindingPath = "Country",
+        YBindingPath = "Year2016",
+};
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+![Category axis indexed feature support in Xamarin.Android Chart](Axis_images/ArrangeByIndex.png)
+
 ## Numeric Axis
 
 Numeric axis uses numerical scale and displays numbers as labels. 
