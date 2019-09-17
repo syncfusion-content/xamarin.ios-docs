@@ -9,7 +9,7 @@ documentation: UG
 
 # Data annotations
 
-DataForm provides support for below attributes.
+The data form supports the following attribute, and these attributes can be accessible using `System.ComponentModel.DataAnnotation` assembly.
 
 ## Display attribute
 
@@ -159,7 +159,7 @@ Percent data type is supported. Refer [here](https://help.syncfusion.com/xamarin
 
 ## Custom Attributes
 
-The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.iOS`.
+The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.iOS` assembly.
 
 ### DisplayOptions Attribute
 
