@@ -44,7 +44,7 @@ Numeric
 <td>
 Generated for int, double, float, decimal, long types and its nullable also properties with below attributes. 
 [DataType(DataType.Currency)]
-[DataType(Percent)]
+[DataType("Percent")]
 </td>
 </tr>
 <tr>

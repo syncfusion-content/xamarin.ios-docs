@@ -157,6 +157,10 @@ Refer [here](https://help.syncfusion.com/xamarin-ios/sfdataform/editing#supporte
 
 Percent data type is supported. Refer [here](https://help.syncfusion.com/xamarin-ios/sfdataform/editing#supported-editors-and-associated-dataformitem) for more details.
 
+## Custom Attributes
+
+The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.iOS.DataForm`.
+
 ### DisplayOptions Attribute
 
 <table>
