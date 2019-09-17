@@ -159,7 +159,7 @@ Percent data type is supported. Refer [here](https://help.syncfusion.com/xamarin
 
 ## Custom Attributes
 
-The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.iOS.DataForm`.
+The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.iOS`.
 
 ### DisplayOptions Attribute
 
