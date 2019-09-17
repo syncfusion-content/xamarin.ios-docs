@@ -70,8 +70,6 @@ Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/layout#changi
 </tr>
 </table>
 
-N> For Xamarin.iOS platform, `System.ComponentModel.DataAnnotations` assembly should be referred manually in order to set [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute in SfDataForm.  
-
 ## Validation attributes
 
 <table>
