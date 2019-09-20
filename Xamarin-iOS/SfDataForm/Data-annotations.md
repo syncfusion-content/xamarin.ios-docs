@@ -9,7 +9,7 @@ documentation: UG
 
 # Data annotations
 
-DataForm provides support for below attributes.
+The data form supports the following attribute, and these attributes can be accessible using `System.ComponentModel.DataAnnotation` assembly.
 
 ## Display attribute
 
@@ -69,8 +69,6 @@ Refer {{'[here](https://help.syncfusion.com/xamarin-ios/sfdataform/layout#changi
 </td>
 </tr>
 </table>
-
-N> For Xamarin.iOS platform, `System.ComponentModel.DataAnnotations` assembly should be referred manually in order to set [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute in SfDataForm.  
 
 ## Validation attributes
 
@@ -156,6 +154,10 @@ Refer [here](https://help.syncfusion.com/xamarin-ios/sfdataform/editing#supporte
 ## CustomDataType Attribute
 
 Percent data type is supported. Refer [here](https://help.syncfusion.com/xamarin-ios/sfdataform/editing#supported-editors-and-associated-dataformitem) for more details.
+
+## Custom Attributes
+
+The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.iOS` assembly.
 
 ### DisplayOptions Attribute
 
