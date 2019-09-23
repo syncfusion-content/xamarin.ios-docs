@@ -150,25 +150,31 @@ segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {
 
 ## Programmatically scrolling in segmented control 
 
-Scrolling can be done programmatically using the `ScrollTo` method.
+SegmentedControl allows programmatic scrolling based on the index and item using the `ScrollTo` methods mentioned below.
 
 ### ScrollTo(index, scrollToPosition)
 
-[`ScrollTo(index, scrollToPosition)`]() method scrolls the segmented control to the specified index based on the [`ScrollToPosition`]() value such as [`MakeVisible`](), [`Start`](), [`Center`]() and [`End`]().
-
-### ScrollTo(item, scrollToPosition)
-
-[`ScrollTo(item, scrollToPosition)`]() scrolls the segmented control to the specified item based on the specific [`ScrollToPosition`]() value such as [`MakeVisible`](), [`Start`](), [`Center`]() and [`End`]().
+This method is used to scroll the segment item based on given index and [`ScrollToPosition`]() value.
 
 {% tabs %}
 
 {% highlight c# %}
 
-// Programmatic scrolling based on the item index.
-segmentedControl.ScrollTo(5, Syncfusion.iOS.Buttons.ScrollToPosition.Start);
+segmentedControl.ScrollTo(5,  Syncfusion.iOS.Buttons.ScrollToPosition.Start);
 
-// Programmatic scrolling based on the item data.
-segmentedControl.ScrollTo("5", Syncfusion.iOS.Buttons.ScrollToPosition.Start);
+{% endhighlight %}
+
+{% endtabs %}
+
+### ScrollTo(item, scrollToPosition)
+
+This method is used to scroll the segment item based on the given data or `SfSegmentItem` and [`ScrollToPosition`]() value.
+
+{% tabs %}
+
+{% highlight c# %}
+
+segmentedControl.ScrollTo(viewModel.Items[5], Syncfusion.iOS.Buttons.ScrollToPosition.Start);
 
 {% endhighlight %}
 
