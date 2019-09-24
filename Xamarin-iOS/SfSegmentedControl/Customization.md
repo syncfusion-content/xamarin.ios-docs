@@ -148,9 +148,9 @@ segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {
 
 {% endhighlight %}
 
-## Programmatically scrolling in segmented control 
+## Scrolling in segmented control programmatically
 
-SegmentedControl allows programmatic scrolling based on the index and item using the `ScrollTo` methods mentioned below.
+The SegmentedControl allows programmatic scrolling based on index and item using the `ScrollTo` methods mentioned as follows.
 
 ### ScrollTo(index, scrollToPosition)
 
@@ -160,7 +160,7 @@ This method is used to scroll the segment item based on given index and [`Scroll
 
 {% highlight c# %}
 
-segmentedControl.ScrollTo(5,  Syncfusion.iOS.Buttons.ScrollToPosition.Start);
+segmentedControl.ScrollTo(5, Syncfusion.iOS.Buttons.ScrollToPosition.Start);
 
 {% endhighlight %}
 
