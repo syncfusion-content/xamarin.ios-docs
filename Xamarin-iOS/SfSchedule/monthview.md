@@ -177,7 +177,7 @@ schedule.MonthViewSettings = monthViewSettings;
 ![Week number customization in schedule xamarin ios](monthview_images/weeknumberstyle.png)
 
 ## Month Label Formatting 
-You can change the Format of the Month date and day labels string in the Schedule using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelFormat.html), [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DayLabelFormat.html) and [DateLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelSize.html) properties of [LabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings.html) in `MonthViewSettings`. 
+You can change the Format of the Month date and day labels string in the Schedule using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DateLabelFormat.html), and [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings~DayLabelFormat.html) properties of [LabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthLabelSettings.html) in `MonthViewSettings`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -185,7 +185,6 @@ You can change the Format of the Month date and day labels string in the Schedul
 MonthLabelSettings monthLabelSettings = new MonthLabelSettings();
 monthLabelSettings.DayLabelFormat = (NSString)"EEEE";
 monthLabelSettings.DateLabelFormat = (NSString)"dd";
-monthLabelSettings.DateLabelSize = 20;
 monthViewSettings.LabelSettings = monthLabelSettings;
 schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
