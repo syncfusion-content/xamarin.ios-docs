@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize DayView at Syncfusion Schedule control for Xamarin.iOS
+title: Customize work week view at Syncfusion Schedule control for Xamarin.iOS
 description: Learn how to Customize the schedule WorkWeekView in SfSchedule control in Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule
@@ -12,7 +12,7 @@ documentation: ug
 
 # WorkWeekView
 
-WorkWeekView is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.
+Work week view is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.
 
 ## ViewHeader Appearance
 You can customize the default appearance of view header in [WorkWeekView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFScheduleView.html) by using [DayHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayHeaderStyle.html) property of [SFSchedule](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule.html).
