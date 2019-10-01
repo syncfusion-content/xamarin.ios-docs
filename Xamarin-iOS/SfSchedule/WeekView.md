@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize DayView at Syncfusion Schedule control for Xamarin.iOS
+title: Customize week view at Syncfusion Schedule control | Xamarin.iOS
 description: Learn how to Customize the schedule WeekView in SfSchedule control in Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule
@@ -12,7 +12,7 @@ documentation: ug
 
 # WeekView
 
-WeekView is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.
+Week view is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.
 
 ## ViewHeader Appearance
 You can customize the default appearance of view header in [WeekView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFScheduleView.html) by using [DayHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayHeaderStyle.html) property of [SFSchedule](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule.html).
