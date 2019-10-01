@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize DayView at Syncfusion Schedule control for Xamarin.iOS
+title: Customize day view at Syncfusion Schedule control | Xamarin.iOS
 description: Learn how to Customize the schedule DayView in SfSchedule control for Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule
@@ -12,7 +12,7 @@ documentation: ug
 
 # DayView
 
-DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
+Day view is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 
 ## ViewHeader Appearance
 You can customize the default appearance of view header in [DayView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFScheduleView.html) by using [DayHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayHeaderStyle.html) property of [SFSchedule](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule.html).
