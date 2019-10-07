@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering | SfDataGrid | Xamarin.iOS | Syncfusion
-description: How to filter the records in view in a SfDataGrid.
+description: Filter the records in view using properties in Xamarin.iOS SfDataGrid by simply setting a predicate to the view.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
@@ -230,7 +230,7 @@ private void OnFilterChanged()
 }
 {% endhighlight %}
 
-## DataTable filtering
+## Applying DataTable's RowFilter to DataGrid
 
 To filter the rows in SfDataGrid using [DataView.RowFilter](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) expression, set the value of [SfDataGrid.CanUseViewFilter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CanUseViewFilter.html) property to `true`. The default filter which created in DataView can be applied or canceled through this property. 
 
