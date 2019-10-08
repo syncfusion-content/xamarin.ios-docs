@@ -28,7 +28,7 @@ For creating a PDF Viewer for iOS, the following assemblies need to be reference
 </tr>
 <tr>
 <td>Xamarin.iOS</td>
-<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.iOS.dll<br/>Syncfusion.SfBusyIndicator.iOS.dll<br/></td>
+<td>Syncfusion.Compression.Portable.dll<br/>Syncfusion.Pdf.Portable.dll<br/>Syncfusion.SfPdfViewer.iOS.dll<br/>Syncfusion.SfBusyIndicator.iOS.dll<br/>Syncfusion.SfRangeSlider.iOS.dll<br/>Syncfusion.SfProgressBar.iOS.dll<br/>Syncfusion.SfComboBox.iOS.dll<br/></td>
 </tr>
 </table>
 
