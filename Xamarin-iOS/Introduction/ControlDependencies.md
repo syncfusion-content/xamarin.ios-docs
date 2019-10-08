@@ -292,7 +292,8 @@ This page lists the assemblies required for each control to be referred in Xamar
 <dd>Syncfusion.SfPdfViewer.iOS.dll</dd>
 <dd>Syncfusion.SfRangeSlider.iOS.dll</dd>
 <dd>Syncfusion.Licensing.dll</dd> 
-<dd>Syncfusion.SfProgressBar.iOS.dll</dd> 
+<dd>Syncfusion.SfProgressBar.iOS.dll</dd>
+<dd>Syncfusion.SfComboBox.iOS.dll</dd> 
 </dl>
 
 ## SfPicker
