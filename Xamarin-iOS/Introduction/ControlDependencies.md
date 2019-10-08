@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control Dependencies of Xamarin.iOS
+title: Control Dependencies of Xamarin.iOS | Syncfusion
 description: Contains control dependencies of Syncfusion Xamarin.iOS components for each control to be referred in iOS project
 platform: Xamarin.iOS
 control: Introduction
