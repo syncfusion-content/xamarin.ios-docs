@@ -59,6 +59,37 @@ Following screenshot shows the zoomed area,
 
 ![Zoomed area in Xamarin.iOS Chart](zoompan_images/zoompan_img2.png)
 
+### Show axis tooltip on selection zooming
+
+The axis tooltip on selection zooming can be enabled using the [`SFChartAxis.TrackballLabelStyle.Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballLabelStyle~Visible.html) property to show/hide the tooltip on the axis. 
+
+[`SFChartAxis.SFChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle.html) property is used to customize the appearance of the axis tooltip.
+The following properties are used to customize the axis tooltip:
+
+* LabelAlignment - used to change the position of the tooltip axis label.
+* BorderColor – used to change the label border color.
+* BorderWidth – used to change the label border width.
+* BackgroundColor – used to change the label background color.
+* Color – used to change the text color.
+* Font – used to change label font size, family and weight.
+* LabelFormatter – used to format the label.
+* Margin - used to change the margin size for labels.
+* Visible – used to control the visibility of axis tooltip label.
+
+{% highlight c# %}
+
+primaryAxis.TrackballLabelStyle.Visible = true;
+
+secondaryAxis.TrackballLabelStyle.Visible = true;
+
+SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
+
+zoomPan.EnableSelectionZooming = true;
+
+chart.AddChartBehavior (zoomPan);
+
+{% endhighlight %}
+
 ## Zoom Mode
 
 The [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomMode.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~ZoomMode.html) is [`SFChartZoomMode.XY`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomMode.html) (both axis).
