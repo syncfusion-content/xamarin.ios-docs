@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Types | SFChart | Xamarin.iOS | Syncfusion
-description: What are all the different types of chart and it's properties in SFChart.
+description: This section explains the different types of charts, including Cartesian, Financial, Accumulation, PolarRadar and its properties.
 platform: xamarin.ios
 control: SFChart
 documentation: ug
@@ -51,6 +51,159 @@ dashes [1]              = (NSNumber)3;
 series.Dashes           = NSArray.FromObjects (dashes);
 chart.Series.Add(series);
 {% endhighlight %}
+
+## Stacked Line Chart
+
+To render a stacked line chart, create an instance of `SFStackingLineSeries` and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the stacked line appearance.
+
+* `Color` – used to change the color of the line.
+* `Alpha` - used to control the transparency of the chart series.
+* `LineWidth` – used to change the width of the line.
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFStackingLineSeries stackingLineSeries1 = new SFStackingLineSeries() 
+{ 
+    ItemsSource = Data1, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue" 
+};
+
+SFStackingLineSeries stackingLineSeries2 = new SFStackingLineSeries() 
+{ 
+    ItemsSource = Data2, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue" 
+};
+
+SFStackingLineSeries stackingLineSeries3 = new SFStackingLineSeries() 
+{ 
+    ItemsSource = Data3, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue" 
+};
+
+SFStackingLineSeries stackingLineSeries4 = new SFStackingLineSeries() 
+{ 
+    ItemsSource = Data4, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue" 
+};
+
+chart.Series.Add(stackingLineSeries1);
+chart.Series.Add(stackingLineSeries2);
+chart.Series.Add(stackingLineSeries3);
+chart.Series.Add(stackingLineSeries4);
+
+{% endhighlight %}
+
+![StackedLine chart type in Xamarin.iOS](ChartTypes_images/StackingLine.png)
+
+### Dashed Lines
+
+`Dashes` property of the `SFStackingLineSeries` is used to render stacking line series with dashes.
+
+{% highlight c# %}
+SFStackingLineSeries series1 = new SFStackingLineSeries ();
+series1.ItemsSource = Data; 
+series1.XBindingPath = "XValue";
+series1.YBindingPath = "YValue";
+  
+NSObject[] dashes       = new NSObject[2];
+dashes [0]              = (NSNumber)13;
+dashes [1]              = (NSNumber)4;
+series1.Dashes           = NSArray.FromObjects (dashes);
+chart.Series.Add(series1);
+
+SFStackingLineSeries series2 = new SFStackingLineSeries ();
+series2.ItemsSource = Data; 
+series2.XBindingPath = "XValue";
+series2.YBindingPath = "YValue";
+  
+NSObject[] dashes       = new NSObject[2];
+dashes [0]              = (NSNumber)13;
+dashes [1]              = (NSNumber)4;
+series2.Dashes           = NSArray.FromObjects (dashes);
+chart.Series.Add(series2);
+
+SFStackingLineSeries series3 = new SFStackingLineSeries ();
+series3.ItemsSource = Data; 
+series3.XBindingPath = "XValue";
+series3.YBindingPath = "YValue";
+  
+NSObject[] dashes       = new NSObject[2];
+dashes [0]              = (NSNumber)13;
+dashes [1]              = (NSNumber)4;
+series3.Dashes           = NSArray.FromObjects (dashes);
+chart.Series.Add(series3);
+{% endhighlight %}
+
+SFStackingLineSeries series4 = new SFStackingLineSeries ();
+series4.ItemsSource = Data; 
+series4.XBindingPath = "XValue";
+series4.YBindingPath = "YValue";
+  
+NSObject[] dashes       = new NSObject[2];
+dashes [0]              = (NSNumber)13;
+dashes [1]              = (NSNumber)4;
+series4.Dashes           = NSArray.FromObjects (dashes);
+chart.Series.Add(series4);
+{% endhighlight %}
+
+
+## 100% Stacked Line Chart
+
+To render a 100% stacked line chart, create an instance of `SFStackingLine100Series` and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the 100% stacked line appearance.
+
+* `Color` – used to change the color of the line.
+* `Alpha` - used to control the transparency of the chart series.
+* `LineWidth` – used to change the width of the line.
+* `Dashes` - used to render the dashes of the stacking line series.
+
+
+{% highlight c# %}
+
+SFChart chart = new SFChart();
+...
+
+SFStackingLine100Series stackingLine100Series1 = new SFStackingLine100Series() 
+{ 
+    ItemsSource = Data1, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue" 
+};
+
+SFStackingLine100Series stackingLine100Series2 = new SFStackingLine100Series() 
+{ 
+    ItemsSource = Data2, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue" 
+};
+
+SFStackingLine100Series stackingLine100Series3 = new SFStackingLine100Series() 
+{ 
+    ItemsSource = Data3, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue" 
+};
+
+SFStackingLine100Series stackingLine100Series4 = new SFStackingLine100Series() 
+{ 
+    ItemsSource = Data4, 
+    XBindingPath = "XValue", 
+    YBindingPath = "YValue" 
+};
+
+chart.Series.Add(stackingLine100Series1);
+chart.Series.Add(stackingLine100Series2);
+chart.Series.Add(stackingLine100Series3);
+chart.Series.Add(stackingLine100Series4);
+{% endhighlight %}
+
+![StackingLine100 chart type in Xamarin.iOS](ChartTypes_images/StackingLine100.png)
 
 ## Area Chart
 
