@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual customization in SfRadioButton for Xamarin.iOS platform
-description: Learn how to customize the basic features of SfRadioButton
+title: Visual customization | SfRadioButton | Syncfusion | Xamarin.iOS 
+description: Learn how to customize the SfRadioButton CheckedColor, UncheckedColor, BorderWidth, and Text in Xamarin.iOS.
 platform: Xamarin.iOS
 control: SfRadioButton
 documentation: ug 
@@ -30,7 +30,27 @@ radioGroup.AddArrangedSubview(uncheck);
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/StateColor.png)
+![CheckedColor and UncheckedColor in RadioButton](Images/StateColor.png)
+
+## BorderWidth
+The border thickness of the circle in the RadioButton control can be customized with the `BorderWidth` property.  
+
+{% tabs %}
+{% highlight c# %}
+SfRadioGroup radioGroup = new SfRadioGroup();
+SfRadioButton check = new SfRadioButton();
+check.SetTitle("Checked State",UIControlState.Normal);
+check.IsChecked = true;
+check.BorderWidth = 3;
+SfRadioButton uncheck = new SfRadioButton();
+uncheck.SetTitle("UnChecked State", UIControlState.Normal);
+uncheck.BorderWidth = 3;
+radioGroup.AddArrangedSubview(check);
+radioGroup.AddArrangedSubview(uncheck);
+{% endhighlight %}
+{% endtabs %}
+
+![RadioButton BorderWidth](Images/BorderWidth.png)
 
 ## Setting caption text appearance 
 
@@ -54,6 +74,6 @@ radioButton.Font = UIFont.FromDescriptor(fontDescriptor.CreateWithTraits(UIFontD
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/CaptionAppereance.png)
+![RadioButton TextAppereance](Images/CaptionAppereance.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/RadioButton_VisualCustomization.zip ).
