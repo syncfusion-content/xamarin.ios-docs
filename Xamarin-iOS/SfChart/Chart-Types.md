@@ -108,7 +108,7 @@ chart.Series.Add(stackingLineSeries4);
 
 {% highlight c# %}
 SFStackingLineSeries series1 = new SFStackingLineSeries ();
-series1.ItemsSource = Data; 
+series1.ItemsSource = Data1; 
 series1.XBindingPath = "XValue";
 series1.YBindingPath = "YValue";
   
@@ -119,7 +119,7 @@ series1.Dashes           = NSArray.FromObjects (dashes);
 chart.Series.Add(series1);
 
 SFStackingLineSeries series2 = new SFStackingLineSeries ();
-series2.ItemsSource = Data; 
+series2.ItemsSource = Data2; 
 series2.XBindingPath = "XValue";
 series2.YBindingPath = "YValue";
   
@@ -130,7 +130,7 @@ series2.Dashes           = NSArray.FromObjects (dashes);
 chart.Series.Add(series2);
 
 SFStackingLineSeries series3 = new SFStackingLineSeries ();
-series3.ItemsSource = Data; 
+series3.ItemsSource = Data3; 
 series3.XBindingPath = "XValue";
 series3.YBindingPath = "YValue";
   
@@ -142,7 +142,7 @@ chart.Series.Add(series3);
 {% endhighlight %}
 
 SFStackingLineSeries series4 = new SFStackingLineSeries ();
-series4.ItemsSource = Data; 
+series4.ItemsSource = Data4; 
 series4.XBindingPath = "XValue";
 series4.YBindingPath = "YValue";
   
