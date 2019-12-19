@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual customization in SfCheckBox for Xamarin.iOS platform
-description: Learn how to customize the basic features of SfCheckBox
+title: Visual customization | SfCheckBox | Syncfusion | Xamarin.iOS
+description: Learn how to customize the SfCheckBox CornerRadius, CheckedColor, UncheckedColor, BorderWidth, and Text.
 platform: Xamarin.iOS
 control: SfCheckBox
 documentation: ug 
@@ -23,7 +23,7 @@ checkBox.CornerRadius = 5.0f;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Radius.png)
+![Checkbox CornerRadius](Images/Radius.png)
 
 ## Customizing state color
 The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 
@@ -44,7 +44,32 @@ indeterminate.CheckedColor = UIColor.Purple;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/StateColor.png)
+![CheckedColor and UncheckedColor in Checkbox](Images/StateColor.png)
+
+## BorderWidth
+The tick box border thickness of the checkbox control can be customized with the `BorderWidth` property.  
+
+{% tabs %}
+{% highlight c# %}
+SfCheckBox check1 = new SfCheckBox();
+check1.SetTitle("Hello", UIControlState.Normal);
+check1.BorderWidth = 2;
+check1.FontSize = 20;
+check1.UncheckedColor = Color.Blue;
+SfCheckBox check2 = new SfCheckBox();
+check2.SetTitle("Hello", UIControlState.Normal);
+check2.BorderWidth = 4;
+check2.FontSize = 25;
+check2.UncheckedColor = Color.Blue;
+SfCheckBox check3 = new SfCheckBox();
+check3.SetTitle("Hello", UIControlState.Normal);
+check3.BorderWidth = 6;
+check3.FontSize = 30;
+check3.UncheckedColor = Color.Blue;
+{% endhighlight %}
+{% endtabs %}
+
+![Checkbox BorderWidth](Images/BorderWidth.png)
 
 ## Setting caption text appearance 
 You can customize the display text appearance of the `SfCheckBox` control using the following properties:
@@ -67,6 +92,6 @@ caption.Font = UIFont.FromDescriptor(fontDescriptor.CreateWithTraits(UIFontDescr
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/CaptionAppearance.png)
+![Checkbox TextAppearance](Images/CaptionAppearance.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_VisualCustomization.zip ).
