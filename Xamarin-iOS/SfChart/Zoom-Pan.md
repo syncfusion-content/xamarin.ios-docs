@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming and Panning | SFChart | Xamarin.iOS | Syncfusion
-description: How to add ZoomPan behavior in SFChart
+description: This section explains how to add ZoomPanBehavior to the chart and its features such as zooming types, zooming modes, delegates, and methods.
 platform: xamarin.ios
 control: SFChart
 documentation: ug
@@ -18,16 +18,10 @@ Following properties are used to configure the zooming feature,
 * [`EnableZooming`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnableZooming.html) – used to enable/disable the pinch zooming. Default value is true. 
 * [`EnableDirectionalZooming`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnableDirectionalZooming.html) - Enables or disables the pinch zooming based on pinch gesture direction. The default value of this property is false.
 * [`EnableDoubleTap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnableDoubleTap.html) – when you enable this property, you can double tap on the chart to reset it to the original size or zoom in by one level.
-* [`EnableSelectionZooming`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnableSelectionZooming.html) – when this property is set to true, you can double tap and drag to select a range on the chart to be zoomed in.
 * [`EnablePanning`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnablePanning.html) – used to enable/disable the panning. Default value is true.
 * [`MaximumZoomLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~MaximumZoomLevel.html) - used to determine the maximum zoom level of the chart.
-* [`SelectionRectBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~SelectionRectBorderWidth.html) - used to change the border width of selection rectangle.
-* [`SelectionRectStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~SelectionRectBorderColor.html) - used to change the border color of selection rectangle.
-* [`SelectionRectBorderDashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~SelectionRectBorderDashes.html) - used to change the border dashes of selection rectangle.
-* [`SelectionRectFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~SelectionRectFillColor.html) - used to change the border fill color of selection rectangle.
 
 Following code snippet illustrates how to enable zooming.
-
 
 {% highlight c# %}
 
@@ -35,9 +29,11 @@ SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior ();
 
 chart.AddChartBehavior (zoomPan); 
 
-
 {% endhighlight %}
 
+## Selection zooming
+
+By specifying [`EnableSelectionZooming`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~EnableSelectionZooming.html) property to true, you can double tap and drag to select a range on the chart to be zoomed in.
 
 Following code snippet illustrates how to enable the box selection zooming,
 
@@ -49,15 +45,57 @@ chart.AddChartBehavior (zoomPan);
 
 {% endhighlight %}
 
-
 Following screenshot shows the box selection on chart area,
 
 ![Box selection support in Xamarin.iOS Chart](zoompan_images/zoompan_img1.png)
 
-
 Following screenshot shows the zoomed area,
 
 ![Zoomed area in Xamarin.iOS Chart](zoompan_images/zoompan_img2.png)
+
+### Selection rectangle customization
+
+You can customize the selection rectangle using the below properties.
+
+* [`SelectionRectBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~SelectionRectBorderWidth.html) - used to change the border width of selection rectangle.
+* [`SelectionRectStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~SelectionRectBorderColor.html) - used to change the border color of selection rectangle.
+* [`SelectionRectBorderDashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~SelectionRectBorderDashes.html) - used to change the border dashes of selection rectangle.
+* [`SelectionRectFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartZoomPanBehavior~SelectionRectFillColor.html) - used to change the fill color of selection rectangle.
+
+### Show axis tooltip
+
+The axis tooltip on selection zooming can be enabled using the [`SFChartAxis.TrackballLabelStyle.Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballLabelStyle~Visible.html) property. You can customize the appearance of the axis tooltip by the below properties of [`SFChartAxis.SFChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle.html).
+
+* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle~LabelAlignment.html) - used to change the position of the axis label.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderColor.html) – used to change the label border color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderWidth.html) – used to change the label border width.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BackgroundColor.html) – used to change the label background color.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Color.html) – used to change the label text color.
+* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Font.html) – used to change the label font size, family and weight.
+* [`LabelFormatter`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~LabelFormatter.html) – used to format the label.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Margin.html) - used to change the margin for label.
+* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballLabelStyle~Visible.html) – used to control the visibility of axis tooltip label.
+
+{% highlight c# %}
+
+SFChart chart = new SFChart ();
+
+SFNumericalAxis primaryAxis = new SFNumericalAxis();
+primaryAxis.TrackballLabelStyle.Visible = true;
+chart.PrimaryAxis = primaryAxis; 
+
+SFNumericalAxis secondaryAxis = new SFNumericalAxis();
+secondaryAxis.TrackballLabelStyle.Visible = true;
+chart.SecondaryAxis = secondaryAxis; 
+
+SFChartZoomPanBehavior zoomPan = new SFChartZoomPanBehavior();
+zoomPan.EnableSelectionZooming = true;
+
+chart.AddChartBehavior (zoomPan);
+
+{% endhighlight %}
+
+![Show axis tooltip on selection zooming in Xamarin.iOS Chart](zoompan_images/zoompan_img4.png)
 
 ## Zoom Mode
 
