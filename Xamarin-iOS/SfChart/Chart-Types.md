@@ -139,7 +139,6 @@ dashes [0]              = (NSNumber)13;
 dashes [1]              = (NSNumber)4;
 series3.Dashes           = NSArray.FromObjects (dashes);
 chart.Series.Add(series3);
-{% endhighlight %}
 
 SFStackingLineSeries series4 = new SFStackingLineSeries ();
 series4.ItemsSource = Data4; 
