@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart legend | SFChart | Xamarin.iOS | Syncfusion
-description: How to cutomize the legend in SFChart
+description: How to customize the legend in SFChart                                                                      
 platform: xamarin.ios
 control: SFChart
 documentation: ug
