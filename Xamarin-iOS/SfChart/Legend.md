@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart legend | SFChart | Xamarin.iOS | Syncfusion
-description: How to customize the legend's border, background, labels, icons, title and position in Essential iOS Chart
+description: How to customize the legend's border, background, labels, icons, title, orientation and position in Xamarin.iOS Chart
 platform: xamarin.ios
 control: SFChart
 documentation: ug
