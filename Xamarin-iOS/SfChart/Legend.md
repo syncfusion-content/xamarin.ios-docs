@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart legend | SFChart | Xamarin.iOS | Syncfusion
-description: How to cutomize the legend in SFChart
+description: How to customize the legend's border, background, labels, icons, title, orientation and position in Xamarin.iOS Chart
 platform: xamarin.ios
 control: SFChart
 documentation: ug
@@ -21,6 +21,34 @@ chart.Legend.Visible = true;
 
 
 ![Legend support in Xamarin.iOS Chart](Legend_images/Legend.png)
+
+## Customizing background & border
+
+The [`Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart~Legend.html) provides following properties to customize the legend area border and background. 
+
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~BackgroundColor.html) - used to change legend background color.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~BorderColor.html) - used to change legend border color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~BorderWidth.html) - used to change legend border width. 
+* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~Dashes.html) - used to render legend border line with dashes.
+* [`EdgeInsets`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~EdgeInsets.html) - used to change the margin of the legend.
+* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~CornerRadius.html) - used to add the rounded corners to the legend border rectangle. The TopLeft, TopRight, BottomLeft and BottomRight of ChartCornerRadius properties are used to set the radius value for each corner.
+
+{% highlight c# %}
+
+chart.Legend.BackgroundColor = UIColor.FromRGB(245, 245, 240);
+chart.Legend.BorderColor = UIColor.Black;
+chart.Legend.BorderWidth = 2;
+chart.Legend.EdgeInsets = new UIEdgeInsets(5, 5, 5, 5);
+chart.Legend.CornerRadius = new ChartCornerRadius(5);
+
+NSObject[] dashes = new NSObject[2];
+dashes[0] = (NSNumber)3;
+dashes[1] = (NSNumber)3;
+chart.Legend.Dashes = NSArray.FromObjects(dashes);
+
+{% endhighlight %}
+
+![Legend background and border customization support in Xamarin.iOS Chart](Legend_images/legend_background.jpg)
 
 ## Customizing Labels
 
