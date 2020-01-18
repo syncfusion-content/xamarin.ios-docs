@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Data Binding  in Syncfusion RadialMenu control for Xamarin.iOS
-description : Learn how to perform DataBinding, adding outer rim items, nested item, duration of the animation and other property usages in SfRadialMenu
+description : Learn how to perform DataBinding, adding outer rim items, nested item, duration of the animation and other property usages in Syncfusion RadialMenu
 platform : Xamarin.iOS
 control : SfRadialMenu
 documentation : ug
