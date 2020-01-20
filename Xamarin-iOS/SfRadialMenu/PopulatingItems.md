@@ -9,11 +9,11 @@ documentation: ug
 
 # Populating Items
 
-This section explains how to populate items through radial menu item and item source.
+This section explains how to populate items using the radial menu item and item source.
 
 ## Through radial menu items
 
-By passing a collection of [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html), you can get the view of `SfRadialMenu` control. The radial menu item class provides various options such as custom views, font icons, and images to customize the items . You can add radial menu items by hierarchy.
+By passing a collection of [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html), you can get the view of `SfRadialMenu` control. The radial menu item class provides various options such as custom views, font icons, and images to customize the items. You can add radial menu items by hierarchy.
 
 ### Adding outer rim items of radial menu
 
