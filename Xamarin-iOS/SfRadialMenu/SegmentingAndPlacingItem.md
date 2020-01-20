@@ -21,13 +21,57 @@ Both the layout types divide the available space equally among all the children 
 Number of segments in the panel is determined by children count in the level. Since the segment count in each hierarchical level differs, radial menu items are arranged in a sequential order as added in the radial menu.
 
 {% tabs %}
-
 {% highlight c# %}
 
-radialMenu.LayoutType = LayoutType.Default;
+using Foundation;
+using Syncfusion.SfRadialMenu.iOS;
+using System;
+using UIKit;
+
+namespace RadialMenuNative
+{
+    public partial class ViewController : UIViewController
+    {
+        public ViewController(IntPtr handle) : base(handle)
+        {
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+            string[] layer = new string[] { "\uE9AB", "\uEB07", "\uEB73", "\uEBAE", "\uECD5", "\uEFAB" };
+            string[] outerLayer = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+            SfRadialMenu sfRadialMenu = new SfRadialMenu();
+            sfRadialMenu.CenterButtonText = "\uE9A5";
+            sfRadialMenu.CenterButtonIconFont = UIFont.FromName("Sample", 30);
+            sfRadialMenu.LayoutType = SfRadialMenuLayoutType.Default;
+            for (int i = 0; i < 5; i++)
+            {
+                //Adding Items
+                SfRadialMenuItem item = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = layer[i] };
+                //Adding Sub items
+                for (int j = 0; j < 4; j++)
+                {
+                    SfRadialMenuItem item1 = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = outerLayer[j] };
+                    item.Items.Add(item1);
+                }
+                sfRadialMenu.Items.Add(item);
+            }
+
+            sfRadialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.Center;
+            this.View.AddSubview(sfRadialMenu);
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
+        }
+    }
+}
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ## Custom
@@ -35,13 +79,57 @@ radialMenu.LayoutType = LayoutType.Default;
 The number of segments in the panel is determined using the [VisibleItemCount](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~VisibleItemCount.html) property. Since the segment count in all the hierarchical levels are same, radial menu items are arranged in any order based on the [SlottedIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~SlottedIndex.html) property.
 
 {% tabs %}
-
 {% highlight c# %}
 
-radialMenu.LayoutType = LayoutType.Custom;
+using Foundation;
+using Syncfusion.SfRadialMenu.iOS;
+using System;
+using UIKit;
+
+namespace RadialMenuNative
+{
+    public partial class ViewController : UIViewController
+    {
+        public ViewController(IntPtr handle) : base(handle)
+        {
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+            string[] layer = new string[] { "\uE9AB", "\uEB07", "\uEB73", "\uEBAE", "\uECD5", "\uEFAB" };
+            string[] outerLayer = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+            SfRadialMenu sfRadialMenu = new SfRadialMenu();
+            sfRadialMenu.CenterButtonText = "\uE9A5";
+            sfRadialMenu.CenterButtonIconFont = UIFont.FromName("Sample", 30);
+            sfRadialMenu.LayoutType = SfRadialMenuLayoutType.Custom;
+            for (int i = 0; i < 5; i++)
+            {
+                //Adding Items
+                SfRadialMenuItem item = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = layer[i] };
+                //Adding Sub items
+                for (int j = 0; j < 4; j++)
+                {
+                    SfRadialMenuItem item1 = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = outerLayer[j] };
+                    item.Items.Add(item1);
+                }
+                sfRadialMenu.Items.Add(item);
+            }
+
+            sfRadialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.Center;
+            this.View.AddSubview(sfRadialMenu);
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
+        }
+    }
+}
 
 {% endhighlight %}
-
 {% endtabs %}
 
 ### VisibleItemCount
@@ -49,13 +137,58 @@ radialMenu.LayoutType = LayoutType.Custom;
 The [VisibleItemCount](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~VisibleItemCount.html) property is used to specify the number of segments available in circular panel. When children count is greater than the value given in the VisibleItemCount property, the overflowing children are not arranged in the panel. When children count is lesser than the VisibleItemCount property, then remaining segments are left free.
 
 {% tabs %}
-
 {% highlight c# %}
 
-radialMenu.VisibleItemCount= 3;
+using Foundation;
+using Syncfusion.SfRadialMenu.iOS;
+using System;
+using UIKit;
+
+namespace RadialMenuNative
+{
+    public partial class ViewController : UIViewController
+    {
+        public ViewController(IntPtr handle) : base(handle)
+        {
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+            string[] layer = new string[] { "\uE9AB", "\uEB07", "\uEB73", "\uEBAE", "\uECD5", "\uEFAB" };
+            string[] outerLayer = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+            SfRadialMenu sfRadialMenu = new SfRadialMenu();
+            sfRadialMenu.CenterButtonText = "\uE9A5";
+            sfRadialMenu.CenterButtonIconFont = UIFont.FromName("Sample", 30);
+            sfRadialMenu.LayoutType = SfRadialMenuLayoutType.Custom;
+            sfRadialMenu.VisibleItemCount = 2;
+            for (int i = 0; i < 5; i++)
+            {
+                //Adding Items
+                SfRadialMenuItem item = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = layer[i] };
+                //Adding Sub items
+                for (int j = 0; j < 4; j++)
+                {
+                    SfRadialMenuItem item1 = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = outerLayer[j] };
+                    item.Items.Add(item1);
+                }
+                sfRadialMenu.Items.Add(item);
+            }
+
+            sfRadialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.Center;
+            this.View.AddSubview(sfRadialMenu);
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
+        }
+    }
+}
 
 {% endhighlight %}
-
 {% endtabs %}
 
 
@@ -66,27 +199,53 @@ The [SlottedIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadia
 ## Code snippet for VisibleItemCount and SegmentIndex
 
 {% tabs %}
-
 {% highlight c#%}
 
-������������string[]�layer =�new�string[]�{�"\uE701",�"\uE702",�"\uEA8F",�"\uE706",�"\uEBAA",�"\uE7E8"�};
-            int[]�slottedIndex=�new�int[]�{ 1, 0, 2 };
-������������SfRadialMenu�sfRadialMenu�=�new�SfRadialMenu();
-������������sfRadialMenu.CenterButtonText�=�"\uE713";
-������������sfRadialMenu.CenterButtonBackText�=�"\uE72B";
-            sfRadialMenu.VisibleItemCount= 3;
-������������sfRadialMenu.CenterButtonIconFont�=�UIFont.FromName("Segoe�MDL2�Assets",�30);//
-������������for�(int�i�=�0;�i�<�VisibleItemCount;�i++)
-������������{
-����������������//Adding�Items
-����������������SfRadialMenuItem�item�=�new�SfRadialMenuItem()�{�IconFont�=�UIFont.FromName("Segoe�MDL2�Assets",�20),�FontIcon�=�layer[i],slottedIndex[i]};
-����������������sfRadialMenu.Items.Add(item);
-������������}
-������������sfRadialMenu.CenterButtonPlacement�=�SfRadialMenuCenterButtonPlacement.Center;
-������������this.View.AddSubview(sfRadialMenu);
-		
-{% endhighlight %}
+using Foundation;
+using Syncfusion.SfRadialMenu.iOS;
+using System;
+using UIKit;
 
+namespace RadialMenuNative
+{
+    public partial class ViewController : UIViewController
+    {
+        public ViewController(IntPtr handle) : base(handle)
+        {
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+            string[] layer = new string[] { "\uE9AB", "\uEB07", "\uEB73", "\uEBAE", "\uECD5", "\uEFAB" };
+            int[] slottedIndex = { 1, 0, 2 };
+            string[] outerLayer = { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+            SfRadialMenu sfRadialMenu = new SfRadialMenu();
+            sfRadialMenu.CenterButtonText = "\uE9A5";
+            sfRadialMenu.CenterButtonIconFont = UIFont.FromName("Sample", 30);
+            sfRadialMenu.LayoutType = SfRadialMenuLayoutType.Custom;
+            sfRadialMenu.VisibleItemCount = 3;
+            for (int i=0; i< sfRadialMenu.VisibleItemCount; i++)
+            {
+                //Adding Items
+                SfRadialMenuItem item = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = layer[i], SlottedIndex = slottedIndex[i] };
+                sfRadialMenu.Items.Add(item);
+            }
+
+            sfRadialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.Center;
+            this.View.AddSubview(sfRadialMenu);
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
+        }
+    }
+}
+	
+{% endhighlight %}
 {% endtabs %}
 
 ### StartAngle
@@ -96,32 +255,55 @@ The [SlottedIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadia
 {% tabs %}
 {% highlight c#%}
 
-			SfRadialMenu radialMenu = new SfRadialMenu();
+using Foundation;
+using Syncfusion.SfRadialMenu.iOS;
+using System;
+using UIKit;
 
-			//Initializing RadialMenu's properties
-			radialMenu.CenterButtonText = "\uE713";
-			sfRadialMenu.CenterButtonBackText�=�"\uE713";
-			radialMenu.CenterButtonIconFont = UIFont.FromName("Segoe�MDL2�Assets",�30);
-			radialMenu.StartAngle = 90;
+namespace RadialMenuNative
+{
+    public partial class ViewController : UIViewController
+    {
+        public ViewController(IntPtr handle) : base(handle)
+        {
+        }
 
-			//Adding Main menu Items
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+            string[] layer = new string[] { "\uE9AB", "\uEB07", "\uEB73", "\uEBAE", "\uECD5", "\uEFAB" };
+            int[] slottedIndex = { 1, 0, 2 };
+            string[] outerLayer = { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+            SfRadialMenu sfRadialMenu = new SfRadialMenu();
+            sfRadialMenu.CenterButtonText = "\uE9A5";
+            sfRadialMenu.CenterButtonIconFont = UIFont.FromName("Sample", 30);
+            sfRadialMenu.StartAngle = 90;
+            //Adding Main menu Items
 
-			string[] menuItems = new string[] { "\uE701", "\uE702","\uEA8F","\uE793", "\uE83F","\uE7E8" };
+            string[] menuItems = new string[] { "\uE701", "\uE702", "\uEA8F", "\uE793", "\uE83F", "\uE7E8" };
 
-			for (int i = 0; i < 6; i++)
-			{
-				SfRadialMenuItem mainMenuItems = new SfRadialMenuItem();
-				mainMenuItems.FontIcon = menuItems[i];
-				mainMenuItems.IconFont = UIFont.FromName("Segoe�MDL2�Assets",�30);
-				radialMenu.Items.Add(mainMenuItems);
-			}
+            for (int i = 0; i < 6; i++)
+            {
+                SfRadialMenuItem mainMenuItems = new SfRadialMenuItem();
+                mainMenuItems.FontIcon = menuItems[i];
+                mainMenuItems.IconFont = UIFont.FromName("Sample", 30);
+                sfRadialMenu.Items.Add(mainMenuItems);
+            }
 
-			radialMenu.CenterButtonPlacement�=�SfRadialMenuCenterButtonPlacement.Center;
-������������this.View.AddSubview(radialMenu);
+            sfRadialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.Center;
+            this.View.AddSubview(sfRadialMenu);
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 ![images](images/StartAngle.png)
-
-
