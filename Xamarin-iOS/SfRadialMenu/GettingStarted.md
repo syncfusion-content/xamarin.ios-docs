@@ -11,19 +11,19 @@ documentation: ug
 
 This section explains you the steps required to configure the SfRadialMenu control in a real-time scenario and provides a walk-through on some of the customization features available to get started with the SfRadialMenu control.
 
-## Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
 
 {Syncfusion Installed location}\Essential Studio\14.XXXX.X.XX\lib
 
-Add the following assembly references to the Android project,
+Add the following assembly references to the Android project.
 
 ios-unified\Syncfusion.SfRadialMenu.iOS.dll
 
 ## Add SfRadialMenu
 
-* Adding namespace for the added assemblies. 
+* Adding namespace to the added assemblies. 
 
 {% tabs %}
 {% highlight c# %}
@@ -70,9 +70,9 @@ using Syncfusion.SfRadialMenu.iOS;
 {% endhighlight %}
 {% endtabs %}
 
-## Adding RadialMenu Items
+## Adding RadialMenu items
 
-SfRadialMenu provides options to add more number of radial menu items. Add an external font icon type face into the `Asset` folder, and then set its build action to Android assets. The unicode can be passed as text to display icons in the SfRadialMenu item.
+SfRadialMenu provides options to add more number of radial menu items. Add an external font icon type face to the `Asset` folder, and then set its build action to Android assets. The unicode can be passed as text to display icons in the SfRadialMenu item.
 
 {% tabs %}
 {% highlight c# %}
