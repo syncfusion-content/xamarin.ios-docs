@@ -11,7 +11,7 @@ documentation: ug
 
 ## Perform an action when navigating to next level
 
-In radial menu, you can perform an action when navigating from one level to another level. The `Navigating` event occurs when navigating from one level to another level, and the `Navigated` event occurs after navigating to another level.
+In radial menu, you can perform an action when navigating from one level to another. The `Navigating` event occurs when navigating from one level to another, and the `Navigated` event occurs after navigating to another level.
 
 {% tabs %}
 {% highlight c# %}
