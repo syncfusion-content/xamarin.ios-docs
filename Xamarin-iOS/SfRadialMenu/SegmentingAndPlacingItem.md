@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout types
 
-The following two different [LayoutType]](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~LayoutType.html) available in radial menu:
+The following two different [LayoutTypes]](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~LayoutType.html) available in radial menu:
 
 * Default
 * Custom
@@ -250,7 +250,7 @@ namespace RadialMenuNative
 
 ### StartAngle
 
-`StartAngle` property is used to set the angle from which the arrangement of radial menu items should start.
+The `StartAngle` property is used to set the angle from which the arrangement of radial menu items should start.
 
 {% tabs %}
 {% highlight c#%}
