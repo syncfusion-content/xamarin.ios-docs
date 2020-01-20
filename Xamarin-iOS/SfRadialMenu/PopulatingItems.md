@@ -126,7 +126,6 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Animation duration
 
 Duration of animation in radial menu can be changed using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~AnimationDuration.html) property. It is used to change the speed of opening and closing of radial menu.

@@ -43,9 +43,9 @@ namespace RadialMenuNative
             sfRadialMenu.CenterButtonIconFont = UIFont.FromName("Sample", 30);
             for (int i = 0; i < 5; i++)
             {
-                //Adding�Items
+                //Adding Items
                 SfRadialMenuItem item = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = layer[i] };
-                //Adding�Sub items
+                //Adding Sub items
                 for (int j = 0; j < 4; j++)
                 {
                     SfRadialMenuItem item1 = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = outerLayer[j] };
@@ -179,7 +179,7 @@ N> You can cancel the opening of radial menu using the `Cancel` event argument.
 {% tabs %}
 {% highlight c# %}
 
-		using Foundation;
+using Foundation;
 using Syncfusion.SfRadialMenu.iOS;
 using System;
 using UIKit;

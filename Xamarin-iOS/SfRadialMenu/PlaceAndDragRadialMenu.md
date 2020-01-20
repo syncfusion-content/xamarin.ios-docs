@@ -18,11 +18,53 @@ You can enable/disable dragging using the [IsDragEnabled](https://help.syncfusio
 {% tabs %}
 {% highlight c# %}
 
-	      SfRadialMenu�sfRadialMenu�=�new�SfRadialMenu();
-          sfRadialMenu.CenterButtonText�=�"\uE713";
-          sfRadialMenu.CenterButtonIconFont�=�UIFont.FromName("Segoe�MDL2�Assets",�30);
-          sfRadialMenu.IsDragEnabled = true;
-          this.View.AddSubview(sfRadialMenu);
+using Foundation;
+using Syncfusion.SfRadialMenu.iOS;
+using System;
+using UIKit;
+
+namespace RadialMenuNative
+{
+    public partial class ViewController : UIViewController
+    {
+        public ViewController(IntPtr handle) : base(handle)
+        {
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+            string[] layer = new string[] { "\uE9AB", "\uEB07", "\uEB73", "\uEBAE", "\uECD5", "\uEFAB" };
+            string[] outerLayer = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+            SfRadialMenu sfRadialMenu = new SfRadialMenu();
+            sfRadialMenu.CenterButtonText = "\uE9A5";
+            sfRadialMenu.CenterButtonIconFont = UIFont.FromName("Sample", 30);
+            sfRadialMenu.IsDragEnabled = true;
+            for (int i = 0; i < 5; i++)
+            {
+                //Adding Items
+                SfRadialMenuItem item = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = layer[i] };
+                //Adding Sub items
+                for (int j = 0; j < 4; j++)
+                {
+                    SfRadialMenuItem item1 = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = outerLayer[j] };
+                    item.Items.Add(item1);
+                }
+                sfRadialMenu.Items.Add(item);
+            }
+
+            sfRadialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.Center;
+            this.View.AddSubview(sfRadialMenu);
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -44,20 +86,63 @@ To hook the [DragBegin](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.Sf
 {% tabs %}
 {% highlight c# %}
 
-	       SfRadialMenu�sfRadialMenu�=�new�SfRadialMenu();
-������������sfRadialMenu.CenterButtonText�=�"\uE713";
-sfRadialMenu.CenterButtonIconFont�=�UIFont.FromName("Segoe�MDL2�Assets",�30);
+using Foundation;
+using Syncfusion.SfRadialMenu.iOS;
+using System;
+using UIKit;
+
+namespace RadialMenuNative
+{
+    public partial class ViewController : UIViewController
+    {
+        public ViewController(IntPtr handle) : base(handle)
+        {
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+            string[] layer = new string[] { "\uE9AB", "\uEB07", "\uEB73", "\uEBAE", "\uECD5", "\uEFAB" };
+            string[] outerLayer = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
+            SfRadialMenu sfRadialMenu = new SfRadialMenu();
+            sfRadialMenu.CenterButtonText = "\uE9A5";
+            sfRadialMenu.CenterButtonIconFont = UIFont.FromName("Sample", 30);
             sfRadialMenu.IsDragEnabled = true;
-            sfRadialMenu.DragBegin�+=�SfRadialMenu_DragBegin;
-�           this.View.AddSubview(sfRadialMenu);	
-   	private �void�SfRadialMenu_DragBegin(object�sender,�DragBeginEventArgs�e)
-��������{
-������������var�okAlertController�=�UIAlertController.Create("Alert",�"DragBegin",�UIAlertControllerStyle.Alert);
-������������//Add�Action
-������������okAlertController.AddAction(UIAlertAction.Create("OK",�UIAlertActionStyle.Default,�null));
-������������//�Present�Alert
-������������PresentViewController(okAlertController,�true,�null;
-��������}
+            sfRadialMenu.DragBegin += SfRadialMenu_DragBegin;
+            for (int i = 0; i < 5; i++)
+            {
+                //Adding Items
+                SfRadialMenuItem item = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = layer[i] };
+                //Adding Sub items
+                for (int j = 0; j < 4; j++)
+                {
+                    SfRadialMenuItem item1 = new SfRadialMenuItem() { IconFont = UIFont.FromName("Sample", 20), FontIcon = outerLayer[j] };
+                    item.Items.Add(item1);
+                }
+                sfRadialMenu.Items.Add(item);
+            }
+
+            sfRadialMenu.CenterButtonPlacement = SfRadialMenuCenterButtonPlacement.Center;
+            this.View.AddSubview(sfRadialMenu);
+        }
+
+        private void SfRadialMenu_DragBegin(object sender, DragBeginEventArgs e)
+        {
+            var okAlertController = UIAlertController.Create("Alert", "DragBegin", UIAlertControllerStyle.Alert);
+            //Add Action
+            okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
+            //Present Alert
+            PresentViewController(okAlertController, true, null);
+        }
+
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -122,7 +207,7 @@ namespace RadialMenuNative
 
        private void SfRadialMenu_DragBegin(object sender, DragBeginEventArgs e)
        {
-           var okAlertController�=�UIAlertController.Create("Alert", "DragBegin", UIAlertControllerStyle.Alert);
+           var okAlertController = UIAlertController.Create("Alert", "DragBegin", UIAlertControllerStyle.Alert);
            //Add Action
            okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
            // Present Alert
