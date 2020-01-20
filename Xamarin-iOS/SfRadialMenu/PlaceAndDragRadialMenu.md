@@ -9,11 +9,11 @@ documentation: ug
 
 # Placing and dragging RadialMenu
 
-You can place radial menu anywhere on its parent layout, and drag it with in the parent layout. 
+You can place the radial menu anywhere on its parent layout, and drag it with in the parent layout. 
 
 ## Dragging RadialMenu
 
-You can enable/disable dragging using the [IsDragEnabled](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~IsDragEnabled.html) property.
+You can enable or disable dragging using the [IsDragEnabled](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~IsDragEnabled.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -238,7 +238,7 @@ You can place the SfRadialMenu based on their CenterButton axis by providing the
 
 `Center` - Places the origin (0,0) of SfRadialMenu at the center.
 
-N> The default value of [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonPlacement.html) property is Center.
+N> The default value of the [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonPlacement.html) property is Center.
 
 {% tabs %}
 {% highlight c# %}
@@ -296,7 +296,7 @@ namespace RadialMenuNative
 
 ## Placing RadialMenu
 
-You can place radial menu anywhere on its parent layout using the [Position](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~Position.html) property. The position of Radial Menu is calculated based on the center point of parent layout.
+You can place the radial menu anywhere on its parent layout using the [Position](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~Position.html) property. The position of radial menu is calculated based on the center point of parent layout.
 
 {% tabs %}
 {% highlight c# %}
