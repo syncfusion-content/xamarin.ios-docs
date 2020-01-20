@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with CenterButton and BackButton
 
-The CenterButton or BackButton in radial menu is a view in the center of the radial menu. It performs operations such as opening and closing the rim and navigating to next level items. The radial menu allows you customize the CenterButton/BackButton with `FontIcon`, `Custom View`, and `Caption`.
+The CenterButton or BackButton in radial menu is a view in the center of the radial menu. It performs operations such as opening and closing the rim and navigating to next level items. The radial menu allows you to customize the CenterButton/BackButton with `FontIcon`, `Custom View`, and `Caption`.
 
 ## CenterButtonText and CenterButtonBackText
 
