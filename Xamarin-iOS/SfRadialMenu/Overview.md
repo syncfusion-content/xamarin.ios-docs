@@ -13,7 +13,7 @@ The SfRadialMenu control for Xamarin.iOS displays a hierarchical menu in a circu
 
 ## Key features
 
-Key features in SfRadialMenu:
+Key features in SfRadialMenu
 
 * Supports automatic item arrangement. 
 * Supports rotating items.
@@ -21,6 +21,6 @@ Key features in SfRadialMenu:
 * Provides the option to place items as needed by users.
 * Supports floating over the layout to avoid obscuring the content behind the layout.
 * Allows you to provide built-in icon font option that helps users add vector images that prevent the control from experiencing any image glitches that are often faced with traditional image icons.
-* Provides complete customization options for the menu and its items, such as coloring, size, placement, and shapes using the segmentation option.
+* Provides complete customization options for the menu and its items such as coloring, size, placement, and shapes using the segmentation option.
 
 ![OverView of SfRadialMenu](images/overview.png)
