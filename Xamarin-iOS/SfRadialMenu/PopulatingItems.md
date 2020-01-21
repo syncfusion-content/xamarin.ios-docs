@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding  in Syncfusion RadialMenu control for Xamarin.iOS
-description: Learn how to perform DataBinding, adding outer rim items, nested item, duration of the animation and other property usages in SfRadialMenu
+title: Data binding in Syncfusion RadialMenu control for Xamarin.iOS
+description: Learn how to perform DataBinding, adding outer rim items, nested items, duration of the animation, and other property usages in SfRadialMenu.
 platform: Xamarin.iOS
 control: SfRadialMenu
 documentation: ug
@@ -13,11 +13,11 @@ This section explains how to populate items using the radial menu item and item 
 
 ## Through radial menu items
 
-By passing a collection of [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html), you can get the view of `SfRadialMenu` control. The radial menu item class provides various options such as custom views, font icons, and images to customize the items. You can add radial menu items by hierarchy.
+By passing a collection of [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html), you can get the view of the `SfRadialMenu` control. The radial menu item class provides various options such as custom views, font icons, and images to customize the items. You can also add radial menu items by hierarchy.
 
 ### Adding outer rim items of radial menu
 
-The following code sample demonstrates how to add the outer rim items of radial menu.
+The following code sample shows how to add the outer rim items of the radial menu.
 
 {% tabs %}
 {% highlight c# %}
@@ -67,11 +67,11 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
-### Adding nested items of radial menu
+### Adding nested items of a radial menu
 
-You can populate the nested levels of items within a menu to group similar actions. For example, you can group the clipboard operations by adding clipboard as main menu and cut, copy, and paste as its children.
+You can populate the nested levels of items within a menu to group similar actions. For example, you can group the clipboard operations by adding clipboard as the main menu and cut, copy, and paste as its children.
 
-The following code sample demonstrates how to add the nested items of radial menu.
+The following code sample shows how to add the nested items of the radial menu.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ namespace RadialMenuNative
 
 ## Animation duration
 
-Duration of animation in radial menu can be changed using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~AnimationDuration.html) property. It is used to change the speed of opening and closing of radial menu.
+The duration of animation in the radial menu can be changed using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~AnimationDuration.html) property. It is used to change the speed of opening and closing of the radial menu.
 
 {% tabs %}
 {% highlight c# %}
@@ -186,7 +186,7 @@ namespace RadialMenuNative
 
 ## IsOpen
 
-The [IsOpen](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~IsOpen.html) property indicates whether the radial menu is in open or close state.
+The [IsOpen](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~IsOpen.html) property indicates whether the radial menu is in an open or closed state.
 
 {% tabs %}
 {% highlight c# %}
@@ -244,9 +244,9 @@ namespace RadialMenuNative
 
 ![SfRadialMenu with Items Open](images/CenterButtonText.png)
 
-## Selection color of radial menu
+## Selection color of the radial menu
 
-Selection color of an item can be changed using the [SelectionColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~SelectionColor.html) property of radial menu.
+The Selection color of an item can be changed using the [SelectionColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~SelectionColor.html) property of the radial menu.
 
 {% tabs %}
 {% highlight c# %}
@@ -304,9 +304,9 @@ namespace RadialMenuNative
 
 ![SelectionColor](images/SelectionColor.png)
 
-## Separator thickness and color in radial menu
+## Separator thickness and color in the radial menu
 
-Thickness of strip between the two items can be changed using the [SeparatorThickness](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~SeparatorThickness.html) property, and the color of strip can be changed using the [SeparatorColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~SeparatorColor.html) property.
+The thickness of the strip between the two items can be changed using the [SeparatorThickness](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~SeparatorThickness.html) property, and the color of the strip can be changed using the [SeparatorColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~SeparatorColor.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -367,7 +367,7 @@ namespace RadialMenuNative
 
 ## Rim color and rim radius in radial menu
 
-The radius of rim can be changed using the [RimRadius](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~RimRadius.html) property, and the color of rim can be changed using the [RimColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~RimColor.html) property.
+The radius of the rim can be changed using the [RimRadius](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~RimRadius.html) property, and the color of the rim can be changed using the [RimColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~RimColor.html) property.
 
 {% tabs %}
 {% highlight c# %}
