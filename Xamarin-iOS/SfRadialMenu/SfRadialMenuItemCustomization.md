@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Syncfusion RadialMenu item customization in Xamarin.iOS
-description: Working with Syncfusion RadialMenu customization of items, text, textcolor, backgroundcolor and view in Xamarin.iOS.
+description: Working with Syncfusion RadialMenu customization of items, text, text color, background color, and view in Xamarin.iOS.
 platform: Xamarin.iOS
 control: SfRadialMenu
 documentation: ug
 ---
 
-# SfRadialMenuItem customization
+# SfRadialMenuItem Customization
 
-The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html) class provides various options such as `Custom Views`, `FontIcons`, and `Images` to customize the items. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~Items.html) property, which is available in SfRadialMenu.
+The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html) class provides various options such as `Custom Views`, `FontIcons`, and `Images` to customize the items. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~Items.html) property that is available in SfRadialMenu.
 
 ## Items
 
-The [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~Items.html) property populates the items of inner rim in `SfRadialMenu` when tapping the items of outer rim.
+The [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~Items.html) ) property populates the items of an inner rim in `SfRadialMenu` when the items of an outer rim are tapped.
 
 {% tabs %}
 {% highlight C# %}
