@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with syncfusion radialmenu control for Xamarin.iOS
-description:  A quick tour to the initial users on Syncfusion RadialMenu control to get familiar to the control for Xamarin.iOS platform
-platform: Xamarin.iOS
+title: Getting Started with Syncfusion RadialMenu control for Xamarin.Android 
+description: A quick tour to the new users of Syncfusion RadialMenu control to get familiar with the control for Xamarin.Android platform.
+platform: Xamarin.Android 
 control: RadialMenu
 documentation: ug
 ---
 
 # Getting Started
 
-This section explains you the steps required to configure the SfRadialMenu control in a real-time scenario and provides a walk-through on some of the customization features available to get started with the SfRadialMenu control.
+This section explains the steps required to configure the SfRadialMenu control in a real-time scenario and provides a walk-through on some of the customization features available.
 
 ## Referencing Essential Studio components in your solution
 
@@ -72,7 +72,7 @@ using Syncfusion.SfRadialMenu.iOS;
 
 ## Adding RadialMenu items
 
-SfRadialMenu provides options to add more number of radial menu items. Add an external font icon type face to the `Asset` folder, and then set its build action to Android assets. The unicode can be passed as text to display icons in the SfRadialMenu item.
+SfRadialMenu provides the option to add a number of radial menu items. Add an external font icon typeface into the `Asset` folder, and then set its build action to Android assets. The Unicode can be passed as text to display icons in the SfRadialMenu item.
 
 {% tabs %}
 {% highlight c# %}
