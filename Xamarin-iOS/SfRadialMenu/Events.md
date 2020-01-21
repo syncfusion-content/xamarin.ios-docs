@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Syncfusion RadialMenu control for Xamarin.iOS
-description: Learn how to perform events like navigating, opening, navigated, opened, center button tapped and when the center button back has been tapped in SfRadialMenu
+description: Learn how to perform events like navigating, opening, navigated, opened, center button tapped, and when the center button back has been tapped in SfRadialMenu
 platform: Xamarin.iOS
 control: SfRadialMenu
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Events
 
-## Perform an action when navigating to next level
+## Perform an action when navigating to the next level
 
-In radial menu, you can perform an action when navigating from one level to another. The `Navigating` event occurs when navigating from one level to another, and the `Navigated` event occurs after navigating to another level.
+In a radial menu, you can perform actions when navigating from one level to another. The `Navigating` event occurs when navigating from one level to another, and the `Navigated` event occurs after  navigating to another level.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,7 +93,7 @@ N> You can cancel navigation using the `Cancel` event argument.
 
 ## Perform an action when opening the radial menu
 
-You can perform an action when opening the radial menu. The `Opening` event occurs when opening the radial menu, and the `Opened` event occurs after opening the radial menu.
+You can perform an action when opening the radial menu. The `Opening` event occurs when opening the radial menu, and the `Opened` event occurs after the radial menu is opened.
 
 {% tabs %}
 {% highlight c# %}
@@ -170,11 +170,11 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
-## Perform an action when closing radial menu
+## Perform an action when closing the radial menu
 
-You can perform an action when closing the radial menu. The `Closing` event occurs when closing the radial menu, and the `Closed` event occurs after closing the radial menu.
+You can perform an action when closing the radial menu. The `Closing` event occurs when closing the radial menu, and the `Closed` event occurs after the radial menu is closed.
 
-N> You can cancel the opening of radial menu using the `Cancel` event argument.
+N> You can cancel the opening of the radial menu using the `Cancel` event argument.
 
 {% tabs %}
 {% highlight c# %}
@@ -253,9 +253,9 @@ namespace RadialMenuNative
 
 N> You can close navigation using the `Cancel` event argument.
 
-## Perform an action when tapping the center button
+## Perform an action by tapping the radial menu item
 
-You can perform an action when tapping the center button of the radial menu. The `CenterButtonTapped` event occurs when tapping the center button of the radial menu.
+You can perform an action by tapping a radial menu item. The `CenterButtonBackTapped` event occurs when the radial menu item is tapped.
 
 {% tabs %}
 {% highlight c# %}
