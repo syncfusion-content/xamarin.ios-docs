@@ -248,7 +248,7 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
-# StartAngle
+## StartAngle
 
 The `StartAngle` property is used to set the angle from which the arrangement of radial menu items should start.
 
