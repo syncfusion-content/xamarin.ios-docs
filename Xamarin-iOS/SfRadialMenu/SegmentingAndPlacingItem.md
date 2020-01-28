@@ -196,8 +196,6 @@ namespace RadialMenuNative
 
 The [SlottedIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~SlottedIndex.html) property is used to specify the index of the radial menu item in the circular panel. Based on the index, the radial menu items are inserted in the segment. When the SlottedIndex is not specified for a RadialMenuItem, the menu item is arranged in the next available free segment.
 
-### Code snippets for VisibleItemCount and SegmentIndex
-
 {% tabs %}
 {% highlight c#%}
 
