@@ -246,6 +246,8 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
+N> It is necessary to set the VisibleSegmentsCount for the SegmentIndex API to be set.
+
 ## StartAngle
 
 The `StartAngle` property is used to set the angle from which the arrangement of radial menu items should start.
