@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Axis | SFChart | Xamarin.iOS | Syncfusion
-description: How to customize the grid lines, tick lines, labels and title of chart axis
+description: This section explains the different types of axis, and how to customize the grid lines, tick lines, labels and title of chart axis.
 platform: xamarin.ios
 control: SFChart
 documentation: ug
