@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Types
 
-The following two different [LayoutTypes]](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~LayoutType.html) available available in the radial menu are:
+The following two different [LayoutTypes](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~LayoutType.html) available available in the radial menu are:
 
 * Default
 * Custom
@@ -132,7 +132,7 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
-### VisibleItemCount
+## VisibleItemCount
 
 The [VisibleItemCount](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~VisibleItemCount.html) property is used to specify the number of segments available in the circular panel. When the children count is greater than the value given in the VisibleSegmentsCount property, the overflowing children are not arranged in the panel. When children count is lesser than the VisibleSegmentsCount property, the remaining segments are left free.
 
@@ -192,11 +192,9 @@ namespace RadialMenuNative
 {% endtabs %}
 
 
-### SlottedIndex
+## SlottedIndex
 
 The [SlottedIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~SlottedIndex.html) property is used to specify the index of the radial menu item in the circular panel. Based on the index, the radial menu items are inserted in the segment. When the SlottedIndex is not specified for a RadialMenuItem, the menu item is arranged in the next available free segment.
-
-## Code snippets for VisibleItemCount and SegmentIndex
 
 {% tabs %}
 {% highlight c#%}
@@ -248,7 +246,9 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
-### StartAngle
+N> It is necessary to set the VisibleSegmentsCount for the SegmentIndex API to be set.
+
+## StartAngle
 
 The `StartAngle` property is used to set the angle from which the arrangement of radial menu items should start.
 
