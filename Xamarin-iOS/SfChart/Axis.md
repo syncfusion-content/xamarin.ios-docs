@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Axis | SFChart | Xamarin.iOS | Syncfusion
-description: How to customize the grid lines, tick lines, labels and title of chart axis
+description: This section explains the different types of axis, and how to customize the grid lines, tick lines, labels and title of chart axis.
 platform: xamarin.ios
 control: SFChart
 documentation: ug
@@ -574,7 +574,7 @@ yAxis.MinorTicksPerInterval	= 1;
 
 ### Tick lines customization
 
-The [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MajorTickStyle.html) and [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineWidth.html), ['LineSize'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisTickStyle~LineSize.html), ['LineColor'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineColor.html) and ['MinorTicksPerInterval'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorTicksPerInterval.html) of tick lines. By default minor tick lines will not be visible.
+The [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~MajorTickStyle.html) and [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorTickStyle.html) properties in axis are used to customize the major tick lines of an axis and minor tick lines of an axis respectively. They provide options to change the [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineWidth.html), [`LineSize`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxisTickStyle~LineSize.html), [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineColor.html) and [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeAxisBase~MinorTicksPerInterval.html) of tick lines. By default minor tick lines will not be visible.
 
 {% highlight c# %}
 
