@@ -99,6 +99,7 @@ In this walk through, you will create a new application that contains the SfData
 * [Sorting](#sorting) 
 * [Grouping](#grouping) 
 * [Selection](#selection)
+* [Editing](https://help.syncfusion.com/xamarin-ios/sfdatagrid/editing)
 
 ## Creating the project
 
