@@ -1,22 +1,24 @@
 ---
 layout: post
 title: Editing | SfDataGrid | Xamarin.iOS | Syncfusion
-description: Editing the cell values with SfDataGrid.
+description: Edit the cell values in the columns of the DataGrid using the built-in editors. Programmatically edit the data and use the events to customize the editing.
 platform: xamarin.iOS
 control: SfDataGrid
 documentation: ug
 ---
 
-# Editing
-SfDataGrid provides support for editing the cell values by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~AllowEditing.html) property.
+# Editing in Xamarin.iOS DataGrid
+The SfDataGrid supports editing the cell values by setting the [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.ios~Syncfusion.SfDataGrid.SfDataGrid~AllowEditing.html) property, [SfDataGrid.NavigationMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.ios~Syncfusion.SfDataGrid.SfDataGrid~NavigationMode.html)  as `Cell` and setting the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.ios~Syncfusion.SfDataGrid.SfDataGrid~SelectionMode.html) as any other than None.
 
 The following code example shows how to enable editing in SfDataGrid. 
 
 {% highlight c# %}
 dataGrid.AllowEditing = true;
+dataGrid.SelectionMode = SelectionMode.Multiple;
+dataGrid.NavigationMode = NavigationMode.Cell;
 {% endhighlight %}
 
-![](SfDataGrid_images/Editing_Column_iOS.jpg)
+![Xamarin.iOS DataGrid with editing](SfDataGrid_images/Editing_Column_iOS.jpg)
 
 ## Column Editing
 
