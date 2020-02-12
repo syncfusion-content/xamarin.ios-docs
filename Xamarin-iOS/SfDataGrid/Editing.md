@@ -18,7 +18,7 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 dataGrid.NavigationMode = NavigationMode.Cell;
 {% endhighlight %}
 
-![](SfDataGrid_images/Editing_Column_iOS.jpg)
+![Xamarin.iOS DataGrid with editing](SfDataGrid_images/Editing_Column_iOS.jpg)
 
 ## Column Editing
 
