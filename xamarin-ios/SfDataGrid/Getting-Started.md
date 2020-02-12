@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started | SfDataGrid | Xamarin.iOS | Syncfusion
-description: Getting started with SfDataGrid.
+description: Getting started with Xamarin.iOS DataGrid and walk through to create a demo application from the scratch.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.iOS DataGrid (SfDataGrid)
 
 This section provides a quick overview for working with SfDataGrid for Xamarin.iOS. You will walk through the entire process of creating a real world SfDataGrid.
 
@@ -99,6 +99,7 @@ In this walk through, you will create a new application that contains the SfData
 * [Sorting](#sorting) 
 * [Grouping](#grouping) 
 * [Selection](#selection)
+* [Editing](https://help.syncfusion.com/xamarin-ios/sfdatagrid/editing)
 
 ## Creating the project
 
