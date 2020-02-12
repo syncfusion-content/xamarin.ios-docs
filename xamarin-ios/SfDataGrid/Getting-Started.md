@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfDataGrid | Xamarin.iOS | Syncfusion
-description: Getting started with Xamarin.Forms DataGrid and walk through to create a demo application from the scratch.
+description: Getting started with Xamarin.iOS DataGrid and walk through to create a demo application from the scratch.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: ug
