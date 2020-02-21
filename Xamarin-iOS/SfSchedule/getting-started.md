@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# Getting Started
+# GettingStarted with Xamarin.iOS Schedule (SfSchedule)
 
 This section provides you an overview for working with SfSchedule for Xamarin.Android and also provides a walk through to configure SfSchedule control in real time scenario.
 
