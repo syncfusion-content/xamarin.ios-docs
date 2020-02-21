@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# WorkWeekView in Xamarin.iOS Schedule (SfSchedule)
+# Work Week View in Xamarin.iOS Schedule (SfSchedule)
 
 Work week view is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.
 
