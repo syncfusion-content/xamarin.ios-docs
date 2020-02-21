@@ -370,11 +370,11 @@ NSMutableArray CreateAppointments()
 
 #### Setting appointments for SfSchedule 
 
-Create meetings of type `NSMutableArray` and assign those appointments collection to the [Appointments](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~Appointments.html) property.
+Create meetings of type `NSMutableArray` and assign those appointments collection to the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ItemsSource.html) property.
 
 {% tabs %}
 {% highlight c# %}
-schedule.Appointments = CreateAppointments();
+schedule.ItemsSource = CreateAppointments();
 {% endhighlight %}
 {% endtabs %}
 
