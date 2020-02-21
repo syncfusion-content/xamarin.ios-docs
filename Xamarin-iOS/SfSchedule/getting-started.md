@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential Schedule for iOS
-description: How to create a Schedule, add Appointments, enable Inline and other functionalities
+description: How to add SfSchedule reference to the project, create a schedule, add appointments, inline view and other functionalities
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.iOS Schedule (SfSchedule)
 
 This section provides you an overview for working with SfSchedule for Xamarin.Android and also provides a walk through to configure SfSchedule control in real time scenario.
 
@@ -370,11 +370,11 @@ NSMutableArray CreateAppointments()
 
 #### Setting appointments for SfSchedule 
 
-Create meetings of type `NSMutableArray` and assign those appointments collection to the [Appointments](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~Appointments.html) property.
+Create meetings of type `NSMutableArray` and assign those appointments collection to the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ItemsSource.html) property.
 
 {% tabs %}
 {% highlight c# %}
-schedule.Appointments = CreateAppointments();
+schedule.ItemsSource = CreateAppointments();
 {% endhighlight %}
 {% endtabs %}
 
