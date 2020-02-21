@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: UG
 ---
 
-# Layout
+# Layout in Xamarin.iOS DataForm (SfDataForm)
 
 ## Overview
 

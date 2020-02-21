@@ -3,6 +3,7 @@
 layout: post
 title: Customize week view at Syncfusion Schedule control | Xamarin.iOS
 description: Learn how to Customize the schedule WeekView in SfSchedule control in Xamarin.iOS
+description: Learn how to Customize the ViewHeader, TimeSlots of schedule WeekView in SfSchedule control for Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
