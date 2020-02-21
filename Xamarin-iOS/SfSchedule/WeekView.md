@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customize week view at Syncfusion Schedule control | Xamarin.iOS
-description: Learn how to Customize the schedule WeekView in SfSchedule control in Xamarin.iOS
+title: Configure week view at Syncfusion Schedule control | Xamarin.iOS
+description: Learn how to configure the view header, timeslots of schedule week view in SfSchedule control for Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# WeekView
+# Week View in Xamarin.iOS Schedule (SfSchedule)
 
 Week view is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.
 
@@ -188,7 +188,7 @@ You can customize the appearance of timeslots in `WeekView`.
 
 ### Timeslot customization in Work hours
 
-You can customize the appearance of the working hour timeslots by its color using[TimeSlotColor(https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~TimeSlotColor.html),[TimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~TimeSlotBorderColor.html), [VerticalLineStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~VerticalLineStrokeWidth.html), [VerticalTimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~VerticaTimeSlotBorderColor.html) and [HorizontalLineStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~HorizontalLineStrokeWidth.html) properties of `WeekViewSettings`.
+You can customize the appearance of the working hour timeslots by its color using[TimeSlotColor(https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~TimeSlotColor.html),[TimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~TimeSlotBorderColor.html), [VerticalLineStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~VerticalLineStrokeWidth.html), [VerticalTimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~VerticalTimeSlotBorderColor.html) and [HorizontalLineStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.WeekViewSettings~HorizontalLineStrokeWidth.html) properties of `WeekViewSettings`.
 
 {% tabs %}
 {% highlight C# %}

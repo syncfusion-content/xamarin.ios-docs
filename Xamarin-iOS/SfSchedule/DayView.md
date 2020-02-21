@@ -2,7 +2,7 @@
 
 layout: post
 title: Customize day view at Syncfusion Schedule control | Xamarin.iOS
-description: Learn how to Customize the schedule DayView in SfSchedule control for Xamarin.iOS
+description: Learn how to configure the view header, timeslots of schedule day view in SfSchedule control for Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# DayView
+# Day View in Xamarin.in Schedule (SfSchedule)
 
 Day view is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 
@@ -62,7 +62,7 @@ viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular",20);
 Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
 ### ViewHeader Date Format
-You can customize the date and day format of `SFSchedule` ViewHeader by using [DateLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~DateLabelFormat.html) and [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~DayLabelFormat.html) properties of `LabelSettings`.
+You can customize the date and day format of `SFSchedule` ViewHeader by using [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~DayLabelFormat.html) properties of `LabelSettings`.
 
 {% tabs %}
 {% highlight c# %}
@@ -72,7 +72,6 @@ DayViewSettings dayViewSettings = new DayViewSettings();
 //Creating new instance of DayLabelSettings
 DayLabelSettings dayLabelSettings = new DayLabelSettings();
 //Customizing date format
-dayLabelSettings.DateLabelFormat = (NSString)"dd";
 dayLabelSettings.DayLabelFormat = (NSString)"EEE d MMMM YY";
 dayViewSettings.LabelSettings = dayLabelSettings;
 schedule.DayViewSettings = dayViewSettings;
