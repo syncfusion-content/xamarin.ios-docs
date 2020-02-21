@@ -8,7 +8,7 @@ control: SfSchedule
 documentation: ug   
 ---   
     
-# Month View
+# MonthView in Xamarin.iOS Scheduler (SfSchedule)
 `MonthView` of `SfSchedule` used to display entire dates of the specific month, current month will be displayed by default initially. Current date color is differentiated with other dates of the current month, also the color differentiation for dates will be applicable for previous and next month dates.
 
 {% tabs %}

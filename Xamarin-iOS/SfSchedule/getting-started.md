@@ -2,7 +2,7 @@
 layout: post
 title: Getting started with Syncfusion Essential Schedule for iOS
 description: How to create a Schedule, add Appointments, enable Inline and other functionalities
-description: How to add SfSchedule reference to the project, create a Schedule, add Appointments, enable Inline  and other functionalities
+description: How to add SfSchedule reference to the project, create a schedule, add appointments, inline view and other functionalities
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
