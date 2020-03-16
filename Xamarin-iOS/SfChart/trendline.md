@@ -210,7 +210,7 @@ We can able to control the visibility of the trendline legend items using [`Visi
 
 {% highlight c# %}
 
-trendline.VisibilityOnLegend = Visibility.Visible;
+trendline.VisibilityOnLegend = true;
 
 {% endhighlight %}
 
