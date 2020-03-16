@@ -54,17 +54,17 @@ The tick box border thickness of the checkbox control can be customized with the
 SfCheckBox check1 = new SfCheckBox();
 check1.SetTitle("Hello", UIControlState.Normal);
 check1.BorderWidth = 2;
-check1.FontSize = 20;
+check1.Font = UIFont.SystemFontOfSize(20);
 check1.UncheckedColor = Color.Blue;
 SfCheckBox check2 = new SfCheckBox();
 check2.SetTitle("Hello", UIControlState.Normal);
 check2.BorderWidth = 4;
-check2.FontSize = 25;
+check2.Font = UIFont.SystemFontOfSize(25);
 check2.UncheckedColor = Color.Blue;
 SfCheckBox check3 = new SfCheckBox();
 check3.SetTitle("Hello", UIControlState.Normal);
 check3.BorderWidth = 6;
-check3.FontSize = 30;
+check3.Font = UIFont.SystemFontOfSize(30);
 check3.UncheckedColor = Color.Blue;
 {% endhighlight %}
 {% endtabs %}
