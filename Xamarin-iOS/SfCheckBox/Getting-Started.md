@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started in Syncfusion CheckBox for Xamarin.iOS platform
-description: Learn how to customize the basic features of SfCheckBox
+description: Learn how to create a simple CheckBox and its customization options with its available basic features in Xamarin iOS platform
 platform: Xamarin.iOS
 control: SfCheckBox
 documentation: ug 
@@ -9,7 +9,7 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Getting Started
+# Getting Started Xamarin Forms Checkbox (SfCheckbox)
 This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
 
 ## Add SfCheckBox reference
