@@ -52,6 +52,8 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endtabs %}
 
+![Linear type trendline in Xamarin.iOS Chart](trendline_images/trendline_linear.png)
+
 ### Logarithmic
 
 A [`Logarithmic`]() trendline is the strongest-fit curved line, that is most effective when the data change rate increases or decreases rapidly. Logarithmic trends may use negative and/or positive values as well. 
@@ -71,6 +73,8 @@ columnSeries.Trendlines.Add(trendline);
 {% endhighlight %}
 
 {% endtabs %}
+
+![Logarithmic type trendline in Xamarin.iOS Chart](trendline_images/trendline_Logarithmic.png)
 
 ### Exponential
 
@@ -93,6 +97,8 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endtabs %}
 
+![Exponential type trendline in Xamarin.iOS Chart](trendline_images/trendline_Exponential.png)
+
 ### Power
 
 The [`Power`]() trendline is typically used with data sets to compare measurements that grow at a specific rate.
@@ -114,6 +120,8 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endtabs %}
 
+![Power type trendline in Xamarin.iOS Chart](trendline_images/trendline_Power.png)
+
 ### Polynomial
 
 The [`polynomial`]() trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolynomialOrder`]().
@@ -134,6 +142,8 @@ columnSeries.Trendlines.Add(trendline);
 {% endhighlight %}
 
 {% endtabs %}
+
+![Polynomial type trendline in Xamarin.iOS Chart](trendline_images/trendline_Polynomial.png)
 
 ## Forecasting
 
@@ -164,6 +174,8 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endtabs %}
 
+![ForwardForecast in trendline Xamarin.iOS Chart](trendline_images/trendline_Forward.png)
+
 ### Backward Forecast
 
 For determining the future trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`]().
@@ -183,6 +195,8 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endtabs %}
 
+![BackwardForecast in trendline Xamarin.iOS Chart](trendline_images/trendline_Backward.png)
+
 ## Customization
 
 We can customize the trendline appearance using [`LineWidth`](), [`LineColor`]() and [`Dashes`]() properties. 
@@ -191,7 +205,7 @@ We can customize the trendline appearance using [`LineWidth`](), [`LineColor`]()
 
 {% highlight c# %}
 
-trendline.LineColor = UIColor.Red;
+trendline.LineColor = UIColor.Black;
 trendline.LineWidth = 2;
 NSObject[] dashes = new NSObject[2];
 dashes[0] = (NSNumber)3;
@@ -201,6 +215,8 @@ trendline.Dashes = NSArray.FromObjects(dashes);
 {% endhighlight %}
 
 {% endtabs %}
+
+![Customizing Trendline appearence in Xamarin.iOS Chart](trendline_images/trendline_customizing.png)
 
 ## Legend Item Visibility
 
