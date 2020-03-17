@@ -9,7 +9,7 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Getting Started Xamarin iOS Checkbox (SfCheckbox)
+# Getting Started Xamarin.iOS Checkbox (SfCheckbox)
 This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
 
 ## Add SfCheckBox reference
