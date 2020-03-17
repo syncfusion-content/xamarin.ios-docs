@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started in Syncfusion CheckBox for Xamarin.iOS platform
-description: Learn how to customize the basic features of SfCheckBox
+description: Learn how to create a simple CheckBox and its customization options with its available basic features in Xamarin.iOS
 platform: Xamarin.iOS
 control: SfCheckBox
 documentation: ug 
@@ -9,18 +9,18 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Getting Started
+# Getting Started Xamarin.iOS Checkbox (SfCheckbox)
 This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
 
 ## Add SfCheckBox reference
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add checkbox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons)", and then install it. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add checkbox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.IOS)", and then install it. 
 
 ![Xamarin.iOS CheckBox NuGet](Images/nuget.png)
 
-N>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+N>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Create a Simple SfCheckBox
-The `SfCheckBox` control is configured entirely in C# code. The following steps explain how to create a `SfCheckBox` and configure its elements.
+The `SfCheckBox` control is configured entirely in C# code. The following steps explain how to create a `SfCheckBox` and configure its elements:
 
 ### Add namespace for referred assemblies
 
@@ -179,7 +179,7 @@ This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamari
 
 The `SfCheckBox` allows an indeterminate state in addition to the checked and unchecked state. The indeterminate state of the check box is enabled by setting the `IsThreeState` property of the control to `True`.
 
-N>When the `IsThreeState` property is set to `False` and `IsChecked` property is set to `null` then the check box will be in unchecked state.
+N>When the `IsThreeState` property is set to `False` and `IsChecked` property is set to `null`, then the check box will be in unchecked state.
 
 The indeterminate state is used when a group of sub-choices has both checked and unchecked states. In the following example, the "Select all" checkbox has the `IsThreeState` property set to `true`. The "Select all" checkbox is checked if all child elements are checked, unchecked if all the child elements are unchecked, and indeterminate otherwise.
 
