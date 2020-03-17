@@ -12,7 +12,7 @@ keywords: button, SfCheckBox, CheckBox
 # Visual Customization
 
 ## Customizing shape
-The check box shape can be customized using the `CornerRadius` property. This property specifies uniform radius value for every corner of the check box.
+The check box shape can be customized using the `CornerRadius` property. This property specifies the uniform radius value for every corner of the check box.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ checkBox.CornerRadius = 5.0f;
 ![Checkbox CornerRadius](Images/Radius.png)
 
 ## Customizing state color
-The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 
+The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked. 
 {% tabs %}
 {% highlight c# %}
 SfCheckBox check = new SfCheckBox();
@@ -54,18 +54,18 @@ The tick box border thickness of the checkbox control can be customized with the
 SfCheckBox check1 = new SfCheckBox();
 check1.SetTitle("Hello", UIControlState.Normal);
 check1.BorderWidth = 2;
-check1.FontSize = 20;
-check1.UncheckedColor = Color.Blue;
+check1.Font = UIFont.SystemFontOfSize(20);
+check1.UncheckedColor = UIColor.Blue;
 SfCheckBox check2 = new SfCheckBox();
 check2.SetTitle("Hello", UIControlState.Normal);
 check2.BorderWidth = 4;
-check2.FontSize = 25;
-check2.UncheckedColor = Color.Blue;
+check2.Font = UIFont.SystemFontOfSize(25);
+check2.UncheckedColor = UIColor.Blue;
 SfCheckBox check3 = new SfCheckBox();
 check3.SetTitle("Hello", UIControlState.Normal);
 check3.BorderWidth = 6;
-check3.FontSize = 30;
-check3.UncheckedColor = Color.Blue;
+check3.Font = UIFont.SystemFontOfSize(30);
+check3.UncheckedColor = UIColor.Blue;
 {% endhighlight %}
 {% endtabs %}
 
