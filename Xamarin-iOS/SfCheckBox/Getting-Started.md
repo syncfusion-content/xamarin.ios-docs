@@ -78,8 +78,6 @@ checkBox.SetTitle("CheckBox",UIControlState.Normal);
 
 ![Xamarin.iOS CheckBox caption text](Images/Caption.png) 
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_GettingStarted.zip).
-
 ## Change the check box state
 The three visual states of `SfCheckBox` are: 
 
@@ -173,7 +171,6 @@ onion.IsChecked = true;
 
 ![Xamarin.iOS CheckBox states changes](Images/StateChange.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_StateChanging.zip).
 
 ## Indeterminate
 
@@ -235,4 +232,4 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 
 ![Xamarin.iOS CheckBox intermediate state](Images/Inter1.png) ![](Images/Inter2.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_IndeterminateState.zip).
+This demo can be downloaded from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1335844520.zip).
