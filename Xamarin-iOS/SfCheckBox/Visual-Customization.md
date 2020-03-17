@@ -12,7 +12,7 @@ keywords: button, SfCheckBox, CheckBox
 # Visual Customization
 
 ## Customizing shape
-The check box shape can be customized using the `CornerRadius` property. This property specifies uniform radius value for every corner of the check box.
+The check box shape can be customized using the `CornerRadius` property. This property specifies the uniform radius value for every corner of the check box.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ checkBox.CornerRadius = 5.0f;
 ![Checkbox CornerRadius](Images/Radius.png)
 
 ## Customizing state color
-The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 
+The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked. 
 {% tabs %}
 {% highlight c# %}
 SfCheckBox check = new SfCheckBox();
