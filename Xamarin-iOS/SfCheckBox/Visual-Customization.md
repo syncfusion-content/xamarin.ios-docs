@@ -55,17 +55,17 @@ SfCheckBox check1 = new SfCheckBox();
 check1.SetTitle("Hello", UIControlState.Normal);
 check1.BorderWidth = 2;
 check1.Font = UIFont.SystemFontOfSize(20);
-check1.UncheckedColor = Color.Blue;
+check1.UncheckedColor = UIColor.Blue;
 SfCheckBox check2 = new SfCheckBox();
 check2.SetTitle("Hello", UIControlState.Normal);
 check2.BorderWidth = 4;
 check2.Font = UIFont.SystemFontOfSize(25);
-check2.UncheckedColor = Color.Blue;
+check2.UncheckedColor = UIColor.Blue;
 SfCheckBox check3 = new SfCheckBox();
 check3.SetTitle("Hello", UIControlState.Normal);
 check3.BorderWidth = 6;
 check3.Font = UIFont.SystemFontOfSize(30);
-check3.UncheckedColor = Color.Blue;
+check3.UncheckedColor = UIColor.Blue;
 {% endhighlight %}
 {% endtabs %}
 
