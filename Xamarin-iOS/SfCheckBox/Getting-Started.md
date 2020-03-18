@@ -26,7 +26,7 @@ The `SfCheckBox` control is configured entirely in C# code. The following steps 
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.XForms.Buttons;
+using Syncfusion.iOS.Buttons;
 {% endhighlight %}
 {% endtabs %}
 
@@ -182,8 +182,16 @@ The indeterminate state is used when a group of sub-choices has both checked and
 
 {% tabs %}
 {% highlight c# %}
+
 bool skip = false;
 SfCheckBox selectAll, pepperoni, beef, mushroom, onion;
+
+public override void ViewDidLoad()
+{
+            
+base.ViewDidLoad();
+...
+
 selectAll = new SfCheckBox();
 selectAll.StateChanged += SelectAll_StateChanged;
 selectAll.SetTitle("Select All",UIControlState.Normal);
@@ -201,6 +209,10 @@ onion = new SfCheckBox();
 onion.StateChanged += CheckBox_StateChanged;
 onion.SetTitle("Onions", UIControlState.Normal);
 onion.IsChecked = true;
+
+...
+
+}
 
 private void SelectAll_StateChanged(object sender, StateChangedEventArgs e)
 {
@@ -232,4 +244,4 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 
 ![Xamarin.iOS CheckBox intermediate state](Images/Inter1.png) ![](Images/Inter2.png)
 
-This demo can be downloaded from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1335844520.zip).
+This demo can be downloaded from this [link](https://github.com/SyncfusionExamples/GettingStarted-Sample-CheckBox-Xamarin.iOS/).
