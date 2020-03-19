@@ -593,7 +593,7 @@ chart.Annotations.Add(annotation);
 
 ## Annotation Visibility
 
-The [`Visible`]() property of [`ChartAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotation.html) is used to control the visibility of particular annotation. Default value of Visibility property is true.
+The [`Visible`]() property of [`ChartAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartAnnotation.html) is used to control the visibility of particular annotation. Default value of [`Visible`]() property is true.
 
 {% highlight c# %} 
 
