@@ -39,9 +39,7 @@ SFChart support following types of [`Trendlines`]().
 
 The following is the code example of linear trendline.
 
-{% tabs %} 
 {% highlight c# %}
-[C#]
 
 columnSeries.Trendlines = new ChartTrendlineCollection();
 SFChartTrendline trendline = new SFChartTrendline();
@@ -50,8 +48,6 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Linear type trendline in Xamarin.iOS Chart](trendline_images/trendline_linear.png)
 
 ### Logarithmic
@@ -59,8 +55,6 @@ columnSeries.Trendlines.Add(trendline);
 A [`Logarithmic`]() trendline is the strongest-fit curved line, that is most effective when the data change rate increases or decreases rapidly. Logarithmic trends may use negative and/or positive values as well. 
 
 The following is the code example of logarithmic trendline.
-
-{% tabs %} 
 
 {% highlight c# %}
 
@@ -72,8 +66,6 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Logarithmic type trendline in Xamarin.iOS Chart](trendline_images/trendline_Logarithmic.png)
 
 ### Exponential
@@ -82,10 +74,7 @@ The [`Exponential`]() trendline is the curved line most useful for data values r
 
 N> SFChart will not generate Exponential trendline when your data contains zero or negative values. 
 
-{% tabs %} 
-
 {% highlight c# %}
-[C#]
 
 SFColumnSeries columnSeries = new SFColumnSeries();
 columnSeries.Trendlines = new ChartTrendlineCollection();
@@ -95,8 +84,6 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Exponential type trendline in Xamarin.iOS Chart](trendline_images/trendline_Exponential.png)
 
 ### Power
@@ -105,10 +92,7 @@ The [`Power`]() trendline is typically used with data sets to compare measuremen
 
 The following is the code example of power trendline.
 
-{% tabs %} 
-
 {% highlight c# %}
-[C#]
 
 SFColumnSeries columnSeries = new SFColumnSeries();
 columnSeries.Trendlines = new ChartTrendlineCollection();
@@ -118,8 +102,6 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Power type trendline in Xamarin.iOS Chart](trendline_images/trendline_Power.png)
 
 ### Polynomial
@@ -128,10 +110,7 @@ The [`polynomial`]() trendline is a curved line that is used when there are more
 
 The following is the code example of polynomial trendline.
 
-{% tabs %} 
-
 {% highlight c# %}
-[C#]
 
 columnSeries.Trendlines = new ChartTrendlineCollection();
 SFChartTrendline trendline = new SFChartTrendline();
@@ -140,8 +119,6 @@ trendline.PolynomialOrder = 3;
 columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![Polynomial type trendline in Xamarin.iOS Chart](trendline_images/trendline_Polynomial.png)
 
@@ -159,10 +136,7 @@ The following two types of forecasting are available in SFChart:
 For determining the future trends (in forward direction). The 
 following code example explains the how to set the value for [`ForwardForecast`]().
 
-{% tabs %} 
-
 {% highlight c# %}
-[C#]
 
 columnSeries.Trendlines = new ChartTrendlineCollection();
 SFChartTrendline trendline = new SFChartTrendline();
@@ -172,18 +146,13 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![ForwardForecast in trendline Xamarin.iOS Chart](trendline_images/trendline_Forward.png)
 
 ### Backward Forecast
 
 For determining the future trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`]().
 
-{% tabs %} 
-
 {% highlight c# %}
-[C#]
 
 columnSeries.Trendlines = new ChartTrendlineCollection();
 SFChartTrendline trendline = new SFChartTrendline();
@@ -193,15 +162,11 @@ columnSeries.Trendlines.Add(trendline);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![BackwardForecast in trendline Xamarin.iOS Chart](trendline_images/trendline_Backward.png)
 
 ## Customization
 
 We can customize the trendline appearance using [`LineWidth`](), [`LineColor`]() and [`Dashes`]() properties. 
-
-{% tabs %} 
 
 {% highlight c# %}
 
@@ -214,21 +179,14 @@ trendline.Dashes = NSArray.FromObjects(dashes);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Customizing Trendline appearence in Xamarin.iOS Chart](trendline_images/trendline_customizing.png)
 
 ## Legend Item Visibility
 
 We can able to control the visibility of the trendline legend items using [`VisibilityOnLegend`]() property of the Trendline.
 
-{% tabs %} 
-
 {% highlight c# %}
 
 trendline.VisibilityOnLegend = true;
 
 {% endhighlight %}
-
-{% endtabs %}
-
