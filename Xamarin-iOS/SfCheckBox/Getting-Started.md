@@ -26,7 +26,7 @@ The `SfCheckBox` control is configured entirely in C# code. The following steps 
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.XForms.Buttons;
+using Syncfusion.iOS.Buttons;
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,8 +77,6 @@ checkBox.SetTitle("CheckBox",UIControlState.Normal);
 {% endtabs %}
 
 ![Xamarin.iOS CheckBox caption text](Images/Caption.png) 
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_GettingStarted.zip).
 
 ## Change the check box state
 The three visual states of `SfCheckBox` are: 
@@ -173,7 +171,6 @@ onion.IsChecked = true;
 
 ![Xamarin.iOS CheckBox states changes](Images/StateChange.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_StateChanging.zip).
 
 ## Indeterminate
 
@@ -185,8 +182,16 @@ The indeterminate state is used when a group of sub-choices has both checked and
 
 {% tabs %}
 {% highlight c# %}
+
 bool skip = false;
 SfCheckBox selectAll, pepperoni, beef, mushroom, onion;
+
+public override void ViewDidLoad()
+{
+            
+base.ViewDidLoad();
+...
+
 selectAll = new SfCheckBox();
 selectAll.StateChanged += SelectAll_StateChanged;
 selectAll.SetTitle("Select All",UIControlState.Normal);
@@ -204,6 +209,10 @@ onion = new SfCheckBox();
 onion.StateChanged += CheckBox_StateChanged;
 onion.SetTitle("Onions", UIControlState.Normal);
 onion.IsChecked = true;
+
+...
+
+}
 
 private void SelectAll_StateChanged(object sender, StateChangedEventArgs e)
 {
@@ -235,4 +244,4 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 
 ![Xamarin.iOS CheckBox intermediate state](Images/Inter1.png) ![](Images/Inter2.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_IndeterminateState.zip).
+This demo can be downloaded from this [link](https://github.com/SyncfusionExamples/GettingStarted-Sample-CheckBox-Xamarin.iOS/).
