@@ -9,7 +9,8 @@ keywords: button, SfRadioButton, RadioButton
 
 ---
 
-# Getting Started
+# Getting Started Xamarin.iOS RadioButton(SfRadioButton)
+
 This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
 ## Add SfRadioButton reference
