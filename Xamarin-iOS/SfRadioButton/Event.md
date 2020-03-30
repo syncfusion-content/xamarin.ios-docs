@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event in SfRadioButton for Xamarin.iOS platform
-description: Learn how to customization and events options with its available basic features in Xamarin.iOS of SfRadioButton.
+description: Learn how to invoke the available event to notify the selection changes in Xamarin.iOS SfRadioButton
 platform: Xamarin.iOS
 control: SfRadioButton
 documentation: ug 
@@ -45,5 +45,5 @@ private void RadioButton_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Event1.png)
-![](Images/Event2.png)
+![RadioButton Event1](Images/Event1.png)
+![RadioButton Event2](Images/Event2.png)
