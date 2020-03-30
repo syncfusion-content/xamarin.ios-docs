@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event in SfRadioButton for Xamarin.iOS platform
-description: Learn how to customize the basic features of SfRadioButton
+description: Learn how to customization and events options with its available basic features in Xamarin.iOS of SfRadioButton.
 platform: Xamarin.iOS
 control: SfRadioButton
 documentation: ug 
@@ -13,7 +13,7 @@ keywords: button, SfRadioButton, RadioButton
 
 ## StateChanged event
 
-Occurs when the value(state) of the `IsChecked` property is changed by either touching the check box or setting the value to the `IsChecked` property using C# code. The event arguments are of type `StateChangedEventArgs` and expose the following property:
+Occurs when the value(state) of the `IsChecked` property is changed by either touching the radio button or setting the value to the `IsChecked` property using C# code. The event arguments are of type `StateChangedEventArgs` and expose the following property:
 
 * `IsChecked`: The new value(state) of the `IsChecked` property.
 
@@ -47,5 +47,3 @@ private void RadioButton_StateChanged(object sender, StateChangedEventArgs e)
 
 ![](Images/Event1.png)
 ![](Images/Event2.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/RadioButton_Event.zip).

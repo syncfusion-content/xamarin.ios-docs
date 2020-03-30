@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started in Syncfusion Radio Button for Xamarin.iOS platform
-description: Learn how to customize the basic features of SfRadioButton
+description: Learn how to create a simple radio button and its customization options with its available basic features in Xamarin.iOS
 platform: Xamarin.iOS
 control: SfRadioButton
 documentation: ug 
@@ -12,7 +12,7 @@ keywords: button, SfRadioButton, RadioButton
 # Getting Started
 This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
-## Add SfCheckBox reference
+## Add SfRadioButton reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add radio button to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.iOS)", and then install it. 
 
 ![Xamarin.iOS Radio Button NuGet](Images/nuget.png)
@@ -26,11 +26,11 @@ The `SfRadioButton` control is configured entirely in C# code. The following ste
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.XForms.Buttons;
+using Syncfusion.iOS.Buttons;
 {% endhighlight %}
 {% endtabs %}
 
-### Refer SfCheckBox control with declared suffix name for Namespace
+### Refer SfRadioButton control with declared suffix name for Namespace
 
 {% tabs %}
 {% highlight c# %}
@@ -64,7 +64,7 @@ namespace RadioButton_Sample
 {% endhighlight %}
 {% endtabs %}
 
-##Setting caption
+## Setting caption
 
 The radio button caption can be defined using the `SetTitle` method of `SfRadioButton`. This caption normally describes the meaning of the radio button and it displays next to radio button.
  
@@ -76,8 +76,6 @@ radioButton.SetTitle("RadioButton", UIControlState.Normal);
 {% endtabs %}
 
 ![Xamarin.iOS Radio Button caption text](Images/Caption.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/RadioButton_GettingStarted.zip).
 
 ## Change the radio button state
 
