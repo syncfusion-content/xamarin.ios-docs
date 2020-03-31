@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started in Syncfusion Radio Button for Xamarin.iOS platform
-description: Learn how to create a simple radio button and its customization options with its available basic features in Xamarin.iOS
+description: Learn how to create a simple radio button and their customization options with the available basic features in Xamarin.iOS
 platform: Xamarin.iOS
 control: SfRadioButton
 documentation: ug 
@@ -13,7 +13,7 @@ keywords: button, SfRadioButton, RadioButton
 
 This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
-## Add SfRadioButton reference
+## Add a SfRadioButton reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add radio button to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.iOS)", and then install it. 
 
 ![Xamarin.iOS Radio Button NuGet](Images/nuget.png)
@@ -31,7 +31,7 @@ using Syncfusion.iOS.Buttons;
 {% endhighlight %}
 {% endtabs %}
 
-### Refer SfRadioButton control with declared suffix name for Namespace
+### Refer the SfRadioButton control with declared suffix name for Namespace
 
 {% tabs %}
 {% highlight c# %}
