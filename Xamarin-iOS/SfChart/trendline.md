@@ -148,7 +148,7 @@ columnSeries.Trendlines.Add(trendline);
 
 ![ForwardForecast in trendline Xamarin.iOS Chart](trendline_images/trendline_Forward.png)
 
-### Backward Forecast
+### Backward Forecasting
 
 For determining the future trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrendline~BackwardForecast.html).
 
