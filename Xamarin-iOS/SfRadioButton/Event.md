@@ -9,7 +9,7 @@ keywords: button, SfRadioButton, RadioButton
 
 ---
 
-# Event Xamarin.iOS RadioButton(SfRadioButton)
+# Event Xamarin.iOS RadioButton (SfRadioButton)
 
 ## StateChanged event
 
@@ -45,5 +45,5 @@ private void RadioButton_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![RadioButton Event1](Images/Event1.png)
-![RadioButton Event2](Images/Event2.png)
+![Xamarin.iOS SfRadioButton selection changes from checked to unchecked](Images/Event1.png)
+![Xamarin.iOS SfRadioButton selection changes from unchecked to checked](Images/Event2.png)
