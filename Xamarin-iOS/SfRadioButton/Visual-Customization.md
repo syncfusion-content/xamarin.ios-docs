@@ -75,5 +75,3 @@ radioButton.Font = UIFont.FromDescriptor(fontDescriptor.CreateWithTraits(UIFontD
 {% endtabs %}
 
 ![RadioButton TextAppereance](Images/CaptionAppereance.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/RadioButton_VisualCustomization.zip ).

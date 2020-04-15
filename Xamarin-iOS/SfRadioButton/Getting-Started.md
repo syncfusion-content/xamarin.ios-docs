@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started in Syncfusion Radio Button for Xamarin.iOS platform
-description: Learn how to customize the basic features of SfRadioButton
+description: Learn how to create a simple radio button and their customization options with the available basic features in Xamarin.iOS
 platform: Xamarin.iOS
 control: SfRadioButton
 documentation: ug 
@@ -9,13 +9,14 @@ keywords: button, SfRadioButton, RadioButton
 
 ---
 
-# Getting Started
+# Getting Started Xamarin.iOS RadioButton (SfRadioButton)
+
 This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
-## Add SfCheckBox reference
+## Add a SfRadioButton reference
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add radio button to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.iOS)", and then install it. 
 
-![Xamarin.iOS Radio Button NuGet](Images/nuget.png)
+![Xamarin.iOS radio button NuGet](Images/nuget.png)
 
 N>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
@@ -26,11 +27,11 @@ The `SfRadioButton` control is configured entirely in C# code. The following ste
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.XForms.Buttons;
+using Syncfusion.iOS.Buttons;
 {% endhighlight %}
 {% endtabs %}
 
-### Refer SfCheckBox control with declared suffix name for Namespace
+### Refer the SfRadioButton control with declared suffix name for Namespace
 
 {% tabs %}
 {% highlight c# %}
@@ -64,7 +65,7 @@ namespace RadioButton_Sample
 {% endhighlight %}
 {% endtabs %}
 
-##Setting caption
+## Setting caption
 
 The radio button caption can be defined using the `SetTitle` method of `SfRadioButton`. This caption normally describes the meaning of the radio button and it displays next to radio button.
  
@@ -75,9 +76,7 @@ radioButton.SetTitle("RadioButton", UIControlState.Normal);
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.iOS Radio Button caption text](Images/Caption.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/RadioButton_GettingStarted.zip).
+![Xamarin.iOS radio button caption text](Images/Caption.png)
 
 ## Change the radio button state
 
@@ -104,6 +103,6 @@ radioGroup.AddArrangedSubview(female);
 
 N>`SfRadioButtons` are mutually exclusive among them when they are defined within `SfRadioGroup`.
 
-![Xamarin.iOS Radio Button states](Images/StateChage.png)
+![Xamarin.iOS radio button states](Images/StateChage.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/RadioButton_StateChanging.zip).
