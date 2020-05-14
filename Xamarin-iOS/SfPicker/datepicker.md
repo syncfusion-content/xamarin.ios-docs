@@ -9,7 +9,7 @@ documentation: UG
 
 # Date Picker
 
-We have demonstrated in the following steps to create custom DatePicker using Picker control.
+ Custom DatePicker using Picker control.
 
 **Step** **1** **:** We have created custom class named as "DatePicker". This class should be inherited from SfPicker control.
 
@@ -196,7 +196,7 @@ public class DatePicker : SfPicker
 
 {% tabs %}
 
-{% highlight c#}
+{% highlight c# %}
 
 public class DatePicker : SfPicker
 {

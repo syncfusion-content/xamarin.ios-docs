@@ -7,11 +7,10 @@ control: Picker
 documentation: ug
 ---
 
-# Date TIme Picker
+# Date Time Picker
 
-in our Xamarin.Forms SfPicker control has multi column support. Using this we can populate day, month, year, and minute values of collection in SfPicker control.
+Custom DateTimePicker using Syncfusion `SfPicker` control
 
-We have demonstrate how to create custom DateTimePicker using Syncfusion `SfPicker` control in the following steps.
 
 **Step** **1** **:** We have created custom class named as "DateTimePicker". This class should be inherited from SfPicker control.
 
@@ -235,7 +234,7 @@ public class DateTimePicker : SfPicker
 
 {% tabs %}
 
-{% highlight c#}
+{% highlight c# %}
 
 public class DateTimePicker : SfPicker
 {

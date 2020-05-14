@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Demonstrate Picker with EnablingLooping property using SfPicker of Syncfusion pikcer control for Xamarin.iOS
+title: Looping support in Syncfusion pikcer control for Xamarin.iOS
 description: This section will explain about how to enable looping in Syncfusion Picker control for Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
@@ -9,11 +9,11 @@ documentation: ug
 
 # Looping
 
-The looping support is used to automatically navigate the first item to repeat the list of items after  reached the last item. Each forward iteration is followed by a backward iteration in the picker control. This can be achieved by `EnableLooping` property.
+Looping support in SfPicker control.
 
 ## EnableLooping
 
-The looping support is achieved by setting the `EnableLooping` property to true.
+The looping support is used to automatically navigate the first item to repeat the list of items after reached the last item. Each forward iteration is followed by a backward iteration in the picker control. This can be achieved by `EnableLooping` property.
 
 {% tabs %}
 

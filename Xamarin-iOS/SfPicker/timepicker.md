@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating TimePicker using SfPicker in Xamarin.iOS platform.
+title: Creating TimePicker using Syncfusion SfPicker in Xamarin.iOS platform.
 description: This section will explain about how to create Custom TimePicekr using Syncfusion SfPicker control in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
@@ -9,7 +9,7 @@ documentation: ug
 
 # Time Picker
 
-We have demonstrate how to create `TimePicker` using `SfPicker` control in the following steps.
+Creating `TimePicker` using `SfPicker` control in the following steps.
 
 **Step****1** **:** We have created custom class named as `TimePicker`. This should be inherited from `SfPicker` control.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cascading of SfPicker in Xamarin.iOS platform.
+title: Cascading of Syncfusion SfPicker in Xamarin.iOS platform.
 description: This section will explain about how to acieve cascading in Syncfusion SfPicker control in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
@@ -9,13 +9,11 @@ documentation: ug
 
 # Cascading
 
-We have demonstrated how to create custom cascading sample using SfPicker control in the following steps.
+Custom cascading sample using SfPicker control.
 
-We have created the cascading sample for updating state collection based on selected item of SfPicker.
 
-Please refer the below steps to create the cascading sample.
 
-**Step** **1** **:** We have created three observablecollection with object type in PickerCascading class.
+**Step** **1** **:** We have created three ObservableCollection with object type in PickerCascading class.
 
 **Collection** **details** **:**
 
