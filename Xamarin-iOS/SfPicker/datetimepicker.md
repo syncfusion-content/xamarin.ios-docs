@@ -7,7 +7,7 @@ control: Picker
 documentation: ug
 ---
 
-# Date Time Picker
+# Date Time Picker using SfPicker
 
 Custom DateTimePicker using Syncfusion `SfPicker` control
 

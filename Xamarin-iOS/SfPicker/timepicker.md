@@ -7,9 +7,9 @@ control: Picker
 documentation: ug
 ---
 
-# Time Picker
+# Custom TimePicker using SfPicker
 
-Creating `TimePicker` using `SfPicker` control in the following steps.
+This section will explain about how create `TimePicker` using `SfPicker` control in the following steps.
 
 ## Steps
 

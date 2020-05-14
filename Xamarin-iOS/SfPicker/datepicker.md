@@ -7,9 +7,9 @@ control: picker
 documentation: UG
 ---
 
-# Date Picker
+# Custom Date Picker Using SfPicker
 
- Custom DatePicker using Picker control.
+ This section will explain about how to create custom DatePicker using Picker control.
 
  ## Steps
 

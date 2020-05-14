@@ -7,9 +7,11 @@ control: Picker
 documentation: ug
 ---
 
-# Cascading
+# Custom Cascading using SfPicker
 
-Custom cascading sample using SfPicker control.
+We have created the cascading sample for updating state collection based on selected item of SfPicker.
+
+Please refer the below steps to create the cascading sample.
 
 ## Steps
 

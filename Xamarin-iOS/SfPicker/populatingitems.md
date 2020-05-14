@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Populating items
+# Populating items in SfPicker
 
 This section explains about the ways of populating items for SfPicker control.
 

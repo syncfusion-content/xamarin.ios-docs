@@ -7,7 +7,7 @@ control: Picker
 documentation: ug
 ---
 
-# Looping
+# Looping support in SfPicker
 
 Looping support in SfPicker control.
 
