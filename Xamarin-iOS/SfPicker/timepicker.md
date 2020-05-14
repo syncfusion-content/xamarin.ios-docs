@@ -11,6 +11,8 @@ documentation: ug
 
 Creating `TimePicker` using `SfPicker` control in the following steps.
 
+## Steps
+
 **Step****1** **:** We have created custom class named as `TimePicker`. This should be inherited from `SfPicker` control.
 
 {% tabs %}

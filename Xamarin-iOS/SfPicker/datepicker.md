@@ -11,6 +11,8 @@ documentation: UG
 
  Custom DatePicker using Picker control.
 
+ ## Steps
+
 **Step** **1** **:** We have created custom class named as "DatePicker". This class should be inherited from SfPicker control.
 
 {% tabs %}

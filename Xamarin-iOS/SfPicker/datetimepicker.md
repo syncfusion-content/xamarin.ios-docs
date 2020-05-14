@@ -11,6 +11,7 @@ documentation: ug
 
 Custom DateTimePicker using Syncfusion `SfPicker` control
 
+## Steps
 
 **Step** **1** **:** We have created custom class named as "DateTimePicker". This class should be inherited from SfPicker control.
 

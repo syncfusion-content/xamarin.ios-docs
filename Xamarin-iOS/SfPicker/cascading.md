@@ -11,7 +11,7 @@ documentation: ug
 
 Custom cascading sample using SfPicker control.
 
-
+## Steps
 
 **Step** **1** **:** We have created three ObservableCollection with object type in PickerCascading class.
 
