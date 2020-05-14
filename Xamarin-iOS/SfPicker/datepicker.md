@@ -254,7 +254,7 @@ public DatePicker()
 
 { % tabs %}
 
-{% highlight c#}
+{% highlight c# %}
 
 public partial class ViewController : UIViewController
 {
