@@ -9,13 +9,13 @@ documentation: ug
 
 # Cascading
 
-We have demonstrated howto create custom cascading sample using SfPicker control in the following steps.
+We have demonstrated how to create custom cascading sample using SfPicker control in the following steps.
 
 We have created the cascading sample for updating state collection based on selected item of SfPicker.
 
 Please refer the below steps to create the cascading sample.
 
-**Step** **1** **:** We have created three observablecolleciton with objecgt type in PickerCascading class.
+**Step** **1** **:** We have created three observablecollection with object type in PickerCascading class.
 
 **Collection** **details** **:**
 
@@ -23,11 +23,11 @@ Area Collection, Country Collection and State Collection.
 
 Country Collection -> We have added country names.
 
-State Colleciton -> We have added state names.
+State Collection -> We have added state names.
 
 Area Collection -> We have added above 2 collections.
 
-Area collection is main collection we have assigned this collection to ItemSource of SfPIcker control.
+Area collection is main collection we have assigned this collection to ItemSource of SfPicker control.
 
 The below code demonstrates Area collection creation.
 
@@ -113,7 +113,7 @@ public class PickerCascading : INotifyPropertyChanged
 
 {% endtabs %}
 
-**Step** **2** **:** We have updated the state collection based on selected item of country name using SelectionCHnaged event of SfPicker control.
+**Step** **2** **:** We have updated the state collection based on selected item of country name using SelectionChanged event of SfPicker control.
 
 {% tabs %}
 
@@ -164,7 +164,7 @@ public class PickerCascading : INotifyPropertyChanged
 
 **Step** **4** **:**
 
-We ahve added the cascading picker control in ViewDidLoad page. Please refer the below code snippets.
+We have added the cascading picker control in ViewDidLoad page. Please refer the below code snippets.
 
 {% tabs %}
 

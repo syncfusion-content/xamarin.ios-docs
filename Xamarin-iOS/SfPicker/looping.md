@@ -13,7 +13,7 @@ The looping support is used to automatically navigate the first item to repeat t
 
 ## EnableLooping
 
-The looping support is achieved by setting the `EnableLooping` proeprty to true.
+The looping support is achieved by setting the `EnableLooping` property to true.
 
 {% tabs %}
 
@@ -25,7 +25,7 @@ picker.EnableLooping = true;
 
 {% endtabs %}
 
-## How to restric Looping in 
+## How to restrict Looping in 
 
 The looping support can be restricted in a particular column of the picker by setting the `EnableLooping` of ColumnLoaded event argument to false.
 

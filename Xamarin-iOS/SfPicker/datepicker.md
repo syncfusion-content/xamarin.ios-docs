@@ -26,7 +26,7 @@ public class DatePicker : SfPicker
 
 {% endtabs %}
 
-**Step** **2** **:** After that create four ObservableColletion with object type in DatePicker class.
+**Step** **2** **:** After that create four ObservableCollection with object type in DatePicker class.
 
 **Collection details** **:**
 
@@ -40,9 +40,9 @@ Year collection -> We have added 1990 to 2050 years.
 
 Date collection -> We have added all the three collections.
 
-Date Collection in main collection we have assigned this collection to ItemsSOurce of Picker control.
+Date Collection in main collection we have assigned this collection to ItemsSource of Picker control.
 
-The below code demonstrates Date collecion creation.
+The below code demonstrates Date collection creation.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ public class DatePicker : SfPicker
 
 {% tabs %}
 
-{% highlight c#}
+{% highlight C# %}
 
 public class DatePicker : SfPicker
 {
@@ -139,7 +139,7 @@ public class DatePicker : SfPicker
         UpdateDays(Date, e);
     }
 
-    //Updatedays method is used to alter the Date collection as per selection change in Month column(if feb is Selected day collection has value from 1 to 28)
+    //UpdateDays method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
     public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
     {
         try
@@ -230,7 +230,7 @@ public class DatePicker : SfPicker
 
 {% tabs %}
 
-{% highlight c#}
+{% highlight C# %}
 
 public DatePicker()
 {

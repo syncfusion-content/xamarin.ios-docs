@@ -11,7 +11,7 @@ documentation: ug
 
 We have demonstrate how to create `TimePicker` using `SfPicker` control in the following steps.
 
-**Step****1** **:** We have created custom class named as `TimePIcker`. This should be inherited from `SfPicker` control.
+**Step****1** **:** We have created custom class named as `TimePicker`. This should be inherited from `SfPicker` control.
 
 {% tabs %}
 
@@ -26,7 +26,7 @@ public class TimePicker : SfPicker
 
 {% endtabs %}
 
-**Step** **2** **:** After creating that four ObservableCollection with object type in TimePickder class.
+**Step** **2** **:** After creating that four ObservableCollection with object type in TimePicker class.
 
 **Collection** **details** **:**
 
@@ -70,7 +70,7 @@ public class TimePicker : SfPicker
 
 {% endhighlight %}
 
-{5 endtabs %}
+{% endtabs %}
 
 **Step** **3** **:** We have defined each column header "Hour", "Minute" and "Format" using ColumnHeaderText property of SfPicker control. The below code demonstrates how to define header for each column of SfPicker control.
 
@@ -104,7 +104,7 @@ public class TimePicker : SfPicker
 
 {% endtabs %}
 
-**Step** **4** **:** Finally we have enbaled SfPIcker footer, header and Column header using ShowFooter, ShowHeader and ShowColumnHeader properties.
+**Step** **4** **:** Finally we have enabled SfPicker footer, header and Column header using ShowFooter, ShowHeader and ShowColumnHeader properties.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ public TimePicker()
 
 {% endtabs %}
 
-**Step** **5** **:** We have added the TImePicker control in ViewDidLoad page. PLease refer the below code snippets.
+**Step** **5** **:** We have added the TimePicker control in ViewDidLoad page. Please refer the below code snippets.
 
 {% tabs %}
 
@@ -161,6 +161,6 @@ public partial class ViewController : UIViewController
 
 {% endtabs %}
 
-We have attached TimePicker smaple for reference. Please download the sample from the following link.
+We have attached TimePicker sample for reference. Please download the sample from the following link.
 
 Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker-737192613.zip 

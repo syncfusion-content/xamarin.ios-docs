@@ -9,13 +9,13 @@ documentation: ug
 
 # Dealing with columns
 
-This section will explain about the customization of SfPikcer Columns.
+This section will explain about the customization of SfPicker Columns.
 
 ## Adjust Column Width
 
 SfPicker allows user to adjust the column width by hooking `SfPicker.OnColumnLoaded` event and then check the column using `ColumnLoadedEventArgs.Column` property and then adjust width of column by setting `ColumnLoadedEventArgs.ColumnWidth` property.
 
-We have prepared below code snippets to demonstrate DateTimePikcer sample using `OnColumnLoaded` event.
+We have prepared below code snippets to demonstrate DateTimePicker sample using `OnColumnLoaded` event.
 
 {% tabs %}
 
@@ -85,9 +85,9 @@ Sample link : https://www.syncfusion.com/downloads/support/directtrac/general/ze
 
 ## Add Caption
 
-SfPicker allows user to add header for each column by setting `SfPicker.ColumnHeaderText` property and enabling `SfPicker.ShowColumnHeader` proeprty to True.
+SfPicker allows user to add header for each column by setting `SfPicker.ColumnHeaderText` property and enabling `SfPicker.ShowColumnHeader` property to True.
 
-`ColumnHeaderText` property is of object type and user can assign string or colletion. If a string type is assigned in `SfPicker.ColumnHeaderText`, that string will be updated in all the column of SfPicker.
+`ColumnHeaderText` property is of object type and user can assign string or collection. If a string type is assigned in `SfPicker.ColumnHeaderText`, that string will be updated in all the column of SfPicker.
 
 To assign the collection in `SfPicker.ColumnHeaderText`, SfPicker column header update based on index with value on collection.
 

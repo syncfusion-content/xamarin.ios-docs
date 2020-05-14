@@ -9,11 +9,11 @@ documentation: ug
 
 # Date TIme Picker
 
-in our Xamarin.Forms SfPicker control has multi column support. Using this we can populate day, month, year, and minute values of colleciton in SfPicker control.
+in our Xamarin.Forms SfPicker control has multi column support. Using this we can populate day, month, year, and minute values of collection in SfPicker control.
 
-We have demonstrate how to create custom DateTimePicker using Syncfusin `SfPicker` control in the following steps.
+We have demonstrate how to create custom DateTimePicker using Syncfusion `SfPicker` control in the following steps.
 
-**Step** **1** **:** We have created custom class named as "DateTimePIcker". This class should be inherited from SfPicker control.
+**Step** **1** **:** We have created custom class named as "DateTimePicker". This class should be inherited from SfPicker control.
 
 {% tabs %}
 
@@ -28,7 +28,7 @@ public class DateTimePicker : SfPicker
 
 {% endtabs %}
 
-**Step****2** **:** Afterthat create siz Observable collection with object type in DateTimePicker class.
+**Step****2** **:** After that create size Observable collection with object type in DateTimePicker class.
 
 **Collection details** **:**
 
@@ -164,7 +164,7 @@ public class DateTimePicker : SfPicker
 
 {% tabs %}
 
-{% highlight c#}
+{% highlight c# %}
 
 public class DateTimePicker : SfPicker
 {
@@ -178,7 +178,7 @@ public class DateTimePicker : SfPicker
         UpdateDays(Date, e);
     }
 
-    //Updatedays method is used to alter the Date collection as per selection change in Month column(if feb is Selected day collection has value from 1 to 28)
+    //UpdateDays method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
     public void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
     {
         try
@@ -271,7 +271,7 @@ public class DateTimePicker : SfPicker
 
 {% tabs %}
 
-{% highlight c#}
+{% highlight c# %}
 
 public DateTimePicker()
 {

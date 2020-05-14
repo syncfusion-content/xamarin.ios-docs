@@ -17,7 +17,7 @@ This section explains about the ways of populating items for SfPicker control.
 
 SfPicker is bound the external data source to display the data's. It supports any collections that's implements the IEnumerable interface.
 
-To bind data source in SfPIcker, set the `SfPicker.ItemSource` property as show in below code.
+To bind data source in SfPicker, set the `SfPicker.ItemSource` property as show in below code.
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ public partial class ViewController : UIViewController
 
 ## Multi-Columns Items
 
-The SfPicker automatically populate thw items as Multi-Column based on the Data Source.
+The SfPicker automatically populate the items as Multi-Column based on the Data Source.
 
 Collection of items can be created and assigned to a Collection and each item Collection is a column of SfPicker.
 

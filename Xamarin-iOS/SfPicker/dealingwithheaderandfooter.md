@@ -14,7 +14,7 @@ This section will explain about the header and footer customization of SfPicker.
 
 ## Enable or Disable Header
 
-SfPicker allows enabling or disabling the hreader section by setting `SfPicker.ShowHeader` property to Ture or False. Default property of `SfPicker.ShowHeader` property is True.
+SfPicker allows enabling or disabling the header section by setting `SfPicker.ShowHeader` property to True or False. Default property of `SfPicker.ShowHeader` property is True.
 
 {% tabs %}
 
@@ -106,7 +106,7 @@ This section will explains about the customization of Header text of Font
 
 #### FontFamily
 
-Header text FontFamily can be customized by setting `SfPicker.HeaderFont` proeprty of SfPicker.
+Header text FontFamily can be customized by setting `SfPicker.HeaderFont` property of SfPicker.
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ public override void ViewDidLoad()
 
 ### Set Custom Footer
 
-SfPIcker allows providing custom view to Footer of SfPicker by setting `SfPicker.FooterView` property. Default value of `SfPicker.FooterView` property is Null.
+SfPicker allows providing custom view to Footer of SfPicker by setting `SfPicker.FooterView` property. Default value of `SfPicker.FooterView` property is Null.
 
 {% tabs %}
 
@@ -174,7 +174,7 @@ public override void ViewDidLoad()
 
 ## Perform validation with default validation button
 
-SfPicker alloes performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event from the `SelectionChangedEvent` Argument current selected items can be obtained.
+SfPicker allows performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event from the `SelectionChangedEvent` Argument current selected items can be obtained.
 
 {% tabs %}
 
