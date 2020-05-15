@@ -315,7 +315,7 @@ public partial class ViewController : UIViewController
         dateTimePicker.PickerWidth = 300;
         dateTimePicker.SelectedItem = dateTimePicker.StartDate;
         dateTimePicker.BackgroundColor = UIColor.White;
-        dateTimePicker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width - 50, this.View.Frame.Height / 2);
+        dateTimePicker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height);
         this.View.AddSubview(dateTimePicker);
     }
 
@@ -331,6 +331,10 @@ public partial class ViewController : UIViewController
 
 {% endtabs %}
 
+Screen shot for the above code
+
+![DateTimePicker](images/datetimepicker.png)
+
 We have attached the DateTimePicker sample for reference. Please download the sample from the following link.
 
-Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/PickerLooping871534620.zip 
+Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker-2063991188.zip 

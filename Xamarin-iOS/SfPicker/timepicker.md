@@ -154,7 +154,7 @@ public partial class ViewController : UIViewController
         timePicker.PickerWidth = 300;
         timePicker.PickerMode = PickerMode.Default;
         timePicker.SelectedItem = timePicker.SelectedTime;
-        timePicker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width - 50, this.View.Frame.Height / 2);
+        timePicker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height);
         this.View.AddSubview(timePicker);
     }
 }
@@ -165,4 +165,4 @@ public partial class ViewController : UIViewController
 
 We have attached TimePicker sample for reference. Please download the sample from the following link.
 
-Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker-737192613.zip 
+Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker-1063915414.zip 

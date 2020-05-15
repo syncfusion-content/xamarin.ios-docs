@@ -276,7 +276,7 @@ public partial class ViewController : UIViewController
         datePicker.PickerWidth = 300;
         datePicker.SelectedItem = datePicker.StartDate;
         datePicker.BackgroundColor = UIColor.White;
-        datePicker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width - 50, this.View.Frame.Height / 2);
+        datePicker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height);
         this.View.AddSubview(datePicker);
     }
 
@@ -291,6 +291,10 @@ public partial class ViewController : UIViewController
 {% endhighlight %}
 
 {% endtabs %}
+
+Screen shot for the above code
+
+![DatePicker](images/datepicker.png)
 
 You can get the sample from the following link
 

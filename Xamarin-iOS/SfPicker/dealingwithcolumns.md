@@ -47,7 +47,7 @@ public partial class ViewController : UIViewController
         picker.SelectionChanged += Picker_SelectionChanged;
         picker.ShowHeader = true;
         picker.ShowColumnHeader = false;
-        picker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width - 50, this.View.Frame.Height / 2);
+        picker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height);
         this.View.AddSubview(picker);
     }
 
@@ -223,5 +223,8 @@ public class DatePicker : SfPicker
 
 {% endtabs %}
 
+Screen shot for the above code
 
-Sample: https://www.syncfusion.com/downloads/support/directtrac/general/ze/DealingWithColumn-311500782.zip 
+![DealigWithColumns](images/dealingwithcolumnns.png)
+
+Sample: https://www.syncfusion.com/downloads/support/directtrac/general/ze/DealingWithColumn-1587662390.zip 

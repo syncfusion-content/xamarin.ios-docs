@@ -197,7 +197,7 @@ public partial class ViewController : UIViewController
         picker.PickerMode = PickerMode.Default;
         picker.UnSelectedItemTextColor = UIColor.Black;
         picker.HeaderText = "Select your Area";
-        picker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width - 50, this.View.Frame.Height / 2);
+        picker.Frame = new CoreGraphics.CGRect(0, 0, this.View.Frame.Width, this.View.Frame.Height);
         this.View.AddSubview(picker);
     }
 }
@@ -206,6 +206,10 @@ public partial class ViewController : UIViewController
 
 {% endtabs %}
 
+Screen shot for the above code
+
+![Cascading](images/cascading.png)
+
 We have attached Cascading sample for reference. Please download the sample from the following link.
 
-Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading-1575975010.zip
+Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading1430924976.zip 

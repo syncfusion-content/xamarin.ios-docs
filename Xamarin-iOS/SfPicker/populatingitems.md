@@ -372,6 +372,10 @@ public partial class ViewController : UIViewController
 
 {% endtabs %}
 
+Screen shot for the above code
+
+![PopulatingItems](images/populatingitems.png)
+
 You can get the sample from the following link.
 
 Sample : https://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker-1456447258.zip 
