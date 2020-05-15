@@ -225,6 +225,6 @@ public class DatePicker : SfPicker
 
 Screen shot for the above code
 
-![DealigWithColumns](images/dealingwithcolumnns.png)
+![DealigWithColumns](images/dealingwithcolumnn.png)
 
 Sample: https://www.syncfusion.com/downloads/support/directtrac/general/ze/DealingWithColumn-1587662390.zip 
