@@ -161,7 +161,7 @@ public override void ViewDidLoad()
     SfPicker picker = new SfPicker();
     UIStackView stackView = new UIStackView();
     UIButton button = new UIButton();
-    button.SetTitle("Button", UIControlState.Normal);
+    button.SetTitle("Ok", UIControlState.Normal);
     stackView.AddSubview(button);
     picker.FooterView = stackView;
     picker.ShowFooter = true;
