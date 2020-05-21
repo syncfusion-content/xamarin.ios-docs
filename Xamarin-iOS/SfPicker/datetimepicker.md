@@ -291,7 +291,7 @@ public DateTimePicker()
 
 **Step** **6** **:** We have added the DateTimePicker control in ViewDidLoad page. Please refer the below code snippets.
 
-{ % tabs %}
+{% tabs %}
 
 {% highlight c# %}
 
