@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion DigitalGauge control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.iOS platform
+description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.iOS platform and also describes how to customize the characters.
 platform: Xamarin.iOS
 control: DigitalGauge
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfDigitalGauge
 
 This section explains you the steps to configure a SfDigitalGauge control in a real-time scenario and some of the customization features available in it.
 
