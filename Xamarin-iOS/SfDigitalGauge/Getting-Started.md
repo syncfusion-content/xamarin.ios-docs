@@ -72,3 +72,5 @@ digitalGauge.Value = (NSString)“Syncfusion”;
 {% endtabs %}
 
 ![Xamarin.iOS DigitalGauge Getting Started](images/Objective.png)
+
+You can find the complete getting started sample from this [`link`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/iOS_DigitalGauge_GettingStarted-1859146217).
