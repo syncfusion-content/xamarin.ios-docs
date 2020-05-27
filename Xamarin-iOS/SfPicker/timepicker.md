@@ -13,7 +13,7 @@ This section will explain about how create `TimePicker` using `SfPicker` control
 
 ## Steps
 
-**Step****1** **:** We have created custom class named as `TimePicker`. This should be inherited from `SfPicker` control.
+**Step** **1** **:** We have created custom class named as `TimePicker`. This should be inherited from `SfPicker` control.
 
 {% tabs %}
 

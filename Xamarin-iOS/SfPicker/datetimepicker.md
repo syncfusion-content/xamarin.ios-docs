@@ -28,7 +28,7 @@ public class DateTimePicker : SfPicker
 
 {% endtabs %}
 
-**Step****2** **:** After that create size Observable collection with object type in DateTimePicker class.
+**Step** **2** **:** After that create size Observable collection with object type in DateTimePicker class.
 
 **Collection details** **:**
 

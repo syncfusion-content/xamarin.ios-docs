@@ -115,6 +115,7 @@ The following code example illustrates about to populate Month, Day and Year val
         public ObservableCollection<string> Headers { get; set; }
 
         public ObservableCollection<object> StartDate;
+
         #endregion
 
         public DatePicker(IntPtr handle) : base(handle)
@@ -149,6 +150,7 @@ The following code example illustrates about to populate Month, Day and Year val
             ShowHeader = true;
             ShowColumnHeader = true;
         }
+
         private void PopulateDateCollection()
         {
 
@@ -205,18 +207,18 @@ Selected item text color can be customized by setting `SfPicker.SelectedItemText
 {% highlight c# %}
 
 public partial class ViewController : UIViewController
-    {
-        SfPicker picker;
-        
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
+{
+    SfPicker picker;
 
-            picker = new SfPicker();
-            picker.SelectedItemTextColor = UIColor.Red;
-            this.View.AddSubview(picker);
-        }
+    public override void ViewDidLoad()
+    {
+        base.ViewDidLoad();
+
+        picker = new SfPicker();
+        picker.SelectedItemTextColor = UIColor.Red;
+        this.View.AddSubview(picker);
     }
+}
 
 {% endhighlight %}
 
@@ -235,18 +237,18 @@ Selected item text FontFamily can be customized by setting  `SfPicker.SelectedIt
 {% highlight c# %}
 
 public partial class ViewController : UIViewController
-    {
-        SfPicker picker;
-        
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
+{
+    SfPicker picker;
 
-            picker = new SfPicker();
-            picker.SelectedItemFont = UIFont.FromName("sans-serif", 12f);;
-            this.View.AddSubview(picker);
-        }
+    public override void ViewDidLoad()
+    {
+        base.ViewDidLoad();
+
+        picker = new SfPicker();
+        picker.SelectedItemFont = UIFont.FromName("sans-serif", 12f); ;
+        this.View.AddSubview(picker);
     }
+}
 
 {% endhighlight %}
 
@@ -254,7 +256,7 @@ public partial class ViewController : UIViewController
 
 ### UnSelected item customization
 
-#### Text color
+#### Text Color
 
 Unselected item text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property of SfPicker.
 
@@ -263,48 +265,48 @@ Unselected item text color can be customized by setting `SfPicker.UnSelectedItem
 {% highlight c# %}
 
 public partial class ViewController : UIViewController
-    {
-        SfPicker picker;
-        
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
+{
+    SfPicker picker;
 
-            picker = new SfPicker();
-            picker.UnSelectedItemTextColor = UIColor.Blue;
-            this.View.AddSubview(picker);
-        }
+    public override void ViewDidLoad()
+    {
+        base.ViewDidLoad();
+
+        picker = new SfPicker();
+        picker.UnSelectedItemTextColor = UIColor.Blue;
+        this.View.AddSubview(picker);
     }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Font
+#### Font
 
 This section will explains about the customization of UnSelected items Font.
 
 ##### FontFamily
 
-JUnSelected item text FontFamily can be customized by setting  `SfPicker.UnSelectedItemFont` property of SfPicker.
+UnSelected item text FontFamily can be customized by setting  `SfPicker.UnSelectedItemFont` property of SfPicker.
 
 {% tabs %}
 
 {% highlight c# %}
 
 public partial class ViewController : UIViewController
-    {
-        SfPicker picker;
-        
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
+{
+    SfPicker picker;
 
-            picker = new SfPicker();
-            picker.UnSelectedItemFont = UIFont.FromName("sans-serif", 12f);;
-            this.View.AddSubview(picker);
-        }
+    public override void ViewDidLoad()
+    {
+        base.ViewDidLoad();
+
+        picker = new SfPicker();
+        picker.UnSelectedItemFont = UIFont.FromName("sans-serif", 12f); ;
+        this.View.AddSubview(picker);
     }
+}
 
 {% endhighlight %}
 
@@ -319,54 +321,54 @@ In SfPicker, the items can be customized with custom view of each item by adding
 {% highlight c# %}
 
 public partial class ViewController : UIViewController
-    {
-        UserInfo userInfo;
-        SfPicker picker;
-        
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
+{
+    UserInfo userInfo;
+    SfPicker picker;
 
-            userInfo = new UserInfo();
-            picker.ItemsSource = userInfo.Users;
-            picker.BackgroundColor = UIColor.Orange;
-            picker.HeaderText = "Select a User";
-            picker.HeaderBackgroundColor = UIColor.Black;
-            picker.HeaderTextColor = UIColor.White;
-            picker.ShowHeader = true;
-            picker.ColumnHeaderText = "Users";
-            picker.ShowColumnHeader = true;
-            picker.ShowFooter = true;
-            picker.PickerMode = PickerMode.Default;
-            this.View.AddSubview(picker);
-        }
+    public override void ViewDidLoad()
+    {
+        base.ViewDidLoad();
+
+        userInfo = new UserInfo();
+        picker.ItemsSource = userInfo.Users;
+        picker.BackgroundColor = UIColor.Orange;
+        picker.HeaderText = "Select a User";
+        picker.HeaderBackgroundColor = UIColor.Black;
+        picker.HeaderTextColor = UIColor.White;
+        picker.ShowHeader = true;
+        picker.ColumnHeaderText = "Users";
+        picker.ShowColumnHeader = true;
+        picker.ShowFooter = true;
+        picker.PickerMode = PickerMode.Default;
+        this.View.AddSubview(picker);
+    }
+}
+
+public class UserInfo
+{
+    private ObservableCollection<string> _user;
+
+    public ObservableCollection<string> Users
+    {
+        get { return _user; }
+        set { _user = value; }
     }
 
-    public class UserInfo
+    public UserInfo()
     {
-        private ObservableCollection<string> _user;
-
-        public ObservableCollection<string> Users
-        {
-            get { return _user; }
-            set { _user = value; }
-        }
-
-        public UserInfo()
-        {
-            Users = new ObservableCollection<string>();
-            Users.Add("Maria Anders");
-            Users.Add("Ana Trujillo");
-            Users.Add("Ant Fuller");
-            Users.Add("Martin King");
-            Users.Add("Lenny Lin");
-            Users.Add("John Carter");
-            Users.Add("Laura King");
-            Users.Add("Anne Wilson");
-            Users.Add("Martin King");
-            Users.Add("Gina Irene");
-        }
+        Users = new ObservableCollection<string>();
+        Users.Add("Maria Anders");
+        Users.Add("Ana Trujillo");
+        Users.Add("Ant Fuller");
+        Users.Add("Martin King");
+        Users.Add("Lenny Lin");
+        Users.Add("John Carter");
+        Users.Add("Laura King");
+        Users.Add("Anne Wilson");
+        Users.Add("Martin King");
+        Users.Add("Gina Irene");
     }
+}
 
 {% endhighlight %}
 
@@ -378,4 +380,4 @@ Screen shot for the above code
 
 You can get the sample from the following link.
 
-Sample : https://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker-1456447258.zip 
+Sample : https://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker-1456447258.zip  

@@ -9,7 +9,7 @@ documentation: ug
 
 # Looping support in SfPicker
 
-Looping support in SfPicker control.
+This section will explain about the Looping support in SfPicker control.
 
 ## EnableLooping
 
@@ -25,7 +25,7 @@ picker.EnableLooping = true;
 
 {% endtabs %}
 
-## How to restrict Looping in 
+## How to restrict Looping in a particular column of the picker
 
 The looping support can be restricted in a particular column of the picker by setting the `EnableLooping` of ColumnLoaded event argument to false.
 
