@@ -189,9 +189,6 @@ The following code example illustrates about to populate Month, Day and Year val
 
 {% endtabs %}
 
-You can get the multicolumn sample from the following link
-Sample:
-
 ## Set items colors and font attributes customization
 
 In SfPicker items text color and font for both selected and unselected item of SfPicker control can be customized as shown below.
