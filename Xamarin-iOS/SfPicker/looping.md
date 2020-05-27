@@ -49,4 +49,4 @@ private void Picker_OnColumnLoaded(object sender, ColumnLoadedEventArgs e)
 
 You can find the sample from the following link
 
-Sample: https://www.syncfusion.com/downloads/support/directtrac/general/ze/EnableLooping-2017939801.zip 
+Sample: https://www.syncfusion.com/downloads/support/directtrac/general/ze/EnableLooping-2017939801.zip

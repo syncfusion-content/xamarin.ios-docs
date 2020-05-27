@@ -337,4 +337,4 @@ Screen shot for the above code
 
 We have attached the DateTimePicker sample for reference. Please download the sample from the following link.
 
-Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker-2063991188.zip 
+Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker-2063991188.zip
