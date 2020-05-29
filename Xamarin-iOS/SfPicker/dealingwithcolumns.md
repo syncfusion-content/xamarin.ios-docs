@@ -227,4 +227,4 @@ Screen shot for the above code
 
 ![DealigWithColumns](images/dealingwithcolumn.png)
 
-Sample: https://www.syncfusion.com/downloads/support/directtrac/general/ze/DealingWithColumn-1587662390.zip 
+ Please download the sample from the following [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DealingWithColumn-1587662390.zip)

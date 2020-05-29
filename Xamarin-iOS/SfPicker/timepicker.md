@@ -163,6 +163,4 @@ public partial class ViewController : UIViewController
 
 {% endtabs %}
 
-We have attached TimePicker sample for reference. Please download the sample from the following link.
-
-Sample link: https://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker-1063915414.zip 
+We have attached TimePicker sample for reference. Please download the sample from the following [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker-1063915414.zip)
