@@ -99,4 +99,4 @@ SfPicker pickerControl;
 
 {% endhighlight %}
 
-![](images/gettingstarted.png)
+![GettingStarted](images/gettingstarted.png)
