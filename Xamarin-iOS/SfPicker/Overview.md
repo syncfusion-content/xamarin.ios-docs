@@ -3,7 +3,7 @@
 layout: post
 title: Overview of Syncfusion Picker control for Xamarin.iOS
 description: Overview and key features of Picker control
-platform: Xamarin
+platform: Xamarin.iOS
 control: Picker
 documentation: ug
 

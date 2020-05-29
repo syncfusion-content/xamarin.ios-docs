@@ -3,7 +3,7 @@
 layout: post
 title: Getting Started with Syncfusion Picker control for Xamarin.iOS
 description: A quick tour to initial users on Syncfusion Picker control for Xamarin.iOS platform.
-platform: Xamarin
+platform: Xamarin.iOS
 control: Picker
 documentation: ug
 
@@ -99,14 +99,4 @@ SfPicker pickerControl;
 
 {% endhighlight %}
 
-
-
 ![](images/gettingstarted.png)
-
-
-
-
-
-
-
-
