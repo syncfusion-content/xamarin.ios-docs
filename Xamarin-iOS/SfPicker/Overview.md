@@ -12,7 +12,7 @@ documentation: ug
 
 The Essential Xamarin.iOS Picker control allows users to pick an item among a list of items that can be customized with custom view. This control can be opened as dialog. Its rich feature set includes functionalities like  multi column, header/footer, custom view on header/footer and default validation buttons.
 
-![](images/overview.png)
+![OverView](images/overview.png)
 
 ## Key Features
 
