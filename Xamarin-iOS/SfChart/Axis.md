@@ -7,7 +7,7 @@ control: SFChart
 documentation: ug
 ---
 
-# Axis
+# Axis in XAMARIN.iOS Chart(SfChart)
 
 Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 
@@ -55,7 +55,7 @@ To display labels after a fixed interval n, you can set [`Interval`](https://hel
 
 {% highlight c# %}
 
-xAxis.Interval = new NSNumber (2);
+xAxis.Interval = new NSNumber (20);
 {% endhighlight %}
 
 
@@ -133,7 +133,7 @@ Axis interval can be customized using the [`Interval`](https://help.syncfusion.c
 
 {% highlight c# %}
 
-yAxis.Interval = new NSNumber (10);
+yAxis.Interval = new NSNumber (5);
 {% endhighlight %}
 
 ![NumericalAxis interval customization support in Xamarin.iOS Chart](Axis_images/NumericInterval.png)
