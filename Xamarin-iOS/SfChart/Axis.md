@@ -7,7 +7,7 @@ control: SFChart
 documentation: ug
 ---
 
-# Axis in XAMARIN.iOS Chart(SfChart)
+# Axis in Xamarin.iOS Chart(SfChart)
 
 Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 
