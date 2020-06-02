@@ -55,7 +55,7 @@ To display labels after a fixed interval n, you can set [`Interval`](https://hel
 
 {% highlight c# %}
 
-xAxis.Interval = new NSNumber (20);
+xAxis.Interval = new NSNumber (2);
 {% endhighlight %}
 
 
