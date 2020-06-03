@@ -15,9 +15,9 @@ SfBusyIndicator control provides support to determine whether an animation needs
 
 {% highlight c# %}
 
-	SFBusyIndicator busyindicator = new SFBusyIndicator();
-	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSingleCircle;
-	busyindicator.IsBusy=true;
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
+	busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSingleCircle;
+	busyindicator.IsBusy = true;
 
 {% endhighlight %}
 

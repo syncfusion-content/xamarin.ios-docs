@@ -13,7 +13,7 @@ The `Duration` property of the SfCarousel control is used to specify the time ta
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
+SfCarousel carousel = new SfCarousel();
 
 carousel.Duration = 1000;
 

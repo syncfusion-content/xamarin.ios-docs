@@ -35,13 +35,13 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 
 {% highlight c# %}
 	
-	 SFRangeSlider rangeSlider; 
+	 SfRangeSlider rangeSlider; 
 	 public RangeSliderPage ()
      {
-           NSMutableArray<SFLabelItems> labels = new NSMutableArray<SFLabelItems>();
-		   labels.Add(new SFLabelItems() { Label = (NSString)"Min", Value = 0 });
-		   labels.Add(new SFLabelItems() { Label = (NSString)"Max", Value = 100 });
-		   rangeSlider = new SFRangeSlider ();
+           NSMutableArray<SfLabelItems> labels = new NSMutableArray<SfLabelItems>();
+		   labels.Add(new SfLabelItems() { Label = (NSString)"Min", Value = 0 });
+		   labels.Add(new SfLabelItems() { Label = (NSString)"Max", Value = 100 });
+		   rangeSlider = new SfRangeSlider();
            rangeSlider.HeightRequest = 400;
            rangeSlider.ShowCustomLabel = true;
            rangeSlider.CustomLabel = labels;
@@ -67,25 +67,25 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementTopLeft;
+	rangeSlider.ValuePlacement = SFValuePlacement.SFValuePlacementTopLeft;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![SFRangeSLider Value placement in Xamarin.iOS](images/Value-TopLeft .png)
+![SfRangeSlider Value placement in Xamarin.iOS](images/Value-TopLeft .png)
 
 {% tabs %}
 
 {% highlight c# %}
 
-	rangeSlider.ValuePlacement=SFValuePlacement.SFValuePlacementBottomRight;
+	rangeSlider.ValuePlacement = SFValuePlacement.SFValuePlacementBottomRight;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![SfRangeSLider BottomRight Value placement in Xamarin.iOS](images/Value-BottomRight.png)
+![SfRangeSlider BottomRight Value placement in Xamarin.iOS](images/Value-BottomRight.png)
 
 ## Label Placement
 
@@ -101,7 +101,7 @@ Available options for this property are:
 
 {% highlight c# %}
 
-	rangeSlider.LabelPlacement=SFLabelPlacement.SFLabelPlacementTopLeft;
+	rangeSlider.LabelPlacement = SFLabelPlacement.SFLabelPlacementTopLeft;
 
 {% endhighlight %}
 

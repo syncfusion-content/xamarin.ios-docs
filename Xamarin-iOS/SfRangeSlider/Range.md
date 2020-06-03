@@ -21,7 +21,7 @@ N> When this property is set to false, single thumb is displayed without any ran
 
 {% highlight c# %}
 
-	rangeSlider.ShowRange= True;
+	rangeSlider.ShowRange = True;
 
 {% endhighlight %}
 
@@ -39,7 +39,7 @@ Gets and sets the start value of the range.
 
 {% highlight c# %}
 
-	rangeSlider.RangeStart=0;
+	rangeSlider.RangeStart = 0;
 
 {% endhighlight %}
 
@@ -53,7 +53,7 @@ Gets and sets the end value of the range.
 
 {% highlight c# %}
 
-	rangeSlider.RangeEnd=10;
+	rangeSlider.RangeEnd = 10;
 
 {% endhighlight  %}
 

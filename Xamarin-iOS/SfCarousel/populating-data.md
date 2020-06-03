@@ -15,31 +15,31 @@ SfCarousel items can be populated with a collection of business objects. For exa
 
 {% highlight c# %}
 
-NSMutableArray<SFCarouselItem> carouselItemCollection = new NSMutableArray<SFCarouselItem> ();
+NSMutableArray<SfCarouselItem> carouselItemCollection = new NSMutableArray<SfCarouselItem> ();
 for(int i=1;i<18;i++)
 {
-SFCarouselItem item =new SFCarouselItem();
-item.ImageName="image"+i+".png";
-carouselItemCollection.Add(item);
+	SfCarouselItem item = new SfCarouselItem();
+	item.ImageName = "image"+i+".png";
+	carouselItemCollection.Add(item);
 }
-carousel.DataSource=carouselItemCollection;
+carousel.DataSource = carouselItemCollection;
 	
 {% endhighlight %}
 
 ## DataSource with Collection of custom view
 
-SFCarousel items can be populated with a collection of business objects. It can be achieved by passing the custom view into View property in SFCarouselItem
+SfCarousel items can be populated with a collection of business objects. It can be achieved by passing the custom view into View property in SfCarouselItem
 
 {% highlight c# %}
 
 
-SFCarousel carousel = new SFCarousel();
+SfCarousel carousel = new SfCarousel();
 
-NSMutableArray<SFCarouselItem> listOfArray = new NSMutableArray<SFCarouselItem>();
+NSMutableArray<SfCarouselItem> listOfArray = new NSMutableArray<SfCarouselItem>();
 
 for (int i = 1; i < 4; i++)
 {
-	SFCarouselItem items = new SFCarouselItem();
+	SfCarouselItem items = new SfCarouselItem();
 	UIImageView uiImageView = new UIImageView();
 	uiImageView.Frame = new CGRect(0, 0, carousel.ItemWidth, carousel.ItemHeight);
 	uiImageView.Image = new UIImage("Images/image"+i.ToString()+".png");
@@ -65,7 +65,7 @@ N> The `SelectedIndex` property will be 0 by default.
 
 {% highlight c# %}
 
-	carousel.SelectedIndex=2;
+	carousel.SelectedIndex = 2;
 
 {% endhighlight %}
 

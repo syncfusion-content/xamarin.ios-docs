@@ -13,7 +13,7 @@ The Carousel items can be populated in the view in a stacked linear layout by se
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
+SfCarousel carousel = new SfCarousel();
 carousel.ViewMode = SFCarouselViewMode.SFCarouselViewModeLinear;
 
 {% endhighlight %}

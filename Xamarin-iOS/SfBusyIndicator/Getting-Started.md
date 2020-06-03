@@ -41,7 +41,7 @@ iOS-unified\Syncfusion.SfBusyIndicator.iOS.dll
 
 {% highlight c# %}
 	
-	SFBusyIndicator busyindicator = new SFBusyIndicator();
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	this.AddSubview(busyindicator);
 	
 {% endhighlight %}
@@ -58,7 +58,7 @@ Following example depicts the battery type animation for SfBusyIndicator.
 
 {% highlight c# %}
 
-	 busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
+	 busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
 
 {% endhighlight %}
 
@@ -72,11 +72,11 @@ Size and color can be customized in SfBusyIndicator as follows.
       
 {% highlight c# %}
 	 
-	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
-	busyindicator.TextColor=UIColor.RED;
-	busyindicator.ViewBoxHeight=20;
-	busyindicator.ViewBoxWidth=20;
-	busyindicator.IsBusy=True;
+	busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
+	busyindicator.TextColor = UIColor.RED;
+	busyindicator.ViewBoxHeight = 20;
+	busyindicator.ViewBoxWidth = 20;
+	busyindicator.IsBusy = True;
 	
 {% endhighlight %}
 

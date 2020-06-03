@@ -13,13 +13,13 @@ We can perform operation while changing the carouselItem using `DidSelectItem` e
 
 ### Delegate Definition:
 
-For getting carousel event, need to inherits SFCarouselDelegate class as like below. All events definitions are mentioned only DelegateClass.
+For getting carousel event, need to inherits SfCarouselDelegate class as like below. All events definitions are mentioned only DelegateClass.
 
 {% highlight C# %}
 
-public class DelegateClass : SFCarouselDelegate
+public class DelegateClass : SfCarouselDelegate
 {
-    public override void DidSelectItem(SFCarousel carousel, SFCarouselItem item)
+    public override void DidSelectItem(SfCarousel carousel, SfCarouselItem item)
     {
         base.DidSelectItem(carousel, item);
     }
@@ -29,7 +29,7 @@ public class DelegateClass : SFCarouselDelegate
 
 ### Delegate initialization
 
-By initializing the CarouselDelegate with inherited class of SFCarouselDelegate, we can access the events on SFCarousel control.
+By initializing the CarouselDelegate with inherited class of SfCarouselDelegate, we can access the events on SfCarousel control.
 
 {% highlight C# %}
 

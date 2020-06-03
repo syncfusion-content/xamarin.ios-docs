@@ -26,12 +26,12 @@ The `DragStarted` event is raised when a thumb is dragged. After the thumb relea
 
 {% highlight c# %}
 
-	rangeSlider.DragStarted+=(object sender, DragThumbEventArgs e) =>
+	rangeSlider.DragStarted += (object sender, DragThumbEventArgs e) =>
 	{
          //perform the operation
 	};
 
-	rangeSlider.DragCompleted+=(object sender, DragThumbEventArgs e) =>
+	rangeSlider.DragCompleted += (object sender, DragThumbEventArgs e) =>
 	{
          //perform the operation
 	};

@@ -19,8 +19,8 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
-carousel.RotationAngle=40;
+SfCarousel carousel = new SfCarousel();
+carousel.RotationAngle = 40;
 
 {% endhighlight %}
 
@@ -34,8 +34,8 @@ N> The default value is 20.
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
-carousel.Offset=30;
+SfCarousel carousel = new SfCarousel();
+carousel.Offset = 30;
 
 {% endhighlight %}
 
@@ -47,8 +47,8 @@ Distance between the selected item and other items can be customized by using `S
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
-carousel.SelectedItemOffset=6;
+SfCarousel carousel = new SfCarousel();
+carousel.SelectedItemOffset = 6;
 
 {% endhighlight %}
 
@@ -58,8 +58,8 @@ The `ScaleOffset` property in the SfCarousel control is used to scale all the it
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
-carousel.ScaleOffset=(nfloat)0.7;
+SfCarousel carousel = new SfCarousel();
+carousel.ScaleOffset = (nfloat)0.7;
 
 {% endhighlight %}
 
@@ -73,7 +73,7 @@ N> The default value is 5.
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
+SfCarousel carousel = new SfCarousel();
 
 carousel.ViewMode = SFCarouselViewMode.SFCarouselViewModeLinear;
 

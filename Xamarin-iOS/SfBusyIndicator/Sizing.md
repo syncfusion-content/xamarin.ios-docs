@@ -15,10 +15,10 @@ Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxW
 
 {% highlight c# %}
 
-SFBusyIndicator busyindicator = new SFBusyIndicator();
-busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSlicedCircle;
-busyindicator.ViewBoxWidth=200;
-busyindicator.ViewBoxHeight=200;
+SfBusyIndicator busyindicator = new SfBusyIndicator();
+busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSlicedCircle;
+busyindicator.ViewBoxWidth = 200;
+busyindicator.ViewBoxHeight = 200;
 	
 {% endhighlight %}
 

@@ -21,7 +21,7 @@ In this orientation, the values and the slider are set horizontally.
 
 {% highlight c# %}
 
-rangeSlider.Orientation=SFOrientation.SFOrientationHorizontal;
+rangeSlider.Orientation = SFOrientation.SFOrientationHorizontal;
 
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ In this Orientation, the values and the slider are set vertically.
 
 {% highlight c# %}
 
-rangeSlider.Orientation=SFOrientation.SFOrientationVertical;
+rangeSlider.Orientation = SFOrientation.SFOrientationVertical;
 
 {% endhighlight %}
 

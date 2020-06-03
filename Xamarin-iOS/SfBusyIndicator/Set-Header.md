@@ -15,9 +15,9 @@ SfBusyIndicator provides option to set the text that indicates the information r
 
 {% highlight c# %}
 
-	SFBusyIndicator busyindicator = new SFBusyIndicator();
-	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
-	busyindicator.Title=(NSString)"Loading...";
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
+	busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
+	busyindicator.Title = (NSString)"Loading...";
 	
 {% endhighlight %} 
 
@@ -37,10 +37,10 @@ BusyIndicator with title
 
 {% highlight c# %}
 
-	SFBusyIndicator busyindicator = new SFBusyIndicator();
-	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
-	busyindicator.Title="Loading...";
-	busyindicator.FontFace=Typeface.create("Arial",Typeface.NONE);
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
+	busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
+	busyindicator.Title = "Loading...";
+	busyindicator.FontFace = Typeface.create("Arial",Typeface.NONE);
 
 {% endhighlight %}
 
