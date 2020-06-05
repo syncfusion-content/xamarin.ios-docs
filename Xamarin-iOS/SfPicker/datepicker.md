@@ -296,6 +296,6 @@ Screen shot for the above code
 
 ![DatePicker](images/datepicker.png)
 
-You can get the sample from the following link
+You can get the sample from the following [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker-1456447258.zip)
 
-Sample: https://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker-1456447258.zip 
+ 
