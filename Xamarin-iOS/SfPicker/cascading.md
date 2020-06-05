@@ -210,4 +210,4 @@ Screen shot for the above code
 
 ![Cascading](images/cascading.png)
 
-We have attached Cascading sample for reference. Please download the sample from the following [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading1430924976.zip)
+We have attached Cascading sample for reference. Please download the sample from the following [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading1430924976.zip )
