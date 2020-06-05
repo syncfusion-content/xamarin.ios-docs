@@ -6,7 +6,7 @@ platform: Xamarin.iOS
 control: NumericUpDown
 documentation: ug
 ---
-# AutoReverse
+# AutoReverse in SfNumericUpDown
 
 While incrementing, the control will start from Minimum once it reaches the Maximum and vice-versa.
 
@@ -15,6 +15,8 @@ N> By default the property value is false.
 {% tabs %}
 
 {% highlight C# %}
+
+[C#]
 
 numeric.AutoReverse = true;
 
@@ -32,16 +34,18 @@ N> By default the minimum property value is 0 and maximum property value is 100.
 
 {% highlight C# %}
 
-	numeric.Minimum = 10;
-	numeric.Maximum = 50
+[C#]
+
+numeric.Minimum = 10;
+numeric.Maximum = 50
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/maximum.png)
+![Display the NumericUpDown with maximum range](images/maximum.png)
 
-![](images/minimum.png)
+![Display the NumericUpDown with minimum range](images/minimum.png)
 
 ## Set Increment
 
@@ -53,8 +57,26 @@ N> By default the property value is 1.
 
 {% highlight C# %}
 
-	numeric.StepValue = 6;
+[C#]
 
+numeric.StepValue = 6;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Selection Support
+
+The `SelectAllOnFocus` property is used to specify whether the text should be selected when the control gets focus.
+
+{% tabs %}
+
+{% highlight c# %}
+
+[C#]
+
+numeric.SelectAllOnFocus = true;
+  
 {% endhighlight %}
 
 {% endtabs %}

@@ -1,13 +1,13 @@
 ---
 layout : post
 title : Getting Started with Syncfusion NumericUpDown Control for Xamarin.iOS
-description : A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.iOS platform 
+description : A quick tour to initial users on Syncfusion NumericUpDown control and customization features available in Xamarin.iOS platform 
 platform : Xamarin.iOS
 control : NumericUpDown 
 documentation : ug
 ---
 
-# Getting Started
+# Getting Started with SfNumericUpDown
 
 This section provides overview for working with Essential NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
 
@@ -33,7 +33,7 @@ The SfNumericUpDown control configured entirely in C# code. The following steps 
 
 {% highlight c# %}
 
-	Using Syncfusion.SfNumericUpDown.iOS; 
+using Syncfusion.SfNumericUpDown.iOS; 
 
 {% endhighlight %}
 
@@ -45,8 +45,14 @@ The SfNumericUpDown control configured entirely in C# code. The following steps 
 
 {% highlight c# %}
 
-SFNumericUpDown numeric=new SFNumericUpDown();
-this.AddSubview(numeric);
+[C#]
+
+SfNumericUpDown numeric = new SfNumericUpDown()
+{
+	Frame = new CGRect(10, 50, 350, 40),
+};
+
+this.Add(numeric);
 
 {% endhighlight %}
 
@@ -60,49 +66,15 @@ The SfNumericUpDown control display value can be set using `Value` property.
 
 {% highlight C# %}
 
-numeric.Value= 5;
+[C#]
+
+numeric.Value = 100;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Enable Parsing Mode
-
-SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
-
-{% tabs %}
-
-{% highlight c# %}
-
-numeric.ParsingMode=SFNumericUpDownParsingMode.Decimal;
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-## Add Format String
-
-The `FormatString` property determines the format specifier by which the display text has to be formatted. 
-
-It has three types,
-
-* c - Display the value with currency notation.
-* n – Display the value in number format.
-* p – Display the value in Percentage.
-
-N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
-
-{% tabs %}
-
-{% highlight C# %}
-
-numeric.FormatString= @“c”;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](images/gettingstarted.png)
+![Display the NumericUpDown with value](images/gettingstarted.png)
 
 
 
