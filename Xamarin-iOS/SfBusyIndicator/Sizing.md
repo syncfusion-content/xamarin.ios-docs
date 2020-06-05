@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Sizing support in Syncfusion BusyIndicator control for Xamarin.iOS
-description: Learn how to customize the size of the animation type
+description: This section provides the details about how to customize the size of the animation type
 platform: Xamarin.iOS
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# Sizing
+# BusyIndicator Size
 
 Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxWidth` properties can be used to set height and width of the Indicator.
 
@@ -24,7 +24,7 @@ busyindicator.ViewBoxHeight = 200;
 
 {% endtabs %}
 
-![](images/Sizing_img1.png)                       
+![The Sizing_img1](images/Sizing_img1.png)                       
 
 ViewBox height and width
 {:.caption}

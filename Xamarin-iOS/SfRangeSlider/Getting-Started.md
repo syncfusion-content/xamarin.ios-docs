@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with Syncfusion RangeSlider control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion rangeSlider control for Xamarin.iOS platform
+description: This section provides the details about initial users on Syncfusion rangeSlider control for Xamarin.iOS platform
 platform: Xamarin.iOS
 control: RangeSlider
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with RangeSlider
 
 This section explains you the steps to configure a RangeSlider  control in a real-time scenario and also provides a walk-through on some of the customization features available in RangeSlider control.
 
@@ -122,5 +122,5 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% endtabs %}
 
-![](images/RangeSlider-iOS.png) 
+![The RangeSlider](images/RangeSlider-iOS.png) 
 

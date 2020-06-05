@@ -7,7 +7,7 @@ control : Carousel
 documentation : ug
 ---
 
-# Linear Arrangement
+# The Carousel Linear Arrangement
 
 The Carousel items can be populated in the view in a stacked linear layout by setting the `ViewMode` property to Linear. The present option is `Default`.
 

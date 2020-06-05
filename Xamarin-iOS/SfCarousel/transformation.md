@@ -7,7 +7,7 @@ control : Carousel
 documentation : ug
 ---
 
-# Transformation
+# Carousel Transformation
 
 The Offset between selected and unselected item can be customized in SfCarousel control. And also the items can be scaled to the specified value.
 
@@ -24,7 +24,7 @@ carousel.RotationAngle = 40;
 
 {% endhighlight %}
 
-![](images/rotationangle.png)
+![The rotationangle](images/rotationangle.png)
 
 ## Set Gap between Unselected Items
 
@@ -39,7 +39,7 @@ carousel.Offset = 30;
 
 {% endhighlight %}
 
-![](images/offset.png)
+![The image](images/offset.png)
 
 ## Set Gap between Selected Item
 
@@ -63,7 +63,7 @@ carousel.ScaleOffset = (nfloat)0.7;
 
 {% endhighlight %}
 
-![](images/scaleoffset.png)
+![The ScaleOffset](images/scaleoffset.png)
 
 ## Spacing of Items in Linear mode
 

@@ -11,7 +11,7 @@ documentation: ug
 
 SfCarousel control is one of the patterns for browsing a small collection of featured products. The viewer is able to view several images of products across a row, and they can swipe horizontally across the row to navigate to the next set of products. They provide a 2-D interface for displaying objects with interactive navigation. It also works for a wide variety of device sizes and screen resolutions.
 
-![](images/carousel.png)
+![The Carousel](images/carousel.png)
 
 Key Features:
 

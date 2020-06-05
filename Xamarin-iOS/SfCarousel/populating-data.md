@@ -55,7 +55,7 @@ View.AddSubview(carousel);
 
 {% endhighlight %}
 
-# SelectedIndex
+# Carousel SelectedIndex
 
 It gets or sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen.
 

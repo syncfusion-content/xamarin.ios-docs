@@ -23,7 +23,7 @@ SfBusyIndicator control provides support to determine whether an animation needs
 
 {% endtabs %}
 
-![](images/IsBusy_img1.png)                 
+![The IsBusy_img1](images/IsBusy_img1.png)                 
 
 BusyIndicator
 {:.caption}

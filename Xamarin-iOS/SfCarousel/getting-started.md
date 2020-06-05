@@ -7,7 +7,7 @@ control : Carousel
 documentation : ug
 ---
 
-# Getting Started
+# Getting Started with Carousel
 
 This section provides a quick overview for working with Essential Carousel for Xamarin.iOS. It guides you to the entire process of creating a SfCarousel in your Application.
 

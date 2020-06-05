@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Ticks of Syncfusion RangeSlider control for Xamarin.iOS
-description: Learn how to set ticks in proper position for RangeSlider control in Xamarin.iOS
+description: Thsi section provides the details about how to set ticks in proper position for RangeSlider control in Xamarin.iOS
 platform: Xamarin.iOS
 control: RangeSlider
 documentation: ug
 ---
 
-# Customizing ticks
+# Customizing Slider Ticks
 
 Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
 
@@ -41,7 +41,7 @@ Tick marks can be placed either below the track in horizontal orientation or rig
 
 {% endtabs %}
 
-![](images/BottomRight.png)
+![The BottomRight](images/BottomRight.png)
 
 ## TopLeft
 
@@ -57,7 +57,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 {% endtabs %}
 
-![](images/TopLeft.png)
+![The TopLeft](images/TopLeft.png)
 
 ## Inline
 
@@ -73,7 +73,7 @@ Ticks are placed along the track.
 
 {% endtabs %}
 
-![](images/Inline.png)
+![The Inline](images/Inline.png)
 
 ## Outside
 
@@ -89,7 +89,7 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 {% endtabs %}
 
-![](images/Outside.png)
+![The Outside](images/Outside.png)
 
 
 ## Customizing tick color
@@ -106,4 +106,4 @@ The range slider control provides the `TickColor` property to customize the colo
  
 {% endhighlight %}
 
-![](images/TickColor.png)
+![The TickColor](images/TickColor.png)
