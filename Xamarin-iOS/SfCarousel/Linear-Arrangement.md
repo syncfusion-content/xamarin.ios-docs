@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Carousel control for Xamarin.Forms
-description: Overview and key features of Carousel control
+description: This section provides the details about the key features of Carousel control linear arrangement for Xamarin.iOS
 platform: Xamarin
 control: Carousel
 documentation: ug

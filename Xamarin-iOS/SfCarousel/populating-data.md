@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data source in Syncfusion Carousel control in Xamarin.iOS
-description: Learn how to set the Data source in Carousel 
+description: This section provides the details about the populating the data source with Carousel control for Xamarin.iOS
 platform: Xamarin.iOS
 control: Carousel
 documentation: ug
 ---
 
-# Populating Data
+# Populating DataSource
 
 ## DataSource with Collection of Images
 
@@ -55,7 +55,7 @@ View.AddSubview(carousel);
 
 {% endhighlight %}
 
-# Carousel SelectedIndex
+## Carousel SelectedIndex
 
 It gets or sets the Selected Item index value of SfCarousel control to bring the particular item to center of the screen.
 
