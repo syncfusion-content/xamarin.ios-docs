@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Data source in Syncfusion Carousel control in Xamarin.iOS
-description : Learn how to set the Data source in Carousel 
-platform : Xamarin.iOS
-control : Carousel
-documentation : ug
+layout: post
+title: Data source in Syncfusion Carousel control in Xamarin.iOS
+description: Learn how to set the Data source in Carousel 
+platform: Xamarin.iOS
+control: Carousel
+documentation: ug
 ---
 
 # Populating Data

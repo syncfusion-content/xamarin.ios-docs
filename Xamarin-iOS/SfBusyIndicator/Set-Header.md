@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set title to the Syncfusion BusyIndicator control for Xamarin.iOS
-description: This section provides the details about how to set title and fontface to BusyIndicator control
+description: This section provides the details about how to set title and fontface to BusyIndicator control for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfBusyIndicator
 documentation: ug

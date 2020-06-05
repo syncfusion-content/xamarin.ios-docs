@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IsBusy support in Syncfusion BusyIndicator control for Xamarin.iOS
-description: Learn how to enable and disable animation in BusyIndicator
+description: This section provides the details about how to enable and disable animation in BusyIndicator for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfBusyIndicator
 documentation: ug

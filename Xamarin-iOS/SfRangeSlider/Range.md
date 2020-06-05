@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# The Slider Range
+# The Slider Range Supports
 
 The SfRangeSlider control supports to select range of value by using two Thumbs.
 

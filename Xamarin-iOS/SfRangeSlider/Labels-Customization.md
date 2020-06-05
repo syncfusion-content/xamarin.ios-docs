@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Label Support for Syncfusion RangeSlider control for Xamarin.iOS
-description: This section provides the details about how to set label and their positions in RangeSlider control
+description: This section provides the details about how to set label and their positions in RangeSlider control for Xamarin.iOS
 platform: Xamarin.iOS
 control: RangeSlider
 documentation: ug
