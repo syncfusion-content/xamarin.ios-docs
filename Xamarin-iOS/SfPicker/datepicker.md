@@ -17,7 +17,7 @@ documentation: UG
 
 {% tabs %}
 
-{% highlight c#%}
+{% highlight C# %}
 
 public class DatePicker : SfPicker
 {
