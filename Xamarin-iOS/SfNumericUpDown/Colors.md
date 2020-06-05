@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Colors in Syncfusion NumericUpDown control for Xamarin.iOS
-description: Learn what are the color properties to customize the NumericUpDown in Xamarin.iOS platform
+description: Learn what are the color properties to customize the appearence of NumericUpDown in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: NumericUpDown
 documentation: ug
 ---
-# Colors
+# Colors in SfNumericUpDown
 
 SfNumericUpDown is used to set custom background, text, and border colors through the following properties:
 
