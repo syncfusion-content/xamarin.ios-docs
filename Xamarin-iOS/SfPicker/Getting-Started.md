@@ -1,15 +1,13 @@
 ---
-
 layout: post
 title: Getting Started with Syncfusion Picker control for Xamarin.iOS
-description: A quick tour to the initial users on how to get started with Syncfusion Picker control for the Xamarin.iOS platform.
+description: This section will explain about how to create a simple sample using Syncfusion Picker control for Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
 documentation: ug
-
 ---
 
-# Getting Started of SfPicker
+# SfPicker Getting Started
 
 This topic describes about the assembly that is required in your iOS application, when you use SfPicker. After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installation folders,
 
@@ -19,33 +17,29 @@ Add the following assembly references to the iOS unified project,
 
 iOS-unified\Syncfusion.SfPicker.iOS.dll
 
-
 ## Create your first Picker in Xamarin.iOS
-
 
 1) Create new iOS application in Xamarin Studio.
 
 2) Now, create a simple data source as shown in the following code example.
 
-
-
-
+{% tabs %}
 
 {% highlight C# %}
 
 public partial class ViewController : UIViewController
 {
-SfPicker pickerControl;
+    SfPicker pickerControl;
 
     protected ViewController(IntPtr handle) : base(handle)
     {
-    // Note: this constructor should not contain any initialization logic.
+        // Note: this constructor should not contain any initialization logic.
     }
 
     public override void ViewDidLoad()
     {
         base.ViewDidLoad();
-    #region SfPickerSettings
+        #region SfPickerSettings
         pickerControl = new SfPicker();
         pickerControl.SelectedIndex = 2;
         pickerControl.ShowColumnHeader = false;
@@ -56,6 +50,7 @@ SfPicker pickerControl;
         pickerControl.ItemsSource = GetSource();
         View.AddSubview(pickerControl);
     }
+
     //simple datasource of Picker.
     List<string> GetSource()
     {
@@ -79,12 +74,11 @@ SfPicker pickerControl;
 
 {% endhighlight %}
 
+{% endtabs %}
 
+3) You can add the header and footer of Picker control by enabling ShowHeader and ShowFooter property as per in the following code example,
 
-3)You can add the header and footer of Picker control by enabling ShowHeader and ShowFooter property as per in the following code example,
-
-
-
+{% tabs %}
 
 {% highlight C# %}
 
@@ -98,5 +92,7 @@ SfPicker pickerControl;
     pickerControl.ItemsSource = GetSource();
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![GettingStarted](images/gettingstarted.png)
