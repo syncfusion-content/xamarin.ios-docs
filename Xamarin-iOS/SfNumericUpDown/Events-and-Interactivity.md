@@ -16,34 +16,33 @@ You can perform any operation when changing the value of NumericUpDown using the
 
 For example you can restrict the NumericUpDown value if it exceed's greater than 3 digits using following code.
 
-{% tabs %}
-
 {% highlight c# %}
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
-	Value = 123,
+	
+    Value = 123,
 	ValueChangeMode = SFNumericUpDownValueChangeMode.OnKeyFocus,
 };
 
 string updateValue = "";
-numericTextBox.ValueChanged += (object sender, Syncfusion.SfNumericUpDown.iOS.ValueEventArgs e) =>
+
+numeric.ValueChanged += (object sender, Syncfusion.SfNumericUpDown.iOS.ValueEventArgs e) =>
 {
+    
     if (e.Value.ToString().Length <= 3 && e.Value != null)
     {
         updateValue = e.Value.ToString();
     }
     else
     {
-        numericTextBox.Value = updateValue;
+        numeric.Value = updateValue;
     }
 };
 
-this.Add(numericTextBox);
+this.Add(numeric);
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ## Interactivity : ValueChangeMode
 
@@ -54,32 +53,26 @@ The ValueChangeMode property is used to mention when value needs to update, eith
 
 ### OnKeyFocus
 
-{% tabs %}
-
 {% highlight c# %}
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
-	Value = 123,
+	
+    Value = 123,
 	ValueChangeMode = SFNumericUpDownValueChangeMode.OnKeyFocus,
 };
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ### OnLostFocus
-
-{% tabs %}
 
 {% highlight c# %}
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
-	Value = 123,
+	
+    Value = 123,
 	ValueChangeMode = SFNumericUpDownValueChangeMode.OnLostFocus,
 };
 
 {% endhighlight %}
-
-{% endtabs %}

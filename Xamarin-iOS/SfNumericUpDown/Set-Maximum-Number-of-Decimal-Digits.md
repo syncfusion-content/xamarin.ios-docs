@@ -12,8 +12,6 @@ The maximum number of digits to be displayed after the decimal point can be spec
 
 N> The `MaximumDecimalDigits` property can be provided with positive value only.
 
-{% tabs %}
-
 {% highlight C# %}
 
 [C#]
@@ -21,5 +19,3 @@ N> The `MaximumDecimalDigits` property can be provided with positive value only.
 numeric.MaximumDecimalDigits = 2;
 
 {% endhighlight %}
-
-{% endtabs %}

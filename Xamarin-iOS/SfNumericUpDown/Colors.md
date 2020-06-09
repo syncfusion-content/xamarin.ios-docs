@@ -22,20 +22,17 @@ SfNumericUpDown is used to set custom background, text, and border colors throug
 
 The following code sample demonstrates how to set the TextColor:
 
-{% tabs %}
-
 {% highlight c# %}
 
 [C#]
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
+	
 	TextColor = Color.Green,
 };
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![Display the NumericUpDown with TextColor](images/textcolor.png)
 
@@ -43,21 +40,18 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 The following code sample demonstrates how to set the BackgroundColor:
 
-{% tabs %}
-
 {% highlight c# %}
 
 [C#]
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
+	
 	BackgroundColor = Color.Brown,
 	TextColor = Color.White,
 };
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![Display the NumericUpDown with BackgroundColor](images/backgroundcolor.png)
 
@@ -65,20 +59,17 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 The following code sample demonstrates how to set the BorderColor color:
 
-{% tabs %}
-
 {% highlight c# %}
 
 [C#]
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
+	
 	BorderColor = UIColor.Blue,
 };
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![Display the NumericUpDown with BorderColor](images/bordercolor.png)
 
@@ -86,21 +77,18 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 The following code sample demonstrates how to set the WatermarkColor:
 
-{% tabs %}
-
 {% highlight c# %}
 
 [C#]
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
+	
 	Watermark = (NSString)"Enter a Number",
 	WatermarkColor = UIColor.Blue,
 	AllowNull=true,
 };
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![Display the NumericUpDown with WatermarkColor](images/watermarkcolor.png)

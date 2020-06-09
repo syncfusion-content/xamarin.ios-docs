@@ -29,19 +29,13 @@ The SfNumericUpDown control configured entirely in C# code. The following steps 
 
 * Adding namespace for the added assemblies. 
 
-{% tabs %}
-
 {% highlight c# %}
 
 using Syncfusion.SfNumericUpDown.iOS; 
 
 {% endhighlight %}
 
-{% endtabs %}
-
 * Now add the SfNumericUpDown control with a required optimal name by using the included namespace.
-
-{% tabs %}
 
 {% highlight c# %}
 
@@ -49,6 +43,7 @@ using Syncfusion.SfNumericUpDown.iOS;
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
+	
 	Frame = new CGRect(10, 50, 350, 40),
 };
 
@@ -56,13 +51,9 @@ this.Add(numeric);
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ## Set Value
 
 The SfNumericUpDown control display value can be set using `Value` property. 
-
-{% tabs %}
 
 {% highlight C# %}
 
@@ -72,9 +63,6 @@ numeric.Value = 100;
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![Display the NumericUpDown with value](images/gettingstarted.png)
 
-
-
+You can find the complete getting started sample from [this](https://github.com/SyncfusionExamples/Getting-Started-SfNumericUpDown-in-Xamarin-iOS) link.
