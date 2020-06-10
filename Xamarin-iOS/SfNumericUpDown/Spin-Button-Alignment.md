@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in Syncfusion NumericUpDown control for Xamarin.iOS
-description: Learn how to add customize spin buttons position and the appearence of UpDownButton in NumericUpDown in Xamarin.iOS platform.
+description: Learn how to add customize spin buttons position and its appearance in Xamarin.iOS NumericUpDown control.
 platform: Xamarin.iOS
 control: NumericUpDown
 documentation: ug
@@ -155,7 +155,7 @@ this.Add(numeric);
 
 {% endhighlight %}
 
-## Additional customization properties of UpDownButtonSettings
+## Additional customization on spin buttons
 
 ### BackgroundColor
 
@@ -185,7 +185,7 @@ numeric.DecrementButtonSettings = new UpDownButtonSettings()
 
 ### HighlightedBackgroundColor
 
-This property is used to change the background color of the increment or decrement button.
+This property is used to change the background color of tapped spin button
 
 {% highlight C# %}
 
@@ -234,7 +234,7 @@ numeric.DecrementButtonSettings = new UpDownButtonSettings()
 
 ### HighlightedFontColor
 
-This property is used to change the text color of the button by clicking the increment or decrement button.
+This property is used to change the text color of tapped spin button.
 
 {% highlight C# %}
 

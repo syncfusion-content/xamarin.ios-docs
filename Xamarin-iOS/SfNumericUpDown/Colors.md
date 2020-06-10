@@ -34,7 +34,7 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 {% endhighlight %}
 
-![Display the NumericUpDown with TextColor](images/textcolor.png)
+![Display the NumericUpDown value with a color](images/textcolor.png)
 
 ### BackgroundColor
 
@@ -47,7 +47,7 @@ The following code sample demonstrates how to set the BackgroundColor:
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
 	
-	BackgroundColor = Color.Brown,
+	BackgroundColor = Color.Red,
 	TextColor = Color.White,
 };
 
@@ -91,4 +91,4 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 {% endhighlight %}
 
-![Display the NumericUpDown with WatermarkColor](images/watermarkcolor.png)
+![Display the NumericUpDown watermark text with a color](images/watermarkcolor.png)

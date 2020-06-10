@@ -18,6 +18,8 @@ For example you can restrict the NumericUpDown value if it exceed's greater than
 
 {% highlight c# %}
 
+[C#]
+
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
 	
@@ -55,6 +57,8 @@ The ValueChangeMode property is used to mention when value needs to update, eith
 
 {% highlight c# %}
 
+[C#]
+
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
 	
@@ -67,6 +71,8 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 ### OnLostFocus
 
 {% highlight c# %}
+
+[C#]
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
