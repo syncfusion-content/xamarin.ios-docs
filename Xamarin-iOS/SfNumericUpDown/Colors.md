@@ -34,7 +34,7 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 {% endhighlight %}
 
-![Display the NumericUpDown value with a color](images/textcolor.png)
+![Customized text color in NumericUpown](images/textcolor.png)
 
 ### BackgroundColor
 
