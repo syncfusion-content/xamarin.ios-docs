@@ -688,6 +688,125 @@ chart.Series.Add(stackingColumn100Series3);
 
 ![StackingColumn100 chart type in Xamarin.iOS Chart](ChartTypes_images/StackedColumn100.png)
 
+## BoxAndWhisker Chart
+
+To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the [`Series`] collection property of [`SfChart`].
+You can use the following properties to customize the appearance.
+
+* [`Color`]-used to change the color of the line.
+* [`StrokeWidth`]-used to change the stroke width of the line.
+* [`StrokeColor`]-used to change the stroke color of the series.
+* [`Spacing`]-used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
+* [`Width`]-used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively.
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSerie() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Department", 
+	YBindingPath = "Ages" 
+};
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![BoxAndWhisker chart type in Xamarin.Forms]
+
+### Customize the series box mode
+
+The series box plotting mode can be changed using the [`BoxPlotMode`] property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
+
+* [`Exclusive`]-The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and its index value starts from 1 in the list.
+* [`Inclusive`]-The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and its index value starts from 0 in the list.
+* [`Normal`]-The quartile values are calculated by splitting the list and getting the median values.
+
+By default [`BoxPlotMode`] value is [`Exclusive`]
+
+The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`]
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Department", 
+	YBindingPath = "Ages",
+    BoxPlotMode = BoxPlotMode.Inclusive
+};
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![BoxAndWhiskerSeries chart type in Xamarin.Forms Chart]
+
+### ShowMedian
+
+The Median values of given data set is viewed by enabling the [`ShowMedian`] property of BoxAndWhiskerSeries. The following code demonstrates how to enable the [`ShowMedian`] property.
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSerie()
+{
+	ItemsSource = Data,
+	XBindingPath = "Department",
+	YBindingPath = "Ages",
+	BoxPlotMode = BoxPlotMode.Inclusive,
+	ShowMedian = true
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![BoxAndWhiskerSeries chart type in Xamarin.Forms Chart]
+
+### SymbolType
+
+The [`SymbolType`] is display the outlier point that lie either below the lower whisker or above the upper whisker line.
+
+* [`SymbolType`]-used to change the rendering shape of outliers. The available shapes are [`Cross`], diamond, ellipse, hexagon, inverted triangle, pentagon, plus, rectangle and triangle.
+
+By default[`SymbolType`] value is [`Ellipse`]
+
+The following code shows how to set the [`SymbolType`] value as [`Cross`]
+
+{% highlight c# %}
+
+[C#]
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSerie()
+{
+	ItemsSource = Data,
+	XBindingPath = "Department",
+	YBindingPath = "Ages",
+	BoxPlotMode = BoxPlotMode.Inclusive,
+	ShowMedian = true,
+	SymbolType = ChartSymbolType.Cross
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![BoxAndWhiskerSeries chart type in Xamarin.Forms Chart]
+
 ## Bar Chart
 
 To render a bar chart, create an instance of [`SFBarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBarSeries.html) and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the bar segment appearance.
