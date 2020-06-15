@@ -690,7 +690,7 @@ chart.Series.Add(stackingColumn100Series3);
 
 ## BoxAndWhisker Chart
 
-To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the [`Series`] collection property of [`SfChart`].
+To render a box and whisker(box plot) chart, create an instance of [`SFBoxAndWhiskerSeries`] and add to the [`Series`] collection property of [`SFChart`].
 You can use the following properties to customize the appearance.
 
 * [`Color`]-used to change the color of the line.
@@ -703,10 +703,10 @@ You can use the following properties to customize the appearance.
 
 [C#]
 
-SfChart chart = new SfChart();
+SFChart chart = new SFChart();
 ...
 
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSerie() 
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSerie() 
 { 
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
@@ -716,11 +716,11 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.Forms]
+![BoxAndWhisker chart type in Xamarin.iOS]
 
 ### Customize the series box mode
 
-The series box plotting mode can be changed using the [`BoxPlotMode`] property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
+The series box plotting mode can be changed using the [`BoxPlotMode`] property of BoxAndWhisker Series. The plotting mode of series can be calculated as follows:
 
 * [`Exclusive`]-The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and its index value starts from 1 in the list.
 * [`Inclusive`]-The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and its index value starts from 0 in the list.
@@ -734,10 +734,10 @@ The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`]
 
 [C#]
 
-SfChart chart = new SfChart();
+SFChart chart = new SFChart();
 ...
 
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries() 
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries() 
 { 
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
@@ -748,7 +748,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhiskerSeries chart type in Xamarin.Forms Chart]
+![BoxAndWhiskerSeries chart type in Xamarin.iOS]
 
 ### ShowMedian
 
@@ -758,10 +758,10 @@ The Median values of given data set is viewed by enabling the [`ShowMedian`] pro
 
 [C#]
 
-SfChart chart = new SfChart();
+SFChart chart = new SFChart();
 ...
 
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSerie()
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSerie()
 {
 	ItemsSource = Data,
 	XBindingPath = "Department",
@@ -773,7 +773,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhiskerSeries chart type in Xamarin.Forms Chart]
+![BoxAndWhiskerSeries chart type in Xamarin.iOS]
 
 ### SymbolType
 
@@ -789,10 +789,10 @@ The following code shows how to set the [`SymbolType`] value as [`Cross`]
 
 [C#]
 
-SfChart chart = new SfChart();
+SFChart chart = new SFChart();
 ...
 
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSerie()
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSerie()
 {
 	ItemsSource = Data,
 	XBindingPath = "Department",
@@ -805,7 +805,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhiskerSeries chart type in Xamarin.Forms Chart]
+![BoxAndWhiskerSeries chart type in Xamarin.iOS]
 
 ## Bar Chart
 
