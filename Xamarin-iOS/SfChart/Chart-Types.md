@@ -7,7 +7,7 @@ control: SFChart
 documentation: ug
 ---
 
-# Chart Types
+# Chart Types in Xamarin.iOS
 
 ## Line Chart
 
