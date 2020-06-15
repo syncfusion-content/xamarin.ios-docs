@@ -19,7 +19,7 @@ Gets or sets the minimum possible value of the range. The thumb could not move b
 
 {% highlight c# %}
 
-rangeSlider.Minimum=0;
+rangeSlider.Minimum = 0;
 
 {% endhighlight %}
 
@@ -33,7 +33,7 @@ Gets or sets the maximum possible value of the range. The thumb could not move a
 
 {% highlight c# %}
 
-rangeSlider.Maximum=24;
+rangeSlider.Maximum = 24;
 
 {% endhighlight %}
 
@@ -87,7 +87,7 @@ N> The default option is Ticks.
 
 {% highlight c# %}
 
-rangeSlider.SnapsTo=SFSnapsTo.SFSnapsToTicks;
+rangeSlider.SnapsTo = SFSnapsTo.SFSnapsToTicks;
 
 {% endhighlight %}
 
