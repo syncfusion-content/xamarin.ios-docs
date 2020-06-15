@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IsBusy support in Syncfusion BusyIndicator control for Xamarin.iOS
-description: Learn how to enable and disable animation in BusyIndicator
+description: This section provides the details about how to enable and disable animation in BusyIndicator for Xamarin.iOS
 platform: Xamarin.iOS
 control: SfBusyIndicator
 documentation: ug
@@ -15,15 +15,15 @@ SfBusyIndicator control provides support to determine whether an animation needs
 
 {% highlight c# %}
 
-	SFBusyIndicator busyindicator = new SFBusyIndicator();
-	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSingleCircle;
-	busyindicator.IsBusy=true;
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
+	busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSingleCircle;
+	busyindicator.IsBusy = true;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/IsBusy_img1.png)                 
+![The IsBusy_img1](images/IsBusy_img1.png)                 
 
 BusyIndicator
 {:.caption}

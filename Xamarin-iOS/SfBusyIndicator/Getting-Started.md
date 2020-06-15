@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion BusyIndicator control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion busyIndicator control for Xamarin.iOS platform
+description: This section provides the details about the initial users on Syncfusion busyIndicator control for Xamarin.iOS platform
 platform: Xamarin.iOS
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with BusyIndicator
 
 This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
@@ -41,7 +41,7 @@ iOS-unified\Syncfusion.SfBusyIndicator.iOS.dll
 
 {% highlight c# %}
 	
-	SFBusyIndicator busyindicator = new SFBusyIndicator();
+	SfBusyIndicator busyindicator = new SfBusyIndicator();
 	this.AddSubview(busyindicator);
 	
 {% endhighlight %}
@@ -58,7 +58,7 @@ Following example depicts the battery type animation for SfBusyIndicator.
 
 {% highlight c# %}
 
-	 busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
+	 busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery;
 
 {% endhighlight %}
 
@@ -72,17 +72,17 @@ Size and color can be customized in SfBusyIndicator as follows.
       
 {% highlight c# %}
 	 
-	busyindicator.AnimationType=SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
-	busyindicator.TextColor=UIColor.RED;
-	busyindicator.ViewBoxHeight=20;
-	busyindicator.ViewBoxWidth=20;
-	busyindicator.IsBusy=True;
+	busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
+	busyindicator.TextColor = UIColor.RED;
+	busyindicator.ViewBoxHeight = 20;
+	busyindicator.ViewBoxWidth = 20;
+	busyindicator.IsBusy = True;
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/BusyIndicator-iOS.png)                 
+![the BusyIndicator](images/BusyIndicator-iOS.png)                 
 
 BusyIndicator
 {:.caption}
