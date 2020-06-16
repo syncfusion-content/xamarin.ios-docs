@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Overview of Syncfusion Carousel control for Xamarin.iOS
-description: Overview and key features of Carousel control
+description: This section provides the details about the Overview of the Carousel control key features for Xamarin.iOS
 platform: Xamarin.iOS
 control: Carousel
 documentation: ug
 ---
 
-# Overview
+# Overview With SfCarousel
 
 SfCarousel control is one of the patterns for browsing a small collection of featured products. The viewer is able to view several images of products across a row, and they can swipe horizontally across the row to navigate to the next set of products. They provide a 2-D interface for displaying objects with interactive navigation. It also works for a wide variety of device sizes and screen resolutions.
 
-![](images/carousel.png)
+![The Carousel](images/carousel.png)
 
 Key Features:
 

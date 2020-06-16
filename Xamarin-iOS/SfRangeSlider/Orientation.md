@@ -7,7 +7,7 @@ control: RangeSlider
 documentation: ug
 ---
 
-# Orientation
+# Orientation of SfRangeSlider
 
 SfRangeSlider provides option to display the values and the slider either horizontally or vertically.
 
@@ -21,13 +21,13 @@ In this orientation, the values and the slider are set horizontally.
 
 {% highlight c# %}
 
-rangeSlider.Orientation=SFOrientation.SFOrientationHorizontal;
+rangeSlider.Orientation = SFOrientation.SFOrientationHorizontal;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/RangeSlider-Horizontal.png)
+![The RangeSlider Horizontal](images/RangeSlider-Horizontal.png)
 
 ## Vertical
 
@@ -37,12 +37,12 @@ In this Orientation, the values and the slider are set vertically.
 
 {% highlight c# %}
 
-rangeSlider.Orientation=SFOrientation.SFOrientationVertical;
+rangeSlider.Orientation = SFOrientation.SFOrientationVertical;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/RangeSlider-Vertical.png)
+![The RangeSlider Vertical](images/RangeSlider-Vertical.png)
 
 
