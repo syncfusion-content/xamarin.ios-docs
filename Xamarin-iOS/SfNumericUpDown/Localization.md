@@ -6,7 +6,7 @@ platform: Xamarin.iOS
 control: NumericUpDown
 documentation: ug
 ---
-# Localization in SfNumericUpDown
+# Localization in NumericUpDown
 
 ## Culture
 

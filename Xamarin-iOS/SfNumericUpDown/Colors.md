@@ -6,7 +6,7 @@ platform: Xamarin.iOS
 control: NumericUpDown
 documentation: ug
 ---
-# Colors in SfNumericUpDown
+# Colors in NumericUpDown
 
 SfNumericUpDown is used to set custom background, text, and border colors through the following properties:
 
@@ -18,7 +18,7 @@ SfNumericUpDown is used to set custom background, text, and border colors throug
 
 * `WatermarkColor` - Sets the watermark custom color of NumericUpDown's watermark Text.
 
-### TextColor
+## TextColor
 
 The following code sample demonstrates how to set the TextColor:
 
@@ -36,7 +36,7 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 ![Customized text color in NumericUpown](images/textcolor.png)
 
-### BackgroundColor
+## BackgroundColor
 
 The following code sample demonstrates how to set the BackgroundColor:
 
@@ -55,7 +55,7 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 ![Display the NumericUpDown with BackgroundColor](images/backgroundcolor.png)
 
-### BorderColor
+## BorderColor
 
 The following code sample demonstrates how to set the BorderColor color:
 
@@ -73,7 +73,7 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 ![Display the NumericUpDown with BorderColor](images/bordercolor.png)
 
-### WatermarkColor
+## WatermarkColor
 
 The following code sample demonstrates how to set the WatermarkColor:
 

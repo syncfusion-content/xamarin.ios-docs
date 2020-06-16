@@ -82,3 +82,15 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 };
 
 {% endhighlight %}
+
+## Selection Support
+
+The `SelectAllOnFocus` property is used to specify whether the text should be selected when the control gets focus.
+
+{% highlight c# %}
+
+[C#]
+
+numeric.SelectAllOnFocus = true;
+  
+{% endhighlight %}

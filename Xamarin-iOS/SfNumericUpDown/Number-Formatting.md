@@ -6,7 +6,7 @@ platform: Xamarin.iOS
 control: NumericUpDown
 documentation: ug
 ---
-# Number Formatting in SfNumericUpDown
+# Number Formatting in NumericUpDown
 
 ## Format String
 

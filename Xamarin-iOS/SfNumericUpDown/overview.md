@@ -7,7 +7,7 @@ control: NumericUpDown
 documentation: ug
 ---
 
-# Overview of SfNumericUpDown
+# Overview of NumericUpDown
 
 NumericUpDown is an editor control which provides up and down repeat buttons to increment and decrement the values. The control respects the UI culture and can be configured to display different formats like currency format, scientific format, etc.
 

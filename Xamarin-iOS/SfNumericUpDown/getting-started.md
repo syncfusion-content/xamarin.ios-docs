@@ -7,7 +7,7 @@ control: NumericUpDown
 documentation: ug
 ---
 
-# Getting Started with SfNumericUpDown
+# Getting Started with NumericUpDown
 
 This section provides overview for working with Essential NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
 
