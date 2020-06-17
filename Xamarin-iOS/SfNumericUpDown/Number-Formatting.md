@@ -6,7 +6,7 @@ platform: Xamarin.iOS
 control: NumericUpDown
 documentation: ug
 ---
-# Number Formatting
+# Number Formatting in NumericUpDown
 
 ## Format String
 
@@ -19,8 +19,10 @@ It has three types,
 * `c` - Display the value with currency notation.
 	
 {% highlight C# %}
+
+[C#]
 	
-	numeric.FormatString=@"c";
+numeric.FormatString = "c";
 	 
 {% endhighlight %}
 	
@@ -28,8 +30,10 @@ It has three types,
 * `n` – Display the value in number format.
 	
 {% highlight C# %}
+
+[C#]
 	
-	numeric.FormatString=@"n";
+numeric.FormatString = "n";
 	 
 {% endhighlight %}
 	
@@ -38,13 +42,15 @@ It has three types,
 	
 {% highlight C# %}
 
-	numeric.FormatString=@"p";
+[C#]
+
+numeric.FormatString = "p";
 	 
 {% endhighlight %}
 	
 N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in NumericUpDown.
 
-![](images/format.png)
+![Display the NumericUpDown with number formating](images/format.png)
 
 ## Parser Mode
 
@@ -54,11 +60,13 @@ N> The `ParsingMode` is of type Parsers containing enum values of Double and Dec
 
 {% highlight C# %}
 
-	numeric.ParserMode=SFNumericUpDownParsingMode.Decimal;
+[C#]
+
+numeric.ParsingMode = SFNumericUpDownParsingMode.Decimal;
 	  
 {% endhighlight %}
 
-![](images/ParserMode.png)
+![Display the NumericUpDown with parser mode](images/ParserMode.png)
 
 ## Percent Display Mode
 
@@ -72,7 +80,9 @@ It provides the following options:
 
 {% highlight C# %}
 
-	numeric.PercentDisplayMode=SFNumericUpDownPercentDisplayMode.Value;
+[C#]
+
+numeric.PercentDisplayMode = SFNumericUpDownPercentDisplayMode.Value;
 
 {% endhighlight %}
 
@@ -80,8 +90,10 @@ It provides the following options:
 
 {% highlight C# %}
 
-	numeric.PercentDisplayMode=SFNumericUpDownPercentDisplayMode.Compute;
+[C#]
+
+numeric.PercentDisplayMode = SFNumericUpDownPercentDisplayMode.Compute;
 
 {% endhighlight %}
 
-![](images/percent.png)
+![Display the NumericUpDown with percent mode](images/percent.png)
