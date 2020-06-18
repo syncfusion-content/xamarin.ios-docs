@@ -761,7 +761,6 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 	ItemsSource = Data,
 	XBindingPath = "Department",
 	YBindingPath = "Ages",
-	BoxPlotMode = BoxPlotMode.Inclusive,
 	ShowMedian = true
 } 
 chart.Series.Add(boxPlotSeries);
@@ -786,8 +785,6 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 	ItemsSource = Data,
 	XBindingPath = "Department",
 	YBindingPath = "Ages",
-	BoxPlotMode = BoxPlotMode.Inclusive,
-	ShowMedian = true,
 	SymbolType = ChartSymbolType.Cross
 } 
 chart.Series.Add(boxPlotSeries);
