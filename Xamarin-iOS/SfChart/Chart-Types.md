@@ -694,7 +694,7 @@ BoxAndWhiskerSeries plots a combination of rectangles and lines to show the dist
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) - used to change the color of the series.
 * [`BorderWidth`] - used to change the border width of the series.
-* [`StrokeColor`] - used to change the stroke color of the series.
+* [`BorderColor`] - used to change the border color of the series.
 * [`Spacing`] - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
 * [`Width`] - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
 
@@ -738,7 +738,7 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 { 
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
-	YBindingPath = "Ages",
+	YBindingPath = "Ages", 
     BoxPlotMode = BoxplotMode.Inclusive
 };
 chart.Series.Add(boxPlotSeries);
