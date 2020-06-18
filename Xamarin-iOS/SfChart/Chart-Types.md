@@ -739,7 +739,7 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
 	YBindingPath = "Ages",
-    BoxPlotMode = BoxPlotMode.Inclusive
+    BoxPlotMode = BoxplotMode.Inclusive
 };
 chart.Series.Add(boxPlotSeries);
 
