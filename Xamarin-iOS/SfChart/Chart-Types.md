@@ -2010,12 +2010,12 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
  errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
  errorBarSeries.HorizontalCapLineStyle.LineColor = UIColor.Blue;
  errorBarSeries.HorizontalCapLineStyle.LineWidth =4;
- errorBarSeries.HorizontalCapLineStyle.IsVisible = true;
+ errorBarSeries.HorizontalCapLineStyle.Visiblity = Visibility.Visible;
  
  errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
  errorBarSeries.VerticalCapLineStyle.LineColor = UIColor.Blue;
  errorBarSeries.VerticalCapLineStyle.LineWidth = 4;
- errorBarSeries.VerticalCapLineStyle.IsVisible =  true;
+ errorBarSeries.VerticalCapLineStyle.Visibility =  Visibility.Visible;
 
 {% endhighlight %}
 
