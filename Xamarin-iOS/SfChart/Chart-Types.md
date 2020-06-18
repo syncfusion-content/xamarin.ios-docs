@@ -1795,9 +1795,11 @@ chart.Series.Add(waterfallSeries);
 
 ## Type
 
- This type property is used to define the ErrorBar type value in [`Fixed`], [`Custom`], `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].
+ This type property is used to define the ErrorBar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].
 
  `Fixed`
+
+If [`Type`] is `Fixed`, you have to set HorizontalErrorValue and VerticalErrorValue as shown in the below code snippet.
 
 {% highlight c# %}
 
@@ -1806,7 +1808,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-    Type = ErrorBarType.Fixed,
+        Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -1818,6 +1820,7 @@ chart.Series.Add(errorBarSeries);
 
  `Percentage`
 
+
 {% highlight c# %}
 
 ErrorBarSeries errorBarSeries = new ErrorBarSeries()
@@ -1825,7 +1828,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-    Type = ErrorBarType.Percentage,
+        Type = ErrorBarType.Percentage,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -1854,7 +1857,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-[`Standard Errors`]
+`Standard Errors`
 
 {% highlight c# %}
 
@@ -1875,7 +1878,7 @@ chart.Series.Add(errorBarSeries);
 
 `Custom`
 
-If [`Type`] is Custom, you have to bind HorizontalErrorPath and VerticalErrorPath as shown in the below code snippet.
+If [`Type`] is `Custom`, you have to bind HorizontalErrorPath and VerticalErrorPath as shown in the below code snippet.
 
 {% highlight c# %}
 
@@ -1896,7 +1899,7 @@ chart.Series.Add(errorBarSeries);
 
 ## Mode
 
-This mode property is used to set  `Both`, `Horizontal` and `Vertical`  error value in a particular direction.
+This [`Mode`] property is used to set  `Both`, `Horizontal` and `Vertical` error value in a particular direction.
 The default value of this property is [`Both`]. 
 
 `Both`
@@ -2001,21 +2004,21 @@ You can customize the [ErrorBarSeries] with the following style properties.
 {% highlight c# %}
  
  errorBarSeries.HorizontalLineStyle = new ErrorBarLineStyle();
- errorBarSeries.HorizontalLineStyle.StrokeColor = UIColor.Blue;
- errorBarSeries.HorizontalLineStyle.StrokeWidth = 
+ errorBarSeries.HorizontalLineStyle.LineColor = UIColor.Blue;
+ errorBarSeries.HorizontalLineStyle.LineWidth = 
  4;
  errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
- errorBarSeries.VerticalLineStyle.StrokeColor = UIColor.Blue;
- errorBarSeries.VerticalLineStyle.StrokeWidth = 
+ errorBarSeries.VerticalLineStyle.LineColor = UIColor.Blue;
+ errorBarSeries.VerticalLineStyle.LineWidth = 
  4;
  errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
- errorBarSeries.HorizontalCapLineStyle.StrokeColor = UIColor.Blue;
- errorBarSeries.HorizontalCapLineStyle.StrokeWidth =
+ errorBarSeries.HorizontalCapLineStyle.LineColor = UIColor.Blue;
+ errorBarSeries.HorizontalCapLineStyle.LineWidth =
  4;
  errorBarSeries.HorizontalCapLineStyle.IsVisible = true;
  errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
- errorBarSeries.VerticalCapLineStyle.StrokeColor = UIColor.Blue;
- errorBarSeries.VerticalCapLineStyle.StrokeWidth = 
+ errorBarSeries.VerticalCapLineStyle.LineColor = UIColor.Blue;
+ errorBarSeries.VerticalCapLineStyle.LineWidth = 
  4;
  errorBarSeries.VerticalCapLineStyle.IsVisible = 
  true;
