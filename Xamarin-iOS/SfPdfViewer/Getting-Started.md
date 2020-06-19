@@ -436,3 +436,20 @@ The final output will look as like in the below screenshot.
 This demo can be downloaded from the below link.
 
 http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartediOS389189742
+
+## How to enable or disable annotation interaction?
+
+PDF viewer allows users to enable or disable annotation interactions such as selecting, moving, resizing, and removing. These operations can be enabled or disabled for all annotation types present in a PDF by setting the `SfPdfViewer.AnnotationSettings.IsLocked` API to `false` or `true` respectively. The default value of the API is `false` and as a result, the interaction operations are enabled by default. 
+
+When the `IsLocked` API is set to `true`, only the tapped events of the annotations will be raised. The selected events will not be raised. The following code sample disables the interaction operation for all annotation types.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the interaction for all annotation types
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>The interaction operation can also be enabled or disabled for a particular annotation type such as shape, free text, text markup, etc. Please find the code samples to enable or disable interaction for particular annotation from their respective sections.
