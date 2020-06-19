@@ -1791,11 +1791,11 @@ chart.Series.Add(waterfallSeries);
 
 ## ErrorBar Chart
 
-[`ErrorBarSeries`] is graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
+[`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
 
 ## Type
 
- The [`Type`] property is used to define the ErrorBar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].You have to set value for [`HorizontalErrorValue`] and [`VerticalErrorValue`] properties for all types except [`Custom`].
+ The [`Type`] property is used to define the ErrorBar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].For all types, You have to set values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
 
  ### Fixed
 
@@ -1876,7 +1876,7 @@ chart.Series.Add(errorBarSeries);
 
 ### Custom
 
-If [`Type`] is `Custom`, you have to bind [`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the below code snippet.
+If [`Type`] is `Custom`, you have to set values for [`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the following code snippet.
 
 {% highlight c# %}
 
@@ -1897,12 +1897,12 @@ chart.Series.Add(errorBarSeries);
 
 ## Mode
 
-The [`Mode`] property is used to set  `Both`, `Horizontal` and `Vertical` error value in a particular direction.
+The error value shown on the chart is based on the [`Mode`] property. It have the values of `Both`, `Horizontal`, and `Vertical`.
 The default value of this property is [`Both`]. 
 
 ### Both
 
-To display horizontal and vertical error value, you can set the [`Mode`] as `Both` as shown in the below code example.
+To display horizontal and vertical error values, you can set the [`Mode`] as `Both` as shown in the following code.
 
 {% highlight c# %}
 
@@ -1923,7 +1923,7 @@ chart.Series.Add(errorBarSeries);
 
 ### Horizontal
 
-To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the below code example.
+To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the following code.
 
 {% highlight c# %}
 
@@ -1944,7 +1944,7 @@ chart.Series.Add(errorBarSeries);
 
 ### Vertical
 
-To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the below code example.
+To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the following code.
 
 {% highlight c# %}
 
@@ -1967,9 +1967,9 @@ chart.Series.Add(errorBarSeries);
 
 The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set the direction of error bar lines. The default value is [`Both`].
 
-* [`Both`] - used to set error value in positive and negative direction.
-* [`Minus`] - used to set error value in negative direction.
-* [`Plus`] - used to set error value in positive direction.	
+* [`Both`] - used to set error value in positive and negative directions.
+* [`Minus`] - used to set error value in a negative direction.
+* [`Plus`] - used to set error value in a positive direction.	
 
 {% highlight c# %}
 
