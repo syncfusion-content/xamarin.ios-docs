@@ -7,7 +7,7 @@ control: SFChart
 documentation: ug
 ---
 
-# Chart Types
+# Chart Types in Xamarin.iOS
 
 ## Line Chart
 
@@ -687,6 +687,109 @@ chart.Series.Add(stackingColumn100Series3);
 
 
 ![StackingColumn100 chart type in Xamarin.iOS Chart](ChartTypes_images/StackedColumn100.png)
+
+## BoxAndWhisker Chart
+
+BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`SFBoxAndWhiskerSeries`] and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) - used to change the color of the series.
+* [`BorderWidth`] - used to change the border width of the series.
+* [`BorderColor`] - used to change the border color of the series.
+* [`Spacing`] - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
+* [`Width`] - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
+
+{% highlight c# %}
+
+[C#]
+
+SFChart chart = new SFChart();
+...
+
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Department", 
+	YBindingPath = "Ages" 
+};
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+### Customize the series box mode
+
+The series box plotting mode can be changed using the [`BoxPlotMode`] property of [`SFBoxAndWhiskerSeries`]. The plotting mode of series can be calculated as follows:
+
+* [`Exclusive`] - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
+* [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
+* [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
+
+By default,[`BoxPlotMode`] value is [`Exclusive`].
+
+The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
+
+{% highlight c# %}
+
+[C#]
+
+SFChart chart = new SFChart();
+...
+
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Department", 
+	YBindingPath = "Ages", 
+    BoxPlotMode = BoxplotMode.Inclusive
+};
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+### ShowMedian
+
+The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`SFBoxAndWhiskerSeries`]. The following code demonstrates how to enable the [`ShowMedian`] property.
+
+{% highlight c# %}
+
+[C#]
+
+SFChart chart = new SFChart();
+...
+
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
+{
+	ItemsSource = Data,
+	XBindingPath = "Department",
+	YBindingPath = "Ages",
+	ShowMedian = true
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+### SymbolType
+
+The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default,[`SymbolType`] value is [`Ellipse`].
+
+The following code shows how to set the [`SymbolType`] value as [`Cross`]
+
+{% highlight c# %}
+
+[C#]
+
+SFChart chart = new SFChart();
+...
+
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
+{
+	ItemsSource = Data,
+	XBindingPath = "Department",
+	YBindingPath = "Ages",
+	SymbolType = ChartSymbolType.Cross
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
 
 ## Bar Chart
 
