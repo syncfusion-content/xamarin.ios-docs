@@ -1795,7 +1795,7 @@ chart.Series.Add(waterfallSeries);
 
 ## Type
 
- The [`Type`] property is used to define the ErrorBar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].
+ The [`Type`] property is used to define the ErrorBar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].You have to set value for [`HorizontalErrorValue`] and [`VerticalErrorValue`] properties for all types except [`Custom`].
 
  ### Fixed
 
@@ -1808,8 +1808,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Both,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -1829,7 +1829,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.Percentage,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	VerticalErrorValue = 8
 };
 
 chart.Series.Add(errorBarSeries);
@@ -1848,7 +1848,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.StandardDeviation,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -1867,7 +1867,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.StandardErrors,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -1913,8 +1913,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Horizontal,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -1934,8 +1934,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Horizontal,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -1955,8 +1955,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Vertical,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -1980,8 +1980,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
 	HorizontalDirection = ErrorBarDirection.Plus,
     VerticalDirection = ErrorBarDirection.Minus,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 chart.Series.Add(errorBarSeries);
@@ -2000,20 +2000,20 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
 {% highlight c# %}
  
  errorBarSeries.HorizontalLineStyle = new ErrorBarLineStyle();
- errorBarSeries.HorizontalLineStyle.LineColor = UIColor.Blue;
+ errorBarSeries.HorizontalLineStyle.LineColor = UIColor.Cyan;
  errorBarSeries.HorizontalLineStyle.LineWidth = 4;
 
  errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
- errorBarSeries.VerticalLineStyle.LineColor = UIColor.Blue;
+ errorBarSeries.VerticalLineStyle.LineColor = UIColor.Cyan;
  errorBarSeries.VerticalLineStyle.LineWidth =  4;
 
  errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
- errorBarSeries.HorizontalCapLineStyle.LineColor = UIColor.Blue;
+ errorBarSeries.HorizontalCapLineStyle.LineColor = UIColor.Green;
  errorBarSeries.HorizontalCapLineStyle.LineWidth =4;
  errorBarSeries.HorizontalCapLineStyle.Visiblity = Visibility.Visible;
  
  errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
- errorBarSeries.VerticalCapLineStyle.LineColor = UIColor.Blue;
+ errorBarSeries.VerticalCapLineStyle.LineColor = UIColor.Green;
  errorBarSeries.VerticalCapLineStyle.LineWidth = 4;
  errorBarSeries.VerticalCapLineStyle.Visibility =  Visibility.Visible;
 
