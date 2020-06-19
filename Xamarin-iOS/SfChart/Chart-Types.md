@@ -715,6 +715,8 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
+![BoxAndWhisker chart type in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Exclusive.png)
+
 ### Customize the series box mode
 
 The series box plotting mode can be changed using the [`BoxPlotMode`] property of [`SFBoxAndWhiskerSeries`]. The plotting mode of series can be calculated as follows:
@@ -745,6 +747,8 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
+![BoxAndWhisker chart type in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Inclusive.png)
+
 ### ShowMedian
 
 The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`SFBoxAndWhiskerSeries`]. The following code demonstrates how to enable the [`ShowMedian`] property.
@@ -766,6 +770,8 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
+
+![BoxAndWhisker chart type in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Median.png)
 
 ### SymbolType
 
@@ -790,6 +796,8 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
+
+![BoxAndWhisker chart type in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Symbol.png)
 
 ## Bar Chart
 
