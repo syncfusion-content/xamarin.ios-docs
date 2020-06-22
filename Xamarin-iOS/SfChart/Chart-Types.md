@@ -705,13 +705,13 @@ BoxAndWhiskerSeries plots a combination of rectangles and lines to show the dist
 SFChart chart = new SFChart();
 ...
 
-SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries() 
-{ 
-	ItemsSource = Data, 
-	XBindingPath = "Department", 
-	YBindingPath = "Ages", 
-    ShowMedian = true
-};
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
+{
+	ItemsSource = Data,
+	XBindingPath = "Department",
+	YBindingPath = "Ages",
+	ShowMedian = true
+} 
 chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
@@ -742,8 +742,8 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
 	YBindingPath = "Ages", 
-    ShowMedian = true,
-    BoxPlotMode = BoxplotMode.Inclusive
+	ShowMedian = true, 
+	BoxPlotMode = BoxPlotMode.Inclusive, 
 };
 chart.Series.Add(boxPlotSeries);
 
@@ -793,7 +793,7 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 	ItemsSource = Data,
 	XBindingPath = "Department",
 	YBindingPath = "Ages",
-    ShowMedian = true,
+	ShowMedian = true,
 	SymbolType = ChartSymbolType.Cross
 } 
 chart.Series.Add(boxPlotSeries);
