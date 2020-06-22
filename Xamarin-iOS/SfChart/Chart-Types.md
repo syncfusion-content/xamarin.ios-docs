@@ -709,14 +709,14 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 { 
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
-	YBindingPath = "Ages",
-    ShowMedian = true
+	YBindingPath = "Ages", 
+    ShowMedian = true 
 };
 chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Exclusive.png)
+![BoxAndWhisker chart type in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Exclusive_Median.png)
 
 ### Customize the series box mode
 
@@ -726,7 +726,7 @@ The series box plotting mode can be changed using the [`BoxPlotMode`] property o
 * [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
 * [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
 
-By default,[`BoxPlotMode`] value is [`Exclusive`].
+By default, [`BoxPlotMode`] value is [`Exclusive`].
 
 The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
 
@@ -742,18 +742,18 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
 	YBindingPath = "Ages", 
-    ShowMedian = true,
+    ShowMedian = true, 
     BoxPlotMode = BoxplotMode.Inclusive
 };
 chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Inclusive.png)
+![BoxPlotMode support for BoxAndWhiskerSeries in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Inclusive.png)
 
 ### ShowMedian
 
-The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`SFBoxAndWhiskerSeries`].By default,[`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
+The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`SFBoxAndWhiskerSeries`].By default, [`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
 
 {% highlight c# %}
 
@@ -773,11 +773,11 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Median.png)
+![ShowMedian support for BoxAndWhisker series in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Exclusive_Median.png)
 
 ### SymbolType
 
-The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default,[`SymbolType`] value is [`Ellipse`].
+The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`] value is [`Ellipse`].
 
 The following code shows how to set the [`SymbolType`] value as [`Cross`]
 
@@ -792,7 +792,7 @@ SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
 {
 	ItemsSource = Data,
 	XBindingPath = "Department",
-	YBindingPath = "Ages",
+	YBindingPath = "Ages", 
     ShowMedian = true,
 	SymbolType = ChartSymbolType.Cross
 } 
@@ -800,7 +800,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Symbol.png)
+![Outlier for BoxAndWhisker series in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_SymbolType.png)
 
 ## Bar Chart
 
