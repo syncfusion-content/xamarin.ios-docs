@@ -1894,7 +1894,56 @@ chart.Series.Add(waterfallSeries);
 
 ## ErrorBar Chart
 
-[`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html)
+[`SFErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`SFErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html)
+
+{% highlight c# %}
+
+SFScatterSeries scatterSeries = new SFScatterSeries() 
+{ 
+    ItemsSource = CarDistributionDetails, 
+    XBindingPath = "Country", 
+    YBindingPath = "Value",
+    ShapeType = ChartScatterShapeType.Ellipse,
+    ScatterWidth = 20,
+    ScatterHeight = 20
+};
+scatterSeries.ColorModel.Palette  = SFChartColorPalette.Natural;
+chart.Series.Add(scatterSeries);
+
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed,
+	Mode = ErrorBarMode.Both,
+	HorizontalDirection = ErrorBarDirection.Both,
+        VerticalDirection = ErrorBarDirection.Both,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+errorBarSeries.HorizontalLineStyle = new ErrorBarLineStyle();
+errorBarSeries.HorizontalLineStyle.LineColor = UIColor.Cyan;
+errorBarSeries.HorizontalLineStyle.LineWidth = 4;
+
+errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
+errorBarSeries.VerticalLineStyle.LineColor = UIColor.Cyan;
+errorBarSeries.VerticalLineStyle.LineWidth = 4;
+
+errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
+errorBarSeries.HorizontalCapLineStyle.LineColor = UIColor.Green;
+errorBarSeries.HorizontalCapLineStyle.LineWidth = 4;
+errorBarSeries.HorizontalCapLineStyle.Visible = true;
+ 
+errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
+errorBarSeries.VerticalCapLineStyle.LineColor = UIColor.Green;
+errorBarSeries.VerticalCapLineStyle.LineWidth = 4;
+errorBarSeries.VerticalCapLineStyle.Visible = true;
+
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
 
 ## Type
 
@@ -1904,7 +1953,7 @@ chart.Series.Add(waterfallSeries);
 
 {% highlight c# %}
 
-ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 {
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
@@ -1923,7 +1972,7 @@ chart.Series.Add(errorBarSeries);
 
 {% highlight c# %}
 
-ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 {
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
@@ -1942,7 +1991,7 @@ chart.Series.Add(errorBarSeries);
 
 {% highlight c# %}
 
-ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 {
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
@@ -1961,7 +2010,7 @@ chart.Series.Add(errorBarSeries);
 
 {% highlight c# %}
 
-ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 {
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
@@ -1982,7 +2031,7 @@ If [`Type`] is `Custom`, you have to set values for [`HorizontalErrorPath`] and 
 
 {% highlight c# %}
 
-ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 {
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
@@ -2007,7 +2056,7 @@ To display horizontal and vertical error values, you can set the [`Mode`] as `Bo
 
 {% highlight c# %}
 
-ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 {
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
@@ -2028,7 +2077,7 @@ To display horizontal error value only, you can set the [`Mode`] as `Horizontal`
 
 {% highlight c# %}
 
-ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 {
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
@@ -2049,7 +2098,7 @@ To display vertical error value only, you can set the [`Mode`] as `Vertical` as 
 
 {% highlight c# %}
 
-ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 {
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
@@ -2074,7 +2123,7 @@ The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set
 
 {% highlight c# %}
 
-ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 {
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
@@ -2091,7 +2140,7 @@ chart.Series.Add(errorBarSeries);
 
 ## Customization
 
-You can customize the [`ErrorBarSeries`] with the following style properties.
+You can customize the [`SFErrorBarSeries`] with the following style properties.
 
 * [`HorizontalLineStyle`] – used to customizes the appearance of horizontal error bar line.
 * [`VerticalLineStyle`] – used to customizes the appearance of vertical error error line.
@@ -2111,12 +2160,12 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
  errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
  errorBarSeries.HorizontalCapLineStyle.LineColor = UIColor.Green;
  errorBarSeries.HorizontalCapLineStyle.LineWidth = 4;
- errorBarSeries.HorizontalCapLineStyle.Visiblity = Visibility.Visible;
+ errorBarSeries.HorizontalCapLineStyle.Visible = true;
  
  errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
  errorBarSeries.VerticalCapLineStyle.LineColor = UIColor.Green;
  errorBarSeries.VerticalCapLineStyle.LineWidth = 4;
- errorBarSeries.VerticalCapLineStyle.Visibility = Visibility.Visible;
+ errorBarSeries.VerticalCapLineStyle.Visible = true;
 
 {% endhighlight %}
 
