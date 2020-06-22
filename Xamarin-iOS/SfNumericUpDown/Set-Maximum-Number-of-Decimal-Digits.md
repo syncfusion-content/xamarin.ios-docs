@@ -8,16 +8,14 @@ documentation: ug
 ---
 # Set Maximum Number of Decimal Digits
 
-The maximum number of digits to be displayed after the decimal point can be specified by using `MaximumNumberDecimalDigits` property. 
+The maximum number of digits to be displayed after the decimal point can be specified by using `MaximumDecimalDigits` property. 
 
-N> The `MaximumNumberDecimalDigits` property can be provided with positive value only.
-
-{% tabs %}
+N> The `MaximumDecimalDigits` property can be provided with positive value only.
 
 {% highlight C# %}
 
-	numeric.MaximumNumberDecimalDigits = 2;
+[C#]
+
+numeric.MaximumDecimalDigits = 2;
 
 {% endhighlight %}
-
-{% endtabs %}
