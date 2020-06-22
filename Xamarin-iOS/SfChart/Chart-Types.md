@@ -1894,7 +1894,7 @@ chart.Series.Add(waterfallSeries);
 
 ## ErrorBar Chart
 
-[`SFErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`SFErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html)
+ErrorBarSeries is a graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`SFErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html)
 
 {% highlight c# %}
 
@@ -1922,24 +1922,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-errorBarSeries.HorizontalLineStyle = new ErrorBarLineStyle();
-errorBarSeries.HorizontalLineStyle.LineColor = UIColor.Cyan;
-errorBarSeries.HorizontalLineStyle.LineWidth = 4;
-
-errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
-errorBarSeries.VerticalLineStyle.LineColor = UIColor.Cyan;
-errorBarSeries.VerticalLineStyle.LineWidth = 4;
-
-errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
-errorBarSeries.HorizontalCapLineStyle.LineColor = UIColor.Green;
-errorBarSeries.HorizontalCapLineStyle.LineWidth = 4;
-errorBarSeries.HorizontalCapLineStyle.Visible = true;
- 
-errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
-errorBarSeries.VerticalCapLineStyle.LineColor = UIColor.Green;
-errorBarSeries.VerticalCapLineStyle.LineWidth = 4;
-errorBarSeries.VerticalCapLineStyle.Visible = true;
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
@@ -1947,7 +1929,7 @@ chart.Series.Add(errorBarSeries);
 
 ## Type
 
- The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, you have to set values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
+The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, you have to set values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
 
 ### Fixed
 
@@ -1963,7 +1945,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
@@ -1982,7 +1963,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 8
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
@@ -2001,7 +1981,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
@@ -2020,7 +1999,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
@@ -2041,7 +2019,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorPath = "HorizontalErrorValues",
 	VerticalErrorValue = "VerticalErrorValues"
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
@@ -2066,7 +2043,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
@@ -2087,7 +2063,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
@@ -2108,7 +2083,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
@@ -2133,7 +2107,6 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
-
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
