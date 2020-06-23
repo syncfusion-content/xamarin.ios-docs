@@ -690,7 +690,7 @@ chart.Series.Add(stackingColumn100Series3);
 
 ## BoxAndWhisker Chart
 
-BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`SFBoxAndWhiskerSeries`] and add to the Series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
+BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`SFBoxAndWhiskerSeries`] and add to the series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) - used to change the color of the series.
 * [`BorderWidth`] - used to change the border width of the series.
@@ -773,7 +773,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![ShowMedian support for BoxAndWhisker series in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Exclusive_Median.png)
+![ShowMedian support for BoxAndWhiskerSeries in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Exclusive_Median.png)
 
 ### SymbolType
 
@@ -800,7 +800,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![Outlier for BoxAndWhisker series in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_SymbolType.png)
+![Outlier for BoxAndWhiskerSeries in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_SymbolType.png)
 
 ## Bar Chart
 
