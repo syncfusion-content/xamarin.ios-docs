@@ -219,3 +219,4 @@ Following methods are available in [`SFSeries`](https://help.syncfusion.com/cr/c
 
 * [`FindNearestChartPoint(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~FindNearestChartPoint.html) - used to get the nearest data point for the particular touch point. 
 * [`FindNearestChartPoints(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~FindNearestChartPoints.html) - used to get the list of nearest data points for the particular touch point.
+* [`Animate()`] - used to animate series when items source is dynamically changed.
