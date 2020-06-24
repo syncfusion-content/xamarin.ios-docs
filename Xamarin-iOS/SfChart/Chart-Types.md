@@ -1937,6 +1937,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
+![ErrorBar chart type in Xamarin.iOS](charttypes_images/ErrorBar.png)
 
 ## Type
 
@@ -1960,6 +1961,8 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
+![Fixed type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Fixed.png)
+
 ### Percentage
 
 {% highlight c# %}
@@ -1977,6 +1980,8 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![Percentage type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Percentage.png)
 
 ### Standard Deviation
 
@@ -1996,6 +2001,8 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
+![StandardDeviation type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_StandardDeviation.png)
+
 ### Standard Errors
 
 {% highlight c# %}
@@ -2013,6 +2020,8 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![StandardErrors type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_StandardErrors.png)
 
 ### Custom
 
@@ -2033,6 +2042,8 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![Custom type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Custom.png)
 
 ## Mode
 
@@ -2058,6 +2069,8 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
+![ErrorBarMode support for ErrorBarSeries  in Xamarin.iOS Chart](charttypes_images/ErrorBar_Mode_Both.png)
+
 ### Horizontal
 
 To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the following code.
@@ -2078,6 +2091,8 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
+![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Mode_Horizontal.png)
+
 ### Vertical
 
 To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the following code.
@@ -2097,6 +2112,8 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Mode_Vertical.png)
 
 ## Direction
 
@@ -2121,6 +2138,8 @@ SFErrorBarSeries errorBarSeries = new SFErrorBarSeries()
 chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
+
+![ErrorBarDirection support for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Direction.png)
 
 ## Customization
 
@@ -2152,5 +2171,7 @@ You can customize the [`SFErrorBarSeries`] with the following style properties.
  errorBarSeries.VerticalCapLineStyle.Visible = true;
 
 {% endhighlight %}
+
+![Customization of ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_LineStyle.png)
 
 
