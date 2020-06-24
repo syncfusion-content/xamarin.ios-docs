@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple series in Syncfusion.Xamarin.iOS chart
+title: Multiple series and combination of series | SFChart | Xamarin.iOS | Syncfusion
 description: Learn about the how to render the multiple series, combination series, transpose series, and grouping stacked series.
 platform: xamarin.ios
 control: SFChart
