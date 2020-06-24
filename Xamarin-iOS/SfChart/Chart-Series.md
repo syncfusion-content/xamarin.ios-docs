@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple series and combination of series | SFChart | Xamarin.iOS | Syncfusion
-description: How to add multiple series and combination series in SFChart
+title: Multiple series in Syncfusion.Xamarin.iOS chart
+description: Learn about the how to render the multiple series, combination series, transpose series, and grouping stacked series.
 platform: xamarin.ios
 control: SFChart
 documentation: ug
@@ -219,4 +219,4 @@ Following methods are available in [`SFSeries`](https://help.syncfusion.com/cr/c
 
 * [`FindNearestChartPoint(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~FindNearestChartPoint.html) - used to get the nearest data point for the particular touch point. 
 * [`FindNearestChartPoints(float pointX,float pointY)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~FindNearestChartPoints.html) - used to get the list of nearest data points for the particular touch point.
-* [`Animate()`] - used to animate series when items source is dynamically changed.
+* [`Animate()`] - Animate is a built-in method and a short way to play animation on a chart series.
