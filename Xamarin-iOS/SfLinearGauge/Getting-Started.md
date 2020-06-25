@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion LinearGauge control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.Forms platform and also describes how to add pointers and ranges
+description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.iOS platform and also describes how to add pointers and ranges
 platform: Xamarin.iOS
 control: LinearGauge
 documentation: ug
