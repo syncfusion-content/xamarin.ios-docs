@@ -132,7 +132,7 @@ You can categorize the scale values using the start and end values properties in
 
 ![Xamarin.iOS LinearGauge Getting Started](getting-started_images/getting-started.png)
 
-You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/SfLinearGauge_GettingStarted_Xamarin.iOS).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/SfLinearGauge_GettingStarted_Xamarin.iOS).
 
 
 
