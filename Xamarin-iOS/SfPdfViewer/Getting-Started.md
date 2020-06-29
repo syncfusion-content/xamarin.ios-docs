@@ -7,7 +7,7 @@ control: SfPdfViewer
 documentation: ug
 ---
 
-# Getting started with Xamarin.iOS PDF Viewer (SfPdfViewer)
+# Getting started
 
 This section demonstrates how to create an application that displays a PDF file using SfPdfViewer control.
 
@@ -79,57 +79,6 @@ SfPdfViewer pdfViewerControl;
 {% endtabs %}
 
 Deploying this project in an iOS device would display the PDF document and allow you to scroll and zoom through the pages.
-
-## Loading a PDF asynchronously
-
-PDF Viewer allows you to load the PDF document from the specified stream asynchronously using the `LoadDocumentAsync` method. You can also cancel the asynchronous PDF loading when it is in progress.
-
-{% tabs %}
-{% highlight c# %}
-
-pdfViewerControl.LoadDocumentAsync(documentStream, cancellationTokenSource);
-
-{% endhighlight %}
-{% endtabs %}
-
-In the above code sample, `documentStream` is a stream that contains the data of the PDF document and the `cancellationTokenSource` enables you to cancel the asynchronous PDF loading.
-
-### Cancel the asynchronous PDF Loading
-
-You can raise cancel request when the asynchronous load is in progress.
-
-{% tabs %}
-{% highlight c# %}
-
-private void cancelButton_Clicked(object sender, EventArgs e)
-{
-     cancellationTokenSource.Cancel();
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-In the above code sample, the `cancellationTokenSource` instance is the same as the one given as the argument when loading the PDF asynchronously. 
-
-N>Calling the above method will not have any effect once the PDF has completely loaded. It will stop the loading process only when it is in progress. 
-
-### Detect the cancellation of the PDF load
-
-The cancellation of the PDF load operation can be detected by registering an event handler on the Token property of the `CancellationTokenSource` instance. 
-
-{% tabs %}
-{% highlight c# %}
-
-EventArgs e = new EventArgs();
-cancellationTokenSource.Token.Register(() => LoadDocumentAsyncCancelled(this, e));
-
-private void LoadDocumentAsyncCancelled(object sender, EventArgs e)
-{
-    // handle the cancellation event
-}
-
-{% endhighlight %}
-{% endtabs %}
 
 ## Unloading PDF document from the Viewer
 
@@ -436,20 +385,3 @@ The final output will look as like in the below screenshot.
 This demo can be downloaded from the below link.
 
 http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartediOS389189742
-
-## How to enable or disable annotation interaction?
-
-PDF viewer allows users to enable or disable annotation interactions such as selecting, moving, resizing, and removing. These operations can be enabled or disabled for all annotation types present in a PDF by setting the `SfPdfViewer.AnnotationSettings.IsLocked` API to `false` or `true` respectively. The default value of the API is `false` and as a result, the interaction operations are enabled by default. 
-
-When the `IsLocked` API is set to `true`, only the tapped events of the annotations will be raised. The selected events will not be raised. The following code sample disables the interaction operation for all annotation types.
-
-{% tabs %}
-{% highlight c# %}
-
-//Disable the interaction for all annotation types
-pdfViewerControl.AnnotationSettings.IsLocked = true;
-
-{% endhighlight %}
-{% endtabs %}
-
-N>The interaction operation can also be enabled or disabled for a particular annotation type such as shape, free text, text markup, etc. Please find the code samples to enable or disable interaction for particular annotation from their respective sections.

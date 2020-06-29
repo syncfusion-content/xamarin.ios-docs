@@ -12,32 +12,28 @@ The null values can be set in SfNumericUpDown `Value` property, by setting `Allo
 
 N> By default, the property value is false.
 
-{% tabs %}
-
 {% highlight C# %}
 
-numeric.AllowNull=true;
+[C#]
+
+numeric.AllowNull = true;
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](images/allownull.png)
+![Display the NumericUpDown with Null value](images/allownull.png)
 
 ## Set Hint Text
 
 The `WaterMark` text is used to display some information regarding the SfNumericEditBox. This watermark is visible when textbox is empty or Null.
 
-{% tabs %}
-
 {% highlight c# %}
+
+[C#]
 
 numeric.WaterMark = (NSString)"NumericUpDown";
 
 {% endhighlight %}
 
-{% endtabs %}
-
 N> By default the property value is false
 
-![](images/watermark.png)
+![Display the NumericUpDown with hint text](images/watermark.png)
