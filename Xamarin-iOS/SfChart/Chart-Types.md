@@ -7,7 +7,7 @@ control: SFChart
 documentation: ug
 ---
 
-# Chart Types
+# Chart Types in SfChart 
 
 ## Line Chart
 
