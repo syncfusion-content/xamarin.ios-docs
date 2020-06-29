@@ -6,19 +6,21 @@ platform: Xamarin.iOS
 control: NumericUpDown
 documentation: ug
 ---
-# AutoReverse in NumericUpDown
+# AutoReverse
 
 While incrementing, the control will start from Minimum once it reaches the Maximum and vice-versa.
 
 N> By default the property value is false.
 
-{% highlight C# %}
+{% tabs %}
 
-[C#]
+{% highlight C# %}
 
 numeric.AutoReverse = true;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Continuous Spinning Between Ranges
 
@@ -26,19 +28,20 @@ User can restrict the Values between a specific range by setting `Maximum` and `
 
 N> By default the minimum property value is 0 and maximum property value is 100.
 
+{% tabs %}
+
 {% highlight C# %}
 
-[C#]
-
-numeric.Minimum = 10;
-
-numeric.Maximum = 50
+	numeric.Minimum = 10;
+	numeric.Maximum = 50
 
 {% endhighlight %}
 
-![Display the NumericUpDown with maximum range](images/maximum.png)
+{% endtabs %}
 
-![Display the NumericUpDown with minimum range](images/minimum.png)
+![](images/maximum.png)
+
+![](images/minimum.png)
 
 ## Set Increment
 
@@ -46,10 +49,12 @@ Frequency in which values gets incremented can be decided using `StepValue` prop
 
 N> By default the property value is 1.
 
+{% tabs %}
+
 {% highlight C# %}
 
-[C#]
-
-numeric.StepValue = 6;
+	numeric.StepValue = 6;
 
 {% endhighlight %}
+
+{% endtabs %}

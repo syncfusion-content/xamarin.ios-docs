@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Carousel control for Xamarin.iOS
+title: Getting Started with Syncfusion AutoComplete control for Xamarin.iOS
 description: This section provides the details about the tour to initial users on Syncfusion carousel control for Xamarin.iOS platform
 platform: Xamarin.iOS
 control: Carousel

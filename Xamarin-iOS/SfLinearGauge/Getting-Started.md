@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion LinearGauge control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.iOS platform and also describes how to add pointers and ranges
+description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.iOS platform
 platform: Xamarin.iOS
 control: LinearGauge
 documentation: ug
 ---
 
-# Getting Started with SfLinearGauge
+# Getting Started
 
 This section explains the steps required to configure a [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) control.
 
@@ -130,9 +130,7 @@ You can categorize the scale values using the start and end values properties in
 
 {% endhighlight %}
 
-![Xamarin.iOS LinearGauge Getting Started](getting-started_images/getting-started.png)
-
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/SfLinearGauge_GettingStarted_Xamarin.iOS).
+![Xamarin.iOS LinearGauge Getting Started](getting-started_images/)
 
 
 
