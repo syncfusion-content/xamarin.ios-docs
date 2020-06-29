@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multiple series and combination of series | SFChart | Xamarin.iOS | Syncfusion
-description: How to add multiple series and combination series in SFChart
+title: Multiple series and combination of series SFChart | Syncfusion
+description: How to add multiple series and combination series in the SFChart with code samples | Xamarin.iOS | Syncfusion
 platform: xamarin.ios
 control: SFChart
 documentation: ug
 ---
 
-# Chart Series
+# SfChart Series Types 
 
 [`SFSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries.html) is the visual representation of the data. [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) offers many types of series ranging from line series to financial series like HiLo and Candle. Based on your requirements and specifications, any type of Series can be added for data visualization.
 
