@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Ticks of Syncfusion RangeSlider control for Xamarin.iOS
-description: Learn how to set ticks in proper position for RangeSlider control in Xamarin.iOS
+description: This section provides the details about how to set ticks in proper position for RangeSlider control in Xamarin.iOS
 platform: Xamarin.iOS
 control: RangeSlider
 documentation: ug
 ---
 
-# Customizing ticks
+# Customizing SfRangeSlider Ticks
 
 Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
 
@@ -35,13 +35,13 @@ Tick marks can be placed either below the track in horizontal orientation or rig
 
 {% highlight c# %}
 
-	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementBottomRight;
+	rangeSlider.TickPlacement = SFTickPlacement.SFTickPlacementBottomRight;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/BottomRight.png)
+![The BottomRight](images/BottomRight.png)
 
 ## TopLeft
 
@@ -51,13 +51,13 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 {% highlight c# %}
 
-	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementTopLeft;
+	rangeSlider.TickPlacement = SFTickPlacement.SFTickPlacementTopLeft;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/TopLeft.png)
+![The TopLeft](images/TopLeft.png)
 
 ## Inline
 
@@ -67,13 +67,13 @@ Ticks are placed along the track.
 
 {% highlight c# %}
 
-	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementInline;
+	rangeSlider.TickPlacement = SFTickPlacement.SFTickPlacementInline;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/Inline.png)
+![The Inline](images/Inline.png)
 
 ## Outside
 
@@ -83,13 +83,13 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 {% highlight c# %}
 
-	rangeSlider.TickPlacement=SFTickPlacement.SFTickPlacementOutside;
+	rangeSlider.TickPlacement = SFTickPlacement.SFTickPlacementOutside;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/Outside.png)
+![The Outside](images/Outside.png)
 
 
 ## Customizing tick color
@@ -106,4 +106,4 @@ The range slider control provides the `TickColor` property to customize the colo
  
 {% endhighlight %}
 
-![](images/TickColor.png)
+![The TickColor](images/TickColor.png)

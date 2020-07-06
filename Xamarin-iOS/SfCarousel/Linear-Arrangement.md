@@ -1,19 +1,19 @@
 ---
-layout : post
-title : Overview of Syncfusion Carousel control for Xamarin.Forms
-description : Overview and key features of Carousel control
-platform : Xamarin
-control : Carousel
-documentation : ug
+layout: post
+title: Overview of Syncfusion Carousel control for Xamarin.Forms
+description: This section provides the details about the key features of Carousel control linear arrangement for Xamarin.iOS
+platform: Xamarin
+control: Carousel
+documentation: ug
 ---
 
-# Linear Arrangement
+# The Carousel Linear Arrangement
 
 The Carousel items can be populated in the view in a stacked linear layout by setting the `ViewMode` property to Linear. The present option is `Default`.
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
+SfCarousel carousel = new SfCarousel();
 carousel.ViewMode = SFCarouselViewMode.SFCarouselViewModeLinear;
 
 {% endhighlight %}

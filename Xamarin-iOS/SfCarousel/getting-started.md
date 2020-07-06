@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Getting Started with Syncfusion AutoComplete control for Xamarin.iOS
-description : A quick tour to initial users on Syncfusion carousel control for Xamarin.iOS platform
-platform : Xamarin.iOS
-control : Carousel
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion Carousel control for Xamarin.iOS
+description: This section provides the details about the tour to initial users on Syncfusion carousel control for Xamarin.iOS platform
+platform: Xamarin.iOS
+control: Carousel
+documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Carousel
 
 This section provides a quick overview for working with Essential Carousel for Xamarin.iOS. It guides you to the entire process of creating a SfCarousel in your Application.
 
@@ -27,7 +27,7 @@ iOS-unified\Syncfusion.SfCarousel.iOS.dll
 
 {% highlight C# %}
 
-using Syncfusion.SFCarousel.iOS; 
+using Syncfusion.SfCarousel.iOS; 
 
 {% endhighlight %}
 
@@ -36,7 +36,7 @@ using Syncfusion.SFCarousel.iOS;
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
+SfCarousel carousel = new SfCarousel();
 this.AddSubview(carousel);
 
 {% endhighlight %}
@@ -47,14 +47,14 @@ SfCarousel items can be populated with a collection of image data. An example to
 
 {% highlight c# %}
 
-NSMutableArray<SFCarouselItem> carouselItemCollection = new NSMutableArray<SFCarouselItem> ();
+NSMutableArray<SfCarouselItem> carouselItemCollection = new NSMutableArray<SfCarouselItem> ();
 for(int i=1;i<18;i++)
 {
-SFCarouselItem item =new SFCarouselItem();
-item.ImageName="image"+i+".png";
-carouselItemCollection.Add(item);
+    SfCarouselItem item = new SfCarouselItem();
+    item.ImageName = "image"+i+".png";
+    carouselItemCollection.Add(item);
 }
-carousel.DataSource=carouselItemCollection;
+carousel.DataSource = carouselItemCollection;
 
 {% endhighlight %}
 
@@ -64,9 +64,9 @@ SfCarousel provides option to set the distance between the items in the panel. T
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
-carousel.SelectedIndex=2;
-carousel.Offset=20;
+SfCarousel carousel = new SfCarousel();
+carousel.SelectedIndex = 2;
+carousel.Offset = 20;
 
 {% endhighlight %}
 
@@ -76,9 +76,9 @@ carousel.Offset=20;
 
 {% highlight C# %}
 
-SFCarousel carousel=new SFCarousel();
-carousel.ItemWidth=150;
-carousel.ItemHeight=170;
+SfCarousel carousel = new SfCarousel();
+carousel.ItemWidth = 150;
+carousel.ItemHeight = 170;
 
 {% endhighlight %}
 
@@ -89,9 +89,9 @@ Items in the SfCarousel control can be rotated in user defined angle. `RotationA
 
 {% highlight C# %}
 
-SFCarousel carousel = new SFCarousel();
-carousel.SelectedIndex=2;
-carousel.Offset=20;
+SfCarousel carousel = new SfCarousel();
+carousel.SelectedIndex = 2;
+carousel.Offset = 20;
 carousel.RotationAngle = 45;
 
 {% endhighlight %}

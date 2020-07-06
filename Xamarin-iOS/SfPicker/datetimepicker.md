@@ -28,7 +28,7 @@ public class DateTimePicker : SfPicker
 
 {% endtabs %}
 
-**Step****2** **:** After that create size Observable collection with object type in DateTimePicker class.
+**Step** **2** **:** After that create size Observable collection with object type in DateTimePicker class.
 
 **Collection details** **:**
 
@@ -336,4 +336,3 @@ Screen shot for the above code
 ![DateTimePicker](images/datetimepicker.png)
 
 We have attached the DateTimePicker sample for reference. Please download the sample from the following [link.]( https://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker-2063991188.zip)
-
