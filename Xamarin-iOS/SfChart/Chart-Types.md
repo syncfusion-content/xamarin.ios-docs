@@ -7,7 +7,7 @@ control: SFChart
 documentation: ug
 ---
 
-# Chart Types in Xamarin.iOS
+# Chart Types in SfChart 
 
 ## Line Chart
 
@@ -1787,6 +1787,7 @@ WaterfallSeries waterfallSeries = new WaterfallSeries()
 
 chart.Series.Add(waterfallSeries);
 
+
 {% endhighlight %}
 
 ## Box and Whisker Chart
@@ -2173,3 +2174,4 @@ You can customize the [`SFErrorBarSeries`] with the following style properties.
 {% endhighlight %}
 
 ![Customization of ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_LineStyle.png)
+
