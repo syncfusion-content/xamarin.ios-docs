@@ -1792,13 +1792,13 @@ chart.Series.Add(waterfallSeries);
 
 ## Box and Whisker Chart
 
-BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`SFBoxAndWhiskerSeries`] and add to the series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
+BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data sets. To render a box and whisker(box plot) chart, create an instance of [`SFBoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html) and add to the series collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html). You can use the following properties to customize the appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~Color.html) - used to change the color of the series.
-* [`BorderWidth`] - used to change the border width of the series.
-* [`BorderColor`] - used to change the border color of the series.
-* [`Spacing`] - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
-* [`Width`] - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
+* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~BorderWidth.html) - used to change the border width of the series.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~BorderColor.html) - used to change the border color of the series.
+* [`Spacing`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~Spacing.html) - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
+* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~Width.html) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
 
 {% highlight c# %}
 
@@ -1822,15 +1822,15 @@ chart.Series.Add(boxPlotSeries);
 
 ### Customize the series box mode
 
-The series box plotting mode can be changed using the [`BoxPlotMode`] property of [`SFBoxAndWhiskerSeries`]. The plotting mode of series can be calculated as follows:
+The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~BoxPlotMode.html) property of [`SFBoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
 
-* [`Exclusive`] - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
-* [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
-* [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
+* [`Exclusive`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.BoxPlotMode.html) - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.BoxPlotMode.html) - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.BoxPlotMode.html) - The quartile values are calculated by splitting the list and getting the median values.
 
-By default, [`BoxPlotMode`] value is [`Exclusive`].
+By default, [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~BoxPlotMode.html) value is [`Exclusive`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.BoxPlotMode.html).
 
-The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
+The following code shows how to set the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~BoxPlotMode.html) value as [`Inclusive`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.BoxPlotMode.html).
 
 {% highlight c# %}
 
@@ -1855,7 +1855,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### ShowMedian
 
-The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`SFBoxAndWhiskerSeries`].By default, [`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
+The Median values of given data set is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~ShowMedian.html) property of [`SFBoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html).By default, [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~ShowMedian.html) value is false. The following code demonstrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~ShowMedian.html) property.
 
 {% highlight c# %}
 
@@ -1879,9 +1879,9 @@ chart.Series.Add(boxPlotSeries);
 
 ### SymbolType
 
-The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`] value is [`Ellipse`].
+The [`SymbolType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~SymbolType.html) is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~SymbolType.html) value is [`Ellipse`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartSymbolType.html).
 
-The following code shows how to set the [`SymbolType`] value as [`Cross`]
+The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries~SymbolType.html) value as [`Cross`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartSymbolType.html).
 
 {% highlight c# %}
 
@@ -1906,7 +1906,7 @@ chart.Series.Add(boxPlotSeries);
 
 ## Error Bar Chart
 
-ErrorBarSeries is a graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`SFErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html)
+ErrorBarSeries is a graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`SFErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Series.html) collection property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html)
 
 {% highlight c# %}
 
@@ -1938,11 +1938,11 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBar chart type in Xamarin.iOS](charttypes_images/ErrorBar.png)
+![ErrorBar chart type in Xamarin.iOS](ChartTypes_images/ErrorBar.png)
 
 ### Type
 
-The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, you have to set values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
+The [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Type.html) property is used to define the error bar type value in Fixed, Custom, Percentage, StandardDeviation and StandardErrors. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarType.html). For all types, you have to set values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~HorizontalErrorValue.html) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~VerticalErrorValue.html) except [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarType.html).
 
 #### Fixed
 
@@ -1962,7 +1962,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![Fixed type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Fixed.png)
+![Fixed type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Fixed.png)
 
 #### Percentage
 
@@ -1982,7 +1982,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![Percentage type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Percentage.png)
+![Percentage type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Percentage.png)
 
 #### Standard Deviation
 
@@ -2002,7 +2002,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![StandardDeviation type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_StandardDeviation.png)
+![StandardDeviation type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_StandardDeviation.png)
 
 #### Standard Errors
 
@@ -2022,11 +2022,11 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![StandardErrors type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_StandardErrors.png)
+![StandardErrors type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_StandardErrors.png)
 
 #### Custom
 
-If [`Type`] is `Custom`, you have to set values for [`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the following code snippet.
+If [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Type.html) is [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarType.html), you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~HorizontalErrorPath.html) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~VerticalErrorPath.html) as shown in the following code snippet.
 
 {% highlight c# %}
 
@@ -2044,15 +2044,15 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![Custom type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Custom.png)
+![Custom type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Custom.png)
 
 ### Mode
 
-The error value shown on the chart is based on the [`Mode`] property. It have the values of `Both`, `Horizontal`, and `Vertical`. The default value of this property is [`Both`]. 
+The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) property. It have the values of [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html), [`Horizontal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html), and [`Vertical`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html). The default value of this property is [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html). 
 
 #### Both
 
-To display horizontal and vertical error values, you can set the [`Mode`] as `Both` as shown in the following code.
+To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) as [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html) as shown in the following code.
 
 {% highlight c# %}
 
@@ -2070,11 +2070,11 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBarMode support for ErrorBarSeries  in Xamarin.iOS Chart](charttypes_images/ErrorBar_Mode_Both.png)
+![ErrorBarMode support for ErrorBarSeries  in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Mode_Both.png)
 
 #### Horizontal
 
-To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the following code.
+To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) as [`Horizontal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html) as shown in the following code.
 
 {% highlight c# %}
 
@@ -2092,11 +2092,11 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Mode_Horizontal.png)
+![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Mode_Horizontal.png)
 
 #### Vertical
 
-To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the following code.
+To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) as [`Vertical`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html) as shown in the following code.
 
 {% highlight c# %}
 
@@ -2114,15 +2114,15 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Mode_Vertical.png)
+![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Mode_Vertical.png)
 
 ### Direction
 
-The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set the direction of error bar lines. The default value is [`Both`].
+The [`HorizontalDirection`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~HorizontalDirection.html) and [`VerticalDirection`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~VerticalDirection.html) properties are used to set the direction of error bar lines. The default value is [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarDirection.html).
 
-* [`Both`] - used to set error value in positive and negative directions.
-* [`Minus`] - used to set error value in a negative direction.
-* [`Plus`] - used to set error value in a positive direction.	
+* [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarDirection.html) - used to set error value in positive and negative directions.
+* [`Minus`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarDirection.html) - used to set error value in a negative direction.
+* [`Plus`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarDirection.html) - used to set error value in a positive direction.	
 
 {% highlight c# %}
 
@@ -2140,16 +2140,16 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBarDirection support for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Direction.png)
+![ErrorBarDirection support for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Direction.png)
 
 ### Customization
 
-You can customize the [`SFErrorBarSeries`] with the following style properties.
+You can customize the [`SFErrorBarSeries`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries.html) with the following style properties.
 
-* [`HorizontalLineStyle`] – used to customizes the appearance of horizontal error bar line.
-* [`VerticalLineStyle`] – used to customizes the appearance of vertical error error line.
-* [`HorizontalCapLineStyle`] – used to customizes the appearance of horizontal error bar cap line.
-* [`VerticalCapLineStyle`] – used customizes the appearance of vertical error bar cap line.
+* [`HorizontalLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~HorizontalLineStyle.html) – used to customizes the appearance of horizontal error bar line.
+* [`VerticalLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~VerticalLineStyle.html) – used to customizes the appearance of vertical error error line.
+* [`HorizontalCapLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~HorizontalCapLineStyle.html) – used to customizes the appearance of horizontal error bar cap line.
+* [`VerticalCapLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~VerticalCapLineStyle.html) – used customizes the appearance of vertical error bar cap line.
 
 {% highlight c# %}
  
