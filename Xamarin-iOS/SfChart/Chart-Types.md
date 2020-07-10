@@ -1938,11 +1938,11 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBar chart type in Xamarin.iOS](charttypes_images/ErrorBar.png)
+![ErrorBar chart type in Xamarin.iOS](ChartTypes_images/ErrorBar.png)
 
 ### Type
 
-The [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Type.html) property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandardErrors`. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarType.html). For all types, you have to set values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~HorizontalErrorValue.html) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~VerticalErrorValue.html) except [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarType.html).
+The [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Type.html) property is used to define the error bar type value in Fixed, Custom, Percentage, StandardDeviation and StandardErrors. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarType.html). For all types, you have to set values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~HorizontalErrorValue.html) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~VerticalErrorValue.html) except [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarType.html).
 
 #### Fixed
 
@@ -1962,7 +1962,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![Fixed type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Fixed.png)
+![Fixed type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Fixed.png)
 
 #### Percentage
 
@@ -1982,7 +1982,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![Percentage type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Percentage.png)
+![Percentage type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Percentage.png)
 
 #### Standard Deviation
 
@@ -2002,7 +2002,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![StandardDeviation type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_StandardDeviation.png)
+![StandardDeviation type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_StandardDeviation.png)
 
 #### Standard Errors
 
@@ -2022,11 +2022,11 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![StandardErrors type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_StandardErrors.png)
+![StandardErrors type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_StandardErrors.png)
 
 #### Custom
 
-If [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Type.html) is `Custom`, you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~HorizontalErrorPath.html) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~VerticalErrorPath.html) as shown in the following code snippet.
+If [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Type.html) is [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarType.html), you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~HorizontalErrorPath.html) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~VerticalErrorPath.html) as shown in the following code snippet.
 
 {% highlight c# %}
 
@@ -2044,15 +2044,15 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![Custom type for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Custom.png)
+![Custom type for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Custom.png)
 
 ### Mode
 
-The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) property. It have the values of `Both`, `Horizontal`, and `Vertical`. The default value of this property is [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html). 
+The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) property. It have the values of [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html), [`Horizontal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html), and [`Vertical`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html). The default value of this property is [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html). 
 
 #### Both
 
-To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) as `Both` as shown in the following code.
+To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) as [`Both`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html) as shown in the following code.
 
 {% highlight c# %}
 
@@ -2070,11 +2070,11 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBarMode support for ErrorBarSeries  in Xamarin.iOS Chart](charttypes_images/ErrorBar_Mode_Both.png)
+![ErrorBarMode support for ErrorBarSeries  in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Mode_Both.png)
 
 #### Horizontal
 
-To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) as `Horizontal` as shown in the following code.
+To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) as [`Horizontal`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html) as shown in the following code.
 
 {% highlight c# %}
 
@@ -2092,11 +2092,11 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Mode_Horizontal.png)
+![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Mode_Horizontal.png)
 
 #### Vertical
 
-To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) as `Vertical` as shown in the following code.
+To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFErrorBarSeries~Mode.html) as [`Vertical`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ErrorBarMode.html) as shown in the following code.
 
 {% highlight c# %}
 
@@ -2114,7 +2114,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Mode_Vertical.png)
+![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Mode_Vertical.png)
 
 ### Direction
 
@@ -2140,7 +2140,7 @@ chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
-![ErrorBarDirection support for ErrorBarSeries in Xamarin.iOS Chart](charttypes_images/ErrorBar_Direction.png)
+![ErrorBarDirection support for ErrorBarSeries in Xamarin.iOS Chart](ChartTypes_images/ErrorBar_Direction.png)
 
 ### Customization
 
