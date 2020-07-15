@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericTextBox control for Xamarin.iOS.
-description:  A quick tour to initial users on Syncfusion numerictextbox control for Xamarin.iOS platform 
-platform: Xamarin.iOS.
+title: Getting Started with Syncfusion NumericTextBox control for iOS.
+description: A quick tour to initial users on Syncfusion numerictextbox control and customization features available in Xamarin.iOS platform.
+platform: Xamarin.iOS
 control: NumericTextBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.iOS NumericTextBox
 
 This section explains you the steps to configure a NumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in NumericTextBox control.
                         
@@ -27,61 +27,62 @@ iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 * Adding namespace for the added assemblies. 
 
-{% tabs %}
-
 {% highlight c# %}
 
-	Using Syncfusion.SfNumericTextBox.iOS; 
+[C#]
+
+using Syncfusion.SfNumericTextBox.iOS; 
 
 {% endhighlight %}
-
-{% endtabs %}
 
 * Now add the SfNumericTextBox control with a required optimal name by using the included namespace.
 
-{% tabs %}
-
 {% highlight c# %}
 
-SFNumericTextBox numericTextBox =new SFNumericTextBox();
-this.AddSubview(numericTextBox); 
+[C#]
+
+SfNumericTextBox numericTextBox = new SfNumericTextBox()
+{
+	Frame = new CGRect(10, 50, 350, 40),
+};
+
+this.Add(numericTextBox); 
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ## Enable Parsing Mode
 
-SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
-
-{% tabs %}
+SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParserMode` property.
 
 {% highlight c# %}
 
-numericTextBox.ParsingMode=SFNumericTextBoxParsingMode.Decimal;
+[C#]
+
+numericTextBox.ParserMode = SFNumericTextBoxParsers.Decimal;
 	
 {% endhighlight %}
 
-{% endtabs %}
-
 ## Configuring properties
 
-Format string, value maximum number of decimal digits can be customized in SfNumericTextBox.
-
-{% tabs %}
+Format string, value and maximum number of decimal digits can be customized in SfNumericTextBox as below.
 
 {% highlight c# %}
 
-	numericTextBox.Value=1000;
-	numericTextBox.Watermark=(NSString)"Principal Amount";
-	numericTextBox.MaximumNumberDecimalDigits=2;
-	numericTextBox.FormatString="c";
-	numericTextBox.AllowNull= true;
-	numericTextBox.CultureInfo= new NSLocale("en_us");
-	numericTextBox.PercentDisplayMode = SFNumericTextBoxPercentDisplayMode.Compute;
+[C#]
+
+SfNumericTextBox numericTextBox = new SfNumericTextBox()
+{
+	Value = 1000,
+	Watermark = "Principal Amount",
+	MaximumNumberDecimalDigits = 2,
+	FormatString = "c",
+	AllowNull = true,
+	CultureInfo = new NSLocale("en_us"),
+	PercentDisplayMode = SFNumericTextBoxPercentDisplayMode.Compute
+};
 
 {% endhighlight %}
 
-{% endtabs %}
+![Display the NumericTextBox with customization features](images/NumericTextBox-iOS.png)
 
-![](images/NumericTextBox-iOS.png)
+You can find the complete getting started sample from [this](https://github.com/SyncfusionExamples/Getting-Started-of-SfNumericTextBox-Xamarin-iOS) link.
