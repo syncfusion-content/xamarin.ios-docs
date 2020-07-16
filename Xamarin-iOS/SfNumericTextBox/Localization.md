@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Localization in Syncfusion NumericTextBox control for Xamarin.iOS
-description: Learn how to localize the Syncfusion NumericTextBox control to any specific culture in Xamarin.iOS platform.
+title: Localization in Syncfusion SfNumericTextBox control for Xamarin.iOS
+description: Learn how to localize the Syncfusion SfNumericTextBox control to any specific culture in Xamarin.iOS platform.
 platform: Xamarin.iOS
-control: NumericTextBox
+control: SfNumericTextBox
 documentation: ug
 ---
-# Localization in NumericTextBox
+# Localization in SfNumericTextBox
 
 The SfNumericTextBox value can be localized to any specific culture. It can be specified by setting the `CultureInfo` property with `NSLocale` object instance.
 

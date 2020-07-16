@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericTextBox control for iOS.
-description: A quick tour to initial users on Syncfusion numerictextbox control and customization features available in Xamarin.iOS platform.
+title: Getting Started with Syncfusion SfNumericTextBox control for iOS.
+description: A quick tour to initial users on Syncfusion numeric textbox control and customization features available in Xamarin.iOS platform.
 platform: Xamarin.iOS
-control: NumericTextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 
-# Getting Started with Xamarin.iOS NumericTextBox
+# Getting Started with Xamarin.iOS SfNumericTextBox
 
 This section explains you the steps to configure a NumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in NumericTextBox control.
                         

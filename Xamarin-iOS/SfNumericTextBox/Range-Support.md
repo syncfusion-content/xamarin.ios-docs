@@ -1,12 +1,12 @@
 ---
-title: Range Support in Syncfusion NumericTextBox control for Xamarin.iOS
-description: Learn how to restrict the value with a specific range in NumericTextBox control in Xamarin.iOS platform.
+title: Range Support in Syncfusion SfNumericTextBox control for Xamarin.iOS
+description: Learn how to restrict the value with a specific range in SfNumericTextBox control in Xamarin.iOS platform.
 platform: Xamarin.iOS
-control: NumericTextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 
-# Range Support in NumericTextBox
+# Range Support in SfNumericTextBox
 
 Restrict the values within a specific range by setting the Maximum and Minimum property values.
 

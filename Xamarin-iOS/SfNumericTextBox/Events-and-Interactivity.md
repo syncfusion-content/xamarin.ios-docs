@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Events and Interactivity in Syncfusion NumericTextBox for Xamarin.iOS
-description: Learn how to get the value changed event and some interactivity for NumericTextBox in Xamarin.iOS platform.
+title: Events and Interactivity in Syncfusion SfNumericTextBox for Xamarin.iOS
+description: Learn how to get the value changed event and some interactivity for SfNumericTextBox in Xamarin.iOS platform.
 platform: Xamarin.iOS
-control: NumericTextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 # Events and Interactivity

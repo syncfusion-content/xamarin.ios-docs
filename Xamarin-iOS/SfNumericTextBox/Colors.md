@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Colors in Syncfusion NumericTextBox control for Xamarin.iOS
-description: Learn what are the color properties to customize the appearence of NumericTextBox in Xamarin.iOS platform.
+title: Colors in Syncfusion SfNumericTextBox control for Xamarin.iOS
+description: Learn what are the color properties to customize the appearence of SfNumericTextBox in Xamarin.iOS platform.
 platform: Xamarin.iOS
-control: NumericTextBox
+control: SfNumericTextBox
 documentation: ug
 ---
-# Colors in NumericTextBox
+# Color Customization in SfNumericTextBox
 
 SfNumericTextBox is used to set custom background, text, and border colors through the following properties:
 

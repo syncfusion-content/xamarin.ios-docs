@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion NumericTextBox control for Xamarin.iOS
-description: This explains about the overview and customization features available in NumericTextBox control in Xamarin.iOS platform.
+title: Overview of Syncfusion SfNumericTextBox control for Xamarin.iOS
+description: This explains about the overview and customization features available in SfNumericTextBox control in Xamarin.iOS platform.
 platform: Xamarin.iOS
-control: NumericTextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 
-# Overview of NumericTextBox
+# Overview of SfNumericTextBox
 
 The Essential Xamarin.iOS NumericTextBox is an advanced version of the Entry control that restricts input to numeric values.
 
