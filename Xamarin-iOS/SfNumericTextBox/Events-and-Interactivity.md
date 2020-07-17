@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events and Interactivity in Syncfusion NumericTextBox for Xamarin.iOS
+title: Events and Interactivity in Syncfusion Numeric TextBox for Xamarin.iOS
 description: Learn how to get the value changed event and some interactivity for SfNumericTextBox in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: SfNumericTextBox
@@ -12,9 +12,9 @@ documentation: ug
 
 ### ValueChanged 
 
-You can perform any operation when changing the value of NumericTextBox using the ValueChanged event. The ValueChanged event returns the changed value in NumericTextBox.
+You can perform any operation when changing the value of SfNumericTextBox using the ValueChanged event. The ValueChanged event returns the changed value in SfNumericTextBox.
 
-For example you can restrict the NumericTextBox value if it exceed's greater than 3 digits using following code.
+For example you can restrict the SfNumericTextBox value if it exceed's greater than 3 digits using following code.
 
 {% highlight c# %}
 
@@ -72,7 +72,7 @@ SfNumericTextBox numericTextBox = new SfNumericTextBox()
 
 {% endhighlight %}
 
-## Selection Support in NumericTextBox
+## Selection Support in SfNumericTextBox
 
 The `SelectAllOnFocus` property is used to specify whether the text should be selected when the control gets focus.
 

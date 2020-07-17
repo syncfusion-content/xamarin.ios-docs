@@ -10,13 +10,13 @@ documentation: ug
 
 SfNumericTextBox is used to set custom background, text, and border colors through the following properties:
 
-* `TextColor` - Sets the color of NumericTextBox's value
+* `TextColor` - Sets the color of numeric textBox's value
 
-* `BackgroundColor` - Sets the background color of NumericTextBox.
+* `BackgroundColor` - Sets the background color of numeric textBox.
 
-* `BorderColor` - Sets the border custom color of NumericTextBox
+* `BorderColor` - Sets the border custom color of numeric textBox
 
-* `WatermarkColor` - Sets the watermark custom color of NumericTextBox's watermark Text.
+* `WatermarkColor` - Sets the watermark custom color of numeric textBox's watermark Text.
 
 ## TextColor
 
@@ -34,7 +34,7 @@ SfNumericTextBox numericTextBox = new SfNumericTextBox()
 
 {% endhighlight %}
 
-![Display the NumericTextBox with TextColor](images/textcolor.png)
+![Display the SfNumericTextBox with TextColor](images/textcolor.png)
 
 ## BackgroundColor
 
@@ -52,7 +52,7 @@ SfNumericTextBox numericTextBox = new SfNumericTextBox()
 
 {% endhighlight %}
 
-![Display the NumericTextBox with BackgroundColor](images/backgroundcolor.png)
+![Display the SfNumericTextBox with BackgroundColor](images/backgroundcolor.png)
 
 ## BorderColor
 
@@ -69,7 +69,7 @@ SfNumericTextBox numericTextBox = new SfNumericTextBox()
 
 {% endhighlight %}
 
-![Display the NumericTextBox with BorderColor](images/bordercolor.png)
+![Display the SfNumericTextBox with BorderColor](images/bordercolor.png)
 
 ## WatermarkColor
 
@@ -88,4 +88,4 @@ SfNumericTextBox numericTextBox = new SfNumericTextBox()
 
 {% endhighlight %}
 
-![Display the NumericTextBox with WatermarkColor](images/watermarkcolor.png)
+![Display the SfNumericTextBox with WatermarkColor](images/watermarkcolor.png)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview of SfNumericTextBox
 
-The Essential Xamarin.iOS NumericTextBox is an advanced version of the Entry control that restricts input to numeric values.
+The Essential Xamarin.iOS SfNumericTextBox is an advanced version of the Entry control that restricts input to numeric values.
 
 Also provides a gesture friendly UI culture and can be configured to display different formats like currency format, scientific format etc.
 

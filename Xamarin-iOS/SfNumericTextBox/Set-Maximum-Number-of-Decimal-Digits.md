@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Various features in Syncfusion NumericTextBox control for Xamarin.iOS
-description: Learn how to decide maximum decimal digits to be displayed and nullable value support in NumericTextBox.
+title: Various features in Syncfusion Numeric TextBox control for Xamarin.iOS
+description: Learn how to decide maximum decimal digits to be displayed and nullable value support in Numeric TextBox.
 platform: Xamarin.iOS
-control: NumericTextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 # Set Maximum Number of Decimal Digits
@@ -20,5 +20,5 @@ numericTextBox.MaximumNumberDecimalDigits = 2;
   
 {% endhighlight %}
 
-![Display the NumericTextBox with MaximumNumberDecimalDigits](images/MaximumNumberDecimalDigits.png)
+![Display the SfNumericTextBox with MaximumNumberDecimalDigits](images/MaximumNumberDecimalDigits.png)
 
