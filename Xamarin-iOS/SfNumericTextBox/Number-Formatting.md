@@ -1,8 +1,8 @@
 ---
-title: Number Formatting in Syncfusion NumericTextBox control for Xamarin.iOS
+title: Number Formatting in Syncfusion SfNumericTextBox control for Xamarin.iOS
 description: Learn how to add format String, enable parser mode and percent display mode for SfNumericTextBox control.
 platform: Xamarin.iOS
-control: NumericTextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 
@@ -54,7 +54,7 @@ numericTextBox.FormatString = "p";
 	
 N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericTextBox. 
 
-![Display the NumericTextBox with FormatString](images/FormatString.png)
+![Display the SfNumericTextBox with FormatString](images/FormatString.png)
 
 ## Parser Input Value
 
@@ -70,7 +70,7 @@ numericTextBox.ParserMode = SFNumericTextBoxParsers.Decimal;
 	  
 {% endhighlight %}
 
-![Display the NumericTextBox with ParserMode](images/ParserMode.png)
+![Display the SfNumericTextBox with ParserMode](images/ParserMode.png)
 
 ## Compute to Percentage
 
@@ -100,6 +100,6 @@ numericTextBox.PercentDisplayMode = SFNumerictextBoxPercentDisplayMode.Compute;
 
 {% endhighlight %}
 
-![Display the NumericTextBox with PercentDisplayMode](images/PercentDisplayMode.png)
+![Display the SfNumericTextBox with PercentDisplayMode](images/PercentDisplayMode.png)
 
 

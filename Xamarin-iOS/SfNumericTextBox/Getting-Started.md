@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin.iOS SfNumericTextBox
 
-This section explains you the steps to configure a NumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in NumericTextBox control.
+This section explains you the steps to configure a numeric textbox control in a real-time scenario and also provides a walk-through on some of the customization features available in numeric textbox control.
                         
 ## Reference Essential Studio Components in your Solution
 
@@ -83,6 +83,6 @@ SfNumericTextBox numericTextBox = new SfNumericTextBox()
 
 {% endhighlight %}
 
-![Display the NumericTextBox with customization features](images/NumericTextBox-iOS.png)
+![Display the SfNumericTextBox with customization features](images/NumericTextBox-iOS.png)
 
 You can find the complete getting started sample from [this](https://github.com/SyncfusionExamples/Getting-Started-of-SfNumericTextBox-Xamarin-iOS) link.

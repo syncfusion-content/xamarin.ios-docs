@@ -20,5 +20,5 @@ numericTextBox.CultureInfo = new NSLocale("zh-CN");
 	
 {% endhighlight %}
 
-![Display the NumericTextBox with Culture](images/Culture.png)
+![Display the SfNumericTextBox with Culture](images/Culture.png)
 
