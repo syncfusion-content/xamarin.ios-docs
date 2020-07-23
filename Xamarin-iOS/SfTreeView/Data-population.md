@@ -17,6 +17,19 @@ TreeView can be populated either with the data source by using a [ItemsSource](h
 * [Create hierarchical data model](#create-data-model-for-treeview)
 * [Bind data model to treeview](#bind-to-hierarchical-data)
 
+To update the collection changes in UI, it is necessary to define [NotificationSubscriptionMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NotificationSubscriptionMode.html) to Treeview as CollectionChanged /PropertyChanged. 
+`NotificationSubscriptionMode` enum has following members:
+* CollectionChange - Updates its tree structure when child items collection gets changed.
+* PropertyChange - Updates its ChildItems when associated collection property gets changed.
+* None - It is a default mode and it doesn't reflect collection/property changes in UI.
+
+To decide how to populate the nodes, it is necessary to set this [NodePopulationMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NodePopulationMode.html) API to Treeview. 
+
+The `NodePopulationMode` API has following enum values:
+
+* OnDemand - Populate the child nodes only when parent nodes is expanded. It is the default value.
+* Instant - Populates all the child nodes when Treeview control is initially loaded.
+
 ### Create Data Model for treeview
 
 Create a simple data source as shown in the following code example in a new class file, and save it as FileManager.cs file:
@@ -255,3 +268,23 @@ public override void ViewDidLoad()
 Now, run the application to render the below output:
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound2036228865).
+
+##ResetTreeViewItems
+
+Using the [ResetTreeViewItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ResetTreeViewItems.html) method you can reset the visible treeview items. If parameter is null, visible treeview items will reset. If you are passing the `data object` as parameter, particular treeview item will reset. 
+
+{% tabs %}
+{% highlight c# %}
+treeView.ResetTreeViewItems();
+{% endhighlight %}
+{% endtabs %}
+
+##RefreshView
+
+You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~RefreshView.html) method. It will be used to refresh the items in the treeview at runtime while updating the view.
+
+{% tabs %}
+{% highlight c# %}
+treeView.RefreshView();
+{% endhighlight %}
+{% endtabs %}
