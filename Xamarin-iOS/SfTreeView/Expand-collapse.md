@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Expand and Collapse | TreeView for Xamarin.iOS | Syncfusion
-description: Describes about expanding and collapsing nodes of TreeView.
+description: Describes about expanding and collapsing nodes of TreeView in xamarin.iOS. It also explains about events associated with expanding and collapsing.
 platform: Xamarin.iOS
 control: SfTreeView
 documentation: ug
 ---
 
-# Expand and Collapse
+# Expand and Collapse with Xamarin.iOS TreeView (SfTreeView)
 
 The TreeView allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. 
 
@@ -62,7 +62,7 @@ treeView.CollapseNode(node);
 
 ### Expand and Collapse all the nodes
 
-Expand and Collapse all the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the `SfTreeView.ExpandAll` method and `SfTreeView.CollapseAll` method.
+Expand and Collapse all the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the [SfTreeView.ExpandAll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ExpandAll.html) method and [SfTreeView.CollapseAll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~CollapseAll.html) method.
 
 {% tabs %}
 {% highlight c# %}
