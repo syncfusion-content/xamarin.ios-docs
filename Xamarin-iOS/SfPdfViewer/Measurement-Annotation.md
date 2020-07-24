@@ -194,7 +194,7 @@ System.Collections.Generic.List<IAnnotation> overlappedAnnotation = args.Overlap
 {% endtabs %}
 
 
-## Deselecting measurement annotationss
+## Deselecting measurement annotations
 
 You can deselect a selected measurement annotation by tapping on it or somewhere else on the PDF page. Deselection can be detected using the [`ShapeAnnotationDeselected`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~ShapeAnnotationDeselected_EV.html) event. The properties of the deselected measurement annotation can be retrieved from the [`ShapeAnnotationDeselectedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationDeselectedEventArgs.html) parameter of the event handler. 
 
@@ -1345,7 +1345,7 @@ You can customize the default values of the begin style, end style, leader exten
 
 N> This will not affect the already added distance annotations. 
 
-You can set the begin style for the distance Annotation using the [`SfPdfViewe.MeasurementSettings.Distance.BeginStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~BeginStyle.html) property. The BeginStyle is an enum property with values Round, Closed, Diamond, None, Open, and Square. 
+You can set the begin style for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.BeginStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~BeginStyle.html) property. The BeginStyle is an enum property with values Round, Closed, Diamond, None, Open, and Square. 
 
 Refer to the following code example.
 
@@ -1361,7 +1361,7 @@ pdfViewer.MeasurementSettings.Distance.BeginStyle = BeginStyle.Round;
 {% endhighlight %}
 {% endtabs %}
 
-You can set the end style for the distance Annotation using the [`SfPdfViewe.MeasurementSettings.Distance.EndStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~EndStyle.html) property. The EndStyle is an enum property with values Round, Closed, Diamond, None, Open, and Square
+You can set the end style for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.EndStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~EndStyle.html) property. The EndStyle is an enum property with values Round, Closed, Diamond, None, Open, and Square
 
 Refer to the following code example.
 
@@ -1377,7 +1377,7 @@ pdfViewer.MeasurementSettings.Distance.EndStyle = EndStyle.Round;
 {% endhighlight %}
 {% endtabs %}
 
-You can set the leader extension for the distance Annotation using the [`SfPdfViewe.MeasurementSettings.Distance.LeaderExtension`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderExtension.html) property. Refer to the following code example.
+You can set the leader extension for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.LeaderExtension`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderExtension.html) property. Refer to the following code example.
 
 Refer to the following code example.
 
@@ -1393,7 +1393,7 @@ pdfViewer.MeasurementSettings.Distance.LeaderExtension = 30;
 {% endhighlight %}
 {% endtabs %}
 
-You can set the leader length for the distance Annotation using the [`SfPdfViewe.MeasurementSettings.Distance.LeaderLength`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderLength.html) property. Refer to the following code example.
+You can set the leader length for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.LeaderLength`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderLength.html) property. Refer to the following code example.
 
 Refer to the following code example.
 
@@ -1409,7 +1409,7 @@ pdfViewer.MeasurementSettings.Distance.LeaderLength = 30;
 {% endhighlight %}
 {% endtabs %}
 
-You can set the line cap position for the distance Annotation using the [`SfPdfViewe.MeasurementSettings.Distance.LineCapPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LineCapPosition.html) property. Refer to the following code example. The LineCapPosition is an enum property with values Inline, and Top. 
+You can set the line cap position for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.LineCapPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LineCapPosition.html) property. Refer to the following code example. The LineCapPosition is an enum property with values Inline, and Top. 
 
 Refer to the following code example.
 
@@ -1427,7 +1427,7 @@ pdfViewer.MeasurementSettings.Distance.LineCapPosition = LineCapPositon.Inline;
 
 ### Customizing the default appearance which are specific to the Volume Annotation. 
 
-You can customize the default depth value for the volume Annotation using the [`SfPdfViewe.MeasurementSettings.Volume.Depth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.VolumeAnnotation~Depth.html) property.
+You can customize the default depth value for the volume Annotation using the [`SfPdfViewer.MeasurementSettings.Volume.Depth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.VolumeAnnotation~Depth.html) property.
 
 The [`MeasurementUnit`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementUnit.html) is an enum property with values Inch, Pica, Point, Centimeter, Millimeter, and Feet.
 
@@ -1447,7 +1447,7 @@ pdfViewer.MeasurementSettings.Volume.Depth = (1f, MeasurementUnit.Centimeter);
 
 ### Customizing the default appearance which are specific to the Perimeter Annotation. 
 
-You can customize the auto-close option for the perimeter Annotation using the [`SfPdfViewe.MeasurementSettings.Perimeter.IsAutoCloseEnabled`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.PerimeterAnnotation~IsAutoCloseEnabled.html) property. Refer to the following code example.
+You can customize the auto-close option for the perimeter Annotation using the [`SfPdfViewer.MeasurementSettings.Perimeter.IsAutoCloseEnabled`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.PerimeterAnnotation~IsAutoCloseEnabled.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1481,7 +1481,7 @@ pdfViewer.MeasurementSettings.ScaleRatio = “1in = 2ft”;
 
 ## How to get or set a value that indicates whether the existing measurement values should be updated when the scale ratio is changed.
 
-You can get and set a value that indicates whether the existing measurement values should be updated when the scale ratio is changed using the [`SfPdfViewe.MeasurementSettings.ShouldUpdateScaleMeasureValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementSettings~ShouldUpdateScaleMeasureValue.html) property. Refer to the following code example
+You can get and set a value that indicates whether the existing measurement values should be updated when the scale ratio is changed using the [`SfPdfViewer.MeasurementSettings.ShouldUpdateScaleMeasureValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementSettings~ShouldUpdateScaleMeasureValue.html) property. Refer to the following code example
 
 {% tabs %}
 {% highlight c# %}
