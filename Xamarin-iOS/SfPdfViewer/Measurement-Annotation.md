@@ -9,6 +9,8 @@ documentation: ug
 
 # Working with measurements annotations
 
+Measurement annotations are used to measure the distance, area, perimeter, radius, volume of the objects present in a PDF document.
+
 The PDF viewer allows you to include the measurement annotations in a PDF document and provides options to modify or remove the existing measurement annotations. The supported measurement annotations are listed as follows. 
 
 1.	Area
