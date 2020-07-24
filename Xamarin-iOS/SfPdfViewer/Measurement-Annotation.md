@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Add & modify measurements using PDF viewer Xamarin.iOS | Syncfusion
-description: PDF viewer Xamarin.iOS allows user to add, move and delete measurements such as area, distance, perimeter, radius & volume.
+title:  Add and modify measurement annotations using PDF Viewer Xamarin.iOS | Syncfusion
+description: PDF viewer Xamarin.iOS allows user to add, move and delete measurement annotations such as area, distance, perimeter, radius & volume.
 platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug
@@ -9,9 +9,7 @@ documentation: ug
 
 # Working with measurements annotations
 
-Measurement annotations are used to measure the distance, area, perimeter, radius, volume of the objects present in a PDF document.
-
-The PDF viewer allows you to include the measurement annotations in a PDF document and provides options to modify or remove the existing measurement annotations. The supported measurement annotations are listed as follows. 
+Measurement annotations are used to measure the distance, area, perimeter, radius, volume of the objects present in a PDF document.The PDF viewer allows you to include the measurement annotations in a PDF document and provides options to modify or remove the existing measurement annotations. The supported measurement annotations are listed as follows. 
 
 1.	Area
 2.	Distance
@@ -99,7 +97,6 @@ private void PdfViewer_ShapeAnnotationAdded(object sender, ShapeAnnotationAddedE
 
             //Get the thickness of the added measurement annotation
             float thickness = args.Thickness;
-
         }
 
 {% endhighlight %}
@@ -177,20 +174,20 @@ The following code shows how to retrieve the properties of the selected measurem
 {% tabs %}
 {% highlight c# %}
 
-private void PdfViewer_ShapeAnnotationSelected(object sender, ShapeAnnotationSelectedEventArgs args)
-{
-//Get the selected measurement annotation type
-AnnotationMode annotationMode = args.AnnotationType;
+ private void PdfViewer_ShapeAnnotationSelected(object sender, ShapeAnnotationSelectedEventArgs args)
+        {
+            //Get the selected measurement annotation type
+            AnnotationMode annotationMode = args.AnnotationType;
 
-//Get the bounds of the selected measurement annotation
-CGRect bounds = args.Bounds;
+            //Get the bounds of the selected measurement annotation
+            CGRect bounds = args.Bounds;
 
-//Get the page number in which the selected measurement annotation is present
-int pageNumber = args.PageNumber;
+            //Get the page number in which the selected measurement annotation is present
+            int pageNumber = args.PageNumber;
 
-//Gets the list of other annotations that overlap the selected annotation
-System.Collections.Generic.List<IAnnotation> overlappedAnnotation = args.OverlappedAnnotations;
-}
+            //Gets the list of other annotations that overlap the selected annotation
+            System.Collections.Generic.List<IAnnotation> overlappedAnnotation = args.OverlappedAnnotations;
+        }
 
 {% endhighlight %}
 {% endtabs %}
@@ -217,22 +214,18 @@ The following code shows how to retrieve the properties of the deselected measur
 {% tabs %}
 {% highlight c# %}
 
-private void PdfViewer_ShapeAnnotationDeselected(object sender, ShapeAnnotationDeselectedEventArgs args) 
-{ 
+private void PdfViewer_ShapeAnnotationDeselected(object sender, ShapeAnnotationDeselectedEventArgs args)
+        {
+            //Get the deselected measurement annotation type
+            AnnotationMode annotationType = args.AnnotationType;
 
-//Get the deselected measurement annotation type
-AnnotationMode annotationType = args.AnnotationType; 
+            //Retrieves the bounds of the deselected measurement annotation. 
+            CGRect bounds = args.Bounds;
 
-//Retrieves the bounds of the deselected measurement annotation. 
-
-CGRect bounds = args.Bounds; 
-
-//Retrieves the page number where the deselected measurement annotation resides. 
-
-int page = args.PageNumber; 
-
-}
-
+            //Retrieves the page number where the deselected measurement annotation resides. 
+            int page = args.PageNumber;
+        }
+		
 {% endhighlight %}
 {% endtabs %}
 
@@ -261,50 +254,37 @@ The following code shows how to retrieve the properties of the moved or re-sized
 {% tabs %}
 {% highlight c# %}
 
-private void PdfViewer_AnnotationMovedOrResized(object sender, AnnotationMovedOrResizedEventArgs args) 
-{ 
+private void PdfViewer_AnnotationMovedOrResized(object sender, AnnotationMovedOrResizedEventArgs args)
+        {
+            //Determine whether the moved or resized annotation is a measurement annotation or some other annotation. 
+            if (sender as AreaAnnotation != null)
+            {
+                //The annotation is an area annotation 
+            }
+            else
+            {
+                //The annotation is not an area annotation
+            }
 
-//Determine whether the moved or resized annotation is a measurement annotation or some other annotation. 
+            //Retrieve the old bounds of the measurement annotation
+            CGRect oldBounds = args.OldBounds;
 
-if(sender as AreaAnnotation != null) 
-{ 
+            //Retrieve the new bounds of the measurement annotation 
+            CGRect newBounds = args.NewBounds;
 
-//The annotation is an area annotation 
+            //Get the page number in which the measurement annotation is moved or re-sized
+            int pageNumber = args.PageNumber;
 
-} 
-else 
-{ 
+            //Get the opacity value of the measurement annotation
+            nfloat opacity = args.Opacity;
 
-//The annotation is not an area annotation
+            //Get the color of the measurement annotation
+            UIColor color = args.Color;
 
-} 
-
-//Retrieve the old bounds of the measurement annotation 
-
-CGRect oldBounds = args.OldBounds; 
-
-//Retrieve the new bounds of the measurement annotation 
-
-CGRect newBounds = args.NewBounds; 
-
-//Get the page number in which the measurement annotation is moved or re-sized
-            
-int pageNumber = args.PageNumber;         
-
-//Get the opacity value of the measurement annotation
-            
-nfloat opacity = args.Opacity;
-
-//Get the color of the measurement annotation
-
-UIColor color = args.Color;      
-
-//Get the thickness of the measurement annotation
-
-float thickness = args.Thickness;
-
-}
-
+            //Get the thickness of the measurement annotation
+            float thickness = args.Thickness;
+        }
+		
 {% endhighlight %}
 {% endtabs %}
 
@@ -318,26 +298,19 @@ The following code sample shows how to remove the selected area measurement anno
 
 {% tabs %}
 {% highlight c# %}
-
+       
 AreaAnnotation areaAnnotation; 
+private void PdfViewer_ShapeAnnotationSelected(object sender, ShapeAnnotationSelectedEventArgs args)
+        {
+            //Cast the sender object as area annotation. 
+            areaAnnotation = sender as AreaAnnotation;
+        }
 
-private void PdfViewer_ShapeAnnotationSelected(object sender, ShapeAnnotationSelectedEventArgs args) 
-{ 
-
-//Cast the sender object as area annotation. 
-
-areaAnnotation = sender as AreaAnnotation; 
-
-} 
-
-private void deleteShapeAnnotationButton_Clicked(object sender, EventArgs e) 
-{ 
-
-//Delete the area annotation 
-
-pdfViewer.RemoveAnnotation(areaAnnotation); 
-
-}
+private void deleteShapeAnnotationButton_Clicked(object sender, EventArgs e)
+        {
+            //Delete the area annotation 
+            pdfViewer.RemoveAnnotation(areaAnnotation);
+        }
 
 {% endhighlight %}
 {% endtabs %}
@@ -366,23 +339,18 @@ The properties of the removed measurement annotation can be retrieved from the [
 private void PdfViewerControl_ShapeAnnotationRemoved(object sender, ShapeAnnotationRemovedEventArgs args)
         {
             //Get the removed measurement annotation type
-
             AnnotationMode annotationMode = args.AnnotationType;
 
             //Get the bounds of the removed measurement annotation
-
             CGRect bounds = args.Bounds;
 
             //Get the data points of the removed measurement annotation
-
             List<CGPoint> dataPoints = args.DataPoints;
 
             //Get the page number in which the removed measurement annotation was present
-
-            int pageNumber = args.PageNumber; 
-
+            int pageNumber = args.PageNumber;
         }
-
+		
 {% endhighlight %}
 {% endtabs %}
 
@@ -1135,7 +1103,7 @@ N>The following properties are common to all the Measurement annotations. In all
 
 ### Setting the default stroke color
 
-You can set the default stroke color for the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~StrokeColor.html) property. Refer to the following code example.
+You can set the default stroke color for the measurement annotations by using the [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~StrokeColor.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1151,7 +1119,7 @@ pdfViewer.MeasurementSettings.Area.StrokeColor = UIColor.Red;
 
 ### Setting the default opacity
 
-You can set the default opacity for the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~Opacity.html) property. The opacity value ranges from 0 to 1. Refer to the following code example.
+You can set the default opacity for the measurement annotations by using the [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~Opacity.html) property. The opacity value ranges from 0 to 1. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1167,7 +1135,7 @@ annotationpdfViewer.MeasurementSettings.Area.Opacity = 0.5f;
 
 ### Setting the default fill color
 
-You can set the default fill color for the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~FillColor.html) property. Refer to the following code example.
+You can set the default fill color for the measurement annotations by using the [`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~FillColor.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1183,7 +1151,7 @@ pdfViewer.MeasurementSettings.Area.FillColor = UIColor.Blue;
 
 ### Setting the default thickness
 
-You can set the thickness for the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.Thickness`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~Thickness.html) property. Refer to the following code example.
+You can set the thickness for the measurement annotations by using the [`Thickness`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~Thickness.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1199,7 +1167,7 @@ pdfViewer.MeasurementSettings.Area.Thickness = 5;
 
 ### Setting the default text
 
-You can set the text for the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.Text`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~Text.html) property. Refer to the following code example.
+You can set the text for the measurement annotations by using the [`Text`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~Text.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1215,7 +1183,7 @@ pdfViewer.MeasurementSettings.Area.Text = “Area”;
 
 ### Setting the default text background color
 
-You can set the background color for the text assigned to the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.TextBackgroundColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~TextBackgroundColor.html) property. Refer to the following code example.
+You can set the background color for the text assigned to the measurement annotations by using the [`TextBackgroundColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~TextBackgroundColor.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1231,7 +1199,7 @@ pdfViewer.MeasurementSettings.Area.TextBackgroundColor = UIColor.Black
 
 ### Setting the default text color
 
-You can set the color for the text assigned to the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~TextColor.html) property. Refer to the following code example.
+You can set the color for the text assigned to the measurement annotations by using the [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~TextColor.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1247,7 +1215,7 @@ pdfViewer.MeasurementSettings.Area.TextColor = UIColor.Black;
 
 ### Setting the default text opacity
 
-You can set the opacity for the text assigned to the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.TextOpacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~TextOpacity.html) property. Refer to the following code example.
+You can set the opacity for the text assigned to the measurement annotations by using the [`TextOpacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~TextOpacity.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1263,7 +1231,7 @@ pdfViewer.MeasurementSettings.Area.TextOpacity = 0.5f;
 
 ### Setting the default text size
 
-You can set the size for the text assigned to the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.TextSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~TextSize.html) property. Refer to the following code example.
+You can set the size for the text assigned to the measurement annotations by using the [`TextSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~TextSize.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1279,7 +1247,7 @@ pdfViewer.MeasurementSettings.Area.TextSize = 2;
 
 ### Setting the default minimum height
 
-You can set the minimum height for the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.MinimumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~MinimumHeight.html) property. Refer to the following code example.
+You can set the minimum height for the measurement annotations by using the [`MinimumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~MinimumHeight.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1295,7 +1263,7 @@ pdfViewer.MeasurementSettings.Area.MinimumHeight = 20;
 
 ### Setting the default minimum width
 
-You can set the minimum width for the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.MinimumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~MinimumWidth.html) property. Refer to the following code example.
+You can set the minimum width for the measurement annotations by using the [`MinimumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~MinimumWidth.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1311,7 +1279,7 @@ pdfViewer.MeasurementSettings.Area.MinimumWidth = 20;
 
 ### Setting the default maximum height
 
-You can set the maximum height for the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.MaximumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~MaximumHeight.html) property. Refer to the following code example.
+You can set the maximum height for the measurement annotations by using the [`MaximumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~MaximumHeight.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1327,7 +1295,7 @@ pdfViewer.MeasurementSettings.Area.MaximumHeight = 60;
 
 ### Setting the default maximum width
 
-You can set the maximum width for the measurement annotations by using the [`SfPdfViewer.MeasurementSettings.Area.MaximumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~MaximumWidth.html) property. Refer to the following code example.
+You can set the maximum width for the measurement annotations by using the [`MaximumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementAnnotationSettings~MaximumWidth.html) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1343,11 +1311,11 @@ pdfViewer.MeasurementSettings.Area.MaximumWidth = 60;
 
 ### Customizing the default appearance which is specific to the Distance Annotation
 
-You can customize the default values of the begin style, end style, leader extension, leader length, and line cap position of the distance Annotation to be added. 
+You can customize the default values of the [`begin style`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~BeginStyle.html), [`end style`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~EndStyle.html), [`leader extension`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderExtension.html), [`leader length`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderLength.html), and [`line cap position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LineCapPosition.html) of the distance Annotation to be added. 
 
 N> This will not affect the already added distance annotations. 
 
-You can set the begin style for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.BeginStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~BeginStyle.html) property. The BeginStyle is an enum property with values Round, Closed, Diamond, None, Open, and Square. 
+You can set the begin style for the distance measurement annotations using the [`BeginStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~BeginStyle.html) property. The BeginStyle is an enum property with values Round, Closed, Diamond, None, Open, and Square. 
 
 Refer to the following code example.
 
@@ -1363,7 +1331,7 @@ pdfViewer.MeasurementSettings.Distance.BeginStyle = BeginStyle.Round;
 {% endhighlight %}
 {% endtabs %}
 
-You can set the end style for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.EndStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~EndStyle.html) property. The EndStyle is an enum property with values Round, Closed, Diamond, None, Open, and Square
+You can set the end style for the distance measurement annotations using the [`EndStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~EndStyle.html) property. The EndStyle is an enum property with values Round, Closed, Diamond, None, Open, and Square
 
 Refer to the following code example.
 
@@ -1379,7 +1347,7 @@ pdfViewer.MeasurementSettings.Distance.EndStyle = EndStyle.Round;
 {% endhighlight %}
 {% endtabs %}
 
-You can set the leader extension for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.LeaderExtension`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderExtension.html) property. Refer to the following code example.
+You can set the leader extension for the distance measurement annotations using the [`LeaderExtension`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderExtension.html) property. Refer to the following code example.
 
 Refer to the following code example.
 
@@ -1395,7 +1363,7 @@ pdfViewer.MeasurementSettings.Distance.LeaderExtension = 30;
 {% endhighlight %}
 {% endtabs %}
 
-You can set the leader length for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.LeaderLength`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderLength.html) property. Refer to the following code example.
+You can set the leader length for the distance measurement annotations using the [`LeaderLength`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LeaderLength.html) property. Refer to the following code example.
 
 Refer to the following code example.
 
@@ -1411,7 +1379,7 @@ pdfViewer.MeasurementSettings.Distance.LeaderLength = 30;
 {% endhighlight %}
 {% endtabs %}
 
-You can set the line cap position for the distance Annotation using the [`SfPdfViewer.MeasurementSettings.Distance.LineCapPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LineCapPosition.html) property. Refer to the following code example. The LineCapPosition is an enum property with values Inline, and Top. 
+You can set the line cap position for the distance measurement annotations using the [`LineCapPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.DistanceAnnotation~LineCapPosition.html) property. Refer to the following code example. The LineCapPosition is an enum property with values Inline, and Top. 
 
 Refer to the following code example.
 
@@ -1429,7 +1397,7 @@ pdfViewer.MeasurementSettings.Distance.LineCapPosition = LineCapPositon.Inline;
 
 ### Customizing the default appearance which are specific to the Volume Annotation. 
 
-You can customize the default depth value for the volume Annotation using the [`SfPdfViewer.MeasurementSettings.Volume.Depth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.VolumeAnnotation~Depth.html) property.
+You can customize the default depth value for the volume measurement annotations using the [`Depth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.VolumeAnnotation~Depth.html) property.
 
 The [`MeasurementUnit`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.MeasurementUnit.html) is an enum property with values Inch, Pica, Point, Centimeter, Millimeter, and Feet.
 
@@ -1449,7 +1417,7 @@ pdfViewer.MeasurementSettings.Volume.Depth = (1f, MeasurementUnit.Centimeter);
 
 ### Customizing the default appearance which are specific to the Perimeter Annotation. 
 
-You can customize the auto-close option for the perimeter Annotation using the [`SfPdfViewer.MeasurementSettings.Perimeter.IsAutoCloseEnabled`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.PerimeterAnnotation~IsAutoCloseEnabled.html) property. Refer to the following code example.
+You can customize the auto-close option for the perimeter measurement annotations using the [`IsAutoCloseEnabled`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.PerimeterAnnotation~IsAutoCloseEnabled.html) property. Once it is enabled, you can close the perimeter measurement annotation by moving the line nearer to the origin point or by double tapping on the PDF page. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -1499,7 +1467,7 @@ pdfViewer.MeasurementSettings.ShouldUpdateScaleMeasureValue = true;
 
 ## How to enable or disable measurement annotation interaction
 
-The interaction operation can be enabled or disabled for the measurement annotation alone by setting the [`IsLocked`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.AreaAnnotation~IsLocked.html) API to false or true respectively.
+The interaction operation can be enabled or disabled for the measurement annotation alone by setting the [`SfPdfViewer.MeasurementSettings.Area.IsLocked`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.AreaAnnotation~IsLocked.html) API to false or true respectively.
 
 For example, the following code disables the interaction operations for all measurement annotations in the PDF. But, the other annotation types can be selected, moved, resized, or removed.
 
@@ -1507,19 +1475,15 @@ For example, the following code disables the interaction operations for all meas
 {% highlight c# %}
 
 //Disable the area annotation interaction
-
 pdfViewerControl.MeasurementSettings.Area.IsLocked = true;
 
 //Disable the perimeter annotation interaction
-
 pdfViewerControl.MeasurementSettings.Perimeter.IsLocked = true;
 
 //Disable the volume annotation interaction
-
 pdfViewerControl.MeasurementSettings.Volume.IsLocked = true;
 
 //Disable the distance annotation interaction
-
 pdfViewerControl.MeasurementSettings.Distance.IsLocked = true;
 
 {% endhighlight %}
@@ -1532,20 +1496,17 @@ The interaction with the measurement annotation types will be allowed only if th
 
 //Disables the measurement annotation interaction, though its 'IsLocked' property is set to ‘false’
  pdfViewerControl.AnnotationSettings.IsLocked = true;
-/Disable the area annotation interaction
-
+ 
+//Disable the area annotation interaction
 pdfViewerControl.MeasurementSettings.Area.IsLocked = false;
 
 //Disable the perimeter annotation interaction
-
 pdfViewerControl.MeasurementSettings.Perimeter.IsLocked = false;
 
 //Disable the volume annotation interaction
-
 pdfViewerControl.MeasurementSettings.Volume.IsLocked = false;
 
 //Disable the distance annotation interaction
-
 pdfViewerControl.MeasurementSettings.Distance.IsLocked = false;
 
 {% endhighlight %}
@@ -1553,7 +1514,7 @@ pdfViewerControl.MeasurementSettings.Distance.IsLocked = false;
 
 ## How to get the list of Annotations that overlaps the selected measurement Annotation
 
-You can retrieve the list of Annotations that overlaps the selected measurement Annotation from the [`ShapeAnnotationSelectedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSelectedEventArgs.html) parameter of the ShapeAnnotationSelected event handler.
+You can retrieve the list of annotations that overlaps the selected measurement annotation from the [`ShapeAnnotationSelectedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSelectedEventArgs.html) parameter of the [`ShapeAnnotationSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~ShapeAnnotationSelected_EV.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -1565,10 +1526,10 @@ SfPdfViewer pdfViewer = new SfPdfViewer();
 pdfViewer.ShapeAnnotationSelected += PdfViewer_ShapeAnnotationSelected;
 
 private void PdfViewer_ShapeAnnotationSelected(object sender, ShapeAnnotationSelectedEventArgs args)
-{
-//Gets the list of Annotations that overlap the selected Annotation
-System.Collections.Generic.List<IAnnotation> overlappedAnnotation = args.OverlappedAnnotations;
-}
+        {
+            //Gets the list of Annotations that overlap the selected Annotation
+            System.Collections.Generic.List<IAnnotation> overlappedAnnotation = args.OverlappedAnnotations;
+        }
 
 {% endhighlight %}
 {% endtabs %}
