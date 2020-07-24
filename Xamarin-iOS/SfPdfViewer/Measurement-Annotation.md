@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Add and modify measurement annotations using PDF Viewer Xamarin.iOS | Syncfusion
-description: PDF viewer Xamarin.iOS allows user to add, move and delete measurement annotations such as area, distance, perimeter, radius & volume.
+title:  Add and modify measurements using PDF Viewer Xamarin.iOS | Syncfusion
+description: PDF Viewer Xamarin.iOS allows user to add, move and delete measurement annotations such as area, distance, perimeter, radius & volume.
 platform: Xamarin.iOS
 control: SfPdfViewer
 documentation: ug
