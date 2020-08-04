@@ -72,6 +72,31 @@ treeView.SelectedItems.Clear();
 
 The TreeView gets the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when selecting single item. When selecting more than one item, the `SelectedItem` property returns the first selected item, and the `CurrentItem` property returns the last selected item.
 
+## FullRowSelect
+
+By default, the selection start from indent level only. To select the full row, enable the [FullRowSelect](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~FullRowSelect.html) property. By setting the `FullRowSelect` to `true` the selection spans the width of tree view control.
+
+{% tabs %}
+{% highlight c# %}
+treeView.FullRowSelect = true;;
+{% endhighlight %}
+{% endtabs %}
+
+## SelectAll
+
+Using the [SelectAll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectAll.html) method, you can select all the items in the TreeView.
+
+{% tabs %}
+{% highlight c# %}
+treeView.Loaded += TreeView_Loaded;
+
+private void TreeView_Loaded(object sender, TreeViewLoadedEventArgs e)
+{
+    treeView.SelectAll();
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Selected item style
 
 ### Selection background
