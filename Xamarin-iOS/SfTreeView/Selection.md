@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Selection | TreeView for Xamarin.iOS | Syncfusion
-description: Describes Selection features of TreeView.
+description:  Describes the TreeView selection and its related operations by interacting UI or manually using methods..
 platform: Xamarin.iOS
 control: SfTreeView
 documentation: ug
 ---
 
-# Selection
+# Selection in Xamarin.iOS TreeView (SfTreeView)
 
 This section explains how to perform selection and its related operations in the TreeView.
 
