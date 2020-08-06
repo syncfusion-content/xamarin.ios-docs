@@ -268,23 +268,3 @@ public override void ViewDidLoad()
 Now, run the application to render the below output:
 
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound2036228865).
-
-##ResetTreeViewItems
-
-Using the [ResetTreeViewItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ResetTreeViewItems.html) method you can reset the visible treeview items. If parameter is null, visible treeview items will reset. If you are passing the `data object` as parameter, particular treeview item will reset. 
-
-{% tabs %}
-{% highlight c# %}
-treeView.ResetTreeViewItems();
-{% endhighlight %}
-{% endtabs %}
-
-##RefreshView
-
-You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~RefreshView.html) method. It will be used to refresh the items in the treeview at runtime while updating the view.
-
-{% tabs %}
-{% highlight c# %}
-treeView.RefreshView();
-{% endhighlight %}
-{% endtabs %}
