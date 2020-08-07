@@ -52,6 +52,19 @@ treeView.SelectedItems.Add(viewModel.CountriesInfo[3]);
 {% endhighlight %}
 {% endtabs %}
 
+Using the [SelectAll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectAll.html) method, you can select all the items in the TreeView.
+
+{% tabs %}
+{% highlight c# %}
+treeView.Loaded += TreeView_Loaded;
+
+private void TreeView_Loaded(object sender, TreeViewLoadedEventArgs e)
+{
+    treeView.SelectAll();
+}
+{% endhighlight %}
+{% endtabs %}
+
 W> If an item is selected programmatically when `SelectionMode` is `None` and if multiple items are programmatically selected when `SelectionMode` is `Single` or `SingleDeselect`, then exception will be thrown internally.
 
 ## Selected items 
@@ -74,26 +87,11 @@ The TreeView gets the selected item by using the [SelectedItem](https://help.syn
 
 ## FullRowSelect
 
-By default, the selection start from indent level only. To select the full row, enable the [FullRowSelect](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~FullRowSelect.html) property. By setting the `FullRowSelect` to `true` the selection spans the width of tree view control.
+By default, the selection starts from the indent level only. You can select the full row by enable the [FullRowSelect](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~FullRowSelect.html) property. By setting the `FullRowSelect` to `true` the selection spans the width of tree view control.
 
 {% tabs %}
 {% highlight c# %}
 treeView.FullRowSelect = true;;
-{% endhighlight %}
-{% endtabs %}
-
-## SelectAll
-
-Using the [SelectAll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectAll.html) method, you can select all the items in the TreeView.
-
-{% tabs %}
-{% highlight c# %}
-treeView.Loaded += TreeView_Loaded;
-
-private void TreeView_Loaded(object sender, TreeViewLoadedEventArgs e)
-{
-    treeView.SelectAll();
-}
 {% endhighlight %}
 {% endtabs %}
 
