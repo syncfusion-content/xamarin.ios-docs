@@ -17,18 +17,18 @@ TreeView can be populated either with the data source by using a [ItemsSource](h
 * [Create hierarchical data model](#create-data-model-for-treeview)
 * [Bind data model to treeview](#bind-to-hierarchical-data)
 
-To update the collection changes in UI, it is necessary to define [NotificationSubscriptionMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NotificationSubscriptionMode.html) to Treeview as CollectionChanged /PropertyChanged. 
-`NotificationSubscriptionMode` enum has following members:
-* CollectionChange - Updates its tree structure when child items collection gets changed.
-* PropertyChange - Updates its ChildItems when associated collection property gets changed.
-* None - It is a default mode and it doesn't reflect collection/property changes in UI.
+To update the collection changes in UI, it is necessary to define the [NotificationSubscriptionMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NotificationSubscriptionMode.html) to treeview as the CollectionChanged /PropertyChanged. 
+`NotificationSubscriptionMode` enum has the following members:
+* CollectionChange: Updates its tree structure when the child items collection gets changed.
+* PropertyChange: Updates its ChildItems when the associated collection property gets changed.
+* None: It is a default mode and it does not reflect the collection/property changes in UI.
 
 To decide how to populate the nodes, it is necessary to set this [NodePopulationMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NodePopulationMode.html) API to Treeview. 
 
-The `NodePopulationMode` API has following enum values:
+The `NodePopulationMode` API has the following enum values:
 
-* OnDemand - Populate the child nodes only when parent nodes is expanded. It is the default value.
-* Instant - Populates all the child nodes when Treeview control is initially loaded.
+* OnDemand: Populate the child nodes only when the parent nodes are expanded. It is the default value.
+* Instant: Populates all the child nodes when the Treeview control is initially loaded.
 
 ### Create Data Model for treeview
 

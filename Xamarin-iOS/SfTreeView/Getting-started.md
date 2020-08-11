@@ -845,7 +845,7 @@ public override void ViewDidLoad()
 
 ## Reset tree view items
 
-You can reset the visible treeview items by using the [ResetTreeViewItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ResetTreeViewItems.html) method. If parameter is null, all the visible treeview items will reset. If you are passing the `data object` as parameter, particular treeview item will reset.  
+You can reset the visible treeview items by using the [ResetTreeViewItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ResetTreeViewItems.html) method. If the parameter is null, all the visible treeview items will reset. If you are passing the `data object` as a parameter, a particular treeview item will reset.
 
 {% tabs %}
 {% highlight c# %}
