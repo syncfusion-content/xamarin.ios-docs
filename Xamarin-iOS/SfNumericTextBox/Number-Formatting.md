@@ -1,14 +1,14 @@
 ---
-title: Number Formatting in Syncfusion NumericTextBox control for Xamarin.iOS
-description: Learn how to add format String, enable parser mode and percent display mode for NumericTextBox control.
+title: Number Formatting in Syncfusion numeric textbox in Xamarin.iOS
+description: Learn how to add format String, enable parser mode and percent display mode for SfNumericTextBox control.
 platform: Xamarin.iOS
-control: NumericTextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 
-# Number Formatting
+# Number Formatting in SfNumericTextBox
 
-The Values of the SfNumericTextBox can be configured to display different formats like currency format, percent format etc. 
+The values of the SfNumericTextBox can be configured to display different formats like currency format, percent format etc. 
 
 ## Format String
 
@@ -19,66 +19,58 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 ### Display Currency Notation
 
 `c` - Displays the value with currency notation.
-
-{% tabs %}
 	
 {% highlight c# %}
+
+[C#]
 	
-	numericTextBox.FormatString=@"c";
+numericTextBox.FormatString = "c";
 	 
 {% endhighlight %}
-
-{% endtabs %}
 	
 ### Display Number Notation
 
 `n` – Display the value in number format.
-
-{% tabs %}
 	
 {% highlight c# %}
+
+[C#]
 	
-	numericTextBox.FormatString=@"n";
+numericTextBox.FormatString = "n";
 	 
 {% endhighlight %}
-
-{% endtabs %}
 	
 ### Display Percentage Notation
 
 `p` – Display the value in percentage.
-
-{% tabs %}
 	
 {% highlight c# %}
 
-	numericTextBox.FormatString=@"p";
+[C#]
+
+numericTextBox.FormatString = "p";
 	 
 {% endhighlight %}
-
-{% endtabs %}
 	
 N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericTextBox. 
 
-![](images/FormatString.png)
+![Display the SfNumericTextBox with FormatString](images/FormatString.png)
 
 ## Parser Input Value
 
-The value of the SfNumericTextBox can be parsed based on the `ParsingMode` property. 
+The value of the SfNumericTextBox can be parsed based on the `ParserMode ` property. 
 
-N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
-
-{% tabs %}
+N> The `ParserMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParserMode` is Double.
 
 {% highlight c# %}
 
-	numeric.ParserMode=SFNumericTextBoxParserMode.Decimal;
+[C#]
+
+numericTextBox.ParserMode = SFNumericTextBoxParsers.Decimal;
 	  
 {% endhighlight %}
 
-{% endtabs %}
-
-![](images/ParserMode.png)
+![Display the SfNumericTextBox with ParserMode](images/ParserMode.png)
 
 ## Compute to Percentage
 
@@ -90,28 +82,24 @@ It provides the following options:
 
 * `Value`: Displays the value with percentage symbol.
 
-{% tabs %}
-
 {% highlight c# %}
 
-	numeric.PercentDisplayMode=SFNumericTextBoxPercentDisplayMode.Value;
+[C#]
+
+numericTextBox.PercentDisplayMode = SFNumericTextBoxPercentDisplayMode.Value;
 
 {% endhighlight %}
-
-{% endtabs %}
 
 * `Compute`: Displays the computed value with percentage symbol.
 
-{% tabs %}
-
 {% highlight c# %}
 
-	numeric.PercentDisplayMode=SFNumerictextBoxPercentDisplayMode.Compute;
+[C#]
+
+numericTextBox.PercentDisplayMode = SFNumerictextBoxPercentDisplayMode.Compute;
 
 {% endhighlight %}
 
-{% endtabs %}
-
-![](images/PercentDisplayMode.png)
+![Display the SfNumericTextBox with PercentDisplayMode](images/PercentDisplayMode.png)
 
 
