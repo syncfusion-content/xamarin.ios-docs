@@ -17,7 +17,7 @@ TreeView can be populated either with the data source by using a [ItemsSource](h
 * [Create hierarchical data model](#create-data-model-for-treeview)
 * [Bind data model to treeview](#bind-to-hierarchical-data)
 
-To update the collection changes in UI, it is necessary to define the [NotificationSubscriptionMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NotificationSubscriptionMode.html) to treeview as the CollectionChanged /PropertyChanged. 
+To update the collection changes in UI, it is necessary to define the [NotificationSubscriptionMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NotificationSubscriptionMode.html) to treeview as the CollectionChanged/PropertyChanged. 
 `NotificationSubscriptionMode` enum has the following members:
 * CollectionChange: Updates its tree structure when the child items collection gets changed.
 * PropertyChange: Updates its ChildItems when the associated collection property gets changed.
