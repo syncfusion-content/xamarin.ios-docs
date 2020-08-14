@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ImageFilter in Syncfusion SfImageEditor control in Xamarin.iOS
-description: This section describes how to apply ImageFilter support in SfImageEditor control for Xamarin.iOS platform
+description: This section describes how to apply for ImageFilter support in SfImageEditor control for Xamarin.iOS platform
 platform: Xamarin.iOS
 control: SfImageEditor
 documentation: ug
@@ -27,12 +27,7 @@ The hue represents the dominant wavelength of the color. The value of the hue ef
 
 {% highlight C# %}
 
-public MainPage()
-{               
-    . . .
     editor.ApplyImageEffect(ImageEffect.Hue, 120);
-    . . .
-}
 
 {% endhighlight %}
 
@@ -44,12 +39,7 @@ The saturation represents the intensity of the color. The value of the saturatio
 
 {% highlight C# %}
 
-public MainPage()
-{               
-    . . .
     editor.ApplyImageEffect(ImageEffect. Saturation, -80);
-    . . .
-}
 
 {% endhighlight %}
 
@@ -61,12 +51,7 @@ The brightness represents how bright the color is. The value of the brightness e
 
 {% highlight C# %}
 
-public MainPage()
-{               
-    . . .
     editor.ApplyImageEffect(ImageEffect.Brightness, -60);
-    . . .
-}
 
 {% endhighlight %}
 
@@ -78,12 +63,7 @@ The contrast represents the color contrast of an image. The value of the contras
 
 {% highlight C# %}
 
-public MainPage()
-{               
-    . . .
     editor.ApplyImageEffect(ImageEffect. Contrast, -30);
-    . . .
-}
 
 {% endhighlight %}
 
@@ -95,12 +75,7 @@ The blur represents the clearness of the image. The value of the blur effect ran
 
 {% highlight C# %}
 
-public MainPage()
-{               
-    . . .
     editor.ApplyImageEffect(ImageEffect.Blur, 4);
-    . . .
-}
 
 {% endhighlight %}
 
@@ -112,12 +87,7 @@ The sharpen is used to highlight edges and fine details in an image. The value o
 
 {% highlight C# %}
 
-public MainPage()
-{               
-    . . .
     editor.ApplyImageEffect(ImageEffect.Sharpen, 2);
-    . . .
-}
 
 {% endhighlight %}
 
