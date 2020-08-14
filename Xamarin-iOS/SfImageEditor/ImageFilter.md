@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ImageFilter in Syncfusion SfImageEditor control in Xamarin.iOS
-description: This section describes how to apply image filter support in SfImageEditor control for Xamarin.iOS platform
+description: This section describes how to apply ImageFilter support in SfImageEditor control for Xamarin.iOS platform
 platform: Xamarin.iOS
 control: SfImageEditor
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Image filter in SfImageEditor
 
-Using the SfImageEditor control, you can add effects such as hue, saturation, brightness, contrast, blur, and sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~ApplyImageEffect(ImageEffect,Single).html) method contains two arguments: [`ImageEffect`]https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~ImageEffect.html) and [`EffectValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~EffectValue.html). The ImageEffect is an enum, which contains the following effects:
+Using the SfImageEditor control, you can add effects such as hue, saturation, brightness, contrast, blur, and sharpen to the image. These effects can be applied from the toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~ApplyImageEffect(ImageEffect,Single).html) method contains two arguments: [`ImageEffect`]https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~ImageEffect.html) and [`EffectValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~EffectValue.html). The ImageEffect is an enum, which contains the following effects:
 
 * Hue
 * Saturation
@@ -123,4 +123,4 @@ public MainPage()
 
 ![SfImageEditor](ImageEditor_images/Sharpen.PNG)
 
-N> The ImageEffect enum also contains “None” option, which removes all the previously applied effects, which are not saved and displays the original image. When applying effects using the ApplyImageEffect method, the effects will be saved automatically. But, if you apply effects from toolbar, each effect will be saved only when clicking the OK button, else all the applied effects will not be saved.
+N> The ImageEffect enum also contains “None” option, which removes all the previously applied effects, which are not saved and displays the original image. When applying effects using the ApplyImageEffect method, the effects will be saved automatically. But, if you apply effects from the toolbar, each effect will be saved only by clicking the OK button, else all the applied effects will not be saved.
