@@ -9,7 +9,7 @@ documentation: ug
 
 # Image filter in SfImageEditor
 
-Using the SfImageEditor control, you can add effects such as hue, saturation, brightness, contrast, blur, and sharpen to the image. These effects can be applied from the toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~ApplyImageEffect(ImageEffect,Single).html) method contains two arguments: [`ImageEffect`]https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~ImageEffect.html) and [`EffectValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~EffectValue.html). The ImageEffect is an enum, which contains the following effects:
+Using the SfImageEditor control, you can add effects such as hue, saturation, brightness, contrast, blur, and sharpen to the image. These effects can be applied from the toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~ApplyImageEffect(ImageEffect,Single).html) method contains two arguments: [`ImageEffect`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~ImageEffect.html) and [`EffectValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS~Syncfusion.SfImageEditor.iOS.SfImageEditor~EffectValue.html). The ImageEffect is an enum, which contains the following effects:
 
 * Hue
 * Saturation
