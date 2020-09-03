@@ -19,27 +19,27 @@ Following are the list of options available to show SfPopupLayout at various pos
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~IsOpen.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.SfPopupLayout.html#Syncfusion_iOS_PopupLayout_SfPopupLayout_IsOpen)'| markdownify }} </td>
 <td> Shows SfPopupLayout at the center.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.Show()](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.SfPopupLayout.html#Syncfusion_iOS_PopupLayout_SfPopupLayout_Show)'| markdownify }} </td>
 <td> It is similar to <code>SfPopupLayout.IsOpen</code> property.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.SfPopupLayout.html#Syncfusion_iOS_PopupLayout_SfPopupLayout_Show)'| markdownify }} </td>
 <td> Shows SfPopupLayout at the specified X and y position.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.SfPopupLayout.html#Syncfusion_iOS_PopupLayout_SfPopupLayout_ShowAtTouchPoint)'| markdownify }} </td>
 <td> Shows SfPopupLayout at the touch point.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowRelativeToView.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.SfPopupLayout.html#Syncfusion_iOS_PopupLayout_SfPopupLayout_ShowRelativeToView_UIKit_UIView_Syncfusion_iOS_PopupLayout_RelativePosition_System_Double_System_Double_)'| markdownify }} </td>
 <td> Shows SfPopupLayout at the position relative to the specified view.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~ShowRelativeToView(UIView,RelativePosition,Double,Double).html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.SfPopupLayout.html#Syncfusion_iOS_PopupLayout_SfPopupLayout_ShowRelativeToView_UIKit_UIView_Syncfusion_iOS_PopupLayout_RelativePosition_System_Double_System_Double_)'| markdownify }} </td>
 <td> Shows the SfPopupLayout at an absolute x, y coordinate from the relative position of the specified view.</td>
 
 </tr>
@@ -49,8 +49,8 @@ Following are the list of options available to show SfPopupLayout at various pos
 
 SfPopupLayout can be shown at the center by using the following options.
 
-  * [IsOpen Property](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~IsOpen.html)
-  * [SfPopupLayout.Show()](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~Show.html)
+  * [IsOpen Property](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.SfPopupLayout.html#Syncfusion_iOS_PopupLayout_SfPopupLayout_IsOpen)
+  * [SfPopupLayout.Show()](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.SfPopupLayout.html#Syncfusion_iOS_PopupLayout_SfPopupLayout_Show)
 
 To open the SfPopupLayout, use the `SfPopupLayout.IsOpen` property as in the following code sample.
 

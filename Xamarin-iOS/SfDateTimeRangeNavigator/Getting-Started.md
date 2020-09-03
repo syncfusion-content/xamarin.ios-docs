@@ -15,13 +15,13 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 ## Initialize SFDateTimeRangeNavigator
 
-[`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the datetime range navigator in designer.
+[`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) allows users to drag the designer screen from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the datetime range navigator in designer.
 
 ![SFDateTimeRangeNavigator Designer support in Xamarin.iOS](Getting-Started-images/designer.gif) 
 
 ## Adding and configuring the SFDateTimeRangeNavigator
 
-First, let us initialize the control with major and minor date time scales by specifying the minimum and maximum date to be visualized in the control using [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~Maximum.html) properties.
+First, let us initialize the control with major and minor date time scales by specifying the minimum and maximum date to be visualized in the control using [`Minimum`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html#Syncfusion_SfChart_iOS_SFDateTimeRangeNavigator_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html#Syncfusion_SfChart_iOS_SFDateTimeRangeNavigator_Maximum) properties.
 
 Following code example illustrates this,
 
@@ -138,7 +138,7 @@ SFDateTimeRangeNavigator rangeNavigator      = new SFDateTimeRangeNavigator ();
 
 ## Handle range selection
 
-In real time, other controls like chart, grid etc., are updated in response to the range selection performed in SFDateTimeRangeNavigator. You can handle the selection using [`RangeChanged`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorDelegate~RangeChanged.html) delegate method and update other controls based on the selected date time.
+In real time, other controls like chart, grid etc., are updated in response to the range selection performed in SFDateTimeRangeNavigator. You can handle the selection using [`RangeChanged`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFRangeNavigatorDelegate.html#Syncfusion_SfChart_iOS_SFRangeNavigatorDelegate_RangeChanged_Syncfusion_SfChart_iOS_SFDateTimeRangeNavigator_Foundation_NSDate_Foundation_NSDate_) delegate method and update other controls based on the selected date time.
 
 Following code example illustrates how to handle range selection and update chart's date time axis range,
 

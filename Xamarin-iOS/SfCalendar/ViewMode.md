@@ -9,7 +9,7 @@ documentation: ug
 
 # Built-in Views
 
-Xamarin.Android calendar control provides 4 different types of views such month, year, decade and century. It allows users to easily select and navigate between all built-in views. This can be achieved by using [ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ViewMode.html) property of SfCalendar.
+Xamarin.Android calendar control provides 4 different types of views such month, year, decade and century. It allows users to easily select and navigate between all built-in views. This can be achieved by using [ViewMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_ViewMode) property of SfCalendar.
 
 N> By default calendar control is assigned with month view. 
 
@@ -17,7 +17,7 @@ N> By default calendar control is assigned with month view.
 
 This displays entire dates of a particular month, by default current month will be displayed on loading. The current date is provided with unique color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
 
-The dates in month view can be selected by four ways such as single, multiple, range and multi range selections which can be achieved using [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html)
+The dates in month view can be selected by four ways such as single, multiple, range and multi range selections which can be achieved using [SelectionMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_SelectionMode)
 
 {% highlight c# %}
 
@@ -29,7 +29,7 @@ The dates in month view can be selected by four ways such as single, multiple, r
 
 ## Trailing and leading days
 
-The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays]((https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.ShowLeadingAndTrailingDays.html)) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
+The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays]((https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_ShowLeadingAndTrailingDays)) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
 
 {% tabs %}
 
@@ -53,9 +53,9 @@ N>
 
 ## Month view customization
 
-* Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings~TodayTextColor.html). 
+* Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFMonthViewSettings.html#Syncfusion_SfCalendar_iOS_SFMonthViewSettings_TodayTextColor). 
 * The month view label settings class has the APIs to change date text size, day text size and format options. 
-* The background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFMonthViewSettings~InlineBackgroundColor.html) property.
+* The background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFMonthViewSettings.html#Syncfusion_SfCalendar_iOS_SFMonthViewSettings_InlineBackgroundColor) property.
 
 {% highlight c# %}
 
@@ -74,9 +74,9 @@ N> The view modes can be switched by clicking the Header Text in MonthView or by
 
 ### Month view border color customization
 
-You can customize the border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+You can customize the border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 
-* The border color of month cells can be customized using the [BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BorderColor.html) property, and the lines of month cells can be enabled using the [CellGridOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellGridOptions.html) property.
+* The border color of month cells can be customized using the [BorderColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFMonthViewSettings.html#Syncfusion_SfCalendar_iOS_SFMonthViewSettings_BorderColor) property, and the lines of month cells can be enabled using the [CellGridOptions](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFMonthViewSettings.html#Syncfusion_SfCalendar_iOS_SFMonthViewSettings_CellGridOptions) property.
 
 {% highlight c# %}
 
@@ -91,9 +91,9 @@ calendar.MonthViewSettings = monthViewSettings;
 
 ### Today border color customization
 
-You can customize the today border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+You can customize the today border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 
-* The border color of month cells can be customized using the [BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BorderColor.html) property, and the lines of month cells can be enabled using the [CellGridOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellGridOptions.html) property.
+* The border color of month cells can be customized using the [BorderColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFMonthViewSettings.html#Syncfusion_SfCalendar_iOS_SFMonthViewSettings_BorderColor) property, and the lines of month cells can be enabled using the [CellGridOptions](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFMonthViewSettings.html#Syncfusion_SfCalendar_iOS_SFMonthViewSettings_CellGridOptions) property.
 
 {% highlight c# %}
 
@@ -107,13 +107,13 @@ calendar.MonthViewSettings = monthViewSettings;
 
 ## Week view
 
-The number of weeks in the month view can be changed by setting the [NumberOfWeeksInView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NumberOfWeeksInView.html) property in SfCalendar. By default, `NumberOfWeeksInView` starts from current week, and this can be modified using the [MoveToDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MoveToDate.html) property of calendar. It also supports all existing features such as [FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~FirstDayOfWeek.html), [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MinDate.html), [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaxDate.html), and [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html).
+The number of weeks in the month view can be changed by setting the [NumberOfWeeksInView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_NumberOfWeeksInView) property in SfCalendar. By default, `NumberOfWeeksInView` starts from current week, and this can be modified using the [MoveToDate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_MoveToDate_Foundation_NSDate_) property of calendar. It also supports all existing features such as [FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_FirstDayofWeek), [MinDate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_MinDate), [MaxDate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_MaxDate), and [SelectionMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_SelectionMode).
 
 N>
 * Week number ranges from 1 to 6. If lesser or greater than these range is considered, `NumberOfWeeksInView` will be displayed as 6.
 * Inline view considers  `NumberOfWeeksInView` as only 6. For other count, only agenda view will be displayed in calendar.
 * Dynamically changing `NumberOfWeeksInView` shows the first row of month view dates. It can be handled using the `MoveToDate` property of calendar
-* [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowLeadingAndTrailingDays.html) is not applicable if the `NumberOfWeeksInView` is lesser than 6.
+* [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_ShowLeadingAndTrailingDays) is not applicable if the `NumberOfWeeksInView` is lesser than 6.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ This displays entire dates/month of a particular year, by default current year w
 
 ## Year view mode
 
-You can set the year view as either date or month using [YearViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~YearViewMode.html). By default, current year and months will be displayed. 
+You can set the year view as either date or month using [YearViewMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_YearViewMode). By default, current year and months will be displayed. 
 
 * If the `YearViewMode` is date,it will be displays all the months with dates in a particular year view.
 * If the `YearViewMode` is month,it will be displays all the months in a particular year view.
@@ -172,10 +172,10 @@ N>
 
 ## Year view customization
 
-* The month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~MonthHeaderTextColor.html) property.
-* The year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearCell~DatetextColor.html) properties respectively.
+* The month header color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_MonthHeaderTextColor) property.
+* The year header and date text color can be changed using `YearHeaderTextColor` and [DateTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearCell.html#Syncfusion_SfCalendar_iOS_SFYearCell_DateTextColor) properties respectively.
 * The gravity of the month name can be modified using `HeaderLabelAlignment` property, to position it to left, right or center. 
-* The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFYearViewSettings~YearLayoutBackground.html) property.
+* The complete layout’s background color can be modified using [YearLayoutBackground](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_YearLayoutBackground) property.
 
 {% highlight c# %}
 
@@ -210,9 +210,9 @@ View.AddSubView(calendar);
  
 ## Decade view customization
 
-* Year text color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~MonthHeaderTextColor.html).
-* You can customize the decade view header text and background color by using the [YearHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~YearHeaderTextColor.html) and [HeaderBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~HeaderBackground.html) property.
-* You can customize the background of decade view by using [LayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~LayoutBackground.html) and [MonthLayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~MonthLayoutBackground.html).
+* Year text color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_MonthHeaderTextColor).
+* You can customize the decade view header text and background color by using the [YearHeaderTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_YearHeaderTextColor) and [HeaderBackground](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_YearHeaderBackground) property.
+* You can customize the background of decade view by using [LayoutBackground](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_YearLayoutBackground) and [MonthLayoutBackground](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_MonthLayoutBackground).
 
 
 {% tabs %}
@@ -253,9 +253,9 @@ View.AddSubView(calendar);
  
 ## Century view customization
 
-* Year text color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~MonthHeaderTextColor.html).
-* You can customize the century view header text and background color by using the [YearHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~YearHeaderTextColor.html) and [HeaderBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~HeaderBackground.html) property.
-* You can customize the background of century view by using [LayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~LayoutBackground.html) and [MonthLayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~MonthLayoutBackground.html).
+* Year text color can be modified using [MonthHeaderTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_MonthHeaderTextColor).
+* You can customize the century view header text and background color by using the [YearHeaderTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_YearHeaderTextColor) and [HeaderBackground](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_YearHeaderBackground) property.
+* You can customize the background of century view by using [LayoutBackground](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_YearLayoutBackground) and [MonthLayoutBackground](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFYearViewSettings.html#Syncfusion_SfCalendar_iOS_SFYearViewSettings_MonthLayoutBackground).
 
 
 {% tabs %}

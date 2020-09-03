@@ -99,7 +99,7 @@ dataGrid.ScrollToColumnIndex(7);
 
 ### Scroll a row/column to a specific position
 
-The SfDataGrid allows to position the scrolled row/column in the datagrid by passing [ScrollToPosition](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ScrollToPosition.html) as parameter to the `ScrollToRowColumnIndex`, `ScrollToRowIndex`, `ScrollToColumnIndex` methods. The scrolled row/column can take either of the four positions as explained below. The default position is `Start`.
+The SfDataGrid allows to position the scrolled row/column in the datagrid by passing [ScrollToPosition](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.ScrollToPosition.html) as parameter to the `ScrollToRowColumnIndex`, `ScrollToRowIndex`, `ScrollToColumnIndex` methods. The scrolled row/column can take either of the four positions as explained below. The default position is `Start`.
 
 * MakeVisible: Scroll to make a specified row/column visible in datagrid. If the specified row/column is already in view, scrolling will not occur.
 * Start: Scroll to make the row/column positioned at the start of the datagrid.
@@ -125,9 +125,9 @@ N> Programmatic scrolling is not applicable for rows and columns that are frozen
 
 ## Vertical Over Scroll Mode
 
-The [SfDataGrid.VerticalOverScrollMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~VerticalOverScrollMode.html) property allows you to customize the bouncing behavior of the data grid.
+The [SfDataGrid.VerticalOverScrollMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_VerticalOverScrollMode) property allows you to customize the bouncing behavior of the data grid.
 
-The [VerticalScrollMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.VerticalOverScrollMode.html) enum has the following values:
+The [VerticalScrollMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.VerticalOverScrollMode.html) enum has the following values:
 
 * Bounce
 * None
@@ -162,14 +162,14 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 
 ## Identifying scroll state changes
 
-The SfDataGrid will notify the scrolling state changes via the [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollStateChanged_EV.html) event.
+The SfDataGrid will notify the scrolling state changes via the [ScrollStateChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html) event.
 
-Following states will be notified through the [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ScrollStateChangedEventArgs~ScrollState.html) property in the event argument.
+Following states will be notified through the [ScrollState](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.ScrollStateChangedEventArgs.html#Syncfusion_SfDataGrid_ScrollStateChangedEventArgs__ctor_Syncfusion_SfDataGrid_ScrollState_) property in the event argument.
 
 * Dragging: Specifies that `SfDataGrid` is currently being dragged in the view.
 * Fling: Specifies that fling action is performed on the `SfDataGrid`.
 * Idle: Specifies that `SfDataGrid` is not scrolling currently.
-* Programmatic: Specifies that scrolling is performed by using [ScrollToColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToColumnIndex.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ScrollToRowIndex.html) method.
+* Programmatic: Specifies that scrolling is performed by using [ScrollToColumnIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_ScrollToColumnIndex_System_Int32_Syncfusion_SfDataGrid_ScrollToPosition_) or [ScrollToRowIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_ScrollToRowIndex_System_Int32_Syncfusion_SfDataGrid_ScrollToPosition_) method.
 
 {% tabs %}
 {% highlight c# %}

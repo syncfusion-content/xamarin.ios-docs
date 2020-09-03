@@ -14,11 +14,11 @@ The shape settings define the basic customization options for shapes in the map.
 
 A shape’s fill, stroke, and stroke thickness can be customized using the following properties:
 
-[`Fill`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeSetting~Fill.html): Sets the fill color for the shapes in a map. 
+[`Fill`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeSetting.html#Syncfusion_SfMaps_iOS_SFShapeSetting_Fill): Sets the fill color for the shapes in a map. 
 
-[`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeSetting~StrokeColor.html): Sets the border color for the shape in a map.
+[`StrokeColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeSetting.html#Syncfusion_SfMaps_iOS_SFShapeSetting_StrokeColor): Sets the border color for the shape in a map.
 
-[`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeSetting~StrokeThickness.html): Sets the border thickness for the shape in a map. 
+[`StrokeThickness`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeSetting.html#Syncfusion_SfMaps_iOS_SFShapeSetting_StrokeThickness): Sets the border thickness for the shape in a map. 
 
 Refer to the following code snippet.
 
@@ -44,9 +44,9 @@ layer.ShapeSettings = shapeSetting;
 
 To customize the shapes based on the bound values, use the following properties:
 
-[`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeSetting~ValuePath.html): Field value that has to be bound for each shape.
+[`ValuePath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeSetting.html#Syncfusion_SfMaps_iOS_SFShapeSetting_ValuePath): Field value that has to be bound for each shape.
 
-[`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeSetting~ColorValuePath.html): Field value that has to be bound to determine the color.
+[`ColorValuePath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeSetting.html#Syncfusion_SfMaps_iOS_SFShapeSetting_ColorValuePath): Field value that has to be bound to determine the color.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ this.View.AddSubview(map);
 
 ## Selected shapes settings
 
-Selection can be enabled with the help of [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~EnableSelection.html) property in shape file layer. Selected shape can be customized using the [`SelectedShapeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeSetting~SelectedShapeColor.html) property.
+Selection can be enabled with the help of [`EnableSelection`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_EnableSelection) property in shape file layer. Selected shape can be customized using the [`SelectedShapeColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeSetting.html#Syncfusion_SfMaps_iOS_SFShapeSetting_SelectedShapeColor) property.
 
 {% tabs %}
 

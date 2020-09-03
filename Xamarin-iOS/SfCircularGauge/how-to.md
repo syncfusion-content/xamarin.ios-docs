@@ -13,7 +13,7 @@ documentation: ug
 
 ## Changing the gauge size
 
-The [`CircularCoefficient`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge~CircularCoefficient.html) property is used to change the diameter of the gauge.
+The [`CircularCoefficient`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularGauge.html#Syncfusion_SfGauge_iOS_SFCircularGauge_CircularCoefficient) property is used to change the diameter of the gauge.
 It ranges from 0 to 1, and the default value is 1.
 
 {% highlight c# %}
@@ -52,7 +52,7 @@ It ranges from 0 to 1, and the default value is 1.
 
 ## Gauge alignment
 
-The [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge~IsCenterAligned.html) property is used to align the gauge to the center. In semi-circular gauge, bottom space will be removed using the [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge~IsCenterAligned.html) property.
+The [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularGauge.html#Syncfusion_SfGauge_iOS_SFCircularGauge_IsCenterAligned) property is used to align the gauge to the center. In semi-circular gauge, bottom space will be removed using the [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularGauge.html#Syncfusion_SfGauge_iOS_SFCircularGauge_IsCenterAligned) property.
 
 {% highlight c# %}
 

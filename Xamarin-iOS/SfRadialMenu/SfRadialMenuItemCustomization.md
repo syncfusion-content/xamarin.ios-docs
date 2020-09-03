@@ -9,11 +9,11 @@ documentation: ug
 
 # SfRadialMenuItem Customization
 
-The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html) class provides various options such as `Custom Views`, `FontIcons`, and `Images` to customize the items. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~Items.html) property that is available in SfRadialMenu.
+The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html) class provides various options such as `Custom Views`, `FontIcons`, and `Images` to customize the items. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_Items) property that is available in SfRadialMenu.
 
 ## Items
 
-The [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~Items.html) ) property populates the items of an inner rim in `SfRadialMenu` when the items of an outer rim are tapped.
+The [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_Items) ) property populates the items of an inner rim in `SfRadialMenu` when the items of an outer rim are tapped.
 
 {% tabs %}
 {% highlight C# %}
@@ -57,7 +57,7 @@ namespace RadialMenuNative
 
 ## Text
 
-The [Text](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~Text.html) property provides text to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [Text](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_Text) property provides text to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -101,7 +101,7 @@ namespace RadialMenuNative
 
 ## Height
 
-The [Height](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~Height.html) changes the height of the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [Height](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_Height) changes the height of the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -145,7 +145,7 @@ namespace RadialMenuNative
 
 ## Width
 
-The [Width](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~Width.html) property changes the width of the [https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [Width](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_Width) property changes the width of the [https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -191,7 +191,7 @@ namespace RadialMenuNative
 
 ## BackgroundColor
 
-The [BackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~BackgroundColor.html) property changes the background color of the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [BackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_BackgroundColor) property changes the background color of the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -237,7 +237,7 @@ namespace RadialMenuNative
 
 ## Font
 
-The [Font](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~Font.html) property changes the font family of text in [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [Font](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_Font) property changes the font family of text in [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -281,7 +281,7 @@ namespace RadialMenuNative
 
 ## FontSize
 
-The [FontSize](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~FontSize.html) property changes the text size of the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [FontSize](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_FontSize) property changes the text size of the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -327,7 +327,7 @@ namespace RadialMenuNative
 
 ## Image
 
-The [Image](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~Image.html) property provides image support to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [Image](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_Image) property provides image support to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -373,7 +373,7 @@ namespace RadialMenuNative
 
 ## BackgroundImage
 
-The [BackgroundImage](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~BackgroundImage.html) property provides the background image support to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [BackgroundImage](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_BackgroundImage) property provides the background image support to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -417,7 +417,7 @@ namespace RadialMenuNative
 
 ## FontIcon
 
-The [FontIcon](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~FontIcon.html) property provides font icon support to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [FontIcon](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_FontIcon) property provides font icon support to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -463,7 +463,7 @@ namespace RadialMenuNative
 
 ## FontIconColor
 
-The [FontIconColor](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.SfRadialMenu.Android~Syncfusion.SfRadialMenu.Android.SfRadialMenuItem~FontIconColor.html) property changes the color of font icon in [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [FontIconColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_FontIconColor) property changes the color of font icon in [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -509,7 +509,7 @@ namespace RadialMenuNative
 
 ## FontSize
 
-The [FontSize](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~FontSize.html) property changes the size of font icon in the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [FontSize](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_FontSize) property changes the size of font icon in the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -553,7 +553,7 @@ namespace RadialMenuNative
 
 ## IconFont
 
-The [IconFont](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~IconFont.html) property changes the font family of font icon in the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+The [IconFont](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_IconFont) property changes the font family of font icon in the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
 
 {% tabs %}
 {% highlight C# %}

@@ -91,9 +91,9 @@ public override void ViewDidLoad()
 
 ## Changing Schedule Views 
  
-SfSchedule control provides five different types of views to display dates and it can be assigned to the control by using [ScheduleView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ScheduleView.html) property. By default the control is assigned with `DayView`.Current date will be displayed initially for all the Schedule views.
+SfSchedule control provides five different types of views to display dates and it can be assigned to the control by using [ScheduleView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_ScheduleView) property. By default the control is assigned with `DayView`.Current date will be displayed initially for all the Schedule views.
  
-Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~FirstDayOfWeek.html) property of `SfSchedule`. 
+Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_FirstDayOfWeek) property of `SfSchedule`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -160,7 +160,7 @@ schedule.ScheduleView = SFScheduleView.SFScheduleViewTimeline;
 
 ### Month View 
  
-`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting [ShowAppointmentsInline](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~ShowAppointmentsInline.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~MonthViewSettings.html) of `SfSchedule` as true. 
+`MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting [ShowAppointmentsInline](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.MonthViewSettings.html#Syncfusion_SfSchedule_iOS_MonthViewSettings_ShowAppointmentsInline) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_MonthViewSettings) of `SfSchedule` as true. 
 
 {% tabs %}
 {% highlight c# %}
@@ -174,11 +174,11 @@ schedule.MonthViewSettings.ShowAppointmentsInline = true;
 
 ## Binding data to SfSchedule control  
 
-You can add events to the schedule by creating collection of [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment.html).
+You can add events to the schedule by creating collection of [ScheduleAppointment](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html).
  
 ### Adding Appointments  
  
-`ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~EndTime.html), [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~Subject.html) and some additional information about the appointment can be added using [AppointmentBackground](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~AppointmentBackground.html), [Notes](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~Notes.html), [Location](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~Location.html), [IsAllDay](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~IsAllDay.html), [IsRecursive](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ScheduleAppointment~IsRecursive.html)  properties. 
+`ScheduleAppointment` is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_EndTime), [Subject](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_Subject) and some additional information about the appointment can be added using [AppointmentBackground](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_AppointmentBackground), [Notes](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_Notes), [Location](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_Location), [IsAllDay](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_IsAllDay), [IsRecursive](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_IsRecursive)  properties. 
 
 Here are steps to render `MeetingRoomScheduler` using SfSchedule control.
 
@@ -370,7 +370,7 @@ NSMutableArray CreateAppointments()
 
 #### Setting appointments for SfSchedule 
 
-Create meetings of type `NSMutableArray` and assign those appointments collection to the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ItemsSource.html) property.
+Create meetings of type `NSMutableArray` and assign those appointments collection to the [ItemsSource](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_ItemsSource) property.
 
 {% tabs %}
 {% highlight c# %}

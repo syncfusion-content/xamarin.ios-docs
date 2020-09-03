@@ -13,7 +13,7 @@ The CenterButton or BackButton in the radial menu can be viewed in the center of
 
 ## CenterButtonText and CenterButtonBackText
 
-The [CenterButtonText](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonText.html) changes the text of the center button in `SfRadialMenu`, and the [CenterButtonBackText](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonBackText.html) changes the text of the center back button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [CenterButtonText](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonText) changes the text of the center button in `SfRadialMenu`, and the [CenterButtonBackText](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonBackText) changes the text of the center back button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -74,7 +74,7 @@ namespace RadialMenuNative
 
 ## CenterButtonTextColor and CenterButtonBackTextColor
 
-The [CenterButtonTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonTextColor.html) changes the text color of the center button in `SfRadialMenu`, and the 'CenterButtonBackTextColor' changes the text color of the center back button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [CenterButtonTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonTextColor) changes the text color of the center button in `SfRadialMenu`, and the 'CenterButtonBackTextColor' changes the text color of the center back button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -136,7 +136,7 @@ namespace RadialMenuNative
 
 ## CenterButtonBackground
 
-The [CenterButtonBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonBackgroundColor.html) changes the background color of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [CenterButtonBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonBackgroundColor) changes the background color of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -197,7 +197,7 @@ namespace RadialMenuNative
 
 ## CenterButtonRadius
 
-The [CenterButtonRadius](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonRadius.html) changes the radius of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [CenterButtonRadius](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonRadius) changes the radius of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -258,7 +258,7 @@ namespace RadialMenuNative
 
 ## CenterButtonIconFont
 
-The [CenterButtonTypeface](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonIconFont.html) changes the font family of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [CenterButtonTypeface](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonIconFont) changes the font family of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -319,7 +319,7 @@ namespace RadialMenuNative
 
 ## CenterButtonBorderColor
 
-The [CenterButtonBorderColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonBorderColor.html) changes the border color of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [CenterButtonBorderColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonBorderColor) changes the border color of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -381,7 +381,7 @@ namespace RadialMenuNative
 
 ## CenterButtonBorderThickness
 
-The [CenterButtonBorderThickness](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonBorderThickness.html) changes the border thickness of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [CenterButtonBorderThickness](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonBorderThickness) changes the border thickness of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -444,7 +444,7 @@ namespace RadialMenuNative
 
 ## CenterButtonPlacement
 
-The [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonPlacement.html) changes the placement of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonPlacement) changes the placement of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}
@@ -502,7 +502,7 @@ namespace RadialMenuNative
 
 ## EnableCenterButtonAnimation
 
-The [EnableCenterButtonAnimation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~EnableCenterButtonAnimation.html) is used to either enable or disable animation of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [EnableCenterButtonAnimation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_EnableCenterButtonAnimation) is used to either enable or disable animation of the center button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
 
 {% tabs %}
 {% highlight C# %}

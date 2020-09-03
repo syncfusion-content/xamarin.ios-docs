@@ -188,7 +188,7 @@ public override bool FinishedLaunching(UIApplication application, NSDictionary l
 
 ## Populating Nodes without data source - Unbound Mode
 
-You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. To create a tree view, you use a `TreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the TreeView control’s [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Nodes.html) collection. Each `TreeViewNode` can then have more nodes added to its Children collection. You can nest tree view nodes to whatever depth you require.
+You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. To create a tree view, you use a `TreeView` control and a hierarchy of `TreeViewNode` objects. You create the node hierarchy by adding one or more root nodes to the TreeView control’s [Nodes](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can then have more nodes added to its Children collection. You can nest tree view nodes to whatever depth you require.
 
 >**Important** 
 `ItemsSource` is an alternative mechanism to `Nodes` for putting content into the TreeView control. You cannot set both `ItemsSource` and `Nodes` at the same time. When you use `ItemsSource`, nodes created for you internally, but you cannot access them from `Nodes` property.
@@ -402,7 +402,7 @@ public class FileManagerViewModel
 
 ## Bind to a hierarchical data source - Bound Mode
 
-You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ItemsSource.html) to a hierarchical data source. To create a tree view using data binding, set a hierarchical collection to the `ItemsSource` property.
+You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_ItemsSource) to a hierarchical data source. To create a tree view using data binding, set a hierarchical collection to the `ItemsSource` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -683,7 +683,7 @@ public class FileManagerViewModel
 
 ## Bind to a Hierarchy Property Descriptors data source - Bound Mode
 
-You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ItemsSource.html) to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the `ItemsSource` property. Then create a [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~HierarchyPropertyDescriptors.html) and set the `TargetType` and [ChildPropertyName](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ChildPropertyName.html) property values. Finally add that [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~HierarchyPropertyDescriptors.html) to treeview.
+You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_ItemsSource) to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the `ItemsSource` property. Then create a [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_HierarchyPropertyDescriptors) and set the `TargetType` and [ChildPropertyName](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_ChildPropertyName) property values. Finally add that [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_HierarchyPropertyDescriptors) to treeview.
 
 {% tabs %}
 {% highlight c# %}
@@ -709,7 +709,7 @@ public override void ViewDidLoad()
 
 ## Defining a adapter to expander and content view
 
- By defining the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Adapter.html), a custom user interface(UI) can be achieved to display the data items for both expander and content view.
+ By defining the [Adapter](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_Adapter), a custom user interface(UI) can be achieved to display the data items for both expander and content view.
 
 The following code example will illustrate you to customize your custom content view by using `Adapter` property.
 
@@ -792,9 +792,9 @@ You can also download the entire source code of this demo from [here](http://www
 
 ## Interacting with a TreeView
 
-The `TreeView` allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. The expanding and collapsing interactions can be handled with the help of [NodeCollapsing](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NodeCollapsing_EV.html) and [NodeExpanding](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~NodeExpanding_EV.html) events.
+The `TreeView` allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. The expanding and collapsing interactions can be handled with the help of [NodeCollapsing](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) and [NodeExpanding](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) events.
 
- You can define how the nodes to be expanded while loading the TreeView by using [AutoExpandMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~AutoExpandMode.html) property. Also, the `TreeView` allows you to set the restrictions whether expanding and collapsing of nodes can be performed only by tapping in expander view or in both expander view and content view by using [ExpandActionTarget](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ExpandActionTarget.html) property. 
+ You can define how the nodes to be expanded while loading the TreeView by using [AutoExpandMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_AutoExpandMode) property. Also, the `TreeView` allows you to set the restrictions whether expanding and collapsing of nodes can be performed only by tapping in expander view or in both expander view and content view by using [ExpandActionTarget](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_ExpandActionTarget) property. 
 
 N> `AutoExpandMode` property is only applicable for bound mode. For Unbound mode you need to set `IsExpanded` property to `true` while creating the nodes, to be in expanded state while loading the TreeView.
 
@@ -821,11 +821,11 @@ public override void ViewDidLoad()
 
 ## Selection
 
-The `TreeView` allows selecting the item by setting the [SelectionMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionMode.html) property. Set the `SelectionMode` property to single, single-deselect, multiple and none based on the requirements. Informations about the selected item can be tracked using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectedItem.html), [CurrentItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~CurrentItem.html) and [SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectedItems.html) properties.
+The `TreeView` allows selecting the item by setting the [SelectionMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionMode) property. Set the `SelectionMode` property to single, single-deselect, multiple and none based on the requirements. Informations about the selected item can be tracked using the [SelectedItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectedItem), [CurrentItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_CurrentItem) and [SelectedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectedItems) properties.
 
-It also allows changing the selection highlight color by using the [SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionBackgroundColor.html) property. Additionally, for unbound mode, you can change the selection fore ground color of the text by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionForegroundColor.html) property.
+It also allows changing the selection highlight color by using the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionBackgroundColor) property. Additionally, for unbound mode, you can change the selection fore ground color of the text by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionForegroundColor) property.
 
-The selection operations can be handled with the help of [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionChanged_EV.html) events.
+The selection operations can be handled with the help of [SelectionChanging](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) events.
 
 {% tabs %}
 {% highlight c# %}
@@ -845,7 +845,7 @@ public override void ViewDidLoad()
 
 ## Reset tree view items
 
-You can reset the visible treeview items by using the [ResetTreeViewItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ResetTreeViewItems.html) method. If the parameter is null, all the visible treeview items will reset. If you are passing the `data object` as a parameter, a particular treeview item will reset.
+You can reset the visible treeview items by using the [ResetTreeViewItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_ResetTreeViewItems_System_Object_) method. If the parameter is null, all the visible treeview items will reset. If you are passing the `data object` as a parameter, a particular treeview item will reset.
 
 {% tabs %}
 {% highlight c# %}
@@ -855,7 +855,7 @@ treeView.ResetTreeViewItems();
 
 ## Refresh view
 
-You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~RefreshView.html) method. It will be used to refresh the items in the treeview at runtime while updating the view.
+You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_RefreshView) method. It will be used to refresh the items in the treeview at runtime while updating the view.
 
 {% tabs %}
 {% highlight c# %}

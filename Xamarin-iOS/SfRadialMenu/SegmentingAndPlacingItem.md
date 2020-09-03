@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Types
 
-The following two different [LayoutTypes](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~LayoutType.html) available available in the radial menu are:
+The following two different [LayoutTypes](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_LayoutType) available available in the radial menu are:
 
 * Default
 * Custom
@@ -76,7 +76,7 @@ namespace RadialMenuNative
 
 ## Custom
 
-The number of segments in the panel is determined using the [VisibleItemCount](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~VisibleItemCount.html) property. As the segment count in all the hierarchical levels is the same, radial menu items are arranged in any order based on the [SlottedIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~SlottedIndex.html) property.
+The number of segments in the panel is determined using the [VisibleItemCount](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_VisibleItemCount) property. As the segment count in all the hierarchical levels is the same, radial menu items are arranged in any order based on the [SlottedIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_SlottedIndex) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -134,7 +134,7 @@ namespace RadialMenuNative
 
 ## VisibleItemCount
 
-The [VisibleItemCount](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~VisibleItemCount.html) property is used to specify the number of segments available in the circular panel. When the children count is greater than the value given in the VisibleSegmentsCount property, the overflowing children are not arranged in the panel. When children count is lesser than the VisibleSegmentsCount property, the remaining segments are left free.
+The [VisibleItemCount](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_VisibleItemCount) property is used to specify the number of segments available in the circular panel. When the children count is greater than the value given in the VisibleSegmentsCount property, the overflowing children are not arranged in the panel. When children count is lesser than the VisibleSegmentsCount property, the remaining segments are left free.
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +194,7 @@ namespace RadialMenuNative
 
 ## SlottedIndex
 
-The [SlottedIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem~SlottedIndex.html) property is used to specify the index of the radial menu item in the circular panel. Based on the index, the radial menu items are inserted in the segment. When the SlottedIndex is not specified for a RadialMenuItem, the menu item is arranged in the next available free segment.
+The [SlottedIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_SlottedIndex) property is used to specify the index of the radial menu item in the circular panel. Based on the index, the radial menu items are inserted in the segment. When the SlottedIndex is not specified for a RadialMenuItem, the menu item is arranged in the next available free segment.
 
 {% tabs %}
 {% highlight c#%}

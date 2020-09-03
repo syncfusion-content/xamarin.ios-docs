@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with SfLinearGauge
 
-This section explains the steps required to configure a [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) control.
+This section explains the steps required to configure a [`SFLinearGauge`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SFLinearGauge`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearGauge.html) control.
 
 **Adding namespace for the added assemblies**
 
@@ -21,7 +21,7 @@ This section explains the steps required to configure a [`SFLinearGauge`](https:
 
 ## Initialize gauge
 
-You can initialize the [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) control with a required optimal name by using the included namespace.
+You can initialize the [`SFLinearGauge`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearGauge.html) control with a required optimal name by using the included namespace.
 
 {% highlight c# %}
 
@@ -36,13 +36,13 @@ You can initialize the [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_fil
 
 ## Initialize linear gauge from designer
 
-[`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the linear gauge in designer.
+[`SFLinearGauge`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearGauge.html) allows users to drag the control from toolbox to designer window. The properties window will be displayed where you change the necessary functionalities to customize the linear gauge in designer.
 
 ![Xamarin.iOS LinearGauge Designer](getting-started_images/designer.gif)
 
 ## Adding header
 
-You can assign a unique header to [`SFLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearGauge.html) by using the [`SFLinearLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel.html) property and position it wherever as you desired by using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearLabel~Position.html) property.
+You can assign a unique header to [`SFLinearGauge`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearGauge.html) by using the [`SFLinearLabel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearLabel.html) property and position it wherever as you desired by using the [`Position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearLabel.html#Syncfusion_SfGauge_iOS_SFLinearLabel_Position) property.
 
 {% highlight c# %}
 
@@ -59,9 +59,9 @@ You can assign a unique header to [`SFLinearGauge`](https://help.syncfusion.com/
 
 ## Configuring scales
 
-Scales is a collection of [`SFLinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale.html), which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub elements of a scale. 
+Scales is a collection of [`SFLinearScale`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearScale.html), which is used to indicate the numeric values. Scale bar, ticks, labels, ranges, and pointers are the sub elements of a scale. 
 
-The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearScale~Maximum.html) properties allow you to set the scale range.
+The [`Minimum`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearScale.html#Syncfusion_SfGauge_iOS_SFLinearScale_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearScale.html#Syncfusion_SfGauge_iOS_SFLinearScale_Maximum) properties allow you to set the scale range.
 
 {% highlight c# %}
 
@@ -77,7 +77,7 @@ The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion
 
 ## Adding a symbol pointer
 
-[`SFSymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFSymbolPointer.html) is a shape that can be placed to mark the pointer value in gauge.
+[`SFSymbolPointer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFSymbolPointer.html) is a shape that can be placed to mark the pointer value in gauge.
 
 {% highlight c# %}
 
@@ -92,7 +92,7 @@ The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion
 
 ## Adding a bar pointer
 
-[`SFBarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFBarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
+[`SFBarPointer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFBarPointer.html) is used to mark the scale values. It starts at the beginning of gauge and ends at the pointer value.
 
 {% highlight C# %}
 
@@ -106,7 +106,7 @@ The [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion
 
 ## Adding ranges
 
-You can categorize the scale values using the start and end values properties in [`SFLinearRange`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFLinearRange.html). You can add multiple ranges for a scale using the `ranges` property.
+You can categorize the scale values using the start and end values properties in [`SFLinearRange`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFLinearRange.html). You can add multiple ranges for a scale using the `ranges` property.
 
 {% highlight c# %}    
 	

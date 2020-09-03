@@ -15,7 +15,7 @@ documentation: ug
 Day view is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 
 ## ViewHeader Appearance
-You can customize the default appearance of view header in [DayView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFScheduleView.html) by using [DayHeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayHeaderStyle.html) property of [SFSchedule](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule.html).
+You can customize the default appearance of view header in [DayView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFScheduleView.html) by using [DayHeaderStyle](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_DayHeaderStyle) property of [SFSchedule](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -35,7 +35,7 @@ schedule.DayHeaderStyle = viewHeaderStyle;
 
 ![Day view view header customization for schedule in Xamarin.iOS](daymodule_images/viewheaderappearance_day.png)
 
-You can customize the height of the ViewHeader in `DayView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderHeight.html) property of `SFSchedule`.
+You can customize the height of the ViewHeader in `DayView` by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_ViewHeaderHeight) property of `SFSchedule`.
 
 {% tabs %}
 {% highlight C# %}
@@ -48,7 +48,7 @@ schedule.ViewHeaderHeight = 50;
 
 ### Customize Font Appearance
 
-You can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DayTextStyle.html) and [DateTextStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFViewHeaderStyle~DateTextStyle.html) properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) property in Schedule.
+You can change the appearance of Font by setting the [DayTextStyle](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFViewHeaderStyle.html#Syncfusion_SfSchedule_iOS_SFViewHeaderStyle_DayTextStyle) and [DateTextStyle](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFViewHeaderStyle.html#Syncfusion_SfSchedule_iOS_SFViewHeaderStyle_DateTextStyle) properties of [ViewHeaderStyle](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#viewheader-appearance) property in Schedule.
 
 {% tabs %}
 {% highlight c# %}
@@ -62,7 +62,7 @@ viewHeaderStyle.DateTextStyle = UIFont.FromName("Lobster-Regular",20);
 Refer [this](https://help.syncfusion.com/xamarin-ios/sfschedule/monthview#custom-font-setting-in-xamarinios) to configure the custom fonts in Xamarin.iOS.
 
 ### ViewHeader Date Format
-You can customize the date and day format of `SFSchedule` ViewHeader by using [DayLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~DayLabelFormat.html) properties of `LabelSettings`.
+You can customize the date and day format of `SFSchedule` ViewHeader by using [DayLabelFormat](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayLabelSettings.html#Syncfusion_SfSchedule_iOS_DayLabelSettings_DayLabelFormat) properties of `LabelSettings`.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ schedule.DayViewSettings = dayViewSettings;
 ![Day view header date format customization for schedule in Xamarin.iOS](daymodule_images/DateFormat_Day.png)
 
 ### ViewHeader Tapped Event
-You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~ViewHeaderTapped_EV.html) event of `SFSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs~Date.html) details in it.
+You can handle single tap action of ViewHeader by using [ViewHeaderTapped](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html) event of `SFSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs.html) argument which holds [Date](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ViewHeaderTappedEventArgs.html#Syncfusion_SfSchedule_iOS_ViewHeaderTappedEventArgs_Date) details in it.
 
 {% tabs %}
 {% highlight c# %}
@@ -100,7 +100,7 @@ void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
 {% endtabs %}
 
 ## Change Time Interval
-You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimeInterval.html) property of `SFSchedule`.
+You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_TimeInterval) property of `SFSchedule`.
 
 {% tabs %}
 {% highlight C# %}
@@ -115,7 +115,7 @@ schedule.TimeInterval = 120;
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"h aa"`. You can refer [here](https://help.syncfusion.com/xamarin-ios/sfschedule/dayview#time-label-formatting) for changing TimeFormat value.
 
 ## Change Time Interval Height
-You can customize the interval height of timeslots in `DayView` by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimeIntervalHeight.html)  property of `SFSchedule`.
+You can customize the interval height of timeslots in `DayView` by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_TimeIntervalHeight)  property of `SFSchedule`.
 
 {% tabs %}
 {% highlight C# %}
@@ -128,7 +128,7 @@ schedule.TimeIntervalHeight = 120;
 
 ## Change Working hours
 
-Working hours in `DayView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~WorkEndHour.html) properties of [DayViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DayViewSettings.html). You can also customize the working hours along with minutes by setting double value which will be converted to time.
+Working hours in `DayView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_WorkStartHour) and [WorkEndHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_WorkEndHour) properties of [DayViewSettings](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_DayViewSettings). You can also customize the working hours along with minutes by setting double value which will be converted to time.
 
 {% tabs %}
 {% highlight C# %}
@@ -151,7 +151,7 @@ No need to specify the decimal point values for `WorkStartHour` and `WorkEndHour
 
 ## Changing StartHour and EndHour
 
-Default value for [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~EndHour.html) value is 0 to 24 to show all the time slots in `DayView`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~EndHour.html) property of `DayView`, to show only the required time duration for end users. You can also set `StartHour` and `EndHour` in double value which will be converted to time to show required time duration in minutes.
+Default value for [StartHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_EndHour) value is 0 to 24 to show all the time slots in `DayView`. You need to set [StartHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_EndHour) property of `DayView`, to show only the required time duration for end users. You can also set `StartHour` and `EndHour` in double value which will be converted to time to show required time duration in minutes.
 
 {% tabs %}
 {% highlight C# %}
@@ -186,7 +186,7 @@ You can customize the appearance of timeslots in `DayView`.
 
 ### Timeslot customization in Work hours
 
-You can customize the appearance of the WorkingHourTimeslot by its color using [TimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~TimeSlotColor.html),[TimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~TimeSlotBorderColor.html) and [TimeSlotStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~TimeSlotStrokeWidth.html) properties of 'DayViewSettings'.
+You can customize the appearance of the WorkingHourTimeslot by its color using [TimeSlotColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_TimeSlotColor),[TimeSlotBorderColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_TimeSlotBorderColor) and [TimeSlotStrokeWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_TimeSlotStrokeWidth) properties of 'DayViewSettings'.
 
 {% tabs %}
 {% highlight C# %}
@@ -204,7 +204,7 @@ schedule.DayViewSettings = dayViewSettings;
 
 ### Timeslot customization in Non Working hours
 
-You can customize the appearance of the Non-workingHourTimeslots by its color using [NonWorkingHoursTimeSlotBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~NonWorkingHourTimeSlotBorderColor.html),[NonWorkingHoursTimeSlotColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~NonWorkingHourTimeSlotColor.html), properties of `DayViewSettings`.
+You can customize the appearance of the Non-workingHourTimeslots by its color using [NonWorkingHoursTimeSlotBorderColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_NonWorkingHourTimeSlotBorderColor),[NonWorkingHoursTimeSlotColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_NonWorkingHourTimeSlotColor), properties of `DayViewSettings`.
 
 {% tabs %}
 {% highlight C# %}
@@ -224,7 +224,7 @@ schedule.DayViewSettings = dayViewSettings;
 
 ## Non-Accessible timeslots
 
-You can restrict or allocate certain timeslot as non-accessible blocks by using [NonAccessibleBlockCollection](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~NonAccessibleBlockCollection.html) of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict or allocate certain timeslot as non-accessible blocks by using [NonAccessibleBlockCollection](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_NonAccessibleBlockCollection) of `DayViewSettings`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 
 {% tabs %}
 {% highlight C# %}
@@ -250,10 +250,10 @@ schedule.DayViewSettings = dayViewSettings;
 Selection and related events will not be working in this blocks.
 
 ## Change first day of week
-[FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~FirstDayOfWeek.html) of `SFSchedule` is not applicable for `DayView` as it displays only one day.
+[FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_FirstDayOfWeek) of `SFSchedule` is not applicable for `DayView` as it displays only one day.
 
 ## Time Label Formatting
-You can customize the format for the labels which are mentioning the time, by setting [TimeLabelFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~TimeLabelFormat.html) property of [LabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayViewSettings~LabelSettings.html) in `DayViewSettings`.
+You can customize the format for the labels which are mentioning the time, by setting [TimeLabelFormat](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayLabelSettings.html#Syncfusion_SfSchedule_iOS_DayLabelSettings_TimeLabelFormat) property of [LabelSettings](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayViewSettings.html#Syncfusion_SfSchedule_iOS_DayViewSettings_LabelSettings) in `DayViewSettings`.
 
 {% tabs %}
 {% highlight C# %}
@@ -271,7 +271,7 @@ this.View.AddSubview(schedule);
 
 ## Time Label Appearance
 
-You can customize the color for the labels which are mentioning the time, by setting [TimeLabelColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DayLabelSettings~TimeLabelColor.html) property of `LabelSettings` in `DayViewSettings`.
+You can customize the color for the labels which are mentioning the time, by setting [TimeLabelColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DayLabelSettings.html#Syncfusion_SfSchedule_iOS_DayLabelSettings_TimeLabelColor) property of `LabelSettings` in `DayViewSettings`.
 
 {% tabs %}
 {% highlight C# %}
@@ -295,7 +295,7 @@ You can customize the default appearance of selection UI in the timeslots.
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 
 ### Selection customization using style
-You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionStyle.html) property of `SFSchedule`.
+You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_SelectionStyle) property of `SFSchedule`.
 
 {% tabs %}
 {% highlight C# %}
@@ -313,7 +313,7 @@ schedule.SelectionStyle = selectionStyle;
 ![Selection style for schedule day view in Xamarin.iOS](daymodule_images/selectionstyle_day.png)
 
 ### Selection customization using custom View
-You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionView.html) property of `SFSchedule`.
+You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_SelectionView) property of `SFSchedule`.
 
 {% tabs %}
 {% highlight C# %}
@@ -330,7 +330,7 @@ schedule.SelectionView = customView;
 ![Custom selection view support for schedule day view in Xamarin.iOS](daymodule_images/selectioncustomview_day.png)
 
 ### Programmatic selection
-You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectedDate.html) property of `SFSchedule`. By default, it is null.
+You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_SelectedDate) property of `SFSchedule`. By default, it is null.
 
 {% tabs %}
 {% highlight C# %}
@@ -351,7 +351,7 @@ schedule.SelectedDate = calendar.DateFromComponents(dateComponents);
 {% endhighlight %}
 {% endtabs %}
 
-You can clear the selection by setting [SelectedDate]( https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectedDate.html) as null.
+You can clear the selection by setting [SelectedDate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_SelectedDate) as null.
 
 {% tabs %}
 {% highlight C# %}

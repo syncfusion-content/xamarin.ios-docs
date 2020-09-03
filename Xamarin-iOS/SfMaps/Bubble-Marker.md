@@ -12,7 +12,7 @@ Bubbles in the maps control represents the underlying data values of the map. Bu
 
 ## Bubble Data
 
-Bubbles are included when the data binding and [`BubbleMarkerSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~BubbleMarkerSetting.html) are set to the shape layers.
+Bubbles are included when the data binding and [`BubbleMarkerSetting`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_BubbleMarkerSetting) are set to the shape layers.
 
 Below code snippet explains the data binding that is provided for bubble.
 
@@ -82,9 +82,9 @@ Below code snippet explains the data binding that is provided for bubble.
 
 ## Adding bubbles
 
-To add bubbles to a map, the bubble marker setting should be added to the shape file layer.[`ShowBubbles`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting~ShowBubbles.html) property should be enabled for the bubble to be visible.
+To add bubbles to a map, the bubble marker setting should be added to the shape file layer.[`ShowBubbles`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.html#Syncfusion_SfMaps_iOS_SFBubbleMarkerSetting_ShowBubbles) property should be enabled for the bubble to be visible.
 
-[`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting~ValuePath.html) represents the field value that is to be fetched from the data for each bubble.
+[`ValuePath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.html#Syncfusion_SfMaps_iOS_SFBubbleMarkerSetting_ValuePath) represents the field value that is to be fetched from the data for each bubble.
 
 {% tabs %}
 
@@ -106,7 +106,7 @@ To add bubbles to a map, the bubble marker setting should be added to the shape 
 
 ### Color Customization
 
-The fill color and opacity of the bubbles can be customized using the [`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting~FillColor.html) and [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting~Opacity.html) properties.
+The fill color and opacity of the bubbles can be customized using the [`FillColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.html#Syncfusion_SfMaps_iOS_SFBubbleMarkerSetting_FillColor) and [`Opacity`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.html#Syncfusion_SfMaps_iOS_SFBubbleMarkerSetting_Opacity) properties.
 
 {% tabs %}
 
@@ -132,9 +132,9 @@ The fill color and opacity of the bubbles can be customized using the [`FillColo
 
 ### Size customization
 
-The size of the bubbles depends on the data that is bound to the [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting~ValuePath.html) but the maximum and minimum size of the bubble can be customized using [`MaxSize`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting~MaxSize.html) and [`MinSize`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting~MinSize.html) properties.
+The size of the bubbles depends on the data that is bound to the [`ValuePath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.html#Syncfusion_SfMaps_iOS_SFBubbleMarkerSetting_ValuePath) but the maximum and minimum size of the bubble can be customized using [`MaxSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.html#Syncfusion_SfMaps_iOS_SFBubbleMarkerSetting_MaxSize) and [`MinSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFBubbleMarkerSetting.html#Syncfusion_SfMaps_iOS_SFBubbleMarkerSetting_MinSize) properties.
 
-I> [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~ShowMapItems.html) should be enabled to display label on bubble marker.
+I> [`ShowMapItems`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_ShowMapItems) should be enabled to display label on bubble marker.
 
 {% tabs %}
 

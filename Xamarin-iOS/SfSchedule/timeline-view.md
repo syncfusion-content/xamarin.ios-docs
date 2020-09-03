@@ -23,7 +23,7 @@ schedule.ScheduleView = SFScheduleView.SFScheduleViewTimeline;
 
 ## Timeline view days count
 
-You can customize the number of days in `TimelineView` using the [DaysCount](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~DaysCount.html) property of [TimelineViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimelineViewSettings.html). By default, value of the timeline days count is -1, and single day will be visible.
+You can customize the number of days in `TimelineView` using the [DaysCount](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineViewSettings.html#Syncfusion_SfSchedule_iOS_TimelineViewSettings_DaysCount) property of [TimelineViewSettings](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_TimelineViewSettings). By default, value of the timeline days count is -1, and single day will be visible.
 
 {% tabs %}
 {% highlight c# %}
@@ -45,7 +45,7 @@ For other value of `DaysCount`, only timeline view visible dates will be display
 
 ## Customized working hours
 
-You can customize the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~EndHour.html) properties of `TimelineView` to show only the required time duration for end users. You can also set `StartHour` and `EndHour` in double value, which will be converted to time to show the required time duration in minutes. The default value for `StartHour` and `EndHour` value is 0 to 24 to show all the time slots in `TimelineView`.
+You can customize the [StartHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineViewSettings.html#Syncfusion_SfSchedule_iOS_TimelineViewSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineViewSettings.html#Syncfusion_SfSchedule_iOS_TimelineViewSettings_EndHour) properties of `TimelineView` to show only the required time duration for end users. You can also set `StartHour` and `EndHour` in double value, which will be converted to time to show the required time duration in minutes. The default value for `StartHour` and `EndHour` value is 0 to 24 to show all the time slots in `TimelineView`.
 
 {% tabs %}
 {% highlight c# %}
@@ -69,15 +69,15 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ## Special time regions
 
-You can restrict user interaction such as selection and highlight specific region of time in `TimelineView` by adding `SpecialTimeRegion` in the [SpecialTimeRegions](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SpecialTimeRegions.html) property of `SFSchedule`. You need to set the [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeRegionSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeRegionSettings~EndHour.html) properties of [TimeRegionSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeRegionSettings.html) to create `SpecialTimeRegion`. You can also set `StartHour` and `EndHour` in double value, which will be converted to time to show the required time duration in minutes. By default, the values of `StartHour` and `EndHour` are 0.
+You can restrict user interaction such as selection and highlight specific region of time in `TimelineView` by adding `SpecialTimeRegion` in the [SpecialTimeRegions](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_SpecialTimeRegions) property of `SFSchedule`. You need to set the [StartHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimeRegionSettings.html#Syncfusion_SfSchedule_iOS_TimeRegionSettings_StartHour) and [EndHour](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimeRegionSettings.html#Syncfusion_SfSchedule_iOS_TimeRegionSettings_EndHour) properties of [TimeRegionSettings](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimeRegionSettings.html) to create `SpecialTimeRegion`. You can also set `StartHour` and `EndHour` in double value, which will be converted to time to show the required time duration in minutes. By default, the values of `StartHour` and `EndHour` are 0.
 
 ### Special time region appearance
 
-You can customize the appearance of `SpecialTimeRegion` using the [Color](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeRegionSettings~Color.html) and [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeRegionSettings~TextColor.html) properties of `TimeRegionSettings`.
+You can customize the appearance of `SpecialTimeRegion` using the [Color](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimeRegionSettings.html#Syncfusion_SfSchedule_iOS_TimeRegionSettings_Color) and [TextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimeRegionSettings.html#Syncfusion_SfSchedule_iOS_TimeRegionSettings_TextColor) properties of `TimeRegionSettings`.
 
 ### Selection restriction in time slots
 
-You can enable/disable the touch interaction of `SpecialTimeRegion` using [CanEdit](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeRegionSettings~CanEdit.html) property of `TimeRegionSettings`. By default, its value is true.
+You can enable/disable the touch interaction of `SpecialTimeRegion` using [CanEdit](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimeRegionSettings.html#Syncfusion_SfSchedule_iOS_TimeRegionSettings_CanEdit) property of `TimeRegionSettings`. By default, its value is true.
 
 {% tabs %}
 {% highlight c# %}
@@ -98,7 +98,7 @@ schedule.SpecialTimeRegions = specialTimeRegions;
 
 ## Time interval
 
-You can customize the interval of time slots in `TimelineView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimeInterval.html) property of `SFSchedule`.
+You can customize the interval of time slots in `TimelineView` by setting [TimeInterval](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_TimeInterval) property of `SFSchedule`.
 
 {% tabs %}
 {% highlight c# %}
@@ -112,7 +112,7 @@ If you modify the `TimeInterval` value (in minutes), you need to change the time
 
 ## Time interval height 
 
-You can customize the interval height of time slots in `TimelineView` by setting the [TimeIntervalHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~TimeIntervalHeight.html) property of `SFSchedule`.
+You can customize the interval height of time slots in `TimelineView` by setting the [TimeIntervalHeight](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_TimeIntervalHeight) property of `SFSchedule`.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,7 +123,7 @@ schedule.TimeIntervalHeight = 180;
 
 ## Nonworking days
 
-You can add the non-working days in `TimelineView` using [NonWorkingsDays](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~NonWorkingDays.html) property of `TimelineViewSettings`. By default, there is no non-working day in `TimelineView`.
+You can add the non-working days in `TimelineView` using [NonWorkingsDays](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineViewSettings.html#Syncfusion_SfSchedule_iOS_TimelineViewSettings_NonWorkingDays) property of `TimelineViewSettings`. By default, there is no non-working day in `TimelineView`.
 
 {% tabs %}
 {% highlight c# %}
@@ -152,7 +152,7 @@ In Timeline view, `FirstDayOfWeek` will be applied only when `DayCounts` propert
 
 ## Appointment height
 
-You can customize the height of the appointment in `TimelineView` using the [AppointmentHeight](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~AppointmentHeight.html) property of `TimelineViewSettings`. By default, its value is 50.
+You can customize the height of the appointment in `TimelineView` using the [AppointmentHeight](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineViewSettings.html#Syncfusion_SfSchedule_iOS_TimelineViewSettings_AppointmentHeight) property of `TimelineViewSettings`. By default, its value is 50.
 
 {% tabs %}
 {% highlight c# %}
@@ -217,7 +217,7 @@ schedule.ViewHeaderHeight = 50;
 
 ### View header date format
 
-You can customize the date format of `ViewHeader` in `TimelineView` using the [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineLabelSettings~DateFormat.html) property of `TimelineLabelSettings`.
+You can customize the date format of `ViewHeader` in `TimelineView` using the [DateFormat](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineLabelSettings.html#Syncfusion_SfSchedule_iOS_TimelineLabelSettings_DateFormat) property of `TimelineLabelSettings`.
 
 {% tabs %}
 {% highlight c# %}
@@ -235,7 +235,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ## Timeslot customization
 
-You can customize the appearance of time slots using the [Color](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~Color.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~BorderColor.html) and [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~BorderWidth.html) properties of `TimelineViewSettings`.
+You can customize the appearance of time slots using the [Color](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineViewSettings.html#Syncfusion_SfSchedule_iOS_TimelineViewSettings_Color), [BorderColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineViewSettings.html#Syncfusion_SfSchedule_iOS_TimelineViewSettings_BorderColor) and [BorderWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineViewSettings.html#Syncfusion_SfSchedule_iOS_TimelineViewSettings_BorderWidth) properties of `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight c# %}
@@ -251,7 +251,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ## Time label customization
 
-You can customize the format for the labels that mention the time by setting the [TimeFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineLabelSettings~TimeFormat.html) property of [LabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineViewSettings~LabelSettings.html) in `TimelineViewSettings`.
+You can customize the format for the labels that mention the time by setting the [TimeFormat](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineLabelSettings.html#Syncfusion_SfSchedule_iOS_TimelineLabelSettings_TimeFormat) property of [LabelSettings](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineViewSettings.html#Syncfusion_SfSchedule_iOS_TimelineViewSettings_LabelSettings) in `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight c# %}
@@ -267,7 +267,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ### Time label appearance
 
-You can customize the color for the labels that mention the time by setting the [TimeLabelColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineLabelSettings~TimeLabelColor.html) property of `LabelSettings` in `TimelineViewSettings`.
+You can customize the color for the labels that mention the time by setting the [TimeLabelColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineLabelSettings.html#Syncfusion_SfSchedule_iOS_TimelineLabelSettings_TimeLabelColor) property of `LabelSettings` in `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight c# %}
@@ -283,7 +283,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ### Time Label size
 
-You can customize the size of the labels that mention the time by setting the [TimeLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimelineLabelSettings~TimeLabelSize.html) property of `LabelSettings` in `TimelineViewSettings`.
+You can customize the size of the labels that mention the time by setting the [TimeLabelSize](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimelineLabelSettings.html#Syncfusion_SfSchedule_iOS_TimelineLabelSettings_TimeLabelSize) property of `LabelSettings` in `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight c# %}
@@ -305,7 +305,7 @@ You can customize the default appearance of selection UI in the timeslots.
 * [Programmatic selection](#programmatic-selection)
 
 ### Selection customization using style
-You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionStyle.html) property of `SFSchedule`.
+You can customize the timeslot selection by using [SelectionStyle](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_SelectionStyle) property of `SFSchedule`.
 
 {% tabs %}
 {% highlight C# %}
@@ -321,7 +321,7 @@ schedule.SelectionStyle = selectionStyle;
 {% endtabs %}
 
 ### Selection customization using custom View
-You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectionView.html) property of `SFSchedule`.
+You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_SelectionView) property of `SFSchedule`.
 
 {% tabs %}
 {% highlight C# %}
@@ -336,7 +336,7 @@ schedule.SelectionView = customView;
 {% endtabs %}
 
 ### Programmatic selection
-You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~SelectedDate.html) property of `SFSchedule`. By default, it is null.
+You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_SelectedDate) property of `SFSchedule`. By default, it is null.
 
 {% tabs %}
 {% highlight C# %}

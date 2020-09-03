@@ -13,7 +13,7 @@ The sublayer in maps allows to load multiple shape files in a single container
 
 ## Adding sublayer in ShapeFileLayer
 
-You can add multiple shape files in the [`SFShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer.html) using [`Sublayers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~Sublayers.html) property.
+You can add multiple shape files in the [`SFShapeFileLayer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html) using [`Sublayers`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html) property.
 
 {% tabs %}
 
@@ -111,7 +111,7 @@ this.View.AddSubview(map);
 
 ## Adding sublayer in ImageryLayer
 
-You can add multiple shape files in the `ImageryLayer` using [`Sublayers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~Sublayers.html) property.
+You can add multiple shape files in the `ImageryLayer` using [`Sublayers`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html) property.
 
 {% tabs %}
 
