@@ -11,14 +11,14 @@ documentation: ug
 
 # Annotations
 
-[`SFCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge~Annotations.html), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularGauge~Annotations.html) property.
+[`SFCircularGauge`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularGauge.html#Syncfusion_SfGauge_iOS_SFCircularGauge_Annotations), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularGauge.html#Syncfusion_SfGauge_iOS_SFCircularGauge_Annotations) property.
 
 ##  Setting view annotation
 
 When the annotation allows you to place custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the `Annotations`:
 
-* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeAnnotation~Angle.html): Used to place the `View` at the given `Angle`. 
-* [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeAnnotation~Offset.html): Used to move the `View` from the center to edge of the circular gauge. The value should be range from 0 to 1.
+* [`Angle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFGaugeAnnotation.html#Syncfusion_SfGauge_iOS_SFGaugeAnnotation_Angle): Used to place the `View` at the given `Angle`. 
+* [`Offset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFGaugeAnnotation.html#Syncfusion_SfGauge_iOS_SFGaugeAnnotation_Offset): Used to move the `View` from the center to edge of the circular gauge. The value should be range from 0 to 1.
 
 The following code is used to create the `Annotations`.
 

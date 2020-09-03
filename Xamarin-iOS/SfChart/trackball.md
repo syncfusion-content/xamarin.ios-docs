@@ -9,7 +9,7 @@ documentation: ug
 
 # Trackball
 
-Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`SFChartTrackballBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.ChartBase~Behaviors.html) collections property of [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) using [`AddChartBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart~AddChartBehavior.html) method. Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
+Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`SFChartTrackballBehavior`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html) to the [`Behaviors`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartBase.html#Syncfusion_SfChart_iOS_ChartBase_Behaviors) collections property of [`SFChart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChart.html) using [`AddChartBehavior`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChart.html#Syncfusion_SfChart_iOS_SFChart_AddChartBehavior_Syncfusion_SfChart_iOS_SFChartBehavior_) method. Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
 
 You can use the following properties to show/hide the line and labels.
 
@@ -31,11 +31,11 @@ chart.AddChartBehavior (behavior);
 
 ## Label Display Mode
 
-[`LabelDisplayMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~LabelDisplayMode.html) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the two options you can set to this property,
+[`LabelDisplayMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_LabelDisplayMode) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the two options you can set to this property,
 
-* [`FloatAllPoints`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html) – Displays label for all the data points along the vertical line.
-* [`GroupAllPoints`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html) – Displays label for all the data points on top of the chart along the vertical line.
-* [`NearestPoint`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html) – Displays label for single data point that is nearer to the touch contact position.
+* [`FloatAllPoints`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html) – Displays label for all the data points along the vertical line.
+* [`GroupAllPoints`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html) – Displays label for all the data points on top of the chart along the vertical line.
+* [`NearestPoint`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html) – Displays label for single data point that is nearer to the touch contact position.
 
 {% highlight c# %}
 
@@ -57,28 +57,28 @@ In the following screenshot, trackball label is shown for only single data point
 
 ## Activation mode
 
-The [`ActivationMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~ActivationMode.html) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`SFChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html).
+The [`ActivationMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`SFChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html).
 
 The SFChartTrackballActivationMode enum contains the following values:
 
-* [`LongPress`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Activates trackball only when performing the long press action.
-* [`TouchMove`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Activates trackball only when performing touch move action.
-* [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~Show.html) method.
+* [`LongPress`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Activates trackball only when performing the long press action.
+* [`TouchMove`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Activates trackball only when performing touch move action.
+* [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_Show_CoreGraphics_CGPoint_) method.
 
 ## Customizing appearance
 
 **Customize Trackball Labels**
 
-The [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~LabelStyle.html) property provides options to customize the trackball labels.
+The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_LabelStyle) property provides options to customize the trackball labels.
 
-* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderColor.html) – used to change the label border color.
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BackgroundColor.html) – used to change the label background color.
-* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~BorderWidth.html) – used to change the label border width.
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Color.html) – used to change the text color.
-* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Font.html) – used to change label font size, family and weight.
-* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballLabelStyle~Visible.html) – used to control the visibility of label.
-* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~Margin.html) – used to set the margin for label.
-* [`LabelFormatter`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLabelStyle~LabelFormatter.html)– used to format the label.
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BorderColor) – used to change the label border color.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BackgroundColor) – used to change the label background color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BorderWidth) – used to change the label border width.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Color) – used to change the text color.
+* [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Font) – used to change label font size, family and weight.
+* [`Visible`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballLabelStyle_Visible) – used to control the visibility of label.
+* [`Margin`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Margin) – used to set the margin for label.
+* [`LabelFormatter`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_LabelFormatter)– used to format the label.
 
 {% highlight c# %}
 
@@ -103,15 +103,15 @@ chart.AddChartBehavior (behavior);
 
 **Customize Trackball Marker**
 
-The [`MarkerStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~MarkerStyle.html) property provides options to customize the trackball markers.
+The [`MarkerStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_MarkerStyle) property provides options to customize the trackball markers.
 
-* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle~Visible.html) – used to enable / disable the marker. Default value is true.
-* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle~BorderColor.html) – used to change the marker border color.
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle~Color.html) – used to change the marker background color.
-* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle~BorderWidth.html) – used to change the width of the marker border.
-* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle~Width.html) – used to change the width of the marker.
-* [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle~Height.html) – used to change the height of the marker.
-* [`MarkerType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle~MarkerType.html) – used to change the shapes of the marker.
+* [`Visible`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballMarkerStyle_Visible) – used to enable / disable the marker. Default value is true.
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballMarkerStyle_BorderColor) – used to change the marker border color.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballMarkerStyle_Color) – used to change the marker background color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballMarkerStyle_BorderWidth) – used to change the width of the marker border.
+* [`Width`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballMarkerStyle_Width) – used to change the width of the marker.
+* [`Height`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballMarkerStyle_Height) – used to change the height of the marker.
+* [`MarkerType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballMarkerStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballMarkerStyle_MarkerType) – used to change the shapes of the marker.
 
 
 {% highlight c# %}
@@ -139,12 +139,12 @@ chart.AddChartBehavior (behavior);
 
 **Customize Trackball Line**
 
-The [`LineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~LineStyle.html) property provides options to customize the trackball line.
+The [`LineStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_LineStyle) property provides options to customize the trackball line.
 
-* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballLineStyle~Visible.html) – used to enable / disable the line. Default value is true.
-* [`LineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineWidth.html) – used to change the stroke width of the line.
-* [`LineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFLineStyle~LineColor.html) – used to change the stroke color of the line.
-* [`Dashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballLineStyle~Dashes.html) – Specifies the dashes to be applied on the line.
+* [`Visible`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLineStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballLineStyle_Visible) – used to enable / disable the line. Default value is true.
+* [`LineWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLineStyle.html#Syncfusion_SfChart_iOS_SFLineStyle_LineWidth) – used to change the stroke width of the line.
+* [`LineColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLineStyle.html#Syncfusion_SfChart_iOS_SFLineStyle_LineColor) – used to change the stroke color of the line.
+* [`Dashes`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLineStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballLineStyle_Dashes) – Specifies the dashes to be applied on the line.
 
 {% highlight c# %}
 
@@ -177,15 +177,15 @@ Following screenshot illustrates the customization of trackball elements.
 
 ## Axis label alignment
 
-The position of trackball’s axis label can be changed using the [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle~LabelAlignment.html) property of [`SFChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle.html). The following options are available in [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle~LabelAlignment.html).
+The position of trackball’s axis label can be changed using the [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballAxisLabelStyle_LabelAlignment) property of [`SFChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle.html). The following options are available in [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballAxisLabelStyle_LabelAlignment).
 
-* [`Far`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAlignment.html) - The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis. 
-* [`Near`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAlignment.html) - The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
-* [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartAlignment.html) - The label will be positioned at the center of tick. This is the default value.
+* [`Far`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAlignment.html) - The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis. 
+* [`Near`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAlignment.html) - The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
+* [`Center`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAlignment.html) - The label will be positioned at the center of tick. This is the default value.
 
 ## Show/hide the series label
 
-This feature is used to show/hide the trackball label of the series by using [`CartesianSeries.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~ShowTrackballInfo.html) property. Default value of [`CartesianSeries.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFCartesianSeries~ShowTrackballInfo.html) property is `True`.
+This feature is used to show/hide the trackball label of the series by using [`CartesianSeries.ShowTrackballInfo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCartesianSeries.html#Syncfusion_SfChart_iOS_SFCartesianSeries_ShowTrackballInfo) property. Default value of [`CartesianSeries.ShowTrackballInfo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCartesianSeries.html#Syncfusion_SfChart_iOS_SFCartesianSeries_ShowTrackballInfo) property is `True`.
 
 {% highlight c# %}
 
@@ -210,7 +210,7 @@ chart.Series.Add(lineSeries);
 
 ### Show method
 
-The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~Show.html) method is used to activate the trackball at the specified location.
+The [`Show`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_Show_CoreGraphics_CGPoint_) method is used to activate the trackball at the specified location.
 
 {% highlight c# %} 
 [C#]
@@ -221,7 +221,7 @@ trackball.Show(point);
 
 ### Hide method
 
-The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~Hide.html) method is used to hide the trackball programmatically.
+The [`Hide`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_Hide) method is used to hide the trackball programmatically.
 
 {% highlight c# %} 
 [C#]
@@ -232,7 +232,7 @@ trackball.Hide();
 
 ### HitTest method
 
-The [`HitTest`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior~HitTest.html) method is used to check whether the point is in trackball or not.
+The [`HitTest`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_HitTest_System_Single_System_Single_) method is used to check whether the point is in trackball or not.
 
 {% highlight c# %} 
 [C#]
@@ -243,14 +243,14 @@ trackball.HitTest(pointX, pointY);
 
 ### TrackballLabelsGenerated
 
-To customize the appearance of trackball label based on condition, override the TrackballLabelsGenerated method of [`SFChartTrackballBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html). The argument of this method is [`SFChartPointInfo`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo.html) which contains the following properties: 
+To customize the appearance of trackball label based on condition, override the TrackballLabelsGenerated method of [`SFChartTrackballBehavior`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html). The argument of this method is [`SFChartPointInfo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html) which contains the following properties: 
 
-* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo~Label.html) -  Used to provide text for trackball label.
-* [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo~Visible.html) - Determines the visibility of trackball.
-* [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo~Series.html) - Gets the respective series of the data point in which the trackball is activated.
-* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo~LabelStyle.html) - Customize the appearance of trackball label.
-* [`MarkerStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo~MarkerStyle.html) - Gets the marker style of trackball label.
-* [`Data`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo~Data.html) - Gets the corresponding data model of the trackball label.
-* [`X`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo~X.html) - Positions the trackball label horizontally.
-* [`Y`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo~Y.html) - Positions the trackball label vertically.
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartPointInfo~Color.html) - Customize the color of trackball label. 
+* [`Label`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html#Syncfusion_SfChart_iOS_SFChartPointInfo_Label) -  Used to provide text for trackball label.
+* [`Visible`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html#Syncfusion_SfChart_iOS_SFChartPointInfo_Visible) - Determines the visibility of trackball.
+* [`Series`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html#Syncfusion_SfChart_iOS_SFChartPointInfo_Series) - Gets the respective series of the data point in which the trackball is activated.
+* [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html#Syncfusion_SfChart_iOS_SFChartPointInfo_LabelStyle) - Customize the appearance of trackball label.
+* [`MarkerStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html#Syncfusion_SfChart_iOS_SFChartPointInfo_MarkerStyle) - Gets the marker style of trackball label.
+* [`Data`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html#Syncfusion_SfChart_iOS_SFChartPointInfo_Data) - Gets the corresponding data model of the trackball label.
+* [`X`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html#Syncfusion_SfChart_iOS_SFChartPointInfo_X) - Positions the trackball label horizontally.
+* [`Y`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html#Syncfusion_SfChart_iOS_SFChartPointInfo_Y) - Positions the trackball label vertically.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPointInfo.html#Syncfusion_SfChart_iOS_SFChartPointInfo_Color) - Customize the color of trackball label. 

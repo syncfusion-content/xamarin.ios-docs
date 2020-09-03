@@ -354,7 +354,7 @@ Property of type DateTime.
 [DataType(DataType.Date)].
 </td>
 <td>
-{{'[SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfDatePicker.html)'| markdownify }}
+{{'[SfDatePicker](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfDatePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -366,7 +366,7 @@ Property of type DateTime.
 [DataType(DataType.Time)].
 </td>
 <td>
-{{'[SfTimePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfTimePicker.html)'| markdownify }}
+{{'[SfTimePicker](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfTimePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -411,7 +411,7 @@ Property of type enum, list.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfPicker.html)'| markdownify }}
+{{'[SfPicker](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfPicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>

@@ -17,17 +17,17 @@ The TreeMap contains the following elements:
 
 ## Legend
 
-You can set the color value of leaf nodes using the [`LegendSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMap~LegendSettings.html) property. This legend is appropriate only for the tree map whose leaf nodes are colored using [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRangeColorMapping.html).
+You can set the color value of leaf nodes using the [`LegendSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFTreeMap.html#Syncfusion_SfTreeMap_iOS_SFTreeMap_LegendSettings) property. This legend is appropriate only for the tree map whose leaf nodes are colored using [`RangeColorMapping`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFRangeColorMapping.html).
 
-The visibility of legend can be enabled by setting the [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFLegendSetting~ShowLegend.html) property to true.
+The visibility of legend can be enabled by setting the [`ShowLegend`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFLegendSetting.html#Syncfusion_SfTreeMap_iOS_SFLegendSetting_ShowLegend) property to true.
 
 ### TreeMap legends
 
-You can set the size of legend icons by setting the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFLegendSetting~ShowLegend.html) property of `LegendSettings` in TreeMap.
+You can set the size of legend icons by setting the [`IconSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFLegendSetting.html#Syncfusion_SfTreeMap_iOS_SFLegendSetting_ShowLegend) property of `LegendSettings` in TreeMap.
 
 ### Labels for legends
 
-You can customize the labels of the legend items using the [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRange~LegendLabel.html) property of [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFRangeColorMapping.html). 
+You can customize the labels of the legend items using the [`LegendLabel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFRange.html#Syncfusion_SfTreeMap_iOS_SFRange_LegendLabel) property of [`RangeColorMapping`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFRangeColorMapping.html). 
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ You can customize the labels of the legend items using the [`LegendLabel`](https
 
 ## Header
 
-You can set headers for each level by setting the [`ShowHeader`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMapLevel~ShowHeader.html) property of each **TreeMap** level. The [`HeaderHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMapLevel~HeaderHeight.html) property helps you set the height of header, and the [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel~GroupPath.html) value determines the header value. 
+You can set headers for each level by setting the [`ShowHeader`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFTreeMapLevel.html#Syncfusion_SfTreeMap_iOS_SFTreeMapLevel_ShowHeader) property of each **TreeMap** level. The [`HeaderHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFTreeMapLevel.html#Syncfusion_SfTreeMap_iOS_SFTreeMapLevel_HeaderHeight) property helps you set the height of header, and the [`GroupPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFTreeMapFlatLevel.html#Syncfusion_SfTreeMap_iOS_SFTreeMapFlatLevel_GroupPath) value determines the header value. 
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ You can set headers for each level by setting the [`ShowHeader`](https://help.sy
 
 ## Data labels
 
-The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFLeafItemSetting~ShowLabels.html) property is used to enable or disable the labels in leaf nodes. The [`LabelPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFLeafItemSetting~LabelPath.html) property allows you to set values to labels.
+The [`ShowLabels`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.html#Syncfusion_SfTreeMap_iOS_SFLeafItemSetting_ShowLabels) property is used to enable or disable the labels in leaf nodes. The [`LabelPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.html#Syncfusion_SfTreeMap_iOS_SFLeafItemSetting_LabelPath) property allows you to set values to labels.
 
 {% tabs %}
 
@@ -92,7 +92,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfus
 
 ### Avoid overlap in data labels
 
-The [`OverflowMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFLeafItemSetting~OverflowMode.html)) property aligns data labels within leaf node boundaries using the `Trim`, `Wrap`, and `Hide` options. The default value of the `OverflowMode` property is Trim.
+The [`OverflowMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.html#Syncfusion_SfTreeMap_iOS_SFLeafItemSetting_OverflowMode)) property aligns data labels within leaf node boundaries using the `Trim`, `Wrap`, and `Hide` options. The default value of the `OverflowMode` property is Trim.
 
 #### Trim
 
@@ -144,7 +144,7 @@ You can hide the data labels inside the leaf node boundaries using the `Hide` op
 
 ### Customize data labels
 
-You can customize the data labels using the [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFLeafItemSetting~LabelStyle.html) property of LeafItemSettings. The text color and font can be customized using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFStyle~Color.html) and [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeMap.iOS~Syncfusion.SfTreeMap.iOS.SFStyle~Font.html) properties respectively.
+You can customize the data labels using the [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFLeafItemSetting.html#Syncfusion_SfTreeMap_iOS_SFLeafItemSetting_LabelStyle) property of LeafItemSettings. The text color and font can be customized using the [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFStyle.html#Syncfusion_SfTreeMap_iOS_SFStyle_Color) and [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeMap.iOS.SFStyle.html#Syncfusion_SfTreeMap_iOS_SFStyle_Font) properties respectively.
 
 {% tabs %}
 

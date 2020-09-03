@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
+This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 
 ## Add sunburst chart references
 
@@ -486,7 +486,7 @@ Accounts
 </tr>
 </table>
 
-Define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html).
+Define a data model that represents the above data in [`SfSunburstChart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html).
 
 {% highlight c# %}
 
@@ -503,7 +503,7 @@ public class SunburstModel
 
 Then, create a view model class, and initialize a list of SunburstModel objects as follows.
 
-In ['SfSunburstChart'](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html), [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~ItemsSource.html) property should be a collection of objects. Add the following class for generating the datapoints.
+In ['SfSunburstChart'](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html), [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html#Syncfusion_SfSunburstChart_iOS_SfSunburstChart_ItemsSource) property should be a collection of objects. Add the following class for generating the datapoints.
 
 
 {% highlight c# %}
@@ -552,8 +552,8 @@ public class SunburstViewModel
 
 ## Populate sunburst chart with data
 
-Now, set the DataSource property of the above SunburstViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~ItemsSource.html) property. 
-Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Levels.html) collection. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstHierarchicalLevel~GroupMemberPath.html) property, and each arc segment size is calculated using the [`ValueMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~ValueMemberPath.html) property.
+Now, set the DataSource property of the above SunburstViewModel to the [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html#Syncfusion_SfSunburstChart_iOS_SfSunburstChart_ItemsSource) property. 
+Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstHierarchicalLevel.html) to [`Levels`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html#Syncfusion_SfSunburstChart_iOS_SfSunburstChart_Levels) collection. Each hierarchy level is formed based on the property specified in [`GroupMemberPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstHierarchicalLevel.html#Syncfusion_SfSunburstChart_iOS_SunburstHierarchicalLevel_GroupMemberPath) property, and each arc segment size is calculated using the [`ValueMemberPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html#Syncfusion_SfSunburstChart_iOS_SfSunburstChart_ValueMemberPath) property.
 
 {% highlight C# %}
 
@@ -577,7 +577,7 @@ Then, add the [`SunburstHierarchicalLevel`](https://help.syncfusion.com/cr/cref_
 
 ## Add title
 
-You can add title to the sunburst chart to provide information to users about the data being plotted in the chart. You can set title using the [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Title.html) property.
+You can add title to the sunburst chart to provide information to users about the data being plotted in the chart. You can set title using the [`SfSunburstChart.Title`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html#Syncfusion_SfSunburstChart_iOS_SfSunburstChart_Title) property.
 
 {% highlight C# %} 
 
@@ -590,7 +590,7 @@ You can add title to the sunburst chart to provide information to users about th
 
 ## Add legend
 
-You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~Legend.html) property.
+You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html#Syncfusion_SfSunburstChart_iOS_SfSunburstChart_Legend) property.
 
 {% highlight C# %} 
 
@@ -602,7 +602,7 @@ You can enable legend using the [`SfSunburstChart.Legend`](https://help.syncfusi
 
 ## Add data labels
 
-You can add data labels to improve the readability of the sunburst chart. Data labels can be added using the [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SfSunburstChart~DataLabel.html) property.
+You can add data labels to improve the readability of the sunburst chart. Data labels can be added using the [`SfSunburstChart.DataLabel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SfSunburstChart.html#Syncfusion_SfSunburstChart_iOS_SfSunburstChart_DataLabel) property.
 
 {% highlight C# %} 
 

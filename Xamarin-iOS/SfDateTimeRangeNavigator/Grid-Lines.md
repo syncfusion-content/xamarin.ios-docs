@@ -9,12 +9,12 @@ documentation: ug
 
 # Grid Lines
 
-The [`MinorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MinorScaleStyle.html) and [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~MajorScaleStyle.html) properties of [`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
+The [`MinorScaleStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html#Syncfusion_SfChart_iOS_SFDateTimeRangeNavigator_MinorScaleStyle) and [`MajorScaleStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html#Syncfusion_SfChart_iOS_SFDateTimeRangeNavigator_MajorScaleStyle) properties of [`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
 
-* [`ShowGridLines`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~ShowGridLines.html) – used to set the visibility of grid lines
-* [`GridLineWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~GridLineWidth.html) – used to set the width for grid lines
-* [`GridLineColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~GridLineColor.html) – used to set the color for grid lines
-* [`GridLineDashes`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle~GridLineDashes.html) – used to set dashes for grid lines
+* [`ShowGridLines`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle.html#Syncfusion_SfChart_iOS_SFRangeNavigatorScaleStyle_ShowGridLines) – used to set the visibility of grid lines
+* [`GridLineWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle.html#Syncfusion_SfChart_iOS_SFRangeNavigatorScaleStyle_GridLineWidth) – used to set the width for grid lines
+* [`GridLineColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle.html#Syncfusion_SfChart_iOS_SFRangeNavigatorScaleStyle_GridLineColor) – used to set the color for grid lines
+* [`GridLineDashes`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFRangeNavigatorScaleStyle.html#Syncfusion_SfChart_iOS_SFRangeNavigatorScaleStyle_GridLineDashes) – used to set dashes for grid lines
 
 {% highlight c# %}
 

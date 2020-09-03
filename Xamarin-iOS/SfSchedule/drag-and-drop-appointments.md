@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 # Appointment Drag and Drop
-Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AllowAppointmentDrag.html) property of `SfSchedule`.
+Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_AllowAppointmentDrag) property of `SfSchedule`.
 
 {% tabs %}
 {% highlight c# %}
@@ -21,9 +21,9 @@ schedule.AllowAppointmentDrag = true;
 ![Drag and Drop appointments in schedule Xamarin iOS](data_binding_images/draganddrop.gif)
 
 ## Handle dragging based on the appointment
-Using [AppointmentDragStarting](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDragStarting_EV.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragStartingEventArgs.html) argument contains the following properties.
+Using [AppointmentDragStarting](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.AppointmentDragStartingEventArgs.html) argument contains the following properties.
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragStartingEventArgs~Appointment.html) - Gets the dragged appointment details.
+[Appointment](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.AppointmentDragStartingEventArgs.html#Syncfusion_SfSchedule_iOS_AppointmentDragStartingEventArgs_Appointment) - Gets the dragged appointment details.
 [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Appointment dragging can be handled (enable/disable) using this boolean property.
 
 {% tabs %}
@@ -62,11 +62,11 @@ private void Schedule_AppointmentDragStarting(object sender, AppointmentDragStar
 {% endtabs %}
 
 ## Get the dragging appointment position
-Using [AppointmentDragOver](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDragOver_EV.html) event, you can get the dragging appointment details, position and time of the particular location. The event will be continuously triggered when the appointment is being dragged. The [AppointmentDragEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs.html) argument contains the following properties.
+Using [AppointmentDragOver](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html) event, you can get the dragging appointment details, position and time of the particular location. The event will be continuously triggered when the appointment is being dragged. The [AppointmentDragEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs.html) argument contains the following properties.
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs~Appointment.html) - Gets the dragging appointment details.
-[DraggingPoint](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs~DraggingPoint.html) - Gets the dragging point (X, Y) of the appointment in Schedule.
-[DraggingTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs~DraggingTime.html) - Gets the dragging time of the appointment in Schedule
+[Appointment](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs.html#Syncfusion_SfSchedule_iOS_AppointmentDragEventArgs_Appointment) - Gets the dragging appointment details.
+[DraggingPoint](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs.html#Syncfusion_SfSchedule_iOS_AppointmentDragEventArgs_DraggingPoint) - Gets the dragging point (X, Y) of the appointment in Schedule.
+[DraggingTime](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.AppointmentDragEventArgs.html#Syncfusion_SfSchedule_iOS_AppointmentDragEventArgs_DraggingTime) - Gets the dragging time of the appointment in Schedule
 
 {% tabs %}
 {% highlight c# %}
@@ -106,11 +106,11 @@ private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArg
 {% endtabs %}
 
 ## Handle appointment dropping
-Using [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~AppointmentDrop_EV.html) event you can get the dropping appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs.html) argument contains the following properties.
+Using [AppointmentDrop](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html) event you can get the dropping appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs.html) argument contains the following properties.
 
-[Appointment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs~Appointment.html) - Gets the details of the appointment to be dropped.
+[Appointment](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs.html#Syncfusion_SfSchedule_iOS_AppointmentDropEventArgs_Appointment) - Gets the details of the appointment to be dropped.
 [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - Appointment dropping can be handled (enable / disable) using this Boolean property.
-[DropTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs~DropTime.html) - Gets the dropped time of the appointment in Schedule
+[DropTime](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.AppointmentDropEventArgs.html#Syncfusion_SfSchedule_iOS_AppointmentDropEventArgs_DropTime) - Gets the dropped time of the appointment in Schedule
 
 {% tabs %}
 {% highlight c# %}
@@ -150,7 +150,7 @@ private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 {% endtabs %}
 
 ## Customizing the Drag and Drop environment
-Using [DragDropSettings](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.SFSchedule~DragDropSettings.html) property of schedule, you can handle the behavior of drag and drop in Schedule.
+Using [DragDropSettings](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.SFSchedule.html#Syncfusion_SfSchedule_iOS_SFSchedule_DragDropSettings) property of schedule, you can handle the behavior of drag and drop in Schedule.
 
 {% tabs %}
 {% highlight c# %}
@@ -166,7 +166,7 @@ schedule.DragDropSettings = dragDropSettings;
 {% endtabs %}
 
 ### Disabling navigation when dragging appointment
-Using [AllowNavigate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~AllowNavigate.html) boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment the endpoint of the current view.
+Using [AllowNavigate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DragDropSettings.html#Syncfusion_SfSchedule_iOS_DragDropSettings_AllowNavigate) boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment the endpoint of the current view.
 
 {% tabs %}
 {% highlight c# %}
@@ -175,7 +175,7 @@ dragDropSettings.AllowNavigate = false;
 {% endtabs %}
 
 ### Handling navigation delay while holding dragged appointment
-Using [AutoNavigationDelay](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~AutoNavigationDelay.html)  `TimeSpan` property can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
+Using [AutoNavigationDelay](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DragDropSettings.html#Syncfusion_SfSchedule_iOS_DragDropSettings_AutoNavigationDelay)  `TimeSpan` property can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
 
 {% tabs %}
 {% highlight c# %}
@@ -185,7 +185,7 @@ dragDropSettings.AutoNavigationDelay = timeSpan;
 {% endtabs %}
 
 ### Disabling scroll when dragging appointment
-Using [AllowScroll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~AllowScroll.html) boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
+Using [AllowScroll](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DragDropSettings.html#Syncfusion_SfSchedule_iOS_DragDropSettings_AllowScroll) boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
 
 {% tabs %}
 {% highlight c# %}
@@ -194,7 +194,7 @@ dragDropSettings.AllowScroll = false;
 {% endtabs %}
 
 ### Disabling dragging time indicator
-[ShowTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~ShowTimeIndicator.html) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots. Default value of the `ShowTimeIndicator` property is true.
+[ShowTimeIndicator](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DragDropSettings.html#Syncfusion_SfSchedule_iOS_DragDropSettings_ShowTimeIndicator) - Using this boolean property can handle the time indicator whether it should visible or not, which shows the dragged appointment current position time in time text slots. Default value of the `ShowTimeIndicator` property is true.
 
 {% tabs %}
 {% highlight c# %}
@@ -203,7 +203,7 @@ dragDropSettings.ShowTimeIndicator = false;
 {% endtabs %}
 
 ## Customize appearance of dragging Time Indicator
-Using [TimeIndicatorStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.DragDropSettings~TimeIndicatorStyle.html) property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeIndicatorStyle~TextColor.html), [TextSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeIndicatorStyle~TextSize.html) and [TextFormat](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.TimeIndicatorStyle~TextFormat.html).
+Using [TimeIndicatorStyle](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.DragDropSettings.html#Syncfusion_SfSchedule_iOS_DragDropSettings_TimeIndicatorStyle) property can handle the time indicator style which contains [TextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimeIndicatorStyle.html#Syncfusion_SfSchedule_iOS_TimeIndicatorStyle_TextColor), [TextSize](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimeIndicatorStyle.html#Syncfusion_SfSchedule_iOS_TimeIndicatorStyle_TextSize) and [TextFormat](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.TimeIndicatorStyle.html#Syncfusion_SfSchedule_iOS_TimeIndicatorStyle_TextFormat).
 
 {% tabs %}
 {% highlight c# %}

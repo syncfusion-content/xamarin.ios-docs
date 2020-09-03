@@ -9,7 +9,7 @@ documentation: ug
 
 # Content
 
-[`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) allows you to set [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html) as its content, explicitly, using [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~Content.html) property. By default the chart is added as its content of the range navigator. If you provide data source for the chart, the chart will be created for the provided data source and it has been set as content of the range navigator.
+[`SFDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html) allows you to set [`SFChart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChart.html) as its content, explicitly, using [`Content`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html#Syncfusion_SfChart_iOS_SFDateTimeRangeNavigator_Content) property. By default the chart is added as its content of the range navigator. If you provide data source for the chart, the chart will be created for the provided data source and it has been set as content of the range navigator.
 
 N> Since the Content property’s data type is UIView and it can accept any UIView as its value.
 
@@ -26,7 +26,7 @@ this.View.AddSubview(rangeNavigator);
 
 {% endhighlight %}
 
-The following code snippet shows how to configure the range navigator using [`Minimum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator~Maximum.html) properties.
+The following code snippet shows how to configure the range navigator using [`Minimum`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html#Syncfusion_SfChart_iOS_SFDateTimeRangeNavigator_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeRangeNavigator.html#Syncfusion_SfChart_iOS_SFDateTimeRangeNavigator_Maximum) properties.
 
 {% highlight c# %}
 

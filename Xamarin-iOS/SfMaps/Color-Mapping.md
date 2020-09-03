@@ -17,7 +17,7 @@ Maps provide two types of color mapping
 
 ## Equal color mapping
 
-It is used to differentiate the shape’s fill based on its underlying value and color using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFEqualColorMapping~Value.html) and [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapColorMapping~Color.html) properties.
+It is used to differentiate the shape’s fill based on its underlying value and color using the [`Value`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFEqualColorMapping.html#Syncfusion_SfMaps_iOS_SFEqualColorMapping_Value) and [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapColorMapping.html#Syncfusion_SfMaps_iOS_SFMapColorMapping_Color) properties.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ this.View.AddSubview(map);
 
 It is used to differentiate the bubble fill based on its under-bound value and color ranges. 
 
-The [`From`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFRangeColorMapping~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFRangeColorMapping~To.html) properties are used to define the color range and color for the range that can be specified using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapColorMapping~Color.html) property.
+The [`From`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFRangeColorMapping.html#Syncfusion_SfMaps_iOS_SFRangeColorMapping_From) and [`To`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFRangeColorMapping.html#Syncfusion_SfMaps_iOS_SFRangeColorMapping_To) properties are used to define the color range and color for the range that can be specified using the [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapColorMapping.html#Syncfusion_SfMaps_iOS_SFMapColorMapping_Color) property.
 
 {% tabs %}
 

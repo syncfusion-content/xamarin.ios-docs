@@ -11,8 +11,8 @@ documentation: ug
 
 ## Auto-generating DataFormItems for Data field
 
-By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on type of property. For example, [DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItem.html) will be created for `int` type property. 
-[DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html) generation depends on the type and attribute defined for the property. The following table lists the several types of `DataFormItem` and its constraints for auto generation.
+By default, [DataFormItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html#Syncfusion_iOS_DataForm_DataFormItemManager_DataFormItems) will be generated based on type of property. For example, [DataFormNumericItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericItem.html) will be created for `int` type property. 
+[DataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItem.html) generation depends on the type and attribute defined for the property. The following table lists the several types of `DataFormItem` and its constraints for auto generation.
 
 <table>
 <tr>
@@ -22,7 +22,7 @@ By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-io
 </tr>
 <tr>
 <td>
-{{'[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormTextItem.html)'| markdownify }}
+{{'[DataFormTextItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormTextItem.html)'| markdownify }}
 </td>
 <td>
 Text
@@ -36,7 +36,7 @@ Default DataFormItem generated for string type and the properties with below att
 </tr>
 <tr>
 <td>
-{{'[DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItem.html)'| markdownify }}
+{{'[DataFormNumericItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericItem.html)'| markdownify }}
 </td>
 <td>
 Numeric
@@ -49,7 +49,7 @@ Generated for int, double, float, decimal, long types and its nullable also prop
 </tr>
 <tr>
 <td>
-{{'[DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem.html)'| markdownify }}
+{{'[DataFormDateItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormDateItem.html)'| markdownify }}
 </td>
 <td>
 Date
@@ -62,7 +62,7 @@ Generated for DateTime type and properties with below attributes.
 </tr>
 <tr>
 <td>
-{{'[DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormTimeItem.html)'| markdownify }}
+{{'[DataFormTimeItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormTimeItem.html)'| markdownify }}
 </td>
 <td>
 Time
@@ -74,7 +74,7 @@ Generated for the property with below attribute.
 </tr>
 <tr>
 <td>
-{{'[DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormPickerItem.html)'| markdownify }}
+{{'[DataFormPickerItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormPickerItem.html)'| markdownify }}
 </td>
 <td>
 Picker
@@ -86,7 +86,7 @@ Generated for Enum type property and the property with below attribute.
 </tr>
 <tr>
 <td>
-{{'[DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html)'| markdownify }}
+{{'[DataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItem.html)'| markdownify }}
 </td>
 <td>
 Bool
@@ -97,11 +97,11 @@ Bool type
 </tr>
 </table>
 
-You can customize the property settings or cancel the generation of `DataFormItem` by handling [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event.
+You can customize the property settings or cancel the generation of `DataFormItem` by handling [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html) event.
 
 ## Customize auto generated fields
 
-You can customize or cancel the generated `DataFormItem` by handling [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event. `AutoGeneratingDataFormItem` event occurs when the field is auto-generated for public and non-static property of the data object.
+You can customize or cancel the generated `DataFormItem` by handling [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html) event. `AutoGeneratingDataFormItem` event occurs when the field is auto-generated for public and non-static property of the data object.
 
 {% tabs %}
 {% highlight c# %}
@@ -114,11 +114,11 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-[AutoGeneratingDataFormItemEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.AutoGeneratingDataFormItemEventArgs.html) provides the information about the auto-generated.  [AutoGeneratingDataFormItemEventArgs.DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.AutoGeneratingDataFormItemEventArgs~DataFormItem.html)  property returns the newly created `DataFormItem`.
+[AutoGeneratingDataFormItemEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.AutoGeneratingDataFormItemEventArgs.html) provides the information about the auto-generated.  [AutoGeneratingDataFormItemEventArgs.DataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.AutoGeneratingDataFormItemEventArgs.html#Syncfusion_iOS_DataForm_AutoGeneratingDataFormItemEventArgs__ctor_Syncfusion_iOS_DataForm_DataFormItem_)  property returns the newly created `DataFormItem`.
 
 ## Cancel DataFormItem generation of data field
 
-You can cancel the specific [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html) adding to the DataForm by handling `AutoGeneratingDataFormItem` event or by defining display attribute to avoid the particular data field being displayed in DataForm.
+You can cancel the specific [DataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItem.html) adding to the DataForm by handling `AutoGeneratingDataFormItem` event or by defining display attribute to avoid the particular data field being displayed in DataForm.
 
 ### Using attributes
 
@@ -171,7 +171,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Changing Editor type
 
-You can change the editor of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html) in `AutoGeneratingDataFormItem` event.
+You can change the editor of [DataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItem.html) in `AutoGeneratingDataFormItem` event.
 In the below code, editor is changed for `Name` field from `Picker` to `DropDown`.
 
 {% tabs %}
@@ -188,7 +188,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Changing property settings
 
-You can change the property of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html) in `AutoGeneratingDataFormItem` event.
+You can change the property of [DataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItem.html) in `AutoGeneratingDataFormItem` event.
 Here, `Salary` data field is restricted from being edited in DataForm.
 
 {% tabs %}
@@ -233,7 +233,7 @@ public string MiddleName
 
 ### Using event
 
-You can show watermark in editor by using [PlaceHolderText](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem~PlaceHolderText.html) property in [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html).
+You can show watermark in editor by using [PlaceHolderText](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItem.html#Syncfusion_iOS_DataForm_DataFormItem_PlaceHolderText) property in [DataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -252,8 +252,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Changing DataFormItem
 
-You can change created [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItem.html) and assign new `DataFormItem` based on your requirement. 
-Here,[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormTextItem.html) with number keyboard loaded for numeric value instead of [DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItem.html).
+You can change created [DataFormItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItem.html) and assign new `DataFormItem` based on your requirement. 
+Here,[DataFormTextItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormTextItem.html) with number keyboard loaded for numeric value instead of [DataFormNumericItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -272,7 +272,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Adding or removing Data field displayed in DataForm at runtime
 
-If you want to remove or add data fields item at runtime, you can use [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~RefreshLayout.html) method which auto-generates the DataFormItem’s where you can skip certain item from display. By default, it will generate the items that was canceled initially. If you want to regenerate all the items, you need to pass argument as `true`.
+If you want to remove or add data fields item at runtime, you can use [RefreshLayout](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html#Syncfusion_iOS_DataForm_SfDataForm_RefreshLayout_System_Boolean_) method which auto-generates the DataFormItem’s where you can skip certain item from display. By default, it will generate the items that was canceled initially. If you want to regenerate all the items, you need to pass argument as `true`.
 In the below code snippet, items are auto generated based on ` refreshLayout` flag where you can change flag at runtime and call `RefreshLayout` method to add or remove items being displayed in DataForm at runtime.
 
 {% tabs %}
@@ -308,7 +308,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Initial rendering of data form items in Xamarin.iOS DataForm](SfDataForm_images/MoreFieldsOnLoad.png)
 
-If you want to generate MiddleName and LastName fields at runtime, you need to set `refreshLayout` flag as `true` and call [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~RefreshLayout.html) method which triggers `AutoGeneratingDataFormItem` event again and generates the items based on `refreshLayout` flag.
+If you want to generate MiddleName and LastName fields at runtime, you need to set `refreshLayout` flag as `true` and call [RefreshLayout](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html#Syncfusion_iOS_DataForm_SfDataForm_RefreshLayout_System_Boolean_) method which triggers `AutoGeneratingDataFormItem` event again and generates the items based on `refreshLayout` flag.
 
 {% tabs %}
 {% highlight c# %}
@@ -324,7 +324,7 @@ Here, `MiddleName` and `LastName` fields are generated at runtime after clicking
 
 ![Adding data form fields at run time in Xamarin.iOS DataForm](SfDataForm_images/MoreFieldsAdd.png)
 
-`GroupName` field is displayed initially in DataForm. If you want to remove it at runtime, you need to set refreshLayout flag as true and pass argument as true in[RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~RefreshLayout.html) method. It triggers `AutoGeneratingDataFormItem` event for all the fields where you can cancel `GroupName’ field item generation.
+`GroupName` field is displayed initially in DataForm. If you want to remove it at runtime, you need to set refreshLayout flag as true and pass argument as true in[RefreshLayout](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html#Syncfusion_iOS_DataForm_SfDataForm_RefreshLayout_System_Boolean_) method. It triggers `AutoGeneratingDataFormItem` event for all the fields where you can cancel `GroupName’ field item generation.
 
 {% tabs %}
 {% highlight c# %}
@@ -344,13 +344,13 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ## DataFormItemManager
 
-[DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html) collection and handles value reflection and validation. It also provides overrides to handle get and set property values from and to data object.
+[DataFormItemManager](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html#Syncfusion_iOS_DataForm_DataFormItemManager_DataFormItems) collection and handles value reflection and validation. It also provides overrides to handle get and set property values from and to data object.
 
 ### Manually generate DataFormItems for DataObject
 
-By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~DataFormItems.html) will be generated based on data object. If you need to generate `DataFormItems` manually, override [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~ItemManager.html).
+By default, [DataFormItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html#Syncfusion_iOS_DataForm_DataFormItemManager_DataFormItems) will be generated based on data object. If you need to generate `DataFormItems` manually, override [DataFormItemManager](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html#Syncfusion_iOS_DataForm_SfDataForm_ItemManager).
 
-To create `DataFormItems`, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~GenerateDataFormItems(PropertyDescriptorCollection,List%7BDataFormItemBase%7D).html) method.
+To create `DataFormItems`, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html#Syncfusion_iOS_DataForm_DataFormItemManager_GenerateDataFormItems_System_ComponentModel_PropertyDescriptorCollection_System_Collections_Generic_List_Syncfusion_iOS_DataForm_DataFormItemBase__) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -389,7 +389,7 @@ You can download the source code of this demo from [GenerateDataFormItemsForData
 
 ### Manually generate DataFormItems for data dictionary
 
-You can load dataform with custom dictionary by generating DataFormItems manually. To create `DataFormItems` from dictionary, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~GenerateDataFormItems(PropertyDescriptorCollection,List%7BDataFormItemBase%7D).html) method.
+You can load dataform with custom dictionary by generating DataFormItems manually. To create `DataFormItems` from dictionary, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html#Syncfusion_iOS_DataForm_DataFormItemManager_GenerateDataFormItems_System_ComponentModel_PropertyDescriptorCollection_System_Collections_Generic_List_Syncfusion_iOS_DataForm_DataFormItemBase__) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -436,7 +436,7 @@ Here, the dataform is loaded with field from dictionary.
 
 #### Handling reading and writing value to and from dictionary
 
-By default, the dictionary value will be shown in corresponding editor and value changes in editor will be committed again in dictionary value by using the [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager~SetValue.html) override methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormItemManager.html).
+By default, the dictionary value will be shown in corresponding editor and value changes in editor will be committed again in dictionary value by using the [GetValue](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html#Syncfusion_iOS_DataForm_DataFormItemManager_GetValue_Syncfusion_iOS_DataForm_DataFormItem_) and [SetValue](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html#Syncfusion_iOS_DataForm_DataFormItemManager_SetValue_Syncfusion_iOS_DataForm_DataFormItem_System_Object_) override methods in [DataFormItemManager](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormItemManager.html).
 
 Here, value is read and written from/to dictionary instead of data object.
 

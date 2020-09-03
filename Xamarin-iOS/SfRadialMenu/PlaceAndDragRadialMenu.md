@@ -13,7 +13,7 @@ You can place the radial menu anywhere on its parent layout and drag it with in 
 
 ## Dragging RadialMenu
 
-You can enable or disable dragging using the [IsDragEnabled](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~IsDragEnabled.html) property.
+You can enable or disable dragging using the [IsDragEnabled](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_IsDragEnabled) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -81,7 +81,7 @@ This event occurs when you start dragging RadialMenu with `DragBeginEventArgs`.
 
 * `Handled`: Gets or sets the Boolean value for enabling and disabling the dragging of RadialMenu.
 
-To hook the [DragBegin](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~DragBegin_EV.html) event and to get the start position and restrict dragging, refer to the following code example.
+To hook the [DragBegin](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html) event and to get the start position and restrict dragging, refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,7 +157,7 @@ This event occurs when ends dragging in RadialMenu with `DragEndEventArgs`.
 
 * `Handled` - Gets or sets the Boolean value for restricting the RadialMenu from moving to another position.
 
-To hook the [DragEnd](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~DragEnd_EV.html) event, to get the start position and end positions, and to restrict the movement of RadialMenu, refer to the following code example.
+To hook the [DragEnd](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html) event, to get the start position and end positions, and to restrict the movement of RadialMenu, refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -232,13 +232,13 @@ namespace RadialMenuNative
 
 ## Placement of RadialMenu
 
-You can place the SfRadialMenu based on their CenterButton axis by providing the [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonPlacement.html) enum property with TopLeft and Center positions.
+You can place the SfRadialMenu based on their CenterButton axis by providing the [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonPlacement) enum property with TopLeft and Center positions.
 
 `TopLeft` - Places the origin (0,0) of SfRadialMenu at the top-left corner.
 
 `Center` - Places the origin (0,0) of SfRadialMenu at the center.
 
-N> The default value of the [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~CenterButtonPlacement.html) property is center.
+N> The default value of the [CenterButtonPlacement](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonPlacement) property is center.
 
 {% tabs %}
 {% highlight c# %}
@@ -296,7 +296,7 @@ namespace RadialMenuNative
 
 ## Placing RadialMenu
 
-You can place the radial menu anywhere on its parent layout using the [Position](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS~Syncfusion.SfRadialMenu.iOS.SfRadialMenu~Position.html) property. The position of the Radial Menu is calculated based on the center point of the parent layout.
+You can place the radial menu anywhere on its parent layout using the [Position](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_Position) property. The position of the Radial Menu is calculated based on the center point of the parent layout.
 
 {% tabs %}
 {% highlight c# %}

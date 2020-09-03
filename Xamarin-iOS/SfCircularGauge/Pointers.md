@@ -11,11 +11,11 @@ documentation: ug
 
 # Pointers
 
-You can add multiple pointers to the gauge to point multiple values on the same scale. It is used to show low and high values at the same time. The value of the pointer is set by using the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~Value.html) property.
+You can add multiple pointers to the gauge to point multiple values on the same scale. It is used to show low and high values at the same time. The value of the pointer is set by using the [`Value`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_Value) property.
 
 ## Needle pointer
 
-[`SFNeedlePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer.html) contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
+[`SFNeedlePointer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFNeedlePointer.html) contains three parts, namely needle, knob, and tail and that can be placed on a gauge to mark the values.
 
 {% highlight c# %}
 
@@ -37,7 +37,7 @@ You can add multiple pointers to the gauge to point multiple values on the same 
 
 ### Setting needle pointer type
 
-The appearance of the needle pointer can be customized by using the [`PointerType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~PointerType.html) property. The default value of this property is `Triangle`. This is an enum property, and it has the following options:
+The appearance of the needle pointer can be customized by using the [`PointerType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_PointerType) property. The default value of this property is `Triangle`. This is an enum property, and it has the following options:
 
 1. Bar
 2. Triangle
@@ -86,7 +86,7 @@ The appearance of the needle pointer can be customized by using the [`PointerTyp
 
 ### Needle pointer customization
 
-The length of the needle is controlled by using the [`LengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~LengthFactor.html) property. The [`LengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~LengthFactor.html) property’s minimum and maximum bounds are 0 and 1. The needle’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~Width.html) properties.
+The length of the needle is controlled by using the [`LengthFactor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_LengthFactor) property. The [`LengthFactor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_LengthFactor) property’s minimum and maximum bounds are 0 and 1. The needle’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_Color) and [`Width`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_Width) properties.
 
 {% highlight c# %}
 
@@ -111,7 +111,7 @@ The length of the needle is controlled by using the [`LengthFactor`](https://hel
 
 ### Knob customization
 
-Knob of the needle pointer can be customized by using the [`KnobColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~KnobColor.html), [`KnobRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~KnobRadius.html), [`KnobRadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~KnobRadiusFactor.html), [`KnobStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer~KnobStrokeColor.html), and [`KnobStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer~KnobStrokeWidth.html) properties. You can set the radius of knob to pixel and percentage values by using the [`KnobRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~KnobRadius.html) and [`KnobRadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~KnobRadiusFactor.html) properties.
+Knob of the needle pointer can be customized by using the [`KnobColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_KnobColor), [`KnobRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_KnobRadius), [`KnobRadiusFactor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_KnobRadiusFactor), [`KnobStrokeColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFNeedlePointer.html#Syncfusion_SfGauge_iOS_SFNeedlePointer_KnobStrokeColor), and [`KnobStrokeWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFNeedlePointer.html#Syncfusion_SfGauge_iOS_SFNeedlePointer_KnobStrokeWidth) properties. You can set the radius of knob to pixel and percentage values by using the [`KnobRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_KnobRadius) and [`KnobRadiusFactor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_KnobRadiusFactor) properties.
 
 {% highlight c# %}
 
@@ -137,7 +137,7 @@ Knob of the needle pointer can be customized by using the [`KnobColor`](https://
 
 ### Setting tail for needle pointer
 
-Tail of the needle pointer can be customized by using the [`TailColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer~TailColor.html), [`TailLengthFactor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer~TailLengthFactor.html), [`TailStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer~TailStrokeColor.html), and [`TailStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFNeedlePointer~TailStrokeWidth.html) properties.
+Tail of the needle pointer can be customized by using the [`TailColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFNeedlePointer.html#Syncfusion_SfGauge_iOS_SFNeedlePointer_TailColor), [`TailLengthFactor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFNeedlePointer.html#Syncfusion_SfGauge_iOS_SFNeedlePointer_TailLengthFactor), [`TailStrokeColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFNeedlePointer.html#Syncfusion_SfGauge_iOS_SFNeedlePointer_TailStrokeColor), and [`TailStrokeWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFNeedlePointer.html#Syncfusion_SfGauge_iOS_SFNeedlePointer_TailStrokeWidth) properties.
 
 {% highlight c# %}
 
@@ -164,7 +164,7 @@ Tail of the needle pointer can be customized by using the [`TailColor`](https://
 
 ## Range pointer
 
-A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark the values. The [`RangeStart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer~RangeStart.html) property allows you to set the starting value of the range pointer.
+A range pointer is an accenting line or shaded background range that can be placed on a gauge to mark the values. The [`RangeStart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFRangePointer.html#Syncfusion_SfGauge_iOS_SFRangePointer_RangeStart) property allows you to set the starting value of the range pointer.
 
 {% highlight c# %}
 
@@ -187,7 +187,7 @@ A range pointer is an accenting line or shaded background range that can be plac
 
 ### Range pointer customization
 
-The range pointer’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~Color.html) and [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~Width.html) properties. First, you should set the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer~Offset.html) property for range pointer, and then increase the thickness of the range pointer.
+The range pointer’s UI is customized by using the [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_Color) and [`Width`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_Width) properties. First, you should set the [`Offset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFRangePointer.html#Syncfusion_SfGauge_iOS_SFRangePointer_Offset) property for range pointer, and then increase the thickness of the range pointer.
 
 {% highlight c# %}
 
@@ -212,10 +212,10 @@ The range pointer’s UI is customized by using the [`Color`](https://help.syncf
 
 ### Setting position for range pointer
 
-The [`SFRangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer.html) in the scale can be placed inside or outside of the scale by using the following two ways:
+The [`SFRangePointer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFRangePointer.html) in the scale can be placed inside or outside of the scale by using the following two ways:
 
-1. The [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer~Offset.html) property.
-2. The [`StartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer~StartOffset.html) and [`EndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer~EndOffset.html) properties.
+1. The [`Offset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFRangePointer.html#Syncfusion_SfGauge_iOS_SFRangePointer_Offset) property.
+2. The [`StartOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFRangePointer.html#Syncfusion_SfGauge_iOS_SFRangePointer_StartOffset) and [`EndOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFRangePointer.html#Syncfusion_SfGauge_iOS_SFRangePointer_EndOffset) properties.
 
 #### Setting offset for range pointer
 
@@ -264,7 +264,7 @@ The [`SFRangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syn
 
 ### Setting range cap for range pointer
 
-The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer~RangeCap.html) property provides options to position the range cap of the [`SFRangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer.html), which contains the start, end, both, and none options. The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFRangePointer~RangeCap.html) property is an enum property.
+The [`RangeCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFRangePointer.html#Syncfusion_SfGauge_iOS_SFRangePointer_RangeCap) property provides options to position the range cap of the [`SFRangePointer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFRangePointer.html), which contains the start, end, both, and none options. The [`RangeCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFRangePointer.html#Syncfusion_SfGauge_iOS_SFRangePointer_RangeCap) property is an enum property.
 
 {% highlight c# %}
 
@@ -295,7 +295,7 @@ The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusio
 
 ## Marker pointer
 
-The different types of marker shapes are used to mark the pointer values in a scale. You can change the marker shape by using the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFMarkerPointer~MarkerShape.html) property. Gauge supports the following types of marker shapes:
+The different types of marker shapes are used to mark the pointer values in a scale. You can change the marker shape by using the [`MarkerShape`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html#Syncfusion_SfGauge_iOS_SFMarkerPointer_MarkerShape) property. Gauge supports the following types of marker shapes:
 
 * Circle
 * Rectangle
@@ -304,7 +304,7 @@ The different types of marker shapes are used to mark the pointer values in a sc
 * Diamond
 * Image
 
-The image is used to denote the pointer value instead of rendering the marker shape. It can be achieved by setting the [`MarkerShape`](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfGauge.Android~Com.Syncfusion.Gauges.SfCircularGauge.MarkerPointer~MarkerShape.html) to `Image`, and assigning the image path to [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFMarkerPointer~ImageSource.html) in pointer.
+The image is used to denote the pointer value instead of rendering the marker shape. It can be achieved by setting the [`MarkerShape`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html#Syncfusion_SfGauge_iOS_SFMarkerPointer_MarkerShape) to `Image`, and assigning the image path to [`ImageSource`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html#Syncfusion_SfGauge_iOS_SFMarkerPointer_ImageSource) in pointer.
 
 {% highlight c# %}
 
@@ -349,7 +349,7 @@ The image is used to denote the pointer value instead of rendering the marker sh
 
 ### Marker pointer customization
 
-The marker can be customized in terms of color, width, and height by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~Color.html), [`MarkerWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFMarkerPointer~MarkerWidth.html), and [`MarkerHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFMarkerPointer~MarkerHeight.html) properties in pointer. First, you should set the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFMarkerPointer~Offset.html) property for marker pointer, then increase the height and width of the marker pointer.
+The marker can be customized in terms of color, width, and height by using the [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_Color), [`MarkerWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html#Syncfusion_SfGauge_iOS_SFMarkerPointer_MarkerWidth), and [`MarkerHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html#Syncfusion_SfGauge_iOS_SFMarkerPointer_MarkerHeight) properties in pointer. First, you should set the [`Offset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html#Syncfusion_SfGauge_iOS_SFMarkerPointer_Offset) property for marker pointer, then increase the height and width of the marker pointer.
 
 {% highlight c# %}
 
@@ -375,7 +375,7 @@ The marker can be customized in terms of color, width, and height by using the [
 
 ### Setting multiple pointers
 
-In addition to the default pointer, you can add n number of pointers to a scale by using the [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularScale~Pointers.html) property.
+In addition to the default pointer, you can add n number of pointers to a scale by using the [`Pointers`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularScale.html#Syncfusion_SfGauge_iOS_SFCircularScale_Pointers) property.
 
 {% highlight c# %}
 
@@ -416,7 +416,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 
 ### Setting animation for pointer
 
-The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFCircularPointer~EnableAnimation.html) property is a Boolean property that enables or disables the animation of the pointers in circular gauge.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_EnableAnimation) property is a Boolean property that enables or disables the animation of the pointers in circular gauge.
 
 {% highlight c# %}
 

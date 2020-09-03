@@ -11,13 +11,13 @@ documentation: ug
 
 # Header
 
-The [`SFGaugeHeader`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader.html) support allows you to show text, image, or any UI content inside the gauge control. A circular gauge can be made self-descriptive about the data. It can be  measured with use of the header.
+The [`SFGaugeHeader`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFGaugeHeader.html) support allows you to show text, image, or any UI content inside the gauge control. A circular gauge can be made self-descriptive about the data. It can be  measured with use of the header.
 
 ## Adding header in circular gauge
 
 ###  Header
 
-The [`SFGaugeHeader`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader.html) can be used to set a unique header for the circular gauge. You can add text as headers in a circular gauge. Multiple headers also can be added in a circular gauge.
+The [`SFGaugeHeader`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFGaugeHeader.html) can be used to set a unique header for the circular gauge. You can add text as headers in a circular gauge. Multiple headers also can be added in a circular gauge.
 
 {% highlight c# %}
 
@@ -40,7 +40,7 @@ The [`SFGaugeHeader`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Sync
 
 ##  Setting position for header
 
-The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader~Position.html) property is used to place the header in a circular gauge. The value for [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader~Position.html) should be specified in offset value. In the Point value, which has been given for the `Position`, first value represent x-coordinate and second value represents y-coordinate. By default, it is placed at (0.5, 0.7).
+The [`Position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFGaugeHeader.html#Syncfusion_SfGauge_iOS_SFGaugeHeader_Position) property is used to place the header in a circular gauge. The value for [`Position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFGaugeHeader.html#Syncfusion_SfGauge_iOS_SFGaugeHeader_Position) should be specified in offset value. In the Point value, which has been given for the `Position`, first value represent x-coordinate and second value represents y-coordinate. By default, it is placed at (0.5, 0.7).
 
 {% highlight c# %}
 
@@ -64,7 +64,7 @@ The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusio
 
 ##  Customization of header
 
-You can customize the header's text by using the [`TextStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader~TextStyle.html), [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader~TextColor.html) and [`ArcRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfGauge.iOS~Syncfusion.SfGauge.iOS.SFGaugeHeader~ArcRadius.html) properties.
+You can customize the header's text by using the [`TextStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFGaugeHeader.html#Syncfusion_SfGauge_iOS_SFGaugeHeader_TextStyle), [`TextColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFGaugeHeader.html#Syncfusion_SfGauge_iOS_SFGaugeHeader_TextColor) and [`ArcRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFGaugeHeader.html#Syncfusion_SfGauge_iOS_SFGaugeHeader_ArcRadius) properties.
 
 {% highlight c# %}
 

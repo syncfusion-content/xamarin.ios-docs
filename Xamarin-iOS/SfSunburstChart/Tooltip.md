@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-Tooltip provides additional information about the segments in the sunburst chart. Tooltip is displayed by tapping the segment. By default, tooltip displays the corresponding segment’s category and value. To enable the tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings~ShowTooltip.html) property to true.
+Tooltip provides additional information about the segments in the sunburst chart. Tooltip is displayed by tapping the segment. By default, tooltip displays the corresponding segment’s category and value. To enable the tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_iOS_SunburstTooltipSettings_ShowTooltip) property to true.
 
 The following code shows enabling the tooltip.
 
@@ -29,15 +29,15 @@ The following code shows enabling the tooltip.
 
 The appearance of the tooltip can be customized using the following properties:
 
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings~BackgroundColor.html) : Customizes the background color of the tooltip.
-* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings~BorderColor.html) : Customizes the border color of the tooltip.
-* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings~BorderWidth.html) : Customizes the border width of the tooltip.
-* [`Duration`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings~Duration.html) : Specifies the duration of the tooltip to be displayed.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_iOS_SunburstTooltipSettings_BackgroundColor) : Customizes the background color of the tooltip.
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_iOS_SunburstTooltipSettings_BorderColor) : Customizes the border color of the tooltip.
+* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_iOS_SunburstTooltipSettings_BorderWidth) : Customizes the border width of the tooltip.
+* [`Duration`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_iOS_SunburstTooltipSettings_Duration) : Specifies the duration of the tooltip to be displayed.
 
-The following properties are available under [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings~LabelStyle.html).
+The following properties are available under [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_iOS_SunburstTooltipSettings_LabelStyle).
 
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLabelStyle~Color.html) : Customizes the text color of the tooltip.
-* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLabelStyle~Font.html) : Customizes the font of the tooltip text.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLabelStyle.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLabelStyle_Color) : Customizes the text color of the tooltip.
+* [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLabelStyle.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLabelStyle_Font) : Customizes the font of the tooltip text.
 
 The following code shows all the above customizations.
 
@@ -61,7 +61,7 @@ The following code shows all the above customizations.
 
 ## Custom template
 
-The sunburst chart provides options to design your template for tooltip by inheriting [`SunburstTooltipSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings.html) class.
+The sunburst chart provides options to design your template for tooltip by inheriting [`SunburstTooltipSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings.html) class.
 
 {% tabs %} 
 
