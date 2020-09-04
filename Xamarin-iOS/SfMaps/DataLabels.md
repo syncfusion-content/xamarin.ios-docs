@@ -13,7 +13,7 @@ Data labels are used to display the values of the shapes.
 
 ## Adding data labels
 
- [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~ShowMapItems.html) property is a boolean property that displays or hides the data labels in shapes. You must set the [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeSetting~ValuePath.html) property to get the data labels which is bound for each shape.
+ [`ShowMapItems`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_ShowMapItems) property is a boolean property that displays or hides the data labels in shapes. You must set the [`ValuePath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeSetting.html#Syncfusion_SfMaps_iOS_SFShapeSetting_ValuePath) property to get the data labels which is bound for each shape.
 
 {% tabs %}
 
@@ -113,7 +113,7 @@ this.View.AddSubview(map);
 
 ## Customizing data labels
 
-Data labels can be customized using the [`SFDataLabelSetting`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFDataLabelSetting.html) property in shape file layer. The font, and color can be customized using [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFDataLabelSetting~Font.html), [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFDataLabelSetting~TextColor.html) properties.
+Data labels can be customized using the [`SFDataLabelSetting`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFDataLabelSetting.html) property in shape file layer. The font, and color can be customized using [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFDataLabelSetting.html#Syncfusion_SfMaps_iOS_SFDataLabelSetting_Font), [`TextColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFDataLabelSetting.html#Syncfusion_SfMaps_iOS_SFDataLabelSetting_TextColor) properties.
 
 {% tabs %}
 
@@ -159,7 +159,7 @@ this.View.AddSubview(map);
 
 ## To smartly align data label
 
-[`SmartLabelMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFDataLabelSetting~SmartLabelMode.html) smartly aligns labels within shape boundaries and avoids label overlap. Labels can be customized using the Hide, Trim and None options.
+[`SmartLabelMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFDataLabelSetting.html#Syncfusion_SfMaps_iOS_SFDataLabelSetting_SmartLabelMode) smartly aligns labels within shape boundaries and avoids label overlap. Labels can be customized using the Hide, Trim and None options.
 
 {% tabs %}
 
@@ -199,7 +199,7 @@ this.View.AddSubview(map);
 
 ## To avoid overlap in data label
 
-[`IntersectionAction`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFDataLabelSetting~IntersectionAction.html) smartly aligns labels which is overlapped with another label. Labels can be customized using the Hide, Trim and None options. First, you should set the [`SmartLabelMode`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFDataLabelSetting~SmartLabelMode.html) property as None.
+[`IntersectionAction`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFDataLabelSetting.html#Syncfusion_SfMaps_iOS_SFDataLabelSetting_IntersectionAction) smartly aligns labels which is overlapped with another label. Labels can be customized using the Hide, Trim and None options. First, you should set the [`SmartLabelMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFDataLabelSetting.html#Syncfusion_SfMaps_iOS_SFDataLabelSetting_SmartLabelMode) property as None.
 
 {% tabs %}
 

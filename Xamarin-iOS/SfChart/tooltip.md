@@ -11,7 +11,7 @@ documentation: ug
 
 [`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html
 ) provides tooltip support for all series. It is used to show information about the segment, when you tap on
-the segment. To enable the tooltip, you need to set [`EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFSeries~EnableTooltip.html) property as true.
+the segment. To enable the tooltip, you need to set [`EnableTooltip`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSeries.html#Syncfusion_SfChart_iOS_SFSeries_EnableTooltip) property as true.
 
 
 {% highlight c# %}
@@ -28,23 +28,23 @@ series.EnableTooltip           = true;
 
 ## Customizing appearance 
 
-You can customize the tooltip label. For customizing, you need to add an instance of [`SFChartTooltipBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) using the addChartBehavior method of SFChart. 
+You can customize the tooltip label. For customizing, you need to add an instance of [`SFChartTooltipBehavior`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) using the addChartBehavior method of SFChart. 
 
-Following properties of [`SFChartTooltipBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) are used to customize the tooltip label.
+Following properties of [`SFChartTooltipBehavior`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) are used to customize the tooltip label.
 
-* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~BorderColor.html) – used to change the label border color.
-* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~BorderWidth.html) – used to change the label border width.
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~BackgroundColor.html) – used to change the label background color.
-* [`EdgeInsets`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~EdgeInsets.html) – used to change tooltip content edge insets.
-* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~TextColor.html) – used to change the text color.
-* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~Font.html) – used to change label font size, family and weight.
-* [`LabelFormatter`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~LabelFormatter.html) – used to format the label.
-* [`Duration`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~Duration.html) – used to set the visible duration of label.
-* [`OffsetX`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~OffsetX.html) - used to move the label horizontally.
-* [`OffsetY`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~OffsetY.html) - used to move the label vertically.
-* [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~Position.html) - used to position the tooltip at [`Bottom`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartElementPosition.html), Left, Right, or Top.
-* [`Animation`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~Animation.html) - used to animate the tooltip([`Fade`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipAnimation.html), None, Pop). 
-* [`MaximumWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~MaximumWidth.html) - used to change label maximum width.
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_BorderColor) – used to change the label border color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_BorderWidth) – used to change the label border width.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_BackgroundColor) – used to change the label background color.
+* [`EdgeInsets`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_EdgeInsets) – used to change tooltip content edge insets.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_TextColor) – used to change the text color.
+* [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Font) – used to change label font size, family and weight.
+* [`LabelFormatter`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_LabelFormatter) – used to format the label.
+* [`Duration`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Duration) – used to set the visible duration of label.
+* [`OffsetX`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_OffsetX) - used to move the label horizontally.
+* [`OffsetY`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_OffsetY) - used to move the label vertically.
+* [`Position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Position) - used to position the tooltip at [`Bottom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartElementPosition.html), Left, Right, or Top.
+* [`Animation`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Animation) - used to animate the tooltip([`Fade`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipAnimation.html), None, Pop). 
+* [`MaximumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_MaximumWidth) - used to change label maximum width.
 
 
 {% highlight c# %}
@@ -90,7 +90,7 @@ chart.AddChartBehavior (behavior);
 ## Delegates
 
 
-We need to implement delegate to deal with the user interactions in chart for tooltip. In order to do this, you need to adopt the [`SFChartDelegate`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate.html) protocol through the class extension as shown below.
+We need to implement delegate to deal with the user interactions in chart for tooltip. In order to do this, you need to adopt the [`SFChartDelegate`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDelegate.html) protocol through the class extension as shown below.
 
 {% highlight c# %}
 
@@ -110,24 +110,24 @@ public class ChartDelegate : SFChartDelegate
 {% endhighlight %}
 
 
-* [`WillShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~WillShowTooltip.html) - this method is invoked before the tooltip is shown.
-* [`DidShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidShowTooltip.html) - this method is invoked after the tooltip is shown.
-* [`WillHideTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~WillHideTooltip.html) - this method is invoked before the tooltip is hidden.
-* [`DidHideTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartDelegate~DidHideTooltip.html) - this method is invoked after the tooltip is hidden.
+* [`WillShowTooltip`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDelegate.html#Syncfusion_SfChart_iOS_SFChartDelegate_WillShowTooltip_Syncfusion_SfChart_iOS_SFChart_Syncfusion_SfChart_iOS_SFChartTooltip_) - this method is invoked before the tooltip is shown.
+* [`DidShowTooltip`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDelegate.html#Syncfusion_SfChart_iOS_SFChartDelegate_DidShowTooltip_Syncfusion_SfChart_iOS_SFChart_Syncfusion_SfChart_iOS_SFChartTooltip_) - this method is invoked after the tooltip is shown.
+* [`WillHideTooltip`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDelegate.html#Syncfusion_SfChart_iOS_SFChartDelegate_WillHideTooltip_Syncfusion_SfChart_iOS_SFChart_Syncfusion_SfChart_iOS_SFChartTooltip_) - this method is invoked before the tooltip is hidden.
+* [`DidHideTooltip`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDelegate.html#Syncfusion_SfChart_iOS_SFChartDelegate_DidHideTooltip_Syncfusion_SfChart_iOS_SFChart_Syncfusion_SfChart_iOS_SFChartTooltip_) - this method is invoked after the tooltip is hidden.
 
 ## Customizing appearance of SFChartTooltip view
 
-The following properties available in the SFChartTooltip to customize the appearance of tooltip view. The customized view can be used in [`SFChartTooltipBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) methods and delegates.
+The following properties available in the SFChartTooltip to customize the appearance of tooltip view. The customized view can be used in [`SFChartTooltipBehavior`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) methods and delegates.
 
-* [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~Text.html) – used to change the text of the tooltip.
-* [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~CustomView.html) – used to change the custom view of the tooltip.
-* [`PointerLength`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~PointerLength.html) – used to change the pointer length of the tooltip.
-* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~CornerRadius.html) – used to change the corner radius of the tooltip.
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~Color.html) – used to change the tooltip color.
-* [`TextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~TextAlignment.html) – used to change text alignment horizontally.
-* [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~Series.html) – returns the series at the tapped location.
-* [`DataPoint`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltip~DataPoint.html) – returns the chart data point at the tapped location.
-* [`ChartBehavior`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) - returns the SFChartTooltipBehavior of the tooltip.
+* [`Text`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_Text) – used to change the text of the tooltip.
+* [`CustomView`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_CustomView) – used to change the custom view of the tooltip.
+* [`PointerLength`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_PointerLength) – used to change the pointer length of the tooltip.
+* [`CornerRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_CornerRadius) – used to change the corner radius of the tooltip.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_Color) – used to change the tooltip color.
+* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_TextAlignment) – used to change text alignment horizontally.
+* [`Series`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_Series) – returns the series at the tapped location.
+* [`DataPoint`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_DataPoint) – returns the chart data point at the tapped location.
+* [`ChartBehavior`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) - returns the SFChartTooltipBehavior of the tooltip.
 
 {% highlight c# %}
 
@@ -181,7 +181,7 @@ public override void WillShowTooltip (SFChart chart, SFChartTooltip tooltipView)
 
 ### Show method
 
-The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~Show.html) method is used to activate the tooltip at the specified location.
+The [`Show`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Show_CoreGraphics_CGPoint_System_Boolean_) method is used to activate the tooltip at the specified location.
 
 {% highlight c# %}
 
@@ -211,11 +211,11 @@ public partial class ViewController : UIViewController
 
 {% endhighlight %}
 
-The [`Show(CGPoint,UIView,Boolean)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~Show(CGPoint,UIView,Boolean).html) method shows the tooltip at the specified coordinate location. 
+The [`Show(CGPoint,UIView,Boolean)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Show_CoreGraphics_CGPoint_UIKit_UIView_System_Boolean_) method shows the tooltip at the specified coordinate location. 
 
 ### Hide method
 
-The [`Hide`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~Hide.html) method is used to hide the tooltip programmatically.
+The [`Hide`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Hide_System_Boolean_) method is used to hide the tooltip programmatically.
 
 {% highlight c# %}
 
@@ -227,8 +227,8 @@ tooltip.Hide(true);
 
 ### GetView method 
 
-The [`GetView(SFChartTooltip)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~GetView.html) method can be overridden to customize the tooltip view or to return custom view to be displayed as a tooltip.
+The [`GetView(SFChartTooltip)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_GetView_Syncfusion_SfChart_iOS_SFChartTooltip_) method can be overridden to customize the tooltip view or to return custom view to be displayed as a tooltip.
 
 ### DrawRect method
 
-The [`DrawRect(CGRect)`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartTooltipBehavior~DrawRect.html) method is used to drawing the tooltip within the specified rectangle.
+The [`DrawRect(CGRect)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_DrawRect_CoreGraphics_CGRect_) method is used to drawing the tooltip within the specified rectangle.

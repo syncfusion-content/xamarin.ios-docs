@@ -7,7 +7,7 @@ documentation: ug
 ---
 # Segments
 
-To visualize the progress of multiple sequential tasks, split the progress bar into multiple segments by setting the [`SegmentCount`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.ProgressBarBase~SegmentCount.html) property, as shown in the following code example.
+To visualize the progress of multiple sequential tasks, split the progress bar into multiple segments by setting the [`SegmentCount`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.ProgressBarBase.html#Syncfusion_iOS_ProgressBar_ProgressBarBase_SegmentCount) property, as shown in the following code example.
 
 {% highlight c# %}
 
@@ -29,7 +29,7 @@ circularProgressBar.SegmentCount = 7;
 
 **Gap** **Customization**
 
-You can also customize the default spacing between the segments using the [`GapWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.ProgressBarBase~GapWidth.html) property, as shown in following code example.
+You can also customize the default spacing between the segments using the [`GapWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.ProgressBarBase.html#Syncfusion_iOS_ProgressBar_ProgressBarBase_GapWidth) property, as shown in following code example.
 
 {% highlight c# %}
 // Using linear progress bar.

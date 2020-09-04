@@ -34,11 +34,11 @@ this.View.AddSubview(maps);
 
 ![](Images/OSM.png)
 
-N> Both the [`SFShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
+N> Both the [`SFShapeFileLayer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
 
 ## Bing Maps
 
-The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides map tile images based on your requests and combines them into a single image to display the map area. To use `Bing maps`, set the [`LayerType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~LayerType.html) property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
+The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides map tile images based on your requests and combines them into a single image to display the map area. To use `Bing maps`, set the [`LayerType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_LayerType) property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ this.View.AddSubview(maps);
 
 ![](Images/Road.png)
 
-N> The [`LayerType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~LayerType.html) property of [`ImageryLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer.html) provides support to `OSM` and `Bing Maps`. The default value of the [`LayerType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~LayerType.html) property is OSM.
+N> The [`LayerType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_LayerType) property of [`ImageryLayer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html) provides support to `OSM` and `Bing Maps`. The default value of the [`LayerType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_LayerType) property is OSM.
 
 ## BingMapStyle
 
@@ -67,15 +67,15 @@ The ImageryLayer provides support to the following types of Bing Maps:
 * `Aerial`
 * `AerialWithLabels`
 
-The desired style for the Bing Maps can be set using the [`BingMapStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~BingMapStyle.html) property of ImageryLayer. The default value of [`BingMapStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~BingMapStyle.html) is "Road".
+The desired style for the Bing Maps can be set using the [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_BingMapStyle) property of ImageryLayer. The default value of [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_BingMapStyle) is "Road".
 
 ### Road
 
-The Road view displays the default map view of roads, buildings, and geography. The default value of the [`BingMapStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~BingMapStyle.html) property of imagery layer is "Road".
+The Road view displays the default map view of roads, buildings, and geography. The default value of the [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_BingMapStyle) property of imagery layer is "Road".
 
 ### Aerial
 
-The Aerial view displays the satellite images to highlight the roads and major landmarks for easy identification. The aerial view can be applied to maps by setting the [`BingMapStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~BingMapStyle.html) to "Aerial".
+The Aerial view displays the satellite images to highlight the roads and major landmarks for easy identification. The aerial view can be applied to maps by setting the [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_BingMapStyle) to "Aerial".
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ this.View.AddSubview(maps);
 
 ## AerialWithLabel
 
-The AerialWithLabel view displays the Aerial map with labels for continent, country, ocean, etc. This view can be applied to maps by setting the [`BingMapStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~BingMapStyle.html) to "AerialWithLabel".
+The AerialWithLabel view displays the Aerial map with labels for continent, country, ocean, etc. This view can be applied to maps by setting the [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_BingMapStyle) to "AerialWithLabel".
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ Zooming helps you get a closer look of an area on maps for in-depth analysis. Pa
 
 ## ResetOnDoubleTap
 
-The ImageryLayer provides support to reset the maps to the default view when you double tap the imagery layer by setting the [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~ResetOnDoubleTap.html) property to true. The default value of this property is true. This behavior can be restricted by setting the [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~ResetOnDoubleTap.html) property to false.
+The ImageryLayer provides support to reset the maps to the default view when you double tap the imagery layer by setting the [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_ResetOnDoubleTap) property to true. The default value of this property is true. This behavior can be restricted by setting the [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_ResetOnDoubleTap) property to false.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ this.View.AddSubview(maps);
 
 ## GeoCoordinates
 
-The [`GeoCoordinates`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~GeoCoordinates.html) property allows you view the desired area at the center on loading. By default, the [`GeoCoordinates`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~GeoCoordinates.html) value is (0,0). So, the latitude value "0" and longitude value "0" are shown at the center.
+The [`GeoCoordinates`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_GeoCoordinates) property allows you view the desired area at the center on loading. By default, the [`GeoCoordinates`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_GeoCoordinates) value is (0,0). So, the latitude value "0" and longitude value "0" are shown at the center.
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ this.View.AddSubview(maps);
 
 ## Markers
 
-As [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the `MarkerSettings` property in imagery layer.
+As [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the `MarkerSettings` property in imagery layer.
 The detailed explanation of marker and its customization have been provided in Markers section.
 
 {% tabs %}
@@ -240,7 +240,7 @@ this.View.AddSubview(maps);
 
 ## Cache tiles in application memory
 
-The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~CanCacheTiles.html) property used to decide whether the tiles should be cached or not.
+The [`CanCacheTiles`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_CanCacheTiles) property used to decide whether the tiles should be cached or not.
 
 {% tabs %}
 
@@ -258,7 +258,7 @@ this.View.AddSubview(maps);
 
 ## Delete the tiles from cache
 
-The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~DeleteTilesFromCache.html) method used to delete the cache stored in the applications.
+The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_DeleteTilesFromCache) method used to delete the cache stored in the applications.
 
 {% tabs %}
 
@@ -276,13 +276,13 @@ this.View.AddSubview(maps);
 
 ## Events
 
-[`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ImageryLayer~ZoomLevelChanging_EV.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
+[`ZoomLevelChanging`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
 
-* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs~Cancel.html) - Used to cancel the zooming.
+* [`Cancel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs.html#Syncfusion_SfMaps_iOS_ZoomLevelChangingEventArgs_Cancel) - Used to cancel the zooming.
 
-* [`PreviousLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs~PreviousLevel.html) - Returns the previous level after the zooming.
+* [`PreviousLevel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs.html#Syncfusion_SfMaps_iOS_ZoomLevelChangingEventArgs_PreviousLevel) - Returns the previous level after the zooming.
 
-* [`CurrentLevel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs~CurrentLevel.html) - Returns the current level to be zoomed.
+* [`CurrentLevel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ZoomLevelChangingEventArgs.html#Syncfusion_SfMaps_iOS_ZoomLevelChangingEventArgs_CurrentLevel) - Returns the current level to be zoomed.
 
 {% tabs %}
 

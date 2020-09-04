@@ -12,7 +12,7 @@ documentation: ug
 This section explains how to perform selection and its related operations in the TreeView.
 
 ## UI Selection
-The TreeView allows selecting the items either programmatically or touch interactions by setting the [SelectionMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionMode.html) property value to other than `None`. The control has different selection modes to perform selection operations as listed as follows.
+The TreeView allows selecting the items either programmatically or touch interactions by setting the [SelectionMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionMode) property value to other than `None`. The control has different selection modes to perform selection operations as listed as follows.
 
 * `None`: Allows disabling the selection.
 * `Single`: Allows selecting the single item only. When clicking on the selected item, selection not will not be cleared. This is the default value for `SelectionMode`.
@@ -29,9 +29,9 @@ TreeView.SelectionMode = SelectionMode.Multiple;
 
 ## Programmatic Selection
 
-When the [SelectionMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionMode.html) is other than `None`, the item or items in the TreeView can be selected from the code by setting the [SelectedItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectedItem.html), or adding items to the [SelectedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectedItems.html) property based on the `SelectionMode`.
+When the [SelectionMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionMode) is other than `None`, the item or items in the TreeView can be selected from the code by setting the [SelectedItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectedItem), or adding items to the [SelectedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectedItems) property based on the `SelectionMode`.
 
-When the selection mode is `Single` or `SingleDeselect`, programmatically select an item by setting the underlying object to the [SelectedItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectedItem.html) property.
+When the selection mode is `Single` or `SingleDeselect`, programmatically select an item by setting the underlying object to the [SelectedItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectedItem) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -41,7 +41,7 @@ treeView.SelectedItem = viewModel.CountriesInfo[2];
 {% endhighlight %}
 {% endtabs %}
 
-When the selection mode is `Multiple`, programmatically select more than one item by adding the underlying object to the [SelectedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectedItems.html) property.
+When the selection mode is `Multiple`, programmatically select more than one item by adding the underlying object to the [SelectedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectedItems) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -52,7 +52,7 @@ treeView.SelectedItems.Add(viewModel.CountriesInfo[3]);
 {% endhighlight %}
 {% endtabs %}
 
-Using the [SelectAll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectAll.html) method, you can select all the items in the TreeView.
+Using the [SelectAll](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectAll) method, you can select all the items in the TreeView.
 
 {% tabs %}
 {% highlight c# %}
@@ -83,11 +83,11 @@ treeView.SelectedItems.Clear();
 
 ### CurrentItem vs SelectedItem
 
-The TreeView gets the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when selecting single item. When selecting more than one item, the `SelectedItem` property returns the first selected item, and the `CurrentItem` property returns the last selected item.
+The TreeView gets the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectedItem) and [CurrentItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_CurrentItem) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when selecting single item. When selecting more than one item, the `SelectedItem` property returns the first selected item, and the `CurrentItem` property returns the last selected item.
 
 ## Select an entire row
 
-By default, the selection starts from the indent level only. You can select the full row by enabling the [FullRowSelect](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~FullRowSelect.html) property. By setting the `FullRowSelect` to `true` the selection spans the width of tree view control.
+By default, the selection starts from the indent level only. You can select the full row by enabling the [FullRowSelect](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_FullRowSelect) property. By setting the `FullRowSelect` to `true` the selection spans the width of tree view control.
 
 {% tabs %}
 {% highlight c# %}
@@ -101,11 +101,11 @@ treeView.FullRowSelect = true;;
 
 ### Selection background
 
-The TreeView allows changing the selection background color for the selected items by using the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionBackgroundColor.html) property. You can also change the selection background color at runtime.
+The TreeView allows changing the selection background color for the selected items by using the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionBackgroundColor) property. You can also change the selection background color at runtime.
 
 ### Selection foreground
 
-The TreeView allows changing the selection foreground color for the selected items by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionForegroundColor.html) property. You can also change the selection foreground color at runtime.
+The TreeView allows changing the selection foreground color for the selected items by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionForegroundColor) property. You can also change the selection foreground color at runtime.
 
 N> `SelectionForegroundColor` is applicable only for unbound mode.
 
@@ -113,10 +113,10 @@ N> `SelectionForegroundColor` is applicable only for unbound mode.
 
 ### SelectionChanging Event
 
-The [SelectionChanging](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionChanging_EV.html) event is raised while selecting an item at the execution time. The [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.ItemSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event:
+The [SelectionChanging](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) event is raised while selecting an item at the execution time. The [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.ItemSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event:
 
-* [AddedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.ItemSelectionChangingEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection is going to process.
-* [RemovedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.ItemSelectionChangingEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection is going to remove.
+* [AddedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.ItemSelectionChangingEventArgs.html#Syncfusion_iOS_TreeView_ItemSelectionChangingEventArgs_AddedItems): Gets collection of the underlying data objects where the selection is going to process.
+* [RemovedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.ItemSelectionChangingEventArgs.html#Syncfusion_iOS_TreeView_ItemSelectionChangingEventArgs_RemovedItems): Gets collection of the underlying data objects where the selection is going to remove.
 
 You can cancel the selection process within this event by setting the `ItemSelectionChangingEventArgs.Cancel` property to true.
 
@@ -134,10 +134,10 @@ private void TreeView_SelectionChanging(object sender, ItemSelectionChangingEven
 
 ### SelectionChanged event
 
-The [SelectionChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionChanged_EV.html) event will occur once selection process has been completed for the selected item in the TreeView. The [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:
+The [SelectionChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) event will occur once selection process has been completed for the selected item in the TreeView. The [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:
 
-* [AddedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.ItemSelectionChangedEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection has been processed.
-* [RemovedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.ItemSelectionChangedEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection has been removed.
+* [AddedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.ItemSelectionChangedEventArgs.html#Syncfusion_iOS_TreeView_ItemSelectionChangedEventArgs_AddedItems): Gets collection of the underlying data objects where the selection has been processed.
+* [RemovedItems](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.ItemSelectionChangedEventArgs.html#Syncfusion_iOS_TreeView_ItemSelectionChangedEventArgs_RemovedItems): Gets collection of the underlying data objects where the selection has been removed.
 
 {% tabs %}
 {% highlight c# %}
@@ -150,9 +150,9 @@ private void TreeView_SelectionChanged(object sender, ItemSelectionChangedEventA
 {% endhighlight %}
 {% endtabs %}
 
-N> [SelectionChanging](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionChanged_EV.html) events will be triggered only on UI interactions.
+N> [SelectionChanging](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) events will be triggered only on UI interactions.
 
 ## Limitation
 
-* When a UIView is loaded inside the [Adapter](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Adapter.html) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~SelectionBackgroundColor.html) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of `UIView` in the `Adapter`.
+* When a UIView is loaded inside the [Adapter](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_Adapter) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionBackgroundColor) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the TreeView instead of `UIView` in the `Adapter`.
  * When the `TreeView` contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.

@@ -9,7 +9,7 @@ documentation: ug
 
 ## Angle
 
-The appearance of the circular progress bar can be customized to semi-circle, arc, etc. The start and end angles can be customized using the [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfCircularProgressBar~StartAngle.html) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfCircularProgressBar~EndAngle.html) properties. 
+The appearance of the circular progress bar can be customized to semi-circle, arc, etc. The start and end angles can be customized using the [`StartAngle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfCircularProgressBar.html#Syncfusion_iOS_ProgressBar_SfCircularProgressBar_StartAngle) and [`EndAngle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfCircularProgressBar.html#Syncfusion_iOS_ProgressBar_SfCircularProgressBar_EndAngle) properties. 
 
 The following code example explains how to change the appearance of the circular progress bar to semi-circle.
 
@@ -34,14 +34,14 @@ circularProgressBar.Frame = new CoreGraphics.CGRect(0, 160, this.View.Frame.Widt
 
 You can also visualize multiple ranges with different colors that are mapped to each range to enhance readability of progress.Currently, it is applicable only for linear progress bar.
 
-The colors can be mapped to the specific ranges using the [`RangeColors`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfLinearProgressBar~RangeColors.html) property in the linear progress bar, which holds a collection of [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.RangeColor.html). 
+The colors can be mapped to the specific ranges using the [`RangeColors`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfLinearProgressBar.html) property in the linear progress bar, which holds a collection of [`RangeColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.RangeColor.html). 
 
-The following properties in [`RangeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.RangeColor.html) are used to map the colors to range:
+The following properties in [`RangeColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.RangeColor.html) are used to map the colors to range:
 
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.RangeColor~Color.html): Represents the color to the specified range.
-* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.RangeColor~Start.html): Represents the start range of the color.
-* [`End`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.RangeColor~End.html): Represents the end range of the color.
-* [`IsGradient`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.RangeColor~IsGradient.html): Represents whether the gradient effect is applied to the color.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.RangeColor.html#Syncfusion_iOS_ProgressBar_RangeColor_Color): Represents the color to the specified range.
+* [`Start`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.RangeColor.html#Syncfusion_iOS_ProgressBar_RangeColor_Start): Represents the start range of the color.
+* [`End`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.RangeColor.html#Syncfusion_iOS_ProgressBar_RangeColor_End): Represents the end range of the color.
+* [`IsGradient`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.RangeColor.html#Syncfusion_iOS_ProgressBar_RangeColor_IsGradient): Represents whether the gradient effect is applied to the color.
 
 The following code example shows mapping the solid color range in the linear progress bar.
 
@@ -79,7 +79,7 @@ linearProgressBar.Frame = new CoreGraphics.CGRect(0, 160, this.View.Frame.Width,
 
 **Linear** **progress** **bar**
 
-In the linear progress bar, the height of the track and padding of the progress indicator can be customized using the [`TrackHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfLinearProgressBar~TrackHeight.html) and [`IndicatorPadding`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfLinearProgressBar~IndicatorPadding.html) properties, respectively.
+In the linear progress bar, the height of the track and padding of the progress indicator can be customized using the [`TrackHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfLinearProgressBar.html#Syncfusion_iOS_ProgressBar_SfLinearProgressBar_TrackHeight) and [`IndicatorPadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfLinearProgressBar.html#Syncfusion_iOS_ProgressBar_SfLinearProgressBar_IndicatorPadding) properties, respectively.
 
 {% highlight c# %}
 
@@ -102,10 +102,10 @@ linearProgressBar.Frame = new CoreGraphics.CGRect(0, 160, this.View.Frame.Width,
 
 The following properties are used to customize the appearance of the circular progress bar:
 
-* [`IndicatorOuterRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfCircularProgressBar~IndicatorOuterRadius.html): Defines the outer radius of the progress indicator.
-* [`IndicatorInnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfCircularProgressBar~IndicatorInnerRadius.html): Defines the inner radius of the progress indicator.
-* [`TrackOuterRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfCircularProgressBar~TrackOuterRadius.html): Defines the outer radius of the track indicator.
-* [`TrackInnerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfCircularProgressBar~TrackInnerRadius.html): Defines the inner radius of the track indicator.
+* [`IndicatorOuterRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfCircularProgressBar.html#Syncfusion_iOS_ProgressBar_SfCircularProgressBar_IndicatorOuterRadius): Defines the outer radius of the progress indicator.
+* [`IndicatorInnerRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfCircularProgressBar.html#Syncfusion_iOS_ProgressBar_SfCircularProgressBar_IndicatorInnerRadius): Defines the inner radius of the progress indicator.
+* [`TrackOuterRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfCircularProgressBar.html#Syncfusion_iOS_ProgressBar_SfCircularProgressBar_TrackOuterRadius): Defines the outer radius of the track indicator.
+* [`TrackInnerRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfCircularProgressBar.html#Syncfusion_iOS_ProgressBar_SfCircularProgressBar_TrackInnerRadius): Defines the inner radius of the track indicator.
 
 The following code example shows how to customize the appearance of circular progress bar.
 
@@ -128,7 +128,7 @@ trackOutsideProgressBar.ShowProgressValue = false;
 
 ## Corner radius
 
-The [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfLinearProgressBar~CornerRadius.html) property is used to customize the rounded edges in the linear progress bar, as shown in the following code example.
+The [`CornerRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfLinearProgressBar.html#Syncfusion_iOS_ProgressBar_SfLinearProgressBar_CornerRadius) property is used to customize the rounded edges in the linear progress bar, as shown in the following code example.
 
 {% highlight c# %}
 
@@ -147,8 +147,8 @@ linearProgressBar.CornerRadius = 10;
 
 The following properties are used to customize the color in the progress bar:
 
-* [`ProgressColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.ProgressBarBase~ProgressColor.html): Represents the color of the progress indicator.
-* [`TrackColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.ProgressBarBase~TrackColor.html): Represents the color of the track indicator.
+* [`ProgressColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.ProgressBarBase.html#Syncfusion_iOS_ProgressBar_ProgressBarBase_ProgressColor): Represents the color of the progress indicator.
+* [`TrackColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.ProgressBarBase.html#Syncfusion_iOS_ProgressBar_ProgressBarBase_TrackColor): Represents the color of the track indicator.
 
 The following code example shows the color customization in progress and track indicator.
 
@@ -166,7 +166,7 @@ linearProgressBar.TrackColor = UIColor.FromRGB(28, 150, 197);
 
 ![](overview_images/color1.png)
 
-The linear progress bar provides support to customize the color for the secondary progress bar using the [`SecondaryProgressColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfProgressBar.iOS~Syncfusion.iOS.ProgressBar.SfLinearProgressBar~SecondaryProgressColor.html) property,as shown in the following code example.
+The linear progress bar provides support to customize the color for the secondary progress bar using the [`SecondaryProgressColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.SfLinearProgressBar.html#Syncfusion_iOS_ProgressBar_SfLinearProgressBar_SecondaryProgressColor) property,as shown in the following code example.
 
 {% highlight c# %}
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();

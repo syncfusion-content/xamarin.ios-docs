@@ -265,7 +265,7 @@ public DateTime JoinDate
 
 ## Validation mode
 
-[ValidationMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~ValidationMode.html) determines when the value should be validated.
+[ValidationMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html#Syncfusion_iOS_DataForm_SfDataForm_ValidationMode) determines when the value should be validated.
 
 Below are the supported validation modes.
 
@@ -289,7 +289,7 @@ Value will be validated immediately when it is changed.
 
 **Explicit**
 
-Value should be validated manually by calling [SfDataForm.Validate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~Validate().html) or [SfDataForm.Validate (propertyName)](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~Validate(String).html) method.
+Value should be validated manually by calling [SfDataForm.Validate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html#Syncfusion_iOS_DataForm_SfDataForm_Validate().html) or [SfDataForm.Validate (propertyName)](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html#Syncfusion_iOS_DataForm_SfDataForm_Validate(String).html) method.
 
 Below code validates the value of all the properties in data object.
 
@@ -321,7 +321,7 @@ Note> For validating value, new value should be committed in data object. So `Va
 
 **Custom validation through events**
 
-You can validate the data using [Validating](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~Validating_EV.html) event of SfDataForm.
+You can validate the data using [Validating](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html) event of SfDataForm.
 
 {% tabs %}
 {% highlight c# %}
@@ -340,7 +340,7 @@ private void DataForm_Validating(object sender, ValidatingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the notification after completing validation using [Validated](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~Validated_EV.html) event of SfDataForm.
+You can get the notification after completing validation using [Validated](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html) event of SfDataForm.
 
 {% tabs %}
 {% highlight c# %}
@@ -369,7 +369,7 @@ var invalidItems = e.Errors;
 
 ## Valid or Positive message
 
-If the value meets the desired criteria, you can show [valid or positive message](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DisplayOptionsAttribute~ValidMessage.html).  Like error message, valid message also will be displayed in the bottom of the editor.
+If the value meets the desired criteria, you can show [valid or positive message](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DisplayOptionsAttribute.html#Syncfusion_iOS_DataForm_DisplayOptionsAttribute_ValidMessage).  Like error message, valid message also will be displayed in the bottom of the editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -392,7 +392,7 @@ public string Name
 
 ## How to validate property value based on another value
 
-If you want to validate one property value based on another property value, you need to use [property changed event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) and [Validate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~Validate(String).html) method.
+If you want to validate one property value based on another property value, you need to use [property changed event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) and [Validate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html#Syncfusion_iOS_DataForm_SfDataForm_Validate_System_String_) method.
 
 Here, `AccountNumber` and `AccountNumber1` fields are validated.
 
@@ -422,7 +422,7 @@ private void DataFormGettingStarted_PropertyChanged(object sender, PropertyChang
 
 ## Customize validation message using DataFormLayoutManager
 
-You can use custom [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager.html) class to customize validation message by overriding [UpdateViewForValidation](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormLayoutManager~UpdateViewForValidation.html) method. It lets you to return different custom views for each validation message based on certain conditions.
+You can use custom [DataFormLayoutManager](https://help.syncfusion.com/cr/xamarin-android/Syncfusion.Android.DataForm.DataFormLayoutManager.html) class to customize validation message by overriding [UpdateViewForValidation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormLayoutManager.html#Syncfusion_iOS_DataForm_DataFormLayoutManager_UpdateViewForValidation_Syncfusion_iOS_DataForm_DataFormItem_CoreGraphics_CGRect_) method. It lets you to return different custom views for each validation message based on certain conditions.
 
 {% tabs %}
 {% highlight c# %}

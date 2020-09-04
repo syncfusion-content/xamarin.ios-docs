@@ -154,7 +154,7 @@ The `QueryRowDragging` event provides following properties in [QueryRowDragging
 * [Reason](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~Reason.html) – Returns row dragging details as `QueryRowDraggingReason`.
 * [RowData](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~RowData.html) – Returns the underlying data associated with the dragged row.
 * [CurrentRowData](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~CurrentRowData.html)  – Returns the corresponding row data, over which the row drag view is currently placed.
-* [CanAutoScroll](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.QueryRowDraggingEventArgs~CanAutoScroll.html): Returns whether auto-scrolling should happen when row drag view reaches the top or bottom of the `SfDataGrid`.
+* [CanAutoScroll](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_QueryRowDraggingEventArgs_CanAutoScroll): Returns whether auto-scrolling should happen when row drag view reaches the top or bottom of the `SfDataGrid`.
 * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx) – A Boolean property to cancel the event.
 
 ## Cancel dragging for particular row

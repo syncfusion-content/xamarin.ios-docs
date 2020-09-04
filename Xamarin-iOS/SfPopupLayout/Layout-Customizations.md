@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Customizations
 
-The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AppearanceMode.html). By default, the `AppearanceMode.OneButton` is set. You can change the appearance of the SfPopupLayout by using the `SfPopupLayout.PopupView.AppearanceMode` property.
+The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.AppearanceMode.html). By default, the `AppearanceMode.OneButton` is set. You can change the appearance of the SfPopupLayout by using the `SfPopupLayout.PopupView.AppearanceMode` property.
 
 Two different appearance modes in the SfPopupLayout are as follows.
 
@@ -19,11 +19,11 @@ Two different appearance modes in the SfPopupLayout are as follows.
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[OneButton](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
+<td> {{'[OneButton](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
 <td> Shows the SfPopupLayout with one button in the footer view. This is the default value.</td>
 </tr>
 <tr>
-<td> {{'[TwoButton](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
+<td> {{'[TwoButton](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
 <td> Shows the SfPopupLayout with two buttons in the footer view.</td>
 </tr>
 </table>
@@ -148,7 +148,7 @@ You can customize the entire view of the pop-up by loading the templates or cust
 
 ### Header customization
 
-Any view can be added as the header content using the [SfPopupLayout.PopupView.HeaderView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~HeaderView.html) property to refresh it. Refer to the following code example in which a UILabel is added as a header content.
+Any view can be added as the header content using the [SfPopupLayout.PopupView.HeaderView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupView.html#Syncfusion_iOS_PopupLayout_PopupView_HeaderView) property to refresh it. Refer to the following code example in which a UILabel is added as a header content.
 
 {% highlight c# %}
 
@@ -212,7 +212,7 @@ Executing the above codes renders the following output in an iOS device.
 
 ### Footer customization
 
-Any view can be added as the footer content using the [SfPopupLayout.PopupView.FooterView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~FooterView.html) property to refresh it. Refer to the following code example in which a UILabel is added as a footer content.
+Any view can be added as the footer content using the [SfPopupLayout.PopupView.FooterView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupView.html#Syncfusion_iOS_PopupLayout_PopupView_FooterView) property to refresh it. Refer to the following code example in which a UILabel is added as a footer content.
 
 {% highlight c# %}
 
@@ -276,7 +276,7 @@ Executing the above codes renders the following output in an iOS device.
 
 ## Styles
 
-The SfPopupLayout applies style to all of its elements by using the [SfPopupLayout.PopupView.PopupStyle](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupView~PopupStyle.html) property.
+The SfPopupLayout applies style to all of its elements by using the [SfPopupLayout.PopupView.PopupStyle](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupView.html#Syncfusion_iOS_PopupLayout_PopupView_PopupStyle) property.
 
 ### Customizing header elements
 
@@ -288,23 +288,23 @@ The SfPopupLayout allows customizing the header elements with various available 
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~HeaderBackgroundColor.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_HeaderBackgroundColor)'| markdownify }} </td>
 <td>  Gets or sets the background color for the header.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderFont](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~HeaderFont.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderFont](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_HeaderFont)'| markdownify }} </td>
 <td>  Gets or sets the font style for the header title.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderFontSize](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~HeaderFontSize.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderFontSize](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_HeaderFontSize)'| markdownify }} </td>
 <td> Gets or sets the font size for the header title.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderTextAlignment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~HeaderTextAlignment.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderTextAlignment](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_HeaderTextAlignment)'| markdownify }} </td>
 <td>  Gets or sets the text alignment for the header.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~HeaderTextColor.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.HeaderTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_HeaderTextColor)'| markdownify }} </td>
 <td>  Gets or sets the text color for the header title.</td>
 </tr>
 </table>
@@ -345,23 +345,23 @@ The SfPopupLayout allows customizing the footer elements with various available 
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.FooterBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~FooterBackgroundColor.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.FooterBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_FooterBackgroundColor)'| markdownify }} </td>
 <td>  Gets or sets the background color for the footer.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.AcceptButtonBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~AcceptButtonBackgroundColor.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.AcceptButtonBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_AcceptButtonBackgroundColor)'| markdownify }} </td>
 <td>  Gets or sets the background color for the Accept button in the footer.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.AcceptButtonTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~AcceptButtonTextColor.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.AcceptButtonTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_AcceptButtonTextColor)'| markdownify }} </td>
 <td>  Gets or sets the foreground color for the Accept button in the footer.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.DeclineButtonBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~DeclineButtonBackgroundColor.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.DeclineButtonBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_DeclineButtonBackgroundColor)'| markdownify }} </td>
 <td> Gets or sets the background color for the Decline button in the footer.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.DeclineButtonTextColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~DeclineButtonTextColor.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.DeclineButtonTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_DeclineButtonTextColor)'| markdownify }} </td>
 <td>  Gets or sets the foreground color for the Decline button in the footer.</td>
 </tr>
 </table>
@@ -402,15 +402,15 @@ The SfPopupLayout allows customizing the border appearance with various availabl
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~BorderColor.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.BorderColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_BorderColor)'| markdownify }} </td>
 <td>  Gets or sets the border color for the PopupView.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.BorderThickness](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~BorderThickness.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.BorderThickness](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_BorderThickness)'| markdownify }} </td>
 <td>  Gets or sets the border thickness for the PopupView.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.CornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.PopupStyle~CornerRadius.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.CornerRadius](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.PopupStyle.html#Syncfusion_iOS_PopupLayout_PopupStyle_CornerRadius)'| markdownify }} </td>
 <td>  Gets or sets the corner radius for the PopupView.</td>
 </tr>
 </table>

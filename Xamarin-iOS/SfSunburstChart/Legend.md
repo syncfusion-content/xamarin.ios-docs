@@ -13,7 +13,7 @@ Legends are used to represent the first level (i.e root level) of categories in 
 
 ## Visibility
 
-The visibility of legends can be controlled using the [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegend~IsVisible.html) property.
+The visibility of legends can be controlled using the [`IsVisible`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegend.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegend_IsVisible) property.
 
 The following code shows how to control the visibility of legend.
 
@@ -32,7 +32,7 @@ The following code shows how to control the visibility of legend.
 
 ## Position
 
-Legends can be docked at the top, right, left, or bottom position using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegend~LegendPosition.html) property.
+Legends can be docked at the top, right, left, or bottom position using the [`LegendPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegend.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegend_LegendPosition) property.
 
 The following code shows customizing the legend position.
 
@@ -52,7 +52,7 @@ The following code shows customizing the legend position.
 
 ## Legend icon types
 
-Legend icon shapes can be customized using the [`IconType`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegend~IconType.html) property. The IconType property provides several predefined shapes. The default legend icon type is circle.
+Legend icon shapes can be customized using the [`IconType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegend.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegend_IconType) property. The IconType property provides several predefined shapes. The default legend icon type is circle.
 
 The following predefined shapes are available in the IconType property:
 
@@ -78,7 +78,7 @@ The following predefined shapes are available in the IconType property:
 
 ## Icon size customization
 
-The size of the legend icon can be customized using the [`IconHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegend~IconHeight.html) and [`IconWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegend~IconWidth.html) properties.
+The size of the legend icon can be customized using the [`IconHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegend.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegend_IconHeight) and [`IconWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegend.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegend_IconWidth) properties.
 
 {% tabs %} 
 
@@ -97,13 +97,13 @@ The size of the legend icon can be customized using the [`IconHeight`](https://h
 
 ## Customization
 
-Legend label can be customized using the following properties available in [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegend~LabelStyle.html):
+Legend label can be customized using the following properties available in [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegend.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegend_LabelStyle):
 
-* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegendLabelStyle~Margin.html): Sets the specified margin for legend labels.
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegendLabelStyle~Color.html): Customizes the text color of the label.
-* [`Font`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegendLabelStyle~Font.html): Customizes the label's font.
+* [`Margin`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegendLabelStyle.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegendLabelStyle_Margin): Sets the specified margin for legend labels.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegendLabelStyle.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegendLabelStyle_Color): Customizes the text color of the label.
+* [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegendLabelStyle.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegendLabelStyle_Font): Customizes the label's font.
 
-Background color for the legend can be changed using the [`Background`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegend~Background.html)Property.
+Background color for the legend can be changed using the [`Background`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegend.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegend_Background)Property.
 
 {% tabs %} 
 
@@ -124,7 +124,7 @@ Background color for the legend can be changed using the [`Background`](https://
 
 ## Item margin
 
-Margin can be set to individual legend items using the [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfsunburstchart/Syncfusion.SfSunburstChart.iOS~Syncfusion.SfSunburstChart.iOS.SunburstChartLegend~ItemMargin.html) property.
+Margin can be set to individual legend items using the [`ItemMargin`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstChartLegend.html#Syncfusion_SfSunburstChart_iOS_SunburstChartLegend_ItemMargin) property.
 
 {% tabs %} 
 

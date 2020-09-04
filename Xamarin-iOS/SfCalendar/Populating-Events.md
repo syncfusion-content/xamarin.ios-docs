@@ -30,7 +30,7 @@ N> The Inline function will be available only in month view with single selectio
 
 Calendar events collection can be provided to `SfCalendar` using the following steps.
 
-The Appointment class has some basic properties such as [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFAppointment~StartTime.html), [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFAppointment~EndTime.html) and [Subject](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFAppointment~Subject.html).
+The Appointment class has some basic properties such as [StartTime](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFAppointment.html#Syncfusion_SfCalendar_iOS_SFAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFAppointment.html#Syncfusion_SfCalendar_iOS_SFAppointment_EndTime) and [Subject](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFAppointment.html#Syncfusion_SfCalendar_iOS_SFAppointment_Subject).
 
 {% highlight C# %}
 		   
@@ -91,7 +91,7 @@ appCollection.Add(new SFAppointment()
 ![Calendar Inline Events](images/xamarin.ios-calendar-inline_event.png)        
 
 ## Customize inline/agenda view appearance
-You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~InlineItemLoaded_EV.html) event using in `SfCalendar` and you can get the details of appointment from the `Appointment` property, the custom view can be set to `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.InlineItemLoadedEventArgs_members.html) argument.
+You can customize the inline item view by [OnInlineItemLoaded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html) event using in `SfCalendar` and you can get the details of appointment from the `Appointment` property, the custom view can be set to `View` property of [InlineItemLoadedEventArgs](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfCalendar.iOS.InlineItemLoadedEventArgs.html) argument.
 
 {% highlight c# %}
 

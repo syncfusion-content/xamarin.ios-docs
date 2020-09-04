@@ -9,11 +9,11 @@ documentation: ug
 # Legend
 
 A legend is a key used on a map that contains swatches of symbols with descriptions. A legend interprets what the map displays; it can be represented in various colors, shapes, or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
-Legends can be added with the help of [`LegendSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~LegendSettings.html) in the shape file layer.
+Legends can be added with the help of [`LegendSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_LegendSettings) in the shape file layer.
 
 ## Visibility
 
-The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapLegendSettings~ShowLegend.html) property in [`LegendSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~LegendSettings.html) class to true.
+The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapLegendSettings.html#Syncfusion_SfMaps_iOS_SFMapLegendSettings_ShowLegend) property in [`LegendSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_LegendSettings) class to true.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ layer.LegendSettings = setting;
 
 ## Legend position
 
-Based on the margin values of x and y-axes, the legends can be positioned using the [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapLegendSettings~Position.html) property of [`LegendSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~LegendSettings.html) class.
+Based on the margin values of x and y-axes, the legends can be positioned using the [`Position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapLegendSettings.html#Syncfusion_SfMaps_iOS_SFMapLegendSettings_Position) property of [`LegendSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_LegendSettings) class.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ layer.LegendSettings = setting;
 
 ## Icon customization
 
-The icon size of a legend can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapLegendSettings~IconSize.html) property.
+The icon size of a legend can be customized using the [`IconSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapLegendSettings.html#Syncfusion_SfMaps_iOS_SFMapLegendSettings_IconSize) property.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ layer.LegendSettings = setting;
 
 ## Legend label
 
-[`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapColorMapping~LegendLabel.html) provides an information about the map content. It is specified under color mapping.
+[`LegendLabel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapColorMapping.html#Syncfusion_SfMaps_iOS_SFMapColorMapping_LegendLabel) provides an information about the map content. It is specified under color mapping.
 
 {% tabs %}
 

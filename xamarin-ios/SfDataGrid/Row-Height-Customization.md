@@ -117,7 +117,7 @@ void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs e)
 
 ### QueryRowHeights Customization
 
-SfDataGrid allows you to query a range of rows programmatically by using the [SfDataGrid.QueryingRowHeights](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~QueryRowHeight_EV.html) method based on the requirement. 
+SfDataGrid allows you to query a range of rows programmatically by using the [SfDataGrid.QueryingRowHeights](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html) method based on the requirement. 
 
 QueryRowHeights has two arguments start index and end index.
 * Start index: It indicates, from which row index the `SfDataGrid.QueryRowHeight` event has to fire.

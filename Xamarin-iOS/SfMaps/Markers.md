@@ -17,13 +17,13 @@ Markers are set to map by using the following two ways:
 
 ## Adding marker
 
-Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.MapLayer~Markers.html) property. Each marker object contains the following list of properties:
+Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.MapLayer.html#Syncfusion_SfMaps_iOS_MapLayer_Markers) property. Each marker object contains the following list of properties:
 
-[`Label`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarker~Label.html): Text that is used to display information.
+[`Label`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarker.html#Syncfusion_SfMaps_iOS_SFMapMarker_Label): Text that is used to display information.
 
-[`Latitude`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarker~Latitude.html): Latitude point that specifies the y-axis position of the marker.
+[`Latitude`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarker.html#Syncfusion_SfMaps_iOS_SFMapMarker_Latitude): Latitude point that specifies the y-axis position of the marker.
 
-[`Longitude`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarker~Longitude.html): Longitude point that specifies the x-axis position of the marker.
+[`Longitude`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarker.html#Syncfusion_SfMaps_iOS_SFMapMarker_Longitude): Longitude point that specifies the x-axis position of the marker.
 
 {% tabs %}
 
@@ -53,15 +53,15 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 ## Marker customization
 
-A map marker can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.MapLayer~MarkerSettings.html) property in shape file layer.
+A map marker can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.MapLayer.html#Syncfusion_SfMaps_iOS_MapLayer_MarkerSettings) property in shape file layer.
 
 ### Customizing marker icons
 
-The size and color of a marker icon can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarkerSetting~IconSize.html), and [`IconColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarkerSetting~IconColor.html) properties.
+The size and color of a marker icon can be customized using the [`IconSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarkerSetting.html#Syncfusion_SfMaps_iOS_SFMapMarkerSetting_IconSize), and [`IconColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarkerSetting.html#Syncfusion_SfMaps_iOS_SFMapMarkerSetting_IconColor) properties.
 
 ### Icon types
 
-The shape of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarkerSetting~MarkerIcon.html) property. Maps supports the following types of marker icons:
+The shape of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarkerSetting.html#Syncfusion_SfMaps_iOS_SFMapMarkerSetting_MarkerIcon) property. Maps supports the following types of marker icons:
 
 * Circle
 * Diamond
@@ -186,7 +186,7 @@ legendSetting.ShowLegend = true;
 
 ### Setting image marker icon
 
-You can pin the image as marker icon by setting the icon type as Image and [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarkerSetting~ImageSource.html) to get the image from local path.
+You can pin the image as marker icon by setting the icon type as Image and [`ImageSource`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarkerSetting.html#Syncfusion_SfMaps_iOS_SFMapMarkerSetting_ImageSource) to get the image from local path.
 
 {% tabs %}
 
@@ -238,7 +238,7 @@ this.View.AddSubview(map);
 
 ### Label customization
 
-A marker label’s color and size can be customized using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarkerSetting~LabelColor.html) and [`LabelSize`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarkerSetting~LabelSize.html) properties.
+A marker label’s color and size can be customized using the [`LabelColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarkerSetting.html#Syncfusion_SfMaps_iOS_SFMapMarkerSetting_LabelColor) and [`LabelSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarkerSetting.html#Syncfusion_SfMaps_iOS_SFMapMarkerSetting_LabelSize) properties.
 
 The following code explains the marker customization.
 
@@ -356,7 +356,7 @@ return new CGPoint(-8, -25);
 ## Events
 
 `Delegate` is triggered from SFMapDelegate
-Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMapMarker.html) which gives the information about the marker.
+Argument contains the [`MapMarker`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMapMarker.html) which gives the information about the marker.
 
 {% tabs %}
 
