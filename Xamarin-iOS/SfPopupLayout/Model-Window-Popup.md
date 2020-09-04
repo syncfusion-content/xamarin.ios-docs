@@ -9,7 +9,7 @@ documentation: ug
 
 # Modal Window Popup
 
-You can use pop-up layout as modal window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPopupLayout.iOS~Syncfusion.iOS.PopupLayout.SfPopupLayout~StaysOpen.html) property prevents interaction with your application until you close the window.
+You can use pop-up layout as modal window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.SfPopupLayout.html#Syncfusion_iOS_PopupLayout_SfPopupLayout_StaysOpen) property prevents interaction with your application until you close the window.
 
 `Modal`: Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal. 
 

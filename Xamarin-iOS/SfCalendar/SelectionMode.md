@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection
 
-Dates can be selected by making a touch on month view cells. The default [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfcalendar/Syncfusion.SfCalendar.iOS~Syncfusion.SfCalendar.iOS.SFCalendar~SelectionMode.html) is Single which allows user to select one date at a time. SfCalendar provides support to select dates in three modes such as single, multiple and range selection.
+Dates can be selected by making a touch on month view cells. The default [SelectionMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfCalendar.iOS.SFCalendar.html#Syncfusion_SfCalendar_iOS_SFCalendar_SelectionMode) is Single which allows user to select one date at a time. SfCalendar provides support to select dates in three modes such as single, multiple and range selection.
 
 * `SingleSelection` – A single date can be selected in a month view which can be equipped when user needs to select one date at a time / to view events.
 

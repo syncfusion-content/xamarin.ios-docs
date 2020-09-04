@@ -31,7 +31,7 @@ The following namespace needs to be added.
 
 ## Initializing Maps   
 
-You can initialize the [`SFMap`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMap.html) control with a required optimal name by using the included namespace.
+You can initialize the [`SFMap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMap.html) control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ this.View.AddSubview(map);
 
 ## Adding layers
 
-Map is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFMap~Layers.html). It can accommodate one or more shape file layers.
+Map is maintained through [`Layers`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFMap.html#Syncfusion_SfMaps_iOS_SFMap_Layers). It can accommodate one or more shape file layers.
 
 {% tabs %}
 
@@ -90,7 +90,7 @@ Shape file can be a set of files or a single file. Generally, a shape file conta
 *	Right-click the added shape file, and navigate to properties.
 *	Choose the `BundleResource` option under BuildAction of respective shape file.
 
-[`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~Uri.html) property in shape file layer is used to retrieve the location of the shape file that is added.
+[`Uri`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_Uri) property in shape file layer is used to retrieve the location of the shape file that is added.
 
 {% tabs %}
 
@@ -116,7 +116,7 @@ After loading the shapes file, the following output will be reproduced.
 
 ## Data binding
 
-Data can be binded to the shape file layer using the [`DataSource`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~DataSource.html), [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~ShapeIDPath.html), [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfMaps.iOS~Syncfusion.SfMaps.iOS.SFShapeFileLayer~ShapeIDTableField.html) properties.
+Data can be binded to the shape file layer using the [`DataSource`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_DataSource), [`ShapeIDPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_ShapeIDPath), [`ShapeIDTableField`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html#Syncfusion_SfMaps_iOS_SFShapeFileLayer_ShapeIDTableField) properties.
  [`Populate data`](https://help.syncfusion.com/xamarin-ios/sfmaps/populate-data) topic gives the detailed explanation of data binding.
 
 {% tabs %}

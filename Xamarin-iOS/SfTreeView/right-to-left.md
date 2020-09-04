@@ -22,7 +22,7 @@ treeView.SemanticContentAttribute = UISemanticContentAttribute.ForceRightToLeft;
 {% endhighlight %}
 {% endtabs %}
 
-N> If you need to customize [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Adapter.html) with your custom views, layout views in based on device layout direction to respond for right-to-left changes.
+N> If you need to customize [Adapter](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_Adapter) with your custom views, layout views in based on device layout direction to respond for right-to-left changes.
 
 {% tabs %}
 {% highlight c# %}

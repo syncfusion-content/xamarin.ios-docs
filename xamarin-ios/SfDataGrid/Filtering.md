@@ -232,7 +232,7 @@ private void OnFilterChanged()
 
 ## Applying DataTable's RowFilter to DataGrid
 
-To filter the rows in SfDataGrid using [DataView.RowFilter](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) expression, set the value of [SfDataGrid.CanUseViewFilter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~CanUseViewFilter.html) property to `true`. The default filter which created in DataView can be applied or canceled through this property. 
+To filter the rows in SfDataGrid using [DataView.RowFilter](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) expression, set the value of [SfDataGrid.CanUseViewFilter](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_CanUseViewFilter) property to `true`. The default filter which created in DataView can be applied or canceled through this property. 
 
 ## Filter individual columns
 

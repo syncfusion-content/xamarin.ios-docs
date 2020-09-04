@@ -11,11 +11,11 @@ documentation: UG
 
 ## GridTapped event
 
-The event will be triggered whenever you tap the SfDataGrid with [GridTappedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTappedEventsArgs.html) that contains following properties.
+The event will be triggered whenever you tap the SfDataGrid with [GridTappedEventsArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridTappedEventsArgs.html) that contains following properties.
 
-* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowColumnIndex.html) - Gets the row index of the row on which you tapped
-* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowColumnIndex.html) - Gets the column index of the column on which you tapped
-* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTappedEventsArgs~RowData.html) - Gets the row data of the row on which you tapped
+* [RowIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridTappedEventsArgs.html#Syncfusion_SfDataGrid_GridTappedEventsArgs__ctor_Syncfusion_GridCommon_ScrollAxis_RowColumnIndex_System_Object_) - Gets the row index of the row on which you tapped
+* [ColumnIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridTappedEventsArgs.html#Syncfusion_SfDataGrid_GridTappedEventsArgs__ctor_Syncfusion_GridCommon_ScrollAxis_RowColumnIndex_System_Object_) - Gets the column index of the column on which you tapped
+* [RowData](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridTappedEventsArgs.html#Syncfusion_SfDataGrid_GridTappedEventsArgs_RowData) - Gets the row data of the row on which you tapped
 
 The following code illustrates how to hook the `GridTapped` event and get the row and column details based on where you tapped on SfDataGrid. 
 
@@ -32,11 +32,11 @@ private void DataGrid_GridTapped(object sender, GridTappedEventsArgs e)
 
 ## GridDoubleTapped event
 
-The event will be triggered whenever you double tap the SfDataGrid with [GridDoubleTappedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs.html) that contains the following properties. 
+The event will be triggered whenever you double tap the SfDataGrid with [GridDoubleTappedEventsArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs.html) that contains the following properties. 
 
-* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowColumnIndex.html) - Gets the row index of the row on which you double tapped
-* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowColumnIndex.html) - Gets the column index of the column on which you double tapped
-* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs~RowData.html) - Gets the row data of the row on which you double tapped
+* [RowIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs.html#Syncfusion_SfDataGrid_GridDoubleTappedEventsArgs__ctor_Syncfusion_GridCommon_ScrollAxis_RowColumnIndex_System_Object_) - Gets the row index of the row on which you double tapped
+* [ColumnIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs.html#Syncfusion_SfDataGrid_GridDoubleTappedEventsArgs__ctor_Syncfusion_GridCommon_ScrollAxis_RowColumnIndex_System_Object_) - Gets the column index of the column on which you double tapped
+* [RowData](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridDoubleTappedEventsArgs.html#Syncfusion_SfDataGrid_GridDoubleTappedEventsArgs_RowData) - Gets the row data of the row on which you double tapped
 
 The following code illustrates how to hook the `GridDoubleTapped` event and get the row and column details based on where you double tapped on SfDataGrid.  
 
@@ -53,11 +53,11 @@ private void DataGrid_GridDoubleTapped(object sender, GridDoubleTappedEventsArgs
 
 ## GridLongPressed event
 
-The event will be triggered whenever you long press the SfDataGrid with [GridLongPressedEventsArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLongPressedEventsArgs.html) that contains the following properties.
+The event will be triggered whenever you long press the SfDataGrid with [GridLongPressedEventsArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridLongPressedEventsArgs.html) that contains the following properties.
 
-* [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowColumnIndex.html) - Gets the row index of the row on which you long pressed
-* [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowColumnIndex.html) - Gets the column index of the column on which you long pressed
-* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLongPressedEventsArgs~RowData.html) - Gets the row data of the row on which you long pressed
+* [RowIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridLongPressedEventsArgs.html#Syncfusion_SfDataGrid_GridLongPressedEventsArgs__ctor_Syncfusion_GridCommon_ScrollAxis_RowColumnIndex_System_Object_) - Gets the row index of the row on which you long pressed
+* [ColumnIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridLongPressedEventsArgs.html#Syncfusion_SfDataGrid_GridLongPressedEventsArgs__ctor_Syncfusion_GridCommon_ScrollAxis_RowColumnIndex_System_Object_) - Gets the column index of the column on which you long pressed
+* [RowData](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridLongPressedEventsArgs.html#Syncfusion_SfDataGrid_GridLongPressedEventsArgs_RowData) - Gets the row data of the row on which you long pressed
 
 The following code illustrates how to hook the `GridLongPressed` event and get the row and column details based on where you long pressed on SfDataGrid. 
 
@@ -74,7 +74,7 @@ private void DataGrid_GridLongPressed(object sender, GridLongPressedEventsArgs e
 
 ## GridViewCreated event
 
-The event will be triggered once the [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~View.html) is created. You can give any operation in this event if it needs to happen once the `SfDataGrid.View` is created by handling [GridViewCreatedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridViewCreatedEventArgs.html).
+The event will be triggered once the [SfDataGrid.View](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_View) is created. You can give any operation in this event if it needs to happen once the `SfDataGrid.View` is created by handling [GridViewCreatedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridViewCreatedEventArgs.html).
 
 The following code illustrates how to hook the `GridViewCreated` event and how to set alternate row colors in SfDataGrid.
 
@@ -97,7 +97,7 @@ internal class CustomGridStyle : DataGridStyle
 
 ## GridLoaded event
 
-The event will be triggered once the components in the SfDataGrid are initialized and rendered. You can give any operation in this event if it needs to happen once the grid is loaded by handling [GridLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridLoadedEventArgs.html).
+The event will be triggered once the components in the SfDataGrid are initialized and rendered. You can give any operation in this event if it needs to happen once the grid is loaded by handling [GridLoadedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridLoadedEventArgs.html).
 
 The following code illustrates how to hook the `GridLoaded` event and how to show the `UIActivityIndicatorView` until the grid comes to view.
 
@@ -116,12 +116,12 @@ private void DataGrid_GridLoaded(object sender, GridLoadedEventArgs e)
 {% endhighlight %}
 
 ## Value changed event
-The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ValueChanged_EV.html) event will be triggered whenever the value has been changed by toggling the switch of the GridSwitchColumn. This event handler contains the parameter of type [ValueChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ValueChangedEventArgs.html) that contains the following properties.
+The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html) event will be triggered whenever the value has been changed by toggling the switch of the GridSwitchColumn. This event handler contains the parameter of type [ValueChangedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.ValueChangedEventArgs.html) that contains the following properties.
 
-* [Column](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ValueChangedEventArgs~Column.html)        : Gets the current `GridColumn` that contains the grid cell for which value is edited or changed.
-* [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ValueChangedEventArgs~NewValue.html)      : The new edited value to be committed.
-* [RowColIndex](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ValueChangedEventArgs~RowColIndex.html)   : The current `RowColumnIndex` of the grid cell undergoing the value change.
-* [RowData](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.ValueChangedEventArgs~RowData.html)       : The `RowData` of the row that contains the grid cell undergoing the value change.
+* [Column](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.ValueChangedEventArgs.html#Syncfusion_SfDataGrid_ValueChangedEventArgs_Column)        : Gets the current `GridColumn` that contains the grid cell for which value is edited or changed.
+* [NewValue](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.ValueChangedEventArgs.html#Syncfusion_SfDataGrid_ValueChangedEventArgs_NewValue)      : The new edited value to be committed.
+* [RowColIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.ValueChangedEventArgs.html#Syncfusion_SfDataGrid_ValueChangedEventArgs_RowColIndex)   : The current `RowColumnIndex` of the grid cell undergoing the value change.
+* [RowData](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.ValueChangedEventArgs.html#Syncfusion_SfDataGrid_ValueChangedEventArgs_RowData)       : The `RowData` of the row that contains the grid cell undergoing the value change.
 
 {% highlight c# %}
 
@@ -139,12 +139,12 @@ The [SfDataGrid.ValueChanged](https://help.syncfusion.com/cr/cref_files/xamarin-
 
 ## ItemsSourceChanged event
 
-The [SfDataGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ItemsSourceChanged_EV.html) event will be triggered whenever the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~ItemsSource.html) property is changed in the grid during both the runtime changes and initial loading of the DataGrid. This event handler contains the parameter of type [GridItemsSourceChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs.html) that contains the following properties:
+The [SfDataGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html) event will be triggered whenever the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_ItemsSource) property is changed in the grid during both the runtime changes and initial loading of the DataGrid. This event handler contains the parameter of type [GridItemsSourceChangedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs.html) that contains the following properties:
 
-* [OldItemSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs~OldItemSource.html): Gets the previous ItemsSource collection as object. Always null when the grid is initially loaded.
-* [NewItemSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs~NewItemSource.html): Gets the current ItemsSource collection as object.
-* [OldView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs~OldView.html): Gets the old [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~View.html) associated with the `OldItemSource`. Always null when the grid is initially loaded.
-* [NewView](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs~NewView.html): Gets the new [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~View.html) associated with the `NewItemSource`.
+* [OldItemSource](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs.html#Syncfusion_SfDataGrid_GridItemsSourceChangedEventArgs_OldItemSource): Gets the previous ItemsSource collection as object. Always null when the grid is initially loaded.
+* [NewItemSource](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs.html#Syncfusion_SfDataGrid_GridItemsSourceChangedEventArgs_NewItemSource): Gets the current ItemsSource collection as object.
+* [OldView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs.html#Syncfusion_SfDataGrid_GridItemsSourceChangedEventArgs_OldView): Gets the old [SfDataGrid.View](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_View) associated with the `OldItemSource`. Always null when the grid is initially loaded.
+* [NewView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridItemsSourceChangedEventArgs.html#Syncfusion_SfDataGrid_GridItemsSourceChangedEventArgs_NewView): Gets the new [SfDataGrid.View](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_View) associated with the `NewItemSource`.
 
 The following code example shows how to hook the `SfDataGrid.ItemsSourceChanged` event and get the `ItemsSource` collection details.
 

@@ -15,7 +15,7 @@ The TreeView allows customizing appearance of the underlying data, and provides 
 
 An Adapter can be used to present the data in a way that makes sense for the application by using different controls.
 
-The TreeView allows you to customize the appearance of content view and expander view by setting the [Adapter](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Adapter.html) property.You can customize the content view and expander view by overriding the `CreateContentView`, `CreateExpanderView` methods and update its content in the `UpdateContentView` and `UpdateExpanderView` methods of `TreeViewAdapter`.
+The TreeView allows you to customize the appearance of content view and expander view by setting the [Adapter](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_Adapter) property.You can customize the content view and expander view by overriding the `CreateContentView`, `CreateExpanderView` methods and update its content in the `UpdateContentView` and `UpdateExpanderView` methods of `TreeViewAdapter`.
                                       
 {% tabs %}
 {% highlight c# %}
@@ -89,7 +89,7 @@ You can also download the entire source code of this demo from [here](http://www
 
 ## Indentation
 
-The TreeView allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~Indentation.html) property. The default value of this property is `40`. This property can be customized at runtime.
+The TreeView allows customizing the indent spacing of items by setting the [Indentation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_Indentation) property. The default value of this property is `40`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight c# %}
@@ -100,7 +100,7 @@ treeView.Indentation = 40;
 
 ## ItemHeight
 
-The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ItemHeight.html) property. The default value of this property is `40`. This property can be customized at runtime.
+The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_ItemHeight) property. The default value of this property is `40`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight c# %}
@@ -111,7 +111,7 @@ treeView.ItemHeight = 40;
 
 ## ExpanderWidth
 
-The TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ExpanderWidth.html) property. The default value of this property is `40`. This property can be customized at runtime.
+The TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_ExpanderWidth) property. The default value of this property is `40`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight c# %}
@@ -122,7 +122,7 @@ treeView.ExpanderWidth = 40;
 
 ## ExpanderPosition
 
-The TreeView allows you change the position of expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~ExpanderPosition.html) property. The default value of this property is `Start`.This property has following two positions:
+The TreeView allows you change the position of expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_ExpanderPosition) property. The default value of this property is `Start`.This property has following two positions:
 
 * `Start`: Allows displaying the expander view at the start position.
 * `End`: Allows displaying the expander view at the end position.
@@ -325,7 +325,7 @@ You can download the example for level based styling demo from [here](http://www
 
 ## Animation
 
-The `SfTreeView` supports to animate expanding or collapsing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html). To enable/disable the animation use [IsAnimationEnabled](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfTreeView.iOS~Syncfusion.iOS.TreeView.SfTreeView~IsAnimationEnabled.html) property of `SfTreeView`.
+The `SfTreeView` supports to animate expanding or collapsing the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html). To enable/disable the animation use [IsAnimationEnabled](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_IsAnimationEnabled) property of `SfTreeView`.
  
 N> The default value of the `IsAnimationEnabled` property is `false`.
 

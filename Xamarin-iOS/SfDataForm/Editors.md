@@ -24,7 +24,7 @@ SfDataForm provides support for several built-in editors. Below are the supporte
 Text
 </td>
 <td>
-{{'[DataFormTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormTextEditor.html)'| markdownify }}
+{{'[DataFormTextEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormTextEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type string and any other type apart from below specified cases.
@@ -38,7 +38,7 @@ Property of type string and any other type apart from below specified cases.
 MultilineText
 </td>
 <td>
-{{'[DataFormMultiLineTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormMultiLineTextEditor.html)'| markdownify }}
+{{'[DataFormMultiLineTextEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormMultiLineTextEditor.html)'| markdownify }}
 </td>
 <td>
 Property of string type with Multiline text.
@@ -53,7 +53,7 @@ Property of string type with Multiline text.
 Numeric
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes.
@@ -67,7 +67,7 @@ Property of type int, double, float, decimal, long types and its nullable also p
 Percent
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes. [DataType(“Percent”)].
@@ -81,7 +81,7 @@ Property of type int, double, float, decimal, long types and its nullable also p
 Currency
 </td>
 <td>
-{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
+{{'[DataFormNumericEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormNumericEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type int, double, float, decimal, long types and its nullable also properties with below attributes. [DataType(DataType.Currency)].
@@ -95,7 +95,7 @@ Property of type int, double, float, decimal, long types and its nullable also p
 Date
 </td>
 <td>
-{{'[DataFormDateEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormDateEditor.html)'| markdownify }}
+{{'[DataFormDateEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormDateEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type DateTime and Property with below attribute
@@ -103,7 +103,7 @@ Property of type DateTime and Property with below attribute
 [DataType(DataType.DateTime)]
 </td>
 <td>
-{{'[SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfDatePicker.html)'| markdownify }}
+{{'[SfDatePicker](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfDatePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -111,14 +111,14 @@ Property of type DateTime and Property with below attribute
 Time
 </td>
 <td>
-{{'[DataFormTimeEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormTimeEditor.html)'| markdownify }}
+{{'[DataFormTimeEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormTimeEditor.html)'| markdownify }}
 </td>
 <td>
 Property with below attribute.
 [DataType(DataType.Time)].
 </td>
 <td>
-{{'[SfTimePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfTimePicker.html)'| markdownify }}
+{{'[SfTimePicker](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfTimePicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -126,7 +126,7 @@ Property with below attribute.
 NumericUpDown
 </td>
 <td>
-{{'[DataFormNumericUpDownEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormNumericUpDownEditor.html)'| markdownify }}
+{{'[DataFormNumericUpDownEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormNumericUpDownEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type Int or Double.
@@ -140,7 +140,7 @@ Property of type Int or Double.
 Segment
 </td>
 <td>
-{{'[DataFormSegmentedEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormSegmentedEditor.html)'| markdownify }}
+{{'[DataFormSegmentedEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormSegmentedEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type enum.
@@ -154,7 +154,7 @@ Property of type enum.
 Bool
 </td>
 <td>
-{{'[DataFormSwitchEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormSwitchEditor.html)'| markdownify }}
+{{'[DataFormSwitchEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormSwitchEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type bool
@@ -168,14 +168,14 @@ Property of type bool
 Picker
 </td>
 <td>
-{{'[DataFormPickerEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormPickerEditor.html)'| markdownify }}
+{{'[DataFormPickerEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormPickerEditor.html)'| markdownify }}
 </td>
 <td>
 Property of type enum and list. 
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfPicker.html)'| markdownify }}
+{{'[SfPicker](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfPicker.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -183,7 +183,7 @@ Property of type enum and list.
 Password
 </td>
 <td>
-{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/sfdataform/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
+{{'[DataFormPasswordEditor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.DataFormPasswordEditor.html)'| markdownify }}
 </td>
 <td>
 The String type property and property with 
@@ -201,7 +201,7 @@ In Text editor, [UITextField](https://developer.xamarin.com/api/type/MonoTouch.U
 
 ### Loading upper case keyboard in UITextField
 
-You can load upper case letters in keyboard by setting [InputType](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.DataFormTextItem~InputType.html) as `TextFlagCapCharacters`.
+You can load upper case letters in keyboard by setting [InputType](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormTextItem.html#Syncfusion_iOS_DataForm_DataFormTextItem_InputAccessoryView) as `TextFlagCapCharacters`.
 
 {% tabs %}
 {% highlight c# %}
@@ -239,7 +239,7 @@ In numeric editor, [SfNumericTextBox](https://help.syncfusion.com/xamarin-ios/sf
 
 ### Change maximum NumberDecimalDigits in Numeric editor
 
-In `SfNumericTextBox`, two decimal digits will be displayed by default. You can change it by using [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItemBase~MaximumNumberDecimalDigits.html) property in [DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItem.html).
+In `SfNumericTextBox`, two decimal digits will be displayed by default. You can change it by using [MaximumNumberDecimalDigits](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericItemBase.html#Syncfusion_iOS_DataForm_DataFormNumericItemBase_MaximumNumberDecimalDigits) property in [DataFormNumericItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -256,7 +256,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Date Editor
 
-In Date editor, [SfDatePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfDatePicker.html) will be loaded.
+In Date editor, [SfDatePicker](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfDatePicker.html) will be loaded.
 
 ### Setting null value in date editor
 
@@ -276,7 +276,7 @@ public DateTime? BirthDate { get; set; }
 
 ### Customizing format in date editor
 
-In `SfDatePicker`, Short date will be shown by default. You can the customize format to be applied by using [Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem~Format.html) property in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem.html).
+In `SfDatePicker`, Short date will be shown by default. You can the customize format to be applied by using [Format](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormDateItem.html#Syncfusion_iOS_DataForm_DataFormDateItem_Format) property in [DataFormDateItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormDateItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -296,7 +296,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Setting MaximumDate and MinimumDate in Date editor
 
-You can customize the maximum and minimum allowable dates in `SfDatePicker` by setting [MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem~MaximumDate.html) and [MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem~MinimumDate.html) in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormDateItem.html) respectively.
+You can customize the maximum and minimum allowable dates in `SfDatePicker` by setting [MaximumDate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormDateItem.html#Syncfusion_iOS_DataForm_DataFormDateItem_MaximumDate) and [MinimumDate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormDateItem.html#Syncfusion_iOS_DataForm_DataFormDateItem_MinimumDate) in [DataFormDateItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormDateItem.html) respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -316,7 +316,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Time editor
 
-In the time editor, the [SfTimePicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfTimePicker.html) will be loaded.
+In the time editor, the [SfTimePicker](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfTimePicker.html) will be loaded.
 
 **Setting null value in time editor**
 
@@ -336,7 +336,7 @@ public DateTime? BirthTime { get; set; }
 
 **Customizing format in time editor**
 
-In the `SfTimePicker`, short time will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfTimePicker~Format.html) property in [DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormTimeItem.html).
+In the `SfTimePicker`, short time will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfTimePicker.html#Syncfusion_iOS_DataForm_Editors_SfTimePicker_Format) property in [DataFormTimeItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormTimeItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -375,11 +375,11 @@ public bool AirplaneMode { get; set; }
 
 ## Picker Editor
 
-In picker editor, [SfPicker](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.Editors.SfPicker.html) will be loaded.
+In picker editor, [SfPicker](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.Editors.SfPicker.html) will be loaded.
 
 ### Customizing ItemsSource of SfPicker
 
-By default, `ItemsSource` for picker is auto-generated for enum type and collection type properties. For other types, you can set `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SfDataForm~SourceProvider.html).
+By default, `ItemsSource` for picker is auto-generated for enum type and collection type properties. For other types, you can set `ItemsSource` by using [SourceProvider](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SfDataForm.html#Syncfusion_iOS_DataForm_SfDataForm_SourceProvider).
 
 ### Using SourceProvider
 
@@ -418,7 +418,7 @@ dataForm.RegisterEditor("ItemName", "Picker");
 
 ### Using event
 
-You can also set the `ItemsSource` for picker editor by using [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormPickerItem~ItemsSource.html) property in [DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormPickerItem.html).
+You can also set the `ItemsSource` for picker editor by using [ItemsSource](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormPickerItem.html#Syncfusion_iOS_DataForm_DataFormPickerItem_ItemsSource) property in [DataFormPickerItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormPickerItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -463,7 +463,7 @@ private void Button_Click(object sender, EventArgs e)
 
 ### Loading complex type property values in picker
 
-You can display the complex type property values in picker editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for picker editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem` event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormPickerItem~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormPickerItem~ValueMemberPath.html) property value DataFormPickerItem for complex type property. 
+You can display the complex type property values in picker editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.SourceProvider.html#Syncfusion_iOS_DataForm_SourceProvider_GetSource_System_String_) override method of SourceProvider class, which is used to get source list as complex property values for picker editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem` event to set [DisplayMemberPath](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormPickerItem.html#Syncfusion_iOS_DataForm_DataFormPickerItem_DisplayMemberPath) and [ValueMemberPath](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormPickerItem.html#Syncfusion_iOS_DataForm_DataFormPickerItem_ValueMemberPath) property value DataFormPickerItem for complex type property. 
 
 N> Class cannot be directly set as data type for picker editor in this complex type scenario.
 
@@ -526,7 +526,7 @@ In numeric editor, [SfNumericUpDown]
 
 ### Changing SpinButtonAlignment in NumericUpDown
 
-By default, up down button will be displayed in right side. You can change its alignment by setting [SpinButtonAlignment](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericUpDownItem~SpinButtonAlignment.html) property in [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html).
+By default, up down button will be displayed in right side. You can change its alignment by setting [SpinButtonAlignment](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html#Syncfusion_iOS_DataForm_DataFormNumericUpDownItem_SpinButtonAlignment) property in [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -543,7 +543,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Changing step value in NumericUpDown
 
-You can change the next increment and decrement value by using [StepValue](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericUpDownItem~StepValue.html) property in [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html). The default value of step value is 1.
+You can change the next increment and decrement value by using [StepValue](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html#Syncfusion_iOS_DataForm_DataFormNumericUpDownItem_StepValue) property in [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html). The default value of step value is 1.
 
 {% tabs %}
 {% highlight c# %}
@@ -559,7 +559,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Setting Maximum and Minimum value in NumericUpDown
 
-You can set minimum and maximum value for numeric up down by using [Minimum](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericUpDownItem~Minimum.html) and [Maximum](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericUpDownItem~Maximum.html) property values respectively.
+You can set minimum and maximum value for numeric up down by using [Minimum](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html#Syncfusion_iOS_DataForm_DataFormNumericUpDownItem_Minimum) and [Maximum](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html#Syncfusion_iOS_DataForm_DataFormNumericUpDownItem_Maximum) property values respectively.
 
 {% tabs %}
 {% highlight c# %}
@@ -578,7 +578,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Enabling Auto reverse in Numeric up down
 
-In `SfNumericUpDown`, once maximum and minimum value reached, value will be unchanged. You can enable cyclic behavior by setting [AutoReverse](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericUpDownItem~AutoReverse.html) as `true` in [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html).
+In `SfNumericUpDown`, once maximum and minimum value reached, value will be unchanged. You can enable cyclic behavior by setting [AutoReverse](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html#Syncfusion_iOS_DataForm_DataFormNumericUpDownItem_AutoReverse) as `true` in [DataFormNumericUpDownItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericUpDownItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -596,7 +596,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Changing CultureInfo in NumericUpDown and NumericTextBox
 
-You can change the Culture in `SfNumericTextBox` and `SfNumericUpDown` by using [CultureInfo](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItemBase~CultureInfo.html) property in [DataFormNumericItemBase](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataForm.iOS~Syncfusion.iOS.DataForm.DataFormNumericItemBase.html).
+You can change the Culture in `SfNumericTextBox` and `SfNumericUpDown` by using [CultureInfo](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericItemBase.html#Syncfusion_iOS_DataForm_DataFormNumericItemBase_CultureInfo) property in [DataFormNumericItemBase](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.DataForm.DataFormNumericItemBase.html).
 
 **SfNumericTextBox**
 
