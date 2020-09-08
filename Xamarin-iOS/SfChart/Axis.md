@@ -146,6 +146,10 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 * Round
 * Additional
 * Normal
+* RoundStart
+* RoundEnd
+* PrependInterval
+* AppendInterval
 
 **None**
 
@@ -195,6 +199,42 @@ yAxis.RangePadding = SFChartNumericalPadding.Normal;
 
 
 ![NumericalAxis range padding support in Xamarin.iOS Chart](Axis_images/NumericPaddingNormal.png)
+
+**RoundStart**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundStart`], axis range will be rounded in the start to the nearest possible value divided by the interval.
+
+{% highlight c# %}
+
+yAxis.RangePadding = SFChartNumericalPadding.RoundStart; 
+{% endhighlight %}
+
+**RoundEnd**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundEnd`], axis range will be rounded in the end to the nearest possible value divided by the interval.
+
+{% highlight c# %}
+
+yAxis.RangePadding = SFChartNumericalPadding.RoundEnd; 
+{% endhighlight %}
+
+**PrependInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.PrependInterval`], axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum and maximum values of the range.
+
+{% highlight c# %}
+
+yAxis.RangePadding = SFChartNumericalPadding.PrependInterval; 
+{% endhighlight %}
+
+**AppendInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the minimum and maximum values of the range.
+
+{% highlight c# %}
+
+yAxis.RangePadding = SFChartNumericalPadding.AppendInterval; 
+{% endhighlight %}
 
 ## Date Time Axis
 
