@@ -73,7 +73,7 @@ Size and color can be customized in SfBusyIndicator as follows.
 {% highlight c# %}
 	 
 	busyindicator.AnimationType = SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall;
-	busyindicator.TextColor = UIColor.RED;
+	busyindicator.Foreground = UIColor.Red;
 	busyindicator.ViewBoxHeight = 20;
 	busyindicator.ViewBoxWidth = 20;
 	busyindicator.IsBusy = True;
