@@ -49,3 +49,17 @@ chart.Title.TextColor       = UIColor.Blue;
 
 
 ![Text alignment support for title in Xamarin.iOS Chart](charttitle_images/charttitle_img2.png)
+
+## Text Wrap
+
+You can wrap chart title text content using the LineBreakMode property. The default value of this property is NoWrap.
+
+{% highlight c# %}
+
+chart.Title.Text            = "Efficiency of Oil Fired Power Production";
+
+chart.Title.TextColor       = UIColor.Blue; 
+
+chart.Title.LineBreakMode   = UILineBreakMode.TailTruncation;
+
+{% endhighlight %}
