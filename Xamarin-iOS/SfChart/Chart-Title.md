@@ -56,10 +56,12 @@ You can wrap chart title text content using the LineBreakMode property. The defa
 
 {% highlight c# %}
 
-chart.Title.Text            = "Efficiency of Oil Fired Power Production";
+chart.Title.Text            = "Percentage change in efficiency of oil-fired power production in Russia for six months;
 
 chart.Title.TextColor       = UIColor.Blue; 
 
 chart.Title.LineBreakMode   = UILineBreakMode.TailTruncation;
 
 {% endhighlight %}
+
+![Text alignment support for title in Xamarin.iOS Chart](charttitle_images/charttitle_img3.png)
