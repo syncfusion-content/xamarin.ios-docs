@@ -297,6 +297,10 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 * [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html)
 * [`Round`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html)
 * [`Additional`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html)
+* [`RoundStart`]
+* [`RoundEnd`]
+* [`PrependInterval`]
+* [`AppendInterval`]
 
 **None**
 
@@ -334,6 +338,56 @@ xAxis.RangePadding = SFChartDateTimePadding.Additional;
 
 
 ![DateTimeAxis range padding support in Xamarin.iOS Chart](Axis_images/DateTimePaddingAdditional.png)
+
+**RoundStart**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundStart`], axis range will be rounded in the start to the nearest possible date time value.
+
+
+{% highlight c# %}
+
+xAxis.RangePadding = SFChartDateTimePadding.RoundStart;
+{% endhighlight %}
+
+
+![DateTimeAxis range padding support in Xamarin.iOS Chart](Axis_images/DateTimeAxis_range_padding_RoundStart.png)
+
+**RoundEnd**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundEnd`], axis range will be rounded in the end to the nearest possible date time value.
+
+
+{% highlight c# %}
+
+xAxis.RangePadding = SFChartDateTimePadding.RoundEnd;
+{% endhighlight %}
+
+
+![DateTimeAxis range padding support in Xamarin.iOS Chart](Axis_images/DateTimeAxis_range_padding_RoundEnd.png)
+
+**PrependInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.PrependInterval`], range will be rounded and date time interval of the axis will be added in the start as padding to the minimum and maximum extremes of the range.
+
+{% highlight c# %}
+
+xAxis.RangePadding = SFChartDateTimePadding.PrependInterval; 
+{% endhighlight %}
+
+
+![DateTimeAxis range padding support in Xamarin.iOS Chart](Axis_images/DateTimeAxis_range_padding_PrependInterval.png)
+
+**AppendInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.AppendInterval`], range will be rounded and date time interval of the axis will be added in the end as padding to the minimum and maximum extremes of the range.
+
+{% highlight c# %}
+
+xAxis.RangePadding = SFChartDateTimePadding.AppendInterval; 
+{% endhighlight %}
+
+
+![DateTimeAxis range padding support in Xamarin.iOS Chart](Axis_images/DateTimeAxis_range_padding_AppendInterval.png)
 
 ## Date-time category axis
 
