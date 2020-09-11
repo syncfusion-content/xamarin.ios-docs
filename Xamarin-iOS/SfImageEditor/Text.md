@@ -7,7 +7,7 @@ control : ImageEditor
 documentation : ug
 ---
 
-## Text
+# Text
 
 You can annotate the desired text elements to an image using the `AddText` method with customization options.
 
