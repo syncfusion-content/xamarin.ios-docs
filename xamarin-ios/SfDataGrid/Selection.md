@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Selection
+# Selection in Xamarin.iOS.DataGrid (SfDataGrid)
 
 This section explains how to enable selection in the SfDataGrid and about the selection modes, properties, events that involves in selection and customizations available for selection.
 
@@ -43,7 +43,7 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/MultipleSelection.PNG)
+![DataGrid in multiple selection mode](SfDataGrid_images/MultipleSelection.PNG)
 
 ## Getting selected rows
 
@@ -97,7 +97,7 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [8]);
 
 The following screenshot shows the programmatic selection in the data grid:
 
-![](SfDataGrid_images/MultipleSelection.PNG)
+![DataGrid in programmatic multiple selection](SfDataGrid_images/MultipleSelection.PNG)
 
 ### Scroll to selected item
 
@@ -192,7 +192,7 @@ public class CustomSelectionController : GridSelectionController
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/SelectionAnimation.gif)
+![DataGrid with selection animation](SfDataGrid_images/SelectionAnimation.gif)
 
 ## Events in selection
 
@@ -305,7 +305,7 @@ public class CustomSelectionController : GridSelectionController
 
 The following screenshot shows the final outcome upon execution of the above code.
 
-![](SfDataGrid_images/AddingMultipleColors.PNG)
+![DataGrid with multi selection colors](SfDataGrid_images/AddingMultipleColors.PNG)
 
 ### Changing selection background and foreground Color
 
@@ -340,7 +340,7 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/SelectionColor.PNG)
+![DataGrid selection background style](SfDataGrid_images/SelectionColor.PNG)
 
 ## Changing current cell border color
 
@@ -370,4 +370,4 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CurrentcellBorder.PNG)
+![DataGrid current cell border](SfDataGrid_images/CurrentcellBorder.PNG)
