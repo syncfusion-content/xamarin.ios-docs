@@ -110,7 +110,7 @@ series.DataMarker.LabelStyle.LabelPosition = SFChartDataMarkerLabelPosition.Oute
 ![Positioning the data marker labels support in Xamarin.iOS Chart](Datamarker_images/LabelPosition_Outer.png)
 
 
-# Smart Labels
+## Smart Labels
 
 This feature is used to arrange the data marker labels smartly and avoid the intersection when there is
 overlapping of labels. The property [`EnableSmartLabels`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_EnableSmartLabels) in [`CircularSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html), is used to arrange the data marker labels
