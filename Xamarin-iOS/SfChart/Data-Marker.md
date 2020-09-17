@@ -7,7 +7,7 @@ control: SFChart
 documentation: ug
 ---
 
-# Data Markers in Xamarin.ios Chart
+# Data Markers in Xamarin.iOS Chart
 
 Data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. This can be enabled using following code snippet,
 
