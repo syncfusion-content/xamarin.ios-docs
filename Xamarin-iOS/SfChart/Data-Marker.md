@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markers and data labels in SFChart | SFChart | Xamarin.iOS | Syncfusion
-description: Learn how to add markers and data point labels to a Chart series
+title: Markers and data labels in SFChart | Chart | Xamarin.iOS | Syncfusion
+description: Learn how to add markers and data point labels to a Chart series. Data markers are used to provide information about the data points to the user.
 platform: xamarin.ios
 control: SFChart
 documentation: ug
 ---
 
-# Data Markers
+# Data Markers in Xamarin.ios Chart
 
 Data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. This can be enabled using following code snippet,
 
