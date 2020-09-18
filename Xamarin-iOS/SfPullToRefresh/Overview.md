@@ -7,7 +7,7 @@ control: SfPullToRefresh
 documentation: ug
 ---
 
-# SfPullToRefresh in Xamarin.iOS PullToRefresh
+# Overview of Xamarin.iOS PullToRefresh (SfPullToRefresh)
 
 SfPullToRefresh is a refresh control that allows to interact and refresh the loaded view as pullable content. It supports loading complex and custom layouts that can be refreshed programmatically or through interaction.
 
