@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Selection
+# Selection in Xamarin.iOS.DataGrid (SfDataGrid)
 
 This section explains how to enable selection in the SfDataGrid and about the selection modes, properties, events that involves in selection and customizations available for selection.
 
@@ -43,7 +43,7 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/MultipleSelection.PNG)
+![DataGrid in multiple selection mode](SfDataGrid_images/MultipleSelection.PNG)
 
 ## Getting selected rows
 
@@ -66,7 +66,7 @@ Both the [SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syn
 
 ## Programmatic selection
 
-When the `SfDataGrid.SelectionMode` is `None`, you can also select the row or rows in the SfDataGrid from the code by setting the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectedIndex.html), [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectedItem.html), or [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectedItems.html) property based on the selection mode. The following code example illustrates how to enable selection from code.
+When the `SfDataGrid.SelectionMode` is other than `None`, you can also select the row or rows in the SfDataGrid from the code by setting the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectedIndex.html), [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectedItem.html), or [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SelectedItems.html) property based on the selection mode. The following code example illustrates how to enable selection from code.
 
 When the selection mode is `Single`, you can programmatically select a row in two ways: by setting the row index to the `SfDataGrid.SelectedIndex` property, or by setting the underlying object to be selected to the `SfDataGrid.SelectedItem` property. 
 
@@ -97,7 +97,7 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [8]);
 
 The following screenshot shows the programmatic selection in the data grid:
 
-![](SfDataGrid_images/MultipleSelection.PNG)
+![DataGrid in programmatic multiple selection](SfDataGrid_images/MultipleSelection.PNG)
 
 ### Scroll to selected item
 
@@ -192,7 +192,7 @@ public class CustomSelectionController : GridSelectionController
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/SelectionAnimation.gif)
+![DataGrid with selection animation](SfDataGrid_images/SelectionAnimation.gif)
 
 ## Events in selection
 
@@ -305,7 +305,7 @@ public class CustomSelectionController : GridSelectionController
 
 The following screenshot shows the final outcome upon execution of the above code.
 
-![](SfDataGrid_images/AddingMultipleColors.PNG)
+![DataGrid with multi selection colors](SfDataGrid_images/AddingMultipleColors.PNG)
 
 ### Changing selection background and foreground Color
 
@@ -340,7 +340,7 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/SelectionColor.PNG)
+![DataGrid selection background style](SfDataGrid_images/SelectionColor.PNG)
 
 ## Changing current cell border color
 
@@ -370,4 +370,4 @@ public class SelectionStyle : DataGridStyle
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataGrid_images/CurrentcellBorder.PNG)
+![DataGrid current cell border](SfDataGrid_images/CurrentcellBorder.PNG)
