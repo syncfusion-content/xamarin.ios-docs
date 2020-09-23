@@ -39,11 +39,11 @@ You can align the title text content to the Start, Center or End of the title us
 
 {% highlight c# %}
 
-chart.Title.Text            = "Efficiency of Oil Fired Power Production";
+chart.Title.Text = "Efficiency of Oil Fired Power Production";
 
-chart.Title.TextAlignment   = UITextAlignment.Left; 
+chart.Title.TextAlignment = UITextAlignment.Left; 
 
-chart.Title.TextColor       = UIColor.Blue; 
+chart.Title.TextColor = UIColor.Blue; 
 
 {% endhighlight %}
 
