@@ -7,7 +7,7 @@ control: SFChart
 documentation: ug
 ---
 
-# Title
+# Title in Xamarin.iOS Chart(SfChart)
 
 You can define and customize the Chart title using [`Title`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartBase.html#Syncfusion_SfChart_iOS_ChartBase_Title) property of [`SFChart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChart.html). The [`Text`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTitle.html#Syncfusion_SfChart_iOS_SFChartTitle_Text) property of [`SFChartTitle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTitle.html) is used to set the text for the title. 
 
@@ -52,7 +52,7 @@ chart.Title.TextColor       = UIColor.Blue;
 
 ## Text Wrap
 
-You can wrap chart title text content using the [`LineBreakMode`] property. The default value of this property is NoWrap.
+You can wrap chart title text content using the `LineBreakMode` property. The default value of this property is `NoWrap`.
 
 {% highlight c# %}
 
