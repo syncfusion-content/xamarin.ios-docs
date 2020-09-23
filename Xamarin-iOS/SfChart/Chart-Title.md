@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chart Title | SFChart | Xamarin.iOS | Syncfusion
-description: How to add and customize chart title in SFChart
+description: This section explains how to add the chart title and customize the appearance of the chart title in Xamarin.iOS Chart
 platform: xamarin.ios
 control: SFChart
 documentation: ug
