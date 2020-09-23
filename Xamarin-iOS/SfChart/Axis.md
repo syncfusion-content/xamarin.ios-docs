@@ -675,6 +675,35 @@ Chart.SecondaryAxis = new SFNumericalAxis() { PlotOffset = 30 };
 
 ![PlotOffset support for axis in Xamarin.iOS Chart](Axis_images/plotoffset.png)
 
+#### PlotOffsetStart
+
+The [`PlotOffsetStart`] property is used to offset the rendering of the axis at start position. The following code snippet demonstrates to apply the plot offset start to both x and y axes.
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new SFCategoryAxis() { PlotOffsetStart = 30 };
+
+Chart.SecondaryAxis = new SFNumericalAxis() { PlotOffsetStart = 30 };
+
+{% endhighlight %}
+
+![PlotOffsetStart support for axis in Xamarin.iOS Chart](Axis_images/plotOffset_start.png)
+
+#### PlotOffsetEnd
+
+The [`PlotOffsetEnd`] property is used to offset the rendering of the axis at end position. The following code snippet demonstrates to apply the plot offset end to both x and y axes.
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new SFCategoryAxis() { PlotOffsetEnd = 30 };
+
+Chart.SecondaryAxis = new SFNumericalAxis() { PlotOffsetEnd = 30 };
+
+{% endhighlight %}
+
+![PlotOffsetEnd support for axis in Xamarin.iOS Chart](Axis_images/PlotOffset_end.png)
+
+
 ### Maximum number of labels per 100 pixels
 
 By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the [`MaximumLabels`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_MaximumLabels) property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for [`Interval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_Interval) property of an axis.
