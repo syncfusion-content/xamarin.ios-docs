@@ -85,21 +85,21 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ## SwipeEvents
 
-[SwipeStarted](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SwipeStarted_EV.html) - This event is fired when the swipe offset changes from its initial value. You can cancel the swipe action by setting the `Cancel` property of the [SwipeStartedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipeStartedEventArgs.html) to `true`. 
+[SwipeStarted](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html) - This event is fired when the swipe offset changes from its initial value. You can cancel the swipe action by setting the `Cancel` property of the [SwipeStartedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipeStartedEventArgs.html) to `true`. 
 
-[SwipeEnded](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~SwipeEnded_EV.html) - This event is fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipeEndedEventArgs.html). 
+[SwipeEnded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html) - This event is fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipeEndedEventArgs.html). 
 
-[Swiping](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SfDataGrid~Swiping_EV.html) - This event is raised while swiping is in progress. This event is triggered with [SwipingEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipingEventArgs.html).
+[Swiping](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html) - This event is raised while swiping is in progress. This event is triggered with [SwipingEventArgs](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipingEventArgs.html).
 
 All the swipe events provides the following properties in their arguments:
 
-• [RowIndex](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs~RowIndex.html) - the swiping row index
+• [RowIndex](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipingEventArgs.html#Syncfusion_SfDataGrid_SwipingEventArgs_RowIndex) - the swiping row index
 
-• [RowData](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs~RowData.html) - the underlying data associated with the swiped row as its arguments.
+• [RowData](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipingEventArgs.html#Syncfusion_SfDataGrid_SwipingEventArgs_RowData) - the underlying data associated with the swiped row as its arguments.
 
-• [SwipeDirection](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs~SwipeDirection.html) - the swipe direction of the swiped row
+• [SwipeDirection](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipingEventArgs.html#Syncfusion_SfDataGrid_SwipingEventArgs_SwipeDirection) - the swipe direction of the swiped row
 
-• [SwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.SwipingEventArgs~SwipeOffSet.html) - the current swipe offset of the row being swiped
+• [SwipeOffset](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SwipingEventArgs.html#Syncfusion_SfDataGrid_SwipingEventArgs_SwipeOffset) - the current swipe offset of the row being swiped
 
 By handling the swipe events, you can make use of these property values from the arguments to perform any desired action such as deleting the row, editing the data, etc.
 

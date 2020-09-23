@@ -164,7 +164,7 @@ chart.Legend.ItemMargin = 20;
 
 ## Legend Wrap
 
-The legend items can be placed in multiple rows by using [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~OverflowMode.html) property if size of the total legend exceeds the available size. The default value of [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~OverflowMode.html) property is [`Scroll`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLegendOverflowMode.html).
+The legend items can be placed in multiple rows by using [`OverflowMode`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFChartLegend.html#Syncfusion_SfChart_iOS_SFChartLegend_OverflowMode) property if size of the total legend exceeds the available size. The default value of [`OverflowMode`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFChartLegend.html#Syncfusion_SfChart_iOS_SFChartLegend_OverflowMode) property is [`Scroll`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLegendOverflowMode.html).
 
 {% highlight c# %}
 
@@ -178,7 +178,7 @@ The legend items can be placed in multiple rows by using [`OverflowMode`](http:/
 
 ### Legend Width
 
-The legend width can be specified by using [`MaxWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~MaxWidth.html) property. This property works only when the [`OverflowMode`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~OverflowMode.html) is [`Wrap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLegendOverflowMode.html). The default value of [`MaxWidth`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChartLegend~MaxWidth.html) property is double.NAN.
+The legend width can be specified by using [`MaxWidth`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFChartLegend.html#Syncfusion_SfChart_iOS_SFChartLegend_MaxWidth) property. This property works only when the [`OverflowMode`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFChartLegend.html#Syncfusion_SfChart_iOS_SFChartLegend_OverflowMode) is [`Wrap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLegendOverflowMode.html). The default value of [`MaxWidth`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFChartLegend.html#Syncfusion_SfChart_iOS_SFChartLegend_MaxWidth) property is double.NAN.
 
 {% highlight c# %}
 
