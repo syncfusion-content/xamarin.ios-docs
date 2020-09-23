@@ -166,7 +166,7 @@ yAxis.RangePadding = SFChartNumericalPadding.None;
 
 **Round**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.Round`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.Round`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded to the nearest possible value by the interval.
 
 {% highlight c# %}
 
@@ -202,7 +202,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Normal;
 
 **RoundStart**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundStart`], axis range will be rounded in the start to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundStart`], axis range will be rounded in the start to the nearest possible value by the interval.
 
 {% highlight c# %}
 
@@ -213,7 +213,7 @@ yAxis.RangePadding = SFChartNumericalPadding.RoundStart;
 
 **RoundEnd**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundEnd`], axis range will be rounded in the end to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundEnd`], axis range will be rounded in the end to the nearest possible value by the interval.
 
 {% highlight c# %}
 
@@ -224,7 +224,7 @@ yAxis.RangePadding = SFChartNumericalPadding.RoundEnd;
 
 **PrependInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.PrependInterval`], axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum and maximum values of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.PrependInterval`], axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum values of the range.
 
 {% highlight c# %}
 
@@ -235,7 +235,7 @@ yAxis.RangePadding = SFChartNumericalPadding.PrependInterval;
 
 **AppendInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the minimum and maximum values of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the maximum values of the range.
 
 {% highlight c# %}
 
@@ -375,7 +375,7 @@ xAxis.RangePadding = SFChartDateTimePadding.RoundEnd;
 
 **PrependInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.PrependInterval`], range will be rounded and date time interval of the axis will be added in the start as padding to the minimum and maximum extremes of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.PrependInterval`], axis range will be rounded and date time interval of the axis will be added in the start as padding to the minimum extremes of the range.
 
 {% highlight c# %}
 
@@ -387,7 +387,7 @@ xAxis.RangePadding = SFChartDateTimePadding.PrependInterval;
 
 **AppendInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.AppendInterval`], range will be rounded and date time interval of the axis will be added in the end as padding to the minimum and maximum extremes of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.AppendInterval`], axis range will be rounded and date time interval of the axis will be added in the end as padding to the maximum extremes of the range.
 
 {% highlight c# %}
 
