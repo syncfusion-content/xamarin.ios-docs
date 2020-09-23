@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Shapes in Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to add text in ImageEditor for Xamarin.iOS
+title: Shapes in Syncfusion SfImageEditor control in Xamarin.iOS
+description: Learn about the Xamarin.iOS Image Editor's Text feature that supports customizing the annotated text in an image. 
 platform : xamarin-iOS.ios
 control : ImageEditor
 documentation : ug
 ---
 
-## Text
+# Text Annotation in Xamarin.iOS Image Editor
 
 You can annotate the desired text elements to an image using the `AddText` method with customization options.
 
