@@ -39,11 +39,11 @@ You can align the title text content to the Start, Center or End of the title us
 
 {% highlight c# %}
 
-chart.Title.Text = "Efficiency of Oil Fired Power Production";
+chart.Title.Text            = "Efficiency of Oil Fired Power Production";
 
-chart.Title.TextAlignment = UITextAlignment.Left; 
+chart.Title.TextAlignment   = UITextAlignment.Left; 
 
-chart.Title.TextColor = UIColor.Blue; 
+chart.Title.TextColor       = UIColor.Blue; 
 
 {% endhighlight %}
 
@@ -56,11 +56,11 @@ You can wrap chart title text content using the `LineBreakMode` property. The de
 
 {% highlight c# %}
 
-chart.Title.Text            = "Percentage change in efficiency of oil-fired power production in Russia for six months;
+chart.Title.Text = "Percentage change in efficiency of oil-fired power production in Russia for six months;
 
-chart.Title.TextColor       = UIColor.Blue; 
+chart.Title.TextColor = UIColor.Blue; 
 
-chart.Title.LineBreakMode   = UILineBreakMode.TailTruncation;
+chart.Title.LineBreakMode = UILineBreakMode.TailTruncation;
 
 {% endhighlight %}
 
