@@ -9,15 +9,15 @@ documentation: ug
 
 # Cards
 
-The default elements of a card can be customized using the below properties of [`KanbanModel`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel.html).
+The default elements of a card can be customized using the below properties of [`KanbanModel`](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanModel.html).
 
-* [`Title`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel~Title.html)         - Used to set the title of a card.
-* [`ImageURL`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel~ImageURL.html)      - Used to set the image URL of a card. The image will be displayed at right side in default card template.
-* [`Category`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel~Category.html)      - Used to set the category of a card. Based on the category the cards will be added to the respective columns. 
-* [`Description`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel~Description.html)   - Used to set the description text of a card.
-* [`ColorKey`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel~ColorKey.html)      - Used to specify the indicator color key. The [`Color`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColorMapping~Color.html) value of the corresponding [`Key`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanColorMapping~Key.html) should be added in [`IndicatorColorPalette`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban~IndicatorColorPalette.html) collection of [`SfKanban`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.SfKanban.html).
-* [`Tags`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel~Tags.html)          - Used to specify the tags of a card. The tags will be displayed at bottom in default card template.
-* [`ID`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanModel~ID.html)            - Used to set the ID of a card.
+* [`Title`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanModel.html#Syncfusion_SfKanban_iOS_KanbanModel_Title)         - Used to set the title of a card.
+* [`ImageURL`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanModel.html#Syncfusion_SfKanban_iOS_KanbanModel_ImageURL)      - Used to set the image URL of a card. The image will be displayed at right side in default card template.
+* [`Category`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanModel.html#Syncfusion_SfKanban_iOS_KanbanModel_Category)      - Used to set the category of a card. Based on the category the cards will be added to the respective columns. 
+* [`Description`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanModel.html#Syncfusion_SfKanban_iOS_KanbanModel_Description)   - Used to set the description text of a card.
+* [`ColorKey`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanModel.html#Syncfusion_SfKanban_iOS_KanbanModel_ColorKey)      - Used to specify the indicator color key. The [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanColorMapping.html#Syncfusion_SfKanban_iOS_KanbanColorMapping_Color) value of the corresponding [`Key`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanColorMapping.html#Syncfusion_SfKanban_iOS_KanbanColorMapping_Key) should be added in [`IndicatorColorPalette`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html#Syncfusion_SfKanban_iOS_SfKanban_IndicatorColorPalette) collection of [`SfKanban`](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html).
+* [`Tags`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanModel.html#Syncfusion_SfKanban_iOS_KanbanModel_Tags)          - Used to specify the tags of a card. The tags will be displayed at bottom in default card template.
+* [`ID`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanModel.html#Syncfusion_SfKanban_iOS_KanbanModel_ID)            - Used to set the ID of a card.
 
 {% highlight C# %}
 
@@ -51,7 +51,7 @@ kanban.IndicatorColorPalette = colorModels;
 
 ## Template
 
-You can replace the entire card template with your own design using [`SfKanban.KanbanDelegate`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanDelegate.html) 's [`GetItemViewCell`](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfKanban.iOS~Syncfusion.SfKanban.iOS.KanbanDelegate~GetItemViewCell.html) override method . The following code snippet and screenshot illustrates this.
+You can replace the entire card template with your own design using [`SfKanban.KanbanDelegate`](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDelegate.html) 's [`GetItemViewCell`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDelegate.html#Syncfusion_SfKanban_iOS_KanbanDelegate_GetItemViewCell) override method . The following code snippet and screenshot illustrates this.
 
 {% highlight C# %}
 
