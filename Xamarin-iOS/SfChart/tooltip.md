@@ -9,8 +9,7 @@ documentation: ug
 
 # Tooltip 
 
-[`SFChart`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFChart.html
-) provides tooltip support for all series. It is used to show information about the segment, when you tap on
+[`SFChart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChart.html) provides tooltip support for all series. It is used to show information about the segment, when you tap on
 the segment. To enable the tooltip, you need to set [`EnableTooltip`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSeries.html#Syncfusion_SfChart_iOS_SFSeries_EnableTooltip) property as true.
 
 
