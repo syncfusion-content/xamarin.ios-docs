@@ -1,6 +1,6 @@
 ---
 title: Adding drawing mode in Xamarin.iOS Diagram control | Syncfusion
-description: Describes how to add drawing mode in diagram control for Xamarin.iOS
+description: This section describes how to add drawing mode in diagram (SfDiagram) control for Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Diagram
 documentation: ug
