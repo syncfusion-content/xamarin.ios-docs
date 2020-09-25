@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview | SfPullToRefresh |Xamarin.iOS | Syncfusion
-description: overview
+title: Overview | SfPullToRefresh | Xamarin.iOS | Syncfusion
+description: Xamarin.ios SfPullToRefresh is a refresh control that allows to interact and refresh the loaded view as pullable content.
 platform: Xamarin.iOS
 control: SfPullToRefresh
 documentation: ug
 ---
 
-# SfPullToRefresh
+# Overview of Xamarin.iOS PullToRefresh (SfPullToRefresh)
 
 SfPullToRefresh is a refresh control that allows to interact and refresh the loaded view as pullable content. It supports loading complex and custom layouts that can be refreshed programmatically or through interaction.
 
-# Key features:
+## Key features:
 
 * The view can be refreshed programmatically. Use [SfPullToRefresh.StartRefreshing()](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPullToRefresh.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_SfPullToRefresh_StartRefreshing) to start the refreshing programmatically and [SfPullToRefresh.EndRefreshing()](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPullToRefresh.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_SfPullToRefresh_EndRefreshing) to end the refreshing programmatically.
 
@@ -24,5 +24,5 @@ SfPullToRefresh is a refresh control that allows to interact and refresh the loa
   * [SfPullToRefresh.ProgressStrokeWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPullToRefresh.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_SfPullToRefresh_ProgressStrokeWidth)
 
 <div style="text-align:center" markdown="1">
-![](overview_images/WeatherData_Refresh_iOS.gif)
+![WeatherData Refresh Image in Xamarin.iOS PullToRefresh](overview_images/WeatherData_Refresh_iOS.gif)
 </div>
