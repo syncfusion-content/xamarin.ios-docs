@@ -17,9 +17,9 @@ The data grid supports to display the concise information about the bound data o
 
 ![](SfDataGrid_images/Summary.PNG)
 
-Summary rows are represented by using the [GridSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSummaryRow.html). Each `GridSummaryRow` hold summary information of columns in the [SummaryColumns](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridSummaryRow.html#Syncfusion_SfDataGrid_GridSummaryRow_SummaryColumns) property . The `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridSummaryColumn.html) which carries name, format, and summary aggregate type of the column.
+Summary rows are represented by using the [GridSummaryRow](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridSummaryRow.html). Each `GridSummaryRow` hold summary information of columns in the [SummaryColumns](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridSummaryRow.html#Syncfusion_SfDataGrid_GridSummaryRow_SummaryColumns) property . The `SummaryColumns` contains the collection of [GridSummaryColumn](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridSummaryColumn.html) which carries name, format, and summary aggregate type of the column.
 
-Additional information can be derived from the data like sum, average, maximum, minimum, and count using summaries in the data grid. These summary values can be computed for groups or for the entire control using `GridSummaryRow` and `GridSummaryColumn` that implements [ISummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.Linq.iOS~Syncfusion.Data.ISummaryRow.html) and [ISummaryColumn](http://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.Linq.iOS~Syncfusion.Data.ISummaryColumn.html) interfaces.
+Additional information can be derived from the data like sum, average, maximum, minimum, and count using summaries in the data grid. These summary values can be computed for groups or for the entire control using `GridSummaryRow` and `GridSummaryColumn` that implements [ISummaryRow](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.Data.ISummaryRow.html) and [ISummaryColumn](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.Data.ISummaryColumn.html) interfaces.
 
 N> The Summary does not refresh with data. To update summary for the newly added row or if any values in the summary column is modified, set the [SfDataGrid.View.LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_LiveDataUpdateMode) to `LiveDataUpdateMode.AllowDataShaping` or `LiveDataUpdateMode.AllowSummaryUpdate`.
 
@@ -605,13 +605,13 @@ Each summary has a specific key using which the custom summary renderer can be r
 
 <tr>
 <td>Table summary</td>
-<td><a href="https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html">GridTableSummaryCellRenderer</a> </td>
+<td><a href="https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridTableSummaryCellRenderer.html">GridTableSummaryCellRenderer</a> </td>
 <td>TableSummary</td>
 </tr>
 
 <tr>
 <td>Caption summary</td>
-<td><a href="https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfDataGrid.iOS~Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html">GridCaptionSummaryCellRenderer</a> </td>
+<td><a href="https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html">GridCaptionSummaryCellRenderer</a> </td>
 <td>CaptionSummary</td>
 </tr>
 

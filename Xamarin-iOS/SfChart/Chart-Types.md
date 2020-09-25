@@ -1252,7 +1252,7 @@ radarSeries.Closed          = false;
 
 ### Radar Start Angle for primary axis
 
-The start position of the radar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartPolarAngle.html). [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property can be set for primary axis, secondary axis, or both axes.
+The start position of the radar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartPolarAngle.html). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes.
 
 {% highlight c# %}
 
@@ -1358,7 +1358,7 @@ polarSeries.Closed             = false;
 
 ### Polar start angle for primary axis
 
-The start position of the polar series can be set by using [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property of axis. Default value of [`PolarAngle`](http://help.syncfusion.com/cr/cref_files/xamarin-iOS/Syncfusion.SFChart.iOS~Syncfusion.SfChart.iOS.SFAxis~PolarAngle.html) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartPolarAngle.html). PolarAngle property can be set for primary axis, secondary axis, or both axes.
+The start position of the polar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartPolarAngle.html). PolarAngle property can be set for primary axis, secondary axis, or both axes.
 
 {% highlight c# %}
 
