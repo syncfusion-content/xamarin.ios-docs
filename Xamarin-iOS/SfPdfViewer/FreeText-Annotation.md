@@ -119,7 +119,7 @@ pdfViewer.FreeTextAnnotationDeselected += PdfViewer_FreeTextAnnotationDeselected
 
 ## Customizing the appearance of free text annotations
 
-You can customize the default values of opacity, display text, text color, text size, maximum height, minimum height, maximum width, minimum width, interaction (locked), and free text dialog of the free text annotations that are to be added. This will not affect the free text annotations that were already added.
+You can customize the default values of opacity, display text, text color, text size, maximum height, minimum height, maximum width, minimum width, interaction (locked), and dialog of the free text annotations that are to be added. This will not affect the free text annotations that were already added.
 
 ### Setting the default opacity
 
@@ -370,7 +370,7 @@ private void PdfViewerControl_FreeTextAnnotationRemoved(object sender, FreeTextA
 
 ## How to enable or disable the free text dialog
 
-The free text dialog can be enabled or disabled for adding the free text annotation by setting the [`IsFreeTextDialogEnabled`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_IsFreeTextDialogEnabled) API to true or false respectively. The default value is set to true.
+The free text dialog (for adding the free text annotation) can be enabled or disabled by setting the [`IsFreeTextDialogEnabled`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_IsFreeTextDialogEnabled) API to true or false respectively. The default value is set to true.
 
 {% tabs %}
 {% highlight c# %}
