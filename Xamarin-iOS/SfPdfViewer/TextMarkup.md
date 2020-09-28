@@ -203,6 +203,38 @@ pdfViewerControl.AnnotationMode = AnnotationMode.None;
 {% endhighlight %}
 {% endtabs %}
 
+## Customizing the appearance of text markup annotations
+
+You can customize the default values of color, opacity, and interaction (locked) of the text markup annotations that are to be added. This will not affect the text markup annotations that were already added.
+
+N>In all code samples, the [`Highlight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.DefaultTextMarkupAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_DefaultTextMarkupAnnotationSettings_Highlight) text markup annotation is used for illustration purposes
+
+### Setting the default opacity
+
+You can set the default opacity for the text markup annotations by using the [`SfPdfViewer.AnnotationSettings.TextMarkup.Highlight.Opacity`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.HighlightAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_HighlightAnnotationSettings_Opacity) property. The opacity value ranges from 0 to 1. Refer to the following code example.
+
+{% tabs %}
+{% highlight c# %}
+
+//Setting the opacity for text markup annotation 
+pdfViewer.AnnotationSettings.TextMarkup.Highlight.Opacity = 0.5f;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Setting the default color
+
+You can set the color for the text markup annotations by using the [`SfPdfViewer.AnnotationSettings.TextMarkup.Highlight.Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.HighlightAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_HighlightAnnotationSettings_Color) property. Refer to the following code example.
+
+{% tabs %}
+{% highlight c# %}
+
+//Setting the color for text markup annotation
+pdfViewer.AnnotationSettings.TextMarkup.Highlight.Color = UIColor.Black;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Deleting a text markup annotation
 
 The PDF viewer removes a single annotation in the PDF document, removes all the annotations in a page, and removes all the annotations in the document.
@@ -551,3 +583,41 @@ void SaveButton_TouchUpInside(object sender, EventArgs e)
 
 
 N>The `CanUndo` property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 
+
+### How to enable or disable the text markup annotation interaction
+
+The interaction operation can be enabled or disabled for the text markup annotation alone by setting the [`IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.HighlightAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_HighlightAnnotationSettings_IsLocked) API to false or true respectively.
+
+For example, the following code disables the interaction operations for all the text markup annotations in the PDF. But the other annotation types can be selected, moved, resized, or removed.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the text markup highlight annotation interaction 
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = true;
+
+//Disable the text markup underline annotation interaction 
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = true; 
+
+//Disable the text markup strikethrough annotation interaction
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+The interaction with the text markup annotation types will be allowed only if the [`SfPdfViewer.AnnotationSettings.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.AnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_AnnotationSettings_IsLocked) API is set to false. The following code does not allow the interactions with the text markup annotations, although the IsLocked property of the text markup annotation is set to false.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disables the text markup annotation interaction, though the 'IsLocked' property is set to ‘false’
+pdfViewerControl.AnnotationSettings.IsLocked = true; 
+ 
+pdfViewerControl.AnnotationSettings.TextMarkup.Highlight.IsLocked = false;
+
+pdfViewerControl.AnnotationSettings.TextMarkup.Underline.IsLocked = false; 
+
+pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}
