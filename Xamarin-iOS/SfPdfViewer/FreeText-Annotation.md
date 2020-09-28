@@ -119,33 +119,113 @@ pdfViewer.FreeTextAnnotationDeselected += PdfViewer_FreeTextAnnotationDeselected
 
 ## Customizing the appearance of free text annotations
 
-You can customize the default text color and size of all free text annotations to be added. This will not affect the already added free text annotations. The appearance of a selected free text can also be modified. 
+You can customize the default values of opacity, display text, text color, text size, maximum height, minimum height, maximum width, minimum width, interaction (locked), and free text dialog of the free text annotations that are to be added. This will not affect the free text annotations that were already added.
 
-### Setting the default text color
+### Setting the default opacity
 
-You can set the default text color of the free text annotations by using the `SfPdfViewer.AnnotationSettings.FreeText.TextColor` property. Refer to the following code.
+You can set the default opacity for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.Opacity`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_Opacity) property. The opacity value ranges from 0 to 1. Refer to the following code example.
  
 {% tabs %} 
 {% highlight c# %}
 
-SfPdfViewer pdfViewer = new SfPdfViewer();
-pdfViewer.AnnotationSettings.FreeText.TextColor = UIColor.Red;
+//Setting the opacity for the free text annotation 
+pdfViewer.AnnotationSettings.FreeText.Opacity = 0.5f;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Setting the default text
+
+You can set the text for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.Text`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_Text) property. Refer to the following code example.
+ 
+{% tabs %} 
+{% highlight c# %}
+
+//Setting the text for the free text annotation
+pdfViewer.AnnotationSettings.FreeText.Text = “Syncfusion”;
+
+{% endhighlight %}
+{% endtabs %}
+
+
+### Setting the default text color
+
+You can set the color for the text assigned to the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.TextColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_TextColor) property. Refer to the following code example.
+ 
+{% tabs %} 
+{% highlight c# %}
+
+//Setting the text color for the free text annotation
+pdfViewer.AnnotationSettings.FreeText.TextColor = UIColor.Black;
 
 {% endhighlight %}
 {% endtabs %}
 
 ### Setting the default text size
 
-You can set the default text size of the free text annotations by using the `SfPdfViewer.AnnotationSettings.FreeText.TextSize` property. Refer to the following code example.
+You can set the size for the text assigned to the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.TextSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_TextSize) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
 
-SfPdfViewer pdfViewer = new SfPdfViewer();
-pdfViewer.AnnotationSettings.FreeText.TextSize = 4; 
+//Setting the text size for the free text annotation
+pdfViewer.AnnotationSettings.FreeText.TextSize = 2;
 
 {% endhighlight %}
 {% endtabs %}
+
+### Setting the default minimum height
+
+You can set the minimum height for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MinimumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumHeight) property. Refer to the following code example.
+
+{% tabs %}
+{% highlight c# %}
+
+//Setting the minimum height for the free text annotation
+pdfViewer.AnnotationSettings.FreeText.MinimumHeight = 20;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Setting the default minimum width
+
+You can set the minimum width for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MinimumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumWidth) property. Refer to the following code example.
+
+{% tabs %}
+{% highlight c# %}
+
+//Setting the minimum width for the free text annotation
+pdfViewer.AnnotationSettings.FreeText.MinimumWidth = 20;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Setting the default maximum height
+
+You can set the maximum height for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MaximumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MaximumHeight) property. Refer to the following code example.
+
+{% tabs %}
+{% highlight c# %}
+
+//Setting the maximum height for the free text annotation
+pdfViewer.AnnotationSettings.FreeText.MaximumHeight = 60;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Setting the default maximum width
+
+You can set the maximum width for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MaximumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MaximumWidth) property. Refer to the following code example.
+
+{% tabs %}
+{% highlight c# %}
+
+//Setting the maximum width for the free text annotation
+pdfViewer.AnnotationSettings.FreeText.MaximumWidth = 60;
+
+{% endhighlight %}
+{% endtabs %}
+
 
 ### Changing the properties of a selected free text 
 
@@ -284,6 +364,48 @@ private void PdfViewerControl_FreeTextAnnotationRemoved(object sender, FreeTextA
 	float textSize = args.TextSize;
 
 }
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to enable or disable the free text dialog
+
+The free text dialog can be enabled or disabled for adding the free text annotation by setting the [`IsFreeTextDialogEnabled`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_IsFreeTextDialogEnabled) API to true or false respectively. The default value is set to true.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the free text dialog
+pdfViewer.AnnotationSettings.FreeText.IsFreeTextDialogEnabled = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to enable or disable the free text annotation interaction
+
+The interaction operation can be enabled or disabled for the free text annotation alone by setting the [`IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_IsLocked) API to false or true respectively.
+
+For example, the following code disables the interaction operations for all free text annotations in the PDF. But the other annotation types can be selected, moved, resized, or removed.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the free text annotation interaction
+pdfViewerControl.AnnotationSettings.FreeText.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+The interaction with the free text annotation types will be allowed only if the [`SfPdfViewer.AnnotationSettings.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.AnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_AnnotationSettings_IsLocked) API is set to false. The following code does not allow the interactions with free text annotations, although the IsLocked property of the free text annotation is set to false.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disables the free text annotation interaction, though the 'IsLocked' property is set to ‘false’
+ pdfViewerControl.AnnotationSettings.IsLocked = true;
+ 
+//Disable the free text annotation interaction
+pdfViewerControl.AnnotationSettings.FreeText.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
