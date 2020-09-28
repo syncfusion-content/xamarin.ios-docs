@@ -73,5 +73,3 @@ pdfViewer.EnableDoubleTapZooming = false;
 
 {% endhighlight %}
 {% endtabs %}
-
-N>At present, this feature is available only in iOS
