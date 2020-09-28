@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Chart Title | SFChart | Xamarin.iOS | Syncfusion
-description: How to add and customize chart title in SFChart
+description: This section explains how to add the chart title and customize the appearance of the chart title in Xamarin.iOS Chart
 platform: xamarin.ios
 control: SFChart
 documentation: ug
 ---
 
-# Title
+# Title in Xamarin.iOS Chart(SfChart)
 
 You can define and customize the Chart title using [`Title`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartBase.html#Syncfusion_SfChart_iOS_ChartBase_Title) property of [`SFChart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChart.html). The [`Text`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTitle.html#Syncfusion_SfChart_iOS_SFChartTitle_Text) property of [`SFChartTitle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTitle.html) is used to set the text for the title. 
 
@@ -49,3 +49,19 @@ chart.Title.TextColor       = UIColor.Blue;
 
 
 ![Text alignment support for title in Xamarin.iOS Chart](charttitle_images/charttitle_img2.png)
+
+## Text Wrap
+
+By using the `LineBreakMode` property, You can wrap the chart title text content. The default value of this property is `NoWrap`.
+
+{% highlight c# %}
+
+chart.Title.Text = "Percentage change in efficiency of oil-fired power production in Russia for six months;
+
+chart.Title.TextColor = UIColor.Blue; 
+
+chart.Title.LineBreakMode = UILineBreakMode.TailTruncation;
+
+{% endhighlight %}
+
+![Text alignment support for title in Xamarin.iOS Chart](charttitle_images/charttitle_img3.png)
