@@ -142,7 +142,7 @@ You can set the text for the free text annotations by using the [`SfPdfViewer.An
 {% highlight c# %}
 
 //Setting the text for the free text annotation
-pdfViewer.AnnotationSettings.FreeText.Text = “Syncfusion”;
+pdfViewer.AnnotationSettings.FreeText.Text = "Syncfusion";
 
 {% endhighlight %}
 {% endtabs %}
@@ -401,7 +401,7 @@ The interaction with the free text annotation types will be allowed only if the 
 {% tabs %}
 {% highlight c# %}
 
-//Disables the free text annotation interaction, though the 'IsLocked' property is set to ‘false’
+//Disables the free text annotation interaction, though the `IsLocked` property is set to `false`
  pdfViewerControl.AnnotationSettings.IsLocked = true;
  
 //Disable the free text annotation interaction
