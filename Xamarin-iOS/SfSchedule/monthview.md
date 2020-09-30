@@ -1,6 +1,6 @@
 ---   
 layout: post   
-title: Customize the MonthView at Syncfusion Schedule control in Xamarin.iOS
+title: Customize the MonthView at Xamarin.iOS Schedule | Syncfusion
 description: This section explains the schedule month view, appointment indicator, agenda view, week number, first day Of week in Xamarin.iOS.
 platform: xamarin.ios   
 control: SfSchedule   
