@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markers and data labels in SFChart | SFChart | Xamarin.iOS | Syncfusion
-description: Learn how to add markers and data point labels to a Chart series
+title: Markers and data labels in SFChart | Chart | Xamarin.iOS | Syncfusion
+description: Learn how to add markers and data point labels to a Chart series. Data markers are used to provide information about the data points to the user.
 platform: xamarin.ios
 control: SFChart
 documentation: ug
 ---
 
-# Data Markers
+# Data Markers in Xamarin.iOS Chart
 
 Data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. This can be enabled using following code snippet,
 
@@ -110,7 +110,7 @@ series.DataMarker.LabelStyle.LabelPosition = SFChartDataMarkerLabelPosition.Oute
 ![Positioning the data marker labels support in Xamarin.iOS Chart](Datamarker_images/LabelPosition_Outer.png)
 
 
-# Smart Labels
+## Smart Labels
 
 This feature is used to arrange the data marker labels smartly and avoid the intersection when there is
 overlapping of labels. The property [`EnableSmartLabels`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_EnableSmartLabels) in [`CircularSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html), is used to arrange the data marker labels
