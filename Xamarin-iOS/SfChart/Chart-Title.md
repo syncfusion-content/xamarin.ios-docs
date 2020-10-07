@@ -52,7 +52,7 @@ chart.Title.TextColor       = UIColor.Blue;
 
 ## Text Wrap
 
-By using the [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTitle.html#Syncfusion_SfChart_iOS_SFChartTitle_LineBreakMode) property, You can wrap the chart title text content. The default value of this property is [`NoWrap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTitle.html#Syncfusion_SfChart_iOS_SFChartTitle_LineBreakMode).
+By using the [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTitle.html#Syncfusion_SfChart_iOS_SFChartTitle_LineBreakMode) property, You can wrap the chart title text content. The default value of this property is `NoWrap`.
 
 {% highlight c# %}
 
