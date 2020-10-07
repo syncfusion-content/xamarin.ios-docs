@@ -202,7 +202,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Normal;
 
 **RoundStart**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundStart`], axis range will be rounded in the start to the nearest possible value by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundStart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded in the start to the nearest possible value by the interval.
 
 {% highlight c# %}
 
@@ -213,7 +213,7 @@ yAxis.RangePadding = SFChartNumericalPadding.RoundStart;
 
 **RoundEnd**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundEnd`], axis range will be rounded in the end to the nearest possible value by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundEnd`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded in the end to the nearest possible value by the interval.
 
 {% highlight c# %}
 
@@ -224,7 +224,7 @@ yAxis.RangePadding = SFChartNumericalPadding.RoundEnd;
 
 **PrependInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.PrependInterval`], axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum values of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.PrependInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum values of the range.
 
 {% highlight c# %}
 
@@ -235,7 +235,7 @@ yAxis.RangePadding = SFChartNumericalPadding.PrependInterval;
 
 **AppendInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the maximum values of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.AppendInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded and an interval of the axis will be added in the end as padding to the maximum values of the range.
 
 {% highlight c# %}
 
@@ -349,7 +349,7 @@ xAxis.RangePadding = SFChartDateTimePadding.Additional;
 
 **RoundStart**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundStart`], axis range will be rounded in the start to the nearest possible date time value.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundStart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded in the start to the nearest possible date time value.
 
 
 {% highlight c# %}
@@ -362,7 +362,7 @@ xAxis.RangePadding = SFChartDateTimePadding.RoundStart;
 
 **RoundEnd**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundEnd`], axis range will be rounded in the end to the nearest possible date time value.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundEnd`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded in the end to the nearest possible date time value.
 
 
 {% highlight c# %}
@@ -375,7 +375,7 @@ xAxis.RangePadding = SFChartDateTimePadding.RoundEnd;
 
 **PrependInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.PrependInterval`], axis range will be rounded and date time interval of the axis will be added in the start as padding to the minimum extremes of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.PrependInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded and date time interval of the axis will be added in the start as padding to the minimum extremes of the range.
 
 {% highlight c# %}
 
@@ -387,7 +387,7 @@ xAxis.RangePadding = SFChartDateTimePadding.PrependInterval;
 
 **AppendInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.AppendInterval`], axis range will be rounded and date time interval of the axis will be added in the end as padding to the maximum extremes of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.AppendInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded and date time interval of the axis will be added in the end as padding to the maximum extremes of the range.
 
 {% highlight c# %}
 
@@ -779,7 +779,7 @@ Chart.SecondaryAxis = new SFNumericalAxis() { PlotOffset = 30 };
 
 #### PlotOffsetStart
 
-The [`PlotOffsetStart`] property is used to offset the rendering of the axis at start position. The following code snippet demonstrates to apply the plot offset start to both x and y axes.
+The [`PlotOffsetStart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PlotOffsetStart) property is used to offset the rendering of the axis at start position. The following code snippet demonstrates to apply the plot offset start to both x and y axes.
 
 {% highlight c# %}
 
@@ -793,7 +793,7 @@ Chart.SecondaryAxis = new SFNumericalAxis() { PlotOffsetStart = 30 };
 
 #### PlotOffsetEnd
 
-The [`PlotOffsetEnd`] property is used to offset the rendering of the axis at end position. The following code snippet demonstrates to apply the plot offset end to both x and y axes.
+The [`PlotOffsetEnd`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PlotOffsetEnd) property is used to offset the rendering of the axis at end position. The following code snippet demonstrates to apply the plot offset end to both x and y axes.
 
 {% highlight c# %}
 
