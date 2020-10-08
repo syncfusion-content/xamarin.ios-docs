@@ -302,13 +302,13 @@ xAxis.Interval     = new NSNumber (6);
 
 Padding can be applied to the minimum and maximum extremes of the range by using [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property. Date time axis supports the following types of padding:
 
-* [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html)
-* [`Round`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html)
-* [`Additional`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html)
-* [`RoundStart`]
-* [`RoundEnd`]
-* [`PrependInterval`]
-* [`AppendInterval`]
+* None
+* Round
+* Additional
+* RoundStart
+* RoundEnd
+* PrependInterval
+* AppendInterval
 
 **None**
 
