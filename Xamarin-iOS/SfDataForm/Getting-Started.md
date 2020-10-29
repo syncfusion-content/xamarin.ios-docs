@@ -483,3 +483,9 @@ By default, SfDataForm allows to edit the editors. You can disable edit by setti
 Or, you can change the editing behavior by setting `IsReadOnly` property of `DataFormItem`. DataFormItem.IsReadOnly takes higher priority.
 You can also have option to define the editing behavior from `SfDataForm.DataObject` definition using [EditableAttribute](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx)
 You can also define the editing behavior by defining `SfDataForm.DataObject` fields definition without `setter` or with `private set`.
+
+## Additional Help Resources
+
+The [`Xamarin.iOS SfDataForm`](https://www.syncfusion.com/kb/xamarin.ios/dataform) Knowledge Base section contains responses to some of the most common questions that other customers have asked us before. So this will be a good place to search for topics that are not covered in the user guide.
+
+Similar to the [`Knowledge Base`](https://www.syncfusion.com/kb/xamarin.ios/dataform), the [`forum`](https://www.syncfusion.com/forums/xamarin.ios) section also contains responses to questions that other customers have asked us in the past.
