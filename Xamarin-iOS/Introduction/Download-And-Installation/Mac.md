@@ -48,5 +48,3 @@ You can find the Syncfusion libraries, samples and NuGet from the installed loca
 You can then add the assembly references to the Xamarin.iOS. The following is the location where you can locate assembly for Chart control and you can find assemblies for the other controls also from the same location.
 
 lib\ios-unified\Syncfusion.SfChart.iOS.dll
-
-N> You can explore the release history of Essential Studio for Xamarin.iOS from  [`here`](https://www.syncfusion.com/products/release-history/estudio/xamarin-ios).
