@@ -24,6 +24,8 @@ The Knowledge Base section contains responses to some of the most common questio
 
 Similar to the Knowledge Base, the Forum section also contains responses to questions of other customers asked in the past.
 
+And, you can explore the release history of Essential Studio for Xamarin.iOS from  [`here`](https://www.syncfusion.com/products/release-history/estudio/xamarin-ios).
+
 ## Create a support incident
 
 In case, you are not able to find the information that you are looking for in the self-help resources mentioned above, then please contact us by creating a support ticket.
