@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfDataForm | Xamarin.iOS | Syncfusion
-description: Getting started with SfDataForm.
+description: This section explains the key features and getting started with SfDataForm for Xamarin.iOS platform.
 platform: xamarin.ios
 control: SfDataForm
 documentation: ug
@@ -17,7 +17,7 @@ SfDataForm control helps to edit data fields of any data object. It can be used 
 * Custom Editor - Support for loading custom editors.
 * Validation - Built-in support to validate data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx), [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx), and data annotations. Also, supports to handle validation programmatically.
 
-# Getting Started
+# Getting Started with Xamarin.iOS DataForm(SfDataForm)
 
 The section explains you the quick overview to use `SfDataForm` for Xamarin.iOS in your application.
 
