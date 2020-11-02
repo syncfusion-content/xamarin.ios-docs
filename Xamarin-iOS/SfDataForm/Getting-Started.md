@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfDataForm | Xamarin.iOS | Syncfusion
-description: Getting started with SfDataForm.
+description: This section explains the key features and getting started with SfDataForm for Xamarin.iOS platform.
 platform: xamarin.ios
 control: SfDataForm
 documentation: ug
@@ -17,7 +17,7 @@ SfDataForm control helps to edit data fields of any data object. It can be used 
 * Custom Editor - Support for loading custom editors.
 * Validation - Built-in support to validate data based on [IDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.idataerrorinfo.aspx), [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx), and data annotations. Also, supports to handle validation programmatically.
 
-# Getting Started
+# Getting Started with Xamarin.iOS DataForm(SfDataForm)
 
 The section explains you the quick overview to use `SfDataForm` for Xamarin.iOS in your application.
 
@@ -483,3 +483,9 @@ By default, SfDataForm allows to edit the editors. You can disable edit by setti
 Or, you can change the editing behavior by setting `IsReadOnly` property of `DataFormItem`. DataFormItem.IsReadOnly takes higher priority.
 You can also have option to define the editing behavior from `SfDataForm.DataObject` definition using [EditableAttribute](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx)
 You can also define the editing behavior by defining `SfDataForm.DataObject` fields definition without `setter` or with `private set`.
+
+## Additional Help Resources
+
+The [`Xamarin.iOS SfDataForm`](https://www.syncfusion.com/kb/xamarin.ios/dataform) Knowledge Base section contains responses to some of the most common questions that other customers have asked us before. So this will be a good place to search for topics that are not covered in the user guide.
+
+Similar to the [`Knowledge Base`](https://www.syncfusion.com/kb/xamarin.ios/dataform), the [`forum`](https://www.syncfusion.com/forums/xamarin.ios) section also contains responses to questions that other customers have asked us in the past.
