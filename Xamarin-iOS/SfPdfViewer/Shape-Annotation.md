@@ -37,7 +37,7 @@ pdfViewer.AnnotationMode = AnnotationMode.Rectangle;
 
 ### Disabling shape annotation mode
 
-Set the [`AnnotationMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~AnnotationMode.html) of the PDF Viewer to ‘None’ to disable the shape annotation mode. When the shape annotation mode is disabled, zooming, panning, and scrolling will be enabled again.
+Set the [`AnnotationMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~AnnotationMode.html) of the PDF Viewer to `None` to disable the shape annotation mode. When the shape annotation mode is disabled, zooming, panning, and scrolling will be enabled again.
 
 {% tabs %}
 {% highlight c# %}
