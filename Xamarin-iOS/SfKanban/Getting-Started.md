@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-#<a id="KanbaniOS"></a>Kanban for Xamarin.iOS
+#Kanban for Xamarin.iOS
 
 **Create your first Kanban in Xamarin.iOS**
 
@@ -17,7 +17,7 @@ This section provides a quick overview for working with Essential Kanban for Xam
 
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
-{Syncfusion Installed location}\Essential Studio{14.2.0.26}\lib
+{Syncfusion Installed location}\Essential Studio{18.3.0.50}\lib
 
 Note: Assemblies are available in unzipped package location in Mac.
 
@@ -29,7 +29,7 @@ iOS-unified\Syncfusion.SfKanban.iOS.dll
 
 This section explains how to create a SfKanban and configure it. 
 
-This is how the final output will look like on iOS devices. You can download the entire source code of this demo for Xamarin.iOS from [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/Kanban_GettingStarted.zip).
+This is how the final output will look like on iOS devices. You can download the entire source code of this demo for Xamarin.iOS from [here](https://github.com/SyncfusionExamples/xamarin.ios-kanban-getting-started).
 
 ![Kanban](kanban_images/kanban.png)
 
@@ -77,79 +77,322 @@ public partial class ViewController : UIViewController
 Create a collection of [`KanbanModel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanModel.html) objects for populating [`SfKanban`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html).
 
 {% highlight C# %}
+using Syncfusion.SfKanban.iOS;
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Syncfusion.SfKanban.iOS; 
-public partial class ViewController : UIViewController
-{
-    private SfKanban kanban;
-		
-	protected ViewController(IntPtr handle) : base(handle)
-	{
-		Data = ItemsSourceCards();
-	}
 
-	public ObservableCollection<KanbanModel> Data
-	{
-		get;
-		set;
-	}
-	
-	ObservableCollection<KanbanModel> ItemsSourceCards()
-	{
-		ObservableCollection<KanbanModel> cards = new ObservableCollection<KanbanModel>();
-		cards.Add(new KanbanModel() { 
-			ID = 1, 
-			Title = "iOS - 1002", 
-			ImageURL = "Image1.png", 
-			Category = "Open", 
-			Description = "Analyze customer requirements", 
-			ColorKey = "Red",
-			Tags = new string[] { "Incident", "Customer" }
-		});
-		
-		cards.Add(new KanbanModel() { 
-			ID = 6, 
-			Title = "Xamarin - 4576", 
-			ImageURL = "Image2.png", 
-			Category = "Open",
-			Description = "Show the retrieved data from the server in grid control" 
-			ColorKey = "Green", 
-			Tags = new string[] { "SfDataGrid", "Customer" }
-		});
-		
-		cards.Add(new KanbanModel() { 
-			ID = 13, 
-			Title = "UWP - 13", 
-			ImageURL = "Image4.png", 
-			Category = "In Progress", 
-			Description = "Add responsive support to application", 
-			ColorKey = "Brown", 
-			Tags = new string[] { "Story", "Kanban" } 
-		});  
-		
-		cards.Add(new KanbanModel() { 
-			ID = 2543, 
-			Title = "Xamarin_iOS - 2543", 
-			Category = "Code Review", 
-			ImageURL = "Image12.png", 
-			Description = "Provide swimlane support kanban", 
-			ColorKey = "Brown", 
-			Tags = new string[] { "Feature","SfKanban" } 
-		});
-		  
-		cards.Add(new KanbanModel() { 
-			ID = 1975, 
-			Title = "iOS - 1975", 
-			Category = "Done", 
-			ImageURL = "Image11.png", 
-			Description = "Fix the issues reported by the customer", 
-			ColorKey = "Purple", 
-			Tags = new string[] { "Bug" } 
-		});   
-		
-		return cards; 
-	} 
-}     
+namespace Kanban_GettingStarted
+{
+    public class DataModel
+    {
+        public ObservableCollection<KanbanModel> Cards { get; set; }
+
+        public List<object> IList;
+
+        public DataModel()
+        {
+            Cards = new ObservableCollection<KanbanModel>();
+
+            IList = new List<object>() { "Open", "Test", "Close", "InProgress" };
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 1,
+                    Title = "iOS - 1",
+                    ImageURL = "Image1.png",
+                    Category = "Open",
+                    Description = "Analyze customer requirements",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Bug", "Customer", "Release Bug" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 6,
+                    Title = "Xamarin - 6",
+                    ImageURL = "Image2.png",
+                    Category = "Open",
+                    Description = "Show the retrived data from the server in grid control",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Bug", "Customer", "Breaking Issue" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 3,
+                    Title = "iOS - 3",
+                    ImageURL = "Image3.png",
+                    Category = "Open",
+                    Description = "Fix the filtering issues reported in safari",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Bug", "Customer", "Breaking Issue" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 11,
+                    Title = "iOS - 11",
+                    ImageURL = "Image4.png",
+                    Category = "Open",
+                    Description = "Add input validation for editing",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Bug", "Customer", "Breaking Issue" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 15,
+                    Title = "Android - 15",
+                    Category = "Open",
+                    ImageURL = "Image5.png",
+                    Description = "Arrange web meeting for cutomer requirement",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Story", "Kanban" }
+                });
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 3,
+                    Title = "Android - 3",
+                    Category = "Code Review",
+                    ImageURL = "Image6.png",
+                    Description = "API Improvements",
+                    ColorKey = "Purple",
+                    Tags = new string[] { "Bug", "Customer" }
+                });
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 4,
+                    Title = "UWP - 4",
+                    ImageURL = "Image7.png",
+                    Category = "Code Review",
+                    Description = "Enhance editing functionality",
+                    ColorKey = "Brown",
+                    Tags = new string[] { "Story", "Kanban" }
+                });
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 9,
+                    Title = "Xamarin - 9",
+                    ImageURL = "Image8.png",
+                    Category = "Code Review",
+                    Description = "Improve application performance",
+                    ColorKey = "Orange",
+                    Tags = new string[] { "Story", "Kanban" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 13,
+                    Title = "UWP - 13",
+                    ImageURL = "Image9.png",
+                    Category = "In Progress",
+                    Description = "Add responsive support to applicaton",
+                    ColorKey = "Brown",
+                    Tags = new string[] { "Story", "Kanban" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 17,
+                    Title = "Xamarin - 17",
+                    Category = "In Progress",
+                    ImageURL = "Image10.png",
+                    Description = "Fix the issues reported in IE browser",
+                    ColorKey = "Brown",
+                    Tags = new string[] { "Bug", "Customer" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 21,
+                    Title = "Xamarin - 21",
+                    Category = "In Progress",
+                    ImageURL = "Image11.png",
+                    Description = "Improve performance of editing functionality",
+                    ColorKey = "Purple",
+                    Tags = new string[] { "Bug", "Customer" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 19,
+                    Title = "iOS - 19",
+                    Category = "In Progress",
+                    ImageURL = "Image12.png",
+                    Description = "Fix the issues reported by the customer",
+                    ColorKey = "Purple",
+                    Tags = new string[] { "Bug" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 8,
+                    Title = "Android",
+                    Category = "Code Review",
+                    ImageURL = "Image13.png",
+                    Description = "Check login page validation",
+                    ColorKey = "Brown",
+                    Tags = new string[] { "Feature" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 24,
+                    Title = "UWP - 24",
+                    ImageURL = "Image14.png",
+                    Category = "In Progress",
+                    Description = "Test editing functionality",
+                    ColorKey = "Orange",
+                    Tags = new string[] { "Feature", "Customer", "Release" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 20,
+                    Title = "iOS - 20",
+                    Category = "In Progress",
+                    ImageURL = "Image15.png",
+                    Description = "Fix the issues reported in data binding",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Feature", "Release", }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 12,
+                    Title = "Xamarin - 12",
+                    Category = "In Progress",
+                    ImageURL = "Image16.png",
+                    Description = "Test editing functionality",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Feature", "Release", }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 11,
+                    Title = "iOS - 11",
+                    Category = "In Progress",
+                    ImageURL = "Image17.png",
+                    Description = "Check filtering validation",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Feature", "Release", }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 13,
+                    Title = "UWP - 13",
+                    ImageURL = "Image18.png",
+                    Category = "Closed",
+                    Description = "Fix cannot open user's default database sql error",
+                    ColorKey = "Purple",
+                    Tags = new string[] { "Bug", "Internal", "Release" }
+                });
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 14,
+                    Title = "Android - 14",
+                    Category = "Closed",
+                    ImageURL = "Image19.png",
+                    Description = "Arrange web meeting with customer to get login page requirement",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Feature" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 15,
+                    Title = "Xamarin - 15",
+                    Category = "Closed",
+                    ImageURL = "Image20.png",
+                    Description = "Login page validation",
+                    ColorKey = "Red",
+                    Tags = new string[] { "Bug" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 16,
+                    Title = "Xamarin - 16",
+                    ImageURL = "Image21.png",
+                    Category = "Closed",
+                    Description = "Test the application in IE browser",
+                    ColorKey = "Purple",
+                    Tags = new string[] { "Bug" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 20,
+                    Title = "UWP - 20",
+                    ImageURL = "Image22.png",
+                    Category = "Closed",
+                    Description = "Analyze stored procedure",
+                    ColorKey = "Brown",
+                    Tags = new string[] { "CustomSample", "Customer", "Incident" }
+                }
+            );
+
+            Cards.Add(
+                new KanbanModel()
+                {
+                    ID = 21,
+                    Title = "Android - 21",
+                    Category = "Closed",
+                    ImageURL = "Image23.png",
+                    Description = "Arrange web meeting with customer to get editing requirements",
+                    ColorKey = "Orange",
+                    Tags = new string[] { "Story", "Improvement" }
+                }
+            );
+        }
+    }
+}    
 {% endhighlight %}
 
 **Binding data to SfKanban**
@@ -157,7 +400,8 @@ public partial class ViewController : UIViewController
 In order to bind the data source of the [`SfKanban`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html), set [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html#Syncfusion_SfKanban_iOS_SfKanban_ItemsSource) property as shown below. The following code binds the collection created in previous step to [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html#Syncfusion_SfKanban_iOS_SfKanban_ItemsSource) property.
 
 {% highlight C# %}
-kanban.ItemsSource = this.Data;
+DataModel model = new DataModel();
+kanban.ItemsSource = model.Cards;
 {% endhighlight %}
 **Defining Columns**
 
@@ -174,25 +418,33 @@ The following code example illustrates how this can be done.
 {% highlight C# %}
 kanban.ColumnMappingPath = "Category"; 
  
-KanbanColumn openColumn = new KanbanColumn();
-openColumn.Title = "To Do"; 
-openColumn.Categories = new List<object>() { "Open" };
-kanban.Columns.Add(openColumn);  
+KanbanColumn column1 = new KanbanColumn();
+column1.Title = "To Do";
+column1.MinimumLimit = 5;
+column1.MaximumLimit = 15;
+column1.Categories = new List<object> { "Open", "Postponed", "Validated" };
+kanban.Columns.Add(column1);
 
-KanbanColumn progressColumn = new KanbanColumn();
-progressColumn.Title = "In Progress";  
-progressColumn.Categories = new List<object>() { "In Progress" }; 
-kanban.Columns.Add(progressColumn);  
- 
-KanbanColumn codeColumn = new KanbanColumn(); 
-codeColumn.Title = "Code Review"; 
-codeColumn.Categories = new List<object>() { "Code Review" };  
-kanban.Columns.Add(codeColumn);  
+KanbanColumn column2 = new KanbanColumn();
+column2.Title = "In Progress";
+column2.MinimumLimit = 3;
+column2.MaximumLimit = 8;
+column2.Categories = new List<object> { "In Progress" };
+kanban.Columns.Add(column2);
 
-KanbanColumn doneColumn = new KanbanColumn(); 
-doneColumn.Title = "Done"; 
-doneColumn.Categories = new List<object>() { "Done" };  
-kanban.Columns.Add(doneColumn); 
+KanbanColumn column3 = new KanbanColumn();
+column3.Title = "Code Review";
+column3.MinimumLimit = 5;
+column3.MaximumLimit = 10;
+column3.Categories = new List<object> { "Code Review" };
+kanban.Columns.Add(column3);
+
+KanbanColumn column4 = new KanbanColumn();
+column4.Title = "Done";
+column4.MinimumLimit = 8;
+column4.MaximumLimit = 12;
+column4.Categories = new List<object> { "Closed", "Closed-No Code Changes", "Resolved" };
+kanban.Columns.Add(column4);
 {% endhighlight %}
 
 You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html#Syncfusion_SfKanban_iOS_SfKanban_AutoGenerateColumns) property to true in which you don't need to define the columns as mentioned in the above example.  This will create columns depending on the [`ColumnMappingPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html#Syncfusion_SfKanban_iOS_SfKanban_ColumnMappingPath) property for all the distinct values in [`ItemsSource`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html#Syncfusion_SfKanban_iOS_SfKanban_ItemsSource).
@@ -279,20 +531,17 @@ A Kanban workflow is a set of [`Category`](https://help.syncfusion.com/cr/xamari
 Initialize [`Workflows`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html#Syncfusion_SfKanban_iOS_SfKanban_Workflows) property with a list of [`KanbanWorkflow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanWorkflow.html) instances. Each instance represents a workflow in Kanban. The following code example illustrates how this can be done.
 
 {% highlight C# %}
-var workflows = new List<KanbanWorkflow>();
+List<KanbanWorkflow> keyfield = new List<KanbanWorkflow>();
+keyfield.Add(new KanbanWorkflow("Open", new List<object> { "In Progress" }));
+keyfield.Add(new KanbanWorkflow("In Progress", new List<object> { "Postponed", "Validated", "Code Review", "Closed-No Code Changes" }));
+keyfield.Add(new KanbanWorkflow("Code Review", new List<object> { "Closed", "Resolved" }));
+keyfield.Add(new KanbanWorkflow("Closed", new List<object> { "Open" }));
+keyfield.Add(new KanbanWorkflow("Postponed", new List<object> { "In Progress" }));
+keyfield.Add(new KanbanWorkflow("Validated", new List<object> { "In Progress" }));
+keyfield.Add(new KanbanWorkflow("Closed-No Code Changes", new List<object> { }));
+keyfield.Add(new KanbanWorkflow("Resolved", new List<object> { }));
 
-var openWorkflow = new KanbanWorkflow();
-openWorkflow.Category = "Open"; 
-openWorkflow.AllowedTransitions = new List<object> { "In Progress" };  
-
-var progressWorkflow = new KanbanWorkflow(); 
-progressWorkflow.Category = "In Progress"; 
-progressWorkflow.AllowedTransitions = new List<object> { "Open", "Code Review", "Closed-No Code Changes" };  
-
-workflows.Add(openWorkflow); 
-workflows.Add(progressWorkflow);    
-
-kanban.Workflows = workflows;  
+kanban.Workflows = keyfield;  
 {% endhighlight %}
 
 **Work In-Progress Limit**
@@ -300,8 +549,8 @@ kanban.Workflows = workflows;
 In column, you can set minimum and maximum items limit by using the [`MinimumLimit`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanColumn.html#Syncfusion_SfKanban_iOS_KanbanColumn_MinimumLimit) and [`MaximumLimit`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanColumn.html#Syncfusion_SfKanban_iOS_KanbanColumn_MaximumLimit) properties. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the color of the error bar. 
 
 {% highlight C# %}
-openColumn.MinimumLimit = 5; 
-openColumn.MaximumLimit = 10;   
+column1.MinimumLimit = 5;
+column1.MaximumLimit = 15;   
 {% endhighlight %}
 
 Following properties of [`ErrorBarSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanColumn.html#Syncfusion_SfKanban_iOS_KanbanColumn_ErrorBarSettings) are used to customize its appearance.

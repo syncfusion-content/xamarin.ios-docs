@@ -56,5 +56,5 @@ kanban.PlaceholderStyle = style;
 
 The following screenshot illustrates the result of the above code sample.
 
-![PlaceholderStyle support for Xamarin.iOS Kanban](SfKanban_images/PlaceholderStyle.png)
+![PlaceholderStyle support for Xamarin.iOS Kanban](kanban_images/PlaceholderStyle.png)
 

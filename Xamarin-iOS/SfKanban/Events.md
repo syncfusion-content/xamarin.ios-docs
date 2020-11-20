@@ -7,9 +7,9 @@ control: Kanban
 documentation: ug
 ---
 
-## Events
+# Events
 
-# ItemTapped
+## ItemTapped
 
 [`ItemTapped`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html) event is triggered when you tap on any card. The argument contains the following information.
 
@@ -18,7 +18,7 @@ documentation: ug
 * [`Index`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanTappedEventArgs.html#Syncfusion_SfKanban_iOS_KanbanTappedEventArgs_Index) 			- Used to get the index of the card in a column.
 * [`ViewCell`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanTappedEventArgs.html#Syncfusion_SfKanban_iOS_KanbanTappedEventArgs_ViewCell)        - Used to get the tapped items view.
 
-# DragStart
+## DragStart
 
 [`DragStart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html) event is triggered when you start to drag a card. The argument contains the following information.
 
@@ -28,7 +28,7 @@ documentation: ug
 * [`SourceColumn`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragEventArgs_SourceColumn) 	- Used to get the source column of card.
 * [`SourceIndex`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragEventArgs_SourceIndex)		- Used to get the index of the card in source column.   
 
-# DragEnd  
+## DragEnd  
 
 [`DragEnd`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html) event is triggered whenever the card is dropped or dragging action is canceled. The argument contains the following information.
 
@@ -40,7 +40,7 @@ documentation: ug
 * [`TargetColumn`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragEndEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragEndEventArgs_TargetColumn)	- Used to get the current column which is the drop target for the card.
 * [`TargetIndex`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragEndEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragEndEventArgs_TargetIndex)		- Used to get the index of the card in target column.
 
-# DragEnter 
+## DragEnter 
 
 [`DragEnter`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html) event is triggered when a card enters into a column while dragging. The argument contains the following information.
 
@@ -52,7 +52,7 @@ documentation: ug
 * [`TargetColumn`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragEnterEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragEnterEventArgs_TargetColumn)		- Used to get the column upon which the card enters.
 * [`TargetIndex`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragEnterEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragEnterEventArgs_TargetIndex)			- Used to get the index of the card in target column.
 
-# DragLeave 
+## DragLeave 
 
 [`DragLeave`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html) event is triggered when a card leaves a column while dragging. The argument contains the following information.
 
@@ -62,7 +62,7 @@ documentation: ug
 * [`SourceIndex`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragEventArgs_SourceIndex)         - Used to get the index of the card in source column.
 * [`TargetColumn`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragLeaveEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragLeaveEventArgs_TargetColumn)		- Used to get the column from which the card leaves.
 
-# DragOver
+## DragOver
 
 [`DragOver`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html) event is triggered when a card is dragged to a new index within a column. The argument contains the following information.
 
@@ -73,6 +73,6 @@ documentation: ug
 * [`TargetColumn`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragOverEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragOverEventArgs_TargetColumn)	- Used to get the current column which is the drop target for the card.
 * [`TargetIndex`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanDragOverEventArgs.html#Syncfusion_SfKanban_iOS_KanbanDragOverEventArgs_TargetIndex)		- Used to get the new index of the card in target column.
 
-# ColumnsGenerated 
+## ColumnsGenerated 
 
 [`ColumnsGenerated`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html) event will be fired after the columns are generated automatically. You can access the auto-generated columns using [`SfKanban.ActualColumns`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html#Syncfusion_SfKanban_iOS_SfKanban_ActualColumns) property.
