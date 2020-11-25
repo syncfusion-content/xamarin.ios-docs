@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Xamarin.iOS Kanban control
-description: Kanban Events
+title: Events in Xamarin.iOS Syncfusion Kanban control
+description: The Essential Syncfusion kanban control Events in Xamarin.iOS platform(SfKanban control)
 platform: xamarin.ios
 control: Kanban
 documentation: ug
 ---
 
-# Events
+# Events for Xamarin.iOS Kanban(SfKanban)
 
 ## ItemTapped
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PlaceholderStyle for Xamarin.iOS Kanban
-description: Kanban Placeholder style
+title: PlaceholderStyle for Xamarin.iOS Syncfusion Kanban Control
+description: The Essential Syncfusion kanban control Kanban Placeholder style in Xamarin.iOS platform
 platform: Xamarin.iOS
 control: Kanban
 documentation: ug
 ---
 
-# Placeholder
+# Placeholder for Xamarin.iOS Kanban(SfKanban)
 
 The placeholder is used to denote the new position of a card in the [`KanbanColumn`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.KanbanColumn.html). It will appear when dragging a card over the column.
 
