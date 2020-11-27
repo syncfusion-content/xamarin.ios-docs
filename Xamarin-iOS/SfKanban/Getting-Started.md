@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Getting Started for Essential Xamarin.iOS Syncfusion Kanban control
-description: This section explains about the Essential Syncfusion kanban control getting started in Xamarin.iOS platform.
+description: This section explains about the getting started of Kanban (SfKanban) control in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: SfKanban
 documentation: ug
@@ -88,13 +88,9 @@ namespace Kanban_GettingStarted
     {
         public ObservableCollection<KanbanModel> Cards { get; set; }
 
-        public List<object> IList;
-
         public DataModel()
         {
             Cards = new ObservableCollection<KanbanModel>();
-
-            IList = new List<object>() { "Open", "Test", "Close", "InProgress" };
 
             Cards.Add(
                 new KanbanModel()
