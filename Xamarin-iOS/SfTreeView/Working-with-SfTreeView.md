@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Xamarin.iOS TreeView | TreeView for Xamarin.iOS | Syncfusion
+title: Working with TreeView | TreeView for Xamarin.iOS | Syncfusion
 description: This topic describes how to use Syncfusion Xamarin.iOS TreeView along with interacting events and other different functionalities
 platform: Xamarin.iOS
 control: SfTreeView
