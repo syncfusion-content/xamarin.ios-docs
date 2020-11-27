@@ -234,6 +234,10 @@ You can also download the entire source code of this demo from [here](http://www
 
 You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. Create the node hierarchy by adding one or more root nodes to the [Nodes](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can then have more nodes added to its Children collection. You can nest tree view nodes to whatever depth you require.
  
+Using the [Content](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_Content) property you can get the data object associated with tree view node. For Bound Mode you can binding the data object using `Content` property by setting the `ItemTemplateContextType` to `Node`. For Unbound Mode you can directly set the `Content` value.
+You can get the parent node of the treeview nodes by using the [ParentNode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_ParentNode) property of the `TreeViewNode`. 
+Using the [Level](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_Level) property in TreeViewNode, you can get the zero-based depth of the tree node in the TreeView control. For the `Level` property, the root node is considered the first level of nesting and returns 0.
+
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.iOS.TreeView;
