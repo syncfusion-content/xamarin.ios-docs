@@ -1904,6 +1904,30 @@ chart.Series.Add(boxPlotSeries);
 
 ![Outlier for BoxAndWhiskerSeries in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_SymbolType.png)
 
+### ShowOutlier
+
+The Outlier value of given data set is viewed by enabling the [`ShowOutlier`] Property of [`SFBoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
+
+{% highlight c# %}
+
+[C#]
+
+SFChart chart = new SFChart();
+...
+
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Department",
+    YBindingPath = "Ages",
+    ShowOutlier = false
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+[ShowMedian support for BoxAndWhiskerSeries in Xamarin.iOS Chart]
+
 ## Error Bar Chart
 
 ErrorBarSeries is a graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`SFErrorBarSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartBase.html#Syncfusion_SfChart_iOS_ChartBase_Series) collection property of [`SFChart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChart.html)
