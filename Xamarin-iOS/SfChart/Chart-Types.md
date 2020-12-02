@@ -1926,7 +1926,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-[ShowMedian support for BoxAndWhiskerSeries in Xamarin.iOS Chart]
+![ShowOutlier support for BoxAndWhiskerSeries in Xamarin.iOS Chart](ChartTypes_images/ShowOutlier.png)
 
 ## Error Bar Chart
 
