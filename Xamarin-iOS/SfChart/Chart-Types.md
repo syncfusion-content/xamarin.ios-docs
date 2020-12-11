@@ -1877,9 +1877,38 @@ chart.Series.Add(boxPlotSeries);
 
 ![ShowMedian support for BoxAndWhiskerSeries in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_Exclusive_Median.png)
 
+### Outlier
+
+The outlier is used to display the outlier point that lie either below the lower whisker or above the upper whisker line.
+
+### ShowOutlier
+
+The [`ShowOutlier`] Property of [`SFBoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html) are used to customize the visible of the outlier. By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
+
+{% highlight c# %}
+
+[C#]
+
+SFChart chart = new SFChart();
+...
+
+SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Department",
+    YBindingPath = "Ages",
+    ShowMedian = true,
+    ShowOutlier = false
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+![ShowOutlier support for BoxAndWhiskerSeries in Xamarin.iOS Chart](ChartTypes_images/ShowOutlier.png)
+
 ### SymbolType
 
-The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html).
+The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different type of symbol. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html).
 
 The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html).
 
@@ -1903,30 +1932,6 @@ chart.Series.Add(boxPlotSeries);
 {% endhighlight %}
 
 ![Outlier for BoxAndWhiskerSeries in Xamarin.iOS Chart](ChartTypes_images/BoxAndWhisker_SymbolType.png)
-
-### ShowOutlier
-
-The Outlier value of given data set is viewed by enabling the [`ShowOutlier`] Property of [`SFBoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
-
-{% highlight c# %}
-
-[C#]
-
-SFChart chart = new SFChart();
-...
-
-SFBoxAndWhiskerSeries boxPlotSeries = new SFBoxAndWhiskerSeries()
-{
-    ItemsSource = Data,
-    XBindingPath = "Department",
-    YBindingPath = "Ages",
-    ShowOutlier = false
-} 
-chart.Series.Add(boxPlotSeries);
-
-{% endhighlight %}
-
-![ShowOutlier support for BoxAndWhiskerSeries in Xamarin.iOS Chart](ChartTypes_images/ShowOutlier.png)
 
 ## Error Bar Chart
 
