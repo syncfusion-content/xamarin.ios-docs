@@ -1908,7 +1908,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### SymbolType
 
-The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different type of symbols. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html).
+The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different types of symbols. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html).
 
 The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html).
 
