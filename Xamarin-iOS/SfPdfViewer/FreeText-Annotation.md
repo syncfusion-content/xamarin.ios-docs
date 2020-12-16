@@ -183,7 +183,7 @@ You can set the background color for the free text annotations using the `SfPdfV
 
 //Setting the background color of the free text annotation
 
-pdfViewerControl.AnnotationSettings.FreeText.FillColor = UIColor.Clear;
+pdfViewerControl.AnnotationSettings.FreeText.FillColor = UIColor.Blue;
 
 {% endhighlight %}
 {% endtabs %}
