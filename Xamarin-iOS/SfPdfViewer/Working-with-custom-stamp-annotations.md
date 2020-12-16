@@ -154,3 +154,23 @@ pdfViewer.StampAnnotationRemoved += PdfViewer_StampAnnotationRemoved;
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to retrieve the actual view added as the stamp using the AddStamp method
+
+The stamp annotation view can be retrieved when the stamp is added, tapped, selected, deselected, moved, or resized, and removed from the event data parameter of the respective event handler from the [`CustomStampView`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.StampAnnotationSelectedEventArgs.html#Syncfusion_SfPdfViewer_iOS_StampAnnotationSelectedEventArgs_CustomStampView) property. The stamp view, thus retrieved, is the same instance as the one added using the [`AddStamp`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_AddStamp_Xamarin_Forms_View_System_Int32_) method. 
+
+Refer to the following code example. The [`StampAnnotationSelected`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_StampAnnotationSelected) event is shown for illustration purposes. 
+
+{% tabs %}
+{% highlight c# %}
+
+pdfViewerControl.StampAnnotationSelected += PdfViewerControl_StampAnnotationSelected;
+
+private void PdfViewerControl_StampAnnotationSelected(object sender, StampAnnotationSelectedEventArgs e)
+        {
+            //Retrieves the actual view added as the stamp using the AddStamp method.
+            var customStamp = e.CustomStampView;
+        }
+
+{% endhighlight %}
+{% endtabs %}

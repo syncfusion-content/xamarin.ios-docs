@@ -174,6 +174,20 @@ pdfViewer.AnnotationSettings.FreeText.TextSize = 2;
 {% endhighlight %}
 {% endtabs %}
 
+### Setting the default background-color
+
+You can set the background color for the free text annotations using the `SfPdfViewer.AnnotationSettings.FreeText.FillColor` property. The default value is set to `UIColor.Clear`.
+
+{% tabs %}
+{% highlight c# %}
+
+//Setting the background color of the free text annotation
+
+pdfViewerControl.AnnotationSettings.FreeText.FillColor = UIColor.Clear;
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Setting the default minimum height
 
 You can set the minimum height for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MinimumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumHeight) property. Refer to the following code example.
