@@ -585,7 +585,6 @@ scheduleAppointmentCollection.Add(exceptionAppointment);
 >**NOTE**
 •	The `RecurrenceId` should be a recurrence pattern appointment `Id` .
 •	The exception appointment should have different `Id` with original pattern appointment `Id`.
-•   The `RecurrenceId` of an exception appointment and the `Id` of its pattern appointment should have the same value. 
 •	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
 •	The `ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
