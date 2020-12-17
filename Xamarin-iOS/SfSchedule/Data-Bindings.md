@@ -2,7 +2,7 @@
 
 layout: post
 title: Populating Appointments in Syncfusion SfSchedule for Xamarin.iOS
-description: Learn how to Populate Appointments in SfSchedule control in Xamarin.iOS
+description: This section explains on how to Populate Appointments in SfSchedule control for Xamarin.iOS platform.
 platform: xamarin.ios
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# Appointments
+# Appointments in Xamarin.iOS Schedule (SfSchedule)
 
 [ScheduleAppointment](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [StartTime](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_StartTime), [EndTime](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_EndTime), [Subject](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_Subject) and some additional information about the appointment can be added using [AppointmentBackground](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_AppointmentBackground), [Notes](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_Notes), [Location](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_Location), [All Day](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.ScheduleAppointment.html#Syncfusion_SfSchedule_iOS_ScheduleAppointment_IsAllDay), [Recurring properties](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSchedule.iOS.RecurrenceProperties.html).
 
@@ -551,6 +551,7 @@ var exceptionAppointment = new ScheduleAppointment
 {% endtabs %}
 
 >**NOTE**
+•	The exception appointment should have different `Id` with original pattern appointment `Id`.
 •	The `RecurrenceId` should be a recurrence pattern appointment `Id`.
 •	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence is from recurrence pattern.
 •	The `ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
