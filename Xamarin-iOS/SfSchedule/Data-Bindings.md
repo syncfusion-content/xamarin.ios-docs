@@ -811,8 +811,8 @@ scheduleAppointmentCollection.Add(exceptionAppointment);
 
 >**NOTE**
 •	The `Id` should be a recurrence pattern appointment object.
-•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
-•	`ActualDate` should be in Universal Time Coordinates (UTC) time zone.
+•	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+•	The `ActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
 
 #### Remove exception appointment from recurrence pattern
