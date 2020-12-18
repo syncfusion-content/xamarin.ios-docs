@@ -39,6 +39,7 @@ The `PenSettings` property consists of the following properties:
 * [`Mode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html#Syncfusion_SfImageEditor_iOS_PenSettings_Mode): Determines whether the shape color mode is `Fill` or `Stroke`. It is an enum value.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html#Syncfusion_SfImageEditor_iOS_PenSettings_Opacity): Denotes opacity for the desired shapes.
 * [`Bounds`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html#Syncfusion_SfImageEditor_iOS_PenSettings_Bounds): Allows to set frame for the newly added shapes (rectangle and circle). You can position the shapes wherever you want on the image.In percentage, the value of the shape frame should fall between 0 and 100.
+* [`EnableDrag`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html#Syncfusion_SfImageEditor_iOS_PenSettings_EnableDrag) - Controls the dragging of selected shape over the image.
 
 N> The `FillColor` property is applicable only if the ShapeType is `Rectangle` or `Circle`.
 
