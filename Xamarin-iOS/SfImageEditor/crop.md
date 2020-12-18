@@ -13,7 +13,7 @@ You can crop the desired portion of an image using the cropping tool.
 
 ## Image cropping ratio
 
-You can crop the image to various aspect ratios. The following cropping ratios are available in built-in toolbar:  "`Free`, `Original`, `Square`, `Circular`, `Ellipse`, `3:1`, `1:3`, `3:2`, `2:3`, `4:3`, `3:4`, `5:4`, `4:5`, `16:9`, `9:16`".
+YYou can crop the image to various aspect ratios. The following cropping ratios are available in built-in toolbar:  "`Free`, `Original`, `Square`, `3:1`, `1:3`, `3:2`, `2:3`, `4:3`, `3:4`, `5:4`, `4:5`, `16:9`, `9:16`".
 
 Cropping operation can be done in the following two ways:
 
