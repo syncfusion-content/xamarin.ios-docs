@@ -1883,7 +1883,7 @@ The outlier is used to display the outlier point that lies either below the lowe
 
 #### ShowOutlier
 
-The outlier value in the box plot can be viewed by enabling the [`ShowOutlier`] property of [`SFBoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to disable the [`ShowOutlier`] property.
+The outlier value in the box plot can be viewed by enabling the [`ShowOutlier`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_ShowOutlier) property of [`SFBoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html). By default, [ShowOutlier](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_ShowOutlier) value is true. The following code demonstrates how to disable the [`ShowOutlier`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_ShowOutlier) property.
 
 {% highlight c# %}
 
