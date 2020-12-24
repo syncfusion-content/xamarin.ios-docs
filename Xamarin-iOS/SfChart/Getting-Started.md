@@ -1,27 +1,65 @@
 ---
 layout: post
 title: Getting Started | SFChart | Xamarin.iOS | Syncfusion
-description: getting started 
+description: A quick tour to create a chart with title, series, legend, data labels, tooltip, and multiple Y axis in Xamarin.iOS Chart.
 platform: xamarin.ios
 control: SFChart
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with Xamarin.iOS Charts (SfChart)
 
 This section explains you the steps required to populate the Chart with data, title, add data labels and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 
 ## Adding Chart Reference
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
 
-{Syncfusion Installed location}\Essential Studio\{version number}\lib
+{Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
-N> Assemblies are available in unzipped package location in Mac.
+Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
-You have to add the following assembly reference to the iOS unified project
+N> Assemblies can be found in unzipped package location in Mac
 
-ios-unified\Syncfusion.SFChart.iOS.dll
+## NuGet configuration
+
+To install the required NuGet for the SfChart control in the application, configure the NuGet packages of the Syncfusion components.
+
+Refer to the following KB to configure the NuGet packages of the Syncfusion components:
+
+[How to upgrade the newer versions of NuGet package](https://www.syncfusion.com/kb/6939/upgrading-to-newer-versions-of-nuget-package)
+
+The following NuGet package should be installed to use the SfChart control in the application.
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required package </th>
+</tr>
+<tr>
+<td> Xamarin.iOS </td>
+<td> Syncfusion.Xamarin.SfChart.IOS</td>
+</tr>
+</table>
+
+### Adding SfChart reference
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfChart to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfChart.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart.ios/#), and then install it.
+
+![SfChart in nuget.org](Getting-Started_images/NuGetReference.png)
+
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation). Also, you have to add the following assembly reference to the iOS unified project mentioned in the table below.
+
+<table>
+<tr>
+<th>Project</th>
+<th>Required assemblies</th>
+</tr>
+<tr>
+<td>Xamarin.iOS</td>
+<td>ios-unified\Syncfusion.SFChart.iOS.dll</td>
+</tr>
+</table>
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [`link`](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
