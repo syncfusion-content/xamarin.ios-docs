@@ -1,12 +1,12 @@
 ---
 layout : post
 title : Text in Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to add shapes, text and draw over an Image in ImageEditor for Xamarin.iOS
+description : Learn how to add shapes, text and draw a path over an Image in syncfusion ImageEditor for Xamarin.iOS
 platform : xamarin-iOS.ios
 control : ImageEditoriOSentation : ug
 ---
 
-## Shapes
+# Shapes and its customization
 
 You can annotate any shapes over an image using the `AddShape` method. The following shapes are available in image editor:
 
@@ -55,7 +55,7 @@ N> The `FillColor` property is applicable only if the ShapeType is `Rectangle` o
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/shapes.gif)
+![SfImageEditor](ImageEditor_images/Shapes.jpg)
 
  * You can annotate any path on an image by using free hand drawing as shown in the below code,
 
@@ -69,7 +69,7 @@ N> The `FillColor` property is applicable only if the ShapeType is `Rectangle` o
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/path.gif)
+![SfImageEditor](ImageEditor_images/Path.jpg)
 
 ## Deleting a shape or text from view
 

@@ -1,13 +1,13 @@
 ---
 layout : post
 title : Cropping Image in Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to crop an image in ImageEditor for Xamarin.iOS
+description : Learn how to crop the image with various aspect ratios from toolbar and programmatically in syncfusion image editor control for Xamarin.iOS
 platform : xamarin.ios
 control : ImageEditor
 documentation : ug
 ---
 
-## Crop
+# Cropping image in various aspect ratios
 
 You can crop the desired portion of an image using the cropping tool.
 
