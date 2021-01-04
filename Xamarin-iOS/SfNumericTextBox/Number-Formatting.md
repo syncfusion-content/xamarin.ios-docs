@@ -102,4 +102,28 @@ numericTextBox.PercentDisplayMode = SFNumerictextBoxPercentDisplayMode.Compute;
 
 ![Display the SfNumericTextBox with PercentDisplayMode](images/PercentDisplayMode.png)
 
+## Group separator modes
+
+[`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfNumericTextBox.iOS.SfNumericTextBox_1.html#Syncfusion_SfNumericTextBox_iOS_SfNumericTextBox_GroupSeparatorMode) provides 2 states to display the group separator. 
+When the mode is set as `Always`, it will display separator while typing itself on the other hand when the mode is set as `LostFocus` it will enable the separator when the control lost its focus.
+
+N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfNumericTextBox.iOS.SfNumericTextBox_1.html#Syncfusion_SfNumericTextBox_iOS_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the [`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfNumericTextBox.iOS.SfNumericTextBox_1.html#Syncfusion_SfNumericTextBox_iOS_SfNumericTextBox_GroupSeparatorMode).
+
+{% tabs %}
+
+{% highlight c# %}
+
+      SfNumericTextBox numericTextBox = new SfNumericTextBox();
+            numericTextBox.Frame = this.View.Frame;
+            numericTextBox.Value = 123456;
+            numericTextBox.FormatString = "n";
+            numericTextBox.GroupSeparatorMode = GroupSeparatorMode.Always;
+            numericTextBox.EnableGroupSeparator = true;
+            this.Add(numericTextBox);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Display the value with enable group separator](images/SeparatorMode.png)
 
