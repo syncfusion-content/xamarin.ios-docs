@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Custom view of Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to add custom view in ImageEditor for Xamarin.iOS
-platform : xamarin.ios
-control : ImageEditor
-documentation : ug
+layout: post
+title: Custom view of Syncfusion SfImageEditor control in Xamarin.iOS
+description: Learn how to add and customize the custom view with its settings in syncfusion ImageEditor for Xamarin.iOS
+platform: xamarin.ios
+control: ImageEditor
+documentation: ug
 ---
 
-## CustomView
+# CustomView and its customization
 
 You can add any custom shapes or views to an image using the `AddCustomView` method in the image editor control. To add a custom view, specify the view and its desired `CustomViewSettings` as shown in the following code snippet.
 
@@ -29,6 +29,9 @@ The CustomViewSettings is defined to set the values for `CanMaintainAspectRatio`
 * Bounds property is used to set the bounds of the custom view. Using this property, you can position the custom view wherever you want on the image. In percentage, the value should fall between 0 and 100.
 
 * Angle property is used to set the angle of the custom view. Using this property, you can rotate the custom view at desired angle.
+
+* [`EnableDrag`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.CustomViewSettings.html#Syncfusion_SfImageEditor_iOS_CustomViewSettings_EnableDrag) - Controls the dragging of selected view over the image.
+
 
 {% highlight C# %}
 
