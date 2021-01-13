@@ -48,7 +48,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.o
 
 ![SfChart in nuget.org](Getting-Started_images/NuGetReference.png)
 
-To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation). Also, you have to add the following assembly reference to the Xamarin.iOS unified project mentioned in the table below.
+To know more about obtaining our components, refer to this [link](https://help.syncfusion.com/xamarin-ios/introduction/download-and-installation). Also, you have to add the following assembly reference to the Xamarin.iOS project mentioned in the table below.
 
 <table>
 <tr>
