@@ -238,7 +238,7 @@ Below code illustrates adding a new menu item to the text selection context menu
 
 ### How to handle the click event of the menu item?
 
-The [TextSelectionMenuItemClicked](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.TextSelectionMenu.html#Syncfusion_SfPdfViewer_iOS_TextSelectionMenu_TextSelectionMenuItemClicked) event is raised when any menu item is clicked. While perforiming the intended operation when a menu item is clicked, the selected text can be obtained as described in the [above](https://help.syncfusion.com/xamarin-ios/sfpdfviewer/select-and-copy-text#how-to-acquire-selected-text) section. 
+The [TextSelectionMenuItemClicked](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.TextSelectionMenu.html#Syncfusion_SfPdfViewer_iOS_TextSelectionMenu_TextSelectionMenuItemClicked) event is raised when any menu item is clicked. While performing the intended operation when a menu item is clicked, the selected text can be obtained as described in the [above](https://help.syncfusion.com/xamarin-ios/sfpdfviewer/select-and-copy-text#how-to-acquire-selected-text) section. 
 
 {% tabs %}
 {% highlight c# %}
