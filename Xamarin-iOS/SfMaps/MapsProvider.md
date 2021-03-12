@@ -147,6 +147,8 @@ this.View.AddSubview(maps);
 
 The [`GeoCoordinates`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_GeoCoordinates) property allows you view the desired area at the center on loading. By default, the [`GeoCoordinates`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_GeoCoordinates) value is (0,0). So, the latitude value "0" and longitude value "0" are shown at the center.
 
+On changing the `GeoCoordinates` point dynamically, map will provide transition animation from the previous geo coordinates to the new geo coordinates value.
+
 {% tabs %}
 
 {% highlight c# %}
