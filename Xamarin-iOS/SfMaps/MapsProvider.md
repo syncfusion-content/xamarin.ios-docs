@@ -164,7 +164,7 @@ this.View.AddSubview(maps);
 
 {% endtabs %}
 
-![](Images/Coordinate.png)
+![](Images/MapsAnimation.png)
 
 {% tabs %}
 
