@@ -453,6 +453,8 @@ vertical.AxisLabelStyle.BackgroundColor = UIColor.Red;
 
 vertical.AxisLabelStyle.Color = UIColor.White;
 
+vertical.AxisLabelStyle.CornerRadius = new ChartCornerRadius(5);
+
 chart.Annotations.Add(vertical);
 
 HorizontalLineAnnotation horizontal = new HorizontalLineAnnotation()
@@ -474,11 +476,13 @@ horizontal.AxisLabelStyle.BackgroundColor = UIColor.Red;
 
 horizontal.AxisLabelStyle.Color = UIColor.White;
 
+horizontal.AxisLabelStyle.LabelAlignment = ChartAxisLabelAlignment.Start;
+
 chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![Customizing axis label in Xamarin.iOS Chart](Chart_Annotation_images/img13.png)
+![Customizing axis label in Xamarin.iOS Chart](Chart_Annotation_images/ChartAxisLabelStyleImage.png)
 
 **Adding arrow to vertical and horizontal line annotations**
 
