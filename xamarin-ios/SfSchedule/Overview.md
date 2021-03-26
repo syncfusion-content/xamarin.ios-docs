@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Schedule iOS
-description: Overview of Xamarin.iOS platform SfSchedule Control
+description: Overview of Xamarin.iOS platform SfSchedule Control and explain about Key features of Xamarin.iOS platform SfSchedule Control.
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---
 
-# Overview
+# Overview of Syncfusion Essential Schedule iOS platform
 
 Essential Schedule for Xamarin.iOS provides all the common scheduling functionalities to create and manage appointments as well as exposes a gesture friendly UI to perform all common operations likes selection, navigation, etc. **Essential** **Schedule** is a perfect solution for developers looking to add advanced, feature rich **Schedule** to their applications.
 

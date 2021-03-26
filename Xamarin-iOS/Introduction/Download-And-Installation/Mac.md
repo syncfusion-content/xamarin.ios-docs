@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Download and Installation in Mac | Xamarin.iOS | Syncfusion
-description: Download and Installation for xamarin.ios in Mac
+description: Download and Installation for xamarin.ios platform in Mac and explain how to install the installer of Syncfusion Xamarin components in Mac.
 platform: xamarin.ios
 control: Download and Installation 
 documentation: ug
 ---
 
-# Mac
+# Download and Installation in Mac Xamarin.iOS platform
 
 ## Download directly from website
 

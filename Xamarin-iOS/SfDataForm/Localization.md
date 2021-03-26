@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: ug
 ---
 
-# Localization 
+# Localization in Syncfusion SfDataForm for Xamarin.iOS platform
 
 You can localize the DataFormItem [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute values and validation ( [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-5.0), [StringLength](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=net-5.0) ) attributes values by using `ResourceType` display
 attribute or using the `AutoGeneratingDataFormItem` event.
