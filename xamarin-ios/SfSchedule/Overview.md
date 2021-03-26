@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Schedule iOS
-description: Overview of Schedule
+description: Overview of Xamarin.iOS platform SfSchedule Control
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
