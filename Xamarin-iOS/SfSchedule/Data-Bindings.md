@@ -77,6 +77,7 @@ View.AddSubview(schedule);
 
 N> 
 * The Scheduler supports the functionality that arranges the appointments based on their start time and duration for the normal appointments in a day, week and work week views.
+* In an all day panel of the day, week and work week views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned,` `IsAllDay,` appointments respectively.
 * In Timeline views, all the appointments (span, all day and normal) are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned,` `IsAllDay,` and normal appointments respectively.
 
 ## Mapping
@@ -240,7 +241,7 @@ schedule.Appointments = appCollection;
 ![spanning or multiday appointments in schedule Xamarin iOS](data_binding_images/span.png)
 
 N> 
-* In an all day panel of the day, week and work week views, the Span appointments are ordered and rendered based on the start date-time, followed by the time duration of the appointment and `IsSpanned `appointments respectively.
+* In an all day panel of the day, week and work week views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned`, `IsAllDay`, appointments respectively
 
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
@@ -262,7 +263,7 @@ appCollection.Add(new ScheduleAppointment()
 
 >**NOTE**
 * Appointment that lasts for an entire day (exact 24 hours) will be considered as an all-day appointment without setting the `IsAllDay` property. For example: From 06/29/2020 12:00AM to 06/30/2020 12:00AM.
-* In an all-day panel of the day, week and work week views, the AllDay appointments are ordered and rendered based on the start date-time of the appointment, followed by the time duration and `IsAllDay` of the appointments respectively.
+* In an all day panel of the day, week and work week views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned`, `IsAllDay`, appointments respectively.
 
 ### All-Day Appointment Panel
 All-day appointment and Spanned appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting `ShowAllDay` property of `DayViewSettings`, `WeekViewSettings` and `WorkWeekViewSettings` of `DayView`, `WeekView` and `WorkWeekView` respectively.
