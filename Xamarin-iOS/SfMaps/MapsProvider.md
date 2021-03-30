@@ -164,8 +164,6 @@ this.View.AddSubview(maps);
 
 {% endtabs %}
 
-![GeoCoordinates with animation](Images/MapsAnimation.png)
-
 {% tabs %}
 
 {% highlight c# %}
@@ -181,7 +179,7 @@ this.View.AddSubview(maps);
 
 {% endtabs %}
 
-![GeoCoordinates](Images/Center.png)
+![GeoCoordinates with animation](Images/MapsAnimation.gif)
 
 ## Markers
 
