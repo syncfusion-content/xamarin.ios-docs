@@ -417,12 +417,17 @@ chart.Annotations.Add(horizontal);
 
 The default appearance of the axis label also can be customized by using the [`AxisLabelStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.VerticalLineAnnotation.html#Syncfusion_SfChart_iOS_VerticalLineAnnotation_AxisLabelStyle) property. The following properties are used to customize the axis label:
 
-* [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Color) – Used to change the color of the text.
-* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BackgroundColor) – Used to change the background color of the text.
-* [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BorderColor) – Used to change the border color.
-* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BorderWidth) – Used to change the width of the border.
-* [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Font) – Used to change text font size, family, and weight.
+* [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Color) - Used to change the color of the text.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BackgroundColor) - Used to change the background color of the text.
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BorderColor) - Used to change the border color.
+* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BorderWidth) - Used to change the border width.
+* [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Font) - Used to change text font size, family, and weight.
 * [`Margin`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Margin) - Used to set the margin for text.
+* [`LabelsPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_LabelsPosition) - Used to position the text at [`Inside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html#Syncfusion_SfChart_iOS_SFChartAxisElementPosition_Inside) or [`Outside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html#Syncfusion_SfChart_iOS_SFChartAxisElementPosition_Outside) of the chart axis. By default, the text will be positioned outside the chart axis.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_LabelAlignment) - Used to align the label at the start, center, or end.
+* [`CornerRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_CornerRadius) - Used to change the corner radius of the background.
+* [`MaxWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_MaxWidth) - Provides the maximum text width of the axis label and wraps into the next line when exceeds the maximum width.
+* [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_WrappedLabelAlignment) - Positions the wrapped text at the start, center, or end. The default value of the [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_WrappedLabelAlignment) property is set to `Start.`
 
 {% highlight c# %}
 
@@ -448,6 +453,8 @@ vertical.AxisLabelStyle.BackgroundColor = UIColor.Red;
 
 vertical.AxisLabelStyle.Color = UIColor.White;
 
+vertical.AxisLabelStyle.CornerRadius = new ChartCornerRadius(5);
+
 chart.Annotations.Add(vertical);
 
 HorizontalLineAnnotation horizontal = new HorizontalLineAnnotation()
@@ -469,11 +476,13 @@ horizontal.AxisLabelStyle.BackgroundColor = UIColor.Red;
 
 horizontal.AxisLabelStyle.Color = UIColor.White;
 
+horizontal.AxisLabelStyle.LabelAlignment = ChartAxisLabelAlignment.Start;
+
 chart.Annotations.Add(horizontal);
 
 {% endhighlight %}
 
-![Customizing axis label in Xamarin.iOS Chart](Chart_Annotation_images/img13.png)
+![Customizing axis label in Xamarin.iOS Chart](Chart_Annotation_images/ChartAxisLabelStyleImage.png)
 
 **Adding arrow to vertical and horizontal line annotations**
 
