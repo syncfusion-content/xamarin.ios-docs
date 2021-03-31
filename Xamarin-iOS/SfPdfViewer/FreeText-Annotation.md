@@ -422,7 +422,7 @@ The interaction with the free text annotation types will be allowed only if the 
 pdfViewerControl.AnnotationSettings.FreeText.IsLocked = false;
 
 {% endhighlight %}
-{% endtabs 
+{% endtabs %}
 
 ##How to get and set the name of the annotations?
 
