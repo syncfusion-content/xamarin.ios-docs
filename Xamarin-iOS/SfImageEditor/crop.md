@@ -24,7 +24,7 @@ N> You can enable the cropping in the zoomed area and crop the specific position
 
 ### Handling the cropping tool
 
-The `ToggleCropping` method in the image editor control allows users to enable or disable the cropping region placed over the image to visually choose the area for cropping.
+The [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_ToggleCropping) method in the image editor control allows users to enable or disable the cropping region placed over the image to visually choose the area for cropping.
 
 * The following code shows cropping the image to any desired size.
 
@@ -56,7 +56,7 @@ editor.ToggleCropping(9,17);
 
 {% endhighlight %} 
 
-* To position the cropping window with custom location, pass the desired rectangle in ToggleCropping method. Each value in the rectangle should be in offset value(0 to 100).
+* To position the cropping window with custom location, pass the desired rectangle in [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_ToggleCropping) method. Each value in the rectangle should be in offset value(0 to 100).
 
 {% highlight C# %}
 
@@ -66,7 +66,7 @@ editor.ToggleCropping(rect);
 
 {% endhighlight %} 
 
-After the cropping area has been selected, the `Crop` method is called, which in turn crops the selected region and displays the cropped image on the image editor.
+After the cropping area has been selected, the [`Crop`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_Crop_System_Drawing_Rectangle_System_Boolean_) method is called, which in turn crops the selected region and displays the cropped image on the image editor.
 
 {% highlight C# %}
 
@@ -118,7 +118,7 @@ The following image show cases the circularly cropped image.
 
 ### Entering the cropping area manually
 
-To manually enter the cropping area without enabling the cropping functionality, use the overloaded Crop(Rectangle rect) method. It can be done by defining a rectangle and passing it to the Crop(rect) method.
+To manually enter the cropping area without enabling the cropping functionality, use the overloaded [`Crop(Rectangle rect)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_Crop_System_Drawing_Rectangle_System_Boolean_) method. It can be done by defining a rectangle and passing it to the [`Crop(rect)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_Crop_System_Drawing_Rectangle_System_Boolean_) method.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ The following code sample will add the cropping preview on the image in square s
 
 ## Tilt the image
 
-You can tilt the image from -45 to +45 degree by using the `Tilt()` method. When calling the tilt method, the image will be in preview state. You can zoom and pan the image in preview state. To apply this effect to the image, you can call the `Crop()` method programmatically or can crop from footer toolbar cropping options.
+You can tilt the image from -45 to +45 degree by using the [`Tilt()`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_Tilt_System_Double_) method. When calling the tilt method, the image will be in preview state. You can zoom and pan the image in preview state. To apply this effect to the image, you can call the [`Crop()`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_Crop_System_Drawing_Rectangle_System_Boolean_) method programmatically or can crop from footer toolbar cropping options.
 
 N> Any action performed when the image is in Tilt preview state will reset the tilt effect of that image.
 
