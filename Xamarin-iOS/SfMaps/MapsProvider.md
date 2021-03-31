@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Maps provider of Syncfusion Maps control for Xamarin iOS
-description: Describes the maps provider support in SfMaps control
+description: Describes the maps provider such as OSM (open street map) and Bing maps with its customization in syncfusion Maps control.
 platform: Xamarin.iOS
 control: SfMaps 
 documentation: ug
 ---
 
-# Map Providers
+# Map Providers such as OSM and Bing map
 
 The maps control supports map providers such as OpenStreetMap and Bing Maps that can be added to an imagery layer in maps.
 
@@ -32,7 +32,7 @@ this.View.AddSubview(maps);
 
 {% endtabs %}
 
-![](Images/OSM.png)
+![OSM Map](Images/OSM.png)
 
 N> Both the [`SFShapeFileLayer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.SFShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
 
@@ -55,7 +55,7 @@ this.View.AddSubview(maps);
 
 {% endtabs %}
 
-![](Images/Road.png)
+![Bing Map](Images/Road.png)
 
 N> The [`LayerType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_LayerType) property of [`ImageryLayer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html) provides support to `OSM` and `Bing Maps`. The default value of the [`LayerType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_LayerType) property is OSM.
 
@@ -93,7 +93,7 @@ this.View.AddSubview(maps);
 
 {% endtabs %}
 
-![](Images/aerial.png)
+![Aerial](Images/aerial.png)
 
 ## AerialWithLabel
 
@@ -115,7 +115,7 @@ this.View.AddSubview(maps);
 
 {% endtabs %}
 
-![](Images/aerialWithLabel.png)
+![Aerial with label](Images/aerialWithLabel.png)
 
 ## Zooming and panning
 
@@ -123,7 +123,7 @@ The maps control provides interactive zooming and panning supports to OSM and Bi
 
 Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
-![](Images/zooming.gif)
+![Zooming](Images/zooming.jpg)
 
 ## ResetOnDoubleTap
 
@@ -147,6 +147,8 @@ this.View.AddSubview(maps);
 
 The [`GeoCoordinates`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_GeoCoordinates) property allows you view the desired area at the center on loading. By default, the [`GeoCoordinates`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_GeoCoordinates) value is (0,0). So, the latitude value "0" and longitude value "0" are shown at the center.
 
+On changing the [`GeoCoordinates`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfMaps.iOS.ImageryLayer.html#Syncfusion_SfMaps_iOS_ImageryLayer_GeoCoordinates) point dynamically, map will provide transition animation from the previous geo coordinates to the new geo coordinates value.
+
 {% tabs %}
 
 {% highlight c# %}
@@ -161,8 +163,6 @@ this.View.AddSubview(maps);
 {% endhighlight %}
 
 {% endtabs %}
-
-![](Images/Coordinate.png)
 
 {% tabs %}
 
@@ -179,7 +179,7 @@ this.View.AddSubview(maps);
 
 {% endtabs %}
 
-![](Images/Center.png)
+![GeoCoordinates with animation](Images/MapsAnimation.gif)
 
 ## Markers
 
@@ -236,7 +236,7 @@ this.View.AddSubview(maps);
 
 {% endtabs %}
 
-![](Images/Marker.png)
+![Marker](Images/Marker.png)
 
 ## Cache tiles in application memory
 
