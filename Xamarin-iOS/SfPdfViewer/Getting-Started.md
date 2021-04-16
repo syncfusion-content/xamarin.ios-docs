@@ -268,7 +268,7 @@ PageCount property of the PDF viewer can be used to acquire the total number of 
 
 N>When the current page is the first page, GoToPreviousPage method will not have any effect. Similarly, when in last page, GoToNextPage method will not have any effect.
 
-##Rendering the appearance content of annotations
+## Rendering the appearance content of annotations
 
 By  default,  the  PDF  viewer  does  not  render  the  appearance  content  of annotations. But the appearance can be rendered by flattening the annotations before loading the PDF. This can be achieved by setting the [Flatten](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.AnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_AnnotationSettings_Flatten) API to true. The default value of the API is set to false.
 
