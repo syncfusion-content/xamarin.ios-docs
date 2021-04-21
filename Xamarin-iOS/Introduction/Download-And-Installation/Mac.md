@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Download and Installation in Mac | Xamarin.iOS | Syncfusion
-description: Download and Installation in Mac
+description: This section provides information on how to download and install Syncfusion Xamarin.iOS Controls on Mac.
 platform: xamarin.ios
 control: Download and Installation 
 documentation: ug
 ---
 
-# Mac
+# Download and Installation in Mac
 
 ## Download directly from website
 
