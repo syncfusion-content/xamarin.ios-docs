@@ -7,7 +7,7 @@ control: Download and Installation
 documentation: ug
 ---
 
-# Download and Installation in Mac
+# Download and Installation of Xamarin.iOS controls in Mac
 
 ## Download directly from website
 

@@ -7,7 +7,7 @@ control: Download and Installation
 documentation: ug
 ---
 
-# Installing Xamarin.iOS Controls in Windows
+# Download and Installation of Xamarin.iOS controls in Windows
 
 ## Download directly from website
 
