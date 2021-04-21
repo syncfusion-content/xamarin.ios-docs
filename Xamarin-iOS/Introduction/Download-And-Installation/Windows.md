@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Download and Installation in Windows | Xamarin.iOS | Syncfusion
-description: Download and Installation in Windows
+description: This section provides information on how to download and install Syncfusion Xamarin.iOS Controls on Windows.
 platform: xamarin.ios
 control: Download and Installation
 documentation: ug
 ---
 
-# Windows
+# Download and Installation of Xamarin.iOS controls in Windows
 
 ## Download directly from website
 
-You can download the complete Xamarin.iOS component from [here](https://www.syncfusion.com/downloads/latest-version). You may be asked to choose the windows installer or zip file to download.
+You can download the complete Xamarin.iOS component from [here](https://www.syncfusion.com/downloads/xamarin). You may be asked to choose the windows installer or zip file to download.
 
 **Windows Installer (exe)**
 
