@@ -11,7 +11,7 @@ documentation: ug
 
 ## Download directly from website
 
-You can download the complete Xamarin.iOS component from [here](https://www.syncfusion.com/downloads/latest-version).
+You can download the complete Xamarin.iOS component from [here](https://www.syncfusion.com/downloads/xamarin).
 
 **MAC Installer (pkg)**
 
