@@ -268,6 +268,24 @@ PageCount property of the PDF viewer can be used to acquire the total number of 
 
 N>When the current page is the first page, GoToPreviousPage method will not have any effect. Similarly, when in last page, GoToNextPage method will not have any effect.
 
+## Rendering the appearance content of annotations
+
+By  default,  the  PDF  viewer  does  not  render  the  appearance  content  of annotations. But the appearance can be rendered by flattening the annotations before loading the PDF. This can be achieved by setting the [Flatten](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.AnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_AnnotationSettings_Flatten) API to true. The default value of the API is set to false.
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets a value whether the annotations should be flattened when the PDF is loaded or not.
+pdfViewerControl.AnnotationSettings.Flatten = true;
+
+//Loads the PDF. 
+pdfViewerControl.LoadDocument(stream);
+
+{% endhighlight %}
+{% endtabs %}
+
+N>Annotations are only flattened when the page is rendered in the viewer only  for  viewing  the  appearance  of  annotations.  Once,  the  annotations  have flattened  the  interactions  such  as  select,  edit,  resize,  and  remove  cannot  be performed.  Setting  the  [Flatten](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.AnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_AnnotationSettings_Flatten)  API  to  true  does  not  affect  the  save  and annotation export operations and the annotations will not be flattened in these operations.
+
 ## Designing a toolbar
 
 This section depicts how to design a toolbar for the PDF viewer and include functionalities such as page navigation options. This simple toolbar consists of options such as current page number, total page count in the PDF document, go to previous page and go to next page.
