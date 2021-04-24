@@ -701,3 +701,23 @@ private void PdfViewer_ShapeAnnotationSelected(object sender, ShapeAnnotationSel
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to get and set the name of the annotations?
+
+The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.IAnnotation.html#Syncfusion_SfPdfViewer_iOS_IAnnotation_Name) API. 
+
+The following code sample explains modifying the name of the annotation in the [ShapeAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_ShapeAnnotationAdded) event.
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_ShapeAnnotationAdded(object sender, ShapeAnnotationAddedEventArgs args)
+{
+//Sets the name for the annotation.
+(sender as ShapeAnnotation).Name = "Shape1";           
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [ShapeAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_ShapeAnnotationAdded) event. But this can be done in all other events as well. 
