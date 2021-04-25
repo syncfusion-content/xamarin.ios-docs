@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Localization of ImageEditor
-description : How to Localize the contents of SfImageEditor control.
+title : Localization of Syncfusion SfImageEditor control
+description : This section describes how to Localize the contents of SfImageEditor control for Xamarin.iOS platform
 platform : xamarin.ios
 control : ImageEditor
 documentation : ug
@@ -24,3 +24,5 @@ In below screenshot we have localized the text to French language.
 ![SfImageEditor](ImageEditor_images/ioslocalizable.png)
 
 ![SfImageEditor](ImageEditor_images/localization.png)
+
+You can download localization sample here.
