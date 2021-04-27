@@ -174,3 +174,24 @@ private void PdfViewerControl_StampAnnotationSelected(object sender, StampAnnota
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to get and set the name of the annotations?
+
+The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.IAnnotation.html#Syncfusion_SfPdfViewer_iOS_IAnnotation_Name) API.
+
+The following code sample explains modifying the name of the annotation in the [StampAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_StampAnnotationAdded) event. 
+
+{% tabs %}
+{% highlight c# %}
+
+ private void PdfViewerControl_StampAnnotationAdded(object sender, StampAnnotationAddedEventArgs e)
+{
+(sender as StampAnnotation).Name = "StampAnnotation1";
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [StampAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_StampAnnotationAdded) event. But this can be done in all other events as well.
+
+
