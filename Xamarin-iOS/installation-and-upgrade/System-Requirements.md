@@ -9,6 +9,7 @@ documentation: ug
 
 # System Requirements for Xamarin.iOS
 
+The system requirements for using our Syncfusion Xamarin platform are as follows
 
 ### Hardware Environment
 
@@ -17,7 +18,8 @@ documentation: ug
 * Hard disk: up to 1.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing the setup in other drive.
 
 ### Development Environment
-Please find the recommended development environment for Xamarin platform in the following link. 
+
+See the link below for the recommended Xamarin development environments
 
 [https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
