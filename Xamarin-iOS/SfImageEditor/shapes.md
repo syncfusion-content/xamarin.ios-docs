@@ -15,6 +15,11 @@ You can annotate any shapes over an image using the [`AddShape`](https://help.sy
 * Rectangle
 * Arrow
 * Path
+* Line
+* Dotted
+* DoubleArrow
+* DottedArrow
+* DottedDoubleArrow
 
 ### Selecting a shape type
 
