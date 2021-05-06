@@ -25,4 +25,4 @@ In below screenshot we have localized the text to French language.
 
 ![SfImageEditor](ImageEditor_images/localization.png)
 
-You can download localization sample [here](https://github.com/SyncfusionExamples/Image-Editor-localization-sample-for-native-platforms/tree/main/Localization_iOS).
+Please find a localization sample [here](https://github.com/SyncfusionExamples/Image-Editor-localization-sample-for-native-platforms/tree/main/Localization_iOS).
