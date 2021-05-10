@@ -7,9 +7,9 @@ control: SfDataForm
 documentation: ug
 ---
 
-# Localization 
+# Localization in SfDataForm for Xamarin.iOS
 
-You can localize the DataFormItem [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute values and validation ( [Required](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.RequiredAttribute), [StringLength](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.StringLengthAttribute) ) attributes values by using `ResourceType` display
+You can localize the DataFormItem [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute values and validation ( [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=net-5.0), [StringLength](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=net-5.0) ) attributes values by using `ResourceType` display
 attribute or using the `AutoGeneratingDataFormItem` event.
  
 Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
@@ -22,7 +22,7 @@ Here, the display attributes or data form item display values get localized base
 
 ### Using attribute
 
-`ResourceType` [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of `Name`, `ShortName`, `GroupName` and `Prompt` values.
+`ResourceType` [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=net-5.0) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of `Name`, `ShortName`, `GroupName` and `Prompt` values.
 
 {% tabs %}
 {% highlight c# %}
