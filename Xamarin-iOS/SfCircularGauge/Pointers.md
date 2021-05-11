@@ -503,3 +503,48 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 {% endhighlight %}
 
 ![](pointers_images/marker-pointer/pointer-interaction.gif)
+
+### Step frequency
+
+`StepFrequency` property will be considered as an interval and based on this value needle and marker pointer will gets updated to the next value while dragging.
+For example when the value of step frequency is of 20 then while dragging, pointer will not move continuosly instaed it will update in terms of 20.
+
+{% highlight c# %}
+
+ SFCircularGauge circularGauge = new SFCircularGauge();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.RimColor = UIColor.FromRGB(0, 191, 255);
+            scale.RimWidth = 20;
+            scale.RadiusFactor = 1;
+            scale.ShowTicks = false;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.LabelOffset = 0.75f;
+            scale.LabelColor = UIColor.FromRGB(66, 66, 66);
+            scale.LabelFont = UIFont.FromName("Helvetica", 15f);
+
+            SFMarkerPointer pointer1 = new SFMarkerPointer();
+            pointer1.MarkerShape = MarkerShape.Triangle;
+            pointer1.Color = UIColor.FromRGB(72, 61, 139);
+            pointer1.MarkerHeight = 18;
+            pointer1.MarkerWidth = 18;
+            pointer1.Value = 30;
+            pointer1.EnableAnimation = false;
+            pointer1.EnableDragging = true;
+            pointer1.StepFrequency = 20;
+            scale.Pointers.Add(pointer1);
+
+            SFNeedlePointer needlePointer = new SFNeedlePointer();
+            needlePointer.Color = UIColor.FromRGB(72, 61, 139);
+            needlePointer.Value = 40;
+            needlePointer.EnableAnimation = false;
+            needlePointer.EnableDragging = true;
+            needlePointer.StepFrequency = 5;
+            scale.Pointers.Add(needlePointer);
+
+            circularGauge.Scales.Add(scale);
+            this.View.AddSubview(circularGauge);
+
+{% endhighlight %}
