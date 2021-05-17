@@ -2,14 +2,14 @@
 
 layout: post
 title: Getting Started | SfCircularGauge | iOS | Syncfusion
-description: Pointers   
+description: This section describes in detail about pointers and its customization in Syncfusion SfCircularGauge control.   
 platform: xamarin.iOS
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Pointers
+# Pointers and its customization
 
 You can add multiple pointers to the gauge to point multiple values on the same scale. It is used to show low and high values at the same time. The value of the pointer is set by using the [`Value`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularPointer.html#Syncfusion_SfGauge_iOS_SFCircularPointer_Value) property.
 
@@ -33,7 +33,7 @@ You can add multiple pointers to the gauge to point multiple values on the same 
 
 {% endhighlight %}
 
-![](pointers_images/needle-pointer/default.png)
+![Needle pointer](pointers_images/needle-pointer/default.png)
 
 ### Setting needle pointer type
 
@@ -61,7 +61,7 @@ The appearance of the needle pointer can be customized by using the [`PointerTyp
 
 {% endhighlight %}
 
-![](pointers_images/needle-pointer/bar-pointer.png)
+![Needle pointer type](pointers_images/needle-pointer/bar-pointer.png)
 
 ### Setting needle pointer type
 
@@ -82,7 +82,7 @@ The appearance of the needle pointer can be customized by using the [`PointerTyp
 
 {% endhighlight %}
 
-![](pointers_images/needle-pointer/needle-pointer.png)
+![Needle pointer type](pointers_images/needle-pointer/needle-pointer.png)
 
 ### Needle pointer customization
 
@@ -107,7 +107,7 @@ The length of the needle is controlled by using the [`LengthFactor`](https://hel
 
 {% endhighlight %}
 
-![](pointers_images/needle-pointer/needle-customization.png)
+![Pointer customization](pointers_images/needle-pointer/needle-customization.png)
 
 ### Knob customization
 
@@ -133,7 +133,7 @@ Knob of the needle pointer can be customized by using the [`KnobColor`](https://
 
 {% endhighlight %}
 
-![](pointers_images/needle-pointer/knob-customization.png)
+![Knob customization](pointers_images/needle-pointer/knob-customization.png)
 
 ### Setting tail for needle pointer
 
@@ -160,7 +160,7 @@ Tail of the needle pointer can be customized by using the [`TailColor`](https://
 
 {% endhighlight %}
 
-![](pointers_images/needle-pointer/tail.png)
+![Tail for needle pointer](pointers_images/needle-pointer/tail.png)
 
 ## Range pointer
 
@@ -183,7 +183,7 @@ A range pointer is an accenting line or shaded background range that can be plac
 
 {% endhighlight %}
 
-![](pointers_images/range-pointer/range-pointer.png)
+![Range pointer](pointers_images/range-pointer/range-pointer.png)
 
 ### Range pointer customization
 
@@ -208,7 +208,7 @@ The range pointer’s UI is customized by using the [`Color`](https://help.syncf
 
 {% endhighlight %}
 
-![](pointers_images/range-pointer/rangepointer-customization.png)
+![Range pointer customization](pointers_images/range-pointer/rangepointer-customization.png)
 
 ### Setting position for range pointer
 
@@ -237,7 +237,7 @@ The [`SFRangePointer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfG
 
 {% endhighlight %}
 
-![](pointers_images/range-pointer/rangepointer-offset.png)
+![Offset for range pointer](pointers_images/range-pointer/rangepointer-offset.png)
 
 #### Setting start and end offset for range pointer
 
@@ -260,7 +260,7 @@ The [`SFRangePointer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfG
 
 {% endhighlight %}
 
-![](pointers_images/range-pointer/rangepointer-start-end-offset.png)
+![Start and end offset for range pointer](pointers_images/range-pointer/rangepointer-start-end-offset.png)
 
 ### Setting range cap for range pointer
 
@@ -291,7 +291,7 @@ The [`RangeCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.i
 
 {% endhighlight %}
 
-![](pointers_images/range-pointer/range-cap.png)
+![Range cap for range pointer](pointers_images/range-pointer/range-cap.png)
 
 ## Marker pointer
 
@@ -323,7 +323,7 @@ The image is used to denote the pointer value instead of rendering the marker sh
 
 {% endhighlight %}
 
-![](pointers_images/marker-pointer/marker-pointer.png)
+![Marker pointer](pointers_images/marker-pointer/marker-pointer.png)
 
 ### Setting image marker shape
 
@@ -345,7 +345,7 @@ The image is used to denote the pointer value instead of rendering the marker sh
 
 {% endhighlight %}
 
-![](pointers_images/marker-pointer/image.png)
+![Image marker shape](pointers_images/marker-pointer/image.png)
 
 ### Marker pointer customization
 
@@ -371,7 +371,7 @@ The marker can be customized in terms of color, width, and height by using the [
 
 {% endhighlight %}
 
-![](pointers_images/marker-pointer/markerpointer-customization.png)
+![Marker pointer customization](pointers_images/marker-pointer/markerpointer-customization.png)
 
 ### Setting multiple pointers
 
@@ -412,7 +412,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 
 {% endhighlight %}
 
-![](pointers_images/marker-pointer/multiple-pointers.png)
+![Multiple pointers](pointers_images/marker-pointer/multiple-pointers.png)
 
 ### Setting animation for pointer
 
@@ -465,7 +465,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.Sf
 
 {% endhighlight %}
 
-![](pointers_images/marker-pointer/animation.gif)
+![Animation for pointer](pointers_images/marker-pointer/animation.gif)
 
 ### Setting pointer drag
 
@@ -502,4 +502,52 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 
 {% endhighlight %}
 
-![](pointers_images/marker-pointer/pointer-interaction.gif)
+![Pointer drag](pointers_images/marker-pointer/pointer-interaction.gif)
+
+### Step frequency
+
+The [`StepFrequency`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html#Syncfusion_SfGauge_iOS_SFMarkerPointer_StepFrequency) property is used to specify the interval between snap points while dragging the [`MarkerPointer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html) or [`NeedlePointer`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFNeedlePointer.html).
+
+For example, when the value of [`StepFrequency`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html#Syncfusion_SfGauge_iOS_SFMarkerPointer_StepFrequency) is 20, then while dragging, the pointer will not move continuously, instead it will update in terms of 20.
+
+N> To work with the [`StepFrequency`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFMarkerPointer.html#Syncfusion_SfGauge_iOS_SFMarkerPointer_StepFrequency) value, enable pointer dragging support.
+
+{% highlight c# %}
+
+ SFCircularGauge circularGauge = new SFCircularGauge();
+            ObservableCollection<SFCircularScale> scales = new ObservableCollection<SFCircularScale>();
+            SFCircularScale scale = new SFCircularScale();
+            scale.RimColor = UIColor.FromRGB(0, 191, 255);
+            scale.RimWidth = 20;
+            scale.RadiusFactor = 1;
+            scale.ShowTicks = false;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.LabelOffset = 0.75f;
+            scale.LabelColor = UIColor.FromRGB(66, 66, 66);
+            scale.LabelFont = UIFont.FromName("Helvetica", 15f);
+
+            SFMarkerPointer pointer1 = new SFMarkerPointer();
+            pointer1.MarkerShape = MarkerShape.Triangle;
+            pointer1.Color = UIColor.FromRGB(72, 61, 139);
+            pointer1.MarkerHeight = 18;
+            pointer1.MarkerWidth = 18;
+            pointer1.Value = 30;
+            pointer1.EnableAnimation = false;
+            pointer1.EnableDragging = true;
+            pointer1.StepFrequency = 20;
+            scale.Pointers.Add(pointer1);
+
+            SFNeedlePointer needlePointer = new SFNeedlePointer();
+            needlePointer.Color = UIColor.FromRGB(72, 61, 139);
+            needlePointer.Value = 40;
+            needlePointer.EnableAnimation = false;
+            needlePointer.EnableDragging = true;
+            needlePointer.StepFrequency = 5;
+            scale.Pointers.Add(needlePointer);
+
+            circularGauge.Scales.Add(scale);
+            this.View.AddSubview(circularGauge);
+
+{% endhighlight %}
