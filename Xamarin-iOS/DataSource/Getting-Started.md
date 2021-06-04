@@ -36,7 +36,7 @@ pcl\Syncfusion.DataSource.Portable.dll
 
 ## Creating your first DataSource in Xamarin.iOS
 
-This is how the final output will look like. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.iOS/Samples/DataSourceiOS_GettingStarted.zip).
+This is how the final output will look like. Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/datasource-getting-started-ios).
 
 ![](Getting-Started_images/datasource.png)
 
