@@ -1,18 +1,18 @@
 ---
 layout: post
 title: GettingStarted | DataSource | Xamarin | Syncfusion
-description: How to create a sample in DataSource with sorting and grouping.
+description: Learn here about getting started with Syncfusion DataSource control and working with sorting and grouping.
 platform: xamarin.iOS
 control: DataSource
 documentation: UG
 ---
-# DataSource
+# Getting Started with DataSource
 
 ## Overview
 
 DataSource is a non UI component that consumes raw data and processes data operations such as sorting, filtering and grouping saving developers’ time and efforts in building the functionality themselves. We can apply DataSource to any data bound control which can be further processed using the bound DataSource.
 
-![](Getting-Started_images/Getting-Started_img1.png) 
+![Xamarin.iOS DataSource](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Getting started 
 
@@ -38,7 +38,7 @@ pcl\Syncfusion.DataSource.Portable.dll
 
 This is how the final output will look like. Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/datasource-getting-started-ios).
 
-![](Getting-Started_images/datasource.png)
+![Xamarin.iOS datasource getting started](Getting-Started_images/datasource.png)
 
 * Create new **BlankApp** (Xamarin.iOS) application in **Xamarin Studio** or **Visual Studio**.
 * Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs** file.
