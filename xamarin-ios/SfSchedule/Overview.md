@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Schedule iOS
-description: Overview of Schedule
+description: Learn here all about introduction of Syncfusion Xamarin.iOS Schedule (SfSchedule) control, its features, and more.
 platform: xamarin.iOS
 control: SfSchedule
 documentation: ug
 ---
 
-# Overview
+# Xamarin.iOS Schedule (SfSchedule) Overview
 
 Essential Schedule for Xamarin.iOS provides all the common scheduling functionalities to create and manage appointments as well as exposes a gesture friendly UI to perform all common operations likes selection, navigation, etc. **Essential** **Schedule** is a perfect solution for developers looking to add advanced, feature rich **Schedule** to their applications.
 
