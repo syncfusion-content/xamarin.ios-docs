@@ -2,7 +2,7 @@
 layout: post
 title: Install and Getting Started Syncfusion component in Mac.
 description: The following section will explain about the Overview and Installation process of Xamarin application in Visual Studio for Mac.
-platform: Xamarin
+platform: xamarin.iOS
 control: Syncfusion Controls
 documentation: ug
 ---
