@@ -2,7 +2,7 @@
 layout: post
 title: How to download Syncfusion Essential Studio
 description: This page explains about how to download the Syncfusion Essential Studio installer based on licensed and trial customer
-platform: Xamarin
+platform: xamarin.iOS
 control: Installation and Deployment
 documentation: ug
 
