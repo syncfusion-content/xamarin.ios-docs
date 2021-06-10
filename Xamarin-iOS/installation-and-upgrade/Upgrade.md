@@ -2,7 +2,7 @@
 layout: post
 title: Major Version to Service Pack Version| Xamarin | Syncfusion
 description: this section provides the information about upgrading the Xamarin projects from major version to service pack version
-platform: xamarin
+platform: xamarin.iOS
 control: Essential Studio
 documentation: ug
 ---
