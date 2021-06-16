@@ -148,6 +148,14 @@ The following code sample will add the cropping preview on the image in square s
 
 {% endtabs %}
 
+* For cropping the image in circle or elliptical with specific ratio, specify `ToggleCropping` with ratio argument along with optional parameter as true, which specify the cropping panel should be added as elliptical or rectangle shape. Default value is false.
+
+{% highlight C# %}
+
+editor.ToggleCropping(1, 1, true);    
+
+{% endhighlight %} 
+
 ## Tilt the image
 
 You can tilt the image from -45 to +45 degree by using the [`Tilt()`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_Tilt_System_Double_) method. When calling the tilt method, the image will be in preview state. You can zoom and pan the image in preview state. To apply this effect to the image, you can call the [`Crop()`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_Crop_System_Drawing_Rectangle_System_Boolean_) method programmatically or can crop from footer toolbar cropping options.
