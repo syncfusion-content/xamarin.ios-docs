@@ -520,7 +520,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumHeight = 20;
 {% endhighlight %}
 {% endtabs %}
 
-N> The [`MinimumHeight`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumHeight) property is marked as obsolete.
+N> The [MinimumHeight]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumHeight) property is marked as obsolete.
 
 ### Setting the default minimum width
 
@@ -538,7 +538,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumWidth = 20;
 {% endhighlight %}
 {% endtabs %}
 
-N> The [`MinimumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumWidth) property is marked as obsolete.
+N> The [MinimumWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumWidth) property is marked as obsolete.
 
 ### Setting the default maximum height
 
@@ -556,7 +556,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MaximumHeight = 60;
 {% endhighlight %}
 {% endtabs %}
 
-N> The [`MaximumHeight`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MaximumHeight) property is marked as obsolete.
+N> The [MaximumHeight]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MaximumHeight) property is marked as obsolete.
 
 ### Setting the default maximum width
 
@@ -574,7 +574,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumWidth = 20;
 {% endhighlight %}
 {% endtabs %}
 
-N> The [`MaximumWidth`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MaximumWidth) property is marked as obsolete.
+N> The [MaximumWidth]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MaximumWidth) property is marked as obsolete.
 
 ### Changing the properties of a selected shape annotation
 
@@ -669,7 +669,7 @@ pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = true;
 
 The interaction with shape annotation types will be allowed only if, the [`SfPdfViewer.AnnotationSettings.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.AnnotationSettings~IsLocked.html) API is set to false. The following code does not allow the interactions with shape annotations, although the [`SfPdfViewer.AnnotationSettings.Rectangle.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.RectangleAnnotation~IsLocked.html) property of the shape annotation is set to false.
 
-N> The older API [`SfPdfViewer.AnnotationSettings.Rectangle.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.RectangleAnnotation.html#Syncfusion_SfPdfViewer_iOS_RectangleAnnotation_IsLocked) have been marked as obsolete and this is applicable for other shape annotations as well.
+N> The older API [SfPdfViewer.AnnotationSettings.Rectangle.IsLocked](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.RectangleAnnotation.html#Syncfusion_SfPdfViewer_iOS_RectangleAnnotation_IsLocked) have been marked as obsolete and this is applicable for other shape annotations as well.
 
 {% tabs %}
 {% highlight c# %}
@@ -690,7 +690,7 @@ pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = false;
 {% endhighlight %}
 {% endtabs %}
 
-N> The older API [`SfPdfViewer.AnnotationSettings.Rectangle.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.RectangleAnnotation.html#Syncfusion_SfPdfViewer_iOS_RectangleAnnotation_IsLocked) have been marked as obsolete and this is applicable for other shape annotations as well.
+N> The older API [SfPdfViewer.AnnotationSettings.Rectangle.IsLocked](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.RectangleAnnotation.html#Syncfusion_SfPdfViewer_iOS_RectangleAnnotation_IsLocked) have been marked as obsolete and this is applicable for other shape annotations as well.
 
 ## How to get the list of Annotations that overlaps the selected shape Annotation
 
