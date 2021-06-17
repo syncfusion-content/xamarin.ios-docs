@@ -201,6 +201,8 @@ pdfViewer.AnnotationSettings.FreeText.MinimumHeight = 20;
 {% endhighlight %}
 {% endtabs %}
 
+N> The [`MinimumHeight`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumHeight) property is marked as obsolete.
+
 ### Setting the default minimum width
 
 You can set the minimum width for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MinimumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumWidth) property. Refer to the following code example.
@@ -213,6 +215,8 @@ pdfViewer.AnnotationSettings.FreeText.MinimumWidth = 20;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> The [`MinimumWidth`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumWidth) property is marked as obsolete.
 
 ### Setting the default maximum height
 
@@ -227,6 +231,8 @@ pdfViewer.AnnotationSettings.FreeText.MaximumHeight = 60;
 {% endhighlight %}
 {% endtabs %}
 
+N> The [`MaximumHeight`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MaximumHeight) property is marked as obsolete.
+
 ### Setting the default maximum width
 
 You can set the maximum width for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MaximumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MaximumWidth) property. Refer to the following code example.
@@ -240,6 +246,7 @@ pdfViewer.AnnotationSettings.FreeText.MaximumWidth = 60;
 {% endhighlight %}
 {% endtabs %}
 
+N> The [`MaximumWidth`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MaximumWidth) property is marked as obsolete.
 
 ### Changing the properties of a selected free text 
 
