@@ -157,7 +157,7 @@ private void PdfViewer_ShapeAnnotationTapped(object sender, ShapeAnnotationTappe
 
 ## Selecting Shape annotations
 
-You can select a shape annotation by tapping it. When a shape annotation is selected, the [`ShapeAnnotationSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~ShapeAnnotationSelected_EV.html) event will be raised. The properties of the selected shape annotation can be retrieved from the [`ShapeAnnotationSelectedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSelectedEventArgs.html) parameter of the event handler.  
+You can select a shape annotation by tapping it. When a shape annotation is selected, the [`ShapeAnnotationSelected`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_ShapeAnnotationSelected) event will be raised. The properties of the selected shape annotation can be retrieved from the [`ShapeAnnotationSelectedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSelectedEventArgs.html) parameter of the event handler.  
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ System.Collections.Generic.List<IAnnotation> overlappedAnnotation = args.Overlap
 
 ## Deselecting Shape annotations
 
-You can deselect a selected shape annotation by tapping on it or somewhere else on the PDF page. Deselection can be detected using the [`ShapeAnnotationDeselected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~ShapeAnnotationDeselected_EV.html) event. The properties of the deselected shape annotation can be retrieved from the [`ShapeAnnotationDeselectedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationDeselectedEventArgs.html) parameter of the event handler. 
+You can deselect a selected shape annotation by tapping on it or somewhere else on the PDF page. Deselection can be detected using the [`ShapeAnnotationDeselected`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_ShapeAnnotationDeselected) event. The properties of the deselected shape annotation can be retrieved from the [`ShapeAnnotationDeselectedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationDeselectedEventArgs.html) parameter of the event handler. 
 
 {% tabs %}
 {% highlight c# %}
