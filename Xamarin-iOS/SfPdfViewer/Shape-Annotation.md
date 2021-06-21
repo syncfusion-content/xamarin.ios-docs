@@ -236,7 +236,7 @@ To move or resize a shape annotation it should first be selected. After the appe
 
 ### Detecting the move or resize of a shape Annotation
 
-The [`AnnotationMovedOrResized`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~AnnotationMovedOrResized_EV.html) event will be raised when you move or resize the selected annotation. The properties of the moved or re-sized shape annotation can be retrieved from the [`AnnotationMovedOrResizedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.AnnotationMovedOrResizedEventArgs.html) parameter of the event handler. 
+The [`AnnotationMovedOrResized`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_AnnotationMovedOrResized) event will be raised when you move or resize the selected annotation. The properties of the moved or re-sized shape annotation can be retrieved from the [`AnnotationMovedOrResizedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.AnnotationMovedOrResizedEventArgs.html) parameter of the event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -665,7 +665,7 @@ pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = true;
 
 The interaction with shape annotation types will be allowed only if, the [`SfPdfViewer.AnnotationSettings.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.AnnotationSettings~IsLocked.html) API is set to false. The following code does not allow the interactions with shape annotations, although the [`SfPdfViewer.AnnotationSettings.Rectangle.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.RectangleAnnotation~IsLocked.html) property of the shape annotation is set to false.
 
-N>The older API [SfPdfViewer.AnnotationSettings.Rectangle.IsLocked]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.RectangleAnnotation.html#Syncfusion_SfPdfViewer_iOS_RectangleAnnotation_IsLocked) is marked as obsolete and, this is applicable for other shape annotations as well.
+N>The older API [SfPdfViewer.AnnotationSettings.Rectangle.IsLocked]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.RectangleAnnotation.html#Syncfusion_SfPdfViewer_iOS_RectangleAnnotation_IsLocked) have been marked as obsolete and, this is applicable for other shape annotations as well.
 
 {% tabs %}
 {% highlight c# %}
