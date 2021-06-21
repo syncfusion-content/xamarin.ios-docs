@@ -157,7 +157,7 @@ private void PdfViewer_ShapeAnnotationTapped(object sender, ShapeAnnotationTappe
 
 ## Selecting Shape annotations
 
-You can select a shape annotation by tapping it. When a shape annotation is selected, the [`ShapeAnnotationSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~ShapeAnnotationSelected_EV.html) event will be raised. The properties of the selected shape annotation can be retrieved from the [`ShapeAnnotationSelectedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSelectedEventArgs.html) parameter of the event handler.  
+You can select a shape annotation by tapping it. When a shape annotation is selected, the [`ShapeAnnotationSelected`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_ShapeAnnotationSelected) event will be raised. The properties of the selected shape annotation can be retrieved from the [`ShapeAnnotationSelectedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSelectedEventArgs.html) parameter of the event handler.  
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ System.Collections.Generic.List<IAnnotation> overlappedAnnotation = args.Overlap
 
 ## Deselecting Shape annotations
 
-You can deselect a selected shape annotation by tapping on it or somewhere else on the PDF page. Deselection can be detected using the [`ShapeAnnotationDeselected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~ShapeAnnotationDeselected_EV.html) event. The properties of the deselected shape annotation can be retrieved from the [`ShapeAnnotationDeselectedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationDeselectedEventArgs.html) parameter of the event handler. 
+You can deselect a selected shape annotation by tapping on it or somewhere else on the PDF page. Deselection can be detected using the [`ShapeAnnotationDeselected`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_ShapeAnnotationDeselected) event. The properties of the deselected shape annotation can be retrieved from the [`ShapeAnnotationDeselectedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationDeselectedEventArgs.html) parameter of the event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -236,7 +236,7 @@ To move or resize a shape annotation it should first be selected. After the appe
 
 ### Detecting the move or resize of a shape Annotation
 
-The [`AnnotationMovedOrResized`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~AnnotationMovedOrResized_EV.html) event will be raised when you move or resize the selected annotation. The properties of the moved or re-sized shape annotation can be retrieved from the [`AnnotationMovedOrResizedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.AnnotationMovedOrResizedEventArgs.html) parameter of the event handler. 
+The [`AnnotationMovedOrResized`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_AnnotationMovedOrResized) event will be raised when you move or resize the selected annotation. The properties of the moved or re-sized shape annotation can be retrieved from the [`AnnotationMovedOrResizedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.AnnotationMovedOrResizedEventArgs.html) parameter of the event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -317,7 +317,7 @@ private void deleteShapeAnnotationButton_Clicked(object sender, EventArgs e)
 
 ## Detecting the removal of a shape Annotation
 
-The [`ShapeAnnotationRemoved`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~ShapeAnnotationRemoved_EV.html) event will be raised when a shape annotation is removed from the PDF. The properties of the removed shape annotation can be retrieved from the [`ShapeAnnotationRemovedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationRemovedEventArgs.html) parameter of the event handler. 
+The [`ShapeAnnotationRemoved`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_ShapeAnnotationRemoved) event will be raised when a shape annotation is removed from the PDF. The properties of the removed shape annotation can be retrieved from the [`ShapeAnnotationRemovedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationRemovedEventArgs.html) parameter of the event handler. 
 
 {% tabs %}
 {% highlight c# %}
@@ -356,13 +356,13 @@ private void PdfViewerControl_ShapeAnnotationRemoved(object sender, ShapeAnnotat
 
 ## Customizing the appearance of shape annotations
 
-You can customize the default values of [`stroke color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~StrokeColor.html), [`opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~Opacity.html), [`maximum height`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~MaximumHeight.html), [`minimum height`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~MinimumHeight.html), [`maximum width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~MaximumWidth.html), [`minimum width`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~MinimumWidth.html), [`display text`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~Text.html), [`text background color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~TextBackgroundColor.html), [`text color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~TextColor.html), [`text opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~TextOpacity.html), [`text size`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~TextSize.html), [`interaction (locked)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.AnnotationSettings~IsLocked.html), [`thickness`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~Thickness.html), and [`fill color`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~FillColor.html) of the shape annotations that are to be added. 
+You can customize the default values of [`stroke color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_StrokeColor), [`opacity`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_Opacity), [`maximum height`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MaximumHeight), [`minimum height`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumHeight), [`maximum width`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MaximumWidth), [`minimum width`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumWidth), [`display text`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_Text), [`text background color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_TextBackgroundColor), [`text color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_TextColor), [`text opacity`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_TextOpacity), [`text size`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_TextSize), [`interaction (locked)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.AnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_AnnotationSettings_IsLocked), [`thickness`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_Thickness), and [`fill color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_FillColor) of the shape annotations that are to be added. 
 
 N>This will not affect the shape annotations that were already added. The following properties are common to all the shape annotations. In all code samples, the Rectangle shape annotation is used for illustration purposes. 
 
 ### Setting the default stroke color
 
-You can set the default stroke color for the shape annotations by using the [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~StrokeColor.html) property. Refer to the following code example
+You can set the default stroke color for the shape annotations by using the [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_StrokeColor) property. Refer to the following code example
 
 {% tabs %}
 {% highlight c# %}
@@ -378,7 +378,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.StrokeColor = UIColor.Red;
 
 ### Setting the default opacity
 
-You can set the default opacity for the shape annotations by using the [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~Opacity.html) property. The opacity value ranges from 0 to 1. Refer to the following code example.
+You can set the default opacity for the shape annotations by using the [`Opacity`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_Opacity) property. The opacity value ranges from 0 to 1. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -394,7 +394,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.Opacity = 0.5f;
 
 ### Setting the default fill color
 
-You can set the default fill color for the shape annotations by using the [`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~FillColor.html) property. Refer to the following code example.
+You can set the default fill color for the shape annotations by using the [`FillColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_FillColor) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -410,7 +410,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.FillColor = UIColor.Blue;
 
 ### Setting the default thickness
 
-You can set the thickness for the shape annotations by using the [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~Thickness.html) property. Refer to the following code example.
+You can set the thickness for the shape annotations by using the [`Thickness`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_Thickness) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -426,7 +426,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.Thickness = 5;
 
 ### Setting the default text
 
-You can set the text for the shape annotations by using the [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~Text.html) property. Refer to the following code example.
+You can set the text for the shape annotations by using the [`Text`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_Text) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -442,7 +442,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.Text = "Area";
 
 ### Setting the default text background color
 
-You can set the background color for the text assigned to the shape annotations by using the [`TextBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~TextBackgroundColor.html) property. Refer to the following code example.
+You can set the background color for the text assigned to the shape annotations by using the [`TextBackgroundColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_TextBackgroundColor) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -458,7 +458,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.TextBackgroundColor = UIColor.Bl
 
 ### Setting the default text color
 
-You can set the color for the text assigned to the shape annotations by using the [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~TextColor.html) property. Refer to the following code example.
+You can set the color for the text assigned to the shape annotations by using the [`TextColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_TextColor) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -474,7 +474,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.TextColor = UIColor.Black;
 
 ### Setting the default text opacity
 
-You can set the opacity for the text assigned to the shape annotations by using the [`TextOpacity`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~TextOpacity.html) property. Refer to the following code example.
+You can set the opacity for the text assigned to the shape annotations by using the [`TextOpacity`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_TextOpacity) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -490,7 +490,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.TextOpacity = 0.5f;
 
 ### Setting the default text size
 
-You can set the size for the text assigned to the shape annotations by using the [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~TextSize.html) property. Refer to the following code example.
+You can set the size for the text assigned to the shape annotations by using the [`TextSize`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_TextSize) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -506,7 +506,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.TextOpacity = 0.5f;
 
 ### Setting the default minimum height
 
-You can set the minimum height for the shape annotations by using the [`MinimumHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~MinimumHeight.html) property. Refer to the following code example.
+You can set the minimum height for the shape annotations by using the [`MinimumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MaximumHeight) property. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -520,9 +520,11 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumHeight = 20;
 {% endhighlight %}
 {% endtabs %}
 
+N> The [MinimumHeight]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumHeight) property have been marked as obsolete. Use the `MinimumSize` property instead.
+
 ### Setting the default minimum width
 
-You can set the minimum width for the shape annotations by using the [`MinimumWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~MinimumWidth.html) property. Refer to the following code example. 
+You can set the minimum width for the shape annotations by using the [`MinimumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumWidth) property. Refer to the following code example. 
 
 {% tabs %}
 {% highlight c# %}
@@ -536,9 +538,11 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumWidth = 20;
 {% endhighlight %}
 {% endtabs %}
 
+N> The [MinimumWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumWidth) property have been marked as obsolete. Use the `MinimumSize` property instead.
+
 ### Setting the default maximum height
 
-You can set the maximum height for the shape annotations by using the [`MaximumHeight`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~MaximumHeight.html) property. Refer to the following code example. 
+You can set the maximum height for the shape annotations by using the [`MaximumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MaximumHeight) property. Refer to the following code example. 
 
 {% tabs %}
 {% highlight c# %}
@@ -554,7 +558,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MaximumHeight = 60;
 
 ### Setting the default maximum width
 
-You can set the maximum width for the shape annotations by using the [`MaximumWidth`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings~MaximumWidth.html) property. Refer to the following code example. 
+You can set the maximum width for the shape annotations by using the [`MaximumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MaximumWidth) property. Refer to the following code example. 
 
 {% tabs %}
 {% highlight c# %}
@@ -570,7 +574,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumWidth = 20;
 
 ### Changing the properties of a selected shape annotation
 
-You can change the properties of the selected annotation by casting the sender parameter of the [`ShapeAnnotationSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~ShapeAnnotationSelected_EV.html) event handler to ShapeAnnotation and modifying its properties. The following code shows how to change the properties.
+You can change the properties of the selected annotation by casting the sender parameter of the [`ShapeAnnotationSelected`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_ShapeAnnotationSelected) event handler to ShapeAnnotation and modifying its properties. The following code shows how to change the properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -601,11 +605,8 @@ pdfViewer.ShapeAnnotationSelected = PdfViewer_ShapeAnnotationSelected;
             //Set the fill color of the selected annotation using the shape annotation settings. 
             selectedShapeAnnotation.Settings.FillColor = UIColor.Red;
 
-            //Set the minimum height for the selected annotation using the shape annotation settings.
-            selectedShapeAnnotation.Settings.MinimumHeight = 20;
-
-            //Set the minimum width for the selected annotation using the shape annotation settings.
-            selectedShapeAnnotation.Settings.MinimumWidth = 20;
+            //Set the minimum size for the selected annotation using the shape annotation settings.
+            selectedShapeAnnotation.Settings.MinimumSize = new CGSize(20, 20);
 
             //Set the maximum width for the selected annotation using the shape annotation settings.
             selectedShapeAnnotation.Settings.MaximumWidth = 80;
@@ -642,19 +643,19 @@ For example, the following code disables the interaction operations for all shap
 {% highlight c# %}
 
 //Disable the arrow annotation interaction 
-pdfViewerControl.AnnotationSettings.Arrow.IsLocked = true; 
+pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = true;
 
 //Disable the line annotation interaction 
-pdfViewerControl.AnnotationSettings.Line.IsLocked = true; 
+pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = true;
 
 //Disable the rectangle annotation interaction 
-pdfViewerControl.AnnotationSettings.Rectangle.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = true;
  
 //Disable the circle annotation interaction 
-pdfViewerControl.AnnotationSettings.Circle.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
 
 //Disable the polygon annotation interaction 
-pdfViewerControl.AnnotationSettings.Polygon.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -665,24 +666,26 @@ The interaction with shape annotation types will be allowed only if, the [`SfPdf
 {% highlight c# %}
 
 //Disables the shape annotation interaction, though its 'IsLocked' property is set to `false` 
-pdfViewerControl.AnnotationSettings.IsLocked = true; 
+pdfViewerControl.AnnotationSettings.IsLocked = true;
 
-pdfViewerControl.AnnotationSettings.Arrow.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = false;
 
-pdfViewerControl.AnnotationSettings.Line.IsLocked = false; 
+pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = false;
 
-pdfViewerControl.AnnotationSettings.Rectangle.IsLocked = false; 
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = false;
 
-pdfViewerControl.AnnotationSettings.Circle.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = false;
 
-pdfViewerControl.AnnotationSettings.Polygon.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
 
+N> The `IsLocked` properties of the classes [RectangleAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.RectangleAnnotation.html), [CircleAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.CircleAnnotation.html), [LineAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.LineAnnotation.html), [ArrowAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ArrowAnnotation.html) and [PolygonAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.PolygonAnnotation.html) have been marked as obsolete. Use the `RectangleAnnotation.Settings.IsLocked`, `CircleAnnotation.Settings.IsLocked`, `LineAnnotation.Settings.IsLocked`, `ArrowAnnotation.Settings.IsLocked` and `PolygonAnnotation.Settings.IsLocked` properties instead.
+
 ## How to get the list of Annotations that overlaps the selected shape Annotation
 
-You can retrieve the list of Annotations that overlaps the selected shape Annotation from the [`ShapeAnnotationSelectedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSelectedEventArgs.html) parameter of the [`ShapeAnnotationSelected`](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.SfPdfViewer~ShapeAnnotationSelected_EV.html) event handler.
+You can retrieve the list of Annotations that overlaps the selected shape Annotation from the [`ShapeAnnotationSelectedEventArgs`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSelectedEventArgs.html) parameter of the [`ShapeAnnotationSelected`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_ShapeAnnotationSelected) event handler.
 
 {% tabs %}
 {% highlight c# %}

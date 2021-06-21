@@ -201,6 +201,8 @@ pdfViewer.AnnotationSettings.FreeText.MinimumHeight = 20;
 {% endhighlight %}
 {% endtabs %}
 
+N> The [`MinimumHeight`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumHeight) property have been marked as obsolete. Use the `MinimumSize` property instead.
+
 ### Setting the default minimum width
 
 You can set the minimum width for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MinimumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumWidth) property. Refer to the following code example.
@@ -213,6 +215,8 @@ pdfViewer.AnnotationSettings.FreeText.MinimumWidth = 20;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> The [`MinimumWidth`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumWidth) property have been marked as obsolete. Use the `MinimumSize` property instead.
 
 ### Setting the default maximum height
 
@@ -239,7 +243,6 @@ pdfViewer.AnnotationSettings.FreeText.MaximumWidth = 60;
 
 {% endhighlight %}
 {% endtabs %}
-
 
 ### Changing the properties of a selected free text 
 
