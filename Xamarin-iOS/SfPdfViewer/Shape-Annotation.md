@@ -520,7 +520,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumHeight = 20;
 {% endhighlight %}
 {% endtabs %}
 
-N> The [MinimumHeight]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumHeight) property is marked as obsolete.
+N> The [MinimumHeight]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumHeight) property have been marked as obsolete. Use the `MinimumSize` property instead.
 
 ### Setting the default minimum width
 
@@ -538,7 +538,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumWidth = 20;
 {% endhighlight %}
 {% endtabs %}
 
-N> The [MinimumWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumWidth) property is marked as obsolete.
+N> The [MinimumWidth](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ShapeAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_ShapeAnnotationSettings_MinimumWidth) property have been marked as obsolete. Use the `MinimumSize` property instead.
 
 ### Setting the default maximum height
 
