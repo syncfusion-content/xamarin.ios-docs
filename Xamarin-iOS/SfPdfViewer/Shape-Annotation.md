@@ -605,11 +605,8 @@ pdfViewer.ShapeAnnotationSelected = PdfViewer_ShapeAnnotationSelected;
             //Set the fill color of the selected annotation using the shape annotation settings. 
             selectedShapeAnnotation.Settings.FillColor = UIColor.Red;
 
-            //Set the minimum height for the selected annotation using the shape annotation settings.
-            selectedShapeAnnotation.Settings.MinimumHeight = 20;
-
-            //Set the minimum width for the selected annotation using the shape annotation settings.
-            selectedShapeAnnotation.Settings.MinimumWidth = 20;
+            //Set the minimum size for the selected annotation using the shape annotation settings.
+            selectedShapeAnnotation.Settings.MinimumSize = new CGSize(20, 20);
 
             //Set the maximum width for the selected annotation using the shape annotation settings.
             selectedShapeAnnotation.Settings.MaximumWidth = 80;
