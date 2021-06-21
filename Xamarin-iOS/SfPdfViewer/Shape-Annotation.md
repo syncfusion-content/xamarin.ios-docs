@@ -662,8 +662,6 @@ pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = true;
 
 The interaction with shape annotation types will be allowed only if, the [`SfPdfViewer.AnnotationSettings.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.AnnotationSettings~IsLocked.html) API is set to false. The following code does not allow the interactions with shape annotations, although the [`SfPdfViewer.AnnotationSettings.Rectangle.IsLocked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS~Syncfusion.SfPdfViewer.iOS.RectangleAnnotation~IsLocked.html) property of the shape annotation is set to false.
 
-N> The `IsLocked` properties of the classes [RectangleAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.RectangleAnnotation.html), [CircleAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.CircleAnnotation.html), [LineAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.LineAnnotation.html), [ArrowAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ArrowAnnotation.html) and [PolygonAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.PolygonAnnotation.html) have been marked as obsolete. Use the `RectangleAnnotation.Settings.IsLocked`, `CircleAnnotation.Settings.IsLocked`, `LineAnnotation.Settings.IsLocked`, `ArrowAnnotation.Settings.IsLocked` and `PolygonAnnotation.Settings.IsLocked` properties instead.
-
 {% tabs %}
 {% highlight c# %}
 
@@ -682,6 +680,8 @@ pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> The `IsLocked` properties of the classes [RectangleAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.RectangleAnnotation.html), [CircleAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.CircleAnnotation.html), [LineAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.LineAnnotation.html), [ArrowAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.ArrowAnnotation.html) and [PolygonAnnotation](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.PolygonAnnotation.html) have been marked as obsolete. Use the `RectangleAnnotation.Settings.IsLocked`, `CircleAnnotation.Settings.IsLocked`, `LineAnnotation.Settings.IsLocked`, `ArrowAnnotation.Settings.IsLocked` and `PolygonAnnotation.Settings.IsLocked` properties instead.
 
 ## How to get the list of Annotations that overlaps the selected shape Annotation
 
