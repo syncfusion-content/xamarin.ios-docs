@@ -119,7 +119,7 @@ pdfViewer.FreeTextAnnotationDeselected += PdfViewer_FreeTextAnnotationDeselected
 
 ## Customizing the appearance of free text annotations
 
-You can customize the default values of opacity, display text, text color, text size, maximum height, minimum height, maximum width, minimum width, interaction (locked), and dialog of the free text annotations that are to be added. This will not affect the free text annotations that were already added.
+You can customize the default values of opacity, display text, text color, text size, maximum height, minimum height, maximum width, minimum width, minimum size, interaction (locked), and dialog of the free text annotations that are to be added. This will not affect the free text annotations that were already added.
 
 ### Setting the default opacity
 
