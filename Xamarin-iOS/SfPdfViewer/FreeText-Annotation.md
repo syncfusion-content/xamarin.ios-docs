@@ -252,7 +252,7 @@ Refer the following code example:
 {% highlight c# %}
 
 //Sets the minimum size for the free text annotations
-pdfViewerControl.AnnotationSettings.FreeText.MinimumSize = new Size(10, 10);
+pdfViewerControl.AnnotationSettings.FreeText.MinimumSize = new CGSize(10, 10);
 
 {% endhighlight %}
 {% endtabs %}

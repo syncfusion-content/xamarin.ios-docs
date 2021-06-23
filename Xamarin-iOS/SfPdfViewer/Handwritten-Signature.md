@@ -145,7 +145,7 @@ Refer the following code example:
 {% highlight c# %}
 
 //Sets the minimum size for the handwritten signatures
-pdfViewer.AnnotationSettings.HandwrittenSignature.MinimumSize = new Size(10, 10);
+pdfViewer.AnnotationSettings.HandwrittenSignature.MinimumSize = new CGSize(10, 10);
 
 {% endhighlight %}
 {% endtabs %}

@@ -194,7 +194,7 @@ Refer the following code example:
 {% highlight c# %}
 
 //Sets the minimum size for the custom stamp annotations
-pdfViewer.AnnotationSettings.Stamp.MinimumSize = new Size(10, 10);
+pdfViewer.AnnotationSettings.Stamp.MinimumSize = new CGSize(10, 10);
 
 {% endhighlight %}
 {% endtabs %}

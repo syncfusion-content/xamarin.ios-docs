@@ -146,7 +146,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.BorderEffect = BorderEffect.Clou
 {% endhighlight %}
 {% endtabs %}
 
-N> The value of `BorderEffect` property will does not affect other shape annotations such as circle, line, and arrow annotations. 
+N> The value of `BorderEffect` property will does not affect other shape annotations such as circle, line, and arrow annotations. For complex cloud polygons, the cloud border-style appearance might differ from other PDF readers like Adobe.
 
 ## Detecting tap on shape annotations
 
@@ -595,10 +595,10 @@ Refer the following code example:
 {% highlight c# %}
 
 //Sets the minimum size for the rectangle annotations
-pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumSize = new Size(10, 10);
+pdfViewer.AnnotationSettings.Rectangle.Settings.MinimumSize = new CGSize(10, 10);
 
 //Sets the minimum size for the circle annotations
-pdfViewer.AnnotationSettings.Circle.Settings.MinimumSize = new Size(10, 10);
+pdfViewer.AnnotationSettings.Circle.Settings.MinimumSize = new CGSize(10, 10);
 
 //Sets the minimum length for the line annotations
 pdfViewer.AnnotationSettings.Line.Settings.MinimumLength = 10;

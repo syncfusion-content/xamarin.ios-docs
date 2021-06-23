@@ -339,7 +339,7 @@ Refer the following code example:
 {% highlight c# %}
 
 //Sets the minimum size for the ink annotations
-pdfViewer.AnnotationSettings.Ink.MinimumSize = new Size(10, 10);
+pdfViewer.AnnotationSettings.Ink.MinimumSize = new CGSize(10, 10);
 
 {% endhighlight %}
 {% endtabs %}
