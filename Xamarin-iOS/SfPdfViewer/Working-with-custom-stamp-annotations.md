@@ -175,11 +175,11 @@ private void PdfViewerControl_StampAnnotationSelected(object sender, StampAnnota
 {% endhighlight %}
 {% endtabs %}
 
-## How to get and set the name of the annotations?
+## How to get and set the name of the custom stamp annotations?
 
-The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.IAnnotation.html#Syncfusion_SfPdfViewer_iOS_IAnnotation_Name) API.
+The PDF Viewer allows the users to get and set the name of custom stamp annotations through the [Name](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.IAnnotation.html#Syncfusion_SfPdfViewer_iOS_IAnnotation_Name) API.
 
-The following code sample explains modifying the name of the annotation in the [StampAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_StampAnnotationAdded) event. 
+The following code sample explains modifying the name of the custom stamp annotation in the [StampAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_StampAnnotationAdded) event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -194,4 +194,77 @@ The following code sample explains modifying the name of the annotation in the [
 
 N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [StampAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_StampAnnotationAdded) event. But this can be done in all other events as well.
 
+## How to Customize the Minimum size of the Custom Stamp Annotations?
 
+By the `MinimumSize` property, You can set the minimum size to which the custom stamp annotations could be resized.
+
+Refer the following code example:
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets the minimum size for the custom stamp annotations
+pdfViewerControl.AnnotationSettings.Stamp.MinimumSize = new Size(10, 10);
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to add the custom stamp annotation programmatically?
+
+By `AddAnnotation` method , You can add the custom stamp annotations programmatically. The created custom stamp annotation object passed as a parameter. The `StampAnnotation` instance acquires the type of the stamp view, page number and bounds as the parameters. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Creates the stamp annotation
+Image image = new Image();
+
+image.Source = ImageSource.FromResource("Sample.Assets.Logo.png", typeof(App).GetTypeInfo().Assembly);
+
+image.WidthRequest = 200;
+
+image.HeightRequest = 100;
+
+StampAnnotation stampAnnotation = new StampAnnotation(image, 1, new Rectangle(100, 100, 100, 100));        
+
+//Add the stamp annotation to the specified page 
+pdfViewerControl.AddAnnotation(stampAnnotation);            
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to select the custom stamp annotation programmatically?
+
+By `SelectAnnotation` method, You can select the custom stamp annotation programmatically. The specified custom stamp annotation object passed as a parameter. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Selects the specified stamp annotation
+pdfViewerControl.SelectAnnotation(stampAnnotation);           
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Once `SelectAnnotation` method is called and as long as the annotation stays selected, the `SelectedAnnotation` property will return the same instance as the parameter of this method.
+
+## How to deselect the custom stamp annotation programmatically?
+
+By `DeselectAnnotation` method , You can deselect the custom stamp annotation programmatically. The specified custom stamp annotation object passed as a parameter.
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Deselects the specified stamp annotation
+pdfViewerControl.DeselectAnnotation(StampAnnotation);       
+
+{% endhighlight %}
+{% endtabs %}
+
+N> There is no effect in Calling `DeselectAnnotation` method, if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
