@@ -11,7 +11,7 @@ documentation: ug
 
 PDF viewer allows you to include free text annotations in a PDF document and provides options to modify or remove the existing ones.
 
-## Adding free text annotations
+## Adding free text annotations using toolbar
 
 ### Enabling free text annotation mode
 
@@ -48,6 +48,26 @@ The event `FreeTextAnnotationAdded` will be raised when a free text annotation i
 
 SfPdfViewer pdfViewer = new SfPdfViewer();
 pdfViewer.FreeTextAnnotationAdded += PdfViewer_FreeTextAnnotationAdded;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Adding free text annotations programmatically
+
+By `AddAnnotation` method , You can add the free text annotations programmatically. The created free text annotation object passed as a parameter. The `FreeTextAnnotation` instance acquires the text, page number and bounds as the parameters. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+string text = "Syncfusion";
+           
+//Creates the free text annotation
+FreeTextAnnotation freeTextAnnotation = new FreeTextAnnotation(text, 1, new Rectangle(100, 100, 100, 50));           
+
+//Add the free text annotation to the specified page 
+pdfViewer.AddAnnotation(freeTextAnnotation);
 
 {% endhighlight %}
 {% endtabs %}
@@ -104,6 +124,23 @@ private void PdfViewer_FreeTextAnnotationSelected(object sender, FreeTextAnnotat
 {% endhighlight %}
 {% endtabs %}
 
+### Selecting free text annotation programmatically
+
+By `SelectAnnotation` method, You can select the free text annotation programmatically. The specified free text annotation object passed as a parameter. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Selects the specified free text annotation
+pdfViewer.SelectAnnotation(freetextAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Once `SelectAnnotation` method is called and as long as the annotation stays selected, the `SelectedAnnotation` property will return the same instance as the parameter of this method.
+
 ## Deselecting free text annotations
 
 You can deselect a selected free text annotation by tapping on it or somewhere else on the PDF page. Deselection can be detected using the `FreeTextAnnotationDeselected` event.
@@ -117,9 +154,26 @@ pdfViewer.FreeTextAnnotationDeselected += PdfViewer_FreeTextAnnotationDeselected
 {% endhighlight %}
 {% endtabs %}
 
+### Deselecting free text annotation programmatically?
+
+By `DeselectAnnotation` method, You can deselect the free text annotation. The specified free text annotation object passed as a parameter. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Deselects the specified free text annotation 
+pdfViewer.DeselectAnnotation(freetextAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> There is no effect in calling `DeselectAnnotation` method, if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
+
 ## Customizing the appearance of free text annotations
 
-You can customize the default values of opacity, display text, text color, text size, maximum height, minimum height, maximum width, minimum width, interaction (locked), and dialog of the free text annotations that are to be added. This will not affect the free text annotations that were already added.
+You can customize the default values of opacity, display text, text color, text size, maximum height, minimum height, maximum width, minimum width, minimum size, interaction (locked), and dialog of the free text annotations that are to be added. This will not affect the free text annotations that were already added.
 
 ### Setting the default opacity
 
@@ -188,6 +242,21 @@ pdfViewerControl.AnnotationSettings.FreeText.FillColor = UIColor.Blue;
 {% endhighlight %}
 {% endtabs %}
 
+### Setting the default minimum size
+
+By the `SfPdfViewer.AnnotationSettings.FreeText.MinimumSize` property, You can set the minimum size to which the free text annotations could be resized.
+ 
+Refer the following code example:
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets the minimum size for the free text annotations
+pdfViewerControl.AnnotationSettings.FreeText.MinimumSize = new CGSize(10, 10);
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Setting the default minimum height
 
 You can set the minimum height for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MinimumHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumHeight) property. Refer to the following code example.
@@ -201,6 +270,8 @@ pdfViewer.AnnotationSettings.FreeText.MinimumHeight = 20;
 {% endhighlight %}
 {% endtabs %}
 
+N> The [`MinimumHeight`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumHeight) property have been marked as obsolete. Use the `MinimumSize` property instead.
+
 ### Setting the default minimum width
 
 You can set the minimum width for the free text annotations by using the [`SfPdfViewer.AnnotationSettings.FreeText.MinimumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumWidth) property. Refer to the following code example.
@@ -213,6 +284,8 @@ pdfViewer.AnnotationSettings.FreeText.MinimumWidth = 20;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> The [`MinimumWidth`]( https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.FreeTextAnnotationSettings.html#Syncfusion_SfPdfViewer_iOS_FreeTextAnnotationSettings_MinimumWidth) property have been marked as obsolete. Use the `MinimumSize` property instead.
 
 ### Setting the default maximum height
 
@@ -239,7 +312,6 @@ pdfViewer.AnnotationSettings.FreeText.MaximumWidth = 60;
 
 {% endhighlight %}
 {% endtabs %}
-
 
 ### Changing the properties of a selected free text 
 
@@ -424,11 +496,11 @@ pdfViewerControl.AnnotationSettings.FreeText.IsLocked = false;
 {% endhighlight %}
 {% endtabs %}
 
-## How to get and set the name of the annotations?
+## How to get and set the name of the free text annotations?
 
-The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.IAnnotation.html#Syncfusion_SfPdfViewer_iOS_IAnnotation_Name) API.
+The PDF Viewer allows the users to get and set the name of free text annotations through the [Name](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.IAnnotation.html#Syncfusion_SfPdfViewer_iOS_IAnnotation_Name) API.
 
-The following code sample explains modifying the name of the annotation in the [FreeTextAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_FreeTextAnnotationAdded) event. 
+The following code sample explains modifying the name of the free text annotation in the [FreeTextAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_FreeTextAnnotationAdded) event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -442,4 +514,4 @@ private void PdfViewerControl_ FreeTextAnnotationAdded (object sender, FreeTextA
 {% endhighlight %}
 {% endtabs %}
 
-N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [FreeTextAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_FreeTextAnnotationAdded) event. But this can be done in all other events as well. 
+N>For illustration purposes, we have only provided the sample for modifying the name of the free text annotation in the [FreeTextAnnotationAdded](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.SfPdfViewer.html#Syncfusion_SfPdfViewer_iOS_SfPdfViewer_FreeTextAnnotationAdded) event. But this can be done in all other events as well. 
