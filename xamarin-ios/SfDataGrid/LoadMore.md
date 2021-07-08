@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Load More | SfDataGrid | Xamarin.iOS | Syncfusion
-description: How to perform load more and it's properties and customizations in a SfDataGrid.
+description: How to perform load more and it's properties and customizations in a Xamarin.iOS DataGrid (SfDataGrid).
 platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---
-# Load More
+# Load More in Xamarin.iOS DataGrid (SfDataGrid)
 
 SfDataGrid lets you to enable the LoadMore option by setting the [SfDataGrid.AllowLoadMore](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AllowLoadMore) property to `true` and by setting the [SfDataGrid.LoadMoreCommand](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_LoadMoreCommand) property. When the LoadMore is enabled, the SfDataGrid provides an option of loading a subset of data to its data source in the runtime using the [LoadMoreView](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_LoadMoreView). 
 
@@ -130,4 +130,4 @@ public class CustomLoadMoreView : LoadMoreView
 
 Running the application renders the following output.
 
-![](SfDataGrid_images/LoadMore.png)
+![LoadMore in Xamarin iOS DataGrid](SfDataGrid_images/LoadMore.png)
