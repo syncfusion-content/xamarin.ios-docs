@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing PullableContent | SfPullToRefresh | Xamarin.iOS | Syncfusion
-description: Customizing the PullableContent of SfPullToRefresh
+title: Customizing PullableContent | Xamarin.Android | Syncfusion
+description: How to add customized pullable content of SfPullToRefresh and refresh it in Xamarin.iOS DataGrid (SfDataGrid).
 platform: Xamarin.iOS
 control: SfPullToRefresh
 documentation: ug
