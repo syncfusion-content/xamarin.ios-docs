@@ -1,12 +1,12 @@
 ---
 title: Diagram for Essential Xamarin.iOS Diagram | Syncfusion
-description: Briefs about diagram ,stencil,page setting and diagram constraints in SfDiagram for Xamarin.iOS
+description: Learn here all about Diagram support in Syncfusion Diagram (SfDiagram) control in Xamarin.iOS, its elements and more.
 platform: Xamarin.iOS
 control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Diagram
+# Diagram in Xamarin Diagram (SfDiagram)
 The diagram control allows to create different types of diagrams such as flow charts, use case diagrams, workflow process diagrams, and more.
 
 ## Page settings
@@ -22,6 +22,26 @@ diagram.PageSettings.PageWidth = 500;
 diagram.PageSettings.PageHeight = 500; 
 //Customizes the appearance of Page
 diagram.PageSettings.PageBackGround= Color.White;
+{% endhighlight %}
+{% endtabs %}
+
+## View Port Start Position
+Page settings enable you to customize the viewport start position of the diagram page. The enum `ViewPort Start Position` has two constants: Default, Origin. The default value is set to Default.
+
+### Default 
+The viewport of the diagram page is decided based on the node's offsets. 
+
+N> The viewport of the diagram page will be in a negative region when the node’s offsets are negative.  
+
+### Origin
+The viewport of the diagram page begins with origin (0,0) even though when the node’s offsets are negative.
+
+The following code explains how to customize the view port start position of the page.
+
+{% tabs %}
+{% highlight c# %}
+//Sets the viewport start position.
+SfDiagram.PageSettings.ViewPortStartPosition = ViewportStartPosition.Origin;
 {% endhighlight %}
 {% endtabs %}
 

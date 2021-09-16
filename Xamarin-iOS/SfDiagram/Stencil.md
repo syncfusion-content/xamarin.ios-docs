@@ -6,7 +6,7 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Stencil
+# Stencil in Xamarin Diagram (SfDiagram)
 Stencil has a collection of symbols. It is used to clone the desired symbol by dragging it from the stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup.
 
 ## Add default shapes into stencil
@@ -135,3 +135,64 @@ diagram.Stencil=stencil;
 {% endtabs %}
 ![Category heading text in Xamarin.iOS diagram](Stencil_images/Stencil_img3.jpeg)
 
+## Add Annotation into stencil
+Stencil is able to load the symbols like connectors and nodes (all shapes), custom shapes with annotation into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup.
+The following example explains how to add the Annotation into a stencil:
+{% tabs %}
+{% highlight c# %}
+Grid grid = new Grid();
+var column = new ColumnDefinition() { Width = new GridLength(2, GridUnitType.Star) };
+var column1 = new ColumnDefinition() { Width = new GridLength(150) };
+grid.ColumnDefinitions.Add(column);
+grid.ColumnDefinitions.Add(column1);
+
+SfDiagram diagram = new SfDiagram();
+diagram.HeightRequest = 1280;
+diagram.WidthRequest = 720;
+diagram.BackgroundColor = Color.Transparent;
+diagram.PageSettings.GridColor = Color.LightGray;
+diagram.PageSettings.PageBackGround = Color.Transparent;
+diagram.PageSettings.ShowGrid = false;
+diagram.PageSettings.SnapToGrid = false;
+
+Stencil stencil = new Stencil();
+SymbolCollection SmallDataBox = new SymbolCollection();
+SmallDataBox.Add(new Node()
+{
+    Width = 150,
+    Height = 150,
+    EnableDrag = true,
+    EnableResize = true,
+    ShapeType = ShapeType.Rectangle,
+    Annotations = { new Annotation() { Content = "Node", FontSize = 36, TextBrush = new SolidBrush(Color.Red), HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center } }
+});
+SmallDataBox.Add(new Node()
+{
+    Width = 150,
+    Height = 150,
+    EnableDrag = true,
+    EnableResize = true,
+    ShapeType = ShapeType.Circle,
+    Annotations = { new Annotation() { Content = "Node", FontSize = 30, TextBrush = new SolidBrush(Color.Blue), HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center } }
+});
+SmallDataBox.Add(new Node()
+{
+    Width = 150,
+    Height = 150,
+    EnableDrag = true,
+    EnableResize = true,
+    ShapeType = ShapeType.Diamond,
+    Annotations = { new Annotation() { Content = "Node", FontSize = 30, TextBrush = new SolidBrush(Color.Green), HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center } }
+});
+
+//Add a category of symbol group with a heading text
+stencil.SymbolGroups.Add(new SymbolGroup() { SymbolSource = SmallDataBox, HeaderName = "Small Data Box" });
+stencil.SymbolStyle.Width = 150;
+stencil.SymbolStyle.Height = 150;
+grid.Children.Add(diagram, 0, 0);
+grid.Children.Add(stencil, 1, 0);
+this.Content = grid;
+{% endhighlight %}
+{% endtabs %}
+
+![Add annotation into stencil in Xamarin.iOS diagram](Stencil_images/Stencil_img4.png)
