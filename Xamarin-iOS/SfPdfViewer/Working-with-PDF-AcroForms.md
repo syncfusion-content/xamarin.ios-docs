@@ -56,3 +56,110 @@ pdfViewerControl.LoadDocument(stream);
 {% endtabs %}
 
 N> Signature form fields are only flattened when the page displayed in the viewer is only for viewing the appearance of signature form fields. Once the signature form fields are flattened, the interactions such as select, edit, resize, and remove cannot be performed. Setting the `FlattenSignatureFields` property as `true` will does not affect the save and form field export operations. The signature form fields will not be flattened in these operations.
+
+## Events to track form field interaction
+
+The PDF Viewer allows you to track form field interactions using events. The interactions on the following types of form fields can be tracked using events.
+
+* Text
+* Check Box
+* Radio button
+* Combo Box
+* List box
+* Signature
+
+### Detecting the value change of form fields
+
+The`FormFieldValueChanged` event will be raised when the values of the form fields are changed.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewer" FormFieldValueChanged="PdfViewer_FormFieldValueChanged"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+privatevoidPdfViewerControl_FormFieldValueChanged(object sender, FormFieldValueChangedEventArgs args)
+ { 
+ 
+ //Get the name of the form field          
+ string fieldName = args.FormFieldName;
+ 
+ //Get the type of the form field   
+ FormFieldType formFieldType= args.FormFieldType; 
+ 
+ //Get the value of the form field after the event occurs    
+ object newValue = args.NewValue;     
+ 
+ //Get the value of the form field before the event occurs 
+ object oldValue = args.OldValue;
+
+ }
+
+{% endhighlight %}
+{% endtabs %}
+
+### Detecting the focus of form fields
+
+The `FormFieldFocused` event will be raised when text or signature field is focused.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewer" FormFieldFocused="PdfViewer_FormFieldFocused"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+privatevoidPdfViewerControl_FormFieldFocused(object sender, FormFieldFocusedEventArgs args) 
+{  
+          
+//Get the name of the form field             
+string fieldName = args.FormFieldName;           
+
+//Get the type of the form field            
+FormFieldType formFieldType= args.FormFieldType; 
+
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This event will be raised only for the text and signature form fields.
+
+### Detecting the unfocus of form fields
+
+The `FormFieldUnfocused` event will be raised when text or signature field is unfocused.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPdfViewer x:Name="pdfViewer" FormFieldUnfocused="PdfViewer_FormFieldUnfocused"/>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+privatevoidPdfViewerControl_FormFieldUnfocused(object sender, FormFieldUnfocusedEventArgs args) 
+{          
+  //Get the name of the form field             
+  string fieldName = args.FormFieldName;       
+
+  //Get the type of the form field       
+  FormFieldType formFieldType= args.FormFieldType;
+  
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This event will be raised only for the text and signature form fields.
