@@ -10,7 +10,7 @@ documentation: UG
 
 # Column Types
 
-SfDataGrid contains two types of column each with its own functionalities. You can use any column based on your requirements.
+SfDataGrid contains different types of columns each with its own functionalities. You can use any column based on your requirements.
  
  
 The below table describes you the types of column and its purpose of usage in SfDataGrid.
