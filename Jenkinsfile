@@ -38,7 +38,7 @@ String platform='Xamarin-iOS';
 		    }
 			 
 		   //Checkout the ug_spellchecker from development Source
-	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.gitlabCredentialId, url: 'https://github.com/syncfusion-content/ug_spellchecker.git']]])
+	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.githubCredentialId, url: 'https://github.com/syncfusion-content/ug_spellchecker.git']]])
 		 
 	  }
 	  
@@ -55,7 +55,7 @@ if(currentBuild.result != 'FAILURE')
 	{
 	    gitlabCommitStatus("Build")
 		{
-		bat 'powershell.exe -ExecutionPolicy ByPass -File '+env.WORKSPACE+"/ug_spellchecker/build.ps1 -Script "+env.WORKSPACE+"/ug_spellchecker/build.cake -Target build -Platform \""+platform+"\" -Targetbranch "+env.gitlabTargetBranch+" -Branch "+'"'+env.gitlabSourceBranch+'"'
+		bat 'powershell.exe -ExecutionPolicy ByPass -File '+env.WORKSPACE+"/ug_spellchecker/build.ps1 -Script "+env.WORKSPACE+"/ug_spellchecker/build.cake -Target build -Platform \""+platform+"\" -Targetbranch "+env.githubTargetBranch+" -Branch "+'"'+env.githubSourceBranch+'"'
 	 	}
 	 	
 	 	def files = findFiles(glob: '**/cireports/errorlogs/*.txt')
