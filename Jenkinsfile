@@ -16,8 +16,7 @@ String platform='Xamarin-iOS';
 	    dir('Spell-Checker') 
            {
 		     checkout scm
-			 
-			  def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/install-docs/pulls/'+env.pullRequestId+'/changes'
+		 def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/xamarin.ios-docs/pulls/'+env.pullRequestId+'/changes'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
             def ChangeFiles= branchCommitDetails.split('"filename": ');
@@ -33,7 +32,8 @@ String platform='Xamarin-iOS';
               }
               else  {
                 writeFile file: env.WORKSPACE+"/cireports/content.txt", text: "There are no filepaths found for this commit."
-              }
+              }	 
+			 
 		    }
 		    }
 			 
