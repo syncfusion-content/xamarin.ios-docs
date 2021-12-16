@@ -62,18 +62,30 @@ The required file type can be chosen from the `DataFormat` enumeration. In the f
 
 ### Exporting annotations
 
-The `ExportAnnotations` method exports the current annotations added to the document into a stream in the specified file format. The name of the PDF (with extension) from which the annotations are exported should be given as the second argument to the method.
+The `ExportAnnotations` method exports the current annotations added to the document into a stream in the specified file format.
 
 {% tabs %}
 {% highlight c# %}
 
-//Export annotations to "fdf" data format
-Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(AnnotationDataFormat.Fdf, "PdfFileName.fdf");
+//Export annotations to "FDF" data format
+Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(AnnotationDataFormat.Fdf);
 
 {% endhighlight %}
 {% endtabs %}
 
-N>While saving the stream returned by the `ExportAnnotations` method, the file name must have the same extension as the file type that was given as the first argument. e.g. In the above case the file type provided is `fdf`, so the saved file extension should be `.fdf`.
+A selective list of annotations can also be exported in the specified file format using the `ExportAnnotations` overload method . The annotations list needs to be exported, and the data format should be passed as method arguments. The following code example explains exporting the list of annotations present only on the first page.
+
+{% tabs %}
+{% highlight c# %}
+
+//Get the list of annotations present on the first page
+List<IAnnotation> firstPageAnnotations = pdfViewerControl.Annotations.Where(annotation => annotation.PageNumber == 1).ToList();
+
+//Export annotations to "FDF" data format
+Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(firstPageAnnotations, AnnotationDataFormat.Fdf);
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Importing annotations
 
