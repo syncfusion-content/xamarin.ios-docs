@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pull To Refresh | SfDataGrid | Xamarin.iOS | Syncfusion
-description: How to perform pull to refresh and it's properties and customizations in a SfDataGrid.
+title: Pull To Refresh in Xamarin.iOS SfDataGrid Control | Syncfusion
+description: How to perform pull to refresh and it's properties and customizations in Syncfusion Xamarin.iOS SfDataGrid Control, its elements, and more.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---
 
-# Pull To Refresh
+# Pull To Refresh in Xamarin.iOS SfDataGrid
 
 SfDataGrid lets you to enable the PullToRefresh option by setting the [SfDataGrid.AllowPullToRefresh](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_AllowPullToRefresh) property to `true` and by setting the [SfDataGrid.PullToRefreshCommand](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_PullToRefreshCommand) property. When the PullToRefresh is enabled, the SfDataGrid provides support for refreshing the data source in the runtime while doing the PullToRefresh action. 
 
