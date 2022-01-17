@@ -1,13 +1,13 @@
 ---
 layout : post
 title : Save Image in Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to save the image in ImageEditor for Xamarin.iOS
+description : Learn how to save the image in Syncfusion Essential Studio Xamarin.iOS ImageEditor Control, its elements, and more.
 platform : xamarin.ios
 control : ImageEditor
 documentation : ug
 ---
 
-## Save
+# Save Image in Xamarin.iOS ImageEditor
 
 You can save the image along with the current edits to the device using the `Save` method.
 
