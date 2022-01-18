@@ -1,13 +1,13 @@
 ---
 layout : post
 title : Transformation in Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to perform transformations in ImageEditor for Xamarin.iOS
+description : Learn how to perform transformations in Syncfusion Essential Studio Xamarin.iOS ImageEditor Control, its elements, and more.
 platform : xamarin.ios
 control : ImageEditor
 documentation : ug
 ---
 
-## Transformation
+# Transformation in Xamarin.iOS ImageEditor
 
 The image editor control is capable of performing the image transformations such as `rotation` and `flip`.
 

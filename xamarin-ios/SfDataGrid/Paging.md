@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging | SfDataGrid | Xamarin.iOS | Syncfusion
-description: How to enable paging and use its properties
+title: Paging in Xamarin.iOS SfDataGrid Control | Syncfusion
+description: Learn here about Paging support in Syncfusion Essential Studio Xamarin.iOS SfDataGrid Control, its elements, and more.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: ug
 ---
 
-# Paging 
+# Paging in Xamarin.iOS SfDataGrid
 The SfDataGrid provides interactive support to manipulate data using the [SfDataPager](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.DataPager.html) control. It also provides built-in options to page data on demand when dealing with large volumes of data. SfDataGrid lets you to place the `SfDataPager` above or below it as per your requirement which lets you to easily manage the data paging.
 
 To use the paging functionality in SfDataGrid add the below namespace to your project.
@@ -71,7 +71,7 @@ The following code example shows how to implement paging in SfDataGrid for Xamar
 
 The following screenshot shows the final outcome upon execution of the above code
 
-![](SfDataGrid_images/Paging_img1.jpeg)
+![Xamarin.iOS SfDataGrid Paging](SfDataGrid_images/Paging_img1.jpeg)
 
 N> `SfDataPager` provides the scrolling animation, while taping the [FirstPageButton](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.DataPager.NavigationButtons.html) or [LastPageButton](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.DataPager.NavigationButtons.html) button.
 
@@ -144,5 +144,5 @@ public class CustomAppearance : AppearanceManager
 
 The following screenshot shows the final outcome upon execution of the above code 
 
-![](SfDataGrid_images/CustomPageAppearence.png)
+![Xamarin.iOS SfDataGrid Custom Page Appearance](SfDataGrid_images/CustomPageAppearence.png)
 
