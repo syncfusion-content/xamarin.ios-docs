@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip feature of Essential Xamarin.iOS SfSunburstChart
-description: This section describes the tooltip feature of sunburst chart.
+title: Tooltip feature in Xamarin.iOS SfSunburstChart Control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion Essential Studio Xamarin.iOS SfSunburstChart Control, its elements, and more.
 platform: Xamarin.iOS
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip support in Xamarin.iOS SunburstChart
 
 Tooltip provides additional information about the segments in the sunburst chart. Tooltip is displayed by tapping the segment. By default, tooltip displays the corresponding segment’s category and value. To enable the tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfSunburstChart.iOS.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_iOS_SunburstTooltipSettings_ShowTooltip) property to true.
 
@@ -23,7 +23,7 @@ The following code shows enabling the tooltip.
 
 {% endtabs %} 
 
-![](Tooltip_images/Tooltip.png)
+![Xamarin.iOS SunburstChart Tooltip](Tooltip_images/Tooltip.png)
 
 ## Customization
 
@@ -57,7 +57,7 @@ The following code shows all the above customizations.
 
 {% endtabs %} 
 
-![](Tooltip_images/Customization.jpg)
+![Xamarin.iOS SunburstChart Customization](Tooltip_images/Customization.jpg)
 
 ## Custom template
 
@@ -117,5 +117,5 @@ The sunburst chart provides options to design your template for tooltip by inher
 
 {% endtabs %} 
 
-![](Tooltip_images/Template.jpg)
+![Xamarin.iOS SunburstChart Custom template](Tooltip_images/Template.jpg)
 
