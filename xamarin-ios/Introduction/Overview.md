@@ -18,7 +18,7 @@ Essential Studio for Xamarin.iOS is a comprehensive collection of enterprise-gra
 * After you have integrated the component into your application, it is likely that you would need additional information on specific features and API. Search the specific topic by using the search box available at the top of the user guide.
 * Another valuable resource is the API reference that provides detailed information on the classes and its members.
 
-## Additional help resources
+## Additional help resources 
 
 The Knowledge Base section contains responses to some of the most common questions that other customers had asked in the past. You can search for topics that are not covered in the user guide.
 
