@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Popup Layouts | SfPopupLayout |Xamarin.iOS | Syncfusion
-description: Layouts in SfPopupLayout
+description: Learn here about Layouts Customizations in Syncfusion Xamarin.iOS SfPopupLayout Control, its elements, and more.
 platform: Xamarin.iOS
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Layout Customizations
+# Layout Customizations in Xamarin.iOS SfPopupLayout
 
 The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.PopupLayout.AppearanceMode.html). By default, the `AppearanceMode.OneButton` is set. You can change the appearance of the SfPopupLayout by using the `SfPopupLayout.PopupView.AppearanceMode` property.
 
@@ -83,7 +83,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an iOS device.
 
-![](GettingStarted_images/AppearanceMode_OneButton.png)
+![Xamarin.iOS SfPopupLayout AppearanceMode OneButton](GettingStarted_images/AppearanceMode_OneButton.png)
 
 ## Pop-up with two buttons in the footer
 
@@ -140,7 +140,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an iOS device.
 
-![](GettingStarted_images/AppearanceMode_TwoButton.png)
+![Xamarin.iOS SfPopupLayout AppearanceMode TwoButton](GettingStarted_images/AppearanceMode_TwoButton.png)
 
 ## Customizing pop-up layouts
  
@@ -208,7 +208,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an iOS device.
 
-![](PopupLayout_images/HeaderTemplate.png)
+![Xamarin.iOS SfPopupLayout HeaderTemplate iOS](PopupLayout_images/HeaderTemplate.png)
 
 ### Footer customization
 
@@ -272,7 +272,7 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in an iOS device.
 
-![](PopupLayout_images/HeaderTemplate.png)
+![Xamarin.iOS SfPopupLayout HeaderTemplate](PopupLayout_images/HeaderTemplate.png)
 
 ## Styles
 
@@ -333,7 +333,7 @@ public MyViewController()
 
 Executing the above codes renders the following output in an iOS device.
 
-![](PopupLayout_images/HeaderCustomization.png)
+![Xamarin.iOS SfPopupLayout HeaderCustomization](PopupLayout_images/HeaderCustomization.png)
 
 ### Customizing footer elements
 
@@ -390,7 +390,7 @@ public MyViewController()
 
 Executing the above codes renders the following output in an iOS device.
 
-![](PopupLayout_images/FooterCustomization.png)
+![Xamarin.iOS SfPopupLayout FooterCustomization](PopupLayout_images/FooterCustomization.png)
 
 ### Border customization
 
@@ -437,4 +437,4 @@ public MyViewController()
 
 Executing the above codes renders the following output in an iOS device.
 
-![](PopupLayout_images/BorderCustomization.png)
+![Xamarin.iOS SfPopupLayout BorderCustomization](PopupLayout_images/BorderCustomization.png)
