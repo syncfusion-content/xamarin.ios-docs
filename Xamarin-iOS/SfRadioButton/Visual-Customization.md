@@ -10,7 +10,7 @@ keywords: button, SfRadioButton, RadioButton
 ---
 
 
-# Visual Customization
+# Visual Customization in Xamarin.iOS SfRadioButton
 
 ## Customizing state color
 The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked state color is updated to the `CheckedColor` property value when the state is changed to the checked. The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked.

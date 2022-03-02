@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started | SfBarcode | iOS | Syncfusion
-description: getting started
+title: Getting Started with Xamarin.iOS SfBarcode Control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Xamarin.iOS SfBarcode Control, its elements, and more.
 platform: xamarin.iOS
 control: SfBarcode
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.iOS SfBarcode
 
 ## Create your first Barcode in Xamarin.iOS
 
 This section explains how to configure a Barcode for iOS application by using Xamarin.iOS. To get started with the Essential Barcode, refer to the following steps and in result, you get the output on iOS devices as follows.
 
-![](Getting-Started_images/Getting-Started_img1.png)                                
+![Xamarin.iOS SfBarcode Getting Started](Getting-Started_images/Getting-Started_img1.png)                                
 QR Barcode output
 {:.caption}
 
@@ -86,6 +86,6 @@ N> Assemblies are available in unzipped package location in Mac.
 
 {% endhighlight %}
 
-  ![](Getting-Started_images/Getting-Started_img2.png)                           
+  ![Xamarin.iOS SfBarcode Configuration](Getting-Started_images/Getting-Started_img2.png)                           
   Final output of iOS getting started application
   {:.caption}
