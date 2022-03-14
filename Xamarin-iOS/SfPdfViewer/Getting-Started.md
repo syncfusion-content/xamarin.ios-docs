@@ -79,7 +79,6 @@ SfPdfViewer pdfViewerControl;
 {% endtabs %}
 
 Deploying this project in an iOS device would display the PDF document and allow you to scroll and zoom through the pages.
-
 ## Loading a PDF from an URL
 
 PDF documents can be loaded from a given URL into the PdfViewer by downloading the PDF and then loading the stream of the downloaded file into the PdfViewer. In the following code sample, the `HttpClient.GetAsync( )` method sends a GET request to the specified Uri as an asynchronous operation and the `HttpContent.ReadAsStreamAsync( )` method will serialize the HTTP content and returns a stream that represents the content as an asynchronous operation. Finally, the obtained stream is passed to the `LoadDocument( )` method of SfPdfViewer.
@@ -97,7 +96,7 @@ pdfViewerControl.LoadDocument(pdfStream);
 
 The sample that illustrates loading a PDF from an URL can be downloaded from the link below,
  
-<https://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadPDFFromURL-NativeAndroid-1933958599.zip> 
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadPDFFromURL-NativeIOS1584020980.zip> 
 
 N> An Internet connection is necessary to get the stream from an URL. Please ensure that the device has a proper internet connection before running the sample application.
 
