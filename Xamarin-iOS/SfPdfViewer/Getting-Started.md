@@ -289,6 +289,36 @@ PageCount property of the PDF viewer can be used to acquire the total number of 
 
 N>When the current page is the first page, GoToPreviousPage method will not have any effect. Similarly, when in last page, GoToNextPage method will not have any effect.
 
+## How to lock or unlock all the annotations?
+
+To lock or unlock all the annotations in a PDF, set the `SfPdfViewer.AnnotationSettings.IsLocked` API to `true` or `false` respectively. The default value of the API is false, and when it is set to true, annotations can be selected, but resizing, moving, editing, and removing actions will be disabled. Only the tapped and selected events from the annotations will be raised. The following code sample explains the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Lock all the annotations
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>The lock operation can also be enabled or disabled for a particular annotation type such as shape, free text, text markup, etc. Please find the code samples to enable or disable interaction for particular annotation from their respective sections.
+
+## How to enable or disable the annotation selection?
+
+To enable or disable the annotation selection, set the `SfPdfViewer.AnnotationSettings.Constraints` API to `AnnotationConstraints.Selectable` or `~AnnotationConstraints.Selectable` respectively. Annotations will be selected by default, and when this API is set to `~AnnotationConstraints.Selectable`, annotation selection, moving, resizing, removing and attribute changes will be disabled. Only the tapped events of the annotations will be raised. The following code sample explains the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the selection of all annotation types.
+pdfViewerControl.AnnotationSettings.Constraints = ~AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>The selection operation can also be enabled or disabled for a particular annotation type such as shape, free text, text markup, etc. Please find the code samples to enable or disable interaction for particular annotation from their respective sections.
+
 ## How to get the list of annotations present in the PDF?
 
 By using `Annotations` property, You can get the list of annotations present in the PDF document.
