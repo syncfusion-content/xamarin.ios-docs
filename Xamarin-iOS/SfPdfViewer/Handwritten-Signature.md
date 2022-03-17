@@ -192,6 +192,56 @@ private void PdfViewer_InkSelected(object sender, Syncfusion.SfPdfViewer.iOS.Ink
 {% endhighlight %}
 {% endtabs %}
 
+## How to lock or unlock the handwritten signature?
+ 
+To lock or unlock all the handwritten signature, set the `IsLocked` API to `true` or `false` respectively, and the following sample explains the same. But other annotation types can be moved, resized, removed or their attributes can be changed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the handwritten signature interaction such as move, resize, remove, and attributes changes.
+pdfViewerControl.AnnotationSettings.HandwrittenSignature.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+ 
+Interactions with handwritten signature types such as move, resize, remove or attribute changes will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code prevents the unlocking of the handwritten signatures, although the `IsLocked` property of the handwritten signature is set to `false`.
+ 
+{% tabs %}
+{% highlight c# %}
+
+//Disable the handwritten signature interaction, though its 'IsLocked' property is set to ‘false’ .
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.HandwrittenSignature.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to enable or disable the handwritten signature selection?
+
+To enable or disable the handwritten signature selection, set the `Constraints` API to `AnnotationConstraints.Selectable` or `~AnnotationConstraints.Selectable` respectively, and the following sample explains the same. But other annotation types can be selected, moved, resized, removed or their attributes can be changed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the selection of handwritten signatures.
+pdfViewerControl.AnnotationSettings.HandwrittenSignature.Constraints = ~AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
+
+Handwritten signature selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constraints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the handwritten signatures selection, even though the `Constraints` property of the handwritten signature annotation is set to `AnnotationConstraints.Selectable`.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the handwritten signature selection, though its 'Constraints' property is set to ‘AnnotationConstraints.Selectable’ 
+pdfViewerControl.AnnotationSettings.Constraints= ~AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.HandwrittenSignature.Constraints = AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## How to get and set the name of the handwritten signatures?
 
 The PDF Viewer allows the users to get and set the name of handwritten signatures through the [Name](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfPdfViewer.iOS.IAnnotation.html#Syncfusion_SfPdfViewer_iOS_IAnnotation_Name) API.

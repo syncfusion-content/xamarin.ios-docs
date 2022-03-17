@@ -524,6 +524,56 @@ private void PdfViewer_AnnotationMovedOrResized(object sender, AnnotationMovedOr
 {% endhighlight %}
 {% endtabs %}
 
+## How to lock or unlock the ink annotations?
+ 
+To lock or unlock all the ink annotation, set the `IsLocked` API to `true` or `false` respectively, and the following sample explains the same. But other annotation types can be moved, resized, removed or their attributes can be changed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the ink annotation interaction such as move, resize, remove, and attributes changes.
+pdfViewerControl.AnnotationSettings.Ink.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+ 
+Interactions with ink annotation types such as move, resize, remove or attribute changes will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code prevents the unlocking of the ink annotations, although the `IsLocked` property of the ink annotation is set to `false`.
+ 
+{% tabs %}
+{% highlight c# %}
+
+//Disable the ink annotation interaction, though its 'IsLocked' property is set to ‘false’ .
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Ink.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to enable or disable the ink annotation selection?
+
+To enable or disable the ink annotation selection, set the `Constraints` API to `AnnotationConstraints.Selectable` or `~AnnotationConstraints.Selectable` respectively, and the following sample explains the same. But other annotation types can be selected, moved, resized, removed or their attributes can be changed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the selection of ink annotations.
+pdfViewerControl.AnnotationSettings.Ink.Constraints = ~AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
+
+Ink annotation selection will be allowed only if the `SfPdfViewer.AnnotationSettings.Constraints` API is set to `AnnotationConstraints.Selectable`. The following code prevents the ink annotations selection, even though the `Constraints` property of the ink annotation is set to `AnnotationConstraints.Selectable`.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the ink annotation selection, though its 'Constraints' property is set to ‘AnnotationConstraints.Selectable’ 
+pdfViewerControl.AnnotationSettings.Constraints= ~AnnotationConstraints.Selectable;
+pdfViewerControl.AnnotationSettings.Ink.Constraints = AnnotationConstraints.Selectable;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## How to draw the ink annotation using a stylus and scroll or zoom PDF page with the touch
 
 The ink annotation operation can be customized so that the ink strokes can be added only using a stylus by setting the `InkAnnotationSettings.TouchMode` API to `TouchMode.Stylus`. When the `TouchMode` is set to stylus, the PDF can be zoomed and scrolled using a finger. The default value of the `TouchMode` property is `TouchMode.Direct` in which all touch interactions will be considered as ink operations. So in the `TouchMode.Direct` mode, the page cannot be scrolled or zoomed when the ink annotation mode is on.
