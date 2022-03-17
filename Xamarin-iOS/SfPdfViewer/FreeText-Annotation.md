@@ -467,12 +467,6 @@ pdfViewer.AnnotationSettings.FreeText.IsFreeTextDialogEnabled = false;
 {% endhighlight %}
 {% endtabs %}
 
-### Render sticky notes annotation as free text annotation
-
-To avoid data loss, the sticky notes annotation will be rendered as free-text annotation while importing or loading a document. Though the sticky notes annotations are rendered as free text annotations in the `SfPdfViewer`, they will be preserved as sticky notes annotation while saving and exporting. Only the change of text attribute will be preserved on save and export.
-
-N>The support to add, render, and edit sticky notes annotation through UI or programmatically is not provided yet.
-
 ## How to lock or unlock the free text annotations?
  
 To lock or unlock all the free text annotation, set the `IsLocked` API to `true` or `false` respectively, and the following sample explains the same. But other annotation types can be moved, resized, removed or their attributes can be changed. 
