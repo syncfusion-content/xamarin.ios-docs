@@ -1,13 +1,13 @@
 ---
 layout : post
 title : Getting Started with Syncfusion AutoComplete control for Xamarin.iOS
-description : A quick tour to initial users on Syncfusion autocomplete control for Xamarin.iOS platform 
+description : Learn here about getting started with Syncfusion Essential Xamarin.iOS AutoComplete Control, its elements, and more.
 platform : Xamarin.iOS
 control : AutoComplete
 documentation : ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.iOS AutoComplete
 
 This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
@@ -89,4 +89,4 @@ countryAutoComplete.PopUpDelay = 100;
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![Xamarin.iOS AutoComplete Getting Started Set Filter mode](images/gettingstarted.png)
