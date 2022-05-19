@@ -2,14 +2,14 @@
 
 layout: post
 title: Getting Started with Syncfusion Rating control for Xamarin.iOS
-description:  A quick tour to initial users on Syncfusion Rating control for Xamarin.iOS platform
+description: Learn here about getting started with Syncfusion Essential Xamarin.iOS Rating Control, its elements, features, and more.
 platform: Xamarin.iOS
 control: Rating
 documentation: ug
 
 ---
 
-# Getting Started
+# Getting Started with Xamarin.iOS Rating
 
 This section explains how to configure the SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in the SfRating control.
 
