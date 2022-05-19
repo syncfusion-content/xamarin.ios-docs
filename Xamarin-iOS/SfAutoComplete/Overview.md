@@ -7,7 +7,7 @@ control: AutoComplete
 documentation: ug
 ---
 
-# Overview of Xamarin.iOS AutoComplete
+# Xamarin.iOS AutoComplete Overview
 
 The Essential Xamarin.iOS AutoComplete widget provides the suggestions while typing. The suggested text can be appended to the original text or it can be displayed in a drop-down list. Also provides a gesture friendly UI to perform operations like Suggest, Append and SuggestAppend.
 
