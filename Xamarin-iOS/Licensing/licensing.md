@@ -38,3 +38,4 @@ This application was built using a trial version of Syncfusion Essential Studio.
 
 * [How to Generate Syncfusion Xamarin.iOS License Key?](https://help.syncfusion.com/xamarin-ios/licensing/generating-license-keys)
 * [How to Register Syncfusion License Key in Xamarin.iOS Application?](https://help.syncfusion.com/xamarin-ios/licensing/registering-license-keys)
+
