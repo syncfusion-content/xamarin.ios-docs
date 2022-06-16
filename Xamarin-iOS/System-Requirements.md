@@ -1,13 +1,13 @@
 ---
 layout: post
-title: System Requirements | Xamarin.iOS | Syncfusion
-description: Describes about system requirements to install the Syncfusion Xamarin Components and list of supported platforms. 
+title: System Requirements in Xamarin.iOS - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use Syncfusion Xamarin.iOS Components. 
 platform: xamarin.ios
 control: System Requirements
 documentation: ug
 ---
 
-# System Requirements for Xamarin.iOS
+# System Requirements for Xamarin.iOS Components
 
 The system requirements for using our Syncfusion Xamarin platform are as follows
 
