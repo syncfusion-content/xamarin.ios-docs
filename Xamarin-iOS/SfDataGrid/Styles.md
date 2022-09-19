@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Styles | SfDataGrid | Xamarin.iOS | Syncfusion
-description: How to apply styles for the elements in a SfDataGrid.
+description: Learn here all about Style support in Syncfusion Essential Xamarin.iOS SFDataGrid control, its elements, and more.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
 ---
 
-# Styles
+# Styles in Xamarin.iOS SFDataGrid
 
 SfDataGrid allows you to apply style to all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_GridStyle) property.
   
@@ -91,7 +91,7 @@ public class Dark : DataGridStyle
 
 The following picture shows the grid loaded in different styles.
 
-![](SfDataGrid_images/Styles.png)
+![Xamarin.iOS SFDataGrid style](SfDataGrid_images/Styles.png)
 
 ## Applying alternate row style
 SfDataGrid allows you to apply the alternative row style by writing a custom grid style deriving from [DataGridStyle](http://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.DataGridStyle.html) and assigning it to the [SfDataGrid.GridStyle](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_GridStyle) property.
@@ -112,7 +112,7 @@ public class CustomGridStyle : DataGridStyle
 }
 {% endhighlight %}
 
-![](SfDataGrid_images/AlternateRowStyle.png)
+![Xamarin.iOS SFDataGrid applying alternate row style](SfDataGrid_images/AlternateRowStyle.png)
 
 ## Customizing the alternation count
 
@@ -127,7 +127,7 @@ dataGrid.AlternationCount = 3;
 
 {% endhighlight %}
 
-![](SfDataGrid_images/AlernationCount.png)
+![Xamarin.iOS SFDataGrid alternation count](SfDataGrid_images/AlernationCount.png)
 
 ## Border Customization
 
@@ -171,7 +171,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the final outcome upon execution of the above code.
 
-![](SfDataGrid_images/BorderCustomization_Both.png)
+![Xamarin.iOS SFDataGrid border customization both](SfDataGrid_images/BorderCustomization_Both.png)
 
 ### Horizontal
 
@@ -185,7 +185,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the final outcome upon execution of the above code.
 
-![](SfDataGrid_images/BorderCustomization_Horizontal.png)
+![Xamarin.iOS SFDataGrid border customization horizontal](SfDataGrid_images/BorderCustomization_Horizontal.png)
 
 ### Vertical
 
@@ -199,7 +199,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the final outcome upon execution of the above code.
 
-![](SfDataGrid_images/BorderCustomization_Vertical.png)
+![Xamarin.iOS SFDataGrid border customization vertical](SfDataGrid_images/BorderCustomization_Vertical.png)
 
 ### None
 
@@ -213,7 +213,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the final outcome upon execution of the above code.
 
-![](SfDataGrid_images/BorderCustomization_None.png)
+![Xamarin.iOS SFDataGrid border customization none](SfDataGrid_images/BorderCustomization_None.png)
 
 ## Customizing the sort icons in header
 
@@ -241,7 +241,7 @@ public class Custom : DataGridStyle
 {% endhighlight %}
 
 The following screenshots shows the final outcome of the above code
-![](SfDataGrid_images/SortIconCustomization.png)
+![Xamarin.iOS SFDataGrid sort icon customization](SfDataGrid_images/SortIconCustomization.png)
 
 N> The image's BuildAction must be set to BundleResource so that we can access the image via its name.
 
