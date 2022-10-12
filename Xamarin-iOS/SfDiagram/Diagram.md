@@ -81,6 +81,7 @@ This will enable or disable the following node behavior.
 * EnableSelectors
 * EnableZoomAndPan
 * IsReadOnly
+
 **Example**
 The following code illustrates how to disable the item dragging:
 {% tabs %}
@@ -100,6 +101,7 @@ It is easier to apply default rendering styles to all shapes, connectors, stenci
  * DefaultHeaderStyle argument: Defines the header style properties. 
 The following code shows how to define the diagram style settings for the diagram object.
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 //Diagram style settings 
@@ -118,6 +120,8 @@ DiagramStyleSettings diagramStyleSettings = new DiagramStyleSettings(NodeStyle, 
 SfDiagram diagram = new SfDiagram(diagramStyleSettings);
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 ## Zooming enhancement 
 Supports customizing the zoom levels. You can set minimum zoom level value to 0.01f and maximum to ‘infinite’. 

@@ -10,8 +10,8 @@ keywords:
 Stencil has a collection of symbols. It is used to clone the desired symbol by dragging it from the stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup.
 
 ## Add default shapes into stencil
-The below given collection will be the items of a stencil. Based on the items, the stencil will populate the symbols. 
-The following code example illustrates how to add the symbol into a collection:
+The below given collection will be the items of a stencil. Based on the items, the stencil will populate the symbols. The following code example illustrates how to add the symbol into a collection:
+
 {% tabs %}
 {% highlight c# %}
 //Add Symbols into SymbolCollection
@@ -136,8 +136,7 @@ diagram.Stencil=stencil;
 ![Category heading text in Xamarin.iOS diagram](Stencil_images/Stencil_img3.jpeg)
 
 ## Add Annotation into stencil
-Stencil is able to load the symbols like connectors and nodes (all shapes), custom shapes with annotation into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup.
-The following example explains how to add the Annotation into a stencil:
+Stencil is able to load the symbols like connectors and nodes (all shapes), custom shapes with annotation into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup.The following example explains how to add the Annotation into a stencil:
 {% tabs %}
 {% highlight c# %}
 Grid grid = new Grid();

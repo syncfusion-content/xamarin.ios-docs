@@ -56,6 +56,7 @@ Please add the following code snippet In the MainViewController class
 * Add the instance to the MainViewController’s View as a SubView. 
 * Load the stream of the PDF to SfPdfViewer in the override method ViewDidAppear. 
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -77,6 +78,8 @@ SfPdfViewer pdfViewerControl;
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 Deploying this project in an iOS device would display the PDF document and allow you to scroll and zoom through the pages.
 
@@ -365,6 +368,7 @@ In MainViewController.cs, add the below code snippet which contains the implemen
 * Navigate to the previous page
 * Navigate to the next page
 
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 
@@ -489,6 +493,8 @@ In MainViewController.cs, add the below code snippet which contains the implemen
 
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 The final output will look as like in the below screenshot.
 
