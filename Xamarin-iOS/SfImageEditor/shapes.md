@@ -66,6 +66,8 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 
 * To add a rectangle, circle, or arrow over an image, specify the [`ShapeType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html) and the desired [`PenSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html) as shown in the following code snippet.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
@@ -76,9 +78,15 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 ![SfImageEditor](ImageEditor_images/Shapes.jpg)
 
  * You can annotate any path on an image by using free hand drawing as shown in the below code,
+
+{% capture codesnippet1 %}
 
 {% tabs %}
 
@@ -89,6 +97,10 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![SfImageEditor](ImageEditor_images/Path.jpg)
 
