@@ -11,12 +11,12 @@ documentation: ug
 
 Shape Annotations are used to add annotations in the form of shapes such as rectangle, ellipse, horizontal line, and vertical line at the specific area of interest. PDF viewer allows you to include shape annotations in a PDF document and provides options to modify or remove the existing shape annotations. The supported shape annotations are: 
 
-1.	Rectangle
-2.	Circle
-3.	Line
-4.	Arrow
-5.	Polygon
-6.	Cloud
+1. Rectangle
+2. Circle
+3. Line
+4. Arrow
+5. Polygon
+6. Cloud
 
 ## Adding shape annotations using toolbar
 
@@ -309,7 +309,7 @@ pdfViewer.DeselectAnnotation(shapeAnnotation);
 
 N> Calling `DeselectAnnotation` method has no effect if the given annotation is not selected. The `SelectedAnnotation` property will return null until any other annotation gets selected.
 
-##Moving or resizing the selected shape annotation
+## Moving or resizing the selected shape annotation
 
 To move or resize a shape annotation it should first be selected. After the appearance of the selector, tapping and dragging anywhere inside the selector will move the shape annotation. Tapping on the bubbles around the selector and dragging would resize the shape annotation. 
 

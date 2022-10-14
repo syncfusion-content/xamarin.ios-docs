@@ -29,7 +29,7 @@ Create a new iOS app (Xamarin.iOS) with iOS class library in the Visual Studio a
 **Adding SfDiagram in Xamarin.iOS**
 1.Import SfDiagram control namespace as Using Syncfusion.SfDiagram.iOS in ViewController.cs Page.
 2.Set the SfDiagram control as Subview of the View.
-{% capture codesnippet1 %}
+
 {% tabs %}
 {% highlight c# %}
 using System;
@@ -58,8 +58,6 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 The following code snippet illustrates the creation of Nodes and Connectors in the diagram.
 {% tabs %}
@@ -134,7 +132,7 @@ public class Employees : ObservableCollection<Employee>
 Define Employee Information as a Collection. The below code example shows an employee array whose,
 * Name is used as a unique identifier and
 * ParentId is used to identify the person to whom an employee report to, in the organization.
-{% capture codesnippet1 %}
+
 {% tabs %}
 {% highlight c# %}
 //Initializes the employee collection
@@ -164,8 +162,6 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 }
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 The Employee data is displayed in the SfDiagram as follows
 ![Organizational chart demo in Xamarin.iOS diagram](Getting-Started_images/Getting-Started_img3.jpeg)
 

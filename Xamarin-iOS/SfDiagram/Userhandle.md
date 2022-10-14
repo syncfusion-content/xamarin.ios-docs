@@ -11,8 +11,9 @@ User handles are customizable handles which can be used to perform custom action
 * SfGraphicPath
 * Image
 * UIView
+
 The following code illustrates how to add custom user handle in diagram:
-{% capture codesnippet1 %}
+
 {% tabs %}
 {% highlight c# %}
 //Add Graphic path into custom handle
@@ -38,8 +39,6 @@ diagram.UserHandles.Add(new UserHandle("right", UserHandlePosition.Right,graph){
 
 {% endhighlight %}
 {% endtabs %}
-{% endcapture %}
-{{ codesnippet1 | OrderList_Indent_Level_1 }}
 
 ## User handles clicked event
 The following code illustrate how to define user handles clicked event and its action.
