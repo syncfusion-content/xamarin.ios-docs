@@ -49,7 +49,7 @@ The following steps explain on how to create a image editor  and configure its e
 
     You can load the image to the SfImageEditor by set image property in SfImageEditor.
 
-{% capture codesnippet1 %}
+{% capture codesnippet2 %}
 
 {% highlight C# %}
 
@@ -60,7 +60,7 @@ The following steps explain on how to create a image editor  and configure its e
 
 {% endcapture %}
 
-{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 * Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
 
