@@ -17,17 +17,19 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Basic building blocks of Diagram
-• **Diagram-**It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.
-• **Nodes-**This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc.
-• **Connectors-**These are the objects used to create link between two nodes, to represent the relationships between them in the diagram.
-• **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
-• **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
+* **Diagram-**It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.
+* **Nodes-**This represents the geometric shapes such as flowchart elements, network diagram elements, use case elements, etc.
+* **Connectors-**These are the objects used to create link between two nodes, to represent the relationships between them in the diagram.
+* **Ports-**It represents a point in the node, where the connectors can be connected. A Node can contain any number of ports.
+* **Annotation-**It is a block of the text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time.
 
 ## Creating a simple flow chart
 Create a new iOS app (Xamarin.iOS) with iOS class library in the Visual Studio and name the project as “GettingStarted” and refer to the above mentioned assembly to the respective projects.
+
 **Adding SfDiagram in Xamarin.iOS**
 1.Import SfDiagram control namespace as Using Syncfusion.SfDiagram.iOS in ViewController.cs Page.
-2. Set the SfDiagram control as Subview of the View.
+2.Set the SfDiagram control as Subview of the View.
+
 {% tabs %}
 {% highlight c# %}
 using System;
@@ -56,6 +58,7 @@ namespace GettingStarted
 }
 {% endhighlight %}
 {% endtabs %}
+
 The following code snippet illustrates the creation of Nodes and Connectors in the diagram.
 {% tabs %}
 {% highlight c# %}
@@ -125,10 +128,11 @@ public class Employees : ObservableCollection<Employee>
 }
 {% endhighlight %}
 {% endtabs %}
-Initialize Employee data
+**Initialize Employee data**
 Define Employee Information as a Collection. The below code example shows an employee array whose,
-•Name is used as a unique identifier and
-•ParentId is used to identify the person to whom an employee report to, in the organization.
+* Name is used as a unique identifier and
+* ParentId is used to identify the person to whom an employee report to, in the organization.
+
 {% tabs %}
 {% highlight c# %}
 //Initializes the employee collection

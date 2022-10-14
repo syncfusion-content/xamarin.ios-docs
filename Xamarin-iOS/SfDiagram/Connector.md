@@ -169,6 +169,7 @@ diagram.AddConnector(connector1);
 There are two ways to remove connector from the connection, they are:
 1. Passing the connector as parameter to remove connector method in the diagram.
 The following code example illustrates how to remove a connector from the connection:
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 //creating connector instance
@@ -183,8 +184,10 @@ diagram.AddConnector(connector1);
 diagram.RemoveConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-2. Passing the index value of the connector to remove connector method in the diagram (using RemoveAt method).
-The following code example illustrates how to remove a connector from connection:
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+2. Passing the index value of the connector to remove connector method in the diagram (using RemoveAt method).The following code example illustrates how to remove a connector from connection:
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 //creating connector instance
@@ -199,6 +202,8 @@ diagram.AddConnector(connector1);
 diagram.Connectors.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Appearance
 The StrokeThickness, stroke are the set of properties. The style of line connectors and decorators can be customized with that properties.
