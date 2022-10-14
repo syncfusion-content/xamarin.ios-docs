@@ -98,7 +98,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% endcapture %}
 
-{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 ![](ranges_images/range-offset.png)
 
@@ -128,7 +128,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% endcapture %}
 
-{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 ![](ranges_images/range-inner-outer-offset.png)
 
