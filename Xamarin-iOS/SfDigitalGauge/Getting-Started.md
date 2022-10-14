@@ -31,6 +31,8 @@ iOS-unified\Syncfusion.SfGauge.iOS.dll
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
@@ -41,7 +43,13 @@ iOS-unified\Syncfusion.SfGauge.iOS.dll
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Now add the SfDigitalGauge control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -53,6 +61,10 @@ this.AddSubview(digitalGauge);
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ## Configuring properties
 
