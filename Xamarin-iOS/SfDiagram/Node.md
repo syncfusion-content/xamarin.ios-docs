@@ -81,12 +81,13 @@ Node node = new Node() { Width = 120, Height = 40, OffsetX = 300, OffsetY = 60, 
 
 ## Constraints
 Node constraints allow to enable or disable the following behaviors of node:
-•Drag
-•Resize
-•Rotate
-•AnnotationEditing
-•IsLocked
-Example:
+* Drag
+* Resize
+* Rotate
+* AnnotationEditing
+* IsLocked
+
+**Example:**
 The following code illustrates how to disable node dragging:
 {% tabs %}
 {% highlight c# %}
