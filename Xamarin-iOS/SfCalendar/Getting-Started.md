@@ -48,7 +48,7 @@ this.Add(calendar);
 
 ### Enabling Multiple Selection 
 
-To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
+To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](https://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
 
 {% highlight c# %}
 
