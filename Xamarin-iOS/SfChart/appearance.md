@@ -29,7 +29,7 @@ The following screenshot shows the default appearance of multiple series.
 
 **Custom Palette**
 
-Chart will use the colors from [`CustomColors`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_CustomColors) property if [`ColorModel.Palette`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_Palette) is set to [`SFChartColorPalette.Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorPalette.html).
+Chart will use the colors from [`CustomColors`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_CustomColors) property if [`ColorModel.Palette`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_Palette) is set to [`SFChartColorPalette.Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorPalette.html#Syncfusion_SfChart_iOS_SFChartColorPalette_Custom).
 
 Following code illustrates how to set the custom colors.
 
@@ -77,7 +77,7 @@ series.ColorModel.Palette   = SFChartColorPalette.Metro;
 
 **Custom Palette**
 
-Series will use the colors from `CustomBrushes` property if the [`ColorModel.Palette`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_Palette) property of series is set to [`Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorPalette.html).
+Series will use the colors from `CustomBrushes` property if the [`ColorModel.Palette`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_Palette) property of series is set to [`Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorPalette.html#Syncfusion_SfChart_iOS_SFChartColorPalette_Custom).
 
 Following code illustrates how to set the custom colors.
 
@@ -107,7 +107,7 @@ None palette will not apply any color to the data points. So in order to define 
 
 ## Gradient Colors
 
-The [`CustomGradientColors`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_CustomGradientColors) property of [`ChartColorModel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html) is used to define the gradient colors, the colors from this property is used for series or chart if the [`Palette`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_Palette) property of ChartColorModel is [`Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorPalette.html) and the [`CustomColors`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_CustomColors) property is null. The following properties are used to define the gradient color for the chart.
+The [`CustomGradientColors`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_CustomGradientColors) property of [`ChartColorModel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html) is used to define the gradient colors, the colors from this property is used for series or chart if the [`Palette`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_Palette) property of ChartColorModel is [`Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorPalette.html#Syncfusion_SfChart_iOS_SFChartColorPalette_Custom) and the [`CustomColors`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartColorModel.html#Syncfusion_SfChart_iOS_SFChartColorModel_CustomColors) property is null. The following properties are used to define the gradient color for the chart.
 
 The [`StartPoint`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartGradientColor.html#Syncfusion_SfChart_iOS_ChartGradientColor_StartPoint) and [`EndPoint`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartGradientColor.html#Syncfusion_SfChart_iOS_ChartGradientColor_EndPoint)  properties of [`ChartGradientColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartGradientColor.html) is used to configure the direction of gradient color, [`GradientStops`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartGradientColor.html#Syncfusion_SfChart_iOS_ChartGradientColor_GradientStops)  property is used to set the color based on the offset.
 
