@@ -33,9 +33,9 @@ chart.AddChartBehavior (behavior);
 
 [`LabelDisplayMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_LabelDisplayMode) property is used to specify whether to display label for all the data points along the vertical line or display only single label. Following are the two options you can set to this property,
 
-* [`FloatAllPoints`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html) – Displays label for all the data points along the vertical line.
-* [`GroupAllPoints`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html) – Displays label for all the data points on top of the chart along the vertical line.
-* [`NearestPoint`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html) – Displays label for single data point that is nearer to the touch contact position.
+* [`FloatAllPoints`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html#Syncfusion_SfChart_iOS_SFChartTrackballLabelDisplayMode_FloatAllPoints) – Displays label for all the data points along the vertical line.
+* [`GroupAllPoints`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html#Syncfusion_SfChart_iOS_SFChartTrackballLabelDisplayMode_GroupAllPoints) – Displays label for all the data points on top of the chart along the vertical line.
+* [`NearestPoint`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballLabelDisplayMode.html#Syncfusion_SfChart_iOS_SFChartTrackballLabelDisplayMode_NearestPoint) – Displays label for single data point that is nearer to the touch contact position.
 
 {% highlight c# %}
 
@@ -57,13 +57,13 @@ In the following screenshot, trackball label is shown for only single data point
 
 ## Activation mode
 
-The [`ActivationMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`SFChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html).
+The [`ActivationMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_ActivationMode) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`SFChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html#Syncfusion_SfChart_iOS_SFChartTrackballActivationMode_LongPress).
 
 The SFChartTrackballActivationMode enum contains the following values:
 
-* [`LongPress`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Activates trackball only when performing the long press action.
-* [`TouchMove`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Activates trackball only when performing touch move action.
-* [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_Show_CoreGraphics_CGPoint_) method.
+* [`LongPress`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html#Syncfusion_SfChart_iOS_SFChartTrackballActivationMode_LongPress) – Activates trackball only when performing the long press action.
+* [`TouchMove`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html#Syncfusion_SfChart_iOS_SFChartTrackballActivationMode_TouchMove) – Activates trackball only when performing touch move action.
+* [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html#Syncfusion_SfChart_iOS_SFChartTrackballActivationMode_None) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballActivationMode.html#Syncfusion_SfChart_iOS_SFChartTrackballActivationMode_None). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballBehavior.html#Syncfusion_SfChart_iOS_SFChartTrackballBehavior_Show_CoreGraphics_CGPoint_) method.
 
 ## Customizing appearance
 
