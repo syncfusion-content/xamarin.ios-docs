@@ -51,7 +51,7 @@ Annotations can be positioned in plot area based on [`X1`](https://help.syncfusi
 
 ### Positioning based on CoordinateUnit as axis
 
-To position the annotation based on axis, set the [`X1`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_X1) and [`Y1`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_Y1), [`X2`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ShapeAnnotation.html#Syncfusion_SfChart_iOS_ShapeAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ShapeAnnotation.html#Syncfusion_SfChart_iOS_ShapeAnnotation_Y2) properties based on axis range values, if needed, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_CoordinateUnit) value as [`Axis`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartCoordinateUnit.html).
+To position the annotation based on axis, set the [`X1`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_X1) and [`Y1`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_Y1), [`X2`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ShapeAnnotation.html#Syncfusion_SfChart_iOS_ShapeAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ShapeAnnotation.html#Syncfusion_SfChart_iOS_ShapeAnnotation_Y2) properties based on axis range values, if needed, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_CoordinateUnit) value as [`Axis`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartCoordinateUnit.html#Syncfusion_SfChart_iOS_ChartCoordinateUnit_Axis).
 
 {% highlight c# %}
 
@@ -81,7 +81,7 @@ chart.Annotations.Add(annotation);
 
 ### Positioning based on CoordinateUnit as pixels
 
-To position the annotation based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_CoordinateUnit) as `Pixels`, and the pixel values in [`X1`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_X1) and [`Y1`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_Y1), [`X2`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ShapeAnnotation.html#Syncfusion_SfChart_iOS_ShapeAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ShapeAnnotation.html#Syncfusion_SfChart_iOS_ShapeAnnotation_Y2) properties of annotation are shown in the below code snippet,
+To position the annotation based on the pixel values, set the [`CoordinateUnit`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_CoordinateUnit) as [`Pixels`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartCoordinateUnit.html#Syncfusion_SfChart_iOS_ChartCoordinateUnit_Pixels), and the pixel values in [`X1`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_X1) and [`Y1`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_Y1), [`X2`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ShapeAnnotation.html#Syncfusion_SfChart_iOS_ShapeAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ShapeAnnotation.html#Syncfusion_SfChart_iOS_ShapeAnnotation_Y2) properties of annotation are shown in the below code snippet,
 
 {% highlight c# %}
 
@@ -187,8 +187,8 @@ The [`TextAnnotation`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfC
 * [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BorderWidth) – Used to change the width of the border.
 * [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Font) – Used to change the text size, family, and weight.
 * [`Margin`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Margin) - Used to change the margin of the text.
-* [`HorizontalLabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_iOS_ChartAnnotationLabelStyle_HorizontalLabelAlignment) – Used to align the text horizontally([`Center`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html),[`Start`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html),[`End`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html)).
-* [`VerticalLabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_iOS_ChartAnnotationLabelStyle_VerticalLabelAlignment) – Used to align the text vertically([`Center`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html),[`Start`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html),[`End`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html)).
+* [`HorizontalLabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_iOS_ChartAnnotationLabelStyle_HorizontalLabelAlignment) – Used to align the text horizontally([`Center`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html#Syncfusion_SfChart_iOS_ChartAnnotationAlignment_Center),[`Start`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html#Syncfusion_SfChart_iOS_ChartAnnotationAlignment_Start),[`End`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html#Syncfusion_SfChart_iOS_ChartAnnotationAlignment_End).
+* [`VerticalLabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_iOS_ChartAnnotationLabelStyle_VerticalLabelAlignment) – Used to align the text vertically([`Center`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html#Syncfusion_SfChart_iOS_ChartAnnotationAlignment_Center),[`Start`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html#Syncfusion_SfChart_iOS_ChartAnnotationAlignment_Start),[`End`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationAlignment.html#Syncfusion_SfChart_iOS_ChartAnnotationAlignment_End).
 
 {% highlight c# %}
 
@@ -329,7 +329,7 @@ chart.Annotations.Add(annotation);
 
 **Adding arrow to line annotation**
 
-To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.LineAnnotation.html#Syncfusion_SfChart_iOS_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLineCap.html). The default value of the [`LineCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.LineAnnotation.html#Syncfusion_SfChart_iOS_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLineCap.html).
+To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.LineAnnotation.html#Syncfusion_SfChart_iOS_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLineCap.html#Syncfusion_SfChart_iOS_ChartLineCap_Arrow). The default value of the [`LineCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.LineAnnotation.html#Syncfusion_SfChart_iOS_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLineCap.html#Syncfusion_SfChart_iOS_ChartLineCap_None).
 
 {% highlight c# %}
 
@@ -486,7 +486,7 @@ chart.Annotations.Add(horizontal);
 
 **Adding arrow to vertical and horizontal line annotations**
 
-To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.LineAnnotation.html#Syncfusion_SfChart_iOS_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLineCap.html). The default value of the [`LineCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.LineAnnotation.html#Syncfusion_SfChart_iOS_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLineCap.html).
+To display single headed arrow, set the [`LineCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.LineAnnotation.html#Syncfusion_SfChart_iOS_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLineCap.html#Syncfusion_SfChart_iOS_ChartLineCap_Arrow). The default value of the [`LineCap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.LineAnnotation.html#Syncfusion_SfChart_iOS_LineAnnotation_LineCap) property is [`None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartLineCap.html#Syncfusion_SfChart_iOS_ChartLineCap_None).
 
 {% highlight c# %}
 
@@ -620,7 +620,7 @@ chart.ChartAnnotations.Add(verticalLineAnnotation);
 
 **AnnotationClicked**
 
-The [`AnnotationClicked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartBase.html) event is triggered when the user has clicked the annotation. The argument contains the following information.
+The [`AnnotationClicked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartBase.html#Syncfusion_SfChart_iOS_ChartBase_AnnotationClicked) event is triggered when the user has clicked the annotation. The argument contains the following information.
 
 * [`Annotation`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationClickedEventArgs.html#Syncfusion_SfChart_iOS_ChartAnnotationClickedEventArgs_Annotation) – used to get the instance of annotation which is clicked.
 * [`X`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotationClickedEventArgs.html#Syncfusion_SfChart_iOS_ChartAnnotationClickedEventArgs_X) – used to get the x position of touch point on annotation.
@@ -630,10 +630,10 @@ The [`AnnotationClicked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.
 
 Following are the override methods that are available in annotation to send the information about touch interactions.
 
-* [`TouchBegan`]() – occurs when touch down inside the annotation.
-* [`TouchMove`]() – occurs while moving the finger inside the annotation.
-* [`TouchCancelled`]() – called when touch cancelled on the annotation area.
-* [`TouchEnded`]() – occurs when touch up inside the annotation. 
+* [`TouchBegan`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_TouchBegan_Foundation_NSSet_UIKit_UIEvent_) – occurs when touch down inside the annotation.
+* [`TouchMove`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_TouchMove_Foundation_NSSet_UIKit_UIEvent_) – occurs while moving the finger inside the annotation.
+* [`TouchCancelled`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_TouchCancelled_Foundation_NSSet_UIKit_UIEvent_) – called when touch cancelled on the annotation area.
+* [`TouchEnded`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAnnotation.html#Syncfusion_SfChart_iOS_ChartAnnotation_TouchEnded_Foundation_NSSet_UIKit_UIEvent_) – occurs when touch up inside the annotation. 
 
 {% highlight c# %}
 

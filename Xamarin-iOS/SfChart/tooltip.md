@@ -41,8 +41,8 @@ Following properties of [`SFChartTooltipBehavior`](https://help.syncfusion.com/c
 * [`Duration`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Duration) – used to set the visible duration of label.
 * [`OffsetX`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_OffsetX) - used to move the label horizontally.
 * [`OffsetY`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_OffsetY) - used to move the label vertically.
-* [`Position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Position) - used to position the tooltip at [`Bottom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartElementPosition.html), Left, Right, or Top.
-* [`Animation`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Animation) - used to animate the tooltip([`Fade`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipAnimation.html), None, Pop). 
+* [`Position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Position) - used to position the tooltip at [`Bottom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartElementPosition.html#Syncfusion_SfChart_iOS_SFChartElementPosition_Bottom), Left, Right, or Top.
+* [`Animation`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_Animation) - used to animate the tooltip([`Fade`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipAnimation.html#Syncfusion_SfChart_iOS_SFChartTooltipAnimation_Fade), None, Pop). 
 * [`MaximumWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html#Syncfusion_SfChart_iOS_SFChartTooltipBehavior_MaximumWidth) - used to change label maximum width.
 
 
@@ -126,7 +126,7 @@ The following properties available in the SFChartTooltip to customize the appear
 * [`TextAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_TextAlignment) – used to change text alignment horizontally.
 * [`Series`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_Series) – returns the series at the tapped location.
 * [`DataPoint`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_DataPoint) – returns the chart data point at the tapped location.
-* [`ChartBehavior`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltipBehavior.html) - returns the SFChartTooltipBehavior of the tooltip.
+* [`Behavior`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTooltip.html#Syncfusion_SfChart_iOS_SFChartTooltip_Behavior) - returns the SFChartTooltipBehavior of the tooltip.
 
 {% highlight c# %}
 
