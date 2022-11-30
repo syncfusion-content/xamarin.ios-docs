@@ -39,7 +39,7 @@ chart.PrimaryAxis 	 = xAxis;
 
 ### Placing labels between ticks
 
-Labels in category axis can be placed between the ticks by setting [`LabelPlacement`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCategoryAxis.html#Syncfusion_SfChart_iOS_SFCategoryAxis_LabelPlacement) to [`SFChartLabelPlacement.BetweenTicks`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartLabelPlacement.html). Default value of [`LabelPlacement`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCategoryAxis.html#Syncfusion_SfChart_iOS_SFCategoryAxis_LabelPlacement) property is [`SFChartLabelPlacement.OnTicks`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartLabelPlacement.html) i.e. labels will be placed on the ticks by default.
+Labels in category axis can be placed between the ticks by setting [`LabelPlacement`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCategoryAxis.html#Syncfusion_SfChart_iOS_SFCategoryAxis_LabelPlacement) to [`SFChartLabelPlacement.BetweenTicks`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartLabelPlacement.html#Syncfusion_SfChart_iOS_SFChartLabelPlacement_BetweenTicks). Default value of [`LabelPlacement`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCategoryAxis.html#Syncfusion_SfChart_iOS_SFCategoryAxis_LabelPlacement) property is [`SFChartLabelPlacement.OnTicks`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartLabelPlacement.html#Syncfusion_SfChart_iOS_SFChartLabelPlacement_OnTicks) i.e. labels will be placed on the ticks by default.
 
 {% highlight c# %}
 
@@ -63,7 +63,7 @@ xAxis.Interval = new NSNumber (2);
 
 ### Indexed category axis
 
-Category axis can also be rendered based on the index values of data source by setting the [`ArrangeByIndex`]() property to true in the axis.
+Category axis can also be rendered based on the index values of data source by setting the [`ArrangeByIndex`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCategoryAxis.html#Syncfusion_SfChart_iOS_SFCategoryAxis_ArrangeByIndex) property to true in the axis.
 
 {% highlight c# %} 
 [C#]
@@ -153,7 +153,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **None**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) for horizontal axis.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html#Syncfusion_SfChart_iOS_SFChartNumericalPadding_None), padding will not be applied to the axis. This is also the default value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) for horizontal axis.
 
 {% highlight c# %}
 
@@ -166,7 +166,7 @@ yAxis.RangePadding = SFChartNumericalPadding.None;
 
 **Round**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.Round`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded to the nearest possible value by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.Round`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html#Syncfusion_SfChart_iOS_SFChartNumericalPadding_Round), axis range will be rounded to the nearest possible value by the interval.
 
 {% highlight c# %}
 
@@ -178,7 +178,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Round;
 
 **Additional**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.Additional`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.Additional`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html#Syncfusion_SfChart_iOS_SFChartNumericalPadding_Additional), axis range will be rounded and an interval of the axis will be added as padding to the minimum and maximum values of the range.
 
 {% highlight c# %}
 
@@ -190,7 +190,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Additional;
 
 **Normal**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.Normal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.Normal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html#Syncfusion_SfChart_iOS_SFChartNumericalPadding_Normal), range will be calculated for the axis based on the best readability of the data. This is also the default for vertical axis.
 
 {% highlight c# %}
 
@@ -202,7 +202,7 @@ yAxis.RangePadding = SFChartNumericalPadding.Normal;
 
 **RoundStart**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundStart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded in the start to the nearest possible value by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundStart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html#Syncfusion_SfChart_iOS_SFChartNumericalPadding_RoundStart), axis range will be rounded in the start to the nearest possible value by the interval.
 
 {% highlight c# %}
 
@@ -213,7 +213,7 @@ yAxis.RangePadding = SFChartNumericalPadding.RoundStart;
 
 **RoundEnd**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundEnd`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded in the end to the nearest possible value by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.RoundEnd`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html#Syncfusion_SfChart_iOS_SFChartNumericalPadding_RoundEnd), axis range will be rounded in the end to the nearest possible value by the interval.
 
 {% highlight c# %}
 
@@ -224,7 +224,7 @@ yAxis.RangePadding = SFChartNumericalPadding.RoundEnd;
 
 **PrependInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.PrependInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum values of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.PrependInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html#Syncfusion_SfChart_iOS_SFChartNumericalPadding_PrependInterval), axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum values of the range.
 
 {% highlight c# %}
 
@@ -235,7 +235,7 @@ yAxis.RangePadding = SFChartNumericalPadding.PrependInterval;
 
 **AppendInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.AppendInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html), axis range will be rounded and an interval of the axis will be added in the end as padding to the maximum values of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFNumericalAxis.html#Syncfusion_SfChart_iOS_SFNumericalAxis_RangePadding) property is [`SFChartNumericalPadding.AppendInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartNumericalPadding.html#Syncfusion_SfChart_iOS_SFChartNumericalPadding_AppendInterval), axis range will be rounded and an interval of the axis will be added in the end as padding to the maximum values of the range.
 
 {% highlight c# %}
 
@@ -276,7 +276,7 @@ primaryAxis.Maximum = calendar.DateFromComponents(new NSDateComponents() {Year =
 
 ### Date time intervals
 
-Date time intervals can be customized using [`Interval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_Interval) and [`IntervalType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_IntervalType) properties of the [`SFDateTimeAxis`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html). For example, setting [`Interval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_Interval) as 2 and [`IntervalType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_IntervalType) as [`SFChartDateTimeIntervalType.Years`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeIntervalType.html) will consider 2 years as interval.
+Date time intervals can be customized using [`Interval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_Interval) and [`IntervalType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_IntervalType) properties of the [`SFDateTimeAxis`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html). For example, setting [`Interval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_Interval) as 2 and [`IntervalType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_IntervalType) as [`SFChartDateTimeIntervalType.Years`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeIntervalType.html#Syncfusion_SfChart_iOS_SFChartDateTimeIntervalType_Years) will consider 2 years as interval.
 
 Essential Chart supports the following types of interval for date time axis
 
@@ -312,7 +312,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **None**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), padding will not be applied to the axis. This is also the default value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding).
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html#Syncfusion_SfChart_iOS_SFChartDateTimePadding_None), padding will not be applied to the axis. This is also the default value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding).
 
 {% highlight c# %}
 
@@ -324,7 +324,7 @@ xAxis.RangePadding = SFChartDateTimePadding.None;
 
 **Round**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.Round`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded to the nearest possible date time value.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.Round`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html#Syncfusion_SfChart_iOS_SFChartDateTimePadding_Round), axis range will be rounded to the nearest possible date time value.
 
 
 {% highlight c# %}
@@ -337,7 +337,7 @@ xAxis.RangePadding = SFChartDateTimePadding.Round;
 
 **Additional**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.Additional`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.Additional`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html#Syncfusion_SfChart_iOS_SFChartDateTimePadding_Additional), range will be rounded and date time interval of the axis will be added as padding to the minimum and maximum extremes of the range.
 
 {% highlight c# %}
 
@@ -349,7 +349,7 @@ xAxis.RangePadding = SFChartDateTimePadding.Additional;
 
 **RoundStart**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundStart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded in the start to the nearest possible date time value.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundStart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html#Syncfusion_SfChart_iOS_SFChartDateTimePadding_RoundStart), axis range will be rounded in the start to the nearest possible date time value.
 
 
 {% highlight c# %}
@@ -362,7 +362,7 @@ xAxis.RangePadding = SFChartDateTimePadding.RoundStart;
 
 **RoundEnd**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundEnd`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded in the end to the nearest possible date time value.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.RoundEnd`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html#Syncfusion_SfChart_iOS_SFChartDateTimePadding_RoundEnd), axis range will be rounded in the end to the nearest possible date time value.
 
 
 {% highlight c# %}
@@ -375,7 +375,7 @@ xAxis.RangePadding = SFChartDateTimePadding.RoundEnd;
 
 **PrependInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.PrependInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded and date time interval of the axis will be added in the start as padding to the minimum extremes of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.PrependInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html#Syncfusion_SfChart_iOS_SFChartDateTimePadding_PrependInterval), axis range will be rounded and date time interval of the axis will be added in the start as padding to the minimum extremes of the range.
 
 {% highlight c# %}
 
@@ -387,7 +387,7 @@ xAxis.RangePadding = SFChartDateTimePadding.PrependInterval;
 
 **AppendInterval**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.AppendInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html), axis range will be rounded and date time interval of the axis will be added in the end as padding to the maximum extremes of the range.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_RangePadding) property is [`SFChartDateTimePadding.AppendInterval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimePadding.html#Syncfusion_SfChart_iOS_SFChartDateTimePadding_AppendInterval), axis range will be rounded and date time interval of the axis will be added in the end as padding to the maximum extremes of the range.
 
 {% highlight c# %}
 
@@ -583,7 +583,7 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart
 * [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_BorderWidth) – used to change the thickness of the border.
 * [`Font`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Font) – used to change the text size, font family and font weight.
 * [`Margin`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFLabelStyle.html#Syncfusion_SfChart_iOS_SFLabelStyle_Margin) - used to change the margin size for labels.
-* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_LabelAlignment) - Used to align the label at the [`Start`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAxisLabelAlignment.html), Center, or End.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_LabelAlignment) - Used to align the label at the [`Start`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAxisLabelAlignment.html#Syncfusion_SfChart_iOS_ChartAxisLabelAlignment_Start), Center, or End.
 * [`CornerRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_CornerRadius) - Used to change the corner radius of the background of labels.
 * [`MaxWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_MaxWidth) - Provides the maximum text width of the axis label and wraps into the next line when exceeds the maximum width.
 * [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_WrappedLabelAlignment) - Positions the wrapped text at the start, center, or end. The default value of the [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_WrappedLabelAlignment) property is `Start`.
@@ -601,7 +601,7 @@ chart.PrimaryAxis.LabelStyle.Color = UIColor.Red;
 
 ### Label and tick positioning
 
-Axis labels and ticks can be positioned [`Inside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html) or [`Outside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html) the chart area by using [`LabelsPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_LabelsPosition) and [`TickPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_TickPosition) properties of [`SFAxis`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html). By default labels and ticks will be positioned outside the chart area.
+Axis labels and ticks can be positioned [`Inside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html#Syncfusion_SfChart_iOS_SFChartAxisElementPosition_Inside) or [`Outside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisElementPosition.html#Syncfusion_SfChart_iOS_SFChartAxisElementPosition_Outside) the chart area by using [`LabelsPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFAxisLabelStyle_LabelsPosition) and [`TickPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_TickPosition) properties of [`SFAxis`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html). By default labels and ticks will be positioned outside the chart area.
 
 {% highlight c# %}
 
@@ -615,7 +615,7 @@ chart.PrimaryAxis.TickPosition                = SFChartAxisElementPosition.Insid
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_EdgeLabelsDrawingMode) property can be used to avoid the partial appearance of labels at the corners. The default [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_EdgeLabelsDrawingMode) is [`Center`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsDrawingMode.html).
+Labels with long text at the edges of an axis may appear partially outside the chart. The [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_EdgeLabelsDrawingMode) property can be used to avoid the partial appearance of labels at the corners. The default [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_EdgeLabelsDrawingMode) is [`Center`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsDrawingMode.html#Syncfusion_SfChart_iOS_SFChartAxisEdgeLabelsDrawingMode_Center).
 
 {% highlight c# %}
 
@@ -629,9 +629,9 @@ chart.PrimaryAxis.EdgeLabelsDrawingMode = SFChartAxisEdgeLabelsDrawingMode.Shift
 The visibility of the edge labels in an axis can be controlled using [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFRangeAxisBase.html#Syncfusion_SfChart_iOS_SFRangeAxisBase_EdgeLabelsVisibilityMode) property.
 The following options are available in [`EdgeLabelsVisibilityMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFRangeAxisBase.html#Syncfusion_SfChart_iOS_SFRangeAxisBase_EdgeLabelsVisibilityMode),
 
-* [`Default`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html) - used to display the edge label based on auto interval calculations.
-* [`Visible`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
-* [`AlwaysVisible`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html) - used to always display the edge labels even while zooming the chart.
+* [`Default`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html#Syncfusion_SfChart_iOS_SFChartAxisEdgeLabelsVisibilityMode_Default) - used to display the edge label based on auto interval calculations.
+* [`Visible`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html#Syncfusion_SfChart_iOS_SFChartAxisEdgeLabelsVisibilityMode_Visible) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
+* [`AlwaysVisible`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisEdgeLabelsVisibilityMode.html#Syncfusion_SfChart_iOS_SFChartAxisEdgeLabelsVisibilityMode_AlwaysVisible) - used to always display the edge labels even while zooming the chart.
 
 The following code example demonstrates the AlwaysVisible option.
 
@@ -827,11 +827,11 @@ By adding [`SFChartZoomPanBehavior`](https://help.syncfusion.com/cr/xamarin-ios/
 
 ### Auto scrolling delta type
 
-In [`SFDateTimeAxis`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html), you can apply auto scrolling delta value in [`Years`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Months`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Days`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Hours`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Minutes`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html), [`Seconds`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html) and [`Milliseconds`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html) by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_AutoScrollingDelta) property.
+In [`SFDateTimeAxis`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html), you can apply auto scrolling delta value in [`Years`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html#Syncfusion_SfChart_iOS_SFChartDateTimeDeltaType_Years), [`Months`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html#Syncfusion_SfChart_iOS_SFChartDateTimeDeltaType_Months), [`Days`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html#Syncfusion_SfChart_iOS_SFChartDateTimeDeltaType_Days), [`Hours`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html#Syncfusion_SfChart_iOS_SFChartDateTimeDeltaType_Hours), [`Minutes`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html#Syncfusion_SfChart_iOS_SFChartDateTimeDeltaType_Minutes), [`Seconds`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html#Syncfusion_SfChart_iOS_SFChartDateTimeDeltaType_Seconds) and [`Milliseconds`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDateTimeDeltaType.html#Syncfusion_SfChart_iOS_SFChartDateTimeDeltaType_Milliseconds) by setting [`AutoScrollingDeltaType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDateTimeAxis.html#Syncfusion_SfChart_iOS_SFDateTimeAxis_AutoScrollingDeltaType) property.
 
 ### Auto scrolling mode
 
-[`AutoScrollingMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_AutoScrollingMode) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_AutoScrollingMode) is [`End`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAutoScrollingMode.html).
+[`AutoScrollingMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_AutoScrollingMode) property can be used to determine whether the axis should be scrolled from start position or end position. The default value of [`AutoScrollingMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_AutoScrollingMode) is [`End`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartAutoScrollingMode.html#Syncfusion_SfChart_iOS_ChartAutoScrollingMode_End).
 
 {% highlight c# %}
 
@@ -951,7 +951,7 @@ chart.SecondaryAxis = new SFNumericalAxis()
 
 ## Smart Axis Labels
 
-Axis labels may overlap with each other based on chart dimensions and label size. The [`LabelsIntersectAction`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_LabelsIntersectAction) property of axis is used to avoid overlapping of axis labels. The default value of the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_LabelsIntersectAction) is [`SFChartAxisLabelsIntersectAction.None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html); other available values are [`MultipleRows`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html), [`Hide`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html), and [`Wrap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html).
+Axis labels may overlap with each other based on chart dimensions and label size. The [`LabelsIntersectAction`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_LabelsIntersectAction) property of axis is used to avoid overlapping of axis labels. The default value of the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_LabelsIntersectAction) is [`SFChartAxisLabelsIntersectAction.None`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html#Syncfusion_SfChart_iOS_SFChartAxisLabelsIntersectAction_None); other available values are [`MultipleRows`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html#Syncfusion_SfChart_iOS_SFChartAxisLabelsIntersectAction_MultipleRows), [`Hide`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html#Syncfusion_SfChart_iOS_SFChartAxisLabelsIntersectAction_Hide), and [`Wrap`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAxisLabelsIntersectAction.html#Syncfusion_SfChart_iOS_SFChartAxisLabelsIntersectAction_Wrap).
 
 {% highlight c# %}
 
@@ -966,13 +966,13 @@ chart.PrimaryAxis.LabelsIntersectAction = SFChartAxisLabelsIntersectAction.Multi
 
 **LabelClicked**
 
-The [`LabelClicked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html) event is triggered when the axis label is clicked. The argument contains the following information.
+The [`LabelClicked`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_LabelClicked) event is triggered when the axis label is clicked. The argument contains the following information.
 
 * [`Label`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.ChartAxisLabelClickedEventArgs.html#Syncfusion_SfChart_iOS_SFAxis_ChartAxisLabelClickedEventArgs_Label) - Used to get the ChartAxisLabel, which contains axis label position and text.
 
 **LabelCreated**
 
-The [`LabelCreated`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html) event is triggered when the axis label is created. The argument contains [`AxisLabel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.LabelCreatedEventArgs.html#Syncfusion_SfChart_iOS_SFAxis_LabelCreatedEventArgs_AxisLabel) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.ChartAxisLabel.html) which contains following properties.
+The [`LabelCreated`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_LabelCreated) event is triggered when the axis label is created. The argument contains [`AxisLabel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.LabelCreatedEventArgs.html#Syncfusion_SfChart_iOS_SFAxis_LabelCreatedEventArgs_AxisLabel) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.ChartAxisLabel.html) which contains following properties.
 
 * [`LabelContent`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.ChartAxisLabel.html#Syncfusion_SfChart_iOS_SFAxis_ChartAxisLabel_LabelContent) - used to get or set the content of label
 * [`Position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.ChartAxisLabel.html#Syncfusion_SfChart_iOS_SFAxis_ChartAxisLabel_Position) - used to get or set the position of the label

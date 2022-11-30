@@ -257,7 +257,7 @@ The following output is displayed as a result of the above code example.
 
 ![Tooltip support in Xamarin.iOS Chart](Getting-Started_images/img2.png)
 
-You can find the complete getting started sample from this [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
+You can find the complete getting started sample from this [here.](https://github.com/SyncfusionExamples/Xamarin.iOS-Chart-Getting-Started)
 
 
 
