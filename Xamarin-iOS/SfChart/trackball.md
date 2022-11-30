@@ -179,9 +179,9 @@ Following screenshot illustrates the customization of trackball elements.
 
 The position of trackball’s axis label can be changed using the [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballAxisLabelStyle_LabelAlignment) property of [`SFChartTrackballAxisLabelStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle.html). The following options are available in [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartTrackballAxisLabelStyle.html#Syncfusion_SfChart_iOS_SFChartTrackballAxisLabelStyle_LabelAlignment).
 
-* [`Far`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAlignment.html) - The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis. 
-* [`Near`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAlignment.html) - The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
-* [`Center`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAlignment.html) - The label will be positioned at the center of tick. This is the default value.
+* [`Far`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAlignment.html#Syncfusion_SfChart_iOS_SFChartAlignment_Far) - The label will be positioned below the tick in vertical axis and right of the tick in horizontal axis. 
+* [`Near`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAlignment.html#Syncfusion_SfChart_iOS_SFChartAlignment_Near) - The label will be positioned above the tick in vertical axis and left of the tick in horizontal axis.
+* [`Center`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartAlignment.html#Syncfusion_SfChart_iOS_SFChartAlignment_Center) - The label will be positioned at the center of tick. This is the default value.
 
 ## Show/hide the series label
 
