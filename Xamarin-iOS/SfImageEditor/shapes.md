@@ -86,7 +86,7 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 
  * You can annotate any path on an image by using free hand drawing as shown in the below code,
 
-{% capture codesnippet1 %}
+{% capture codesnippet2 %}
 
 {% tabs %}
 
