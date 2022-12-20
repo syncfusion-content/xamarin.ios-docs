@@ -72,7 +72,7 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 
 {% highlight C# %}
 
-            editor.AddShape(ShapeType.Circle, new PenSettings() { Color = UIColor.Red, Mode = Mode.Stroke, Opacity = 1f, Bounds = new Rectangle(20, 20, 35, 35) });
+      editor.AddShape(ShapeType.Circle, new PenSettings() { Color = UIColor.Red, Mode = Mode.Stroke, Opacity = 1f, Bounds = new Rectangle(20, 20, 35, 35) });
 
 {% endhighlight %}
 
@@ -84,9 +84,9 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 
 ![SfImageEditor](ImageEditor_images/Shapes.jpg)
 
- * You can annotate any path on an image by using free hand drawing as shown in the below code,
+* You can annotate any path on an image by using free hand drawing as shown in the below code,
 
-{% capture codesnippet1 %}
+{% capture codesnippet2 %}
 
 {% tabs %}
 
