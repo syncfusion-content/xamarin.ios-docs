@@ -33,7 +33,9 @@ This event occurs before saving the image. You can control the save functionalit
 
 * Cancel: 
 
-It restricts saving image to the default location when set `Cancel` value to `true`.
+    It restricts saving image to the default location when set `Cancel` value to `true`.
+
+{% capture codesnippet1 %}
 
 {% highlight C# %}
 
@@ -49,9 +51,15 @@ It restricts saving image to the default location when set `Cancel` value to `tr
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Stream
 
-You can get current image edits as stream using this argument.
+    You can get current image edits as stream using this argument.
+
+{% capture codesnippet2 %}
 
 {% highlight C# %}
          
@@ -61,6 +69,10 @@ You can get current image edits as stream using this argument.
         }
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ### ImageSaved
 

@@ -264,14 +264,14 @@ chart.Series.Add(splineAreaSeries);
 
 The following types are used in [`SFSplineAreaSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSplineAreaSeries.html) as
 
-* [`Natural`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
-* [`Monotonic`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
-* [`Cardinal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
-* [`Clamped`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
+* [`Natural`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Natural)
+* [`Monotonic`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Monotonic)
+* [`Cardinal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Cardinal)
+* [`Clamped`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Clamped)
 
 By default SplineType value is Natural.
 
-The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSplineAreaSeries.html#Syncfusion_SfChart_iOS_SFSplineAreaSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSplineAreaSeries.html#Syncfusion_SfChart_iOS_SFSplineAreaSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Cardinal)
 
 {% highlight c# %}
 
@@ -443,8 +443,8 @@ Following properties are used to customize the spline range area segment appeara
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSeries.html#Syncfusion_SfChart_iOS_SFSeries_Color) – used to change the color of the series.
 * [`Alpha`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSeries.html#Syncfusion_SfChart_iOS_SFSeries_Alpha) - used to control the transparency of the chart series.
-* [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFColumnSeries.html#Syncfusion_SfChart_iOS_SFColumnSeries_BorderWidth) – used to change the stroke width of the series.
-* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFColumnSeries.html#Syncfusion_SfChart_iOS_SFColumnSeries_BorderColor) – used to change the stroke color of the series.
+* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFRangeAreaSeries.html#Syncfusion_SfChart_iOS_SFRangeAreaSeries_BorderWidth) – used to change the stroke width of the series.
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFRangeAreaSeries.html#Syncfusion_SfChart_iOS_SFRangeAreaSeries_BorderColor) – used to change the stroke color of the series.
 
 
 {% highlight c# %} 
@@ -474,7 +474,7 @@ To render a column chart, create an instance of [`SFColumnSeries`](https://help.
 * [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFColumnSeries.html#Syncfusion_SfChart_iOS_SFColumnSeries_BorderWidth) – used to change the border width of the series.
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFColumnSeries.html#Syncfusion_SfChart_iOS_SFColumnSeries_BorderColor) – used to change the border color of the series.
 * [`CornerRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFColumnSeries.html#Syncfusion_SfChart_iOS_SFColumnSeries_CornerRadius) - used to add the rounded corners to the rectangle. The [`TopLeft`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartCornerRadius.html#Syncfusion_SfChart_iOS_ChartCornerRadius_TopLeft), [`TopRight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartCornerRadius.html#Syncfusion_SfChart_iOS_ChartCornerRadius_TopRight), [`BottomLeft`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartCornerRadius.html#Syncfusion_SfChart_iOS_ChartCornerRadius_BottomLeft) and [`BottomRight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartCornerRadius.html#Syncfusion_SfChart_iOS_ChartCornerRadius_BottomRight) of [`ChartCornerRadius`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartCornerRadius.html) properties are used to set the radius value for each corner.
-* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFColumnSeries.html#Syncfusion_SfChart_iOS_SFColumnSeries_DataMarkerPosition) -  used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDataMarkerPosition.html), Top and Center of the rectangle.
+* [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFColumnSeries.html#Syncfusion_SfChart_iOS_SFColumnSeries_DataMarkerPosition) -  used to position the data marker at [`Bottom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartDataMarkerPosition.html#Syncfusion_SfChart_iOS_SFChartDataMarkerPosition_Bottom), Top and Center of the rectangle.
 * [`Spacing`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFColumnSeries.html#Syncfusion_SfChart_iOS_SFColumnSeries_Spacing) - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`Width`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFColumnSeries.html#Syncfusion_SfChart_iOS_SFColumnSeries_Width) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively. 
 
@@ -869,14 +869,14 @@ chart.Series.Add(splineSeries);
 
 The following types are used in [`SFSplineSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSplineSeries.html) as
 
-* [`Natural`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
-* [`Monotonic`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
-* [`Cardinal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
-* [`Clamped`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
+* [`Natural`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Natural)
+* [`Monotonic`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Monotonic)
+* [`Cardinal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Cardinal)
+* [`Clamped`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Clamped)
 
 By default SplineType value is Natural.
 
-The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSplineSeries.html#Syncfusion_SfChart_iOS_SFSplineSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html)
+The following code shows how to set the [`SplineType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSplineSeries.html#Syncfusion_SfChart_iOS_SFSplineSeries_SplineType) value as [`Cardinal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SplineType.html#Syncfusion_SfChart_iOS_SplineType_Cardinal)
 
 {% highlight c# %}
 
@@ -1006,7 +1006,7 @@ To render a scatter chart, create an instance of [`SFScatterSeries`](https://hel
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFScatterSeries.html#Syncfusion_SfChart_iOS_SFScatterSeries_BorderColor) – used to change the border color of the series.
 * [`ScatterWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFScatterSeries.html#Syncfusion_SfChart_iOS_SFScatterSeries_ScatterWidth) – used to change the width of the series.
 * [`ScatterHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFScatterSeries.html#Syncfusion_SfChart_iOS_SFScatterSeries_ScatterHeight) – used to change the height of the series.
-* [`ShapeType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFScatterSeries.html#Syncfusion_SfChart_iOS_SFScatterSeries_ShapeType) - used to change the rendering shape of scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Diamond`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Hexagon`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Pentagon`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Plus`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Rectangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html) and [`Triangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html).
+* [`ShapeType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFScatterSeries.html#Syncfusion_SfChart_iOS_SFScatterSeries_ShapeType) - used to change the rendering shape of scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Cross), [`Diamond`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Diamond), [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Ellipse), [`Hexagon`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Hexagon), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_InvertedTriangle), [`Pentagon`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Pentagon), [`Plus`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Plus), [`Rectangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Rectangle) and [`Triangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Triangle).
 
 {% highlight c# %}
 
@@ -1027,16 +1027,16 @@ chart.Series.Add(scatterSeries);
 
 ## Fast Scatter Chart
 
-The [`FastScatterSeries`]() is a special kind of scatter series that renders a collection with a huge number of data points. You can use the following properties to customize the appearance of a fast scatter point.
+The [`FastScatterSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFFastScatterSeries.html) is a special kind of scatter series that renders a collection with a huge number of data points. You can use the following properties to customize the appearance of a fast scatter point.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSeries.html#Syncfusion_SfChart_iOS_SFSeries_Color) – used to change the color of series.
 * [`Alpha`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSeries.html#Syncfusion_SfChart_iOS_SFSeries_Alpha) - used to control  the transparency of chart series.
-* [`BorderWidth`]() – used to change the border width of series.
-* [`BorderColor`]() – used to change the border color of series.
-* [`ScatterWidth`]() – used to change the width of series.
-* [`ScatterHeight`]() – used to change the height of series.
-* [`ShapeType`]() - used to change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Diamond`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Hexagon`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Pentagon`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Plus`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html), [`Rectangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html) and [`Triangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html).
-* [`EnableAntiAliasing`]() – Enables or disables the smoothness of series. Default value of [`EnableAntiAliasing`]() property is true.
+* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFScatterSeries.html#Syncfusion_SfChart_iOS_SFScatterSeries_BorderWidth) – used to change the border width of series.
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFScatterSeries.html#Syncfusion_SfChart_iOS_SFScatterSeries_BorderColor) – used to change the border color of series.
+* [`ScatterWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFFastScatterSeries.html#Syncfusion_SfChart_iOS_SFFastScatterSeries_ScatterWidth) – used to change the width of series.
+* [`ScatterHeight`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFFastScatterSeries.html#Syncfusion_SfChart_iOS_SFFastScatterSeries_ScatterHeight) – used to change the height of series.
+* [`ShapeType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFFastScatterSeries.html#Syncfusion_SfChart_iOS_SFFastScatterSeries_ShapeType) - used to change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Cross), [`Diamond`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Diamond), [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Ellipse), [`Hexagon`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Hexagon), [`InvertedTriangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_InvertedTriangle), [`Pentagon`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Pentagon), [`Plus`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Plus), [`Rectangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Rectangle) and [`Triangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartScatterShapeType.html#Syncfusion_SfChart_iOS_ChartScatterShapeType_Triangle).
+* [`EnableAntiAliasing`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFFastScatterSeries.html#Syncfusion_SfChart_iOS_SFFastScatterSeries_EnableAntiAliasing) – Enables or disables the smoothness of series. Default value of [`EnableAntiAliasing`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFFastScatterSeries.html#Syncfusion_SfChart_iOS_SFFastScatterSeries_EnableAntiAliasing) property is true.
 
 {% highlight c# %}
 
@@ -1204,8 +1204,8 @@ To render a radar chart, create an instance of [`SFRadarSeries`](https://help.sy
 
 [`DrawType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase.html#Syncfusion_SfChart_iOS_SFPolarRadarSeriesBase_DrawType) property is used to specify the radar series rendering type. Following are the two options you can set to this property,
 
-* [`Line`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html) – data points are visualized as line.
-* [`Area`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html) – data points are visualized as area.
+* [`Line`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html#Syncfusion_SfChart_iOS_SFChartPolarRadarSeriesDrawType_Line) – data points are visualized as line.
+* [`Area`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html#Syncfusion_SfChart_iOS_SFChartPolarRadarSeriesDrawType_Area) – data points are visualized as area.
 
 {% highlight c# %}
 SFRadarSeries radar = new SFRadarSeries ();
@@ -1252,7 +1252,7 @@ radarSeries.Closed          = false;
 
 ### Radar Start Angle for primary axis
 
-The start position of the radar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartPolarAngle.html). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes.
+The start position of the radar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartPolarAngle.html#Syncfusion_SfChart_iOS_ChartPolarAngle_Rotate270). [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property can be set for primary axis, secondary axis, or both axes.
 
 {% highlight c# %}
 
@@ -1310,8 +1310,8 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/xamarin-ios/S
 
 [`DrawType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFPolarRadarSeriesBase.html#Syncfusion_SfChart_iOS_SFPolarRadarSeriesBase_DrawType) property is used to specify the polar series rendering type. Following are the two options you can set to this property,
 
-* [`Line`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html) – data points are visualized as line.
-* [`Area`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html) – data points are visualized as area.
+* [`Line`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html#Syncfusion_SfChart_iOS_SFChartPolarRadarSeriesDrawType_Line) – data points are visualized as line.
+* [`Area`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPolarRadarSeriesDrawType.html#Syncfusion_SfChart_iOS_SFChartPolarRadarSeriesDrawType_Area) – data points are visualized as area.
 
 {% highlight c# %}
 SFPolarSeries polarSeries        = new SFPolarSeries();
@@ -1358,7 +1358,7 @@ polarSeries.Closed             = false;
 
 ### Polar start angle for primary axis
 
-The start position of the polar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartPolarAngle.html). PolarAngle property can be set for primary axis, secondary axis, or both axes.
+The start position of the polar series can be set by using [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property of axis. Default value of [`PolarAngle`](https://help.syncfusion.com/cr/xamarin-iOS/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_PolarAngle) property is [`Rotate270`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartPolarAngle.html#Syncfusion_SfChart_iOS_ChartPolarAngle_Rotate270). PolarAngle property can be set for primary axis, secondary axis, or both axes.
 
 {% highlight c# %}
 
@@ -1414,7 +1414,7 @@ To render a pie chart, create an instance of [`SFPieSeries`](https://help.syncfu
 * [`Alpha`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSeries.html#Syncfusion_SfChart_iOS_SFSeries_Alpha) - used to control the transparency of the chart series.
 * [`BorderWidth`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_BorderWidth) – used to change the border width of the series.
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_BorderColor) – used to change the border color of the series.
-* [DataMarkerPosition](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_DataMarkerPosition) - used to change the position of data marker at [`Inside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartCircularSeriesLabelPosition.html), [`Outside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartCircularSeriesLabelPosition.html) or [`OutsideExtend`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartCircularSeriesLabelPosition.html).
+* [DataMarkerPosition](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_DataMarkerPosition) - used to change the position of data marker at [`Inside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartCircularSeriesLabelPosition.html#Syncfusion_SfChart_iOS_SFChartCircularSeriesLabelPosition_Inside), [`Outside`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartCircularSeriesLabelPosition.html#Syncfusion_SfChart_iOS_SFChartCircularSeriesLabelPosition_Outside) or [`OutsideExtend`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartCircularSeriesLabelPosition.html#Syncfusion_SfChart_iOS_SFChartCircularSeriesLabelPosition_OutsideExtended).
 
 N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFSeries.html#Syncfusion_SfChart_iOS_SFSeries_XBindingPath) and [`YBindingPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAccumulationSeries.html#Syncfusion_SfChart_iOS_SFAccumulationSeries_YBindingPath) properties, so that [`SFChart`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChart.html) would fetch values from the respective properties in the data model to plot the series.
 
@@ -1478,7 +1478,7 @@ series.EndAngle    = 360;
 
 ### Group small data points into “others”
 
-The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) property is used to specify the grouping type based on slice [`Angle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.PieGroupMode.html), actual data point value, or [`Percentage`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.PieGroupMode.html), and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) property is [`double.NAN`](), and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) property is Value.
+The small segments in the pie chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) properties of PieSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) property is used to specify the grouping type based on slice [`Angle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.PieGroupMode.html#Syncfusion_SfChart_iOS_PieGroupMode_Angle), actual data point value, or [`Percentage`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.PieGroupMode.html#Syncfusion_SfChart_iOS_PieGroupMode_Percentage), and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) property is `double.NAN`, and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) property is Value.
 
 ## Doughnut Chart
 
@@ -1510,7 +1510,7 @@ chart.Series.Add(doughnutSeries);
 
 Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDoughnutSeries.html#Syncfusion_SfChart_iOS_SFDoughnutSeries_IsStackedDoughnut) property. The following properties are used to customize the stacked doughnut chart:
 
-* [`CapStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDoughnutSeries.html#Syncfusion_SfChart_iOS_SFDoughnutSeries_CapStyle) - Specifies the shape of the start and end points of the circular segment. The supported values are `BothFlat`, `BothCurve`, `StartCurve`, and `EndCurve`. The default value of the this property is [`BothFlat`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.DoughnutCapStyle.html).
+* [`CapStyle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDoughnutSeries.html#Syncfusion_SfChart_iOS_SFDoughnutSeries_CapStyle) - Specifies the shape of the start and end points of the circular segment. The supported values are `BothFlat`, `BothCurve`, `StartCurve`, and `EndCurve`. The default value of the this property is [`BothFlat`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.DoughnutCapStyle.html#Syncfusion_SfChart_iOS_DoughnutCapStyle_BothFlat).
 * [`Spacing`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDoughnutSeries.html#Syncfusion_SfChart_iOS_SFDoughnutSeries_Spacing) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`MaximumValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDoughnutSeries.html#Syncfusion_SfChart_iOS_SFDoughnutSeries_MaximumValue) - Represents the entire span of an individual circle. The default value of the this property is `double.NaN`.
 * [`TrackColor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFDoughnutSeries.html#Syncfusion_SfChart_iOS_SFDoughnutSeries_TrackColor) - Changes the color of the track area.
@@ -1607,7 +1607,7 @@ series.EndAngle         = 360;
 
 ### Group small data points into “others”
 
-The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) properties of DoughnutSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) property is [`double.NAN`](), and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) property is Value.
+The small segments in the doughnut chart can be grouped into “others” category using the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) properties of DoughnutSeries. The [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) property is used to specify the grouping type based on slice angle, actual data point value, or percentage, and the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) property is used to set the limit to group data points into a single slice. The grouped segment is labeled as “Others” in legend and toggled as any other segment. The default value of the [`GroupTo`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupTo) property is `double.NAN`, and [`GroupMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFCircularSeries.html#Syncfusion_SfChart_iOS_SFCircularSeries_GroupMode) property is Value.
 
 ### Add view to the center of doughnut chart
 
@@ -1654,7 +1654,7 @@ chart.Series.Add(pyramidSeries);
 
 ### Pyramid Mode
 
-You can render the pyramid series as linear or surface mode. In linear mode, height of the pyramid segment is based on the Y value and in surface mode, area of the pyramid segment is based on the Y values. The default value of [`PyramidMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFPyramidSeries.html#Syncfusion_SfChart_iOS_SFPyramidSeries_PyramidMode) property is [`SFChartPyramidMode.Linear`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPyramidMode.html).
+You can render the pyramid series as linear or surface mode. In linear mode, height of the pyramid segment is based on the Y value and in surface mode, area of the pyramid segment is based on the Y values. The default value of [`PyramidMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFPyramidSeries.html#Syncfusion_SfChart_iOS_SFPyramidSeries_PyramidMode) property is [`SFChartPyramidMode.Linear`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartPyramidMode.html#Syncfusion_SfChart_iOS_SFChartPyramidMode_Linear).
 
 
 {% highlight c# %}
@@ -1824,13 +1824,13 @@ chart.Series.Add(boxPlotSeries);
 
 The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_BoxPlotMode) property of [`SFBoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html). The plotting mode of series can be calculated as follows:
 
-* [`Exclusive`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html) - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
-* [`Inclusive`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html) - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
-* [`Normal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html) - The quartile values are calculated by splitting the list and getting the median values.
+* [`Exclusive`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html#Syncfusion_SfChart_iOS_BoxPlotMode_Exclusive) - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and their index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html#Syncfusion_SfChart_iOS_BoxPlotMode_Inclusive) - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html#Syncfusion_SfChart_iOS_BoxPlotMode_Normal) - The quartile values are calculated by splitting the list and getting the median values.
 
-By default, [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_BoxPlotMode) value is [`Exclusive`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html).
+By default, [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_BoxPlotMode) value is [`Exclusive`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html#Syncfusion_SfChart_iOS_BoxPlotMode_Exclusive).
 
-The following code shows how to set the [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_BoxPlotMode) value as [`Inclusive`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html).
+The following code shows how to set the [`BoxPlotMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_BoxPlotMode) value as [`Inclusive`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.BoxPlotMode.html#Syncfusion_SfChart_iOS_BoxPlotMode_Inclusive).
 
 {% highlight c# %}
 
@@ -1908,9 +1908,9 @@ chart.Series.Add(boxPlotSeries);
 
 ### SymbolType
 
-The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different types of symbols. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html).
+The [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different types of symbols. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html#Syncfusion_SfChart_iOS_ChartSymbolType_Ellipse).
 
-The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html).
+The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFBoxAndWhiskerSeries.html#Syncfusion_SfChart_iOS_SFBoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ChartSymbolType.html#Syncfusion_SfChart_iOS_ChartSymbolType_Cross).
 
 {% highlight c# %}
 
@@ -1971,7 +1971,7 @@ chart.Series.Add(errorBarSeries);
 
 ### Type
 
-The [`Type`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Type) property is used to define the error bar type value in Fixed, Custom, Percentage, StandardDeviation and StandardErrors. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarType.html). For all types, you have to set values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_VerticalErrorValue) except [`Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarType.html).
+The [`Type`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Type) property is used to define the error bar type value in Fixed, Custom, Percentage, StandardDeviation and StandardErrors. The default value of this property is [`Fixed`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarType.html#Syncfusion_SfChart_iOS_ErrorBarType_Fixed). For all types, you have to set values for [`HorizontalErrorValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_VerticalErrorValue) except [`Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarType.html#Syncfusion_SfChart_iOS_ErrorBarType_Custom).
 
 #### Fixed
 
@@ -2055,7 +2055,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Custom
 
-If [`Type`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Type) is [`Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarType.html), you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_HorizontalErrorPath) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_VerticalErrorPath) as shown in the following code snippet.
+If [`Type`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Type) is [`Custom`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarType.html#Syncfusion_SfChart_iOS_ErrorBarType_Custom), you have to set values for [`HorizontalErrorPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_HorizontalErrorPath) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_VerticalErrorPath) as shown in the following code snippet.
 
 {% highlight c# %}
 
@@ -2077,11 +2077,11 @@ chart.Series.Add(errorBarSeries);
 
 ### Mode
 
-The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Mode) property. It have the values of [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html), [`Horizontal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html), and [`Vertical`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html). The default value of this property is [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html). 
+The error value shown on the chart is based on the [`Mode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Mode) property. It have the values of [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html#Syncfusion_SfChart_iOS_ErrorBarMode_Both), [`Horizontal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html#Syncfusion_SfChart_iOS_ErrorBarMode_Horizontal), and [`Vertical`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html#Syncfusion_SfChart_iOS_ErrorBarMode_Vertical). The default value of this property is [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html#Syncfusion_SfChart_iOS_ErrorBarMode_Both). 
 
 #### Both
 
-To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Mode) as [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html) as shown in the following code.
+To display horizontal and vertical error values, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Mode) as [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html#Syncfusion_SfChart_iOS_ErrorBarMode_Both) as shown in the following code.
 
 {% highlight c# %}
 
@@ -2103,7 +2103,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Horizontal
 
-To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Mode) as [`Horizontal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html) as shown in the following code.
+To display horizontal error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Mode) as [`Horizontal`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html#Syncfusion_SfChart_iOS_ErrorBarMode_Horizontal) as shown in the following code.
 
 {% highlight c# %}
 
@@ -2125,7 +2125,7 @@ chart.Series.Add(errorBarSeries);
 
 #### Vertical
 
-To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Mode) as [`Vertical`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html) as shown in the following code.
+To display vertical error value only, you can set the [`Mode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_Mode) as [`Vertical`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarMode.html#Syncfusion_SfChart_iOS_ErrorBarMode_Vertical) as shown in the following code.
 
 {% highlight c# %}
 
@@ -2147,11 +2147,11 @@ chart.Series.Add(errorBarSeries);
 
 ### Direction
 
-The [`HorizontalDirection`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_HorizontalDirection) and [`VerticalDirection`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_VerticalDirection) properties are used to set the direction of error bar lines. The default value is [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarDirection.html).
+The [`HorizontalDirection`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_HorizontalDirection) and [`VerticalDirection`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFErrorBarSeries.html#Syncfusion_SfChart_iOS_SFErrorBarSeries_VerticalDirection) properties are used to set the direction of error bar lines. The default value is [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarDirection.html#Syncfusion_SfChart_iOS_ErrorBarDirection_Both).
 
-* [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarDirection.html) - used to set error value in positive and negative directions.
-* [`Minus`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarDirection.html) - used to set error value in a negative direction.
-* [`Plus`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarDirection.html) - used to set error value in a positive direction.	
+* [`Both`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarDirection.html#Syncfusion_SfChart_iOS_ErrorBarDirection_Both) - used to set error value in positive and negative directions.
+* [`Minus`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarDirection.html#Syncfusion_SfChart_iOS_ErrorBarDirection_Minus) - used to set error value in a negative direction.
+* [`Plus`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.ErrorBarDirection.html#Syncfusion_SfChart_iOS_ErrorBarDirection_Plus) - used to set error value in a positive direction.	
 
 {% highlight c# %}
 

@@ -27,6 +27,8 @@ iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% highlight c# %}
 
 [C#]
@@ -35,7 +37,13 @@ using Syncfusion.SfNumericTextBox.iOS;
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Now add the SfNumericTextBox control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% highlight c# %}
 
@@ -49,6 +57,10 @@ SfNumericTextBox numericTextBox = new SfNumericTextBox()
 this.Add(numericTextBox); 
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ## Enable Parsing Mode
 

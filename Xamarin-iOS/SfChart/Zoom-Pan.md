@@ -99,7 +99,7 @@ chart.AddChartBehavior (zoomPan);
 
 ## Zoom Mode
 
-The [`ZoomMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html#Syncfusion_SfChart_iOS_SFChartZoomPanBehavior_ZoomMode) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html#Syncfusion_SfChart_iOS_SFChartZoomPanBehavior_ZoomMode) is [`SFChartZoomMode.XY`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomMode.html) (both axis).
+The [`ZoomMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html#Syncfusion_SfChart_iOS_SFChartZoomPanBehavior_ZoomMode) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html#Syncfusion_SfChart_iOS_SFChartZoomPanBehavior_ZoomMode) is [`SFChartZoomMode.XY`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomMode.html#Syncfusion_SfChart_iOS_SFChartZoomMode_XY) (both axis).
 
 Following code example illustrates how to restrict the chart to be zoomed only along horizontal axis,
 
@@ -242,7 +242,7 @@ zoomPan.ZoomOut();
 
 **Zoom(factor)**
 
-The [`Zoom(factor)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html) method is used to change the zoom level by using [`ZoomFactor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_ZoomFactor).
+The [`Zoom(factor)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html#Syncfusion_SfChart_iOS_SFChartZoomPanBehavior_Zoom_System_Double_) method is used to change the zoom level by using [`ZoomFactor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_ZoomFactor).
 
 {% highlight c# %}
 
@@ -266,7 +266,7 @@ zoomPan.Zoom(new CGRect(10, 10, 200, 350));
 
 **Zoom(chartAxis, zoomPosition, zoomFactor)**
 
-The [`Zoom(chartAxis, zoomPosition, zoomFactor)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html) method is used to change the zoom level by using [`ZoomPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_ZoomPosition) and [`ZoomFactor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_ZoomFactor). Zoom position value specifies the starting point of zooming, and zoom factor value specifies the level of zooming.
+The [`Zoom(chartAxis, zoomPosition, zoomFactor)`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFChartZoomPanBehavior.html#Syncfusion_SfChart_iOS_SFChartZoomPanBehavior_Zoom_Syncfusion_SfChart_iOS_SFAxis_System_Double_System_Double_) method is used to change the zoom level by using [`ZoomPosition`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_ZoomPosition) and [`ZoomFactor`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfChart.iOS.SFAxis.html#Syncfusion_SfChart_iOS_SFAxis_ZoomFactor). Zoom position value specifies the starting point of zooming, and zoom factor value specifies the level of zooming.
 
 {% highlight c# %}
 

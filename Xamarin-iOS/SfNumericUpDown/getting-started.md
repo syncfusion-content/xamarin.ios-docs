@@ -29,13 +29,21 @@ The SfNumericUpDown control configured entirely in C# code. The following steps 
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% highlight c# %}
 
 using Syncfusion.SfNumericUpDown.iOS; 
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Now add the SfNumericUpDown control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% highlight c# %}
 
@@ -50,6 +58,10 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 this.Add(numeric);
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ## Set Value
 
