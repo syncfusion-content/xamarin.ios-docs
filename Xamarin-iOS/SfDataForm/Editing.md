@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Editing | SfDataForm | Xamarin.iOS | Syncfusion
-description: Editing in SfDataForm.
+description: Learn here more about Editing support in Syncfusion Essential Xamarin.iOS SfDataForm Control, its element and more
 platform: xamarin.ios
 control: SfDataForm
 documentation: ug
 ---
 
-# Editing 
+# Editing with Xamarin.iOS SfDataForm
 
 SfDataForm provides support for several built-in editors.
 
