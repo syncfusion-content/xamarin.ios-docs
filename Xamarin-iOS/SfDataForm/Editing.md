@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing | SfDataForm | Xamarin.iOS | Syncfusion
-description: Learn here more about Editing support in Syncfusion Essential Xamarin.iOS SfDataForm Control, its element and more
+title: Editing in Xamarin.iOS SfDataForm control | Syncfusion
+description: Learn here more about Editing support in Syncfusion Essential Xamarin.iOS SfDataForm Control, its element and more.
 platform: xamarin.ios
 control: SfDataForm
 documentation: ug
