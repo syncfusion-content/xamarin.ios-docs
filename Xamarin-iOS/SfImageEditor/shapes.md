@@ -21,7 +21,7 @@ You can annotate any shapes over an image using the [`AddShape`](https://help.sy
 * DottedArrow
 * DottedDoubleArrow
 
-### Selecting a shape type
+## Selecting a shape type
 
 The [`ShapeType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html) is an enum property with values [`Rectangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Rectangle), [`Circle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Circle), [`Arrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Arrow), [`Path`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Path), [`Line`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Line), [`Dotted`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Dotted), [`DoubleArrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_DoubleArrow), [`DottedArrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_DottedArrow), and [`DottedDoubleArrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_DottedDoubleArrow). You can give the desired shape type as an argument to the [`AddShape`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_AddShape_Syncfusion_SfImageEditor_iOS_ShapeType_Syncfusion_SfImageEditor_iOS_PenSettings_) method.
 
@@ -50,7 +50,7 @@ By default, the toolbar contains the [`Rectangle`](https://help.syncfusion.com/c
 
 You can customize the appearance of each shape using the [`PenSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html) property:
 
-## PenSettings
+### PenSettings
 
 The [`PenSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html) property consists of the following properties:
 
