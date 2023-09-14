@@ -134,7 +134,7 @@ You can add or remove unbound rows using [SfDataGrid.UnboundRows](https://help.s
  
 ### Trigger QueryUnboundRow event programmatically
  
-You can trigger the [QueryUnboundRow](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html) event for the unbound row cells at runtime by calling [SfDataGrid.InValidateUnboundRow](InValidateUnboundRow) method which invalidates the unbound row at the given index.
+You can trigger the [QueryUnboundRow](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_QueryUnboundRow) event for the unbound row cells at runtime by calling [SfDataGrid.InValidateUnboundRow](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.SfDataGrid.html#Syncfusion_SfDataGrid_SfDataGrid_InvalidateUnboundRow_Syncfusion_SfDataGrid_GridUnboundRow_System_Boolean_) method which invalidates the unbound row at the given index.
 
 Here in the below code example, we have invalidated the unbound rows whenever selection is changed in the DataGrid.
 
