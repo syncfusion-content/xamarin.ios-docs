@@ -127,5 +127,5 @@ public partial class ViewController : UIViewController
 
 ![CenterButton](images/Center-Button/Center_Button_Customization.png)
 
-Please find the sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabView_CenterBttonCustomization-1051697862.zip)
+Please find the sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/TabView_CenterBttonCustomization-1051697862.zip)
 

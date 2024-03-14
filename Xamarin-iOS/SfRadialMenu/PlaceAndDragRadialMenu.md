@@ -81,7 +81,7 @@ This event occurs when you start dragging RadialMenu with `DragBeginEventArgs`.
 
 * `Handled`: Gets or sets the Boolean value for enabling and disabling the dragging of RadialMenu.
 
-To hook the [DragBegin](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html) event and to get the start position and restrict dragging, refer to the following code example.
+To hook the [DragBegin](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_DragBegin) event and to get the start position and restrict dragging, refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,7 +157,7 @@ This event occurs when ends dragging in RadialMenu with `DragEndEventArgs`.
 
 * `Handled` - Gets or sets the Boolean value for restricting the RadialMenu from moving to another position.
 
-To hook the [DragEnd](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html) event, to get the start position and end positions, and to restrict the movement of RadialMenu, refer to the following code example.
+To hook the [DragEnd](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_DragEnd) event, to get the start position and end positions, and to restrict the movement of RadialMenu, refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
