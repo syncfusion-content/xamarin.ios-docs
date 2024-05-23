@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion licensing errors - Syncfusion 
 description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion Xamarin.iOS applications.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Essential Studio
 documentation: ug
 ---
