@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion Xamarin.iOS Mac installer - Syncfusion
 description: Learn here about the how to download Syncfusion Xamarin.iOS mac installer packages from syncfusion website.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Installation and Deployment
 documentation: ug
 
@@ -37,7 +37,7 @@ Our 30-day trial can be downloaded in two ways.
  
     ![Trial and downloads of Syncfusion Essential Studio](images/trial-download.png)
 
-6. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio Xamarin Offline trial installer which is available in PKG  format.
+6. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio Xamarin Offline trial installer which is available in DMG  format.
 
    ![License and downloads of Syncfusion Essential Studio](images/Mac_Download.PNG)
    
@@ -70,7 +70,7 @@ You should initiate an evaluation if you have already obtained our components th
    ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
    
 4. Unlock key is not required to install the Syncfusion Xamarin.iOS Mac trial installer.   
-5. For Mac OS, PKG formats is available for download.
+5. For Mac OS, DMG formats is available for download.
    
    ![License and downloads of Syncfusion Essential Studio](images/Mac_Download.PNG)
 	
