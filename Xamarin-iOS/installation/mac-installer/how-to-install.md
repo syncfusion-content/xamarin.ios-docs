@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion Xamarin.iOS Mac installer - Syncfusion
 description: Learn here about how to install Syncfusion Xamarin.iOS mac installer after downloading from our Syncfusion website.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Syncfusion Controls
 documentation: ug
 ---
@@ -15,48 +15,33 @@ The Syncfusion Essential Studio allows you to create the Xamarin application in 
 
 ### Step-by-Step Installation
 
-The steps below show how to install the Xamarin Mac installer. 
+The steps below show how to install the Xamarin Mac installer.
 
-1. Open Syncfusion Xamarin Mac Installer(.pkg) file. The Installer Wizard opens. Click Continue.
+1. Locate the downloaded dmg file and open the file by double click on it.
 
-   ![continue](Images/continue.JPG)
+   ![Welcome wizard](images/Mac_Installer1.png)
 
-2. The Software License Agreement wizard will appear. Click the Continue button.
+2. This action will automatically mount the disk image and create a virtual drive on your desktop or in the Finder sidebar.
 
-   ![License Agreement](Images/license-agreement.JPG)
+   ![License Agreement](images/Mac_Installer2.png)
 
-3. The License Agreement's Confirmation window will appear. If you have read the Software License Agreement, click **Agree**.
+3. Copy the mounted disk file.
 
-   ![License Confirmation](Images/license-confirmation.JPG)
+   ![License Agree Confirmation](images/Mac_Installer3.png)
+
+4. And paste it in "Applications" folder shortcut.
+
+   ![License Agree Confirmation](images/Mac_Installer4.png)
 
    N> The Unlock key is not required to install the Mac installer. The Syncfusion Mac installer can be used for development purposes without registering the Unlock key.
 
-4. The Destination select wizard will appear. You can choose which disc to install the Syncfusion Essential Studio for Xamarin installer on here.
+5. Now you can open the folder to explore the Syncfusion Essential Studio Mac installer.
 
    ![Destination](Images/destination.JPG)
 
-5. The Installation Type wizard will appear. Click Install to begin the standard installation of the Syncfusion Xamarin Mac installer.
+6. To remove the DMG file, Right-click on the virtual drive on your desktop or in the Finder sidebar and select "Eject." Also delete the folder from the Applications.
 
-   ![Install Location](Images/install-location.JPG)
-
-6. The Authentication window will appear. To begin the installation, enter the Mac machine's password and click **Install Software**.
-
-   ![Install Software](Images/install-software.PNG)
-
-7. The installation process will begin on your machine. 
-
-   ![Installation Progress](Images/installation-progress.JPG)
-
-
-8. Once the installation is complete, the completed screen will be displayed. To exit the installation wizard, click Close. 
-
-   ![Installation Completed](Images/installation-completed.JPG)
-
-   By default, Mac installer will install the files in following location.
-
-   Location: {Documents}\Syncfusion\ {version}\ {platform}
-
-   ![Default Location](Images/default-location.PNG)
+   ![Install Location](images/Mac_Installer6.png)
    
 ### Add reference to the project
 
