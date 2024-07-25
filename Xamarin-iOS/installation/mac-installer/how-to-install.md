@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion Xamarin.iOS Mac installer - Syncfusion
 description: Learn here about how to install Syncfusion Xamarin.iOS mac installer after downloading from our Syncfusion website.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Syncfusion Controls
 documentation: ug
 ---
