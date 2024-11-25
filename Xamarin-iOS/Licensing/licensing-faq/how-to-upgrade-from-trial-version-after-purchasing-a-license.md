@@ -2,7 +2,7 @@
 layout: post
 title: Licensing FAQ – Upgrade from Trial version | Syncfusion
 description: Learn here some information about upgrading from trial version of Essential Studio® to Licensed version.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Essential Studio®
 documentation: ug
 ---

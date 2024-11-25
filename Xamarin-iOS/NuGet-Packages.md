@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Xamarin.iOS NuGet Packages | Syncfusion
-description: NuGet Packages
+description: Learn here about the NuGet Packages and how they can be used to automatically add files and references to your Visual Studio projects.
 platform: xamarin.ios
 control: NuGet Packages
 documentation: ug
 ---
 
-# NuGet Packages
+# NuGet Packages Overview
 
-[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Xamarin.iOS NuGet packages without installing the Essential Studio® or Xamarin platform installation to development with the Syncfusion Xamarin.iOS controls. From v15.4.0.17 onwards, the Syncfusion Xamarin.iOS NuGet packages are published in [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
+[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Xamarin.iOS NuGet packages without installing the Essential Studio or Xamarin platform installation to development with the Syncfusion Xamarin.iOS controls. From v15.4.0.17 onwards, the Syncfusion Xamarin.iOS NuGet packages are published in [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 
 N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
 

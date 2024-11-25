@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion license generation - Syncfusion
 description: Learn here about how to generate Syncfusion Xamarin.iOS license key for syncfusion Xamarin.iOS application for license validation.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Essential Studio®
 documentation: ug
 ---

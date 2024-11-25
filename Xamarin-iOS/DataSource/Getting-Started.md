@@ -2,7 +2,7 @@
 layout: post
 title: GettingStarted | DataSource | Xamarin.iOS | Syncfusion
 description: Learn here about getting started with Syncfusion DataSource control and working with sorting and grouping.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: DataSource
 documentation: UG
 ---
