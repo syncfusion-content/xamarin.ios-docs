@@ -3,7 +3,7 @@ layout: post
 title: Overview of Syncfusion licensing errors - Syncfusion 
 description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion Xamarin.iOS applications.
 platform: xamarin.ios
-control: Essential Studio
+control: Essential Studio®
 documentation: ug
 ---
 
@@ -17,7 +17,7 @@ Licensing error popup is displayed with various messages under different circums
 
 The following error message will be shown if a Syncfusion license key has not been registered in your application or if the trial key has expired after 30 days.
 
-**Error message:** This application was built using a trial version of Syncfusion Essential Studio. You should include the valid license key to remove the license validation message permanently.
+**Error message:** This application was built using a trial version of Syncfusion Essential Studio®. You should include the valid license key to remove the license validation message permanently.
 
 ![License key not registered](licensing-images/new-licensing-alert.png)
 
@@ -47,7 +47,7 @@ If the application is registered with an invalid key, another version of license
 
 The following error message will be shown if a Syncfusion license key has not been registered in your application. 
 
-**Error message:** This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](https://help.syncfusion.com/xamarin-ios/licensing/licensing-errors#license-key-not-registered) for more information.
+**Error message:** This application was built using a trial version of Syncfusion Essential Studio®. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this [help topic](https://help.syncfusion.com/xamarin-ios/licensing/licensing-errors#license-key-not-registered) for more information.
 
 ![License key not registered](licensing-images/licensing-alert.png)
 
