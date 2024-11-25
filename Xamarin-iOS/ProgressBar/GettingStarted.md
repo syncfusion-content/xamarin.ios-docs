@@ -26,15 +26,15 @@ ios-unified\Syncfusion.SfProgressBar.iOS.dll
 
 Import the progress bar namespace as shown in the following codes in your respective page,
 
-{% highlight c# %} 
+{% highlight c# %}
 
 using Syncfusion.iOS.ProgressBar;
 
-{% endhighlight %} 
+{% endhighlight %}
 
 There are two variants of progress bar: SfLinearProgressBar and SfCircularProgressBar. Each render the progress in its own shape such as rectangle and circle respectively. Initialize both the progress bar with a progress value using Progress property as shown in the following code snippet.
 
-{% highlight c# %} 
+{% highlight c# %}
 
 
 public override void ViewDidLoad()
@@ -83,7 +83,7 @@ Run the project, and check if you get following output to make sure that you hav
 When the progress of a task cannot be shown determinately, you can enable indeterminate state using [IsIndeterminate](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.ProgressBarBase.html#Syncfusion_iOS_ProgressBar_ProgressBarBase_IsIndeterminate) property to let user know that some progress is happening in the background.
 
 
-{% highlight c# %} 
+{% highlight c# %}
 
 // Using linear progress bar. 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
@@ -98,7 +98,7 @@ circularProgressBar.Frame = new CoreGraphics.CGRect(0, 160, this.View.Frame.Widt
 circularProgressBar.ShowProgressValue = false;
 circularProgressBar.IsIndeterminate = true;
 circularProgressBar.Progress = 75;
-this.View.AddSubview(circularProgressBar);   
+this.View.AddSubview(circularProgressBar);
 {% endhighlight %}
 
 
@@ -106,7 +106,7 @@ this.View.AddSubview(circularProgressBar);
 
 To visualize the progress of a multiple sequential task, split the progress bar into the multiple segments by defining the [SegmentCount](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.ProgressBarBase.html#Syncfusion_iOS_ProgressBar_ProgressBarBase_SegmentCount) property as shown in the following code.
 
-{% highlight c# %} 
+{% highlight c# %}
 
 // Using linear progress bar. 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
@@ -122,7 +122,7 @@ circularProgressBar.ShowProgressValue = false;
 circularProgressBar.IsIndeterminate = true;
 circularProgressBar.SegmentCount = 4;
 this.View.AddSubview(circularProgressBar); 
- {% endhighlight %}
+{% endhighlight %}
 ![](overview_images/indeterminate.png)
 
 
@@ -130,7 +130,7 @@ this.View.AddSubview(circularProgressBar);
 
 You can customize the color of the progress indicator and track by defining the [ProgressColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.ProgressBarBase.html#Syncfusion_iOS_ProgressBar_ProgressBarBase_ProgressColor) and [TrackColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.ProgressBar.ProgressBarBase.html#Syncfusion_iOS_ProgressBar_ProgressBarBase_TrackColor) properties respectively.
 
-{% highlight c# %} 
+{% highlight c# %}
 
 // Using linear progress bar. 
 SfLinearProgressBar linearProgressBar = new SfLinearProgressBar();
