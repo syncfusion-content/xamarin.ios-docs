@@ -13,7 +13,7 @@ This section explains the steps required to configure the TreeMap control and pr
 
 ## Adding SfTreeMap reference
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders.
 
 {Syncfusion Installed location} \Essential Studio\17.2.0.28\lib
 

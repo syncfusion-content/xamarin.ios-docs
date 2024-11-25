@@ -13,7 +13,7 @@ This section provides an overview for working with the tab view control for Xama
 
 ## Assembly deployment
 
-After installing the Essential Studio for Xamarin, find all the required assemblies in the installation folders,
+After installing the Essential Studio® for Xamarin, find all the required assemblies in the installation folders,
 
 {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib}
 

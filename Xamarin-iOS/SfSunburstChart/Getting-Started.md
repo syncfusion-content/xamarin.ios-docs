@@ -12,7 +12,7 @@ This section explains the steps required to configure the [`SfSunburstChart`](ht
 
 ## Add sunburst chart references
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, 
 
 {Syncfusion Installed location}\Essential Studio\15.2.0.39\lib
 

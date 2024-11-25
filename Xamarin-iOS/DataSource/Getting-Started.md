@@ -18,7 +18,7 @@ DataSource is a non UI component that consumes raw data and processes data opera
 
 ### Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installation folders,
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the following installation folders,
 {Syncfusion Essential Studio Installed location}\Essential Studio\{Syncfusion release version}\lib
 
 N> Assemblies can be found in unzipped package location in Mac

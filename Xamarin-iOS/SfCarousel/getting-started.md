@@ -11,9 +11,9 @@ documentation: ug
 
 This section provides a quick overview for working with Essential Carousel for Xamarin.iOS. It guides you to the entire process of creating a SfCarousel in your Application.
 
-## Referencing Essential Studio components in your solution
+## Referencing Essential Studio® components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
 And below assembly reference to the iOS unified project.
