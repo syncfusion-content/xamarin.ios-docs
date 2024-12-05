@@ -2,7 +2,7 @@
 layout: post
 title: GettingStarted | DataSource | Xamarin.iOS | Syncfusion
 description: Learn here about getting started with Syncfusion DataSource control and working with sorting and grouping.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: DataSource
 documentation: UG
 ---
@@ -18,7 +18,7 @@ DataSource is a non UI component that consumes raw data and processes data opera
 
 ### Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installation folders,
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the following installation folders,
 {Syncfusion Essential Studio Installed location}\Essential Studio\{Syncfusion release version}\lib
 
 N> Assemblies can be found in unzipped package location in Mac

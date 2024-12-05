@@ -23,7 +23,7 @@ The section explains you the quick overview to use `SfDataForm` for Xamarin.iOS 
 
 ## Assembly Deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
 {Syncfusion Essential Studio Installed location} \Essential Studio\15.x.x.x\Xamarin\lib
 Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\15.3.0.26\Xamarin\lib
 

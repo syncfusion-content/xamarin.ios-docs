@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Xamarin.iOS NavigationDrawer control| Syncfusion 
-description: Learn here about getting started with Syncfusion Essential Studio Xamarin.iOS NavigationDrawer control, its elements, and more.
+description: Learn here about getting started with Syncfusion Essential Studio® Xamarin.iOS NavigationDrawer control, its elements, and more.
 platform: Xamarin.iOS
 control: NavigationDrawer
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 This section provides overview for working with Essential NavigationDrawer for Xamarin.iOS. You can walk through the entire process of creating an NavigationDrawer.
 
-## Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio® Components in Your Solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 

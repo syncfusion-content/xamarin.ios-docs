@@ -13,7 +13,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 This section explains you the steps required to configure a SfMaskedEdit control in a real-time scenario and provides a walk-through on some of the customization features available in `SfMaskedEdit` control.
 
-## Reference Essential Studio components in your solution
+## Reference Essential Studio® components in your solution
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add masked edit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.IOS)", and then install it. 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # SfPicker Getting Started
 
-This topic describes about the assembly that is required in your iOS application, when you use SfPicker. After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installation folders,
+This topic describes about the assembly that is required in your iOS application, when you use SfPicker. After installing Essential Studio® for Xamarin, you can find all the required assemblies in the following installation folders,
 
 {Syncfusion Essential Studio Installed location}\Essential Studio{Release Version}\lib
 

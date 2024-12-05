@@ -13,7 +13,7 @@ This section demonstrates how to create an application that displays a PDF file 
 
 ## Assembly Required
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Essential Studio Installed location}\Essential Studio\{Essential Studio version}\Xamarin\lib\ios-unified\
 
