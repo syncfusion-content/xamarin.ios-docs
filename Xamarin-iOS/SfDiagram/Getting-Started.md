@@ -1,7 +1,7 @@
 ---
 title: Getting Started for Essential Xamarin.iOS Diagram | Syncfusion
 description: Getting started with Xamarin.iOS diagram and walk through to create a demo application from the scratch.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -10,11 +10,11 @@ keywords:
 This section provides a quick overview for working with Diagram for Xamarin.iOS. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
 ## Adding diagram reference 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram.IOS”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram.IOS), and then install it.
+Syncfusion&reg; Xamarin components are available in [nuget.org](https://www.nuget.org/). To add diagram to your project, open the NuGet package manager in Visual Studio, and search for [“Syncfusion.Xamarin.SfDiagram.IOS”](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram.IOS), and then install it.
 
 ![Diagram reference in Xamarin.iOS diagram](Getting-Started_images/Getting-Started_img1.jpeg)
 
-I>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I>Starting with v16.2.0.x, if you reference Syncfusion&reg; assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion&reg; license key in your Xamarin application to use our components.
 
 ## Basic building blocks of Diagram
 * **Diagram-**It represents the drawing surface where all the graphical elements like nodes and connectors resides, can be used to display various types of diagrams and it is the root instance of the diagram control. A Diagram instance contains a collection of nodes and  connectors to represent the  graphical diagram.
