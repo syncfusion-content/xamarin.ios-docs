@@ -6,7 +6,7 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Getting started
+# Getting started with Diagram
 This section provides a quick overview for working with Diagram for Xamarin.iOS. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
 ## Adding diagram reference 
