@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paging in Xamarin.iOS SfDataGrid Control | Syncfusion
-description: Learn here about Paging support in Syncfusion Essential Studio Xamarin.iOS SfDataGrid Control, its elements, and more.
+description: Learn here about Paging support in Syncfusion Essential Studio® Xamarin.iOS SfDataGrid Control, its elements, and more.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: ug

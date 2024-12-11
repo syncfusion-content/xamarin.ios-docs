@@ -1,7 +1,7 @@
 ---
 layout : post
 title : ToolbarCustomization in Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to customize toolbar in Syncfusion Essential Studio Xamarin.iOS ImageEditor Control, its elements, and more.
+description : Learn how to customize toolbar in Syncfusion Essential Studio® Xamarin.iOS ImageEditor Control, its elements, and more.
 platform : xamarin.ios
 control : ImageEditor
 documentation : ug

@@ -16,9 +16,9 @@ This section explains you the steps required to render the `SfCalendar` control,
 
 This section provides a quick overview to work with the `SfCalendar` in Xamarin.iOS. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
 
-### Referencing Essential Studio Components in Your Solution
+### Referencing Essential Studio® Components in Your Solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
 And below assembly reference to the iOS unified project.

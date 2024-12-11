@@ -10,9 +10,9 @@ documentation: ug
 
 This section explains you the steps required to load an image to the image editor. Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
 
-## Reference Essential Studio components in your solution
+## Reference Essential Studio® components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, 
 
 {Syncfusion Installed location}\Essential Studio\15.2.0.40\lib
 

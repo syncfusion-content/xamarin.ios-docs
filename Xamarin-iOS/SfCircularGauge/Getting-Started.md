@@ -23,9 +23,9 @@ This section provides a quick overview for working with Essential Gauge for Xama
 CircularGauge
 {:.caption}
 
-### Reference Essential Studio Components in your Solution
+### Reference Essential Studio® Components in your Solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio{version number}\lib
 
 You have to add the following assembly reference to the iOS unified project

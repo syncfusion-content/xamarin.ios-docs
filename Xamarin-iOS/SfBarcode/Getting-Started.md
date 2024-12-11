@@ -23,7 +23,7 @@ The following steps explain you how to create and configure a Barcode.
 
 1. Add reference to the SfBarcode in view controller as follows.
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically: {Syncfusion Installed location}\Essential Studio{version number}\lib
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically: {Syncfusion Installed location}\Essential Studio{version number}\lib
 You have to add the following assembly reference to the iOS unified project ios-unified \ Syncfusion.SfBarcode.iOS.dll
 
 N> Assemblies are available in unzipped package location in Mac.

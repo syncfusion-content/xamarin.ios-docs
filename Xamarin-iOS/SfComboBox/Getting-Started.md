@@ -11,9 +11,9 @@ documentation : ug
 
 This section explains the steps required to create combo box, populate it with data, and filter suggestions. Here, we create a simple sample is created for changing the resolution. and this This section covers only the minimal features that are needed to get started with the ComboBox combo box.  
 
-## Referencing Essential Studio components in your solution
+## Referencing Essential Studio® components in your solution
 
-After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders, 
+After installing Essential Studio® for Xamarin, find all the required assemblies in the installation folders, 
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
