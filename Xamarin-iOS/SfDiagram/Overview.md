@@ -1,7 +1,7 @@
 ---
-title: Overview of Diagram control for Xamarin.iOS | Syncfusion
+title: Overview of Diagram control for Xamarin.iOS | Syncfusion®
 description: Diagram overview and the key features are available in Xamarin.iOS
-platform: Xamarin
+platform: xamarin.ios
 control: SfDiagram
 documentation: Ug
 keywords: Diagram, org chart, flowchart, shape, use case, workflow.

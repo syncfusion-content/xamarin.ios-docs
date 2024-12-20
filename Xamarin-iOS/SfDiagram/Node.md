@@ -1,7 +1,7 @@
 ---
-title: Node in Xamarin.iOS diagram control | Syncfusion
+title: Node in Xamarin.iOS diagram control | Syncfusion®
 description: Briefs about node,customization of node and node constraints in SfDiagram for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfDiagram
 documentation: UG
 keywords: 

@@ -1,5 +1,5 @@
 ---
-title: Getting Started for Essential Xamarin.iOS Diagram | Syncfusion
+title: Getting Started for Essential® Xamarin.iOS Diagram | Syncfusion®
 description: Getting started with Xamarin.iOS diagram and walk through to create a demo application from the scratch.
 platform: xamarin.ios
 control: SfDiagram
