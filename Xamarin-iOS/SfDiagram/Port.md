@@ -1,6 +1,6 @@
 ---
 title: Port for Essential® Xamarin.iOS Diagram | Syncfusion®
-description: Briefs about port ,connection with node and its customization in SfDiagram for Xamarin.iOS
+description: Briefs about port ,connection with node and its customization in Syncfusion&reg; Diagram (SfDiagram) control for Xamarin.iOS
 platform: xamarin.ios
 control: SfDiagram
 documentation: UG
