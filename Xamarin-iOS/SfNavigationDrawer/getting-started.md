@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin.iOS NavigationDrawer
 
-This section provides overview for working with Essential NavigationDrawer for Xamarin.iOS. You can walk through the entire process of creating an NavigationDrawer.
+This section provides overview for working with Essential® NavigationDrawer for Xamarin.iOS. You can walk through the entire process of creating an NavigationDrawer.
 
 ## Referencing Essential Studio® Components in Your Solution
 

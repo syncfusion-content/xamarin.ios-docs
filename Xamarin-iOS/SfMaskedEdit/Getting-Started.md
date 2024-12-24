@@ -15,7 +15,7 @@ This section explains you the steps required to configure a SfMaskedEdit control
 
 ## Reference Essential Studio® components in your solution
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add masked edit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.IOS)", and then install it. 
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add masked edit to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.sfmaskededit.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.IOS)", and then install it. 
 
 ![Xamarin.iOS Masked Edit NuGet](SfMaskedEditImages/nuget.png)
 
@@ -32,7 +32,7 @@ using Syncfusion.iOS.MaskedEdit;
 {% endhighlight %}
 {% endtabs %}
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion® license key in your Xamarin application to use our components.
 ### Create an instance of SfMaskedEdit.
 
 {% tabs %}
