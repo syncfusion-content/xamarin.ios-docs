@@ -2,7 +2,7 @@
 layout : post
 title : Getting Started with Syncfusion AutoComplete control for Xamarin.iOS
 description : Learn here about getting started with Syncfusion Essential Xamarin.iOS AutoComplete Control, its elements, and more.
-platform : xamarin.ios
+platform : Xamarin.iOS
 control : AutoComplete
 documentation : ug
 ---
