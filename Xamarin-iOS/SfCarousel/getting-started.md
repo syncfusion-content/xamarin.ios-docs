@@ -2,14 +2,14 @@
 layout: post
 title: Getting Started with Syncfusion Carousel control for Xamarin.iOS
 description: This section provides the details about the tour to initial users on Syncfusion carousel control for Xamarin.iOS platform
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: Carousel
 documentation: ug
 ---
 
 # Getting Started with Carousel
 
-This section provides a quick overview for working with Essential Carousel for Xamarin.iOS. It guides you to the entire process of creating a SfCarousel in your Application.
+This section provides a quick overview for working with Essential® Carousel for Xamarin.iOS. It guides you to the entire process of creating a SfCarousel in your Application.
 
 ## Referencing Essential Studio® components in your solution
 

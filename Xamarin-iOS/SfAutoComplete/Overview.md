@@ -2,16 +2,16 @@
 layout: post
 title: Overview of Syncfusion AutoComplete control for Xamarin.iOS
 description: Learn here about Overview and key features of Syncfusion Xamarin.iOS AutoComplete Control, its elements, and more.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: AutoComplete
 documentation: ug
 ---
 
 # Xamarin.iOS AutoComplete Overview
 
-The Essential Xamarin.iOS AutoComplete widget provides the suggestions while typing. The suggested text can be appended to the original text or it can be displayed in a drop-down list. Also provides a gesture friendly UI to perform operations like Suggest, Append and SuggestAppend.
+The Essential® Xamarin.iOS AutoComplete widget provides the suggestions while typing. The suggested text can be appended to the original text or it can be displayed in a drop-down list. Also provides a gesture friendly UI to perform operations like Suggest, Append and SuggestAppend.
 
-Essential AutoComplete can be use in any search box.
+Essential® AutoComplete can be use in any search box.
 
 ![Xamarin.iOS AutoComplete Overview](images/overview.png)
 

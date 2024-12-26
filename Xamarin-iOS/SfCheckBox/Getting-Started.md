@@ -2,7 +2,7 @@
 layout: post
 title: Getting started in Syncfusion CheckBox for Xamarin.iOS platform
 description: Learn how to create a simple CheckBox and its customization options with its available basic features in Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfCheckBox
 documentation: ug 
 keywords: button, SfCheckBox, CheckBox
@@ -13,11 +13,11 @@ keywords: button, SfCheckBox, CheckBox
 This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
 
 ## Add SfCheckBox reference
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add checkbox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.IOS)", and then install it. 
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add checkbox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.IOS)", and then install it. 
 
 ![Xamarin.iOS CheckBox NuGet](Images/nuget.png)
 
-N>Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin application to use our components.
+N>Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion® license key in your Xamarin application to use our components.
 
 ## Create a Simple SfCheckBox
 The `SfCheckBox` control is configured entirely in C# code. The following steps explain how to create a `SfCheckBox` and configure its elements:
