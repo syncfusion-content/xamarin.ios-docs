@@ -2,8 +2,8 @@
 
 layout: post
 title: Overview of Syncfusion Rating control for Xamarin.iOS
-description: Overview and key features of Rating control
-platform: Xamarin.iOS
+description: This explains about the Overview and key features of Syncfusion Essential Xamarin.iOS Rating Control.
+platform: xamarin.ios
 control: Rating
 documentation: ug
 

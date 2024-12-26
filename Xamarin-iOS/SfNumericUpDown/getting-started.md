@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion NumericUpDown Control for Xamarin.iOS
 description: A quick tour to initial users on Syncfusion NumericUpDown control and customization features available in Xamarin.iOS platform 
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NumericUpDown 
 documentation: ug
 ---
