@@ -2,7 +2,7 @@
 layout: post
 title: Overview | SfSegmentedControl | Xamarin.iOS | Syncfusion
 description: This explains about the Overview and key features of Syncfusion Essential Xamarin.iOS Segmented control.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
 ---
