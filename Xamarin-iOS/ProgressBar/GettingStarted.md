@@ -15,7 +15,7 @@ This section explains the steps required to work with progress bar in Xamarin.iO
 ## Add progress bar reference
 
 After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
-{Syncfusion&reg; Installed location}\Essential Studio&reg;{version number}\lib
+{Syncfusion&reg; Installed location}\Essential Studio{version number}\lib
 
 N>Assemblies are available in unzipped package location in Mac.
 
