@@ -2,14 +2,14 @@
 layout: post
 title: Getting Started with Syncfusion NumericUpDown Control for Xamarin.iOS
 description: A quick tour to initial users on Syncfusion NumericUpDown control and customization features available in Xamarin.iOS platform 
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NumericUpDown 
 documentation: ug
 ---
 
 # Getting Started with NumericUpDown
 
-This section provides overview for working with Essential NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
+This section provides overview for working with Essential® NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
 
 ## Referencing Essential Studio® Components in Your Solution	
 
