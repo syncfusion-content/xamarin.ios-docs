@@ -1,8 +1,8 @@
 ---
 layout : post
-title : ComboBoxSource mode for Syncfusion ComboBox control in Xamarin.iOS
+title : ComboBoxSource mode for Syncfusion® ComboBox control in Xamarin.iOS
 description : Learn how to use ComboBoxSource in ComboBox
-platform : Xamarin.iOS 
+platform : xamarin.ios 
 control : ComboBox
 documentation : ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Precision Mode in Syncfusion Rating control for Xamarin.iOS
+title: Precision Mode in Syncfusion® Rating control for Xamarin.iOS
 description: Learn how to change the Precision Mode of rating control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: Rating
 documentation: ug
 ---

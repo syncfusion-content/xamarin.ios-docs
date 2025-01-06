@@ -1,8 +1,8 @@
 ---
 layout : post
-title : Multi Selection in Syncfusion SfAutoComplete control for Xamarin.iOS
+title : Multi Selection in Syncfusion® SfAutoComplete control for Xamarin.iOS
 description :  Learn how to select multiple items in SfAutoComplete
-platform : Xamarin.iOS 
+platform : xamarin.ios
 control : AutoComplete
 documentation : ug
 ---

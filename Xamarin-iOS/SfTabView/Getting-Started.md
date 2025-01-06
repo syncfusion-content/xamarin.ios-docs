@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TabView control for Xamarin.iOS 
-description: A quick tour to initial users on Syncfusion TabView control for Xamarin.iOS platform
-platform: Xamarin.iOS
+title: Getting Started with Syncfusion® TabView control for Xamarin.iOS 
+description: A quick tour to initial users on Syncfusion® TabView control for Xamarin.iOS platform
+platform: xamarin.ios
 control: TabView
 documentation: ug
 ---

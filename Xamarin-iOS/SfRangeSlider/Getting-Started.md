@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting started with Syncfusion RangeSlider control for Xamarin.iOS
-description: This section provides the details about initial users on Syncfusion rangeSlider control for Xamarin.iOS platform
-platform: Xamarin.iOS
+title: Getting started with Syncfusion® RangeSlider control for Xamarin.iOS
+description: This section provides the details about initial users on Syncfusion® rangeSlider control for Xamarin.iOS platform
+platform: xamarin.ios
 control: RangeSlider
 documentation: ug
 ---

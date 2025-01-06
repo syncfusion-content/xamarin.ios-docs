@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion AutoComplete control for Xamarin.iOS
-description: Learn here about Overview and key features of Syncfusion Xamarin.iOS AutoComplete Control, its elements, and more.
+title: Overview of Syncfusion® AutoComplete control for Xamarin.iOS
+description: Learn here about Overview and key features of Syncfusion® Xamarin.iOS AutoComplete Control, its elements, and more.
 platform: xamarin.ios
 control: AutoComplete
 documentation: ug

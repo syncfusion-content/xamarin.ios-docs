@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started in Syncfusion Radio Button for Xamarin.iOS platform
+title: Getting started in Syncfusion® Radio Button for Xamarin.iOS platform
 description: Learn how to create a simple radio button and their customization options with the available basic features in Xamarin.iOS
 platform: xamarin.ios
 control: SfRadioButton

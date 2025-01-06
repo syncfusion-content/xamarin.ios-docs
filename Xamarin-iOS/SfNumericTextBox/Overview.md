@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion SfNumericTextBox control for Xamarin.iOS
+title: Overview of Syncfusion® SfNumericTextBox control for Xamarin.iOS
 description: This explains about the overview and customization features available in SfNumericTextBox control in Xamarin.iOS platform.
 platform: xamarin.ios
 control: SfNumericTextBox

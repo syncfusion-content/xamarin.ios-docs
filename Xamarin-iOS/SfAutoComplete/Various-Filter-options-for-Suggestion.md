@@ -1,8 +1,8 @@
 ---
 layout : post
-title : Suggestion mode for Syncfusion AutoComplete control in Xamarin.iOS
+title : Suggestion mode for Syncfusion® AutoComplete control in Xamarin.iOS
 description : Learn how to display suggestion mode in AutoComplete
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : AutoComplete
 documentation : ug
 ---

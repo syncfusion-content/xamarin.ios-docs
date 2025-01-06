@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Syncfusion BusyIndicator control for Xamarin.iOS
-description: This section provides the details about the initial users on Syncfusion busyIndicator control for Xamarin.iOS platform
-platform: Xamarin.iOS
+title: Getting Started with Syncfusion® BusyIndicator control for Xamarin.iOS
+description: This section provides the details about the initial users on Syncfusion® busyIndicator control for Xamarin.iOS platform
+platform: xamarin.ios
 control: SfBusyIndicator
 documentation: ug
 ---

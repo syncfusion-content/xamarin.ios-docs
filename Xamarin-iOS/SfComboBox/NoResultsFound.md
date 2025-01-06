@@ -1,8 +1,8 @@
 ---
 layout : post
-title : No Result Found Text in Syncfusion SfComboBox control for Xamarin.iOS
+title : No Result Found Text in Syncfusion® SfComboBox control for Xamarin.iOS
 description : Learn how to display the no result found text in SfComboBox
-platform : Xamarin.iOS 
+platform : xamarin.ios
 control : ComboBox
 documentation : ug
 ---
