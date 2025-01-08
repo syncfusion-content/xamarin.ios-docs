@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data source | SfSegmentedControl | Xamarin.iOS | Syncfusion
+title: Data source | SfSegmentedControl | Xamarin.iOS | Syncfusion<sup>&reg;</sup>
 description: How to add data source in segmented control
 platform: Xamarin.iOS
 control: SegmentedControl

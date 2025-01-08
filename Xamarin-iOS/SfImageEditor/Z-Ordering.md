@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Shapes in Syncfusion SfImageEditor control in Xamarin.iOS
+title : Shapes in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.iOS
 description : Learn how to move shapes in ImageEditor for Xamarin.iOS
 platform : xamarin.ios
 control : ImageEditor

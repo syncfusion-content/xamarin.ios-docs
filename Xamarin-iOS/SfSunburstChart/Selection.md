@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection feature of Essential Xamarin.iOS SfSunburstChart
+title: Selection feature of Essential<sup>&reg;</sup> Xamarin.iOS SfSunburstChart
 description: This section describes the segment selection.
 platform: Xamarin.iOS
 control: SfSunburstChart

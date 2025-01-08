@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection modes in Syncfusion Calendar control for Xamarin.iOS
+title: Selection modes in Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.iOS
 description: Learn how to change the selection mode of calendar control
 platform: Xamarin.iOS
 control: Calendar

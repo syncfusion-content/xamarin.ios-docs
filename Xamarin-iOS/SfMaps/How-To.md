@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizations in Syncfusion SfMaps
+title: Customizations in Syncfusion<sup>&reg;</sup> SfMaps
 description: Customizations in SfMaps
 platform: Xamarin.iOS
 control: SfMaps

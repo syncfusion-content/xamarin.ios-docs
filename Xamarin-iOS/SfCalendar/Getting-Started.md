@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Calendar control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion calendar control for Xamarin.iOS platform 
+title: Getting Started with Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.iOS
+description: A quick tour to initial users on Syncfusion<sup>&reg;</sup> calendar control for Xamarin.iOS platform 
 platform: Xamarin.iOS
 control: Calendar
 documentation: ug

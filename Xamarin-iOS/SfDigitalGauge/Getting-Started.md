@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion DigitalGauge control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.iOS platform and also describes how to customize the characters.
+title: Getting Started with Syncfusion<sup>&reg;</sup> DigitalGauge control for Xamarin.iOS
+description: A quick tour to initial users on Syncfusion<sup>&reg;</sup> digitalGauge control for Xamarin.iOS platform and also describes how to customize the characters.
 platform: Xamarin.iOS
 control: DigitalGauge
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header and Footer for Syncfusion Picker control in Xamarin.iOS
-description: This section will explain about how to customizes the header and footer of Syncfusion Picker control for Xamarin.iOS platform.
+title: Header and Footer for Syncfusion<sup>&reg;</sup> Picker control in Xamarin.iOS
+description: This section will explain about how to customizes the header and footer of Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
 documentation: ug

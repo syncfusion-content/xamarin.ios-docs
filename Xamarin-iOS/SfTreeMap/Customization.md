@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Syncfusion TreeMap control for Xamarin.iOS
-description: This section explains the steps required to customize the data in Syncfusion TreeMap control for Xamarin.iOS
+title: Customization in Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.iOS
+description: This section explains the steps required to customize the data in Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.iOS
 platform: Xamarin.iOS
 control: TreeMap
 documentation: ug

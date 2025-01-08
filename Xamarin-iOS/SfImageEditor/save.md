@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Save Image in Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to save the image in Syncfusion Essential Studio® Xamarin.iOS ImageEditor Control, its elements, and more.
+title : Save Image in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.iOS
+description : Learn how to save the image in Syncfusion<sup>&reg;</sup> Essential Studio® Xamarin.iOS ImageEditor Control, its elements, and more.
 platform : xamarin.ios
 control : ImageEditor
 documentation : ug
