@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion® Xamarin.iOS installer - Syncfusion®
 description: Learn here about the how to download Syncfusion® Xamarin.iOS offline installer from our syncfusion® website.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Installation and Deployment
 documentation: ug
 

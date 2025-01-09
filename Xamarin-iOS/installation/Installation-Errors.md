@@ -2,7 +2,7 @@
 layout: post
 title: Installation Errors of Essential Studio® | Xamarin.iOS | Syncfusion®
 description: Learn here some information about the Essential Studio® installation errors and steps for resolving it.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Installation and Deployment
 documentation: ug
 

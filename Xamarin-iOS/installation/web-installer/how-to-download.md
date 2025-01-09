@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion® Xamarin.iOS web installer - Syncfusion®
 description: Learn here about the how to download Syncfusion® Xamarin.iOS web installer from our syncfusion® website with license.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Installation and Deployment
 documentation: ug
 

@@ -2,7 +2,7 @@
 layout: post
 title: Upgrading Syncfusion® Xamarin.iOS installer to a latest version - Syncfusion®
 description: Learn here about the how upgrade Syncfusion® Xamarin.iOS installer to a latest version from website and control panel.
-platform: xamarin.iOS
+platform: xamarin.ios
 control: Essential Studio<sup>®</sup>
 documentation: ug
 ---
