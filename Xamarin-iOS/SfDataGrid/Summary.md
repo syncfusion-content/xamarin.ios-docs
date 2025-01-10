@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary | SfDataGrid | Xamarin.iOS | Syncfusion
-description: Learn here about summaries in Syncfusion Essential Xamarin.iOS SfDataGrid Control, its elements, and more.
+title: Summary | SfDataGrid | Xamarin.iOS | Syncfusion®
+description: Learn here about summaries in Syncfusion® Essential Xamarin.iOS SfDataGrid Control, its elements, and more.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: UG

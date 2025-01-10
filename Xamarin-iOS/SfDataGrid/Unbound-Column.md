@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UnboundColumn | SfDataGrid | Xamarin.iOS | Syncfusion
+title: UnboundColumn | SfDataGrid | Xamarin.iOS | Syncfusion®
 description: How to create and use Unbound column in SfDataGrid?
 platform: xamarin.ios
 control: SfDataGrid

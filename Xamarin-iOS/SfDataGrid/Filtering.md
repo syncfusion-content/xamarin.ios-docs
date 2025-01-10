@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering | SfDataGrid | Xamarin.iOS | Syncfusion
+title: Filtering | SfDataGrid | Xamarin.iOS | Syncfusion®
 description: Filter the records in view using properties in Xamarin.iOS SfDataGrid by simply setting a predicate to the view.
 platform: xamarin.ios
 control: SfDataGrid
