@@ -308,7 +308,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
     SummaryType = SummaryType.DoubleAggregate
 });
 sfGrid.TableSummaryRows.Add(summaryRow);
-{% endhighlight %}
+{% endhighlight c# %}
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `false`:
 

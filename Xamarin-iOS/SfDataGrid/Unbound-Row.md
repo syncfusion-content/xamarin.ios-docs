@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UnboundRow | SfDataGrid | Xamarin.iOS | Syncfusion®
+title: UnboundRow | SfDataGrid | Xamarin.iOS | Syncfusion
 description: Create and use Unbound Rows in Xamarin.iOS DataGrid , Populate data for unbound rows using event.
 platform: Xamarin.iOS
 control: SfDataGrid
