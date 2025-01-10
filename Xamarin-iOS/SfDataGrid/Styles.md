@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styles | SfDataGrid | Xamarin.iOS | Syncfusion®
-description: Learn here all about Style support in Syncfusion® Essential Xamarin.iOS SFDataGrid control, its elements, and more.
+title: Styles | SfDataGrid | Xamarin.iOS | Syncfusion
+description: Learn here all about Style support in Syncfusion Essential Xamarin.iOS SFDataGrid control, its elements, and more.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: UG

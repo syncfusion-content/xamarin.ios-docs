@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Drag and Drop | SfDataGrid | Xamarin | Syncfusion®
+title: Column Drag and Drop | SfDataGrid | Xamarin | Syncfusion
 description: How to enable and perform column drag and drop operation and its customization.
 platform: xamarin.ios
 control: SfDataGrid

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary | SfDataGrid | Xamarin.iOS | Syncfusion®
-description: Learn here about summaries in Syncfusion® Essential Xamarin.iOS SfDataGrid Control, its elements, and more.
+title: Summary | SfDataGrid | Xamarin.iOS | Syncfusion
+description: Learn here about summaries in Syncfusion Essential Xamarin.iOS SfDataGrid Control, its elements, and more.
 platform: xamarin.ios
 control: SfDataGrid
 documentation: UG
@@ -308,7 +308,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
     SummaryType = SummaryType.DoubleAggregate
 });
 sfGrid.TableSummaryRows.Add(summaryRow);
-{% endhighlight c# %}
+{% endhighlight %}
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `false`:
 

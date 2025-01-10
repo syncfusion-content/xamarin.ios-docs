@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns | SfDataGrid | Xamarin.iOS | Syncfusion®
+title: Columns | SfDataGrid | Xamarin.iOS | Syncfusion
 description: How to create and add columns, different ways to create columns and its customizations in a SfDataGrid.
 platform: xamarin.ios
 control: SfDataGrid
@@ -147,7 +147,7 @@ void GridAutoGeneratingColumns(object sender,AutoGeneratingColumnEventArgs e)
         e.Column.IsHidden = true;
     }
 }
-{% endhighlight c# %}
+{% endhighlight %}
 
 You can also customize a column’s header text, sorting, alignment, padding, etc. by handling the `SfDataGrid.AutoGeneratingEvent`.
 
