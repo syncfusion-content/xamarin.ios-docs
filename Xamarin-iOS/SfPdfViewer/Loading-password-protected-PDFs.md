@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Loading encrypted PDFs using SfPdfViewer in Xamarin.iOS | Syncfusion
-description: PDF Viewer allows the user to load and view the password protected PDF documents | Xamarin.iOS | Syncfusion
-platform: Xamarin.iOS
+description: PDF Viewer allows the user to load and view the password protected PDF documents | Xamarin.iOS | Syncfusion<sup>®</sup>
+platform: xamarin.ios
 control: SfPdfViewer
 documentation: ug
 ---
