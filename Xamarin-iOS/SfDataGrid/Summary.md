@@ -210,7 +210,7 @@ The following screenshot illustrates table summary rows in the data grid:
 
 ![](SfDataGrid_images/Tablesummaries1.PNG)
 
-{% highlight c# %}
+{% highlight c#%}
 GridTableSummaryRow summaryRow1 = new GridTableSummaryRow();
 summaryRow1.Title = "Total Salary:{TotalSalary} for {ProductCount} members";
 summaryRow1.ShowSummaryInRow = true;
@@ -250,7 +250,7 @@ sfGrid.TableSummaryRows.Add(summaryRow2);
 
 The summary information can be displayed in the row by setting the [GridTableSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridSummaryRow.html#Syncfusion_SfDataGrid_GridSummaryRow_ShowSummaryInRow) to `true` and by defining summary columns. You have to define the [GridTableSummaryRow.Title](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridSummaryRow.html#Syncfusion_SfDataGrid_GridSummaryRow_Title) based on the [GridSummaryColumn.Name](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridSummaryRow.html#Syncfusion_SfDataGrid_GridSummaryRow_Name) property to format summary columns value in a row.
 
-{% highlight c# %}
+{% highlight c#%}
 GridTableSummaryRow summaryRow = new GridTableSummaryRow();
 summaryRow.Title = "Total Salary:{TotalSalary} for {ProductCount} members";
 summaryRow.ShowSummaryInRow = true;
@@ -297,7 +297,7 @@ Refer to [Formatting Summary](#_Formatting_Summary) section to know more about h
 
 In the following code snippet, summary is defined for the `Salary` column:
 
-{% highlight c# %}
+{% highlight c#%}
 GridTableSummaryRow summaryRow = new GridTableSummaryRow();
 summaryRow.ShowSummaryInRow = false;
 summaryRow.SummaryColumns.Add(new GridSummaryColumn()
@@ -308,7 +308,7 @@ summaryRow.SummaryColumns.Add(new GridSummaryColumn()
     SummaryType = SummaryType.DoubleAggregate
 });
 sfGrid.TableSummaryRows.Add(summaryRow);
-{% endhighlight c# %}
+{% endhighlight c#%}
 
 The following screenshot shows the table summary row if `ShowSummaryInRow` is `false`:
 
@@ -318,7 +318,7 @@ The following screenshot shows the table summary row if `ShowSummaryInRow` is `f
 
 The data grid add table summary rows either at top or bottom positions using the [GridTableSummaryRow.Position](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridTableSummaryRow.html#Syncfusion_SfDataGrid_GridTableSummaryRow_Position) property.
 
-{% highlight c# %}
+{% highlight c#%}
 GridTableSummaryRow topSummaryRow = new GridTableSummaryRow();
 topSummaryRow.Position = Position.Top;
 topSummaryRow.ShowSummaryInRow = false;
@@ -629,7 +629,7 @@ The data grid allows customizes the table summary by extending [GridTableSummary
 
 To customize the table summary, follow the code example:
 
-{% highlight c# %}
+{% highlight c#%}
 
 // To remove default summary and Add custom summary.
 
@@ -672,7 +672,7 @@ The following screenshot shows the outcome upon execution of the previous code:
 The data grid allows customizes the caption summary by extending [GridCaptionSummaryCellRenderer](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridCaptionSummaryCellRenderer.html) class.
 
 
-{% highlight c# %}
+{% highlight c#%}
 
 // To remove default summary and Add custom summary.
 
@@ -710,7 +710,7 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 
 The data grid allows customizes the group summary by extending [GridGroupSummaryCellRenderer](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfDataGrid.GridGroupSummaryCellRenderer.html) class.
 
-{% highlight c# %}
+{% highlight c#%}
 
 public class MyViewController:UIViewController
 {
