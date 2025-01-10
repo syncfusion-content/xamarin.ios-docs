@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System Requirements | Xamarin.iOS | Syncfusion
+title: System Requirements | Xamarin.iOS | Syncfusion®
 description: System Requirements
 platform: xamarin.ios
 control: System Requirements
