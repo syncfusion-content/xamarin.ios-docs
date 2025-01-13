@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Placeholder style for Xamarin.iOS Syncfusion Kanban control
+title: Placeholder style for Xamarin.iOS Syncfusion<sup>&reg;</sup> Kanban control
 description: This section describes how to customize the placeholder style of Kanban control in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Kanban

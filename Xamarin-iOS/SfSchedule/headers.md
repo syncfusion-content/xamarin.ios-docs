@@ -1,6 +1,6 @@
 ---     
 layout: post     
-title: Header appearance and customization in Syncfusion SfSchedule control for Xamarin.iOS     
+title: Header appearance and customization in Syncfusion<sup>&reg;</sup> SfSchedule control for Xamarin.iOS     
 description: Learn how to customize header in SfSchedule control    
 platform: xamarin.ios   
 control: SfSchedule     

@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Getting Started | SfCircularGauge | iOS | Syncfusion
+title: Getting Started | SfCircularGauge | iOS | Syncfusion<sup>&reg;</sup>
 description: Rim
 platform: xamarin.iOS
 control: SfCircularGauge

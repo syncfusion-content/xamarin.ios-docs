@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Populating Items with Syncfusion Picker control for Xamarin.iOS
-description: This section will explain about how to populating items on Syncfusion Picker control for Xamarin.iOS platform.
+title: Populating Items with Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS
+description: This section will explain about how to populating items on Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
 documentation: ug

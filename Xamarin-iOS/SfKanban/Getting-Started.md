@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started for Essential Xamarin.iOS Syncfusion Kanban control
+title:  Getting Started for Essential Xamarin.iOS Syncfusion<sup>&reg;</sup> Kanban control
 description: This section explains about the getting started of Kanban (SfKanban) control in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: SfKanban

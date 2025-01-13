@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | SfDataForm | Xamarin.iOS | Syncfusion
+title: Getting started | SfDataForm | Xamarin.iOS | Syncfusion<sup>&reg;</sup>
 description: This section explains the key features and getting started with SfDataForm for Xamarin.iOS platform.
 platform: xamarin.ios
 control: SfDataForm
