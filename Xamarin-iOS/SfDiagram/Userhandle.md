@@ -1,7 +1,7 @@
 ---
-title: Userhadles for Essential Xamarin.iOS Diagram | Syncfusion
+title: Userhadles for Essential® Xamarin.iOS Diagram | Syncfusion®
 description: Learn how to add userhandles ,userhandles customization and its event handle in diagram for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfDiagram
 documentation: UG
 keywords: 
