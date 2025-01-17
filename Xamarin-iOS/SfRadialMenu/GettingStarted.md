@@ -11,9 +11,9 @@ documentation: ug
 
 This section explains the steps required to configure the SfRadialMenu control in a real-time scenario and provides a walk-through on some of the customization features available.
 
-## Referencing Essential Studio® components in your solution
+## Referencing Essential Studio<sup>®</sup> components in your solution
 
-After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders.
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders.
 
 {Syncfusion Installed location}\Essential Studio\14.XXXX.X.XX\lib
 

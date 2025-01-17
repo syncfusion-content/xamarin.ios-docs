@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview
 
-The Essential® Xamarin.iOS Rating control has a group of stars to indicate the rating with flexible precision. Also provides various customization support on item size, item spacing and the number of displayed items.
+The Essential<sup>®</sup> Xamarin.iOS Rating control has a group of stars to indicate the rating with flexible precision. Also provides various customization support on item size, item spacing and the number of displayed items.
 
 ![SfRating control overview](images/overview.png)
 

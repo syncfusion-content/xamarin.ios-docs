@@ -13,9 +13,9 @@ documentation: ug
 
 This section explains how to configure the SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in the SfRating control.
 
-## Referencing Essential Studio® Components in Your Solution
+## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
-After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
