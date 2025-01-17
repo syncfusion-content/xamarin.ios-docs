@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Transformation in Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to perform transformations in Syncfusion Essential Studio® Xamarin.iOS ImageEditor Control, its elements, and more.
+title : Transformation in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.iOS
+description : Learn how to perform transformations in Syncfusion<sup>&reg;</sup> Essential Studio® Xamarin.iOS ImageEditor Control, its elements, and more.
 platform : xamarin.ios
 control : ImageEditor
 documentation : ug

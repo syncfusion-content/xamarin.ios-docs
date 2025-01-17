@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with columns of Syncfusion Picker control for Xamarin.iOS
-description: This section will explain about how to create multiple columns in Syncfusion Picker control for Xamarin.iOS platform.
+title: Dealing with columns of Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS
+description: This section will explain about how to create multiple columns in Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
 documentation: ug

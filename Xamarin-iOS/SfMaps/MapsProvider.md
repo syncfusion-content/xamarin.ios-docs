@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maps provider of Syncfusion Maps control for Xamarin iOS
-description: Describes the maps provider such as OSM (open street map) and Bing maps with its customization in syncfusion Maps control.
+title: Maps provider of Syncfusion<sup>&reg;</sup> Maps control for Xamarin iOS
+description: Describes the maps provider such as OSM (open street map) and Bing maps with its customization in Syncfusion<sup>&reg;</sup> Maps control.
 platform: Xamarin.iOS
 control: SfMaps 
 documentation: ug

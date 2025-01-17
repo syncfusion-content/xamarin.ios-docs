@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessing View modes in Syncfusion Calendar control for Xamarin.iOS
+title: Accessing View modes in Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.iOS
 description: Calendar Xamarin.Android displays month, year, decade and century views which allows users to easily select and navigate between all built-in views
 platform: Xamarin.iOS
 control: Calendar

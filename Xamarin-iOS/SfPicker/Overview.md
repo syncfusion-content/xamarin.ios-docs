@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Picker control for Xamarin.iOS
-description: This section will explain about the Features available in Syncfusion Picker control in Xamarin.iOS platform
+title: Overview of Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS
+description: This section will explain about the Features available in Syncfusion<sup>&reg;</sup> Picker control in Xamarin.iOS platform
 platform: Xamarin.iOS
 control: Picker
 documentation: ug

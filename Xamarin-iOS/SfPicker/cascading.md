@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cascading of Syncfusion SfPicker in Xamarin.iOS platform.
-description: This section will explain about how to acieve cascading in Syncfusion SfPicker control in Xamarin.iOS platform.
+title: Cascading of Syncfusion<sup>&reg;</sup> SfPicker in Xamarin.iOS platform.
+description: This section will explain about how to acieve cascading in Syncfusion<sup>&reg;</sup> SfPicker control in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
 documentation: ug

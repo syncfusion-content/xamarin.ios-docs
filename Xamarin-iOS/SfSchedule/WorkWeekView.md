@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize work week view at Syncfusion Schedule control | Xamarin.iOS
+title: Customize work week view at Syncfusion<sup>&reg;</sup> Schedule control | Xamarin.iOS
 description: Learn how to configure the view header, timeslots of schedule work week view in SfSchedule control for Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule

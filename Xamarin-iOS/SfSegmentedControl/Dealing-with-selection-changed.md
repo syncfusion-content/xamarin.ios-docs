@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection changed | SfSegmentedControl | Xamarin.iOS | SyncfusionÂ®
+title: Selection changed | SfSegmentedControl | Xamarin.iOS | Syncfusion®
 description: How to handle selection changed in segmented control
 platform: xamarin.ios
 control: SfSegmentedControl

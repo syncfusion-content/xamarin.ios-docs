@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout | SfDataForm | Xamarin.iOS | Syncfusion
+title: Layout | SfDataForm | Xamarin.iOS | Syncfusion<sup>&reg;</sup>
 description: Different editors and its customization  in SfDataForm.
 platform: Xamarin.iOS
 control: SfDataForm

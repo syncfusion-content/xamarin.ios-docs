@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Populating Appointments in Syncfusion SfSchedule for Xamarin.iOS
+title: Populating Appointments in Syncfusion<sup>&reg;</sup> SfSchedule for Xamarin.iOS
 description: This section explains on how to Populate Appointments in SfSchedule control for Xamarin.iOS platform.
 platform: xamarin.ios
 control: SfSchedule

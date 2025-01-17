@@ -1,6 +1,6 @@
 ---
 layout : post
-title: Shapes in Syncfusion SfImageEditor control in Xamarin.iOS
+title: Shapes in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.iOS
 description: Learn about the Xamarin.iOS Image Editor's Text feature that supports customizing the annotated text in an image. 
 platform : xamarin-iOS.ios
 control : ImageEditor

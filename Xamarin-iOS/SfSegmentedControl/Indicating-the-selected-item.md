@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection Indicator | SfSegmentedControl  | Xamarin.iOS | SyncfusionÂ®
+title: Multiple Segments | SfSegmentedControl | Xamarin.iOS | Syncfusion®
 description: How to handle selection indicator settings in segmented control
 platform: xamarin.ios
 control: SfSegmentedControl

@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Drag and Drop Appointments in Syncfusion SfSchedule control for Xamarin.iOS
+title: Drag and Drop Appointments in Syncfusion<sup>&reg;</sup> SfSchedule control for Xamarin.iOS
 description: Learn how to Drag and Drop Appointments in SfSchedule control
 platform: xamarin.ios
 control: SfSchedule

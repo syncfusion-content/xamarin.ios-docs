@@ -1,7 +1,7 @@
 ---
-title: Adding connectors in diagram control for Xamarin.iOS | Syncfusion
+title: Adding connectors in diagram control for Xamarin.iOS | Syncfusion®
 description: Describes how to add connector,connection with node and it's appearance in diagram control for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -59,7 +59,7 @@ diagram.AddNode(node1);
 // creating node  instance
 var node2 = new Node(300, 300, 100, 100);
 //adding port instance to the node
-node2.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 1 }); 
+node2.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 1 });
 //adding node to the diagram
 diagram.AddNode(node2);
 //creating and connecting the ports with connector

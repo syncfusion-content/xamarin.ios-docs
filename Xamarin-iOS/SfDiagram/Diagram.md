@@ -1,7 +1,7 @@
 ---
-title: Diagram for Essential Xamarin.iOS Diagram | Syncfusion
-description: Learn here all about Diagram support in Syncfusion Diagram (SfDiagram) control in Xamarin.iOS, its elements and more.
-platform: Xamarin.iOS
+title: Diagram for Essential® Xamarin.iOS Diagram | Syncfusion®
+description: Learn here all about Diagram support in Syncfusion&reg; Diagram (SfDiagram) control in Xamarin.iOS, its elements and more.
+platform: xamarin.ios
 control: SfDiagram
 documentation: UG
 keywords: 

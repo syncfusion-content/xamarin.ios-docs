@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Installing Syncfusion Xamarin.iOS Mac installer - Syncfusion
-description: Learn here about how to install Syncfusion Xamarin.iOS mac installer after downloading from our Syncfusion website.
+title: Installing Syncfusion® Xamarin.iOS Mac installer - Syncfusion®
+description: Learn here about how to install Syncfusion® Xamarin.iOS mac installer after downloading from our Syncfusion® website.
 platform: xamarin.ios
-control: Syncfusion Controls
+control: Syncfusion® Controls
 documentation: ug
 ---
-# Installing Syncfusion Xamarin.iOS Mac Installer
+# Installing Syncfusion<sup>®</sup> Xamarin.iOS Mac Installer
 
 
-## Overview of Syncfusion components Installation in Mac
+## Overview of Syncfusion<sup>®</sup> components Installation in Mac
 
-The Syncfusion Essential Studio allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components.
+The Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion<sup>®</sup> components.
 
 ### Step-by-Step Installation
 
@@ -33,9 +33,9 @@ The steps below show how to install the Xamarin Mac installer.
 
    ![License Agree Confirmation](images/Mac_Installer4.png)
 
-   N> The Unlock key is not required to install the Mac installer. The Syncfusion Mac installer can be used for development purposes without registering the Unlock key.
+   N> The Unlock key is not required to install the Mac installer. The Syncfusion<sup>®</sup> Mac installer can be used for development purposes without registering the Unlock key.
 
-5. Now you can open the folder to explore the Syncfusion Essential Studio Mac installer.
+5. Now you can open the folder to explore the Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> Mac installer.
 
    ![Destination](Images/destination.JPG)
 
@@ -51,7 +51,7 @@ I> After adding the reference, currently, an additional step is required for iOS
 
 ### Explore the libraries package
 
-You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
+You can find the Syncfusion<sup>®</sup> libraries, samples and NuGet from the installed location in Mac.
 
 {Essential Studio installed location}\Syncfusion\Essential Studio{version}\Xamarin
 
@@ -96,7 +96,7 @@ You can then add the assembly references to the respective projects such as PCL,
 
 5. **Option 1:** Right click solution -> Click Manage NuGet packages.
 
-   N> You can follow the [NuGet Packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) to use the NuGet-Syncfusion Xamarin Controls/Components.
+   N> You can follow the [NuGet Packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) to use the NuGet-Syncfusion<sup>®</sup> Xamarin Controls/Components.
 
 
    ![Add Package](Images/addpackages.PNG)
@@ -116,7 +116,7 @@ You can then add the assembly references to the respective projects such as PCL,
 6. **Option 2:** 
    You can add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS from the MAC build installed location in your machine. You can find the dependencies for each control from this link.
    
-   You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
+   You can find the Syncfusion<sup>®</sup> libraries, samples and NuGet from the installed location in Mac.
 
    {Essential Studio installed location}\Syncfusion\Essential Studio{version}\Xamarin
 
@@ -151,7 +151,7 @@ You can then add the assembly references to the respective projects such as PCL,
 
 3. Right click the iOS/ Android project-> Select Set As Startup Project in Debug/Release mode. Build and Run the project in any platform as desired.	
 
-   Thus, you can create Xamarin Visual Studio MAC project for any Syncfusion Xamarin control using the above guidelines.
+   Thus, you can create Xamarin Visual Studio MAC project for any Syncfusion<sup>®</sup> Xamarin control using the above guidelines.
    
 ## License key registration in samples
 
