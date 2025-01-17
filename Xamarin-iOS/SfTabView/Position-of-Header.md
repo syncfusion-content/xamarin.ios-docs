@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Positioning of header 
-description: Positioning of header in Syncfusion TabView control for Xamarin.iOS platform
-platform: Xamarin.iOS
+description: Positioning of header in Syncfusion® TabView control for Xamarin.iOS platform
+platform: xamarin.ios
 control: TabView
 documentation: ug
 ---

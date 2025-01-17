@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericUpDown Control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion NumericUpDown control and customization features available in Xamarin.iOS platform 
+title: Getting Started with Syncfusion® NumericUpDown Control for Xamarin.iOS
+description: A quick tour to initial users on Syncfusion® NumericUpDown control and customization features available in Xamarin.iOS platform 
 platform: xamarin.ios
 control: NumericUpDown 
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with NumericUpDown
 
-This section provides overview for working with Essential® NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
+This section provides overview for working with Essential<sup>®</sup> NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
 
-## Referencing Essential Studio® Components in Your Solution	
+## Referencing Essential Studio<sup>®</sup> Components in Your Solution	
 
-After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
 {Syncfusion Installed location}\Essential Studio{version number}\lib
 

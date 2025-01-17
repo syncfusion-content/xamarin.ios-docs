@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Customization | SfSegmentedControl | Xamarin.iOS | Syncfusion 
+title: Customization | SfSegmentedControl | Xamarin.iOS | Syncfusion® 
 description: How to customize the segmented control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
 ---

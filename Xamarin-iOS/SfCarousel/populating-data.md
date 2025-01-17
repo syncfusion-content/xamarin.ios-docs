@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Data source in Syncfusion Carousel control in Xamarin.iOS
+title: Data source in Syncfusion® Carousel control in Xamarin.iOS
 description: This section provides the details about the populating the data source with Carousel control for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: Carousel
 documentation: ug
 ---

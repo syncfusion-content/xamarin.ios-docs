@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Localization in Syncfusion SfNumericTextBox control for Xamarin.iOS
-description: Learn how to localize the Syncfusion SfNumericTextBox control to any specific culture in Xamarin.iOS platform.
-platform: Xamarin.iOS
+title: Localization in Syncfusion® SfNumericTextBox control for Xamarin.iOS
+description: Learn how to localize the Syncfusion® SfNumericTextBox control to any specific culture in Xamarin.iOS platform.
+platform: xamarin.ios
 control: SfNumericTextBox
 documentation: ug
 ---

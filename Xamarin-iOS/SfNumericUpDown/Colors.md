@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Colors in Syncfusion NumericUpDown control for Xamarin.iOS
+title: Colors in Syncfusion® NumericUpDown control for Xamarin.iOS
 description: Learn what are the color properties to customize the appearence of NumericUpDown in Xamarin.iOS platform.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NumericUpDown
 documentation: ug
 ---
