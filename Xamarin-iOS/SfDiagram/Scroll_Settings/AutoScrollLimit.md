@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Auto-Scroll Limit in Xamarin.iOS Diagram control | Syncfusion®
-description: Learn here all about Auto-Scroll Limit support in Syncfusion&reg; Xamarin.iOS Diagram (SfDiagram) control and more.
+description: Learn here all about Auto-Scroll Limit support in Syncfusion<sup>&reg;</sup>; Xamarin.iOS Diagram (SfDiagram) control and more.
 platform: xamarin.ios
 control: SfDiagram
 documentation: ug
