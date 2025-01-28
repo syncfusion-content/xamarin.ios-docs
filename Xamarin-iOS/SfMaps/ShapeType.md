@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shape type in Syncfusion SfMaps control for Xamarin.Forms
+title: Shape type in Syncfusion<sup>&reg;</sup> SfMaps control for Xamarin.Forms
 description: This section describes the shape type of shape file layer on maps control.
 platform: Xamarin.iOS
 control: SfMaps

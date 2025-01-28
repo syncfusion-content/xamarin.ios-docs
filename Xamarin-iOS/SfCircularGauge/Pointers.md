@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Getting Started | SfCircularGauge | iOS | Syncfusion
-description: This section describes in detail about pointers and its customization in Syncfusion SfCircularGauge control.   
+title: Getting Started | SfCircularGauge | iOS | Syncfusion<sup>&reg;</sup>
+description: This section describes in detail about pointers and its customization in Syncfusion<sup>&reg;</sup> SfCircularGauge control.   
 platform: xamarin.iOS
 control: SfCircularGauge
 documentation: ug

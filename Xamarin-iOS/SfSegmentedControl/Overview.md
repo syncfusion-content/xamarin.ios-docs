@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Overview | SfSegmentedControl | Xamarin.iOS | Syncfusion
+title : Overview | SfSegmentedControl | Xamarin.iOS | Syncfusion<sup>&reg;</sup>
 description : Overview and key features of segmented control
 platform : Xamarin.iOS
 control : SfSegmentedControl

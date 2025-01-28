@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Picker control for Xamarin.iOS
-description: This section will explain about how to create a simple sample using Syncfusion Picker control for Xamarin.iOS platform.
+title: Getting Started with Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS
+description: This section will explain about how to create a simple sample using Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
 documentation: ug

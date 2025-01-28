@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populate Data of syncfusion maps control for Xamarin.iOS
+title: Populate Data of Syncfusion<sup>&reg;</sup> maps control for Xamarin.iOS
 description: How to populate the datasource
 platform: Xamarin.iOS
 control: SfMaps 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion DigitalGauge control for Xamarin.iOS
+title: Overview of Syncfusion<sup>&reg;</sup> DigitalGauge control for Xamarin.iOS
 description: Overview and key features of digitalGauge control.
 platform: Xamarin.iOS
 control: DigitalGauge

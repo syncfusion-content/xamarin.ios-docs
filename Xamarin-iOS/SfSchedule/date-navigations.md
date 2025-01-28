@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dates, Navigations and Gestures for syncfusion Schedule in iOS
+title: Dates, Navigations and Gestures for Syncfusion<sup>&reg;</sup> Schedule in iOS
 description: How to Navigate date, enable or disable navigation and other functionalities of Schedule control in Xamarin.iOS.
 platform: xamarin.iOS
 control: SfSchedule

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ImageEditor control for Xamarin.iOS
+title: Getting Started with Syncfusion<sup>&reg;</sup> ImageEditor control for Xamarin.iOS
 description: Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
 platform: xamarin.ios
 control: SfImageEditor

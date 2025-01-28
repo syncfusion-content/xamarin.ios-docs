@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ItemSelected Event in Syncfusion SfTreeMap control
+title: ItemSelected Event in Syncfusion<sup>&reg;</sup> SfTreeMap control
 description: This section explains the ItemSelected event support in TreeMap. 
 platform: Xamarin.iOS
 control: TreeMap
