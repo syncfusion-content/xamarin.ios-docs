@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TreeMap control for Xamarin.iOS
-description: Learn here about getting started with Syncfusion Essential Xamarin.iOS TreeMap (SfTreeMap) Control, its elements, features, and more.
+title: Getting Started with Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.iOS
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Essential Xamarin.iOS TreeMap (SfTreeMap) Control, its elements, features, and more.
 platform: Xamarin.iOS
 control: SfTreeMap
 documentation: ug

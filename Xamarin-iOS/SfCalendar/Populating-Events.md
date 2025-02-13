@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating Events in Syncfusion Calendar control for Xamarin.iOS
+title: Populating Events in Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.iOS
 description: Learn how to populate events inside a cell and inline events descriptions
 platform: Xamarin.iOS
 control: Calendar

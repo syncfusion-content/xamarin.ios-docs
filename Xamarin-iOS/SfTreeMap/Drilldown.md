@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drilldown support for Syncfusion TreeMap control in Xamarin.iOS
+title: Drilldown support for Syncfusion<sup>&reg;</sup> TreeMap control in Xamarin.iOS
 description: Drilldown feature of TreeMap control
 platform: Xamarin.iOS
 control: SfTreeMap

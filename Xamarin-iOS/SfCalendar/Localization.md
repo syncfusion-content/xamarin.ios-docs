@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | SfCalendar | Xamarin.iOS | Syncfusion
-description: Learn here about Localization support in Syncfusion Essential Xamarin.iOS SfCalendar Control, its elements, and more.
+title: Localization | SfCalendar | Xamarin.iOS | Syncfusion<sup>&reg;</sup>
+description: Learn here about Localization support in Syncfusion<sup>&reg;</sup> Essential Xamarin.iOS SfCalendar Control, its elements, and more.
 platform: Xamarin.iOS
 control: Calendar
 documentation: ug

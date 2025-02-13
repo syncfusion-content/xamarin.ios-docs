@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FirstDayofWeek support in Syncfusion Calendar control for Xamarin.iOS
+title: FirstDayofWeek support in Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.iOS
 description: Learn how to change the first day of week 
 platform: Xamarin.iOS
 control: Calendar

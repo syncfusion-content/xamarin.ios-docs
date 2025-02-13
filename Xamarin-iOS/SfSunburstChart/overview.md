@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Essential Xamarin.iOS SfSunburstChart
+title: Overview of Essential<sup>&reg;</sup> Xamarin.iOS SfSunburstChart
 description: What are the key features available in SfSunburstChart.
 platform: Xamarin.iOS
 control: SfSunburstChart

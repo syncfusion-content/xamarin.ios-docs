@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Configure week view at Syncfusion Schedule control | Xamarin.iOS
+title: Configure week view at Syncfusion<sup>&reg;</sup> Schedule control | Xamarin.iOS
 description: Learn how to configure the view header, timeslots of schedule week view in SfSchedule control for Xamarin.iOS
 platform: xamarin.iOS
 control: SfSchedule

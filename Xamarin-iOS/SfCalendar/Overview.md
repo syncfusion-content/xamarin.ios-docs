@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion Calendar control for Xamarin.iOS
+title: Overview of Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.iOS
 description: Learn how to get the overview of Calendar control
 platform: Xamarin.iOS
 control: Calendar
