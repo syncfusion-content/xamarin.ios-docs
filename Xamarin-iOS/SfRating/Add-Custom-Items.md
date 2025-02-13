@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Adding custom items in Syncfusion Rating control for Xamarin.iOS
+title: Adding custom items in Syncfusion® Rating control for Xamarin.iOS
 description: Learn how to add the Custom Items in rating control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: Rating
 documentation: ug
 ---

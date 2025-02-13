@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual customization | SfRadioButton | Syncfusion | Xamarin.iOS 
+title: Visual customization | SfRadioButton | Syncfusion® | Xamarin.iOS 
 description: Learn how to customize the SfRadioButton CheckedColor, UncheckedColor, BorderWidth, and Text in Xamarin.iOS.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfRadioButton
 documentation: ug 
 keywords: button, SfRadioButton, RadioButton

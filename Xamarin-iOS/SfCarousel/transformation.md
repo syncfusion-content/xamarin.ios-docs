@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Transformation in Syncfusion Carousel control in Xamarin.iOS
+title: Transformation in Syncfusion® Carousel control in Xamarin.iOS
 description: This section provides the details about how to set the Transformation for Carousel Items in Carousel for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ioss
 control: Carousel
 documentation: ug
 ---

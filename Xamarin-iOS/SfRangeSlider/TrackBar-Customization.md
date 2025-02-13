@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Track bar in Syncfusion RangeSlider control for Xamarin.iOS
+title: Track bar in Syncfusion® RangeSlider control for Xamarin.iOS
 description: Learn how to customize the track bar  of RangeSlider control in Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: RangeSlider
 documentation: ug
 ---

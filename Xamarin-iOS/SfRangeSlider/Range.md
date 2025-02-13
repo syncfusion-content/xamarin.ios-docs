@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Range in Syncfusion RangeSlider control for Xamarin.iOS
+title: Range in Syncfusion® RangeSlider control for Xamarin.iOS
 description: Thsi section provides the details about how to set Dual thumb slider and its ranges in RangeSlider control.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: RangeSlider
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout : post
-title : Populating data in Syncfusion Rotator control in Xamarin.iOS
+title : Populating data in Syncfusion® Rotator control in Xamarin.iOS
 description : Learn how to set the DataSource in Rotator for Xamarin.iOS
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : Rotator 
 documentation : ug
 ---

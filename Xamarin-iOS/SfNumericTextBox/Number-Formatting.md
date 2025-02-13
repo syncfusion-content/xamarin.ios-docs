@@ -1,7 +1,7 @@
 ---
-title: Number Formatting in Syncfusion numeric textbox in Xamarin.iOS
+title: Number Formatting in Syncfusion® numeric textbox in Xamarin.iOS
 description: Learn how to add format String, enable parser mode and percent display mode for SfNumericTextBox control.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfNumericTextBox
 documentation: ug
 ---

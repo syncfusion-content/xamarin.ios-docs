@@ -1,7 +1,7 @@
 ---
-title: Range Support in Syncfusion SfNumericTextBox control for Xamarin.iOS
+title: Range Support in Syncfusion® SfNumericTextBox control for Xamarin.iOS
 description: Learn how to restrict the value with a specific range in SfNumericTextBox control in Xamarin.iOS platform.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfNumericTextBox
 documentation: ug
 ---

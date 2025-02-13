@@ -1,8 +1,8 @@
 ---
 layout : post
-title : MatchHighlighting in Syncfusion SfAutoComplete control for Xamarin.iOS
+title : MatchHighlighting in Syncfusion® SfAutoComplete control for Xamarin.iOS
 description : Learn how to highlight the matched text in SfAutoComplete
-platform : Xamarin.iOS 
+platform : xamarin.ios 
 control : AutoComplete
 documentation : ug
 ---

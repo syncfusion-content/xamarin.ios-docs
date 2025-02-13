@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Transition of drawer in Syncfusion NavigationDrawer control for Xamarin.iOS
+title: Transition of drawer in Syncfusion® NavigationDrawer control for Xamarin.iOS
 description: Learn how to set Transition of the DrawerView panel.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NavigationDrawer
 documentation: ug
 ---

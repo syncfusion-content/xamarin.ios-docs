@@ -1,8 +1,8 @@
 ---
 layout : post
-title : Overview of Syncfusion TabView control for Xamarin.iOS
+title : Overview of Syncfusion® TabView control for Xamarin.iOS
 description : Overview and key features of tabview control
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : SfTabView
 documentation : ug
 ---

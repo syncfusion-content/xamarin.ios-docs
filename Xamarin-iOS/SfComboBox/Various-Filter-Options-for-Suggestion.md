@@ -1,8 +1,8 @@
 ---
 layout : post
-title : Suggestion mode for Syncfusion SfComboBox Control in Xamarin.iOS
+title : Suggestion mode for Syncfusion® SfComboBox Control in Xamarin.iOS
 description : Learn how to display suggestion mode in ComboBox
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : SfComboBox
 documentation : ug
 ---

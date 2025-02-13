@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Position of Drawer in Syncfusion NavigationDrawer control for Xamarin.iOS
+title: Position of Drawer in Syncfusion® NavigationDrawer control for Xamarin.iOS
 description: Learn how to set position of the DrawerView panel.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NavigationDrawer
 documentation: ug
 ---

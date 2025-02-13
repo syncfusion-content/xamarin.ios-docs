@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Number Formatting in Syncfusion NumericUpDown control for Xamarin.iOS
+title: Number Formatting in Syncfusion® NumericUpDown control for Xamarin.iOS
 description: Learn how to add format String, enable parser mode and percent display mode for NumericUpDown control.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NumericUpDown
 documentation: ug
 ---

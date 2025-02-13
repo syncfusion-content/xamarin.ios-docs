@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview of Syncfusion SfNumericTextBox control for Xamarin.iOS
+title: Overview of Syncfusion® SfNumericTextBox control for Xamarin.iOS
 description: This explains about the overview and customization features available in SfNumericTextBox control in Xamarin.iOS platform.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfNumericTextBox
 documentation: ug
 ---
 
 # Overview of SfNumericTextBox
 
-The Essential Xamarin.iOS SfNumericTextBox is an advanced version of the Entry control that restricts input to numeric values.
+The Essential<sup>®</sup> Xamarin.iOS SfNumericTextBox is an advanced version of the Entry control that restricts input to numeric values.
 
 Also provides a gesture friendly UI culture and can be configured to display different formats like currency format, scientific format etc.
 

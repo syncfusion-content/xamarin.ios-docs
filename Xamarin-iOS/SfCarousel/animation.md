@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AnimationDuration in Syncfusion Carousel control in Xamarin.iOS
+title: AnimationDuration in Syncfusion® Carousel control in Xamarin.iOS
 description: This section provides the details about how to set the Duration in Carousel animation for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: Carousel
 documentation: ug
 ---

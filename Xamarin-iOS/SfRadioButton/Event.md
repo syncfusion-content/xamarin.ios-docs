@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Event in Syncfusion SfRadioButton for Xamarin.iOS platform
+title: Event in Syncfusion® SfRadioButton for Xamarin.iOS platform
 description: Learn how to invoke the available event to notify the selection changes in Xamarin.iOS SfRadioButton
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfRadioButton
 documentation: ug 
 keywords: button, SfRadioButton, RadioButton

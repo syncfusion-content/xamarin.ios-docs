@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.IOS platform 
-platform: Xamarin.IOS
+title: Getting Started with Syncfusion® SfMaskedEdit control for Xamarin.IOS
+description: A quick tour to initial users on Syncfusion® SfMaskedEdit control for Xamarin.IOS platform 
+platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug
 ---

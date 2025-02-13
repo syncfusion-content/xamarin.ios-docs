@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of Syncfusion Rotator control for Xamarin.iOS 
+title: Overview of Syncfusion® Rotator control for Xamarin.iOS 
 description: Overview and keyfeatures for Rotator control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: Rotator
 documentation: ug
 ---
