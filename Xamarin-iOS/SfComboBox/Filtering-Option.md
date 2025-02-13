@@ -1,8 +1,8 @@
 ---
 layout : post
-title : Filtering in Syncfusion SfComboBox control for Xamarin.iOS
+title : Filtering in Syncfusion® SfComboBox control for Xamarin.iOS
 description : Learn how to filter the text in SfComboBox
-platform : Xamarin.iOS 
+platform : xamarin.ios 
 control : ComboBox
 documentation : ug
 ---

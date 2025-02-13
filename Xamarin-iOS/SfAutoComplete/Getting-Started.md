@@ -1,8 +1,8 @@
 ---
 layout : post
-title : Getting Started with Syncfusion AutoComplete control for Xamarin.iOS
-description : Learn here about getting started with Syncfusion Essential Xamarin.iOS AutoComplete Control, its elements, and more.
-platform : Xamarin.iOS
+title : Getting Started with Syncfusion® AutoComplete control for Xamarin.iOS
+description : Learn here about getting started with Syncfusion® Essential® Xamarin.iOS AutoComplete Control, its elements, and more.
+platform : xamarin.ios
 control : AutoComplete
 documentation : ug
 ---
@@ -11,9 +11,9 @@ documentation : ug
 
 This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
 
-## Referencing Essential Studio® Components in Your Solution
+## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
-After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 

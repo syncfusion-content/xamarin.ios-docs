@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Various features of Syncfusion RangeSlider control for Xamarin.iOS
+title: Various features of Syncfusion® RangeSlider control for Xamarin.iOS
 description: Learn how to set minimum value, maximum value, tick frequency, step frequency, enabling snaps to support and orientation for RangeSlider
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: RangeSlider
 documentation: ug
 ---

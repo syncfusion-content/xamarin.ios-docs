@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of Syncfusion NavigationDrawer control for Xamarin.iOS
+title: Overview of Syncfusion® NavigationDrawer control for Xamarin.iOS
 description: Overview and key features of NavigationDrawer control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NavigationDrawer
 documentation: ug
 ---

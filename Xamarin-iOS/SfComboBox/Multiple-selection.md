@@ -1,8 +1,8 @@
 ---
 layout : post
-title : Multi Selection in Syncfusion SfComboBox control for Xamarin.iOS
+title : Multi Selection in Syncfusion® SfComboBox control for Xamarin.iOS
 description :  Learn how to select multiple items in SfComboBox
-platform : Xamarin.iOS 
+platform : xamarin.ios 
 control : ComboBox
 documentation : ug
 ---

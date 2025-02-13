@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Auto scrolling the Syncfusion segmented control for Xamarin.iOS
+title: Auto scrolling the Syncfusion® segmented control for Xamarin.iOS
 description: Learn how to auto scroll the selected index in the segmented control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
 ---

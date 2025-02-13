@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Sizing support in Syncfusion BusyIndicator control for Xamarin.iOS
+title: Sizing support in Syncfusion® BusyIndicator control for Xamarin.iOS
 description: This section provides the details about how to customize the size of the animation type for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfBusyIndicator
 documentation: ug
 ---

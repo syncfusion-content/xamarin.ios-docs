@@ -1,8 +1,8 @@
 ---
 layout : post
-title : Suggestionbox Placement in Syncfusion SfComboBox control for Xamarin.iOS
+title : Suggestionbox Placement in Syncfusion® SfComboBox control for Xamarin.iOS
 description : Learn how to place the Suggestion Box in SfComboBox
-platform : Xamarin.iOS 
+platform : xamarin.ios 
 control : ComboBox
 documentation : ug
 ---

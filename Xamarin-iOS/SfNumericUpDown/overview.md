@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of Syncfusion NumericUpDown control for Xamarin.iOS
+title: Overview of Syncfusion® NumericUpDown control for Xamarin.iOS
 description: This explains about the overview and customization features available in NumericUpDown control in Xamarin.iOS platform.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NumericUpDown 
 documentation: ug
 ---

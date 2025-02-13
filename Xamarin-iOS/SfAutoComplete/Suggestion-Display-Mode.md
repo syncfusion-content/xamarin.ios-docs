@@ -1,8 +1,8 @@
 ---
 layout : post
-title : AutoComplete mode in Syncfusion AutoComplete control in Xamarin.iOS
+title : AutoComplete mode in Syncfusion® AutoComplete control in Xamarin.iOS
 description : Learn how to change the AutoComplete mode in AutoComplete
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : AutoComplete
 documentation : ug
 ---

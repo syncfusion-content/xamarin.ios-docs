@@ -1,8 +1,8 @@
 ---
 layout : post
-title : WaterMark in Syncfusion Autocomplete control for Xamarin.iOS
+title : WaterMark in Syncfusion® Autocomplete control for Xamarin.iOS
 description : Learn how to set the Watermark in AutoComplete
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : AutoComplete
 documentation : ug
 ---

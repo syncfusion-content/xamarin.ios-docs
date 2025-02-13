@@ -1,9 +1,9 @@
 ---
 
 layout: post
-title: ToolTip in Syncfusion Rating control for Xamarin.iOS
+title: ToolTip in Syncfusion® Rating control for Xamarin.iOS
 description: Learn how to change the ToolTip of rating control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: Rating
 documentation: ug
 
