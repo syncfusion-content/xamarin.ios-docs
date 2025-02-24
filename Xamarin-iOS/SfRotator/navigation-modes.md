@@ -1,8 +1,8 @@
 ---
 layout: post
-title: NavigationMode of Syncfusion Rotator control for Xamarin.iOS
+title: NavigationMode of Syncfusion® Rotator control for Xamarin.iOS
 description: Learn how to view the different navigation modes of the Rotator control in Xamarin.iOS
-platform: Xamarin.iOS 
+platform: xamarin.ios
 control: Rotator
 documentation: ug
 ---

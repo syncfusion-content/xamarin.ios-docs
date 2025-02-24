@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Segmenting items in Syncfusion RadialMenu control for Xamarin.Android
-description: How to Segment the rim and place the items using the layout types in SfRadialMenu control in Xamarin.Android.
-platform: Xamarin.Android
+title: Segmenting items in Syncfusion® RadialMenu control for Xamarin.Android
+description: How to Segment the rim and place the items using the layout types in SfRadialMenu control in Xamarin.iOS.
+platform: xamarin.ios
 control: SfRadialMenu
 documentation: ug
 ---
