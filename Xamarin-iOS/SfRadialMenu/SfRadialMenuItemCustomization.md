@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Syncfusion RadialMenu item customization in Xamarin.iOS
-description: Working with Syncfusion RadialMenu customization of items, text, text color, background color, and view in Xamarin.iOS.
-platform: Xamarin.iOS
+title: Syncfusion® RadialMenu item customization in Xamarin.iOS
+description: Working with Syncfusion® RadialMenu customization of items, text, text color, background color, and view in Xamarin.iOS.
+platform: xamarin.ios
 control: SfRadialMenu
 documentation: ug
 ---

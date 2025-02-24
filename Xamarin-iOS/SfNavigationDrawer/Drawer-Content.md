@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Various features of Syncfusion NavigationDrawer control for iOS.
+title: Various features of Syncfusion® NavigationDrawer control for iOS.
 description: Learn how to set content view, drawer content view, footer view, header view, drawer size in NavigationDrawer.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NavigationDrawer
 documentation: ug
 ---

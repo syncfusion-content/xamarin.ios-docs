@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Events in Syncfusion RangeSlider control for Xamarin.iOS
+title: Events in Syncfusion® RangeSlider control for Xamarin.iOS
 description: This section provides the details about how to populate events in RangeSlider control for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: RangeSlider 
 documentation: ug
 ---

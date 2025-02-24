@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Display Type
-description: Different display types available in Syncfusion TabView control for Xamarin.iOS platform
-platform: Xamarin.iOS
+description: Different display types available in Syncfusion® TabView control for Xamarin.iOS platform
+platform: xamarin.ios
 control: TabView
 documentation: ug
 ---

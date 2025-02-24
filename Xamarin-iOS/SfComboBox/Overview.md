@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of Syncfusion ComboBox control for Xamarin.iOS
+title: Overview of Syncfusion® ComboBox control for Xamarin.iOS
 description: Overview and key features of combobox control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: ComboBox
 documentation: ug
 ---

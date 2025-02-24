@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Center button with  Syncfusion RadialMenu control in Xamarin.iOS
+title: Center button with  Syncfusion® RadialMenu control in Xamarin.iOS
 description: Working with customization options available in the SfRadialMenuItems for CenterButton and BackButton in Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfRadialMenu
 documentation: ug
 ---
