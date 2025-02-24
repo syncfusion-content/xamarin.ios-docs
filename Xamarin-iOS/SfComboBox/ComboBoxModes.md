@@ -1,8 +1,8 @@
 ---
 layout : post
-title: ComboBoxModes in Syncfusion ComboBox control for Xamarin.iOS
-description: Learn here about ComboBoxModes in Syncfusion Essential Xamarin.iOS ComboBox control, its elements, and more.
-platform: Xamarin.iOS
+title: ComboBoxModes in Syncfusion® ComboBox control for Xamarin.iOS
+description: Learn here about ComboBoxModes in Syncfusion® Essential® Xamarin.iOS ComboBox control, its elements, and more.
+platform: xamarin.ios
 control: ComboBox
 documentation: ug
 ---

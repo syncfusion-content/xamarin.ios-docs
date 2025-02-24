@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Colors in Syncfusion SfNumericTextBox control for Xamarin.iOS
+title: Colors in Syncfusion® SfNumericTextBox control for Xamarin.iOS
 description: Learn what are the color properties to customize the appearence of SfNumericTextBox in Xamarin.iOS platform.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfNumericTextBox
 documentation: ug
 ---

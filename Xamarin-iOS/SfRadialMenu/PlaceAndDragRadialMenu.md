@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Placing and Dragging Syncfusion RadialMenu control in Xamarin.iOS
-description: Positioning and dragging of Syncfusion RadialMenu control using Point, DragBegin, and DragEnd in Xamarin.iOS respectively.
-platform: Xamarin.iOS
+title: Placing and Dragging Syncfusion® RadialMenu control in Xamarin.iOS
+description: Positioning and dragging of Syncfusion® RadialMenu control using Point, DragBegin, and DragEnd in Xamarin.iOS respectively.
+platform: xamarin.ios
 control: SfRadialMenu
 documentation: ug
 ---

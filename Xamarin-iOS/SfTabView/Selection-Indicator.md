@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Selection Indicator strip
-description: Selection Indicator in Syncfusion TabView control for Xamarin.iOS platform
-platform: Xamarin.iOS
+description: Selection Indicator in Syncfusion® TabView control for Xamarin.iOS platform
+platform: xamarin.ios
 control: TabView
 documentation: ug
 ---

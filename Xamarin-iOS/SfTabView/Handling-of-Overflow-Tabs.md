@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Handling OverFlow Tabs
-description: Handling of Overflow tabs in Syncfusion TabView control for Xamarin.iOS platform
-platform: Xamarin.iOS
+description: Handling of Overflow tabs in Syncfusion® TabView control for Xamarin.iOS platform
+platform: xamarin.ios
 control: TabView
 documentation: ug
 ---

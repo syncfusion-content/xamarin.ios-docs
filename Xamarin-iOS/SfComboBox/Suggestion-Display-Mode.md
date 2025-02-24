@@ -1,8 +1,8 @@
 ---
 layout : post
-title : ComboBoxMode mode for Syncfusion ComboBox control in Xamarin.iOS
+title : ComboBoxMode mode for Syncfusion® ComboBox control in Xamarin.iOS
 description : Learn how to change the ComboBoxMode in SfComboBox 
-platform : Xamarin.iOS
+platform : xamarin.ios
 control : SfComboBox
 documentation : ug
 ---

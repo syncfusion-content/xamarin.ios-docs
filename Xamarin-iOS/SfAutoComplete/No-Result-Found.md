@@ -1,8 +1,8 @@
 ---
 layout : post
-title : No Result Found Text in Syncfusion SfAutoComplete control for Xamarin.iOS
+title : No Result Found Text in Syncfusion® SfAutoComplete control for Xamarin.iOS
 description : Learn how to display the no result found text in SfAutoComplete
-platform : Xamarin.iOS 
+platform : xamarin.ios 
 control : AutoComplete
 documentation : ug
 ---
