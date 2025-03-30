@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | SfDataGrid | Xamarin.iOS | Syncfusion
+title: Getting started | SfDataGrid | Xamarin.iOS | Syncfusion®
 description: Getting started with Xamarin.iOS DataGrid and walk through to create a demo application from the scratch.
 platform: xamarin.ios
 control: SfDataGrid
@@ -24,11 +24,11 @@ N> Assemblies can be found in unzipped package location in Mac
 
 ## NuGet configuration
 
-To install the required NuGet for the SfDataGrid control in the application, configure the NuGet packages of the Syncfusion components.
+To install the required NuGet for the SfDataGrid control in the application, configure the NuGet packages of the Syncfusion® components.
 
-Refer to the following KB to configure the NuGet packages of the Syncfusion components:
+Refer to the following KB to configure the NuGet packages of the Syncfusion® components:
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+[How to configure package source and install Syncfusion® NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
 
 The following NuGet package should be installed to use the SfDataGrid control in the application.
 
@@ -45,7 +45,7 @@ The following NuGet package should be installed to use the SfDataGrid control in
 
 ### Adding SfDataGrid Reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid.ios/#), and then install it.
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataGrid.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid.ios/#), and then install it.
 
 ![SfDataGrid in nuget.org](SfDataGrid_images/SfDataGrid_IOS.png)
 
@@ -79,7 +79,7 @@ If you prefer to manually refer the assemblies instead of NuGet, refer the list 
 </tr>
 </table>
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion® license key in your Xamarin application to use our components.
 
 ## Create a simple SfDataGrid 
 
