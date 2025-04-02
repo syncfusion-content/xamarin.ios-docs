@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BlackOut Dates support in Syncfusion Calendar control for Xamarin.iOS
+title: BlackOut Dates support in Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.iOS
 description: Learn how to add black out dates for calendar
 platform: Xamarin.iOS
 control: Calendar

@@ -1,7 +1,7 @@
 ---
-title: Adding connectors in diagram control for Xamarin.iOS | Syncfusion
+title: Adding connectors in diagram control for Xamarin.iOS | Syncfusion®
 description: Describes how to add connector,connection with node and it's appearance in diagram control for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -59,7 +59,7 @@ diagram.AddNode(node1);
 // creating node  instance
 var node2 = new Node(300, 300, 100, 100);
 //adding port instance to the node
-node2.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 1 }); 
+node2.Ports.Add(new Port() { NodeOffsetX = 0.5, NodeOffsetY = 1 });
 //adding node to the diagram
 diagram.AddNode(node2);
 //creating and connecting the ports with connector
@@ -169,6 +169,7 @@ diagram.AddConnector(connector1);
 There are two ways to remove connector from the connection, they are:
 1. Passing the connector as parameter to remove connector method in the diagram.
 The following code example illustrates how to remove a connector from the connection:
+{% capture codesnippet1 %}
 {% tabs %}
 {% highlight c# %}
 //creating connector instance
@@ -183,8 +184,10 @@ diagram.AddConnector(connector1);
 diagram.RemoveConnector(connector1);
 {% endhighlight %}
 {% endtabs %}
-2. Passing the index value of the connector to remove connector method in the diagram (using RemoveAt method).
-The following code example illustrates how to remove a connector from connection:
+{% endcapture %}
+{{ codesnippet1 | OrderList_Indent_Level_1 }}
+2. Passing the index value of the connector to remove connector method in the diagram (using RemoveAt method).The following code example illustrates how to remove a connector from connection:
+{% capture codesnippet2 %}
 {% tabs %}
 {% highlight c# %}
 //creating connector instance
@@ -199,6 +202,8 @@ diagram.AddConnector(connector1);
 diagram.Connectors.RemoveAt(0);
 {% endhighlight %}
 {% endtabs %}
+{% endcapture %}
+{{ codesnippet2 | OrderList_Indent_Level_1 }}
 
 ## Appearance
 The StrokeThickness, stroke are the set of properties. The style of line connectors and decorators can be customized with that properties.

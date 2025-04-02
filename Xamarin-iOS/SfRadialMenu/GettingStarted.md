@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Syncfusion RadialMenu control for Xamarin.Android 
-description: A quick tour to the new users of Syncfusion RadialMenu control to get familiar with the control for Xamarin.Android platform.
-platform: Xamarin.Android 
+title: Getting Started with Syncfusion® RadialMenu control for Xamarin.Android 
+description: A quick tour to the new users of Syncfusion® RadialMenu control to get familiar with the control for Xamarin.iOS platform.
+platform: xamarin.ios 
 control: RadialMenu
 documentation: ug
 ---
@@ -11,9 +11,9 @@ documentation: ug
 
 This section explains the steps required to configure the SfRadialMenu control in a real-time scenario and provides a walk-through on some of the customization features available.
 
-## Referencing Essential Studio components in your solution
+## Referencing Essential Studio<sup>®</sup> components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders.
 
 {Syncfusion Installed location}\Essential Studio\14.XXXX.X.XX\lib
 

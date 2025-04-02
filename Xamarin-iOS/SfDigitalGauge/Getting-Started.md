@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion DigitalGauge control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.iOS platform and also describes how to customize the characters.
+title: Getting Started with Syncfusion<sup>&reg;</sup> DigitalGauge control for Xamarin.iOS
+description: A quick tour to initial users on Syncfusion<sup>&reg;</sup> digitalGauge control for Xamarin.iOS platform and also describes how to customize the characters.
 platform: Xamarin.iOS
 control: DigitalGauge
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 This section explains you the steps to configure a SfDigitalGauge control in a real-time scenario and some of the customization features available in it.
 
-## Referencing Essential Studio Components in Your Solution
+## Referencing Essential Studio® Components in Your Solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
@@ -31,6 +31,8 @@ iOS-unified\Syncfusion.SfGauge.iOS.dll
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
@@ -41,7 +43,13 @@ iOS-unified\Syncfusion.SfGauge.iOS.dll
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Now add the SfDigitalGauge control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -53,6 +61,10 @@ this.AddSubview(digitalGauge);
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ## Configuring properties
 

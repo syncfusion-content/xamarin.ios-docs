@@ -1,8 +1,8 @@
 ---
 layout: post
-title: AnimationTypes in Syncfusion BusyIndicator control for Xamarin.iOS
-description: This section provides the details about the various animation types in Syncfusion BusyIndicator for Xamarin.iOS
-platform: Xamarin.iOS
+title: AnimationTypes in Syncfusion® BusyIndicator control for Xamarin.iOS
+description: This section provides the details about the various animation types in Syncfusion® BusyIndicator for Xamarin.iOS
+platform: xamarin.ios
 control: SfBusyIndicator
 documentation: ug
 ---

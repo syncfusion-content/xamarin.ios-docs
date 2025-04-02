@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericUpDown Control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion NumericUpDown control and customization features available in Xamarin.iOS platform 
-platform: Xamarin.iOS
+title: Getting Started with Syncfusion® NumericUpDown Control for Xamarin.iOS
+description: A quick tour to initial users on Syncfusion® NumericUpDown control and customization features available in Xamarin.iOS platform 
+platform: xamarin.ios
 control: NumericUpDown 
 documentation: ug
 ---
 
 # Getting Started with NumericUpDown
 
-This section provides overview for working with Essential NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
+This section provides overview for working with Essential<sup>®</sup> NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
 
-## Referencing Essential Studio Components in Your Solution	
+## Referencing Essential Studio<sup>®</sup> Components in Your Solution	
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
 {Syncfusion Installed location}\Essential Studio{version number}\lib
 
@@ -29,13 +29,21 @@ The SfNumericUpDown control configured entirely in C# code. The following steps 
 
 * Adding namespace for the added assemblies. 
 
+{% capture codesnippet1 %}
+
 {% highlight c# %}
 
 using Syncfusion.SfNumericUpDown.iOS; 
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Now add the SfNumericUpDown control with a required optimal name by using the included namespace.
+
+{% capture codesnippet2 %}
 
 {% highlight c# %}
 
@@ -50,6 +58,10 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 this.Add(numeric);
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ## Set Value
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started for Essential Xamarin.iOS Syncfusion Kanban control
+title:  Getting Started for Essential Xamarin.iOS Syncfusion<sup>&reg;</sup> Kanban control
 description: This section explains about the getting started of Kanban (SfKanban) control in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: SfKanban
@@ -13,9 +13,9 @@ documentation: ug
 
 This section provides a quick overview for working with Essential Kanban for Xamarin.iOS. It’s an efficient way to visualize the workflow at each stage along its path to completion.
 
-**Referencing Essential Studio Components in your Solution**
+**Referencing Essential Studio® Components in your Solution**
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
 
 {Syncfusion Installed location}\Essential Studio{18.3.0.50}\lib
 
@@ -44,7 +44,7 @@ In this walk through, you will create a new application that contains the SfKanb
 
 **Adding SfKanban in Xamarin.iOS**
 
-1. Add the required assembly references to the project as discussed in the _Reference Essential Studio Components in your Solution_ section.
+1. Add the required assembly references to the project as discussed in the _Reference Essential Studio® Components in your Solution_ section.
 2. Import [`SfKanban`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html) control namespace [`Syncfusion.SfKanban.iOS`](https://help.syncfusion.com/cr/xamarin-ios/sfkanban).
 3. Create an instance of [`SfKanban`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfKanban.iOS.SfKanban.html) control and add as a SubView to a UIViewController.
 

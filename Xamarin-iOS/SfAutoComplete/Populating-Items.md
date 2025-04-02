@@ -1,8 +1,8 @@
 ---
 layout : post
-title : AutoCompleteSource mode for Syncfusion AutoComplete control in Xamarin.iOS
+title : AutoCompleteSource mode for Syncfusion® AutoComplete control in Xamarin.iOS
 description : Learn how to use AutoCompleteSource in AutoComplete
-platform : Xamarin.iOS 
+platform : xamarin.ios 
 control : AutoComplete
 documentation : ug
 ---

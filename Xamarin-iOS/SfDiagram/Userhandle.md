@@ -1,7 +1,7 @@
 ---
-title: Userhadles for Essential Xamarin.iOS Diagram | Syncfusion
+title: Userhadles for Essential® Xamarin.iOS Diagram | Syncfusion®
 description: Learn how to add userhandles ,userhandles customization and its event handle in diagram for Xamarin.iOS
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -11,7 +11,9 @@ User handles are customizable handles which can be used to perform custom action
 * SfGraphicPath
 * Image
 * UIView
+
 The following code illustrates how to add custom user handle in diagram:
+
 {% tabs %}
 {% highlight c# %}
 //Add Graphic path into custom handle

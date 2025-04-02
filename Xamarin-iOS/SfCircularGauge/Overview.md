@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Overview | SfCircularGauge | iOS | Syncfusion
+title: Overview | SfCircularGauge | iOS | Syncfusion<sup>&reg;</sup>
 description: overview
 platform: xamarin.iOS
 control: SfCircularGauge

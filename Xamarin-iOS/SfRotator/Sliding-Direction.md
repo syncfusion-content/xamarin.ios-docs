@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Various features in Syncfusion Rotator control for Xamarin.iOS
+title: Various features in Syncfusion® Rotator control for Xamarin.iOS
 description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Android 
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: Rotator
 documentation: ug
 ---

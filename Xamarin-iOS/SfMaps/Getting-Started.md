@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Maps control for Xamarin.iOS
-description: A quick tour about Syncfusion maps control in Xamarin.iOS platform
+title: Getting Started with Syncfusion<sup>&reg;</sup> Maps control for Xamarin.iOS
+description: A quick tour about Syncfusion<sup>&reg;</sup> maps control in Xamarin.iOS platform
 platform: Xamarin.iOS
 control: SfMaps 
 documentation: ug

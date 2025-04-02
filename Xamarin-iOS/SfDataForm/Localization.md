@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in Syncfusion SfDataForm for Xamarin.iOS
+title: Localization in Syncfusion<sup>&reg;</sup> SfDataForm for Xamarin.iOS
 description: Describes how to localize the SfDataForm display text and error messages based on culture in Xamarin.iOS.
 platform: xamarin.ios
 control: SfDataForm

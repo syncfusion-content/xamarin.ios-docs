@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Save Image in Syncfusion SfImageEditor control in Xamarin.iOS
-description : Learn how to save the image in Syncfusion Essential Studio Xamarin.iOS ImageEditor Control, its elements, and more.
+title : Save Image in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.iOS
+description : Learn how to save the image in Syncfusion<sup>&reg;</sup> Essential Studio® Xamarin.iOS ImageEditor Control, its elements, and more.
 platform : xamarin.ios
 control : ImageEditor
 documentation : ug
@@ -33,7 +33,9 @@ This event occurs before saving the image. You can control the save functionalit
 
 * Cancel: 
 
-It restricts saving image to the default location when set `Cancel` value to `true`.
+    It restricts saving image to the default location when set `Cancel` value to `true`.
+
+{% capture codesnippet1 %}
 
 {% highlight C# %}
 
@@ -49,9 +51,15 @@ It restricts saving image to the default location when set `Cancel` value to `tr
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Stream
 
-You can get current image edits as stream using this argument.
+    You can get current image edits as stream using this argument.
+
+{% capture codesnippet2 %}
 
 {% highlight C# %}
          
@@ -61,6 +69,10 @@ You can get current image edits as stream using this argument.
         }
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ### ImageSaved
 

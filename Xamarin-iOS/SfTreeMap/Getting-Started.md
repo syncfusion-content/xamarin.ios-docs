@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TreeMap control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion TreeMap control for Xamarin.iOS platform.
+title: Getting Started with Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.iOS
+description: Learn here about getting started with Syncfusion<sup>&reg;</sup> Essential Xamarin.iOS TreeMap (SfTreeMap) Control, its elements, features, and more.
 platform: Xamarin.iOS
 control: SfTreeMap
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.iOS TreeMap
 
 This section explains the steps required to configure the TreeMap control and provides a walk-through on some of the customization features available in the TreeMap control.
 
 ## Adding SfTreeMap reference
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders.
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders.
 
 {Syncfusion Installed location} \Essential Studio\17.2.0.28\lib
 

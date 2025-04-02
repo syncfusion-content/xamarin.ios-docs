@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip feature in Xamarin.iOS SfSunburstChart Control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion Essential Studio Xamarin.iOS SfSunburstChart Control, its elements, and more.
+title: Tooltip feature in Xamarin.iOS SfSunburstChart Control | Syncfusion<sup>&reg;</sup>
+description: Learn here all about Tooltip support in Syncfusion<sup>&reg;</sup> Essential Studio® Xamarin.iOS SfSunburstChart Control, its elements, and more.
 platform: Xamarin.iOS
 control: SfSunburstChart
 documentation: ug

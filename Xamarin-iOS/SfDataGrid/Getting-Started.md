@@ -14,7 +14,7 @@ This section provides a quick overview for working with SfDataGrid for Xamarin.i
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 

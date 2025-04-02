@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Multiple Segments | SfSegmentedControl | Xamarin.iOS | Syncfusion
+title: Multiple Segments | SfSegmentedControl | Xamarin.iOS | Syncfusion®
 description: How to handle multiple segments in segmented control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
 ---

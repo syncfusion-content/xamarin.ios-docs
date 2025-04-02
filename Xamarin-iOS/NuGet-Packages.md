@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Xamarin.iOS NuGet Packages | Syncfusion
-description: NuGet Packages
+title: Xamarin.iOS NuGet Packages | Syncfusion®
+description: Learn here about the NuGet Packages and how they can be used to automatically add files and references to your Visual Studio projects.
 platform: xamarin.ios
 control: NuGet Packages
 documentation: ug
 ---
 
-# NuGet Packages
+# NuGet Packages Overview
 
-[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Xamarin.iOS NuGet packages without installing the Essential Studio or Xamarin platform installation to development with the Syncfusion Xamarin.iOS controls. From v15.4.0.17 onwards, the Syncfusion Xamarin.iOS NuGet packages are published in [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
+[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion<sup>®</sup> Xamarin.iOS NuGet packages without installing the Essential Studio<sup>®</sup> or Xamarin platform installation to development with the Syncfusion<sup>®</sup> Xamarin.iOS controls. From v15.4.0.17 onwards, the Syncfusion<sup>®</sup> Xamarin.iOS NuGet packages are published in [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 
-N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
+N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion<sup>®</sup> will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
 
 ## Installing NuGet Packages
 
@@ -29,14 +29,14 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
      ![NuGet package manager dialog window](NuGet_Packages_Images/img7.png)             
 
-3.	The Syncfusion Xamarin.iOS NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
+3.	The Syncfusion<sup>®</sup> Xamarin.iOS NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
 
-N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. So, If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/xamarin-ios/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> The Syncfusion<sup>®</sup> NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. So, If you need to Install earlier version of 16.2.0.46 Syncfusion<sup>®</sup> NuGet packages, [configure Syncfusion<sup>®</sup> private feed URL](https://help.syncfusion.com/xamarin-ios/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 
 ### Using Package Manager Console
 
-To reference the Syncfusion Xamarin.iOS component using the Package Manager Console as NuGet packages, follow the below steps. 
+To reference the Syncfusion<sup>®</sup> Xamarin.iOS component using the Package Manager Console as NuGet packages, follow the below steps. 
 
 1.	On the **Tools** menu, select **NuGet Package Manager**, and then **Package Manager Console**. 
 
@@ -114,7 +114,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
     ~~~
 
-N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/xamarin-ios/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> If you need to Install earlier version of 16.2.0.46 Syncfusion<sup>®</sup> NuGet packages, [configure Syncfusion<sup>®</sup> private feed URL](https://help.syncfusion.com/xamarin-ios/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ## Upgrading NuGet packages
 
@@ -141,7 +141,7 @@ N> To update all the projects from solution, use update option in the solution l
 
 ### Using Package Manager Console
 
-To update the installed Syncfusion Xamarin.iOS NuGet packages using the Package Manager Console, follow the below steps. 
+To update the installed Syncfusion<sup>®</sup> Xamarin.iOS NuGet packages using the Package Manager Console, follow the below steps. 
 
 1.	On the **Tools** menu, select **NuGet Package Manager**, and then **Package Manager Console.** 
 
@@ -161,7 +161,7 @@ To update the installed Syncfusion Xamarin.iOS NuGet packages using the Package 
     **For example:**
 
     ~~~
-    #Update specified Syncfusion Xamarin.iOS NuGet package 
+    #Update specified Syncfusion<sup>®</sup> Xamarin.iOS NuGet package 
     Update-Package Syncfusion.Xamarin.Calculate.IOS
 
     #Update specified package in specified project 
@@ -180,7 +180,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion Xamarin.Forms NuGet packages.
+2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion<sup>®</sup> Xamarin.Forms NuGet packages.
 
     ~~~ 
     #update all NuGet packages from config file
@@ -201,27 +201,27 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
 
     N> Update command is not working as expected in Mono (Mac and Linux) and projects using PackageReference format.
    
-## Syncfusion NuGet feed URL Configuration
+## Syncfusion<sup>®</sup> NuGet feed URL Configuration
 
-### Get the Syncfusion NuGet feed URL 
+### Get the Syncfusion<sup>®</sup> NuGet feed URL 
 
 NuGet Gallery site feed link is configured, by default in your Visual Studio package configuration. If it is not configured, use the NuGet Gallery site feed URL in your Visual Studio: [https://api.nuget.org/v3/index.json](https://api.nuget.org/v3/index.json).
 
-### Syncfusion private site NuGet feed URL 
+### Syncfusion<sup>®</sup> private site NuGet feed URL 
 
-You should get the private Syncfusion Xamarin NuGet feed URL to install or upgrade the Syncfusion Xamarin.iOS NuGet packages. To get the URL from Syncfusion website use the following steps:
+You should get the private Syncfusion<sup>®</sup> Xamarin NuGet feed URL to install or upgrade the Syncfusion<sup>®</sup> Xamarin.iOS NuGet packages. To get the URL from Syncfusion<sup>®</sup> website use the following steps:
 
 1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select the **MOBILE** tab.     
 
-2. Click the Copy URL label under Xamarin platform to copy the Syncfusion Xamarin platform NuGet feed to clipboard or directly use the following URL: 
+2. Click the Copy URL label under Xamarin platform to copy the Syncfusion<sup>®</sup> Xamarin platform NuGet feed to clipboard or directly use the following URL: 
 
     [https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin) 
 
-    ![Syncfusion Xamarin IOS NuGet feed URL](NuGet_Packages_Images/img1.png)
+    ![Syncfusion<sup>®</sup> Xamarin IOS NuGet feed URL](NuGet_Packages_Images/img1.png)
 
-3. Now, use this NuGet feed URL to access the Syncfusion NuGet Packages in Visual Studio. 
+3. Now, use this NuGet feed URL to access the Syncfusion<sup>®</sup> NuGet Packages in Visual Studio. 
 
-### Add the Syncfusion NuGet feed URL
+### Add the Syncfusion<sup>®</sup> NuGet feed URL
 
 #### Windows
 
@@ -231,16 +231,16 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
 
 3.	Expand the **NuGet Package Manager** and select **Package Sources**.
 
-4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion Xamarin.iOS NuGet packages.
+4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion<sup>®</sup> Xamarin.iOS NuGet packages.
     
     **Name:** Name of the package listed in the available package sources.
     
-    **Source:** Syncfusion Xamarin NuGet Feed URL      
+    **Source:** Syncfusion<sup>®</sup> Xamarin NuGet Feed URL      
     [https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin).
 
 5.	Click the **Update** button to add the name and source details to package sources. 
 
-    ![NuGet Package Manager dialog with Syncfusion Xamarin IOS NuGet feed URL for reference](NuGet_Packages_Images/img2.png)
+    ![NuGet Package Manager dialog with Syncfusion<sup>®</sup> Xamarin IOS NuGet feed URL for reference](NuGet_Packages_Images/img2.png)
 
 #### macOS 
 
@@ -260,7 +260,7 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
 
     **Location:** Enter the following URL – [https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin](https://nuget.syncfusion.com/nuget_xamarin/nuget/getsyncfusionpackages/xamarin).
 
-    ![Add Package Source dialog to add Syncfusion NuGet feed](NuGet_Packages_Images/img5.png)
+    ![Add Package Source dialog to add Syncfusion<sup>®</sup> NuGet feed](NuGet_Packages_Images/img5.png)
  
 5.	Now, click **Add Source** and then click **OK**.
 
@@ -274,7 +274,7 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion Xamarin.iOS NuGet packages.
+2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion<sup>®</sup> Xamarin.iOS NuGet packages.
 
     ~~~
     #Add specified package source in NuGet.config file for Windows platform

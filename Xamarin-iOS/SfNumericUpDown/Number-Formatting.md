@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Number Formatting in Syncfusion NumericUpDown control for Xamarin.iOS
+title: Number Formatting in Syncfusion® NumericUpDown control for Xamarin.iOS
 description: Learn how to add format String, enable parser mode and percent display mode for NumericUpDown control.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: NumericUpDown
 documentation: ug
 ---
@@ -17,6 +17,8 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 It has three types,
 
 * `c` - Display the value with currency notation.
+
+{% capture codesnippet1 %}
 	
 {% highlight C# %}
 
@@ -25,9 +27,14 @@ It has three types,
 numeric.FormatString = "c";
 	 
 {% endhighlight %}
-	
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 	
 
 * `n` – Display the value in number format.
+
+{% capture codesnippet2 %}
 	
 {% highlight C# %}
 
@@ -36,10 +43,15 @@ numeric.FormatString = "c";
 numeric.FormatString = "n";
 	 
 {% endhighlight %}
-	
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 	
 
 * `p` – Display the value in Percentage.
-	
+
+{% capture codesnippet3 %}
+
 {% highlight C# %}
 
 [C#]
@@ -47,7 +59,11 @@ numeric.FormatString = "n";
 numeric.FormatString = "p";
 	 
 {% endhighlight %}
-	
+
+{% endcapture %}
+
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }} 	
+
 N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in NumericUpDown.
 
 ![Display the NumericUpDown with number formating](images/format.png)
@@ -78,6 +94,8 @@ It provides the following options:
 
 * `Value`: Displays the value with percentage symbol.
 
+{% capture codesnippet4 %}
+
 {% highlight C# %}
 
 [C#]
@@ -86,7 +104,13 @@ numeric.PercentDisplayMode = SFNumericUpDownPercentDisplayMode.Value;
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }} 
+
 * `Compute`: Displays the computed value with percentage symbol.
+
+{% capture codesnippet5 %}
 
 {% highlight C# %}
 
@@ -95,5 +119,9 @@ numeric.PercentDisplayMode = SFNumericUpDownPercentDisplayMode.Value;
 numeric.PercentDisplayMode = SFNumericUpDownPercentDisplayMode.Compute;
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }} 
 
 ![Display the NumericUpDown with percent mode](images/percent.png)

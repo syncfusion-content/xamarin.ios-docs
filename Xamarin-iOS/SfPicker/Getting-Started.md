@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Picker control for Xamarin.iOS
-description: This section will explain about how to create a simple sample using Syncfusion Picker control for Xamarin.iOS platform.
+title: Getting Started with Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS
+description: This section will explain about how to create a simple sample using Syncfusion<sup>&reg;</sup> Picker control for Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: Picker
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # SfPicker Getting Started
 
-This topic describes about the assembly that is required in your iOS application, when you use SfPicker. After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installation folders,
+This topic describes about the assembly that is required in your iOS application, when you use SfPicker. After installing Essential Studio® for Xamarin, you can find all the required assemblies in the following installation folders,
 
 {Syncfusion Essential Studio Installed location}\Essential Studio{Release Version}\lib
 

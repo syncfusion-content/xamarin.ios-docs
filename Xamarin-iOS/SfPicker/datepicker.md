@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating DatePicker using Syncfusion SfPicker control 
-description: This section will explains about how to create custom DatePicker using Syncfusion SfPicker control in Xamarin.iOS platform.
+title: Creating DatePicker using Syncfusion<sup>&reg;</sup> SfPicker control 
+description: This section will explains about how to create custom DatePicker using Syncfusion<sup>&reg;</sup> SfPicker control in Xamarin.iOS platform.
 platform: Xamarin.iOS
 control: picker
 documentation: UG

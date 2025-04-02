@@ -16,7 +16,7 @@ String platform='Xamarin-iOS';
 	    dir('Spell-Checker') 
            {
 		     checkout scm
-		 def branchCommit = '"'+'https://api.github.com/repos/syncfusion-content/xamarin.ios-docs/pulls/'+env.pullRequestId+'/changes'
+		 def branchCommit = 'https://api.github.com/repos/syncfusion-content/'+env.githubSourceRepoHttpUrl.split('/')[env.githubSourceRepoHttpUrl.split('/').size() - 1]+'/pulls/' + env.pullRequestId + '/files'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
             def ChangeFiles= branchCommitDetails.split('"filename": ');
@@ -73,7 +73,7 @@ if(currentBuild.result != 'FAILURE')
 
 	stage 'Delete Workspace'
 	
-		def files = findFiles(glob: '**/cireports/spellcheck/*.*')      
+		def files = findFiles(glob: '**/cireports/*.*')      
         
     if(files.size() > 0) 		
     { 		

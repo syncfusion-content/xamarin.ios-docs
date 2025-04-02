@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ImageEditor control for Xamarin.iOS
+title: Getting Started with Syncfusion<sup>&reg;</sup> ImageEditor control for Xamarin.iOS
 description: Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
 platform: xamarin.ios
 control: SfImageEditor
@@ -10,9 +10,9 @@ documentation: ug
 
 This section explains you the steps required to load an image to the image editor. Image editor has a built in toolbar which has options to edit the image with shapes, path, text, crop and flip.
 
-## Reference Essential Studio components in your solution
+## Reference Essential Studio® components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, 
 
 {Syncfusion Installed location}\Essential Studio\15.2.0.40\lib
 
@@ -30,6 +30,8 @@ The following steps explain on how to create a image editor  and configure its e
 
 * Create an instance of SfImageEditor.
 
+{% capture codesnippet1 %}
+
 {% highlight C# %}
 
        SfImageEditor imageEditor = new SfImageEditor(); 
@@ -39,9 +41,15 @@ The following steps explain on how to create a image editor  and configure its e
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Load an image to the Image Editor
 
-You can load the image to the SfImageEditor by set image property in SfImageEditor.
+    You can load the image to the SfImageEditor by set image property in SfImageEditor.
+
+{% capture codesnippet2 %}
 
 {% highlight C# %}
 
@@ -50,10 +58,13 @@ You can load the image to the SfImageEditor by set image property in SfImageEdit
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 * Loading the image to the SfImageEditor, you can start to edit the image by using the built-in Toolbars.
 
-Following is the final output screenshot,
+    Following is the final output screenshot,
 
 ![SfImageEditor](ImageEditor_images/gettingstarted.png)
 

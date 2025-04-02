@@ -13,7 +13,7 @@ This section explains you the steps required to populate the Chart with data, ti
 
 ## Adding Chart Reference
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders,
 
 {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
@@ -257,7 +257,7 @@ The following output is displayed as a result of the above code example.
 
 ![Tooltip support in Xamarin.iOS Chart](Getting-Started_images/img2.png)
 
-You can find the complete getting started sample from this [here.](http://files2.syncfusion.com/Xamarin.iOS/Samples/Chart_GettingStarted.zip )
+You can find the complete getting started sample from this [here.](https://github.com/SyncfusionExamples/Xamarin.iOS-Chart-Getting-Started)
 
 
 

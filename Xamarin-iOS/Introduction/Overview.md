@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential Studio Xamarin.iOS products
-description: Basic overview about the list of available features on Syncfusion Xamarin.iOS  components and steps to use the guide.
+title: Overview of Syncfusion® Essential Studio® Xamarin.iOS products
+description: Basic overview about the list of available features on Syncfusion® Xamarin.iOS  components and steps to use the guide.
 platform: xamarin.ios
 control: Overview
 documentation: ug
 ---
 
-# Welcome to Syncfusion Essential Studio for Xamarin.iOS
+# Welcome to Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Xamarin.iOS
 
-Essential Studio for Xamarin.iOS is a comprehensive collection of enterprise-grade Xamarin.iOS components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, DataGrid, Gauge, Maps and much more.
+Essential Studio<sup>®</sup> for Xamarin.iOS is a comprehensive collection of enterprise-grade Xamarin.iOS components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, DataGrid, Gauge, Maps and much more.
 
 ## How to best read this user guide
 
@@ -24,7 +24,7 @@ The Knowledge Base section contains responses to some of the most common questio
 
 Similar to the Knowledge Base, the Forum section also contains responses to questions of other customers asked in the past.
 
-And, you can explore the release history of Essential Studio for Xamarin.iOS from  [`here`](https://www.syncfusion.com/products/release-history/estudio/xamarin-ios).
+And, you can explore the release history of Essential Studio<sup>®</sup> for Xamarin.iOS from  [`here`](https://www.syncfusion.com/products/release-history/estudio/xamarin-ios).
 
 ## Create a support incident
 

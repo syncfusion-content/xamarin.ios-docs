@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Getting Started | SfCircularGauge | iOS | Syncfusion
+title: Getting Started | SfCircularGauge | iOS | Syncfusion<sup>&reg;</sup>
 description: Ranges
 platform: xamarin.iOS
 control: SfCircularGauge
@@ -76,6 +76,8 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 1.The [`Offset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_Offset) property with the [`Width`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_Width) property.
 
+{% capture codesnippet1 %}
+
 {% highlight c# %}
 
              SFCircularGauge circularGauge = new SFCircularGauge();
@@ -94,9 +96,15 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
+
 ![](ranges_images/range-offset.png)
 
 2.The [`InnerStartOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_InnerStartOffset), [`InnerEndOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_InnerEndOffset), [`OuterStartOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_OuterStartOffset), and [`OuterEndOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_OuterEndOffset) properties.
+
+{% capture codesnippet2 %}
 
 {% highlight c# %}
 
@@ -117,6 +125,10 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
             this.View.AddSubview(circularGauge);
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 ![](ranges_images/range-inner-outer-offset.png)
 

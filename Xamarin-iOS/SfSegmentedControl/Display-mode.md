@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Display mode | SfSegmentedControl | Xamarin.iOS | Syncfusion
+title: Display mode | SfSegmentedControl | Xamarin.iOS | Syncfusion®
 description: How to display segmented items in segmented control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
 ---

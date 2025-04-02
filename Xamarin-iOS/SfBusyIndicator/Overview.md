@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of Syncfusion BusyIndicator control for Xamarin.iOS
+title: Overview of Syncfusion® BusyIndicator control for Xamarin.iOS
 description: Overview and key features of BusyIndicator control
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: SfBusyIndicator
 documentation: ug
 ---

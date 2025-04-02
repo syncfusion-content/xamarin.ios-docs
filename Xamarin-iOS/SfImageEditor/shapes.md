@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Text in Syncfusion SfImageEditor control in Xamarin.iOS
-description: Learn how to add shapes, text and draw a path over an Image in syncfusion ImageEditor for Xamarin.iOS
+title: Text in Syncfusion<sup>&reg;</sup> SfImageEditor control in Xamarin.iOS
+description: Learn how to add shapes, text and draw a path over an Image in Syncfusion<sup>&reg;</sup> ImageEditor for Xamarin.iOS
 platform: xamarin.ios
 control: ImageEditor
 documentation : ug
@@ -21,7 +21,7 @@ You can annotate any shapes over an image using the [`AddShape`](https://help.sy
 * DottedArrow
 * DottedDoubleArrow
 
-### Selecting a shape type
+## Selecting a shape type
 
 The [`ShapeType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html) is an enum property with values [`Rectangle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Rectangle), [`Circle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Circle), [`Arrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Arrow), [`Path`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Path), [`Line`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Line), [`Dotted`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_Dotted), [`DoubleArrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_DoubleArrow), [`DottedArrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_DottedArrow), and [`DottedDoubleArrow`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html#Syncfusion_SfImageEditor_iOS_ShapeType_DottedDoubleArrow). You can give the desired shape type as an argument to the [`AddShape`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.SfImageEditor.html#Syncfusion_SfImageEditor_iOS_SfImageEditor_AddShape_Syncfusion_SfImageEditor_iOS_ShapeType_Syncfusion_SfImageEditor_iOS_PenSettings_) method.
 
@@ -50,7 +50,7 @@ By default, the toolbar contains the [`Rectangle`](https://help.syncfusion.com/c
 
 You can customize the appearance of each shape using the [`PenSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html) property:
 
-## PenSettings
+### PenSettings
 
 The [`PenSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html) property consists of the following properties:
 
@@ -66,19 +66,27 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 
 * To add a rectangle, circle, or arrow over an image, specify the [`ShapeType`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.ShapeType.html) and the desired [`PenSettings`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfImageEditor.iOS.PenSettings.html) as shown in the following code snippet.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
 
-            editor.AddShape(ShapeType.Circle, new PenSettings() { Color = UIColor.Red, Mode = Mode.Stroke, Opacity = 1f, Bounds = new Rectangle(20, 20, 35, 35) });
+      editor.AddShape(ShapeType.Circle, new PenSettings() { Color = UIColor.Red, Mode = Mode.Stroke, Opacity = 1f, Bounds = new Rectangle(20, 20, 35, 35) });
 
 {% endhighlight %}
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 ![SfImageEditor](ImageEditor_images/Shapes.jpg)
 
- * You can annotate any path on an image by using free hand drawing as shown in the below code,
+* You can annotate any path on an image by using free hand drawing as shown in the below code,
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -89,6 +97,10 @@ N> The `FillColor` property is applicable only if the ShapeType is [`Rectangle`]
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![SfImageEditor](ImageEditor_images/Path.jpg)
 

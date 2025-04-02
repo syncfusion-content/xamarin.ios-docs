@@ -1,7 +1,7 @@
 ---
-title: Node in Xamarin.iOS diagram control | Syncfusion
-description: Briefs about node,customization of node and node constraints in SfDiagram for Xamarin.iOS
-platform: Xamarin.iOS
+title: Node in Xamarin.iOS diagram control | Syncfusion®
+description: Briefs about node,customization of node and node constraints in Syncfusion<sup>&reg;</sup>; Diagram (SfDiagram) control for Xamarin.iOS
+platform: xamarin.ios
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -81,12 +81,13 @@ Node node = new Node() { Width = 120, Height = 40, OffsetX = 300, OffsetY = 60, 
 
 ## Constraints
 Node constraints allow to enable or disable the following behaviors of node:
-•Drag
-•Resize
-•Rotate
-•AnnotationEditing
-•IsLocked
-Example:
+* Drag
+* Resize
+* Rotate
+* AnnotationEditing
+* IsLocked
+
+**Example:**
 The following code illustrates how to disable node dragging:
 {% tabs %}
 {% highlight c# %}

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TabView control for Xamarin.iOS 
-description: A quick tour to initial users on Syncfusion TabView control for Xamarin.iOS platform
-platform: Xamarin.iOS
+title: Getting Started with Syncfusion® TabView control for Xamarin.iOS 
+description: A quick tour to initial users on Syncfusion® TabView control for Xamarin.iOS platform
+platform: xamarin.ios
 control: TabView
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section provides an overview for working with the tab view control for Xama
 
 ## Assembly deployment
 
-After installing the Essential Studio for Xamarin, find all the required assemblies in the installation folders,
+After installing the Essential Studio<sup>®</sup> for Xamarin, find all the required assemblies in the installation folders,
 
 {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib}
 

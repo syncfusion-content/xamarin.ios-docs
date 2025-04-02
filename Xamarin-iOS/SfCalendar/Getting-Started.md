@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Calendar control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion calendar control for Xamarin.iOS platform 
+title: Getting Started with Syncfusion<sup>&reg;</sup> Calendar control for Xamarin.iOS
+description: A quick tour to initial users on Syncfusion<sup>&reg;</sup> calendar control for Xamarin.iOS platform 
 platform: Xamarin.iOS
 control: Calendar
 documentation: ug
@@ -16,9 +16,9 @@ This section explains you the steps required to render the `SfCalendar` control,
 
 This section provides a quick overview to work with the `SfCalendar` in Xamarin.iOS. This example explains how to create an Calendar with different CalendarModes and SuggestionModes.
 
-### Referencing Essential Studio Components in Your Solution
+### Referencing Essential Studio® Components in Your Solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders, typically:
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
 And below assembly reference to the iOS unified project.
@@ -48,7 +48,7 @@ this.Add(calendar);
 
 ### Enabling Multiple Selection 
 
-To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](http://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
+To enable multiple selection, change the selection type using `SelectionMode` property. Check the [Selection Mode](https://help.syncfusion.com/android/sfcalendar/selectionmode)  section for more details.
 
 {% highlight c# %}
 

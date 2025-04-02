@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Treemap elements in Syncfusion TreeMap control for Xamarin.iOS
+title: Treemap elements in Syncfusion<sup>&reg;</sup> TreeMap control for Xamarin.iOS
 description: Describes the elements in the tree map control
 platform: Xamarin.iOS
 control: TreeMap

@@ -13,7 +13,7 @@ This section provides a quick overview for working with the TreeView for Xamarin
 
 ## Assembly Deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib installation folder.
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib installation folder.
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 
@@ -28,7 +28,7 @@ To install the required NuGet for the TreeView control in the application, confi
 
 Refer to the following KB to configure the NuGet packages of the Syncfusion components:
 
-[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://www.syncfusion.com/kb/7441/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing-project)
+[How to configure package source and install Syncfusion NuGet packages in an existing project?](https://support.syncfusion.com/kb/article/6565/how-to-configure-package-source-and-install-syncfusion-nuget-packages-in-an-existing)
 
 The following NuGet package should be installed to use the TreeView control in the application.
 
@@ -64,7 +64,7 @@ To know more about obtaining our components, refer to these links: [Mac](https:/
 </tr>
 </table>
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also must include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also must include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Create a tree view
 
@@ -72,7 +72,7 @@ This section explains how to create a TreeView and configure it. The TreeView co
 
 ![Xamarin iOS TreeView](Images/TreeView_Templating.png)
 
-You can download the entire source code of this demo for Xamarin.iOS from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758). 
+You can download the entire source code of this demo for Xamarin.iOS from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758). 
 
 In this walk through, you will create a new application with the TreeView that includes the following topics:
 
@@ -138,7 +138,7 @@ namespace GettingStartedBound
 
 {% endtabs %}
 
-You can download the entire source code of this sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758).
+You can download the entire source code of this sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758).
 
 Refer to this link to know the properties that can be configured using story board for TreeView.
 
@@ -226,7 +226,7 @@ public override void ViewDidLoad()
 
 Now, run the application to render the below output:
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound2036228865).
+You can also download the entire source code of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound2036228865).
 
 ## Creating Data Model
 
@@ -786,13 +786,13 @@ public class NodeImageAdapter : TreeViewAdapter
 
 It is also applicable for both Unbound Mode data items. Now, run the application to render the similar output:
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758).
+You can also download the entire source code of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1798588758).
 
 ![Xamarin iOS TreeView Bound Mode](Images/TreeView_Templating.png)
 
 ## Interacting with a TreeView
 
-The `TreeView` allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. The expanding and collapsing interactions can be handled with the help of [NodeCollapsing](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) and [NodeExpanding](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) events.
+The `TreeView` allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. The expanding and collapsing interactions can be handled with the help of [NodeCollapsing](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_NodeCollapsing) and [NodeExpanding](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_NodeExpanding) events.
 
  You can define how the nodes to be expanded while loading the TreeView by using [AutoExpandMode](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_AutoExpandMode) property. Also, the `TreeView` allows you to set the restrictions whether expanding and collapsing of nodes can be performed only by tapping in expander view or in both expander view and content view by using [ExpandActionTarget](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_ExpandActionTarget) property. 
 
@@ -825,7 +825,7 @@ The `TreeView` allows selecting the item by setting the [SelectionMode](https://
 
 It also allows changing the selection highlight color by using the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionBackgroundColor) property. Additionally, for unbound mode, you can change the selection fore ground color of the text by using the [SelectionForegroundColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionForegroundColor) property.
 
-The selection operations can be handled with the help of [SelectionChanging](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html) events.
+The selection operations can be handled with the help of [SelectionChanging](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.iOS.TreeView.SfTreeView.html#Syncfusion_iOS_TreeView_SfTreeView_SelectionChanged) events.
 
 {% tabs %}
 {% highlight c# %}
