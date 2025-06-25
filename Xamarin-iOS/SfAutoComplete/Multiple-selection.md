@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Multi Selection in Syncfusion® SfAutoComplete control for Xamarin.iOS
-description :  Learn how to select multiple items in SfAutoComplete
+title : Multiple Selection in Syncfusion® SfAutoComplete control for Xamarin.iOS
+description : Learn how to select multiple items in SfAutoComplete
 platform : xamarin.ios
 control : AutoComplete
 documentation : ug
@@ -9,7 +9,7 @@ documentation : ug
 
 # Multiple Selection
 
-Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
+Select multiple items from a suggestion list. There are two ways to perform multiple selection in AutoComplete:
 
 * Token Representation
 
@@ -17,7 +17,7 @@ Select multiple items from a suggestion list. There are two ways to perform mult
 
 ## Token Representation
 
-Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button.
+Selected items will be displayed with a customizable token representation, and users can remove each tokenized item using the close button.
 
 {% tabs %}
 
@@ -32,11 +32,10 @@ countryAutoComplete.TokensWrapMode=TokensWrapMode.Wrap;
 
 ### Wrap Mode of Token
 
-The selected item can be displayed as token inside SfAutoComplete in two ways. They are
+The selected items can be displayed as tokens inside SfAutoComplete in two ways:
 
-* `Wrap` - When `TokensWrapMode` is set to `Wrap` the selected items will be wrap to the next line of the SfAutoComplete.
-
-* `None` - When `TokensWrapMode` is set to `None` the selected item will be wrap in horizontal orientation.
+* **Wrap** - When `TokensWrapMode` is set to `Wrap`, the selected items will wrap to the next line of the SfAutoComplete.
+* **None** - When `TokensWrapMode` is set to `None`, the selected items will be arranged in horizontal orientation.
 
 {% tabs %}
 
@@ -193,23 +192,15 @@ string[] CustomerNames2 = new string[]
 
 ### Token Customization
 
-Customization can be done for Token. There are various ways to customize the tokens. They are as follows.
-
-* `TextColor` - sets the color of the text inside the token.
-
-* `FontSize` - sets the size of the Font inside the token.
-
-* `FontFamily` - sets the Font family for the text inside the token.
-
-* `BackgroundColor` - sets the background color of the token.
-
-* `SelectedBackgroundColor` - sets the background color of the token when it is selected.
-
-* `IsCloseButtonVisible` - Enables and disables the close button inside SfAutoComplete.
-
-* `DeleteButtonColor` - sets the color of the close button inside SfAutoComplete.
-
-* `CornerRadius` - sets the corner radius for the token.
+Tokens can be customized in various ways using the following properties:
+* **TextColor** - Sets the color of the text inside the token.
+* **FontSize** - Sets the size of the font inside the token.
+* **FontFamily** - Sets the font family for the text inside the token.
+* **BackgroundColor** - Sets the background color of the token.
+* **SelectedBackgroundColor** - Sets the background color of the token when it is selected.
+* **IsCloseButtonVisible** - Enables and disables the close button inside the token.
+* **DeleteButtonColor** - Sets the color of the close button inside the token.
+* **CornerRadius** - Sets the corner radius for the token.
 
 {% tabs %}
 
@@ -237,7 +228,7 @@ autoComplete.TokenSettings = token;
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
+When selecting multiple items, the selected items can be separated with a desired character specified as a delimiter. You can set the delimiter character using the `Delimiter` property.
 
 {% tabs %}
 

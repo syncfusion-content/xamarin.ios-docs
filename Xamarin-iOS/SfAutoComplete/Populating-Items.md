@@ -9,13 +9,13 @@ documentation : ug
 
 # Populating Items
 
-SfAutoComplete control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source. 
+The SfAutoComplete control supports binding to different data sources such as IList Data Source and Observable Collection Data Source.
 
-## Through AutoComplete Source Item 
+## Through AutoCompleteSource Item
 
-* The `AutoCompleteSource` property in the SfAutoComplete control is used to set the list of strings to the suggestions dropdown.
+* The `AutoCompleteSource` property in the SfAutoComplete control is used to set the list of strings for the suggestions dropdown.
 
-* To create a Text Box that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for Text Box controls in which URLs, addresses, file names, or commands will be frequently entered.
+* This creates a text box that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for text box controls where URLs, addresses, file names, or commands will be frequently entered.
 
 {% tabs %}
 
@@ -33,11 +33,11 @@ countryAutoComplete.AutoCompleteSource=countryList;
 
 ![](images/autocompletesource.png)
 
-## Through Binding
+## Through Data Binding
 
-DataSource is a collection of SfAutoComplete items which is capable of holding any objects and displays the items based on the provided `DisplayMemberPath` value.
+DataSource is a collection of SfAutoComplete items that can hold any objects and displays the items based on the provided `DisplayMemberPath` value.
 
-To populate items using data source, create a model class with the properties that to be bound.
+To populate items using a data source, create a model class with the properties to be bound.
 
 {% tabs %}
 
@@ -66,7 +66,7 @@ return Age;
 
 {% endtabs %}
 
-* Create Student collection using Student class and assign the collection to DataSource property of SfAutoComplete
+* Create a Student collection using the Student class and assign the collection to the DataSource property of SfAutoComplete.
 
 {% tabs %}
 
@@ -104,7 +104,7 @@ return NSDictionary.FromObjectsAndKeys(objects, keys);
 
 {% endtabs %}
 
-* Here student collection has two properties so we should tell the control, by which property, it has to provide suggestions. In this case, let us make the control to provide suggestions based on Name.
+* Since the student collection has two properties, you need to specify which property the control should use to provide suggestions. In this case, configure the control to provide suggestions based on the Name property.
 
 {% tabs %}
 
@@ -119,6 +119,6 @@ studentAutoComplete.SelectedValuePath = "Age";
 
 {% endtabs %}
 
-* `DisplayMemberPath` decides the suggestions to be shown in dropdown. Setting the `SelectedValuePath` property will make `SelectedValue` property to return the value you have selected here. 
+* The `DisplayMemberPath` determines the suggestions to be shown in the dropdown. Setting the `SelectedValuePath` property will make the `SelectedValue` property return the value you have selected.
 
 ![](images/datasource.png)

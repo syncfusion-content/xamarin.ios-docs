@@ -1,15 +1,15 @@
 ---
 layout : post
-title: ComboBoxModes in Syncfusion® ComboBox control for Xamarin.iOS
-description: Learn here about ComboBoxModes in Syncfusion® Essential® Xamarin.iOS ComboBox control, its elements, and more.
+title: ComboBox Modes in Syncfusion® ComboBox control for Xamarin.iOS
+description: Learn here about ComboBox modes in Syncfusion® Essential® Xamarin.iOS ComboBox control, its elements, and more.
 platform: xamarin.ios
 control: ComboBox
 documentation: ug
 ---
 
-# ComboBoxModes in Xamarin.iOS ComboBox
+# ComboBox Modes in Xamarin.iOS ComboBox
 
-The control provides you an option to show or select the dropdown items either by editing or non-editing the combobox textbox. The two combo box modes are, 
+The control provides an option to show or select the dropdown items either by editing or non-editing the ComboBox text box. The two ComboBox modes are:
 
 * Editable  
 
@@ -17,7 +17,7 @@ The control provides you an option to show or select the dropdown items either b
 
 ## Editable 
 
-In editable mode the user can select an item from the dropdown list by either typing any string or clicking the dropdown button.
+In editable mode, the user can select an item from the dropdown list by either typing any string or clicking the dropdown button.
 
 {% highlight C# %}
 
@@ -27,11 +27,11 @@ combobox.IsEditable = true;
 
 ![Xamarin.iOS ComboBox Editable](images/editable.png)
 
-## Non-editable 
+## Non-Editable
 
-In non-editable mode users can select an item from the dropdown list only by clicking the drop-down button. 
+In non-editable mode, users can select an item from the dropdown list only by clicking the dropdown button.
 
-N> The default ComboBoxModes is Non-Editable
+N> The default ComboBox mode is Non-Editable.
 
 {% highlight C# %}
 

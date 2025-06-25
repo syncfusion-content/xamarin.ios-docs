@@ -9,7 +9,7 @@ documentation : ug
 
 # Events
 
-The Events in SfAutoComplete are:
+The events in SfAutoComplete are:
 
 * FocusChanged
 
@@ -23,7 +23,7 @@ The Events in SfAutoComplete are:
 
 ## FocusChanged
 
-The `FocusChanged` event occurs when the control gets the focus and loses the focus. The argument contains the following information.
+The `FocusChanged` event occurs when the control gains focus or loses focus. The event argument contains the following information:
 
 <table>
 <tr>
@@ -32,7 +32,7 @@ The `FocusChanged` event occurs when the control gets the focus and loses the fo
 </tr>
 <tr>
 <td>HasFocus</td>
-<td>Indicates whether the control is in focused state or not.</td>
+<td>Indicates whether the control is in a focused state or not.</td>
 </tr>
 </table>
 
@@ -62,7 +62,7 @@ The `FocusChanged` event occurs when the control gets the focus and loses the fo
 
 ## SelectionChanged
 
-The `SelectionChanged` event is triggered after selecting an item among the filtered suggestions in SfAutoComplete.
+The `SelectionChanged` event is triggered after selecting an item from the filtered suggestions in SfAutoComplete.
 
 The SelectionChanged event returns the following arguments:
 
@@ -73,11 +73,11 @@ The SelectionChanged event returns the following arguments:
 </tr>
 <tr>
 <td>AddedItems</td>
-<td>Shows recently added item in AutoComplete.</td>
+<td>Shows the recently added item in AutoComplete.</td>
 </tr>
 <tr>
 <td>RemovedItems</td>
-<td>Shows recently removed items in AutoComplete.</td>
+<td>Shows the recently removed items in AutoComplete.</td>
 </tr>
 <tr>
 <td>Value</td>
@@ -105,9 +105,9 @@ The SelectionChanged event returns the following arguments:
 
 ## SelectionChanging
 
-The `SelectionChanging` event is triggered when you select an item among the filtered suggestions in SfAutoComplete.
+The `SelectionChanging` event is triggered when you select an item from the filtered suggestions in SfAutoComplete.
 
-The SelectionChanging event returns the following argument:
+The SelectionChanging event returns the following arguments:
 
 <table>
 <tr>
@@ -120,7 +120,7 @@ The SelectionChanging event returns the following argument:
 </tr>
 <tr>
 <td>Cancel</td>
-<td>Restricts the item to be selected.</td>
+<td>Restricts the item from being selected.</td>
 </tr>
 </table>
 
@@ -177,7 +177,7 @@ The TextChanged event returns the following argument:
 
 ## FilterCollectionChanged
 
-The `FilterCollectionChanged` event is triggered whenever the items gets filtered in the suggestion.
+The `FilterCollectionChanged` event is triggered whenever items are filtered in the suggestion list.
 
 The FilterCollectionChanged event returns the following argument:
 
@@ -188,7 +188,7 @@ The FilterCollectionChanged event returns the following argument:
 </tr>
 <tr>
 <td>Value</td>
-<td>Holds the filtered items in the suggestion.</td>
+<td>Holds the filtered items in the suggestion list.</td>
 </tr>
 </table>
 

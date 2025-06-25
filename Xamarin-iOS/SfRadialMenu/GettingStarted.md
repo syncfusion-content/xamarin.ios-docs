@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion® RadialMenu control for Xamarin.Android 
-description: A quick tour to the new users of Syncfusion® RadialMenu control to get familiar with the control for Xamarin.iOS platform.
+title: Getting Started with Syncfusion® RadialMenu control for Xamarin.iOS
+description: A quick tour for new users of Syncfusion® RadialMenu control to get familiar with the control for Xamarin.iOS platform.
 platform: xamarin.ios 
 control: RadialMenu
 documentation: ug
@@ -9,21 +9,21 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the SfRadialMenu control in a real-time scenario and provides a walk-through on some of the customization features available.
+This section explains the steps required to configure the SfRadialMenu control in a real-time scenario and provides a walk-through of some of the customization features available in Xamarin.iOS applications.
 
-## Referencing Essential Studio<sup>®</sup> components in your solution
+## Assembly References
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders:
 
-After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders.
+{Syncfusion Installed location}\Essential Studio\{Version}\lib
 
-{Syncfusion Installed location}\Essential Studio\14.XXXX.X.XX\lib
-
-Add the following assembly references to the Android project.
+Add the following assembly reference to the iOS project:
 
 ios-unified\Syncfusion.SfRadialMenu.iOS.dll
 
-## Add SfRadialMenu
+## Initialize SfRadialMenu
 
-* Adding namespace to the added assemblies. 
+### Adding Namespace
+Add the namespace for the included assemblies:
 
 {% tabs %}
 {% highlight c# %}
@@ -70,10 +70,17 @@ using Syncfusion.SfRadialMenu.iOS;
 {% endhighlight %}
 {% endtabs %}
 
-## Adding RadialMenu items
+## Adding RadialMenu Items
 
-SfRadialMenu provides the option to add a number of radial menu items. Add an external font icon typeface into the `Asset` folder, and then set its build action to Android assets. The Unicode can be passed as text to display icons in the SfRadialMenu item.
+The SfRadialMenu provides options to add multiple radial menu items with hierarchical structure. You can use font icons by adding an external font file to your iOS project bundle and referencing it through Unicode characters.
 
+### Font Setup
+
+1. Add your custom font file to the iOS project bundle
+2. Ensure the font is properly registered in your iOS application
+3. Use Unicode characters to display icons in RadialMenu items
+
+### Adding Items with Sub-Items
 {% tabs %}
 {% highlight c# %}
 

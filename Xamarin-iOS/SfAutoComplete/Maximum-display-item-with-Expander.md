@@ -1,7 +1,7 @@
 ---
 layout : post
-title : MatchHighlighting in Syncfusion® SfAutoComplete control for Xamarin.iOS
-description : Learn how to highlight the matched text in SfAutoComplete
+title : Maximum Display Item with Expander in Syncfusion® SfAutoComplete control for Xamarin.iOS
+description : Learn how to restrict the number of suggestions displayed and load remaining items using LoadMore functionality in SfAutoComplete
 platform : xamarin.ios 
 control : AutoComplete
 documentation : ug
@@ -9,7 +9,7 @@ documentation : ug
 
 # Maximum Display Item with Expander
 
-Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
+Restrict the number of suggestions displayed and load the remaining items by selecting LoadMore. You can restrict the maximum number of suggestions to be displayed using the `MaximumSuggestion` property. You can set the desired text for displaying the Load More option using the `LoadMoreText` property.
 
 {% tabs %}
 
@@ -22,17 +22,17 @@ countryAutoComplete.SuggestionMode=SuggestionMode.StartsWith;
 {% endhighlight %}
 
 {% endtabs %}
-### Restricting the maximum display of item dynamically
+## Restricting the Maximum Display of Items Dynamically
 
-We can restrict the maximum display of items dynamically by calling `LoadMore` method. The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
+You can restrict the maximum display of items dynamically by calling the `LoadMore` method. The maximum suggestion count can be changed dynamically by calling the LoadMore method with the maximum suggestion count as an argument.
  
 {% tabs %}
 {% highlight c# %}
  
-// without passing arguments
+// Without passing arguments
 countryAutoComplete.LoadMore();
  
-// with passing arguments
+// With passing arguments
 countryAutoComplete.LoadMore(5);
  
 {% endhighlight %}

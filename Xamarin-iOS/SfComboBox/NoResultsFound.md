@@ -1,7 +1,7 @@
 ---
 layout : post
-title : No Result Found Text in Syncfusion® SfComboBox control for Xamarin.iOS
-description : Learn how to display the no result found text in SfComboBox
+title : No Results Found Text in Syncfusion® SfComboBox control for Xamarin.iOS
+description : Learn how to display the no results found text in SfComboBox
 platform : xamarin.ios
 control : ComboBox
 documentation : ug
@@ -9,7 +9,7 @@ documentation : ug
 
 # No Results Found
 
-When the entered item is not in the suggestion list, SfComboBox displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the `NoResultsFoundText` property.
+When the entered item is not in the suggestion list, SfComboBox displays text indicating that no search results were found. You can set the desired text to be displayed for indicating no results found using the `NoResultsFoundText` property.
 
 {% tabs %}
 
@@ -26,7 +26,7 @@ comboBox.SuggestionMode = SuggestionMode.StartsWith;
 
 ## Customizing NoResultsFoundText
 
-The `NoResultsFoundTextColor` and `NoResultsFoundFont` are the properties used to customize the foreground color and font of the NoResultsFoundText.
+The `NoResultsFoundTextColor` and `NoResultsFoundFont` properties are used to customize the foreground color and font of the NoResultsFoundText.
 
 {% tabs %}
 

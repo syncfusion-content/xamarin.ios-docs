@@ -1,19 +1,19 @@
 ---
-layout : post
-title : Suggestion mode for Syncfusion® AutoComplete control in Xamarin.iOS
-description : Learn how to display suggestion mode in AutoComplete
-platform : xamarin.ios
-control : AutoComplete
-documentation : ug
+layout: post
+title: Suggestion mode for Syncfusion® AutoComplete control in Xamarin.iOS
+description: Learn how to display suggestion mode in AutoComplete
+platform: xamarin.ios
+control: AutoComplete
+documentation: ug
 ---
 
-# Various Filter options for Suggestion
+# Various Filter Options for Suggestion
 
-By default, the items that matches with the starting letter will be displayed as suggestion. This phenomenon can be changed using  `SuggestionMode` property, which provides various option to filter the data according to the text entered. There are eight types of suggestion modes and are described as follows.
+By default, items that match the starting letter will be displayed as suggestions. This behavior can be changed using the `SuggestionMode` property, which provides various options to filter the data according to the text entered. There are eight types of suggestion modes described as follows:
 
-## Words that Starts with Input Text
+## Words that Start with Input Text
 
-Displays the list of suggestions based on starting letter.
+Displays the list of suggestions based on the starting letter.
 
 {% tabs %}
 
@@ -29,7 +29,7 @@ countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSu
 
 ### Filter with Character Casing
 
-Displays the list of suggestions based on starting letter with case sensitive.
+Displays the list of suggestions based on the starting letter with case sensitivity.
 
 {% tabs %}
 
@@ -43,9 +43,9 @@ countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSu
 
 ![](images/startswithcasesensitive.png)
 
-## Words that Contains the Input Text
+## Words that Contain the Input Text
 
-Displays the list of suggestions, if autocomplete list contains that words.
+Displays the list of suggestions if the AutoComplete list contains those words.
 	
 {% tabs %}
 
@@ -61,7 +61,7 @@ countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSu
 
 ### Filter with Character Casing
 
-Displays the list of suggestions, if autocomplete list contains that words with case sensitive.
+Displays the list of suggestions if the AutoComplete list contains those words with case sensitivity.
 
 {% tabs %}
 
@@ -75,9 +75,9 @@ Displays the list of suggestions, if autocomplete list contains that words with 
 
 ![](images/containswithcasesensitive.png)
 
-## Words that Equals to the Input Text
+## Words that Equal the Input Text
 
-Displays the word that matches.
+Displays the word that matches exactly.
 	
 {% tabs %}
 
@@ -93,7 +93,7 @@ Displays the word that matches.
 
 ### Filter with Character Casing
 
-Displays the word that matches with case sensitive.
+Displays the word that matches exactly with case sensitivity.
 	
 {% tabs %}
 
@@ -107,9 +107,9 @@ Displays the word that matches with case sensitive.
 
 ![](images/equalswithcasesensitive.png)
 
-## Words that Ends with Input Text
+## Words that End with Input Text
 
-Displays the list of suggestions based on ending word.
+Displays the list of suggestions based on the ending characters.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ Displays the list of suggestions based on ending word.
 
 ### Filter with Character Casing
 
-Displays the list of suggestions based on the ending word with case sensitive.
+Displays the list of suggestions based on the ending characters with case sensitivity.
 	
 {% tabs %}
 
@@ -141,7 +141,7 @@ Displays the list of suggestions based on the ending word with case sensitive.
 
 ## Custom Filtering
 
-Displays the suggestion based on the custom words in SfAutoComplete Control.
+Displays suggestions based on custom filtering logic in the SfAutoComplete control.
 
 {% tabs %}
 

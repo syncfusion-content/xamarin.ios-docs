@@ -9,9 +9,9 @@ documentation : ug
 
 # Filtering Option 
 
-The combo box control provides an option to filter the dropdown list based on the text typed. You can set filter option by setting the `AllowFiltering` boolean property to true. 
+The ComboBox control provides an option to filter the dropdown list based on the text typed. You can enable the filter option by setting the `AllowFiltering` boolean property to `true`.
 
-N> The Allow-Filtering property works only when the IsEditable property is set to true.
+N> The `AllowFiltering` property works only when the `IsEditable` property is set to `true`.
 
 {% tabs %}
 

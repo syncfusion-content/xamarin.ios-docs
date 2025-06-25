@@ -1,21 +1,20 @@
 ---
 layout: post
 title: Transformation in Syncfusion® Carousel control in Xamarin.iOS
-description: This section provides the details about how to set the Transformation for Carousel Items in Carousel for Xamarin.iOS
-platform: xamarin.ioss
+description: This section provides details about how to set transformations for Carousel items in Carousel for Xamarin.iOS
+platform: xamarin.ios
 control: Carousel
 documentation: ug
 ---
 
 # Carousel Transformation
 
-The Offset between selected and unselected item can be customized in SfCarousel control. And also the items can be scaled to the specified value.
+The SfCarousel control provides various transformation options to customize the appearance and positioning of carousel items. You can adjust the offset between selected and unselected items, apply scaling effects, and control rotation angles for enhanced visual presentation.
+## Tilt Non-Selected Items
 
-## Tilt Non Selected Items
+The `RotationAngle` property in the SfCarousel control is used to tilt all unselected items at a specified angle, creating a dynamic visual effect.
 
-The `RotationAngle` property in the SfCarousel control is used to tilt all the unselected items in a specified angle. 
-
-N> If the angle value is positive, then the rotation is in the clockwise direction. If the angle value is negative, the rotation is in the counterclockwise direction. 
+> **Note:** If the angle value is positive, the rotation is clockwise. If the angle value is negative, the rotation is counterclockwise.
 
 {% highlight C# %}
 
@@ -26,9 +25,9 @@ carousel.RotationAngle = 40;
 
 ![The rotationangle](images/rotationangle.png)
 
-## Set Gap between Unselected Items
+## Set Gap Between Unselected Items
 
-The `Offset` property is used to specify the accurate distance between unselected items in SfCarousel panel.  
+The `Offset` property is used to specify the distance between unselected items in the SfCarousel panel, allowing you to control the spacing for optimal visual presentation.
 
 N> The default value is 20.
 
@@ -41,9 +40,9 @@ carousel.Offset = 30;
 
 ![The image](images/offset.png)
 
-## Set Gap between Selected Item
+## Set Gap Between Selected Item and Others
 
-Distance between the selected item and other items can be customized by using `SelectedItemOffset` property of the SfCarousel control.
+The distance between the selected item and other items can be customized using the `SelectedItemOffset` property of the SfCarousel control. This helps emphasize the selected item by creating additional space around it.
 
 {% highlight C# %}
 
@@ -54,7 +53,7 @@ carousel.SelectedItemOffset = 6;
 
 ## Set Scaling for Carousel Items
 
-The `ScaleOffset` property in the SfCarousel control is used to scale all the items to the specified scale value.
+The `ScaleOffset` property in the SfCarousel control is used to scale all items to a specified scale value, creating size variations that enhance the visual hierarchy.
 
 {% highlight C# %}
 
@@ -65,9 +64,10 @@ carousel.ScaleOffset = (nfloat)0.7;
 
 ![The ScaleOffset](images/scaleoffset.png)
 
-## Spacing of Items in Linear mode
+## Spacing of Items in Linear Mode
 
-Spacing of all the items in Linear mode can be determined by using `ItemSpacing` property.
+When using Linear view mode, the spacing between all items can be controlled using the `ItemSpacing` property. This provides precise control over item arrangement in linear layouts.
+> **Note:** The default value is 5.
 
 N> The default value is 5. 
 
