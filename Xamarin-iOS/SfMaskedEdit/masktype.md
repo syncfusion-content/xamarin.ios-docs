@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion® SfMaskedEdit control for Xamarin.IOS
-description: A quick tour to initial users on Syncfusion® SfMaskedEdit control for Xamarin.IOS platform 
+title: Getting Started with Syncfusion® SfMaskedEdit control for Xamarin.iOS
+description: A quick tour to initial users on Syncfusion® SfMaskedEdit control for Xamarin.iOS platform
 platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug
@@ -9,14 +9,14 @@ documentation: ug
 
 # MaskType
 
-Each MaskType has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as:
+Each MaskType has a different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as:
 
 * Text
 * RegEx
 
 ## Text
 
-The expressions that are generated with letters, digits, and special characters come under this group. This is mainly used for fixed length inputs. For example: phone number, zip code, and so on.
+Expressions generated with letters, digits, and special characters fall under this category. This is primarily used for fixed-length inputs, such as phone numbers, zip codes, and similar data.
 
 ### Text Mask characters
 
@@ -66,7 +66,7 @@ Letter, optional. Restricts input to the ASCII letters a-z and A-Z.
 0
 </td>
 <td>
-Digit, required. This character accepts any single digit between 0 and 9
+Digit, required. This character accepts any single digit between 0 and 9.
 </td>
 </tr>
 <tr>
@@ -106,7 +106,7 @@ Escapes a mask character, turning it into a literal. "\" is the escape sequence 
 Any other characters
 </td>
 <td>
-Considered as literals. Literals always occupy a static position in the mask at run time, and cannot be moved or deleted. 
+Treated as literals. Literals always occupy a static position in the mask at run time, and cannot be moved or deleted.
 </td>
 </tr>
 </table>
@@ -119,18 +119,16 @@ maskedEdit.Mask = "+1(000)000000";
 {% endhighlight %}
 {% endtabs %}
 
-This mask expression allows only numeric inputs in the places of 0.
+This mask expression allows only numeric inputs in positions marked with 0.
 
 ## Regex
 
-The expressions that are generated with regular expressions come under this group, preferable for variable length inputs and input in range. For example: hexadecimal values [0-9A-C].
-The regular expressions provide significant advantages when creating masks as compared with other mask modes. 
-
+Expressions generated with regular expressions fall under this category, which is preferable for variable-length inputs and inputs within a specific range. For example: hexadecimal values [0-9A-C]. Regular expressions provide significant advantages when creating masks compared to other mask modes.
 **Advantages**
 
-* Allows you to enter the value of indeterminate length.
-* Restricts with specific pattern. Example email, password, and more.
-* Restricts you to enter specific range at specific position.
+* Allows you to enter values of variable length.
+* Restricts input to specific patterns, such as email addresses, passwords, and more.
+* Restricts input to a specific range at a specific position.
 
 ### Regex Mask Characters
 
@@ -164,7 +162,7 @@ Accepts any digit.
 {n}
 </td>
 <td>
-Accepts the input for ‘n’ number of times.
+Accepts the input for 'n' number of times.
 </td>
 </tr>
 <tr>
@@ -172,7 +170,7 @@ Accepts the input for ‘n’ number of times.
 {n,m}
 </td>
 <td>
-Accepts the input for ‘n’ minimum number of times and ‘m’ maximum number of times.
+Accepts the input for 'n' minimum number of times and 'm' maximum number of times.
 </td>
 </tr>
 <tr>
@@ -212,7 +210,7 @@ Accepts any single character included in the specified set of characters.
 [0-9a-fA-F]
 </td>
 <td>
-Accepts any character between[A-F]/[a-f] and numbers between [0-9].
+Accepts any character between [A-F]/[a-f] and numbers between [0-9].
 </td>
 </tr>
 </table>
@@ -225,7 +223,7 @@ maskedEdit.Mask = @"+1(\d{3})\d{6}";
 {% endhighlight %}
 {% endtabs %}
 
-This mask expression ’\d{3}’ and ’\d{6}’ allows only numeric, where {n} is the count that the input should be accepted.
+This mask expression '\d{3}' and '\d{6}' allows only numeric, where {n} is the count that the input should be accepted.
 
 ![](SfMaskedEditImages/masktype.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual appearence customization of SfMaskedEdit control for Xamarin.iOS Platform
-description: Learn how to customize the visual appearence of SfMaskedEdit control
+title: Visual appearance customization of SfMaskedEdit control for Xamarin.iOS Platform
+description: Learn how to customize the visual appearance of SfMaskedEdit control
 platform: Xamarin.iOS
 control: SfMaskedEdit
 documentation: ug 
@@ -30,10 +30,10 @@ maskedEdit.Layer.BorderColor = UIColor.Green.CGColor;
 
 ## ErrorBorderColor
 
-Sets the custom error border color to SfMaskedEdit. Error border color indicates the color to be used when the validation fails for your input with respect to the mask used. 
+Sets the custom error border color to SfMaskedEdit. Error border color specifies the color to be used when validation fails for input that doesn't match the specified mask.
 
 > Validation triggers based on `ValidationMode` property.
->Refer this [link](Validation#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
+>Refer to this [link](Validation#validation-mode) to learn more about the `ValidationMode` property of `SfMaskedEdit` control.
 
 {% tabs %}
 {% highlight c# %}

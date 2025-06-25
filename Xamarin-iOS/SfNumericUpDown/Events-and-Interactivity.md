@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Events and Interactivity in Syncfusion® NumericUpDown for Xamarin.iOS
-description: Learn how to get the value changed event and some interactivity for NumericUpDown in Xamarin.iOS platform.
+title: Events and Interactivity in Syncfusion® SfNumericUpDown for Xamarin.iOS
+description: Learn how to get the value changed event and some interactivity for SfNumericUpDown in Xamarin.iOS platform.
 platform: xamarin.ios
-control: NumericUpDown
+control: SfNumericUpDown
 documentation: ug
 ---
 # Events and Interactivity
@@ -12,9 +12,9 @@ documentation: ug
 
 ### ValueChanged 
 
-You can perform any operation when changing the value of NumericUpDown using the ValueChanged event. The ValueChanged event returns the changed value in NumericUpDown.
+You can perform operations when the value of SfNumericUpDown changes using the ValueChanged event. The ValueChanged event returns the changed value in the SfNumericUpDown.
 
-For example you can restrict the NumericUpDown value if it exceed's greater than 3 digits using following code.
+For example, you can restrict the SfNumericUpDown value if it exceeds 3 digits using the following code:
 
 {% highlight c# %}
 
@@ -48,7 +48,7 @@ this.Add(numeric);
 
 ## Interactivity : ValueChangeMode
 
-The ValueChangeMode property is used to mention when value needs to update, either in key pressed or focus lost state. When ValueChangeMode is set to OnKeyFocus, the value will be updated on each key press. When ValueChangeMode is set to OnLostFocus, the value is updated when the control lose the focus or the focus is moved to the next control. ValueChangeMode includes the following options:
+The ValueChangeMode property is used to specify when the value needs to be updated, either on key press or when focus is lost. When ValueChangeMode is set to OnKeyFocus, the value will be updated on each key press. When ValueChangeMode is set to OnLostFocus, the value is updated when the control loses focus or when focus is moved to the next control.
 
 1. OnKeyFocus
 2. OnLostFocus

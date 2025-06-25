@@ -10,7 +10,7 @@ documentation: ug
 
 The maximum number of digits to be displayed after the decimal point can be specified by using the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfNumericTextBox.iOS.SfNumericTextBox_1.html#Syncfusion_SfNumericTextBox_iOS_SfNumericTextBox_MaximumNumberDecimalDigits) property. 
 
-N> The `MaximumNumberDecimalDigits` property can be provided with positive value only.
+N> The `MaximumNumberDecimalDigits` property can be provided with positive values only.
 
 {% highlight c# %}
 
