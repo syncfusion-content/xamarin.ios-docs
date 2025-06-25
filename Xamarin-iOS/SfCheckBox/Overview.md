@@ -10,12 +10,12 @@ keywords: button, SfCheckBox, CheckBox
 ---
 
 # Overview
-The check box is a selection control that allows users to select one or more options from a set. The three states of check box are checked, unchecked and indeterminate.
+The CheckBox is a selection control that allows users to select one or more options from a set. The three states of CheckBox are checked, unchecked, and indeterminate.
 
-##  Key features
+## Key features
 
 * Supports three states.
-* Allow users to select and clear the control by tapping. 
-* Supports check box color, shape and label text customization.
+* Allows users to select and clear the control by tapping.
+* Supports CheckBox color, shape, and label text customization.
 
-![](Images/CheckBox_Overview.png)
+![SfCheckBox overview for Xamarin.iOS](Images/CheckBox_Overview.png)

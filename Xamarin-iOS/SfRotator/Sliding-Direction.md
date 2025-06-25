@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Various features in Syncfusion® Rotator control for Xamarin.iOS
-description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Android 
+title: Sliding Direction in Syncfusion® Rotator Control for Xamarin.iOS
+description: Learn how to set the navigation direction in Rotator control for Xamarin.iOS platform
 platform: xamarin.ios
-control: Rotator
+control: SfRotator
 documentation: ug
 ---
 
 # Sliding Direction
 
-The `NavigationDirection` property specifies the direction in which items should be navigated in Rotator control.
+The `NavigationDirection` property specifies the direction in which items should be navigated in the Rotator control.
 
 ## Horizontal
 
-Items can be navigated in horizontal direction.
+Items can be navigated in the horizontal direction.
 
 {% tabs %}
 
@@ -27,7 +27,7 @@ Items can be navigated in horizontal direction.
 
 ## Vertical
 
-Items can be navigated in vertical direction.
+Items can be navigated in the vertical direction.
 
 {% tabs %}
 
@@ -39,9 +39,9 @@ Items can be navigated in vertical direction.
 
 {% endtabs %}
 
-## LeftToRight
+## Left to Right
 
-Items can be navigated from Left to Right only.
+Items can be navigated from left to right only.
 
 {% tabs %}
 
@@ -53,9 +53,9 @@ Items can be navigated from Left to Right only.
 
 {% endtabs %}
 
-## RightToLeft
+## Right to Left
 
-Items can be navigated from Right to Left only.
+Items can be navigated from right to left only.
 
 {% tabs %}
 
@@ -67,9 +67,9 @@ Items can be navigated from Right to Left only.
 
 {% endtabs %}
 
-## TopToBottom
+## Top to Bottom
 
-Items can be navigated from Top to Bottom only.
+Items can be navigated from top to bottom only.
 
 {% tabs %}
 
@@ -81,9 +81,9 @@ Items can be navigated from Top to Bottom only.
 
 {% endtabs %}
 
-## BottomToTop
+## Bottom to Top
 
-Items can be navigated from Bottom to Top only.
+Items can be navigated from bottom to top only.
 
 {% tabs %}
 

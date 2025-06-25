@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Various features of Syncfusion® RangeSlider control for Xamarin.iOS
-description: Learn how to set minimum value, maximum value, tick frequency, step frequency, enabling snaps to support and orientation for RangeSlider
+title: Selection Value Configuration in Syncfusion® RangeSlider control for Xamarin.iOS
+description: Learn how to configure minimum value, maximum value, tick frequency, step frequency, and snapping modes for RangeSlider
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug
@@ -13,7 +13,7 @@ Various customization options are available to configure the selection value in 
 
 ## Set Minimum Value
 
-Gets or sets the minimum possible value of the range. The thumb could not move beyond that value.
+Gets or sets the minimum possible value of the range. The thumb cannot move beyond this value.
 
 {% tabs %}
 
@@ -27,7 +27,7 @@ rangeSlider.Minimum = 0;
 
 ## Set Maximum Value
 
-Gets or sets the maximum possible value of the range. The thumb could not move after that value.
+Gets or sets the maximum possible value of the range. The thumb cannot move beyond this value.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ rangeSlider.Maximum = 24;
 
 ## Set Tick Frequency
 
-The `TickFrequency` property is used to decide the number of ticks to be displayed along the track based on Minimum and Maximum values.
+The `TickFrequency` property is used to determine the number of ticks to be displayed along the track based on `Minimum` and `Maximum` values.
 
 {% tabs %}
 
@@ -53,9 +53,9 @@ rangeSlider.TickFrequency=4;
 
 {% endtabs %}
 
-N> When the `SnapsTo` property is set to `Ticks`, the `TickFrequency` is used to specify the interval between snap points.
+> **Note:** When the `SnapsTo` property is set to `Ticks`, the `TickFrequency` is used to specify the interval between snap points.
 
-## Set Interval between Snap Points.
+## Set Interval Between Snap Points
 
 The `StepFrequency` property is used to specify the interval between snap points.
 
@@ -69,19 +69,17 @@ rangeSlider.StepFrequency=4;
 
 {% endtabs %}
 
-N> When the `SnapsTo` property is set to `StepValues`, the `StepFrequency` property is enabled.
+> **Note:** When the `SnapsTo` property is set to `StepValues`, the `StepFrequency` property is enabled.
 
 ## Set Snapping Mode
 
-The `SnapsTo` property determines whether the RangeSlider snaps to steps or ticks. Available options for this property are
+The `SnapsTo` property determines whether the RangeSlider snaps to steps or ticks. Available options for this property are:
 
 * `StepValues` - The `StepFrequency` property will be used to specify the interval between snap points.
+* `Ticks` - The `TickFrequency` property will be used to specify the interval between snap points.
+* `None` - The thumb moves independently of any values.
 
-* `Ticks` - The `TickFrequency` property will be used to specify the interval between snap points
-
-* `None` - The thumb is moved independent of any values.
-
-N> The default option is Ticks.
+> **Note:** The default option is `Ticks`.
 
 {% tabs %}
 

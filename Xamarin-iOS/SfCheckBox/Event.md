@@ -9,12 +9,12 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Event
+# Events
 
 ## StateChanged event
-Occurs when the value(state) of the `IsChecked` property is changed by either touching the check box or setting the value to the `IsChecked` property using C# code. The event arguments are of type `StateChangedEventArgs` and expose the following property:
+The `StateChanged` event occurs when the value (state) of the `IsChecked` property is changed by either touching the checkbox or setting the value to the `IsChecked` property using C# code. The event arguments are of type `StateChangedEventArgs` and expose the following property:
 
-* `IsChecked`: The new value(state) of the `IsChecked` property.
+* `IsChecked`: The new value (state) of the `IsChecked` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -42,8 +42,7 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Event1.png)
-![](Images/Event2.png)
-![](Images/Event3.png)
-
+![StateChanged event - Unchecked state](Images/Event1.png)
+![StateChanged event - Checked state](Images/Event2.png)
+![StateChanged event - Indeterminate state](Images/Event3.png)
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_Event.zip).

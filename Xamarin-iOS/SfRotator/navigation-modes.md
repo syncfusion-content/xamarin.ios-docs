@@ -1,9 +1,9 @@
 ---
 layout: post
-title: NavigationMode of Syncfusion® Rotator control for Xamarin.iOS
+title: Navigation Modes of Syncfusion® Rotator Control for Xamarin.iOS
 description: Learn how to view the different navigation modes of the Rotator control in Xamarin.iOS
 platform: xamarin.ios
-control: Rotator
+control: SfRotator
 documentation: ug
 ---
 
@@ -23,8 +23,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% endtabs %}
 
-![](images/thumbnail.png)
-
+![Thumbnail Navigation Mode](images/thumbnail.png)
 * `Dots` - The slider items will be loaded in dots view additionally. When a dots item is clicked, the slider will switch to the corresponding image data.
 
 {% tabs %}
@@ -37,15 +36,14 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% endtabs %}
 
-![](images/dots.png)
+![Dots Navigation Mode](images/dots.png)
+## Items/Dot Strip Positions
 
-## Items / Dot Strip Positions
+The `NavigationStripPosition` property specifies the placement position of the navigation bar items such as thumbnail or dots relative to the slider area.
 
-The `NavigationStripPosition` position specifies the placement position of the navigation bar items such as thumbnail or dots relative to the slider area. 
+There are four available positions:
 
-There are four available positions,
-
-* `Bottom` - Sets the position of the navigation bar items to bottom.
+* `Bottom` - Sets the position of the navigation bar items to the bottom.
 
 {% tabs %}
 
@@ -57,7 +55,7 @@ There are four available positions,
 
 {% endtabs %}
 
-* `Left` - Sets the position of the navigation bar items to left.
+* `Left` - Sets the position of the navigation bar items to the left.
 
 {% tabs %}
 
@@ -69,7 +67,7 @@ There are four available positions,
 
 {% endtabs %}
 
-* `Top` - Sets the position of the navigation bar items to top.
+* `Top` - Sets the position of the navigation bar items to the top.
 
 {% tabs %}
 
@@ -81,7 +79,7 @@ There are four available positions,
 
 {% endtabs %}
 
-* `Right` - Sets the position of the navigation bar items to right.
+* `Right` - Sets the position of the navigation bar items to the right.
 
 {% tabs %}
 
@@ -93,5 +91,4 @@ There are four available positions,
 
 {% endtabs %}
 
-![](images/tabstrip.png)
-
+![Navigation Strip Positions](images/tabstrip.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Various features of Syncfusion® RangeSlider control for Xamarin.iOS
-description: Learn how to set minimum value, maximum value, tick frequency, step frequency, enabling snaps to support and orientation for RangeSlider
+title: Orientation in Syncfusion® RangeSlider control for Xamarin.iOS
+description: Learn how to set the orientation of the RangeSlider control to horizontal or vertical
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Orientation of SfRangeSlider
 
-SfRangeSlider provides option to display the values and the slider either horizontally or vertically.
+SfRangeSlider provides options to display the values and the slider either horizontally or vertically.
 
-N> The default option is Horizontal.
+> **Note:** The default orientation is Horizontal.
 
 ## Horizontal
 
-In this orientation, the values and the slider are set horizontally. 
+In this orientation, the values and the slider are displayed horizontally.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ rangeSlider.Orientation = SFOrientation.SFOrientationHorizontal;
 
 ## Vertical
 
-In this Orientation, the values and the slider are set vertically. 
+In this orientation, the values and the slider are displayed vertically.
 
 {% tabs %}
 

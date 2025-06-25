@@ -2,7 +2,7 @@
 
 layout: post
 title: ToolTip in Syncfusion® Rating control for Xamarin.iOS
-description: Learn how to change the ToolTip of rating control
+description: Learn how to configure and customize the ToolTip in the Rating control
 platform: xamarin.ios
 control: Rating
 documentation: ug
@@ -11,17 +11,17 @@ documentation: ug
 
 # ToolTip
 
-Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.iOS SfRating control, tooltip shows the data of `Value`. It will be displayed when a rating item is selected and will be disappeared when the rating item is unselected.
+ToolTip provides additional information about objects that are unfamiliar to users and are not directly displayed in the UI. In the Xamarin.iOS SfRating control, the tooltip displays the current `Value` data. It appears when a rating item is selected and disappears when the rating item is unselected.
 
 ## Set Tooltip Placement
 
-Rating control provides ToolTip support with rating value using `TooltipPlacement` property. 
+The Rating control provides ToolTip support with rating value using the `TooltipPlacement` property.
 
-N> By default, this property value is set to None.
+> **Note:** By default, this property value is set to `None`.
 
 ### TopLeft 
 
-The ToolTip will display on top of the SfRating control. 
+The ToolTip will be displayed at the top-left of the SfRating control.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ rating.TooltipPlacement = SFRatingTooltipPlacement.TopLeft;
 
 ### BottomRight
 
-The tooltip will display on bottom of the SfRating control.
+The ToolTip will be displayed at the bottom-right of the SfRating control.
 
 {% highlight c# %}
 

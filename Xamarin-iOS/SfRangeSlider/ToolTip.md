@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTip support for Syncfusion® RangeSlider control for Xamarin.iOS
-description: Learn how to set tooltip for RangeSlider in Xamarin.iOS
+title: ToolTip Support for Syncfusion® RangeSlider control for Xamarin.iOS
+description: Learn how to configure and customize tooltips for RangeSlider in Xamarin.iOS
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip Support
 
-The tooltip shows the current value based on thumb position.
+The tooltip shows the current value based on the thumb position.
 
 ## Set ToolTip Precision
 
@@ -27,7 +27,7 @@ The `ToolTipPrecision` property is used to define the precision of the value dis
 
 ## Set ToolTip Placement
 
-The position of the ToolTip in relation to the thumb can be controlled by the `ToolTipPlacement` property. It has the following options.
+The position of the ToolTip in relation to the thumb can be controlled by the `ToolTipPlacement` property. It has the following options:
 
 1. BottomRight
 2. TopLeft
@@ -35,7 +35,7 @@ The position of the ToolTip in relation to the thumb can be controlled by the `T
 
 ### BottomRight
 
-The ToolTip will be placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation.
+The ToolTip will be placed either below the thumb in horizontal orientation or to the right of the thumb in vertical orientation.
 
 {% tabs %}
 
@@ -49,7 +49,7 @@ rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementBottomRight;
 
 ### TopLeft
 
-the ToolTip will be placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation.
+The ToolTip will be placed either above the thumb in horizontal orientation or to the left of the thumb in vertical orientation.
 
 {% tabs %}
 
@@ -63,7 +63,7 @@ rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementTopLeft;
 
 ### None
 
-ToolTip will be collapsed.
+The ToolTip will be hidden.
 
 {% tabs %}
 
@@ -75,8 +75,9 @@ rangeSlider.ToolTipPlacement = SFToolTipPlacement.SFToolTipPlacementNone;
 
 {% endtabs %}
 
-## Tooltip color
+## ToolTip Color Customization
 
+The RangeSlider control provides properties to customize the ToolTip appearance:
 `TooltipTextColor` - Used to change the tooltip text color.
 `TooltipBackgroundColor` - Used to change the tooltip background color.
 

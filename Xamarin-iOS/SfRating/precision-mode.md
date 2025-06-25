@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Precision Mode in Syncfusion® Rating control for Xamarin.iOS
-description: Learn how to change the Precision Mode of rating control
+title: Precision Mode in Syncfusion® Rating Control for Xamarin.iOS
+description: Learn how to change the precision mode of Rating control for Xamarin.iOS platform
 platform: xamarin.ios
-control: Rating
+control: SfRating
 documentation: ug
 ---
 
@@ -25,7 +25,7 @@ The rating item will be filled completely based on the rating value.
 
 {% endtabs %}
 
-![SfRating standard precision mode](images/standard.jpg)
+![SfRating Standard Precision Mode](images/standard.jpg)
 
 ## Half
 
@@ -41,7 +41,7 @@ The rating item will be filled partially based on the rating value.
 
 {% endtabs %}
 
-![SfRating half precision mode](images/half.jpg) 
+![SfRating Half Precision Mode](images/half.jpg)
 
 ## Exact
 
@@ -57,4 +57,4 @@ The rating item will be filled exactly based on the rating value.
 
 {% endtabs %}
 
-![SfRating exact precision mode](images/exact.jpg) 
+![SfRating Exact Precision Mode](images/exact.jpg)

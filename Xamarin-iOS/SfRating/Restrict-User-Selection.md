@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion® Rating control for Xamarin.iOS
-description: Learn how to change the Appearance and Styling of rating control
+title: Restrict User Selection in Syncfusion® Rating control for Xamarin.iOS
+description: Learn how to restrict user selection in the Rating control by making it read-only
 platform: xamarin.ios
 control: Rating
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Restrict User Selection
 
-SfRating control provides support for changeable or unchangeable values for Rating control. This is achieved by the `ReadOnly` property. When this property is set to True, the Rating value becomes unchangeable. By default, this property value is set to False.
+The SfRating control provides support for controlling whether users can modify the rating value. This functionality is achieved through the `ReadOnly` property. When this property is set to `true`, the rating value becomes unchangeable, preventing user interaction. By default, this property is set to `false`, allowing users to modify the rating.
 
 {% tabs %}
 

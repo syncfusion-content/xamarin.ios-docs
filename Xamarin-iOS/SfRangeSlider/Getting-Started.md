@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Syncfusion® RangeSlider control for Xamarin.iOS
-description: This section provides the details about initial users on Syncfusion® rangeSlider control for Xamarin.iOS platform
+title: Getting Started with Syncfusion® RangeSlider control for Xamarin.iOS
+description: This section provides details for initial users on Syncfusion® RangeSlider control for Xamarin.iOS platform
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with RangeSlider
 
-This section explains you the steps to configure a RangeSlider  control in a real-time scenario and also provides a walk-through on some of the customization features available in RangeSlider control.
+This section explains the steps to configure a RangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in the RangeSlider control.
 
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
@@ -17,13 +17,13 @@ After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
-You have to add the following assembly reference to the iOS unified project
+You have to add the following assembly reference to the iOS unified project:
 
 iOS-unified\Syncfusion.SfRangeSlider.iOS.dll
 
-### And and Configure the RangeSlider
+## Add and Configure the RangeSlider
 
-* Adding reference to RangeSlider.
+### Adding Reference to RangeSlider
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ iOS-unified\Syncfusion.SfRangeSlider.iOS.dll
 
 {% endtabs %}
 
-* Create an instance of SfRangeSlider
+### Create an Instance of SfRangeSlider
 
 {% tabs %}
 
@@ -48,9 +48,9 @@ iOS-unified\Syncfusion.SfRangeSlider.iOS.dll
 
 {% endtabs %}
 
-### Add Values and Scale
+## Add Values and Scale
 
-You can set the minimum value for the slider by using the `setMinimum()` and `setMaximum()` properties in the RangeSlider. It can be Numerical values.
+You can set the minimum and maximum values for the slider by using the `Minimum` and `Maximum` properties in the RangeSlider. These can be numerical values.
 
 {% tabs %}
 
@@ -68,11 +68,11 @@ You can set the minimum value for the slider by using the `setMinimum()` and `se
 
 {% endtabs %}
 
-N> Likewise, `RangeStart` and `RangeEnd` can be set that denote the start range and end range values while dual thumb is used. The `ShowRange` property is used to switch between a single thumb and double thumb. The `Orientation` property sets the type of orientation.
+> **Note:** The `RangeStart` and `RangeEnd` properties denote the start range and end range values when dual thumb is used. The `ShowRange` property is used to switch between a single thumb and double thumb. The `Orientation` property sets the type of orientation.
 
-### Add Ticks and Labels for RangeSlider
+## Add Ticks and Labels for RangeSlider
 
-The ticks can be set by setting the `TickFrequency` and `TickPlacement`. Likewise, value labels can be set by setting the `ShowValueLabel` property to true. The position of label can be varied by the `LabelPlacement` property.
+The ticks can be set by configuring the `TickFrequency` and `TickPlacement` properties. Likewise, value labels can be displayed by setting the `ShowValueLabel` property to `true`. The position of the label can be varied using the `ValuePlacement` property.
 
 {% tabs %}
 
@@ -87,11 +87,11 @@ The ticks can be set by setting the `TickFrequency` and `TickPlacement`. Likewis
 
 {% endtabs %}
 
-N> The TickFrequency determines the interval between the ticks.
+> **Note:** The `TickFrequency` property determines the interval between the ticks.
 
-### Add Snapping Type for RangeSlider
+## Add Snapping Type for RangeSlider
 
-The movement of the thumb can be varied in different ways. This is achieved by setting the SnapsTo property.
+The movement of the thumb can be configured in different ways. This is achieved by setting the `SnapsTo` property.
 
 {% tabs %}
 
@@ -104,7 +104,7 @@ The movement of the thumb can be varied in different ways. This is achieved by s
 
 {% endtabs %}
 
-### Configure the properties for RangeSlider
+## Configure the Properties for RangeSlider
 
 {% tabs %} 
 

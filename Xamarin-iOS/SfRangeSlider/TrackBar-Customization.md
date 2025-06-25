@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Track bar in Syncfusion® RangeSlider control for Xamarin.iOS
-description: Learn how to customize the track bar  of RangeSlider control in Xamarin.iOS
+title: Track Bar Customization in Syncfusion® RangeSlider control for Xamarin.iOS
+description: Learn how to customize the track bar appearance of RangeSlider control in Xamarin.iOS
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug
 ---
 
-# TrackBar customization
+# Track Bar Customization
 
-## TrackThickness
+## Track Thickness
 
-The thickness of track bar can be customized by setting the `TrackThickness` property of SfRangeSlider.
+The thickness of the track bar can be customized by setting the `TrackThickness` property of SfRangeSlider.
 
 {% tabs %}
 
@@ -23,9 +23,9 @@ The thickness of track bar can be customized by setting the `TrackThickness` pro
 
 {% endtabs %}
 
-## TrackSelectionThickness
+## Track Selection Thickness
 
-The thickness for the selected range or selected portion of track bar can be customized by setting the `TrackSelectionThickness` property of SfRangeSlider.
+The thickness of the selected range or selected portion of the track bar can be customized by setting the `TrackSelectionThickness` property of SfRangeSlider.
 
 {% tabs %}
 
@@ -37,9 +37,9 @@ The thickness for the selected range or selected portion of track bar can be cus
 
 {% endtabs %}
 
-## TrackColor
+## Track Color
 
-The color of track bar can be customized by setting the `TrackColor` property of SfRangeSlider.
+The color of the track bar can be customized by setting the `TrackColor` property of SfRangeSlider.
 
 {% tabs %}
 
@@ -51,9 +51,9 @@ The color of track bar can be customized by setting the `TrackColor` property of
 
 {% endtabs %}
 
-## TrackSelectionColor
+## Track Selection Color
 
-The color for the selected range or selected portion of track bar can be customized by setting the `TrackSelectionColor` property of SfRangeSlider.
+The color of the selected range or selected portion of the track bar can be customized by setting the `TrackSelectionColor` property of SfRangeSlider.
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ The color for the selected range or selected portion of track bar can be customi
 
 {% endtabs %}
 
-## KnobColor
+## Knob Color
 
 The `KnobColor` property is used to change the knob color of SfRangeSlider.
 
