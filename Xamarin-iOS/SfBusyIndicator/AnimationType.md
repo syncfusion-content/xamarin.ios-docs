@@ -14,7 +14,6 @@ The `AnimationType` property for the SfBusyIndicator allows you to set one of th
 ## Setting Animation Type
 
 You can set the animation type using the `AnimationType` property as shown below:
-{% highlight C# %}
 
 {% tabs %}
 
