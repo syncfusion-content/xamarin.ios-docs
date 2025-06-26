@@ -1,10 +1,10 @@
 ---
-layout : post
-title : AutoCompleteSource mode for Syncfusion® AutoComplete control in Xamarin.iOS
-description : Learn how to use AutoCompleteSource in AutoComplete
-platform : xamarin.ios 
-control : AutoComplete
-documentation : ug
+layout: post
+title: Syncfusion® AutoComplete Source Mode for Xamarin.iOS
+description: Learn how to use AutoCompleteSource in AutoComplete control to populate items and configure data sources.
+platform: xamarin.ios 
+control: AutoComplete
+documentation: ug
 ---
 
 # Populating Items
@@ -31,7 +31,7 @@ countryAutoComplete.AutoCompleteSource=countryList;
 
 {% endtabs %}
 
-![](images/autocompletesource.png)
+![Autocomplete source options](images/autocompletesource.png)
 
 ## Through Data Binding
 
@@ -121,4 +121,4 @@ studentAutoComplete.SelectedValuePath = "Age";
 
 * The `DisplayMemberPath` determines the suggestions to be shown in the dropdown. Setting the `SelectedValuePath` property will make the `SelectedValue` property return the value you have selected.
 
-![](images/datasource.png)
+![Data source options](images/datasource.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing the Syncfusion® ComboBox control in Xamarin.iOS
-description: Learn how to customize the ComboBox
+description: Learn how to customize the ComboBox suggestion dropdown appearance, styling, and behavior in Syncfusion® SfComboBox for enhanced user experience.
 platform: xamarin.ios
 control: ComboBox
 documentation: ug

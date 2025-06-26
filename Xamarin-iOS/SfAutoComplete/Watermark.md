@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Watermark in Syncfusion® AutoComplete control for Xamarin.iOS
-description : Learn how to set the watermark in AutoComplete
-platform : xamarin.ios
-control : AutoComplete
-documentation : ug
+layout: post
+title: Watermark in Syncfusion® AutoComplete control for Xamarin.iOS
+description: Learn how to set the watermark in AutoComplete control to provide helpful placeholder text for users.
+platform: xamarin.ios
+control: AutoComplete
+documentation: ug
 ---
 
 # Watermark
@@ -17,4 +17,4 @@ countryAutoComplete.Watermark=(NSString)"Enter a country name";
 
 {% endhighlight %}
 
-![](images/watermark.png)
+![Input field with watermark text](images/watermark.png)

@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Suggestion Box Placement in Syncfusion® SfComboBox control for Xamarin.iOS
-description : Learn how to place the suggestion box in SfComboBox
-platform : xamarin.ios 
-control : ComboBox
-documentation : ug
+layout: post
+title: Syncfusion® SfComboBox Suggestion Box Placement
+description: Learn how to configure and customize the suggestion box placement in Syncfusion® SfComboBox for Xamarin.iOS applications with various positioning options.
+platform: xamarin.ios 
+control: ComboBox
+documentation: ug
 ---
 
 # Dealing with Suggestion Box
@@ -28,7 +28,7 @@ combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/bottom.png)
+![Suggestion box positioned at bottom](images/bottom.png)
 
 ## Suggestion Box Placement at Top
 
@@ -42,4 +42,4 @@ combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/top.png)
+![Suggestion box positioned at top](images/top.png)

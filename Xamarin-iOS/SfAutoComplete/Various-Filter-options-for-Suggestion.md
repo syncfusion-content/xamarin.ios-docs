@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Suggestion mode for Syncfusion® AutoComplete control in Xamarin.iOS
-description: Learn how to display suggestion mode in AutoComplete
+description: Learn how to display suggestion mode in AutoComplete control with various filter options for enhanced user experience.
 platform: xamarin.ios
 control: AutoComplete
 documentation: ug
@@ -25,7 +25,7 @@ countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSu
 
 {% endtabs %}
 
-![](images/startswith.png)
+![Filter results starting with typed text](images/startswith.png)
 
 ### Filter with Character Casing
 
@@ -41,7 +41,7 @@ countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSu
 
 {% endtabs %}
 
-![](images/startswithcasesensitive.png)
+![Filter results starting with typed text case sensitive](images/startswithcasesensitive.png)
 
 ## Words that Contain the Input Text
 
@@ -57,7 +57,7 @@ countryAutoComplete.SuggestionMode=SFAutoCompleteSuggestionMode.SFAutoCompleteSu
 
 {% endtabs %}
 
-![](images/contains.png)
+![Filter results containing typed text](images/contains.png)
 
 ### Filter with Character Casing
 
@@ -73,7 +73,7 @@ Displays the list of suggestions if the AutoComplete list contains those words w
 
 {% endtabs %}
 
-![](images/containswithcasesensitive.png)
+![Filter results containing typed text case sensitive](images/containswithcasesensitive.png)
 
 ## Words that Equal the Input Text
 
@@ -89,7 +89,7 @@ Displays the word that matches exactly.
 
 {% endtabs %}
 
-![](images/equals.png)
+![Filter results matching exact text](images/equals.png)
 
 ### Filter with Character Casing
 
@@ -105,7 +105,7 @@ Displays the word that matches exactly with case sensitivity.
 
 {% endtabs %}
 
-![](images/equalswithcasesensitive.png)
+![Filter results matching exact text case sensitive](images/equalswithcasesensitive.png)
 
 ## Words that End with Input Text
 
@@ -121,7 +121,7 @@ Displays the list of suggestions based on the ending characters.
 
 {% endtabs %}
 
-![](images/endswith.png)
+![Filter results ending with typed text](images/endswith.png)
 
 ### Filter with Character Casing
 
@@ -137,7 +137,7 @@ Displays the list of suggestions based on the ending characters with case sensit
 
 {% endtabs %}
 
-![](images/endswithcasesensitive.png)
+![Filter results ending with typed text case sensitive](images/endswithcasesensitive.png)
 
 ## Custom Filtering
 
@@ -153,4 +153,4 @@ Displays suggestions based on custom filtering logic in the SfAutoComplete contr
 
 {% endtabs %}
 
-![](images/custom.png)
+![Custom filter results](images/custom.png)

@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Multiple Selection in Syncfusion® SfAutoComplete control for Xamarin.iOS
-description : Learn how to select multiple items in SfAutoComplete
-platform : xamarin.ios
-control : AutoComplete
-documentation : ug
+layout: post
+title: Syncfusion® SfAutoComplete Multiple Selection for iOS
+description: Learn how to enable and configure multiple item selection in SfAutoComplete control to allow users to choose several options.
+platform: xamarin.ios
+control: AutoComplete
+documentation: ug
 ---
 
 # Multiple Selection
@@ -188,7 +188,7 @@ string[] CustomerNames2 = new string[]
 
 {% endtabs %}
 
-![](images/TokenRepresentationWrap.png)
+![Selected items wrapped to multiple lines](images/TokenRepresentationWrap.png)
 
 ### Token Customization
 
@@ -224,7 +224,7 @@ autoComplete.TokenSettings = token;
 {% endtabs %}
 
 
-![](images/Token_iOS.png)
+![Selected items on iOS](images/Token_iOS.png)
 
 ## Delimiter
 
@@ -241,5 +241,5 @@ countryAutoComplete.Delimiter="#";
 
 {% endtabs %}
 
-![](images/Delimiter.png)
+![Items separated by Delimiter Text](images/Delimiter.png)
 

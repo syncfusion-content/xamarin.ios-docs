@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Diacritic sensitivity in Syncfusion® SfAutoComplete control for Xamarin.iOS
-description :  Learn how to enable and disable Diacritic sensitivity in SfAutoComplete
-platform : xamarin.ios 
-control : AutoComplete
-documentation : ug
+layout: post
+title: Diacritic Sensitivity in Syncfusion® SfAutoComplete iOS
+description: Learn how to enable and disable Diacritic sensitivity in SfAutoComplete control to handle accented characters.
+platform: xamarin.ios 
+control: AutoComplete
+documentation: ug
 ---
 
 # Diacritic Sensitivity

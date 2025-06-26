@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Match Highlighting in Syncfusion® SfAutoComplete control for Xamarin.iOS
-description : Learn how to highlight the matched text in SfAutoComplete
-platform : xamarin.ios
-control : AutoComplete
-documentation : ug
+layout: post
+title: Syncfusion® SfAutoComplete Match Highlighting for iOS
+description: Learn how to enable and customize text highlighting for matched text in SfAutoComplete control to enhance user search experience.
+platform: xamarin.ios
+control: AutoComplete
+documentation: ug
 ---
 
 # Highlighting Matched Text
@@ -40,7 +40,7 @@ countryAutoComplete.AutoCompleteSource=countryList;
 
 {% endtabs %}
 
-![](images/FirstOccurrence.png)
+![First occurrence of matched text highlighted](images/FirstOccurrence.png)
 
 ## MultipleOccurrence
 
@@ -59,5 +59,5 @@ countryAutoComplete.AutoCompleteSource=countryList;
 
 {% endtabs %}
 
-![](images/MultipleOccurrence.png)
+![Multiple occurrences of matched text highlighted](images/MultipleOccurrence.png)
 

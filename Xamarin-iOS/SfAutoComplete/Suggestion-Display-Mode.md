@@ -1,10 +1,10 @@
 ---
-layout : post
-title : AutoComplete mode in Syncfusion® AutoComplete control in Xamarin.iOS
-description : Learn how to change the AutoComplete mode in AutoComplete
-platform : xamarin.ios
-control : AutoComplete
-documentation : ug
+layout: post
+title: AutoComplete mode in Syncfusion® AutoComplete control in Xamarin.iOS
+description: Learn how to change the AutoComplete mode in AutoComplete control to customize suggestion display behavior.
+platform: xamarin.ios
+control: AutoComplete
+documentation: ug
 ---
 
 # Suggestion Display Mode
@@ -61,5 +61,4 @@ countryAutoComplete.AutoCompleteMode=SFAutoCompleteAutoCompleteMode.SFAutoComple
 {% endhighlight %}
 
 {% endtabs %}
-
-![](images/autocompletemode.png)
+![Autocomplete display modes](images/autocompletemode.png)

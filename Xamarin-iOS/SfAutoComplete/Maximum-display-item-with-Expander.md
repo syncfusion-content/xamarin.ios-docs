@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Maximum Display Item with Expander in Syncfusion® SfAutoComplete control for Xamarin.iOS
-description : Learn how to restrict the number of suggestions displayed and load remaining items using LoadMore functionality in SfAutoComplete
-platform : xamarin.ios 
-control : AutoComplete
-documentation : ug
+layout: post
+title: Syncfusion® SfAutoComplete Maximum Display Item with Expander
+description: Learn how to restrict the number of suggestions displayed and load remaining items using LoadMore functionality in SfAutoComplete
+platform: xamarin.ios 
+control: AutoComplete
+documentation: ug
 ---
 
 # Maximum Display Item with Expander
@@ -38,4 +38,4 @@ countryAutoComplete.LoadMore(5);
 {% endhighlight %}
 {% endtabs %}
 
-![](images/loadmore.png)
+![Load More](images/loadmore.png)

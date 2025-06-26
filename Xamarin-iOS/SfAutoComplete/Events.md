@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Events in Syncfusion® SfAutoComplete control for Xamarin.iOS
-description :  Learn how to handle the Events in SfAutoComplete
-platform : xamarin.ios 
-control : AutoComplete
-documentation : ug
+layout: post
+title: Events in Syncfusion® SfAutoComplete control for Xamarin.iOS
+description: Learn how to handle various Events in SfAutoComplete control including selection, text changed, and suggestion events.
+platform: xamarin.ios 
+control: AutoComplete
+documentation: ug
 ---
 
 # Events
