@@ -2,7 +2,7 @@
 layout: post
 title: DropDown Height Configuration in Syncfusion® AutoComplete
 description: Learn how to set the MaximumDropDownHeight in AutoComplete control to customize the dropdown suggestion display.
-platform: Xamarin.iOS
+platform: xamarin.ios
 control: AutoComplete
 documentation: ug
 ---
