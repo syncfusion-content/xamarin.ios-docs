@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Formatting value of Value property of SfMaskedEdit control for Xamarin.iOS platform
-description: Learn how to format the characters in the Value property of SfMaskedEdit control
-platform: Xamarin.iOS
+title: Formatting Value property of Syncfusion® SfMaskedEdit Xamarin.iOS
+description: Learn how to configure Value property formatting in Syncfusion® SfMaskedEdit for Xamarin.iOS using ValueMaskFormat with prompt and literal options.
+platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
@@ -10,7 +10,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 # Formatting Value
 
-SfMaskedEdit allows you to format the characters in the `Value` property in a mask scenario (when the Mask property is set). By default, the Value property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the Value property to hold the characters without prompt and literals by setting the ValueMaskFormat property of the control. The Value in the SfMaskedEdit is formatted by any one of the following formatting enum values:
+SfMaskedEdit allows you to format the characters in the `Value` property in a mask scenario (when the Mask property is set). By default, the Value property holds your input characters, prompt characters, and the literals defined in the mask. You can modify this behavior and configure the Value property to hold characters without prompt and literals by setting the ValueMaskFormat property. The Value in SfMaskedEdit can be formatted using any of the following enum values:
 
 * ExcludePromptAndLiterals
 * IncludePrompt
@@ -91,8 +91,8 @@ private void MaskedEdit1_ValueChanged(object sender, ValueChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-Refer this [link](Events#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
+Refer to this [link](Events#valuechanged-event) to learn more about the `ValueChanged` event of SfMaskedEdit control.
 
-![](SfMaskedEditImages/valueformat.png)
+![SfMaskedEdit Value formatting examples with different mask formats](SfMaskedEditImages/valueformat.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_FormattingValue.zip).

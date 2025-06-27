@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Various Features in Syncfusion® NumericUpDown control for Xamarin.iOS
-description: Learn how to decide maximum decimal digits to be displayed, nullable value support, autoreverse, setting range and configuring step value in NumericUpDown
+title: AutoReverse in Syncfusion® NumericUpDown for Xamarin.iOS
+description: Learn how to decide maximum decimal digits to be displayed, nullable value support, autoreverse, setting range and configuring step value in SfNumericUpDown
 platform: xamarin.ios
-control: NumericUpDown
+control: SfNumericUpDown
 documentation: ug
 ---
-# AutoReverse in NumericUpDown
+# AutoReverse in SfNumericUpDown
 
-While incrementing, the control will start from Minimum once it reaches the Maximum and vice-versa.
+When incrementing, the control will start from the Minimum value once it reaches the Maximum value, and vice versa.
 
-N> By default the property value is false.
+N> By default, the property value is false.
 
 {% highlight C# %}
 
@@ -22,9 +22,9 @@ numeric.AutoReverse = true;
 
 ## Continuous Spinning Between Ranges
 
-User can restrict the Values between a specific range by setting `Maximum` and `Minimum` property value.
+You can restrict the values within a specific range by setting the `Maximum` and `Minimum` property values.
 
-N> By default the minimum property value is 0 and maximum property value is 100.
+N> By default, the minimum property value is 0 and the maximum property value is 100.
 
 {% highlight C# %}
 
@@ -36,15 +36,15 @@ numeric.Maximum = 50
 
 {% endhighlight %}
 
-![Display the NumericUpDown with maximum range](images/maximum.png)
+![Display the SfNumericUpDown with maximum range](images/maximum.png)
 
-![Display the NumericUpDown with minimum range](images/minimum.png)
+![Display the SfNumericUpDown with minimum range](images/minimum.png)
 
 ## Set Increment
 
-Frequency in which values gets incremented can be decided using `StepValue` property.
+The frequency at which values are incremented can be configured using the `StepValue` property.
 
-N> By default the property value is 1.
+N> By default, the property value is 1.
 
 {% highlight C# %}
 

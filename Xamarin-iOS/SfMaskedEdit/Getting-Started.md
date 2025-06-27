@@ -5,17 +5,16 @@ description: A quick tour to initial users on Syncfusion® SfMaskedEdit control 
 platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug
-documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
 
 # Getting Started
 
-This section explains you the steps required to configure a SfMaskedEdit control in a real-time scenario and provides a walk-through on some of the customization features available in `SfMaskedEdit` control.
+This section explains the steps required to configure a SfMaskedEdit control in a real-time scenario and provides a walkthrough of some of the customization features available in `SfMaskedEdit` control.
 
 ## Reference Essential Studio<sup>®</sup> components in your solution
 
-Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add masked edit to your project, open the NuGet package manager in Visual Studio, and search for "[Syncfusion.Xamarin.SfMaskedEdit.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.IOS)", and then install it. 
+Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfMaskedEdit to your project, open the NuGet package manager in Visual Studio, and search for "[Syncfusion.Xamarin.SfMaskedEdit.IOS](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaskedEdit.IOS)", and then install it.
 
 ![Xamarin.iOS Masked Edit NuGet](SfMaskedEditImages/nuget.png)
 
@@ -81,9 +80,8 @@ maskedEdit.Mask = "00/00/0000";
 {% endhighlight %}
 {% endtabs %}
 
-This mask expression allows only numeric inputs in the places of 0.
-Refer to this [link](MaskType) to know more about the Mask characters and Mask Types available in SfMaskedEdit control.
-Run the project and check if you get the following output to make sure that you have configured your project properly to add `SfMaskedEdit`.
+This mask expression allows only numeric inputs in the positions marked with 0. Refer to this [link](MaskType) to learn more about the Mask characters and Mask Types available in SfMaskedEdit control.
+Run the project and verify that you get the following output to ensure that you have configured your project properly to add `SfMaskedEdit`.
 
 ![Xamarin.iOS Masked Edit](SfMaskedEditImages/maskinginput.png)
 
