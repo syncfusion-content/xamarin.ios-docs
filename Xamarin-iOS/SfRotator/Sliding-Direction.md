@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sliding Direction in Syncfusion® Rotator Control for Xamarin.iOS
-description: Learn how to set the navigation direction in Rotator control for Xamarin.iOS platform
+description: Learn how to configure sliding direction in Syncfusion® Xamarin.iOS Rotator control with horizontal, vertical, and directional navigation options.
 platform: xamarin.ios
 control: SfRotator
 documentation: ug

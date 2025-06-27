@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling in Syncfusion® Rating Control for Xamarin.iOS
-description: Learn how to change the appearance and styling of Rating control for Xamarin.iOS platform
+description: Learn how to change the appearance and styling properties of Rating control for Xamarin.iOS platform with customization options
 platform: xamarin.ios
 control: SfRating
 documentation: ug

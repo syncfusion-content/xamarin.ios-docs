@@ -2,7 +2,7 @@
 
 layout: post
 title: Range Selection in Syncfusion® SfRating for Xamarin.iOS
-description: Learn how to perform range selection with custom views in the Rating control
+description: Learn how to enable range selection with custom views in Syncfusion® Xamarin.iOS Rating control using EnableViewRangeSelection property.
 platform: xamarin.ios
 control: Rating
 documentation: ug

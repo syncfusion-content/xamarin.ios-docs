@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Syncfusion® RangeSlider control for Xamarin.iOS
-description: This section provides details about how to handle events in RangeSlider control for Xamarin.iOS
+description: This section provides comprehensive how-to guides for implementing SfRangeSlider features, styling, and event handling
 platform: xamarin.ios
 control: RangeSlider 
 documentation: ug

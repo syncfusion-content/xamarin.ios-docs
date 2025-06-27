@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview in SfCheckBox for Xamarin.iOS platform
-description: Learn how to customize the basic features of SfCheckBox
-platform: Xamarin.iOS
+title: Overview in Syncfusion® SfCheckBox for Xamarin.iOS
+description: Learn how to customize the basic features of SfCheckBox including styling, states, and interactive behaviors
+platform: xamarin.ios
 control: SfCheckBox
 documentation: ug 
 keywords: button, SfCheckBox, CheckBox

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Track Bar Customization in Syncfusion® RangeSlider control for Xamarin.iOS
-description: Learn how to customize the track bar appearance of RangeSlider control in Xamarin.iOS
+title: Syncfusion® RangeSlider Track Bar Customization Guide
+description: Learn how to customize the track bar appearance, colors, and visual styling of SfRangeSlider control in Xamarin.iOS
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug

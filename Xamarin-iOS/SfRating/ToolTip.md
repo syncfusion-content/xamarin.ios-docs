@@ -2,7 +2,7 @@
 
 layout: post
 title: ToolTip in Syncfusion® Rating control for Xamarin.iOS
-description: Learn how to configure and customize the ToolTip in the Rating control
+description: Learn how to configure and customize ToolTip in Syncfusion® Xamarin.iOS Rating control including placement options and precision settings.
 platform: xamarin.ios
 control: Rating
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion® Rotator Control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion® Rotator control for Xamarin.iOS platform
+description: Learn how to get started with Syncfusion® Xamarin.iOS Rotator control through step-by-step configuration and customization guide.
 platform: xamarin.ios 
 control: SfRotator
 documentation: ug

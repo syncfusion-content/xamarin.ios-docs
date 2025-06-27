@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Precision Mode in Syncfusion® Rating Control for Xamarin.iOS
-description: Learn how to change the precision mode of Rating control for Xamarin.iOS platform
+description: Learn how to configure precision modes (Standard, Half, Exact) in Syncfusion® Rating control for Xamarin.iOS to control rating accuracy levels.
 platform: xamarin.ios
 control: SfRating
 documentation: ug

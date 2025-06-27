@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion® RangeSlider control for Xamarin.iOS
-description: Overview and key features of RangeSlider control
+description: Overview and key features of SfRangeSlider control including customization options, states, and interactive capabilities
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug

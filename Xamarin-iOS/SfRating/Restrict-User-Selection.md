@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restrict User Selection in Syncfusion® Rating control for Xamarin.iOS
-description: Learn how to restrict user selection in the Rating control by making it read-only
+description: Learn how to restrict user selection in Syncfusion® Xamarin.iOS Rating control using the ReadOnly property to prevent rating modifications.
 platform: xamarin.ios
 control: Rating
 documentation: ug

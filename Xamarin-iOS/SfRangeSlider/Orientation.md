@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Orientation in Syncfusion® RangeSlider control for Xamarin.iOS
-description: Learn how to set the orientation of the RangeSlider control to horizontal or vertical
+description: Learn how to set and customize the orientation and layout positioning of SfRangeSlider control in your application
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug

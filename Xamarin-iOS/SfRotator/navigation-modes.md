@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation Modes of Syncfusion® Rotator Control for Xamarin.iOS
-description: Learn how to view the different navigation modes of the Rotator control in Xamarin.iOS
+description: Learn how to configure navigation modes (Thumbnail, Dots) and strip positions in Syncfusion® Xamarin.iOS Rotator control for image navigation.
 platform: xamarin.ios
 control: SfRotator
 documentation: ug

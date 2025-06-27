@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip Support for Syncfusion® RangeSlider control for Xamarin.iOS
-description: Learn how to configure and customize tooltips for RangeSlider in Xamarin.iOS
+description: Learn how to implement and customize tooltips for SfRangeSlider control with various display options and styling configurations
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug

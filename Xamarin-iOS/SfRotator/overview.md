@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion® Rotator Control for Xamarin.iOS
-description: Overview and key features for Rotator control
+description: Learn about Syncfusion® Xamarin.iOS Rotator control that displays and navigates images with thumbnail or dots navigation modes and customizable features.
 platform: xamarin.ios
 control: SfRotator
 documentation: ug

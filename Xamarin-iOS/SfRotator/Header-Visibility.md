@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Visibility in Syncfusion® Rotator Control for Xamarin.iOS
-description: Learn how to control text area visibility in Rotator control for Xamarin.iOS platform
+description: Discover how to manage header visibility and text panel display in Syncfusion® Xamarin.iOS Rotator control to show additional item details.
 platform: xamarin.ios
 control: SfRotator
 documentation: ug

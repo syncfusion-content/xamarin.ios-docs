@@ -2,7 +2,7 @@
 
 layout: post
 title: Overview of Syncfusion® Rating Control for Xamarin.iOS
-description: This explains the overview and key features of Syncfusion® Essential® Xamarin.iOS Rating Control.
+description: Learn about Syncfusion® Essential® Xamarin.iOS Rating Control that provides customizable star ratings with flexible precision and spacing options.
 platform: xamarin.ios
 control: SfRating
 documentation: ug
