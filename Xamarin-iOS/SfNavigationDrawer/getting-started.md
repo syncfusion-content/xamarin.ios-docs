@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Xamarin.iOS NavigationDrawer control| Syncfusion® 
+title: Getting Started with Xamarin.iOS NavigationDrawer control | Syncfusion®
 description: Learn here about getting started with Syncfusion® Essential Studio® Xamarin.iOS NavigationDrawer control, its elements, and more.
 platform: xamarin.ios
 control: NavigationDrawer
@@ -9,21 +9,21 @@ documentation: ug
 
 # Getting Started with Xamarin.iOS NavigationDrawer
 
-This section provides overview for working with Essential<sup>®</sup> NavigationDrawer for Xamarin.iOS. You can walk through the entire process of creating an NavigationDrawer.
+This section provides an overview for working with Essential® NavigationDrawer for Xamarin.iOS. You can walk through the entire process of creating a NavigationDrawer control.
 
-## Referencing Essential Studio<sup>®</sup> Components in Your Solution
-
-After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders,
+## Assembly References
+After installing Essential Studio® for Xamarin, you can find all the required assemblies in the installation folders:
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
-Add the following assembly references to the iOS project,
+Add the following assembly reference to the iOS project:
 
 android\Syncfusion.SfNavigationDrawer.iOS.dll
 
 ## Add SfNavigationDrawer
 
-* Adding namespace for the added assemblies. 
+### Adding Namespace
+Add the namespace for the included assemblies:
 
 {% tabs %}
 
@@ -111,8 +111,7 @@ The main view of the NavigationDrawer can be set using `ContentView` property wi
 
 ## Add Drawer Content
 
-The sliding main content of the NavigationDrawer which is a part of DrawerPanel can be set using `DrawerContentView` property with desired views.
-
+The sliding drawer content of the NavigationDrawer can be configured using the `DrawerContentView` property. This typically contains navigation menu items.
 {% tabs %}
 
 {% highlight c# %}

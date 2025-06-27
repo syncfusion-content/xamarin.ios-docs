@@ -1,15 +1,15 @@
 ---
 layout : post
-title : Suggestion mode for Syncfusion® SfComboBox Control in Xamarin.iOS
-description : Learn how to display suggestion mode in ComboBox
+title : Filtering options for Syncfusion® SfComboBox Control in Xamarin.iOS
+description : Learn how to configure various filter options for suggestions in ComboBox
 platform : xamarin.ios
 control : SfComboBox
 documentation : ug
 ---
 
-# Various filter options for suggestion
+# Various Filter Options for Suggestions
 
-The combo box enables filer option for filtering the suggestions in the drop-down. 
+The ComboBox control provides filtering options to filter suggestions displayed in the dropdown list.
 
 {% tabs %}
 
@@ -22,32 +22,25 @@ The combo box enables filer option for filtering the suggestions in the drop-dow
 
 {% endtabs %}
 
-## Types Of filtering
+## Types of Filtering
 
-The phenomenon of string comparison for filtering suggestions can be changed using the `SuggestionMode `property. The default filtering strategy is `StartsWith` and it is case insensitive. The available filtering modes are,
+The string comparison method for filtering suggestions can be configured using the `SuggestionMode` property. The default filtering strategy is `StartsWith` and it is case insensitive. The available filtering modes are:
 
-*	StartsWith
+* StartsWith
+* StartsWithCaseSensitive
+* Contains
+* ContainsWithCaseSensitive
+* Equals
+* EqualsWithCaseSensitive
+* EndsWith
+* EndsWithCaseSensitive
+* Custom
 
-*	StartsWithCaseSensitive
+## StartsWith Mode
 
-*	Contains
+### Words that start with input text
 
-*	ContainsWithCaseSensitive
-
-*	Equals
-
-*	EqualsWithCaseSensitive
-
-*	EndsWith
-
-*	EndsWithCaseSensitive
-
-*	Custom
-
-
-## Words that starts with input text
-
-Displays a list of suggestions based on the starting letter.
+Displays a list of suggestions based on items that start with the entered text.
 
 {% tabs %}
 
@@ -59,12 +52,11 @@ Displays a list of suggestions based on the starting letter.
 
 {% endtabs %}
 	
-![](images/startswith.png)
+![StartsWith filtering example](images/startswith.png)
 
-### Filter with character casing
+### Case-sensitive filtering
 
-Displays a list of suggestions based on the starting letter with case sensitive.
-
+Displays a list of suggestions based on items that start with the entered text, with case-sensitive matching.
 {% tabs %}
 
 {% highlight C# %}
@@ -75,11 +67,12 @@ Displays a list of suggestions based on the starting letter with case sensitive.
 
 {% endtabs %}
 	
-![](images/startswithcasesensitive.png)
+![StartsWith case-sensitive filtering example](images/startswithcasesensitive.png)
 
-## Words that contain the input text
+## Contains Mode
+### Words that contain the input text
 
-Displays a list of suggestions if the combo box list contains that words.
+Displays a list of suggestions if the ComboBox items contain the entered text.
 
 {% tabs %}
 
@@ -91,12 +84,11 @@ Displays a list of suggestions if the combo box list contains that words.
 
 {% endtabs %}
 	
-![](images/contains.png)
+![Contains filtering example](images/contains.png)
 
-### Filter with character casing
+### Case-sensitive filtering
 
-Displays a list of suggestions if the combo box list contains that words with case sensitive.
-
+Displays a list of suggestions if the ComboBox items contain the entered text, with case-sensitive matching.
 {% tabs %}
 
 {% highlight C# %}
@@ -107,11 +99,12 @@ Displays a list of suggestions if the combo box list contains that words with ca
 
 {% endtabs %}
 	
-![](images/containswithcasesensitive.png)
+![Contains case-sensitive filtering example](images/containswithcasesensitive.png)
 
-## Words that equals to  input text
+## Equals Mode
+### Words that equal the input text
 
-Displays the word that matches the input text.
+Displays suggestions that exactly match the entered text.
 
 {% tabs %}
 
@@ -123,12 +116,11 @@ Displays the word that matches the input text.
 
 {% endtabs %}
 	
-![](images/equals.png)
+![Equals filtering example](images/equals.png)
 
-### Filter with character casing
+### Case-sensitive filtering
 
-Displays the word that matches the input text with case sensitive.
-
+Displays suggestions that exactly match the entered text, with case-sensitive matching.
 {% tabs %}
 
 {% highlight C# %}
@@ -139,11 +131,12 @@ Displays the word that matches the input text with case sensitive.
 
 {% endtabs %}
 	
-![](images/equalswithcasesensitive.png)
+![Equals case-sensitive filtering example](images/equalswithcasesensitive.png)
 
-## Words that ends with input text
+## EndsWith Mode
+### Words that end with input text
 
-Displays a list of suggestions based on the ending word.
+Displays a list of suggestions based on items that end with the entered text.
 
 {% tabs %}
 
@@ -155,12 +148,11 @@ Displays a list of suggestions based on the ending word.
 
 {% endtabs %}
 	
-![](images/endswith.png)
+![EndsWith filtering example](images/endswith.png)
 
-### Filter with character casing
+### Case-sensitive filtering
 
-Displays a list of suggestions based on the ending word with case sensitive.
-
+Displays a list of suggestions based on items that end with the entered text, with case-sensitive matching.
 {% tabs %}
 
 {% highlight C# %}
@@ -171,12 +163,11 @@ combobox.SuggestionMode = SuggestionMode.EndsWithCaseSensitive;
 
 {% endtabs %}
 	
-![](images/endswithcasesensitive.png)
+![EndsWith case-sensitive filtering example](images/endswithcasesensitive.png)
 
+## Custom Filter Mode
 
-### Custom filter
-
-Displays a list of suggestions based on the custom words in the combo box.
+Enables custom filtering logic for displaying suggestions based on your specific requirements.
 {% tabs %}
 
 {% highlight C# %}
@@ -187,6 +178,7 @@ combobox.SuggestionMode = SuggestionMode.Custom;
 
 {% endtabs %}
 	
+
 
 
 

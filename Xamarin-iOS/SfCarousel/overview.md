@@ -1,21 +1,26 @@
 ---
 layout: post
 title: Overview of Syncfusion® Carousel control for Xamarin.iOS
-description: This section provides the details about the Overview of the Carousel control key features for Xamarin.iOS
+description: This section provides an overview of the key features of the Syncfusion® Carousel control for Xamarin.iOS
 platform: xamarin.ios
 control: Carousel
 documentation: ug
 ---
 
-# Overview With SfCarousel
+# SfCarousel Overview
 
-SfCarousel control is one of the patterns for browsing a small collection of featured products. The viewer is able to view several images of products across a row, and they can swipe horizontally across the row to navigate to the next set of products. They provide a 2-D interface for displaying objects with interactive navigation. It also works for a wide variety of device sizes and screen resolutions.
-
+The SfCarousel control is a versatile pattern for browsing small collections of featured content. Users can view multiple images or items arranged in a row and swipe horizontally to navigate through different sets of content. The control provides a 2D interface for displaying objects with smooth, interactive navigation that adapts to various device sizes and screen resolutions.
 ![The Carousel](images/carousel.png)
 
-Key Features:
+## Key Features
 
-* `Offset` - It is used to specify the space between the un selected items in SfCarousel.
-* `Rotation Angle` - It is used to rotate all the items to a specified angle.
-* `Duration` - It is used to specify the time taken to move an item to the selected item position.
+The SfCarousel control offers the following key features:
 
+### Offset
+Specifies the spacing between unselected items in the carousel. This property allows you to control the visual separation between carousel items for better presentation.
+
+### Rotation Angle
+Allows rotation of all items to a specified angle, enhancing the visual effect of the carousel.
+
+### Duration
+Determines the time taken for an item to move to the selected position, enabling you to adjust the transition speed for carousel interactions.

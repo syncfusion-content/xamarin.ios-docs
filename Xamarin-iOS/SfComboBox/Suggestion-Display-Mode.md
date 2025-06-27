@@ -1,15 +1,15 @@
 ---
 layout : post
-title : ComboBoxMode mode for Syncfusion® ComboBox control in Xamarin.iOS
-description : Learn how to change the ComboBoxMode in SfComboBox 
+title : ComboBoxMode for Syncfusion® ComboBox control in Xamarin.iOS
+description : Learn how to change the ComboBoxMode in SfComboBox for different suggestion display patterns
 platform : xamarin.ios
 control : SfComboBox
 documentation : ug
 ---
 
-# Suggestion display mode
+# Suggestion Display Mode
 
-The `ComboBoxMode` property is used to decide the suggestion pattern for displaying the dropdown list according to the text entered. The different types of patterns are, described below
+The `ComboBoxMode` property determines how suggestions are displayed in the dropdown list based on the text entered by the user. The different types of patterns are described below:
 
 * Suggest
 
@@ -19,9 +19,9 @@ The `ComboBoxMode` property is used to decide the suggestion pattern for display
 
 N> The default option is suggest mode.
 
-## Suggest in drop-down 
+## Suggest Mode
 
-* Suggest - Displays suggestions in the drop-down.
+The **Suggest** mode displays matching suggestions in the dropdown list.
 
 {% tabs %}
 
@@ -33,11 +33,11 @@ combobox.ComboBoxMode = ComboBoxMode.Suggest;
 
 {% endtabs %}
 
-![](images/suggest.png)
+![Suggest mode example](images/suggest.png)
 
-## Append
+## Append Mode
 
-* Append - Appends the first matching string with the entered character.
+The **Append** mode automatically appends the first matching string to the entered text.
 
 {% tabs %}
 
@@ -49,12 +49,11 @@ combobox.ComboBoxMode = ComboBoxMode.Append;
 
 {% endtabs %}
 
-![](images/append.png)
+![Append mode example](images/append.png)
 
-## Both append and suggest in drop-down
-	
-* SuggestAppend - Displays suggestions in the drop-down along with appending the first matching string.
+## Suggest and Append Mode
 
+The **SuggestAppend** mode combines both behaviors: it displays suggestions in the dropdown while also appending the first matching string to the entered text.
 {% tabs %}
 
 {% highlight C# %}
@@ -65,5 +64,4 @@ combobox.ComboBoxMode = ComboBoxMode.SuggestAppend;
 
 {% endtabs %}
 
-![](images/suggestappend.png)
- 
+![SuggestAppend mode example](images/suggestappend.png)

@@ -7,13 +7,13 @@ control : ComboBox
 documentation : ug
 ---
 
-# Populating items
+# Populating Items
 
-The combo box control, supports binding to different data sources such as IList Data Source and Observable Collection Data Source. 
+The ComboBox control supports binding to different data sources such as IList Data Source and Observable Collection Data Source.
 
-## Using combo box source item 
+## Using ComboBox Source Item
 
-* The ComboBoxSource property in the SfComboBox control is used to set the list of strings to the dropdown list.
+* The `ComboBoxSource` property in the SfComboBox control is used to set the list of strings for the dropdown list.
 
 {% tabs %}
 
@@ -36,11 +36,11 @@ combobox.ComboBoxSource = countryList;
 
 ![](images/ComboBoxsource.png)
 
-## Using binding
+## Using Data Binding
 
-DataSource is a collection of SfComboBox items which is capable of holding any objects and displaying the items based on the provided `DisplayMemberPath` value. 
+DataSource is a collection of SfComboBox items that can hold any objects and display the items based on the provided `DisplayMemberPath` value.
 
-To populate items using data source, create a model class with the properties that to be bound. 
+To populate items using a data source, create a model class with the properties to be bound.
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ public string getEmployee_ID()
 
 {% endtabs %}
 
-* Create student collection using student class and assign the collection to the DataSource property of SfComboBox
+* Create an Employee collection using the Employee class and assign the collection to the DataSource property of SfComboBox.
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ void GetEmployeeData()
 
 {% endtabs %}
 
-* Here student collection has two properties. So you should intimate by which property it should filter suggestions, it must provide the drop-down list. In this case, make the control to provide suggestions based on Name.
+* Since the Employee collection has two properties, you need to specify which property should be used to filter suggestions and provide the dropdown list. In this case, configure the control to provide suggestions based on the Name property.
 
 {% tabs %}
 
@@ -140,6 +140,6 @@ combobox.DataSource = EmployeeDetails;
 
 {% endtabs %}
 
-* `DisplayMemberPath` decides the suggestions to be shown in dropdown. Setting the `SelectedValuePath` property makes the `SelectedValue` property to return the value you have selected here. 
+* The `DisplayMemberPath` determines the suggestions to be shown in the dropdown. Setting the `SelectedValuePath` property makes the `SelectedValue` property return the value you have selected.
 
 ![](images/datasource.png)

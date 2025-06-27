@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion® ComboBox control for Xamarin.iOS
-description: Overview and key features of combobox control
+description: Overview and key features of ComboBox control
 platform: xamarin.ios
 control: ComboBox
 documentation: ug
@@ -9,26 +9,24 @@ documentation: ug
 
 # Overview
 
-The combo box control allows users to choose an option from the list of predefined options. When the arrow icon accompanied with this component is pressed, the drop-down displays a list of values, from which users can select an option. 
+The ComboBox control allows users to choose an option from a list of predefined options. When the arrow icon accompanying this component is pressed, the dropdown displays a list of values from which users can select an option.
 
 ![](images/overview.png)
 
 ## Key Features
 
-* `ComboBox Mode` - Provides an option to select an item from the drop-down list by either editing or non-editing the combobox textbox.
+* **ComboBox Mode** - Provides an option to select an item from the dropdown list by either editing or non-editing the ComboBox text box.
 
-* `Suggestion Mode` - Suggestions can be displayed in eight different modes, such as StartsWith, EndWith, Contains, Equals, etc.
+* **Suggestion Mode** - Suggestions can be displayed in eight different modes, such as StartsWith, EndsWith, Contains, Equals, etc.
 
-* `Multiple Selection` - Provides two different ways to select multiple items from the dropdown list using token representation and delimiter. 
+* **Multiple Selection** - Provides two different ways to select multiple items from the dropdown list using token representation and delimiter.
 
-* `Filtering` - Provides options to support both filtering and non-filtering suggestion list. The combo box provides three different ways to display the filtered suggestions. They displays suggestions using the drop-down list, appends the first suggestion to text and both of these.
+* **Filtering** - Provides options to support both filtering and non-filtering suggestion lists. The ComboBox provides three different ways to display the filtered suggestions: displaying suggestions using the dropdown list, appending the first suggestion to text, and both of these combined.
 
-* `Header and Footer` - Header and footer content can be given in the top and bottom of the dropdown list. 
+* **Header and Footer** - Header and footer content can be added to the top and bottom of the dropdown list.
 
-* `Highlighting Text` - Highlights the matching text in the dropdown list based on the input. 
+* **Text Highlighting** - Highlights the matching text in the dropdown list based on the input.
 
-* `Customization support` - Provides options to customize both the Entry and dropdown. 
+* **Customization Support** - Provides options to customize both the entry field and dropdown.
 
-* `Watermark` – Supports explanatory text inside the combo box control until users inputs the text. Watermark is restored again if user clears the text.
-
-
+* **Watermark** – Supports explanatory text inside the ComboBox control until users input text. The watermark is restored if the user clears the text.
