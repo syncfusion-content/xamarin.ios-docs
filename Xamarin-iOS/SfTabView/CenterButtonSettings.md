@@ -7,9 +7,9 @@ control: TabView
 documentation: ug
 ---
 
-# CenterButtonSettings
+# CenterButton Settings
 
-This section explains on how to create and customize The Xamarin.Android SfTabView CenterButton. To enable CenterButton we need to set the `OverFlowMode` of Xamarin.Android SfTabView as `CenterButton`.
+This section explains how to create and customize the CenterButton in the Xamarin.iOS SfTabView control. To enable the CenterButton, you need to set the `OverflowMode` of the SfTabView to `CenterButton`.
 
 {% tabs %}
 

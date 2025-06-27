@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Display mode | SfSegmentedControl | Xamarin.iOS | Syncfusion®
-description: How to display segmented items in segmented control
+title: Display Mode | SfSegmentedControl | Xamarin.iOS | Syncfusion®
+description: Learn how to display segmented items in different modes in Segmented Control
 platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
 ---
 
-# Display mode
+# Display Mode
 
-Depending on application, different scenarios may be needed for effective communication. The segmented control supports the following three options: icons, text, and a combination of both.
+Depending on the application, different scenarios may be needed for effective communication. The Segmented Control supports the following three options: icons, text, and a combination of both.
 
 ## Text
 
-Items populated in the segmented control will be displayed as text by default.
+Items populated in the Segmented Control will be displayed as text by default.
 
 {% highlight c# %}
 public override void ViewDidLoad()
@@ -50,7 +50,7 @@ public override void ViewDidLoad()
 
 ## Image 
 
-Items populated in the segmented control can be displayed as icons.
+Items populated in the Segmented Control can be displayed as icons.
 
 {% highlight c# %}
 ObservableCollection<SfSegmentItem> ImageTextCollection;
@@ -175,5 +175,5 @@ segmentItem.FontIconFont = customFontFamily;
 **Adding font file in project**
 
 1. Add the font file inside the `Resource` folder.
-2. Set font file build action to `BundleResource`.
-3. Update the `Info.plist` file (fonts that are provided by application, UIAppFonts, or key).
+2. Set the font file build action to `BundleResource`.
+3. Update the `Info.plist` file (fonts that are provided by application, UIAppFonts, or key).

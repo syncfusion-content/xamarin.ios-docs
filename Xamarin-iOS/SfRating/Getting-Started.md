@@ -1,10 +1,10 @@
 ---
 
 layout: post
-title: Getting Started with Syncfusion® Rating control for Xamarin.iOS
+title: Getting Started with Syncfusion® Rating Control for Xamarin.iOS
 description: Learn here about getting started with Syncfusion® Essential® Xamarin.iOS Rating Control, its elements, features, and more.
 platform: xamarin.ios
-control: Rating
+control: SfRating
 documentation: ug
 
 ---
@@ -15,11 +15,11 @@ This section explains how to configure the SfRating control in a real-time scena
 
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
-After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders,
+After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the required assemblies in the installation folders:
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
-Add the following assembly references to the iOS unified project,
+Add the following assembly references to the iOS unified project:
 
 iOS-unified\Syncfusion.SfRating.iOS.dll
 
@@ -57,11 +57,11 @@ iOS-unified\Syncfusion.SfRating.iOS.dll
 
 {% endtabs %}
 
-## Set number of rating items
+## Set Number of Rating Items
 
 The number of rating items to be displayed can be customized in the SfRating control. Users can create a rating application with 5 rating items as follows.
 
-N> The default value of this property is 5.
+> **Note:** The default value of this property is 5.
 
 {% tabs %}
 
@@ -73,11 +73,11 @@ N> The default value of this property is 5.
 
 {% endtabs %}
 
-## SetValue
+## Set Value
 
-Display value can be set in SfRating control which is selected among the items. The following example shows the display value of 3 with 5 rating items. 
+The display value can be set in the SfRating control which is selected among the items. The following example shows the display value of 3 with 5 rating items.
 
-N> By default, property value is 0.
+> **Note:** By default, the property value is 0.
 
 {% tabs %}
 
@@ -89,6 +89,6 @@ N> By default, property value is 0.
 
 {% endtabs %}
 
-![Rating application using SFRating](images/gettingstarted.png)
+![Rating Application Using SfRating](images/gettingstarted.png)
 
 Please find the sample from this link: [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted1345326680.zip).

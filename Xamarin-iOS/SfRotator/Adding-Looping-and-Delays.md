@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Various features in Syncfusion® Rotator control for Xamarin.iOS
-description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Android 
+title: Various Features in Syncfusion® Rotator Control for Xamarin.iOS
+description: Learn how to set the autoplay option, loop the items, enable text area and choose the navigation direction in Rotator control for Xamarin.iOS
 platform: xamarin.ios
-control: Rotator
+control: SfRotator
 documentation: ug
 ---
 
 # Adding Looping and Delays
 
-Looping and delay can be enabled in SfRotator control and also we can customize the Text and Navigation direction.
+Looping and delay can be enabled in the SfRotator control. You can also customize the text and navigation direction.
 
 ## Toggle AutoPlay
 
-The `EnableAutoPlay` property specifies whether the items should navigate automatically based on `NavigationDelay` property, when the property value is set to true.
+The `EnableAutoPlay` property specifies whether the items should navigate automatically based on the `NavigationDelay` property when the property value is set to true.
 
-N> By default, the property value is set to false.
+> **Note:** By default, the property value is set to false.
 
 {% tabs %}
 
@@ -29,9 +29,9 @@ N> By default, the property value is set to false.
 
 ## Set Navigation Delay
 
-The `NavigationDelay` property specifies the duration to delay the switch to next navigation item, when `EnableAutoPlay` property is enabled.
+The `NavigationDelay` property specifies the duration to delay the switch to the next navigation item when the `EnableAutoPlay` property is enabled.
 
-N> The property value should be in milliseconds.
+> **Note:** The property value should be in milliseconds.
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ N> The property value should be in milliseconds.
 
 ## Looping Items
 
-The `EnableLooping` property specifies whether the items should navigate to first item once it reaches the last item and vice-versa.
+The `EnableLooping` property specifies whether the items should navigate to the first item once it reaches the last item and vice versa.
 
 {% tabs %}
 

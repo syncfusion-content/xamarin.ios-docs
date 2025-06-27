@@ -9,11 +9,11 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Getting Started Xamarin.iOS Checkbox (SfCheckbox)
-This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfCheckBox` control.
+# Getting Started with Xamarin.iOS CheckBox (SfCheckBox)
+This section explains the steps required to configure the `SfCheckBox` control in a real-time scenario and provides a walk-through on some of the customization features available in the `SfCheckBox` control.
 
 ## Add SfCheckBox reference
-Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add checkbox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.IOS)", and then install it. 
+Syncfusion® Xamarin components are available in [nuget.org](https://www.nuget.org/). To add CheckBox to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.IOS)", and then install it.
 
 ![Xamarin.iOS CheckBox NuGet](Images/nuget.png)
 
@@ -22,7 +22,7 @@ N>Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial s
 ## Create a Simple SfCheckBox
 The `SfCheckBox` control is configured entirely in C# code. The following steps explain how to create a `SfCheckBox` and configure its elements:
 
-### Add namespace for referred assemblies
+### Add namespace for referenced assemblies
 
 {% tabs %}
 {% highlight c# %}
@@ -30,7 +30,7 @@ using Syncfusion.iOS.Buttons;
 {% endhighlight %}
 {% endtabs %}
 
-### Refer SfCheckBox control with declared suffix name for Namespace
+### Reference SfCheckBox control with declared suffix name for Namespace
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ namespace CheckBox_Sample
 {% endtabs %}
 
 ## Setting caption
-The check box caption can be defined using the `SetTitle` method of `SfCheckBox`. This caption normally describes the meaning of the check box and it displays next to check box.
+The CheckBox caption can be defined using the `SetTitle` method of `SfCheckBox`. This caption normally describes the meaning of the CheckBox and displays next to the CheckBox.
 
 {% tabs %}
 {% highlight c# %}
@@ -78,7 +78,8 @@ checkBox.SetTitle("CheckBox",UIControlState.Normal);
 
 ![Xamarin.iOS CheckBox caption text](Images/Caption.png) 
 
-## Change the check box state
+## Change the CheckBox state
+
 The three visual states of `SfCheckBox` are: 
 
 * Checked
@@ -87,7 +88,7 @@ The three visual states of `SfCheckBox` are:
 
 ![Xamarin.iOS CheckBox visual states](Images/States.png) 
 
-You can change the state of the check box using the `IsChecked` property of `SfCheckBox`. In checked state, a tick mark is added to the visualization of check box.
+You can change the state of the CheckBox using the `IsChecked` property of `SfCheckBox`. In the checked state, a tick mark is added to the visualization of the CheckBox.
 
 <table>
 <tr>
@@ -103,7 +104,7 @@ You can change the state of the check box using the `IsChecked` property of `SfC
 </tr>
 <tr>
 <td>
-checked
+Checked
 </td>
 <td>
 IsChecked
@@ -114,7 +115,7 @@ true
 </tr>
 <tr>
 <td>
-unchecked
+Unchecked
 </td>
 <td>
 IsChecked
@@ -125,7 +126,7 @@ false
 </tr>
 <tr>
 <td>
-indeterminate
+Indeterminate
 </td>
 <td>
 IsChecked
@@ -136,9 +137,9 @@ null
 </tr>
 </table>
 
-N>For the check box, to report the indeterminate state, set the `IsThreeState` property to true.
+N>For the CheckBox to report the indeterminate state, set the `IsThreeState` property to true.
 
-Check box can be used as a single or as a group. A single check box mostly used for a binary yes/no choice, such as "Remember me?", login scenario, or a terms of service agreement.
+CheckBox can be used as a single control or as a group. A single CheckBox is mostly used for a binary yes/no choice, such as "Remember me?", login scenario, or a terms of service agreement.
 
 {% tabs %}
 {% highlight c# %}
@@ -150,7 +151,7 @@ checkBox.IsChecked = true;
 
 ![Xamarin.iOS CheckBox tri-state](Images/Agree.png)
 
-Multiple check boxes can be used as a group for multi-select scenarios in which a user chooses one or more items from the group of choices that are not mutually exclusive.
+Multiple CheckBoxes can be used as a group for multi-select scenarios in which a user chooses one or more items from the group of choices that are not mutually exclusive.
 
 {% tabs %}
 {% highlight c# %}
@@ -174,11 +175,11 @@ onion.IsChecked = true;
 
 ## Indeterminate
 
-The `SfCheckBox` allows an indeterminate state in addition to the checked and unchecked state. The indeterminate state of the check box is enabled by setting the `IsThreeState` property of the control to `True`.
+The `SfCheckBox` allows an indeterminate state in addition to the checked and unchecked states. The indeterminate state of the CheckBox is enabled by setting the `IsThreeState` property of the control to `true`.
 
-N>When the `IsThreeState` property is set to `False` and `IsChecked` property is set to `null`, then the check box will be in unchecked state.
+N>When the `IsThreeState` property is set to `false` and the `IsChecked` property is set to `null`, then the CheckBox will be in the unchecked state.
 
-The indeterminate state is used when a group of sub-choices has both checked and unchecked states. In the following example, the "Select all" checkbox has the `IsThreeState` property set to `true`. The "Select all" checkbox is checked if all child elements are checked, unchecked if all the child elements are unchecked, and indeterminate otherwise.
+The indeterminate state is used when a group of sub-choices has both checked and unchecked states. In the following example, the "Select all" CheckBox has the `IsThreeState` property set to `true`. The "Select all" CheckBox is checked if all child elements are checked, unchecked if all the child elements are unchecked, and indeterminate otherwise.
 
 {% tabs %}
 {% highlight c# %}
@@ -242,6 +243,6 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.iOS CheckBox intermediate state](Images/Inter1.png) ![](Images/Inter2.png)
+![Xamarin.iOS CheckBox intermediate state](Images/Inter1.png) ![Xamarin.iOS CheckBox intermediate state](Images/Inter2.png)
 
 This demo can be downloaded from this [link](https://github.com/SyncfusionExamples/GettingStarted-Sample-CheckBox-Xamarin.iOS/).

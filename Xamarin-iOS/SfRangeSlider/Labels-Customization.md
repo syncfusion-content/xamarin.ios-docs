@@ -1,21 +1,20 @@
 ---
 layout: post
 title: Label Support for Syncfusion® RangeSlider control for Xamarin.iOS
-description: This section provides the details about how to set label and their positions in RangeSlider control for Xamarin.iOS
+description: This section provides details about how to set labels and their positions in RangeSlider control for Xamarin.iOS
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug
 ---
 
-# Customization labels
-
-SfRangeSlider provides option to show or hide the label and position customization.
+# Label Customization
+SfRangeSlider provides options to show or hide labels and customize their positions.
 
 ## Show Value Label
 
-This property allows us to display labels for the ticks. When it sets to true, it displays the label for all the ticks based on the `ValuePlacement` property.
+This property allows you to display labels for the ticks. When it is set to `true`, it displays the label for all the ticks based on the `ValuePlacement` property.
 
-N> The default value of the `ShowValueLabel` property is false.
+> **Note:** The default value of the `ShowValueLabel` property is `false`.
 
 {% tabs %}
 
@@ -29,7 +28,7 @@ N> The default value of the `ShowValueLabel` property is false.
 
 ## Set Custom Label
 
-To display custom labels, `ShowCustomLabel` property should be set to true and need to populate the `CustomLabels` property with observable collection of items by specifying the custom labels for corresponding values.
+To display custom labels, the `ShowCustomLabel` property should be set to `true` and you need to populate the `CustomLabels` property with an observable collection of items by specifying the custom labels for corresponding values.
 
 {% tabs %}
 
@@ -55,7 +54,7 @@ To display custom labels, `ShowCustomLabel` property should be set to true and n
 
 ## Value Placement
 
-The `ValuePlacement` property describes the position of the Value respective to ticks. 
+The `ValuePlacement` property describes the position of the value relative to ticks.
 
 Available options for this property are:
 
@@ -89,7 +88,7 @@ Available options for this property are:
 
 ## Label Placement
 
-The `LabelPlacement` property describes the position of the labels respective to ticks. 
+The `LabelPlacement` property describes the position of the labels relative to ticks.
 
 Available options for this property are:
 
@@ -107,9 +106,9 @@ Available options for this property are:
 
 {% endtabs %}
 
-## Customizing label font
+## Customizing Label Font
 
-The range slider control provides the `Font` property to customize the value text and custom label text.
+The RangeSlider control provides the `Font` property to customize the value text and custom label text.
 
 {% highlight c# %}
 

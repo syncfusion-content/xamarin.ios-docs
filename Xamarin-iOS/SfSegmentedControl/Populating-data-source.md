@@ -45,7 +45,7 @@ public override void ViewDidLoad()
 
 ## Segment items
 
-The segmented control customizes the text or icons or use other built-in customization options available for the segments. Segment item collections can also be used.
+The segmented control allows you to customize the text or icons, or use other built-in customization options available for the segments. Segment item collections can also be used.
 
 {% highlight c# %}
 ObservableCollection<SfSegmentItem> sizeCollection;

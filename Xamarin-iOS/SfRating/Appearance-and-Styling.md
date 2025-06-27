@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Appearance and Styling in Syncfusion® Rating control for Xamarin.iOS
-description: Learn how to change the Appearance and Styling of rating control
+title: Appearance and Styling in Syncfusion® Rating Control for Xamarin.iOS
+description: Learn how to change the appearance and styling properties of Rating control for Xamarin.iOS platform with customization options
 platform: xamarin.ios
-control: Rating
+control: SfRating
 documentation: ug
 ---
 
 # Appearance and Styling
 
-When the default view is not needed, you can customize the view of Xamarin.iOS SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
+When the default view is not needed, you can customize the view of the Xamarin.iOS SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
 
 ## Set Size
 
 The `ItemSize` property sets the size of the rating items. 
 
-N> By default, property value is 50.
+> **Note:** By default, the property value is 50.
 
 {% tabs %}
 
@@ -27,13 +27,13 @@ N> By default, property value is 50.
 
 {% endtabs %}
 
-![SfRatinglayout customization](images/layoutSize.jpg)
+![SfRating Layout Customization](images/layoutSize.jpg)
  
 ## Set Number of Items
 
 The `ItemCount` property sets the number of rating items to be displayed. 
 
-N> The default property value is 5.
+> **Note:** The default property value is 5.
 
 {% tabs %}
 
@@ -45,13 +45,13 @@ N> The default property value is 5.
 
 {% endtabs %}
 
-![Set number of rating items](images/fourstar.jpg) 
+![Set Number of Rating Items](images/fourstar.jpg)
 
-## Set Space between Items
+## Set Space Between Items
 
 The `ItemSpacing` property sets the spacing between the rating items. 
 
-N> By default, property value is 5.
+> **Note:** By default, the property value is 5.
 
 {% tabs %}
 
@@ -63,11 +63,11 @@ N> By default, property value is 5.
 
 {% endtabs %}
 
-![Space between rating items](images/layoutSpace.jpg) 
+![Space Between Rating Items](images/layoutSpace.jpg)
 
 ## Rating Settings
 
-For styling customization, set the RatingSettings property value with SfRatingSettings object instance.
+For styling customization, set the `RatingSettings` property value with an SfRatingSettings object instance.
 
 {% tabs %}
 
