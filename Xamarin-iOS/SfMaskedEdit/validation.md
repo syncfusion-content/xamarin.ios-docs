@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Input validation in SfMaskedEdit control for Xamarin.iOS platform
-description: Learn how and when to validate the input characters with the given Mask of SfMaskedEdit control.
-platform: Xamarin.iOS
+title: Input validation in Syncfusion® SfMaskedEdit for Xamarin.iOS
+description: Discover input validation modes (KeyPress, LostFocus) and error checking in Syncfusion® SfMaskedEdit control for Xamarin.iOS platform with HasError property.
+platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
@@ -60,6 +60,6 @@ private void MaskedEdit_ValueChanged(object sender, ValueChangedEventArgs e)
 
 Refer to this [link](Events#valuechanged-event) to learn more about the `ValueChanged` event of SfMaskedEdit control.
 
-![](SfMaskedEditImages/validation.png)
+![Validation error alert dialog](SfMaskedEditImages/validation.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_Validation.zip).

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion® SfMaskedEdit control for Xamarin.iOS
-description: Overview and key features of SfMaskedEdit control
+description: Explore Syncfusion® SfMaskedEdit control overview and key features for Xamarin.iOS including input validation, mask patterns, and customization options.
 platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug
@@ -12,7 +12,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 The SfMaskedEdit is an advanced version of the UITextField control that restricts user input to certain types of characters, text, and numbers using a mask pattern. This control is used to create a template for providing information such as telephone numbers, IP addresses, product IDs, and so on.
 
-![](SfMaskedEditImages/Overview.png)
+![SfMaskedEdit control with different input masks](SfMaskedEditImages/Overview.png)
 
 ## Key features
 

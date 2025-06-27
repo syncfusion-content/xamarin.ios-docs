@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events and Interactivity in Syncfusion® SfNumericUpDown for Xamarin.iOS
+title: Events in Syncfusion® NumericUpDown for Xamarin.iOS
 description: Learn how to get the value changed event and some interactivity for SfNumericUpDown in Xamarin.iOS platform.
 platform: xamarin.ios
 control: SfNumericUpDown

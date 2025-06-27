@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various Features in Syncfusion® SfNumericUpDown control for Xamarin.iOS
+title: Nullable values in Syncfusion® NumericUpDown for Xamarin.iOS
 description: Learn how to decide maximum decimal digits to be displayed, nullable value support, autoreverse, setting range and configuring step value in SfNumericUpDown
 platform: xamarin.ios
 control: SfNumericUpDown

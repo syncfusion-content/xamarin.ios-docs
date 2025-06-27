@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion® SfMaskedEdit control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion® SfMaskedEdit control for Xamarin.iOS platform
+description: Learn about mask types (Text and RegEx) in Syncfusion® SfMaskedEdit for Xamarin.iOS including fixed-length and variable-length input patterns.
 platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug
@@ -225,6 +225,6 @@ maskedEdit.Mask = @"+1(\d{3})\d{6}";
 
 This mask expression '\d{3}' and '\d{6}' allows only numeric, where {n} is the count that the input should be accepted.
 
-![](SfMaskedEditImages/masktype.png)
+![SfMaskedEdit showing Text and RegEx mask type examples](SfMaskedEditImages/masktype.png)
 
 You can find the complete mask type sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MaskType769706503.zip).

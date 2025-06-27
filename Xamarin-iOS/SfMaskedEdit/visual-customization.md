@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Visual appearance customization of SfMaskedEdit control for Xamarin.iOS Platform
-description: Learn how to customize the visual appearance of SfMaskedEdit control
-platform: Xamarin.iOS
+title: Visual customization of Syncfusion® SfMaskedEdit for Xamarin.iOS
+description: Learn how to customize the visual appearance of SfMaskedEdit control including border colors, text styling, fonts, and alignment properties for Xamarin.iOS applications
+platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
@@ -26,7 +26,7 @@ maskedEdit.Layer.BorderColor = UIColor.Green.CGColor;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/bordercolor.png)
+![Green border color input field](SfMaskedEditImages/bordercolor.png)
 
 ## ErrorBorderColor
 
@@ -44,7 +44,7 @@ maskedEdit.ErrorBorderColor = UIColor.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/errorborder.png)
+![Yellow error border input field](SfMaskedEditImages/errorborder.png)
 
 ## Setting Appearance of Text
 
@@ -71,6 +71,6 @@ maskedEdit.Font = UIFont.FromName("Arial", 20);
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/textappearance.png)
+![Styled text input field](SfMaskedEditImages/textappearance.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_VisualCustomize.zip).

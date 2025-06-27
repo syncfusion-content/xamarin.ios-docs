@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Events in SfMaskedEdit for Xamarin.iOS platform
-description: Learn how to handle the ValueChanged and MaskInputRejected events in SfMaskedEdit
-platform: Xamarin.iOS
+title: Events in Syncfusion® SfMaskedEdit for Xamarin.iOS
+description: Learn how to handle ValueChanged and MaskInputRejected events in Syncfusion® SfMaskedEdit for Xamarin.iOS with event arguments and validation handling.
+platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
@@ -57,7 +57,7 @@ private void MaskedEdit_OnValueChanged(object sender, ValueChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/valuechanged.png)
+![SfMaskedEdit ValueChanged event example](SfMaskedEditImages/valuechanged.png)
 
 
 ## MaskInputRejected event
@@ -98,6 +98,6 @@ private void MaskedEdit_MaskInputRejected(object sender, MaskInputRejectedEventA
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/maskrejected.png)
+![SfMaskedEdit MaskInputRejected event example](SfMaskedEditImages/maskrejected.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_Events.zip).

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Basic features in SfMaskedEdit for Xamarin.iOS platform
-description: Learn how to customize the basic features of SfMaskedEdit
-platform: Xamarin.iOS
+title: Basic features in Syncfusion® SfMaskedEdit for Xamarin.iOS
+description: Learn how to configure basic features of Syncfusion® SfMaskedEdit for Xamarin.iOS including value setting, prompt characters, and placeholder customization.
+platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit

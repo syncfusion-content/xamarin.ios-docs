@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Formatting clipboard text of SfMaskedEdit in Xamarin.iOS platform
-description: Learn how to format the clipboard text during cut and copy operations of SfMaskedEdit control
-platform: Xamarin.iOS
+title: Formatting clipboard text of Syncfusion® SfMaskedEdit Xamarin.iOS
+description: Learn how to configure clipboard text formatting during cut and copy operations in Syncfusion® SfMaskedEdit for Xamarin.iOS using CutCopyMaskFormat property.
+platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit

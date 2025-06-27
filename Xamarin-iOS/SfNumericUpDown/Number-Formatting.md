@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number Formatting in Syncfusion® SfNumericUpDown control for Xamarin.iOS
+title: Number formatting in Syncfusion® NumericUpDown for Xamarin.iOS
 description: Learn how to add format String, enable parser mode and percent display mode for SfNumericUpDown control.
 platform: xamarin.ios
 control: SfNumericUpDown
