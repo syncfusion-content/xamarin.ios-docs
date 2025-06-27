@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual customization of Syncfusion® SfMaskedEdit for Xamarin.iOS
-description: Learn how to customize the visual appearance of SfMaskedEdit control including border colors, text styling, fonts, and alignment properties for Xamarin.iOS applications
+description: Learn how to customize SfMaskedEdit appearance including border colors, text styling, fonts, and alignment for Xamarin.iOS applications
 platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug 
