@@ -2,14 +2,14 @@
 layout: post
 title: Selection Changed
 description: Selection changed event in TabView control for Xamarin.iOS platform
-platform: Xamarin.iOS
-control: TabView
+platform: xamarin.ios
+control: SfTabView
 documentation: ug
 ---
 
 # Selection Changed
 
-The `SelectionChanged` event notifies when the selection is changed due to swiping or dynamically setting the `SelectedIndex` property of `SfTabView`.
+The `SelectionChanged` event is triggered when the selection changes due to swiping or dynamically setting the `SelectedIndex` property of `SfTabView`.
 
 {% tabs %}
 
@@ -27,6 +27,7 @@ tabView.SelectionChanged += SfTabView_SelectionChanged;
 
 {% endtabs %}
 
-## Enable swiping
+## Enable Swiping
 
-When the selection changed event needs to be restricted through user interaction, set the `EnableSwiping` property of `SfTabView` to `false`.
+When you need to restrict the selection changed event through user interaction, set the `EnableSwiping` property of `SfTabView` to `false`.
+

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization | SfSegmentedControl | Xamarin.iOS | Syncfusion® 
-description: How to customize the segmented control
+description: Learn how to customize the appearance and behavior of the Segmented Control
 platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Customization
 
-The segmented control supports customizing segment color, text color, icon size, selection color, and more. This control also supports enabling the segments to fit your application’s theme. It can be customized in the following areas.
+The Segmented Control supports customizing segment color, text color, icon size, selection color, and more. This control also supports enabling the segments to fit your application's theme. It can be customized in the following areas:
 
-## Text appearance
+## Text Appearance
 
-The text inside the segmented control can be customized by its font size, color, and font family.
+The text inside the Segmented Control can be customized by its font size, color, and font family.
 
-### Font family and size
+### Font Family and Size
 
 You can customize the font family and font size of the segmented item using the `Font` property.
 
