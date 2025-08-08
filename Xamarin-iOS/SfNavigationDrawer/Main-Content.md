@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Various features of Syncfusion® NavigationDrawer control for Xamarin.iOS
-description: Learn how to set content view, drawer content view, footer view, header view, drawer size in NavigationDrawer.
+title: Main content configuration for Syncfusion® NavigationDrawer control in Xamarin.iOS
+description: Learn how to configure the main content view in NavigationDrawer control for Xamarin.iOS applications.
 platform: xamarin.ios
 control: NavigationDrawer
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Setting Main Content
 
-The SfNavigationDrawer is mainly divided into two parts, such as [Main Content](#main-content) and  [Drawer Panel Content](/Xamarin-iOS/SfNavigationDrawer/Drawer-Content "Sliding Panel Contents")
+The SfNavigationDrawer is primarily divided into two main parts: [Main Content](#main-content) and [Drawer Panel Content](/xamarin-ios/navigationdrawer/drawer-content "Sliding Panel Contents").
 
 ## Main Content
 
-The main display view that displays our various content of the app can be set using `ContentView` property with desired views.
+The main content view displays the primary content of your application and can be configured using the `ContentView` property with your desired views.
 
 {% tabs %}
 
@@ -61,4 +61,4 @@ The main display view that displays our various content of the app can be set us
 
 {% endtabs %}
 	
-![](images/content-view.png)
+![Main content view](images/content-view.png)

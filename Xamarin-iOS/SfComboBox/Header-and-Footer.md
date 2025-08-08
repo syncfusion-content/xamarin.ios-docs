@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Header and Footer in Syncfusion® SfComboBox control for Xamarin.iOS
-description :   Learn how to enable Header and Footer in SfComboBox
+description : Learn how to enable Header and Footer in SfComboBox
 platform : xamarin.ios 
 control : ComboBox
 documentation : ug
@@ -9,20 +9,20 @@ documentation : ug
 
 # Header and Footer
 
-You can add header and footer views to the suggestion list in the combo box control by enabling the  `ShowDropDownHeaderView` and `ShowDropDownFooterView` properties. 
+You can add header and footer views to the suggestion list in the ComboBox control by enabling the `ShowDropDownHeaderView` and `ShowDropDownFooterView` properties.
 
-## Header content
+## Header Content
 
-The header content can be added at the top of the combo box control's suggestion box using the  `DropDownHeaderView` property. The following code example shows how to set the header content in the combo box. The height of the header in the combo box can be adjusted using the `DropDownHeaderViewHeight` property. 
+The header content can be added at the top of the ComboBox control's suggestion box using the `DropDownHeaderView` property. The following code example shows how to set the header content in the ComboBox. The height of the header in the ComboBox can be adjusted using the `DropDownHeaderViewHeight` property.
 
 {% tabs %}
 
 {% highlight C# %}
 
-//Shows the header view 
+// Shows the header view
 combobox.ShowDropDownHeaderView = true; 
 
-//Set height of the Header view 
+// Set height of the Header view
 combobox.DropDownHeaderViewHeight = 50; 
 UILabel label = new UILabel(); 
 label.Text = "Country Options"; 
@@ -39,14 +39,14 @@ combobox.DropDownHeaderView = label;
 
 ## Footer Content
 
-The footer content can be added at the bottom of the combo box control's suggestion box using the  `DropDownFooterView` property. The following code example shows how to set the footer content in the combo box. The height of the footer in the combo box can be adjusted using the `DropDownFooterViewHeight` property. 
+The footer content can be added at the bottom of the ComboBox control's suggestion box using the `DropDownFooterView` property. The following code example shows how to set the footer content in the ComboBox. The height of the footer in the ComboBox can be adjusted using the `DropDownFooterViewHeight` property.
 
 
 
 {% tabs %}
 
 {% highlight C# %}
-//Shows the footer view 
+// Shows the footer view
 combobox.ShowDropDownFooterView = true; 
 
 //Set height of the footer view 

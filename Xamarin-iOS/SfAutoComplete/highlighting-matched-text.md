@@ -1,13 +1,13 @@
 ---
-layout : post
-title : MatchHighlighting in Syncfusion® SfAutoComplete control for Xamarin.iOS
-description : Learn how to highlight the matched text in SfAutoComplete
-platform : xamarin.ios
-control : AutoComplete
-documentation : ug
+layout: post
+title: Syncfusion® SfAutoComplete Match Highlighting for iOS
+description: Learn how to enable and customize text highlighting for matched text in SfAutoComplete control to enhance user search experience.
+platform: xamarin.ios
+control: AutoComplete
+documentation: ug
 ---
 
-# Highlighting matched text
+# Highlighting Matched Text
 
 Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
 
@@ -16,17 +16,16 @@ Highlight matching characters in a suggestion list to pick an item with more cla
 
 * MultipleOccurrence
 
-The text highlight can be indicated with various customizing styles by enabling the below properties. They are
+The text highlight can be customized with various styling options by configuring the following properties:
 
-* HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
+* **HighlightedTextColor** - Sets the color of the highlighted text for differentiating the highlighted characters.
+* **HighlightTextFontAttributes** - Sets the FontAttributes of the highlighted text.
 
-* HighlightTextFontAttributes - sets the FontAttributes of the highlighted text.
-
-N> The default Color of HighlightedTextColor is Blue and default FontAttribute of HighlightTextFontAttributes is None.
+N> The default color of HighlightedTextColor is Blue and the default FontAttribute of HighlightTextFontAttributes is None.
 
 ## FirstOccurrence
 
-It highlights the first position of the matching characters in the suggestion list.
+This mode highlights the first position of the matching characters in the suggestion list.
 
 {% tabs %}
 
@@ -41,11 +40,11 @@ countryAutoComplete.AutoCompleteSource=countryList;
 
 {% endtabs %}
 
-![](images/FirstOccurrence.png)
+![First occurrence of matched text highlighted](images/FirstOccurrence.png)
 
 ## MultipleOccurrence
 
-It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
+This mode highlights all matching characters that are present throughout the suggestion list when using the Contains mode in SuggestionMode.
 
 {% tabs %}
 
@@ -60,5 +59,5 @@ countryAutoComplete.AutoCompleteSource=countryList;
 
 {% endtabs %}
 
-![](images/MultipleOccurrence.png)
+![Multiple occurrences of matched text highlighted](images/MultipleOccurrence.png)
 
