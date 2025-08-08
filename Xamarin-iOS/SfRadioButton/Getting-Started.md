@@ -9,21 +9,21 @@ keywords: button, SfRadioButton, RadioButton
 
 ---
 
-# Getting Started Xamarin.iOS RadioButton (SfRadioButton)
+# Getting Started with Xamarin.iOS RadioButton (SfRadioButton)
 
-This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
+This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in the `SfRadioButton` control.
 
-## Add a SfRadioButton reference
-Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add radio button to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.iOS)", and then install it. 
+## Add SfRadioButton reference
+Syncfusion<sup>®</sup> Xamarin components are available in [nuget.org](https://www.nuget.org/). To add RadioButton to your project, open the NuGet package manager in Visual Studio, and search for "[syncfusion.xamarin.buttons.ios](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons.iOS)", and then install it.
 
-![Xamarin.iOS radio button NuGet](Images/nuget.png)
+![Xamarin.iOS RadioButton NuGet](Images/nuget.png)
 
 N>Starting with v16.2.0.x, if you reference Syncfusion<sup>®</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion<sup>®</sup> license key in your Xamarin application to use our components.
 
 ## Create a Simple SfRadioButton
 The `SfRadioButton` control is configured entirely in C# code. The following steps explain how to create a `SfRadioButton` and configure its elements.
 
-### Add namespace for referred assemblies
+### Add namespace for referenced assemblies
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ using Syncfusion.iOS.Buttons;
 {% endhighlight %}
 {% endtabs %}
 
-### Refer the SfRadioButton control with declared suffix name for Namespace
+### Reference the SfRadioButton control with declared suffix name for Namespace
 
 {% tabs %}
 {% highlight c# %}
@@ -67,7 +67,7 @@ namespace RadioButton_Sample
 
 ## Setting caption
 
-The radio button caption can be defined using the `SetTitle` method of `SfRadioButton`. This caption normally describes the meaning of the radio button and it displays next to radio button.
+The RadioButton caption can be defined using the `SetTitle` method of `SfRadioButton`. This caption normally describes the meaning of the RadioButton and displays next to the RadioButton.
  
 {% tabs %}
 {% highlight c# %}
@@ -76,17 +76,17 @@ radioButton.SetTitle("RadioButton", UIControlState.Normal);
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.iOS radio button caption text](Images/Caption.png)
+![Xamarin.iOS RadioButton caption text](Images/Caption.png)
 
-## Change the radio button state
+## Change the RadioButton state
 
 The two different visual states of the `SfRadioButton` are:
 
 * Checked
 * Unchecked
 
-You can change the state of the radio button using the `IsChecked` property of `SfRadioButton`. In the checked state, an inner circle is added to the visualization of radio button.
-The radio buttons are used when there is a list of two or more options or group that are mutually exclusive and the user must select exactly one choice, such as “Select Gender” or “Choose the best option!”.
+You can change the state of the RadioButton using the `IsChecked` property of `SfRadioButton`. In the checked state, an inner circle is added to the visualization of the RadioButton.
+RadioButtons are used when there is a list of two or more options or groups that are mutually exclusive and the user must select exactly one choice, such as "Select Gender" or "Choose the best option!".
 
 {% tabs %}
 {% highlight c# %}

@@ -1,22 +1,22 @@
 ---
 layout: post
 title: Colors in Syncfusion® SfNumericTextBox control for Xamarin.iOS
-description: Learn what are the color properties to customize the appearence of SfNumericTextBox in Xamarin.iOS platform.
+description: Learn what are the color properties to customize the appearance of SfNumericTextBox in Xamarin.iOS platform.
 platform: xamarin.ios
 control: SfNumericTextBox
 documentation: ug
 ---
 # Color Customization in SfNumericTextBox
 
-SfNumericTextBox is used to set custom background, text, and border colors through the following properties:
+SfNumericTextBox allows you to set custom background, text, and border colors through the following properties:
 
-* `TextColor` - Sets the color of numeric textBox's value
+* `TextColor` - Sets the color of the numeric textbox's value.
 
-* `BackgroundColor` - Sets the background color of numeric textBox.
+* `BackgroundColor` - Sets the background color of the numeric textbox.
 
-* `BorderColor` - Sets the border custom color of numeric textBox
+* `BorderColor` - Sets the border color of the numeric textbox.
 
-* `WatermarkColor` - Sets the watermark custom color of numeric textBox's watermark Text.
+* `WatermarkColor` - Sets the watermark color of the numeric textbox's watermark text.
 
 ## TextColor
 
@@ -56,7 +56,7 @@ SfNumericTextBox numericTextBox = new SfNumericTextBox()
 
 ## BorderColor
 
-The following code sample demonstrates how to set the BorderColor color:
+The following code sample demonstrates how to set the BorderColor:
 
 {% highlight c# %}
 

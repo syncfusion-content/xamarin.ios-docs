@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Various Features in Syncfusion® NumericUpDown control for Xamarin.iOS
-description: Learn how to decide maximum decimal digits to be displayed, nullable value support, autoreverse, setting range and configuring step value in NumericUpDown
+title: Nullable values in Syncfusion® NumericUpDown for Xamarin.iOS
+description: Learn how to decide maximum decimal digits to be displayed, nullable value support, autoreverse, setting range and configuring step value in SfNumericUpDown
 platform: xamarin.ios
-control: NumericUpDown
+control: SfNumericUpDown
 documentation: ug
 ---
 # Assign Nullable Value
 
-The null values can be set in SfNumericUpDown `Value` property, by setting `AllowNull` property value to true.
+Null values can be set in the SfNumericUpDown `Value` property by setting the `AllowNull` property to true.
 
 N> By default, the property value is false.
 
@@ -20,11 +20,11 @@ numeric.AllowNull = true;
 
 {% endhighlight %}
 
-![Display the NumericUpDown with Null value](images/allownull.png)
+![Display the SfNumericUpDown with Null value](images/allownull.png)
 
 ## Set Hint Text
 
-The `WaterMark` text is used to display some information regarding the SfNumericEditBox. This watermark is visible when textbox is empty or Null.
+The `WaterMark` text is used to display information about the SfNumericUpDown control. This watermark is visible when the control is empty or null.
 
 {% highlight c# %}
 
@@ -34,6 +34,6 @@ numeric.WaterMark = (NSString)"NumericUpDown";
 
 {% endhighlight %}
 
-N> By default the property value is false
+N> By default, the property value is false.
 
-![Display the NumericUpDown with hint text](images/watermark.png)
+![Display the SfNumericUpDown with hint text](images/watermark.png)
