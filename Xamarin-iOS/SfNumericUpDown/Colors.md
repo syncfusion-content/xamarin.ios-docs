@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Colors in Syncfusion® NumericUpDown control for Xamarin.iOS
-description: Learn what are the color properties to customize the appearence of NumericUpDown in Xamarin.iOS platform.
+title: Colors in Syncfusion® SfNumericUpDown control for Xamarin.iOS
+description: Learn what are the color properties to customize the appearance of SfNumericUpDown in Xamarin.iOS platform.
 platform: xamarin.ios
-control: NumericUpDown
+control: SfNumericUpDown
 documentation: ug
 ---
-# Colors in NumericUpDown
+# Colors in SfNumericUpDown
 
 SfNumericUpDown is used to set custom background, text, and border colors through the following properties:
 
-* `TextColor` - Sets the color of NumericUpDown's value
+* `TextColor` - Sets the color of the SfNumericUpDown's value
 
-* `BackgroundColor` - Sets the background color of NumericUpDown.
+* `BackgroundColor` - Sets the background color of the SfNumericUpDown.
 
-* `BorderColor` - Sets the border custom color of NumericUpDown
+* `BorderColor` - Sets the custom border color of the SfNumericUpDown
 
-* `WatermarkColor` - Sets the watermark custom color of NumericUpDown's watermark Text.
+* `WatermarkColor` - Sets the custom color of the SfNumericUpDown's watermark text.
 
 ## TextColor
 
@@ -34,7 +34,7 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 {% endhighlight %}
 
-![Customized text color in NumericUpown](images/textcolor.png)
+![Customized text color in SfNumericUpDown](images/textcolor.png)
 
 ## BackgroundColor
 
@@ -53,11 +53,11 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 {% endhighlight %}
 
-![Display the NumericUpDown with BackgroundColor](images/backgroundcolor.png)
+![Display the SfNumericUpDown with BackgroundColor](images/backgroundcolor.png)
 
 ## BorderColor
 
-The following code sample demonstrates how to set the BorderColor color:
+The following code sample demonstrates how to set the BorderColor:
 
 {% highlight c# %}
 
@@ -71,7 +71,7 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 {% endhighlight %}
 
-![Display the NumericUpDown with BorderColor](images/bordercolor.png)
+![Display the SfNumericUpDown with BorderColor](images/bordercolor.png)
 
 ## WatermarkColor
 
@@ -83,7 +83,6 @@ The following code sample demonstrates how to set the WatermarkColor:
 
 SfNumericUpDown numeric = new SfNumericUpDown()
 {
-	
 	Watermark = (NSString)"Enter a Number",
 	WatermarkColor = UIColor.Blue,
 	AllowNull=true,
@@ -91,4 +90,4 @@ SfNumericUpDown numeric = new SfNumericUpDown()
 
 {% endhighlight %}
 
-![Display the NumericUpDown watermark text with a color](images/watermarkcolor.png)
+![Display the SfNumericUpDown watermark text with a color](images/watermarkcolor.png)
