@@ -7,6 +7,8 @@ control: Overview
 documentation: ug
 ---
 
+> With the 2025 Volume 3 release, support for Xamarin platforms will be discontinued. We recommend migrating to .NET MAUI to continue receiving updates and support.
+
 # Welcome to Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> for Xamarin.iOS
 
 Essential Studio<sup>®</sup> for Xamarin.iOS is a comprehensive collection of enterprise-grade Xamarin.iOS components for building modern Mobile applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Charts, DataGrid, Gauge, Maps and much more.
