@@ -30,4 +30,4 @@ documentation: ug
 
 {% endhighlight %}
 
-![](change_orientation/orientaion.png)
+![Change Orientation in Xamarin.Ios Linear Gauge.](change_orientation/orientaion.png)
