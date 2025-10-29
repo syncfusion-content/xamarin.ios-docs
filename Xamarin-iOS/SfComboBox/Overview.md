@@ -11,7 +11,7 @@ documentation: ug
 
 The combo box control allows users to choose an option from the list of predefined options. When the arrow icon accompanied with this component is pressed, the drop-down displays a list of values, from which users can select an option. 
 
-![](images/overview.png)
+![Overview of Xamarin.Ios ComboBox.](images/overview.png)
 
 ## Key Features
 

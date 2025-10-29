@@ -33,7 +33,7 @@ combobox.ComboBoxMode = ComboBoxMode.Suggest;
 
 {% endtabs %}
 
-![](images/suggest.png)
+![Suggest dropdown display in Xamarin.Ios ComboBox.](images/suggest.png)
 
 ## Append
 
@@ -49,7 +49,7 @@ combobox.ComboBoxMode = ComboBoxMode.Append;
 
 {% endtabs %}
 
-![](images/append.png)
+![Append mode in Xamarin.Ios ComboBox.](images/append.png)
 
 ## Both append and suggest in drop-down
 	
@@ -65,5 +65,5 @@ combobox.ComboBoxMode = ComboBoxMode.SuggestAppend;
 
 {% endtabs %}
 
-![](images/suggestappend.png)
+![Suggest append mode in Xamarin.Ios ComboBox.](images/suggestappend.png)
  

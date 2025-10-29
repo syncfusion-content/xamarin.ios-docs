@@ -86,7 +86,7 @@ this.Add(combobox);
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![Getting started mode in Xamarin.Ios ComboBox.](images/gettingstarted.png)
 
 ## Combo box modes
 
@@ -136,7 +136,7 @@ this.Add(combobox);
 
 {% endtabs %}
 
-![](images/gettingstartednoneditable.png)
+![Getting started non-editable mode in Xamarin.Ios ComboBox.](images/gettingstartednoneditable.png)
 
 ## Editable combo box
 
@@ -180,7 +180,7 @@ this.Add(combobox);
 
 {% endtabs %}
 
-![](images/gettingstartededitable.png)
+![Getting started non-editable mode in Xamarin.Ios ComboBox.](images/gettingstartededitable.png)
 
 ## Selecting an item
 
@@ -237,6 +237,6 @@ PresentViewController(okAlertController, true, null);
 
 {% endtabs %}
 
-![](images/gettingstartedselecteditem.png)
+![Getting started with selected item in Xamarin.Ios ComboBox.](images/gettingstartedselecteditem.png)
 
 You can find the complete getting started sample from this [here.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboboxGettingStaretedSample1179764127 )
