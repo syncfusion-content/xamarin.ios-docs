@@ -28,7 +28,7 @@ combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Bottom;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/bottom.png)
+![Display suggestion box at the bottom of Xamarin.Ios ComboBox.](images/bottom.png)
 
 ## SuggestionBox placement at top
 
@@ -42,4 +42,4 @@ combobox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/top.png)
+![Display suggestion box at the top of Xamarin.Ios ComboBox.](images/top.png)

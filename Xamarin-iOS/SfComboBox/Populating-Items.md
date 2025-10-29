@@ -142,4 +142,4 @@ combobox.DataSource = EmployeeDetails;
 
 * `DisplayMemberPath` decides the suggestions to be shown in dropdown. Setting the `SelectedValuePath` property makes the `SelectedValue` property to return the value you have selected here. 
 
-![](images/datasource.png)
+![Data source property of  Xamarin.Ios ComboBox.](images/datasource.png)

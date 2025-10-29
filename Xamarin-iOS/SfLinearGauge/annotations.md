@@ -43,7 +43,7 @@ By using the [`View`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGa
     
 {% endhighlight %}
 
-![](annotations_images/annotation1.png)
+![Positioning annotation in Xamarin.Ios Linear Gauge.](annotations_images/annotation1.png)
 
 ##  Positioning the annotation
 
@@ -79,7 +79,7 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
     
 {% endhighlight %}
 
-![](annotations_images/annotation2.png)
+![Change annotation position by using offset in Xamarin.Ios Linear Gauge.](annotations_images/annotation2.png)
 
 ### Change annotation position by using scale value
 
@@ -121,7 +121,7 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
     
 {% endhighlight %}
 
-![](annotations_images/annotation3.png)
+![Change annotation position by using scale value in Xamarin.Ios Linear Gauge.](annotations_images/annotation3.png)
 
 ## Set margin to the annotation
 
@@ -164,7 +164,7 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
     
 {% endhighlight %}
 
-![](annotations_images/annotation4.png)
+![Alignment of annotation in Xamarin.Ios Linear Gauge.](annotations_images/annotation4.png)
 
 ## Alignment of annotation
 
@@ -209,7 +209,7 @@ You can align the annotation using the [`HorizontalViewAlignment`](https://help.
     
 {% endhighlight %}
 
-![](annotations_images/annotation5.png)
+![Setting horizontal view alignment in Xamarin.Ios Linear Gauge.](annotations_images/annotation5.png)
 
 ### Setting vertical view alignment
 
@@ -250,7 +250,7 @@ You can align the annotation using the [`HorizontalViewAlignment`](https://help.
     
 {% endhighlight %}
 
-![](annotations_images/annotation6.png)
+![Setting vertical view alignment in Xamarin.Ios Linear Gauge.](annotations_images/annotation6.png)
 
 ## Setting scale index for annotation
 
@@ -306,7 +306,7 @@ You can set the index for the scale by using [`ScaleIndex`](https://help.syncfus
 
 {% endhighlight %}
 
-![](annotations_images/annotation7.png)
+![Setting scale index for annotation in Xamarin.Ios Linear Gauge.](annotations_images/annotation7.png)
 
 ## Multiple annotations
 
@@ -439,4 +439,4 @@ You can add multiple annotations to the gauge as demonstrated below.
     
 {% endhighlight %}
 
-![](annotations_images/annotation8.png)
+![Multiple annotations in Xamarin.Ios Linear Gauge.](annotations_images/annotation8.png)

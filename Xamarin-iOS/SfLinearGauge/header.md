@@ -40,7 +40,7 @@ You can add a title to gauge using the [`SFLinearLabel`](https://help.syncfusion
 
 {% endhighlight %}
 
-![](header_images/header.png)
+![Adding header to linear gauge in Xamarin.Ios Linear Gauge.](header_images/header.png)
 
 ##  Positioning the header
 
@@ -69,7 +69,7 @@ To change the position of header, use the [`Position`](https://help.syncfusion.c
     
 {% endhighlight %}
 
-![](header_images/header2.png)
+![Positioning the header in Xamarin.Ios Linear Gauge.](header_images/header2.png)
 
 ##  Customizing header text
 
@@ -98,4 +98,4 @@ You can customize the text of [`SFLinearLabel`](https://help.syncfusion.com/cr/x
  
 {% endhighlight %}
 
-![](header_images/header3.png)
+![Customizing header text in Xamarin.Ios Linear Gauge.](header_images/header3.png)
