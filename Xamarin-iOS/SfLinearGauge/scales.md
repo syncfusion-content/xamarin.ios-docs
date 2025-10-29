@@ -35,7 +35,7 @@ Scales is a collection of [`SFLinearScale`](https://help.syncfusion.com/cr/xamar
   
 {% endhighlight %}
 
-![](scales_images/scale1.png)
+![Linear Gauge scale in Xamarin.Ios.](scales_images/scale1.png)
 
 ## Setting minimum and maximum values for scale
 
@@ -62,7 +62,7 @@ To change minimum and maximum values of linear scale, use the [`Minimum`](https:
   
 {% endhighlight %}
 
-![](scales_images/scale2.png)
+![Setting minimum and maximum values for scale in Xamarin.Ios Linear Gauge.](scales_images/scale2.png)
 
 ## Setting interval for scale
 
@@ -90,7 +90,7 @@ The [`Interval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.i
   
 {% endhighlight %}
 
-![](scales_images/scale3.png)
+![Setting interval for scales in Xamarin.Ios Linear Gauge.](scales_images/scale3.png)
 
 ## Setting maximum labels
 
@@ -118,7 +118,7 @@ The [`MaximumLabels`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGa
 
 {% endhighlight %}
 
-![](scales_images/scale4.png)
+![Setting maximum labels in Xamarin.Ios Linear Gauge.](scales_images/scale4.png)
 
 ## Scale customization
 
@@ -147,7 +147,7 @@ You can customize the color, length, size, and position of the [`SFLinearScale`]
 
 {% endhighlight %}
 
-![](scales_images/scale5.png)
+![Setting opposite position in Xamarin.Ios Linear Gauge.](scales_images/scale5.png)
 
 ## Setting opposite position
 
@@ -173,7 +173,7 @@ To place the scale at opposite to its original position, set the [`OpposedPositi
 
 {% endhighlight %}
 
-![](scales_images/scale6.png)
+![Setting scale direction in Xamarin.Ios Linear Gauge.](scales_images/scale6.png)
 
 ## Setting scale direction
 
@@ -199,7 +199,7 @@ You can set the scale position to its forward and backward using the [`ScalePosi
 	
 {% endhighlight %}
 
-![](scales_images/scale7.png)
+![Setting scale corner radius type in Xamarin.Ios Linear Gauge.](scales_images/scale7.png)
 
 ## Setting corner radius type for scale
 
@@ -226,7 +226,7 @@ Corners of the [`SFLinearScale`](https://help.syncfusion.com/cr/xamarin-ios/Sync
 	
 {% endhighlight %}
 
-![](scales_images/scale8.png)
+![Multiple scales in Xamarin.Ios Linear Gauge.](scales_images/scale8.png)
 
 ## Multiple scales 
 
@@ -301,7 +301,7 @@ It helps you to add multiple scales to the same linear gauge and customize all t
 	
 {% endhighlight %}
 
-![](scales_images/scale9.png)
+![Setting gradient color for scale in Xamarin.Ios Linear Gauge.](scales_images/scale9.png)
 
 ## Setting gradient color for scale
 
@@ -352,4 +352,4 @@ You can give smooth color transition to scale to specifying the different colors
 	
 {% endhighlight %}
 
-![](scales_images/scale10.png)
+![Setting scale gradient stop in Xamarin.Ios Linear Gauge.](scales_images/scale10.png)
