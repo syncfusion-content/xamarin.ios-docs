@@ -33,7 +33,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
     
 {% endhighlight %}
 
-![](labels_images/label1.png)
+![Label color customization image in Xamarin.Ios Linear Gauge.](labels_images/label1.png)
 
 ## Label font customization
 
@@ -55,7 +55,7 @@ The label font can be customized by using the [`LabelFont`](https://help.syncfus
     
 {% endhighlight %}
 
-![](labels_images/label2.png)
+![Label font customization image in Xamarin.Ios Linear Gauge.](labels_images/label2.png)
 
 ## Setting position for labels
 
@@ -78,7 +78,7 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
    
 {% endhighlight %}
 
-![](labels_images/label3.png)
+![Label offset image in Xamarin.Ios Linear Gauge.](labels_images/label3.png)
 
 ### Setting postfix and prefix for labels
 
@@ -107,7 +107,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGau
     
 {% endhighlight %}
 
-![](labels_images/label4.png)
+![Label postfix image in Xamarin.Ios Linear Gauge.](labels_images/label4.png)
 
 ### Setting label prefix
 
@@ -130,7 +130,7 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGaug
     
 {% endhighlight %}
 
-![](labels_images/label5.png)
+![Label prefix image in Xamarin.Ios Linear Gauge.](labels_images/label5.png)
 
 ## Labels visibility
 
@@ -159,5 +159,5 @@ Labels visibility can be customized using the [`ShowScaleLabel`](https://help.sy
    
 {% endhighlight %}
 
-![](labels_images/label6.png)
+![Labels visibility image in Xamarin.Ios Linear Gauge.](labels_images/label6.png)
 
