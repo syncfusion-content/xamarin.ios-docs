@@ -25,4 +25,4 @@ combobox.AllowFiltering = true;
 
 {% endtabs %}
 
-![](images/filtering.png)
+![Filtering option in Xamarin.Ios ComboBox.](images/filtering.png)
