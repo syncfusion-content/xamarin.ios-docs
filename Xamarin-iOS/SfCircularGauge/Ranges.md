@@ -33,7 +33,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
 {% endhighlight %}
 
-![](ranges_images/default-range.png)
+![Default range setting in Xamarin.Ios Circular Gauge.](ranges_images/default-range.png)
 
 ## Range customization
 
@@ -68,7 +68,7 @@ An UI of a range is customized by using the [`Color`](https://help.syncfusion.co
 
 {% endhighlight %}
 
-![](ranges_images/range-customization.png)
+![Range customization in Xamarin.Ios Circular Gauge.](ranges_images/range-customization.png)
 
 ## Setting position for range
 
@@ -100,7 +100,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
-![](ranges_images/range-offset.png)
+![Set range position by offset in Xamarin.Ios Circular Gauge.](ranges_images/range-offset.png)
 
 2.The [`InnerStartOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_InnerStartOffset), [`InnerEndOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_InnerEndOffset), [`OuterStartOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_OuterStartOffset), and [`OuterEndOffset`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.iOS.SFCircularRange.html#Syncfusion_SfGauge_iOS_SFCircularRange_OuterEndOffset) properties.
 
@@ -130,7 +130,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
-![](ranges_images/range-inner-outer-offset.png)
+![Set range position by inner outer offset in Xamarin.Ios Circular Gauge.](ranges_images/range-inner-outer-offset.png)
 
 ## Setting multiple ranges
 
@@ -212,7 +212,7 @@ In addition to the default range, you can add n number of ranges to a scale by u
 
 {% endhighlight %}
 
-![](ranges_images/multiple-range.png)
+![Set multiple ranges in Xamarin.Ios Circular Gauge.](ranges_images/multiple-range.png)
 
 ## Setting gradient color for range
 
@@ -278,4 +278,4 @@ You can give smooth color transition to range by specifying the different colors
 
 {% endhighlight %}
 
-![](ranges_images/gradient.png)
+![Set range gradient color in Xamarin.Ios Circular Gauge.](ranges_images/gradient.png)
