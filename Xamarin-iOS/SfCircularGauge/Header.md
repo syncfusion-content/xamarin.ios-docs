@@ -36,7 +36,7 @@ The [`SFGaugeHeader`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGa
 
 {% endhighlight %}
 
-![](header_images/header.png)
+![Header in Xamarin.Ios Circular Gauge.](header_images/header.png)
 
 ##  Setting position for header
 
@@ -60,7 +60,7 @@ The [`Position`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.i
     
 {% endhighlight %}
 
-![](header_images/header-position.png)
+![Set header position in Xamarin.Ios Circular Gauge.](header_images/header-position.png)
 
 ##  Customization of header
 
@@ -84,4 +84,4 @@ You can customize the header's text by using the [`TextStyle`](https://help.sync
     
 {% endhighlight %}
 
-![](header_images/header-customise.png)
+![Header Customization in Xamarin.Ios Circular Gauge.](header_images/header-customise.png)
