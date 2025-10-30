@@ -11,7 +11,7 @@ documentation: ug
 
 SfBusyIndicator makes it easy to let the user know when an application is busy. Simply wrap the relevant content in an instance of the SfBusyIndicator control and toggle its `IsBusy` property to True during any long-running process. The SfBusyIndicator should be used to indicate activity while content is being loaded or the UI is blocked waiting for a resource to become available. 
 
-![](images/overview.png)
+![Overview of Xamarin.Ios Busyindicator.](images/overview.png)
 
 ## Key Features
 

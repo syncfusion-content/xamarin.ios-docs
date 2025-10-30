@@ -11,7 +11,7 @@ documentation: ug
 
 SfRotator is a data control used to display images and navigate through them. The images can be selected either by Thumbnail or by Dots support.
 
-![](images/overview.png)
+![Overview of Xamarin.Ios Rotator.](images/overview.png)
 
 ## Key Features
 
