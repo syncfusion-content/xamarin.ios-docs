@@ -23,7 +23,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% endtabs %}
 
-![](images/thumbnail.png)
+![Navigational mode by thumbnail in Xamarin.Ios Rotator.](images/thumbnail.png)
 
 * `Dots` - The slider items will be loaded in dots view additionally. When a dots item is clicked, the slider will switch to the corresponding image data.
 
@@ -37,7 +37,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% endtabs %}
 
-![](images/dots.png)
+![Navigational mode by dots in Xamarin.Ios Rotator.](images/dots.png)
 
 ## Items / Dot Strip Positions
 
@@ -93,5 +93,5 @@ There are four available positions,
 
 {% endtabs %}
 
-![](images/tabstrip.png)
+![Tabstrip item position in Xamarin.Ios Rotator.](images/tabstrip.png)
 
