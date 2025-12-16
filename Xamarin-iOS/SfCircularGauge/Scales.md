@@ -32,7 +32,7 @@ A range is a visual element, which begins and ends at specified values within a 
 
 {% endhighlight %}
 
-![](scales_images/scale.png)
+![Circular Gauge scale in Xamarin.Ios.](scales_images/scale.png)
 
 ## Setting start and end values for scale
 
@@ -51,7 +51,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge
 
 {% endhighlight %}
 
-![](scales_images/start-end-value.png)
+![Setting start and end values for scale in Xamarin.Ios Circular Gauge.](scales_images/start-end-value.png)
 
 ## Setting start and sweep angles for scale
 
@@ -72,7 +72,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge
 
 {% endhighlight %}
 
-![](scales_images/start-end-angle.png)
+![Setting start and sweep angles for scale in Xamarin.Ios Circular Gauge.](scales_images/start-end-angle.png)
 
 ## Setting interval for scale
 
@@ -92,7 +92,7 @@ The [`Interval`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.i
 
 {% endhighlight %}
 
-![](scales_images/interval.png)
+![Setting interval for scale in Xamarin.Ios Circular Gauge.](scales_images/interval.png)
 
 ## Setting auto interval for scale
 
@@ -112,7 +112,7 @@ By default, the interval value is calculated by 10. By using the [`EnableAutoInt
 
 {% endhighlight %}
 
-![](scales_images/auto-interval.png)
+![Setting auto interval for scale in Xamarin.Ios Circular Gauge.](scales_images/auto-interval.png)
 
 ## Setting scale direction for scale
 
@@ -132,7 +132,7 @@ The [`Direction`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfGauge.
 
 {% endhighlight %}
 
-![](scales_images/scale-direction.png)
+![Setting scale direction for scale in Xamarin.Ios Circular Gauge.](scales_images/scale-direction.png)
 
 ## Setting multiple scales for scale
 
@@ -200,4 +200,4 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
 	
 {% endhighlight %}
 
-![](scales_images/multiple-scale.png)
+![Setting multiple scales in Xamarin.Ios Circular Gauge.](scales_images/multiple-scale.png)
