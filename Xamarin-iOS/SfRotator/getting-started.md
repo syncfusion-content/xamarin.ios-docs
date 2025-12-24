@@ -77,4 +77,4 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 {% endtabs %}
 
-![](images/rotator.png)
+![Customize Rotator navigational item Position in  Xamarin.Ios.](images/rotator.png)
