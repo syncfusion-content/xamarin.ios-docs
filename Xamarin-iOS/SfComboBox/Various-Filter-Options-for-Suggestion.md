@@ -59,7 +59,7 @@ Displays a list of suggestions based on the starting letter.
 
 {% endtabs %}
 	
-![](images/startswith.png)
+![Start words with input text in Xamarin.Ios ComboBox.](images/startswith.png)
 
 ### Filter with character casing
 
@@ -75,7 +75,7 @@ Displays a list of suggestions based on the starting letter with case sensitive.
 
 {% endtabs %}
 	
-![](images/startswithcasesensitive.png)
+![Starting letter with case sensitive in Xamarin.Ios ComboBox.](images/startswithcasesensitive.png)
 
 ## Words that contain the input text
 
@@ -91,7 +91,7 @@ Displays a list of suggestions if the combo box list contains that words.
 
 {% endtabs %}
 	
-![](images/contains.png)
+![Words that contains input text in Xamarin.Ios ComboBox.](images/contains.png)
 
 ### Filter with character casing
 
@@ -107,9 +107,9 @@ Displays a list of suggestions if the combo box list contains that words with ca
 
 {% endtabs %}
 	
-![](images/containswithcasesensitive.png)
+![Words that contains case sensitive in Xamarin.Ios ComboBox.](images/containswithcasesensitive.png)
 
-## Words that equals to  input text
+## Words that equals to input text
 
 Displays the word that matches the input text.
 
@@ -123,7 +123,7 @@ Displays the word that matches the input text.
 
 {% endtabs %}
 	
-![](images/equals.png)
+![Equal words to input text in Xamarin.Ios ComboBox.](images/equals.png)
 
 ### Filter with character casing
 
@@ -139,7 +139,7 @@ Displays the word that matches the input text with case sensitive.
 
 {% endtabs %}
 	
-![](images/equalswithcasesensitive.png)
+![Equal word with case sensitive in Xamarin.Ios ComboBox.](images/equalswithcasesensitive.png)
 
 ## Words that ends with input text
 
@@ -155,7 +155,7 @@ Displays a list of suggestions based on the ending word.
 
 {% endtabs %}
 	
-![](images/endswith.png)
+![Ending word with input text in Xamarin.Ios ComboBox](images/endswith.png)
 
 ### Filter with character casing
 
@@ -171,7 +171,7 @@ combobox.SuggestionMode = SuggestionMode.EndsWithCaseSensitive;
 
 {% endtabs %}
 	
-![](images/endswithcasesensitive.png)
+![Ending word with case sensitive in Xamarin.Ios ComboBox.](images/endswithcasesensitive.png)
 
 
 ### Custom filter
