@@ -246,7 +246,7 @@ The following code is used to create the `Annotations`.
      
 {% endhighlight %}
 
-![](annotations_images/annotations.png)
+![Annotation in Xamarin.Ios Circular Gauge.](annotations_images/annotations.png)
 
 ##  Setting image annotation
 
