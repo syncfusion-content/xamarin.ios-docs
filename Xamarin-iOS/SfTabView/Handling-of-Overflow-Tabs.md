@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Handling OverFlow Tabs
-description: Handling of Overflow tabs in Syncfusion® TabView control for Xamarin.iOS platform
+title: Handling Overflow Tabs in Syncfusion® TabView control for Xamarin.iOS
+description: Learn how to handle overflow tabs in Syncfusion® TabView control for Xamarin.iOS platform
 platform: xamarin.ios
 control: TabView
 documentation: ug
 ---
 
-# Handling overflow tabs
+# Handling Overflow Tabs
 
 When you have large number of tabs, the scroller will be enabled to view the overflow of headers, by default. It can be selected from a pop-up by setting the `OverflowMode` property of `SfTabView` to `DropDown`.
 

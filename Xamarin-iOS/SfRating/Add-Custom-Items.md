@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Adding custom items in Syncfusion® Rating control for Xamarin.iOS
-description: Learn how to add the Custom Items in rating control
+title: Adding Custom Items in Syncfusion® Rating Control for Xamarin.iOS
+description: Learn how to add custom items and configure their appearance in Rating control for Xamarin.iOS platform applications
 platform: xamarin.ios
-control: Rating
+control: SfRating
 documentation: ug
 ---
 
 # Custom Views
 
-SfRating Items control provides support to add custom views.
+The SfRating control provides support to add custom views for rating items.
 
 ## Add SfRating Items
 
-Add the SfRating Items control with a required optimal name by using the included namespace.
+Add the SfRating control with a required optimal name by using the included namespace.
 
 {% highlight C# %}
 
@@ -25,7 +25,7 @@ SfRatingItem item = new SfRatingItem(rating);
 
 ## Set Selected View
  
-The `SelectedView` property is used to apply the given SelectedView to selected rating item.
+The `SelectedView` property is used to apply the given selected view to the selected rating item.
 
 {% highlight C# %}
 
@@ -37,7 +37,7 @@ The `SelectedView` property is used to apply the given SelectedView to selected 
 
 ## Set UnSelected View
  
-The `UnSelectedView` property is used to apply the given UnSelectedView to unselected rating items.
+The `UnSelectedView` property is used to apply the given unselected view to unselected rating items.
 
 {% highlight C# %}
 
@@ -51,7 +51,7 @@ The `UnSelectedView` property is used to apply the given UnSelectedView to unsel
 
 The `Items` property is used to hold the collection of SfRatingItem. 
 
-N> SfRatingItem keeps both selected and unselected view respectively.
+> **Note:** SfRatingItem keeps both selected and unselected views respectively.
 
 {% highlight C# %}
 
@@ -63,7 +63,7 @@ N> SfRatingItem keeps both selected and unselected view respectively.
 
 ## Enable Custom Items
 
-When `EnableCustomItems` property is enabled, it will display the custom items added in the rating item. 
+When the `EnableCustomView` property is enabled, it will display the custom items added in the rating control.
 
 {% highlight C# %}
 

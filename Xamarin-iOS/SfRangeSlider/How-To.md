@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Events in Syncfusion® RangeSlider control for Xamarin.iOS
-description: This section provides the details about how to populate events in RangeSlider control for Xamarin.iOS
+description: This section provides comprehensive how-to guides for implementing SfRangeSlider features, styling, and event handling
 platform: xamarin.ios
 control: RangeSlider 
 documentation: ug
 ---
 
-## How to get notifications when a thumb drag is started and completed?
+# Events in RangeSlider
+## How to Get Notifications When a Thumb Drag is Started and Completed?
 
 The `DragStarted` event is raised when a thumb is dragged. After the thumb releases the pointer capture, the `DragCompleted` event is raised. The `IsStartThumb` property of the `DragThumbEventArgs` returns a boolean value, which indicates the thumb used for performing drag operations.
 
@@ -40,11 +41,11 @@ The `DragStarted` event is raised when a thumb is dragged. After the thumb relea
 
 {% endtabs %}
 
-## How to trigger ValueChange event?
+## How to Trigger ValueChange Event?
 
-The `ValueChange` event is triggered when `SfRangeSlider` value is changed. The argument contains the value of RangeSlider.
+The `ValueChange` event is triggered when the `SfRangeSlider` value is changed. The argument contains the value of the RangeSlider.
 
-`Value` - Used to gets or sets the value for range slider.
+`Value` - Used to get or set the value for the range slider.
 
 {% tabs %}
 
@@ -59,12 +60,12 @@ The `ValueChange` event is triggered when `SfRangeSlider` value is changed. The 
 
 {% endtabs %}
 
-## How to trigger RangeChange event?
+## How to Trigger RangeChange Event?
 
-The `RangeChange` event is triggered when either ``RangeStart`` or `RangeEnd` values are changed. The argument contains the following information.
+The `RangeChange` event is triggered when either `RangeStart` or `RangeEnd` values are changed. The argument contains the following information:
 
-`RangeStart` – Gets or sets the range start value of range slider.
-`RangeEnd` – Gets or sets the range end value of range slider.
+`RangeStart` – Gets or sets the range start value of the range slider.
+`RangeEnd` – Gets or sets the range end value of the range slider.
 
 {% tabs %}
 
@@ -80,9 +81,9 @@ The `RangeChange` event is triggered when either ``RangeStart`` or `RangeEnd` va
 
 {% endtabs %}
 
-## How to trigger RangeStartChange event?
+## How to Trigger RangeStartChange Event?
 
-The `RangeStartChange` event is triggered when `RangeStart` value is changed. The argument contains `RangeStart` value.
+The `RangeStartChange` event is triggered when the `RangeStart` value is changed. The argument contains the `RangeStart` value.
 
 {% tabs %}
 
@@ -97,9 +98,9 @@ The `RangeStartChange` event is triggered when `RangeStart` value is changed. Th
 
 {% endtabs %}
 
-## How to trigger RangeEndChange event?
+## How to Trigger RangeEndChange Event?
 
-The `RangeEndChange` event is triggered when `RangeEnd` value is changed. The argument contains `RangeEnd` value.
+The `RangeEndChange` event is triggered when the `RangeEnd` value is changed. The argument contains the `RangeEnd` value.
 
 {% tabs %}
 
@@ -114,11 +115,11 @@ The `RangeEndChange` event is triggered when `RangeEnd` value is changed. The ar
 
 {% endtabs %}
 
-## How to trigger ThumbTouchDown event?
+## How to Trigger ThumbTouchDown Event?
 
 The `ThumbTouchDown` event occurs when touching the thumb. The argument contains the state of the thumb.
 
-`IsStartThumb` - Gets the state whether thumb touch down position is start or end. If the thumb touch down position is start, then `IsStartThumb` state is true. If it's end, then `IsStartThumb` state is false. It is a read only property.
+`IsStartThumb` - Gets the state whether the thumb touch down position is start or end. If the thumb touch down position is start, then the `IsStartThumb` state is `true`. If it's end, then the `IsStartThumb` state is `false`. It is a read-only property.
 
 {% tabs %}
 
@@ -133,9 +134,10 @@ The `ThumbTouchDown` event occurs when touching the thumb. The argument contains
 
 {% endtabs %}
 
-## How to trigger ThumbTouchUp event?
+## How to Trigger ThumbTouchUp Event?
 
-`IsStartThumb` - Gets the state whether thumb touch up position is start or end. If the thumb touch up position is start, then `IsStartThumb` state is true. If it's end, then IsStartThumb state is false. It is a read only property.
+The `ThumbTouchUp` event occurs when releasing the thumb. The argument contains the state of the thumb.
+`IsStartThumb` - Gets the state whether the thumb touch up position is start or end. If the thumb touch up position is start, then the `IsStartThumb` state is `true`. If it's end, then the `IsStartThumb` state is `false`. It is a read-only property.
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Custom Header
-description: Custom Header in Syncfusion® TabView control for Xamarin.iOS platform
+title: Custom Header in Syncfusion® TabView control for Xamarin.iOS
+description: Learn how to create and implement custom headers in Syncfusion® TabView control for Xamarin.iOS platform
 platform: xamarin.ios
 control: TabView
 documentation: ug
@@ -42,5 +42,6 @@ private void AllCallsButton_Clicked(object sender, EventArgs e)
 }
 			
 {% endhighlight %}
+
 
 

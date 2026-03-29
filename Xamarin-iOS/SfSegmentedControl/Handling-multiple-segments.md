@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Multiple Segments | SfSegmentedControl | Xamarin.iOS | Syncfusion®
-description: How to handle multiple segments in segmented control
+description: Learn how to handle multiple segments in Segmented Control
 platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
 ---
 
-# Handling multiple segments
+# Handling Multiple Segments
 
-The segmented control handles segmented items with space distributed for items in two ways by `VisibleSegmentsCount` and `SegmentWidth`. When the available space in the segmented control is not equally distributed, the items beyond the edges of the control can be viewed by scrolling the panel.
+The Segmented Control handles segmented items with space distributed for items in two ways: by `VisibleSegmentsCount` and `SegmentWidth`. When the available space in the Segmented Control is not equally distributed, the items beyond the edges of the control can be viewed by scrolling the panel.
 
-## Visible segment counts
+## Visible Segment Counts
 
-The segmented control displays items for view based on the count value given for the `VisibleSegmentsCount` property. 
+The Segmented Control displays items for view based on the count value given for the `VisibleSegmentsCount` property.
 
 {% highlight c# %}
 
@@ -45,9 +45,9 @@ public override void ViewDidLoad()
 
 ![SegmentedControl VisibleSegmentsCount in Xamarin.iOS](images/Multiple-segments/SegmentedControl_VisibleSegments.png)
 
-## Segment width
+## Segment Width
 
-You can use the `SegmentWidth` property to display the segmented items within the given width instead of `VisibleSegmentsCount`.
+You can use the `SegmentWidth` property to display the segmented items within the given width instead of using `VisibleSegmentsCount`.
 
 {% highlight c# %}
 

@@ -1,19 +1,19 @@
 ---
-layout : post
-title : Populating data in Syncfusion® Rotator control in Xamarin.iOS
-description : Learn how to set the DataSource in Rotator for Xamarin.iOS
-platform : xamarin.ios
-control : Rotator 
-documentation : ug
+layout: post
+title: Populating Data in Syncfusion® Rotator Control in Xamarin.iOS
+description: Learn how to set the DataSource in Rotator for Xamarin.iOS
+platform: xamarin.ios
+control: SfRotator
+documentation: ug
 ---
 
 # Populating Data
 
-SfRotator control supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
+The SfRotator control supports binding to different data sources such as IList data source and Observable Collection data source.
 
 ## DataSource
 
-SfRotator items can be populated with a collection of image data. For example, a user may want to create a SfRotator control which will display a sequence of images.
+SfRotator items can be populated with a collection of image data. For example, a user may want to create an SfRotator control that will display a sequence of images.
 
 {% tabs %}
 
@@ -40,4 +40,5 @@ SfRotator items can be populated with a collection of image data. For example, a
 
 ## RotatorItem
 
-RotatorItems consisting of two properties View and ItemText using this user can set content for SFRotator.
+RotatorItems consist of two properties: `View` and `ItemText`. Using these properties, users can set content for SfRotator.
+

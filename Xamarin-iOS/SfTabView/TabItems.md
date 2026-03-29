@@ -2,14 +2,14 @@
 layout: post
 title: Tab Items
 description: About Tab items in TabView control for Xamarin.iOS platform
-platform: Xamarin.iOS
-control: TabView
+platform: xamarin.ios
+control: SfTabView
 documentation: ug
 ---
 
 # Tab Items
 
-Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
+Tab items can be configured in TabView through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemCollection`.
 
 
 {% tabs %}
@@ -42,9 +42,9 @@ Tab items can be configured in tab view through the `Items` property of `SfTabVi
 
 {% endtabs %}
 
-## Share the header space equally
+## Share the Header Space Equally
 
-To share the header space to the tabs equally, set the number of tabs that can be distributed in the available space though the `VisibleHeaderCount` of `SfTabView`.
+To share the header space among the tabs equally, set the number of tabs that can be distributed in the available space through the `VisibleHeaderCount` property of `SfTabView`.
 
 {% tabs %}
 

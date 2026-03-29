@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ticks of Syncfusion® RangeSlider control for Xamarin.iOS
-description: This section provides the details about how to set ticks in proper position for RangeSlider control in Xamarin.iOS
+title: Ticks in Syncfusion® RangeSlider control for Xamarin.iOS
+description: This section provides details about how to configure and customize ticks in RangeSlider control for Xamarin.iOS
 platform: xamarin.ios
 control: RangeSlider
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Customizing SfRangeSlider Ticks
 
-Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
+Tick marks can be placed along the track in a uniform manner, or their position can be customized.
 
 ## TickPlacement
 
-The `TickPlacement` property determines where to draw tick marks in relation to the track. Available options for this property are,
+The `TickPlacement` property determines where to draw tick marks in relation to the track. Available options for this property are:
 
 * BottomRight
 
@@ -25,11 +25,11 @@ The `TickPlacement` property determines where to draw tick marks in relation to 
 
 * TopLeft
 
-N> The default option is Inline.
+> **Note:** The default option is `Inline`.
 
 ## BottomRight
 
-Tick marks can be placed either below the track in horizontal orientation or right of the track in vertical orientation.
+Tick marks can be placed either below the track in horizontal orientation or to the right of the track in vertical orientation.
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ Tick marks can be placed either below the track in horizontal orientation or rig
 
 ## TopLeft
 
-Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation.
+Tick marks are placed either above the track in horizontal orientation or to the left of the track in vertical orientation.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ Ticks are placed along the track.
 
 ## Outside
 
-Tick marks are placed on both sides of the track either in horizontal or vertical orientation.
+Tick marks are placed on both sides of the track in either horizontal or vertical orientation.
 
 {% tabs %}
 
@@ -91,10 +91,9 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 ![The Outside](images/Outside.png)
 
+## Customizing Tick Color
 
-## Customizing tick color
-
-The range slider control provides the `TickColor` property to customize the color of ticks in tick bar.
+The RangeSlider control provides the `TickColor` property to customize the color of ticks in the tick bar.
 
 {% highlight c# %}
 
