@@ -1,15 +1,15 @@
 ---
-layout : post
-title : Getting Started with Syncfusion® AutoComplete control for Xamarin.iOS
-description : Learn here about getting started with Syncfusion® Essential® Xamarin.iOS AutoComplete Control, its elements, and more.
-platform : xamarin.ios
-control : AutoComplete
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion® AutoComplete for Xamarin.iOS
+description: Learn here about getting started with Syncfusion® Essential® Xamarin.iOS AutoComplete Control, its elements, and more.
+platform: xamarin.ios
+control: AutoComplete
+documentation: ug
 ---
 
 # Getting Started with Xamarin.iOS AutoComplete
 
-This section explains you the steps to configure a SfAutoComplete control in a real-time scenario and also provides a walk-through on some of the customization features available in SfAutoComplete control.
+This section explains the steps to configure an SfAutoComplete control in a real-time scenario and also provides a walk-through of some of the customization features available in the SfAutoComplete control.
 
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
@@ -17,13 +17,13 @@ After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
-And below assembly reference to the iOS unified project.
+Add the following assembly reference to the iOS unified project:
 
 iOS-unifed\Syncfusion.SfAutoComplete.iOS.dll
 
 ## Add SfAutoComplete
 
-* Adding namespace for the added assemblies.
+* Add the namespace for the added assemblies.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ iOS-unifed\Syncfusion.SfAutoComplete.iOS.dll
 
 {% endtabs %}
 
-* Now add the SfAutoComplete control with a required optimal name by using the included namespace.
+* Now add the SfAutoComplete control with a required optimal name using the included namespace.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ this.AddSubview(countryAutoComplete);
 
 ## Add Items
 
-A list of string with country names are created and added to auto complete source. This list will be populated as suggestion list based on text entry.
+A list of strings with country names is created and added to the AutoComplete source. This list will be populated as a suggestion list based on text entry.
 
 {% tabs %}
 
@@ -71,9 +71,9 @@ countryAutoComplete.AutoCompleteSource= countryList;
 
 ## Set Filter Mode
 
-Filters can be applied to the displayed items based on starting letter. We can also append the first item from the suggested list to the TextBox. This can be done by using the `SuggestionMode` and `AutoCompleteMode` properties in SfAutoComplete control.
+Filters can be applied to the displayed items based on the starting letter. You can also append the first item from the suggested list to the TextBox. This can be achieved by using the `SuggestionMode` and `AutoCompleteMode` properties in the SfAutoComplete control.
 
-The following example shows the SfAutoComplete control which suggest the country list starting with the letter U.
+The following example shows the SfAutoComplete control which suggests countries from the list starting with the letter "U".
 
 {% tabs %}
 

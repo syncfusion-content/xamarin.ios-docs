@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion® RadialMenu item customization in Xamarin.iOS
-description: Working with Syncfusion® RadialMenu customization of items, text, text color, background color, and view in Xamarin.iOS.
+title: RadialMenuItem customization in Syncfusion® RadialMenu control for Xamarin.iOS
+description: Learn how to customize RadialMenu items including text, colors, fonts, images, and dimensions in Xamarin.iOS applications.
 platform: xamarin.ios
 control: SfRadialMenu
 documentation: ug
@@ -9,11 +9,12 @@ documentation: ug
 
 # SfRadialMenuItem Customization
 
-The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html) class provides various options such as `Custom Views`, `FontIcons`, and `Images` to customize the items. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_Items) property that is available in SfRadialMenu.
+The [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html) class provides extensive customization options including custom views, font icons, images, and text styling. You can create hierarchical menu structures by adding items to the [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_Items) collection of the SfRadialMenu.
 
-## Items
+## Hierarchical Item Structure
 
-The [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_Items) ) property populates the items of an inner rim in `SfRadialMenu` when the items of an outer rim are tapped.
+### Items Collection
+The [Items](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_Items) property allows you to create nested menu structures. When an outer rim item is tapped, its child items are displayed in the inner rim.
 
 {% tabs %}
 {% highlight C# %}
@@ -55,9 +56,10 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
-## Text
+## Text Customization
 
-The [Text](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_Text) property provides text to the [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html).
+### Text Property
+The [Text](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenuItem_Text) property allows you to display text labels on RadialMenu items.
 
 {% tabs %}
 {% highlight C# %}

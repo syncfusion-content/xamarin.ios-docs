@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Various features of Syncfusion® NavigationDrawer control for iOS.
-description: Learn how to set content view, drawer content view, footer view, header view, drawer size in NavigationDrawer.
+title: Content configuration for Syncfusion® NavigationDrawer control in Xamarin.iOS
+description: Learn how to configure content view, drawer content view, footer view, header view, and drawer size in NavigationDrawer.
 platform: xamarin.ios
 control: NavigationDrawer
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Sliding Panel Contents
 
-The sliding panel contents are divided into three parts and they are as follows
+The sliding panel contents are divided into three main parts:
 	
 * [Drawer Content](#drawer-main-content)
 * [Header Content](#drawer-header-content) 
@@ -17,7 +17,7 @@ The sliding panel contents are divided into three parts and they are as follows
 
 ## Drawer Main Content
 
-The sliding main content of the SfNavigationDrawer can be set with any view using `DrawerContentView`. This part mostly holds the list of menus that has to be selected to display the Main content.
+The sliding main content of the SfNavigationDrawer can be configured with any view using the `DrawerContentView` property. This section typically contains the list of menu items that users can select to display different main content.
 
 {% tabs %}
 
@@ -106,11 +106,11 @@ The sliding main content of the SfNavigationDrawer can be set with any view usin
 
 {% endtabs %}
 
-![Drawercontentview](images/Drawercontentview.png)
+![Drawer content view example](images/Drawercontentview.png)
 
 ## Drawer Header Content
 
-Instead of providing everything in the drawer content view, `DrawerHeaderView` property can be used to display certain information like user id or names in the header part.
+Instead of including everything in the drawer content view, the `DrawerHeaderView` property can be used to display specific information such as user ID or names in the header section.
 
 {% tabs %}
 
@@ -177,12 +177,12 @@ namespace NavigationDrawerTest
 
 {% endtabs %}
 
-![Drawerheadview](images/Drawerheadview.png)
+![Drawer header view example](images/Drawerheadview.png)
 
 
 ## Drawer Footer Content
 
-Similar to drawer header view, the `DrawerFooterView` property can be used to set footer content. For ex: Logout option or Exit option can be placed at Footer part.
+Similar to the drawer header view, the `DrawerFooterView` property can be used to set footer content. For example, logout or exit options can be placed in the footer section.
 
 {% tabs %}
 
@@ -234,11 +234,11 @@ namespace NavigationDrawerTest
 
 {% endtabs %}
 
-![Drawerfooterview](images/Drawerfooterview.png)
+![Drawer footer view example](images/Drawerfooterview.png)
 
 ## Drawer Size
 
-Gets or sets the height and width of the DrawerView panel in the NavigationDrawer control using `DrawerHeight` and `DrawerWidth` properties.
+Configure the height and width of the DrawerView panel in the NavigationDrawer control using the `DrawerHeight` and `DrawerWidth` properties.
 
 {% tabs %}
 
@@ -251,17 +251,19 @@ Gets or sets the height and width of the DrawerView panel in the NavigationDrawe
 
 {% endtabs %}
 
-## Multiple drawers
+## Multiple Drawers
 
-The Navigation Drawer allows users to open the drawer on multiple sides with different toggle methods. The DrawerSettings class and its properties need to be used when users need to provide multiple drawers. The multiple drawers can be implemented using the following drawer settings:
+The NavigationDrawer allows users to open drawers on multiple sides with different toggle methods. The `DrawerSettings` class and its properties are used when implementing multiple drawers. Multiple drawers can be configured using the following drawer settings:
+
 * Default drawer settings
 * Secondary drawer settings
 
 N> The header and footer content are optional, but the drawer content is mandatory to allocate space for the drawer.
 		
-## Default drawer settings
+## Default Drawer Settings
 
-Implement the default drawer using the default drawer settings class. The following code sample demonstrates how to set the properties of default drawer settings inside the DrawerSettings class.
+Implement the default drawer using the `DrawerSettings` class. The following code sample demonstrates how to configure the properties of default drawer settings.
+
 {% tabs %}
 
 {% highlight c# %}
@@ -281,9 +283,9 @@ defaultDrawerSettings.DrawerFooterHeight = 150;
 
 N> The Navigation Drawer works with the value given for the properties inside the DrawerSettings class when using the default drawer settings.
 
-### Header view of the default drawer
+### Header View of the Default Drawer
 
-The header content can be provided to the default drawer using the `DrawerHeaderView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code sample demonstrates how to set header content to the default drawer.
+The header content can be provided to the default drawer using the `DrawerHeaderView` property inside the `DrawerSettings` class. The following code sample demonstrates how to set header content for the default drawer.
 
 {% tabs %}
 
@@ -306,9 +308,9 @@ navigation.DefaultDrawerSettings = defaultDrawerSettings;
 
 {% endtabs %}      
 
-### Content view of the default drawer
+### Content View of the Default Drawer
 
-The drawer content can be provided to the default drawer using the `DrawerContentView` property inside the DrawerSettings class. The following code sample demonstrates how to set drawer content to the default drawer.
+The drawer content can be provided to the default drawer using the `DrawerContentView` property inside the `DrawerSettings` class. The following code sample demonstrates how to set drawer content for the default drawer.
 
 {% tabs %}
 
@@ -334,9 +336,9 @@ SetContentView(navigationDrawer);
 
 {% endtabs %}   
 
-### Footer view of the default drawer
+### Footer View of the Default Drawer
 
-The footer content can be provided to the default drawer using the `DrawerFooterView` property inside the DrawerSettings class of DefaultDrawerSettings. The following code sample demonstrates how to set footer content to the default drawer.
+The footer content can be provided to the default drawer using the `DrawerFooterView` property inside the `DrawerSettings` class. The following code sample demonstrates how to set footer content for the default drawer.
 
 {% tabs %}
 
@@ -359,9 +361,9 @@ navigation.DefaultDrawerSettings = defaultDrawerSettings;
 
 {% endtabs %}   
 
-## Secondary drawer settings   
+## Secondary Drawer Settings
 
-Implement the secondary drawer using the secondary drawer settings class. Its properties and functionalities are same as the default drawer. The secondary drawer can be set to different positions similar to the default drawer. The following code sample demonstrates how to set the properties of secondary drawer settings inside the DrawerSettings class.
+Implement the secondary drawer using the secondary drawer settings class. Its properties and functionalities are the same as the default drawer. The secondary drawer can be positioned differently from the default drawer. The following code sample demonstrates how to configure the properties of secondary drawer settings.
 
 {% tabs %}
 
@@ -383,9 +385,9 @@ secondaryDrawerSettings.DrawerFooterHeight = 150;
 
 N> When the default drawer and the secondary drawer are set to the same position, the default drawer will open on swiping.
 
-### Header view of the secondary drawer
+### Header View of the Secondary Drawer
 
-The header content can be provided to the secondary drawer using the `DrawerHeaderView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code sample demonstrates how to set the header content to the secondary drawer.
+The header content can be provided to the secondary drawer using the `DrawerHeaderView` property inside the `DrawerSettings` class. The following code sample demonstrates how to set header content for the secondary drawer.
 
 {% tabs %}
 
@@ -408,9 +410,9 @@ navigation.SecondaryDrawerSettings=secondaryDrawerSettings;
 
 {% endtabs %}      
 
-### Content view of the secondary drawer
+### Content View of the Secondary Drawer
 
-The drawer content can be provided to the secondary drawer using the `DrawerContentView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code sample demonstrates how to set the drawer content to the secondary drawer.
+The drawer content can be provided to the secondary drawer using the `DrawerContentView` property inside the `DrawerSettings` class. The following code sample demonstrates how to set drawer content for the secondary drawer.
 
 {% tabs %}
 
@@ -435,9 +437,9 @@ SetContentView(navigationDrawer);
 
 {% endtabs %}   
 
-### Footer view of the secondary drawer
+### Footer View of the Secondary Drawer
 
-The footer content can be provided to the secondary drawer using the `DrawerFooterView` property inside the DrawerSettings class of SecondaryDrawerSettings. The following code sample demonstrates how to set footer content to the secondary drawer.
+The footer content can be provided to the secondary drawer using the `DrawerFooterView` property inside the `DrawerSettings` class. The following code sample demonstrates how to set footer content for the secondary drawer.
 
 {% tabs %}
 
@@ -460,7 +462,7 @@ navigation.SecondaryDrawerSettings = secondaryDrawerSettings;
 
 {% endtabs %}   
 
-## Toggling method
+## Toggling Methods
 
 Users can toggle the secondary drawer using the `ToggleSecondaryDrawer` method. 
 
@@ -470,8 +472,8 @@ navigationDrawer.ToggleSecondaryDrawer();
 
 {% endhighlight %}
 
-### Opening the drawer programmatically
+### Opening Drawer Programmatically
 
-The `IsOpen` property in the DrawerSettings of SecondaryDrawerSettings is used to open or close the drawer programmatically.
+The `IsOpen` property in the `DrawerSettings` can be used to open or close the drawer programmatically.
 
 N> Users can open only one drawer at a time.

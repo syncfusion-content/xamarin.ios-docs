@@ -1,15 +1,22 @@
 ---
 layout: post
 title: IsBusy support in Syncfusion® BusyIndicator control for Xamarin.iOS
-description: This section provides the details about how to enable and disable animation in BusyIndicator for Xamarin.iOS
+description: This section provides details about how to enable and disable animations in BusyIndicator for Xamarin.iOS
 platform: xamarin.ios
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# Make Busy Animation Idle
+# Control Busy Animation State
 
-SfBusyIndicator control provides support to determine whether an animation needs to be executed or not. Setting the `IsBusy` property to false will stop the animation and removes the control from view. 
+The SfBusyIndicator control allows you to control whether animations are active or inactive using the `IsBusy` property. This property determines the visibility and animation state of the busy indicator.
+
+## IsBusy Property
+
+The `IsBusy` property is a boolean value that controls the animation state:
+
+- **true**: Shows the busy indicator and starts the animation
+- **false**: Hides the busy indicator and stops the animation
 
 {% tabs %}
 

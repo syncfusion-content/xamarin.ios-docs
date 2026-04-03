@@ -1,17 +1,18 @@
 ---
 layout: post
 title: Overview of Syncfusion® BusyIndicator control for Xamarin.iOS
-description: Overview and key features of BusyIndicator control
+description: Overview and key features of Syncfusion® BusyIndicator control for Xamarin.iOS platform including customization options and implementation details.
 platform: xamarin.ios
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# SfBusyIndicator
+# SfBusyIndicator Overview
 
-SfBusyIndicator makes it easy to let the user know when an application is busy. Simply wrap the relevant content in an instance of the SfBusyIndicator control and toggle its `IsBusy` property to True during any long-running process. The SfBusyIndicator should be used to indicate activity while content is being loaded or the UI is blocked waiting for a resource to become available. 
+The SfBusyIndicator control provides an elegant way to indicate when your application is performing time-consuming operations. It displays animated visual feedback to users, letting them know that the application is actively working and hasn't frozen or become unresponsive.
+Simply wrap the relevant content in an instance of the SfBusyIndicator control and toggle its `IsBusy` property to `true` during any long-running process. The SfBusyIndicator should be used to indicate activity while content is being loaded, data is being processed, or the UI is blocked waiting for a resource to become available.
 
-![](images/overview.png)
+![Overview of SfBusyIndicator](images/overview.png)
 
 ## Key Features
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Syncfusion® RadialMenu control for Xamarin.iOS
-description: Learn how to perform events like navigating, opening, navigated, opened, center button tapped, and when the center button back has been tapped in SfRadialMenu
+description: Learn how to handle events like navigating, opening, closing, center button tapped, and center button back tapped in SfRadialMenu
 platform: xamarin.ios
 control: SfRadialMenu
 documentation: ug
@@ -11,8 +11,7 @@ documentation: ug
 
 ## Perform an action when navigating to the next level
 
-In a radial menu, you can perform actions when navigating from one level to another. The `Navigating` event occurs when navigating from one level to another, and the `Navigated` event occurs after  navigating to another level.
-
+You can perform actions when navigating between different levels in the radial menu. The `Navigating` event occurs before navigating from one level to another, while the `Navigated` event occurs after the navigation is completed.
 {% tabs %}
 {% highlight c# %}
 
@@ -93,7 +92,7 @@ N> You can cancel navigation using the `Cancel` event argument.
 
 ## Perform an action when opening the radial menu
 
-You can perform an action when opening the radial menu. The `Opening` event occurs when opening the radial menu, and the `Opened` event occurs after the radial menu is opened.
+You can perform actions when the radial menu is being opened. The `Opening` event occurs before the radial menu opens, while the `Opened` event occurs after the menu is fully opened.
 
 {% tabs %}
 {% highlight c# %}

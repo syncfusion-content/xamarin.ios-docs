@@ -1,17 +1,18 @@
 ---
 layout: post
 title: Data source in Syncfusion® Carousel control in Xamarin.iOS
-description: This section provides the details about the populating the data source with Carousel control for Xamarin.iOS
+description: This section provides details about populating the data source with Carousel control for Xamarin.iOS
 platform: xamarin.ios
 control: Carousel
 documentation: ug
 ---
 
-# Populating DataSource
+# Populating Data Source
 
-## DataSource with Collection of Images
+The SfCarousel control supports multiple ways to populate data, allowing you to display collections of images or custom views based on your application requirements.
+## Data Source with Collection of Images
 
-SfCarousel items can be populated with a collection of business objects. For example, a user may wants to create a SfCarousel control which will display a list of images.
+SfCarousel items can be populated with a collection of business objects. For example, you may want to create an SfCarousel control that displays a list of images.
 
 {% highlight c# %}
 
@@ -26,9 +27,9 @@ carousel.DataSource = carouselItemCollection;
 	
 {% endhighlight %}
 
-## DataSource with Collection of custom view
+## Data Source with Collection of Custom Views
 
-SfCarousel items can be populated with a collection of business objects. It can be achieved by passing the custom view into View property in SfCarouselItem
+SfCarousel items can also be populated with custom views for more complex layouts. This can be achieved by passing a custom view to the `View` property in `SfCarouselItem`.
 
 {% highlight c# %}
 

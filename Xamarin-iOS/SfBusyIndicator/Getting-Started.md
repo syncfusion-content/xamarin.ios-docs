@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion® BusyIndicator control for Xamarin.iOS
-description: This section provides the details about the initial users on Syncfusion® busyIndicator control for Xamarin.iOS platform
+description: This section provides details for new users getting started with Syncfusion® BusyIndicator control for Xamarin.iOS platform
 platform: xamarin.ios
 control: SfBusyIndicator
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with BusyIndicator
 
-This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
+This section explains the steps to configure an SfBusyIndicator control in a real-time scenario and provides a walkthrough of the customization features available in the SfBusyIndicator control.
 
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
@@ -17,13 +17,14 @@ After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
-And below assembly reference to the iOS unified project.
+Add the following assembly reference to the iOS unified project:
 
 iOS-unified\Syncfusion.SfBusyIndicator.iOS.dll
 
 ## Add BusyIndicator
 
-* Adding namespace for the added assemblies.
+### Adding Namespace
+Add the namespace for the referenced assemblies:
 
 {% tabs %}
 
@@ -50,9 +51,9 @@ iOS-unified\Syncfusion.SfBusyIndicator.iOS.dll
 
 ## Set Animation Type
 
-SfBusyIndicator provides 10 predefined animation types like Ball, Battery, Globe and so on. User can select any one of the animation types using `AnimationType`property.
+SfBusyIndicator provides 10+ predefined animation types such as Ball, Battery, Globe, and more. You can select one of the animation types using the `AnimationType` property.
 
-Following example depicts the battery type animation for SfBusyIndicator. 
+The following example shows how to set the battery animation type for SfBusyIndicator:
 
 {% tabs %}
 
@@ -64,7 +65,7 @@ Following example depicts the battery type animation for SfBusyIndicator.
 
 {% endtabs %}
 	
-## Configure the Properties for SFBusyIndicator
+## Configure Properties for SFBusyIndicator
 
 Size and color can be customized in SfBusyIndicator as follows.
 

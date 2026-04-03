@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Center button with  Syncfusion® RadialMenu control in Xamarin.iOS
-description: Working with customization options available in the SfRadialMenuItems for CenterButton and BackButton in Xamarin.iOS
+title: Center button customization with Syncfusion® RadialMenu control in Xamarin.iOS
+description: Learn about customization options available for CenterButton and BackButton in SfRadialMenu for Xamarin.iOS
 platform: xamarin.ios
 control: SfRadialMenu
 documentation: ug
 ---
 
-# Dealing with CenterButton and BackButton
-
-The CenterButton or BackButton in the radial menu can be viewed in the center of the radial menu. It performs operations such as opening and closing the rim and navigating to next level items. The radial menu allows you to customize the CenterButton/BackButton with `FontIcon`, `Custom View`, and `Caption`.
+# Center Button and Back Button Customization
+The center button and back button in the radial menu are displayed at the center of the control. These buttons perform essential operations such as opening and closing the rim and navigating between menu levels. The SfRadialMenu allows you to customize the center button and back button with various options including font icons, custom views, and captions.
 
 ## CenterButtonText and CenterButtonBackText
 
-The [CenterButtonText](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonText) changes the text of the center button in `SfRadialMenu`, and the [CenterButtonBackText](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonBackText) changes the text of the center back button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
+The [CenterButtonText](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonText) property sets the text or icon for the center button in SfRadialMenu, while the [CenterButtonBackText](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonBackText) property sets the text or icon for the center back button.
 
 {% tabs %}
 {% highlight C# %}
@@ -70,12 +69,10 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
-![CenterButtonText](images/CenterButtonText.png)
-
+![Center button text customization example](images/CenterButtonText.png)
 ## CenterButtonTextColor and CenterButtonBackTextColor
 
-The [CenterButtonTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonTextColor) changes the text color of the center button in `SfRadialMenu`, and the 'CenterButtonBackTextColor' changes the text color of the center back button in [SfRadialMenu](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html).
-
+The [CenterButtonTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonTextColor) property changes the text color of the center button, while the [CenterButtonBackTextColor](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenu.html#Syncfusion_SfRadialMenu_iOS_SfRadialMenu_CenterButtonBackTextColor) property changes the text color of the center back button in SfRadialMenu.
 {% tabs %}
 {% highlight C# %}
 
@@ -558,3 +555,4 @@ namespace RadialMenuNative
 
 {% endhighlight %}
 {% endtabs %}
+

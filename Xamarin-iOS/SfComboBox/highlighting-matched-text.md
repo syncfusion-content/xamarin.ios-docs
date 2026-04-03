@@ -1,27 +1,26 @@
 ---
 layout : post
-title : MatchHighlighting in Syncfusion® SfComboBox control for Xamarin.iOS
+title : Match Highlighting in Syncfusion® SfComboBox control for Xamarin.iOS
 description : Learn how to highlight the matched text in SfComboBox
 platform : xamarin.ios
 control : SfComboBox
 documentation : ug
 ---
 
-# Highlighting matched text
+# Highlighting Matched Text
 
-An item can be picked with more clarity by highlight the matching characters in a suggestion list using the following two ways:
+An item can be picked with more clarity by highlighting the matching characters in a suggestion list using the following two ways:
 
-* First occurrence
+* First Occurrence
+* Multiple Occurrence
 
-* Multiple occurrence
+Text highlighting can be customized with various styles by configuring the following properties:
 
-Highlighting the text can be indicated with various customizing styles by enabling the following properties:
+* **HighlightedTextColor** - Sets the color of the highlighted text for differentiating the highlighted characters.
 
-* `HighlightedTextColor` - sets the color of the highlighted text for differentiating the highlighted characters.
+N> The dropdown text can be highlighted only when the `AllowFiltering` property is set to `true`.
 
-N> The drop-down text can be highlighted only when the AllowFiltering is set to true.
-
-## First occurrence
+## First Occurrence
 
 Highlights the first position of the matching characters in the suggestion list.
 
@@ -38,14 +37,12 @@ combobox.HighlightedTextColor = Color.Red;
 
 {% endtabs %}
 
-N> The default Color of HighlightedTextColor is Red.
-   The default FontTypeFace of HighlightedTextFontTypeFace is None.
-	
+N> The default color of `HighlightedTextColor` is Red.
 ![](images/FirstOccurrence.png)
 
 ## Multiple Occurrence
 
-Highlights the matching character that occurs everywhere in the suggestion list for Contains case in SuggestionMode.
+Highlights all matching characters that occur throughout the suggestion list when using the Contains mode in `SuggestionMode`.
 
 {% tabs %}
 

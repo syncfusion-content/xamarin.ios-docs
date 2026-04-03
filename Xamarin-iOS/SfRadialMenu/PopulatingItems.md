@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in Syncfusion® RadialMenu control for Xamarin.iOS
-description: Learn how to perform DataBinding, adding outer rim items, nested items, duration of the animation, and other property usages in SfRadialMenu.
+title: Populating items in Syncfusion® RadialMenu control for Xamarin.iOS
+description: Learn how to populate items, add nested items, configure animation duration, and customize appearance properties in SfRadialMenu.
 platform: xamarin.ios
 control: SfRadialMenu
 documentation: ug
@@ -9,16 +9,15 @@ documentation: ug
 
 # Populating Items
 
-This section explains how to populate items using the radial menu item and item source.
+This section explains how to populate items in the RadialMenu using different approaches and customize their appearance and behavior.
 
-## Through radial menu items
+## Adding Items Through RadialMenuItem Collection
 
-By passing a collection of [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html), you can get the view of the `SfRadialMenu` control. The radial menu item class provides various options such as custom views, font icons, and images to customize the items. You can also add radial menu items by hierarchy.
+You can populate the SfRadialMenu by passing a collection of [SfRadialMenuItem](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfRadialMenu.iOS.SfRadialMenuItem.html) objects. The RadialMenuItem class provides various customization options including custom views, font icons, and images. You can also create hierarchical menu structures with nested items.
 
-### Adding outer rim items of radial menu
+### Adding Outer Rim Items
 
-The following code sample shows how to add the outer rim items of the radial menu.
-
+The following code sample demonstrates how to add items to the outer rim of the radial menu:
 {% tabs %}
 {% highlight c# %}
 
@@ -67,12 +66,9 @@ namespace RadialMenuNative
 {% endhighlight %}
 {% endtabs %}
 
-### Adding nested items of a radial menu
+### Adding Nested Items
 
-You can populate the nested levels of items within a menu to group similar actions. For example, you can group the clipboard operations by adding clipboard as the main menu and cut, copy, and paste as its children.
-
-The following code sample shows how to add the nested items of the radial menu.
-
+You can create hierarchical menu structures by adding nested items within main menu items. This is useful for grouping related actions together. For example, you can group clipboard operations by adding clipboard as the main menu item and cut, copy, and paste as its sub-items.
 {% tabs %}
 {% highlight c# %}
 
@@ -425,3 +421,4 @@ namespace RadialMenuNative
 {% endtabs %}
 
 ![RimRadius](images/RimRadius.png)
+

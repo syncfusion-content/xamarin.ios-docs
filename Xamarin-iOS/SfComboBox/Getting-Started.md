@@ -1,23 +1,23 @@
 ---
 layout : post
 title : Getting Started with Syncfusion® ComboBox control for Xamarin.iOS
-description : A quick tour to initial users on Syncfusion® combobox control for Xamarin.iOS platform 
+description : A quick tour to initial users on Syncfusion® ComboBox control for Xamarin.iOS platform
 platform : xamarin.ios
 control : ComboBox
 documentation : ug
 ---
 
-# Getting started
+# Getting Started
 
-This section explains the steps required to create combo box, populate it with data, and filter suggestions. Here, we create a simple sample is created for changing the resolution. and this This section covers only the minimal features that are needed to get started with the ComboBox combo box.  
+This section explains the steps required to create a ComboBox, populate it with data, and filter suggestions. Here, we create a simple sample for changing the resolution. This section covers only the minimal features that are needed to get started with the ComboBox.
 
-## Referencing Essential Studio<sup>®</sup> components in your solution
+## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
-After installing Essential Studio<sup>®</sup> for Xamarin, find all the required assemblies in the installation folders, 
+After installing Essential Studio<sup>®</sup> for Xamarin, find all the required assemblies in the installation folders:
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
-The assembly reference to the iOS unified project is as follows.
+The assembly reference to the iOS unified project is as follows:
 
 iOS-unifed\Syncfusion.SfComboBox.iOS.dll
 
@@ -47,10 +47,9 @@ SfComboBox combobox = new SfComboBox();
 
 {% endtabs %}
 
+## Adding Items
 
-## Adding items
-
-A NSMutableArray of string with resolution list is created and added to the combo box source. This list is populated as suggestion list by setting the ComboBoxSource property based on text entry.
+An NSMutableArray of strings with a resolution list is created and added to the ComboBox source. This list is populated as a suggestion list by setting the `ComboBoxSource` property based on text entry.
 
 {% tabs %}
 
@@ -88,15 +87,15 @@ this.Add(combobox);
 
 ![](images/gettingstarted.png)
 
-## Combo box modes
+## ComboBox Modes
 
-The SfComboBox supports both editable and non-editable text boxes to choose selected items in given data source. Users can select an item from the suggestion box.
+The SfComboBox supports both editable and non-editable text boxes to choose selected items in the given data source. Users can select an item from the suggestion box.
 
-N > The default value of the IsEditableMode property is false
+N> The default value of the `IsEditable` property is `false`.
 
-## Non-editable combo box 
+## Non-Editable ComboBox
 
-Non-editable mode is used to prevents users from typing and allows them to select items from the drop-down list. If the `IsEditable` property is set to false, the combo box is non-editable mode. In non-editable mode, the suggestion box can be displayed by clicking the control or drop-down button.
+Non-editable mode prevents users from typing and allows them to select items from the dropdown list. If the `IsEditable` property is set to `false`, the ComboBox is in non-editable mode. In non-editable mode, the suggestion box can be displayed by clicking the control or dropdown button.
 
 
 {% tabs %}
@@ -113,22 +112,22 @@ combobox.IsEditable = false;
 
 //Add the items
 NSMutableArray resolutionList = new NSMutableArray();
-resolutionList .Add((NSString)" 1920 x 1080");
-resolutionList .Add((NSString)" 1680 x 1050");
-resolutionList .Add((NSString)" 1600 x 900");
-resolutionList .Add((NSString)" 1440 x 900");
-resolutionList .Add((NSString)" 1400 x 1050");
-resolutionList .Add((NSString)" 1366 x 768");
-resolutionList .Add((NSString)" 1280 x 1024");
-resolutionList .Add((NSString)" 1280 x 960");
-resolutionList .Add((NSString)" 1280 x 720");
-resolutionList .Add((NSString)" 854 x 480");
-resolutionList .Add((NSString)" 800 x 480");
-resolutionList .Add((NSString)" 480 X 640");
-resolutionList .Add((NSString)" 480 x 320");
-resolutionList .Add((NSString)" 432 x 240");
-resolutionList .Add((NSString)" 360 X 640");
-resolutionList .Add((NSString)" 320 x 240");
+resolutionList.Add((NSString)"1920 x 1080");
+resolutionList.Add((NSString)"1680 x 1050");
+resolutionList.Add((NSString)"1600 x 900");
+resolutionList.Add((NSString)"1440 x 900");
+resolutionList.Add((NSString)"1400 x 1050");
+resolutionList.Add((NSString)"1366 x 768");
+resolutionList.Add((NSString)"1280 x 1024");
+resolutionList.Add((NSString)"1280 x 960");
+resolutionList.Add((NSString)"1280 x 720");
+resolutionList.Add((NSString)"854 x 480");
+resolutionList.Add((NSString)"800 x 480");
+resolutionList.Add((NSString)"480 x 640");
+resolutionList.Add((NSString)"480 x 320");
+resolutionList.Add((NSString)"432 x 240");
+resolutionList.Add((NSString)"360 x 640");
+resolutionList.Add((NSString)"320 x 240");
 combobox.ComboBoxSource = resolutionList;
 this.Add(combobox); 
 
@@ -138,9 +137,9 @@ this.Add(combobox);
 
 ![](images/gettingstartednoneditable.png)
 
-## Editable combo box
+## Editable ComboBox
 
-In editable mode, the combo box allows users to edit in the text box that shows suggestions in the drop-down list based on the input. With the previous codes, the `IsEditableMode` property is set to true. This helps users to edit the SfComboBox control.
+In editable mode, the ComboBox allows users to edit in the text box that shows suggestions in the dropdown list based on the input. With the previous code, the `IsEditable` property is set to `true`. This helps users to edit the SfComboBox control.
 
 {% tabs %}
 
@@ -182,9 +181,9 @@ this.Add(combobox);
 
 ![](images/gettingstartededitable.png)
 
-## Selecting an item
+## Selecting an Item
 
-When selecting an item from the drop-down list, the selection changed event will be called. Using the following code snippet, a dialogue box will be displayed when a new item is selected from the suggestion box.
+When selecting an item from the dropdown list, the selection changed event will be called. Using the following code snippet, a dialog box will be displayed when a new item is selected from the suggestion box.
 
 {% tabs %}
 

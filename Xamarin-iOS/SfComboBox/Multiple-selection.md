@@ -1,23 +1,22 @@
 ---
-layout : post
-title : Multi Selection in Syncfusion® SfComboBox control for Xamarin.iOS
-description :  Learn how to select multiple items in SfComboBox
-platform : xamarin.ios 
-control : ComboBox
-documentation : ug
+layout: post
+title: Multiple Selection in Syncfusion® SfComboBox control for Xamarin.iOS
+description: Learn how to select multiple items in SfComboBox
+platform: xamarin.ios
+control: ComboBox
+documentation: ug
 ---
 
 # Multiple Selection
 
-You can select multiple items from a drop-down list by following two ways. 
+You can select multiple items from a dropdown list in the following two ways:
  
-* Token representation
-
+* Token Representation
 * Delimiter
 
-## Token representation
+## Token Representation
 
-Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button. 
+Selected items will be displayed with a customizable token representation, and users can remove each tokenized item using the close button.
 
 {% tabs %}
 
@@ -29,13 +28,12 @@ combobox.MultiSelectMode = MultiSelectMode.Token;
 
 {% endtabs %}
 
-### Wrap mode of token
+### Wrap Mode of Token
 
-The selected item can be displayed as token inside the combo box in the following two ways.
+The selected items can be displayed as tokens inside the ComboBox in the following two ways:
 
-* `Wrap` - When the `TokensWrapMode` is set to `Wrap` the selected items will be wrapped to the next line of the combo box.
-
-* `None` - When the `TokensWrapMode` is set to `None` the selected item will be wrapped in horizontal orientation.
+* **Wrap** - When the `TokensWrapMode` is set to `Wrap`, the selected items will be wrapped to the next line of the ComboBox.
+* **None** - When the `TokensWrapMode` is set to `None`, the selected items will be arranged in horizontal orientation.
 
 {% tabs %}
 
@@ -157,25 +155,18 @@ public Employee(string name, string image)
 
 ![](images/TokenRepresentationWrap.png)
 
-### Token customization
+### Token Customization
 
-Token can be customized in the following ways.
+Tokens can be customized in the following ways:
 
-* `TextColor` - Sets the color of the text inside the token.
-
-* `FontSize` - Sets the size of the font inside the token.
-
-* `FontFamily` - Sets the font family for the text inside the token.
-
-* `BackgroundColor` - Sets the background color of the token.
-
-* `SelectedBackgroundColor` - Sets the background color of the token when it is selected.
-
-* `IsCloseButtonVisible` - Enables and disables the close button inside the combo Box.
-
-* `DeleteButtonColor` - Sets the color of the close button inside the combo box.
-
-* `CornerRadius` - Sets the corner radius for the token.
+* **TextColor** - Sets the color of the text inside the token.
+* **FontSize** - Sets the size of the font inside the token.
+* **FontFamily** - Sets the font family for the text inside the token.
+* **BackgroundColor** - Sets the background color of the token.
+* **SelectedBackgroundColor** - Sets the background color of the token when it is selected.
+* **IsCloseButtonVisible** - Enables and disables the close button inside the token.
+* **DeleteButtonColor** - Sets the color of the close button inside the token.
+* **CornerRadius** - Sets the corner radius for the token.
 
 {% tabs %}
 
@@ -203,9 +194,9 @@ combobox.TokenSettings = token;
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the `Delimiter` property.
+When selecting multiple items, the selected items can be separated with a desired character specified as a delimiter. You can set the delimiter character using the `Delimiter` property.
 
-N> The default delimiter character is “,”.
+N> The default delimiter character is ",".
 
 {% tabs %}
 
@@ -219,8 +210,7 @@ combobox.MultiSelectMode = MultiSelectMode.Delimiter;
 
 ![](images/Delimiter.png)
 
-
-We can add the custom delimiter character by using `Delimiter` property.
+You can add a custom delimiter character by using the `Delimiter` property.
 
 {% tabs %}
 
