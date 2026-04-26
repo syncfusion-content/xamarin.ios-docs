@@ -8,7 +8,7 @@ documentation: ug
 
 # Range Support in SfNumericTextBox
 
-Restrict the values within a specific range by setting the Maximum and Minimum property values.
+You can restrict the values within a specific range by setting the `Maximum` and `Minimum` property values.
 
 {% highlight c# %}
 
@@ -25,4 +25,4 @@ this.Add(numericTextBox);
 			
 {% endhighlight %}
 
-N> Default Value of `Maximum` and `Minimum` is "null".
+N> The default value of `Maximum` and `Minimum` is null.

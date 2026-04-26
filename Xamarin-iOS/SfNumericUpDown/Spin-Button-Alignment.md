@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in Syncfusion® NumericUpDown control for Xamarin.iOS
-description: Learn how to add customize spin buttons position and its appearance in Xamarin.iOS NumericUpDown control.
+description: Learn how to customize spin button position and appearance in Xamarin.iOS Syncfusion® NumericUpDown control.
 platform: xamarin.ios
 control: NumericUpDown
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Spin Button Alignment
 
-Spin Button position in the NumericUpDown control can be changed relative to the TextBox based on `SpinButtonAlignment` property. 
+The spin button position in the NumericUpDown control can be changed relative to the TextBox based on the `SpinButtonAlignment` property.
 
-There are three built-in modes.
+There are three built-in modes:
 
-### Right
+## Right
 
-Spin Buttons will get aligned to the right side of the control.
+Spin buttons will be aligned to the right side of the control.
 
 {% highlight C# %}
 
@@ -25,11 +25,11 @@ numeric.SpinButtonAlignment = SFNumericUpDownSpinButtonAlignment.Right;
 
 {% endhighlight %}
 
-![Display the NumericUpDown spin button with right](images/spinright.png)
+![Display the NumericUpDown spin button with right alignment](images/spinright.png)
 
-### Left
+## Left
 
-Spin Buttons will get aligned to the left side of the control.
+Spin buttons will be aligned to the left side of the control.
 
 {% highlight C# %}
 
@@ -39,11 +39,11 @@ numeric.SpinButtonAlignment = SFNumericUpDownSpinButtonAlignment.Left;
 
 {% endhighlight %}
 
-![Display the NumericUpDown spin button with left](images/spinleft.png)
+![Display the NumericUpDown spin button with left alignment](images/spinleft.png)
 
-### Both
+## Both
 
-Spin Buttons will get aligned to the both side of the control.
+Spin buttons will be aligned to both sides of the control.
 
 {% highlight C# %}
 
@@ -53,19 +53,19 @@ numeric.SpinButtonAlignment = SFNumericUpDownSpinButtonAlignment.Both;
 
 {% endhighlight %}
 
-![Display the NumericUpDown spin button with both side](images/spinboth.png)
+![Display the NumericUpDown spin button with both sides alignment](images/spinboth.png)
 
-N> By default the property value is Right.
+N> By default, the property value is Right.
 
-## UpDownButtonSetting customization
+## UpDownButtonSettings Customization
 
-You can customize the UpDownButton of `SfNumericUpDown` control by using any of the following ways:
+You can customize the UpDownButton of the `SfNumericUpDown` control using any of the following methods:
 
 1. View
 2. Image
 3. FontIconText
 
-### By using the View
+### Using View
 
 {% highlight C# %}
 
@@ -101,7 +101,7 @@ numeric.DecrementButtonSettings = new UpDownButtonSettings()
 
 {% endhighlight %}
 
-### By using the Image with ButtonHeight and ButtonWidth
+### Using Image with ButtonHeight and ButtonWidth
 
 {% highlight C# %}
 
@@ -129,7 +129,7 @@ this.Add(numeric);
 
 {% endhighlight %}
 
-### By using the FontIconText
+### Using FontIconText
 
 {% highlight C# %}
 
@@ -155,8 +155,7 @@ this.Add(numeric);
 
 {% endhighlight %}
 
-## Additional customization on spin buttons
-
+## Additional Spin Button Customization
 ### BackgroundColor
 
 This property is used to change the background color of the increment and decrement buttons.
@@ -181,11 +180,11 @@ numeric.DecrementButtonSettings = new UpDownButtonSettings()
 
 {% endhighlight %}
 
-![Display the value with maximum](images/buttonbackground.png)
+![Display the spin buttons with background color](images/buttonbackground.png)
 
 ### HighlightedBackgroundColor
 
-This property is used to change the background color of tapped spin button
+This property is used to change the background color of the tapped spin button.
 
 {% highlight C# %}
 
@@ -234,7 +233,7 @@ numeric.DecrementButtonSettings = new UpDownButtonSettings()
 
 ### HighlightedFontColor
 
-This property is used to change the text color of tapped spin button.
+This property is used to change the text color of the tapped spin button.
 
 {% highlight C# %}
 

@@ -8,13 +8,13 @@ documentation: ug
 
 # Number Formatting in SfNumericTextBox
 
-The values of the SfNumericTextBox can be configured to display different formats like currency format, percent format etc. 
+The values of the SfNumericTextBox can be configured to display different formats like currency format, percent format, etc.
 
 ## Format String
 
 The `FormatString` property determines the format specifier by which the display text has to be formatted. 
 
-N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
+N> The control displays the formatted text on lost focus. The default value of `FormatString` is "n".
 
 ### Display Currency Notation
 
@@ -30,7 +30,7 @@ numericTextBox.FormatString = "c";
 	
 ### Display Number Notation
 
-`n` – Display the value in number format.
+`n` – Displays the value in number format.
 	
 {% highlight c# %}
 
@@ -42,7 +42,7 @@ numericTextBox.FormatString = "n";
 	
 ### Display Percentage Notation
 
-`p` – Display the value in percentage.
+`p` – Displays the value in percentage.
 	
 {% highlight c# %}
 
@@ -52,15 +52,15 @@ numericTextBox.FormatString = "p";
 	 
 {% endhighlight %}
 	
-N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericTextBox. 
+N> Instead of using the above `FormatString` types, you can provide any symbol or value as a string in the `FormatString` property which will be appended with the value in SfNumericTextBox.
 
 ![Display the SfNumericTextBox with FormatString](images/FormatString.png)
 
 ## Parser Input Value
 
-The value of the SfNumericTextBox can be parsed based on the `ParserMode ` property. 
+The value of the SfNumericTextBox can be parsed based on the `ParserMode` property.
 
-N> The `ParserMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParserMode` is Double.
+N> The `ParserMode` is of type Parsers containing enum values of Double and Decimal. The default value for `ParserMode` is Double.
 
 {% highlight c# %}
 
@@ -116,9 +116,7 @@ numericTextBox.PercentDisplayMode = SFNumerictextBoxPercentDisplayMode.Compute;
 
 ## Group separator modes
 
-[`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfNumericTextBox.iOS.SfNumericTextBox_1.html#Syncfusion_SfNumericTextBox_iOS_SfNumericTextBox_GroupSeparatorMode) provides 2 states to display the group separator. 
-When the mode is set as `Always`, it will display separator while typing itself on the other hand when the mode is set as `LostFocus` it will enable the separator when the control lost its focus.
-
+[`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfNumericTextBox.iOS.SfNumericTextBox_1.html#Syncfusion_SfNumericTextBox_iOS_SfNumericTextBox_GroupSeparatorMode) provides 2 states to display the group separator. When the mode is set as `Always`, it will display the separator while typing itself. On the other hand, when the mode is set as `LostFocus`, it will enable the separator when the control loses its focus.
 N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfNumericTextBox.iOS.SfNumericTextBox_1.html#Syncfusion_SfNumericTextBox_iOS_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the [`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin-ios/Syncfusion.SfNumericTextBox.iOS.SfNumericTextBox_1.html#Syncfusion_SfNumericTextBox_iOS_SfNumericTextBox_GroupSeparatorMode).
 
 {% tabs %}

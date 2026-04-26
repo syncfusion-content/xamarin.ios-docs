@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Localization in SfNumericTextBox
 
-The SfNumericTextBox value can be localized to any specific culture. It can be specified by setting the `CultureInfo` property with `NSLocale` object instance.
+The SfNumericTextBox value can be localized to any specific culture. It can be specified by setting the `CultureInfo` property with an `NSLocale` object instance.
 
-N> Default `CultureInfo` property value is en-US.
+N> The default `CultureInfo` property value is en-US.
 
 {% highlight c# %}
 

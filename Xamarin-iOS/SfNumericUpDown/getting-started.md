@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with Syncfusion® NumericUpDown Control for Xamarin.iOS
-description: A quick tour to initial users on Syncfusion® NumericUpDown control and customization features available in Xamarin.iOS platform 
+title: Getting Started with Syncfusion® SfNumericUpDown Control for Xamarin.iOS
+description: A quick tour to initial users on Syncfusion® SfNumericUpDown control and customization features available in Xamarin.iOS platform
 platform: xamarin.ios
-control: NumericUpDown 
+control: SfNumericUpDown
 documentation: ug
 ---
 
-# Getting Started with NumericUpDown
+# Getting Started with SfNumericUpDown
 
-This section provides overview for working with Essential<sup>®</sup> NumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
+This section provides an overview for working with Essential<sup>®</sup> SfNumericUpDown for Xamarin.iOS. You can walk through the entire process of creating a SfNumericUpDown.
 
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution	
 
@@ -25,9 +25,9 @@ iOS-unifed\Syncfusion.SfNumericUpDown.iOS.dll
 
 ## Add SfNumericUpDown
 
-The SfNumericUpDown control configured entirely in C# code. The following steps explain on how to create a SfNumericUpDown and configure its elements,
+The SfNumericUpDown control is configured entirely in C# code. The following steps explain how to create a SfNumericUpDown and configure its elements:
 
-* Adding namespace for the added assemblies. 
+* Add the namespace for the added assemblies.
 
 {% capture codesnippet1 %}
 
@@ -41,7 +41,7 @@ using Syncfusion.SfNumericUpDown.iOS;
 
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
-* Now add the SfNumericUpDown control with a required optimal name by using the included namespace.
+*  Now add the SfNumericUpDown control using the included namespace.
 
 {% capture codesnippet2 %}
 
@@ -65,7 +65,7 @@ this.Add(numeric);
 
 ## Set Value
 
-The SfNumericUpDown control display value can be set using `Value` property. 
+The SfNumericUpDown control's display value can be set using the `Value` property.
 
 {% highlight C# %}
 
@@ -75,6 +75,6 @@ numeric.Value = 100;
 
 {% endhighlight %}
 
-![Display the NumericUpDown with value](images/gettingstarted.png)
+![Display the SfNumericUpDown with value](images/gettingstarted.png)
 
 You can find the complete getting started sample from [this](https://github.com/SyncfusionExamples/Getting-Started-SfNumericUpDown-in-Xamarin-iOS) link.

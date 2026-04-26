@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Eevnts in SfMaskedEdit for Xamarin.iOS platform
-description: Learn how to get the value changed and Mask input reject events in SfMaskedEdit
-platform: Xamarin.iOS
+title: Events in Syncfusion® SfMaskedEdit for Xamarin.iOS
+description: Learn how to handle ValueChanged and MaskInputRejected events in Syncfusion® SfMaskedEdit for Xamarin.iOS with event arguments and validation handling.
+platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
@@ -17,12 +17,12 @@ The SfMaskedEdit exposes the following events:
 
 ## ValueChanged event
 
-Occurs when the value of the `Value` property is changed by either entering the valid input character or setting the value to the `Value` property through C# code. The event arguments are of type ValueChangedEventArgs and expose the following property:
+Occurs when the value of the `Value` property is changed by either entering a valid input character or setting the value to the `Value` property through C# code. The event arguments are of type ValueChangedEventArgs and expose the following property:
 
-* `Value`: The read only property contains the updated value of the `Value` property of SfMaskedEdit.
+* `Value`: This read-only property contains the updated value of the `Value` property of SfMaskedEdit.
 
-> Your valid input character is updated to `Value` property based on the `ValidationMode` property.
->Refer to this [link](Validation#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
+> Valid input characters are updated to the `Value` property based on the `ValidationMode` property.
+>Refer to this [link](Validation#validation-mode) to learn more about the `ValidationMode` property of `SfMaskedEdit` control.
 
 {% tabs %}
 {% highlight c# %}
@@ -57,12 +57,12 @@ private void MaskedEdit_OnValueChanged(object sender, ValueChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/valuechanged.png)
+![SfMaskedEdit ValueChanged event example](SfMaskedEditImages/valuechanged.png)
 
 
 ## MaskInputRejected event
 
-Occurs when your input or assigned character does not match the corresponding format element of the input mask. The event arguments are type of MaskInputRejectedEventArgs and expose the following properties:
+Occurs when the input or assigned character does not match the corresponding format element of the input mask. The event arguments are of type MaskInputRejectedEventArgs and expose the following properties:
 
 * `Position`: The position in the mask corresponding to the invalid input character.
 * `RejectionHint`: The enumerated value that describes why the input character was rejected.
@@ -98,6 +98,6 @@ private void MaskedEdit_MaskInputRejected(object sender, MaskInputRejectedEventA
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/maskrejected.png)
+![SfMaskedEdit MaskInputRejected event example](SfMaskedEditImages/maskrejected.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_Events.zip).
