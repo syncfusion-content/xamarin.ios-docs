@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Type
-description: Different display types available in Syncfusion® TabView control for Xamarin.iOS platform
+title: Display Type in Syncfusion® TabView control for Xamarin.iOS
+description: Learn about different display types available in Syncfusion® TabView control for Xamarin.iOS platform
 platform: xamarin.ios
 control: TabView
 documentation: ug
@@ -9,17 +9,20 @@ documentation: ug
 
 # Display Type
 
-Tab view displays the title of each tab item by default. This can be changed to any of the following types:
+The TabView displays the title of each tab item by default. You can customize the display appearance by choosing from the following display modes:
 
-* Text only
-* Image only
-* Image with text
-* No header
+* **Text only** - Shows only the title text
+* **Image only** - Shows only the icon/image
+* **Image with text** - Shows both icon and title text
+* **No header** - Hides the header completely
 
-![](images/Display-Type/xamarin_ios_tabstyle01.png)
+![TabView Display Types](images/Display-Type/xamarin_ios_tabstyle01.png)
 
+*Different display types in TabView*
 
-Display type can be changed by setting the `DisplayMode` property of `SfTabView`.
+## Setting Display Mode
+
+You can change the display type by setting the `DisplayMode` property of `SfTabView`:
 
 {% tabs %}
 

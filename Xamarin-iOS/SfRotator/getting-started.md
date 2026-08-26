@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with syncfusion® Rotator control for Xamarin.iOS 
-description:  A quick tour to initial users on Syncfusion® Rotator control for Xamarin.iOS platform
+title: Getting Started with Syncfusion® Rotator Control for Xamarin.iOS
+description: Learn how to get started with Syncfusion® Xamarin.iOS Rotator control through step-by-step configuration and customization guide.
 platform: xamarin.ios 
-control: Rotator 
+control: SfRotator
 documentation: ug
 ---
 
 # Getting Started
 
-This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
+This section explains the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in the Rotator control.
 
 ## Referencing Essential Studio<sup>®</sup> Components in Your Solution
 
@@ -17,7 +17,7 @@ After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the
 
 {Syncfusion Installed location}\Essential Studio {version number}\lib
 
-You have to add the following assembly reference to the iOS unified project
+You have to add the following assembly reference to the iOS unified project:
 
 iOS-unified\Syncfusion.SfRotator.iOS.dll
 
@@ -50,7 +50,7 @@ iOS-unified\Syncfusion.SfRotator.iOS.dll
 
 ## Setting Navigation Mode
 
-SfRotator provides option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using `NavigationMode` property.
+SfRotator provides an option to display the navigating items either in Thumbnail or Dots mode. The navigation mode for navigating items can be decided using the `NavigationStripMode` property.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ SfRotator provides option to display the navigating items either in Thumbnail or
 
 ## Customizing Position
 
-The placement position of navigation strip items such as Thumbnail or Dots can be customized in SfRotator. This can be specified using `NavigationStripPosition` property.  
+The placement position of navigation strip items such as Thumbnail or Dots can be customized in SfRotator. This can be specified using the `NavigationStripPosition` property.
 
 {% tabs %}
 
@@ -77,4 +77,4 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 {% endtabs %}
 
-![](images/rotator.png)
+![Rotator Control](images/rotator.png)

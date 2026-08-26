@@ -12,7 +12,7 @@ keywords: button, SfCheckBox, CheckBox
 # Visual Customization
 
 ## Customizing shape
-The check box shape can be customized using the `CornerRadius` property. This property specifies the uniform radius value for every corner of the check box.
+The CheckBox shape can be customized using the `CornerRadius` property. This property specifies the uniform radius value for every corner of the CheckBox.
 
 {% tabs %}
 {% highlight c# %}
@@ -23,10 +23,11 @@ checkBox.CornerRadius = 5.0f;
 {% endhighlight %}
 {% endtabs %}
 
-![Checkbox CornerRadius](Images/Radius.png)
+![CheckBox CornerRadius](Images/Radius.png)
 
 ## Customizing state color
-The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked. 
+The default state colors can be customized using the `CheckedColor` and `UncheckedColor` properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to checked/indeterminate. The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked.
+
 {% tabs %}
 {% highlight c# %}
 SfCheckBox check = new SfCheckBox();
@@ -44,10 +45,10 @@ indeterminate.CheckedColor = UIColor.Purple;
 {% endhighlight %}
 {% endtabs %}
 
-![CheckedColor and UncheckedColor in Checkbox](Images/StateColor.png)
+![CheckedColor and UncheckedColor in CheckBox](Images/StateColor.png)
 
 ## BorderWidth
-The tick box border thickness of the checkbox control can be customized with the `BorderWidth` property.  
+The tick box border thickness of the CheckBox control can be customized with the `BorderWidth` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -69,14 +70,14 @@ check3.UncheckedColor = UIColor.Blue;
 {% endhighlight %}
 {% endtabs %}
 
-![Checkbox BorderWidth](Images/BorderWidth.png)
+![CheckBox BorderWidth](Images/BorderWidth.png)
 
 ## Setting caption text appearance 
 You can customize the display text appearance of the `SfCheckBox` control using the following properties:
 
 * `SetTitleColor`: Changes the color of the text.
 * `HorizontalAlignment`: Changes the horizontal alignment of the caption text.
-* `Font`:Changes the font family of the text and sets font attributes(bold/italic/none) of the text and also sets font size of the caption text.
+* `Font`: Changes the font family of the text and sets font attributes (bold/italic/none) of the text and also sets font size of the caption text.
 
 {% tabs %}
 {% highlight c# %}
@@ -92,6 +93,6 @@ caption.Font = UIFont.FromDescriptor(fontDescriptor.CreateWithTraits(UIFontDescr
 {% endhighlight %}
 {% endtabs %}
 
-![Checkbox TextAppearance](Images/CaptionAppearance.png)
+![CheckBox TextAppearance](Images/CaptionAppearance.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_VisualCustomization.zip ).
+This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/CheckBox_VisualCustomization.zip).

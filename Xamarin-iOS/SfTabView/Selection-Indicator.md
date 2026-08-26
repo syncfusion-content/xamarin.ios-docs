@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Selection Indicator strip
+title: Selection Indicator Strip
 description: Selection Indicator in Syncfusion® TabView control for Xamarin.iOS platform
 platform: xamarin.ios
-control: TabView
+control: SfTabView
 documentation: ug
 ---
 
 # Selection Indicator Strip
 
-The selection indicator strip can be used to indicate the selected index of the tab view control. This can be customized with the built-in APIs that are available in the `SelectionIndicatorSettings` of `SfTabView`.
+The selection indicator strip can be used to indicate the selected index of the TabView control. This can be customized with the built-in APIs that are available in the `SelectionIndicatorSettings` of `SfTabView`.
 
-![](images/Selection-Indicator/xamarin_ios_tabstyle02.png)
+![Selection Indicator Strip](images/Selection-Indicator/xamarin_ios_tabstyle02.png)
 
-
-The selection indicator can be positioned below the title or above the title, or else it can be filled to the entire selected header space.
+The selection indicator can be positioned below the title, above the title, or it can be filled to the entire selected header space.
 
 {% tabs %}
 
@@ -32,5 +31,4 @@ The selection indicator can be positioned below the title or above the title, or
 
 {% endtabs %}
 
-N> Stroke thickness will not applicable when the selection indicator’s position is set to "Fill".
-
+> **Note:** Stroke thickness is not applicable when the selection indicator's position is set to "Fill".

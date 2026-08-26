@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Selection Indicator | SfSegmentedControl  | Xamarin.iOS | Syncfusion®
-description: How to handle selection indicator settings in segmented control
+description: Learn how to handle selection indicator settings in Segmented Control
 platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
 ---
 
-# Indicating the selected item
+# Indicating the Selected Item
 
-The segmented control indicates the selected item by differentiating it with text color of the item or by using selection strip.
+The Segmented Control indicates the selected item by differentiating it with the text color of the item or by using a selection strip.
 
-## Selection text color
+## Selection Text Color
 
-You can change the text color of the selected item to desired color. The selected item's text color can be customized using the `SelectionTextColor` property.
+You can change the text color of the selected item to the desired color. The selected item's text color can be customized using the `SelectionTextColor` property.
 
 {% highlight c# %}
 
@@ -25,15 +25,15 @@ segmentControl.SelectionTextColor = UIColor.FromRGB(4, 142, 172);
 
 ## Selection Strip
 
-A selection strip is used to indicate the selected item in the segmented control. The selection strip can be customized in many forms.
+A selection strip is used to indicate the selected item in the Segmented Control. The selection strip can be customized in many forms.
 
-#### Position
+### Position
 
 The position of the selection indicator can be customized in different ways such as top, bottom, fill, and border.
 
 ###### Top
 
-The selection strip can be displayed as a line with customizable color and thickness. It can be positioned at the top of selected item.
+The selection strip can be displayed as a line with customizable color and thickness. It can be positioned at the top of the selected item.
 
 {% highlight c# %}
 
@@ -44,9 +44,9 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 
 ![Selected segment item Top in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Top.png)
 
-###### Bottom
+#### Bottom
 
-Like top placement, selection strip can be customized by its color and thickness, and it can be positioned at the bottom of selected item.
+Like top placement, the selection strip can be customized by its color and thickness, and it can be positioned at the bottom of the selected item.
 
 {% highlight c# %}
 
@@ -56,7 +56,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 
 ![Selected segment item Bottom in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Bottom.png)
 
-###### Fill
+#### Fill
 
 The selection strip can be placed over a segment item to indicate the selection. You can customize its color to highlight the item.
 
@@ -68,7 +68,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 
 ![Selected segment item Fill in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Fill.png)
 
-###### Border
+#### Border
 
 The selection strip can be set as a border to highlight the selected item.
 
@@ -80,7 +80,7 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() {Po
 
 ![Selected segment item Border in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Border.png)
 
-#### Color
+### Color
 
 The background color of the selection strip can be customized using the `Color` property of `SelectionIndicatorSettings`.
 
@@ -92,15 +92,16 @@ segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() { C
 
 ![Selected segment item Color in Xamarin.iOS](images/Selection-indicator/SegmentedControl_Stripcolor.png)
 
-#### Thickness
+### Thickness
 
-The border thickness of the selection strip can be customized using the `Thickness` property of `SelectionIndicatorSettings`.
+The border thickness of the selection strip can be customized using the `StrokeThickness` property of `SelectionIndicatorSettings`.
 
 {% highlight c# %}
 
 segmentControl.SelectionIndicatorSettings = new SelectionIndicatorSettings() { StrokeThickness= 10 };
 
 {% endhighlight %}
+
 
 
 

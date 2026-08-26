@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SfSegmentedControl | Xamarin.iOS | Syncfusion®
-description: This explains about the Overview and key features of Syncfusion® Essential® Xamarin.iOS Segmented control.
+description: This section explains the overview and key features of Syncfusion® Essential® Xamarin.iOS Segmented Control.
 platform: xamarin.ios
 control: SfSegmentedControl
 documentation: ug
@@ -9,8 +9,7 @@ documentation: ug
 
 # Overview
 
-
-Essential<sup>®</sup> segmented control for Xamarin.iOS provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
+Essential<sup>®</sup> Segmented Control for Xamarin.iOS provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
 
 ![SegmentedControl overview in Xamarin.iOS](images/Overview/SegmentedControlOverview.png)
 
