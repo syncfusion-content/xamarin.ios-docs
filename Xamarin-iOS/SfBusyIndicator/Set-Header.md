@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set title to the Syncfusion® BusyIndicator control for Xamarin.iOS
-description: This section provides the details about how to set title and fontface to BusyIndicator control for Xamarin.iOS
+description: This section provides details about how to set title and font properties for BusyIndicator control in Xamarin.iOS
 platform: xamarin.ios
 control: SfBusyIndicator
 documentation: ug
@@ -9,7 +9,8 @@ documentation: ug
 
 # Set BusyIndicator Header
 
-SfBusyIndicator provides option to set the text that indicates the information related to loading. This can be done using `Title` property.
+The SfBusyIndicator provides an option to set descriptive text that provides information about the current loading operation. This can be accomplished using the `Title` property, which displays text beneath the animation.
+
 
 {% tabs %}
 
@@ -50,3 +51,4 @@ BusyIndicator with title
 
 BusyIndicator with font face
 {:.caption}
+

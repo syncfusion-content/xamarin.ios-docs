@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Position of Drawer in Syncfusion® NavigationDrawer control for Xamarin.iOS
-description: Learn how to set position of the DrawerView panel.
+title: Drawer position configuration for Syncfusion® NavigationDrawer control in Xamarin.iOS
+description: Learn how to configure the position of the DrawerView panel in NavigationDrawer control.
 platform: xamarin.ios
 control: NavigationDrawer
 documentation: ug
 ---
-# Configuring The Drawer In Different Sides
 
-The `Position` property specifies the sliding position of the DrawerView panel. The `Position` property has the following four options.
+# Drawer Position Configuration
 
+The `Position` property specifies the sliding position of the DrawerView panel. The drawer can be positioned to slide from any of the four screen edges. The `Position` property supports the following four options:
 * Left
 
 * Right
@@ -20,10 +20,9 @@ The `Position` property specifies the sliding position of the DrawerView panel. 
 
 N> The default option is Left.
 
-## Left
+## Left Position
 
-Sets the NavigationDrawer sliding position to the left.
-
+Configures the NavigationDrawer to slide from the left edge of the screen.
 {% tabs %}
 
 {% highlight c# %}
@@ -34,12 +33,11 @@ navigation.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionLeft;
 
 {% endtabs %}
 
-![](images/left.png)
+![Left position drawer example](images/left.png)
 
-## Right
+## Right Position
 
-Sets the NavigationDrawer sliding position to the right.
-
+Configures the NavigationDrawer to slide from the right edge of the screen.
 {% tabs %}
 
 {% highlight c# %}
@@ -50,12 +48,11 @@ navigation.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionRight
 
 {% endtabs %}
 
-![](images/Right.png)
-	
-## Top
+![Right position drawer example](images/Right.png)
 
-Sets the NavigationDrawer sliding position to the top.
+## Top Position
 
+Configures the NavigationDrawer to slide from the top edge of the screen.
 {% tabs %}
 
 {% highlight c# %}
@@ -66,12 +63,11 @@ navigation.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionTop;
 
 {% endtabs %}
 
-![](images/Top.png)
+![Top position drawer example](images/Top.png)
 
-## Bottom
+## Bottom Position
 
-Sets the NavigationDrawer sliding position to the bottom.
-
+Configures the NavigationDrawer to slide from the bottom edge of the screen.
 {% tabs %}
 
 {% highlight c# %}
@@ -82,10 +78,5 @@ navigation.Position = SFNavigationDrawerPosition.SFNavigationDrawerPositionBotto
 
 {% endtabs %}
 
-![](images/bottom.png)
-
-
-
-
-
+![Bottom position drawer example](images/bottom.png)
 

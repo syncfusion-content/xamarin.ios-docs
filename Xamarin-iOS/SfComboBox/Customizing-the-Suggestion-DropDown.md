@@ -1,23 +1,23 @@
 ---
-layout : post
-title : Customizing the Syncfusion® ComboBox control in Xamarin.iOS
-description : Learn how to Customizing the ComboBox 
-platform : xamarin.ios
-control : ComboBox
-documentation : ug
+layout: post
+title: Customizing the Syncfusion® ComboBox control in Xamarin.iOS
+description: Learn how to customize the ComboBox suggestion dropdown appearance, styling, and behavior in Syncfusion® SfComboBox for enhanced user experience.
+platform: xamarin.ios
+control: ComboBox
+documentation: ug
 ---
 
 # Customization
 
-The combobox control provides multiple customization options. The below topics deals with different forms of customization in the SfComboBox Control. 
+The ComboBox control provides multiple customization options. The following topics deal with different forms of customization in the SfComboBox control.
 
-## Drop-down items customization 
+## Dropdown Items Customization
 
 The dropdown list displaying behavior can be customized based on the entered text and delays in displaying the items. 
 
-## Selected drop-down item color 
+## Selected Dropdown Item Color
 
-you can set color for the selected item in the drop-down item using the property `SelectedDropDownItemColor` property.
+You can set the color for the selected item in the dropdown using the `SelectedDropDownItemColor` property.
 
 {% tabs %}
 
@@ -29,13 +29,13 @@ combobox.SelectedDropDownItemColor = UIColor.FromRGB(0, 173, 255);
 
 {% endtabs %}
 
-![Selected drop down item color](images/selecteddropdownitemcolor.png)
+![Selected dropdown item color](images/selecteddropdownitemcolor.png)
 
-## Set maximum height to the drop-down
+## Set Maximum Height to the Dropdown
 
-The height of the drop-down portion of the combo box control can be varied using the `MaximumDropDownHeight` property. 
+The height of the dropdown portion of the ComboBox control can be adjusted using the `MaximumDropDownHeight` property.
 
-N> The value of `MaximumDropDownHeight` property can be any positive integer value.
+N> The value of the `MaximumDropDownHeight` property can be any positive integer value.
 
 {% tabs %}
 
@@ -47,11 +47,11 @@ combobox.MaxDropDownHeight = 60;
 
 {% endtabs %}
 
-![Maximum drop down height](images/maximumdropdownheight.png)
+![Maximum dropdown height](images/maximumdropdownheight.png)
 
-## Set border color to the DropDown
+## Set Border Color to the Dropdown
 
-The DropDownBorderColor property is used to change the border color of DropDown. The following code example demonstrates how to change the border color of DropDown.
+The `DropDownBorderColor` property is used to change the border color of the dropdown. The following code example demonstrates how to change the border color of the dropdown.
 
 {% tabs %}
 
@@ -71,33 +71,23 @@ this.View.AddSubview(countryComboBox);
 
 {% endtabs %}
 
-![Drop down border color](images/drop-down-border-color.png)
+![Dropdown border color](images/drop-down-border-color.png)
 
-## DropDown Button Customization 
+## Dropdown Button Customization
 
-The dropdown button can be customized using the DropDownButtonSettings property in the following ways:
+The dropdown button can be customized using the `DropDownButtonSettings` property in the following ways:
 
-`Width` – Sets the width for the dropdown button.
-
-`Height` - Sets the height for the dropdown button.
-
-`FontIcon` - Sets different FontIcon for the dropdown button.
-
-`FontColor` - Sets different  FontColor for the dropdown button.
-
-`FontSize` - Sets different  FontSize for the dropdown button. 
-
-`FontFamily` - Sets the different  FontFamily for the dropdown button. 
-
-`BackgroundColor` - Sets the background color for the dropdown button. 
-
-`HighlightedBackgroundColor` - Sets the background color for the dropdown button when it is pressed. 
-
-`HighlightedFontColor` - Sets the font color for the dropdown button when it is pressed. 
-
-`Image` - Sets the image to the dropdown button. 
-
-`View` – Sets a custom view to the dropdown button. 
+* **Width** – Sets the width for the dropdown button.
+* **Height** - Sets the height for the dropdown button.
+* **FontIcon** - Sets different FontIcon for the dropdown button.
+* **FontColor** - Sets different FontColor for the dropdown button.
+* **FontSize** - Sets different FontSize for the dropdown button.
+* **FontFamily** - Sets the different FontFamily for the dropdown button.
+* **BackgroundColor** - Sets the background color for the dropdown button.
+* **HighlightedBackgroundColor** - Sets the background color for the dropdown button when it is pressed.
+* **HighlightedFontColor** - Sets the font color for the dropdown button when it is pressed.
+* **Image** - Sets the image to the dropdown button.
+* **View** – Sets a custom view to the dropdown button.
 
 {% tabs %}
 
@@ -111,11 +101,11 @@ combobox.DropDownButtonSettings = dropDownButtonSettings;
 
 {% endtabs %}
 
-![Drop down button customization](images/buttoncustomization.png)
+![Dropdown button customization](images/buttoncustomization.png)
 
 ## Watermark
 
-The watermark text is used to display some information regarding the combo box. This watermark is visible only when the textbox is empty or null. The watermark text disappears when users begins to type or select any item from the dropdown list in the combo box control. 
+The watermark text is used to display placeholder information regarding the ComboBox. This watermark is visible only when the text box is empty or null. The watermark text disappears when users begin to type or select any item from the dropdown list in the ComboBox control.
 
 {% tabs %}
 

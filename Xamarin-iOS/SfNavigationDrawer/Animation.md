@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Transition of drawer in Syncfusion® NavigationDrawer control for Xamarin.iOS
-description: Learn how to set Transition of the DrawerView panel.
+title: Transition animations for Syncfusion® NavigationDrawer control in Xamarin.iOS
+description: Learn how to configure transition animations for the DrawerView panel in NavigationDrawer.
 platform: xamarin.ios
 control: NavigationDrawer
 documentation: ug
 ---
 # Drawer Opening Animation
 
-The `Transition` property specifies the sliding animations for the DrawerView panel. The `Transition` property has the following three options:
+The `Transition` property specifies the sliding animations for the DrawerView panel. The `Transition` property provides the following three animation options:
 
 * SlideOnTop
 * Push
@@ -18,7 +18,7 @@ N> The default transition is SlideOnTop.
 
 ## SlideOnTop
 
-Slides the DrawerContent on top of the main content.
+Slides the drawer content on top of the main content, overlaying it during the transition.
 
 {% tabs %}
 
@@ -30,11 +30,10 @@ Slides the DrawerContent on top of the main content.
 
 {% endtabs %}
 
-![](images/Slide-on-top.png)
-
+![SlideOnTop transition animation example](images/Slide-on-top.png)
 ## Push
 
-This transition slides the Drawer and main content simultaneously.
+This transition slides both the drawer and main content simultaneously, pushing the main content aside as the drawer opens.
 
 {% tabs %}
 
@@ -46,11 +45,10 @@ This transition slides the Drawer and main content simultaneously.
 
 {% endtabs %}
 
-![](images/push.png)
-
+![Push transition animation example](images/push.png)
 ## Reveal
 
-The Drawer content is in fixed position and the main content will slide to reveal the drawer content.
+The drawer content remains in a fixed position while the main content slides away to reveal the drawer underneath.
 
 {% tabs %}
 
@@ -62,4 +60,4 @@ The Drawer content is in fixed position and the main content will slide to revea
 
 {% endtabs %}
 
-![](images/Reveal.png)
+![Reveal transition animation example](images/Reveal.png)

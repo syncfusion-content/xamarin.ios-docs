@@ -7,9 +7,9 @@ control: Carousel
 documentation: ug
 ---
 
-# The Carousel Linear Arrangement
+# Carousel Linear Arrangement
 
-The Carousel items can be populated in the view in a stacked linear layout by setting the `ViewMode` property to Linear. The present option is `Default`.
+Carousel items can be displayed in a stacked linear layout by setting the `ViewMode` property to `Linear`. The default option is `Default`, which displays items in the standard carousel view.
 
 {% highlight C# %}
 
