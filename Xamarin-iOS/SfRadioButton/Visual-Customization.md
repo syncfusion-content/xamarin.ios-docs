@@ -13,7 +13,7 @@ keywords: button, SfRadioButton, RadioButton
 # Visual Customization in Xamarin.iOS SfRadioButton
 
 ## Customizing state color
-The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked state color is updated to the `CheckedColor` property value when the state is changed to the checked. The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked.
+The default state colors can be customized using the `CheckedColor` and `UncheckedColor` properties. The checked state color is updated to the `CheckedColor` property value when the state is changed to checked. The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked.
 
 {% tabs %}
 {% highlight c# %}
@@ -58,7 +58,7 @@ You can customize the display text appearance of the `SfRadioButton` control usi
 
 * `SetTitleColor`: Changes the color of the text.
 * `HorizontalAlignment`: Changes the horizontal alignment of the caption text.
-* `Font`: Changes the font family of the text and sets font attributes(bold/italic/none) of the text and also sets font size of the caption text.
+* `Font`: Changes the font family of the text and sets font attributes (bold/italic/none) of the text and also sets font size of the caption text.
 
 {% tabs %}
 {% highlight c# %}

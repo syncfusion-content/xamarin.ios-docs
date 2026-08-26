@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events and Interactivity in Syncfusion® Numeric TextBox for Xamarin.iOS
+title: Events in Syncfusion® NumericTextBox for Xamarin.iOS
 description: Learn how to get the value changed event and some interactivity for SfNumericTextBox in Xamarin.iOS platform.
 platform: xamarin.ios
 control: SfNumericTextBox
@@ -14,7 +14,7 @@ documentation: ug
 
 You can perform any operation when changing the value of SfNumericTextBox using the ValueChanged event. The ValueChanged event returns the changed value in SfNumericTextBox.
 
-For example you can restrict the SfNumericTextBox value if it exceed's greater than 3 digits using following code.
+For example, you can restrict the SfNumericTextBox value if it exceeds greater than 3 digits using the following code:
 
 {% highlight c# %}
 
@@ -36,9 +36,9 @@ this.Add(numericTextBox);
 
 {% endhighlight %}
 
-## Interactivity : ValueChangeMode
+## Interactivity: ValueChangeMode
 
-The ValueChangeMode property is used to mention when value needs to update, either in key pressed or focus lost state. When ValueChangeMode is set to OnKeyFocus, the value will be updated on each key press. When ValueChangeMode is set to OnLostFocus, the value is updated when the control lose the focus or the focus is moved to the next control. ValueChangeMode includes the following options:
+The ValueChangeMode property is used to specify when the value needs to update, either in key pressed or focus lost state. When ValueChangeMode is set to OnKeyFocus, the value will be updated on each key press. When ValueChangeMode is set to OnLostFocus, the value is updated when the control loses focus or the focus is moved to the next control. ValueChangeMode includes the following options:
 
 1. OnKeyFocus
 2. OnLostFocus

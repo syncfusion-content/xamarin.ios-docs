@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Input validation in SfMaskedEdit control for Xamarin.iOS platform
-description: Learn how and when to validate the input characters with the given Mask of SfMaskedEdit control.
-platform: Xamarin.iOS
+title: Input validation in Syncfusion® SfMaskedEdit for Xamarin.iOS
+description: Discover input validation modes (KeyPress, LostFocus) and error checking in Syncfusion® SfMaskedEdit control for Xamarin.iOS platform with HasError property.
+platform: xamarin.ios
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
@@ -28,11 +28,11 @@ maskedEdit.ValidationMode = InputValidationMode.KeyPress;
 {% endhighlight %}
 {% endtabs %}
 
-When the ValidationMode is LostFocus, the validation takes place when the control lost its focus. For KeyPress, the validation triggers for each key press.
+When the ValidationMode is LostFocus, the validation takes place when the control loses its focus. For KeyPress, the validation triggers for each key press.
 
 ## HasError
 
-This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else returns false. The following code example shows the usage of `HasError` property.
+This read-only property is used to check whether the validation succeeds. It returns true when validation succeeds, otherwise it returns false. The following code example shows the usage of `HasError` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -58,8 +58,8 @@ private void MaskedEdit_ValueChanged(object sender, ValueChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-Refer this [link](Events#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
+Refer to this [link](Events#valuechanged-event) to learn more about the `ValueChanged` event of SfMaskedEdit control.
 
-![](SfMaskedEditImages/validation.png)
+![Validation error alert dialog](SfMaskedEditImages/validation.png)
 
 This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.iOS/Samples/MaskedEdit_Validation.zip).

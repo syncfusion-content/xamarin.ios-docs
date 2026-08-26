@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin.iOS SfNumericTextBox
 
-This section explains you the steps to configure a numeric textbox control in a real-time scenario and also provides a walk-through on some of the customization features available in numeric textbox control.
+This section explains the steps to configure a numeric textbox control in a real-time scenario and also provides a walk-through on some of the customization features available in the numeric textbox control.
                         
 ## Reference Essential Studio<sup>®</sup> Components in your Solution
 
@@ -17,15 +17,15 @@ After installing Essential Studio<sup>®</sup> for Xamarin, you can find all the
 
 {Syncfusion Installed location}\Essential Studio{version number}\lib
 
-N> Assemblies are available in unzipped package location in Mac
+N> Assemblies are available in unzipped package location in Mac.
 
-and below assembly reference to the iOS unified project.
+Add the following assembly reference to the iOS unified project:
 
 iOS-unifed\Syncfusion.SfNumericTextBox.iOS.dll
 
 ## Add SfNumericTextBox
 
-* Adding namespace for the added assemblies. 
+* Add the namespace for the added assemblies:
 
 {% capture codesnippet1 %}
 
@@ -64,7 +64,7 @@ this.Add(numericTextBox);
 
 ## Enable Parsing Mode
 
-SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParserMode` property.
+SfNumericTextBox provides an option to display the value in double or decimal. The following code shows the Decimal parsing mode which can be set through the `ParserMode` property:
 
 {% highlight c# %}
 
@@ -76,7 +76,7 @@ numericTextBox.ParserMode = SFNumericTextBoxParsers.Decimal;
 
 ## Configuring properties
 
-Format string, value and maximum number of decimal digits can be customized in SfNumericTextBox as below.
+Format string, value, and maximum number of decimal digits can be customized in SfNumericTextBox as shown below:
 
 {% highlight c# %}
 

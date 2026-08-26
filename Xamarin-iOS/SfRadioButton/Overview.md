@@ -11,11 +11,11 @@ keywords: button, SfRadioButton, RadioButton
 
 # Overview
 
-The radio button is a selection control that allows users to select one option from a set. The two states of radio button are checked and unchecked.
+The RadioButton is a selection control that allows users to select one option from a set. The two states of RadioButton are checked and unchecked.
 
-##  Key features
+## Key features
 
-* Allow users to select and clear the control by tapping.
-* Supports radio button color and label text customization.
+* Allows users to select and clear the control by tapping.
+* Supports RadioButton color and label text customization.
 
-![](Images/RadioButton_Overview.png)
+![SfRadioButton overview for Xamarin.iOS](Images/RadioButton_Overview.png)
